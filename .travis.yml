@@ -1,0 +1,30 @@
+# https://docs.travis-ci.com/user/languages/python/
+language: python
+
+# https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches
+branches:
+  only:
+    - master
+
+# https://docs.travis-ci.com/user/encryption-keys/
+env:
+  global:
+    - secure: "m1BNT/hZB+ELfWIcXpv2DrDGwkrLK0t+AjXgdupnju15CKvk/ZJhHK9xYQjXbQHxFxwvmQKUFDv3CZD94JmhF37kCe/nMRtqtqMmhnTogMr9jejR0GW+a+XOa1jA+DGmGVbqpCjlBhq8juv8yBC1WyMti9rZcaaTu2Xrz0S/gzkgj6SXD/ZiiuP4GKsL8266i6cbE9JgyjiVr9urAkD+/AWShbZlymKEGVvoMdr1DGxo7sXWRpkA5YC0D+W7bN13Rg1BmLkKNdJ8ji/HNTkGOq3aufrQ+m2yFFwUG/KTL8bnEOR2EESekpWOelaJbvd4yjkWzbcEvMbnZ+loMzFTDdKkG0QPQZ7toJzYcVjZ7kJvGYrRRju04Ayfy8rj/8EGQBTlLF/ieoiJQxK51HpCuQojv8qfuoTzCp0MQ5uYaNa8mYXCFx8Cv14fe0UjeMAsaNKpTSlhtWCski5ZQIqVhWNql0mBJA4UMorONESX1fNZOo3RsNHg3nZFMVl5CegENsJv9fQPHmjPbzujPZA2PVoLiPFco37xNJmH2LK/QEjVyT/yzfNygdeu/t5wYMGwfMFWXmb3CzvZ88y+xxEPINMpmPFvPCHy1c+/sBvD8gmJWN60nSDiRBMvxAzjwBz1bOHzEcFoz3bjbKw8rnoaBqH3YgjAYhMl8davaFGw5hY="
+
+# https://docs.travis-ci.com/user/customizing-the-build/#The-Build-Lifecycle
+install:
+  - pip install git+https://github.com/adblockplus/python-abp
+before_script:
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "TravisCI"
+  - git config --global push.default "matching"
+
+# https://docs.travis-ci.com/user/customizing-the-build/#Customizing-the-Build-Step
+script:
+  - git clone -b gh-pages "https://$GITHUB_TOKEN@github.com/realodix/AdBlockID" output
+  - flrender -i abid=. adblockid.template adblockid.txt
+  - flrender -i easylist=. easyprivacy.template output/easyprivacy.txt
+  - flrender -i easylist=. fanboy-social.template output/fanboy-social.txt
+  - flrender -i easylist=. fanboy-annoyance.template output/fanboy-annoyance.txt  
+  - cd output && git add --all . && git commit -m "Publishing revision $(git --git-dir ../.git rev-parse --short HEAD)" && git push --force origin gh-pages
+
