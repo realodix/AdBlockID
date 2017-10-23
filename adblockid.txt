@@ -1,14 +1,14 @@
 [Adblock Plus 2.0]
-! Version: 201710231838
+! Version: 201710232002
 ! Title: AdBlockID
-! Last modified: 23 Oct 2017 18:38 UTC
+! Last modified: 23 Oct 2017 20:02 UTC
 ! Expires: 1 hours (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
-!
+! 
 ! Please report any unblocked adverts or problems
 ! GitHub issues: https://github.com/realodix/AdBlockID/issues
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
-!
+! 
 ! -----------------------General advert blocking filters-----------------------!
 ! *** abid:sections/general_block.txt ***
 ! *** abid:sections/general_block_dimensions.txt ***
@@ -26,8 +26,17 @@
 ##.iklan1
 ##.iklan2
 ##.sponsor_ads
+##a[href*="http://jasa888.com/"]
 ##a[href^="http://bit.ly/"]
+##a[href^="http://pasaranqq.com/"]
+##a[href^="http://trikqq.com/"]
+##a[href^="http://www.11juni.com/"]
+##a[href^="http://www.hoki228.com"]
+##a[href^="http://www.raja111.com"]
+##a[href^="http://www.seventogel.net"]
+##a[href^="http://www.wingspoker.com"]
 ##a[href^="https://goo.gl/"]
+##img[alt="AGENQQ"]
 ! ---------------------------Third-party advertisers---------------------------!
 ! *** abid:sections/adservers.txt ***
 ||ad.adflazz.com^$third-party
@@ -52,6 +61,7 @@
 ! *** abid:sections/thirdparty_popup.txt ***
 ! ----------------------Specific advert blocking filters-----------------------!
 ! *** abid:sections/specific_block.txt ***
+||bioskop21.online/wp-content/uploads/*.gif$image,domain=bioskop21.online
 ||hotmovie21.com/wp-content/uploads/*/*/*.gif
 ||lk21.co/assets/*.gif
 ||lk21.fun/wp-content/uploads/*/*/*.gif
@@ -59,6 +69,8 @@
 ||movieon21.com/wp-content/uploads/*.gif
 ||ns21.me/wp-content/uploads/*/*/*.gif
 ! *** abid:sections/specific_block_popup.txt ***
+|http:$popup,third-party,domain=extra-torrent.club
+|https:$popup,third-party,domain=sadeempc.com
 ! ------------------------Specific element hiding rules------------------------!
 ! *** abid:sections/specific_hide.txt ***
 www.indogamers.com###IklanIDGS_popup
@@ -67,4 +79,4 @@ indogamers.com###iklan_popup_expire
 www.urbanindo.com###sales-hanging-bar
 n21.tv##.ban_empat
 www.beritasatu.com##.bottom-ads-new
-! Checksum: /5cIbeq83UqCg3L5WXY4FA
+! Checksum: E6GRPzFOwUP0zlkEqr+nlw
