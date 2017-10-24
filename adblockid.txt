@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201710232259
+! Version: 201710240041
 ! Title: AdBlockID
-! Last modified: 23 Oct 2017 22:59 UTC
+! Last modified: 24 Oct 2017 00:41 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -11,6 +11,35 @@
 ! 
 ! -----------------------General advert blocking filters-----------------------!
 ! *** abid:sections/general_block.txt ***
+-iklan.gif|
+-iklan.jpg|
+-iklan.js|
+-popads.php|
+.bid^$third-party
+.biz/iklan/
+.com/iklan/
+.id/ads/$~object-subrequest
+.id/adv/
+.id/iklan/
+.info/iklan/
+.me/iklan/
+.my/iklan/
+.net/iklan/
+.tv/iklan/
+/ads/iklan.
+/adsterra.js|
+/adtrace2.js|
+/adv/iklan.
+/bb17-iklan.
+/iklancpm.
+/images/iklan/*
+/revenuehits.js|
+/SkinADkanan.
+/SkinADkiri.
+/uploads/iklan/*
+/usaha-berhasil.gif|
+/usahaberhasil.gif|
+iklan300x250.gif|
 ! *** abid:sections/general_block_dimensions.txt ***
 /800x215--
 ! *** abid:sections/general_block_popup.txt ***
@@ -21,22 +50,34 @@
 ###fbanner
 ###fbbanner
 ###hbanner
+###iklan
+###iklan1
+###iklan2
+###iklan3
+###iklan4
 ###pbanner
 ##.banner
+##.iklan
 ##.iklan1
 ##.iklan2
+##.iklanhead
+##.iklanleft
+##.iklanmini
+##.iklanright
+##.pasangiklan
+##.pengiklan
 ##.sponsor_ads
-##a[href*="http://jasa888.com/"]
-##a[href^="http://bit.ly/"]
-##a[href^="http://pasaranqq.com/"]
-##a[href^="http://trikqq.com/"]
-##a[href^="http://www.11juni.com/"]
-##a[href^="http://www.hoki228.com"]
-##a[href^="http://www.raja111.com"]
-##a[href^="http://www.seventogel.net"]
-##a[href^="http://www.wingspoker.com"]
-##a[href^="https://goo.gl/"]
 ##img[alt="AGENQQ"]
+##img[alt="Advertisement"]
+##img[alt="Iklan"]
+##img[alt="Pasang Iklan Anda Disini"]
+##img[alt="Pasang Iklan Murah"]
+##img[alt="Pemasangan Iklan"]
+##img[alt="Space Iklan"]
+##img[alt="ads"]
+##img[alt="iklan"]
+##img[title="pasang iklan"]
+##img[title="pasang-iklan"]
 ! ---------------------------Third-party advertisers---------------------------!
 ! *** abid:sections/adservers.txt ***
 ||ad.adflazz.com^$third-party
@@ -61,7 +102,9 @@
 ! *** abid:sections/thirdparty_popup.txt ***
 ! ----------------------Specific advert blocking filters-----------------------!
 ! *** abid:sections/specific_block.txt ***
-||bioskop21.online/wp-content/uploads/*.gif$image,domain=bioskop21.online
+||bioskop21.online/wp-content/uploads/*.gif$image
+||blogspot.com/*.gif$image,domain=bioskop99.mobi|bioskopgalaxy21.com|bolehnonton.net|cinemamovie365.com|drakorindo.co|filmbagus21.space|kombatch.com|movie76.net|neumanga.tv|nonton.club|nonton33.tv|nontonfilm21.club|satujiwa.org|smallencode.com
+||film-ganool.co/wp-content/uploads/*/*/*.gif$image
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
 ||hotmovie21.com/wp-content/uploads/*/*/*.gif
 ||lk21.co/assets/*.gif
@@ -91,4 +134,4 @@ www.beritasatu.com##.bottom-ads-new
 46.166.167.16##.semprotnenenmontok_2
 46.166.167.16##.semprotnenenmontok_adalah_pujaan_hatiku
 46.166.167.16##.semprotnenenmontok_sq
-! Checksum: jKx4N7VVsiKBye2ptBwlYg
+! Checksum: QPj0c0xp5CDCZe0FPxSvMA
