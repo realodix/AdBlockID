@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201710241529
+! Version: 201710251528
 ! Title: AdBlockID
-! Last modified: 24 Oct 2017 15:29 UTC
+! Last modified: 25 Oct 2017 15:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -9,7 +9,6 @@
 ! GitHub issues: https://github.com/realodix/AdBlockID/issues
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
-! -----------------------General advert blocking filters-----------------------!
 ! *** abid:sections/general_block.txt ***
 -iklan.gif|
 -iklan.jpg|
@@ -43,7 +42,6 @@ iklan300x250.gif|
 ! *** abid:sections/general_block_dimensions.txt ***
 /800x215--
 ! *** abid:sections/general_block_popup.txt ***
-! ------------------------General element hiding rules-------------------------!
 ! *** abid:sections/general_hide.txt ***
 ###ads-pop
 ###btm_banner-foot
@@ -56,7 +54,11 @@ iklan300x250.gif|
 ###iklan3
 ###iklan4
 ###pbanner
-##.banner
+##.idmuvi-afterplayer
+##.idmuvi-floatbanner
+##.idmuvi-topbanner
+##.idmuvi-topbanner-aftermenu
+##.idmuvi-topplayer
 ##.iklan
 ##.iklan1
 ##.iklan2
@@ -67,18 +69,6 @@ iklan300x250.gif|
 ##.pasangiklan
 ##.pengiklan
 ##.sponsor_ads
-##img[alt="AGENQQ"]
-##img[alt="Advertisement"]
-##img[alt="Iklan"]
-##img[alt="Pasang Iklan Anda Disini"]
-##img[alt="Pasang Iklan Murah"]
-##img[alt="Pemasangan Iklan"]
-##img[alt="Space Iklan"]
-##img[alt="ads"]
-##img[alt="iklan"]
-##img[title="pasang iklan"]
-##img[title="pasang-iklan"]
-! ---------------------------Third-party advertisers---------------------------!
 ! *** abid:sections/adservers.txt ***
 ||ad.adflazz.com^$third-party
 ||adplus.co.id^$third-party
@@ -97,18 +87,18 @@ iklan300x250.gif|
 ||lokeriklan.com^$third-party
 ||masteriklan.net^$third-party
 ||pasangiklan.com^$third-party
+||pippio.com^$third-party
 ||props.id^$third-party
 ||publish.web.id^$third-party
 ||sitti.co.id^$third-party
-! -----------------------------Third-party adverts-----------------------------!
 ! *** abid:sections/thirdparty.txt ***
 ! *** abid:sections/thirdparty_popup.txt ***
-! ----------------------Specific advert blocking filters-----------------------!
 ! *** abid:sections/specific_block.txt ***
 ||bioskop168.co/wp-content/uploads/*/*/*.gif
 ||bioskop21.online/wp-content/uploads/*.gif$image
-||blogspot.com/*.gif$image,domain=bioskop99.mobi|bioskopgalaxy21.com|bolehnonton.net|cinemamovie365.com|drakorindo.co|filmbagus21.space|kombatch.com|movie76.net|neumanga.tv|nonton.club|nonton33.tv|nontonfilm21.club|satujiwa.org|smallencode.com
+||blogspot.com/*.gif$image,domain=bioskopgalaxy21.com|bolehnonton.net|cinemamovie365.com|drakorindo.co|filmbagus21.space|kombatch.com|movie76.net|neumanga.tv|nonton.club|nonton33.tv|nontonfilm21.club|satujiwa.org|smallencode.com
 ||dewanontons.com/wp-content/uploads/*/*/*.gif
+||eramuslim.com/banners
 ||film-ganool.co/wp-content/uploads/*/*/*.gif$image
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
 ||hotmovie21.com/wp-content/uploads/*/*/*.gif
@@ -122,28 +112,22 @@ iklan300x250.gif|
 ! *** abid:sections/specific_block_popup.txt ***
 |http:$popup,third-party,domain=extra-torrent.club|komiku.net
 |https:$popup,third-party,domain=bagas31.com|sadeempc.com
-! ------------------------Specific element hiding rules------------------------!
 ! *** abid:sections/specific_hide.txt ***
-www.indogamers.com###IklanIDGS_popup
-n21.tv,ns21.me###fbawah
+cermati.com##.ads-size-leaderboard
+cermati.com##.sticky-banner
+detik.com###otp_banner
+dramaid.com##.ads_management
+hipwee.com##.ads-sticky-bottom
 indogamers.com###iklan_popup_expire
-ns21.me###myModalSingle
 komiku.net###my_popup
 komiku.net###my_popup_background
-detik.com###otp_banner
-www.urbanindo.com###sales-hanging-bar
-46.166.167.16###semprotnenenmontok_3
-46.166.167.16###semprotnenenmontok_4
-46.166.167.16###semprotnenenmontok_f
-cermati.com##.ads-size-leaderboard
-hipwee.com##.ads-sticky-bottom
-dramaid.com##.ads_management
-n21.tv##.ban_empat
-www.beritasatu.com##.bottom-ads-new
 kompas.com##.kcm__horizontal.kcm
-46.166.167.16##.semprotnenenmontok_1
-46.166.167.16##.semprotnenenmontok_2
-46.166.167.16##.semprotnenenmontok_adalah_pujaan_hatiku
-46.166.167.16##.semprotnenenmontok_sq
-cermati.com##.sticky-banner
-! Checksum: FP6xqHjcTFI+krga4CAB5g
+n21.tv,ns21.me###fbawah
+n21.tv##.ban_empat
+ns21.me###myModalSingle
+www.beritasatu.com##.bottom-ads-new
+www.indogamers.com###IklanIDGS_popup
+www.urbanindo.com###sales-hanging-bar
+! *** abid:sections/whitelist.txt ***
+@@||eramuslim.com^$generichide
+! Checksum: pzebMBk9S21VBXkwQzXRZA
