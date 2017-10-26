@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201710251917
+! Version: 201710260234
 ! Title: AdBlockID
-! Last modified: 25 Oct 2017 19:17 UTC
+! Last modified: 26 Oct 2017 02:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -52,6 +52,7 @@
 ###iklan3
 ###iklan4
 ###pbanner
+##.adsbygoogle
 ##.idmuvi-afterplayer
 ##.idmuvi-floatbanner
 ##.idmuvi-topbanner
@@ -115,16 +116,22 @@ cermati.com##.ads-size-leaderboard
 cermati.com##.sticky-banner
 detik.com###otp_banner
 dramaid.com##.ads_management
+emosijiwaku.com##.td-banner-bg.td-banner-wrap-full
 hipwee.com##.ads-sticky-bottom
 indogamers.com###iklan_popup_expire
+inikpop.com##.adsbyadop_e2badd85-289d-4123-8201-cf36873f3246akj
+inikpop.com##.adsbyadop_e2badd85-289d-4123-8201-cf36873f3246Lky
 komiku.net###my_popup
 komiku.net###my_popup_background
 kompas.com##.kcm__horizontal.kcm
+mangacanblog.com##.ad
+mangacanblog.com###adrtop
+mangacanblog.com###btm_banner
 n21.tv,ns21.me###fbawah
 n21.tv##.ban_empat
 ns21.me###myModalSingle
 www.beritasatu.com##.bottom-ads-new
-www.eramuslim.com##.adsbygoogle
+www.frozenshop.com###banner0
 www.indogamers.com###IklanIDGS_popup
 www.urbanindo.com###sales-hanging-bar
 ! *** abid:sections/whitelist.txt ***
@@ -132,4 +139,20 @@ www.urbanindo.com###sales-hanging-bar
 ! 
 ! Adblock Notify plugin https://themeisle.com/plugins/adblock-notify/
 mangaindo.web.id#@##adsense
-! Checksum: 46SCFi7PrVzKarixD9syhw
+! 
+! mivo.com - Anti Adblock Script
+! https://github.com/AdguardTeam/AdguardFilters/issues/6872
+! + PLATFORM(windows, mac, android)
+mivo.com#%#window.initRmpAdBlock = function() {};
+! + PLATFORM(windows, mac, android)
+/rmp-blockadblock.js$domain=mivo.com
+! + NOT_PLATFORM(windows, mac, android)
+mivo.com##.top-ads
+! + NOT_PLATFORM(windows, mac, android)
+@@||mivo.com^$generichide
+mivo.com#$#div[class^="player-ads-"] { visibility: hidden!important; }
+! 
+! mangacanblog.com - Anti Adblock Script
+! https://github.com/AdguardTeam/AdguardFilters/issues/6338
+||mangacanblog.com/adblock/src/adblock-checker.js
+! Checksum: DJD4Vao+9pVdc2jC8Ly31w
