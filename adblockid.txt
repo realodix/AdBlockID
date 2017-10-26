@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201710260234
+! Version: 201710260248
 ! Title: AdBlockID
-! Last modified: 26 Oct 2017 02:34 UTC
+! Last modified: 26 Oct 2017 02:48 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -36,7 +36,9 @@
 /SkinADkanan.
 /SkinADkiri.
 /uploads/iklan/*
+||popads.net/pop.js^$important
 ! *** abid:sections/general_block_dimensions.txt ***
+##img[width="468"][height="60"]
 /800x215--
 ! *** abid:sections/general_block_popup.txt ***
 ! *** abid:sections/general_hide.txt ***
@@ -102,6 +104,7 @@
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
 ||hotmovie21.com/wp-content/uploads/*/*/*.gif
 ||imgur.com/*.gif$image,domain=nontonanime.id
+||kshowsubindo.org/wp-content/plugins/cm-pop-up-banners/
 ||lk21.co/assets/*.gif
 ||lk21.fun/wp-content/uploads/*/*/*.gif
 ||modifikasi.com/images/banner/
@@ -124,6 +127,7 @@ inikpop.com##.adsbyadop_e2badd85-289d-4123-8201-cf36873f3246Lky
 komiku.net###my_popup
 komiku.net###my_popup_background
 kompas.com##.kcm__horizontal.kcm
+kshowsubindo.org##a[href^="http://bit.ly/"] > img
 mangacanblog.com##.ad
 mangacanblog.com###adrtop
 mangacanblog.com###btm_banner
@@ -155,4 +159,7 @@ mivo.com#$#div[class^="player-ads-"] { visibility: hidden!important; }
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: DJD4Vao+9pVdc2jC8Ly31w
+! 
+! kshowsubindo.org - Anti Adblock Script
+kshowsubindo.org#%#Object.defineProperty(window, 'iframepopupwidow', { get: function() { return; } });
+! Checksum: AOpUCLCkSOuFUhZMsSKv3w
