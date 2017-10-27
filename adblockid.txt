@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201710271221
+! Version: 201710271345
 ! Title: AdBlockID
-! Last modified: 27 Oct 2017 12:21 UTC
+! Last modified: 27 Oct 2017 13:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -14,8 +14,12 @@
 -iklan.jpg|
 -iklan.js|
 -popads.php|
+.ads.controller.
+.ads.css
 .bid^$third-party
 .biz/iklan/
+.com/adx/
+.com/adx_
 .com/iklan/
 .id/ads/$~object-subrequest
 .id/adv/
@@ -25,21 +29,53 @@
 .my/iklan/
 .net/iklan/
 .tv/iklan/
+/ad_status.
+/ads/assets/*
 /ads/iklan.
+/ads3.
 /adsterra.js|
 /adtrace2.js|
 /adv/iklan.
+/ajs.php?
 /bb17-iklan.
+/delivery/fl.
+/delivery/spc.
+/dfp-ads.
+/dfp-ads/*
+/dfp-custom/*
+/dfp.js
+/dfp/async.
+/dfp/blocks/*
+/dfp/dc.js
+/dfp/dfp-
+/dfp/head/*
+/dfp/jquery.
+/dfp_ads/*
+/dfp_delivery.js
+/dfp_init.
+/dfp_overlay.
+/files/ad-
+/files/ad/*
+/files/ads-
+/files/ads/*
+/googleads-
+/googleads.
+/googleads/*
+/googleads1.
+/googleads2.
+/googleads_
 /iklancpm.
 /images/iklan/*
+/pagead2.
+/pubads.
 /revenuehits.js|
 /SkinADkanan.
 /SkinADkiri.
 /uploads/iklan/*
+/www/delivery/*
 ||popads.net/pop.js^$important
 ! *** abid:sections/general_block_dimensions.txt ***
-##img[width="468"][height="60"]
-/800x215--
+/728x90.
 ! *** abid:sections/general_block_popup.txt ***
 ! *** abid:sections/general_hide.txt ***
 ###ads-pop
@@ -54,6 +90,14 @@
 ###iklan3
 ###iklan4
 ###pbanner
+##.ads-300
+##.ads-300x100
+##.ads-txt
+##.adsbygoogle
+##.afs_ads
+##.article-ad
+##.article-ads
+##.cnAdzerkDiv
 ##.idmuvi-afterplayer
 ##.idmuvi-floatbanner
 ##.idmuvi-topbanner
@@ -68,7 +112,20 @@
 ##.iklanright
 ##.pasangiklan
 ##.pengiklan
+##.right-ads
+##.right-ads2
+##.right-adsense
 ##.sponsor_ads
+##.td-a-rec-id-custom_ad_1
+##.td-a-rec-id-custom_ad_2
+##.td-a-rec-id-custom_ad_3
+##.td-a-rec-id-custom_ad_4
+##.td-a-rec-id-custom_ad_5
+##.td-adspot-title
+##.ytp-ad-progress-list
+##a[href^="http://pubads.g.doubleclick.net/"]
+##div[id^="crt-"][style]
+##div[id^="div-gpt-ad"]
 ! *** abid:sections/adservers.txt ***
 ||accesstrade.co.id^$third-party
 ||ad.adflazz.com^$third-party
@@ -163,9 +220,6 @@ cermati.com##.ads-size-leaderboard
 hipwee.com##.ads-sticky-bottom
 dramaid.com##.ads_management
 tvonlinebola.com##.adsbottom
-inikpop.com##.adsbyadop_e2badd85-289d-4123-8201-cf36873f3246Lky
-inikpop.com##.adsbyadop_e2badd85-289d-4123-8201-cf36873f3246akj
-21cineplex.com,bioskoptoday.com,doktermuslim.com,informasiotomotif.com,jadwalnonton.com,kopisenja.com,nbcdns.com,tvonlinebola.com##.adsbygoogle
 tvonlinebola.com##.adstop
 n21.tv##.ban_empat
 www.kabargames.id##.banner-kiri
@@ -175,6 +229,7 @@ cgv.id##.banner-wrapper
 www.covesia.com##.banner300x250
 www.covesia.com##.banner650x80
 www.beritasatu.com##.bottom-ads-new
+kaskus.co.id##.bottom-frame
 medanreview.com##.google_ads_300_250
 www.covesia.com##.iklandetail
 kompas.com##.kcm__horizontal.kcm
@@ -186,6 +241,8 @@ cermati.com##.sticky-banner
 emosijiwaku.com##.td-banner-bg.td-banner-wrap-full
 www.covesia.com##.topbanner
 kshowsubindo.org##a[href^="http://bit.ly/"]
+||nobartv.com/img/banner/*.gif$image
+||nobartv.net/img/banner/*.gif$image
 ! semprot.com
 46.166.167.16##div[class^="semprotnenenmontok_"]
 ||gambar123.com/xf/trump/xyz_$domain=46.166.167.16
@@ -205,4 +262,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! kshowsubindo.org - Anti Adblock Script
 kshowsubindo.org#%#Object.defineProperty(window, 'iframepopupwidow', { get: function() { return; } });
-! Checksum: euEoqoki1yX7xGGYPwGxPQ
+! Checksum: gD08SJiVDYtPTZMs2VARLg
