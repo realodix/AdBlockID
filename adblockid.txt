@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201710271345
+! Version: 201710272021
 ! Title: AdBlockID
-! Last modified: 27 Oct 2017 13:45 UTC
+! Last modified: 27 Oct 2017 20:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -10,6 +10,7 @@
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
 ! *** abid:sections/general_block.txt ***
+-ads/assets/
 -iklan.gif|
 -iklan.jpg|
 -iklan.js|
@@ -18,6 +19,7 @@
 .ads.css
 .bid^$third-party
 .biz/iklan/
+.com/advs-
 .com/adx/
 .com/adx_
 .com/iklan/
@@ -30,8 +32,10 @@
 .net/iklan/
 .tv/iklan/
 /ad_status.
+/adpan/
 /ads/assets/*
 /ads/iklan.
+/ads/www/*
 /ads3.
 /adsterra.js|
 /adtrace2.js|
@@ -58,6 +62,7 @@
 /files/ad/*
 /files/ads-
 /files/ads/*
+/generic.ads.
 /googleads-
 /googleads.
 /googleads/*
@@ -66,6 +71,8 @@
 /googleads_
 /iklancpm.
 /images/iklan/*
+/images_ads/
+/pagead/conversion.
 /pagead2.
 /pubads.
 /revenuehits.js|
@@ -73,16 +80,24 @@
 /SkinADkiri.
 /uploads/iklan/*
 /www/delivery/*
+iklan-
+iklan-banner-
 ||popads.net/pop.js^$important
 ! *** abid:sections/general_block_dimensions.txt ***
+-728x90.
+/120x600.
+/468x60.
 /728x90.
 ! *** abid:sections/general_block_popup.txt ***
 ! *** abid:sections/general_hide.txt ***
 ###ads-pop
+###ads_banner_left1
+###ads_banner_right1
+###advsidebar
 ###btm_banner-foot
 ###fbanner
+###fbawah
 ###fbbanner
-###floating_banner_top
 ###hbanner
 ###iklan
 ###iklan1
@@ -90,14 +105,21 @@
 ###iklan3
 ###iklan4
 ###pbanner
+##.ad-banner
 ##.ads-300
 ##.ads-300x100
+##.ads-box
+##.ads-sticky-bottom
 ##.ads-txt
+##.ads-wrapper
 ##.adsbygoogle
+##.adstop
 ##.afs_ads
 ##.article-ad
 ##.article-ads
+##.bottom-ads-new
 ##.cnAdzerkDiv
+##.google_ads_300_250
 ##.idmuvi-afterplayer
 ##.idmuvi-floatbanner
 ##.idmuvi-topbanner
@@ -106,6 +128,7 @@
 ##.iklan
 ##.iklan1
 ##.iklan2
+##.iklandetail
 ##.iklanhead
 ##.iklanleft
 ##.iklanmini
@@ -141,6 +164,7 @@
 ||creativecdn.com^$third-party
 ||effectivemeasure.net^$third-party
 ||forumiklan.com^$third-party
+||genieessp.com^$third-party
 ||gudangbanner.com^$third-party
 ||halal.ad^$third-party
 ||iklanads.com^$third-party
@@ -150,6 +174,7 @@
 ||lokeriklan.com^$third-party
 ||masteriklan.net^$third-party
 ||mellowads.com^$third-party
+||mookie1.com^$third-party
 ||pasangiklan.com^$third-party
 ||pippio.com^$third-party
 ||props.id^$third-party
@@ -157,7 +182,10 @@
 ||sascdn.com^$third-party
 ||sitti.co.id^$third-party
 ||syndication.exdynsrv.com^$third-party
+||tapad.com^$third-party
 ! *** abid:sections/thirdparty.txt ***
+||bp.blogspot.com^$image,domain=123drakor.com|bioskopgalaxy21.com|bioskopkeren.ws|bolehnonton.net|cinemamovie365.com|drakorindo.co|dramaid.com|dramakorea.web.id|filmbagus21.space|kombatch.com|kshowsubindo.org|movie76.net|movieon21.com|neumanga.tv|nonton.club|nonton33.tv|nontondrama.me|nontonfilm21.club|satujiwa.org|smallencode.com|sukamovie.mobi
+! 
 ||45.76.146.8^$third-party
 ||agenjudionline.in^$third-party
 ||bidder.criteo.com^$third-party
@@ -182,7 +210,6 @@
 ! *** abid:sections/specific_block.txt ***
 ||bioskop168.co/wp-content/uploads/*/*/*.gif
 ||bioskop21.online/wp-content/uploads/*.gif$image
-||blogspot.com/*.gif$image,domain=123drakor.com|bioskopgalaxy21.com|bioskopkeren.ws|bolehnonton.net|cinemamovie365.com|drakorindo.co|dramakorea.web.id|filmbagus21.space|kombatch.com|kshowsubindo.org|movie76.net|movieon21.com|neumanga.tv|nonton.club|nonton33.tv|nontondrama.me|nontonfilm21.club|satujiwa.org|smallencode.com|sukamovie.mobi
 ||dewanontons.com/wp-content/uploads/*/*/*.gif
 ||eramuslim.com/banners
 ||film-ganool.co/wp-content/uploads/*/*/*.gif$image
@@ -194,44 +221,39 @@
 ||lk21.fun/wp-content/uploads/*/*/*.gif
 ||modifikasi.com/images/banner/
 ! ThirdParty juga
+||bp.blogspot.com^$image,domain=movie303.com|nontonmovie33.net
 ||movieon21.com/wp-content/uploads/*.gif
+||nobartv.com/img/banner/*.gif$image
+||nobartv.net/img/banner/*.gif$image
 ||nontonxxi.co/wp-content/uploads/*/*/*.gif
 ||ns21.me/wp-content/uploads/*/*/*.gif
 ! *** abid:sections/specific_block_popup.txt ***
 ! *** abid:sections/specific_hide.txt ***
-www.indogamers.com###IklanIDGS_popup
+! semprot.com
+46.166.167.16##div[class^="semprotnenenmontok_"]
+||gambar123.com/xf/trump/xyz_$domain=46.166.167.16
+! 
 awsubs.co###MarketGidComposite152074
 mangacanblog.com###adrtop
-movieon21.com###ads-pop
-www.frozenshop.com###banner0
+movie303.com,movieon21.com###ads-pop
 medanreview.com###banner_right_200w_wrapper
 www.fourlook.com###board_ads
 mangacanblog.com,www.sukamovie.id###btm_banner
-n21.tv,ns21.me###fbawah
+nonton33.tv###floating_banner_bot
 bioskop90.me###floating_banner_bottom
-indogamers.com###iklan_popup_expire
-komiku.net###my_popup
-komiku.net###my_popup_background
+nonton33.tv###floating_banner_tops
 detik.com###otp_banner
-www.urbanindo.com###sales-hanging-bar
-www.urbanindo.com###sales-hanging-barawsubs.co##.minipusat
 mangacanblog.com##.ad
 cermati.com##.ads-size-leaderboard
-hipwee.com##.ads-sticky-bottom
 dramaid.com##.ads_management
-tvonlinebola.com##.adsbottom
-tvonlinebola.com##.adstop
 n21.tv##.ban_empat
 www.kabargames.id##.banner-kiri
 diskon.com##.banner-middle
 kompasiana.com##.banner-top
 cgv.id##.banner-wrapper
-www.covesia.com##.banner300x250
-www.covesia.com##.banner650x80
-www.beritasatu.com##.bottom-ads-new
+covesia.com##.banner300x250
+covesia.com##.banner650x80
 kaskus.co.id##.bottom-frame
-medanreview.com##.google_ads_300_250
-www.covesia.com##.iklandetail
 kompas.com##.kcm__horizontal.kcm
 awsubs.co##.minipusat
 awsubs.co##.pusat728
@@ -239,13 +261,8 @@ awsubs.co##.pusat728
 21cineplex.com##.showcase2
 cermati.com##.sticky-banner
 emosijiwaku.com##.td-banner-bg.td-banner-wrap-full
-www.covesia.com##.topbanner
-kshowsubindo.org##a[href^="http://bit.ly/"]
-||nobartv.com/img/banner/*.gif$image
-||nobartv.net/img/banner/*.gif$image
-! semprot.com
-46.166.167.16##div[class^="semprotnenenmontok_"]
-||gambar123.com/xf/trump/xyz_$domain=46.166.167.16
+covesia.com##.topbanner
+kshowsubindo.org##a[href^="http://bit.ly/"] > img
 ! *** abid:sections/whitelist.txt ***
 @@||eramuslim.com^$generichide
 ! 
@@ -262,4 +279,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! kshowsubindo.org - Anti Adblock Script
 kshowsubindo.org#%#Object.defineProperty(window, 'iframepopupwidow', { get: function() { return; } });
-! Checksum: gD08SJiVDYtPTZMs2VARLg
+! Checksum: XNtvtmVz25yEeZzEJR6g9A
