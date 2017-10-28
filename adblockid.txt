@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201710272021
+! Version: 201710281929
 ! Title: AdBlockID
-! Last modified: 27 Oct 2017 20:21 UTC
+! Last modified: 28 Oct 2017 19:29 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -17,12 +17,12 @@
 -popads.php|
 .ads.controller.
 .ads.css
-.bid^$third-party
 .biz/iklan/
 .com/advs-
 .com/adx/
 .com/adx_
 .com/iklan/
+.com/promodisplay?
 .id/ads/$~object-subrequest
 .id/adv/
 .id/iklan/
@@ -35,12 +35,17 @@
 /adpan/
 /ads/assets/*
 /ads/iklan.
+/ads/promo_
 /ads/www/*
 /ads3.
 /adsterra.js|
 /adtrace2.js|
 /adv/iklan.
+/affiliate/promo-
+/affiliate/promo/*
 /ajs.php?
+/banner-atas1
+/banners/promo/*
 /bb17-iklan.
 /delivery/fl.
 /delivery/spc.
@@ -74,15 +79,48 @@
 /images_ads/
 /pagead/conversion.
 /pagead2.
+/promo-ads/*
+/promo/ad_
+/promo/ads/*
+/promo/affiframe.
+/promo/banners/*
+/promo300by250.
+/promo300x250.
+/promoAd.
+/promoads/*
+/promobuttonad.
+/promoloaddisplay?
+/promoredirect?*&campaign=*&zone=
+/PromosAds/*
+/promotion/geoip/*
+/promotions/ads.
+/promotions/ads/*
+/promotions/ads?
+/promotools.
+/promotools/*
+/promotools1.
 /pubads.
+/quads.
 /revenuehits.js|
 /SkinADkanan.
 /SkinADkiri.
+/textadspromo_
 /uploads/iklan/*
 /www/delivery/*
+://affiliate.$third-party
+://affiliates.$third-party
+://banner.$third-party
+://banners.$third-party
+://promo.$third-party
+_ad_promo2.
+_promo_ad/
 iklan-
 iklan-banner-
+||cacheserve.*/promodisplay/
+||cacheserve.*/promodisplay?
+||online.*/promoredirect?key=
 ||popads.net/pop.js^$important
+||serve.*/promoload?
 ! *** abid:sections/general_block_dimensions.txt ***
 -728x90.
 /120x600.
@@ -90,36 +128,123 @@ iklan-banner-
 /728x90.
 ! *** abid:sections/general_block_popup.txt ***
 ! *** abid:sections/general_hide.txt ***
+##a[href="http://www.an.web.id/"]
+! 
+###Ad728x90
+###AdBanner
+###AdBar
+###AdSense1
+###Box-Banner-ads
+###adSpot-promobox1
+###adSpot-promobox2
+###ad_netpromo
+###ad_promoAd
+###adpromo
 ###ads-pop
+###ads1
+###ads2
+###ads3
 ###ads_banner_left1
 ###ads_banner_right1
+###adsground
+###adv-placeholder
 ###advsidebar
+###article-ad
+###bottom_exclusive_ads
+###bottomads
 ###btm_banner-foot
+###desaiklan
+###dewiqq
+###dogear_promo
 ###fbanner
 ###fbawah
 ###fbbanner
+###floatingad
+###flowads
+###footer-adcont
 ###hbanner
 ###iklan
 ###iklan1
 ###iklan2
 ###iklan3
 ###iklan4
+###iklan_atas
+###iklanarea
+###iklanatas
+###iklanpersegi
+###livechat-eye-catcher
+###marketing-promo
 ###pbanner
+###popupwindow
+###post-ads
+###post-adsense-top-banner
+###post-bottom-ads
+###post-content-ad
+###post-page-ad
+###post-promo-ad
+###promo-ad
+###promoAds
+###promoFloatAd
+###promo_ads
+###quads-ad2
+###quads-ad2_widget
+###quads-ad4
+###srcadsurlblock
+###teaser2
+###teaser3
+###top_ad_full
+###tupiklan
+##.AdSense
+##.SectionAds
 ##.ad-banner
+##.ad-in-post
+##.ad-promo
+##.ad-unit
+##.adNetPromo
+##.ad_plus
+##.ad_poll
+##.ad_position
+##.ad_post
+##.ad_posttop
+##.ad_power
+##.ad_primary
+##.ad_primex
+##.ad_promo
+##.ad_promo1
+##.ad_unit
+##.adbanner
 ##.ads-300
 ##.ads-300x100
+##.ads-bottom-largeleaderboard
 ##.ads-box
+##.ads-pop
+##.ads-section
 ##.ads-sticky-bottom
 ##.ads-txt
 ##.ads-wrapper
+##.ads_728x90
+##.ads_top_promo
+##.adsbox
 ##.adsbygoogle
+##.adspace_300
 ##.adstop
+##.adtext01
+##.adunits.ads
+##.adwrap-widget
 ##.afs_ads
 ##.article-ad
 ##.article-ads
+##.bg-ads
+##.bgads
+##.bireklam
 ##.bottom-ads-new
 ##.cnAdzerkDiv
+##.content-ad
+##.forads
+##.gbcontent
 ##.google_ads_300_250
+##.gpcontent
+##.headads
 ##.idmuvi-afterplayer
 ##.idmuvi-floatbanner
 ##.idmuvi-topbanner
@@ -128,16 +253,38 @@ iklan-banner-
 ##.iklan
 ##.iklan1
 ##.iklan2
+##.iklan728
+##.iklan_semprot
+##.iklan_semprot_h
 ##.iklandetail
 ##.iklanhead
 ##.iklanleft
 ##.iklanmini
 ##.iklanright
+##.inline-ad
+##.insert-post-ads
+##.kotak_iklan
+##.mainads
+##.minipusat
 ##.pasangiklan
 ##.pengiklan
+##.post-ad
+##.post-ad3
+##.promo-ad
+##.promoAd
+##.promoAds
+##.pusat728
+##.quads-ad2
+##.quads-ad2_widget.first
+##.quads-ad4
+##.quads-location
 ##.right-ads
 ##.right-ads2
 ##.right-adsense
+##.sam-ad
+##.sam_ad
+##.simple_ads_manager_block_widget
+##.simple_advert
 ##.sponsor_ads
 ##.td-a-rec-id-custom_ad_1
 ##.td-a-rec-id-custom_ad_2
@@ -145,6 +292,12 @@ iklan-banner-
 ##.td-a-rec-id-custom_ad_4
 ##.td-a-rec-id-custom_ad_5
 ##.td-adspot-title
+##.td-header-ad-wrap
+##.text-ad
+##.text_ad
+##.top-ads
+##.topadsense
+##.widget-ad
 ##.ytp-ad-progress-list
 ##a[href^="http://pubads.g.doubleclick.net/"]
 ##div[id^="crt-"][style]
@@ -180,11 +333,14 @@ iklan-banner-
 ||props.id^$third-party
 ||publish.web.id^$third-party
 ||sascdn.com^$third-party
+||sedoparking.com^$third-party
 ||sitti.co.id^$third-party
+||spotx.tv^$third-party
 ||syndication.exdynsrv.com^$third-party
 ||tapad.com^$third-party
 ! *** abid:sections/thirdparty.txt ***
-||bp.blogspot.com^$image,domain=123drakor.com|bioskopgalaxy21.com|bioskopkeren.ws|bolehnonton.net|cinemamovie365.com|drakorindo.co|dramaid.com|dramakorea.web.id|filmbagus21.space|kombatch.com|kshowsubindo.org|movie76.net|movieon21.com|neumanga.tv|nonton.club|nonton33.tv|nontondrama.me|nontonfilm21.club|satujiwa.org|smallencode.com|sukamovie.mobi
+||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopgalaxy21.com|bioskopkeren.ws|bolehnonton.net|cinemamovie365.com|drakorindo.co|dramaid.com|dramakorea.web.id|filmbagus21.space|kombatch.com|kshowsubindo.org|movie303.com|movie76.net|movieon21.com|neumanga.tv|nonton.club|nonton33.tv|nontondrama.me|nontonfilm21.club|nontonmovie33.net|satujiwa.org|smallencode.com|sukamovie.mobi
+||imgur.com/*.gif$image,domain=nontonanime.id
 ! 
 ||45.76.146.8^$third-party
 ||agenjudionline.in^$third-party
@@ -215,13 +371,10 @@ iklan-banner-
 ||film-ganool.co/wp-content/uploads/*/*/*.gif$image
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
 ||hotmovie21.com/wp-content/uploads/*/*/*.gif
-||imgur.com/*.gif$image,domain=nontonanime.id
 ||kshowsubindo.org/wp-content/plugins/cm-pop-up-banners/
 ||lk21.co/assets/*.gif
 ||lk21.fun/wp-content/uploads/*/*/*.gif
 ||modifikasi.com/images/banner/
-! ThirdParty juga
-||bp.blogspot.com^$image,domain=movie303.com|nontonmovie33.net
 ||movieon21.com/wp-content/uploads/*.gif
 ||nobartv.com/img/banner/*.gif$image
 ||nobartv.net/img/banner/*.gif$image
@@ -256,6 +409,7 @@ covesia.com##.banner650x80
 kaskus.co.id##.bottom-frame
 kompas.com##.kcm__horizontal.kcm
 awsubs.co##.minipusat
+kontan.co.id##.pad-r.pad-l.pad-10
 awsubs.co##.pusat728
 21cineplex.com##.showcase
 21cineplex.com##.showcase2
@@ -265,18 +419,12 @@ covesia.com##.topbanner
 kshowsubindo.org##a[href^="http://bit.ly/"] > img
 ! *** abid:sections/whitelist.txt ***
 @@||eramuslim.com^$generichide
+@@||mivo.com^$generichide
 ! 
 ! Adblock Notify plugin https://themeisle.com/plugins/adblock-notify/
 mangaindo.web.id#@##adsense
 ! 
-! mivo.com - Anti Adblock Script
-! https://github.com/AdguardTeam/AdguardFilters/issues/6872
-/rmp-blockadblock.js$domain=mivo.com
-! 
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! 
-! kshowsubindo.org - Anti Adblock Script
-kshowsubindo.org#%#Object.defineProperty(window, 'iframepopupwidow', { get: function() { return; } });
-! Checksum: XNtvtmVz25yEeZzEJR6g9A
+! Checksum: IlD1QRRyB+L5bmne3+7GTg
