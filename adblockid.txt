@@ -1,7 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201710281929
+! Version: 201710300406
 ! Title: AdBlockID
-! Last modified: 28 Oct 2017 19:29 UTC
+! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
+! Last modified: 30 Oct 2017 04:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -17,7 +18,9 @@
 -popads.php|
 .ads.controller.
 .ads.css
+.ads1-
 .biz/iklan/
+.com/ads-
 .com/advs-
 .com/adx/
 .com/adx_
@@ -33,20 +36,27 @@
 .tv/iklan/
 /ad_status.
 /adpan/
+/ads-banner
 /ads/assets/*
 /ads/iklan.
+/ads/js/*
 /ads/promo_
 /ads/www/*
 /ads3.
+/adsense/*
+/adserver/*
 /adsterra.js|
+/adstyle.
 /adtrace2.js|
 /adv/iklan.
 /affiliate/promo-
 /affiliate/promo/*
 /ajs.php?
 /banner-atas1
+/banner.php
 /banners/promo/*
 /bb17-iklan.
+/delivery/afr.
 /delivery/fl.
 /delivery/spc.
 /dfp-ads.
@@ -67,7 +77,9 @@
 /files/ad/*
 /files/ads-
 /files/ads/*
+/floatads.
 /generic.ads.
+/googlead.
 /googleads-
 /googleads.
 /googleads/*
@@ -77,6 +89,7 @@
 /iklancpm.
 /images/iklan/*
 /images_ads/
+/jsadservingsp.
 /pagead/conversion.
 /pagead2.
 /promo-ads/*
@@ -102,6 +115,7 @@
 /pubads.
 /quads.
 /revenuehits.js|
+/show_ads.js
 /SkinADkanan.
 /SkinADkiri.
 /textadspromo_
@@ -124,8 +138,14 @@ iklan-banner-
 ! *** abid:sections/general_block_dimensions.txt ***
 -728x90.
 /120x600.
+/300x250_
 /468x60.
 /728x90.
+/728x90_
+160x600.png|
+_300x250.
+_468x90.
+_720x90.
 ! *** abid:sections/general_block_popup.txt ***
 ! *** abid:sections/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
@@ -155,10 +175,13 @@ iklan-banner-
 ###btm_banner-foot
 ###desaiklan
 ###dewiqq
+###divAdLeft
+###divAdRight
 ###dogear_promo
 ###fbanner
 ###fbawah
 ###fbbanner
+###floatads
 ###floatingad
 ###flowads
 ###footer-adcont
@@ -196,10 +219,16 @@ iklan-banner-
 ###tupiklan
 ##.AdSense
 ##.SectionAds
+##.a-ad
 ##.ad-banner
+##.ad-block
+##.ad-cell
 ##.ad-in-post
+##.ad-placement
 ##.ad-promo
+##.ad-spacer
 ##.ad-unit
+##.ad-wrap
 ##.adNetPromo
 ##.ad_plus
 ##.ad_poll
@@ -219,14 +248,22 @@ iklan-banner-
 ##.ads-box
 ##.ads-pop
 ##.ads-section
+##.ads-small
 ##.ads-sticky-bottom
+##.ads-top
 ##.ads-txt
 ##.ads-wrapper
+##.ads160-600
+##.ads300
+##.ads300-250
+##.ads300_250-widget
+##.ads_300
 ##.ads_728x90
 ##.ads_top_promo
 ##.adsbox
 ##.adsbygoogle
 ##.adspace_300
+##.adss
 ##.adstop
 ##.adtext01
 ##.adunits.ads
@@ -237,9 +274,11 @@ iklan-banner-
 ##.bg-ads
 ##.bgads
 ##.bireklam
+##.block-ad
 ##.bottom-ads-new
 ##.cnAdzerkDiv
 ##.content-ad
+##.content_ads
 ##.forads
 ##.gbcontent
 ##.google_ads_300_250
@@ -265,7 +304,9 @@ iklan-banner-
 ##.insert-post-ads
 ##.kotak_iklan
 ##.mainads
+##.middle-ads
 ##.minipusat
+##.mvp_ad_widget
 ##.pasangiklan
 ##.pengiklan
 ##.post-ad
@@ -273,6 +314,7 @@ iklan-banner-
 ##.promo-ad
 ##.promoAd
 ##.promoAds
+##.pub_300x250
 ##.pusat728
 ##.quads-ad2
 ##.quads-ad2_widget.first
@@ -283,6 +325,7 @@ iklan-banner-
 ##.right-adsense
 ##.sam-ad
 ##.sam_ad
+##.sidebar-box-ads
 ##.simple_ads_manager_block_widget
 ##.simple_advert
 ##.sponsor_ads
@@ -291,6 +334,7 @@ iklan-banner-
 ##.td-a-rec-id-custom_ad_3
 ##.td-a-rec-id-custom_ad_4
 ##.td-a-rec-id-custom_ad_5
+##.td-ad
 ##.td-adspot-title
 ##.td-header-ad-wrap
 ##.text-ad
@@ -298,55 +342,83 @@ iklan-banner-
 ##.top-ads
 ##.topadsense
 ##.widget-ad
+##.widget_better-ads
 ##.ytp-ad-progress-list
 ##a[href^="http://pubads.g.doubleclick.net/"]
+##div[id^="ads300_250-widget"]
+##div[id^="advads-"]
 ##div[id^="crt-"][style]
 ##div[id^="div-gpt-ad"]
 ! *** abid:sections/adservers.txt ***
 ||accesstrade.co.id^$third-party
+||ad-stir.com^$third-party
 ||ad.adflazz.com^$third-party
+||addesigner.com^$third-party
 ||adplus.co.id^$third-party
 ||adpop-1.com^$third-party
+||adreactor.com^$third-party
 ||adscpm.site^$third-party
 ||adskom.com^$third-party
+||adsrvr.org^$third-party
 ||adstars.co.id^$third-party
 ||adtech.de^$third-party
+||advertising.com^$third-party
+||adzerk.net^
+||amazon-adsystem.com^$third-party
 ||baliadv.com^$third-party
 ||brand.ad^$third-party
+||brealtime.com^$third-party
+||btrll.com^$third-party
+||casalemedia.com^$third-party
 ||clickmedia.co.id^$third-party
 ||creativecdn.com^$third-party
 ||effectivemeasure.net^$third-party
+||exponential.com^$third-party
+||extend.tv^$third-party
 ||forumiklan.com^$third-party
+||ftjcfx.com^$third-party
 ||genieessp.com^$third-party
+||go2speed.org^$third-party
+||gscontxt.net^$third-party
 ||gudangbanner.com^$third-party
 ||halal.ad^$third-party
 ||iklanads.com^$third-party
 ||iklanbogor.com^$third-party
 ||iklancpm.files.wordpress.com^$third-party
+||indexww.com^$third-party
 ||innity.net^$third-party
+||jsc.mgid.com^$third-party
 ||lokeriklan.com^$third-party
 ||masteriklan.net^$third-party
 ||mellowads.com^$third-party
 ||mookie1.com^$third-party
+||nexac.com^$third-party
 ||pasangiklan.com^$third-party
 ||pippio.com^$third-party
 ||props.id^$third-party
 ||publish.web.id^$third-party
+||revsci.net^$third-party
+||rubiconproject.com^$third-party
 ||sascdn.com^$third-party
 ||sedoparking.com^$third-party
+||sharethrough.com^$third-party
 ||sitti.co.id^$third-party
+||smaato.net^$third-party
 ||spotx.tv^$third-party
 ||syndication.exdynsrv.com^$third-party
+||taboola.com^$third-party
 ||tapad.com^$third-party
+||turn.com^$third-party
 ! *** abid:sections/thirdparty.txt ***
-||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopgalaxy21.com|bioskopkeren.ws|bolehnonton.net|cinemamovie365.com|drakorindo.co|dramaid.com|dramakorea.web.id|filmbagus21.space|kombatch.com|kshowsubindo.org|movie303.com|movie76.net|movieon21.com|neumanga.tv|nonton.club|nonton33.tv|nontondrama.me|nontonfilm21.club|nontonmovie33.net|satujiwa.org|smallencode.com|sukamovie.mobi
-||imgur.com/*.gif$image,domain=nontonanime.id
+||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopgalaxy21.com|bioskopkeren.ws|bolehnonton.net|cinemamovie365.com|drakorindo.co|dramaid.com|dramakorea.web.id|idbioskop.com|kombatch.com|kshowsubindo.org|layar-kaca.com|movie303.com|movie76.net|movieon21.com|neumanga.tv|nonton33.tv|nontonbioskop.online|nontondrama.me|nontonfilm21.club|nontonin.com|nontonmovie33.net|satujiwa.org|senimovies.net|smallencode.com|sukamovie.mobi
+||imgur.com/*.gif$image,domain=nontonanime.id|nontoncinema.org|senimovies.net
 ! 
 ||45.76.146.8^$third-party
 ||agenjudionline.in^$third-party
 ||bidder.criteo.com^$third-party
 ||cas.criteo.com^$third-party
 ||cmcpoker.info^$third-party
+||cpmstar.com/view.aspx
 ||entitlements.jwplayer.com^$third-party
 ||rajaqq.info^$third-party
 ||rtax.criteo.com^$third-party
@@ -363,23 +435,38 @@ iklan-banner-
 ||static.criteo.net/images^$third-party
 ||static.criteo.net/js/duplo^$third-party
 ||ubloger.com^$third-party
+||viglink.com/images/pixel.gif
 ! *** abid:sections/specific_block.txt ***
-||bioskop168.co/wp-content/uploads/*/*/*.gif
+||bioskop168.co/wp-content/uploads/*.gif$image
 ||bioskop21.online/wp-content/uploads/*.gif$image
-||dewanontons.com/wp-content/uploads/*/*/*.gif
+||dewanontons.com/wp-content/uploads/*.gif$image
 ||eramuslim.com/banners
-||film-ganool.co/wp-content/uploads/*/*/*.gif$image
+||film-ganool.co/wp-content/uploads/*.gif$image
+||filmapik.me/wp-content/uploads/*.gif
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
-||hotmovie21.com/wp-content/uploads/*/*/*.gif
+||harianjogja.com/banner/
+||hotabis.com/wp-content/uploads/*.gif$image
+||hotmovie21.com/wp-content/uploads/*.gif$image
+||idbioskop.com/wp-content/uploads/*.gif$image
+||idbioskop.com/wp-content/uploads/*/*/300-x-250.png
+||idbioskop.com/wp-content/uploads/*/*/ad-150x300-website.jpg
+||indotelko.com/images/banner/$image
 ||kshowsubindo.org/wp-content/plugins/cm-pop-up-banners/
 ||lk21.co/assets/*.gif
-||lk21.fun/wp-content/uploads/*/*/*.gif
+||lk21.fun/wp-content/uploads/*.gif
+||mediaindonesia.com/files/banners/$image
 ||modifikasi.com/images/banner/
-||movieon21.com/wp-content/uploads/*.gif
+||movieon21.com/wp-content/uploads/*.gif$image
+||n21.tv/wp-content/uploads/*.gif
 ||nobartv.com/img/banner/*.gif$image
 ||nobartv.net/img/banner/*.gif$image
-||nontonxxi.co/wp-content/uploads/*/*/*.gif
-||ns21.me/wp-content/uploads/*/*/*.gif
+||nontoncinema.org/wp-content/uploads/*.gif$image
+||nontonindrama.com/oke/*.gif$image
+||nontonxxi.co/wp-content/uploads/*.gif$image
+||ns21.me/wp-content/uploads/*.gif$image
+||senimovies.net/wp-content/uploads/*.gif$image
+||solopos.com/banner/
+||sukamovie.id/wp-content/uploads/*.gif
 ! *** abid:sections/specific_block_popup.txt ***
 ! *** abid:sections/specific_hide.txt ***
 ! semprot.com
@@ -390,33 +477,50 @@ awsubs.co###MarketGidComposite152074
 mangacanblog.com###adrtop
 movie303.com,movieon21.com###ads-pop
 medanreview.com###banner_right_200w_wrapper
-www.fourlook.com###board_ads
-mangacanblog.com,www.sukamovie.id###btm_banner
+fourlook.com###board_ads
+mangacanblog.com,sukamovie.id###btm_banner
 nonton33.tv###floating_banner_bot
-bioskop90.me###floating_banner_bottom
+bioskop90.me,filmapik.me###floating_banner_bottom
 nonton33.tv###floating_banner_tops
 detik.com###otp_banner
 mangacanblog.com##.ad
+ftloverz.net##.addads
 cermati.com##.ads-size-leaderboard
 dramaid.com##.ads_management
-n21.tv##.ban_empat
-www.kabargames.id##.banner-kiri
+! n21.tv##.ban_empat
+senimovies.net###bottom_banner
+lytogame.com###lytoads
+bola.net###top_leaderboard
+otosia.com###v5-leaderboard
+kapanlagi.com###v5-marcommpromotion
+kapanlagi.com###v5-marcommpromotion2
+otosia.com###v5-showcase1
+kapanlagi.com,otosia.com###v5-showcase2
+kapanlagi.com###v8-leaderboard
+senimovies.net##.ad-float-image
+mangaku.web.id##.adv
+kabargames.id##.banner-kiri
 diskon.com##.banner-middle
 kompasiana.com##.banner-top
 cgv.id##.banner-wrapper
 covesia.com##.banner300x250
 covesia.com##.banner650x80
 kaskus.co.id##.bottom-frame
+teknodiary.com##.googlepublisherads
 kompas.com##.kcm__horizontal.kcm
 awsubs.co##.minipusat
 kontan.co.id##.pad-r.pad-l.pad-10
 awsubs.co##.pusat728
 21cineplex.com##.showcase
 21cineplex.com##.showcase2
+mydramalist.com##.spnsr-top
+mydramalist.com##.spnsr_right
 cermati.com##.sticky-banner
 emosijiwaku.com##.td-banner-bg.td-banner-wrap-full
 covesia.com##.topbanner
 kshowsubindo.org##a[href^="http://bit.ly/"] > img
+nontonbioskop.online##a[href^="https://goo.gl/"] > img
+nontonbioskop.online##a[rel="Nofollow"] > img[height]
 ! *** abid:sections/whitelist.txt ***
 @@||eramuslim.com^$generichide
 @@||mivo.com^$generichide
@@ -427,4 +531,43 @@ mangaindo.web.id#@##adsense
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: IlD1QRRyB+L5bmne3+7GTg
+! *** abid:sections/resource-abuse.txt ***
+! AdBlockID -- Resource-abuse filters
+! 
+! To foil sites potentially abusing CPU/bandwidth resources without informed
+! consent. Any such resource-abuse scripts MUST be opt-in, with complete
+! informed consent from the visitor.
+||2giga.link/js/hive.js
+||api.inwemo.com^$third-party
+||azvjudwr.info^$third-party
+||cnhv.co^$third-party
+||coin-have.com^$third-party
+||coin-hive.com^$third-party
+||coinblind.com^
+||coinerra.com^$third-party
+||coinhive.com^$third-party
+||coinnebula.com^
+||crypto-loot.com^$third-party
+||gus.host/coins.js
+||jroqvbvw.info^$third-party
+||jsecoin.com^$third-party
+||jyhfuqoh.info^$third-party
+||kdowqlpt.info^$third-party
+||kisshentai.net/Content/js/c-hive.js
+||kiwifarms.net/js/Jawsh/xmr/xmr.min.js
+||minemytraffic.com^$third-party
+||miner.pr0gramm.com/cryptonight-worker.js
+||miner.pr0gramm.com^$third-party
+||miner.pr0gramm.com^$websocket
+||minero-proxy-*.sh^$third-party
+||minero-proxy-01.now.sh^$third-party
+||minero-proxy-02.now.sh^$third-party
+||minero-proxy-03.now.sh^$third-party
+||minero.pw^$third-party
+||ppoi.org^$third-party
+||projectpoi.com^$third-party
+||webmine.cz^$third-party
+||xbasfbno.info^$third-party
+! https://github.com/hoshsadiq/adblock-nocoin-list/
+.info^$script,third-party,domain=oload.info|oload.tv|openload.co|streamango.com|streamcherry.com
+! Checksum: JsAyHnt1C3Slr1d/EmPCtQ
