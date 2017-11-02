@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711010742
+! Version: 201711020451
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Nov 2017 07:42 UTC
+! Last modified: 02 Nov 2017 04:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -51,10 +51,12 @@
 /ads_controller.
 /adsense/*
 /adserver/*
+/adservice.
 /adsterra.js|
 /adstyle.
 /adtrace2.js|
 /adv/iklan.
+/advert/*
 /affiliate/promo-
 /affiliate/promo/*
 /ajs.php?
@@ -128,12 +130,14 @@
 /pubads.
 /quads.
 /revenuehits.js|
+/securepubads.
 /show_ads.js
 /SkinADkanan.
 /SkinADkiri.
 /textadspromo_
 /u?pub=
 /uploads/iklan/*
+/videojs.ads.
 /www/delivery/*
 ://affiliate.$third-party
 ://affiliates.$third-party
@@ -184,6 +188,7 @@ _720x90.
 ###ads4
 ###ads_banner_left1
 ###ads_banner_right1
+###adsense
 ###adsground
 ###adv-placeholder
 ###advsidebar
@@ -308,6 +313,7 @@ _720x90.
 ##.google_ads_300_250
 ##.gpcontent
 ##.headads
+##.header-ads
 ##.idmuvi-afterplayer
 ##.idmuvi-floatbanner
 ##.idmuvi-topbanner
@@ -335,6 +341,9 @@ _720x90.
 ##.mvp_ad_widget
 ##.pasangiklan
 ##.pengiklan
+##.player-ads-left
+##.player-ads-top
+##.player-ads-top-1
 ##.post-ad
 ##.post-ad3
 ##.promo-ad
@@ -375,6 +384,8 @@ _720x90.
 ##.top-adbox
 ##.top-ads
 ##.topadsense
+##.video-content-bottom-ads
+##.video-content-top-ads
 ##.widget-ad
 ##.widget_better-ads
 ##.ytp-ad-progress-list
@@ -383,12 +394,14 @@ _720x90.
 ##div[id^="advads-"]
 ##div[id^="crt-"][style]
 ##div[id^="div-gpt-ad"]
+##div[id^="google_ads_iframe_"]
+##iframe[id^="google_ads_iframe"]
 ! *** abid:sections/adservers.txt ***
 ||accesstrade.co.id^$third-party
 ||ad-stir.com^$third-party
 ||ad.adflazz.com^$third-party
 ||addesigner.com^$third-party
-||adnxs.com^
+||adnxs.com^$third-party
 ||adplus.co.id^$third-party
 ||adpop-1.com^$third-party
 ||adreactor.com^$third-party
@@ -399,8 +412,8 @@ _720x90.
 ||adtech.de^$third-party
 ||adtechus.com^$third-party
 ||advertising.com^$third-party
-||adzerk.net^
 ||amazon-adsystem.com^$third-party
+||aniview.com^$third-party
 ||baliadv.com^$third-party
 ||bnserving.com^$third-party
 ||brand.ad^$third-party
@@ -443,6 +456,7 @@ _720x90.
 ||pippio.com^$third-party
 ||props.id^$third-party
 ||publish.web.id^$third-party
+||revcontent.com^$third-party
 ||revsci.net^$third-party
 ||rubiconproject.com^$third-party
 ||sascdn.com^$third-party
@@ -457,6 +471,7 @@ _720x90.
 ||tapad.com^$third-party
 ||tribalfusion.com^$third-party
 ||turn.com^$third-party
+||unrulymedia.com^$third-party
 ! *** abid:sections/thirdparty.txt ***
 ||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopgalaxy21.com|bioskopkeren.ws|bolehnonton.net|cinemamovie365.com|drakorindo.co|dramaid.com|dramakorea.web.id|film-drama.co|idbioskop.com|kombatch.com|kshowsubindo.org|layar-kaca.com|movie303.com|movie76.net|movieon21.com|neumanga.tv|nonton33.tv|nontonbioskop.online|nontondrama.me|nontonfilm21.club|nontonin.com|nontonmovie33.net|satujiwa.org|senimovies.net|smallencode.com|sukamovie.mobi
 ||imgur.com/*.gif$image,domain=nontonanime.id|nontoncinema.org|senimovies.net
@@ -507,6 +522,8 @@ _720x90.
 ||kshowsubindo.org/wp-content/plugins/cm-pop-up-banners/
 ||lk21.co/assets/*.gif
 ||lk21.fun/wp-content/uploads/*.gif
+||lkaca21.com/wp-content/uploads/*.gif$image
+||mahkotabola.org/wp-content/uploads/*.gif$image
 ||mediaindonesia.com/files/banners/$image
 ||modifikasi.com/images/banner/
 ||movieon21.com/wp-content/uploads/*.gif$image
@@ -515,6 +532,7 @@ _720x90.
 ||nobartv.net/img/banner/*.gif$image
 ||nontonbos.com/wp-content/uploads/*.gif$image
 ||nontoncinema.org/wp-content/uploads/*.gif$image
+||nontonfilmku.net/wp-content/uploads/*.gif$image
 ||nontonindrama.com/oke/*.gif$image
 ||nontonvip.com/wp-content/uploads/*.gif$image
 ||nontonxxi.co/wp-content/uploads/*.gif$image
@@ -522,8 +540,11 @@ _720x90.
 ||senimovies.net/wp-content/uploads/*.gif$image
 ||solopos.com/banner/
 ||sukamovie.id/wp-content/uploads/*.gif
+||wp.com/hotabis.com/wp-content/uploads/*.gif$image
 ! *** abid:sections/specific_block_popup.txt ***
 ! *** abid:sections/specific_hide.txt ***
+! whitelist
+inwepo.co,mastekno.com##.adsbygoogle
 ! semprot.com
 46.166.167.16##div[class^="semprotnenenmontok_"]
 ||gambar123.com/xf/trump/xyz_$domain=46.166.167.16
@@ -536,6 +557,7 @@ detik.com###banner_top_detail
 fourlook.com###board_ads
 senimovies.net###bottom_banner
 awsubs.co,mangacanblog.com,sukamovie.id###btm_banner
+carapedia.com###floating-banner
 nonton33.tv###floating_banner_bot
 166.62.27.230,bioskop90.me,filmapik.me###floating_banner_bottom
 nonton33.tv###floating_banner_tops
@@ -573,10 +595,12 @@ covesia.com##.banner650x80
 kaskus.co.id##.bottom-frame
 teknodiary.com##.googlepublisherads
 detik.com##.gtm_newsfeed_ads
+carapedia.com##.img-banner
 kompas.com##.kcm__horizontal.kcm
 awsubs.co##.minipusat
 detik.com##.newsfeed-ads
 kontan.co.id##.pad-r.pad-l.pad-10
+jadwaltelevisi.com##.promo-banner
 awsubs.co##.pusat728
 dramaqu.co##.rkads
 21cineplex.com##.showcase
@@ -595,6 +619,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:sections/whitelist.txt ***
 @@||cinemamkv.net^$generichide
 @@||eramuslim.com^$generichide
+@@||inwepo.co^$generichide
+@@||mastekno.com^$generichide
 @@||mivo.com^$generichide
 @@||sobatdrama.net^$generichide
 ! 
@@ -643,4 +669,4 @@ mangaindo.web.id#@##adsense
 ||xbasfbno.info^$third-party
 ! https://github.com/hoshsadiq/adblock-nocoin-list/
 .info^$script,third-party,domain=oload.info|oload.tv|openload.co|streamango.com|streamcherry.com
-! Checksum: jIj0pMjU29MftER63XBsBA
+! Checksum: IFQonttaWk1E9Fmz/KNOOw
