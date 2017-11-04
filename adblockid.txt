@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711040554
+! Version: 201711041046
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Nov 2017 05:54 UTC
+! Last modified: 04 Nov 2017 10:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -192,7 +192,6 @@ _300x250_
 _468x90.
 _720x90.
 _728x90-
-! *** abid:sections/general_block_popup.txt ***
 ! *** abid:sections/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
@@ -634,7 +633,6 @@ _728x90-
 ||solopos.com/banner/
 ||sukamovie.id/wp-content/uploads/*.gif
 ||wp.com/*/wp-content/uploads/*.gif$image,domain=etalasebisnis.com|hotabis.com
-! *** abid:sections/specific_block_popup.txt ***
 ! *** abid:sections/specific_hide.txt ***
 ! whitelist
 eramuslim.com,inwepo.co,mastekno.com##.adsbygoogle
@@ -732,6 +730,21 @@ covesia.com##.topbanner
 inilah.com##.wb-300x250
 bioskopfilm21.net,kshowsubindo.org,movie303.com##a[href^="http://bit.ly/"] > img
 indoxxi.info##a[href^="https://goo.gl/"] > img
+! *** abid:sections/specific_addon.txt ***
+||bp.blogspot.com/*.gif^$image,domain=bioskop.vip|no99.me
+||imgur.com/*.gif$image,domain=bioskopskype.com|nonton33.tv
+! 
+-100x500.
+-160x600.
+-85x445.
+-976x70.
+-980x90.
+/300-x-250-
+bioskop55.me###floating_banner_bottom
+||bioskop55.me/wp-content/uploads/*.gif$image
+||no99.me/wp-content/uploads/*.gif$image
+||nonton33.tv/wp-content/uploads/*.gif$image
+||serunonton.com/wp-content/uploads/*.gif$image
 ! *** abid:sections/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:sections/resource_abuse.txt ***
@@ -783,4 +796,4 @@ mangaindo.web.id#@##adsense
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: MhOEovLefBvoT61aG0/igw
+! Checksum: Ex410g+BL7CD2aO4jnMq6w
