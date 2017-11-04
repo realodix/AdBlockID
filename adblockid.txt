@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711041933
+! Version: 201711041955
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Nov 2017 19:33 UTC
+! Last modified: 04 Nov 2017 19:55 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -177,9 +177,11 @@ iklan-banner-
 -728x90.
 /120x600.
 /300-x-250.
+/300x250.
 /300x250/*
 /300x250_
 /468x60.
+/728x90-
 /728x90.
 /728x90/*
 /728x90_
@@ -193,8 +195,6 @@ _300x250_
 _468x90.
 _720x90.
 _728x90-
-/728x90-
-/300x250.
 ! *** abid:sections/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
@@ -318,6 +318,7 @@ _728x90-
 ##.ad_promo1
 ##.ad_unit
 ##.adbanner
+##.adinjwidget
 ##.adrotate_widgets
 ##.ads-1
 ##.ads-160
@@ -694,16 +695,20 @@ covesia.com##.topbanner
 inilah.com##.wb-300x250
 kshowsubindo.org##a[href^="http://bit.ly/"] > img
 ! *** abid:sections/specific_addon.txt ***
-indoxxi.info##a[href^="https://goo.gl/"] > img
-movie303.com##a[href^="http://bit.ly/"] > img
-||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskop.vip|bioskopkeren.ws|bolehnonton.net|drakorindo.co|layar-kaca.com|movie303.com|movieon21.com|no99.me|nonton33.tv|nontonfilm21.club|nontonfilm21.top|nontonin.com|senimovies.net|sukamovie.mobi
-||imgur.com/*.gif$image,domain=bioskopskype.com|nonton33.tv|nontonanime.id|nontoncinema.org|senimovies.net
+indoxxi.info,sunmovie21.com##a[href^="https://goo.gl/"] > img
+movie303.com,sunmovie21.com##a[href^="http://bit.ly/"] > img
+||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskop.vip|bioskopkeren.ws|bolehnonton.net|cinema88.net|drakorindo.co|layar-kaca.com|movie303.com|movieon21.com|no99.me|nonton.film|nonton33.tv|nontonfilm21.club|nontonfilm21.top|nontonin.com|senimovies.net|sukamovie.mobi
+||imgur.com/*.gif$image,domain=bioskopskype.com|juaramovie.com|nonton33.tv|nontonanime.id|nontoncinema.org|senimovies.net
 ! 
 -100x500.
+-300x300.
 -85x445.
 -976x70.
 -980x90.
 /300-x-250-
+/395-x-60.
+/ad-150x300
+_250x250.
 bioskop55.me###floating_banner_bottom
 bioskopfilm21.net##a[href^="http://bit.ly/"] > img
 filmapik.me###floating_banner_bottom
@@ -720,14 +725,17 @@ sukamovie.id###btm_banner
 ||bioskop47.com/wp-content/uploads/*.gif$image
 ||bioskop55.me/wp-content/uploads/*.gif$image
 ||bioskop855.net/wp-content/uploads/*.gif$image
-||cinemaindo.*/wp-content/uploads/*.gif$image
+||cinemaindo.pro/wp-content/uploads/*.gif$image
 ||dewanontons.com/wp-content/uploads/*.gif$image
 ||film-ganool.co/wp-content/uploads/*.gif$image
 ||filmapik.me/wp-content/uploads/*.gif
+||filmnonton.com/static/themes/default/img/banner/*.gif$image
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
 ||hotmovie21.com/wp-content/uploads/*.gif$image
+||indexmovie.me/assets/*.gif$image
 ||indo168.online/wp-content/uploads/*.gif$image
 ||indocinema21.com/banner/*.gif$image
+||juaramovie.com/wp-content/uploads/*.gif$image
 ||lk21.co/assets/*.gif
 ||lk21.fun/wp-content/uploads/*.gif
 ||lkaca21.com/wp-content/uploads/*.gif$image
@@ -735,7 +743,6 @@ sukamovie.id###btm_banner
 ||movieon21.com/wp-content/uploads/*.gif$image
 ||n21.tv/wp-content/uploads/*.gif
 ||no99.me/wp-content/uploads/*.gif$image
-
 ||nobartv.net/img/banner/*.gif$image
 ||nonton33.tv/wp-content/uploads/*.gif$image
 ||nontonbos.com/wp-content/uploads/*.gif$image
@@ -748,6 +755,9 @@ sukamovie.id###btm_banner
 ||senimovies.net/wp-content/uploads/*.gif$image
 ||serunonton.com/wp-content/uploads/*.gif$image
 ||sukamovie.id/wp-content/uploads/*.gif
+||wp.com/*/wp-content/uploads/*.gif$image,domain=mvstreaming.com|nontonmovie.me
+! 
+@@||mvstreaming.com^$generichide
 ! *** abid:sections/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:sections/resource_abuse.txt ***
@@ -799,4 +809,4 @@ mangaindo.web.id#@##adsense
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: X1owVHJBdH5lXSvStag+ng
+! Checksum: liC3I/CwzI11xk1EuBoomQ
