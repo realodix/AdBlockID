@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711050637
+! Version: 201711060509
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Nov 2017 06:37 UTC
+! Last modified: 06 Nov 2017 05:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -11,6 +11,7 @@
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
 ! *** abid:sections/general_block.txt ***
+-ads.gif
 -ads/assets/
 -iklan.gif|
 -iklan.jpg|
@@ -36,6 +37,9 @@
 /adaptvadplayer.
 /ados.js
 /adpan/
+/ads-
+/ads-01.
+/ads-02.
 /ads-banner
 /ads-img/*
 /ads.htm
@@ -195,6 +199,20 @@ _300x250_
 _468x90.
 _720x90.
 _728x90-
+! 
+! Mandiri
+-100x500.
+-300x300.
+-468-x-60-
+-468-x-60.
+-790-90.
+-85x445.
+-976x70.
+-980x90.
+/300-x-250-
+/395-x-60.
+/ad-150x300
+_250x250.
 ! *** abid:sections/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
@@ -286,6 +304,7 @@ _728x90-
 ###tupiklan
 ##.AdSense
 ##.Ads-container
+##.SC_TBlock
 ##.SectionAds
 ##.a-ad
 ##.ad-banner
@@ -460,8 +479,9 @@ _728x90-
 ##.widget-ad
 ##.widget_better-ads
 ##.ytp-ad-progress-list
-##[href^="http://bs.serving-sys.com/"]
+##a[href^="http://bs.serving-sys.com/"]
 ##a[href^="http://pubads.g.doubleclick.net/"]
+##a[href^="http://server.cpmstar.com/click.aspx?poolid="]
 ##div[id^="ads300_250-widget"]
 ##div[id^="advads-"]
 ##div[id^="crt-"][style]
@@ -469,11 +489,14 @@ _728x90-
 ##div[id^="google_ads_iframe_"]
 ##div[id^="google_dfp_"]
 ##iframe[id^="google_ads_iframe"]
+
 ! *** abid:sections/adservers.txt ***
 ||accesstrade.co.id^$third-party
 ||ad-stir.com^$third-party
 ||ad.adflazz.com^$third-party
+||adap.tv^$~object-subrequest,third-party
 ||addesigner.com^$third-party
+||adexchangetracker.com^$third-party
 ||adform.net^$third-party
 ||adlooxtracking.com^$third-party
 ||adnxs.com^$third-party
@@ -487,6 +510,7 @@ _728x90-
 ||adsniper.ru^$third-party
 ||adsrvr.org^$third-party
 ||adstars.co.id^$third-party
+||adtdp.com^$third-party
 ||adtech.de^$third-party
 ||adtechus.com^$third-party
 ||advertising.com^$third-party
@@ -498,12 +522,15 @@ _728x90-
 ||bnserving.com^$third-party
 ||brand.ad^$third-party
 ||brealtime.com^$third-party
+||brightonclick.com^$third-party
 ||btrll.com^$third-party
+||buzzadnetwork.com^$third-party
 ||casalemedia.com^$third-party
 ||clickmedia.co.id^$third-party
 ||collective-media.net^$third-party
 ||contextweb.com^$third-party
 ||creativecdn.com^$third-party
+||dubijsirwtwq.com^$third-party
 ||effectivemeasure.net^$third-party
 ||exponential.com^$third-party
 ||extend.tv^$third-party
@@ -531,16 +558,21 @@ _728x90-
 ||lkqd.net^$third-party
 ||lokeriklan.com^$third-party
 ||masteriklan.net^$third-party
+||maxonclick.com^$third-party
 ||mellowads.com^$third-party
 ||ml314.com^$third-party
 ||moatads.com^$third-party
 ||mookie1.com^$third-party
 ||nexac.com^$third-party
 ||nexage.com^$third-party
+||onclickprediction.com^$third-party
 ||pasangiklan.com^$third-party
 ||pippio.com^$third-party
+||predictiondisplay.com^$third-party
+||predictivadnetwork.com^$third-party
 ||props.id^$third-party
 ||publish.web.id^$third-party
+||puserving.com^$third-party
 ||revcontent.com^$third-party
 ||revsci.net^$third-party
 ||rubiconproject.com^$third-party
@@ -549,6 +581,7 @@ _728x90-
 ||sharethrough.com^$third-party
 ||sitescout.com^$third-party
 ||sitti.co.id^$third-party
+||sjtevvoviqhe.com^$third-party
 ||smaato.net^$third-party
 ||snfqpqyecdrb.com^$third-party
 ||spotx.tv^$third-party
@@ -562,15 +595,18 @@ _728x90-
 ||tribalfusion.com^$third-party
 ||turn.com^$third-party
 ||unrulymedia.com^$third-party
+||venturead.com^$third-party
 ||vertamedia.com^$third-party
 ! *** abid:sections/thirdparty.txt ***
 ||bp.blogspot.com/*.gif^$image,domain=dramaid.com|dramakorea.web.id|film-drama.co|kombatch.com|kshowsubindo.org|neumanga.tv|nontondrama.me|satujiwa.org|smallencode.com
+||imgur.com/*.gif$image,domain=mangashiro.net
 ! 
 ||45.76.146.8^$third-party
 ||agenjudionline.in^$third-party
 ||bidder.criteo.com^$third-party
 ||cas.criteo.com^$third-party
 ||cmcpoker.info^$third-party
+||cpmstar.com/cached/
 ||cpmstar.com/view.aspx
 ||entitlements.jwplayer.com^$third-party
 ||rajaqq.info^$third-party
@@ -595,6 +631,7 @@ _728x90-
 ||hotabis.com/wp-content/uploads/*.gif$image
 ||indotelko.com/images/banner/$image
 ||kabar47.com/wp-content/uploads/*.gif$image
+||komiku.net/wp-content/uploads/*.gif$image
 ||kshowsubindo.org/wp-content/plugins/cm-pop-up-banners/
 ||liputan46.com/wp-content/uploads/*.gif$image
 ||mahkotabola.org/wp-content/uploads/*.gif$image
@@ -644,7 +681,8 @@ medanreview.com###banner_right_200w_wrapper
 detik.com###banner_top_detail
 fourlook.com###board_ads
 mobilwow.com###bottombanner
-awsubs.co,mangacanblog.com###btm_banner
+awsubs.co,mangacanblog.com,pecintakomik.com###btm_banner
+komiku.net###floatads3
 carapedia.com###floating-banner
 166.62.27.230###floating_banner_bottom
 grid.id###head-banner-ads
@@ -702,25 +740,15 @@ movie303.com,sunmovie21.com##a[href^="http://bit.ly/"] > img
 ||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskop.vip|bioskopkeren.ws|bolehnonton.net|cinema88.net|drakorindo.co|layar-kaca.com|movie303.com|movieon21.com|no99.me|nonton.film|nonton33.tv|nontonfilm21.club|nontonfilm21.top|nontonin.com|senimovies.net|sukamovie.mobi
 ||imgur.com/*.gif$image,domain=bioskopskype.com|juaramovie.com|nonton33.tv|nontonanime.id|nontoncinema.org|senimovies.net
 ! 
--100x500.
--300x300.
--85x445.
--976x70.
--980x90.
-/300-x-250-
-/395-x-60.
-/ad-150x300
-_250x250.
-bioskop55.me###floating_banner_bottom
-bioskopfilm21.net##a[href^="http://bit.ly/"] > img
-filmapik.me###floating_banner_bottom
 movieon21.com###ads-pop
-n21.tv##.ban_empat
-nonton33.tv###floating_banner_bot
-nonton33.tv###floating_banner_tops
 senimovies.net###bottom_banner
-senimovies.net##.ad-float-image
 sukamovie.id###btm_banner
+nonton33.tv###floating_banner_bot
+bioskop55.me,filmapik.me###floating_banner_bottom
+nonton33.tv###floating_banner_tops
+senimovies.net##.ad-float-image
+n21.tv##.ban_empat
+bioskopfilm21.net##a[href^="http://bit.ly/"] > img
 ||bioskop007.me/wp-content/uploads/*.gif$image
 ||bioskop168.co/wp-content/uploads/*.gif$image
 ||bioskop21.online/wp-content/uploads/*.gif$image
@@ -814,4 +842,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: gQb3K5iK8CTRZHu3AVszDQ
+! Checksum: JoNP9qmGjpebnQ8WnfV+RQ
