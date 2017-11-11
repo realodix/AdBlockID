@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711110345
+! Version: 201711110812
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Nov 2017 03:45 UTC
+! Last modified: 11 Nov 2017 08:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -52,6 +52,7 @@
 /ads/promo_
 /ads/www/*
 /ads3.
+/ads8.
 /ads_controller.
 /adsense-
 /adsense/*
@@ -121,6 +122,7 @@
 /media/ads/*
 /nativeads/*
 /pagead/conversion.
+/pagead/lvz?
 /pagead2.
 /pasangiklan
 /plugins/ad.
@@ -204,6 +206,7 @@ iklan-banner-
 /728x90_
 /ad-150x300-
 160x600.png|
+728x90.gif|
 =300x250&
 =728x90&
 _160x600&
@@ -215,15 +218,19 @@ _720x90.
 _728x90-
 ! 
 ! Mandiri
+-1000X180.
 -100x450.
 -100x500.
 -250x250*.
+-276x100.
 -300-x-250-
 -300-x-250.
+-300-X-300-
 -300x250.
 -300x300.
 -370-x-100.
 -370x100.
+-380x60.
 -468-x-60-
 -468-x-60.
 -485x60.
@@ -245,25 +252,31 @@ _728x90-
 -banner-728.
 /*160x600.
 /*250x250.
+/*300*x250*.
+/*300x250*.
 /*300x250.
 /*420x60.
 /*500x80.
 /*530x63.
 /*535x66.
 /*720x90.
+/*728-x-90.
 /*728x90.
 /*920x120.
 /*970x90*.
 /250x250-
 /300-x-250-
+/300x90/*
 /395-x-60.
 /400x50*.
 /720x90.
+/728x90*.
 /960x120*.
 /ad-150x300
 _1040x65.
 _128x350_
 _250x250.
+_383x90.
 _720x90_
 ! *** abid:sections/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
@@ -287,6 +300,7 @@ _720x90_
 ###ads-header
 ###ads-pop
 ###ads-sticky
+###ads-top
 ###ads1
 ###ads2
 ###ads3
@@ -334,10 +348,12 @@ _720x90_
 ###iqadtile5
 ###leftframeAD
 ###marketing-promo
+###masthead-ad
 ###middle-ad
 ###mini-ad
 ###mvp-post-bot-ad
 ###pbanner
+###player-ads
 ###popupwindow
 ###post-ads
 ###post-adsense-top-banner
@@ -473,7 +489,6 @@ _720x90_
 ##.entry-ads
 ##.forads
 ##.g-ads
-##.gbcontent
 ##.google_ads_300_250
 ##.googleads
 ##.gpcontent
@@ -555,6 +570,7 @@ _720x90_
 ##.top-ads
 ##.topadsense
 ##.topline-ads
+##.video-ads
 ##.video-content-bottom-ads
 ##.video-content-top-ads
 ##.widget-ad
@@ -848,6 +864,7 @@ _720x90_
 ||anyclip-media.com^$third-party
 ||atwola.com^$third-party
 ||baliadv.com^$third-party
+||betrad.com^$third-party
 ||bnserving.com^$third-party
 ||brand.ad^$third-party
 ||brealtime.com^$third-party
@@ -898,7 +915,6 @@ _720x90_
 ||nexage.com^$third-party
 ||onclickprediction.com^$third-party
 ||pasangiklan.com^$third-party
-||pippio.com^$third-party
 ||predictiondisplay.com^$third-party
 ||predictivadnetwork.com^$third-party
 ||props.id^$third-party
@@ -1049,6 +1065,7 @@ _720x90_
 ||atebqbjh.bid^
 ||atijsiwpbrvtm.bid^
 ||atjgtndhvbescp.bid^
+||atkkkyhyxemut.bid^
 ||atzrsfweb.bid^
 ||aubrythgmge.bid^
 ||aufyuiavvkf.bid^
@@ -1074,6 +1091,7 @@ _720x90_
 ||aykosfkx.bid^
 ||ayozhcgcsyun.com^
 ||azditojzcdkc.com^
+||azfmulmqcz.bid^
 ||azkvcgzjsrmk.com^
 ||azlbmpidrvnoi.bid^
 ||azqmmfhmfnpsvb.bid^
@@ -1400,6 +1418,7 @@ _720x90_
 ||dfxemnxrsal.bid^
 ||dgbhmpumhxy.bid^
 ||dgcxsmiavpg.bid^
+||dgfpsbezfeh.bid^
 ||dggcgurqynie.com^
 ||dgghbqysqzs.bid^
 ||dgjlfdvqb.bid^
@@ -1594,6 +1613,7 @@ _720x90_
 ||etsqitgro.bid^
 ||etwgydlbl.bid^
 ||etyeltdqg.bid^
+||etytypmuykf.bid^
 ||eueukpcxjtxt.bid^
 ||eunysqxppf.bid^
 ||eupwogkcjczz.com^
@@ -1883,6 +1903,7 @@ _720x90_
 ||gtmonytxxglu.com^
 ||gttrngwnuuvy.bid^
 ||gtxfafvoohbc.com^
+||gtzyfaro.bid^
 ||gubdadtxwqow.com^
 ||guhtjoqtobac.com^
 ||gujyvlvoewweg.bid^
@@ -2166,6 +2187,7 @@ _720x90_
 ||iqmjedevvojm.com^
 ||iqwbqjnst.bid^
 ||irbkobqlrbtt.com^
+||irlklysyeqek.bid^
 ||iroktywi.bid^
 ||irrhjkuantnaa.bid^
 ||irrttzthsxot.com^
@@ -2197,6 +2219,7 @@ _720x90_
 ||ixbccovgriz.bid^
 ||ixlsylapsdtr.com^
 ||ixnsmcpdauof.com^
+||ixqpfqtwi.bid^
 ||ixsxgaegvplo.com^
 ||ixzhwyuxxvxb.com^
 ||ixznwuxokydz.com^
@@ -2217,6 +2240,7 @@ _720x90_
 ||jareiulyg.bid^
 ||jatkcmpxhbba.com^
 ||jauftivogtho.com^
+||javrdcyrgmdeeg.bid^
 ||jbarrxmpmmekwh.bid^
 ||jbbgczjipjvb.com^
 ||jbgehhqvfppf.com^
@@ -2228,6 +2252,7 @@ _720x90_
 ||jcnoeyqsdfrc.com^
 ||jctszdppy.bid^
 ||jcytzfvrm.bid^
+||jczpcviiurut.bid^
 ||jdbzloynedpylr.bid^
 ||jdhnfbmrhwkn.com^
 ||jdiliqkjk.bid^
@@ -2458,6 +2483,7 @@ _720x90_
 ||ksbewtjuqitxg.bid^
 ||ksjjpsjymdekyr.bid^
 ||ksxaaoey.bid^
+||ktgsiqgj.bid^
 ||kthwboouxxcmc.bid^
 ||ktjqfqadgmxh.com^
 ||ktrmzzrlkbet.com^
@@ -2490,6 +2516,7 @@ _720x90_
 ||kwjglwybtlhm.com^
 ||kwovwwkevyu.bid^
 ||kwunqjqntrnf.bid^
+||kwvoafkdebdaxz.bid^
 ||kwystoaqjvml.com^
 ||kwyxncikkzz.bid^
 ||kwzuhmpwvsbsc.bid^
@@ -2909,6 +2936,7 @@ _720x90_
 ||nlhhrkamvs.bid^
 ||nmaafswoiecv.com^
 ||nmayxdwzhaus.com^
+||nmesbjkqkkoy.bid^
 ||nmxpownvqtc.bid^
 ||nnakekwkkh.bid^
 ||nnbestmblotl.com^
@@ -2972,6 +3000,7 @@ _720x90_
 ||nwooatwtmhfdh.bid^
 ||nwzawdquu.bid^
 ||nxcxithvcoeh.com^
+||nxnbbqdh.bid^
 ||nyaisjsghvj.bid^
 ||nyfsjqxopdzvvm.bid^
 ||nyrszeos.bid^
@@ -3174,6 +3203,7 @@ _720x90_
 ||phqqzdemby.bid^
 ||pibizrfgsrkji.bid^
 ||pifaojvaiofw.com^
+||piljbvnykkt.bid^
 ||pixjqfvlsqvu.com^
 ||piyzmkcxa.bid^
 ||pjffrqroudcp.com^
@@ -3455,6 +3485,7 @@ _720x90_
 ||rdmccvanlx.bid^
 ||rdqyasdstllr.com^
 ||rdwfotuyp.bid^
+||regbigltd.bid^
 ||repefwairfkx.com^
 ||rertazmgduxp.com^
 ||rezbzvrbemeb.bid^
@@ -3511,6 +3542,7 @@ _720x90_
 ||roarmyng.bid^
 ||rogwmjvlqdfngw.bid^
 ||roksnfmaydlo.com^
+||roljcubvx.bid^
 ||roxutbftcm.bid^
 ||rozcbrmng.bid^
 ||rpcpscsa.bid^
@@ -3972,6 +4004,7 @@ _720x90_
 ||ungvncbnx.bid^
 ||unlupxiky.bid^
 ||unrbpcqmiybu.com^
+||unwlrtefzfzj.bid^
 ||unztsvrjofqp.com^
 ||uoarbhxfyygn.com^
 ||uokehbea.bid^
@@ -4315,6 +4348,7 @@ _720x90_
 ||wuldwvzqvqet.com^
 ||wupjqzzpurw.bid^
 ||wuqdejnjxj.bid^
+||wuthucbqpd.bid^
 ||wvmtyaqdp.bid^
 ||wvqqugicfuac.com^
 ||wvutzxicvmgljw.bid^
@@ -4441,6 +4475,7 @@ _720x90_
 ||xtqfguvsmroo.com^
 ||xttcpyfgjdkl.bid^
 ||xttfbyjird.bid^
+||xtuenvlsoenwn.bid^
 ||xtzslqieeh.bid^
 ||xudrwfesrzl.bid^
 ||xuhktijdskah.com^
@@ -4930,13 +4965,49 @@ n21.tv##.ban_empat
 ! *** abid:sections/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:sections/privacy.txt ***
+.net/p.gif?
 /atrk.js
 /beacon.js
+/generate_204$image
+/googleAnalytics_
+/id?d_visid_ver=
+/log_event?
+/log_interaction?
 /loganalysistracker/*
+/ping.gif?
+/pippio.
+/quant.js
+://c1.*/c.gif?
+=googleanalytics_
+||adobedtm.com^$third-party
+||amung.us^$third-party
+||appier.net^$third-party
+||collector.githubapp.com^
 ||connect.facebook.net^*/fbevents.js$third-party
+||criteo.net^$third-party
 ||crwdcntrl.net^$third-party
+||demdex.net^$third-party
+||facebook.com*/impression.php
+||forkcdn.com^$third-party
+||go-mpulse.net^$third-party
 ||google-analytics.com/analytics.js
+||google.*/gen_204?$~xmlhttprequest
+||googletagmanager.com/gtag/$third-party
+||googletagmanager.com/gtm.js?$third-party
+||histats.com^$third-party
+||ib.adnxs.com^
+||intensedebate.com/remotevisit.php?
+||io.narrative.io/?$third-party
+||ipify.org^$third-party
+||js-agent.newrelic.com^
+||l.sharethis.com^
+||statistics.crowdynews.com^
+||stats.g.doubleclick.net^
+||stats.wp.com^
 ||tradedoubler.com^$third-party
+||twitter.com/i/jot
+||tynt.com^$third-party
+||w55c.net^$third-party
 ! 
 ! Resource-abuse filters
 ! 
@@ -4965,7 +5036,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /xmr.min.js
 ||afminer.com^$third-party
 ||api.inwemo.com^$third-party
-||authedmine.com^$third-party
+||authedmine.com^$third-party,domain=~coinhive.com
 ||azvjudwr.info^$third-party
 ||cloudcoins.co^$third-party
 ||cnhv.co^$third-party
@@ -4992,6 +5063,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||minero-proxy-*.sh^$third-party
 ||minero.pw^$third-party
 ||monerominer.rocks^$third-party
+||now.sh/*.wasm$third-party
 ||papoto.com^$third-party
 ||ppoi.org^$third-party
 ||projectpoi.com^$third-party
@@ -5020,4 +5092,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: a4WkrhnZkz5AimlYMEbFxg
+! Checksum: zA7uMCFhE1S68vyF1EhMFQ
