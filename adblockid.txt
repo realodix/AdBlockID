@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711101236
+! Version: 201711110345
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Nov 2017 12:36 UTC
+! Last modified: 11 Nov 2017 03:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -4929,8 +4929,16 @@ n21.tv##.ban_empat
 @@||mvstreaming.com^$generichide
 ! *** abid:sections/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
-! *** abid:sections/resource_abuse.txt ***
-! AdBlockID -- Resource-abuse filters
+! *** abid:sections/privacy.txt ***
+/atrk.js
+/beacon.js
+/loganalysistracker/*
+||connect.facebook.net^*/fbevents.js$third-party
+||crwdcntrl.net^$third-party
+||google-analytics.com/analytics.js
+||tradedoubler.com^$third-party
+! 
+! Resource-abuse filters
 ! 
 ! To foil sites potentially abusing CPU/bandwidth resources without informed
 ! consent. Any such resource-abuse scripts MUST be opt-in, with complete
@@ -5012,4 +5020,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: TDme9Ppo0yoi35G7lKVIaA
+! Checksum: a4WkrhnZkz5AimlYMEbFxg
