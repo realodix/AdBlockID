@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711110812
+! Version: 201711121432
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Nov 2017 08:12 UTC
+! Last modified: 12 Nov 2017 14:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -13,24 +13,22 @@
 ! *** abid:sections/general_block.txt ***
 -ads.gif
 -ads/assets/
+-iklan-
 -iklan.gif|
 -iklan.jpg|
 -iklan.js|
 -popads.php|
--togel-
 .ads.controller.
 .ads.css
 .ads1-
 .ads2-
 .ads3-
-.biz/iklan/
 .com/ad?
 .com/ads-
 .com/ads.
 .com/advs-
 .com/adx/
 .com/adx_
-.com/iklan/
 .com/promodisplay?
 .id/ads/$~object-subrequest
 .id/adv/
@@ -47,7 +45,6 @@
 /ads-img/*
 /ads.htm
 /ads/assets/*
-/ads/iklan.
 /ads/js/*
 /ads/promo_
 /ads/www/*
@@ -62,7 +59,6 @@
 /adsterra.js|
 /adstyle.
 /adtrace2.js|
-/adv/iklan.
 /advert/*
 /advertise-
 /advertisements/*
@@ -75,7 +71,8 @@
 /banner.php
 /bannerads/*
 /banners/promo/*
-/bb17-iklan.
+/bnr-samping.
+/bnr-tengah.
 /bnr.php?
 /cdn-cgi/pe/bag2?*ajs.php
 /css/ads.
@@ -110,16 +107,19 @@
 /googleads1.
 /googleads2.
 /googleads_
+/iklan-
+/iklan.
 /iklan/*
 /iklancpm.
 /images/ads/*
 /images/adv/*
-/images/iklan/*
 /images_ads/
 /img/ads/*
 /js/ads.
 /jsadservingsp.
+/jspopunder.
 /media/ads/*
+/moneyball/ads/*
 /nativeads/*
 /pagead/conversion.
 /pagead/lvz?
@@ -129,6 +129,7 @@
 /plugins/ads/*
 /pop.js|
 /popunder.
+/popunder/*
 /popunder1.
 /prebid2.
 /promo-ads/*
@@ -163,7 +164,6 @@
 /textadspromo_
 /u?pub=
 /uploads/ads/*
-/uploads/iklan/*
 /videojs.ads.
 /www/delivery/*
 ://affiliate.$third-party
@@ -176,8 +176,6 @@ _ad_promo2.
 _adnetwork.
 _ads_only&
 _promo_ad/
-iklan-
-iklan-banner-
 ||cacheserve.*/promodisplay/
 ||cacheserve.*/promodisplay?
 ||online.*/promoredirect?key=
@@ -205,79 +203,168 @@ iklan-banner-
 /728x90/*
 /728x90_
 /ad-150x300-
-160x600.png|
 728x90.gif|
 =300x250&
 =728x90&
-_160x600&
 _300x250.
 _300x250_
 _300x250px.
 _468x90.
 _720x90.
+_720x90_
 _728x90-
 ! 
 ! Mandiri
 -1000X180.
 -100x450.
 -100x500.
--250x250*.
 -276x100.
 -300-x-250-
 -300-x-250.
 -300-X-300-
--300x250.
+-300x200.
 -300x300.
 -370-x-100.
 -370x100.
 -380x60.
+-380x80.
 -468-x-60-
 -468-x-60.
 -485x60.
 -500x60.
 -520x65.
 -522x70-
+-522x70.
 -540x60.
+-580x380.
 -65x300-
 -700x70.
 -728-x-90.
 -728-x90.
+-730x220.
 -790-90.
 -80x300-
 -85x445.
--85x455-
+-970x80.
 -976x70.
 -980x90.
--Banner-300.
+-banner-300.
 -banner-728.
-/*160x600.
-/*250x250.
+/*160x600*.
+/*250x250*.
 /*300*x250*.
-/*300x250*.
-/*300x250.
 /*420x60.
+/*490x70.
 /*500x80.
 /*530x63.
 /*535x66.
+/*720x90*.
 /*720x90.
 /*728-x-90.
-/*728x90.
+/*728x90*.
+/*85x455*.
 /*920x120.
+/*960x120.
 /*970x90*.
+/*980x90*.
+/*w250-h250-$image
+/*w300-h250-$image
+/*w380-h80-$image
+/*w555-h69-$image
+/*w728-h90-$image
+/200x200.
 /250x250-
 /300-x-250-
+/300x100-
+/300X300.
 /300x90/*
 /395-x-60.
 /400x50*.
-/720x90.
-/728x90*.
+/95x230.
 /960x120*.
 /ad-150x300
+/banner728.
 _1040x65.
 _128x350_
 _250x250.
 _383x90.
-_720x90_
+! 
+! Judi
+/*agen*.gif$image
+/*bandar*.gif$image
+/*bola*.gif$image
+/*capsa*.gif$image
+/*dewa*.gif$image
+/*hoki*.gif$image
+/*judi*.gif$image
+/*poker*.gif$image
+/*raja*.gif$image
+/*ratu*.gif$image
+/*taruhan*.gif$image
+/*togel*.gif$image
+! 
+/*99mania*.$image
+/*abgqq*.$image
+/*abgqq.$image
+/*aceh4d*.$image
+/*aduqq*.$image
+/*asetbet*.$image
+/*babeqq*.$image
+/*bejoqq*.$image
+/*bisa88*.$image
+/*cahayabola*.$image
+/*demenqq*.$image
+/*dewadominoqq*.$image
+/*divaqq*.$image
+/*domino168*.$image
+/*dominoqq*.$image
+/*doyan99*.$image
+/*dwoqq*.$image
+/*elangqq*.$image
+/*fullbet*.$image
+/*garudaqq*.$image
+/*gohbet*.$image
+/*goodbola*.$image
+/*incarqq*.$image
+/*indonalo*.$image
+/*intanbet*.$image
+/*ituqq.$image
+/*jasaqq*.$image
+/*jayabet*.$image
+/*klikqq*.$image
+/*kokoqq*.$image
+/*ladangqq*.$image
+/*lahanbet*.$image
+/*lapakfortune*.$image
+/*liga88*.$image
+/*liga88cash*.$image
+/*liga99*.$image
+/*lobbyqq*.$image
+/*macaubet*.$image
+/*mahkotaqq*.$image
+/*maindomino99*.$image
+/*mainqq*.$image
+/*mandiriqq*.$image
+/*maxisbet*.$image
+/*mega389*.$image
+/*mitraqq*.$image
+/*mkvgames*.$image
+/*musimqq*.$image
+/*naloqq*.$image
+/*pulsaqq*.$image
+/*pusatqq*.$image
+/*sakong*.$image
+/*sakuratoto*.$image
+/*sboqq*.$image
+/*sponsorqq*.$image
+/*suhuqq*.$image
+/*tahunqq.$image
+/*terminalbet*.$image
+/*totokita*.$image
+/*utamabet*.$image
+/*vegas855*.$image
+/*vegasidr*.$image
+/*zyngaqq*.$image
 ! *** abid:sections/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
@@ -285,6 +372,8 @@ _720x90_
 ###AdBanner
 ###AdBar
 ###AdContainer
+###AdLayer1
+###AdLayer2
 ###AdSense1
 ###Box-Banner-ads
 ###DivTopAd
@@ -352,6 +441,9 @@ _720x90_
 ###middle-ad
 ###mini-ad
 ###mvp-post-bot-ad
+###my-adsLDRB
+###my-adsLREC
+###my-adsMAST
 ###pbanner
 ###player-ads
 ###popupwindow
@@ -387,6 +479,7 @@ _720x90_
 ##.ad-banner
 ##.ad-block
 ##.ad-cell
+##.ad-float-image
 ##.ad-in-post
 ##.ad-leaderboard
 ##.ad-left
@@ -419,6 +512,7 @@ _720x90_
 ##.ad_unit
 ##.adbanner
 ##.adinjwidget
+##.adlink
 ##.adrotate_widgets
 ##.ads-1
 ##.ads-160
@@ -487,6 +581,7 @@ _720x90_
 ##.desktop-advert
 ##.detads
 ##.entry-ads
+##.footer-ads
 ##.forads
 ##.g-ads
 ##.google_ads_300_250
@@ -512,6 +607,7 @@ _720x90_
 ##.iklanright
 ##.inline-ad
 ##.insert-post-ads
+##.js-stream-ad
 ##.kotak_iklan
 ##.lazyload_ad
 ##.loop-ad
@@ -542,6 +638,7 @@ _720x90_
 ##.right-ads
 ##.right-ads2
 ##.right-adsense
+##.rkads
 ##.sam-ad
 ##.sam_ad
 ##.sgAd
@@ -4770,13 +4867,15 @@ _720x90_
 ! 
 ||45.76.146.8^$third-party
 ||agenjudionline.in^$third-party
+||rajaqq.info^$third-party
+||sukipli.com/*.gif^$third-party
+! 
 ||bidder.criteo.com^$third-party
 ||cas.criteo.com^$third-party
 ||cmcpoker.info^$third-party
 ||cpmstar.com/cached/
 ||cpmstar.com/view.aspx
 ||entitlements.jwplayer.com^$third-party
-||rajaqq.info^$third-party
 ||rtax.criteo.com^$third-party
 ||static.*.criteo.net/design^$third-party
 ||static.*.criteo.net/flash^$third-party
@@ -4790,7 +4889,6 @@ _720x90_
 ||static.criteo.net/flash^$third-party
 ||static.criteo.net/images^$third-party
 ||static.criteo.net/js/duplo^$third-party
-||sukipli.com/*.gif^$third-party
 ||ubloger.com^$third-party
 ||viglink.com/images/pixel.gif
 ! *** abid:sections/specific_block.txt ***
@@ -4902,7 +5000,6 @@ awsubs.co##.minipusat
 detik.com##.newsfeed-ads
 jadwaltelevisi.com##.promo-banner
 awsubs.co##.pusat728
-dramaqu.co##.rkads
 21cineplex.com##.showcase
 21cineplex.com##.showcase2
 mydramalist.com##.spnsr-top
@@ -4913,61 +5010,47 @@ covesia.com##.topbanner
 inilah.com##.wb-300x250
 kshowsubindo.org##a[href^="http://bit.ly/"] > img
 ! *** abid:sections/specific_addon.txt ***
-bioskopfilm21.net,movie303.com,sunmovie21.com##a[href^="http://bit.ly/"] > img
-indoxxi.info,sunmovie21.com##a[href^="https://goo.gl/"] > img
-||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskop.vip|bioskopkeren.ws|bolehnonton.net|cinema88.net|drakorindo.co|idbioskop.com|layar-kaca.com|movie303.com|movieon21.com|no99.me|nonton.film|nonton33.tv|nontoncinema.org|nontonfilm21.club|nontonfilm21.top|nontonin.com|nontonmovie33.net|nontonvip.com|senimovies.net|sukamovie.mobi|surgafilm.club
+bioskopfilm21.net,movie303.com##a[href^="http://bit.ly/"] > img
+indoxxi.info##a[href^="https://goo.gl/"] > img
+||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopkeren.ws|drakorindo.co|movie303.com|nonton33.tv|nontonin.com|nontonvip.com|senimovies.net
 ||goo.gl/$image,domain=surgafilm.club
-||imgur.com/*.gif$image,domain=bioskopskype.com|nonton33.tv|nontonanime.id|nontoncinema.org|senimovies.net
+||imgur.com/*.gif$image,domain=nonton33.tv|nontonanime.id|nontoncinema.org|senimovies.net
 ||postimg.org^$domain=lk21.web.id
-||tinypic.com^$domain=nontonmovie33.net
-||wp.com/*/wp-content/uploads/*.gif$image,domain=mvstreaming.com|nontonmovie.me|nontonxxi.co
+||wp.com/*/wp-content/uploads/*.gif$image,domain=nontonxxi.co
 ! 
-movieon21.com###ads-pop
 senimovies.net###bottom_banner
 sukamovie.id###btm_banner
-nonton33.tv,nontonmovie33.net###floating_banner_bot
-bioskop55.me,filmapik.me###floating_banner_bottom
+nonton33.tv###floating_banner_bot
+bioskop55.me###floating_banner_bottom
 cinemaqq.com###floating_banner_top
-nonton33.tv,nontonmovie33.net###floating_banner_tops
-senimovies.net##.ad-float-image
+nonton33.tv###floating_banner_tops
 n21.tv##.ban_empat
-||bioskop168.co/wp-content/uploads/*.gif$image
-||bioskop47.com/wp-content/uploads/*.gif$image
 ||bioskop55.me/wp-content/uploads/*.gif$image
 ||cinemaindo.pro/wp-content/uploads/*.gif$image
-||dewanontons.com/wp-content/uploads/*.gif$image
-||film-ganool.co/wp-content/uploads/*.gif$image
-||filmapik.me/wp-content/uploads/*.gif
-||filmnonton.com/static/themes/default/img/banner/*.gif$image
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
-||hotmovie21.com/wp-content/uploads/*.gif$image
-||idbioskop.com/wp-content/uploads/*.gif$image
 ||indexmovie.me/assets/*.gif$image
 ||indocinema21.com/banner/*.gif$image
 ||lk21.co/assets/*.gif
 ||lk21.fun/wp-content/uploads/*.gif
 ||lkaca21.com/wp-content/uploads/*.gif$image
 ||movie303.com/wp-content/uploads/*.gif$image
-||movieon21.com/wp-content/uploads/*.gif$image
-||nobartv.net/img/banner/*.gif$image
+||nobartv.com/img/banner/*.gif$image
 ||nonton33.tv/wp-content/uploads/*.gif$image
-||nontonbos.com/wp-content/uploads/*.gif$image
 ||nontoncinema.org/wp-content/uploads/*.gif$image
-||nontonfilm21.top/wp-content/uploads/*.gif$image
-||nontonfilmku.net/wp-content/uploads/*.gif$image
-||nontonmovie33.net/wp-content/uploads/*.gif$image
 ||ns21.me/wp-content/uploads/*.gif$image
-||serunonton.com/wp-content/uploads/*.gif$image
 ||sukamovie.id/wp-content/uploads/*.gif
 ! 
 @@||cinemamkv.net^$generichide
-@@||mvstreaming.com^$generichide
 ! *** abid:sections/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:sections/privacy.txt ***
+||uzone.id^$third-party
+! 
 .net/p.gif?
+/__utm.gif
 /atrk.js
 /beacon.js
+/cdn-cgi/pe/bag2?*histats.com
 /generate_204$image
 /googleAnalytics_
 /id?d_visid_ver=
@@ -4977,6 +5060,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /ping.gif?
 /pippio.
 /quant.js
+/site_stats.
+/site_stats/*
 ://c1.*/c.gif?
 =googleanalytics_
 ||adobedtm.com^$third-party
@@ -4988,6 +5073,11 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||crwdcntrl.net^$third-party
 ||demdex.net^$third-party
 ||facebook.com*/impression.php
+||facebook.com/common/scribe_endpoint.php
+||facebook.com/tr/?
+||facebook.com/xti.php?
+||feedcat.net^$third-party
+||flagcounter.com^$third-party
 ||forkcdn.com^$third-party
 ||go-mpulse.net^$third-party
 ||google-analytics.com/analytics.js
@@ -5001,15 +5091,17 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ipify.org^$third-party
 ||js-agent.newrelic.com^
 ||l.sharethis.com^
+||scorecardresearch.com^$third-party
 ||statistics.crowdynews.com^
 ||stats.g.doubleclick.net^
 ||stats.wp.com^
+||streamango.com/log
 ||tradedoubler.com^$third-party
 ||twitter.com/i/jot
 ||tynt.com^$third-party
 ||w55c.net^$third-party
 ! 
-! Resource-abuse filters
+! Resource-abuse
 ! 
 ! To foil sites potentially abusing CPU/bandwidth resources without informed
 ! consent. Any such resource-abuse scripts MUST be opt-in, with complete
@@ -5092,4 +5184,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: zA7uMCFhE1S68vyF1EhMFQ
+! Checksum: 46SfjqohKcF5I+EQbmRH/w
