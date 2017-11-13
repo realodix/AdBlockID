@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711121432
+! Version: 201711130759
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Nov 2017 14:32 UTC
+! Last modified: 13 Nov 2017 07:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -26,6 +26,7 @@
 .com/ad?
 .com/ads-
 .com/ads.
+.com/ads/$image,object,subdocument
 .com/advs-
 .com/adx/
 .com/adx_
@@ -43,6 +44,7 @@
 /ads-02.
 /ads-banner
 /ads-img/*
+/ads.gif
 /ads.htm
 /ads/assets/*
 /ads/js/*
@@ -303,34 +305,49 @@ _383x90.
 /*taruhan*.gif$image
 /*togel*.gif$image
 ! 
+/*233bet*.$image
+/*234bet*.$image
 /*99mania*.$image
+/*99samsung*.$image
 /*abgqq*.$image
 /*abgqq.$image
 /*aceh4d*.$image
 /*aduqq*.$image
+/*agungqq*.$image
+/*arena99*.$image
 /*asetbet*.$image
+/*asiagol*.$image
 /*babeqq*.$image
+/*bbm88*.$image
 /*bejoqq*.$image
 /*bisa88*.$image
 /*cahayabola*.$image
+/*citi*bet*.$image
+/*cmcbet*.$image
 /*demenqq*.$image
 /*dewadominoqq*.$image
 /*divaqq*.$image
 /*domino168*.$image
+/*dominobca*.$image
 /*dominoqq*.$image
 /*doyan99*.$image
+/*dracobet*.$image
 /*dwoqq*.$image
 /*elangqq*.$image
+/*filmbokep*.$image
 /*fullbet*.$image
 /*garudaqq*.$image
 /*gohbet*.$image
 /*goodbola*.$image
+/*hoyajackpot*.$image
 /*incarqq*.$image
 /*indonalo*.$image
 /*intanbet*.$image
 /*ituqq.$image
 /*jasaqq*.$image
 /*jayabet*.$image
+/*kaisar88*.$image
+/*kartu*online*.$image
 /*klikqq*.$image
 /*kokoqq*.$image
 /*ladangqq*.$image
@@ -350,9 +367,15 @@ _383x90.
 /*mitraqq*.$image
 /*mkvgames*.$image
 /*musimqq*.$image
+/*muvibet*.$image
 /*naloqq*.$image
+/*okecashh*.$image
+/*pkstar8*.$image
 /*pulsaqq*.$image
 /*pusatqq*.$image
+/*qq288*.$image
+/*qqhok*.$image
+/*rgo*casino*.$image
 /*sakong*.$image
 /*sakuratoto*.$image
 /*sboqq*.$image
@@ -360,10 +383,13 @@ _383x90.
 /*suhuqq*.$image
 /*tahunqq.$image
 /*terminalbet*.$image
+/*topbet99*.$image
 /*totokita*.$image
 /*utamabet*.$image
 /*vegas855*.$image
 /*vegasidr*.$image
+/*webajaib*.$image
+/*wpbet365*.$image
 /*zyngaqq*.$image
 ! *** abid:sections/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
@@ -584,6 +610,7 @@ _383x90.
 ##.footer-ads
 ##.forads
 ##.g-ads
+##.gg-ads_wrapper
 ##.google_ads_300_250
 ##.googleads
 ##.gpcontent
@@ -665,6 +692,7 @@ _383x90.
 ##.text_ads
 ##.top-adbox
 ##.top-ads
+##.top-ads-container
 ##.topadsense
 ##.topline-ads
 ##.video-ads
@@ -941,6 +969,7 @@ _383x90.
 ||adnxs.com^$third-party
 ||adop.cc^$third-party
 ||adotmob.com^$third-party
+||adpays.net^$third-party
 ||adplus.co.id^$third-party
 ||adpop-1.com^$third-party
 ||adpushup.com^$third-party
@@ -1261,6 +1290,7 @@ _383x90.
 ||bkggsumw.bid^
 ||bkmtspywevsk.com^
 ||bkshpuspj.bid^
+||bkuzcrcdh.bid^
 ||bkvrdeiqtgan.bid^
 ||bkxkodsmrnqd.com^
 ||blnxyqdnsl.bid^
@@ -1271,6 +1301,7 @@ _383x90.
 ||bmalhekpohve.bid^
 ||bmirhdkborr.bid^
 ||bmnccwprdrszpj.bid^
+||bmsmhlpkdvajeo.bid^
 ||bmvhefgdlt.bid^
 ||bmxufcsmxcfwao.bid^
 ||bmyepmehjzhz.com^
@@ -1387,6 +1418,7 @@ _383x90.
 ||cimpmvccrg.bid^
 ||cineqkifrlxsep.bid^
 ||cistcrrhqfm.bid^
+||cixjiydrsyq.bid^
 ||cjbaeegayainxl.bid^
 ||cjnoeafncyzb.com^
 ||cjnwobsladbq.com^
@@ -1489,6 +1521,7 @@ _383x90.
 ||dbftszei.bid^
 ||dbjcbnlwchgu.com^
 ||dblnptdnyt.bid^
+||dbmaptqxpjmsyr.bid^
 ||dbojgaxhxalh.com^
 ||dbtaclpoahri.com^
 ||dbwawnzkjniz.com^
@@ -1622,6 +1655,7 @@ _383x90.
 ||edwywpsufuda.com^
 ||edxvyyywsxqh.com^
 ||eedicjfwqhqr.bid^
+||eedjbxyczp.bid^
 ||eedsgikkbtn.bid^
 ||eefbzuwvnnab.com^
 ||eehdssnxola.com^
@@ -1789,6 +1823,7 @@ _383x90.
 ||firflzsngsg.bid^
 ||firugsivsqot.com^
 ||fisqwkxyvsrtnz.bid^
+||fiunfrafi.bid^
 ||fjlvozwlv.bid^
 ||fjmxpixte.bid^
 ||fjqngeqkhlruto.bid^
@@ -1910,6 +1945,7 @@ _383x90.
 ||gdekvzhsqwau.com^
 ||gdhtshpyz.bid^
 ||gdixpvfqbhun.com^
+||gduubghr.bid^
 ||geazikjazoid.com^
 ||gedmodsxbebd.com^
 ||gefaqjwdgzbo.com^
@@ -2321,6 +2357,7 @@ _383x90.
 ||ixzhwyuxxvxb.com^
 ||ixznwuxokydz.com^
 ||iyjukpbyzsxc.bid^
+||iynfhmgte.bid^
 ||iytfczscguf.bid^
 ||izgnfkvpiawwn.bid^
 ||iziwhlafxitn.com^
@@ -2469,6 +2506,7 @@ _383x90.
 ||jydbctzvbqrh.com^
 ||jypmcknqvnfd.com^
 ||jyrjjhdas.bid^
+||jyryxwvdjqobg.bid^
 ||jyxckvhds.bid^
 ||jzbarlrhbicg.com^
 ||jzbskhgpivyl.com^
@@ -2478,6 +2516,7 @@ _383x90.
 ||jzvuglclkdnb.bid^
 ||jzxlkhaugzuaqm.bid^
 ||kadjwdpzxdxd.com^
+||kahbkhlb.bid^
 ||kaqtvgcy.bid^
 ||karownxatpbd.com^
 ||kayophjgzqdq.com^
@@ -2523,6 +2562,7 @@ _383x90.
 ||kiochlocj.bid^
 ||kipnobwbyz.bid^
 ||kisvtclf.bid^
+||kizpkvkdfm.bid^
 ||kjabglumgwbsvq.bid^
 ||kjbqzbiteubt.com^
 ||kjkdagfnjm.bid^
@@ -2560,6 +2600,7 @@ _383x90.
 ||kpgcyqkktm.bid^
 ||kplzvizvsqrh.com^
 ||kpsdnlprwclz.com^
+||kpucctqryjdvx.bid^
 ||kpwhkeehpsp.bid^
 ||kqaqantjwn.bid^
 ||kqctdqqcjjsqrc.bid^
@@ -2612,6 +2653,7 @@ _383x90.
 ||kwcaatayhgkq.bid^
 ||kwjglwybtlhm.com^
 ||kwovwwkevyu.bid^
+||kwuaiymxezji.bid^
 ||kwunqjqntrnf.bid^
 ||kwvoafkdebdaxz.bid^
 ||kwystoaqjvml.com^
@@ -2737,6 +2779,7 @@ _383x90.
 ||lqtxnuramh.bid^
 ||lqvckaciozvs.bid^
 ||lqvuvkmohlktl.bid^
+||lqydjvdrq.bid^
 ||lramhnoefoz.bid^
 ||lrcnshyxwx.bid^
 ||lreylxggpqxz.bid^
@@ -3022,6 +3065,7 @@ _383x90.
 ||nkbvvlhdnagkd.bid^
 ||nkfqetvgeytp.bid^
 ||nkjmaymezfhlf.bid^
+||nkjqgapglbbkux.bid^
 ||nkkreqvurtoh.com^
 ||nkkxgqdgnpunnr.bid^
 ||nklivofyjkbt.com^
@@ -3059,6 +3103,7 @@ _383x90.
 ||npgdqwtrprfq.com^
 ||npikrbynhuzi.com^
 ||nplrzxvyrhiq.com^
+||npuwpglke.bid^
 ||npzlzsxkq.bid^
 ||nqkttgrapot.bid^
 ||nqugsnsoghz.bid^
@@ -3068,6 +3113,7 @@ _383x90.
 ||nrfltkshqgzowk.bid^
 ||nrifyiemem.bid^
 ||nrszmiiwfifwlq.bid^
+||nsbugtfudztsgq.bid^
 ||nscjodfvzemwpc.bid^
 ||nsfocddqbiilg.bid^
 ||nsgwpapi.bid^
@@ -3339,6 +3385,7 @@ _383x90.
 ||pnuymnyhbbuf.com^
 ||pnzaduoelv.bid^
 ||poazvacfzbed.com^
+||pohguiypgprqr.bid^
 ||poorybdbh.bid^
 ||popadscdn.net^
 ||popzkvfimbox.com^
@@ -3599,6 +3646,7 @@ _383x90.
 ||rfyphhvcczyq.com^
 ||rgbeppxd.bid^
 ||rgmgocplioed.com^
+||rgsogoedxqkcz.bid^
 ||rgzpseubgxho.com^
 ||rhhhbdhxpmrral.bid^
 ||rhkwkqznmovfl.bid^
@@ -4358,6 +4406,7 @@ _383x90.
 ||wcgquaaknuha.com^
 ||wclnrjxefu.bid^
 ||wcoloqvrhhcf.com^
+||wdnalofau.bid^
 ||wdvmxgwwyzoq.bid^
 ||webwagssicx.bid^
 ||weekwkbulvsy.com^
@@ -4436,6 +4485,7 @@ _383x90.
 ||wssqvrcqfcfn.bid^
 ||wstfgpdmb.bid^
 ||wtdivwvldpykn.bid^
+||wtgybmmqoaxsp.bid^
 ||wtjmnbjktbci.com^
 ||wtoqymftbf.bid^
 ||wtxoicsjxbsj.com^
@@ -4752,6 +4802,7 @@ _383x90.
 ||zbxzcrldzzgv.com^
 ||zbzdylsefv.bid^
 ||zclxwzegqslr.com^
+||zcmzmicuqlq.bid^
 ||zcqaztillrmmqu.bid^
 ||zcuocqfstyne.bid^
 ||zdbzkrphx.bid^
@@ -4772,6 +4823,7 @@ _383x90.
 ||zgalejbegahc.com^
 ||zgdejlhmzjrd.com^
 ||zgobyecdtpfq.bid^
+||zgydngnax.bid^
 ||zhabyesrdnvn.com^
 ||zhbzxeis.bid^
 ||zhkziiaajuad.com^
@@ -4876,6 +4928,7 @@ _383x90.
 ||cpmstar.com/cached/
 ||cpmstar.com/view.aspx
 ||entitlements.jwplayer.com^$third-party
+||google.com/pagead/
 ||rtax.criteo.com^$third-party
 ||static.*.criteo.net/design^$third-party
 ||static.*.criteo.net/flash^$third-party
@@ -5031,7 +5084,6 @@ n21.tv##.ban_empat
 ||indexmovie.me/assets/*.gif$image
 ||indocinema21.com/banner/*.gif$image
 ||lk21.co/assets/*.gif
-||lk21.fun/wp-content/uploads/*.gif
 ||lkaca21.com/wp-content/uploads/*.gif$image
 ||movie303.com/wp-content/uploads/*.gif$image
 ||nobartv.com/img/banner/*.gif$image
@@ -5048,20 +5100,27 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! 
 .net/p.gif?
 /__utm.gif
+/appmeasurement.js
 /atrk.js
 /beacon.js
 /cdn-cgi/pe/bag2?*histats.com
+/contentanalytics/*
 /generate_204$image
+/googleanalytics/*
 /googleAnalytics_
 /id?d_visid_ver=
 /log_event?
 /log_interaction?
 /loganalysistracker/*
+/mixpanel-*.js
+/partner/transparent_pixel-$image
 /ping.gif?
 /pippio.
+/pixel.gif?
 /quant.js
 /site_stats.
 /site_stats/*
+/visitorapi.js
 ://c1.*/c.gif?
 =googleanalytics_
 ||adobedtm.com^$third-party
@@ -5069,9 +5128,12 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||appier.net^$third-party
 ||collector.githubapp.com^
 ||connect.facebook.net^*/fbevents.js$third-party
+||crazyegg.com^$third-party
 ||criteo.net^$third-party
 ||crwdcntrl.net^$third-party
+||csi.gstatic.com^
 ||demdex.net^$third-party
+||extreme-dm.com^$third-party
 ||facebook.com*/impression.php
 ||facebook.com/common/scribe_endpoint.php
 ||facebook.com/tr/?
@@ -5079,9 +5141,15 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||feedcat.net^$third-party
 ||flagcounter.com^$third-party
 ||forkcdn.com^$third-party
+||freegeoip.net^$third-party
 ||go-mpulse.net^$third-party
 ||google-analytics.com/analytics.js
+||google-analytics.com/collect
+||google-analytics.com/r/collect^
+||google.*/client_204?
 ||google.*/gen_204?$~xmlhttprequest
+||google.com^*/viewerimpressions?
+||googleadservices.com^$third-party
 ||googletagmanager.com/gtag/$third-party
 ||googletagmanager.com/gtm.js?$third-party
 ||histats.com^$third-party
@@ -5091,15 +5159,20 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ipify.org^$third-party
 ||js-agent.newrelic.com^
 ||l.sharethis.com^
+||liadm.com^$third-party
+||optimizely.com^$third-party
 ||scorecardresearch.com^$third-party
 ||statistics.crowdynews.com^
 ||stats.g.doubleclick.net^
 ||stats.wp.com^
 ||streamango.com/log
+||sumo.com/apps/heatmaps/
 ||tradedoubler.com^$third-party
 ||twitter.com/i/jot
+||twitter.com/oct.js
 ||tynt.com^$third-party
 ||w55c.net^$third-party
+||zarget.com^$third-party
 ! 
 ! Resource-abuse
 ! 
@@ -5162,6 +5235,29 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||reasedoper.pw^$third-party
 ||webmine.cz^$third-party
 ||xbasfbno.info^$third-party
+! *** abid:sections/social.txt ***
+###connect-facebook
+###connect-twitter
+###header-social
+###share-box
+##.facebook-share
+##.fb-like
+##.follow_btn
+##.footer-social
+##.google-share
+##.meta-share
+##.newsletter__social-media-icon
+##.pinterest-share
+##.rrssb-buttons
+##.share-box
+##.share_bottom
+##.social-header
+##.social__link
+##.sosmedshare
+##.sprite-social
+##.twitter-follow-button
+##.twitter-footer
+##.twitter-share
 ! *** abid:sections/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||eramuslim.com^$generichide
@@ -5171,6 +5267,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 @@||mivo.com^$generichide
 @@||neumanga.tv^$generichide
 @@||oploverz.in^$generichide
+@@||safelkmeong.blogspot.com^$generichide
 @@||sobatdrama.net^$generichide
 @@||tutorialweb.net^$generichide
 agroindustri.id#@#.category-advertorial
@@ -5184,4 +5281,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: 46SfjqohKcF5I+EQbmRH/w
+! Checksum: OyeMeZ91lYmORogsz16jng
