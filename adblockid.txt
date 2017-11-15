@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711142333
+! Version: 201711150355
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Nov 2017 23:33 UTC
+! Last modified: 15 Nov 2017 03:55 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -33,6 +33,7 @@
 .com/promodisplay?
 .id/ads/$~object-subrequest
 .id/adv/
+.net/ad/$~object-subrequest
 .openx.
 .php?zoneid=
 /ad_status.
@@ -428,7 +429,9 @@ _383x90.
 ###ads_banner_right1
 ###adsense
 ###adsground
+###adslinktext
 ###adswidget1-quick-adsense
+###adswidget2-quick-adsense-reloaded-2
 ###adv-placeholder
 ###advertbox3
 ###advsidebar
@@ -555,6 +558,7 @@ _383x90.
 ##.ads-300
 ##.ads-300x100
 ##.ads-artikel
+##.ads-banner
 ##.ads-bottom-largeleaderboard
 ##.ads-box
 ##.ads-container
@@ -621,12 +625,14 @@ _383x90.
 ##.bottom-ads
 ##.bottom-ads-new
 ##.bottomad
+##.bottomads
 ##.cnAdzerkDiv
 ##.content-ad
 ##.content_ads
 ##.desktop-advert
 ##.detads
 ##.entry-ads
+##.ezoic-ad
 ##.footer-ads
 ##.forads
 ##.g-ads
@@ -713,6 +719,7 @@ _383x90.
 ##.top-adbox
 ##.top-ads
 ##.top-ads-container
+##.topads
 ##.topadsense
 ##.topline-ads
 ##.video-ads
@@ -722,6 +729,7 @@ _383x90.
 ##.widget-ads
 ##.widget_advwidget
 ##.widget_better-ads
+##.wpmrec
 ##.ytp-ad-progress-list
 ##a[href^="https://pubads.g.doubleclick.net/"]
 ##div[class^="iklan"]
@@ -1028,6 +1036,7 @@ _383x90.
 ||exdynsrv.com^$third-party
 ||exponential.com^$third-party
 ||extend.tv^$third-party
+||ezoic.net^$third-party
 ||fnaolgfubmlc.com^$third-party
 ||forumiklan.com^$third-party
 ||ftjcfx.com^$third-party
@@ -1054,9 +1063,11 @@ _383x90.
 ||lokeriklan.com^$third-party
 ||masteriklan.net^$third-party
 ||maxonclick.com^$third-party
+||media.net^$third-party
 ||mellowads.com^$third-party
 ||ml314.com^$third-party
 ||moatads.com^$third-party
+||mobisla.com^$third-party
 ||mookie1.com^$third-party
 ||nexac.com^$third-party
 ||nexage.com^$third-party
@@ -1066,6 +1077,7 @@ _383x90.
 ||predictivadnetwork.com^$third-party
 ||props.id^$third-party
 ||publish.web.id^$third-party
+||pubmine.com^$third-party
 ||puserving.com^$third-party
 ||revcontent.com^$third-party
 ||revsci.net^$third-party
@@ -5141,6 +5153,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||uzone.id^$third-party
 ! 
 .com/0.gif?
+.com/track?$~object
 .net/p.gif?
 /__utm.gif
 /appmeasurement.js
@@ -5151,7 +5164,9 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /generate_204$image
 /googleanalytics/*
 /googleAnalytics_
+/greenoaks.gif?
 /id?d_visid_ver=
+/imp.gif?
 /log_event?
 /log_interaction?
 /loganalysistracker/*
@@ -5159,8 +5174,11 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /partner/transparent_pixel-$image
 /ping.gif?
 /pippio.
+/piwik.$script,domain=~piwik.org
 /pixel.gif?
+/px.gif?
 /quant.js
+/shinystat.
 /site_stats.
 /site_stats/*
 /stat?event=
@@ -5174,6 +5192,8 @@ _loghuman=
 ||amazonaws.com/ki.js/
 ||amung.us^$third-party
 ||appier.net^$third-party
+||beap-bc.yahoo.com^
+||bluekai.com^$third-party
 ||cdn.mobicow.com^$third-party
 ||collector-medium.lightstep.com^
 ||collector.githubapp.com^
@@ -5183,6 +5203,7 @@ _loghuman=
 ||crwdcntrl.net^$third-party
 ||csi.gstatic.com^
 ||demdex.net^$third-party
+||exelator.com^$third-party
 ||extreme-dm.com^$third-party
 ||facebook.com*/impression.php
 ||facebook.com/common/scribe_endpoint.php
@@ -5212,10 +5233,15 @@ _loghuman=
 ||kissmetrics.com^$third-party
 ||l.sharethis.com^
 ||liadm.com^$third-party
+||linkedin.com/analytics/
 ||log.outbrain.com^
 ||msecnd.net/scripts/a/ai.0.js
 ||optimizely.com^$third-party
+||pixel.wp.com^
+||referrer.disqus.com^
+||rlcdn.com^$third-party
 ||scorecardresearch.com^$third-party
+||skimresources.com^$third-party
 ||statistics.crowdynews.com^
 ||stats.g.doubleclick.net^
 ||stats.wp.com^
@@ -5309,21 +5335,22 @@ _loghuman=
 ||webmine.cz^$third-party
 ||xbasfbno.info^$third-party
 ! *** abid:sections/annoyances.txt ***
-###icon-facebook
-###subscribe-box
-##.fb-container
-##.fb-page
-##.follow_btn
-##.footer__social
-##.share-box
-##.share_bottom
-##.social__item
-##.social__link
-##.sprite-social
-/sharebox.
-_gplus.png
-||facebook.com^*/plugins/page.php?$third-party
-||youtube.com/subscribe_embed?$third-party
+/cookieconsent.
+/outbrain.js
+/rss.png
+/twitter_cookies.
+||blogtopsites.com^$third-party
+||disqus.com/api/*/listRelated.json?
+||feedburner.com^$image,third-party
+||onesignal.com^$third-party
+! 
+###subscribe-email
+##.IN-widget
+##.OUTBRAIN
+##.fa-rss
+##.jetpack_subscription_widget
+##.rss-footer
+##.rss_net
 ! *** abid:sections/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||eramuslim.com^$generichide
@@ -5347,4 +5374,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: FhDQ1+36bY4aP0bh+18mBg
+! Checksum: uLEm+Cv7P0/P17wB3BcGPA
