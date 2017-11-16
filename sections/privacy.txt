@@ -10,6 +10,7 @@
 /cdn-cgi/pe/bag2?*histats.com
 /contentanalytics/*
 /generate_204$image
+/geocounter.
 /googleanalytics/*
 /googleAnalytics_
 /greenoaks.gif?
@@ -61,6 +62,8 @@ _loghuman=
 ||flagcounter.com^$third-party
 ||forkcdn.com^$third-party
 ||freegeoip.net^$third-party
+||github.com/_private/browser/stats
+||github.com/_stats
 ||go-mpulse.net^$third-party
 ||google-analytics.com/analytics.js
 ||google-analytics.com/collect
@@ -85,13 +88,16 @@ _loghuman=
 ||log.outbrain.com^
 ||msecnd.net/scripts/a/ai.0.js
 ||optimizely.com^$third-party
+||pixel.redditmedia.com^
 ||pixel.wp.com^
 ||referrer.disqus.com^
 ||rlcdn.com^$third-party
 ||scorecardresearch.com^$third-party
 ||skimresources.com^$third-party
+||statcounter.com^$third-party
 ||statistics.crowdynews.com^
 ||stats.g.doubleclick.net^
+||stats.topofblogs.com^
 ||stats.wp.com^
 ||streamango.com/log
 ||sumo.com/apps/heatmaps/
@@ -100,9 +106,19 @@ _loghuman=
 ||twitter.com/i/jot
 ||twitter.com/oct.js
 ||tynt.com^$third-party
+||va.tawk.to/log
 ||visualwebsiteoptimizer.com^$third-party
 ||w55c.net^$third-party
+||wikihow.com/x/collect?
+||youtube.com/*_204?$~xmlhttprequest
+||youtube.com/api/stats/playback?
+||youtube.com/api/stats/qoe?
+||youtube.com/ptracking?
+||youtube.com/set_awesome?
 ||zarget.com^$third-party
+!
+@@||s.youtube.com/api/stats/playback?$image,object-subrequest
+@@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
 !
 ! Resource-abuse
 !

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711150355
+! Version: 201711160507
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Nov 2017 03:55 UTC
+! Last modified: 16 Nov 2017 05:07 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -17,6 +17,7 @@
 -iklan.gif|
 -iklan.jpg|
 -iklan.js|
+-pagead-id.
 -popads.php|
 .ads.controller.
 .ads.css
@@ -36,6 +37,8 @@
 .net/ad/$~object-subrequest
 .openx.
 .php?zoneid=
+/*space-iklan*.
+/ad/banner/*
 /ad_status.
 /adaptvadplayer.
 /ados.js
@@ -71,6 +74,7 @@
 /affiliate/promo/*
 /ajrotator/*
 /ajs.php?
+/amp-ad-
 /assets/adv/*
 /banner-atas1
 /banner.php
@@ -189,6 +193,7 @@ _promo_ad/
 ! 
 ! Popular dimension sizes
 ! 
+-120x240.
 -160-600.
 -160x600.
 -300-250.
@@ -227,8 +232,8 @@ _728x90-
 -300-x-250-
 -300-x-250.
 -300-X-300-
--300x200.
--300x300.
+-300x200.gif|
+-300x300.gif|
 -370-x-100.
 -370x100.
 -380x60.
@@ -258,6 +263,8 @@ _728x90-
 /*160x600*.
 /*250x250*.
 /*300*x250*.
+/*300x250*.
+/*400x80*.
 /*420x60.
 /*490x70.
 /*500x80.
@@ -466,6 +473,7 @@ _383x90.
 ###iklanarea
 ###iklanatas
 ###iklanpersegi
+###iklanresponsiveatas
 ###iqadtile5
 ###leftframeAD
 ###marketing-promo
@@ -538,6 +546,7 @@ _383x90.
 ##.ad_728_90
 ##.ad_990_80
 ##.ad_box
+##.ad_label
 ##.ad_plus
 ##.ad_poll
 ##.ad_position
@@ -598,6 +607,7 @@ _383x90.
 ##.adsbox
 ##.adsbyadop
 ##.adsbygoogle
+##.adsense-post
 ##.adspace_300
 ##.adss
 ##.adstop
@@ -1068,6 +1078,7 @@ _383x90.
 ||ml314.com^$third-party
 ||moatads.com^$third-party
 ||mobisla.com^$third-party
+||mobtrks.com^$third-party
 ||mookie1.com^$third-party
 ||nexac.com^$third-party
 ||nexage.com^$third-party
@@ -5162,6 +5173,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /cdn-cgi/pe/bag2?*histats.com
 /contentanalytics/*
 /generate_204$image
+/geocounter.
 /googleanalytics/*
 /googleAnalytics_
 /greenoaks.gif?
@@ -5213,6 +5225,8 @@ _loghuman=
 ||flagcounter.com^$third-party
 ||forkcdn.com^$third-party
 ||freegeoip.net^$third-party
+||github.com/_private/browser/stats
+||github.com/_stats
 ||go-mpulse.net^$third-party
 ||google-analytics.com/analytics.js
 ||google-analytics.com/collect
@@ -5237,13 +5251,16 @@ _loghuman=
 ||log.outbrain.com^
 ||msecnd.net/scripts/a/ai.0.js
 ||optimizely.com^$third-party
+||pixel.redditmedia.com^
 ||pixel.wp.com^
 ||referrer.disqus.com^
 ||rlcdn.com^$third-party
 ||scorecardresearch.com^$third-party
 ||skimresources.com^$third-party
+||statcounter.com^$third-party
 ||statistics.crowdynews.com^
 ||stats.g.doubleclick.net^
+||stats.topofblogs.com^
 ||stats.wp.com^
 ||streamango.com/log
 ||sumo.com/apps/heatmaps/
@@ -5252,9 +5269,19 @@ _loghuman=
 ||twitter.com/i/jot
 ||twitter.com/oct.js
 ||tynt.com^$third-party
+||va.tawk.to/log
 ||visualwebsiteoptimizer.com^$third-party
 ||w55c.net^$third-party
+||wikihow.com/x/collect?
+||youtube.com/*_204?$~xmlhttprequest
+||youtube.com/api/stats/playback?
+||youtube.com/api/stats/qoe?
+||youtube.com/ptracking?
+||youtube.com/set_awesome?
 ||zarget.com^$third-party
+! 
+@@||s.youtube.com/api/stats/playback?$image,object-subrequest
+@@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
 ! 
 ! Resource-abuse
 ! 
@@ -5339,18 +5366,26 @@ _loghuman=
 /outbrain.js
 /rss.png
 /twitter_cookies.
+||autolinkmaker.itunes.apple.com^$third-party
 ||blogtopsites.com^$third-party
 ||disqus.com/api/*/listRelated.json?
 ||feedburner.com^$image,third-party
+||goroost.com^$third-party
+||instagram.com/logging_client_events
 ||onesignal.com^$third-party
 ! 
 ###subscribe-email
+###subscribeBOX
 ##.IN-widget
 ##.OUTBRAIN
-##.fa-rss
+##.berlangganan-box
+##.feed-links
 ##.jetpack_subscription_widget
 ##.rss-footer
 ##.rss_net
+##.sharrre
+##.widget_newsletterwidget
+youtube.com##.ytp-title-channel
 ! *** abid:sections/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||eramuslim.com^$generichide
@@ -5374,4 +5409,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: uLEm+Cv7P0/P17wB3BcGPA
+! Checksum: 2U9Pr3Tp2sh+ypqIN33YBg
