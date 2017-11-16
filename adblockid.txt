@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711160507
+! Version: 201711160735
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Nov 2017 05:07 UTC
+! Last modified: 16 Nov 2017 07:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -24,6 +24,7 @@
 .ads1-
 .ads2-
 .ads3-
+.adserver.
 .com/ad?
 .com/ads-
 .com/ads.
@@ -85,6 +86,7 @@
 /bnr.php?
 /cdn-cgi/pe/bag2?*ajs.php
 /css/ads.
+/curveball/ads/*
 /delivery/afr.
 /delivery/al.php
 /delivery/fl.
@@ -1185,6 +1187,7 @@ _383x90.
 ||algkebjdgafa.com^
 ||alidnquxirv.bid^
 ||alnisdrmhs.bid^
+||alxetzfhlzekv.bid^
 ||amaqcgrrmedi.bid^
 ||amdhlyqfy.bid^
 ||amhpbhyxfgvd.com^
@@ -1434,6 +1437,7 @@ _383x90.
 ||cbehcazifywmro.bid^
 ||cbrqndeptsw.com^
 ||cbwrwcjdctrj.com^
+||cbxadrwlccrky.bid^
 ||cbxqceuuwnaz.com^
 ||ccabzumewfk.bid^
 ||ccaypkuiauizuh.bid^
@@ -1766,6 +1770,7 @@ _383x90.
 ||enheqjtrvkn.bid^
 ||enhovesepdhxph.bid^
 ||enhwftpkwvnb.com^
+||ennwwuxijwjgdm.bid^
 ||enzyxtdcacde.com^
 ||eojrldtucqsf.com^
 ||epernepojkle.com^
@@ -2021,6 +2026,7 @@ _383x90.
 ||gjeyqtunbnap.com^
 ||gjfugukpyo.bid^
 ||gjjsfchh.bid^
+||gjvuxnfwsngmux.bid^
 ||gjwqxjqdvtldbh.bid^
 ||gkblyvnioxpd.com^
 ||gkeahnmvduys.com^
@@ -2156,6 +2162,7 @@ _383x90.
 ||heydqkfbglbu.com^
 ||hfbnztgnmheyd.bid^
 ||hfcczxpyfdhl.bid^
+||hffqgxgjiqdlx.bid^
 ||hfgevdzcoocs.com^
 ||hfmtqgiqscvg.com^
 ||hftyrwqjknhzoa.com^
@@ -3280,6 +3287,7 @@ _383x90.
 ||okaeetrzjyvx.com^
 ||okasfshomqmg.com^
 ||okbiafbcvoqo.com^
+||okiaecdkdyut.bid^
 ||oknmanswftcd.com^
 ||okswjzifwg.bid^
 ||oktrgkmj.bid^
@@ -3419,6 +3427,7 @@ _383x90.
 ||pkdzrxdn.bid^
 ||pkfqaxlxh.bid^
 ||pkklpazhqqda.com^
+||pkkuouvecratte.bid^
 ||pkougirndckw.com^
 ||pkoyiqjjxhsy.com^
 ||pktgargbhjmo.com^
@@ -3534,6 +3543,7 @@ _383x90.
 ||qdzhsgwj.bid^
 ||qedgufui.bid^
 ||qeembhyfvjtq.com^
+||qefjdsfny.bid^
 ||qekmxaimxkok.com^
 ||qerlbvqwsqtb.com^
 ||qevfmwciyp.bid^
@@ -5110,6 +5120,7 @@ cgv.id,ustream.tv##.banner-wrapper
 beritagar.id,covesia.com##.banner300x250
 covesia.com##.banner650x80
 kaskus.co.id##.bottom-frame
+detik.com##.detikads
 teknodiary.com##.googlepublisherads
 detik.com##.gtm_newsfeed_ads
 carapedia.com##.img-banner
@@ -5240,6 +5251,7 @@ _loghuman=
 ||histats.com^$third-party
 ||hotjar.com^$third-party
 ||ib.adnxs.com^
+||instagram.com/logging_client_events
 ||intensedebate.com/remotevisit.php?
 ||io.narrative.io/?$third-party
 ||ipify.org^$third-party
@@ -5250,7 +5262,9 @@ _loghuman=
 ||linkedin.com/analytics/
 ||log.outbrain.com^
 ||msecnd.net/scripts/a/ai.0.js
+||onthe.io^$third-party
 ||optimizely.com^$third-party
+||p.po.st^*&pub=
 ||pixel.redditmedia.com^
 ||pixel.wp.com^
 ||referrer.disqus.com^
@@ -5260,6 +5274,7 @@ _loghuman=
 ||statcounter.com^$third-party
 ||statistics.crowdynews.com^
 ||stats.g.doubleclick.net^
+||stats.pusher.com^
 ||stats.topofblogs.com^
 ||stats.wp.com^
 ||streamango.com/log
@@ -5365,6 +5380,7 @@ _loghuman=
 /cookieconsent.
 /outbrain.js
 /rss.png
+/sendtofriend.gif
 /twitter_cookies.
 ||autolinkmaker.itunes.apple.com^$third-party
 ||blogtopsites.com^$third-party
@@ -5385,6 +5401,11 @@ _loghuman=
 ##.rss_net
 ##.sharrre
 ##.widget_newsletterwidget
+! 
+okezone.com##.horizontal.sosmedshare-xs
+liputan6.com##.newsletter__wrapper
+detik.com##.share_float
+okezone.com##.sosvertikal
 youtube.com##.ytp-title-channel
 ! *** abid:sections/whitelist.txt ***
 @@||ad4msan.com^$elemhide
@@ -5409,4 +5430,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: 2U9Pr3Tp2sh+ypqIN33YBg
+! Checksum: lnQo+jIx4YjNCRYO4FJsAw
