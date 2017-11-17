@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711160735
+! Version: 201711170604
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Nov 2017 07:35 UTC
+! Last modified: 17 Nov 2017 06:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -71,6 +71,7 @@
 /advert/*
 /advertise-
 /advertisements/*
+/aff_ad?
 /affiliate/promo-
 /affiliate/promo/*
 /ajrotator/*
@@ -147,6 +148,7 @@
 /promo/ad_
 /promo/ads/*
 /promo/affiframe.
+/promo/banner/*
 /promo/banners/*
 /promo300by250.
 /promo300x250.
@@ -174,6 +176,7 @@
 /SkinADkiri.
 /textadspromo_
 /u?pub=
+/upload/ads/*
 /uploads/ads/*
 /videojs.ads.
 /www/delivery/*
@@ -182,6 +185,7 @@
 ://banner.$third-party
 ://banners.$third-party
 ://promo.$third-party
+=adunit&
 ?adsdata=
 _ad_promo2.
 _adnetwork.
@@ -215,6 +219,7 @@ _promo_ad/
 /728x90/*
 /728x90_
 /ad-150x300-
+468_60.gif|
 728x90.gif|
 =300x250&
 =728x90&
@@ -230,11 +235,13 @@ _728x90-
 -1000X180.
 -100x450.
 -100x500.
+-1080x65.
 -276x100.
 -300-x-250-
 -300-x-250.
 -300-X-300-
 -300x200.gif|
+-300x250.
 -300x300.gif|
 -370-x-100.
 -370x100.
@@ -262,10 +269,10 @@ _728x90-
 -980x90.
 -banner-300.
 -banner-728.
+/*125*125*.gif|
 /*160x600*.
 /*250x250*.
-/*300*x250*.
-/*300x250*.
+/*300*250*.
 /*400x80*.
 /*420x60.
 /*490x70.
@@ -387,6 +394,7 @@ _383x90.
 /*pusatqq*.$image
 /*qq288*.$image
 /*qqhok*.$image
+/*qqnewbet*.$image
 /*rgo*casino*.$image
 /*sakong*.$image
 /*sakuratoto*.$image
@@ -403,6 +411,7 @@ _383x90.
 /*webajaib*.$image
 /*wpbet365*.$image
 /*zyngaqq*.$image
+/jaya*bet*.$image
 ! *** abid:sections/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
@@ -522,6 +531,9 @@ _383x90.
 ##.SC_TBlock
 ##.SectionAds
 ##.a-ad
+##.ad-200x200
+##.ad-250x250
+##.ad-468x60
 ##.ad-banner
 ##.ad-block
 ##.ad-cell
@@ -596,6 +608,7 @@ _383x90.
 ##.ads_300x250
 ##.ads_728
 ##.ads_728x90
+##.ads__banner
 ##.ads__bottom
 ##.ads__boxr
 ##.ads__horizontal
@@ -1038,6 +1051,7 @@ _383x90.
 ||brightonclick.com^$third-party
 ||btrll.com^$third-party
 ||buzzadnetwork.com^$third-party
+||carbonads.com^$third-party
 ||casalemedia.com^$third-party
 ||clickmedia.co.id^$third-party
 ||collective-media.net^$third-party
@@ -4999,6 +5013,7 @@ _383x90.
 ! 
 ||45.76.146.8^$third-party
 ||agenjudionline.in^$third-party
+||kumpulblogger.com^$third-party
 ||rajaqq.info^$third-party
 ||sukipli.com/*.gif^$third-party
 ! 
@@ -5096,6 +5111,7 @@ grid.id###head-banner-ads
 droidlime.com###it-ad-header
 lytogame.com###lytoads
 detik.com###otp_banner
+rappler.com###rappler3-common-desktop-middle-ad
 bola.net###top_leaderboard
 otosia.com###v5-leaderboard
 kapanlagi.com###v5-marcommpromotion
@@ -5106,7 +5122,7 @@ kapanlagi.com###v8-leaderboard
 mangacanblog.com##.ad
 ftloverz.net##.addads
 nonton.com##.adds
-tempointeraktif.co##.ads
+gogirl.id,tempointeraktif.co##.ads
 grid.id##.ads-mr
 detik.com,mangaku.web.id##.adv
 autonetmagz.com##.autonetmagz__meta--ads-elements
@@ -5176,10 +5192,13 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! 
 .com/0.gif?
 .com/track?$~object
+.lms-analytics/
 .net/p.gif?
 /__utm.gif
+/adsct?
 /appmeasurement.js
 /atrk.js
+/backlink2.
 /beacon.js
 /cdn-cgi/pe/bag2?*histats.com
 /contentanalytics/*
@@ -5214,18 +5233,21 @@ _loghuman=
 ||adobedtm.com^$third-party
 ||amazonaws.com/ki.js/
 ||amung.us^$third-party
+||analytics.twitter.com^
 ||appier.net^$third-party
+||bat.bing.com^
 ||beap-bc.yahoo.com^
 ||bluekai.com^$third-party
 ||cdn.mobicow.com^$third-party
 ||collector-medium.lightstep.com^
-||collector.githubapp.com^
 ||connect.facebook.net^*/fbevents.js$third-party
 ||crazyegg.com^$third-party
 ||criteo.net^$third-party
 ||crwdcntrl.net^$third-party
 ||csi.gstatic.com^
 ||demdex.net^$third-party
+||e-referrer.com^$third-party
+||event.api.drift.com^
 ||exelator.com^$third-party
 ||extreme-dm.com^$third-party
 ||facebook.com*/impression.php
@@ -5233,11 +5255,11 @@ _loghuman=
 ||facebook.com/tr/?
 ||facebook.com/xti.php?
 ||feedcat.net^$third-party
+||feedjit.com^$third-party
 ||flagcounter.com^$third-party
 ||forkcdn.com^$third-party
 ||freegeoip.net^$third-party
-||github.com/_private/browser/stats
-||github.com/_stats
+||gigya.com/js/gigyagaintegration.js
 ||go-mpulse.net^$third-party
 ||google-analytics.com/analytics.js
 ||google-analytics.com/collect
@@ -5251,6 +5273,7 @@ _loghuman=
 ||histats.com^$third-party
 ||hotjar.com^$third-party
 ||ib.adnxs.com^
+||inspectlet.com^$third-party
 ||instagram.com/logging_client_events
 ||intensedebate.com/remotevisit.php?
 ||io.narrative.io/?$third-party
@@ -5261,12 +5284,16 @@ _loghuman=
 ||liadm.com^$third-party
 ||linkedin.com/analytics/
 ||log.outbrain.com^
+||mc.yandex.ru^
+||metrics.brightcove.com^
 ||msecnd.net/scripts/a/ai.0.js
+||ndg.io^$third-party
 ||onthe.io^$third-party
 ||optimizely.com^$third-party
 ||p.po.st^*&pub=
 ||pixel.redditmedia.com^
 ||pixel.wp.com^
+||rackcdn.com/stf.js
 ||referrer.disqus.com^
 ||rlcdn.com^$third-party
 ||scorecardresearch.com^$third-party
@@ -5289,12 +5316,14 @@ _loghuman=
 ||w55c.net^$third-party
 ||wikihow.com/x/collect?
 ||youtube.com/*_204?$~xmlhttprequest
+||youtube.com/api/stats/ads?
 ||youtube.com/api/stats/playback?
 ||youtube.com/api/stats/qoe?
 ||youtube.com/ptracking?
 ||youtube.com/set_awesome?
 ||zarget.com^$third-party
 ! 
+@@||analytics.twitter.com^$domain=analytics.twitter.com
 @@||s.youtube.com/api/stats/playback?$image,object-subrequest
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
 ! 
@@ -5382,31 +5411,50 @@ _loghuman=
 /rss.png
 /sendtofriend.gif
 /twitter_cookies.
+/wp-content/plugins/popover/*$script
+/wp-content/plugins/tab-slide/*
+/wp-content/plugins/thrive-leads/*$script
 ||autolinkmaker.itunes.apple.com^$third-party
 ||blogtopsites.com^$third-party
 ||disqus.com/api/*/listRelated.json?
+||feedage.com^$third-party
 ||feedburner.com^$image,third-party
 ||goroost.com^$third-party
 ||instagram.com/logging_client_events
+||linkwithin.com^$third-party
+||nrelate.com^$third-party
 ||onesignal.com^$third-party
+||pushalert.co^$third-party
 ! 
 ###subscribe-email
 ###subscribeBOX
-##.IN-widget
 ##.OUTBRAIN
 ##.berlangganan-box
 ##.feed-links
 ##.jetpack_subscription_widget
-##.rss-footer
-##.rss_net
+##.post-meta__sharing
 ##.sharrre
+##.social-media-share
+##.sumome-share-client-wrapper
+##.td-post-sharing
 ##.widget_newsletterwidget
+##form[action="http://feedburner.google.com/fb/a/mailverify"]
 ! 
+hipwee.com###share-fixed-alt
 okezone.com##.horizontal.sosmedshare-xs
 liputan6.com##.newsletter__wrapper
-detik.com##.share_float
+ciriseo.net##.share-buttons-box
+techinasia.com##.signup-box
 okezone.com##.sosvertikal
 youtube.com##.ytp-title-channel
+! 
+detik.com###share_top
+detik.com##.share-box
+detik.com##.share_float
+! 
+kaskus.co.id###forum-thread-top
+kaskus.co.id##.notice
+kaskus.co.id##.sidebar-wrap.row > .more-like
 ! *** abid:sections/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||eramuslim.com^$generichide
@@ -5430,4 +5478,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: lnQo+jIx4YjNCRYO4FJsAw
+! Checksum: LU9bn8Wt3h3xnXav4fzhQw
