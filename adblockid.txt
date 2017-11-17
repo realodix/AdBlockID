@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711170604
+! Version: 201711170641
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Nov 2017 06:04 UTC
+! Last modified: 17 Nov 2017 06:41 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -5192,11 +5192,13 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! 
 .com/0.gif?
 .com/track?$~object
+.com/v.gif?
 .lms-analytics/
 .net/p.gif?
 /__utm.gif
 /adsct?
 /appmeasurement.js
+/atrk.gif?
 /atrk.js
 /backlink2.
 /beacon.js
@@ -5209,6 +5211,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /greenoaks.gif?
 /id?d_visid_ver=
 /imp.gif?
+/js/tracking/*
+/log.gif?
 /log_event?
 /log_interaction?
 /loganalysistracker/*
@@ -5240,12 +5244,14 @@ _loghuman=
 ||bluekai.com^$third-party
 ||cdn.mobicow.com^$third-party
 ||collector-medium.lightstep.com^
+||connect.facebook.net/signals/$third-party
 ||connect.facebook.net^*/fbevents.js$third-party
 ||crazyegg.com^$third-party
 ||criteo.net^$third-party
 ||crwdcntrl.net^$third-party
 ||csi.gstatic.com^
 ||demdex.net^$third-party
+||doubleclick.net/activity$third-party
 ||e-referrer.com^$third-party
 ||event.api.drift.com^
 ||exelator.com^$third-party
@@ -5270,6 +5276,7 @@ _loghuman=
 ||googleadservices.com^$third-party
 ||googletagmanager.com/gtag/$third-party
 ||googletagmanager.com/gtm.js?$third-party
+||graph.facebook.com/?ids=*&callback=$script,third-party
 ||histats.com^$third-party
 ||hotjar.com^$third-party
 ||ib.adnxs.com^
@@ -5286,6 +5293,7 @@ _loghuman=
 ||log.outbrain.com^
 ||mc.yandex.ru^
 ||metrics.brightcove.com^
+||mmstat.com^$third-party
 ||msecnd.net/scripts/a/ai.0.js
 ||ndg.io^$third-party
 ||onthe.io^$third-party
@@ -5298,6 +5306,7 @@ _loghuman=
 ||rlcdn.com^$third-party
 ||scorecardresearch.com^$third-party
 ||skimresources.com^$third-party
+||smartlook.com^$third-party
 ||statcounter.com^$third-party
 ||statistics.crowdynews.com^
 ||stats.g.doubleclick.net^
@@ -5478,4 +5487,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: LU9bn8Wt3h3xnXav4fzhQw
+! Checksum: 1IXLQeuwHOBi3hgJo7qYBA
