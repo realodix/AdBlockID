@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711170641
+! Version: 201711181344
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Nov 2017 06:41 UTC
+! Last modified: 18 Nov 2017 13:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -74,6 +74,7 @@
 /aff_ad?
 /affiliate/promo-
 /affiliate/promo/*
+/afu.php?$popup
 /ajrotator/*
 /ajs.php?
 /amp-ad-
@@ -90,6 +91,7 @@
 /curveball/ads/*
 /delivery/afr.
 /delivery/al.php
+/delivery/fc.
 /delivery/fl.
 /delivery/spc.
 /dfp-ads.
@@ -174,6 +176,7 @@
 /show_ads.js
 /SkinADkanan.
 /SkinADkiri.
+/spcjs.php
 /textadspromo_
 /u?pub=
 /upload/ads/*
@@ -236,6 +239,7 @@ _728x90-
 -100x450.
 -100x500.
 -1080x65.
+-1200x90.
 -276x100.
 -300-x-250-
 -300-x-250.
@@ -243,6 +247,7 @@ _728x90-
 -300x200.gif|
 -300x250.
 -300x300.gif|
+-300x65.
 -370-x-100.
 -370x100.
 -380x60.
@@ -258,8 +263,10 @@ _728x90-
 -580x380.
 -65x300-
 -700x70.
+-710x140.
 -728-x-90.
 -728-x90.
+-728-x900.
 -730x220.
 -790-90.
 -80x300-
@@ -301,6 +308,7 @@ _728x90-
 /300x90/*
 /395-x-60.
 /400x50*.
+/574x110-
 /95x230.
 /960x120*.
 /ad-150x300
@@ -309,6 +317,7 @@ _1040x65.
 _128x350_
 _250x250.
 _383x90.
+_780x90.
 ! 
 ! Judi
 /*agen*.gif$image
@@ -473,6 +482,7 @@ _383x90.
 ###flowads
 ###footer-adcont
 ###hbanner
+###header-ad
 ###idmuvi-popup
 ###iklan
 ###iklan-text
@@ -512,6 +522,7 @@ _383x90.
 ###quads-ad2_widget
 ###quads-ad4
 ###rightAd
+###sidebar-sponsors
 ###sky_advert
 ###srcadsurlblock
 ###teaser2
@@ -539,6 +550,7 @@ _383x90.
 ##.ad-cell
 ##.ad-float-image
 ##.ad-in-post
+##.ad-label
 ##.ad-leader
 ##.ad-leader-top
 ##.ad-leaderboard
@@ -580,11 +592,13 @@ _383x90.
 ##.ads-160
 ##.ads-300
 ##.ads-300x100
+##.ads-ad
 ##.ads-artikel
 ##.ads-banner
 ##.ads-bottom-largeleaderboard
 ##.ads-box
 ##.ads-container
+##.ads-header
 ##.ads-large
 ##.ads-large-leaderboard
 ##.ads-leaderboard
@@ -629,6 +643,7 @@ _383x90.
 ##.adtext01
 ##.adunit
 ##.adunits.ads
+##.adv-box
 ##.adv-sidebar
 ##.advertisement
 ##.advertisement-comment
@@ -638,10 +653,13 @@ _383x90.
 ##.an-advert-banner
 ##.article-ad
 ##.article-ads
+##.banner-300x250
+##.banner-468
 ##.banner-728x90
 ##.banner300
 ##.banner468
 ##.bannerutama
+##.betteradscontainer
 ##.bg-ads
 ##.bgads
 ##.billboard-ad
@@ -720,11 +738,13 @@ _383x90.
 ##.sam-ad
 ##.sam_ad
 ##.sgAd
+##.sharrre-container
 ##.sidebar-box-ads
 ##.simple_ads_manager_block_widget
 ##.simple_ads_manager_widget
 ##.simple_advert
 ##.sponsor-link
+##.sponsor-logo
 ##.sponsor_ads
 ##.td-a-rec-id-custom_ad_1
 ##.td-a-rec-id-custom_ad_2
@@ -752,6 +772,7 @@ _383x90.
 ##.video-content-top-ads
 ##.widget-ad
 ##.widget-ads
+##.widget_adsensem
 ##.widget_advwidget
 ##.widget_better-ads
 ##.wpmrec
@@ -1455,6 +1476,7 @@ _383x90.
 ||cbxqceuuwnaz.com^
 ||ccabzumewfk.bid^
 ||ccaypkuiauizuh.bid^
+||cccytihi.bid^
 ||ccefzhxgobjm.com^
 ||ccvewygyjqbq.bid^
 ||cdbxuzzlgfhh.com^
@@ -1506,6 +1528,7 @@ _383x90.
 ||cmqeojydveotb.bid^
 ||cmqyhtqkhduy.com^
 ||cmrxvyjyaerf.com^
+||cmyjgtiihmit.bid^
 ||cnntsmnymvnp.com^
 ||cnnzfijy.bid^
 ||cnygzgurqpwop.bid^
@@ -1673,6 +1696,7 @@ _383x90.
 ||dswwghrlwwcm.com^
 ||dsxbgkphjyrngo.bid^
 ||dtmwwpykiqng.com^
+||dtpictvzcqqm.bid^
 ||dubijsirwtwq.com^
 ||dubzmzpdkddi.com^
 ||duchmcmpmqqu.com^
@@ -1753,6 +1777,7 @@ _383x90.
 ||eivikmwwrqtb.bid^
 ||eiwcqowbowqo.com^
 ||eizzndhkvl.bid^
+||ejdcjjcqcnzhre.bid^
 ||ejgxyfzciwyi.com^
 ||ejwocojjv.bid^
 ||ekdamsibldrg.bid^
@@ -1833,6 +1858,7 @@ _383x90.
 ||exsuqfxv.bid^
 ||exvgzhwssyivz.bid^
 ||eydiuqpdtfew.com^
+||eyjuwcrnu.bid^
 ||eylyitpslpqu.com^
 ||ezbtpdjeimlv.com^
 ||ezdariijmdlg.bid^
@@ -2004,6 +2030,7 @@ _383x90.
 ||gbnwjjxb.bid^
 ||gbsxcyukuuex.com^
 ||gbwrjyntqsvr.com^
+||gbwzrcymfmvym.bid^
 ||gcboyhlfqxhc.com^
 ||gcirwjlmyfgxm.bid^
 ||gcrqbzvwhz.bid^
@@ -2048,6 +2075,7 @@ _383x90.
 ||gkmaclyrj.bid^
 ||gkrvjofbhdvo.bid^
 ||gkvhfryrramj.com^
+||gkwdspzl.bid^
 ||gkyblmfggpyq.bid^
 ||glcpzwihisagw.bid^
 ||glfnjyzix.bid^
@@ -2125,6 +2153,7 @@ _383x90.
 ||gvyliqny.bid^
 ||gwasavfgelbuah.bid^
 ||gxdyluyqciac.com^
+||gxluqcpsfhc.bid^
 ||gxmpahyt.bid^
 ||gxqjoqpkexn.bid^
 ||gxvbogvbcivs.com^
@@ -2204,6 +2233,7 @@ _383x90.
 ||hjyxnjfbrj.bid^
 ||hklyzmspvqjh.com^
 ||hksmitcmlo.bid^
+||hkurphzwv.bid^
 ||hkvqwkeyruvy.bid^
 ||hkyskqpsqwjq.bid^
 ||hlekbinpgsuk.com^
@@ -3296,6 +3326,7 @@ _383x90.
 ||oiuilhjzqvf.bid^
 ||oivhkhvbqjh.bid^
 ||ojngisbfwwyp.com^
+||ojsfvukuqxdx.bid^
 ||ojtcgnyikbtg.bid^
 ||ojvwpiqnmecd.com^
 ||okaeetrzjyvx.com^
@@ -3418,6 +3449,7 @@ _383x90.
 ||pfhgihce.bid^
 ||pfibgoaqdzbp.com^
 ||pfjwtzlfaivp.com^
+||pgubdmshfz.bid^
 ||pguwtwcougzrc.bid^
 ||pguxoochezkc.com^
 ||pgxciwvwcfof.com^
@@ -3546,6 +3578,7 @@ _383x90.
 ||qblttqtvn.bid^
 ||qbsiawmlm.bid^
 ||qbvwcrtsyur.bid^
+||qbyzytmymz.bid^
 ||qclxheddcepf.com^
 ||qcogokgclksa.com^
 ||qcopnsmjo.bid^
@@ -3570,6 +3603,7 @@ _383x90.
 ||qfmbgvgvauvt.com^
 ||qfmcpclzunze.com^
 ||qfmkufzloxy.bid^
+||qfqihvhm.bid^
 ||qfqseouk.bid^
 ||qfrhhvbfofbt.com^
 ||qfzhppwfkenbmv.bid^
@@ -3745,6 +3779,7 @@ _383x90.
 ||rikazsjaezda.bid^
 ||rinukkvp.bid^
 ||risvrteprhufnk.bid^
+||ritjefajkl.bid^
 ||rjkfuvqwk.bid^
 ||rjljndfgnkcu.com^
 ||rjncckyoyvtu.com^
@@ -3767,6 +3802,7 @@ _383x90.
 ||rnfrfxqztlno.com^
 ||rnhcqhagfmjgx.bid^
 ||rnhkptivhwhc.com^
+||rnmjscsvqql.bid^
 ||rnqxziebydqsat.bid^
 ||rnyuhkbucgun.com^
 ||rnzzrylopa.bid^
@@ -4107,6 +4143,7 @@ _383x90.
 ||tqssctwtiihwfs.bid^
 ||tqtoeonkw.bid^
 ||tqwfafmh.bid^
+||tqwuasyvwebt.bid^
 ||tqzvjmgftvtj.bid^
 ||trcbxjusetvc.com^
 ||trdhjlszfbwk.com^
@@ -4374,6 +4411,7 @@ _383x90.
 ||vjjoarpmzb.bid^
 ||vjmoisjmh.bid^
 ||vjrpdagpjwyt.com^
+||vjvoahcty.bid^
 ||vjwjjytlbqhvmb.bid^
 ||vjzqadxswfb.bid^
 ||vjzttumdetao.com^
@@ -4406,6 +4444,7 @@ _383x90.
 ||vokvlthjzt.bid^
 ||volleqgoafcb.com^
 ||volyncftzhw.bid^
+||vomhhsovuu.bid^
 ||vpklpmvzbogn.com^
 ||vpshsuvlh.bid^
 ||vqfksrwnxodc.com^
@@ -4795,6 +4834,7 @@ _383x90.
 ||yizbtofi.bid^
 ||yjhwrpuqitzgh.bid^
 ||yjjtxuhfglxa.com^
+||yjlyvrdpnuef.bid^
 ||yjmpzvoe.bid^
 ||yjsshralziws.com^
 ||yjzopxkhw.bid^
@@ -4836,6 +4876,7 @@ _383x90.
 ||ysdacdbitdy.bid^
 ||ysexxayb.bid^
 ||ysqdjkermxyt.com^
+||yszbigwywfzk.bid^
 ||ytapgckhhvou.com^
 ||ytaujxmxxxmm.com^
 ||ytbnswbr.bid^
@@ -4965,6 +5006,7 @@ _383x90.
 ||zrrgjpsb.bid^
 ||zrufclmvlsct.com^
 ||zsbifpiosqedn.bid^
+||zsdlyigktdly.bid^
 ||zsihqvjfwwlk.com^
 ||zslembevfypr.com^
 ||zsxaeudw.bid^
@@ -5224,6 +5266,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /pixel.gif?
 /px.gif?
 /quant.js
+/seostats/*
 /shinystat.
 /site_stats.
 /site_stats/*
@@ -5265,6 +5308,8 @@ _loghuman=
 ||flagcounter.com^$third-party
 ||forkcdn.com^$third-party
 ||freegeoip.net^$third-party
+||genieesspv.jp^$third-party
+||geoip.nekudo.com^
 ||gigya.com/js/gigyagaintegration.js
 ||go-mpulse.net^$third-party
 ||google-analytics.com/analytics.js
@@ -5277,6 +5322,7 @@ _loghuman=
 ||googletagmanager.com/gtag/$third-party
 ||googletagmanager.com/gtm.js?$third-party
 ||graph.facebook.com/?ids=*&callback=$script,third-party
+||gssprt.jp^$third-party
 ||histats.com^$third-party
 ||hotjar.com^$third-party
 ||ib.adnxs.com^
@@ -5305,6 +5351,7 @@ _loghuman=
 ||referrer.disqus.com^
 ||rlcdn.com^$third-party
 ||scorecardresearch.com^$third-party
+||seg.sharethis.com^
 ||skimresources.com^$third-party
 ||smartlook.com^$third-party
 ||statcounter.com^$third-party
@@ -5379,6 +5426,7 @@ _loghuman=
 ||coinlab.biz^$third-party
 ||coinminerz.com^$third-party
 ||coinnebula.com^$third-party
+||cookiescript.info^$third-party
 ||crypto-coins.club^$third-party
 ||crypto-loot.com^$third-party
 ||cryptomine.pro^$third-party
@@ -5445,11 +5493,14 @@ _loghuman=
 ##.sharrre
 ##.social-media-share
 ##.sumome-share-client-wrapper
+##.td-more-articles-box
 ##.td-post-sharing
 ##.widget_newsletterwidget
 ##form[action="http://feedburner.google.com/fb/a/mailverify"]
 ! 
 hipwee.com###share-fixed-alt
+tribunnews.com###sharebox
+brilio.net##.body-paragraph > #mid-video
 okezone.com##.horizontal.sosmedshare-xs
 liputan6.com##.newsletter__wrapper
 ciriseo.net##.share-buttons-box
@@ -5457,13 +5508,18 @@ techinasia.com##.signup-box
 okezone.com##.sosvertikal
 youtube.com##.ytp-title-channel
 ! 
+detik.com###bx_polong
 detik.com###share_top
+detik.com###slidebox
 detik.com##.share-box
 detik.com##.share_float
 ! 
 kaskus.co.id###forum-thread-top
+kaskus.co.id##.header__kasad
+kaskus.co.id##.kaskus-ads
 kaskus.co.id##.notice
 kaskus.co.id##.sidebar-wrap.row > .more-like
+||microsite.kaskus.co.id/anniversary/
 ! *** abid:sections/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||eramuslim.com^$generichide
@@ -5487,4 +5543,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: 1IXLQeuwHOBi3hgJo7qYBA
+! Checksum: hT6fYsCa4QD1mSyjOey9pg
