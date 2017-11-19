@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711181359
+! Version: 201711190937
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Nov 2017 13:59 UTC
+! Last modified: 19 Nov 2017 09:37 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -182,6 +182,7 @@
 /upload/ads/*
 /uploads/ads/*
 /videojs.ads.
+/wp-content/plugins/wp-super-popup/*$~stylesheet
 /www/delivery/*
 ://affiliate.$third-party
 ://affiliates.$third-party
@@ -476,6 +477,7 @@ _780x90.
 ###divAdLeft
 ###divAdRight
 ###dogear_promo
+###et_ads-2
 ###fbanner
 ###fbawah
 ###fbbanner
@@ -619,6 +621,7 @@ _780x90.
 ##.ads300
 ##.ads300-250
 ##.ads300_250-widget
+##.ads728
 ##.adsSpot
 ##.ads_300
 ##.ads_300x250
@@ -679,6 +682,7 @@ _780x90.
 ##.desktop-advert
 ##.detads
 ##.entry-ads
+##.etad
 ##.ezoic-ad
 ##.footer-ads
 ##.forads
@@ -1394,6 +1398,7 @@ _780x90.
 ||bmxufcsmxcfwao.bid^
 ||bmyepmehjzhz.com^
 ||bnbotxyfewtroa.bid^
+||bnfjallm.bid^
 ||bniarapemvbd.com^
 ||bnnsgqjofzar.com^
 ||bnqaljyjkpwmiu.bid^
@@ -1577,6 +1582,7 @@ _780x90.
 ||ctzvtevpcssx.com^
 ||cuabgfjnib.bid^
 ||cvhpuccaib.bid^
+||cvwipkjyu.bid^
 ||cwhuavlffzvhyi.bid^
 ||cwliihvsjckn.com^
 ||cwmxsgbllbee.bid^
@@ -1629,6 +1635,7 @@ _780x90.
 ||ddhnjkaojrcv.bid^
 ||ddjodgzhxyjtaa.bid^
 ||debuackedhkvu.bid^
+||dehyogsjbk.bid^
 ||deouvnqbgflv.com^
 ||deqrdwsjlpjz.com^
 ||derpqpyvym.bid^
@@ -1764,6 +1771,7 @@ _780x90.
 ||egkkeahdzjqy.com^
 ||egouyziyto.bid^
 ||egqvfdht.bid^
+||egszpylvmclvf.bid^
 ||egtkhpkkfswf.com^
 ||egxkjjqke.bid^
 ||egzlqkjhm.bid^
@@ -1824,6 +1832,7 @@ _780x90.
 ||epvhmxyqa.bid^
 ||epxxqzrcdfkxo.bid^
 ||epzxtposabej.com^
+||eqcvisodkvphw.bid^
 ||eqkccjinroye.bid^
 ||eqonwbgcqi.bid^
 ||eqqhiwfjcfx.bid^
@@ -2329,6 +2338,7 @@ _780x90.
 ||hxajxyvnpou.bid^
 ||hxhabfjy.bid^
 ||hxkanryhktub.com^
+||hxlkmsib.bid^
 ||hxlojjtpqtlk.com^
 ||hxuvwqsecumg.com^
 ||hxvbrahd.bid^
@@ -2474,6 +2484,7 @@ _780x90.
 ||izmwtewwobxy.com^
 ||iznhvszyizwd.com^
 ||iztsbnkxphnj.com^
+||izxdpodiowdgp.bid^
 ||jabcdkwmwnek.com^
 ||jacroxrssmme.bid^
 ||jakzxxzrymhz.com^
@@ -2836,6 +2847,7 @@ _780x90.
 ||lhmnbgieieksdv.bid^
 ||lhnlplsj.bid^
 ||lhxgdmcyropacl.bid^
+||licoxbkagivaf.bid^
 ||liilsuive.bid^
 ||lijddbusldnecz.bid^
 ||liqbipkfbafq.com^
@@ -3218,6 +3230,7 @@ _780x90.
 ||npgdqwtrprfq.com^
 ||npikrbynhuzi.com^
 ||nplrzxvyrhiq.com^
+||nprcpjufz.bid^
 ||npuwpglke.bid^
 ||npzlzsxkq.bid^
 ||nqkttgrapot.bid^
@@ -3278,6 +3291,7 @@ _780x90.
 ||obxffuwanefrr.bid^
 ||obynjduwh.bid^
 ||ocipbbphfszy.com^
+||ockorrytznnq.bid^
 ||ockrsolo.bid^
 ||ocmvmmwctmto.bid^
 ||ocofiyymgfyxx.bid^
@@ -4213,6 +4227,7 @@ _780x90.
 ||ubazpxeafwjr.com^
 ||ubecybzqf.bid^
 ||ubiqqzmldivih.bid^
+||ubliwesgzq.bid^
 ||ubnmyycf.bid^
 ||ubwzlpjxgnlgl.bid^
 ||ubxtoqsqusyx.com^
@@ -4227,6 +4242,7 @@ _780x90.
 ||udrwyjpwjfeg.com^
 ||uebavnacbjbr.bid^
 ||uebyotcdyshk.com^
+||uehdljkrsfaa.bid^
 ||uepsvcyxxrbs.bid^
 ||uerhhgezdrdi.com^
 ||ueutwxdypf.bid^
@@ -5182,12 +5198,14 @@ kompasiana.com##.banner-top
 cgv.id,ustream.tv##.banner-wrapper
 beritagar.id,covesia.com##.banner300x250
 covesia.com##.banner650x80
+cosmogirl.co.id##.bnr
 kaskus.co.id##.bottom-frame
 detik.com##.detikads
 teknodiary.com##.googlepublisherads
 detik.com##.gtm_newsfeed_ads
 carapedia.com##.img-banner
 kompas.com##.kcm__horizontal.kcm
+esquire.co.id##.leader-board
 awsubs.co##.minipusat
 detik.com##.newsfeed-ads
 jadwaltelevisi.com##.promo-banner
@@ -5290,6 +5308,7 @@ _loghuman=
 ||bat.bing.com^
 ||beap-bc.yahoo.com^
 ||bluekai.com^$third-party
+||boomtrain.com^$third-party
 ||cdn.mobicow.com^$third-party
 ||collector-medium.lightstep.com^
 ||connect.facebook.net/signals/$third-party
@@ -5388,6 +5407,7 @@ _loghuman=
 ||youtube.com/set_awesome?
 ||zarget.com^$third-party
 ! 
+@@/wp-content/plugins/google-analytics-for-wordpress/*$~third-party
 @@||analytics.twitter.com^$domain=analytics.twitter.com
 @@||s.youtube.com/api/stats/playback?$image,object-subrequest
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
@@ -5497,6 +5517,7 @@ _loghuman=
 ##.OUTBRAIN
 ##.berlangganan-box
 ##.feed-links
+##.heateor_sss_sharing_container
 ##.jetpack_subscription_widget
 ##.post-meta__sharing
 ##.sharrre
@@ -5552,4 +5573,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: TD1WA7TTLIj12I4UKvv6Ug
+! Checksum: Z3keyTDufG9sbZ80oEjcLw
