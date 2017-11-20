@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711201150
+! Version: 201711201315
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Nov 2017 11:50 UTC
+! Last modified: 20 Nov 2017 13:15 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -38,6 +38,7 @@
 .net/ad/$~object-subrequest
 .openx.
 .php?zoneid=
+/*iklan2*.
 /*space-iklan*.
 /ad/banner/*
 /ad_status.
@@ -475,6 +476,7 @@ _atblockdetector/
 ###Box-Banner-ads
 ###DivTopAd
 ###ad-zone-1
+###adBanner
 ###adSpot-promobox1
 ###adSpot-promobox2
 ###ad_190x90
@@ -818,6 +820,7 @@ _atblockdetector/
 ##.top-adbox
 ##.top-ads
 ##.top-ads-container
+##.top-advert
 ##.topads
 ##.topadsense
 ##.topline-ads
@@ -5622,9 +5625,12 @@ detik.com##.share-box
 detik.com##.share_float
 ! 
 kaskus.co.id###forum-thread-top
+m.kaskus.co.id##.bnr-ads
 kaskus.co.id##.header__kasad
 kaskus.co.id##.kaskus-ads
+m.kaskus.co.id##.nm-alert
 kaskus.co.id##.notice
+m.kaskus.co.id##.share-wrapper
 kaskus.co.id##.sidebar-wrap.row > .more-like
 ||microsite.kaskus.co.id/anniversary/
 ! *** abid:sections/whitelist.txt ***
@@ -5651,4 +5657,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: zpuQ9yJBX+vQRWNFcIAqrQ
+! Checksum: f0lt2ZydR4HxSmV5PGNqjw
