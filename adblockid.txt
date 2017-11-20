@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711190956
+! Version: 201711200503
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 Nov 2017 09:56 UTC
+! Last modified: 20 Nov 2017 05:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -206,34 +206,18 @@ _promo_ad/
 -120x240.
 -160-600.
 -160x600.
--300-250.
 -300x250-$~xmlhttprequest
 -720x90.
 -728-90.
--728x90-
--728x90.
 /120x600.
-/300-x-250.
-/300x250.
 /300x250/*
-/300x250_
 /468x60.
-/728x90-
-/728x90.
 /728x90/*
-/728x90_
 /ad-150x300-
 468_60.gif|
-728x90.gif|
-=300x250&
-=728x90&
-_300x250.
-_300x250_
-_300x250px.
 _468x90.
 _720x90.
 _720x90_
-_728x90-
 ! 
 ! Mandiri
 -1000X180.
@@ -242,11 +226,8 @@ _728x90-
 -1080x65.
 -1200x90.
 -276x100.
--300-x-250-
--300-x-250.
 -300-X-300-
 -300x200.gif|
--300x250.
 -300x300.gif|
 -300x65.
 -370-x-100.
@@ -290,7 +271,7 @@ _728x90-
 /*720x90*.
 /*720x90.
 /*728-x-90.
-/*728x90*.
+/*728x90*.gif|
 /*85x455*.
 /*920x120.
 /*960x120.
@@ -422,6 +403,59 @@ _780x90.
 /*wpbet365*.$image
 /*zyngaqq*.$image
 /jaya*bet*.$image
+! Anti-Adblock
+-adblocker-detection/
+/abdetect.js
+/abDetector.js
+/abp_detection/*
+/abtest_ab.js
+/ad-blocker.js
+/ad-blocking-alert/*
+/adb.min.js
+/adb_detector.
+/adblock-alerter/*
+/adblock-blocker/*
+/adblock-detect.
+/adblock-detector.
+/adblock-message.
+/adblock-notify-by-bweb/*
+/adblock-relief.js
+/adblock-relief/*
+/adblock.gif?
+/adblock_detect.
+/adblock_detector.
+/adblock_detector2.
+/adblock_logger.
+/adblockchecker.
+/adblockdetect.
+/adblockdetection.
+/adblockDetector.
+/adBlockDetector/*
+/adblockdetectorwithga.
+/adblocker-leader.
+/adblocker.js
+/adBlockerTrack_
+/adblockkiller.
+/adblockpopup.
+/adbuddy.
+/adsblocker.
+/anti-adblock/*$~stylesheet
+/anti_ab.
+/antiadblock.
+/antiblock_script/*
+/blockblock/blockblock.jquery.js
+/BlockerBanner/*$xmlhttprequest
+/Disable%2BAdblock.
+/disabled_adBlock.
+/fuckadb.js
+/fuckadblock.js
+/fuckadblock/*$script
+/fuckingadblockplus.
+/ibd-block-adblocker/*
+/no-adblock/*
+/wp-content/plugins/anti-block/*
+/wp-content/plugins/anti_ad_blocker/*
+_atblockdetector/
 ! *** abid:sections/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
@@ -578,6 +612,7 @@ _780x90.
 ##.ad_990_80
 ##.ad_area
 ##.ad_box
+##.ad_container
 ##.ad_label
 ##.ad_plus
 ##.ad_poll
@@ -5261,10 +5296,12 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||uzone.id^$third-party
 ! 
 .com/0.gif?
+.com/counter?
 .com/track?$~object
 .com/v.gif?
 .lms-analytics/
 .net/p.gif?
+.skimlinks.js
 /__utm.gif
 /adsct?
 /appmeasurement.js
@@ -5274,13 +5311,16 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /beacon.js
 /cdn-cgi/pe/bag2?*histats.com
 /contentanalytics/*
+/event/pageview/*
 /generate_204$image
 /geocounter.
 /googleanalytics/*
 /googleAnalytics_
 /greenoaks.gif?
+/hit.xiti?
 /id?d_visid_ver=
 /imp.gif?
+/js/tracking.js
 /js/tracking/*
 /log.gif?
 /log_event?
@@ -5581,4 +5621,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: RKRH/mwfJJxjpvw4ILyxfA
+! Checksum: M3hXbfkI6oH8dMCR/G1yVw
