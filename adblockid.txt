@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711201415
+! Version: 201711201654
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Nov 2017 14:15 UTC
+! Last modified: 20 Nov 2017 16:54 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -51,6 +51,7 @@
 /ads-02.
 /ads-banner
 /ads-img/*
+/ads-new.
 /ads.gif
 /ads.htm
 /ads/assets/*
@@ -84,6 +85,7 @@
 /banner-atas1
 /banner.php
 /bannerads/*
+/banners/affiliate/*
 /banners/promo/*
 /bnr-samping.
 /bnr-tengah.
@@ -228,6 +230,7 @@ _720x90_
 -100x500.
 -1080x65.
 -1200x90.
+-234x60.
 -276x100.
 -300-X-300-
 -300x200.gif|
@@ -475,6 +478,8 @@ _atblockdetector/
 ###AdSense1
 ###Box-Banner-ads
 ###DivTopAd
+###ad-leaderboard
+###ad-mrec2
 ###ad-zone-1
 ###adBanner
 ###adSpot-promobox1
@@ -1190,6 +1195,7 @@ _atblockdetector/
 ||revcontent.com^$third-party
 ||revsci.net^$third-party
 ||rubiconproject.com^$third-party
+||s.adroll.com^$third-party
 ||sascdn.com^$third-party
 ||sedoparking.com^$third-party
 ||sharethrough.com^$third-party
@@ -5336,14 +5342,19 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 .skimlinks.js
 /__utm.gif
 /adsct?
+/aff_i?offer_id=
+/akam/*/pixel_
 /appmeasurement.js
 /atrk.gif?
 /atrk.js
+/b/ss/*&aqe=
 /backlink2.
 /beacon.js
 /cdn-cgi/pe/bag2?*histats.com
 /contentanalytics/*
+/cookiepingback?
 /event/pageview/*
+/GARecord^
 /generate_204$image
 /geocounter.
 /googleanalytics/*
@@ -5352,19 +5363,23 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /hit.xiti?
 /id?d_visid_ver=
 /imp.gif?
+/js/analytics.
 /js/tracking.js
 /js/tracking/*
 /log.gif?
+/log?sLog=
 /log_event?
 /log_interaction?
 /loganalysistracker/*
 /lzdtracker.
 /mixpanel-*.js
+/monitor/log/*
 /partner/transparent_pixel-$image
 /ping.gif?
 /pippio.
 /piwik.$script,domain=~piwik.org
 /pixel.gif?
+/prum.
 /px.gif?
 /quant.js
 /seostats/*
@@ -5374,12 +5389,14 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /stat?event=
 /tracker.php?
 /vglnk.js
+/visitor/index.php?*referrer$image
 /visitorapi.js
 ://c1.*/c.gif?
 =googleanalytics_
 _beacon?
 _loghuman=
 ||adobedtm.com^$third-party
+||adsymptotic.com^$third-party
 ||amazonaws.com/ki.js/
 ||amung.us^$third-party
 ||analytics.twitter.com^
@@ -5430,7 +5447,9 @@ _loghuman=
 ||googletagmanager.com/gtm.js?$third-party
 ||graph.facebook.com/?ids=*&callback=$script,third-party
 ||gssprt.jp^$third-party
+||hexagon-analytics.com^$third-party
 ||histats.com^$third-party
+||hm.baidu.com^$third-party
 ||hotjar.com^$third-party
 ||ib.adnxs.com^
 ||inspectlet.com^$third-party
@@ -5439,17 +5458,21 @@ _loghuman=
 ||io.narrative.io/?$third-party
 ||ipify.org^$third-party
 ||js-agent.newrelic.com^
+||kampyle.com^$third-party
 ||kissmetrics.com^$third-party
 ||l.sharethis.com^
 ||lcs.naver.
 ||liadm.com^$third-party
 ||linkedin.com/analytics/
 ||log.outbrain.com^
+||log.pinterest.com^
 ||mc.yandex.ru^
 ||metrics.brightcove.com^
 ||mixpanel.com^$third-party
 ||mmstat.com^$third-party
+||mousestats.com^$third-party
 ||msecnd.net/scripts/a/ai.0.js
+||mxpnl.com^$third-party
 ||ndg.io^$third-party
 ||onthe.io^$third-party
 ||optimizely.com^$third-party
@@ -5463,9 +5486,12 @@ _loghuman=
 ||scarabresearch.com^$third-party
 ||scorecardresearch.com^$third-party
 ||seg.sharethis.com^
+||segment.com^$third-party
+||segment.io^$third-party
 ||skimresources.com^$third-party
 ||smartlook.com^$third-party
 ||sociaplus.com^$third-party
+||speedcurve.com^$third-party
 ||ssc.api.bbc.com^
 ||statcounter.com^$third-party
 ||statistics.crowdynews.com^
@@ -5475,8 +5501,12 @@ _loghuman=
 ||stats.wp.com^
 ||streamango.com/log
 ||sumo.com/apps/heatmaps/
+||tamgrt.com^$third-party
 ||tradedoubler.com^$third-party
 ||treasuredata.com^$third-party
+||tripadvisor.*/PageMoniker?
+||trivago.com/check-session-state?
+||twitter.com/i/csp_report?
 ||twitter.com/i/jot
 ||twitter.com/oct.js
 ||tynt.com^$third-party
@@ -5497,6 +5527,8 @@ _loghuman=
 @@/wp-content/plugins/google-analytics-for-wordpress/*$~third-party
 @@||analytics.twitter.com^$domain=analytics.twitter.com
 @@||s.youtube.com/api/stats/playback?$image,object-subrequest
+@@||segment.com/analytics.js/*/analytics.min.js$script
+@@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
 ! 
 ! Resource-abuse
@@ -5518,6 +5550,7 @@ _loghuman=
 /miner.js
 /miner.min.js
 /miner?key=
+/obfus.min.js
 /projectpoi.min.js
 /wproxy$~third-party,websocket
 /xminer.js
@@ -5666,4 +5699,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: AWLULALSM/vieAt1Hjkz5Q
+! Checksum: wXKZ1qqFPQ1X2x2vlW6MPA
