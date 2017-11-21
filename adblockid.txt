@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711210400
+! Version: 201711210508
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 Nov 2017 04:00 UTC
+! Last modified: 21 Nov 2017 05:08 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -517,6 +517,7 @@ _atblockdetector/
 /px.gif?
 /quant.js
 /seostats/*
+/setcookie?
 /shinystat.
 /site_stats.
 /site_stats/*
@@ -1202,6 +1203,7 @@ _loghuman=
 ||buzzadnetwork.com^$third-party
 ||carbonads.com^$third-party
 ||casalemedia.com^$third-party
+||cdn.mobicow.com^$third-party
 ||clickmedia.co.id^$third-party
 ||collective-media.net^$third-party
 ||contextweb.com^$third-party
@@ -1282,6 +1284,71 @@ _loghuman=
 ||venturead.com^$third-party
 ||vertamedia.com^$third-party
 ||zjgbpjmqfaow.com^$third-party
+! *** abid:privacy/trackingservers.txt ***
+||adobedtm.com^$third-party
+||adsymptotic.com^$third-party
+||amung.us^$third-party
+||appier.net^$third-party
+||bluekai.com^$third-party
+||boomtrain.com^$third-party
+||crazyegg.com^$third-party
+||criteo.net^$third-party
+||crwdcntrl.net^$third-party
+||demdex.net^$third-party
+||doubleclick.net/activity$third-party
+||e-referrer.com^$third-party
+||edigitalsurvey.com^$third-party
+||exelator.com^$third-party
+||extreme-dm.com^$third-party
+||feedcat.net^$third-party
+||feedjit.com^$third-party
+||flagcounter.com^$third-party
+||forkcdn.com^$third-party
+||freegeoip.net^$third-party
+||genieesspv.jp^$third-party
+||globalwebindex.net^$third-party
+||go-mpulse.net^$third-party
+||google-analytics.com/r/collect^
+||googleadservices.com^$third-party
+||googletagmanager.com/gtag/$third-party
+||googletagmanager.com/gtm.js?$third-party
+||gssprt.jp^$third-party
+||hexagon-analytics.com^$third-party
+||histats.com^$third-party
+||hotjar.com^$third-party
+||inspectlet.com^$third-party
+||ipify.org^$third-party
+||kampyle.com^$third-party
+||kissmetrics.com^$third-party
+||liadm.com^$third-party
+||mixpanel.com^$third-party
+||mmstat.com^$third-party
+||mousestats.com^$third-party
+||mxpnl.com^$third-party
+||ndg.io^$third-party
+||onthe.io^$third-party
+||optimizely.com^$third-party
+||rlcdn.com^$third-party
+||scarabresearch.com^$third-party
+||scorecardresearch.com^$third-party
+||segment.com^$third-party
+||segment.io^$third-party
+||skimresources.com^$third-party
+||smartlook.com^$third-party
+||sociaplus.com^$third-party
+||speedcurve.com^$third-party
+||statcounter.com^$third-party
+||tamgrt.com^$third-party
+||tradedoubler.com^$third-party
+||treasuredata.com^$third-party
+||tynt.com^$third-party
+||visualwebsiteoptimizer.com^$third-party
+||w55c.net^$third-party
+||zarget.com^$third-party
+! 
+! 
+||google-analytics.com/analytics.js
+||google-analytics.com/collect
 ! *** abid:AdBlockID/popup.txt ***
 ||abourselfi.com^$popup,third-party
 ||baligoal.net^$popup,third-party
@@ -5242,6 +5309,49 @@ _loghuman=
 ||static.criteo.net/js/duplo^$third-party
 ||ubloger.com^$third-party
 ||viglink.com/images/pixel.gif
+! *** abid:privacy/thirdparty.txt ***
+||uzone.id^$third-party
+! 
+||amazonaws.com/ki.js/
+||bat.bing.com^
+||cloudfront-labs.amazonaws.com^
+||connect.facebook.net/signals/$third-party
+||connect.facebook.net^*/fbevents.js$third-party
+||creativecdn.com/tags?
+||csi.gstatic.com^
+||event.api.drift.com^
+||facebook.com*/impression.php
+||facebook.com/common/scribe_endpoint.php
+||facebook.com/tr/?
+||facebook.com/tr?
+||geoip.nekudo.com^
+||graph.facebook.com/?ids=*&callback=$script,third-party
+||hm.baidu.com^$third-party
+||ib.adnxs.com^
+||instagram.com/logging_client_events
+||intensedebate.com/remotevisit.php?
+||io.narrative.io/?$third-party
+||js-agent.newrelic.com^
+||l.sharethis.com^
+||log.outbrain.com^
+||log.pinterest.com^
+||mc.yandex.ru^
+||metrics.brightcove.com^
+||msecnd.net/scripts/a/ai.0.js
+||p.po.st^*&pub=
+||pixel.wp.com^
+||rackcdn.com/stf.js
+||referrer.disqus.com^
+||seg.sharethis.com^
+||stats.g.doubleclick.net^
+||stats.topofblogs.com^
+||stats.wp.com^
+||sumo.com/apps/heatmaps/
+||twitter.com/i/jot
+||twitter.com/oct.js
+||usage.trackjs.com^
+||va.tawk.to/log
+||vizury.com/analyze/
 ! *** abid:AdBlockID/specific_block.txt ***
 ||eramuslim.com/banners
 ||harianjogja.com/banner/
@@ -5262,6 +5372,34 @@ _loghuman=
 ||selebuzz.co.id/wp-content/uploads/*.gif$image
 ||solopos.com/banner/
 ! *** abid:privacy/specific_block.txt ***
+||analytics.twitter.com^
+||beap-bc.yahoo.com^
+||collector-medium.lightstep.com^
+||facebook.com/xti.php?
+||gigya.com/js/gigyagaintegration.js
+||google.*/client_204?
+||google.*/gen204?
+||google.*/gen_204?$~xmlhttprequest
+||google.com^*/viewerimpressions?
+||id.google.*/verify/*.gif
+||lcs.naver.
+||linkedin.com/analytics/
+||pixel.redditmedia.com^
+||sa.bbc.com^
+||ssc.api.bbc.com^
+||statistics.crowdynews.com^
+||stats.pusher.com^
+||streamango.com/log
+||tripadvisor.*/PageMoniker?
+||trivago.com/check-session-state?
+||twitter.com/i/csp_report?
+||wikihow.com/x/collect?
+||youtube.com/*_204?$~xmlhttprequest
+||youtube.com/api/stats/ads?
+||youtube.com/api/stats/playback?
+||youtube.com/api/stats/qoe?
+||youtube.com/ptracking?
+||youtube.com/set_awesome?
 ! *** abid:AdBlockID/specific_hide.txt ***
 ! whitelist
 eramuslim.com,inwepo.co,mastekno.com##.adsbygoogle
@@ -5570,4 +5708,4 @@ tinypaste.cc#@##banner_ad
 @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: rmkJvZ/P7OQ7hj4eioTTVA
+! Checksum: dOMExrvXDhx0cmNxtAabTw
