@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711211638
+! Version: 201711220304
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 Nov 2017 16:38 UTC
+! Last modified: 22 Nov 2017 03:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -11,6 +11,7 @@
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
 ! *** abid:AdBlockID/general_block.txt ***
+-ads-widget/
 -ads.gif
 -ads/assets/
 -iklan-
@@ -136,6 +137,7 @@
 /js/ads.
 /jsadservingsp.
 /jspopunder.
+/lib/ads.
 /media/ads/*
 /moneyball/ads/*
 /nativeads/*
@@ -568,6 +570,9 @@ _loghuman=
 ###ads_160
 ###ads_banner_left1
 ###ads_banner_right1
+###ads_footer
+###ads_header
+###ads_right
 ###adsense
 ###adsground
 ###adslinktext
@@ -1349,6 +1354,7 @@ _loghuman=
 ||treasuredata.com^$third-party
 ||tynt.com^$third-party
 ||visualwebsiteoptimizer.com^$third-party
+||w3counter.com^$third-party
 ||w55c.net^$third-party
 ||zarget.com^$third-party
 ! 
@@ -1448,11 +1454,13 @@ _loghuman=
 ||anyuwksovtwv.com^
 ||aofxqchnbtae.bid^
 ||aomvdhxvblfp.com^
+||aoqpvhstmc.bid^
 ||aoqviogrwckf.com^
 ||aoqvovzrtlpn.bid^
 ||aotrcqegtfhlaw.bid^
 ||aoxkyvcmgr.bid^
 ||apbwldhfuvnk.com^
+||apmgzzaej.bid^
 ||apmkcdsnv.bid^
 ||aprddnfuzc.bid^
 ||apuorlaqiscu.bid^
@@ -1653,6 +1661,7 @@ _loghuman=
 ||bwnrgfhbd.bid^
 ||bwpqqofejekh.com^
 ||bwuxrzvr.bid^
+||bxfsdzpffy.bid^
 ||bxoemfpetyqi.bid^
 ||bxpbwitpgbid.bid^
 ||bxrjiqoajbbh.com^
@@ -2138,6 +2147,7 @@ _loghuman=
 ||fkekipafwlqd.com^
 ||fkianrxjfumm.com^
 ||fkivuntlyd.bid^
+||fkkjsdpppv.bid^
 ||fkpbbmgqa.bid^
 ||fkrrvhoierty.com^
 ||fkwwhndzjlqrm.com^
@@ -2323,6 +2333,7 @@ _loghuman=
 ||gqnmautydwky.com^
 ||gqnotcpintcq.bid^
 ||gqorytmpkjdq.com^
+||gqtaibrlhbwd.bid^
 ||gqtcapjnn.bid^
 ||gqulrzprheth.com^
 ||gquvhveabaem.com^
@@ -2349,6 +2360,7 @@ _loghuman=
 ||guhtjoqtobac.com^
 ||gujyvlvoewweg.bid^
 ||gulvkhfah.bid^
+||guoijslfm.bid^
 ||guowsqbyh.bid^
 ||gurrfwsscwda.com^
 ||guziwptcqucio.bid^
@@ -2562,6 +2574,7 @@ _loghuman=
 ||icpfrrffsenr.com^
 ||icrnyafg.bid^
 ||icxssspyxquw.bid^
+||icyddcsjbqjxz.bid^
 ||icyfqtjj.bid^
 ||idejenmqxhy.bid^
 ||idelmxrchrce.com^
@@ -3091,6 +3104,7 @@ _loghuman=
 ||lplqyocxmify.com^
 ||lplznzccvn.bid^
 ||lppaepra.bid^
+||lpzltglosmbqul.bid^
 ||lqaqfklrgnr.bid^
 ||lqdrlzunrgma.bid^
 ||lqfbxvmq.bid^
@@ -3867,6 +3881,7 @@ _loghuman=
 ||qmisgnkw.bid^
 ||qndqwtrwguhv.com^
 ||qnfarzjp.bid^
+||qnjxxbvgfgz.bid^
 ||qnsdwkjctkso.com^
 ||qnssgaxxcpvwro.bid^
 ||qnvdwezdshagls.bid^
@@ -4243,6 +4258,7 @@ _loghuman=
 ||sxvqdslmbqyk.bid^
 ||syataqoszu.bid^
 ||syfdkngkksn.bid^
+||syfoauwvcwi.bid^
 ||syidvbodcb.bid^
 ||syiwwswcbxk.bid^
 ||syrnujjldljl.com^
@@ -4819,6 +4835,7 @@ _loghuman=
 ||wolhopys.bid^
 ||wonvagfv.bid^
 ||wooahiymbmrd.bid^
+||worqmoez.bid^
 ||worqvccd.bid^
 ||wotilhqoftvl.com^
 ||wpktjtwsidcz.com^
@@ -4940,6 +4957,7 @@ _loghuman=
 ||xlcnavkhn.bid^
 ||xljfxjbjw.bid^
 ||xlvausdwsmyoww.bid^
+||xmbyoyvs.bid^
 ||xmwqbnrbvghq.bid^
 ||xnmphtmerao.bid^
 ||xnuuzwthzaol.com^
@@ -5161,6 +5179,7 @@ _loghuman=
 ||zbfqzqzkocbgy.bid^
 ||zbgeaxemkosdwv.bid^
 ||zbihwbypkany.com^
+||zbjbvuei.bid^
 ||zbmuqkejcfww.com^
 ||zbquabayubqbbg.bid^
 ||zbtqpkimkjcr.com^
@@ -5253,6 +5272,7 @@ _loghuman=
 ||zunjxpwiztqgt.bid^
 ||zuuwfrphdgxk.com^
 ||zvdotftdxkfsv.bid^
+||zvefwiecrw.bid^
 ||zvicyjvyox.bid^
 ||zvttlvbclihk.com^
 ||zvuespzsdgdq.com^
@@ -5319,6 +5339,8 @@ _loghuman=
 ||uzone.id^$third-party
 ! 
 ||amazonaws.com/ki.js/
+||analytics.shareaholic.com^
+||areyouahuman.com/kitten?
 ||bat.bing.com^
 ||cloudfront-labs.amazonaws.com^
 ||connect.facebook.net/signals/$third-party
@@ -5346,6 +5368,7 @@ _loghuman=
 ||msecnd.net/scripts/a/ai.0.js
 ||p.po.st^*&pub=
 ||pixel.wp.com^
+||px.owneriq.net^
 ||rackcdn.com/stf.js
 ||referrer.disqus.com^
 ||seg.sharethis.com^
@@ -5493,6 +5516,7 @@ kompas.com##.kcm__horizontal.kcm
 esquire.co.id##.leader-board
 awsubs.co##.minipusat
 detik.com##.newsfeed-ads
+viva.co.id##.paralax_banner-detail
 jadwaltelevisi.com##.promo-banner
 awsubs.co##.pusat728
 21cineplex.com##.showcase
@@ -5663,6 +5687,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! 
 hipwee.com###share-fixed-alt
 tribunnews.com###sharebox
+viva.co.id##.article-share
 brilio.net##.body-paragraph > #mid-video
 okezone.com##.horizontal.sosmedshare-xs
 liputan6.com##.newsletter__wrapper
@@ -5717,4 +5742,4 @@ tinypaste.cc#@##banner_ad
 @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: eRlwAgdHRUbuG1xH5dnJwA
+! Checksum: Xgzvxd4Ilny8CPHkZu6Tyg
