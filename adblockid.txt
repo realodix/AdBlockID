@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711220304
+! Version: 201711220343
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 22 Nov 2017 03:04 UTC
+! Last modified: 22 Nov 2017 03:43 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -269,7 +269,7 @@ _720x90_
 /*125*125*.gif|
 /*160x600*.
 /*250x250*.
-/*300*250*.
+/*400x50*.
 /*400x80*.
 /*420x60.
 /*490x70.
@@ -298,7 +298,6 @@ _720x90_
 /300X300.
 /300x90/*
 /395-x-60.
-/400x50*.
 /574x110-
 /95x230.
 /960x120*.
@@ -5664,6 +5663,9 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||onesignal.com^$third-party
 ||pushalert.co^$third-party
 ! 
+||microsite.kaskus.co.id/anniversary/
+||widget.kompas.com/widget-newsletter/
+! 
 ###subscribe-email
 ###subscribeBOX
 ##.OUTBRAIN
@@ -5677,6 +5679,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.sd-sharing
 ##.shareit
 ##.sharrre
+##.social--article
 ##.social-media-share
 ##.subscribe-newsletter
 ##.sumome-share-client-wrapper
@@ -5710,7 +5713,6 @@ m.kaskus.co.id##.nm-alert
 kaskus.co.id##.notice
 m.kaskus.co.id##.share-wrapper
 kaskus.co.id##.sidebar-wrap.row > .more-like
-||microsite.kaskus.co.id/anniversary/
 ! *** abid:AdBlockID/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||eramuslim.com^$generichide
@@ -5742,4 +5744,4 @@ tinypaste.cc#@##banner_ad
 @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: Xgzvxd4Ilny8CPHkZu6Tyg
+! Checksum: NK1HfgaANmDFScHbPaZiKg
