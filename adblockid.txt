@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201711220343
+! Version: 201711221726
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 22 Nov 2017 03:43 UTC
+! Last modified: 22 Nov 2017 17:26 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -126,6 +126,7 @@
 /googleads1.
 /googleads2.
 /googleads_
+/hads-
 /iklan-
 /iklan.
 /iklan/*
@@ -269,6 +270,7 @@ _720x90_
 /*125*125*.gif|
 /*160x600*.
 /*250x250*.
+/*300*250*.gif|
 /*400x50*.
 /*400x80*.
 /*420x60.
@@ -532,6 +534,7 @@ _atblockdetector/
 =googleanalytics_
 _beacon?
 _loghuman=
+_pixel_test/?
 ! *** abid:AdBlockID/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
@@ -658,6 +661,7 @@ _loghuman=
 ###wp_pro_ad_system_ad_zone
 ##.ADBox
 ##.AD_area
+##.AdBox
 ##.AdSense
 ##.Ads-container
 ##.AdsRec
@@ -818,6 +822,7 @@ _loghuman=
 ##.gpcontent
 ##.headads
 ##.header-ads
+##.headerads
 ##.idmuvi-afterplayer
 ##.idmuvi-floatbanner
 ##.idmuvi-topbanner
@@ -1301,6 +1306,7 @@ _loghuman=
 ||appier.net^$third-party
 ||bluekai.com^$third-party
 ||boomtrain.com^$third-party
+||cedexis.com^$third-party
 ||crazyegg.com^$third-party
 ||criteo.net^$third-party
 ||crwdcntrl.net^$third-party
@@ -1323,6 +1329,7 @@ _loghuman=
 ||googletagmanager.com/gtag/$third-party
 ||googletagmanager.com/gtm.js?$third-party
 ||gssprt.jp^$third-party
+||heapanalytics.com^$third-party
 ||hexagon-analytics.com^$third-party
 ||histats.com^$third-party
 ||hotjar.com^$third-party
@@ -5399,6 +5406,7 @@ _loghuman=
 ||numpangnonton.com/wp-content/uploads/*.gif$image
 ||selebuzz.co.id/wp-content/uploads/*.gif$image
 ||solopos.com/banner/
+||twitter.com/i/cards/tfw/*?advertiser_name=
 ! *** abid:privacy/specific_block.txt ***
 ||analytics.twitter.com^
 ||beap-bc.yahoo.com^
@@ -5412,6 +5420,8 @@ _loghuman=
 ||id.google.*/verify/*.gif
 ||lcs.naver.
 ||linkedin.com/analytics/
+||pinterest.com/_/_/report/
+||pixel.facebook.com^
 ||pixel.redditmedia.com^
 ||sa.bbc.com^
 ||ssc.api.bbc.com^
@@ -5517,6 +5527,9 @@ awsubs.co##.minipusat
 detik.com##.newsfeed-ads
 viva.co.id##.paralax_banner-detail
 jadwaltelevisi.com##.promo-banner
+twitter.com##.promoted-account
+twitter.com##.promoted-trend
+twitter.com##.promoted-tweet[data-disclosure-type="promoted"]
 awsubs.co##.pusat728
 21cineplex.com##.showcase
 21cineplex.com##.showcase2
@@ -5666,9 +5679,11 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
 ! 
+###sticky-social
 ###subscribe-email
 ###subscribeBOX
 ##.OUTBRAIN
+##.article-share-bottom
 ##.berlangganan-box
 ##.feed-links
 ##.heateor_sss_sharing_container
@@ -5690,6 +5705,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! 
 hipwee.com###share-fixed-alt
 tribunnews.com###sharebox
+forum.idws.id##.Notices.PanelScroller
 viva.co.id##.article-share
 brilio.net##.body-paragraph > #mid-video
 okezone.com##.horizontal.sosmedshare-xs
@@ -5740,8 +5756,10 @@ tinypaste.cc#@##banner_ad
 ! *** abid:privacy/whitelist.txt ***
 @@/wp-content/plugins/google-analytics-for-wordpress/*$~third-party
 @@||analytics.twitter.com^$domain=analytics.twitter.com
+@@||pixel.facebook.com/ajax/gigaboxx/endpoint/UpdateLastSeenTime.php?$image
+@@||pixel.facebook.com/ajax/notifications/mark_read.php?*&alert_ids%$image
 @@||s.youtube.com/api/stats/playback?$image,object-subrequest
 @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: NK1HfgaANmDFScHbPaZiKg
+! Checksum: 7qXs9659ztyKK21QcGZzrQ
