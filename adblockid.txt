@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1124.0348
+! Version: 17.1124.1305
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Nov 2017 03:48 UTC
+! Last modified: 24 Nov 2017 13:05 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -239,6 +239,7 @@ _720x90_
 -300x200.gif|
 -300x300.gif|
 -300x65.
+-361x65-
 -370-x-100.
 -370x100.
 -380x60.
@@ -269,7 +270,7 @@ _720x90_
 -banner-728.
 /*125*125*.gif|
 /*160x600*.
-/*250x250*.
+/*250x250*.gif|
 /*300*250*.gif|
 /*400x50*.
 /*400x80*.
@@ -546,6 +547,8 @@ _pixel_test/?
 ###AdLayer1
 ###AdLayer2
 ###AdSense1
+###AdSense2
+###AdSense3
 ###Box-Banner-ads
 ###DivTopAd
 ###ad-leaderboard
@@ -570,6 +573,7 @@ _pixel_test/?
 ###ads2
 ###ads3
 ###ads4
+###ads7
 ###ads_160
 ###ads_banner_left1
 ###ads_banner_right1
@@ -578,6 +582,11 @@ _pixel_test/?
 ###ads_right
 ###adsense
 ###adsground
+###adskiri1
+###adskiri2
+###adskiri3
+###adskiri4
+###adskiri5
 ###adslinktext
 ###adslot1
 ###adswidget1-quick-adsense
@@ -691,14 +700,18 @@ _pixel_test/?
 ##.ad-promo
 ##.ad-right
 ##.ad-skyscraper
+##.ad-slot
+##.ad-slot-container
 ##.ad-spacer
 ##.ad-unit
 ##.ad-unit-top
 ##.ad-wrap
 ##.adHolder
 ##.adNetPromo
+##.ad_160
 ##.ad_300_125
 ##.ad_300_250
+##.ad_600
 ##.ad_728_90
 ##.ad_990_80
 ##.ad_area
@@ -716,6 +729,7 @@ _pixel_test/?
 ##.ad_promo
 ##.ad_promo1
 ##.ad_unit
+##.ad_unit_rail
 ##.adbanner
 ##.adinjwidget
 ##.adlink
@@ -782,6 +796,7 @@ _pixel_test/?
 ##.adv-sidebar
 ##.advertisement
 ##.advertisement-comment
+##.advertisment
 ##.adwrap
 ##.adwrap-widget
 ##.afs_ads
@@ -842,6 +857,7 @@ _pixel_test/?
 ##.iklanright
 ##.inline-ad
 ##.insert-post-ads
+##.js-outbrain-container
 ##.js-stream-ad
 ##.kotak_iklan
 ##.lazyload_ad
@@ -888,6 +904,7 @@ _pixel_test/?
 ##.sponsor-link
 ##.sponsor-logo
 ##.sponsor_ads
+##.str-top-ad
 ##.td-a-rec-id-custom_ad_1
 ##.td-a-rec-id-custom_ad_2
 ##.td-a-rec-id-custom_ad_3
@@ -907,6 +924,7 @@ _pixel_test/?
 ##.top-ads
 ##.top-ads-container
 ##.top-advert
+##.top-banner-ad-container
 ##.topads
 ##.topadsense
 ##.topline-ads
@@ -929,6 +947,7 @@ _pixel_test/?
 ##div[id^="ads300_250-widget"]
 ##div[id^="advads-"]
 ##div[id^="crt-"][style]
+##div[id^="dfp-ad-"]
 ##div[id^="div-gpt-ad"]
 ##div[id^="google_ads_iframe_"]
 ##div[id^="google_dfp_"]
@@ -5776,4 +5795,4 @@ tinypaste.cc#@##banner_ad
 @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: mITjl+H+dtZw2glRkkDIsg
+! Checksum: ofYlQeR9YCbOhjEo+aNQew
