@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1125.0159
+! Version: 17.1125.0525
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Nov 2017 01:59 UTC
+! Last modified: 25 Nov 2017 05:25 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -228,6 +228,7 @@ _web_ad_
 /728x90/*
 /ad-150x300-
 468_60.gif|
+_468x60-
 _468x90.
 _720x90.
 _720x90_
@@ -949,6 +950,7 @@ _pixel_test/?
 ##.widget_better-ads
 ##.wpmrec
 ##.ytp-ad-progress-list
+##a[href^="http://www.text-link-ads.com/"]
 ##a[href^="https://pubads.g.doubleclick.net/"]
 ##div[class^="iklan"]
 ##div[id*="ScriptRootC"]
@@ -1289,6 +1291,7 @@ _pixel_test/?
 ||maxonclick.com^$third-party
 ||media.net^$third-party
 ||mellowads.com^$third-party
+||microadinc.com^$third-party
 ||ml314.com^$third-party
 ||moatads.com^$third-party
 ||mobisla.com^$third-party
@@ -5831,4 +5834,4 @@ tinypaste.cc#@##banner_ad
 @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: ghMPXRJrNUEmMv1lodpavw
+! Checksum: 370rFweGx2bI51we59163w
