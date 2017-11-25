@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1125.1034
+! Version: 17.1125.1557
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Nov 2017 10:34 UTC
+! Last modified: 25 Nov 2017 15:57 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -76,6 +76,7 @@
 /adtrace2.js|
 /advert/*
 /advertise-
+/advertise_
 /advertisements/*
 /aff_ad?
 /affiliate/promo-
@@ -222,6 +223,7 @@ _web_ad_
 -300x250-$~xmlhttprequest
 -720x90.
 -728-90.
+-728x90.
 /120x600.
 /300x250/*
 /468x60.
@@ -239,6 +241,7 @@ _720x90_
 -100x500.
 -1080x65.
 -1200x90.
+-120x-440.
 -234x60.
 -276x100.
 -300-X-300-
@@ -250,6 +253,7 @@ _720x90_
 -370x100.
 -380x60.
 -380x80.
+-383x90.
 -468-x-60-
 -468-x-60.
 -485x60.
@@ -286,13 +290,13 @@ _720x90_
 /*530x63.
 /*535x66.
 /*720x90*.
-/*720x90.
 /*728-x-90.
 /*728x90*.gif|
 /*85x455*.
 /*920x120.
-/*960x120.
+/*960x120*.
 /*970x90*.
+/*976x70*.
 /*980x90*.
 /*w250-h250-$image
 /*w300-h250-$image
@@ -309,7 +313,6 @@ _720x90_
 /395-x-60.
 /574x110-
 /95x230.
-/960x120*.
 /ad-150x300
 /banner728.
 /banner980.
@@ -345,6 +348,7 @@ _780x90.
 /*arena99*.$image
 /*asetbet*.$image
 /*asiagol*.$image
+/*astonbet*.$image
 /*babeqq*.$image
 /*bakarat*.$image
 /*bbm88*.$image
@@ -364,6 +368,7 @@ _780x90.
 /*dracobet*.$image
 /*dwoqq*.$image
 /*elangqq*.$image
+/*ezebet*.$image
 /*filmbokep*.$image
 /*fullbet*.$image
 /*garudaqq*.$image
@@ -412,6 +417,7 @@ _780x90.
 /*sakuratoto*.$image
 /*sboqq*.$image
 /*sponsorqq*.$image
+/*stardomino*.$image
 /*suhuqq*.$image
 /*tahunqq.$image
 /*terminalbet*.$image
@@ -420,6 +426,7 @@ _780x90.
 /*utamabet*.$image
 /*vegas855*.$image
 /*vegasidr*.$image
+/*venombet*.$image
 /*webajaib*.$image
 /*wpbet365*.$image
 /*zyngaqq*.$image
@@ -1388,6 +1395,7 @@ _pixel_test/?
 ||onthe.io^$third-party
 ||optimizely.com^$third-party
 ||prchecker.info^$third-party
+||quantserve.com^$~object-subrequest,third-party
 ||rfihub.com^$third-party
 ||rlcdn.com^$third-party
 ||scarabresearch.com^$third-party
@@ -5404,6 +5412,7 @@ _pixel_test/?
 ||uzone.id^$third-party
 ! 
 ||amazonaws.com/ki.js/
+||amplify.outbrain.com^$third-party
 ||analytics.shareaholic.com^
 ||areyouahuman.com/kitten?
 ||bat.bing.com^
@@ -5664,7 +5673,9 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 /xminer.min.js
 /xmr.js
 /xmr.min.js
+||77.162.125.199^$third-party
 ||ad-miner.com^$third-party
+||adminer.com^$third-party
 ||afminer.com^$third-party
 ||altpool.pro^$third-party
 ||api.inwemo.com^$third-party
@@ -5715,7 +5726,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||sbhmn-miner.com^$third-party
 ||secumine.net^$third-party
 ||supportxmr.com^$third-party
-||trezor.io^$third-party
 ||webmine.cz^$third-party
 ||xbasfbno.info^$third-party
 ! *** abid:AdBlockID/annoyances.txt ***
@@ -5765,6 +5775,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
 ! 
+###share-facebook
+###share-twitter
 ###social_block
 ###sticky-social
 ###subscribe-email
@@ -5807,12 +5819,31 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.td-more-articles-box
 ##.td-post-sharing
 ##.twitter-follow-button
+##.twitter-share
+##.twitter-share-button
 ##.twitter-timeline
 ##.widget_facebook_likebox
 ##.widget_newsletterwidget
 ##.widget_twitter_timeline
 ##.widget_wpcom_social_media_icons_widget
+##a[href^="http://digg.com/submit?url="]
+##a[href^="http://twitter.com/share?"]
+##a[href^="http://www.facebook.com/sharer.php?"]
+##a[href^="http://www.linkedin.com/shareArticle?"]
+##a[href^="http://www.reddit.com/submit"]
+##a[href^="http://www.stumbleupon.com/submit?url"]
+##a[href^="https://twitter.com/intent/retweet?tweet_id"]
+##a[href^="https://twitter.com/intent/tweet?"]
+##a[title="Facebook"]
+##a[title="LinkedIn"]
+##a[title="Twitter"]
 ##form[action="http://feedburner.google.com/fb/a/mailverify"]
+##img[alt="facebook"]
+##img[alt="twitter"]
+! 
+digg.com#@#a[href^="http://digg.com/submit?url="]
+twitter.com#@#a[href^="http://twitter.com/share?"]
+reddit.com#@#a[href^="http://www.reddit.com/submit"]
 ! 
 hipwee.com###share-fixed-alt
 tribunnews.com###sharebox
@@ -5873,4 +5904,4 @@ tinypaste.cc#@##banner_ad
 @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: R1sGByQOe5aWvTHsGACvhg
+! Checksum: Lleyl9igbS3rnoOp5usiiw
