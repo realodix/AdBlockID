@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1124.1305
+! Version: 17.1125.0159
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Nov 2017 13:05 UTC
+! Last modified: 25 Nov 2017 01:59 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -30,6 +30,7 @@
 .com/ads-
 .com/ads.
 .com/ads/$image,object,subdocument
+.com/ads?
 .com/advs-
 .com/adx/
 .com/adx_
@@ -37,6 +38,7 @@
 .id/ads/$~object-subrequest
 .id/adv/
 .net/ad/$~object-subrequest
+.net/ads/
 .openx.
 .php?zoneid=
 /*iklan2*.
@@ -82,6 +84,7 @@
 /ajrotator/*
 /ajs.php?
 /amp-ad-
+/assets/ads_
 /assets/adv/*
 /banner-atas1
 /banner.php
@@ -113,6 +116,7 @@
 /dfp_delivery.js
 /dfp_init.
 /dfp_overlay.
+/ext/prebid
 /files/ad-
 /files/ad/*
 /files/ads-
@@ -203,6 +207,7 @@ _ad_promo2.
 _adnetwork.
 _ads_only&
 _promo_ad/
+_web_ad_
 ||cacheserve.*/promodisplay/
 ||cacheserve.*/promodisplay?
 ||online.*/promoredirect?key=
@@ -473,7 +478,9 @@ _atblockdetector/
 ! *** abid:privacy/general_block.txt ***
 -tracking.js?
 .com/0.gif?
+.com/a.gif?
 .com/counter?
+.com/pv.gif?
 .com/track?$~object
 .com/v.gif?
 .lms-analytics/
@@ -527,8 +534,11 @@ _atblockdetector/
 /shinystat.
 /site_stats.
 /site_stats/*
+/sovrn_beacon_
 /stat?event=
+/track.gif^
 /tracker.php?
+/v60.js
 /vglnk.js
 /visitor/index.php?*referrer$image
 /visitorapi.js
@@ -1214,6 +1224,7 @@ _pixel_test/?
 ||adreactor.com^$third-party
 ||adrecover.com^$third-party
 ||ads-twitter.com^$third-party
+||adsafeprotected.com^$third-party
 ||adscpm.site^$third-party
 ||adskom.com^$third-party
 ||adsniper.ru^$third-party
@@ -1227,6 +1238,7 @@ _pixel_test/?
 ||amazon-adsystem.com^$third-party
 ||aniview.com^$third-party
 ||anyclip-media.com^$third-party
+||appnext.com^$third-party
 ||atwola.com^$third-party
 ||baliadv.com^$third-party
 ||betrad.com^$third-party
@@ -1353,6 +1365,7 @@ _pixel_test/?
 ||hexagon-analytics.com^$third-party
 ||histats.com^$third-party
 ||hotjar.com^$third-party
+||hs-analytics.net^$third-party
 ||inspectlet.com^$third-party
 ||ipify.org^$third-party
 ||kampyle.com^$third-party
@@ -1365,6 +1378,7 @@ _pixel_test/?
 ||ndg.io^$third-party
 ||onthe.io^$third-party
 ||optimizely.com^$third-party
+||rfihub.com^$third-party
 ||rlcdn.com^$third-party
 ||scarabresearch.com^$third-party
 ||scorecardresearch.com^$third-party
@@ -1379,6 +1393,7 @@ _pixel_test/?
 ||tradedoubler.com^$third-party
 ||treasuredata.com^$third-party
 ||tynt.com^$third-party
+||usabilla.com^$third-party
 ||visualwebsiteoptimizer.com^$third-party
 ||w3counter.com^$third-party
 ||w55c.net^$third-party
@@ -5359,6 +5374,7 @@ _pixel_test/?
 ||cpmstar.com/view.aspx
 ||entitlements.jwplayer.com^$third-party
 ||google.com/pagead/
+||p.smartertravel.com^$third-party
 ||rtax.criteo.com^$third-party
 ||static.*.criteo.net/design^$third-party
 ||static.*.criteo.net/flash^$third-party
@@ -5381,6 +5397,7 @@ _pixel_test/?
 ||analytics.shareaholic.com^
 ||areyouahuman.com/kitten?
 ||bat.bing.com^
+||beacon.gu-web.net^
 ||cloudfront-labs.amazonaws.com^
 ||connect.facebook.net/signals/$third-party
 ||connect.facebook.net^*/fbevents.js$third-party
@@ -5415,6 +5432,7 @@ _pixel_test/?
 ||stats.topofblogs.com^
 ||stats.wp.com^
 ||sumo.com/apps/heatmaps/
+||topix.com/t6track/
 ||twitter.com/i/jot
 ||twitter.com/oct.js
 ||usage.trackjs.com^
@@ -5444,7 +5462,9 @@ _pixel_test/?
 ||analytics.twitter.com^
 ||beap-bc.yahoo.com^
 ||collector-medium.lightstep.com^
+||f.staticlp.com^
 ||facebook.com/xti.php?
+||geo.yahoo.com^
 ||gigya.com/js/gigyagaintegration.js
 ||google.*/client_204?
 ||google.*/gen204?
@@ -5690,8 +5710,9 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||xbasfbno.info^$third-party
 ! *** abid:AdBlockID/annoyances.txt ***
 /cookieconsent.
+/img/social-
+/likebox.
 /outbrain.js
-/rss.png
 /sendtofriend.gif
 /twitter_cookies.
 /wp-content/plugins/popover/*$script
@@ -5700,14 +5721,20 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||autolinkmaker.itunes.apple.com^$third-party
 ||blogtopsites.com^$third-party
 ||disqus.com/api/*/listRelated.json?
+||facebook.com*/plugins/like.php?$third-party
+||facebook.com/plugins/page.php?$third-party
 ||feedage.com^$third-party
 ||feedburner.com^$image,third-party
+||google.com^*/fastbutton?$third-party
 ||goroost.com^$third-party
+||hsleadflows.net^$third-party
 ||instagram.com/logging_client_events
 ||linkwithin.com^$third-party
 ||nrelate.com^$third-party
 ||onesignal.com^$third-party
+||platform.twitter.com/js/button.$third-party
 ||pushalert.co^$third-party
+||twitter.com/js/timeline.$script,third-party
 ! 
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
@@ -5716,8 +5743,13 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ###subscribe-email
 ###subscribeBOX
 ##.OUTBRAIN
+##.addthis_sharing_toolbox
+##.addthis_toolbox
 ##.article-share-bottom
 ##.berlangganan-box
+##.email-sub__iframe
+##.et-social-icon
+##.et-social-icons
 ##.feed-links
 ##.heateor_sss_sharing_container
 ##.jetpack-social-widget-item
@@ -5725,14 +5757,18 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.jetpack_widget_social_icons
 ##.post-meta__sharing
 ##.sd-sharing
+##.share_icon
 ##.shareit
 ##.sharrre
 ##.social--article
+##.social-icons
+##.social-item
 ##.social-media-share
 ##.subscribe-newsletter
 ##.sumome-share-client-wrapper
 ##.td-more-articles-box
 ##.td-post-sharing
+##.twitter-timeline
 ##.widget_newsletterwidget
 ##form[action="http://feedburner.google.com/fb/a/mailverify"]
 ! 
@@ -5795,4 +5831,4 @@ tinypaste.cc#@##banner_ad
 @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: ofYlQeR9YCbOhjEo+aNQew
+! Checksum: ghMPXRJrNUEmMv1lodpavw
