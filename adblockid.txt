@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1126.0440
+! Version: 17.1126.0904
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Nov 2017 04:40 UTC
+! Last modified: 26 Nov 2017 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -11,6 +11,8 @@
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
 ! *** abid:AdBlockID/general_block.txt ***
+&ad_type_
+&showad=
 -ads-widget/
 -ads.gif
 -ads/assets/
@@ -46,6 +48,7 @@
 /ad/banner/*
 /ad_status.
 /adaptvadplayer.
+/adchoices.
 /ados.js
 /adpan/
 /adpan/*
@@ -227,8 +230,10 @@ _web_ad_
 -728x90.
 /120x600.
 /300x250/*
+/300x250_
 /468x60.
 /728x90/*
+/728x90_
 /ad-150x300-
 468_60.gif|
 =728x90,
@@ -501,6 +506,7 @@ _atblockdetector/
 .skimlinks.js
 /1x1.gif?
 /__utm.gif
+/admantx/*
 /adsct?
 /aff_i?offer_id=
 /akam/*/pixel_
@@ -515,6 +521,7 @@ _atblockdetector/
 /cct?
 /cdn-cgi/pe/bag2?*histats.com
 /chartbeat.js
+/chartbeat_
 /contentanalytics/*
 /cookiepingback?
 /entry_stats?
@@ -523,6 +530,7 @@ _atblockdetector/
 /generate_204$image
 /geocounter.
 /google-analyticator/*
+/google_analytics/*
 /googleanalytics/*
 /googleAnalytics_
 /greenoaks.gif?
@@ -569,6 +577,21 @@ _atblockdetector/
 _beacon?
 _loghuman=
 _pixel_test/?
+! *** abid:social/general_block.txt ***
+-social-icons.
+/facebook-pagelike-widget/*
+/icons-social-
+/images/social/*
+/img/social-
+/likebox.
+/plugins/add-to-any/*$~stylesheet
+/plugins/easy-twitter-
+/sendtofriend.gif
+/shareaholic.js
+/sharedaddy/*$image,script
+/social-sharing-
+/twitter_cookies.
+! ------------------------------------------------------------!
 ! *** abid:AdBlockID/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
@@ -649,6 +672,7 @@ _pixel_test/?
 ###floatingad
 ###flowads
 ###footer-adcont
+###footeradvert
 ###gold_sponsors_sidebar
 ###hbanner
 ###header-ad
@@ -734,11 +758,13 @@ _pixel_test/?
 ##.ad-mobile
 ##.ad-mpu
 ##.ad-mrec
+##.ad-nav-ad
 ##.ad-placement
 ##.ad-promo
 ##.ad-right
 ##.ad-skyscraper
 ##.ad-slot
+##.ad-slot--inline
 ##.ad-slot-container
 ##.ad-space
 ##.ad-spacer
@@ -749,6 +775,7 @@ _pixel_test/?
 ##.adHolder
 ##.adNetPromo
 ##.ad_160
+##.ad_160_600
 ##.ad_300_125
 ##.ad_300_250
 ##.ad_600
@@ -826,6 +853,7 @@ _pixel_test/?
 ##.adsense-ad
 ##.adsense-post
 ##.adsense1
+##.adslot
 ##.adspace_300
 ##.adss
 ##.adstop
@@ -986,6 +1014,7 @@ _pixel_test/?
 ##.wpmrec
 ##.ytp-ad-progress-list
 ##a[href^="http://www.text-link-ads.com/"]
+##a[href^="https://ad.doubleclick.net/"]
 ##a[href^="https://pubads.g.doubleclick.net/"]
 ##div[class^="iklan"]
 ##div[id*="ScriptRootC"]
@@ -1239,6 +1268,65 @@ _pixel_test/?
 ##object[width="980"][height="250"]
 ##object[width="982"][height="150"]
 ##object[width="990"][height="206"]
+! *** abid:AdBlockID/css_extended.txt ***
+kumparan.com##div.panel-widget[class]:contains(Advertisement)
+! *** abid:social/general_hide.txt ***
+###share-facebook
+###share-twitter
+###social_block
+###sticky-social
+##.addthis_sharing_toolbox
+##.addthis_toolbox
+##.addtoany_list
+##.addtoany_share_save
+##.article-share-bottom
+##.et-social-icon
+##.et-social-icons
+##.et_social_icons_container
+##.et_social_networks
+##.et_social_sidebar_networks
+##.fb-like-box
+##.fb-page
+##.heateor_sss_sharing_container
+##.jetpack-social-widget-item
+##.jetpack_widget_social_icons
+##.post-meta__sharing
+##.sd-sharing
+##.sd-social
+##.sd-social-icon-text
+##.share_icon
+##.sharedaddy
+##.shareinpost
+##.shareit
+##.sharrre
+##.social--article
+##.social-icons
+##.social-item
+##.social-media-share
+##.sumome-share-client-wrapper
+##.td-post-sharing
+##.twitter-follow-button
+##.twitter-share
+##.twitter-share-button
+##.twitter-timeline
+##.widget_facebook_likebox
+##.widget_newsletterwidget
+##.widget_twitter_timeline
+##.widget_wpcom_social_media_icons_widget
+##a[href^="http://digg.com/submit?url="]
+##a[href^="http://twitter.com/share?"]
+##a[href^="http://www.facebook.com/sharer.php?"]
+##a[href^="http://www.linkedin.com/shareArticle?"]
+##a[href^="http://www.reddit.com/submit"]
+##a[href^="http://www.stumbleupon.com/submit?url"]
+##a[href^="https://twitter.com/intent/retweet?tweet_id"]
+##a[href^="https://twitter.com/intent/tweet?"]
+##a[title="Facebook"]
+##a[title="LinkedIn"]
+##a[title="Twitter"]
+##img[alt="facebook"]
+##img[alt="twitter"]
+! ------------------------------------------------------------!
 ! *** abid:AdBlockID/adservers.txt ***
 ||a-ads.com^$third-party
 ||accesstrade.co.id^$third-party
@@ -1291,6 +1379,7 @@ _pixel_test/?
 ||cdn.mobicow.com^$third-party
 ||clickmedia.co.id^$third-party
 ||collective-media.net^$third-party
+||connatix.com^$third-party
 ||contextweb.com^$third-party
 ||creativecdn.com^$third-party
 ||dubijsirwtwq.com^$third-party
@@ -1335,8 +1424,10 @@ _pixel_test/?
 ||mookie1.com^$third-party
 ||nexac.com^$third-party
 ||nexage.com^$third-party
+||nsstatic.net^$third-party
 ||onclickprediction.com^$third-party
 ||pasangiklan.com^$third-party
+||polarmobile.com^$third-party
 ||predictiondisplay.com^$third-party
 ||predictivadnetwork.com^$third-party
 ||props.id^$third-party
@@ -1379,10 +1470,12 @@ _pixel_test/?
 ||appier.net^$third-party
 ||bluekai.com^$third-party
 ||boomtrain.com^$third-party
+||bounceexchange.com^$third-party
 ||cedexis.com^$third-party
 ||confirmit.com^$third-party
 ||crazyegg.com^$third-party
 ||criteo.net^$third-party
+||crsspxl.com^$third-party
 ||crwdcntrl.net^$third-party
 ||demdex.net^$third-party
 ||doubleclick.net/activity$third-party
@@ -5400,6 +5493,7 @@ _pixel_test/?
 ||zzevmjynoljz.bid^
 ||zzvjaqnkq.bid^
 ||zzwzjidz.bid^
+! ------------------------------------------------------------!
 ! *** abid:AdBlockID/thirdparty.txt ***
 ||bp.blogspot.com/*.gif^$image,domain=drakorindonesia.com|dramaid.com|dramakorea.web.id|film-drama.co|kombatch.com|kshowsubindo.org|mangashiro.net|nontondrama.me|satujiwa.org|smallencode.com
 ||imgur.com/*.gif$image,domain=mangashiro.net
@@ -5470,8 +5564,10 @@ _pixel_test/?
 ||mc.yandex.ru^
 ||metrics.brightcove.com^
 ||msecnd.net/scripts/a/ai.0.js
+||nbcudigitaladops.com/hosted/housepix.gif
 ||p.po.st^*&pub=
 ||pixel.wp.com^
+||px.dynamicyield.com^$third-party
 ||px.owneriq.net^
 ||rackcdn.com/stf.js
 ||referrer.disqus.com^
@@ -5480,6 +5576,7 @@ _pixel_test/?
 ||stats.topofblogs.com^
 ||stats.wp.com^
 ||sumo.com/apps/heatmaps/
+||tinypass.com^*/track?
 ||topix.com/t6track/
 ||trk*.vidible.tv^
 ||twitter.com/i/jot
@@ -5488,6 +5585,18 @@ _pixel_test/?
 ||va.tawk.to/log
 ||vizury.com/analyze/
 ||voxmedia.com/pickup.js
+||widget.perfectmarket.com^
+! *** abid:social/thirdparty.txt ***
+||addtoany.com^$third-party
+||facebook.com*/plugins/like.php?$third-party
+||facebook.com/plugins/page.php?$third-party
+||google.com^*/fastbutton?$third-party
+||instagram.com^*/users/$third-party
+||platform.linkedin.com^$third-party
+||platform.twitter.com/js/button.$third-party
+||twitter.com/js/timeline.$script,third-party
+||widgets.wp.com/likes/$third-party
+! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_block.txt ***
 ||eramuslim.com/banners
 ||harianjogja.com/banner/
@@ -5543,6 +5652,7 @@ _pixel_test/?
 ||youtube.com/api/stats/qoe?
 ||youtube.com/ptracking?
 ||youtube.com/set_awesome?
+! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_hide.txt ***
 ! whitelist
 eramuslim.com,inwepo.co,mastekno.com##.adsbygoogle
@@ -5677,8 +5787,7 @@ n21.tv##.ban_empat
 ||sukamovie.id/wp-content/uploads/*.gif
 ! 
 @@||cinemamkv.net^$generichide
-! *** abid:AdBlockID/css_extended.txt ***
-kumparan.com##div.panel-widget[class]:contains(Advertisement)
+! ------------------------------------------------------------!
 ! *** abid:privacy/resource-abuse.txt ***
 ! Resource-abuse
 ! 
@@ -5762,117 +5871,41 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||webmine.cz^$third-party
 ||xbasfbno.info^$third-party
 ! *** abid:AdBlockID/annoyances.txt ***
--social-icons.
 /cookieconsent.
 /downloads.mailchimp.com/*
-/facebook-pagelike-widget/*
-/google_analytics/*
-/icons-social-
-/images/social/*
-/img/social-
-/likebox.
 /outbrain.js
-/plugins/add-to-any/*$~stylesheet
-/plugins/easy-twitter-
-/sendtofriend.gif
-/shareaholic.js
-/sharedaddy/*$image,script
-/social-sharing-
-/twitter_cookies.
 /wp-content/plugins/popover/*$script
 /wp-content/plugins/tab-slide/*
 /wp-content/plugins/thrive-leads/*$script
-||addtoany.com^$third-party
+! 
 ||autolinkmaker.itunes.apple.com^$third-party
 ||blogtopsites.com^$third-party
 ||disqus.com/api/*/listRelated.json?
-||facebook.com*/plugins/like.php?$third-party
 ||facebook.com/plugins/page.php?$third-party
 ||feedage.com^$third-party
 ||feedburner.com^$image,third-party
-||google.com^*/fastbutton?$third-party
 ||goroost.com^$third-party
 ||hsleadflows.net^$third-party
-||instagram.com/logging_client_events
-||instagram.com^*/users/$third-party
 ||linkwithin.com^$third-party
 ||nrelate.com^$third-party
 ||onesignal.com^$third-party
-||platform.linkedin.com^$third-party
-||platform.twitter.com/js/button.$third-party
 ||pushalert.co^$third-party
 ||snapwidget.com^$third-party
-||twitter.com/js/timeline.$script,third-party
-||widgets.wp.com/likes/$third-party
 ! 
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
 ! 
-###share-facebook
-###share-twitter
-###social_block
-###sticky-social
 ###subscribe-email
 ###subscribeBOX
 ##.OUTBRAIN
-##.addthis_sharing_toolbox
-##.addthis_toolbox
-##.addtoany_list
-##.addtoany_share_save
-##.article-share-bottom
 ##.berlangganan-box
 ##.email-sub__iframe
-##.et-social-icon
-##.et-social-icons
-##.et_social_icons_container
-##.et_social_networks
-##.et_social_sidebar_networks
-##.fb-like-box
-##.fb-page
 ##.feed-links
-##.heateor_sss_sharing_container
-##.jetpack-social-widget-item
 ##.jetpack_subscription_widget
-##.jetpack_widget_social_icons
-##.post-meta__sharing
-##.sd-sharing
-##.sd-social
-##.sd-social-icon-text
-##.share_icon
-##.sharedaddy
-##.shareinpost
-##.shareit
-##.sharrre
-##.social--article
-##.social-icons
-##.social-item
-##.social-media-share
 ##.subscribe-newsletter
-##.sumome-share-client-wrapper
 ##.td-more-articles-box
-##.td-post-sharing
-##.twitter-follow-button
-##.twitter-share
-##.twitter-share-button
-##.twitter-timeline
-##.widget_facebook_likebox
 ##.widget_newsletterwidget
-##.widget_twitter_timeline
-##.widget_wpcom_social_media_icons_widget
-##a[href^="http://digg.com/submit?url="]
-##a[href^="http://twitter.com/share?"]
-##a[href^="http://www.facebook.com/sharer.php?"]
-##a[href^="http://www.linkedin.com/shareArticle?"]
-##a[href^="http://www.reddit.com/submit"]
-##a[href^="http://www.stumbleupon.com/submit?url"]
-##a[href^="https://twitter.com/intent/retweet?tweet_id"]
-##a[href^="https://twitter.com/intent/tweet?"]
-##a[title="Facebook"]
-##a[title="LinkedIn"]
-##a[title="Twitter"]
 ##form[action="http://feedburner.google.com/fb/a/mailverify"]
-##img[alt="facebook"]
-##img[alt="twitter"]
 ! 
 digg.com#@#a[href^="http://digg.com/submit?url="]
 twitter.com#@#a[href^="http://twitter.com/share?"]
@@ -5930,6 +5963,7 @@ mangaindo.web.id#@##adsense
 tinypaste.cc#@##banner_ad
 ! *** abid:privacy/whitelist.txt ***
 @@/wp-content/plugins/google-analytics-for-wordpress/*$~third-party
+@@/wp-content/plugins/google-analytics-premium/*$~third-party
 @@||analytics.twitter.com^$domain=analytics.twitter.com
 @@||pixel.facebook.com/ajax/gigaboxx/endpoint/UpdateLastSeenTime.php?$image
 @@||pixel.facebook.com/ajax/notifications/mark_read.php?*&alert_ids%$image
@@ -5938,4 +5972,8 @@ tinypaste.cc#@##banner_ad
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/analytics/$~third-party
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: JxprPhXtGoF9FftNwIstTw
+! *** abid:social/whitelist.txt ***
+digg.com#@#a[href^="http://digg.com/submit?url="]
+twitter.com#@#a[href^="http://twitter.com/share?"]
+reddit.com#@#a[href^="http://www.reddit.com/submit"]
+! Checksum: 7cV5FiFR/eGLsVmGS5kO5A
