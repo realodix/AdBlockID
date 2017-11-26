@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1126.0934
+! Version: 17.1126.1421
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Nov 2017 09:34 UTC
+! Last modified: 26 Nov 2017 14:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -536,6 +536,7 @@ _atblockdetector/
 /greenoaks.gif?
 /hc/tracking/*
 /hit.xiti?
+/hitCount.
 /id?d_visid_ver=
 /imp.gif?
 /js/analytics.
@@ -580,9 +581,14 @@ _pixel_test/?
 ! *** abid:social/general_block.txt ***
 -social-icons.
 /facebook-pagelike-widget/*
+/icon-facebook.
+/icon-google.
+/icon-twitter.
 /icons-social-
 /images/social/*
+/img/*/social-
 /img/social-
+/img/twitter.
 /likebox.
 /plugins/add-to-any/*$~stylesheet
 /plugins/easy-twitter-
@@ -591,6 +597,7 @@ _pixel_test/?
 /sharedaddy/*$image,script
 /social-sharing-
 /twitter_cookies.
+/wysija-newsletters/*
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
@@ -831,6 +838,7 @@ _pixel_test/?
 ##.ads300-250
 ##.ads300_250-widget
 ##.ads728
+##.adsMiddle
 ##.adsSpot
 ##.ads_300
 ##.ads_300x250
@@ -844,6 +852,7 @@ _pixel_test/?
 ##.ads__top
 ##.ads_code
 ##.ads_management
+##.ads_middle
 ##.ads_sky
 ##.ads_top_promo
 ##.adsbar
@@ -1271,44 +1280,67 @@ _pixel_test/?
 ! *** abid:AdBlockID/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:social/general_hide.txt ***
+###mobile-social
 ###share-facebook
 ###share-twitter
 ###social_block
+###social_icons
 ###sticky-social
 ##.addthis_sharing_toolbox
 ##.addthis_toolbox
 ##.addtoany_list
 ##.addtoany_share_save
 ##.article-share-bottom
+##.article-shares-links
+##.block-share__item
+##.d-comment__action--share
 ##.et-social-icon
 ##.et-social-icons
 ##.et_social_icons_container
 ##.et_social_networks
 ##.et_social_sidebar_networks
+##.facebook-share
+##.facebook-widget
 ##.fb-like-box
 ##.fb-page
+##.footer__social
 ##.heateor_sss_sharing_container
+##.inline-share
 ##.jetpack-social-widget-item
 ##.jetpack_widget_social_icons
+##.js-sharecount
+##.meta__social
+##.nav-social
 ##.post-meta__sharing
+##.s_share_box
 ##.sd-sharing
 ##.sd-social
 ##.sd-social-icon-text
 ##.share_icon
+##.sharebtn
 ##.sharedaddy
 ##.shareinpost
 ##.shareit
+##.sharing-buttons
 ##.sharrre
 ##.social--article
+##.social--top
 ##.social-icons
 ##.social-item
 ##.social-media-share
+##.social-share
+##.social-shares
+##.social-widget
+##.social-widgets
+##.social__item
+##.social__link
 ##.sumome-share-client-wrapper
 ##.td-post-sharing
 ##.twitter-follow-button
 ##.twitter-share
 ##.twitter-share-button
 ##.twitter-timeline
+##.twitter-widget
 ##.widget_facebook_likebox
 ##.widget_newsletterwidget
 ##.widget_twitter_timeline
@@ -1477,6 +1509,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||adobedtm.com^$third-party
 ||adsymptotic.com^$third-party
 ||amung.us^$third-party
+||analytic.rocks^$third-party
 ||appier.net^$third-party
 ||bluekai.com^$third-party
 ||boomtrain.com^$third-party
@@ -1502,6 +1535,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||genieesspv.jp^$third-party
 ||globalwebindex.net^$third-party
 ||go-mpulse.net^$third-party
+||google-analytics.com/collect
 ||google-analytics.com/r/collect^
 ||googleadservices.com^$third-party
 ||googletagmanager.com/gtag/$third-party
@@ -1547,10 +1581,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||w3counter.com^$third-party
 ||w55c.net^$third-party
 ||zarget.com^$third-party
-! 
-! 
-||google-analytics.com/analytics.js
-||google-analytics.com/collect
 ! *** abid:AdBlockID/popup.txt ***
 ||abourselfi.com^$popup,third-party
 ||baligoal.net^$popup,third-party
@@ -5919,6 +5949,7 @@ n21.tv##.ban_empat
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
 ! 
+###newsletter-subscribe
 ###subscribe-email
 ###subscribeBOX
 ##.OUTBRAIN
@@ -5997,6 +6028,7 @@ tinypaste.cc#@##banner_ad
 @@||youtube.com/api/analytics/$~third-party
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
 ! *** abid:social/whitelist.txt ***
+facebook.com#@#.facebook-widget
 facebook.com#@#a[href*="facebook.com/sharer/sharer.php?"]
 twitter.com#@#a[href="http://twitter.com/share"]
 digg.com#@#a[href^="http://digg.com/submit?url="]
@@ -6005,4 +6037,7 @@ pinterest.com#@#a[href^="http://www.pinterest.com/pin/create/button/?"]
 reddit.com#@#a[href^="http://www.reddit.com/submit"]
 twitter.com#@#a[href^="https://twitter.com/intent/follow?"]
 reddit.com#@#a[href^="https://www.reddit.com/submit?"]
-! Checksum: Wv5FeKFsye0NSz5+k5xfTw
+! 
+@@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
+@@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
+! Checksum: emzIl5QwzTuCMxZe0wCzqA
