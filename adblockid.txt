@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1125.1557
+! Version: 17.1126.0440
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Nov 2017 15:57 UTC
+! Last modified: 26 Nov 2017 04:40 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -157,6 +157,7 @@
 /popunder.
 /popunder/*
 /popunder1.
+/prebid-
 /prebid2.
 /promo-ads/*
 /promo/ad_
@@ -230,6 +231,8 @@ _web_ad_
 /728x90/*
 /ad-150x300-
 468_60.gif|
+=728x90,
+_300x250_
 _468x60-
 _468x90.
 _720x90.
@@ -291,7 +294,7 @@ _720x90_
 /*535x66.
 /*720x90*.
 /*728-x-90.
-/*728x90*.gif|
+/*728x90*.
 /*85x455*.
 /*920x120.
 /*960x120*.
@@ -492,6 +495,7 @@ _atblockdetector/
 .com/pv.gif?
 .com/track?$~object
 .com/v.gif?
+.com/vanity/?
 .lms-analytics/
 .net/p.gif?
 .skimlinks.js
@@ -500,16 +504,20 @@ _atblockdetector/
 /adsct?
 /aff_i?offer_id=
 /akam/*/pixel_
+/api/analytics/*
 /appmeasurement.js
 /atrk.gif?
 /atrk.js
 /b/ss/*&aqe=
 /backlink2.
+/bcn?
 /beacon.js
+/cct?
 /cdn-cgi/pe/bag2?*histats.com
 /chartbeat.js
 /contentanalytics/*
 /cookiepingback?
+/entry_stats?
 /event/pageview/*
 /GARecord^
 /generate_204$image
@@ -555,6 +563,7 @@ _atblockdetector/
 /vglnk.js
 /visitor/index.php?*referrer$image
 /visitorapi.js
+://b.*/ping?
 ://c1.*/c.gif?
 =googleanalytics_
 _beacon?
@@ -575,6 +584,7 @@ _pixel_test/?
 ###Box-Banner-ads
 ###DivTopAd
 ###ad-leaderboard
+###ad-leaderboard_bottom
 ###ad-mrec2
 ###ad-zone-1
 ###adBanner
@@ -639,6 +649,7 @@ _pixel_test/?
 ###floatingad
 ###flowads
 ###footer-adcont
+###gold_sponsors_sidebar
 ###hbanner
 ###header-ad
 ###idmuvi-popup
@@ -681,7 +692,9 @@ _pixel_test/?
 ###quads-ad4
 ###rightAd
 ###sidebar-sponsors
+###silver_sponsors_sidebar
 ###sky_advert
+###sponsor_posts
 ###srcadsurlblock
 ###teaser2
 ###teaser3
@@ -705,6 +718,7 @@ _pixel_test/?
 ##.ad-200x200
 ##.ad-250x250
 ##.ad-300
+##.ad-300x250
 ##.ad-468x60
 ##.ad-banner
 ##.ad-block
@@ -717,6 +731,7 @@ _pixel_test/?
 ##.ad-leaderboard
 ##.ad-leaderboard-container
 ##.ad-left
+##.ad-mobile
 ##.ad-mpu
 ##.ad-mrec
 ##.ad-placement
@@ -725,7 +740,9 @@ _pixel_test/?
 ##.ad-skyscraper
 ##.ad-slot
 ##.ad-slot-container
+##.ad-space
 ##.ad-spacer
+##.ad-top-banner
 ##.ad-unit
 ##.ad-unit-top
 ##.ad-wrap
@@ -883,6 +900,7 @@ _pixel_test/?
 ##.js-outbrain-container
 ##.js-stream-ad
 ##.kotak_iklan
+##.lazy-ad
 ##.lazyload_ad
 ##.loop-ad
 ##.mainads
@@ -891,11 +909,15 @@ _pixel_test/?
 ##.minipusat
 ##.mpu-ad
 ##.mvp_ad_widget
+##.newsfeed_adunit
 ##.pasangiklan
 ##.pengiklan
+##.placeholder-ad
 ##.player-ads-left
 ##.player-ads-top
 ##.player-ads-top-1
+##.player_ad2
+##.player_page_ad_box
 ##.post-ad
 ##.post-ad3
 ##.post-ads-top
@@ -927,6 +949,7 @@ _pixel_test/?
 ##.sponsor-link
 ##.sponsor-logo
 ##.sponsor_ads
+##.sponsor_post
 ##.str-top-ad
 ##.td-a-rec-id-custom_ad_1
 ##.td-a-rec-id-custom_ad_2
@@ -1256,6 +1279,7 @@ _pixel_test/?
 ||atwola.com^$third-party
 ||baliadv.com^$third-party
 ||betrad.com^$third-party
+||bizographics.com^$third-party
 ||bnserving.com^$third-party
 ||brand.ad^$third-party
 ||brealtime.com^$third-party
@@ -1332,6 +1356,7 @@ _pixel_test/?
 ||sjtevvoviqhe.com^$third-party
 ||smaato.net^$third-party
 ||snfqpqyecdrb.com^$third-party
+||sonobi.com^$third-party
 ||spotx.tv^$third-party
 ||springserve.com^$third-party
 ||surgeprice.com^$third-party
@@ -1341,6 +1366,7 @@ _pixel_test/?
 ||teads.tv^$third-party
 ||tidaltv.com^$third-party
 ||tribalfusion.com^$third-party
+||trustx.org^$third-party
 ||turn.com^$third-party
 ||unrulymedia.com^$third-party
 ||venturead.com^$third-party
@@ -1360,6 +1386,7 @@ _pixel_test/?
 ||crwdcntrl.net^$third-party
 ||demdex.net^$third-party
 ||doubleclick.net/activity$third-party
+||doubleclick.net^*/trackimp/$third-party
 ||e-referrer.com^$third-party
 ||edigitalsurvey.com^$third-party
 ||exelator.com^$third-party
@@ -1386,6 +1413,7 @@ _pixel_test/?
 ||ipify.org^$third-party
 ||kampyle.com^$third-party
 ||kissmetrics.com^$third-party
+||krxd.net^$third-party
 ||liadm.com^$third-party
 ||mixpanel.com^$third-party
 ||mmstat.com^$third-party
@@ -5417,6 +5445,7 @@ _pixel_test/?
 ||areyouahuman.com/kitten?
 ||bat.bing.com^
 ||beacon.gu-web.net^
+||cc.swiftype.com^
 ||cloudfront-labs.amazonaws.com^
 ||connect.facebook.net/signals/$third-party
 ||connect.facebook.net^*/fbevents.js$third-party
@@ -5452,11 +5481,13 @@ _pixel_test/?
 ||stats.wp.com^
 ||sumo.com/apps/heatmaps/
 ||topix.com/t6track/
+||trk*.vidible.tv^
 ||twitter.com/i/jot
 ||twitter.com/oct.js
 ||usage.trackjs.com^
 ||va.tawk.to/log
 ||vizury.com/analyze/
+||voxmedia.com/pickup.js
 ! *** abid:AdBlockID/specific_block.txt ***
 ||eramuslim.com/banners
 ||harianjogja.com/banner/
@@ -5477,6 +5508,7 @@ _pixel_test/?
 ||selebuzz.co.id/wp-content/uploads/*.gif$image
 ||solopos.com/banner/
 ||twitter.com/i/cards/tfw/*?advertiser_name=
+||vox-cdn.com/campaigns_images/
 ! *** abid:privacy/specific_block.txt ***
 ||analytics.twitter.com^
 ||beap-bc.yahoo.com^
@@ -5492,6 +5524,7 @@ _pixel_test/?
 ||id.google.*/verify/*.gif
 ||lcs.naver.
 ||linkedin.com/analytics/
+||optimize-stats.voxmedia.com^
 ||pinterest.com/_/_/report/
 ||pixel.facebook.com^
 ||pixel.redditmedia.com^
@@ -5903,5 +5936,6 @@ tinypaste.cc#@##banner_ad
 @@||s.youtube.com/api/stats/playback?$image,object-subrequest
 @@||segment.com/analytics.js/*/analytics.min.js$script
 @@||segment.io/analytics.js/*/analytics.min.js$script
+@@||youtube.com/api/analytics/$~third-party
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! Checksum: Lleyl9igbS3rnoOp5usiiw
+! Checksum: JxprPhXtGoF9FftNwIstTw
