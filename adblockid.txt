@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1127.1523
+! Version: 17.1127.1622
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Nov 2017 15:23 UTC
+! Last modified: 27 Nov 2017 16:22 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1279,6 +1279,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:social/general_hide.txt ***
 ###footer-social-media
 ###mobile-social
+###share_top
 ###social_block
 ###socialmedia
 ###sticky-social
@@ -1299,8 +1300,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.footer__social
 ##.heateor_sss_sharing_container
 ##.inline-share
-##.jetpack-social-widget-item
-##.jetpack_widget_social_icons
 ##.js-sharecount
 ##.meta__social
 ##.nav-social
@@ -1311,9 +1310,11 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.s_share_box
 ##.sd-sharing
 ##.sd-social
+##.share-box
 ##.share-count
 ##.share-left
 ##.share-more
+##.share_bottom
 ##.share_icon
 ##.shareaholic-canvas
 ##.sharebar
@@ -1583,6 +1584,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||treasuredata.com^$third-party
 ||tynt.com^$third-party
 ||usabilla.com^$third-party
+||veinteractive.com^$third-party
 ||visualwebsiteoptimizer.com^$third-party
 ||w3counter.com^$third-party
 ||w55c.net^$third-party
@@ -5603,8 +5605,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||creativecdn.com/tags?
 ||csi.gstatic.com^
 ||event.api.drift.com^
-||facebook.com*/impression.php
 ||facebook.com/common/scribe_endpoint.php
+||facebook.com/impression.php
 ||facebook.com/method/links.getStats?$third-party
 ||facebook.com/tr/?
 ||facebook.com/tr?
@@ -5644,6 +5646,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||vizury.com/analyze/
 ||voxmedia.com/pickup.js
 ||widget.perfectmarket.com^
+||yimg.com/wi/ytc.js
 ! *** abid:social/thirdparty.txt ***
 ||addtoany.com^$third-party
 ||api.twitter.com^*/count.json?$third-party
@@ -5761,7 +5764,6 @@ hukumonline.com###adsk2
 hukumonline.com###adsp2
 hukumonline.com###adsp3
 medanreview.com###banner_right_200w_wrapper
-detik.com###banner_top_detail
 fourlook.com###board_ads
 mobilwow.com###bottombanner
 awsubs.co,mangacanblog.com,pecintakomik.com###btm_banner
@@ -5863,10 +5865,7 @@ bisnis.com##.socmed
 okezone.com##.sosvertikal
 ! 
 detik.com###bx_polong
-detik.com###share_top
 detik.com###slidebox
-detik.com##.share-box
-detik.com##.share_float
 ! ------------------------------------------------------------!
 ! *** abid:privacy/resource-abuse.txt ***
 ! Resource-abuse
@@ -6029,10 +6028,6 @@ kaskus.co.id##.sidebar-wrap.row > .more-like
 ||infeed.id^$third-party
 ! http://www.klikdokter.com/info-sehat/read/3155308/5-olahraga-ini-cocok-untuk-usia-di-atas-40-tahun
 ||preco.analisis.io
-! privacy
-||px.dynamicyield.com^$third-party
-||veinteractive.com^$third-party
-||yimg.com/wi/ytc.js
 ! *** abid:AdBlockID/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||eramuslim.com^$generichide
@@ -6089,4 +6084,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: yffKdfXskTqr07oIRQsOKw
+! Checksum: xc4L6TZulfiQGGNB7kJCkA
