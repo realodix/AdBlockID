@@ -3,7 +3,7 @@
 ## Render
 
 ### Persiapan
-Untuk menyatukan semua file ke dalam sebuah file [adblockid](adblockid.txt), Anda membutuhkan:
+Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](https://raw.githubusercontent.com/realodix/AdBlockID/master/adblockid.txt), Anda membutuhkan:
 
 * [Python (2.7 atau 3.5+)](https://www.python.org/downloads/),
 * pip.
