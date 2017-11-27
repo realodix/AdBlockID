@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1126.1847
+! Version: 17.1127.0224
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Nov 2017 18:47 UTC
+! Last modified: 27 Nov 2017 02:24 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -239,6 +239,7 @@ _web_ad_
 468_60.gif|
 =728x90,
 _300x250_
+_300x600.
 _468x60-
 _468x90.
 _720x90.
@@ -582,6 +583,7 @@ _beacon?
 _loghuman=
 _pixel_test/?
 ! *** abid:social/general_block.txt ***
+-footer-social.
 -social-icons.
 /facebook-pagelike-widget/*
 /ico_facebook.
@@ -759,6 +761,7 @@ _pixel_test/?
 ##.SC_TBlock
 ##.SectionAds
 ##.a-ad
+##.ad--leaderboard
 ##.ad-200x200
 ##.ad-250x250
 ##.ad-300
@@ -1294,16 +1297,11 @@ _pixel_test/?
 ! *** abid:AdBlockID/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:social/general_hide.txt ***
+###footer-social-media
 ###mobile-social
-###share-facebook
-###share-twitter
 ###social_block
-###social_icons
 ###socialmedia
 ###sticky-social
-##.addthis_button_facebook_like
-##.addthis_button_google_plusone
-##.addthis_button_tweet
 ##.addthis_sharing_toolbox
 ##.addthis_toolbox
 ##.addtoany_list
@@ -1312,18 +1310,12 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.article-shares-links
 ##.block-share__item
 ##.d-comment__action--share
-##.et-social-icon
-##.et-social-icons
 ##.et_social_icons_container
 ##.et_social_networks
 ##.et_social_sidebar_networks
-##.facebook-share
 ##.facebook-widget
 ##.fb-like-box
 ##.fb-page
-##.footer-facebook
-##.footer-instagram
-##.footer-twitter
 ##.footer__social
 ##.heateor_sss_sharing_container
 ##.inline-share
@@ -1334,20 +1326,18 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.nav-social
 ##.newsletter__social-media
 ##.post-meta__sharing
+##.post__share
 ##.product-share
 ##.s_share_box
 ##.sd-sharing
 ##.sd-social
-##.sd-social-icon-text
 ##.share-btn
 ##.share-btns
 ##.share-count
-##.share-icon
-##.share-item
-##.share-linkedin
+##.share-left
 ##.share-more
-##.share-pinterest
 ##.share_icon
+##.shareaholic-canvas
 ##.sharebar
 ##.sharebtn
 ##.sharedaddy
@@ -1359,23 +1349,19 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.social--article
 ##.social--top
 ##.social-container
-##.social-icons
-##.social-item
+##.social-media
 ##.social-media-share
 ##.social-share
 ##.social-share-title
 ##.social-shares
 ##.social-widget
 ##.social-widgets
-##.social__item
-##.social__link
 ##.ss-social
 ##.sumome-share-client-wrapper
 ##.td-post-sharing
 ##.twitter-block
 ##.twitter-follow-button
 ##.twitter-share
-##.twitter-share-button
 ##.twitter-timeline
 ##.twitter-widget
 ##.widget_facebook_likebox
@@ -1384,8 +1370,11 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.widget_wpcom_social_media_icons_widget
 ##.wrapper-share
 ##[title="Follow Us on Twitter"]
+##[title="Follow us on Facebook"]
+##[title="Follow us on Twitter"]
 ##[title="Share on Facebook"]
 ##[title="Share on LinkedIn"]
+##[title="Share on Linkedin"]
 ##[title="Share on Twitter"]
 ##a[href*="facebook.com/sharer/sharer.php?"]
 ##a[href="http://twitter.com/share"]
@@ -1403,12 +1392,16 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href^="https://twitter.com/intent/tweet?"]
 ##a[href^="https://twitter.com/share?"]
 ##a[href^="https://www.facebook.com/dialog/share?"]
+##a[href^="https://www.facebook.com/sharer.php?"]
 ##a[href^="https://www.facebook.com/sharer/sharer.php?u="]
 ##a[href^="https://www.linkedin.com/shareArticle?"]
 ##a[href^="https://www.pinterest.com/pin/create/button/"]
 ##a[href^="https://www.reddit.com/submit?"]
 ##a[href^="whatsapp://send?text="]
+##a[title="Share on Google+"]
 ##a[title="Share on Pinterest"]
+##a[title="Share on Reddit"]
+##a[title="Subscribe to our RSS Feed"]
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/adservers.txt ***
 ||a-ads.com^$third-party
@@ -1554,7 +1547,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||amung.us^$third-party
 ||analytic.rocks^$third-party
 ||appier.net^$third-party
-||bluekai.com^$third-party
 ||boomtrain.com^$third-party
 ||bounceexchange.com^$third-party
 ||cedexis.com^$third-party
@@ -1562,13 +1554,13 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||crazyegg.com^$third-party
 ||criteo.net^$third-party
 ||crsspxl.com^$third-party
-||crwdcntrl.net^$third-party
+||crwdcntrl.net^$domain=disqus.com
 ||demdex.net^$third-party
 ||doubleclick.net/activity$third-party
 ||doubleclick.net^*/trackimp/$third-party
 ||e-referrer.com^$third-party
 ||edigitalsurvey.com^$third-party
-||exelator.com^$third-party
+||exelator.com^$domain=disqus.com
 ||extreme-dm.com^$third-party
 ||feedcat.net^$third-party
 ||feedjit.com^$third-party
@@ -5686,6 +5678,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||widget.perfectmarket.com^
 ! *** abid:social/thirdparty.txt ***
 ||addtoany.com^$third-party
+||api.twitter.com^*/count.json?$third-party
 ||apis.google.com/js/platform.js$third-party
 ||assets.pinterest.com/js/pinit.js$third-party
 ||facebook.com*/plugins/like.php?$third-party
@@ -5997,6 +5990,7 @@ detik.com##.share_float
 /wp-content/plugins/tab-slide/*
 /wp-content/plugins/thrive-leads/*$script
 ! 
+||apester.com^$third-party
 ||autolinkmaker.itunes.apple.com^$third-party
 ||blogtopsites.com^$third-party
 ||disqus.com/api/*/listRelated.json?
@@ -6010,6 +6004,7 @@ detik.com##.share_float
 ||onesignal.com^$third-party
 ||pushalert.co^$third-party
 ||snapwidget.com^$third-party
+||sumome.com^$third-party
 ! 
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
@@ -6031,6 +6026,7 @@ detik.com##.share_float
 ##.newsletter__wrapper
 ##.subscribe-newsletter
 ##.td-more-articles-box
+##.widget-newsletter
 ##.widget_newsletterwidget
 ##form[action="http://feedburner.google.com/fb/a/mailverify"]
 ! 
@@ -6053,7 +6049,9 @@ m.kaskus.co.id##.share-wrapper
 kaskus.co.id##.sidebar-wrap.row > .more-like
 ! 
 ! Cookie Messages
+###cookie-notice
 ###cookies-alert
+##.cookie-notice-container
 ##.cookies-alert
 ##.cookies-notify
 /cookieconsent.
@@ -6108,10 +6106,11 @@ twitter.com#@#a[href^="http://twitter.com/share?"]
 pinterest.com#@#a[href^="http://www.pinterest.com/pin/create/button/?"]
 reddit.com#@#a[href^="http://www.reddit.com/submit"]
 twitter.com#@#a[href^="https://twitter.com/intent/follow?"]
+facebook.com#@#a[href^="https://www.facebook.com/sharer.php?"]
 reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 ! 
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: 5HFSCnPHXZU/ya8dlgtqRQ
+! Checksum: moGLeRbYLMw39fhPrX3QDg
