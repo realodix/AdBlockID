@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1127.0305
+! Version: 17.1127.0954
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Nov 2017 03:05 UTC
+! Last modified: 27 Nov 2017 09:54 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -716,6 +716,7 @@ _pixel_test/?
 ###quads-ad2_widget
 ###quads-ad4
 ###rightAd
+###side-ads
 ###sidebar-sponsors
 ###silver_sponsors_sidebar
 ###sky_advert
@@ -6024,6 +6025,17 @@ kaskus.co.id##.sidebar-wrap.row > .more-like
 ##.cookies-notify
 /cookieconsent.
 /twitter_cookies.
+! 
+! Perlu dicek
+! Experiment
+! contoh ada di https://www.brilio.net
+||infeed.id^$third-party
+! http://www.klikdokter.com/info-sehat/read/3155308/5-olahraga-ini-cocok-untuk-usia-di-atas-40-tahun
+||preco.analisis.io
+! privacy
+||px.dynamicyield.com^$third-party
+||veinteractive.com^$third-party
+||yimg.com/wi/ytc.js
 ! *** abid:AdBlockID/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||eramuslim.com^$generichide
@@ -6081,4 +6093,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: GMk0eSc6eLGrz61MEH4FZQ
+! Checksum: zm5TZcckC7c64SZYv49hdA
