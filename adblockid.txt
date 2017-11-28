@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1128.0958
+! Version: 17.1128.1624
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Nov 2017 09:58 UTC
+! Last modified: 28 Nov 2017 16:24 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -13,6 +13,7 @@
 ! *** abid:AdBlockID/general_block.txt ***
 &ad_type_
 &showad=
+-adnow.
 -ads-widget/
 -ads.gif
 -ads/assets/
@@ -76,11 +77,13 @@
 /adservice.
 /adsterra.js|
 /adstyle.
+/adtag.
 /adtrace2.js|
 /advert/*
 /advertise-
 /advertise_
 /advertisements/*
+/advertorials/*
 /aff_ad?
 /affiliate/promo-
 /affiliate/promo/*
@@ -163,6 +166,7 @@
 /popunder/*
 /popunder1.
 /prebid-
+/prebid/*
 /prebid2.
 /promo-ads/*
 /promo/ad_
@@ -353,6 +357,7 @@ _780x90.
 /*bakarat*.$image
 /*bbm88*.$image
 /*bejoqq*.$image
+/*bet2indo*.$image
 /*bisa88*.$image
 /*bursaliga*.$image
 /*citi*bet*.$image
@@ -378,6 +383,7 @@ _780x90.
 /*incarqq*.$image
 /*indonalo*.$image
 /*intanbet*.$image
+/*interwin*.gif
 /*ituqq.$image
 /*jasaqq*.$image
 /*jaya*bet*.$image
@@ -388,16 +394,18 @@ _780x90.
 /*ladangqq*.$image
 /*lahanbet*.$image
 /*lapakfortune*.$image
+/*liga77*.$image
 /*liga88*.$image
 /*liga99*.$image
 /*lobbyqq*.$image
+/*lotus55*.gif
 /*luckywin*.$image
 /*macaubet*.$image
 /*mahkotaqq*.$image
 /*maindomino99*.$image
 /*mainqq*.$image
 /*mandiriqq*.$image
-/*masterbaccarat*.gif$image
+/*masterbaccarat*.gif
 /*maxisbet*.$image
 /*mega389*.$image
 /*mitraqq*.$image
@@ -425,10 +433,12 @@ _780x90.
 /*terminalbet*.$image
 /*topbet99*.$image
 /*totokita*.$image
+/*ubcwin*.gif
 /*utamabet*.$image
 /*vegas855*.$image
 /*vegasidr*.$image
 /*venombet*.$image
+/*w22bet*.gif$image
 /*webajaib*.$image
 /*wpbet365*.$image
 /*zientoto*.$image
@@ -507,6 +517,7 @@ _atblockdetector/
 /adsct?
 /aff_i?offer_id=
 /akam/*/pixel_
+/analyticsjs.
 /api/analytics/*
 /appmeasurement.js
 /atrk.gif?
@@ -603,6 +614,7 @@ _pixel_test/?
 /shareaholic.js
 /sharebox.
 /sharedaddy/*$image,script
+/social-icons/*$~stylesheet
 /social-sharing-
 /wysija-newsletters/*
 ! ------------------------------------------------------------!
@@ -850,6 +862,7 @@ _pixel_test/?
 ##.ads300
 ##.ads300-250
 ##.ads300_250-widget
+##.ads4
 ##.ads728
 ##.adsMiddle
 ##.adsSpot
@@ -906,6 +919,7 @@ _pixel_test/?
 ##.billboard-ad
 ##.bireklam
 ##.block-ad
+##.block-dfp
 ##.bottom-ads
 ##.bottom-ads-new
 ##.bottomad
@@ -915,6 +929,7 @@ _pixel_test/?
 ##.content_ads
 ##.desktop-advert
 ##.detads
+##.dfp-tag-wrapper
 ##.entry-ads
 ##.etad
 ##.ezoic-ad
@@ -1025,9 +1040,13 @@ _pixel_test/?
 ##.topads
 ##.topadsense
 ##.topline-ads
+##.vce-header-ads
 ##.video-ads
 ##.video-content-bottom-ads
 ##.video-content-top-ads
+##.view-advertorials
+##.vw-header-ads-leader-board
+##.vw-header-ads-wrapper
 ##.widget-ad
 ##.widget-ads
 ##.widget_ads
@@ -1050,6 +1069,7 @@ _pixel_test/?
 ##div[id^="div-gpt-ad"]
 ##div[id^="google_ads_iframe_"]
 ##div[id^="google_dfp_"]
+##div[itemtype="http://schema.org/WPAdBlock"]
 ##iframe[id^="google_ads_iframe"]
 ##img[title^="advertisement"]
 ! 
@@ -1307,6 +1327,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.article-share-bottom
 ##.article-shares-links
 ##.d-comment__action--share
+##.entry-share
 ##.et_social_icons_container
 ##.et_social_networks
 ##.et_social_sidebar_networks
@@ -1320,11 +1341,15 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.heateor_sss_sharing_container
 ##.idmuvi-social-share
 ##.inline-share
+##.js-custom-pinterest-button
 ##.js-sharecount
+##.jw-sharing-dock-btn
+##.menu-social-menu-container
 ##.meta__social
 ##.nav-social
 ##.newsletter__social-media
 ##.post-meta__sharing
+##.post-share-buttons
 ##.post__share
 ##.product-share
 ##.s_share_box
@@ -1341,6 +1366,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.sharedaddy
 ##.shareinpost
 ##.shareit
+##.sharepost
 ##.sharetext
 ##.sharrre
 ##.social--article
@@ -1348,6 +1374,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.social-container
 ##.social-media
 ##.social-media-share
+##.social-networks
 ##.social-share
 ##.social-share-title
 ##.social-shares
@@ -1359,11 +1386,14 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.ss-social
 ##.sumome-share-client-wrapper
 ##.td-post-sharing
+##.top-social-icons
 ##.twitter-block
 ##.twitter-follow-button
 ##.twitter-share
 ##.twitter-timeline
 ##.twitter-widget
+##.vce-share-bar
+##.widget-social-counter
 ##.widget_facebook_likebox
 ##.widget_twitter_timeline
 ##.widget_wpcom_social_media_icons_widget
@@ -1371,6 +1401,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##[title="Follow Us on Twitter"]
 ##[title="Follow us on Facebook"]
 ##[title="Follow us on Twitter"]
+##[title="Follow us on Youtube"]
 ##[title="Share on Facebook"]
 ##[title="Share on LinkedIn"]
 ##[title="Share on Linkedin"]
@@ -1378,6 +1409,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href*="facebook.com/sharer/sharer.php?"]
 ##a[href="http://twitter.com/share"]
 ##a[href^="http://digg.com/submit?url="]
+##a[href^="http://plus.google.com/share?"]
 ##a[href^="http://twitter.com/home/?"]
 ##a[href^="http://twitter.com/share?"]
 ##a[href^="http://www.facebook.com/sharer.php?"]
@@ -1547,6 +1579,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||amung.us^$third-party
 ||analytic.rocks^$third-party
 ||appier.net^$third-party
+||bidswitch.net^$third-party
 ||boomtrain.com^$third-party
 ||bounceexchange.com^$third-party
 ||cedexis.com^$third-party
@@ -1556,6 +1589,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||crsspxl.com^$third-party
 ||crwdcntrl.net^$domain=disqus.com
 ||demdex.net^$third-party
+||distiltag.com^$third-party
 ||doubleclick.net/activity$third-party
 ||doubleclick.net^*/trackimp/$third-party
 ||e-referrer.com^$third-party
@@ -1567,6 +1601,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||flagcounter.com^$third-party
 ||forkcdn.com^$third-party
 ||freegeoip.net^$third-party
+||fullstory.com^$third-party
 ||genieesspv.jp^$third-party
 ||globalwebindex.net^$third-party
 ||go-mpulse.net^$third-party
@@ -1608,6 +1643,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||smartlook.com^$third-party
 ||sociaplus.com^$third-party
 ||speedcurve.com^$third-party
+||stack-sonar.com^$third-party
 ||statcounter.com^$third-party
 ||tamgrt.com^$third-party
 ||toro-tags.com^$third-party
@@ -5628,12 +5664,12 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||cmcpoker.info^$third-party
 ||cpmstar.com/cached/
 ||cpmstar.com/view.aspx
-||dc08i221b0n8a.cloudfront.net^
 ||dtrk.slimcdn.com^
 ||entitlements.jwplayer.com^$third-party
 ||google.com/pagead/
 ||p.smartertravel.com^$third-party
 ||rtax.criteo.com^$third-party
+||secureserver.net^*/event?
 ||static.*.criteo.net/design^$third-party
 ||static.*.criteo.net/flash^$third-party
 ||static.*.criteo.net/images^$third-party
@@ -5654,6 +5690,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||akamai.net/chartbeat.
 ||amazonaws.com/ki.js/
 ||amplify.outbrain.com^$third-party
+||amplifypixel.outbrain.com^
 ||analytics.shareaholic.com^
 ||areyouahuman.com/kitten?
 ||bat.bing.com^
@@ -5664,6 +5701,10 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||connect.facebook.net^*/fbevents.js$third-party
 ||creativecdn.com/tags?
 ||csi.gstatic.com^
+||ct.pinterest.com^
+||d8rk54i4mohrb.cloudfront.net^
+||data.queryly.com^
+||dc08i221b0n8a.cloudfront.net^
 ||event.api.drift.com^
 ||facebook.com*/impression.php
 ||facebook.com/common/scribe_endpoint.php
@@ -5686,6 +5727,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||msecnd.net/scripts/a/ai.0.js
 ||nbcudigitaladops.com/hosted/housepix.gif
 ||p.po.st^*&pub=
+||paypalobjects.com^*/pixel.gif
 ||pixel.s3xified.com^
 ||pixel.wp.com^
 ||px.dynamicyield.com^$third-party
@@ -5713,9 +5755,11 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||api.twitter.com^*/count.json?$third-party
 ||apis.google.com/js/platform.js$third-party
 ||assets.pinterest.com/js/pinit.js$third-party
+||crowdynews.com^$third-party
 ||facebook.com*/plugins/like.php?$third-party
 ||facebook.com/connect/connect.*connections$third-party
 ||facebook.com/plugins/page.php?$third-party
+||facebook.com^*/plugins/like_box.php?$third-party
 ||facebook.com^*/plugins/page.php?$third-party
 ||google.com^*/fastbutton?$third-party
 ||instagram.com^*/users/$third-party
@@ -6157,4 +6201,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: JJ5EyY24UqnLECtvxe5l8w
+! Checksum: cOtqGAnu4D7G6RsG4kgxww
