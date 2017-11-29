@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1129.1634
+! Version: 17.1129.1656
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Nov 2017 16:34 UTC
+! Last modified: 29 Nov 2017 16:56 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -773,6 +773,7 @@ _pixel_test/?
 ###top_ad
 ###top_ad_full
 ###top_ad_game
+###top_ad_wrapper
 ###topad
 ###tupiklan
 ###wp_pro_ad_system_ad_zone
@@ -793,11 +794,13 @@ _pixel_test/?
 ##.ad-300
 ##.ad-300x250
 ##.ad-468x60
+##.ad-background
 ##.ad-banner
 ##.ad-block
 ##.ad-cell
 ##.ad-cluster-container
 ##.ad-float-image
+##.ad-frame
 ##.ad-in-post
 ##.ad-label
 ##.ad-leader
@@ -819,10 +822,12 @@ _pixel_test/?
 ##.ad-slot-container
 ##.ad-space
 ##.ad-spacer
+##.ad-text
 ##.ad-top-banner
 ##.ad-unit
 ##.ad-unit-top
 ##.ad-wrap
+##.ad-wrapper
 ##.adHolder
 ##.adNetPromo
 ##.ad_160
@@ -923,6 +928,7 @@ _pixel_test/?
 ##.adwrap
 ##.adwrap-widget
 ##.afs_ads
+##.after_ad
 ##.an-advert-banner
 ##.article-ad
 ##.article-ads
@@ -947,6 +953,7 @@ _pixel_test/?
 ##.cnAdzerkDiv
 ##.content-ad
 ##.content_ads
+##.da-custom-ad-box
 ##.desktop-advert
 ##.detads
 ##.dfp-tag-wrapper
@@ -1037,6 +1044,7 @@ _pixel_test/?
 ##.simple_ads_manager_block_widget
 ##.simple_ads_manager_widget
 ##.simple_advert
+##.sleekadbubble
 ##.sponsor-link
 ##.sponsor-logo
 ##.sponsorPuffsHomepage
@@ -1455,6 +1463,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href^="http://pinterest.com/pin/create/button/"]
 ##a[href^="http://plus.google.com/share?"]
 ##a[href^="http://twitter.com/home/?"]
+##a[href^="http://twitter.com/intent/tweet?"]
 ##a[href^="http://twitter.com/share?"]
 ##a[href^="http://www.facebook.com/sharer.php?"]
 ##a[href^="http://www.facebook.com/sharer/sharer.php?"]
@@ -1545,6 +1554,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||connatix.com^$third-party
 ||contextweb.com^$third-party
 ||creativecdn.com^$third-party
+||da-ads.com^$third-party
 ||doubleverify.com^$third-party
 ||effectivemeasure.net^$third-party
 ||exdynsrv.com^$third-party
@@ -1643,8 +1653,10 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||criteo.net^$third-party
 ||crsspxl.com^$third-party
 ||crwdcntrl.net^$domain=disqus.com
+||dapxl.com^$third-party
 ||demdex.net^$third-party
 ||distiltag.com^$third-party
+||dmtracker.com^$third-party
 ||doubleclick.net/activity$third-party
 ||doubleclick.net^*/trackimp/$third-party
 ||e-referrer.com^$third-party
@@ -5772,6 +5784,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||facebook.com/method/links.getStats?$third-party
 ||facebook.com/tr/?
 ||facebook.com/tr?
+||fls-na.amazon.com^
 ||geoip.nekudo.com^
 ||graph.facebook.com/?ids=*&callback=$script,third-party
 ||hm.baidu.com^$third-party
@@ -5784,6 +5797,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||log.outbrain.com^
 ||log.pinterest.com^
 ||mc.yandex.ru^
+||media-imdb.com/twilight/?
 ||metrics.brightcove.com^
 ||msecnd.net/scripts/a/ai.0.js
 ||nbcudigitaladops.com/hosted/housepix.gif
@@ -5849,6 +5863,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||kshowsubindo.org/wp-content/plugins/cm-pop-up-banners/
 ||liputan46.com/wp-content/uploads/*.gif$image
 ||mahkotabola.org/wp-content/uploads/*.gif$image
+||media-imdb.com^*/zergnet-
 ||mediaindonesia.com/files/banners/$image
 ||modifikasi.com/images/banner/
 ||motorexpertz.com/uploads/*.gif$image
@@ -5857,11 +5872,13 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||numpangnonton.com/wp-content/uploads/*.gif$image
 ||selebuzz.co.id/wp-content/uploads/*.gif$image
 ||solopos.com/banner/
+||ssl-images-amazon.com^*/dacx/
 ||twitter.com/i/cards/tfw/*?advertiser_name=
 ||vox-cdn.com/campaigns_images/
 ! *** abid:privacy/specific_block.txt ***
 ||analytics.twitter.com^
 ||bats.video.yahoo.com^
+||beacon.wikia-services.com^
 ||beap-bc.yahoo.com^
 ||collector-medium.lightstep.com^
 ||collector.githubapp.com^
@@ -5878,6 +5895,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||id.google.*/verify/*.gif
 ||lcs.naver.
 ||linkedin.com/analytics/
+||media-imdb.com/images/*/imdbads/js/beacon-$script
 ||microsoft.com/collect/
 ||optimize-stats.voxmedia.com^
 ||pinterest.com/_/_/report/
@@ -6214,7 +6232,9 @@ kaskus.co.id##.sidebar-wrap.row > .more-like
 ! *** abid:AdBlockID/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||cinemaindo21.info^$generichide
+@@||da-ads.com/truex.html?$domain=deviantart.com
 @@||eramuslim.com^$generichide
+@@||images-na.ssl-images-amazon.com/images/*/dacx/AdForge/$image,domain=amazon.com
 @@||indoshares.com^$generichide
 @@||inwepo.co^$generichide
 @@||mangashiro.net^$generichide
@@ -6275,4 +6295,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: E0SIUbiddNLGEZ2dLrFflw
+! Checksum: d2DtooQaRJSl1cBowiqXYQ
