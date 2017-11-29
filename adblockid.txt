@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1129.1255
+! Version: 17.1129.1335
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Nov 2017 12:55 UTC
+! Last modified: 29 Nov 2017 13:35 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -516,6 +516,7 @@ _atblockdetector/
 .lms-analytics/
 .net/p.gif?
 .skimlinks.js
+.snowplowanalytics.$domain=~snowplowanalytics.com
 /1x1.gif?
 /1x1.png
 /__utm.gif
@@ -1463,6 +1464,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href^="http://www.reddit.com/submit"]
 ##a[href^="http://www.stumbleupon.com/submit?url"]
 ##a[href^="http://www.tumblr.com/share/"]
+##a[href^="https://pinterest.com/pin/create/"]
 ##a[href^="https://plus.google.com/share?"]
 ##a[href^="https://twitter.com/home?status="]
 ##a[href^="https://twitter.com/intent/follow?"]
@@ -6190,6 +6192,8 @@ kaskus.co.id##.sidebar-wrap.row > .more-like
 ! Cookie Messages
 ###cookie-notice
 ###cookies-alert
+###eu-cookie
+###eu-cookie-content
 ##.cookie-notice-container
 ##.cookieConsent
 ##.cookies-alert
@@ -6258,6 +6262,7 @@ twitter.com#@#a[href^="http://twitter.com/share?"]
 pinterest.com#@#a[href^="http://www.pinterest.com/pin/create/button/?"]
 reddit.com#@#a[href^="http://www.reddit.com/submit"]
 tumblr.com#@#a[href^="http://www.tumblr.com/share/"]
+pinterest.com#@#a[href^="https://pinterest.com/pin/create/"]
 twitter.com#@#a[href^="https://twitter.com/intent/follow?"]
 facebook.com#@#a[href^="https://www.facebook.com/sharer.php?"]
 reddit.com#@#a[href^="https://www.reddit.com/submit?"]
@@ -6266,4 +6271,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: GhnuWLpaZOjuZdNRzA97zw
+! Checksum: DIMyumE6WcpW2Jaj8lrySg
