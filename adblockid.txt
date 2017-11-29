@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1129.1132
+! Version: 17.1129.1255
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Nov 2017 11:32 UTC
+! Last modified: 29 Nov 2017 12:55 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -74,6 +74,7 @@
 /adsense-
 /adsense/*
 /adserve/*
+/adserver-
 /adserver/*
 /adservice.
 /adsterra.js|
@@ -221,6 +222,7 @@ _ad_promo2.
 _adnetwork.
 _ads_framework.
 _ads_only&
+_prebid_
 _promo_ad/
 _web_ad_
 ||cacheserve.*/promodisplay/
@@ -538,6 +540,8 @@ _atblockdetector/
 /contentanalytics/*
 /cookiepingback?
 /dot.asp?
+/elqcfg.js
+/elqimg.js
 /entry_stats?
 /event/pageview/*
 /GARecord^
@@ -568,10 +572,13 @@ _atblockdetector/
 /lzdtracker.
 /mixpanel-*.js
 /monitor/log/*
+/owa.tracker-combined-min.js
 /partner/transparent_pixel-$image
 /ping.gif?
 /pippio.
 /piwik.$script,domain=~piwik.org
+/piwik.php
+/piwik_
 /pixel.gif?
 /prum.
 /px.gif?
@@ -618,6 +625,7 @@ _pixel_test/?
 /plugins/easy-facebook-likebox/*
 /plugins/easy-twitter-
 /sendtofriend.gif
+/share-count.
 /share_button.
 /shareaholic.js
 /sharebox.
@@ -901,6 +909,7 @@ _pixel_test/?
 ##.adsense-post
 ##.adsense1
 ##.adslot
+##.adslot_1
 ##.adspace_300
 ##.adss
 ##.adstop
@@ -1395,6 +1404,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.shareinpost
 ##.shareit
 ##.sharepost
+##.shares-top
 ##.sharetext
 ##.sharethis
 ##.sharrre
@@ -1422,6 +1432,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.twitter-block
 ##.twitter-follow-button
 ##.twitter-share
+##.twitter-square
 ##.twitter-timeline
 ##.twitter-widget
 ##.vce-share-bar
@@ -1441,6 +1452,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href*="facebook.com/sharer/sharer.php?"]
 ##a[href="http://twitter.com/share"]
 ##a[href^="http://digg.com/submit?url="]
+##a[href^="http://pinterest.com/pin/create/button/"]
 ##a[href^="http://plus.google.com/share?"]
 ##a[href^="http://twitter.com/home/?"]
 ##a[href^="http://twitter.com/share?"]
@@ -1585,6 +1597,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||puserving.com^$third-party
 ||revcontent.com^$third-party
 ||revsci.net^$third-party
+||rtk.io^$third-party
 ||rubiconproject.com^$third-party
 ||s.adroll.com^$third-party
 ||sascdn.com^$third-party
@@ -1613,6 +1626,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||venturead.com^$third-party
 ||vertamedia.com^$third-party
 ! *** abid:privacy/trackingservers.txt ***
+||abmr.net^$third-party
 ||adsymptotic.com^$third-party
 ||amung.us^$third-party
 ||analytic.rocks^$third-party
@@ -1657,6 +1671,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||hs-analytics.net^$third-party
 ||inspectlet.com^$third-party
 ||ipify.org^$third-party
+||jsonip.com^$third-party
 ||kampyle.com^$third-party
 ||kissmetrics.com^$third-party
 ||krxd.net^$third-party
@@ -5811,6 +5826,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||google.com^*/fastbutton?$third-party
 ||instagram.com^*/users/$third-party
 ||linkedin.com/countserv/$third-party
+||newsharecounts.com^$third-party
 ||pinterest.com/v1/urls/count.json$third-party
 ||platform.linkedin.com^$third-party
 ||platform.twitter.com/js/button.$third-party
@@ -6131,6 +6147,7 @@ okezone.com##.sosvertikal
 ###newsletter-subscribe
 ###subscribe-email
 ###subscribeBOX
+##.FollowByEmail
 ##.OUTBRAIN
 ##.berlangganan-box
 ##.cc-banner
@@ -6235,6 +6252,7 @@ facebook.com#@#.shareText
 facebook.com#@#a[href*="facebook.com/sharer/sharer.php?"]
 twitter.com#@#a[href="http://twitter.com/share"]
 digg.com#@#a[href^="http://digg.com/submit?url="]
+pinterest.com,thekitchn.com#@#a[href^="http://pinterest.com/pin/create/button/"]
 twitter.com#@#a[href^="http://twitter.com/home/?"]
 twitter.com#@#a[href^="http://twitter.com/share?"]
 pinterest.com#@#a[href^="http://www.pinterest.com/pin/create/button/?"]
@@ -6248,4 +6266,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: Mp6l+l6CIiAjG+5ryKCXrg
+! Checksum: GhnuWLpaZOjuZdNRzA97zw
