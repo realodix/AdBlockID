@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1130.1208
+! Version: 17.1130.1448
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Nov 2017 12:08 UTC
+! Last modified: 30 Nov 2017 14:48 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -47,6 +47,7 @@
 /*iklan2*.
 /*space-iklan*.
 /a/display.php?
+/ad-loading.
 /ad/banner/*
 /ad_status.
 /adaptvadplayer.
@@ -244,6 +245,7 @@ _web_ad_
 /468x60.
 /728x90/*
 468_60.gif|
+=300x250&
 =728x90,
 _300x600.
 _468x60-
@@ -638,6 +640,7 @@ _pixel_test/?
 /share_button.
 /shareaholic.js
 /sharebox.
+/sharebutton?
 /sharedaddy/*$image,script
 /social-icons/*$~stylesheet
 /social-sharing-
@@ -663,6 +666,8 @@ _pixel_test/?
 ###ad-mrec2
 ###ad-north
 ###ad-north-base
+###ad-slot-1
+###ad-slot-2
 ###ad-zone-1
 ###ad1-placeholder
 ###adBanner
@@ -836,6 +841,7 @@ _pixel_test/?
 ##.ad-text
 ##.ad-top-banner
 ##.ad-unit
+##.ad-unit-label
 ##.ad-unit-top
 ##.ad-wrap
 ##.ad-wrapper
@@ -900,6 +906,7 @@ _pixel_test/?
 ##.ads300_250-widget
 ##.ads4
 ##.ads728
+##.ads970
 ##.adsMiddle
 ##.adsSpot
 ##.ads_300
@@ -1685,6 +1692,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||feedcat.net^$third-party
 ||feedjit.com^$third-party
 ||flagcounter.com^$third-party
+||flix360.com/beat?
 ||forkcdn.com^$third-party
 ||freegeoip.net^$third-party
 ||fullstory.com^$third-party
@@ -6239,6 +6247,8 @@ wikipedia.org###siteNotice
 forum.idws.id##.Notices.PanelScroller
 brilio.net##.body-paragraph > #mid-video
 okezone.com##.horizontal.sosmedshare-xs
+kompas.com##.kompas-widget
+m.liputan6.com##.newsletter
 techinasia.com##.signup-box
 youtube.com##.ytp-title-channel
 ! 
@@ -6344,4 +6354,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: qqFKDBBGvjFLUQBEyl8WoQ
+! Checksum: CdtKFu3r2EcaWglT98u4Pw
