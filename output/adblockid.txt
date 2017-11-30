@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1130.1135
+! Version: 17.1130.1156
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Nov 2017 11:35 UTC
+! Last modified: 30 Nov 2017 11:56 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -637,6 +637,7 @@ _pixel_test/?
 /sharedaddy/*$image,script
 /social-icons/*$~stylesheet
 /social-sharing-
+/social_icon_
 /wysija-newsletters/*
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/general_hide.txt ***
@@ -1388,6 +1389,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.footSocial
 ##.footer-links-social
 ##.footer__social
+##.fsocial
 ##.heateor_sss_sharing_container
 ##.idmuvi-social-share
 ##.inline-share
@@ -1409,6 +1411,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.sd-sharing
 ##.sd-social
 ##.share-box
+##.share-buttons-container
 ##.share-count
 ##.share-left
 ##.share-more
@@ -1467,6 +1470,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##[title="Share on LinkedIn"]
 ##[title="Share on Linkedin"]
 ##[title="Share on Twitter"]
+##[title="Share to Facebook"]:not(.wpel-icon-right)
 ##a[href*="facebook.com/sharer/sharer.php?"]
 ##a[href="http://twitter.com/share"]
 ##a[href^="http://digg.com/submit?url="]
@@ -6330,4 +6334,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: 5l+uBR9n0NRLjNQtbUnOCg
+! Checksum: yTcNtXSvUPdiREPqb6X+lQ
