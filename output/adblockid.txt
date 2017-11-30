@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1130.1108
+! Version: 17.1130.1135
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Nov 2017 11:08 UTC
+! Last modified: 30 Nov 2017 11:35 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -509,7 +509,7 @@ _780x90.
 /wp-content/plugins/anti-block/*
 /wp-content/plugins/anti_ad_blocker/*
 _atblockdetector/
-! *** abid:privacy/general_block.txt ***
+! *** abid:AdBlockID_Privacy/general_block.txt ***
 -tracking.js?
 .com/0.gif?
 .com/a.gif?
@@ -608,7 +608,7 @@ _atblockdetector/
 _beacon?
 _loghuman=
 _pixel_test/?
-! *** abid:social/general_block.txt ***
+! *** abid:AdBlockID_Social/general_block.txt ***
 -footer-social.
 -social-icons.
 /facebook-pagelike-widget/*
@@ -877,6 +877,7 @@ _pixel_test/?
 ##.ads-large
 ##.ads-large-leaderboard
 ##.ads-leaderboard
+##.ads-middle
 ##.ads-pop
 ##.ads-right
 ##.ads-section
@@ -1009,6 +1010,7 @@ _pixel_test/?
 ##.menu-ads
 ##.middle-ads
 ##.minipusat
+##.mobile-ad
 ##.mpu-ad
 ##.mvp_ad_widget
 ##.newsfeed_adunit
@@ -1050,6 +1052,7 @@ _pixel_test/?
 ##.simple_ads_manager_block_widget
 ##.simple_ads_manager_widget
 ##.simple_advert
+##.single-top-ad
 ##.sleekadbubble
 ##.sponsor-link
 ##.sponsor-logo
@@ -1355,7 +1358,7 @@ _pixel_test/?
 ##object[width="990"][height="206"]
 ! *** abid:AdBlockID/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
-! *** abid:social/general_hide.txt ***
+! *** abid:AdBlockID_Social/general_hide.txt ***
 ###footer-social-media
 ###mobile-social
 ###share_top
@@ -1409,6 +1412,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.share-count
 ##.share-left
 ##.share-more
+##.share-wrapper
 ##.share_icon
 ##.share_social
 ##.shareaholic-canvas
@@ -1642,7 +1646,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||velocecdn.com^$third-party
 ||venturead.com^$third-party
 ||vertamedia.com^$third-party
-! *** abid:privacy/trackingservers.txt ***
+! *** abid:AdBlockID_Privacy/trackingservers.txt ***
 ||abmr.net^$third-party
 ||adsymptotic.com^$third-party
 ||amung.us^$third-party
@@ -5779,7 +5783,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||static.criteo.net/js/duplo^$third-party
 ||ubloger.com^$third-party
 ||viglink.com/images/pixel.gif
-! *** abid:privacy/thirdparty.txt ***
+! *** abid:AdBlockID_Privacy/thirdparty.txt ***
 ||uzone.id^$third-party
 ! 
 ||akamai.net/chartbeat.
@@ -5849,7 +5853,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||voxmedia.com/pickup.js
 ||widget.perfectmarket.com^
 ||yimg.com/wi/ytc.js
-! *** abid:social/thirdparty.txt ***
+! *** abid:AdBlockID_Social/thirdparty.txt ***
 ||addtoany.com^$third-party
 ||api.twitter.com^*/count.json?$third-party
 ||apis.google.com/js/platform.js$third-party
@@ -5894,7 +5898,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ssl-images-amazon.com^*/dacx/
 ||twitter.com/i/cards/tfw/*?advertiser_name=
 ||vox-cdn.com/campaigns_images/
-! *** abid:privacy/specific_block.txt ***
+! *** abid:AdBlockID_Privacy/specific_block.txt ***
 ||analytics.twitter.com^
 ||bats.video.yahoo.com^
 ||beacon.wikia-services.com^
@@ -6077,7 +6081,7 @@ n21.tv##.ban_empat
 ||sukamoviedrama.co/wp-content/uploads/*.gif$image
 ! 
 @@||cinemamkv.net^$generichide
-! *** abid:social/specific_hide.txt ***
+! *** abid:AdBlockID_Social/specific_hide.txt ***
 hipwee.com###share-fixed-alt
 tribunnews.com###sharebox
 cosmogirl.co.id###socmed
@@ -6088,7 +6092,7 @@ detik.com##.share_float
 bisnis.com##.socmed
 okezone.com##.sosvertikal
 ! ------------------------------------------------------------!
-! *** abid:privacy/resource-abuse.txt ***
+! *** abid:AdBlockID_Privacy/resource-abuse.txt ***
 ! Resource-abuse
 ! 
 ! To foil sites potentially abusing CPU/bandwidth resources without informed
@@ -6233,16 +6237,21 @@ kaskus.co.id##.header__kasad
 kaskus.co.id##.kaskus-ads
 m.kaskus.co.id##.nm-alert
 kaskus.co.id##.notice
-m.kaskus.co.id##.share-wrapper
 kaskus.co.id##.sidebar-wrap.row > .more-like
 ! 
 ! Cookie Messages
+###cookie-bar
 ###cookie-notice
+###cookieContent
 ###cookie_notice
 ###cookies-alert
 ###eu-cookie
 ###eu-cookie-content
+##.cookie-bar
+##.cookie-content
+##.cookie-message
 ##.cookie-notice-container
+##.cookie-policy
 ##.cookieConsent
 ##.cookies-alert
 ##.cookies-notify
@@ -6285,7 +6294,7 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! *** abid:privacy/whitelist.txt ***
+! *** abid:AdBlockID_Privacy/whitelist.txt ***
 @@/wp-content/plugins/google-analytics-for-wordpress/*$~third-party
 @@/wp-content/plugins/google-analytics-premium/*$~third-party
 @@||analytics.twitter.com^$domain=analytics.twitter.com
@@ -6296,7 +6305,7 @@ tinypaste.cc#@##banner_ad
 @@||segment.io/analytics.js/*/analytics.min.js$script
 @@||youtube.com/api/analytics/$~third-party
 @@||youtube.com/api/stats/watchtime?$image,domain=youtube.com
-! *** abid:social/whitelist.txt ***
+! *** abid:AdBlockID_Social/whitelist.txt ***
 facebook.com#@#.facebook-widget
 facebook.com,fb.com#@#.fb-like
 facebook.com#@#.fb-likebox
@@ -6321,4 +6330,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: +6r49J+7h9G/L5klf3M+yw
+! Checksum: 5l+uBR9n0NRLjNQtbUnOCg
