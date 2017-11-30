@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1130.1156
+! Version: 17.1130.1208
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Nov 2017 11:56 UTC
+! Last modified: 30 Nov 2017 12:08 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -46,6 +46,7 @@
 .php?zoneid=
 /*iklan2*.
 /*space-iklan*.
+/a/display.php?
 /ad/banner/*
 /ad_status.
 /adaptvadplayer.
@@ -545,6 +546,7 @@ _atblockdetector/
 /chartbeat_
 /contentanalytics/*
 /cookiepingback?
+/delivery/lg.
 /dot.asp?
 /elqcfg.js
 /elqimg.js
@@ -596,6 +598,7 @@ _atblockdetector/
 /site_stats/*
 /sovrn_beacon_
 /stat?event=
+/stats/?js
 /track.gif^
 /tracker.php?
 /v60.js
@@ -604,6 +607,7 @@ _atblockdetector/
 /visitorapi.js
 ://b.*/ping?
 ://c1.*/c.gif?
+://piwik.$third-party
 =googleanalytics_
 _beacon?
 _loghuman=
@@ -1673,6 +1677,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dmtracker.com^$third-party
 ||doubleclick.net/activity$third-party
 ||doubleclick.net^*/trackimp/$third-party
+||dwin1.com^$third-party
 ||e-referrer.com^$third-party
 ||edigitalsurvey.com^$third-party
 ||exelator.com^$domain=disqus.com
@@ -1703,6 +1708,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||kissmetrics.com^$third-party
 ||krxd.net^$third-party
 ||liadm.com^$third-party
+||maxymiser.net^$third-party
 ||mixpanel.com^$third-party
 ||mmstat.com^$third-party
 ||mousestats.com^$third-party
@@ -1724,6 +1730,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||speedcurve.com^$third-party
 ||stack-sonar.com^$third-party
 ||statcounter.com^$third-party
+||steelhousemedia.com^$third-party
 ||tamgrt.com^$third-party
 ||toro-tags.com^$third-party
 ||track.bloglog.com^$third-party
@@ -5767,6 +5774,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||d3al52d8cojds7.cloudfront.net^
 ||d8rk54i4mohrb.cloudfront.net^
 ||dc08i221b0n8a.cloudfront.net^
+||dnn506yrbagrg.cloudfront.net^
 ||dtrk.slimcdn.com^
 ||entitlements.jwplayer.com^$third-party
 ||google.com/pagead/
@@ -5849,6 +5857,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||tinypass.com^*/track?
 ||topix.com/t6track/
 ||trk*.vidible.tv^
+||trustpilot.com/stats/
 ||twitter.com/i/jot
 ||twitter.com/oct.js
 ||usage.trackjs.com^
@@ -5913,6 +5922,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||facebook.com/xti.php?
 ||frog.wix.com^
 ||geo.yahoo.com^
+||geoip.boredpanda.com^
 ||gigya.com/js/gigyagaintegration.js
 ||github.com/_private/browser/stats
 ||google.*/client_204?
@@ -6252,4 +6262,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: 4z3+mRlnMY7A1MqTkGtOaw
+! Checksum: XU5WBS/zzZVGgwdHrxHMxQ
