@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1202.1843
+! Version: 17.1202.1939
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Dec 2017 18:43 UTC
+! Last modified: 02 Dec 2017 19:39 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -912,7 +912,6 @@ _pixel_test/?
 ##.adstop
 ##.adtext01
 ##.adunit
-##.adunits.ads
 ##.adv-box
 ##.adv-sidebar
 ##.advertisement
@@ -1343,7 +1342,7 @@ _pixel_test/?
 ##object[width="980"][height="250"]
 ##object[width="982"][height="150"]
 ##object[width="990"][height="206"]
-! *** abid:AdBlockID/css_extended.txt ***
+! *** abid:AdBlockID_Lite/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID_Social/general_hide.txt ***
 ###footer-social-media
@@ -1699,7 +1698,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||w3counter.com^$third-party
 ||w55c.net^$third-party
 ||zarget.com^$third-party
-! *** abid:AdBlockID/popup.txt ***
+! *** abid:AdBlockID_Lite/popup.txt ***
 ||abourselfi.com^$popup,third-party
 ||baligoal.net^$popup,third-party
 ||elthamely.com^$popup,third-party
@@ -5863,6 +5862,11 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID/specific_block.txt ***
 ||aolcdn.com/os/moat/$script
 ||beap.gemini.yahoo.com^
+||media-imdb.com^*/zergnet-
+||ssl-images-amazon.com^*/dacx/
+||twitter.com/i/cards/tfw/*?advertiser_name=
+||vox-cdn.com/campaigns_images/
+! *** abid:AdBlockID_Lite/specific_block.txt ***
 ||eramuslim.com/banners
 ||harianjogja.com/banner/
 ||hotabis.com/wp-content/uploads/*.gif$image
@@ -5872,15 +5876,11 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||kotakgame.com/images/bnr/$image
 ||liputan46.com/wp-content/uploads/*.gif$image
 ||mahkotabola.org/wp-content/uploads/*.gif$image
-||media-imdb.com^*/zergnet-
 ||mediaindonesia.com/files/banners/$image
 ||modifikasi.com/images/banner/
 ||motorexpertz.com/uploads/*.gif$image
 ||selebuzz.co.id/wp-content/uploads/*.gif$image
 ||solopos.com/banner/
-||ssl-images-amazon.com^*/dacx/
-||twitter.com/i/cards/tfw/*?advertiser_name=
-||vox-cdn.com/campaigns_images/
 ! *** abid:AdBlockID_Privacy/specific_block.txt ***
 ||analytics.twitter.com^
 ||bats.video.yahoo.com^
@@ -5925,7 +5925,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||youtube.com/ptracking?
 ||youtube.com/set_awesome?
 ! ------------------------------------------------------------!
-! *** abid:AdBlockID/specific_hide.txt ***
+
+! *** abid:AdBlockID_Lite/specific_hide.txt ***
 ! whitelist
 cinemamkv.net##a[href*="//go."] > img
 cinemamkv.net##a[href^="https://goo.gl/"] > img
@@ -6025,7 +6026,7 @@ emosijiwaku.com##.td-banner-bg.td-banner-wrap-full
 covesia.com##.topbanner
 inilah.com##.wb-300x250
 kshowsubindo.org##a[href^="http://bit.ly/"] > img
-! *** abid:AdBlockID/specific_addon.txt ***
+! *** abid:AdBlockID_Lite/specific_addon.txt ***
 bioskopfilm21.net,movie303.com##a[href^="http://bit.ly/"] > img
 indoxxi.info##a[href^="https://goo.gl/"] > img
 ||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopkeren.ws|drakorindo.co|movie303.com|nonton33.tv|nontonin.com|nontonvip.com|senimovies.net
@@ -6096,7 +6097,7 @@ okezone.com##.sosvertikal
 ||nrelate.com^$third-party
 ||pushalert.co^$third-party
 ||snapwidget.com^$third-party
-! 
+! *** abid:AdBlockID_Lite/annoyances.txt ***
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
 ! 
@@ -6170,11 +6171,12 @@ kaskus.co.id##.sidebar-wrap.row > .more-like
 ! http://www.klikdokter.com/info-sehat/read/3155308/5-olahraga-ini-cocok-untuk-usia-di-atas-40-tahun
 ||preco.analisis.io
 ! *** abid:AdBlockID/whitelist.txt ***
+@@||images-na.ssl-images-amazon.com/images/*/dacx/AdForge/$image,domain=amazon.com
+@@||www.google.*/ads/$~third-party,domain=google.co.id|google.com
+! *** abid:AdBlockID_Lite/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||cinemaindo21.info^$generichide
-@@||da-ads.com/truex.html?$domain=deviantart.com
 @@||eramuslim.com^$generichide
-@@||images-na.ssl-images-amazon.com/images/*/dacx/AdForge/$image,domain=amazon.com
 @@||indoshares.com^$generichide
 @@||inwepo.co^$generichide
 @@||mangashiro.net^$generichide
@@ -6188,7 +6190,6 @@ kaskus.co.id##.sidebar-wrap.row > .more-like
 @@||sobatdrama.net^$generichide
 @@||tutorialweb.net^$generichide
 @@||viu21.info^$generichide
-@@||www.google.*/ads/$~third-party,domain=google.co.id|google.com
 agroindustri.id#@#.category-advertorial
 ! 
 ! Adblock Notify plugin https://themeisle.com/plugins/adblock-notify/
@@ -6236,4 +6237,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: Id8fBtTX8BB9B1Nug1Zkfw
+! Checksum: rD8VNxd9tfq1Pof+JLO1Qg

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1202.1843
+! Version: 17.1202.1939
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Dec 2017 18:43 UTC
+! Last modified: 02 Dec 2017 19:39 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -617,33 +617,13 @@ _pixel_test/?
 ##.adsSpot
 ##.adsbar
 ##.adsbox
+! 
 ##.adsbyadop
-##.adsbygoogle
-##.adsense-ad
-##.adsense-post
-##.adsense1
-##.adslot
-##.adslot_1
-##.adss
-##.adstop
 ##.adtext01
-##.adunit
-##.adunits.ads
-##.adv-box
-##.adv-sidebar
-##.advertisement
-##.advertisement-comment
-##.advertisment
-##.adwrap
-##.adwrap-widget
-##.afs_ads
-##.after_ad
+##.adunits
 ##.an-advert-banner
-##.article-ad
-##.article-ads
 ##.bannerutama
-##.bbccom_advert
-##.betteradscontainer
+! 
 ##.bg-ads
 ##.bgads
 ##.billboard-ad
@@ -676,6 +656,7 @@ _pixel_test/?
 ##.header-ads
 ##.header_leaderboard_ad
 ##.headerads
+! 
 ##.idmuvi-afterplayer
 ##.idmuvi-floatbanner
 ##.idmuvi-topbanner
@@ -692,20 +673,9 @@ _pixel_test/?
 ##.iklanleft
 ##.iklanmini
 ##.iklanright
-##.inline-ad
-##.insert-post-ads
-##.js-dfp-ad
-##.js-outbrain-container
-##.js-stream-ad
 ##.kotak_iklan
-##.lazy-ad
-##.lazyload_ad
-##.loop-ad
-##.m-ad
-##.mainads
-##.menu-ads
-##.middle-ads
 ##.minipusat
+! 
 ##.mobile-ad
 ##.mpu-ad
 ##.mvp_ad_widget
@@ -725,64 +695,16 @@ _pixel_test/?
 ##.promo-ad
 ##.promoAd
 ##.promoAds
+! 
+! 
 ##.pusat728
-##.quads-location
-##.related-ads
-##.right-ads
-##.right-ads2
-##.right-adsense
-##.rkads
-##.sam-ad
-##.sam_ad
-##.sgAd
-##.sharrre-container
-##.side-ads
-##.sidebar-ads
-##.sidebar-box-ads
-##.sleekadbubble
-##.sponsor-link
-##.sponsor-logo
-##.sponsorPuffsHomepage
-##.sponsor_ads
-##.sponsor_post
-##.sponsoredLeft
-##.str-top-ad
-##.td-a-rec-id-custom_ad_1
-##.td-a-rec-id-custom_ad_2
-##.td-a-rec-id-custom_ad_3
-##.td-a-rec-id-custom_ad_4
-##.td-a-rec-id-custom_ad_5
-##.td-ad
-##.td-adspot-title
-##.td-header-ad-wrap
-##.td-header-sp-ads
-##.text-ad
-##.text-ad-links
-##.text-ads
-##.textAd
-##.text_ad
-##.text_ads
-##.top-ad-container
-##.top-adbox
-##.top-ads
 ##.top-ads-container
-##.top-advert
-##.topads
 ##.topadsense
 ##.topline-ads
-##.vce-header-ads
-##.video-ads
 ##.video-content-bottom-ads
 ##.video-content-top-ads
-##.view-advertorials
-##.widget-ad
-##.widget-ads
-##.widget_ads
-##.widget_adsensem
-##.widget_advwidget
-##.widget_better-ads
-##.wpmrec
-##.ytp-ad-progress-list
+! 
+! 
 ##div[class^="iklan"]
 ##div[id*="iklan"]
 ! 
@@ -5459,8 +5381,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||widgets.wp.com/likes/$third-party
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID_Lite/specific_block.txt ***
-||aolcdn.com/os/moat/$script
-||beap.gemini.yahoo.com^
 ||eramuslim.com/banners
 ||harianjogja.com/banner/
 ||hotabis.com/wp-content/uploads/*.gif$image
@@ -5470,15 +5390,11 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||kotakgame.com/images/bnr/$image
 ||liputan46.com/wp-content/uploads/*.gif$image
 ||mahkotabola.org/wp-content/uploads/*.gif$image
-||media-imdb.com^*/zergnet-
 ||mediaindonesia.com/files/banners/$image
 ||modifikasi.com/images/banner/
 ||motorexpertz.com/uploads/*.gif$image
 ||selebuzz.co.id/wp-content/uploads/*.gif$image
 ||solopos.com/banner/
-||ssl-images-amazon.com^*/dacx/
-||twitter.com/i/cards/tfw/*?advertiser_name=
-||vox-cdn.com/campaigns_images/
 ! *** abid:AdBlockID_Privacy/specific_block.txt ***
 ||analytics.twitter.com^
 ||bats.video.yahoo.com^
@@ -5758,25 +5674,6 @@ okezone.com##.sosvertikal
 ||webmine.cz^$third-party
 ||xbasfbno.info^$third-party
 ! *** abid:AdBlockID_Lite/annoyances.txt ***
-/downloads.mailchimp.com/*
-/outbrain.js|
-/wp-content/plugins/popover/*$script
-/wp-content/plugins/tab-slide/*
-/wp-content/plugins/thrive-leads/*$script
-! 
-||apester.com^$third-party
-||autolinkmaker.itunes.apple.com^$third-party
-||blogtopsites.com^$third-party
-||disqus.com/api/*/listRelated.json?
-||feedage.com^$third-party
-||feedburner.com^$image,third-party
-||goroost.com^$third-party
-||hsleadflows.net^$third-party
-||linkwithin.com^$third-party
-||nrelate.com^$third-party
-||pushalert.co^$third-party
-||snapwidget.com^$third-party
-! 
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
 ! 
@@ -5852,9 +5749,7 @@ kaskus.co.id##.sidebar-wrap.row > .more-like
 ! *** abid:AdBlockID_Lite/whitelist.txt ***
 @@||ad4msan.com^$elemhide
 @@||cinemaindo21.info^$generichide
-@@||da-ads.com/truex.html?$domain=deviantart.com
 @@||eramuslim.com^$generichide
-@@||images-na.ssl-images-amazon.com/images/*/dacx/AdForge/$image,domain=amazon.com
 @@||indoshares.com^$generichide
 @@||inwepo.co^$generichide
 @@||mangashiro.net^$generichide
@@ -5868,7 +5763,6 @@ kaskus.co.id##.sidebar-wrap.row > .more-like
 @@||sobatdrama.net^$generichide
 @@||tutorialweb.net^$generichide
 @@||viu21.info^$generichide
-@@||www.google.*/ads/$~third-party,domain=google.co.id|google.com
 agroindustri.id#@#.category-advertorial
 ! 
 ! Adblock Notify plugin https://themeisle.com/plugins/adblock-notify/
@@ -5916,4 +5810,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: k1GtWzwAt3Ef8/uhrQgIpw
+! Checksum: mdunKG6dVgOoPsJUOraxFQ
