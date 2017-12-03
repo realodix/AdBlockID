@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1203.0837
+! Version: 17.1203.0904
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Dec 2017 08:37 UTC
+! Last modified: 03 Dec 2017 09:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -402,6 +402,7 @@ _pixel_test/?
 -footer-social.
 -social-icons.
 /facebook-pagelike-widget/*
+/fb-share.
 /ico_facebook.
 /ico_twitter.
 /ico_youtube.
@@ -412,6 +413,7 @@ _pixel_test/?
 /image/social_
 /images/social/*
 /img/*/social-
+/img/facebook-
 /img/share_
 /img/social-
 /img/twitter.
@@ -1363,6 +1365,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||bxoemfpetyqi.bid^
 ||bxpbwitpgbid.bid^
 ||bxrjiqoajbbh.com^
+||bxtcgufurbdk.bid^
 ||bydbjtaoy.bid^
 ||byecttekgbksr.bid^
 ||bymyneknm.bid^
@@ -1615,6 +1618,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dsdiztki.bid^
 ||dsevjzklcjjb.com^
 ||dsibzjqbtkjqd.bid^
+||dskiepocq.bid^
 ||dsmysdzjhxot.com^
 ||dsnjsdrbqwdu.com^
 ||dswwghrlwwcm.com^
@@ -1811,6 +1815,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||fdbyfnpdcqc.bid^
 ||fddbdlolkxgc.com^
 ||fdfpnrhlckbmiz.bid^
+||fdgxsvblervuss.bid^
 ||fdjdyzoqnzikx.bid^
 ||fdnxojzwbmie.bid^
 ||fdogfuqpgeub.com^
@@ -2032,6 +2037,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||gopamdzgpdrwe.bid^
 ||gouytrujxuhkzk.bid^
 ||gozmioancm.bid^
+||gpaeofyetjvff.bid^
 ||gperzgnvuuyx.com^
 ||gphfgyrkpumn.com^
 ||gphvcvxebrun.bid^
@@ -2074,6 +2080,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||guoijslfm.bid^
 ||guowsqbyh.bid^
 ||gurrfwsscwda.com^
+||guwegqmvqxfa.bid^
 ||guziwptcqucio.bid^
 ||gverjfuapaag.com^
 ||gvgakxvukmrm.com^
@@ -3313,6 +3320,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||olazspdsld.bid^
 ||olejgcdzgb.bid^
 ||oljpsldr.bid^
+||olmkmtwet.bid^
 ||olpcbzhvduha.bid^
 ||olthlikechgq.com^
 ||olwopczjfkng.com^
@@ -4469,6 +4477,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||vtcquvxsaosz.com^
 ||vtewggxzbrcv.bid^
 ||vtijuhpxlkoq.bid^
+||vtkqdqwnmv.bid^
 ||vtncgdjuzpe.bid^
 ||vtqdavdjsymt.com^
 ||vtqmlzprsunm.com^
@@ -5382,6 +5391,7 @@ hipwee.com###share-fixed-alt
 tribunnews.com###sharebox
 cosmogirl.co.id###socmed
 viva.co.id##.article-share
+malesbanget.com##.mbdc__share-soc-btn
 dw.com##.share
 ciriseo.net##.share-buttons-box
 detik.com##.share_float
@@ -5401,9 +5411,11 @@ okezone.com##.sosvertikal
 /coinblind_beta.
 /coinhive.min.js
 /coinlab.js
+/cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
 /jsecoin.*/?
+/lhnhelpouttab-current.min.js
 /miner-ui.js
 /miner.js
 /miner.min.js
@@ -5419,6 +5431,8 @@ okezone.com##.sosvertikal
 ||ad-miner.com^$third-party
 ||adminer.com^$third-party
 ||afminer.com^$third-party
+||aleinvest.xyz^$third-party
+||alemoney.xyz^$third-party
 ||altpool.pro^$third-party
 ||api.inwemo.com^$third-party
 ||authedmine.com^$third-party,domain=~coinhive.com
@@ -5432,6 +5446,7 @@ okezone.com##.sosvertikal
 ||coinhive-manager.com^$third-party
 ||coinhive-proxy.party^$third-party
 ||coinhive.com^$third-party
+||coinhiveproxy.com^$third-party
 ||coinlab.biz^$third-party
 ||coinminerz.com^$third-party
 ||coinnebula.com^$third-party
@@ -5443,6 +5458,8 @@ okezone.com##.sosvertikal
 ||gus.host^$third-party
 ||hashforcash.us^$third-party
 ||jroqvbvw.info^$third-party
+||jsccnn.com^$third-party
+||jscdndel.com^$third-party
 ||jsecoin.com^$third-party
 ||jyhfuqoh.info^$third-party
 ||kdowqlpt.info^$third-party
@@ -5459,6 +5476,7 @@ okezone.com##.sosvertikal
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
 ||now.sh/*.wasm$third-party
+||onlinereserchstatistics.online^$third-party
 ||papoto.com^$third-party
 ||podrltid.info^$third-party
 ||ppoi.org^$third-party
@@ -5467,9 +5485,17 @@ okezone.com##.sosvertikal
 ||rocks.io^$third-party
 ||sbhmn-miner.com^$third-party
 ||secumine.net^$third-party
+||siteverification.online^$third-party
+||siteverification.site^$third-party
 ||supportxmr.com^$third-party
 ||webmine.cz^$third-party
 ||xbasfbno.info^$third-party
+! 
+.info^$script,third-party,domain=oload.info|oload.tv|openload.co|streamango.com|streamcherry.com
+||2giga.link^*/hive.js
+||gus.host/coins.js
+||rawgit.com/Pocketart/$script,third-party
+||reactor.cc^*.wasm
 ! *** abid:AdBlockID_Lite/annoyances.txt ***
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
@@ -5612,4 +5638,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: nlwruQhQJBiz5Gzo1sMRhQ
+! Checksum: AzTyl9ojqgD+e2D2iVoEew
