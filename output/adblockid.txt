@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1203.0904
+! Version: 17.1203.1737
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Dec 2017 09:04 UTC
+! Last modified: 03 Dec 2017 17:37 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -34,7 +34,9 @@
 /ad-loading.
 /adaptvadplayer.
 /adbanners/*
+/adcache.
 /adchoices.
+/adconfig.
 /adpan/*
 /ads-01.
 /ads-02.
@@ -185,7 +187,6 @@ _web_ad_
 ! 
 ! 
 ! Popular dimension sizes
-! 
 -120x240.
 -160-600.
 -300x250-$~xmlhttprequest
@@ -350,6 +351,7 @@ _780x90.
 /*cmcbet*.gif
 /*cmcwin*.gif
 /*demenqq*.gif
+/*dewiqq*.gif
 /*divaqq*.gif
 /*domino168*.gif
 /*dominobca*.gif
@@ -365,6 +367,7 @@ _780x90.
 /*fullbet*.gif
 /*garudaqq*.gif
 /*gohbet*.gif
+/*hanabet*.gif
 /*hoyajackpot*.gif
 /*incarqq*.gif
 /*indonalo*.gif
@@ -395,6 +398,7 @@ _780x90.
 /*masterbaccarat*.gif
 /*maxisbet*.gif
 /*mega389*.gif
+/*meja365*.gif
 /*mitraqq*.gif
 /*mkvgames*.gif
 /*musimqq*.gif
@@ -525,6 +529,7 @@ _atblockdetector/
 /cookiepingback?
 /delivery/lg.
 /dot.asp?
+/ebonetag.js
 /elqcfg.js
 /elqimg.js
 /entry_stats?
@@ -577,6 +582,7 @@ _atblockdetector/
 /stat?event=
 /stats/?js
 /track.gif^
+/tracker.min.js
 /tracker.php?
 /v60.js
 /vglnk.js
@@ -620,6 +626,7 @@ _pixel_test/?
 /sharebox.
 /sharebutton?
 /sharedaddy/*$image,script
+/sharing-buttons.
 /social-icons/*$~stylesheet
 /social-sharing-
 /social_icon_
@@ -678,6 +685,8 @@ _pixel_test/?
 ###bottomAd
 ###bottom_exclusive_ads
 ###bottomads
+###content_ad
+###content_ad_2
 ###divAdLeft
 ###divAdRight
 ###dogear_promo
@@ -737,6 +746,7 @@ _pixel_test/?
 ##.ad-banner
 ##.ad-block
 ##.ad-cell
+##.ad-choices
 ##.ad-cluster-container
 ##.ad-column
 ##.ad-frame
@@ -768,6 +778,8 @@ _pixel_test/?
 ##.ad-unit-top
 ##.ad-wrap
 ##.ad-wrapper
+##.ad260x60
+##.ad300x600
 ##.adHolder
 ##.adNetPromo
 ##.ad_160
@@ -941,12 +953,14 @@ _pixel_test/?
 ##.simple_advert
 ##.single-top-ad
 ##.sleekadbubble
+##.slot_integrated_ad
 ##.sponsor-link
 ##.sponsor-logo
 ##.sponsorPuffsHomepage
 ##.sponsor_ads
 ##.sponsor_post
 ##.sponsoredLeft
+##.sponsoredLink
 ##.str-top-ad
 ##.td-a-rec-id-custom_ad_1
 ##.td-a-rec-id-custom_ad_2
@@ -1345,17 +1359,22 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID_Social/general_hide.txt ***
 ###footer-social-media
 ###mobile-social
+###share-count
 ###share_top
 ###social-share
 ###social_block
 ###socialmedia
 ###sticky-social
+##.SocialMediaShareButton
+##.actnbr-has-follow
 ##.addthis_sharing_toolbox
 ##.addthis_toolbox
 ##.addtoany_list
 ##.addtoany_share_save
+##.ap-follow-widget
 ##.article-share-bottom
 ##.article-shares-links
+##.b_share
 ##.c-global-header__social
 ##.d-comment__action--share
 ##.entry-share
@@ -1371,6 +1390,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.fb-xfbml-parse-ignore
 ##.footSocial
 ##.footer-links-social
+##.footerMainMoreSocial
 ##.footer__social
 ##.fsocial
 ##.heateor_sss_sharing_container
@@ -1383,6 +1403,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.meta__social
 ##.nav-social
 ##.newsletter__social-media
+##.pin-it-button
 ##.post-actions-share
 ##.post-actions-shares
 ##.post-meta__sharing
@@ -1396,6 +1417,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.share-box
 ##.share-buttons-container
 ##.share-count
+##.share-item
 ##.share-left
 ##.share-more
 ##.share-wrapper
@@ -1416,6 +1438,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.social--top
 ##.social-container
 ##.social-media
+##.social-media-icon
 ##.social-media-share
 ##.social-networks
 ##.social-share
@@ -1429,6 +1452,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.sprite-social
 ##.ss-social
 ##.ssocial
+##.sticky-share-bar__icon
 ##.sumome-share-client-wrapper
 ##.td-post-sharing
 ##.top-social-icons
@@ -1446,10 +1470,12 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.widget_wpcom_social_media_icons_widget
 ##.wrapper-share
 ##KNO-SHARE-BUTTON
+##[href^="http://reddit.com/submit"]
 ##[title="Follow Us on Twitter"]
 ##[title="Follow us on Facebook"]
 ##[title="Follow us on Twitter"]
 ##[title="Follow us on Youtube"]
+##[title="Like us on Facebook"]
 ##[title="Share on Facebook"]
 ##[title="Share on LinkedIn"]
 ##[title="Share on Linkedin"]
@@ -1461,8 +1487,10 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href^="http://pinterest.com/pin/create/button/"]
 ##a[href^="http://plus.google.com/share?"]
 ##a[href^="http://twitter.com/home/?"]
+##a[href^="http://twitter.com/home?"]
 ##a[href^="http://twitter.com/intent/tweet?"]
 ##a[href^="http://twitter.com/share?"]
+##a[href^="http://www.facebook.com/share.php?u="]
 ##a[href^="http://www.facebook.com/sharer.php?"]
 ##a[href^="http://www.facebook.com/sharer/sharer.php?"]
 ##a[href^="http://www.linkedin.com/shareArticle?"]
@@ -1470,6 +1498,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href^="http://www.reddit.com/submit"]
 ##a[href^="http://www.stumbleupon.com/submit?url"]
 ##a[href^="http://www.tumblr.com/share/"]
+##a[href^="https://facebook.com/sharer.php?"]
 ##a[href^="https://pinterest.com/pin/create/"]
 ##a[href^="https://plus.google.com/share?"]
 ##a[href^="https://twitter.com/home?status="]
@@ -1496,6 +1525,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##iframe[src^="http://www.facebook.com/plugins/likebox.php?"]
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/adservers.txt ***
+||206ads.com^$third-party
 ||360yield.com^$third-party
 ||a-ads.com^$third-party
 ||ad-stir.com^$third-party
@@ -1529,6 +1559,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||exdynsrv.com^$third-party
 ||extend.tv^$third-party
 ||ezoic.net^$third-party
+||firstimpression.io^$third-party
 ||ftjcfx.com^$third-party
 ||genieessp.com^$third-party
 ||go2speed.org^$third-party
@@ -1669,6 +1700,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ndg.io^$third-party
 ||onthe.io^$third-party
 ||pagefair.com^$third-party
+||pixel.watch^$third-party
 ||prchecker.info^$third-party
 ||props.id^$third-party
 ||rfihub.com^$third-party
@@ -3190,6 +3222,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||jutbdkjc.bid^
 ||juvyntuqtku.bid^
 ||juyfhwxcvzft.com^
+||jvdrscohwxopj.bid^
 ||jvepcgbq.bid^
 ||jvnubhidaev.bid^
 ||jvnvvuveozfi.com^
@@ -3654,6 +3687,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||mmdcibihoimt.com^
 ||mmdifgneivng.com^
 ||mmesheltljyi.com^
+||mmfzcakzcqn.bid^
 ||mmknsfgqxxsg.com^
 ||mmnridsrreyh.com^
 ||mmojdtejhgeg.com^
@@ -3871,6 +3905,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||nwkwefhpjohlor.bid^
 ||nwooatwtmhfdh.bid^
 ||nwrkyuftlnbzuh.bid^
+||nwwfnpxxdxjjj.bid^
 ||nwzawdquu.bid^
 ||nxcxithvcoeh.com^
 ||nxnbbqdh.bid^
@@ -3923,6 +3958,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ofghrodsrqkg.com^
 ||ofhwyutlckjuul.bid^
 ||ofjampfenbwv.com^
+||ofmeapowymywx.bid^
 ||ofmuojegzbxo.com^
 ||ofpwdoovxs.bid^
 ||ogbamfpcfac.bid^
@@ -5315,6 +5351,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||xavmcsvas.bid^
 ||xbbcwbsadlrn.com^
 ||xbdlsolradeh.com^
+||xbljpezkd.bid^
 ||xbrgymlwi.bid^
 ||xbyvexekkrnt.com^
 ||xbzmworkoyrx.com^
@@ -5432,6 +5469,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||xwufohrjmvjy.com^
 ||xwwsojvluzsb.com^
 ||xxwpminhccoq.com^
+||xxxdeducu.bid^
 ||xxxwfoltlusf.bid^
 ||xxyafiswqcqz.com^
 ||xxypskosek.bid^
@@ -5808,6 +5846,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||l.sharethis.com^
 ||log.outbrain.com^
 ||log.pinterest.com^
+||logging.carambo.la^
 ||mc.yandex.ru^
 ||media-imdb.com/twilight/?
 ||metrics.brightcove.com^
@@ -6032,8 +6071,9 @@ inilah.com##.wb-300x250
 kshowsubindo.org##a[href^="http://bit.ly/"] > img
 ! *** abid:AdBlockID_Lite/specific_addon.txt ***
 bioskopfilm21.net,movie303.com##a[href^="http://bit.ly/"] > img
+filmbagus21.space##a[href^="https://goo.gl/"] > img
 indoxxi.info##a[href^="https://goo.gl/"] > img
-||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopkeren.ws|drakorindo.co|movie303.com|nonton33.tv|nontonin.com|nontonvip.com|senimovies.net
+||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopkeren.ws|cinemamovie21.com|drakorindo.co|filmbagus21.space|movie303.com|nonton.club|nonton33.tv|nontonin.com|nontonvip.com|senimovies.net
 ||goo.gl/$image,domain=surgafilm.club
 ||imgur.com/*.gif$image,domain=filmseri.com|nonton33.tv|nontonanime.id|nontoncinema.org|senimovies.net
 ||postimg.org^$domain=lk21.web.id
@@ -6050,6 +6090,7 @@ n21.tv##.ban_empat
 ||bioskop168.co/wp-content/uploads/*.gif$image
 ||bioskop55.me/wp-content/uploads/*.gif$image
 ||cinemaindo.pro/wp-content/uploads/*.gif$image
+||cinemamovie21.com/wp-content/uploads/*.gif$image
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
 ||indexmovie.me/assets/*.gif$image
 ||indocinema21.com/banner/*.gif$image
@@ -6062,6 +6103,7 @@ n21.tv##.ban_empat
 ||movie303.com/wp-content/uploads/*.gif$image
 ||neumanga.tv/uploads/*.gif$image
 ||nobartv.com/img/banner/*.gif$image
+||nonton.club/wp-content/uploads/*.gif$image
 ||nonton33.tv/wp-content/uploads/*.gif$image
 ||nontoncinema.org/wp-content/uploads/*.gif$image
 ||nontonindrama.com/oke/*.gif$image
@@ -6324,18 +6366,23 @@ tinypaste.cc#@##banner_ad
 facebook.com#@#.facebook-widget
 facebook.com,fb.com#@#.fb-like
 facebook.com#@#.fb-likebox
+pinterest.com#@#.pin-it-button
 vimeo.com#@#.share-icon
 tumblr.com#@#.share-item
 facebook.com#@#.shareText
+reddit.com#@#[href^="http://reddit.com/submit"]
 facebook.com#@#a[href*="facebook.com/sharer/sharer.php?"]
 twitter.com#@#a[href="http://twitter.com/share"]
 digg.com#@#a[href^="http://digg.com/submit?url="]
 pinterest.com#@#a[href^="http://pinterest.com/pin/create/button/"]
 twitter.com#@#a[href^="http://twitter.com/home/?"]
+twitter.com#@#a[href^="http://twitter.com/home?"]
 twitter.com#@#a[href^="http://twitter.com/share?"]
+facebook.com#@#a[href^="http://www.facebook.com/share.php?u="]
 pinterest.com#@#a[href^="http://www.pinterest.com/pin/create/button/?"]
 reddit.com#@#a[href^="http://www.reddit.com/submit"]
 tumblr.com#@#a[href^="http://www.tumblr.com/share/"]
+facebook.com#@#a[href^="https://facebook.com/sharer.php?"]
 pinterest.com#@#a[href^="https://pinterest.com/pin/create/"]
 twitter.com#@#a[href^="https://twitter.com/intent/follow?"]
 facebook.com#@#a[href^="https://www.facebook.com/sharer.php?"]
@@ -6345,4 +6392,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: 9TmHUIasVnf0vQ3KVV3MTA
+! Checksum: lBZgfbm+IDJGkbDVR5wXdg
