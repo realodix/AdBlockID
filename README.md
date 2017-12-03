@@ -10,7 +10,7 @@ Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](https://raw.git
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
-`$ pip install -e src/python-abp`
+`$ pip install -e vendor/python-abp`
 
 ### Perintah Untuk Render
 * Klik file `FOP.py` untuk mengurutkan.
