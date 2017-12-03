@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1203.1737
+! Version: 17.1203.1807
 ! Title: AdBlockID Lite
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Dec 2017 17:37 UTC
+! Last modified: 03 Dec 2017 18:07 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -283,13 +283,11 @@ _780x90.
 /anti_ab.
 /antiadblock.
 /antiblock_script/*
-/blockadblock.$script
 /blockblock/blockblock.jquery.js
 /BlockerBanner/*$xmlhttprequest
 /Disable%2BAdblock.
 /disabled_adBlock.
 /fuckadb.js
-/fuckadblock-$script
 /fuckadblock.js
 /fuckadblock/*$script
 /fuckingadblockplus.
@@ -408,12 +406,6 @@ _pixel_test/?
 -social-icons.
 /facebook-pagelike-widget/*
 /fb-share.
-/ico_facebook.
-/ico_twitter.
-/ico_youtube.
-/icon-facebook.
-/icon-google.
-/icon-twitter.
 /icons-social-
 /image/social_
 /images/social/*
@@ -421,9 +413,7 @@ _pixel_test/?
 /img/facebook-
 /img/share_
 /img/social-
-/img/twitter.
 /likebox.
-/logos/facebook-
 /plugins/add-to-any/*$~stylesheet
 /plugins/easy-facebook-likebox/*
 /plugins/easy-twitter-
@@ -438,7 +428,6 @@ _pixel_test/?
 /social-icons/*$~stylesheet
 /social-sharing-
 /social_icon_
-/wysija-newsletters/*
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID_Lite/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
@@ -788,6 +777,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ###footer-social-media
 ###mobile-social
 ###share-count
+###share-module
 ###share_top
 ###social-share
 ###social_block
@@ -5275,7 +5265,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||youtube.com/set_awesome?
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID_Lite/specific_hide.txt ***
-! whitelist
 cinemamkv.net##a[href*="//go."] > img
 cinemamkv.net##a[href^="https://goo.gl/"] > img
 ! semprot.com & krucil
@@ -5529,6 +5518,7 @@ okezone.com##.sosvertikal
 ||rawgit.com/Pocketart/$script,third-party
 ||reactor.cc^*.wasm
 ! *** abid:AdBlockID_Lite/annoyances.txt ***
+/wysija-newsletters/*
 ||microsite.kaskus.co.id/anniversary/
 ||widget.kompas.com/widget-newsletter/
 ! 
@@ -5675,4 +5665,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: m63ZE0zQft7AEkzt5gHiYQ
+! Checksum: ogikqIxL/erVjpXms+5MoQ
