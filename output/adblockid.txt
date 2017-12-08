@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1208.0309
+! Version: 17.1208.0329
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Dec 2017 03:09 UTC
+! Last modified: 08 Dec 2017 03:29 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -530,6 +530,7 @@ _atblockdetector/
 .com/a.gif?
 .com/cm?ci=
 .com/counter?
+.com/g.gif?
 .com/pv.gif?
 .com/track?$~object
 .com/v.gif?
@@ -562,6 +563,7 @@ _atblockdetector/
 /contentanalytics/*
 /cookiepingback?
 /delivery/lg.
+/delstats/*
 /dot.asp?
 /ebonetag.js
 /elqcfg.js
@@ -618,6 +620,7 @@ _atblockdetector/
 /track.gif^
 /tracker.min.js
 /tracker.php?
+/tracking_nodeheaderjs.
 /v60.js
 /vglnk.js
 /visitor/index.php?*referrer$image
@@ -1745,6 +1748,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||kissmetrics.com^$third-party
 ||krxd.net^$third-party
 ||liadm.com^$third-party
+||marinsm.com^$third-party
+||marketo.net^$third-party
 ||maxymiser.net^$third-party
 ||mixpanel.com^$third-party
 ||ml314.com^$third-party
@@ -5946,6 +5951,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||beacon.gu-web.net^
 ||cc.swiftype.com^
 ||cloudfront-labs.amazonaws.com^
+||cnzz.com/stat.
 ||connect.facebook.net/signals/$third-party
 ||connect.facebook.net^*/fbevents.js$third-party
 ||cookiex.ngd.yahoo.com^
@@ -6054,11 +6060,13 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||selebuzz.co.id/wp-content/uploads/*.gif$image
 ||solopos.com/banner/
 ! *** abid:AdBlockID_Privacy/specific_block.txt ***
+||alicdn.com/js/aplus_*.js
 ||analytics.slashdotmedia.com^
 ||analytics.twitter.com^
 ||bats.video.yahoo.com^
 ||beacon.wikia-services.com^
 ||beap-bc.yahoo.com^
+||clc.stackoverflow.com^
 ||codecguide.com/stats.js
 ||collector-medium.lightstep.com^
 ||collector.githubapp.com^
@@ -6494,6 +6502,7 @@ tinypaste.cc#@##banner_ad
 @@/wp-content/plugins/google-analytics-for-wordpress/*$~third-party
 @@/wp-content/plugins/google-analytics-premium/*$~third-party
 @@||analytics.twitter.com^$domain=analytics.twitter.com
+@@||munchkin.marketo.net/munchkin.js
 @@||pixel.facebook.com/ajax/gigaboxx/endpoint/UpdateLastSeenTime.php?$image
 @@||pixel.facebook.com/ajax/notifications/mark_read.php?*&alert_ids%$image
 @@||s.youtube.com/api/stats/playback?$image,object-subrequest
@@ -6531,4 +6540,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: g892myA4NA+QlvKmoTCqEA
+! Checksum: 9gEQ094+lNELy4PAvKeHXw
