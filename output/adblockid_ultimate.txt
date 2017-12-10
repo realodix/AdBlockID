@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1210.1337
+! Version: 17.1210.1342
 ! Title: AdBlockID Ultimate
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Dec 2017 13:37 UTC
+! Last modified: 10 Dec 2017 13:42 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1447,6 +1447,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ###socialmedia
 ###sticky-social
 ##.SocialMediaShareButton
+##.Social_Widget
 ##.actnbr-has-follow
 ##.addthis_button_compact
 ##.addthis_sharing_toolbox
@@ -1523,6 +1524,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.share-more
 ##.share-post
 ##.share-wrapper
+##.share_bottom
 ##.share_icon
 ##.share_social
 ##.shareaholic-canvas
@@ -1557,6 +1559,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.social__item
 ##.social__link
 ##.social__share
+##.socialmedia-buttons
 ##.sprite-social
 ##.ss-social
 ##.ssocial
@@ -1640,6 +1643,9 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[title="Subscribe to our RSS Feed"]
 ##a[title="Tweet this"]
 ##iframe[src^="http://www.facebook.com/plugins/likebox.php?"]
+##img[alt="Follow Us on Facebook"]
+##img[alt="Follow Us on Twitter"]
+##img[alt="Follow us on Facebook"]
 ##img[alt="Follow us on Google Plus"]
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/adservers.txt ***
@@ -6625,6 +6631,7 @@ pinterest.com#@#.pin-it-button
 vimeo.com#@#.share-icon
 tumblr.com#@#.share-item
 facebook.com#@#.shareText
+vk.com#@#.share_bottom
 reddit.com#@#[href^="http://reddit.com/submit"]
 facebook.com#@#a[href*="facebook.com/sharer/sharer.php?"]
 twitter.com#@#a[href="http://twitter.com/share"]
@@ -6647,4 +6654,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: pMbjUBP4cQdvQ8r4nvn1bQ
+! Checksum: rmXd+hBETyAdckCLFJB/Iw
