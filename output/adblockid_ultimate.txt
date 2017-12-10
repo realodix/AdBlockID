@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1210.1700
+! Version: 17.1210.1721
 ! Title: AdBlockID Ultimate
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Dec 2017 17:00 UTC
+! Last modified: 10 Dec 2017 17:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1461,6 +1461,7 @@ _pixel_test/?
 ! *** abid:AdBlockID/css_extended.txt ***
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID_Social/general_hide.txt ***
+###Followers1
 ###fb-box
 ###footer-social-media
 ###header-social
@@ -1547,6 +1548,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.sd-sharing
 ##.sd-social
 ##.share-box
+##.share-buttons-box
 ##.share-buttons-container
 ##.share-count
 ##.share-item
@@ -6135,10 +6137,10 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||addtoany.com^$third-party
 ||api.twitter.com^*/count.json?$third-party
 ||apis.google.com/js/platform.js$third-party
+||apis.google.com^*/widget/render/follow?$third-party
 ||apis.google.com^*/widget/render/person?$third-party
 ||assets.pinterest.com/js/pinit.js$third-party
 ||crowdynews.com^$third-party
-||facebook.com*/plugins/like.php?$third-party
 ||facebook.com/connect/connect.*connections$third-party
 ||facebook.com/plugins/page.php?$third-party
 ||facebook.com^*/plugins/like_box.php?$third-party
@@ -6690,4 +6692,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: X3WiZRubi3HpquK4hj9zxg
+! Checksum: j344TbuhhVEhX/d13Aqxmg
