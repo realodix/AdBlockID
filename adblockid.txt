@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1211.0146
+! Version: 17.1211.0200
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Dec 2017 01:46 UTC
+! Last modified: 11 Dec 2017 02:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -591,7 +591,7 @@ _720x90_
 .skimlinks.js
 .snowplowanalytics.$domain=~snowplowanalytics.com
 /1x1.gif?
-/1x1.png
+/1x1.png?
 /__utm.gif
 /admantx/*
 /adrum-
@@ -1600,6 +1600,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.social-media
 ##.social-media-icon
 ##.social-media-share
+##.social-modal
 ##.social-networks
 ##.social-overlay
 ##.social-share
@@ -6191,6 +6192,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||platform.linkedin.com^$third-party
 ||platform.twitter.com/js/button.$third-party
 ||twitter.com/js/timeline.$script,third-party
+||uservoice.com^*/track.js
 ||widgets.wp.com/likes/$third-party
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_block.txt ***
@@ -6638,4 +6640,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||vk.me/js/al/sharebox.js
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-facebook.png
 @@||wp.com/wp-content/mu-plugins/post-flair/sharing/images/icon-twitter.png
-! Checksum: U2eWv+K8iQAlwu5WmVvUjg
+! Checksum: oXSl1MrLZfrTi7zdI+DLsQ
