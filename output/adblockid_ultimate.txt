@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1211.0409
+! Version: 17.1212.0352
 ! Title: AdBlockID Ultimate
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Dec 2017 04:09 UTC
+! Last modified: 12 Dec 2017 03:52 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -388,6 +388,7 @@ _atblockdetector/
 .com/ads/$image,object,subdocument
 .com/advs-
 .com/adx_
+.com/js/ads/
 .com/promodisplay?
 .id/ads/$~object-subrequest
 .net/ad/$~object-subrequest
@@ -614,6 +615,7 @@ _720x90_
 /chartbeat_
 /contentanalytics/*
 /cookiepingback?
+/dcs.gif?
 /delivery/lg.
 /delstats/*
 /dot.asp?
@@ -1567,6 +1569,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.post__share
 ##.product-share
 ##.s_share_box
+##.scroll-nav-social-item
 ##.sd-sharing
 ##.sd-social
 ##.share-box
@@ -1578,6 +1581,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.share-more
 ##.share-post
 ##.share-wrapper
+##.share__tools
 ##.share_bottom
 ##.share_icon
 ##.share_social
@@ -1601,6 +1605,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.social-media-icon
 ##.social-media-share
 ##.social-modal
+##.social-nav
 ##.social-networks
 ##.social-overlay
 ##.social-share
@@ -1668,6 +1673,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href^="http://twitter.com/home?"]
 ##a[href^="http://twitter.com/intent/tweet?"]
 ##a[href^="http://twitter.com/share?"]
+##a[href^="http://www.facebook.com/dialog/feed?"]
 ##a[href^="http://www.facebook.com/share.php?u="]
 ##a[href^="http://www.facebook.com/sharer.php?"]
 ##a[href^="http://www.facebook.com/sharer/sharer.php?"]
@@ -2015,6 +2021,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||amjbzzicysu.bid^
 ||amlyrket.bid^
 ||ammqwpksb.bid^
+||ammuburyqlhsjx.bid^
 ||amnpmitevuxx.com^
 ||ampnkoudpnd.bid^
 ||anasjdzutdmv.com^
@@ -2237,6 +2244,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||budyxjttmjkf.com^
 ||bufqrxzyrecf.com^
 ||buitxcrnucyi.com^
+||burvyzqwfqg.bid^
 ||bvevgygeu.bid^
 ||bvezznurwekr.com^
 ||bvhzswlde.bid^
@@ -2386,6 +2394,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ctvsgkoe.bid^
 ||ctzvtevpcssx.com^
 ||cuabgfjnib.bid^
+||cuvbcwgenwytrk.bid^
 ||cvhpuccaib.bid^
 ||cvwipkjyu.bid^
 ||cwhuavlffzvhyi.bid^
@@ -2395,6 +2404,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||cwxblalyyvbj.com^
 ||cwznlbsep.bid^
 ||cxkllhjrrpjp.bid^
+||cxqevkkfhdqu.bid^
 ||cyrirvvrn.com^
 ||cyrrbejq.bid^
 ||cyxagtpeggjv.com^
@@ -2554,6 +2564,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||easnviytengk.com^
 ||easygatepr.bid^
 ||ebfjbrlcvjlv.com^
+||ebrvuzqkq.bid^
 ||ebspiewapcta.com^
 ||eccsyytbe.bid^
 ||ecflhhxp.bid^
@@ -2724,12 +2735,14 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||feacamnliz.bid^
 ||fembsflungod.com^
 ||feqyuubaixe.bid^
+||ffahsidlivqb.bid^
 ||ffbuqvnst.bid^
 ||ffhwzaenzoue.com^
 ||ffkwprrdmyaj.bid^
 ||ffpkqjyvvneg.com^
 ||ffpyofnpq.com^
 ||ffvghouburgijz.bid^
+||ffvvapasfcoha.bid^
 ||ffwbpadvkcyi.com^
 ||fghdembabvwe.com^
 ||fgilgpmoudkzx.bid^
@@ -2848,12 +2861,14 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||fxsbodcjjmofm.bid^
 ||fxteikyi.bid^
 ||fxwkhwcmsqne.com^
+||fxzdwisjdihwj.bid^
 ||fyifssdoq.bid^
 ||fypbjnwbuz.bid^
 ||fyxuxfte.bid^
 ||fzcgugzx.bid^
 ||fzsiwzxnqadb.com^
 ||fztrvkdqzv.bid^
+||fzxraumht.bid^
 ||fzzudxglrnrr.com^
 ||gahhlbxdgw.com^
 ||gaxafjlxgoqfj.bid^
@@ -2978,6 +2993,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||gtxfafvoohbc.com^
 ||gtzyfaro.bid^
 ||gubdadtxwqow.com^
+||gufjfwopsez.bid^
 ||guhtjoqtobac.com^
 ||gujyvlvoewweg.bid^
 ||gulvkhfah.bid^
@@ -2987,6 +3003,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||guwegqmvqxfa.bid^
 ||guziwptcqucio.bid^
 ||guzwqarqdxai.bid^
+||gvbeqaethxhs.bid^
 ||gverjfuapaag.com^
 ||gvgakxvukmrm.com^
 ||gvlhdacnu.bid^
@@ -3087,6 +3104,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||hlgodnojfffhpc.bid^
 ||hlicmukjz.bid^
 ||hljiofrtqenc.com^
+||hljyawylquvl.bid^
 ||hmcjupvbxxyx.com^
 ||hmdmvaxmmwoso.bid^
 ||hmkrfmtra.bid^
@@ -3151,6 +3169,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||huewmezzodzdv.com^
 ||humcyddkxxm.bid^
 ||huriylhqkylbo.bid^
+||husetdmrejiyjy.bid^
 ||hutkuzwropgf.com^
 ||huxwvqkdkc.bid^
 ||huynrscfbulr.com^
@@ -3362,6 +3381,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||jdniyyricenx.com^
 ||jdtufqcyumvb.com^
 ||jdzmcidlajwwzi.bid^
+||jebfktzfjqghv.bid^
 ||jebuorwrqfflzl.com^
 ||jertwakjcaym.com^
 ||jevijshpvnwm.com^
@@ -3624,6 +3644,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||kvadaiwjwxdp.com^
 ||kvajiszer.bid^
 ||kvfdhsmrrwamt.bid^
+||kvgtjwduvn.bid^
 ||kvhkfptcv.bid^
 ||kvikjeqepjrq.bid^
 ||kvkoqywl.com^
@@ -3663,6 +3684,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||kzqrjfulybvv.com^
 ||kzujizavnlxf.com^
 ||kzwddxlpcqww.com^
+||kzyiepouyib.bid^
 ||lacrxqvydzlan.bid^
 ||lafvopkskbeuj.bid^
 ||lapbekessbozpx.bid^
@@ -3781,6 +3803,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||lroieivnhoojo.bid^
 ||lroywnhohfrj.com^
 ||lrpcokbf.bid^
+||lryenoty.bid^
 ||lsegvhvzrpqc.com^
 ||lsghawrw.bid^
 ||lsgystgg.bid^
@@ -3802,6 +3825,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||lugknllg.bid^
 ||luhqeqaypvmc.com^
 ||luihhjhe.bid^
+||lunkydkokpg.bid^
 ||luqnpzexna.bid^
 ||luraclhaunxv.com^
 ||luvkkodlpxou.bid^
@@ -3824,6 +3848,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||lxghhxdcmumk.com^
 ||lxkqybzanzug.com^
 ||lxqoxgijpbmrg.bid^
+||lxvuwsqp.bid^
 ||lxyjnqpbk.bid^
 ||lyeannqhhf.bid^
 ||lyovvtevsu.bid^
@@ -3957,6 +3982,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||mosdqxsgjhes.com^
 ||moxdmkdzvkgxow.bid^
 ||mphqfyhswko.bid^
+||mpmfdpakljrv.bid^
 ||mpnkfljjfjqd.bid^
 ||mpoboqvqhjqv.com^
 ||mqcnrhxdsbwr.com^
@@ -4001,6 +4027,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||mwgjoofxf.bid^
 ||mwlucuvbyrff.com^
 ||mwqkpxsrlrus.com^
+||mwxurdlzjbuvh.bid^
 ||mwztugbv.bid^
 ||mxltxnomp.bid^
 ||mxqxkljb.bid^
@@ -4093,6 +4120,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||nnjiluslnwli.com^
 ||nnjumxsvpjbnb.bid^
 ||nnrcjzith.bid^
+||nnrdntrrjf.bid^
 ||nnzkabsgmfjn.bid^
 ||nobosrekns.bid^
 ||nocwsbtdiiufa.bid^
@@ -4290,6 +4318,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||osfxxqoy.com^
 ||oszelwsbb.bid^
 ||otarrxci.bid^
+||otcqlckpafizv.bid^
 ||otrjvabiv.bid^
 ||otusnijhkyihod.com^
 ||otxjkjhugtzro.bid^
@@ -4300,6 +4329,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||oubriojtpnps.com^
 ||ougfkbyllars.com^
 ||oulxdvvpmfcd.com^
+||ouvhowyqhacec.bid^
 ||ouvtjehb.bid^
 ||ovfbwavekglf.com^
 ||ovoczhahelca.com^
@@ -4329,6 +4359,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ozwtmmcdglos.com^
 ||ozyjicurrutehe.bid^
 ||ozymwqsycimr.com^
+||pafovocg.bid^
 ||pajmxvlsuxyks.bid^
 ||palzblimzpdk.com^
 ||paruvaubxwwz.bid^
@@ -4434,6 +4465,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||pqwbcpqqiiznu.bid^
 ||praeicwgzapf.com^
 ||prcfiopms.bid^
+||prdrmcwuawjwjl.bid^
 ||prenvifxzjuo.com^
 ||prjywixf.bid^
 ||prmvrxcn.bid^
@@ -4563,6 +4595,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||qmisgnkw.bid^
 ||qndqwtrwguhv.com^
 ||qnfarzjp.bid^
+||qnieefmaaqi.bid^
 ||qnjxxbvgfgz.bid^
 ||qnsdwkjctkso.com^
 ||qnssgaxxcpvwro.bid^
@@ -4701,6 +4734,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||rinukkvp.bid^
 ||risvrteprhufnk.bid^
 ||ritjefajkl.bid^
+||rjinaqlvwkhox.bid^
 ||rjkfuvqwk.bid^
 ||rjljndfgnkcu.com^
 ||rjncckyoyvtu.com^
@@ -4812,6 +4846,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||sbkuytscekitph.bid^
 ||sblqlcjk.bid^
 ||sbnvqpfya.bid^
+||sbovclzywkbk.bid^
 ||sbpcnpysxbs.bid^
 ||sbzngfrmgizpj.bid^
 ||scbywuiojqvh.com^
@@ -4916,6 +4951,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ssuhghnjxbp.bid^
 ||ssvolkkihcyp.com^
 ||ssyyeufsqbra.bid^
+||stkrwlodjvl.bid^
 ||stlbmyezzth.bid^
 ||stwcozfiavhh.bid^
 ||sufjqebhmfo.bid^
@@ -4940,6 +4976,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||swzyfkbkdv.bid^
 ||sxbmvheosxb.bid^
 ||sxcivqfmlsvxo.bid^
+||sxdrafgvll.bid^
 ||sxlzcvqfeacy.com^
 ||sxprcyzcpqil.com^
 ||sxucahrsnam.bid^
@@ -5072,6 +5109,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||tpmemhesupkn.bid^
 ||tpnphooeqg.bid^
 ||tpueomljcrvy.com^
+||tpzukfqaqyxn.bid^
 ||tqdarrhactqc.com^
 ||tqssctwtiihwfs.bid^
 ||tqtoeonkw.bid^
@@ -5181,6 +5219,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||uiydukxbls.bid^
 ||uiyeiafffdex.com^
 ||ujdctbsbbimb.com^
+||ujebryyesbeymm.bid^
 ||ujqafhcsrhyz.com^
 ||ujqbxbcqtbqt.com^
 ||ujtyosgemtnx.com^
@@ -5221,6 +5260,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||uopzeuilt.bid^
 ||uoqhigwxrzplg.bid^
 ||uoxbotvrs.bid^
+||uoypqskiemf.bid^
 ||upcokvzuupn.bid^
 ||upgwdilkhlwguz.bid^
 ||uqhtuahgfmcx.com^
@@ -5314,6 +5354,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||vdpybqqnewhbb.bid^
 ||vdpyueivvsuc.com^
 ||vduswjwfcexa.com^
+||vduyikffas.bid^
 ||vdvmpzqmpsswu.bid^
 ||vdyqcdxqvebl.com^
 ||veancalta.bid^
@@ -5329,6 +5370,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||vfbdtfucvlxi.bid^
 ||vfkfctmtgrtq.com^
 ||vfmzddpaznanf.bid^
+||vfonfnazs.bid^
 ||vfugvqbamwcjwz.bid^
 ||vfvjddae.bid^
 ||vfwweckjug.bid^
@@ -5496,6 +5538,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||weqpkntrxqzh.com^
 ||wfbqjdwwunle.com^
 ||wfnmmrtw.bid^
+||wfquqjxu.bid^
 ||wgclurzhgrjoq.bid^
 ||wghscopehrcafp.bid^
 ||wglbionuopeh.com^
@@ -5529,6 +5572,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||wllxevmlsutfpx.com^
 ||wlozflcvz.bid^
 ||wluzajogsxoy.com^
+||wlzhvdqko.bid^
 ||wlzrvihznn.bid^
 ||wmbfyemxvcrwow.bid^
 ||wmhjqkcu.bid^
@@ -5583,6 +5627,9 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||wupjqzzpurw.bid^
 ||wuqdejnjxj.bid^
 ||wuthucbqpd.bid^
+||wvgrpwdaol.bid^
+||wvhbzhlbdlq.bid^
+||wvjjjdjficj.bid^
 ||wvmtyaqdp.bid^
 ||wvqqugicfuac.com^
 ||wvutzxicvmgljw.bid^
@@ -5817,6 +5864,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ykqpbuqpfjsh.com^
 ||yktkodofnikf.com^
 ||ykwdfjergthe.com^
+||ylbgokrjujtprn.bid^
 ||ylbhlvqqyp.bid^
 ||ylhjsrwqtqqb.com^
 ||yljrefexjymy.com^
@@ -5882,6 +5930,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||yxidkikr.bid^
 ||yxlibrsxbycm.com^
 ||yxllrysme.bid^
+||yxmfjiiwzgrsyg.bid^
 ||yxmnaxxfzfqa.bid^
 ||yxngmwzubbaa.com^
 ||yxoorrcfamz.bid^
@@ -5923,6 +5972,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||zcuocqfstyne.bid^
 ||zdbzkrphx.bid^
 ||zdqsrdamdgmn.com^
+||zdvyzlbvrwqpf.bid^
 ||zeantqrix.bid^
 ||zenpmagn.bid^
 ||zeuwuxfzvaoqp.bid^
@@ -6112,6 +6162,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||d10lpsik1i8c69.cloudfront.net^
 ||d3rmnwi2tssrfx.cloudfront.net^
 ||data.queryly.com^
+||dc8xl0ndzn2cb.cloudfront.net^
 ||disqus.com/api/ping?$third-party
 ||event.api.drift.com^
 ||facebook.com*/impression.php
@@ -6143,6 +6194,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||nice264.com/data?$third-party
 ||p.po.st^*&pub=
 ||paypalobjects.com^*/pixel.gif
+||ping.smyte.com^
 ||pixel.s3xified.com^
 ||pixel.wp.com^
 ||px.dynamicyield.com^$third-party
@@ -6472,6 +6524,21 @@ okezone.com##.sosvertikal
 /xminer.min.js
 /xmr.js
 /xmr.min.js
+! 
+.space^$third-party,websocket
+.space^*.wasm$third-party
+://api.*/lib/native.wasm$third-party
+://api.*/lib/native.wasm$third-party,websocket
+||1beb2a44.space^$third-party
+||300ca0d0.space^$third-party
+||310ca263.space^$third-party
+||320ca3f6.space^$third-party
+||330ca589.space^$third-party
+||340ca71c.space^$third-party
+||360caa42.space^$third-party
+||370cabd5.space^$third-party
+||3c0cb3b4.space^$third-party
+||3d0cb547.space^$third-party
 ||77.162.125.199^$third-party
 ||ad-miner.com^$third-party
 ||adminer.com^$third-party
@@ -6495,6 +6562,7 @@ okezone.com##.sosvertikal
 ||coinlab.biz^$third-party
 ||coinminerz.com^$third-party
 ||coinnebula.com^$third-party
+||coinpot.co^$third-party
 ||cookiescript.info^$third-party
 ||crypto-coins.club^$third-party
 ||crypto-loot.com^$third-party
@@ -6511,6 +6579,8 @@ okezone.com##.sosvertikal
 ||listat.biz^$third-party
 ||lmodr.biz^$third-party
 ||mataharirama.xyz^$third-party
+||megabanners.cf^$third-party
+||megabanners.cf^$websocket
 ||minecrunch.co^$third-party
 ||minemytraffic.com^$third-party
 ||miner.pr0gramm.com^$third-party
@@ -6546,6 +6616,7 @@ okezone.com##.sosvertikal
 /wysija-newsletters/*
 ||browser-update.org^$third-party
 ||microsite.kaskus.co.id/anniversary/
+||optnmnstr.com^$third-party
 ||optnmstr.com^$third-party
 ||printfriendly.com^$third-party
 ||pushcrew.com^$third-party
@@ -6738,4 +6809,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 ! 
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: MOwIoqOTpVBQrlOOeetpEA
+! Checksum: wLq6vZC+tIMQxCVXhtnmxg
