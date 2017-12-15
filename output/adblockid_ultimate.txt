@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1215.1001
+! Version: 17.1215.1012
 ! Title: AdBlockID Ultimate
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Dec 2017 10:01 UTC
+! Last modified: 15 Dec 2017 10:12 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -27075,6 +27075,7 @@ _pixel_test/?
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID_Social/general_hide.txt ***
 ###Followers1
+###block-sociallinks
 ###fb-box
 ###footer-social-media
 ###header-social
@@ -27105,6 +27106,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.bb-nav-social
 ##.bb-social-link
 ##.c-global-header__social
+##.c-share
 ##.d-comment__action--share
 ##.dpsp-network-btn
 ##.dpsp-networks-btns-sidebar
@@ -27129,6 +27131,9 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.fbpopup
 ##.footSocial
 ##.footer-links-social
+##.footer-social-icons
+##.footer-social-link
+##.footer-social-links
 ##.footerMainMoreSocial
 ##.footer__social
 ##.fsocial
@@ -27261,6 +27266,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href="http://twitter.com/share"]
 ##a[href^="//www.reddit.com/submit?"]
 ##a[href^="http://digg.com/submit?url="]
+##a[href^="http://facebook.com/sharer.php?"]
 ##a[href^="http://pinterest.com/pin/create/button/"]
 ##a[href^="http://plus.google.com/share?"]
 ##a[href^="http://twitter.com/home/?"]
@@ -27294,6 +27300,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href^="https://www.reddit.com/submit?"]
 ##a[href^="https://www.tumblr.com/widgets/share/"]
 ##a[href^="whatsapp://send?text="]
+##a[title="Become a fan on Facebook"]
+##a[title="Follow us on Google Plus"]
 ##a[title="Follow us on Google+"]
 ##a[title="Follow us on Instagram"]
 ##a[title="Follow us on LinkedIn"]
@@ -35746,6 +35754,7 @@ a.upnorma.com^$webrtc,websocket
 ||adsymptotic.com^$third-party
 ||amung.us^$third-party
 ||analytic.rocks^$third-party
+||appboycdn.com^$third-party
 ||appier.net^$third-party
 ||bidswitch.net^$third-party
 ||bizible.com^$third-party
@@ -35773,6 +35782,7 @@ a.upnorma.com^$webrtc,websocket
 ||everesttech.net^$third-party
 ||exelator.com^$domain=disqus.com
 ||extreme-dm.com^$third-party
+||eyeota.net^$third-party
 ||feedcat.net^$third-party
 ||feedjit.com^$third-party
 ||flagcounter.com^$third-party
@@ -42026,6 +42036,7 @@ a.upnorma.com^$webrtc,websocket
 ||data.queryly.com^
 ||dc8xl0ndzn2cb.cloudfront.net^
 ||disqus.com/api/ping?$third-party
+||ds-aksb-a.akamaihd.net^
 ||event.api.drift.com^
 ||facebook.com*/impression.php
 ||facebook.com/*/plugins/send_to_messenger.php?app_id=$third-party
@@ -47963,6 +47974,7 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||collector.githubapp.com^
 ||f.staticlp.com^
 ||facebook.com/xti.php?
+||foursquare.com^*/wtrack?
 ||frog.wix.com^
 ||geo.yahoo.com^
 ||geoip.boredpanda.com^
@@ -47988,11 +48000,13 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||stats.paypal.com^
 ||stats.pusher.com^
 ||streamango.com/log
+||track.zomato.com^
 ||tracker.nbcuas.com^
 ||tripadvisor.*/PageMoniker?
 ||trivago.com/check-session-state?
 ||twitter.com/i/csp_report?
 ||wikihow.com/x/collect?
+||yelp.com/spice?
 ||youtube.com/*_204?$~xmlhttprequest
 ||youtube.com/api/stats/ads?
 ||youtube.com/api/stats/playback?
@@ -48378,6 +48392,7 @@ kompasiana.com##.timeline--write
 ! 
 ! Cookie Messages
 ###cookie-bar
+###cookie-law-banner
 ###cookie-law-info-again
 ###cookie-law-info-bar
 ###cookie-notice
@@ -52474,6 +52489,7 @@ reddit.com#@#[href^="http://reddit.com/submit"]
 facebook.com#@#a[href*="facebook.com/sharer/sharer.php?"]
 twitter.com#@#a[href="http://twitter.com/share"]
 digg.com#@#a[href^="http://digg.com/submit?url="]
+facebook.com#@#a[href^="http://facebook.com/sharer.php?"]
 pinterest.com#@#a[href^="http://pinterest.com/pin/create/button/"]
 twitter.com#@#a[href^="http://twitter.com/home/?"]
 twitter.com#@#a[href^="http://twitter.com/home?"]
@@ -52490,4 +52506,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 ! 
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: PF8nrIBGacOyWEkpwcGN8A
+! Checksum: /1HMPNjO3ih7s42Uayrjsw
