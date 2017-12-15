@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1215.1720
+! Version: 17.1215.1821
 ! Title: AdBlockID Ultimate
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Dec 2017 17:20 UTC
+! Last modified: 15 Dec 2017 18:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -5354,6 +5354,7 @@ _atblockdetector/
 /main_ad_
 /mainad.
 /mainpagepopupadv1.
+/manageads/*
 /mapquest/Ads/*
 /marginaleadservlet?
 /marketing-banners/*
@@ -7781,6 +7782,31 @@ _nb_sys.$script,~third-party
 _atblockdetector/
 ! *** abid:AdBlockID_Privacy/general_block.txt ***
 -tracking.js?
+/api/analytics/*
+/appmeasurement.js
+/atrk.js
+/autotrack.js
+/bcn?
+/beacon.js
+/cdn-cgi/pe/bag2?*histats.com
+/chartbeat.js
+/chartbeat_
+/google-analyticator/*
+/google-analytics.
+/googleanalytics/*
+/js/analytics.
+/js/tracking.js
+/js/tracking/*
+/mixpanel-*.js
+/piwik.$script,domain=~piwik.org
+/px.gif?
+/quant.js
+/smetrics.*/b/ss/*
+/track.gif^
+/tracker.php?
+/v60.js
+/visitorapi.js
+! 
 .com/0.gif?
 .com/a.gif?
 .com/cm?ci=
@@ -7806,19 +7832,12 @@ _atblockdetector/
 /akam/*/pixel_
 /analyticsjs.
 /analyticstracking_
-/api/analytics/*
-/appmeasurement.js
 /atrk.gif?
-/atrk.js
 /b/ss/*&aqe=
 /b/ss/*/js-
 /backlink2.
-/bcn?
 /cct?
 /cdn-cgi/pe/bag2?*.google-analytics.com
-/cdn-cgi/pe/bag2?*histats.com
-/chartbeat.js
-/chartbeat_
 /cnt.php?rf=
 /contentanalytics/*
 /cookiepingback?
@@ -7837,10 +7856,7 @@ _atblockdetector/
 /GARecord^
 /generate_204$image
 /geocounter.
-/google-analyticator/*
-/google-analytics.
 /google_analytics/*
-/googleanalytics/*
 /googleAnalytics_
 /greenoaks.gif?
 /gscounters.
@@ -7851,10 +7867,7 @@ _atblockdetector/
 /horizon.*/track?
 /id?d_visid_ver=
 /imp.gif?
-/js/analytics.
 /js/counter.js?
-/js/tracking.js
-/js/tracking/*
 /log.gif?
 /log?sLog=
 /log_event?
@@ -7862,19 +7875,16 @@ _atblockdetector/
 /loganalysistracker/*
 /lzdtracker.
 /mint/?js
-/mixpanel-*.js
 /monitor/log/*
 /owa.tracker-combined-min.js
 /partner/transparent_pixel-$image
 /pg_pixel?
 /ping.gif?
 /pippio.
-/piwik.$script,domain=~piwik.org
 /piwik.php
 /piwik_
 /pixel.gif?
 /prum.
-/px.gif?
 /px.js?ch=$script
 /QualtricsSurvey.
 /seomonitor/*
@@ -7883,24 +7893,19 @@ _atblockdetector/
 /shinystat.
 /site_stats.
 /site_stats/*
-/smetrics.*/b/ss/*
 /sovrn_beacon_
 /stat?event=
 /stats/?js
 /sync.gif?partner_
 /taevents-
-/track.gif^
 /track_visit.
 /trackAdHit.
 /tracker.min.js
-/tracker.php?
 /tracking-pixel.
 /tracking_nodeheaderjs.
 /trovit-analytics.js
-/v60.js
 /vglnk.js
 /visitor/index.php?*referrer$image
-/visitorapi.js
 ://b.*/ping?
 ://c1.*/c.gif?
 ://piwik.$third-party
@@ -22889,6 +22894,7 @@ _setAnalyticsFields&
 ##.homepageinline_adverts
 ##.homesmallad
 ##.homestream-ad
+##.hor-ad
 ##.hor_ad
 ##.hori-play-page-adver
 ##.horisont_ads
@@ -27293,7 +27299,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href^="http://www.linkedin.com/shareArticle?"]
 ##a[href^="http://www.pinterest.com/pin/create/button/?"]
 ##a[href^="http://www.reddit.com/submit"]
-##a[href^="http://www.stumbleupon.com/submit?url"]
 ##a[href^="http://www.tumblr.com/share/"]
 ##a[href^="https://facebook.com/sharer.php?"]
 ##a[href^="https://pinterest.com/pin/create/"]
@@ -35762,6 +35767,23 @@ a.upnorma.com^$webrtc,websocket
 ! temporary workaround for Adblock Plus for Chrome bug #4599 (https://issues.adblockplus.org/ticket/4599)
 ||voodoo.com^$~stylesheet,third-party
 ! *** abid:AdBlockID_Privacy/trackingservers.txt ***
+||btstatic.com^$third-party
+||demdex.net^$third-party
+||doubleclick.net/activity$third-party
+||freegeoip.net^$third-party
+||go-mpulse.net^$third-party
+||google-analytics.com/analytics.js
+||google-analytics.com/collect
+||krxd.net^$third-party
+||marketo.net^$third-party
+||mixpanel.com^$third-party
+||mxpnl.com^$third-party
+||mybloglog.com^$third-party
+||segment.io^$third-party
+||skimresources.com^$third-party
+||statcounter.com^$third-party
+||tradedoubler.com^$third-party
+! 
 ||abmr.net^$third-party
 ||adsymptotic.com^$third-party
 ||amung.us^$third-party
@@ -35772,7 +35794,6 @@ a.upnorma.com^$webrtc,websocket
 ||bizible.com^$third-party
 ||boomtrain.com^$third-party
 ||bounceexchange.com^$third-party
-||btstatic.com^$third-party
 ||c.hit.ua^$third-party
 ||cedexis.com^$third-party
 ||confirmit.com^$third-party
@@ -35782,10 +35803,8 @@ a.upnorma.com^$webrtc,websocket
 ||crwdcntrl.net^$domain=disqus.com
 ||d41.co^$third-party
 ||dapxl.com^$third-party
-||demdex.net^$third-party
 ||distiltag.com^$third-party
 ||dmtracker.com^$third-party
-||doubleclick.net/activity$third-party
 ||doubleclick.net/json?$third-party
 ||doubleclick.net^*/trackimp/$third-party
 ||dwin1.com^$third-party
@@ -35800,12 +35819,9 @@ a.upnorma.com^$webrtc,websocket
 ||flagcounter.com^$third-party
 ||flix360.com/beat?
 ||forkcdn.com^$third-party
-||freegeoip.net^$third-party
 ||fullstory.com^$third-party
 ||genieesspv.jp^$third-party
 ||globalwebindex.net^$third-party
-||go-mpulse.net^$third-party
-||google-analytics.com/collect
 ||google-analytics.com/r/collect^
 ||googletagmanager.com/gtag/$third-party
 ||gssprt.jp^$third-party
@@ -35821,18 +35837,13 @@ a.upnorma.com^$webrtc,websocket
 ||jsonip.com^$third-party
 ||kampyle.com^$third-party
 ||kissmetrics.com^$third-party
-||krxd.net^$third-party
 ||liadm.com^$third-party
 ||marinsm.com^$third-party
-||marketo.net^$third-party
 ||mathtag.com^$third-party
 ||maxymiser.net^$third-party
-||mixpanel.com^$third-party
 ||ml314.com^$third-party
 ||mmstat.com^$third-party
 ||mousestats.com^$third-party
-||mxpnl.com^$third-party
-||mybloglog.com^$third-party
 ||mypagerank.net^$third-party
 ||ndg.io^$third-party
 ||netmng.com^$third-party
@@ -35846,22 +35857,18 @@ a.upnorma.com^$webrtc,websocket
 ||rlcdn.com^$third-party
 ||scarabresearch.com^$third-party
 ||segment.com^$third-party
-||segment.io^$third-party
 ||separatesilver.com^$third-party
 ||siftscience.com^$third-party
 ||siteimproveanalytics.com^$third-party
-||skimresources.com^$third-party
 ||smartlook.com^$third-party
 ||sociaplus.com^$third-party
 ||speedcurve.com^$third-party
 ||stack-sonar.com^$third-party
-||statcounter.com^$third-party
 ||steelhousemedia.com^$third-party
 ||tamgrt.com^$third-party
 ||tealiumiq.com^$third-party
 ||toro-tags.com^$third-party
 ||track.bloglog.com^$third-party
-||tradedoubler.com^$third-party
 ||treasuredata.com^$third-party
 ||tynt.com^$third-party
 ||usabilla.com^$third-party
@@ -42028,6 +42035,9 @@ a.upnorma.com^$webrtc,websocket
 ! *** abid:AdBlockID_Privacy/thirdparty.txt ***
 ||uzone.id^$third-party
 ! 
+||paypalobjects.com^*/pixel.gif
+||stats.g.doubleclick.net^
+! 
 ||akamai.net/chartbeat.
 ||amazonaws.com/ki.js/
 ||amplify.outbrain.com^$third-party
@@ -42083,7 +42093,6 @@ a.upnorma.com^$webrtc,websocket
 ||nbcudigitaladops.com/hosted/housepix.gif
 ||nice264.com/data?$third-party
 ||p.po.st^*&pub=
-||paypalobjects.com^*/pixel.gif
 ||ping.smyte.com^
 ||pixel.s3xified.com^
 ||pixel.wp.com^
@@ -42095,7 +42104,6 @@ a.upnorma.com^$webrtc,websocket
 ||seg.sharethis.com^
 ||siteintercept*.qualtrics.com^$third-party
 ||smartertravel.com/ext/pixel/
-||stats.g.doubleclick.net^
 ||stats.topofblogs.com^
 ||stats.wp.com^
 ||sumo.com/apps/heatmaps/
@@ -47979,10 +47987,14 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ! jetzt.de
 @@||jetzt.de^$generichide
 ! *** abid:AdBlockID_Privacy/specific_block.txt ***
+||analytics.twitter.com^
+||google.*/gen_204?$~xmlhttprequest
+||pixel.facebook.com^
+||youtube.com/api/stats/playback?
+! 
 ||airbnb.*/tracking/
 ||alicdn.com/js/aplus_*.js
 ||analytics.slashdotmedia.com^
-||analytics.twitter.com^
 ||bats.video.yahoo.com^
 ||beacon.wikia-services.com^
 ||beap-bc.yahoo.com^
@@ -48000,7 +48012,6 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||github.com/_private/browser/stats
 ||google.*/client_204?
 ||google.*/gen204?
-||google.*/gen_204?$~xmlhttprequest
 ||google.com^*/viewerimpressions?
 ||id.google.*/verify/*.gif
 ||lcs.naver.
@@ -48010,7 +48021,6 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||optimize-stats.voxmedia.com^
 ||pardot.com/pd.js
 ||pinterest.com/_/_/report/
-||pixel.facebook.com^
 ||pixel.redditmedia.com^
 ||sa.bbc.com^
 ||ssc.api.bbc.com^
@@ -48027,7 +48037,6 @@ bento.de##a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][t
 ||yelp.com/spice?
 ||youtube.com/*_204?$~xmlhttprequest
 ||youtube.com/api/stats/ads?
-||youtube.com/api/stats/playback?
 ||youtube.com/api/stats/qoe?
 ||youtube.com/ptracking?
 ||youtube.com/set_awesome?
@@ -53289,4 +53298,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||pinterest.com/images/about/buttons/$domain=pinterest.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: exzBafoIQnLAm28vwSMUrQ
+! Checksum: eRkr4ndhvV6RO1UyvnFynQ
