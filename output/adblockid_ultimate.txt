@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1215.1836
+! Version: 17.1215.1855
 ! Title: AdBlockID Ultimate
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Dec 2017 18:36 UTC
+! Last modified: 15 Dec 2017 18:55 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -10728,6 +10728,7 @@ _setAnalyticsFields&
 ###adleaderboardb
 ###adleaderboardb_flex
 ###adleft
+###adlhs
 ###adlink-13
 ###adlink-133
 ###adlink-19
@@ -10800,6 +10801,7 @@ _setAnalyticsFields&
 ###adrectangleb
 ###adrectangleb_flex
 ###adrectmarginauto
+###adrhs
 ###adrig
 ###adright
 ###adright2
@@ -21005,6 +21007,7 @@ _setAnalyticsFields&
 ##.bgadgray10px
 ##.bgcolor_ad
 ##.bgnavad
+##.bgr_adv_div
 ##.big-ad
 ##.big-ads
 ##.big-box-ad
@@ -23922,6 +23925,7 @@ _setAnalyticsFields&
 ##.network-ad-two
 ##.new-ad-box
 ##.new-ads-scroller
+##.newArv_2nd_adv_blk
 ##.newHeaderAd
 ##.newPex_forumads
 ##.newTopAdContainer
@@ -24738,6 +24742,7 @@ _setAnalyticsFields&
 ##.rt_ad_call
 ##.rt_advert_name
 ##.rt_el_advert
+##.rt_top_adv
 ##.rtd_ads_text
 ##.rtmad
 ##.rtmm_right_ad
@@ -26030,6 +26035,7 @@ _setAnalyticsFields&
 ##.universalboxADVBOX04a
 ##.unspoken-adplace
 ##.upcloo-adv-content
+##.upcomingMob_2nd_adv_blk
 ##.upper-ad-box
 ##.upper-ad-space
 ##.urban-ad-rect
@@ -27161,6 +27167,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.idmuvi-social-share
 ##.inline-share
 ##.js-custom-pinterest-button
+##.js-followState
+##.js-postShareWidget
 ##.js-share-button
 ##.js-sharecount
 ##.jssocials-share
@@ -27215,6 +27223,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.sharethis
 ##.sharingtb
 ##.sharrre
+##.single-social
 ##.single_share_block
 ##.social--article
 ##.social--top
@@ -27230,6 +27239,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.social-share-bottom
 ##.social-share-title
 ##.social-shares
+##.social-sharing__icons
 ##.social-tools
 ##.social-tools-primary
 ##.social-widget
@@ -35770,6 +35780,7 @@ a.upnorma.com^$webrtc,websocket
 ! temporary workaround for Adblock Plus for Chrome bug #4599 (https://issues.adblockplus.org/ticket/4599)
 ||voodoo.com^$~stylesheet,third-party
 ! *** abid:AdBlockID_Privacy/trackingservers.txt ***
+||adobedtm.com^$third-party
 ||btstatic.com^$third-party
 ||demdex.net^$third-party
 ||doubleclick.net/activity$third-party
@@ -35782,6 +35793,7 @@ a.upnorma.com^$webrtc,websocket
 ||mixpanel.com^$third-party
 ||mxpnl.com^$third-party
 ||mybloglog.com^$third-party
+||nr-data.net^$third-party
 ||segment.io^$third-party
 ||skimresources.com^$third-party
 ||statcounter.com^$third-party
@@ -35789,6 +35801,7 @@ a.upnorma.com^$webrtc,websocket
 ! 
 ||abmr.net^$third-party
 ||adsymptotic.com^$third-party
+||amplitude.com^$third-party
 ||amung.us^$third-party
 ||analytic.rocks^$third-party
 ||appboycdn.com^$third-party
@@ -48365,6 +48378,7 @@ okezone.com##.sosvertikal
 ||sail-horizon.com/horizon/$third-party
 ||sendpulse.com^$third-party
 ||snapwidget.com^$third-party
+||swiftypecdn.com^$third-party
 ! 
 ###blog_subscription-4
 ###consent_blackbar
@@ -48376,6 +48390,7 @@ okezone.com##.sosvertikal
 ##.FollowByEmail
 ##.OUTBRAIN
 ##.email-sub__iframe
+##.email-subscribe
 ##.enews-widget
 ##.feed-links
 ##.floatingfeedback
@@ -53304,4 +53319,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||pinterest.com/images/about/buttons/$domain=pinterest.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: ZsaukmzvRIJdB4ZbuXgapg
+! Checksum: C8cxbfRRvweExOeAeHcGQQ
