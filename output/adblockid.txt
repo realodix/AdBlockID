@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1216.1040
+! Version: 17.1216.1221
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Dec 2017 10:40 UTC
+! Last modified: 16 Dec 2017 12:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -24,6 +24,7 @@
 /adsspace-
 /afu.php?$popup
 /banner-atas1
+/banneriklan/*
 /bnr-samping.
 /bnr-tengah.
 /iklan-
@@ -89,7 +90,6 @@
 -728-x900.
 -728x60-
 -730x220.
--780x90.
 -790-90.
 -80x300-
 -85x445.
@@ -97,7 +97,7 @@
 -banner-300.
 -banner-728.
 /*120x280*.
-/*125*125*.gif
+/*125x125*.gif
 /*160x600*.
 /*250x250*.gif
 /*300*x250*.gif
@@ -117,6 +117,7 @@
 /*720x90*.
 /*728-x-90*.
 /*728x90*.
+/*780x90*.
 /*85x455*.
 /*920x120.
 /*960x120*.
@@ -129,7 +130,7 @@
 /*w555-h69-$image
 /*w728-h90-$image
 /160x600.
-/200x200.
+/200x200.gif
 /259x100px.
 /285-x-285.
 /300-x-250-
@@ -148,11 +149,60 @@
 /banner728.
 /banner980.
 =w440-h90-
+_1000x250.gif
+_1000x50.gif
+_1000x90.gif
+_100x100.gif
+_100x60.gif
 _1040x65.
+_120x120.gif
+_120x180.gif
+_120x30.gif
+_120x300.
+_120x40.gif
+_120x60.
 _128x350_
+_140x270.gif
+_150x150.gif
+_150x51.gif
+_150x60.gif
+_174x614.gif
+_180x54.gif
+_195x423.gif
+_200x200.gif
+_200x60.gif
+_208x600.gif
+_230x100.gif
+_232x100.gif
+_232x400.gif
+_240x100.gif
+_250x250.gif
 _259x100px
 _260x216.
-_780x90.
+_260x60.gif
+_290x290.gif
+_290x60.gif
+_350x60.
+_470x70.gif
+_500x75.gif
+_505x60.gif
+_600x46.gif
+_600x60.
+_640x60.gif
+_660x60.
+_670x50.gif
+_760x60.gif
+_760x90.
+_768x60.gif
+_768x90.
+_800x80.
+_80x358.gif
+_80x80.gif
+_950x60.gif
+_950x90.gif
+_980x50.gif
+_980x60.
+_980x90.
 ! 
 ! Judi
 /*agen*.gif
@@ -5512,10 +5562,13 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/thirdparty.txt ***
 ||bp.blogspot.com/*.gif^$image,domain=kombatch.com|mangashiro.net|satujiwa.org|smallencode.com
+||bucket.id/assets/images/users/*.gif$domain=enthus1ast.com|idfl.me
 ||imgur.com/*.gif$image,domain=mangashiro.net
+||s1.postimg.org/*.gif$domain=idfl.me
 ||wp.com/*/wp-content/uploads/*.gif$image,domain=etalasebisnis.com|hotabis.com
 ! 
 ||166.62.7.206^$third-party
+||188affiliates.com^$third-party
 ||365wp.org^$third-party
 ||45.76.146.8^$third-party
 ||agenjudionline.in^$third-party
@@ -6978,4 +7031,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||pinterest.com/images/about/buttons/$domain=pinterest.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: TWRD/0tWgNBd1IHgxwl1Gg
+! Checksum: 39ul4eF9/IonMQw5bTWZXA
