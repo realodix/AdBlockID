@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1216.0854
+! Version: 17.1216.1040
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Dec 2017 08:54 UTC
+! Last modified: 16 Dec 2017 10:40 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1082,6 +1082,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##[title="Follow Us on Twitter"]
 ##[title="Follow us on Facebook"]
 ##[title="Follow us on Twitter"]
+##[title="Follow us on YouTube"]
 ##[title="Follow us on Youtube"]
 ##[title="Follow us on twitter"]
 ##[title="Like us on Facebook"]
@@ -1091,6 +1092,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##[title="Share on Tumblr"]
 ##[title="Share on Twitter"]
 ##[title="Share to Facebook"]:not(.wpel-icon-right)
+##[title="Subscribe to our blog"]
 ##a[href*="facebook.com/sharer/sharer.php?"]
 ##a[href="http://twitter.com/share"]
 ##a[href^="//www.reddit.com/submit?"]
@@ -1181,12 +1183,14 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||go-mpulse.net^$third-party
 ||google-analytics.com/analytics.js
 ||google-analytics.com/collect
+||googletagmanager.com/gtm.js?$third-party
 ||krxd.net^$third-party
 ||marketo.net^$third-party
 ||mixpanel.com^$third-party
 ||mxpnl.com^$third-party
 ||mybloglog.com^$third-party
 ||nr-data.net^$third-party
+||optimizely.com^$third-party
 ||segment.io^$third-party
 ||skimresources.com^$third-party
 ||statcounter.com^$third-party
@@ -6044,6 +6048,7 @@ okezone.com##.sosvertikal
 ###blog_subscription-4
 ###consent_blackbar
 ###footer_newsletter
+###newsletter-signup
 ###newsletter-subscribe
 ###subscribe-email
 ###subscribeBOX
@@ -6973,4 +6978,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||pinterest.com/images/about/buttons/$domain=pinterest.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: bZGJiEqG72xK3k0dlf8/Aw
+! Checksum: TWRD/0tWgNBd1IHgxwl1Gg
