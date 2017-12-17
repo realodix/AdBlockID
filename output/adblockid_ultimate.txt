@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1216.1827
+! Version: 17.1217.0406
 ! Title: AdBlockID Ultimate
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Dec 2017 18:27 UTC
+! Last modified: 17 Dec 2017 04:06 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8566,6 +8566,7 @@ _a468x60.
 /px.gif?
 /quant.js
 /smetrics.*/b/ss/*
+/swptrk.
 /track.gif^
 /tracker.php?
 /v60.js
@@ -10302,6 +10303,7 @@ _setAnalyticsFields&
 ###ad300x60
 ###ad300x600
 ###ad300x600_callout
+###ad300x600pos2
 ###ad31
 ###ad32
 ###ad330x240
@@ -22918,6 +22920,7 @@ _setAnalyticsFields&
 ##.fgc-advertising
 ##.fi_adsense
 ##.field-name-shared-ad-placement-landscape
+##.field-name-sticky-ads-div
 ##.finpostsads
 ##.fireplaceadleft
 ##.fireplaceadright
@@ -23428,6 +23431,7 @@ _setAnalyticsFields&
 ##.h_Ads
 ##.h_ad
 ##.half-ad
+##.half-page-ad
 ##.halfPageAd
 ##.half_ad_box
 ##.halfpage_ad_container
@@ -23570,6 +23574,7 @@ _setAnalyticsFields&
 ##.home-ad--top
 ##.home-ad-container
 ##.home-ad-links
+##.home-ad-region-1
 ##.home-ad1
 ##.home-ad2
 ##.home-ad3
@@ -24049,6 +24054,7 @@ _setAnalyticsFields&
 ##.lazyload_ad_article
 ##.lb-ad
 ##.lb-adhesion-unit
+##.lb-advert-container
 ##.lbc-ad
 ##.lbl-advertising
 ##.lblAdvert
@@ -27966,6 +27972,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.share-buttons-box
 ##.share-buttons-container
 ##.share-count
+##.share-heading
 ##.share-item
 ##.share-left
 ##.share-more
@@ -29678,6 +29685,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dbclix.com^$third-party
 ||dc121677.com^$third-party
 ||dealcurrent.com^$third-party
+||debrium-surbara.com^$third-party
 ||decenthat.com^$third-party
 ||decisionmark.com^$third-party
 ||decisionnews.com^$third-party
@@ -36663,6 +36671,7 @@ a.upnorma.com^$webrtc,websocket
 ||visualwebsiteoptimizer.com^$third-party
 ||w3counter.com^$third-party
 ||w55c.net^$third-party
+||webengage.com^$third-party
 ||zarget.com^$third-party
 ! *** abid:AdBlockID/popup.txt ***
 ||abourselfi.com^$popup,third-party
@@ -38299,6 +38308,7 @@ a.upnorma.com^$webrtc,websocket
 ||kfdwywhuissy.com^
 ||kfjgnunsuy.bid^
 ||kflimllvanjv.com^
+||kfpkzbgwuxm.bid^
 ||kfpwayrztgjj.com^
 ||kftmmtuxdtmsv.bid^
 ||kfuwxxspanifp.bid^
@@ -39912,6 +39922,7 @@ a.upnorma.com^$webrtc,websocket
 ||ttqdlwzgpml.bid^
 ||ttwiehwr.bid^
 ||ttxqfeuiakgn.bid^
+||tudsawhfmutb.bid^
 ||tujswypf.bid^
 ||tuldmgwvimgowg.com^
 ||tumfvfvyxusz.com^
@@ -39984,6 +39995,7 @@ a.upnorma.com^$webrtc,websocket
 ||ugbmcjmpapeo.bid^
 ||ugfxrrqz.bid^
 ||ugvcpwyplnj.bid^
+||ugwctmus.bid^
 ||ugxqfkslreop.bid^
 ||ugyymqcxyoi.bid^
 ||uhavijwye.bid^
@@ -40229,6 +40241,7 @@ a.upnorma.com^$webrtc,websocket
 ||vqfplemoftllvm.bid^
 ||vqozayvwb.bid^
 ||vqtjeddutdix.com^
+||vqvnavwaxiizc.bid^
 ||vrcjxjtco.bid^
 ||vrewpywootyu.com^
 ||vreyirfvpytz.com^
@@ -40426,6 +40439,7 @@ a.upnorma.com^$webrtc,websocket
 ||wvxywejnmpsh.bid^
 ||wwfjhzut.bid^
 ||wwgysckwouvzkm.bid^
+||wwiqinsra.bid^
 ||wxjqyqvagefw.com^
 ||wxmzfxthsnrgpu.bid^
 ||wxnuobpxkjgk.bid^
@@ -40570,6 +40584,7 @@ a.upnorma.com^$webrtc,websocket
 ||xwmbaxufcdxb.com^
 ||xwufohrjmvjy.com^
 ||xwwsojvluzsb.com^
+||xxelvfyvgcjo.bid^
 ||xxwpminhccoq.com^
 ||xxxdeducu.bid^
 ||xxxwfoltlusf.bid^
@@ -40835,6 +40850,7 @@ a.upnorma.com^$webrtc,websocket
 ||zqjfpxcgivkv.com^
 ||zqskkhcxd.bid^
 ||zrbhyvkpgeyn.com^
+||zrdjojunihbox.bid^
 ||zrelqwrx.bid^
 ||zrrgjpsb.bid^
 ||zrufclmvlsct.com^
@@ -42860,6 +42876,7 @@ a.upnorma.com^$webrtc,websocket
 ||csi.gstatic.com^
 ||ct.pinterest.com^
 ||d10lpsik1i8c69.cloudfront.net^
+||d1z2jf7jlzjs58.cloudfront.net^
 ||d3rmnwi2tssrfx.cloudfront.net^
 ||data.queryly.com^
 ||dc8xl0ndzn2cb.cloudfront.net^
@@ -49193,6 +49210,7 @@ okezone.com##.sosvertikal
 ##.m-brand-engagement
 ##.newsletter-signup
 ##.subscribe-newsletter
+##.subscribe-text
 ##.td-more-articles-box
 ##.widget-newsletter
 ##.widget_feedburnerformwidget
@@ -54112,4 +54130,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||pinterest.com/images/about/buttons/$domain=pinterest.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: MZzrtWvT44fBrx62ukRnmw
+! Checksum: hS6xnqtghfI4RwgE7i2GIg
