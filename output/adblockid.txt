@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1217.0541
+! Version: 17.1218.0504
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Dec 2017 05:41 UTC
+! Last modified: 18 Dec 2017 05:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -592,6 +592,7 @@ _atblockdetector/
 /swptrk.
 /track.gif^
 /tracker.php?
+/urchin.js
 /v60.js
 /visitorapi.js
 ! 
@@ -624,6 +625,7 @@ _atblockdetector/
 /b/ss/*&aqe=
 /b/ss/*/js-
 /backlink2.
+/bn/tracker/*
 /cct?
 /cdn-cgi/pe/bag2?*.google-analytics.com
 /cnt.php?rf=
@@ -1374,11 +1376,13 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||btstatic.com^$third-party
 ||demdex.net^$third-party
 ||doubleclick.net/activity$third-party
+||exelator.com^$third-party
 ||freegeoip.net^$third-party
 ||go-mpulse.net^$third-party
 ||google-analytics.com/analytics.js
 ||google-analytics.com/collect
 ||googletagmanager.com/gtm.js?$third-party
+||imrworldwide.com^$third-party
 ||krxd.net^$third-party
 ||marketo.net^$third-party
 ||mixpanel.com^$third-party
@@ -7083,6 +7087,7 @@ tinypaste.cc#@##banner_ad
 @@||walmartimages.com/webanalytics/omniture/omniture.jsp$domain=walmart.com
 @@||walmartimages.com/webanalytics/wmStat/wmStat.jsp$domain=walmart.com
 @@||washingtonexaminer.com/s3/wex15/js/analytics.js?$script
+@@||washingtonpost.com/wp-stat/analytics/latest/main.js
 @@||washingtonpost.com/wp-stat/analytics/main.js$domain=subscribe.washingtonpost.com
 @@||wbshop.com/fcgi-bin/iipsrv.fcgi?
 @@||websimages.com/JS/Tracker.js
@@ -7191,4 +7196,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||pinterest.com/images/about/buttons/$domain=pinterest.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: NJktIBgrGWufB+aD0NLgQw
+! Checksum: hLcdbSgiSRTncfJy26Snrg
