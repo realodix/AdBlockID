@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1220.1405
+! Version: 17.1220.1427
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Dec 2017 14:05 UTC
+! Last modified: 20 Dec 2017 14:27 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1321,6 +1321,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##a[href^="http://twitter.com/intent/tweet/?"]
 ##a[href^="http://twitter.com/intent/tweet?"]
 ##a[href^="http://twitter.com/share?"]
+##a[href^="http://vk.com/share.php?url="]
 ##a[href^="http://www.facebook.com/dialog/feed?"]
 ##a[href^="http://www.facebook.com/share.php?u="]
 ##a[href^="http://www.facebook.com/sharer.php?"]
@@ -5946,6 +5947,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||pixel.facebook.com^
 ||youtube.com/api/stats/playback?
 ! 
+||abeagle-public.buzzfeed.com^
 ||airbnb.*/tracking/
 ||alicdn.com/js/aplus_*.js
 ||analytics.slashdotmedia.com^
@@ -5976,6 +5978,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||pardot.com/pd.js
 ||pinterest.com/_/_/report/
 ||pixel.redditmedia.com^
+||pixiedust.buzzfeed.com^
 ||sa.bbc.com^
 ||ssc.api.bbc.com^
 ||statistics.crowdynews.com^
@@ -6300,6 +6303,7 @@ okezone.com##.sosvertikal
 ##.berlangganan-box
 ##.newsletter__wrapper
 ! 
+/newsletter-pattern.
 /plugins/wp-subscribe-pro/*
 /wp-content/plugins/popover/*$script
 /wp-content/plugins/tab-slide/*
@@ -7265,4 +7269,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||pinterest.com/images/about/buttons/$domain=pinterest.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: v0Aee02kpvzMi75Y+u/9ng
+! Checksum: hB6HuSa+fYhBW+xVne+6Ww
