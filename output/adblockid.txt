@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1220.1935
+! Version: 17.1220.1939
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Dec 2017 19:35 UTC
+! Last modified: 20 Dec 2017 19:39 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -762,6 +762,7 @@ _setAnalyticsFields&
 /social-sharing-
 /social_icon_
 /sprite_social.
+/tweets.js
 /twitterFetcher_
 _ShareIcons.
 ! ------------------------------------------------------------!
@@ -5821,6 +5822,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID_Privacy/thirdparty.txt ***
 ||uzone.id^$third-party
 ! 
+||dw.cbsi.com^
 ||paypalobjects.com^*/pixel.gif
 ||pixel.condenastdigital.com^
 ||stats.g.doubleclick.net^
@@ -7299,6 +7301,10 @@ facebook.com#@#a[href^="https://www.facebook.com/sharer.php?"]
 reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 ! 
 @@||pinterest.com/images/about/buttons/$domain=pinterest.com
+@@||syndication.twitter.com/tweets.json?*&callback=$script
+@@||syndication.twitter.com/tweets.json?callback=$script
+@@||twimg.com/tweets.json?*callback$script
+@@||twimg.com^*/tweets.js$domain=twitter.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: bi9a9qIXayrOrXFuBN0q3w
+! Checksum: UPo9HJq48+adkZgrjDxRRQ
