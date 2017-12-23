@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1223.0531
+! Version: 17.1223.2039
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 23 Dec 2017 05:31 UTC
+! Last modified: 23 Dec 2017 20:39 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -625,6 +625,7 @@ _atblockdetector/
 .com/ga.js?
 .com/i.gif?
 .com/pv.gif?
+.com/t.gif?
 .com/track?$~object
 .com/v.gif?
 .com/vanity/?
@@ -735,6 +736,7 @@ _setAnalyticsFields&
 /amp-social-
 /facebook-pagelike-widget/*
 /fb-share.
+/fbshare.
 /icon_fb.
 /icon_mail.
 /icon_twitter.
@@ -1119,6 +1121,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ###footer-social-media
 ###header-social
 ###mobile-social
+###sb_instagram
 ###share-buttons
 ###share-count
 ###share-module
@@ -1150,6 +1153,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.b_share
 ##.bb-nav-social
 ##.bb-social-link
+##.bottom-share-module
 ##.c-global-header__social
 ##.c-share
 ##.col-social
@@ -1187,6 +1191,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.footerMainMoreSocial
 ##.footer__social
 ##.fsocial
+##.g1-socials-item
 ##.gig-composebox-share
 ##.global-footer-social
 ##.heateor_sss_sharing_container
@@ -1201,11 +1206,14 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.jssocials-share
 ##.jssocials-share-logo
 ##.jssocials-shares
+##.jw-settings-sharing
 ##.jw-sharing-dock-btn
 ##.m-brand-engagement--social-link
 ##.m-header--social-nav
 ##.m-social
 ##.m-social--button
+##.mashsb-box
+##.mashsb-container
 ##.menu-social-menu-container
 ##.meta-share
 ##.meta__social
@@ -1221,6 +1229,9 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.post-share-buttons
 ##.post__share
 ##.product-share
+##.redesign-social-icon-link
+##.redesign-social-icon-list
+##.rrssb-buttons
 ##.s_share_box
 ##.scroll-nav-social-item
 ##.sd-sharing
@@ -1304,7 +1315,9 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.widget-facebook-timeline
 ##.widget-social-counter
 ##.widget-twitter-timeline
+##.widget_bimber_widget_facebook_page
 ##.widget_facebook_likebox
+##.widget_g1_socials
 ##.widget_twitter_timeline
 ##.widget_wpcom_social_media_icons_widget
 ##.wrapper-share
@@ -5959,6 +5972,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||google.com^*/fastbutton?$third-party
 ||instagram.com^*/users/$third-party
 ||linkedin.com/countserv/$third-party
+||linkedin.com/uas/js/userspace?$third-party
 ||newsharecounts.com^$third-party
 ||pinterest.com/images/$third-party
 ||pinterest.com/v1/urls/count.json$third-party
@@ -6398,6 +6412,7 @@ okezone.com##.sosvertikal
 ###newsletter_signup
 ###subscribe-email
 ###subscribeBOX
+###taboola-below-main-column
 ###wpfront-notification-bar-spacer
 ##.FollowByEmail
 ##.OUTBRAIN
@@ -6410,6 +6425,7 @@ okezone.com##.sosvertikal
 ##.footer-disclaimer
 ##.footer-newsletter
 ##.footer-subscribe
+##.g1-newsletter
 ##.jetpack_subscription_widget
 ##.m-brand-engagement
 ##.newsletter-button
@@ -7339,4 +7355,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||twimg.com^*/tweets.js$domain=twitter.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: tajw/5o/BzGLjnLx4FrnoQ
+! Checksum: t0a1fS65oIM5viF7bUA5jw
