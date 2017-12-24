@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1224.0657
+! Version: 17.1224.1208
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Dec 2017 06:57 UTC
+! Last modified: 24 Dec 2017 12:08 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -696,6 +696,7 @@ _atblockdetector/
 /partner/transparent_pixel-$image
 /pg_pixel?
 /ping.gif?
+/ping?h=
 /pippio.
 /piwik.php
 /piwik_
@@ -1152,6 +1153,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.ap-follow-widget
 ##.article-share-bottom
 ##.article-shares-links
+##.asset-inline-share-tools
 ##.author-social
 ##.author-socials
 ##.b_share
@@ -1302,6 +1304,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.ssocial
 ##.sticky-share-bar__icon
 ##.story-share
+##.story-taboola-related-module
 ##.sumome-share-client-wrapper
 ##.td-post-sharing
 ##.td-social-icon-wrap
@@ -1317,6 +1320,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ##.twitter-widget
 ##.ui-fixed-panel-share
 ##.ui-fixed-panel-shares
+##.util-bar-flyout-nav-share
+##.util-bar-module-share
 ##.vce-share-bar
 ##.widget-facebook-timeline
 ##.widget-social-counter
@@ -1429,6 +1434,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID_Privacy/trackingservers.txt ***
 ||adobedtm.com^$third-party
 ||btstatic.com^$third-party
+||chartbeat.com^$third-party
 ||clicktale.net^$third-party
 ||crwdcntrl.net^$third-party
 ||cxense.com^$third-party
@@ -6053,6 +6059,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||pinterest.com/_/_/report/
 ||pixel.redditmedia.com^
 ||pixiedust.buzzfeed.com^
+||pong.gannettdigital.com^
 ||sa.bbc.com^
 ||ssc.api.bbc.com^
 ||statistics.crowdynews.com^
@@ -6450,6 +6457,8 @@ tribunnews.com##a[href^="http://www.stumbleupon.com/submit?"]
 ##.newsletter-signup
 ##.newsletter-subscribe
 ##.newsletters-signup
+##.overlay-content-arrows
+##.site-masthead-subscribe-wrap
 ##.subscribe-newsletter
 ##.subscribe-text
 ##.td-more-articles-box
@@ -7375,4 +7384,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||twimg.com^*/tweets.js$domain=twitter.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: lEXPHmk4bBO8MEy2fJWSXQ
+! Checksum: acDvHdUlz6b2K1cKU2ZeDg
