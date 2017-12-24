@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1224.0506
+! Version: 17.1224.0642
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Dec 2017 05:06 UTC
+! Last modified: 24 Dec 2017 06:42 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -671,6 +671,7 @@ _atblockdetector/
 /GARecord^
 /generate_204$image
 /geocounter.
+/get_geoip?
 /google_analytics/*
 /googleAnalytics_
 /greenoaks.gif?
@@ -5926,6 +5927,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||nbcudigitaladops.com/hosted/housepix.gif
 ||nice264.com/data?$third-party
 ||p.po.st^*&pub=
+||perr.h-cdn.com^$third-party
 ||ping.smyte.com^
 ||pixel.s3xified.com^
 ||pixel.wp.com^
@@ -6418,10 +6420,12 @@ tribunnews.com##a[href^="http://www.stumbleupon.com/submit?"]
 ###newsletter_signup
 ###subscribe-email
 ###subscribeBOX
+###taboola-below-article-thumbnails
 ###taboola-below-main-column
 ###wpfront-notification-bar-spacer
 ##.FollowByEmail
 ##.OUTBRAIN
+##.email-signpost
 ##.email-sub__iframe
 ##.email-subscribe
 ##.enews-widget
@@ -6486,6 +6490,7 @@ kompasiana.com##.timeline--write
 ###cookie-law-info-bar
 ###cookie-notice
 ###cookie-policies
+###cookie-warning
 ###cookieContent
 ###cookiePopupContainer
 ###cookie_hdr_showagain
@@ -7361,4 +7366,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||twimg.com^*/tweets.js$domain=twitter.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: Z34ssm3lDTPbY8R/69vHgQ
+! Checksum: +PAMS+k675kaemweGsy3sg
