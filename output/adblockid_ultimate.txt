@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 17.1224.1237
+! Version: 17.1225.0406
 ! Title: AdBlockID Ultimate
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Dec 2017 12:37 UTC
+! Last modified: 25 Dec 2017 04:06 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -9957,6 +9957,7 @@ _ShareIcons.
 ###ad-container-2
 ###ad-container-adaptive-1
 ###ad-container-adaptive-3
+###ad-container-banner
 ###ad-container-fullpage
 ###ad-container-inner
 ###ad-container-leaderboard
@@ -15735,6 +15736,8 @@ _ShareIcons.
 ###region-regions-ad-top
 ###region-top-ad
 ###reklam-728x90
+###reklam_buton
+###reklam_center
 ###reklama
 ###reklama_big
 ###reklama_left_body
@@ -22499,6 +22502,7 @@ _ShareIcons.
 ##.cont-ad
 ##.contads_middle
 ##.contained-ad-shaft
+##.contained-ad-wrapper
 ##.container--ad
 ##.container--bannerAd
 ##.container--header-ads
@@ -28495,6 +28499,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||addiply.com^$third-party
 ||addkt.com^$third-party
 ||addoer.com^$third-party
+||addoor.net^$third-party
 ||addroid.com^$third-party
 ||addroplet.com^$third-party
 ||addynamics.eu^$third-party
@@ -30262,6 +30267,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||fusionads.net^$third-party
 ||futureresiduals.com^$third-party
 ||futureus.com^$third-party
+||fwbntw.com^$third-party
 ||fwmrm.net^$~object-subrequest,third-party
 ||fxdepo.com^$third-party
 ||fxyc0dwa.com^$third-party
@@ -30490,6 +30496,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||howevert.info^$third-party
 ||howtodoblog.com^$third-party
 ||hplose.de^$third-party
+||hprofits.com^$third-party
 ||hsslx.com^$third-party
 ||hstpnetwork.com^$third-party
 ||htl.bid^$third-party
@@ -31664,6 +31671,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||pussl11.com^$third-party
 ||pussl13.com^$third-party
 ||pussl28.com^$third-party
+||pussl3.com^$third-party
 ||pussl30.com^$third-party
 ||pussl32.com^$third-party
 ||pussl37.com^$third-party
@@ -32270,6 +32278,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||topauto10.com^$third-party
 ||topbananaad.com^$third-party
 ||topcasino10.com^$third-party
+||topclickguru.com^$third-party
 ||topeuro.biz^$third-party
 ||topfox.co.uk^$third-party
 ||tophotoffers.com^$third-party
@@ -32378,6 +32387,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||trymynewspirit.com^$third-party
 ||trzi30ic.com^$third-party
 ||tsitraty.ru^$third-party
+||tsyndicate.com^$third-party
 ||ttzmedia.com^$third-party
 ||tubberlo.com^$third-party
 ||tubemogul.com^$third-party
@@ -45479,7 +45489,7 @@ a.upnorma.com^$webrtc,websocket
 ||mfcdn.net/media/*left
 ||mfcdn.net/media/*right
 ||mfcdn.net/media/game321/$image
-||mfcdn.net^*banner$domain=mangafox.me
+||mfcdn.net^*banner$domain=mangafox.la
 ||mg.co.za^*/wallpaper
 ||mgid.com/ban/
 ||mgnetwork.com/dealtaker/
@@ -47650,6 +47660,7 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=vidoza.net
 @@||vidoza.net/js/ads.js$script,domain=vidoza.net
 @@||vidoza.net/js/pop.js$script,domain=vidoza.net
+@@||vidoza.net^$generichide
 |http://$image,script,third-party,domain=vidoza.net
 |https://$image,script,third-party,domain=vidoza.net
 ! filecrypt.cc
@@ -48707,13 +48718,14 @@ $script,third-party,domain=123videos.tv|171gifs.com|1proxy.de|2ddl.download|2ddl
 |http://$script,third-party,domain=vidzi.tv
 ||ww1.vidzi.tv^*.js|$domain=vidzi.tv
 ! TPB
+$websocket,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
 @@||thepiratebay.org/static/js/details.js
 @@||thepiratebay.org/static/js/prototype.js
 @@||thepiratebay.org/static/js/scriptaculous.js
 @@||thepiratebay.org/static/js/tpb.js
 javascript:$popup,domain=thepiratebay.org
-|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=thepiratebay.org
-|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=thepiratebay.org
+|http://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
+|https://$image,script,stylesheet,subdocument,third-party,xmlhttprequest,domain=bay.maik.rocks|cruzing.xyz|depiratenbaai.nl|piratebay.website|piratebayblocked.com|pirateproxy.ist|pirateproxy.wf|piratetoday.click|proxydl.cf|proxyme.site|proxyme.win|proxypirate.in|proxypirate.website|proxyship.click|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepiratebay.freeproxy.fun|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|tpb.crushus.com|tpb.tw|tpbduck.com|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbproxy.win|tpbrun.win|tpproxy.website|ukpirate.click
 ||thepiratebay.org^$script,subdocument,domain=thepiratebay.org
 ! watchseries-online.nl
 @@||watchseries-online.nl/app/wp-includes/js/$script,domain=watchseries-online.nl
@@ -54229,6 +54241,7 @@ www.google.com#@##videoads
 @@||ups.com/WebTracking/$xmlhttprequest
 @@||urlcheck.hulu.com/crossdomain.xml$object-subrequest
 @@||usps.com/m/js/tracking.js$domain=usps.com
+@@||usps.com^*/metrics.js$domain=usps.com
 @@||utm.alibaba.com/eventdriver/recommendEntry.do?$script
 @@||utm.arc.nasa.gov/common/css/
 @@||utm.arc.nasa.gov/common/js/common.js
@@ -54382,4 +54395,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||twimg.com^*/tweets.js$domain=twitter.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: ImpEoZ75hqA7Ua9maaBKUg
+! Checksum: q9xKeBbm2dPJB191qjyJLQ
