@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0108.1546
+! Version: 18.0108.1825
 ! Title: AdBlockID Ultimate
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Jan 2018 15:46 UTC
+! Last modified: 08 Jan 2018 18:25 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -532,60 +532,6 @@ _996x50.gif
 /sbcc-new.gif
 /SBCC.gif
 /starwin.gif
-! 
-! Anti-Adblock
--adblocker-detection/
-/abdetect.js
-/abDetector.js
-/abp_detection/*
-/abtest_ab.js
-/ad-blocker.js
-/ad-blocking-alert/*
-/adb.min.js
-/adb_detector.
-/adblock-alerter/*
-/adblock-blocker/*
-/adblock-detect.
-/adblock-detector.
-/adblock-message.
-/adblock-notify-by-bweb/*
-/adblock-relief.js
-/adblock-relief/*
-/adblock.gif?
-/adblock_detect.
-/adblock_detector.
-/adblock_detector2.
-/adblock_logger.
-/adblockchecker.
-/adblockdetect.
-/adblockdetection.
-/adblockDetector.
-/adBlockDetector/*
-/adblockdetectorwithga.
-/adblocker-leader.
-/adblocker.js
-/adBlockerTrack_
-/adblockkiller.
-/adblockpopup.
-/adbuddy.
-/adsblocker.
-/anti-adblock/*$~stylesheet
-/anti_ab.
-/antiadblock.
-/antiblock_script/*
-/blockblock/blockblock.jquery.js
-/BlockerBanner/*$xmlhttprequest
-/Disable%2BAdblock.
-/disabled_adBlock.
-/fuckadb.js
-/fuckadblock.js
-/fuckadblock/*$script
-/fuckingadblockplus.
-/ibd-block-adblocker/*
-/no-adblock/*
-/wp-content/plugins/anti-block/*
-/wp-content/plugins/anti_ad_blocker/*
-_atblockdetector/
 ! *** https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_general_block.txt ***
 &act=ads_
 &ad.vid=$~xmlhttprequest
@@ -49358,14 +49304,9 @@ detik.com##.gtm_newsfeed_ads
 carapedia.com##.img-banner
 kompas.com##.kcm__horizontal.kcm
 esquire.co.id##.leader-board
-awsubs.co##.minipusat
 detik.com##.newsfeed-ads
 viva.co.id##.paralax_banner-detail
 jadwaltelevisi.com##.promo-banner
-twitter.com##.promoted-account
-twitter.com##.promoted-trend
-twitter.com##.promoted-tweet[data-disclosure-type="promoted"]
-awsubs.co##.pusat728
 21cineplex.com##.showcase
 21cineplex.com##.showcase2
 mydramalist.com##.spnsr-top
@@ -49489,6 +49430,8 @@ tribunnews.com##a[href^="http://www.stumbleupon.com/submit?"]
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
+/hash.wasm$script,websocket
+/inject.js?key=$script
 /jsecoin.*/?
 /lhnhelpouttab-current.min.js
 /miner-ui.js
@@ -49502,8 +49445,10 @@ tribunnews.com##a[href^="http://www.stumbleupon.com/submit?"]
 /xminer.min.js
 /xmr.js
 /xmr.min.js
+?proxy=wss://$script,websocket
 ! 
 .cf^*.wasm$third-party
+.club^$third-party,websocket
 .date^$third-party,websocket
 .faith^$third-party,websocket
 .men^$third-party,websocket
@@ -49529,6 +49474,7 @@ tribunnews.com##a[href^="http://www.stumbleupon.com/submit?"]
 ||3c0cb3b4.space^$third-party
 ||3d0cb547.space^$third-party
 ||77.162.125.199^$third-party
+||abc.pema.cl^third-party
 ||ad-miner.com^$third-party
 ||adminer.com^$third-party
 ||afminer.com^$third-party
@@ -49593,6 +49539,7 @@ tribunnews.com##a[href^="http://www.stumbleupon.com/submit?"]
 ||lmodr.biz^$third-party
 ||mataharirama.xyz^$third-party
 ||megabanners.cf^$third-party
+||mine.nahnoji.cz^
 ||mine.torrent.pw^$third-party
 ||minecrunch.co^$third-party
 ||minemytraffic.com^$third-party
@@ -49604,6 +49551,7 @@ tribunnews.com##a[href^="http://www.stumbleupon.com/submit?"]
 ||mmpool.org^$third-party
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
+||morningdigit.com^$third-party
 ||nahnoji.cz^$third-party
 ||noblock.pro^$third-party
 ||now.sh/*.wasm$third-party
@@ -49615,6 +49563,7 @@ tribunnews.com##a[href^="http://www.stumbleupon.com/submit?"]
 ||ppoi.org^$third-party
 ||projectpoi.com^$third-party
 ||reasedoper.pw^$third-party
+||reservedoffers.club^$third-party
 ||rocks.io^$third-party
 ||sbhmn-miner.com^$third-party
 ||secumine.net^$third-party
@@ -49626,6 +49575,7 @@ tribunnews.com##a[href^="http://www.stumbleupon.com/submit?"]
 ||supportxmr.com^$third-party
 ||usa.cc^$third-party
 ||webmine.cz^$third-party
+||wsp.marketgid.com^$third-party
 ||wty46.com^$third-party
 ||xbasfbno.info^$third-party
 ||ywtjdckysve.com^$third-party
@@ -54645,4 +54595,4 @@ reddit.com#@#a[href^="https://www.reddit.com/submit?"]
 @@||twimg.com^*/tweets.js$domain=twitter.com
 @@||vk.com/js/al/sharebox.js
 @@||vk.me/js/al/sharebox.js
-! Checksum: rY0gn4rs25njI0xYDUoCFw
+! Checksum: o4jtFi036NVYsH7L/6aNVA
