@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0111.1531
+! Version: 18.0111.1805
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jan 2018 15:31 UTC
+! Last modified: 11 Jan 2018 18:05 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -79,6 +79,7 @@
 -540x60.
 -550x70.
 -550x80.
+-565x80.
 -580x380.
 -65x300-
 -680x60.
@@ -125,6 +126,7 @@
 /*522x70*.
 /*530x63.
 /*535x66.
+/*585x80*.gif
 /*600x100*.
 /*600x40*.gif
 /*680x100*.gif
@@ -392,8 +394,10 @@ _996x50.gif
 /*casinoeve*.gif
 /*casinoterbaik*.gif
 /*citi*bet*.gif
+/*citybet*.gif
 /*cmcbet*.gif
 /*cmcwin*.gif
+/*danaqq*.gif
 /*demenqq*.gif
 /*depoqq*.gif
 /*depototo*.gif
@@ -5483,21 +5487,30 @@ cinemamkv.net##a[href^="https://goo.gl/"] > img
 ||sunmovie21.com/wp-content/themes/images/ads*.gif$image
 ! 
 ##a[href^="http://899cash."] > img
+##a[href^="http://GelanggangQQ."] > img
+##a[href^="http://Grandpkr99.com."] > img
 ##a[href^="http://acerpoker."] > img
 ##a[href^="http://axiooqq."] > img
+##a[href^="http://danaqq."] > img
 ##a[href^="http://doyan99."] > img
+##a[href^="http://duitasli."] > img
 ##a[href^="http://duniaspa."] > img
 ##a[href^="http://gadispoker."] > img
+##a[href^="http://gelanggangqq."] > img
 ##a[href^="http://hokibandarkiu."] > img
+##a[href^="http://istanapoker88."] > img
 ##a[href^="http://kliksakong."] > img
 ##a[href^="http://ligaasia."] > img
+##a[href^="http://okekiu."] > img
 ##a[href^="http://pendekarqq."] > img
+##a[href^="http://rajanyapoker."] > img
 ##a[href^="http://royalpoker99."] > img
 ##a[href^="http://tahunqq."] > img
 ##a[href^="http://undepo."] > img
 ##a[href^="http://www.bola168bet."] > img
 ##a[href^="http://www.bursatogel."] > img
 ##a[href^="http://www.infoterapis."] > img
+##a[href^="http://www.kotasemi."] > img
 ##a[href^="http://www.liganation."] > img
 ##a[href^="http://www.mastercapsa365."] > img
 ##a[href^="http://www.mgmcash88."] > img
@@ -5511,7 +5524,11 @@ cinemamkv.net##a[href^="https://goo.gl/"] > img
 ##a[href^="https://ompoker."] > img
 ##a[href^="https://www.idolabet."] > img
 ! 
+@@||cinemaindo21.info^$generichide
 @@||cinemamkv.net^$generichide
+@@||mivo.com^$generichide
+@@||sobatdrama.net^$generichide
+@@||viu21.info^$generichide
 ! *** abid:addons/annoyances.txt ***
 /outbrain.js|
 ||microsite.kaskus.co.id/anniversary/
@@ -5743,20 +5760,16 @@ kompasiana.com##.timeline--write
 ||reactor.cc^*.wasm
 ! *** abid:AdBlockID/whitelist.txt ***
 @@||ad4msan.com^$elemhide
-@@||cinemaindo21.info^$generichide
 @@||eramuslim.com^$generichide
 @@||indoshares.com^$generichide
 @@||inwepo.co^$generichide
 @@||mangashiro.net^$generichide
 @@||mastekno.com^$generichide
-@@||mivo.com^$generichide
 @@||neumanga.tv^$generichide
 @@||oploverz.in^$generichide
 @@||pesnewupdate.click^$generichide
 @@||safelkmeong.blogspot.com^$generichide
-@@||sobatdrama.net^$generichide
 @@||tutorialweb.net^$generichide
-@@||viu21.info^$generichide
 agroindustri.id#@#.category-advertorial
 bioskop45.com#@#div[class^="iklan"]
 ! 
@@ -5769,4 +5782,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: xQI655VE5PJSrKwV2ImSMw
+! Checksum: vnNTzIKm8h7c+a5/L54ojg
