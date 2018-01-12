@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0112.1819
+! Version: 18.0112.2005
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Jan 2018 18:19 UTC
+! Last modified: 12 Jan 2018 20:05 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -156,6 +156,7 @@
 /259x100px.
 /285-x-285.
 /300-x-250-
+/300-x-250.gif
 /300x100-
 /300X300.gif
 /300x90/*
@@ -548,6 +549,7 @@ _996x50.gif
 ! *** abid:AdBlockID/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
+##a[href^="http://855bandar."] > img
 ##a[href^="http://899cash."] > img
 ##a[href^="http://GelanggangQQ."] > img
 ##a[href^="http://Grandpkr99.com."] > img
@@ -563,6 +565,7 @@ _996x50.gif
 ##a[href^="http://istanapoker88."] > img
 ##a[href^="http://kliksakong."] > img
 ##a[href^="http://ligaasia."] > img
+##a[href^="http://masterbandar88."] > img
 ##a[href^="http://obipoker."] > img
 ##a[href^="http://okekiu."] > img
 ##a[href^="http://pasaranqq."] > img
@@ -574,12 +577,24 @@ _996x50.gif
 ##a[href^="http://tahunqq."] > img
 ##a[href^="http://trikqq."] > img
 ##a[href^="http://undepo."] > img
+##a[href^="http://vegasonlineweb."] > img
+##a[href^="http://vipbet58."] > img
+##a[href^="http://www.afb-365."] > img
+##a[href^="http://www.alexisonline."] > img
+##a[href^="http://www.asiaforbet."] > img
+##a[href^="http://www.bandarbola365."] > img
 ##a[href^="http://www.bola168bet."] > img
 ##a[href^="http://www.bursatogel."] > img
+##a[href^="http://www.global303."] > img
 ##a[href^="http://www.infoterapis."] > img
+##a[href^="http://www.infoterapisspa."] > img
+##a[href^="http://www.istana168."] > img
 ##a[href^="http://www.kotasemi."] > img
+##a[href^="http://www.lakibet."] > img
+##a[href^="http://www.lakigoal."] > img
 ##a[href^="http://www.liganation."] > img
 ##a[href^="http://www.mastercapsa365."] > img
+##a[href^="http://www.mbsdewa."] > img
 ##a[href^="http://www.mgmcash88."] > img
 ##a[href^="http://www.mgmdomino."] > img
 ##a[href^="http://www.poin4d."] > img
@@ -588,8 +603,13 @@ _996x50.gif
 ##a[href^="http://www.temanpoker99."] > img
 ##a[href^="http://www.terminalbet."] > img
 ##a[href^="https://99tangkas."] > img
+##a[href^="https://ads.uang-instan."] > img
+##a[href^="https://mustikaku."] > img
 ##a[href^="https://ompoker."] > img
+##a[href^="https://www.365dewa."] > img
+##a[href^="https://www.bola168bet."] > img
 ##a[href^="https://www.idolabet."] > img
+##a[href^="https://www.vegas78bets."] > img
 ! 
 ###Box-Banner-ads
 ###ads-pop
@@ -5495,7 +5515,7 @@ inilah.com##.wb-300x250
 ! *** abid:addons/movie.txt ***
 indoxxi.info##a[href^="https://goo.gl/"] > img
 movie303.com##a[href^="http://bit.ly/"] > img
-||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopkeren.online|cinemamovie21.com|drakorindo.co|drakorindonesia.com|dramaid.com|dramakorea.web.id|film-drama.co|kshowsubindo.org|movie303.com|moviebaru21.com|nonton.club|nonton33.net|nonton33.tv|nontondrama.me|nontonfilm21.club|nontonvip.com|senimovies.net
+||bp.blogspot.com/*.gif^$image,domain=123drakor.com|bioskopkeren.online|drakorindo.co|drakorindonesia.com|dramaid.com|dramakorea.web.id|film-drama.co|kshowsubindo.org|movie303.com|moviebaru21.com|nonton.club|nonton33.net|nonton33.tv|nontondrama.me|nontonfilm21.club|nontonvip.com|senimovies.net
 ||cdn.livechatinc.com/cloud/?*.gif$image,domain=sharedualima.club
 ||goo.gl/$image,domain=sunmovie21.com|surgafilm.club
 ||imgur.com/*.gif$image,domain=bioskopskype.com|nontonanime.id|nontoncinema.org|senimovies.net|sunmovie21.com
@@ -5509,17 +5529,15 @@ cinemaqq.com###floating_banner_top
 n21.tv##.ban_empat
 cinemamkv.net##a[href*="//go."] > img
 cinemamkv.net##a[href^="https://goo.gl/"] > img
-||bioskop168.co/wp-content/uploads/*.gif$image
 ||bioskop55.me/wp-content/uploads/*.gif$image
 ||cinemaindo.pro/wp-content/uploads/*.gif$image
-||cinemamovie21.com/wp-content/uploads/*.gif$image
 ||dldramaidxyz.*/okes/*.gif$image
 ||filmapik.me/wp-content/uploads/*.gif$image
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
 ||idbioskop.com/wp-content/uploads/*.gif$image
 ||indocinema21.com/banner/*.gif$image
 ||kshowsubindo.org/wp-content/plugins/cm-pop-up-banners/
-||layarcinema.com/wp-content/uploads/*.gif$image
+||layarcinema.co/wp-content/uploads/*.gif$image
 ||layarhd.com/media/*.gif
 ||lk21.in/wp-content/uploads/*.gif$image
 ||lk21.pw/assets/*.gif$image
@@ -5798,4 +5816,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: gjpiRAj2DjGhEAwRwqInBA
+! Checksum: L9zgdCI723mqI8KxSKr2iQ
