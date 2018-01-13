@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0113.1744
+! Version: 18.0113.1812
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Jan 2018 17:44 UTC
+! Last modified: 13 Jan 2018 18:12 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -4522,6 +4522,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ujqafhcsrhyz.com^
 ||ujqbxbcqtbqt.com^
 ||ujtyosgemtnx.com^
+||ukbhtzbxqzzqp.bid^
 ||ukbxppjxfgna.com^
 ||ukffjaqtxhor.com^
 ||ukjrbrvisps.bid^
@@ -5623,43 +5624,10 @@ senimovies.net###bottom_banner
 @@||sobatdrama.net^$generichide
 @@||viu21.info^$generichide
 ! *** abid:addons/annoyances.txt ***
-/outbrain.js|
-||microsite.kaskus.co.id/anniversary/
-||widget.kompas.com/widget-newsletter/
-! 
 ##.berlangganan-box
 ##.newsletter__wrapper
-! 
-/newsletter-pattern.
-/plugins/wp-subscribe-pro/*
-/wp-content/plugins/popover/*$script
-/wp-content/plugins/tab-slide/*
-/wp-content/plugins/thrive-leads/*$script
-/wysija-newsletters/*
-||apester.com^$third-party
-||autolinkmaker.itunes.apple.com^$third-party
-||blogtopsites.com^$third-party
-||browser-update.org^$third-party
-||disqus.com/api/*/listRelated.json?
-||feedage.com^$third-party
-||feedburner.com^$image,third-party
-||go.pardot.com^$subdocument,third-party
-||goroost.com^$third-party
-||hellobar.com^$third-party
-||hsleadflows.net^$third-party
-||linkwithin.com^$third-party
-||manychat.com^$third-party
-||nrelate.com^$third-party
-||optnmnstr.com^$third-party
-||optnmstr.com^$third-party
-||plista.com^$third-party
-||printfriendly.com^$third-party
-||pushalert.co^$third-party
-||pushcrew.com^$third-party
-||sail-horizon.com/horizon/$third-party
-||sendpulse.com^$third-party
-||snapwidget.com^$third-party
-||swiftypecdn.com^$third-party
+projects.co.id,sribulancer.com##.sumome-share-client-share
+/outbrain.js|
 ! 
 kaskus.co.id###forum-thread-top
 m.kaskus.co.id##.bnr-ads
@@ -5668,10 +5636,13 @@ kaskus.co.id##.kaskus-ads
 m.kaskus.co.id##.nm-alert
 kaskus.co.id##.notice
 kaskus.co.id##.sidebar-wrap.row > .more-like
+fjb.kaskus.co.id##.slick-dotted
+||microsite.kaskus.co.id/anniversary/
 ! 
 kompasiana.com##.kolom-newslt
 kompasiana.com##.timeline--inform
 kompasiana.com##.timeline--write
+||widget.kompas.com/widget-newsletter/
 ! 
 ! Perlu dicek
 ! Experiment
@@ -5878,4 +5849,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: jS+5HuDlAwpWlotttEKBNg
+! Checksum: 0sIWJgEkrvusfyEEt7hBRw
