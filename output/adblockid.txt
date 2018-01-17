@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0117.0526
+! Version: 18.0117.1545
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Jan 2018 05:26 UTC
+! Last modified: 17 Jan 2018 15:45 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -673,6 +673,7 @@ _996x50.gif
 ##a[href^="http://www.blue5star."] > img
 ##a[href^="http://www.bola168bet."] > img
 ##a[href^="http://www.bursatogel."] > img
+##a[href^="http://www.cemejudi."] > img
 ##a[href^="http://www.global303."] > img
 ##a[href^="http://www.hoki228."] > img
 ##a[href^="http://www.infoterapis"] > img
@@ -5574,35 +5575,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||solopos.com/banner/
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_hide.txt ***
-! semprot.com & krucil
-173.199.167.192##.krucil_ads
-46.166.167.16##div[class^="semprotnenenmontok_"]
-||gambar123.com/xf/trump/xyz_$domain=46.166.167.16
-! 
-analisis.kontan.co.id###div-Top-Analisis
-caritahu.kontan.co.id###div-Top-Caritahu
-english.kontan.co.id###div-Top-English
-industri.kontan.co.id###div-Top-Industri
-internasional.kontan.co.id###div-Top-Internasional
-investasi.kontan.co.id###div-Top-Investasi
-keuangan.kontan.co.id###div-Top-Keuangan
-lifestyle.kontan.co.id###div-Top-Lifestyle
-nasional.kontan.co.id###div-Top-Nasional
-peluangusaha.kontan.co.id###div-Top-Peluangusaha
-personalfinance.kontan.co.id###div-Top-Personalfinance
-regional.kontan.co.id###div-Top-Regional
-tv.kontan.co.id###div-Top-tv
-english.kontan.co.id##.ads-r1
-kesehatan.kontan.co.id##.banner-adv-1
-! 
-grid.id###head-banner-ads
-grid.id##.ads-mr
-hai.grid.id##.latest_article:nth-of-type(10)
-hai.grid.id##.latest_article:nth-of-type(3)
-bobo.grid.id,cewekbanget.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(11)
-grid.id##.latest_items:nth-of-type(12)
-bobo.grid.id,cewekbanget.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
-grid.id##.latest_items:nth-of-type(5)
 ! 
 hukumonline.com###adsa2
 hukumonline.com###adsa3
@@ -5614,7 +5586,6 @@ otosia.com###box-mobil-dijual
 mangacanblog.com,pecintakomik.com###btm_banner
 komiku.net###floatads3
 carapedia.com###floating-banner
-166.62.27.230###floating_banner_bottom
 droidlime.com###it-ad-header
 lytogame.com###lytoads
 detik.com###otp_banner
@@ -5637,11 +5608,14 @@ kompasiana.com##.banner-top
 cgv.id##.banner-wrapper
 beritagar.id##.banner300x250
 cosmogirl.co.id##.bnr
+kaskus.co.id##.bnr-ads
 detik.com##.bottom_banner
 detik.com##.detikads
 teknodiary.com##.googlepublisherads
 detik.com##.gtm_newsfeed_ads
+kaskus.co.id##.header__kasad
 carapedia.com##.img-banner
+kaskus.co.id##.kaskus-ads
 kompas.com##.kcm__horizontal.kcm
 detik.com##.newsfeed-ads
 viva.co.id##.paralax_banner-detail
@@ -5651,6 +5625,27 @@ jadwaltelevisi.com##.promo-banner
 cermati.com##.sticky-banner
 covesia.com##.topbanner
 inilah.com##.wb-300x250
+! 
+analisis.kontan.co.id###div-Top-Analisis
+caritahu.kontan.co.id###div-Top-Caritahu
+english.kontan.co.id###div-Top-English
+industri.kontan.co.id###div-Top-Industri
+internasional.kontan.co.id###div-Top-Internasional
+investasi.kontan.co.id###div-Top-Investasi
+keuangan.kontan.co.id###div-Top-Keuangan
+lifestyle.kontan.co.id###div-Top-Lifestyle
+nasional.kontan.co.id###div-Top-Nasional
+peluangusaha.kontan.co.id###div-Top-Peluangusaha
+personalfinance.kontan.co.id###div-Top-Personalfinance
+regional.kontan.co.id###div-Top-Regional
+tv.kontan.co.id###div-Top-tv
+english.kontan.co.id##.ads-r1
+kesehatan.kontan.co.id##.banner-adv-1
+! 
+grid.id###head-banner-ads
+grid.id##.ads-mr
+bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(11)
+bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
 ! ------------------------------------------------------------!
 ! *** abid:addons/movie.txt ***
 indoxxi.info##a[href^="https://goo.gl/"] > img
@@ -5712,10 +5707,14 @@ projects.co.id,sribulancer.com##.sumome-share-client-share
 kompasiana.com##.timeline--inform
 kompasiana.com##.timeline--write
 ! 
+wowkeren.com###TopikKeren
+otosia.com###kl-social-share
 tribunnews.com###share
 republika.co.id###sticky-share
 viva.co.id##.article-share
 beritagar.id##.article-sharer
+brilio.net##.banner-creator
+kontan.co.id##.bottom-share
 ligaolahraga.com##.box-medsos
 sindonews.com##.float-sosmed
 sindonews.com##.follow-me
@@ -5724,21 +5723,27 @@ ligaolahraga.com##.infeedcenter_homepage
 autonetmagz.com##.jssocials-shares
 republika.co.id##.newsletter
 cnnindonesia.com##.share
+brilio.net##.share-right
+brilio.net##.share-story
+teknodiary.com##.share_btn
 detik.com##.share_float
+sindulin.web.id##.sharepost
 poskotanews.com##.sharer-circle
 dapurpacu.com##.social-share
 okezone.com##.sosmedshare
+inilah.com##.stc
+idntimes.com##.sumome-share-client
 balipost.com##.td-post-sharing
+kontan.co.id##.top-share
 ||widget.kompas.com/widget-newsletter/
 ! 
-kaskus.co.id###forum-thread-top
-m.kaskus.co.id##.bnr-ads
-kaskus.co.id##.header__kasad
-kaskus.co.id##.kaskus-ads
+kaskus.co.id##.forum-control
+kaskus.co.id##.more-video
 m.kaskus.co.id##.nm-alert
 kaskus.co.id##.notice
 kaskus.co.id##.sidebar-wrap.row > .more-like
 fjb.kaskus.co.id##.slick-dotted
+kaskus.co.id##.top-feature
 ||microsite.kaskus.co.id/anniversary/
 ! 
 ! Perlu dicek
@@ -5965,4 +5970,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: fy5vi/kjLeyXO6YqTCpQdA
+! Checksum: dfqV9eW2XA6OiJgBBoCydQ
