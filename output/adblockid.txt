@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0116.1734
+! Version: 18.0117.0526
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Jan 2018 17:34 UTC
+! Last modified: 17 Jan 2018 05:26 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -33,17 +33,20 @@
 /iklan.
 /iklan/*
 /iklancpm.
-/pasangiklan
+/indofreeads_
+/pasang_iklan_
 /promo/banner/*
 /SkinADkanan.
 /SkinADkiri.
 /space-available.
 /wp-content/plugins/popup-builder/*
+_pasang_iklan_
 ! 
 ! 
 ! Popular dimension sizes
 -1000X180.
 -1000x60.
+-1000x70.
 -100x450.
 -100x500.
 -1080x65.
@@ -58,6 +61,7 @@
 -300-x-250-
 -300-x-250.
 -300-X-300-
+-300x1002.
 -300x200.gif
 -300x300.gif
 -300x38.
@@ -387,6 +391,7 @@ _996x50.gif
 /*asiacapsa*.gif
 /*asiagol*.gif
 /*astonbet*.gif
+/*ayoqq*.gif
 /*ayukQQ*.gif
 /*babeqq*.gif
 /*bakarat*.gif
@@ -430,6 +435,7 @@ _996x50.gif
 /*garudaqq*.gif
 /*gohbet*.gif
 /*gol88*.gif
+/*grand365*.gif
 /*h8indo*.gif
 /*hanabet*.gif
 /*hdpbet*.gif
@@ -442,6 +448,7 @@ _996x50.gif
 /*incarqq*.gif
 /*indobet*.gif
 /*indofreebet*.gif
+/*indomaxbet*.gif
 /*indonalo*.gif
 /*intanbet*.gif
 /*interwin*.gif
@@ -462,6 +469,7 @@ _996x50.gif
 /*ktlkuda*.gif
 /*ladangqq*.gif
 /*lahanbet*.gif
+/*lapak365*.gif
 /*lapakfortune*.gif
 /*lapakqq*.gif
 /*liga-88*.gif
@@ -495,6 +503,7 @@ _996x50.gif
 /*misiq*.gif
 /*mitraqq*.gif
 /*mkvgames*.gif
+/*motorqq*.gif
 /*musimnewqq*.gif
 /*musimqq*.gif
 /*muvibet*.gif
@@ -510,6 +519,7 @@ _996x50.gif
 /*pialaqq*.gif
 /*pkstar8*.gif
 /*pokerstar8*.
+/*pro-qq*.gif
 /*pulsaqq*.gif
 /*pusatqq*.gif
 /*qq288*.gif
@@ -547,7 +557,9 @@ _996x50.gif
 /*warungqq*.gif
 /*webajaib*.gif
 /*wigobet*.gif
+/*win228*.gif
 /*win323*.gif
+/*winning365*.gif
 /*wongpkr*.gif
 /*wpbet365*.gif
 /*zientoto*.gif
@@ -574,6 +586,7 @@ _996x50.gif
 ! *** abid:AdBlockID/general_hide.txt ***
 ##a[href="http://www.an.web.id/"]
 ! 
+##a[href*="http://indomaxb."] > img
 ##a[href^="http://108cash."] > img
 ##a[href^="http://167.114.87.240"] > img
 ##a[href^="http://323win."] > img
@@ -584,7 +597,9 @@ _996x50.gif
 ##a[href^="http://acerpoker."] > img
 ##a[href^="http://ahliqq."] > img
 ##a[href^="http://axiooqq."] > img
+##a[href^="http://ayoqq."] > img
 ##a[href^="http://cash381"] > img
+##a[href^="http://champspoker."] > img
 ##a[href^="http://danaqq."] > img
 ##a[href^="http://doyan99."] > img
 ##a[href^="http://duitasli."] > img
@@ -595,10 +610,15 @@ _996x50.gif
 ##a[href^="http://halobos"] > img
 ##a[href^="http://hobibet."] > img
 ##a[href^="http://hokibandarkiu."] > img
+##a[href^="http://hokicapsa."] > img
 ##a[href^="http://ibcqq."] > img
 ##a[href^="http://indolapak"] > img
+##a[href^="http://indoqq."] > img
 ##a[href^="http://istanapoker88."] > img
 ##a[href^="http://jaluralternatif."] > img
+##a[href^="http://jasapoker."] > img
+##a[href^="http://juarapoker."] > img
+##a[href^="http://kartu365."] > img
 ##a[href^="http://klikkiu"] > img
 ##a[href^="http://kliksakong."] > img
 ##a[href^="http://ligaasia."] > img
@@ -616,16 +636,21 @@ _996x50.gif
 ##a[href^="http://obipoker."] > img
 ##a[href^="http://okebos"] > img
 ##a[href^="http://okekiu."] > img
+##a[href^="http://olb365."] > img
+##a[href^="http://pasaranmurah."] > img
 ##a[href^="http://pasaranqq."] > img
 ##a[href^="http://pendekarqq."] > img
 ##a[href^="http://poker899."] > img
 ##a[href^="http://pokergo"] > img
 ##a[href^="http://pokerstar"] > img
+##a[href^="http://promosi365."] > img
+##a[href^="http://proqq."] > img
 ##a[href^="http://rajanyapoker."] > img
 ##a[href^="http://rgopoker"] > img
 ##a[href^="http://royalpoker"] > img
 ##a[href^="http://sentapoker."] > img
 ##a[href^="http://suhukiu."] > img
+##a[href^="http://suhuqq."] > img
 ##a[href^="http://tahunqq."] > img
 ##a[href^="http://tangkas"] > img
 ##a[href^="http://totokl."] > img
@@ -636,6 +661,7 @@ _996x50.gif
 ##a[href^="http://vidiojav."] > img
 ##a[href^="http://vipbet58."] > img
 ##a[href^="http://wahyu168"] > img
+##a[href^="http://winning365."] > img
 ##a[href^="http://www.11juni."] > img
 ##a[href^="http://www.234betting."] > img
 ##a[href^="http://www.888kartu."] > img
@@ -780,6 +806,7 @@ _996x50.gif
 ##.post-ad3
 ##.post-ads-top
 ##.pusat728
+##.sponsor_ads
 ##.top-ads-container
 ##.topadsense
 ##.topline-ads
@@ -1042,19 +1069,26 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||adstars.co.id^$third-party
 ||baliadv.com^$third-party
 ||brand.ad^$third-party
+||cdnasiaclub.com^$popup,third-party
 ||clickmedia.co.id^$third-party
 ||forumiklan.com^$third-party
 ||gudangbanner.com^$third-party
 ||halal.ad^$third-party
 ||iklanads.com^$third-party
 ||iklanbogor.com^$third-party
-||iklancpm.files.wordpress.com^$third-party
+||klikabadi.net^$third-party
+||klikajadeh.com^$third-party
 ||lokeriklan.com^$third-party
 ||masteriklan.net^$third-party
+||mesiniklan.andipublisher.com^$third-party
 ||pasangiklan.com^$third-party
+||pondokiklan.com^$third-party
+||props.id^$third-party
 ||publish.web.id^$third-party
+||sentrapromosi.com^$third-party
 ||shmokiads.com^$third-party
 ||sitti.co.id^$third-party
+||sumberiklan.com^$third-party
 ! *** abid:AdBlockID/popup.txt ***
 ||35.188.59.75^$popup,third-party
 ||abourselfi.com^$popup,third-party
@@ -5576,6 +5610,7 @@ hukumonline.com###adsb2b3
 hukumonline.com###adsk2
 hukumonline.com###adsp2
 hukumonline.com###adsp3
+otosia.com###box-mobil-dijual
 mangacanblog.com,pecintakomik.com###btm_banner
 komiku.net###floatads3
 carapedia.com###floating-banner
@@ -5591,17 +5626,15 @@ otosia.com###v5-showcase1
 kapanlagi.com,otosia.com###v5-showcase2
 kapanlagi.com###v8-leaderboard
 mangacanblog.com##.ad
-nonton.com##.adds
 gogirl.id,tempointeraktif.co##.ads
 detik.com,mangaku.web.id##.adv
 autonetmagz.com##.autonetmagz__meta--ads-elements
-ustream.tv##.banner
 beritagar.id##.banner--300x600
 rajamobil.com##.banner-billboard
 kabargames.id##.banner-kiri
 diskon.com##.banner-middle
 kompasiana.com##.banner-top
-cgv.id,ustream.tv##.banner-wrapper
+cgv.id##.banner-wrapper
 beritagar.id##.banner300x250
 cosmogirl.co.id##.bnr
 detik.com##.bottom_banner
@@ -5629,11 +5662,12 @@ movie303.com##a[href^="http://bit.ly/"] > img
 ||topddl.net/*.gif$image,domain=nanime.org
 ||wp.com/*/wp-content/uploads/*.gif$image,domain=drakorindo.club|nontonxxi.co
 ! 
+senimovies.net###bottom_banner
+lk21.pw###float-banner
 bioskop55.me###floating_banner_bottom
 cinemaqq.com###floating_banner_top
-lk21.pw###float-banner
+nonton.com##.adds
 n21.tv##.ban_empat
-senimovies.net###bottom_banner
 ||bioskop55.me/wp-content/uploads/*.gif$image
 ||cinemaindo.pro/wp-content/uploads/*.gif$image
 ||filmapik.me/wp-content/uploads/*.gif$image
@@ -5681,15 +5715,18 @@ kompasiana.com##.timeline--write
 tribunnews.com###share
 republika.co.id###sticky-share
 viva.co.id##.article-share
+beritagar.id##.article-sharer
 ligaolahraga.com##.box-medsos
 sindonews.com##.float-sosmed
 sindonews.com##.follow-me
 suara.com##.icon-social-widget
 ligaolahraga.com##.infeedcenter_homepage
+autonetmagz.com##.jssocials-shares
 republika.co.id##.newsletter
 cnnindonesia.com##.share
 detik.com##.share_float
 poskotanews.com##.sharer-circle
+dapurpacu.com##.social-share
 okezone.com##.sosmedshare
 balipost.com##.td-post-sharing
 ||widget.kompas.com/widget-newsletter/
@@ -5928,4 +5965,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: c2ebOxZZQ6zpbm+EZVzlmw
+! Checksum: fy5vi/kjLeyXO6YqTCpQdA
