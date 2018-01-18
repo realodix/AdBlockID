@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0118.0523
+! Version: 18.0118.1158
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Jan 2018 05:23 UTC
+! Last modified: 18 Jan 2018 11:58 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -53,6 +53,7 @@ _pasang_iklan_
 -1080X90.
 -1200x90.
 -120x-440.
+-120x327-
 -150x300px
 -160-x-300.
 -234x60.
@@ -475,6 +476,7 @@ _996x50.gif
 /*liga-88*.gif
 /*liga-cash*.gif
 /*liga108*.gif
+/*liga365*.gif
 /*liga77*.gif
 /*liga855*.
 /*liga88*.gif
@@ -537,6 +539,7 @@ _996x50.gif
 /*sponsor-qq*.gif
 /*sponsorqq*.gif
 /*stardomino*.gif
+/*suhu-qq*.gif
 /*suhuqq*.gif
 /*surgawin*.gif
 /*tahunqq.gif
@@ -621,6 +624,7 @@ _996x50.gif
 ##a[href^="http://kartu365."] > img
 ##a[href^="http://klikkiu"] > img
 ##a[href^="http://kliksakong."] > img
+##a[href^="http://kokipoker99."] > img
 ##a[href^="http://ligaasia."] > img
 ##a[href^="http://ligakiukiu"] > img
 ##a[href^="http://lobbyqq"] > img
@@ -646,6 +650,7 @@ _996x50.gif
 ##a[href^="http://promosi365."] > img
 ##a[href^="http://proqq."] > img
 ##a[href^="http://rajanyapoker."] > img
+##a[href^="http://redbullqq."] > img
 ##a[href^="http://rgopoker"] > img
 ##a[href^="http://royalpoker"] > img
 ##a[href^="http://sentapoker."] > img
@@ -672,8 +677,10 @@ _996x50.gif
 ##a[href^="http://www.bejoqq."] > img
 ##a[href^="http://www.blue5star."] > img
 ##a[href^="http://www.bola168bet."] > img
+##a[href^="http://www.bola180."] > img
 ##a[href^="http://www.bursatogel."] > img
 ##a[href^="http://www.cemejudi."] > img
+##a[href^="http://www.dahsyatqq."] > img
 ##a[href^="http://www.global303."] > img
 ##a[href^="http://www.hoki228."] > img
 ##a[href^="http://www.infoterapis"] > img
@@ -709,6 +716,7 @@ _996x50.gif
 ##a[href^="https://doyan99."] > img
 ##a[href^="https://indobandar"] > img
 ##a[href^="https://mustikaku."] > img
+##a[href^="https://natabet."] > img
 ##a[href^="https://ompoker."] > img
 ##a[href^="https://www.365dewa."] > img
 ##a[href^="https://www.bola168bet."] > img
@@ -732,7 +740,6 @@ _996x50.gif
 ###desaiklan
 ###dewiqq
 ###et_ads-2
-###fbanner
 ###fbawah
 ###fbbanner
 ###flowads
@@ -5666,15 +5673,19 @@ bioskop55.me###floating_banner_bottom
 cinemaqq.com###floating_banner_top
 nonton.com##.adds
 n21.tv##.ban_empat
+||bioskop45.com/Banner/*.gif$image
 ||bioskop55.me/wp-content/uploads/*.gif$image
 ||cinemaindo.pro/wp-content/uploads/*.gif$image
 ||filmapik.me/wp-content/uploads/*.gif$image
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
 ||idbioskop.com/wp-content/uploads/*.gif$image
+||indexmovie.biz/assets/*.gif$image
+||indexmovie.biz/iframe/content.php$first-party,subdocument
 ||indocinema21.com/banner/*.gif$image
 ||layarcinema.co/wp-content/uploads/*.gif$image
 ||layarhd.com/media/*.gif
 ||lk21.in/wp-content/uploads/*.gif$image
+||lk21.li/wp-content/uploads/*.gif$image
 ||lk21.pw/assets/*.gif$image
 ||lkaca21.com/wp-content/uploads/*.gif$image
 ||movie303.com/wp-content/uploads/*.gif$image
@@ -5697,6 +5708,7 @@ n21.tv##.ban_empat
 @@||mivo.com^$generichide
 @@||sobatdrama.net^$generichide
 @@||viu21.info^$generichide
+bioskop45.com#@#div[class^="iklan"]
 ! *** abid:addons/annoyances.txt ***
 ##.berlangganan-box
 ##.idmuvi-social-share
@@ -5962,7 +5974,6 @@ kaskus.co.id##.top-feature
 @@||safelkmeong.blogspot.com^$generichide
 @@||tutorialweb.net^$generichide
 agroindustri.id#@#.category-advertorial
-bioskop45.com#@#div[class^="iklan"]
 ! 
 ! Adblock Notify plugin https://themeisle.com/plugins/adblock-notify/
 mangaindo.web.id#@##adsense
@@ -5973,4 +5984,4 @@ mangaindo.web.id#@##adsense
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: 3PJHp0mLeTNv5uOYZNx2Gw
+! Checksum: RwUHqrRo6hVUSWmjPv+6CA
