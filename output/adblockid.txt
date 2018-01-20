@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0119.1745
+! Version: 18.0120.0438
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 Jan 2018 17:45 UTC
+! Last modified: 20 Jan 2018 04:38 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -41,7 +41,6 @@
 /space-available.
 /wp-content/plugins/popup-builder/*
 _pasang_iklan_
-! 
 ! 
 ! Popular dimension sizes
 -1000X180.
@@ -422,6 +421,7 @@ _996x50.gif
 /*cantikqq*.gif
 /*casinoeve*.gif
 /*casinoterbaik*.gif
+/*cebanqq*.gif
 /*citybet*.gif
 /*cmcbet*.gif
 /*cmcwin*.gif
@@ -1138,6 +1138,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||sitti.co.id^$third-party
 ||sumberiklan.com^$third-party
 ! *** abid:AdBlockID/popup.txt ***
+||/depodomino.$popup
 ||35.188.59.75^$popup,third-party
 ||abourselfi.com^$popup,third-party
 ||baligoal.net^$popup,third-party
@@ -1365,6 +1366,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||bfidvcsuazwy.com^
 ||bflcuvtyffao.bid^
 ||bfpzhrzcvs.bid^
+||bfsssvkowvh.com^
 ||bgbmtqzoc.bid^
 ||bgfgaduyvocz.com^
 ||bgpxrwjrbsjb.com^
@@ -1713,6 +1715,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dgulomuzgkyjhe.bid^
 ||dgycvdyncugrd.bid^
 ||dhenktvqqmbcnj.bid^
+||dhienrfamv.com^
 ||dhlnlwxspczc.com^
 ||dhmhdiozqbnq.com^
 ||dhomixidnkas.com^
@@ -1790,6 +1793,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dulcetcgvcxr.com^
 ||dusgihujnthv.com^
 ||dutvcvwebocux.bid^
+||dutypzccyhr.com^
 ||duumdqyt.bid^
 ||duvyjbofwfqh.com^
 ||duxyrxhfwilv.com^
@@ -2045,6 +2049,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||fkivuntlyd.bid^
 ||fkkjsdpppv.bid^
 ||fkpbbmgqa.bid^
+||fkphqtgqrfixl.com^
 ||fkrrvhoierty.com^
 ||fkwwhndzjlqrm.com^
 ||flooaiaubf.bid^
@@ -2499,6 +2504,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||hyhabjqndvwf.bid^
 ||hywwsavdydy.bid^
 ||hyzncftkveum.com^
+||hzulgipdcbgwad.com^
 ||hzwxkqnqrdfv.com^
 ||hzxtamstwecry.bid^
 ||hzyvjghy.bid^
@@ -3442,6 +3448,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||nftmatxswtow.bid^
 ||nfuqjjlfqjixo.bid^
 ||nfxusyviqsnh.com^
+||nfzaustkhtkd.com^
 ||ngnofhussaao.com^
 ||nguooqblyjrz.com^
 ||nhbklvpswckx.com^
@@ -4183,6 +4190,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||rrcdzcts.bid^
 ||rrfuviqoyabfep.bid^
 ||rrhzlgzazz.bid^
+||rriqwzgmaazsp.com^
 ||rrjkbdgwoh.bid^
 ||rrqmebej.bid^
 ||rrrdddbtofnf.com^
@@ -4736,6 +4744,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||uxjekaexjsxe.bid^
 ||uxmskpwnsmzlro.bid^
 ||uxokueepol.bid^
+||uxrvjeyyj.com^
 ||uxvbvwelamufit.bid^
 ||uxvtglgbeshxn.bid^
 ||uxwruhzmztyfr.bid^
@@ -5803,12 +5812,20 @@ detik.com##.share_float
 sindulin.web.id##.sharepost
 poskotanews.com##.sharer-circle
 dapurpacu.com,uzone.id##.social-share
+inwepo.co##.social-sharing-bot
+inwepo.co##.social-sharing-top
 okezone.com##.sosmedshare
+carisinyal.com##.st-btn
 inilah.com##.stc
 idntimes.com##.sumome-share-client
-balipost.com##.td-post-sharing
+balipost.com,dianisa.com##.td-post-sharing
 kontan.co.id##.top-share
 ||widget.kompas.com/widget-newsletter/
+! 
+jalantikus.com###cover-share
+jalantikus.com##.addon-apps
+jalantikus.com##.appsinner
+jalantikus.com##.subscribe-detail
 ! 
 kaskus.co.id##.forum-control
 kaskus.co.id##.more-video
@@ -5860,27 +5877,39 @@ kaskus.co.id##.top-feature
 /xmr.min.js
 ?proxy*=wss://$script,websocket
 ! 
+.accountant^$third-party,websocket
 .bid^$third-party,websocket
 .cf^$third-party,websocket
 .club^$third-party,websocket
+.cricket^$third-party,websocket
 .date^$third-party,websocket
+.download^$third-party,websocket
 .faith^$third-party,websocket
 .fun^$third-party,websocket
+.ga/*.wasm
 .ga^$third-party,websocket
 .men^$third-party,websocket
 .ml^$third-party,websocket
 .party^$third-party,websocket
 .pro^$third-party,websocket
+.racing^$third-party,websocket
+.review^$third-party,websocket
 .rocks^$third-party,websocket
 .science^$third-party,websocket
 .site^$third-party,websocket
 .space^$third-party,websocket
 .stream^$third-party,websocket
+.tk^$third-party,websocket
+.trade^$third-party,websocket
+.webcam^$third-party,websocket
 .win^$third-party,websocket
 .xyz^$third-party,websocket
+/bootstrap.wasm$third-party
 /cn.wasm$third-party
+/hash.wasm
 /helper.wasm$third-party
 /lib/cn.wasm$third-party
+/nano.wasm
 /noblock.js
 ://api.*/lib/native.wasm$third-party
 ||1beb2a44.space^$third-party
@@ -5910,8 +5939,11 @@ kaskus.co.id##.top-feature
 ||bablace.com^$third-party
 ||baiduccdn1.com^$third-party
 ||befirstcdn.com^$third-party
+||berserkpl.net.pl^$websocket
+||bewaslac.com^$third-party
 ||biberukalap.com^$third-party
 ||bjorksta.men^$third-party
+||bowithow.com^$third-party
 ||c0i8h8ac7e.bid^$third-party
 ||cdnfile.xyz^$third-party
 ||chainblock.science^$third-party
@@ -5941,6 +5973,7 @@ kaskus.co.id##.top-feature
 ||deepc.cc^$third-party
 ||dle-news.pw^$third-party
 ||dovinate.top^$third-party
+||fastcast.nz^$third-party
 ||fge9vbrzwt.bid^$third-party
 ||flu.cc^$third-party
 ||g-content.bid^$third-party
@@ -5950,6 +5983,7 @@ kaskus.co.id##.top-feature
 ||hallaert.online^$third-party
 ||hashforcash.us^$third-party
 ||hashing.win^$third-party
+||hegrinhar.com^$third-party
 ||hemnes.win^$third-party
 ||hodlers.party^$third-party
 ||hodling.faith^$third-party
@@ -5957,6 +5991,7 @@ kaskus.co.id##.top-feature
 ||hodling.science^$third-party
 ||host.d-ns.ga^$third-party
 ||igg.biz^$third-party
+||ingorob.com^$third-party
 ||jquery-uim.download^$third-party
 ||jroqvbvw.info^$third-party
 ||jsccnn.com^$third-party
@@ -5989,26 +6024,42 @@ kaskus.co.id##.top-feature
 ||okeyletsgo.ml^$third-party
 ||onlinereserchstatistics.online^$third-party
 ||papoto.com^$third-party
+||playerassets.info^$third-party
 ||podrltid.info^$third-party
 ||ppoi.org^$third-party
 ||projectpoi.com^$third-party
 ||reasedoper.pw^$third-party
+||refunevent.com^$third-party
+||rencohep.com^$third-party
+||renhertfo.com^$third-party
 ||reservedoffers.club^$third-party
+||retadint.com^$third-party
+||rineventrec.com^$third-party
+||rintindown.com^$third-party
 ||rocks.io^$third-party
 ||sbhmn-miner.com^$third-party
 ||secumine.net^$third-party
 ||siteverification.online^$third-party
 ||siteverification.site^$third-party
+||smectapop12.pl^$third-party
 ||sparnove.com^$third-party
 ||static-cnt.bid^$third-party
 ||statistic.date^$third-party
 ||subloader.cf^$third-party
 ||supportxmr.com^$third-party
+||thatresha.com^$third-party
+||tokyodrift.ga^$third-party
+||tracker.openwebtorrent.com^$third-party
+||tracker.webtorrent.io^$third-party
+||ue696vbd9l.bid^$third-party
 ||usa.cc^$third-party
 ||vcfs6ip5h6.bid^$third-party
+||veritrol.com^$third-party
 ||webassembly.stream^$third-party
 ||webmine.cz^$third-party
 ||webmine.pro^$third-party
+||webminepool.com^$third-party
+||webminepool.tk^$third-party
 ||wsp.marketgid.com^$third-party
 ||wty46.com^$third-party
 ||xbasfbno.info^$third-party
@@ -6017,29 +6068,26 @@ kaskus.co.id##.top-feature
 .info^$script,third-party,domain=oload.info|oload.tv|openload.co|streamango.com|streamcherry.com
 ||2giga.link^*/hive.js
 ||gus.host/coins.js
+||hive.tubetitties.com^
 ||rawgit.com/Pocketart/$script,third-party
 ||reactor.cc^*.wasm
 ! *** abid:AdBlockID/whitelist.txt ***
-@@||ad4msan.com^$elemhide
-@@||eramuslim.com^$generichide
+@@/ad/*$domain=ad4msan.com|mastekno.com|oploverz.in|pesnewupdate.click|safelkmeong.blogspot.com
+@@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@||indoshares.com^$generichide
 @@||inwepo.co^$generichide
+@@||mangaindo.web.id^$generichide
 @@||mangashiro.net^$generichide
-@@||mastekno.com^$generichide
 @@||neumanga.tv^$generichide
 @@||oploverz.in^$generichide
-@@||pesnewupdate.click^$generichide
 @@||safelkmeong.blogspot.com^$generichide
 @@||tutorialweb.net^$generichide
 agroindustri.id#@#.category-advertorial
-! 
-! Adblock Notify plugin https://themeisle.com/plugins/adblock-notify/
-mangaindo.web.id#@##adsense
-! 
+eramuslim.com#@##topAd
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
 ! 
 ! https://forum.adguard.com/index.php?threads/tinypaste-cc-anti-adblock.25852/
 tinypaste.cc#@##banner_ad
-! Checksum: 8T8PWXBt96hk424ZRCCx7A
+! Checksum: Sf53JXeF4KWaAfG7iFhTCg
