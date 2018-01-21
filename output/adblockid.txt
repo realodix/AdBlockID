@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0120.1718
+! Version: 18.0121.0711
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Jan 2018 17:18 UTC
+! Last modified: 21 Jan 2018 07:11 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -18,6 +18,7 @@
 -iklan.png
 .id/adv/
 /*iklan2*.
+/*pasangiklan*.
 /*space-iklan*.
 /ads-img/*
 /adServe/*$popup
@@ -83,8 +84,10 @@ _pasang_iklan_
 -485x60.
 -485x70.
 -500x60.
+-500x80.
 -520X60.
 -520x65.
+-520X70.
 -530x60.
 -540x60-
 -540x60.
@@ -96,6 +99,7 @@ _pasang_iklan_
 -65X440.
 -680x60.
 -700x70.
+-700x70px
 -710x140.
 -728-90-
 -728-x-90.
@@ -549,6 +553,7 @@ _996x50.gif
 /*pusatqq*.gif
 /*qq288*.gif
 /*qqhok*.gif
+/*qqnewbet*.$image
 /*qqnewbet*.gif
 /*qqterbaik*.gif
 /*raja365.gif
@@ -598,20 +603,24 @@ _996x50.gif
 /b2indo.gif
 /hoyajpnew*.gif
 /hoyapkrnew*.gif
+/linkalternatif.$image
+/mb88.$image
 /newAFA.gif
-/newhoya-
+/newhoya-$image
 /newJAYA.gif
 /newRGOTOG.gif
 /newTEXAS.gif
 /OBC.gif
 /pendekarqq-
-/qqnewbet.
-/RGO-CASINO-
-/RGOCASINO-
-/RgoCasino.
+/pokerstar8-$image
+/RGO-CASINO-$image
+/RGOCASINO-$image
+/RgoCasino.$image
+/RPK99-$image
 /sbcc-new.gif
 /SBCC.gif
 /starwin.gif
+/vibol.$image
 /wigo.gif
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/general_hide.txt ***
@@ -656,6 +665,7 @@ _996x50.gif
 ##a[href^="http://lahanpoker."] > img
 ##a[href^="http://ligaasia."] > img
 ##a[href^="http://ligakiukiu"] > img
+##a[href^="http://linkalternatif."] > img
 ##a[href^="http://lobbyqq"] > img
 ##a[href^="http://lpkiukiu"] > img
 ##a[href^="http://masterbandar88."] > img
@@ -692,6 +702,7 @@ _996x50.gif
 ##a[href^="http://undepo."] > img
 ##a[href^="http://vazbet."] > img
 ##a[href^="http://vegasonlineweb."] > img
+##a[href^="http://vibol."] > img
 ##a[href^="http://vidiojav."] > img
 ##a[href^="http://vipbet58."] > img
 ##a[href^="http://wahyu168"] > img
@@ -735,6 +746,7 @@ _996x50.gif
 ##a[href^="http://www.oppopoker.com"]
 ##a[href^="http://www.pkrvqq."] > img
 ##a[href^="http://www.poin4d."] > img
+##a[href^="http://www.pokerstar8."] > img
 ##a[href^="http://www.pokerww."] > img
 ##a[href^="http://www.ptliga365."] > img
 ##a[href^="http://www.raja111."] > img
@@ -1138,6 +1150,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||sitti.co.id^$third-party
 ||sumberiklan.com^$third-party
 ! *** abid:AdBlockID/popup.txt ***
+/323win.$popup
 /b2poker.$popup
 /baligoal.$popup
 /depodomino.$popup
@@ -1495,6 +1508,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||bweqokcd.bid^
 ||bwlstzzqxpuxr.bid^
 ||bwnrgfhbd.bid^
+||bwoefrhtycp.com^
 ||bwpqqofejekh.com^
 ||bwuxrzvr.bid^
 ||bxfsdzpffy.bid^
@@ -2792,6 +2806,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||jqmcbepfjgks.com^
 ||jqojocdbjpdyk.bid^
 ||jqtftqnkhsw.bid^
+||jqtsknmobyw.com^
 ||jqusvvfzw.bid^
 ||jrauyqdbit.bid^
 ||jrdxlxdnohjzs.bid^
@@ -3930,6 +3945,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||qbvwcrtsyur.bid^
 ||qbywtukryaqpp.bid^
 ||qbyzytmymz.bid^
+||qcjphhqwl.com^
 ||qclxheddcepf.com^
 ||qcogokgclksa.com^
 ||qcopnsmjo.bid^
@@ -4681,6 +4697,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ukvkloytfaw.bid^
 ||ukxeudykhgdi.com^
 ||ukxpwwdnnbmqzu.bid^
+||ulbriabm.com^
 ||ulffbcunqnpv.com^
 ||ulhokncmea.bid^
 ||ulnpoxaxici.bid^
@@ -5806,7 +5823,9 @@ kompasiana.com##.timeline--write
 wowkeren.com###TopikKeren
 otosia.com###kl-social-share
 tribunnews.com###share
+kontan.co.id###share-it
 republika.co.id###sticky-share
+kontan.co.id###subcription
 viva.co.id##.article-share
 beritagar.id##.article-sharer
 brilio.net##.banner-creator
@@ -5828,6 +5847,9 @@ poskotanews.com##.sharer-circle
 dapurpacu.com,uzone.id##.social-share
 inwepo.co##.social-sharing-bot
 inwepo.co##.social-sharing-top
+metrotvnews.com##.socialmedia1
+metrotvnews.com##.socialmedia2
+bisnis.com##.socmed
 okezone.com##.sosmedshare
 carisinyal.com##.st-btn
 inilah.com##.stc
@@ -5849,6 +5871,14 @@ kaskus.co.id##.sidebar-wrap.row > .more-like
 fjb.kaskus.co.id##.slick-dotted
 kaskus.co.id##.top-feature
 ||microsite.kaskus.co.id/anniversary/
+! 
+industri.kontan.co.id###div-Halfpage-Industri
+internasional.kontan.co.id###div-Halfpage-Internasional
+investasi.kontan.co.id###div-Halfpage-Investasi
+keuangan.kontan.co.id###div-Halfpage-Keuangan
+nasional.kontan.co.id###div-Halfpage-Nasional
+peluangusaha.kontan.co.id###div-Halfpage-Peluangusaha
+regional.kontan.co.id###div-Halfpage-Regional
 ! 
 ! Perlu dicek
 ! Experiment
@@ -6103,4 +6133,4 @@ eramuslim.com#@##topAd
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: QDojpOZX5zQDoJzgvnWUtQ
+! Checksum: gpMjDpYDFHe7jFFWVd591A
