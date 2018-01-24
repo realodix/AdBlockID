@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0124.0336
+! Version: 18.0124.0340
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Jan 2018 03:36 UTC
+! Last modified: 24 Jan 2018 03:40 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -5952,11 +5952,14 @@ regional.kontan.co.id###div-Halfpage-Regional
 ! To foil sites potentially abusing CPU/bandwidth resources without informed
 ! consent. Any such resource-abuse scripts MUST be opt-in, with complete
 ! informed consent from the visitor.
+.ga/*.wasm
 /aj-crypto-miner/*
+/bootstrap.wasm$third-party
 /c-hive.js
 /c.wasm
 /cloudcoins.js
 /cloudcoins.min.js
+/cn.wasm
 /coinblind.js
 /coinblind_beta.
 /coinhive.min.js
@@ -5965,6 +5968,7 @@ regional.kontan.co.id###div-Halfpage-Regional
 /cryptonight.wasm
 /deepMiner.js
 /hash.wasm
+/helper.wasm$third-party
 /inject.js?key=$script
 /jsecoin.*/?
 /lhnhelpouttab-current.min.js
@@ -5972,6 +5976,8 @@ regional.kontan.co.id###div-Halfpage-Regional
 /miner.js
 /miner.min.js
 /miner?key=
+/nano.wasm
+/noblock.js
 /obfus.min.js
 /projectpoi.min.js
 /wproxy$~third-party,websocket
@@ -6169,6 +6175,7 @@ $websocket,xmlhttprequest,domain=a-o.ninja|lewd.ninja|love-drama.pl|oload.info|o
 ||hive.tubetitties.com^
 ||rawgit.com/Pocketart/$script,third-party
 ||reactor.cc^*.wasm
+||vidfile.net^$third-party,websocket,xmlhttprequest
 ! *** abid:AdBlockID/whitelist.txt ***
 @@/ad/*$domain=ad4msan.com|mastekno.com|oploverz.in|pesnewupdate.click|safelkmeong.blogspot.com
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
@@ -6187,4 +6194,4 @@ eramuslim.com#@##topAd
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: GDPhOQFQQERHKiADaAwZ8Q
+! Checksum: HtY2XotAVYnaG2nX9RNH1g
