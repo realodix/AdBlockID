@@ -5,6 +5,8 @@
 ! informed consent from the visitor.
 .ga/*.wasm
 /aj-crypto-miner/*
+/ajcm-inject.
+/ajcryptominer/*
 /bootstrap.wasm$third-party
 /c-hive.js
 /c.wasm
@@ -18,6 +20,7 @@
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
+/deepMiner.min.js
 /hash.wasm
 /helper.wasm$third-party
 /inject.js?key=$script
@@ -36,6 +39,7 @@
 /xminer.min.js
 /xmr.js
 /xmr.min.js
+?proxy*=ws://$script,websocket
 ?proxy*=wss://$script,websocket
 !
 .accountant^$third-party,websocket
@@ -51,6 +55,7 @@
 .gq^$third-party,websocket
 .men^$third-party,websocket
 .ml^$third-party,websocket
+.ovh^$third-party,websocket
 .party^$third-party,websocket
 .pro^$third-party,websocket
 .racing^$third-party,websocket
@@ -81,8 +86,10 @@
 ||77.162.125.199^$third-party
 ||abc.pema.cl^third-party
 ||ad-miner.com^$third-party
+||adless.io^$third-party
 ||adminer.com^$third-party
 ||afminer.com^$third-party
+||ajplugins.com^$third-party
 ||aleinvest.xyz^$third-party
 ||alemoney.xyz^$third-party
 ||altpool.pro^$third-party
@@ -122,9 +129,11 @@
 ||cookiescript.info^$third-party
 ||crypto-coins.club^$third-party
 ||crypto-loot.com^$third-party
+||crypto-webminer.com^$third-party
 ||cryptobara.com^$third-party
 ||cryptoloot.pro^$third-party
 ||cryptomine.pro^$third-party
+||cryptonoter.com^$third-party
 ||csgocpu.com^$third-party
 ||deepc.cc^$third-party
 ||dle-news.pw^$third-party
@@ -133,7 +142,9 @@
 ||fge9vbrzwt.bid^$third-party
 ||flare-analytics.com^$third-party
 ||flu.cc^$third-party
+||freecontent.bid^$third-party
 ||g-content.bid^$third-party
+||github.io/*.wasm$third-party
 ||goredirect.party^$third-party
 ||gridiogrid.com^$third-party
 ||gus.host^$third-party
@@ -148,6 +159,7 @@
 ||hodling.science^$third-party
 ||host.d-ns.ga^$third-party
 ||igg.biz^$third-party
+||igrid.org^$third-party
 ||ingorob.com^$third-party
 ||jquery-uim.download^$third-party
 ||jroqvbvw.info^$third-party
@@ -175,9 +187,11 @@
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
 ||morningdigit.com^$third-party
+||mutuza.win^$third-party
 ||nahnoji.cz^$third-party
 ||noblock.pro^$third-party
 ||nut.cc^$third-party
+||ogrid.org^$third-party
 ||okeyletsgo.ml^$third-party
 ||onlinereserchstatistics.online^$third-party
 ||papoto.com^$third-party
@@ -213,11 +227,13 @@
 ||usa.cc^$third-party
 ||vcfs6ip5h6.bid^$third-party
 ||veritrol.com^$third-party
+||vzhjnorkudcxbiy.com^$third-party
 ||webassembly.stream^$third-party
 ||webmine.cz^$third-party
 ||webmine.pro^$third-party
 ||webminepool.com^$third-party
 ||webminepool.tk^$third-party
+||whathyx.com^$third-party
 ||wsp.marketgid.com^$third-party
 ||wty46.com^$third-party
 ||xbasfbno.info^$third-party
@@ -225,10 +241,13 @@
 ||ywtjdckysve.com^$third-party
 ||zlx.com.br^$third-party
 !
-$websocket,xmlhttprequest,domain=a-o.ninja|lewd.ninja|love-drama.pl|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
+$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|fileone.tv|jkanime.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
 ||2giga.link^*/hive.js
+||cryweb.github.io^
+||crywebber.github.io^
 ||gus.host/coins.js
 ||hive.tubetitties.com^
+||miner.nablabee.com^
 ||rawgit.com/Pocketart/$script,third-party
 ||reactor.cc^*.wasm
 ||vidfile.net^$third-party,websocket,xmlhttprequest

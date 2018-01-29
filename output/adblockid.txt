@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0129.0509
+! Version: 18.0129.1731
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Jan 2018 05:09 UTC
+! Last modified: 29 Jan 2018 17:31 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -34,7 +34,6 @@
 /bnr-samping.
 /bnr-tengah.
 /iklan-
-/iklan.
 /iklan/*
 /iklan1.
 /iklan2.
@@ -1135,7 +1134,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID/adservers.txt ***
 ||accesstrade.co.id^$third-party
 ||addesigner.com^$third-party
-||adexchangecloud.com^$third-party
 ||adflazz.com^$third-party
 ||adop.cc^$third-party
 ||adplus.co.id^$third-party
@@ -1148,8 +1146,6 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||brand.ad^$third-party
 ||cdnasiaclub.com^$popup,third-party
 ||clickmedia.co.id^$third-party
-||clickredirection.com^$third-party
-||codeonclick.com^$third-party
 ||forumiklan.com^$third-party
 ||gudangbanner.com^$third-party
 ||halal.ad^$third-party
@@ -1487,6 +1483,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||bprnphojtfl.bid^
 ||bqbagfhhbhyzq.bid^
 ||bqdpscae.bid^
+||bqgvtryyrhjmf.com^
 ||bqptlqmtroto.com^
 ||bqqjowpigdnx.com^
 ||bqscwtvpvugopg.com^
@@ -1797,6 +1794,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dmojscqlwewu.com^
 ||dmvegzsxaxn.com^
 ||dneglbgcycpcab.bid^
+||dneqghbwlmyjnj.com^
 ||dnjxoflvkvec.com^
 ||dnntgcfejsg.bid^
 ||dnoucjqzsasm.com^
@@ -2807,6 +2805,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||jllveksikabohj.bid^
 ||jllzvqolrdu.bid^
 ||jlmirsfthnmh.com^
+||jlppkzffsksna.com^
 ||jlqmdejwvezpt.com^
 ||jlslujfguojw.com^
 ||jmbhyqijqhxk.com^
@@ -2875,6 +2874,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||juyfhwxcvzft.com^
 ||jvdrscohwxopj.bid^
 ||jvepcgbq.bid^
+||jvhdxosisifv.com^
 ||jvnubhidaev.bid^
 ||jvnvvuveozfi.com^
 ||jvodizomnxtg.com^
@@ -3260,6 +3260,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||lvpcqndtdk.bid^
 ||lvpdchbxgoral.bid^
 ||lvrvufurxhgp.com^
+||lwaqcpjegbwm.com^
 ||lwasxldakmhx.com^
 ||lwepsxhcm.bid^
 ||lwjzsigenxsl.com^
@@ -3722,6 +3723,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||oiramtfxzqfc.com^
 ||oiuilhjzqvf.bid^
 ||oivhkhvbqjh.bid^
+||ojiffvsutzrx.com^
 ||ojngisbfwwyp.com^
 ||ojsfvukuqxdx.bid^
 ||ojtcgnyikbtg.bid^
@@ -5219,6 +5221,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||wvgrpwdaol.bid^
 ||wvhbzhlbdlq.bid^
 ||wvisynqx.bid^
+||wvjbsdjplo.com^
 ||wvjjjdjficj.bid^
 ||wvmtyaqdp.bid^
 ||wvqqugicfuac.com^
@@ -5393,6 +5396,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||xxyafiswqcqz.com^
 ||xxypskosek.bid^
 ||xycbrnotvcat.com^
+||xyfrnfoijncmu.com^
 ||xyiawbjnajcm.bid^
 ||xyknfufvlk.bid^
 ||xymyozxsofipvq.com^
@@ -5943,6 +5947,8 @@ kaskus.co.id##.top-feature
 ! informed consent from the visitor.
 .ga/*.wasm
 /aj-crypto-miner/*
+/ajcm-inject.
+/ajcryptominer/*
 /bootstrap.wasm$third-party
 /c-hive.js
 /c.wasm
@@ -5956,6 +5962,7 @@ kaskus.co.id##.top-feature
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
+/deepMiner.min.js
 /hash.wasm
 /helper.wasm$third-party
 /inject.js?key=$script
@@ -5974,6 +5981,7 @@ kaskus.co.id##.top-feature
 /xminer.min.js
 /xmr.js
 /xmr.min.js
+?proxy*=ws://$script,websocket
 ?proxy*=wss://$script,websocket
 ! 
 .accountant^$third-party,websocket
@@ -5989,6 +5997,7 @@ kaskus.co.id##.top-feature
 .gq^$third-party,websocket
 .men^$third-party,websocket
 .ml^$third-party,websocket
+.ovh^$third-party,websocket
 .party^$third-party,websocket
 .pro^$third-party,websocket
 .racing^$third-party,websocket
@@ -6019,8 +6028,10 @@ kaskus.co.id##.top-feature
 ||77.162.125.199^$third-party
 ||abc.pema.cl^third-party
 ||ad-miner.com^$third-party
+||adless.io^$third-party
 ||adminer.com^$third-party
 ||afminer.com^$third-party
+||ajplugins.com^$third-party
 ||aleinvest.xyz^$third-party
 ||alemoney.xyz^$third-party
 ||altpool.pro^$third-party
@@ -6060,9 +6071,11 @@ kaskus.co.id##.top-feature
 ||cookiescript.info^$third-party
 ||crypto-coins.club^$third-party
 ||crypto-loot.com^$third-party
+||crypto-webminer.com^$third-party
 ||cryptobara.com^$third-party
 ||cryptoloot.pro^$third-party
 ||cryptomine.pro^$third-party
+||cryptonoter.com^$third-party
 ||csgocpu.com^$third-party
 ||deepc.cc^$third-party
 ||dle-news.pw^$third-party
@@ -6071,7 +6084,9 @@ kaskus.co.id##.top-feature
 ||fge9vbrzwt.bid^$third-party
 ||flare-analytics.com^$third-party
 ||flu.cc^$third-party
+||freecontent.bid^$third-party
 ||g-content.bid^$third-party
+||github.io/*.wasm$third-party
 ||goredirect.party^$third-party
 ||gridiogrid.com^$third-party
 ||gus.host^$third-party
@@ -6086,6 +6101,7 @@ kaskus.co.id##.top-feature
 ||hodling.science^$third-party
 ||host.d-ns.ga^$third-party
 ||igg.biz^$third-party
+||igrid.org^$third-party
 ||ingorob.com^$third-party
 ||jquery-uim.download^$third-party
 ||jroqvbvw.info^$third-party
@@ -6113,9 +6129,11 @@ kaskus.co.id##.top-feature
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
 ||morningdigit.com^$third-party
+||mutuza.win^$third-party
 ||nahnoji.cz^$third-party
 ||noblock.pro^$third-party
 ||nut.cc^$third-party
+||ogrid.org^$third-party
 ||okeyletsgo.ml^$third-party
 ||onlinereserchstatistics.online^$third-party
 ||papoto.com^$third-party
@@ -6151,11 +6169,13 @@ kaskus.co.id##.top-feature
 ||usa.cc^$third-party
 ||vcfs6ip5h6.bid^$third-party
 ||veritrol.com^$third-party
+||vzhjnorkudcxbiy.com^$third-party
 ||webassembly.stream^$third-party
 ||webmine.cz^$third-party
 ||webmine.pro^$third-party
 ||webminepool.com^$third-party
 ||webminepool.tk^$third-party
+||whathyx.com^$third-party
 ||wsp.marketgid.com^$third-party
 ||wty46.com^$third-party
 ||xbasfbno.info^$third-party
@@ -6163,10 +6183,13 @@ kaskus.co.id##.top-feature
 ||ywtjdckysve.com^$third-party
 ||zlx.com.br^$third-party
 ! 
-$websocket,xmlhttprequest,domain=a-o.ninja|lewd.ninja|love-drama.pl|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
+$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|fileone.tv|jkanime.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
 ||2giga.link^*/hive.js
+||cryweb.github.io^
+||crywebber.github.io^
 ||gus.host/coins.js
 ||hive.tubetitties.com^
+||miner.nablabee.com^
 ||rawgit.com/Pocketart/$script,third-party
 ||reactor.cc^*.wasm
 ||vidfile.net^$third-party,websocket,xmlhttprequest
@@ -6188,4 +6211,4 @@ eramuslim.com#@##topAd
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: 30oSg8MxfIYlB+ip/B+E/w
+! Checksum: WKYssak8RRVQalKjcbvzzQ
