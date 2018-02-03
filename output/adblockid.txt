@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0203.0508
+! Version: 18.0203.0801
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Feb 2018 05:08 UTC
+! Last modified: 03 Feb 2018 08:01 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1145,6 +1145,7 @@ _996x50.gif
 ##object[width="982"][height="150"]
 ##object[width="990"][height="206"]
 ! *** abid:AdBlockID/css_extended.txt ***
+arenasmartphone.com##.entry-content > div:contains(Advertisement)
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/adservers.txt ***
@@ -2094,6 +2095,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||fhxmqthpjswm.bid^
 ||fhylnqzxwsbo.com^
 ||fhzgapsfnlsvx.bid^
+||fiarnvygamgpqf.com^
 ||fikyzmbuhql.bid^
 ||filenlgic.bid^
 ||fioeazluwwirp.bid^
@@ -2461,6 +2463,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||hiypucxjvfka.com^
 ||hjeoncuvklqh.com^
 ||hjnfurphlwsui.bid^
+||hjopehvzspngi.com^
 ||hjtgpkwppx.bid^
 ||hjtoguxtzkl.bid^
 ||hjukmfdbryln.com^
@@ -5831,6 +5834,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||eramuslim.com/banners/
 ||harianjogja.com/banner/
 ||hotabis.com/wp-content/uploads/*.gif$image
+||iklan.beritajatim.com/$image
 ||indotelko.com/images/banner/$image
 ||kabar47.com/wp-content/uploads/*.gif$image
 ||komiku.net/wp-content/uploads/*.gif$image
@@ -5844,6 +5848,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||resep.web.id/wp-content/uploads/*/banner_$image
 ||selebuzz.co.id/wp-content/uploads/*.gif$image
 ||solopos.com/banner/
+||suarasurabaya.net/*/banner/$image
 ||waralabakan.com/images/data/banner/banner-$image
 ||yourjavascript.com/0653544211/lompatin.js
 ||yourjavascript.com/1411253239/itu-domino-popup-script.js
@@ -5882,12 +5887,14 @@ beritagar.id##.banner--300x600
 rajamobil.com##.banner-billboard
 kabargames.id##.banner-kiri
 diskon.com##.banner-middle
+ngopibareng.id##.banner-timeline
 kompasiana.com##.banner-top
 cgv.id##.banner-wrapper
 beritagar.id##.banner300x250
 cosmogirl.co.id##.bnr
 kaskus.co.id##.bnr-ads
 detik.com##.bottom_banner
+harianbhirawa.com##.box-banner
 detik.com##.detikads
 teknodiary.com##.googlepublisherads
 detik.com##.gtm_newsfeed_ads
@@ -5903,6 +5910,7 @@ jadwaltelevisi.com##.promo-banner
 cermati.com##.sticky-banner
 covesia.com##.topbanner
 inilah.com##.wb-300x250
+duta.co##a[href^="//goo.gl/"] > img
 ! 
 analisis.kontan.co.id###div-Top-Analisis
 caritahu.kontan.co.id###div-Top-Caritahu
@@ -6273,8 +6281,9 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|fileone.t
 @@||safelkmeong.blogspot.com^$generichide
 @@||tutorialweb.net^$generichide
 agroindustri.id#@#.category-advertorial
+dutaislam.com#@##ads-wrapper
 eramuslim.com#@##topAd
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: 1yHKgQ1xiH2uLtrsLXHP1w
+! Checksum: buMxRrGsw7V3MN8AA/ihfg
