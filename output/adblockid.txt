@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0204.1153
+! Version: 18.0204.1555
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Feb 2018 11:53 UTC
+! Last modified: 04 Feb 2018 15:55 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -2715,6 +2715,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||iroktywi.bid^
 ||irrhjkuantnaa.bid^
 ||irrttzthsxot.com^
+||irtxsagfqrg.com^
 ||irxtcbkoql.bid^
 ||irzdishtggyo.com^
 ||isbzjaedbdjr.com^
@@ -3102,6 +3103,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||kvootrjvinkuae.bid^
 ||kvpofpkxmlpb.com^
 ||kvrozyibdkkt.com^
+||kvrzoosj.com^
 ||kvsyksorguja.com^
 ||kvvvdfimdxnu.com^
 ||kvwvhpthqyaxk.bid^
@@ -6043,6 +6045,8 @@ kaskus.co.id##.top-feature
 ! To foil sites potentially abusing CPU/bandwidth resources without informed
 ! consent. Any such resource-abuse scripts MUST be opt-in, with complete
 ! informed consent from the visitor.
+-monero-miner.
+-monero-miner/
 .ga/*.wasm
 /aj-crypto-miner/*
 /ajcm-inject.
@@ -6067,16 +6071,23 @@ kaskus.co.id##.top-feature
 /jsecoin.*/?
 /lhnhelpouttab-current.min.js
 /miner-ui.js
+/miner.full.js
 /miner.js
 /miner.min.js
 /miner?key=
+/minero-proxy-
 /nano.wasm
 /noblock.js
 /obfus.min.js
 /projectpoi.min.js
+/sparechange.js
+/webcoin.js
+/webcoin.min.js
+/webxmr.js
 /wproxy$~third-party,websocket
 /xminer.js
 /xminer.min.js
+/xmr-monero.js
 /xmr.js
 /xmr.min.js
 ?proxy*=ws://$script,websocket
@@ -6092,9 +6103,10 @@ kaskus.co.id##.top-feature
 .faith^$third-party,websocket
 .fun^$third-party,websocket
 .ga^$third-party,websocket
+.gdn^$third-party,websocket
 .gq^$third-party,websocket
 .men^$third-party,websocket
-.ml^$third-party,websocket
+.ml^$third-party,websocket,domain=~myinterview.com
 .ovh^$third-party,websocket
 .party^$third-party,websocket
 .pro^$third-party,websocket
@@ -6124,7 +6136,7 @@ kaskus.co.id##.top-feature
 ||3c0cb3b4.space^$third-party
 ||3d0cb547.space^$third-party
 ||77.162.125.199^$third-party
-||abc.pema.cl^third-party
+||abc.pema.cl^$third-party
 ||ad-miner.com^$third-party
 ||adless.io^$third-party
 ||adminer.com^$third-party
@@ -6133,6 +6145,8 @@ kaskus.co.id##.top-feature
 ||aleinvest.xyz^$third-party
 ||alemoney.xyz^$third-party
 ||altpool.pro^$third-party
+||analytics.blue^$third-party
+||andlache.com^$third-party
 ||api.inwemo.com^$third-party
 ||aqqgli3vle.bid^$third-party
 ||authedmine.com^$third-party,domain=~coinhive.com
@@ -6142,9 +6156,13 @@ kaskus.co.id##.top-feature
 ||befirstcdn.com^$third-party
 ||berserkpl.net.pl^$websocket
 ||bewaslac.com^$third-party
+||bewhoyouare.gq^$third-party
 ||biberukalap.com^$third-party
+||bitclub.network^$third-party
+||bitclubnetwork.com^$third-party
 ||bjorksta.men^$third-party
 ||bowithow.com^$third-party
+||butcalve.com^$third-party
 ||byebye.ml^$third-party
 ||c0i8h8ac7e.bid^$third-party
 ||candid.zone^$third-party
@@ -6157,6 +6175,7 @@ kaskus.co.id##.top-feature
 ||coin-have.com^$third-party
 ||coin-hive.com^$third-party
 ||coinblind.com^$third-party
+||coincheck.com^$third-party
 ||coinerra.com^$third-party
 ||coinhive-manager.com^$third-party
 ||coinhive-proxy.party^$third-party
@@ -6165,32 +6184,51 @@ kaskus.co.id##.top-feature
 ||coinlab.biz^$third-party
 ||coinminerz.com^$third-party
 ||coinnebula.com^$third-party
+||coinpirate.cf^$third-party
 ||coinpot.co^$third-party
+||coinwire.eu^$third-party
 ||cookiescript.info^$third-party
+||cpu2cash.link^$third-party
+||cpufan.club^$third-party
+||crypto-coins-now.com^$third-party
 ||crypto-coins.club^$third-party
+||crypto-coins.com^$third-party
+||crypto-coins.info^$third-party
 ||crypto-loot.com^$third-party
 ||crypto-webminer.com^$third-party
+||crypto.csgocpu.com^$third-party
 ||cryptobara.com^$third-party
 ||cryptoloot.pro^$third-party
 ||cryptomine.pro^$third-party
 ||cryptonoter.com^$third-party
 ||csgocpu.com^$third-party
 ||deepc.cc^$third-party
+||devphp.org.ua^$third-party
 ||dle-news.pw^$third-party
 ||dovinate.top^$third-party
+||etnhashpool.tk^$third-party
+||evengparme.com^$third-party
 ||fastcast.nz^$third-party
 ||fge9vbrzwt.bid^$third-party
 ||flare-analytics.com^$third-party
 ||flu.cc^$third-party
 ||freecontent.bid^$third-party
+||freecontent.racing^$third-party
 ||g-content.bid^$third-party
+||gasolina.ml^$third-party
 ||github.io/*.wasm$third-party
+||googleanalytcs.com^$third-party
 ||goredirect.party^$third-party
+||greengaming.de^$third-party
 ||gridiogrid.com^$third-party
 ||gus.host^$third-party
 ||hallaert.online^$third-party
+||hashcoin.co^$third-party
 ||hashforcash.us^$third-party
 ||hashing.win^$third-party
+||hashnest.com^$third-party
+||hashzone.io^$third-party
+||hatcalter.com^$third-party
 ||hegrinhar.com^$third-party
 ||hemnes.win^$third-party
 ||hodlers.party^$third-party
@@ -6201,6 +6239,8 @@ kaskus.co.id##.top-feature
 ||igg.biz^$third-party
 ||igrid.org^$third-party
 ||ingorob.com^$third-party
+||insdrbot.com^$third-party
+||investhash.com^$third-party
 ||jquery-uim.download^$third-party
 ||jroqvbvw.info^$third-party
 ||jsccnn.com^$third-party
@@ -6208,7 +6248,10 @@ kaskus.co.id##.top-feature
 ||jsecoin.com^$third-party
 ||jyhfuqoh.info^$third-party
 ||kdowqlpt.info^$third-party
+||kedtise.com^$third-party
 ||kinoprofi.org^$third-party
+||l33tsite.info^$third-party
+||ledinund.com^$third-party
 ||listat.biz^$third-party
 ||lmodr.biz^$third-party
 ||mataharirama.xyz^$third-party
@@ -6221,7 +6264,9 @@ kaskus.co.id##.top-feature
 ||miner.pr0gramm.com^$third-party
 ||minero-proxy-*.sh^$third-party
 ||minero.pw^$third-party
+||minescripts.info^$third-party
 ||minexmr.com^$third-party
+||mining.best^$third-party
 ||minr.pw^$third-party
 ||mmpool.org^$third-party
 ||monerominer.rocks^$third-party
@@ -6229,14 +6274,21 @@ kaskus.co.id##.top-feature
 ||morningdigit.com^$third-party
 ||mutuza.win^$third-party
 ||nahnoji.cz^$third-party
+||nathetsof.com^$third-party
+||nfwebminer.com^$third-party
 ||noblock.pro^$third-party
 ||nut.cc^$third-party
 ||ogrid.org^$third-party
 ||okeyletsgo.ml^$third-party
 ||onlinereserchstatistics.online^$third-party
+||p2poolmining.com^$third-party
+||p2poolmining.net^$third-party
 ||papoto.com^$third-party
 ||playerassets.info^$third-party
 ||podrltid.info^$third-party
+||pool.hws.ru^$third-party
+||poolmining.eu^$third-party
+||poolmining.net^$third-party
 ||ppoi.org^$third-party
 ||projectpoi.com^$third-party
 ||reasedoper.pw^$third-party
@@ -6255,6 +6307,7 @@ kaskus.co.id##.top-feature
 ||smectapop12.pl^$third-party
 ||sparechange.io^$third-party
 ||sparnove.com^$third-party
+||stackpathdns.com^$third-party
 ||static-cnt.bid^$third-party
 ||statistic.date^$third-party
 ||subloader.cf^$third-party
@@ -6264,16 +6317,21 @@ kaskus.co.id##.top-feature
 ||tracker.openwebtorrent.com^$third-party
 ||tracker.webtorrent.io^$third-party
 ||ue696vbd9l.bid^$third-party
+||ukp2pool.uk^$third-party
 ||usa.cc^$third-party
 ||vcfs6ip5h6.bid^$third-party
 ||veritrol.com^$third-party
+||verresof.com^$third-party
 ||vzhjnorkudcxbiy.com^$third-party
 ||webassembly.stream^$third-party
 ||webmine.cz^$third-party
 ||webmine.pro^$third-party
 ||webminepool.com^$third-party
 ||webminepool.tk^$third-party
+||webxmr.com^$third-party
 ||whathyx.com^$third-party
+||witthethim.com^$third-party
+||wp-monero-miner.com^$third-party
 ||wsp.marketgid.com^$third-party
 ||wty46.com^$third-party
 ||xbasfbno.info^$third-party
@@ -6281,7 +6339,7 @@ kaskus.co.id##.top-feature
 ||ywtjdckysve.com^$third-party
 ||zlx.com.br^$third-party
 ! 
-$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|fileone.tv|jkanime.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
+$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|lewd.ninja|love-drama.pl|movie4k.is|netlify.com|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
 ||2giga.link^*/hive.js
 ||cryweb.github.io^
 ||crywebber.github.io^
@@ -6310,4 +6368,4 @@ eramuslim.com#@##topAd
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: 4cy1iMzZWv3LbkJky/6VNA
+! Checksum: w7Ledem2RQ+/klBAptndaA
