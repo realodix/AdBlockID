@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0205.1747
+! Version: 18.0206.1504
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Feb 2018 17:47 UTC
+! Last modified: 06 Feb 2018 15:04 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -12,13 +12,9 @@
 ! 
 ! *** abid:AdBlockID/general_block.txt ***
 -iklan-
--iklan.gif
--iklan.jpg|
--iklan.js|
--iklan.png
+-iklan.
 -promosi.
 .id/adv/
-/*iklan2*.
 /*pasangiklan*.
 /*space-iklan*.
 /ads-img/*
@@ -110,6 +106,8 @@ _promosi.
 -565x80.
 -580-x-70.
 -580x380.
+-610-x-77.
+-640x76.
 -65x300-
 -65X440.
 -680x60.
@@ -122,6 +120,7 @@ _promosi.
 -728-x900.
 -728x60-
 -730x220.
+-780x102px.
 -790-90.
 -800X70.
 -80x300-
@@ -680,6 +679,8 @@ _996x50.gif
 ###hbanner
 ###idmuvi-popup
 ###iklan
+###iklan-pos
+###iklan-sidebar
 ###iklan-text
 ###iklan1
 ###iklan2
@@ -698,9 +699,13 @@ _996x50.gif
 ###teaser3
 ###top_ad_full
 ###tupiklan
+##.Iklan
 ##.SC_TBlock
 ##.SectionAds
+##.ad-bawah
 ##.ad-float-image
+##.ad1-desktop
+##.ad1-wrapper
 ##.ad_primex
 ##.adblock2
 ##.adblock3
@@ -735,9 +740,13 @@ _996x50.gif
 ##.idmuvi-topbanner-aftermenu
 ##.idmuvi-topbanner-archive
 ##.idmuvi-topplayer
+##.iklan-kanan
+##.iklan-kecilatas
+##.iklan-kiri
 ##.iklan1
 ##.iklan2
 ##.iklan728
+##.iklan_blanter
 ##.iklan_semprot
 ##.iklan_semprot_h
 ##.iklandetail
@@ -747,6 +756,8 @@ _996x50.gif
 ##.iklanpusat
 ##.iklanright
 ##.kotak_iklan
+##.kotak_iklan2
+##.kotak_iklan3
 ##.mainads
 ##.minipusat
 ##.pasangiklan
@@ -1066,6 +1077,7 @@ _996x50.gif
 ##a[href^="https://pendekarqq."] > img
 ##a[href^="https://pusatbandarq."] > img
 ##a[href^="https://qq-domino."] > img
+##a[href^="https://solusitambahtinggi."] > img
 ##a[href^="https://www.365dewa."] > img
 ##a[href^="https://www.bola168bet."] > img
 ##a[href^="https://www.idolabet."] > img
@@ -1360,6 +1372,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID/popup.txt ***
 /wp-content/plugins/popup-builder/*
 ||bioskopstar88.com/pop/$script
+||joneself.com^
 ||kkawxvjeluwc.com^
 ||tqeobp89axcn.com^
 ||yourjavascript.com/1411253239/itu-domino-popup-script.js
@@ -3925,6 +3938,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||nobosrekns.bid^
 ||nocwsbtdiiufa.bid^
 ||nodvmmtniokbz.bid^
+||nofoxnalt.com^
 ||nohsshsxpv.club^
 ||nomlxyhfgeny.com^
 ||noonshdnkt.bid^
@@ -5206,6 +5220,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||utzpjbrtyjuj.com^
 ||uuacjdostjloa.bid^
 ||uupjizxqf.bid^
+||uuvwcjtppeonfq.com^
 ||uuwoktwdmo.bid^
 ||uvakjjlbjrmx.com^
 ||uvcvhcbvy.bid^
@@ -6155,6 +6170,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||indotelko.com/images/banner/$image
 ||jurnalotaku.com/wp-content/uploads/*-banner.jpg
 ||kabar47.com/wp-content/uploads/*.gif
+||klikpositif.com/file/banner/
 ||komiku.net/wp-content/uploads/*.gif
 ||kotakgame.com/images/bnr/$image
 ||kumpulblogger.com/tl_*.php?uid=
@@ -6171,6 +6187,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||yourjavascript.com/0653544211/lompatin.js
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_hide.txt ***
+idblanter.com###HTML3 > .widget-content
 hukumonline.com###adsa2
 hukumonline.com###adsa3
 hukumonline.com###adsb2b3
@@ -6248,6 +6265,15 @@ grid.id###head-banner-ads
 grid.id##.ads-mr
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(11)
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
+! 
+polisionline.com###HTML1
+polisionline.com###HTML10
+polisiinternet.com###HTML2
+polisiinternet.com###HTML3
+dibalikseo.com###banner
+idblanter.com###largebanner
+polisionline.com###postfeature
+beritakini.co##.funds
 ! ------------------------------------------------------------!
 ! *** abid:addons/movie.txt ***
 indoxxi.info##a[href^="https://goo.gl/"] > img
@@ -6653,6 +6679,7 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.s
 @@||mangashiro.net^$generichide
 @@||neumanga.tv^$generichide
 @@||oploverz.in^$generichide
+@@||piratefiles.org^$generichide
 @@||safelkmeong.blogspot.com^$generichide
 @@||tutorialweb.net^$generichide
 agroindustri.id#@#.category-advertorial
@@ -6662,5 +6689,6 @@ lindung.in#@#.afs_ads
 short.awsubs.co#@#.iklan
 ! mangacanblog.com - Anti Adblock Script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
+@@||ainodorama.web.id^$generichide
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: FlUZVQLy9pzUQOKoh3PxcQ
+! Checksum: oLyNJEzghYItKRZptULKwA
