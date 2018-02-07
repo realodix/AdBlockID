@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0206.1504
+! Version: 18.0207.0503
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Feb 2018 15:04 UTC
+! Last modified: 07 Feb 2018 05:03 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -11,19 +11,28 @@
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
 ! *** abid:AdBlockID/general_block.txt ***
+-banner-300.
+-banner-728.
 -iklan-
 -iklan.
 -promosi.
 .id/adv/
 /*pasangiklan*.
 /*space-iklan*.
+/ad-placeholder-
+/ad125x125/*
+/ad200x50/*
 /ads-img/*
+/ads.jpg
 /adsspace-
+/ban670x80.
 /banner-atas1
 /banner-free-space-
 /banner-kanan/
 /banner-kiri/
 /banner-samping-
+/banner728.
+/banner980.
 /banneriklan/*
 /bannerkosong.
 /bannerkosong2.
@@ -43,6 +52,7 @@
 /SkinADkanan.
 /SkinADkiri.
 /space-available.
+/spaceads.
 _iklan_
 _promosi.
 ! 
@@ -127,8 +137,6 @@ _promosi.
 -85x445.
 -970x80.
 -990x100.
--banner-300.
--banner-728.
 /*110x220*.gif
 /*120x250*.gif
 /*120x280*.
@@ -145,6 +153,7 @@ _promosi.
 /*282x262*.gif
 /*300*x250*.gif
 /*300x*250*.gif
+/*300x300*.gif
 /*355x80*.
 /*383x90*.
 /*400x50*.
@@ -176,6 +185,7 @@ _promosi.
 /*920x120*.
 /*960x120*.
 /*970x90*.
+/*975x70*.gif
 /*976x70*.
 /*980x90*.
 /*w250-h250-$image
@@ -199,15 +209,13 @@ _promosi.
 /320x80.
 /395-x-60.
 /440x90-
+/530x60.
 /574x110-
 /640x60.gif
 /940x50-
 /95x230.
 /960-80-
 /965x120.
-/ban670x80.
-/banner728.
-/banner980.
 =w440-h90-
 _1000x100.gif
 _1000x250.gif
@@ -755,6 +763,7 @@ _996x50.gif
 ##.iklanmini
 ##.iklanpusat
 ##.iklanright
+##.inner-post-ads
 ##.kotak_iklan
 ##.kotak_iklan2
 ##.kotak_iklan3
@@ -766,6 +775,7 @@ _996x50.gif
 ##.player-ads-top
 ##.player-ads-top-1
 ##.post-ad3
+##.post-ads
 ##.post-ads-top
 ##.pusat728
 ##.sponsor_ads
@@ -777,6 +787,7 @@ _996x50.gif
 ##.topline-ads
 ##.video-content-bottom-ads
 ##.video-content-top-ads
+##a[href="/iklan-ads/"]
 ! 
 ##a[href^="http://108cash."] > img
 ##a[href^="http://167.114.87.240"] > img
@@ -829,6 +840,7 @@ _996x50.gif
 ##a[href^="http://daftarpoker"] > img
 ##a[href^="http://daftarqq"] > img
 ##a[href^="http://danaqq."] > img
+##a[href^="http://dewaboya."] > img
 ##a[href^="http://dewahoki."] > img
 ##a[href^="http://divisix."] > img
 ##a[href^="http://dominoqqwin."] > img
@@ -847,7 +859,7 @@ _996x50.gif
 ##a[href^="http://halobos"] > img
 ##a[href^="http://hobibet."] > img
 ##a[href^="http://hoki365."] > img
-##a[href^="http://hokibandarq"] > img
+##a[href^="http://hokibandar"] > img
 ##a[href^="http://hokicapsa."] > img
 ##a[href^="http://hotsports7."] > img
 ##a[href^="http://hoyajackpot."] > img
@@ -900,6 +912,7 @@ _996x50.gif
 ##a[href^="http://masterbandar"] > img
 ##a[href^="http://masterdomino"] > img
 ##a[href^="http://mdomino99."] > img
+##a[href^="http://megawin77."] > img
 ##a[href^="http://mejasakong"] > img
 ##a[href^="http://menangqq."] > img
 ##a[href^="http://mingguqq."] > img
@@ -930,6 +943,7 @@ _996x50.gif
 ##a[href^="http://pokerstar"] > img
 ##a[href^="http://promosi365."] > img
 ##a[href^="http://proqq."] > img
+##a[href^="http://ptliga365."] > img
 ##a[href^="http://qqdoyan."] > img
 ##a[href^="http://qqpendekar."] > img
 ##a[href^="http://raja12shio."] > img
@@ -940,6 +954,7 @@ _996x50.gif
 ##a[href^="http://royalpoker"] > img
 ##a[href^="http://royalqq."] > img
 ##a[href^="http://samsunghoki."] > img
+##a[href^="http://sdsblotto88."] > img
 ##a[href^="http://sedapq"] > img
 ##a[href^="http://seniqq."] > img
 ##a[href^="http://sentapoker."] > img
@@ -995,12 +1010,14 @@ _996x50.gif
 ##a[href^="http://www.dahsyatqq."] > img
 ##a[href^="http://www.dermaga4d."] > img
 ##a[href^="http://www.dewa757."] > img
+##a[href^="http://www.dewaboya."] > img
 ##a[href^="http://www.dewapokerqq."] > img
 ##a[href^="http://www.domino757."] > img
 ##a[href^="http://www.doyanqq."] > img
 ##a[href^="http://www.elangcapsa."] > img
 ##a[href^="http://www.ganoolqq."] > img
 ##a[href^="http://www.global303."] > img
+##a[href^="http://www.hdpbet."] > img
 ##a[href^="http://www.hoki228."] > img
 ##a[href^="http://www.hoyajackpot."] > img
 ##a[href^="http://www.ibet44cash."] > img
@@ -1028,10 +1045,13 @@ _996x50.gif
 ##a[href^="http://www.masterpoker99."] > img
 ##a[href^="http://www.maxisbet."] > img
 ##a[href^="http://www.mbsdewa."] > img
+##a[href^="http://www.mejakiu."] > img
 ##a[href^="http://www.mgmcash"] > img
 ##a[href^="http://www.mgmdomino."] > img
 ##a[href^="http://www.miamiqq."] > img
 ##a[href^="http://www.mimpi4d."] > img
+##a[href^="http://www.muvbet."] > img
+##a[href^="http://www.muvi."] > img
 ##a[href^="http://www.nanatoto."] > img
 ##a[href^="http://www.obcbet."] > img
 ##a[href^="http://www.oppopoker.com"]
@@ -1048,6 +1068,7 @@ _996x50.gif
 ##a[href^="http://www.raja111."] > img
 ##a[href^="http://www.samsunghoki."] > img
 ##a[href^="http://www.sanadomino."] > img
+##a[href^="http://www.sdsblotto."] > img
 ##a[href^="http://www.sentanapoker."] > img
 ##a[href^="http://www.sentosa88."] > img
 ##a[href^="http://www.sinidomino."] > img
@@ -1060,6 +1081,7 @@ _996x50.gif
 ##a[href^="http://www.win7poker."] > img
 ##a[href^="http://www.winpoker"] > img
 ##a[href^="http://www.wongbet."] > img
+##a[href^="http://www.ziobet."] > img
 ##a[href^="http://ysbjaya88."] > img
 ##a[href^="http://zyngaqq"] > img
 ##a[href^="https://99tangkas."] > img
@@ -1364,6 +1386,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||pondokiklan.com^$third-party
 ||props.id^$third-party
 ||publish.web.id^$third-party
+||rumahgratis.tk^$third-party
 ||sentrapromosi.com^$third-party
 ||shmokiads.com^$third-party
 ||sitti.co.id^$third-party
@@ -1388,116 +1411,117 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||partlepool.com^$popup,third-party
 ||strainemergency.com^$popup
 ! 
-/128cash.$popup
-/1sakong.$popup
-/4dasli.$popup
-/899-cash.$popup
-/899cash.$popup
-/99doyan.$popup
-/afapkr.$popup
-/afatogel1.$popup
-/agensakong.$popup
-/alternatif188bet.$popup
-/anekaqq.$popup
-/angkakembar.$popup
-/asia-bandarkiu.$popup
-/asia-bandarq.$popup
-/asian4d.$popup
-/asianbandarq.$popup
-/baftarbandarkiu.$popup
-/bakaratonline.$popup
-/bandarbolaasia.$popup
-/bandarkiu.$popup
-/bandarpoker.$popup
-/bandarq.$popup
-/bandarqterpercaya.$popup
-/bandarsakong.$popup
-/bandartogelsingapore.$popup
-/beliqq.$popup
-/bola168.$popup
-/caradaftarpoker.$popup
-/cariqqiu.$popup
-/ceritasex.$popup
-/daftarbandarkiu.$popup
-/daftarbandartogelterpercaya.$popup
-/daftardomino.$popup
-/daftarfun88.$popup
-/daftarpoker228.$popup
-/daftarqq.$popup
-/daftarqqonline.$popup
-/dermaga4d.$popup
-/dewa757.$popup
-/dewahoki.$popup
-/divisix.$popup
-/domino757.$popup
-/dominoqqwin.$popup
-/doyan-99.$popup
-/doyanbandarq.$popup
-/hoki365.$popup
-/hoyajackpot.$popup
-/hoyapoker99.$popup
-/indotogel1.$popup
-/inidomino.$popup
-/istana-impian.$popup
-/istana-impian2.$popup
-/istana3.$popup
-/istanaimpian1.$popup
-/istanaimpian2.$popup
-/istanaimpian3.$popup
-/itudewa.$popup
-/itupk.$popup
-/jagoanpoker99.$popup
-/jarumpoker.$popup
-/jayabola.$popup
-/jayapokr.$popup
-/jokermerah.$popup
-/king4d.$popup
-/kitabanget.$popup
-/kiuhoki.$popup
-/kiumaster.$popup
-/kodealam2.$popup
-/liga88.$popup
-/livehkpools.$popup
-/lotus-4d.$popup
-/maenpokerasli.$popup
-/maindomino.$popup
-/maindominoqq.$popup
-/maintogelonline.$popup
-/maruduthutabarat.$popup
-/masterpoker99.$popup
-/menangqq.$popup
-/nontonbokep.$popup
-/nontonfilm21.$popup
-/nusantarabet4d.$popup
-/orientalpoker.$popup
-/pangerantoto1.$popup
-/pangerantoto3.$popup
-/pasangnomor2.$popup
-/pasarantogel.$popup
-/pendekarqq.$popup
-/pokergalaxy.$popup
-/promosi365.$popup
-/qqdoyan.$popup
-/qqpendekar.$popup
-/raja12shio.$popup
-/rajanusantara.$popup
-/samsunghoki.$popup
-/sedapqqq.$popup
-/seniqq.$popup
-/sentanapoker.$popup
-/sepakbolagol.$popup
-/shiokambing2.$popup
-/shiokuda.$popup
-/sundulqq.$popup
-/surya4d.$popup
-/togelcc1.$popup
-/togeljackpot2.$popup
-/togelmarket2.$popup
-/totobett.$popup
-/totokita.$popup
-/wahanatoto1.$popup
-/wong-poker.$popup
-/ysbjaya88.$popup
+||128cash.$popup
+||1sakong.$popup
+||4dasli.$popup
+||899-cash.$popup
+||899cash.$popup
+||99doyan.$popup
+||afapkr.$popup
+||afatogel1.$popup
+||agensakong.$popup
+||alternatif188bet.$popup
+||anekaqq.$popup
+||angkakembar.$popup
+||asia-bandarkiu.$popup
+||asia-bandarq.$popup
+||asian4d.$popup
+||asianbandarq.$popup
+||baftarbandarkiu.$popup
+||bakaratonline.$popup
+||bandarbolaasia.$popup
+||bandarkiu.$popup
+||bandarpoker.$popup
+||bandarq.$popup
+||bandarqterpercaya.$popup
+||bandarsakong.$popup
+||bandartogelsingapore.$popup
+||beliqq.$popup
+||bola168.$popup
+||caradaftarpoker.$popup
+||cariqqiu.$popup
+||ceritasex.$popup
+||daftarbandarkiu.$popup
+||daftarbandartogelterpercaya.$popup
+||daftardomino.$popup
+||daftarfun88.$popup
+||daftarpoker228.$popup
+||daftarqq.$popup
+||daftarqqonline.$popup
+||daftarsbobetresmi.$popup
+||dermaga4d.$popup
+||dewa757.$popup
+||dewahoki.$popup
+||divisix.$popup
+||domino757.$popup
+||dominoqqwin.$popup
+||doyan-99.$popup
+||doyanbandarq.$popup
+||hoki365.$popup
+||hoyajackpot.$popup
+||hoyapoker99.$popup
+||indotogel1.$popup
+||inidomino.$popup
+||istana-impian.$popup
+||istana-impian2.$popup
+||istana3.$popup
+||istanaimpian1.$popup
+||istanaimpian2.$popup
+||istanaimpian3.$popup
+||itudewa.$popup
+||itupk.$popup
+||jagoanpoker99.$popup
+||jarumpoker.$popup
+||jayabola.$popup
+||jayapokr.$popup
+||jokermerah.$popup
+||king4d.$popup
+||kitabanget.$popup
+||kiuhoki.$popup
+||kiumaster.$popup
+||kodealam2.$popup
+||liga88.$popup
+||livehkpools.$popup
+||lotus-4d.$popup
+||maenpokerasli.$popup
+||maindomino.$popup
+||maindominoqq.$popup
+||maintogelonline.$popup
+||maruduthutabarat.$popup
+||masterpoker99.$popup
+||menangqq.$popup
+||nontonbokep.$popup
+||nontonfilm21.$popup
+||nusantarabet4d.$popup
+||orientalpoker.$popup
+||pangerantoto1.$popup
+||pangerantoto3.$popup
+||pasangnomor2.$popup
+||pasarantogel.$popup
+||pendekarqq.$popup
+||pokergalaxy.$popup
+||promosi365.$popup
+||qqdoyan.$popup
+||qqpendekar.$popup
+||raja12shio.$popup
+||rajanusantara.$popup
+||samsunghoki.$popup
+||sedapqqq.$popup
+||seniqq.$popup
+||sentanapoker.$popup
+||sepakbolagol.$popup
+||shiokambing2.$popup
+||shiokuda.$popup
+||sundulqq.$popup
+||surya4d.$popup
+||togelcc1.$popup
+||togeljackpot2.$popup
+||togelmarket2.$popup
+||totobett.$popup
+||totokita.$popup
+||wahanatoto1.$popup
+||wong-poker.$popup
+||ysbjaya88.$popup
 ! *** https://raw.githubusercontent.com/Yhonay/antipopads/master/popads.txt ***
 ! Licence: WTFPL version 2
 ||aaeqlxdgx.bid^
@@ -1724,6 +1748,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||bfpzhrzcvs.bid^
 ||bfsssvkowvh.com^
 ||bgbmtqzoc.bid^
+||bgdacrgsnt.com^
 ||bgfgaduyvocz.com^
 ||bgpxrwjrbsjb.com^
 ||bgtmceqoipodkv.com^
@@ -1848,6 +1873,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||bwnrgfhbd.bid^
 ||bwoefrhtycp.com^
 ||bwpqqofejekh.com^
+||bwssvome.com^
 ||bwuxrzvr.bid^
 ||bxfsdzpffy.bid^
 ||bxoemfpetyqi.bid^
@@ -1892,6 +1918,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||cdfyuyoyfxohj.bid^
 ||cdhzxcwuibzk.com^
 ||cdtojdrhoc.bid^
+||cesxssavc.com^
 ||cewviaslxyyr.com^
 ||cfdmkifknsjt.com^
 ||cfsdtzggpcmr.com^
@@ -2082,6 +2109,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dgulomuzgkyjhe.bid^
 ||dgycvdyncugrd.bid^
 ||dhenktvqqmbcnj.bid^
+||dhgcqqmtf.com^
 ||dhienrfamv.com^
 ||dhlnlwxspczc.com^
 ||dhmhdiozqbnq.com^
@@ -4472,6 +4500,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||qpodgrwu.bid^
 ||qpttmgdofkkya.bid^
 ||qqapezviufsh.com^
+||qqbwymba.com^
 ||qqbyfhlctzty.com^
 ||qqdnhrkjtmv.bid^
 ||qqfrciwnc.bid^
@@ -6079,6 +6108,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||zrelqwrx.bid^
 ||zrrgjpsb.bid^
 ||zrufclmvlsct.com^
+||zrzgnzel.com^
 ||zsbifpiosqedn.bid^
 ||zsdhypkxyodiw.bid^
 ||zsdlyigktdly.bid^
@@ -6240,6 +6270,8 @@ viva.co.id##.paralax_banner-detail
 jadwaltelevisi.com##.promo-banner
 21cineplex.com##.showcase
 21cineplex.com##.showcase2
+harianjogja.com##.size-300x250
+harianjogja.com##.sp-griya
 cermati.com##.sticky-banner
 covesia.com##.topbanner
 inilah.com##.wb-300x250
@@ -6268,12 +6300,21 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 ! 
 polisionline.com###HTML1
 polisionline.com###HTML10
-polisiinternet.com###HTML2
+pasbana.com###HTML13
+pasbana.com###HTML14
+pasbana.com###HTML18
+pasbana.com,polisiinternet.com###HTML2
 polisiinternet.com###HTML3
+kabarnagari.com,pasbana.com###HTML6
+pasbana.com###HTML8
 dibalikseo.com###banner
 idblanter.com###largebanner
 polisionline.com###postfeature
+tribunsumbar.com###widget_sp_image-6
+tribunsumbar.com###widget_sp_image-7
 beritakini.co##.funds
+tribunsumbar.com##.majalahpro-core-center-ads
+valora.co.id##img[src^="http://www.valora.co.id/banner/"]
 ! ------------------------------------------------------------!
 ! *** abid:addons/movie.txt ***
 indoxxi.info##a[href^="https://goo.gl/"] > img
@@ -6691,4 +6732,4 @@ short.awsubs.co#@#.iklan
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 @@||ainodorama.web.id^$generichide
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: oLyNJEzghYItKRZptULKwA
+! Checksum: Km/RBWLFhTiWOnZEir7aLw
