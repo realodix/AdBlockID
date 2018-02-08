@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0208.0525
+! Version: 18.0208.1512
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Feb 2018 05:25 UTC
+! Last modified: 08 Feb 2018 15:12 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -135,6 +135,7 @@ _promosi.
 -800X70.
 -80x300-
 -85x445.
+-970-190.
 -970x80.
 -990x100.
 /*110x220*.gif
@@ -205,12 +206,14 @@ _promosi.
 /300X300.gif
 /300x500.gif
 /300x90/*
+/304-x-242.
 /305x99-
 /305x99.
 /320x80.
 /395-x-60.
 /440x90-
 /530x60.
+/550-x-150.
 /574x110-
 /640x60.gif
 /940x50-
@@ -263,6 +266,7 @@ _160x160.gif
 _160x60.gif
 _170x60.gif
 _174x614.gif
+_1800x325.
 _180x54.gif
 _192x160.gif
 _192x600.gif
@@ -454,6 +458,9 @@ _996x50.gif
 ##.adblock2
 ##.adblock3
 ##.addads
+##.adka
+##.adkaki
+##.adki
 ##.ads-artikel
 ##.ads-pop
 ##.ads-skycraper
@@ -2429,6 +2436,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||jcytzfvrm.bid^
 ||jczpcviiurut.bid^
 ||jdbzloynedpylr.bid^
+||jdhhehwkvl.com^
 ||jdhnfbmrhwkn.com^
 ||jdiliqkjk.bid^
 ||jdnbrccndsxly.bid^
@@ -3445,6 +3453,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||olkxzkbonvau.bid^
 ||olmkmtwet.bid^
 ||olpcbzhvduha.bid^
+||olpvmzxadjwgk.com^
 ||olthlikechgq.com^
 ||olwopczjfkng.com^
 ||ompzowzfwwfc.com^
@@ -4019,6 +4028,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||rsosndet.bid^
 ||rsrbqknrfskkb.bid^
 ||rsvxipjqyvfs.com^
+||rswgoccwzs.com^
 ||rszzpjttufuw.bid^
 ||rttclyuvippyw.bid^
 ||rtufxsncbegz.com^
@@ -5506,13 +5516,16 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ubloger.com^$third-party
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_block.txt ***
+/*banner*.$image,domain=doktersehat.com|inikebumen.net|prfmnews.com
 /balipostcom_float-$image,domain=balipost.com
 ||acmobilindonesia.com/image-banner/$image
 ||eramuslim.com/banners/
 ||harianjogja.com/banner/
 ||hotabis.com/wp-content/uploads/*.gif
 ||iklan.beritajatim.com/$image
+||indopos.co.id/storage/uploads/a/$image
 ||indotelko.com/images/banner/$image
+||inilahkoran.com/*/banners/$image
 ||jurnalotaku.com/wp-content/uploads/*-banner.jpg
 ||kabar47.com/wp-content/uploads/*.gif
 ||klikpositif.com/file/banner/
@@ -5524,15 +5537,21 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||mediaindonesia.com/files/banners/$image
 ||modifikasi.com/images/banner/
 ||motorexpertz.com/uploads/*.gif
+||prfmnews.com/images/*.gif$image
 ||resep.web.id/wp-content/uploads/*/banner_$image
+||rmol.co/banner/$image
 ||selebuzz.co.id/wp-content/uploads/*.gif
 ||solopos.com/banner/
 ||suarasurabaya.net/*/banner/$image
+||teropongsenayan.com/banner/$image
 ||waralabakan.com/images/data/banner/banner-$image
 ||yourjavascript.com/0653544211/lompatin.js
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_hide.txt ***
+inikebumen.net###HTML1
 idblanter.com###HTML3 > .widget-content
+inikebumen.net###HTML4
+inikebumen.net###HTML9
 hukumonline.com###adsa2
 hukumonline.com###adsa3
 hukumonline.com###adsb2b3
@@ -5557,8 +5576,8 @@ mangacanblog.com##.ad
 teknobos.com##.adcontainer
 gogirl.id,jalantikus.com,tempointeraktif.co##.ads
 cermati.com##.ads-container
-detik.com,mangaku.web.id##.adv
-arenalte.com##.advertisement
+detik.com,mangaku.web.id,panjimas.com##.adv
+arenalte.com,krjogja.com##.advertisement
 arenalte.com##.arenalte-ads
 autonetmagz.com##.autonetmagz__meta--ads-elements
 beritagar.id##.banner--300x600
@@ -5939,7 +5958,7 @@ _Indokasino.
 ||899cash.$popup
 ||acerpoker.$popup
 ||afapkr.$popup
-||afatogel^$popup
+||afatogel*.$popup
 ||agensakong.$popup
 ||aladinpoker.$popup
 ||alternatif188bet.$popup
@@ -5956,7 +5975,7 @@ _Indokasino.
 ||bandarbolaasia.$popup
 ||bandarkiu.$popup
 ||bandarpoker.$popup
-||bandarq^$popup
+||bandarq*.$popup
 ||bandarsakong.$popup
 ||bandartogelsingapore.$popup
 ||bejototo.$popup
@@ -5968,11 +5987,11 @@ _Indokasino.
 ||caradaftarpoker.$popup
 ||cariqqiu.$popup
 ||ceritasex.$popup
-||daftarbandar^$popup
+||daftarbandar*.$popup
 ||daftardomino.$popup
 ||daftarfun88.$popup
 ||daftarpoker228.$popup
-||daftarqq^$popup
+||daftarqq*.$popup
 ||daftarsbobetresmi.$popup
 ||dermaga4d.$popup
 ||dewa757.$popup
@@ -5984,18 +6003,19 @@ _Indokasino.
 ||doyan-99.$popup
 ||doyanbandarq.$popup
 ||gadispoker.$popup
+||ganoolqq.$popup
 ||hoki365.$popup
 ||hoyajackpot.$popup
 ||hoyapoker99.$popup
 ||ibet44cash.$popup
-||idola18^$popup
+||idola18*.$popup
 ||idolabet.$popup
 ||indotogel1.$popup
 ||inidomino.$popup
 ||interwin88.$popup
-||istana-impian^$popup
+||istana-impian*.$popup
 ||istana3.$popup
-||istanaimpian^$popup
+||istanaimpian*.$popup
 ||itudewa.$popup
 ||itupk.$popup
 ||jagoanpoker99.$popup
@@ -6013,7 +6033,7 @@ _Indokasino.
 ||livehkpools.$popup
 ||lotus-4d.$popup
 ||maenpokerasli.$popup
-||maindomino^$popup
+||maindomino*.$popup
 ||maintogelonline.$popup
 ||makelarjudi.$popup
 ||maruduthutabarat.$popup
@@ -6029,16 +6049,17 @@ _Indokasino.
 ||nontonfilm21.$popup
 ||nusantarabet4d.$popup
 ||orientalpoker.$popup
-||pangerantoto^$popup
+||pangerantoto*.$popup
 ||pasangnomor2.$popup
 ||pasarantogel.$popup
 ||pendekarqq.$popup
 ||poin4d.$popup
 ||poker021.$popup
-||poker5star^$popup
-||poker8^$popup
+||poker5star*.$popup
+||poker88*.$popup
 ||pokerastro.$popup
 ||pokergalaxy.$popup
+||pokergo8.$popup
 ||pokerhost24.$popup
 ||pokermon24.$popup
 ||pokerzara.$popup
@@ -6056,7 +6077,7 @@ _Indokasino.
 ||sbobet138.$popup
 ||sbobetips.$popup
 ||sdsblotto.$popup
-||sedapq^$popup
+||sedapq*.$popup
 ||seniqq.$popup
 ||sentanapoker.$popup
 ||sepakbolagol.$popup
@@ -6074,7 +6095,7 @@ _Indokasino.
 ||totobett.$popup
 ||totokita.$popup
 ||w88domino.$popup
-||wahanatoto^$popup
+||wahanatoto*.$popup
 ||winpoker789.$popup
 ||wong-poker.$popup
 ||ysbjaya88.$popup
@@ -6435,9 +6456,9 @@ _Indokasino.
 ##a[href^="https://www.vegas78bets."] > img
 ##a[href^="https://www.vegasmarketonline."] > img
 ! *** abid:addons/movie.txt ***
-indoxxi.info,nontonanimeindo.net,ns21.top##a[href^="https://goo.gl/"] > img
 movie303.com##a[href^="http://bit.ly/"] > img
-|http:$popup,third-party,domain=indoxxi.info|movie303.com|nonton77.com|senimovies.net|serunonton.com
+indoxxi.info,nontonanimeindo.net,ns21.top##a[href^="https://goo.gl/"] > img
+! |http:$popup,third-party,domain|movie303.com|nonton77.com|senimovies.net|serunonton.com
 ||blogspot.com/*.gif^$image,domain=123drakor.com|bioskopkeren.online|drakorindo.co|dramakorea.web.id|movie303.com|moviebaru21.com|nonton33.net|nontondrama.me|nontonfilm21.club|nontonvip.com|senimovies.net
 ||gomovies.at.ua/images/$image,domain=indoxxi.info
 ||goo.gl/$image,domain=sunmovie21.com|surgafilm.club
@@ -6527,6 +6548,8 @@ bioskop45.com#@#div[class^="iklan"]
 /coinblind_beta.
 /coinhive.min.js
 /coinlab.js
+/crypto-js.
+/crypto-js/*
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
@@ -6641,6 +6664,7 @@ bioskop45.com#@#div[class^="iklan"]
 ||cnhv.co^$third-party
 ||coin-have.com^$third-party
 ||coin-hive.com^$third-party
+||coin-service.com^$third-party
 ||coinblind.com^$third-party
 ||coincheck.com^$third-party
 ||coinerra.com^$third-party
@@ -6673,6 +6697,8 @@ bioskop45.com#@#div[class^="iklan"]
 ||devphp.org.ua^$third-party
 ||dle-news.pw^$third-party
 ||dovinate.top^$third-party
+||duckdns.org^$third-party,websocket
+||easyhash.io^$third-party
 ||etnhashpool.tk^$third-party
 ||evengparme.com^$third-party
 ||fastcast.nz^$third-party
@@ -6684,6 +6710,7 @@ bioskop45.com#@#div[class^="iklan"]
 ||g-content.bid^$third-party
 ||gasolina.ml^$third-party
 ||github.io/*.wasm$third-party
+||github.io^$third-party,websocket
 ||googleanalytcs.com^$third-party
 ||goredirect.party^$third-party
 ||greengaming.de^$third-party
@@ -6718,9 +6745,11 @@ bioskop45.com#@#div[class^="iklan"]
 ||kedtise.com^$third-party
 ||kinoprofi.org^$third-party
 ||l33tsite.info^$third-party
+||ledhenone.com^$third-party
 ||ledinund.com^$third-party
 ||listat.biz^$third-party
 ||lmodr.biz^$third-party
+||marcycoin.org^$third-party
 ||mataharirama.xyz^$third-party
 ||megabanners.cf^$third-party
 ||mercy.ga^$third-party
@@ -6730,16 +6759,19 @@ bioskop45.com#@#div[class^="iklan"]
 ||minemytraffic.com^$third-party
 ||miner.pr0gramm.com^$third-party
 ||minero-proxy-*.sh^$third-party
+||minero.cc^$third-party
 ||minero.pw^$third-party
 ||minescripts.info^$third-party
 ||minexmr.com^$third-party
 ||mining.best^$third-party
 ||minr.pw^$third-party
 ||mmpool.org^$third-party
+||monerise.com^$third-party
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
 ||morningdigit.com^$third-party
 ||mutuza.win^$third-party
+||nablabee.com^$third-party
 ||nahnoji.cz^$third-party
 ||nathetsof.com^$third-party
 ||nfwebminer.com^$third-party
@@ -6774,7 +6806,6 @@ bioskop45.com#@#div[class^="iklan"]
 ||smectapop12.pl^$third-party
 ||sparechange.io^$third-party
 ||sparnove.com^$third-party
-||stackpathdns.com^$third-party
 ||static-cnt.bid^$third-party
 ||statistic.date^$third-party
 ||subloader.cf^$third-party
@@ -6806,15 +6837,17 @@ bioskop45.com#@#div[class^="iklan"]
 ||ywtjdckysve.com^$third-party
 ||zlx.com.br^$third-party
 ! 
-$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|lewd.ninja|love-drama.pl|movie4k.is|netlify.com|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
+$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|netlify.com|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
 ||2giga.link^*/hive.js
 ||cryweb.github.io^
 ||crywebber.github.io^
 ||gus.host/coins.js
 ||hive.tubetitties.com^
 ||miner.nablabee.com^
+||piti.bplaced.net^
 ||rawgit.com/Pocketart/$script,third-party
 ||reactor.cc^*.wasm
+||stackpathdns.com/assets/javascript/cr.js
 ||vidfile.net^$third-party,websocket,xmlhttprequest
 ! *** abid:AdBlockID/whitelist.txt ***
 @@/ad/*$domain=ad4msan.com|mastekno.com|oploverz.in|pesnewupdate.click|safelkmeong.blogspot.com
@@ -6838,4 +6871,4 @@ short.awsubs.co#@#.iklan
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 @@||ainodorama.web.id^$generichide
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: eNnKGcXE6AnZBCBgje1VbQ
+! Checksum: nS8m/8lkyzfA9TK937oYxA
