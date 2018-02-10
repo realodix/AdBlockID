@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0210.0441
+! Version: 18.0210.1343
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Feb 2018 04:41 UTC
+! Last modified: 10 Feb 2018 13:43 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -46,6 +46,7 @@
 /iklan4.
 /iklan5.
 /iklan6.
+/iklan_
 /iklancpm.
 /indofreeads_
 /promo/banner/*
@@ -53,6 +54,7 @@
 /SkinADkiri.
 /space-available.
 /spaceads.
+_iklan.
 _iklan_
 _promosi.
 ! 
@@ -810,6 +812,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||masteriklan.net^$third-party
 ||mesiniklan.andipublisher.com^$third-party
 ||pasangiklan.com^$third-party
+||pegel.pw^$image
 ||pondokiklan.com^$third-party
 ||props.id^$third-party
 ||publish.web.id^$third-party
@@ -1453,6 +1456,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dlganxfc.bid^
 ||dmatquyckwtu.com^
 ||dmbjbgiifpfo.com^
+||dmgexalrtsqrvx.com^
 ||dmjcabavsraf.com^
 ||dmojscqlwewu.com^
 ||dmvegzsxaxn.com^
@@ -2845,6 +2849,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||lgtnwgfqkyyf.com^
 ||lhapwjkoltogf.bid^
 ||lhaqzqjbafcu.com^
+||lhbkkztxg.com^
 ||lhedywrtanrgz.bid^
 ||lhekiqlzatfv.com^
 ||lhfcddgwg.bid^
@@ -2979,6 +2984,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||lwyjxvbcjkstxy.com^
 ||lwysswaxnutn.com^
 ||lxbaocqsmg.bid^
+||lxcfaekywx.com^
 ||lxghhxdcmumk.com^
 ||lxkqybzanzug.com^
 ||lxqoxgijpbmrg.bid^
@@ -3521,6 +3527,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ounaihekw.bid^
 ||ouvhowyqhacec.bid^
 ||ouvtjehb.bid^
+||ovcksawwem.com^
 ||ovfbwavekglf.com^
 ||ovoczhahelca.com^
 ||ovrdkhamiljt.com^
@@ -4340,6 +4347,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||tiunnitm.bid^
 ||tivbpmwvqyyrjc.com^
 ||tivlvdeuokwy.com^
+||tixzeybm.com^
 ||tjblfqwtdatag.bid^
 ||tjhcjhvzbto.bid^
 ||tjkckpytpnje.com^
@@ -5266,6 +5274,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ynvplyprjr.bid^
 ||yobxvotn.bid^
 ||yocnxozede.bid^
+||yogkshigsy.com^
 ||yojxoefvnyrc.com^
 ||yoorjlleqtquez.bid^
 ||yoqvnnkdmqfk.com^
@@ -5522,6 +5531,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||agenjudionline.in^$third-party
 ||agungqiu.org^$third-party
 ||bookepindo.com^$third-party
+||bosqq.online^$third-party
 ||cmcpoker.info^$third-party
 ||d138am4hd4ke4y.cloudfront.net^
 ||d1qk9ujrmkucbl.cloudfront.net^
@@ -5753,6 +5763,7 @@ kaskus.co.id##.top-feature
 /*bijipeler*.gif
 /*bisa88*.gif
 /*bobcbet*.gif
+/*Bosqq*.gif
 /*bursaliga*.gif
 /*cantikqq*.gif
 /*casinoeve*.gif
@@ -5814,6 +5825,7 @@ kaskus.co.id##.top-feature
 /*interwin*.gif
 /*istana168*.gif
 /*itu99*.gif
+/*itucasino*.gif
 /*ituqq.gif
 /*jasa_qq*.gif
 /*jasaqq*.gif
@@ -5862,9 +5874,11 @@ kaskus.co.id##.top-feature
 /*mayorbet*.gif
 /*mbo4d*.gif
 /*mega389*.gif
+/*meja13*.gif
 /*meja365*.gif
 /*mejakiu*.gif
 /*mejasakong*.gif
+/*menangqq*.gif
 /*mingguqq*.gif
 /*mingu-qq*.gif
 /*misiq*.gif
@@ -5913,6 +5927,7 @@ kaskus.co.id##.top-feature
 /*sboqq*.gif
 /*sbosbe*.gif
 /*sentosa88*.gif
+/*soccerbet*.gif
 /*sponsor-qq*.gif
 /*sponsorqq*.gif
 /*stardomino*.gif
@@ -5952,6 +5967,7 @@ kaskus.co.id##.top-feature
 /cashbackharian.gif
 /hoyajpnew*.gif
 /hoyapkrnew*.gif
+/kartu-online.gif
 /linkalternatif.$image
 /mb88.gif
 /MboCasino.gif
@@ -6018,9 +6034,11 @@ _Indokasino.
 ||daftarbandar*.$popup
 ||daftardomino.$popup
 ||daftarfun88.$popup
+||daftarpoker.$popup
 ||daftarpoker228.$popup
 ||daftarqq*.$popup
 ||daftarsbobetresmi.$popup
+||depodomino.$popup
 ||dermaga4d.$popup
 ||dewa757.$popup
 ||dewahoki.$popup
@@ -6039,6 +6057,7 @@ _Indokasino.
 ||ibet44cash.$popup
 ||idola18*.$popup
 ||idolabet.$popup
+||idpokerlink.$popup
 ||indotogel1.$popup
 ||inidomino.$popup
 ||interwin88.$popup
@@ -6185,12 +6204,14 @@ _Indokasino.
 ##a[href^="http://beliqq."] > img
 ##a[href^="http://bola168."] > img
 ##a[href^="http://bolped77."] > img
+##a[href^="http://capsa88."] > img
 ##a[href^="http://caradaftarpoker."] > img
 ##a[href^="http://cariqqiu."] > img
 ##a[href^="http://cash381"] > img
 ##a[href^="http://ceki899."] > img
 ##a[href^="http://ceritasex."] > img
 ##a[href^="http://champspoker."] > img
+##a[href^="http://creamtitangelasli."] > img
 ##a[href^="http://daftarbandar"] > img
 ##a[href^="http://daftardomino."] > img
 ##a[href^="http://daftarfun88."] > img
@@ -6241,6 +6262,7 @@ _Indokasino.
 ##a[href^="http://istanasbobet."] > img
 ##a[href^="http://jaluralternatif."] > img
 ##a[href^="http://jarumpoker."] > img
+##a[href^="http://jasa88"] > img
 ##a[href^="http://jasapoker."] > img
 ##a[href^="http://jayabola."] > img
 ##a[href^="http://jayapokr."] > img
@@ -6298,6 +6320,7 @@ _Indokasino.
 ##a[href^="http://okebos"] > img
 ##a[href^="http://okekiu."] > img
 ##a[href^="http://olb365."] > img
+##a[href^="http://ompoker."] > img
 ##a[href^="http://orientalpoker."] > img
 ##a[href^="http://pangerantoto"] > img
 ##a[href^="http://pasangnomor"] > img
@@ -6319,6 +6342,7 @@ _Indokasino.
 ##a[href^="http://rajanusantara."] > img
 ##a[href^="http://rajanyapoker."] > img
 ##a[href^="http://rajasakong88."] > img
+##a[href^="http://rakensu."] > img
 ##a[href^="http://redbullqq."] > img
 ##a[href^="http://rgopoker"] > img
 ##a[href^="http://royalpoker"] > img
@@ -6385,6 +6409,7 @@ _Indokasino.
 ##a[href^="http://www.blue5star."] > img
 ##a[href^="http://www.bola168bet."] > img
 ##a[href^="http://www.bola180."] > img
+##a[href^="http://www.bolasuhu."] > img
 ##a[href^="http://www.bsaja."] > img
 ##a[href^="http://www.bursatogel."] > img
 ##a[href^="http://www.cemejudi."] > img
@@ -6405,6 +6430,7 @@ _Indokasino.
 ##a[href^="http://www.hoyajackpot."] > img
 ##a[href^="http://www.ibet44cash."] > img
 ##a[href^="http://www.indowin99."] > img
+##a[href^="http://www.indukbet."] > img
 ##a[href^="http://www.infoterapis"] > img
 ##a[href^="http://www.inidomino."] > img
 ##a[href^="http://www.interwin88."] > img
@@ -6422,6 +6448,7 @@ _Indokasino.
 ##a[href^="http://www.lakibet."] > img
 ##a[href^="http://www.lakigoal."] > img
 ##a[href^="http://www.langitqq"] > img
+##a[href^="http://www.liga-emas."] > img
 ##a[href^="http://www.liga007."] > img
 ##a[href^="http://www.liganation."] > img
 ##a[href^="http://www.luxury138"] > img
@@ -6466,6 +6493,7 @@ _Indokasino.
 ##a[href^="http://www.sentosa88."] > img
 ##a[href^="http://www.sgopoker."] > img
 ##a[href^="http://www.sinidomino."] > img
+##a[href^="http://www.soccerbet99."] > img
 ##a[href^="http://www.suhu88."] > img
 ##a[href^="http://www.suhukiu."] > img
 ##a[href^="http://www.temanpoker"] > img
@@ -6512,17 +6540,24 @@ _Indokasino.
 ##a[href^="https://www.selebtoto."] > img
 ##a[href^="https://www.vegas78bets."] > img
 ##a[href^="https://www.vegasmarketonline."] > img
+##img[alt*="Agen Togel"]
+##img[alt*="Bandar Togel"]
+##img[alt*="BandarQ"]
 ##img[alt*="HoyaJackpot"]
+##img[alt*="Togel Online"]
+##img[alt*="Wahana303"]
+##img[alt*="bandarq"]
 ##img[alt*="bintangbola"]
 ##img[alt*="glxgames"]
 ##img[alt*="indowins"]
 ##img[alt*="jendralpoker"]
+##img[alt*="judi bola"]
+##img[alt*="judi online"]
 ##img[alt*="kampusbet"]
 ##img[alt*="novapoker"]
 ##img[alt*="pasang iklan"]
 ##img[alt^="agen bola"]
 ##img[alt^="agen poker"]
-##img[alt^="judi online"]
 ##img[alt^="poker online"]
 ! *** abid:addons/movie.txt ***
 indoxxi.info,nontonanimeindo.net,ns21.top##a[href^="https://goo.gl/"] > img
@@ -6563,7 +6598,7 @@ sukamovie.mobi##.sukam-bawah
 ||indexmovie.biz/assets/*.gif$image
 ||indexmovie.biz/iframe/content.php$first-party,subdocument
 ||indocinema21.com/banner/*.gif$image
-||indomv.org/wp-content/uploads/*.gif$image
+||indomv.net/wp-content/uploads/*.gif$image
 ||layarcinema.co/wp-content/uploads/*.gif$image
 ||layarhd.com/media/*.gif
 ||lk21.in/wp-content/uploads/*.gif$image
@@ -6577,6 +6612,7 @@ sukamovie.mobi##.sukam-bawah
 ||neumanga.tv/uploads/*.gif$image
 ||nobartv.com/img/banner/*.gif$image
 ||nontoncinema.org/wp-content/uploads/*.gif$image
+||nontoncinema.org/wp-content/uploads/*/daftarscript1.html$subdocument
 ||nontonin21.com/wp-content/uploads/*.gif$image
 ||nontonindrama.com/okes/*.gif$image
 ||ns21.top/wp-content/uploads/*.gif$image
@@ -6923,10 +6959,12 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.s
 ||stackpathdns.com/assets/javascript/cr.js
 ||vidfile.net^$third-party,websocket,xmlhttprequest
 ! *** abid:AdBlockID/whitelist.txt ***
-@@/ad/*$domain=ad4msan.com|mastekno.com|oploverz.in|pesnewupdate.click|safelkmeong.blogspot.com
+@@/ad/*$domain=ad4msan.com|anisubsia.xyz|mastekno.com|oploverz.in|pesnewupdate.click|safelkmeong.blogspot.com
+@@/advertisement.$domain=samehadaku.tv
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
+@@||anisubsia.xyz^$generichide
 @@||indoshares.com^$generichide
 @@||inwepo.co^$generichide
 @@||mangaindo.web.id^$generichide
@@ -6944,4 +6982,4 @@ short.awsubs.co#@#.iklan
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 @@||ainodorama.web.id^$generichide
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: dU7CNSzBnmPfXXsHzdvL+w
+! Checksum: +PgkissKct1Z1NSN151vdA
