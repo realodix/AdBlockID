@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0210.1343
+! Version: 18.0210.1617
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Feb 2018 13:43 UTC
+! Last modified: 10 Feb 2018 16:17 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -64,6 +64,7 @@ _promosi.
 -1000x70.
 -100x450.
 -100x500.
+-1040x65.
 -1080x65.
 -1080X90.
 -1100x136-
@@ -845,6 +846,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||aaeqlxdgx.bid^
 ||aajychvi.bid^
 ||aanvxbvkdxph.com^
+||aaomstbnbiqo.com^
 ||aapxtnrhq.bid^
 ||aaqpajztftqw.com^
 ||aaslmqzce.bid^
@@ -3570,6 +3572,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||pbbutsvpzqza.com^
 ||pbcyvzvdi.bid^
 ||pbggemxcuosmhz.bid^
+||pbhletstiooizj.com^
 ||pbsmzzxrmu.bid^
 ||pcebrrqydcox.com^
 ||pceqybrdyncq.com^
@@ -5906,6 +5909,7 @@ kaskus.co.id##.top-feature
 /*pkstar8*.gif
 /*pro-qq*.gif
 /*pulsaqq*.gif
+/*pusat365*.gif
 /*pusatbet*.gif
 /*pusatqq*.gif
 /*qq-domino*.gif
@@ -5986,6 +5990,7 @@ kaskus.co.id##.top-feature
 /RPK99-$image
 /sbcc-
 /SBCC.gif
+/sogopoker-
 /starwin.gif
 /togel-
 /vibol.$image
@@ -6129,8 +6134,8 @@ _Indokasino.
 ||sedapq*.$popup
 ||seniqq.$popup
 ||sentanapoker.$popup
-||sepakbolagol.$popup
-||shiokambing2.$popup
+||sepakbolago*.$popup
+||shiokambing*.$popup
 ||shiokuda.$popup
 ||sinidomino.$popup
 ||starcasino88.$popup
@@ -6140,8 +6145,8 @@ _Indokasino.
 ||temanjudi.$popup
 ||temanpoker99.$popup
 ||togelcc1.$popup
-||togeljackpot2.$popup
-||togelmarket2.$popup
+||togeljackpot*.$popup
+||togelmarket*.$popup
 ||totobett.$popup
 ||totokita.$popup
 ||w88domino.$popup
@@ -6540,12 +6545,14 @@ _Indokasino.
 ##a[href^="https://www.selebtoto."] > img
 ##a[href^="https://www.vegas78bets."] > img
 ##a[href^="https://www.vegasmarketonline."] > img
+##a[title*="GanoolQQ"] > img
 ##img[alt*="Agen Togel"]
 ##img[alt*="Bandar Togel"]
 ##img[alt*="BandarQ"]
 ##img[alt*="HoyaJackpot"]
 ##img[alt*="Togel Online"]
 ##img[alt*="Wahana303"]
+##img[alt*="bandar casino"]
 ##img[alt*="bandarq"]
 ##img[alt*="bintangbola"]
 ##img[alt*="glxgames"]
@@ -6559,6 +6566,16 @@ _Indokasino.
 ##img[alt^="agen bola"]
 ##img[alt^="agen poker"]
 ##img[alt^="poker online"]
+##img[title*="Agen Bola"]
+##img[title*="Agen Casino"]
+##img[title*="Agen Toto"]
+##img[title*="Agen togel"]
+##img[title*="Bandar Bola"]
+##img[title*="Bandar Casino"]
+##img[title*="Bandar Togel"]
+##img[title*="Bandar toto"]
+##img[title*="BandarQQ"]
+##img[title*="Taruhan Bola"]
 ! *** abid:addons/movie.txt ***
 indoxxi.info,nontonanimeindo.net,ns21.top##a[href^="https://goo.gl/"] > img
 movie303.com##a[href^="http://bit.ly/"] > img
@@ -6658,7 +6675,6 @@ nontonin21.com#@##banner_ad
 /coinhive.min.js
 /coinlab.js
 /crypto-js.
-/crypto-js/*
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
@@ -6946,7 +6962,7 @@ nontonin21.com#@##banner_ad
 ||ywtjdckysve.com^$third-party
 ||zlx.com.br^$third-party
 ! 
-$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|netlify.com|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
+$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|powvideo.net|shrink-service.it|streamango.com|streamcherry.com|vidfile.net
 ||2giga.link^*/hive.js
 ||cryweb.github.io^
 ||crywebber.github.io^
@@ -6956,6 +6972,7 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.s
 ||piti.bplaced.net^
 ||rawgit.com/Pocketart/$script,third-party
 ||reactor.cc^*.wasm
+||shrink-service.it/js/cM.js
 ||stackpathdns.com/assets/javascript/cr.js
 ||vidfile.net^$third-party,websocket,xmlhttprequest
 ! *** abid:AdBlockID/whitelist.txt ***
@@ -6982,4 +6999,4 @@ short.awsubs.co#@#.iklan
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 @@||ainodorama.web.id^$generichide
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: +PgkissKct1Z1NSN151vdA
+! Checksum: CyR58Bw7ySWqyaPtSmyj8w
