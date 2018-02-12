@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0210.1617
+! Version: 18.0212.1155
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Feb 2018 16:17 UTC
+! Last modified: 12 Feb 2018 11:55 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -412,6 +412,8 @@ _996x50.gif
 ##a[href="http://www.an.web.id/"]
 ! 
 ###Box-Banner-ads
+###ad_bgbottomleft
+###ad_bgbottomright
 ###ad_global_below_navbar
 ###ads-pop
 ###ads_banner_left1
@@ -479,6 +481,7 @@ _996x50.gif
 ##.adspost728
 ##.adtext01
 ##.adunits
+##.advads-widget
 ##.an-advert-banner
 ##.bannerutama
 ##.bgads
@@ -527,6 +530,8 @@ _996x50.gif
 ##.post-ad3
 ##.post-ads
 ##.post-ads-top
+##.post-adv
+##.posts-ad
 ##.pusat728
 ##.sponsor_ads
 ##.td-ad-m
@@ -780,6 +785,7 @@ _996x50.gif
 ##object[width="990"][height="206"]
 ! *** abid:AdBlockID/css_extended.txt ***
 arenasmartphone.com##.entry-content > div:contains(Advertisement)
+tampilcantik.com##.widget-main[class]:contains(Sponsored)
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/adservers.txt ***
@@ -1138,6 +1144,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||bpcegfmfzvkjmi.bid^
 ||bpehfety.bid^
 ||bpfxtrzapdxdr.bid^
+||bpglbuxwx.com^
 ||bpprksdgogtw.com^
 ||bprnphojtfl.bid^
 ||bqbagfhhbhyzq.bid^
@@ -1308,6 +1315,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||covjoecuzyss.com^
 ||coxgtwdios.bid^
 ||coyhvotxgrnq.com^
+||cozjfzlng.com^
 ||cpdafetdjtdsy.com^
 ||cpdoalzgwnwf.com^
 ||cpgiseaopbx.bid^
@@ -1367,6 +1375,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||czfavkwdmmpp.bid^
 ||czgeitdowtlv.com^
 ||czhtiirf.bid^
+||czihyzbul.com^
 ||czjjyfnpyrs.bid^
 ||czkbmjsodcgr.bid^
 ||czppmlbidjdx.com^
@@ -1437,6 +1446,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dhomixidnkas.com^
 ||dhrjzwqpweidm.bid^
 ||dhsztvyjwcmk.com^
+||dhvaigzy.com^
 ||dhxjrqegphza.bid^
 ||dhzmxkoq.bid^
 ||dibpvaoi.bid^
@@ -1522,6 +1532,8 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dvlhwokr.bid^
 ||dvprcchlzke.bid^
 ||dvsrlrnpyxwv.com^
+||dwbqmlvjpvv.com^
+||dwxaciqlebqemh.com^
 ||dxcqavshmvst.com^
 ||dxdunwcdfrdqm.com^
 ||dxfsbkmaydtt.com^
@@ -1672,6 +1684,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||etggiddfdaqd.com^
 ||etprpfuw.bid^
 ||etsqitgro.bid^
+||ettamscqyvocxz.com^
 ||etwgydlbl.bid^
 ||etyeltdqg.bid^
 ||etytypmuykf.bid^
@@ -1736,6 +1749,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||fdvmskmentjob.com^
 ||feacamnliz.bid^
 ||fembsflungod.com^
+||feqlklwaafgc.com^
 ||feqyuubaixe.bid^
 ||ffahsidlivqb.bid^
 ||ffbuqvnst.bid^
@@ -2192,6 +2206,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||hrvxpinmdyjx.com^
 ||hrykyhqtgcro.com^
 ||hsdjvuayagt.bid^
+||hseyrxoi.com^
 ||hshbyyuh.bid^
 ||hsivniaui.bid^
 ||hsnuutxbmmqry.bid^
@@ -2297,6 +2312,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ifvgsekkvcc.bid^
 ||igawfxfnupeb.com^
 ||igfuvwscradtpu.bid^
+||igifhnkw.com^
 ||igutgembqnw.bid^
 ||igvcpjsyk.bid^
 ||igyzmhqbihoi.com^
@@ -2485,6 +2501,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||jiyairvjgfqk.com^
 ||jjeevbcllev.bid^
 ||jjmuyvpery.bid^
+||jjpnveujkk.com^
 ||jjpoxurorlsb.com^
 ||jjrzlqho.com^
 ||jjwitnosyew.bid^
@@ -2543,6 +2560,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||jpybcyxyepsc.bid^
 ||jqdfakgwsxvccl.bid^
 ||jqdwgguusof.bid^
+||jqfkitrkhpxl.com^
 ||jqibqqxghcfk.com^
 ||jqinqsrmygeu.com^
 ||jqkxaejcijfz.com^
@@ -2554,6 +2572,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||jrauyqdbit.bid^
 ||jrdxlxdnohjzs.bid^
 ||jrlnmyorquny.bid^
+||jrlsithadutpm.com^
 ||jrtawlpbusyg.com^
 ||jtmfmeexjet.bid^
 ||jtqfggxxk.bid^
@@ -2681,6 +2700,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||kkztcmjvklinxp.bid^
 ||klakcdiqmgxq.com^
 ||kleonsqapa.bid^
+||klepuazuxv.com^
 ||klfqffhvdpkd.com^
 ||klidpcdzfqj.com^
 ||klmfvshct.bid^
@@ -2932,6 +2952,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||lqvuvkmohlktl.bid^
 ||lqydjvdrq.bid^
 ||lramhnoefoz.bid^
+||lrbllelemsx.com^
 ||lrcnshyxwx.bid^
 ||lreylxggpqxz.bid^
 ||lrjltdosshhd.com^
@@ -2983,6 +3004,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||lwocvazxfnuj.com^
 ||lwqwsptepdxy.com^
 ||lwvdeqfhswg.com^
+||lwxkgejswn.com^
 ||lwyjxvbcjkstxy.com^
 ||lwysswaxnutn.com^
 ||lxbaocqsmg.bid^
@@ -3203,6 +3225,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||mykpenejaaj.bid^
 ||mzhyrgyo.bid^
 ||mzkhhjueazkn.com^
+||mzqxeqrmgzxv.com^
 ||nahvyfyfpffm.com^
 ||namjixxurjam.com^
 ||nasfrzhbqvgq.bid^
@@ -3244,6 +3267,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||nfdntqlqrgwc.com^
 ||nfefwoasiq.bid^
 ||nfnssadfhxov.com^
+||nfqxehrpahqhjf.com^
 ||nfqxhapbtenjq.bid^
 ||nfsqrijauncb.com^
 ||nftmatxswtow.bid^
@@ -3537,6 +3561,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||owcykhrgovbvhh.bid^
 ||owdeuzstq.bid^
 ||owdligzikqqh.bid^
+||owjoflavzaerby.com^
 ||owlmjcogunzx.com^
 ||owmldgrzsc.bid^
 ||owodfrquhqui.com^
@@ -3706,6 +3731,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||pudswlbzob.bid^
 ||pugfgjvrivfm.bid^
 ||pugpwrqsk.bid^
+||punfbtrcvfdxl.com^
 ||punlkhusprgw.com^
 ||punvqjsvnmubxb.com^
 ||puogotzrsvtg.com^
@@ -4074,8 +4100,10 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||rvvslhmmbor.com^
 ||rvzudtgpvwxz.com^
 ||rwaxdqfuqih.bid^
+||rwdkcusan.com^
 ||rweqvydtzyre.com^
 ||rwtvvdspsbll.com^
+||rwxzeoqfj.com^
 ||rxeospfus.bid^
 ||rxisfwvggzot.com^
 ||rxjyjfkzzbl.bid^
@@ -4290,6 +4318,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||tbwaaekocue.bid^
 ||tcdikyjqdmsb.com^
 ||tchmfzftuzxue.bid^
+||tchqwqspwjeei.com^
 ||tckmsixzb.bid^
 ||tckofxwcaqts.com^
 ||tconifntowb.bid^
@@ -4506,6 +4535,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||uepsvcyxxrbs.bid^
 ||uerhhgezdrdi.com^
 ||ueutwxdypf.bid^
+||uewejiuqwqx.com^
 ||ufnzapqvrbyx.com^
 ||ufrzvzpympib.com^
 ||ugbmcjmpapeo.bid^
@@ -4869,6 +4899,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||wbnndoakibxvcu.bid^
 ||wboewdhesyfgsk.bid^
 ||wbqliddtojkf.com^
+||wbvltyeqcu.com^
 ||wbvsgqtwyvjb.com^
 ||wcabsbogwfxv.com^
 ||wcgquaaknuha.com^
@@ -5180,6 +5211,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||xzfjznfiuawv.bid^
 ||xzhmjoch.bid^
 ||xzibhixbsler.bid^
+||xzismtaelciif.com^
 ||xzmqokbeynlv.com^
 ||xzqbhowpbzj.bid^
 ||xzwdhymrdxyp.com^
@@ -5234,6 +5266,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||yfzohuuguor.bid^
 ||ygbokgipe.bid^
 ||ygkqjensf.bid^
+||ygsgfzydhdgd.com^
 ||ygyymhfstzuen.com^
 ||yhatwlkdbeewdd.bid^
 ||yhazcicy.bid^
@@ -5414,6 +5447,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||zhrbwgylkeqmb.bid^
 ||zhtcuchr.bid^
 ||ziaxamkssw.com^
+||ziglpcxcxetsi.com^
 ||zijkalirgmyzj.bid^
 ||zijnobynjmcs.com^
 ||zitbvxrbai.bid^
@@ -5523,6 +5557,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! 
 ||bp.blogspot.com/*.gif^$image,domain=kombatch.com|mangashiro.net|satujiwa.net|smallencode.com
 ||bucket.id/assets/images/users/*.gif$domain=enthus1ast.com|idfl.me
+||iframe.ly^$domain=tampilcantik.com
 ||imgur.com/*.gif$image,domain=mangashiro.net
 ||s1.postimg.org/*.gif$domain=idfl.me
 ||wp.com/*/wp-content/uploads/*.gif$image,domain=etalasebisnis.com|hotabis.com
@@ -5560,6 +5595,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||indopos.co.id/storage/uploads/a/$image
 ||indotelko.com/images/banner/$image
 ||inilahkoran.com/*/banners/$image
+||jagokata.com/images/banner-$image
 ||jurnalotaku.com/wp-content/uploads/*-banner.jpg
 ||kabar47.com/wp-content/uploads/*.gif
 ||klikpositif.com/file/banner/
@@ -6550,6 +6586,7 @@ _Indokasino.
 ##img[alt*="Bandar Togel"]
 ##img[alt*="BandarQ"]
 ##img[alt*="HoyaJackpot"]
+##img[alt*="QQFortuna"]
 ##img[alt*="Togel Online"]
 ##img[alt*="Wahana303"]
 ##img[alt*="bandar casino"]
@@ -6999,4 +7036,4 @@ short.awsubs.co#@#.iklan
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 @@||ainodorama.web.id^$generichide
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: CyR58Bw7ySWqyaPtSmyj8w
+! Checksum: 5J5iEni0ieI4z8J0pp1jFQ
