@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0213.1143
+! Version: 18.0213.1800
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Feb 2018 11:43 UTC
+! Last modified: 13 Feb 2018 18:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -226,6 +226,7 @@ _promosi.
 /940x50-
 /95x230.
 /960-80-
+/960x70.
 /965x120.
 =w440-h90-
 _1000x100.gif
@@ -1574,6 +1575,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||ecxtuyttpfe.bid^
 ||edgsscofljhc.com^
 ||ednnpxhjsqyd.com^
+||edoolqkrnmmnj.com^
 ||edplsrtjpxamr.bid^
 ||edpnkcsrp.bid^
 ||edudktabmq.bid^
@@ -1616,6 +1618,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||eigtfqrokt.bid^
 ||eiibdnjlautz.com^
 ||eimgxlsqj.bid^
+||eiqzyxofsgzel.com^
 ||eivikmwwrqtb.bid^
 ||eiwcqowbowqo.com^
 ||eizzndhkvl.bid^
@@ -4908,6 +4911,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||wbnndoakibxvcu.bid^
 ||wboewdhesyfgsk.bid^
 ||wbqliddtojkf.com^
+||wbqnbjsjoxhu.com^
 ||wbvltyeqcu.com^
 ||wbvsgqtwyvjb.com^
 ||wcabsbogwfxv.com^
@@ -5593,6 +5597,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||dc08i221b0n8a.cloudfront.net^
 ||filmseks.online^$third-party
 ||kumpulblogger.com^$third-party
+||naloindo.net^$third-party
 ||sukipli.com/*.gif^$third-party
 ||tempelin.website^$third-party
 ||ubloger.com^$third-party
@@ -5811,6 +5816,8 @@ kaskus.co.id##.top-feature
 /*bcasino*.gif
 /*bejoqq*.gif
 /*bejototo*.gif
+/*bendera-bet*.gif
+/*benderaqq*.gif
 /*bet2indo*.gif
 /*bijipeler*.gif
 /*bisa88*.gif
@@ -6170,6 +6177,7 @@ _Indokasino.
 ||pulsaqq.$popup
 ||q99bet.$popup
 ||qqdoyan.$popup
+||qqnalo.$popup
 ||qqpendekar.$popup
 ||raja12shio.$popup
 ||rajanusantara.$popup
@@ -6256,6 +6264,8 @@ _Indokasino.
 ##a[href^="http://bandartoke."] > img
 ##a[href^="http://bdrqq."] > img
 ##a[href^="http://beliqq."] > img
+##a[href^="http://benderabet"] > img
+##a[href^="http://benderaqq"] > img
 ##a[href^="http://bola168."] > img
 ##a[href^="http://bolped77."] > img
 ##a[href^="http://capsa88."] > img
@@ -6504,6 +6514,7 @@ _Indokasino.
 ##a[href^="http://www.langitqq"] > img
 ##a[href^="http://www.liga-emas."] > img
 ##a[href^="http://www.liga007."] > img
+##a[href^="http://www.liga178."] > img
 ##a[href^="http://www.liganation."] > img
 ##a[href^="http://www.luxury138"] > img
 ##a[href^="http://www.mamatogel."] > img
@@ -6628,16 +6639,18 @@ _Indokasino.
 ##img[title*="Taruhan Bola"]
 ! *** abid:addons/movie.txt ***
 indoxxi.info,nontonanimeindo.net,ns21.top##a[href^="https://goo.gl/"] > img
-movie303.com##a[href^="http://bit.ly/"] > img
-|http:$popup,third-party,domain|movie303.com|nonton77.com|senimovies.net|serunonton.com
+movie303.com,mt21.co##a[href^="http://bit.ly/"] > img
 ||blogspot.com/*.gif^$image,domain=123drakor.com|bioskopkeren.online|drakorindo.co|dramakorea.web.id|movie303.com|moviebaru21.com|nontondrama.me|nontonfilm21.club|nontonvip.com|senimovies.net
 ||gomovies.at.ua/images/$image,domain=indoxxi.info
 ||goo.gl/$image,domain=sunmovie21.com|surgafilm.club
-||imgur.com/*.gif$image,domain=agenmovie.net|bioskopskype.com|indoxxi.us|nonton01.com|nonton789.com|nontonanime.id|nontoncinema.org|senimovies.net|sunmovie21.com
-||livechatinc.com/*/open_chat.cgi$domain=layarfilm69.com|nontonanime.id|nontonmovie303.com
-||livechatinc.com/cloud/?*.gif$image,domain=cinemakaca.tv|nontonanime.id|sunmovie21.com
+||imgur.com/*.gif$image,domain=agenmovie.net|bioskopskype.com|dramaserial.tv|indoxxi.us|nonton01.com|nonton789.com|nontonanime.id|nontoncinema.org|nontonfilmdrama.com|senimovies.net|sunmovie21.com
+||livechatinc.com/*/open_chat.cgi$domain=cinemakaca.tv|layarfilm69.com|nontonanime.id|nontonmovie303.com|zonamoviex.com
+||livechatinc.com/cloud/?*.gif$image,domain=nontonanime.id|sunmovie21.com
 ||topddl.net/*.gif$image,domain=nanime.org
 ||wp.com/*/wp-content/uploads/*.gif$image,domain=bioskop47.com|drakorindo.club|nontonxxi.co
+! 
+/popup-maker/*$script,domain=nontondramaserial.com|nontonfilmdrama.com
+|http:$popup,third-party,domain|movie303.com|nonton77.com|senimovies.net|serunonton.com
 ! 
 senimovies.net###bottom_banner
 indoxxi.us###btm_banner
@@ -7049,4 +7062,4 @@ short.awsubs.co#@#.iklan
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 @@||ainodorama.web.id^$generichide
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: wovhFSq5qtMUMpF04PZ+CQ
+! Checksum: 7MV4zzMxYO4wrodSsioqaA
