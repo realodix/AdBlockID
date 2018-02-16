@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0216.0833
+! Version: 18.0216.1518
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Feb 2018 08:33 UTC
+! Last modified: 16 Feb 2018 15:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -449,6 +449,7 @@ _996x50.gif
 ###iklanatas
 ###iklanpersegi
 ###iklanresponsiveatas
+###keep-ads
 ###mvp-post-bot-ad
 ###pbanner
 ###popupwindow
@@ -497,6 +498,7 @@ _996x50.gif
 ##.g-ads
 ##.gg-ads_wrapper
 ##.headads
+##.idblog-center-ads
 ##.idmuvi-afterplayer
 ##.idmuvi-floatbanner
 ##.idmuvi-topbanner
@@ -520,6 +522,7 @@ _996x50.gif
 ##.iklanpusat
 ##.iklanright
 ##.inner-post-ads
+##.keep-adsme
 ##.kotak_iklan
 ##.kotak_iklan2
 ##.kotak_iklan3
@@ -791,6 +794,7 @@ _996x50.gif
 arenasmartphone.com##.entry-content > div:contains(Advertisement)
 tampilcantik.com##.widget-main[class]:contains(Sponsored)
 kumparan.com##div.panel-widget[class]:contains(Advertisement)
+ferboes.com##div.wpcnt[class]:contains(Iklan)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/adservers.txt ***
 ||accesstrade.co.id^$third-party
@@ -815,6 +819,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||iklanbogor.com^$third-party
 ||iklanhemat.com^$third-party
 ||iklanhoki.com^$third-party
+||iklaninter.net^$third-party
 ||jasaiklan.com^$third-party
 ||jayaiklan.com^$third-party
 ||klikabadi.net^$third-party
@@ -855,7 +860,7 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! *** abid:AdBlockID/thirdparty.txt ***
 ||uzone.id^$third-party
 ! 
-||bp.blogspot.com/*.gif^$image,domain=kombatch.com|mangashiro.net|satujiwa.net|smallencode.com
+||blogspot.com/*.gif^$image,domain=agungjakanugraha.com|alladsnetwork.web.id|kombatch.com|mangashiro.net|satujiwa.net|smallencode.com
 ||bucket.id/assets/images/users/*.gif$domain=enthus1ast.com|idfl.me
 ||iframe.ly^$domain=tampilcantik.com
 ||imgur.com/*.gif$image,domain=mangashiro.net
@@ -879,8 +884,10 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||d3oep4gb91kpuv.cloudfront.net^
 ||dc08i221b0n8a.cloudfront.net^
 ||filmseks.online^$third-party
+||jadwaltelevisi.com^$third-party
 ||kumpulblogger.com^$third-party
 ||naloindo.net^$third-party
+||pengusahamodalkecil.com^$third-party
 ||sukipli.com/*.gif^$third-party
 ||tempelin.website^$third-party
 ||ubloger.com^$third-party
@@ -922,18 +929,22 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||yourjavascript.com/0653544211/lompatin.js
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_hide.txt ***
+sehatlega.com###iklan1
+anggasave.com,bagikancara.com,bloggerszones.com,hobybaca.com,majalahikan.com,panduaneka.com,seniberpikir.com,suryapero.com##.adsbygoogle
+hobybaca.com##.td-adspot-title
+! 
 inikebumen.net,polisionline.com###HTML1
 polisionline.com###HTML10
-pasbana.com###HTML13
+ekagoblog.com,pasbana.com###HTML13
 pasbana.com###HTML14
 pasbana.com###HTML18
-pasbana.com,polisiinternet.com###HTML2
-polisiinternet.com###HTML3
+bangbil.com,pasbana.com,polisiinternet.com###HTML2
+ekagoblog.com,polisiinternet.com###HTML3
 idblanter.com###HTML3 > .widget-content
 inikebumen.net###HTML4
 kabarnagari.com,pasbana.com###HTML6
 pasbana.com###HTML8
-inikebumen.net###HTML9
+bloggerszones.com,inikebumen.net###HTML9
 hukumonline.com###adsa2
 hukumonline.com###adsa3
 hukumonline.com###adsb2b3
@@ -1087,6 +1098,7 @@ kaskus.co.id##.top-feature
 ||agffpcpi.bid^
 ||agfwzptrqb.bid^
 ||aggntknflhal.com^
+||agiuzlmavpnlb.com^
 ||aglyzutlhnbtgu.bid^
 ||agospkfp.bid^
 ||agshzkcsvoou.bid^
@@ -2779,6 +2791,7 @@ kaskus.co.id##.top-feature
 ||jqojocdbjpdyk.bid^
 ||jqtftqnkhsw.bid^
 ||jqtsknmobyw.com^
+||jqtwygdajic.com^
 ||jqusvvfzw.bid^
 ||jrauyqdbit.bid^
 ||jrdxlxdnohjzs.bid^
@@ -3353,6 +3366,7 @@ kaskus.co.id##.top-feature
 ||mmvcmovwegkz.com^
 ||mmygcnboxlam.com^
 ||mmyhkkzddlcqtj.bid^
+||mnanijqnse.com^
 ||mncdrqeqimfgh.bid^
 ||mnetqnqpmog.bid^
 ||mniyaeikxozlts.bid^
@@ -4233,6 +4247,7 @@ kaskus.co.id##.top-feature
 ||rjkfuvqwk.bid^
 ||rjljndfgnkcu.com^
 ||rjncckyoyvtu.com^
+||rjnqbphb.com^
 ||rjpqbishujeu.com^
 ||rkbjbtxhdi.bid^
 ||rkkneuzkd.bid^
@@ -5673,6 +5688,7 @@ kaskus.co.id##.top-feature
 ||zhabyesrdnvn.com^
 ||zhbzxeis.bid^
 ||zhkziiaajuad.com^
+||zhqzqupvgczom.com^
 ||zhrbwgylkeqmb.bid^
 ||zhtcuchr.bid^
 ||ziaxamkssw.com^
@@ -6752,7 +6768,6 @@ nontonin21.com#@##banner_ad
 /coinblind_beta.
 /coinhive.min.js
 /coinlab.js
-/crypto-js.
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
@@ -6860,6 +6875,7 @@ nontonin21.com#@##banner_ad
 ||candid.zone^$third-party
 ||cdnfile.xyz^$third-party
 ||chainblock.science^$third-party
+||chmproxy.bid^$third-party
 ||clickwith.bid^$third-party
 ||clod.pw^$third-party
 ||cloudcoins.co^$third-party
@@ -6898,6 +6914,7 @@ nontonin21.com#@##banner_ad
 ||csgocpu.com^$third-party
 ||deepc.cc^$third-party
 ||devphp.org.ua^$third-party
+||didnkinrab.com^$third-party
 ||dle-news.pw^$third-party
 ||dovinate.top^$third-party
 ||dronml.ml^$third-party
@@ -6954,8 +6971,10 @@ nontonin21.com#@##banner_ad
 ||ledinund.com^$third-party
 ||listat.biz^$third-party
 ||lmodr.biz^$third-party
+||losital.ru^$third-party
 ||marcycoin.org^$third-party
 ||mataharirama.xyz^$third-party
+||mebablo.com^$third-party
 ||megabanners.cf^$third-party
 ||mercy.ga^$third-party
 ||mine.nahnoji.cz^
@@ -6974,11 +6993,13 @@ nontonin21.com#@##banner_ad
 ||monerise.com^$third-party
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
+||moonsade.com^$third-party
 ||morningdigit.com^$third-party
 ||mutuza.win^$third-party
 ||nablabee.com^$third-party
 ||nahnoji.cz^$third-party
 ||nathetsof.com^$third-party
+||nebabrop.com^$third-party
 ||nfwebminer.com^$third-party
 ||niematego.tk^$third-party
 ||noblock.pro^$third-party
@@ -6989,6 +7010,7 @@ nontonin21.com#@##banner_ad
 ||p2poolmining.com^$third-party
 ||p2poolmining.net^$third-party
 ||papoto.com^$third-party
+||pearno.com^$third-party
 ||playerassets.info^$third-party
 ||podrltid.info^$third-party
 ||pool.hws.ru^$third-party
@@ -7035,6 +7057,7 @@ nontonin21.com#@##banner_ad
 ||webminepool.tk^$third-party
 ||webxmr.com^$third-party
 ||whathyx.com^$third-party
+||willacrit.com^$third-party
 ||witthethim.com^$third-party
 ||wp-monero-miner.com^$third-party
 ||wsp.marketgid.com^$third-party
@@ -7044,7 +7067,7 @@ nontonin21.com#@##banner_ad
 ||ywtjdckysve.com^$third-party
 ||zlx.com.br^$third-party
 ! 
-$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|alltube.tv|dekoder.ws|estream.to|fileone.tv|jkanime.net|kinokrad.co|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|powvideo.net|shrink-service.it|streamango.com|streamcherry.com|vidfile.net
+$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.tv|dekoder.ws|estream.to|fileone.tv|jkanime.net|kinokrad.co|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|powvideo.net|shrink-service.it|streamango.com|streamcherry.com|vidfile.net
 ||2giga.link^*/hive.js
 ||browsealoud.com/plus/scripts/$script
 ||cryweb.github.io^
@@ -7059,23 +7082,36 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.s
 ||stackpathdns.com/assets/javascript/cr.js
 ||vidfile.net^$third-party,websocket,xmlhttprequest
 ! *** abid:AdBlockID/whitelist.txt ***
-@@/ad/*$domain=ad4msan.com|adigunawan.id|anisubsia.xyz|gudangfirmwere.com|mastekno.com|nembal.club|oploverz.in|pesnewupdate.click|safelkmeong.blogspot.com
+@@.gif#*/ad/
+@@.jpg#*/ad/
+@@.png#*/ad/
 @@/advertisement.$domain=samehadaku.tv
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
+@@||anggasave.com^$generichide
 @@||anisubsia.xyz^$generichide
+@@||bagikancara.com^$generichide
+@@||bloggerszones.com^$generichide
+@@||blogogut.com^$generichide
 @@||gudangfirmwere.com^$generichide
+@@||hobybaca.com^$generichide
 @@||indoshares.com^$generichide
 @@||inwepo.co^$generichide
+@@||juraganmumut.com^$generichide
+@@||majalahikan.com^$generichide
 @@||mangaindo.net^$generichide
 @@||mangashiro.net^$generichide
 @@||mangavy.com^$generichide
 @@||nembal.club^$generichide
 @@||oploverz.in^$generichide
+@@||panduaneka.com^$generichide
 @@||piratefiles.org^$generichide
 @@||safelkmeong.blogspot.com^$generichide
+@@||sehatlega.com^$generichide
+@@||seniberpikir.com^$generichide
 @@||sirozuki.com^$generichide
+@@||suryapero.com^$generichide
 @@||tutorialweb.net^$generichide
 adigunawan.id#@##adsense
 adigunawan.id#@##skyline_ad
@@ -7088,4 +7124,4 @@ short.awsubs.co#@#.iklan
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 @@||ainodorama.web.id^$generichide
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: 1Udz5Q5wpggSeys4Z24daw
+! Checksum: hlUpwxG9jZtFQpi96grcEA
