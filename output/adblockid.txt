@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0216.0359
+! Version: 18.0216.0454
 ! Title: AdBlockID
 ! Description: AdBlockID filter. Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Feb 2018 03:59 UTC
+! Last modified: 16 Feb 2018 04:54 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -885,9 +885,12 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_block.txt ***
 /*banner*.$image,domain=backpackstory.me|doktersehat.com|inikebumen.net|prfmnews.com
+/affiliate-$image,domain=imsahadi.com
 /balipostcom_float-$image,domain=balipost.com
 ||acmobilindonesia.com/image-banner/$image
+||edukasibitcoin.com/wp-content/uploads/*.gif$image
 ||eramuslim.com/banners/
+||forumbitcoin.co.id/*/banner/$image
 ||harianjogja.com/banner/
 ||hotabis.com/wp-content/uploads/*.gif
 ||iklan.beritajatim.com/$image
@@ -917,9 +920,17 @@ kumparan.com##div.panel-widget[class]:contains(Advertisement)
 ||yourjavascript.com/0653544211/lompatin.js
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_hide.txt ***
-inikebumen.net###HTML1
+inikebumen.net,polisionline.com###HTML1
+polisionline.com###HTML10
+pasbana.com###HTML13
+pasbana.com###HTML14
+pasbana.com###HTML18
+pasbana.com,polisiinternet.com###HTML2
+polisiinternet.com###HTML3
 idblanter.com###HTML3 > .widget-content
 inikebumen.net###HTML4
+kabarnagari.com,pasbana.com###HTML6
+pasbana.com###HTML8
 inikebumen.net###HTML9
 hukumonline.com###adsa2
 hukumonline.com###adsa3
@@ -927,13 +938,16 @@ hukumonline.com###adsb2b3
 hukumonline.com###adsk2
 hukumonline.com###adsp2
 hukumonline.com###adsp3
+dibalikseo.com###banner
 otosia.com###box-mobil-dijual
 mangacanblog.com,pecintakomik.com###btm_banner
 komiku.net###floatads3
 carapedia.com###floating-banner
 droidlime.com###it-ad-header
+idblanter.com###largebanner
 lytogame.com###lytoads
 detik.com###otp_banner
+polisionline.com###postfeature
 bola.net###top_leaderboard
 otosia.com###v5-leaderboard
 kapanlagi.com###v5-marcommpromotion
@@ -941,6 +955,8 @@ kapanlagi.com###v5-marcommpromotion2
 otosia.com###v5-showcase1
 kapanlagi.com,otosia.com###v5-showcase2
 kapanlagi.com###v8-leaderboard
+tribunsumbar.com###widget_sp_image-6
+tribunsumbar.com###widget_sp_image-7
 mangacanblog.com##.ad
 teknobos.com##.adcontainer
 gogirl.id,jalantikus.com,tempointeraktif.co##.ads
@@ -955,6 +971,7 @@ kabargames.id##.banner-kiri
 diskon.com##.banner-middle
 ngopibareng.id##.banner-timeline
 kompasiana.com##.banner-top
+heyriad.com##.banner-toped
 cgv.id##.banner-wrapper
 beritagar.id##.banner300x250
 cosmogirl.co.id##.bnr
@@ -962,12 +979,14 @@ kaskus.co.id##.bnr-ads
 detik.com##.bottom_banner
 harianbhirawa.com##.box-banner
 detik.com##.detikads
+beritakini.co##.funds
 teknodiary.com##.googlepublisherads
 detik.com##.gtm_newsfeed_ads
 kaskus.co.id##.header__kasad
 carapedia.com##.img-banner
 kaskus.co.id##.kaskus-ads
 kompas.com##.kcm__horizontal.kcm
+tribunsumbar.com##.majalahpro-core-center-ads
 detik.com##.newsfeed-ads
 viva.co.id##.paralax_banner-detail
 jadwaltelevisi.com##.promo-banner
@@ -979,6 +998,7 @@ cermati.com##.sticky-banner
 covesia.com##.topbanner
 inilah.com##.wb-300x250
 duta.co##a[href^="//goo.gl/"] > img
+valora.co.id##img[src^="http://www.valora.co.id/banner/"]
 ! 
 analisis.kontan.co.id###div-Top-Analisis
 caritahu.kontan.co.id###div-Top-Caritahu
@@ -1000,24 +1020,6 @@ grid.id###head-banner-ads
 grid.id##.ads-mr
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(11)
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
-! 
-polisionline.com###HTML1
-polisionline.com###HTML10
-pasbana.com###HTML13
-pasbana.com###HTML14
-pasbana.com###HTML18
-pasbana.com,polisiinternet.com###HTML2
-polisiinternet.com###HTML3
-kabarnagari.com,pasbana.com###HTML6
-pasbana.com###HTML8
-dibalikseo.com###banner
-idblanter.com###largebanner
-polisionline.com###postfeature
-tribunsumbar.com###widget_sp_image-6
-tribunsumbar.com###widget_sp_image-7
-beritakini.co##.funds
-tribunsumbar.com##.majalahpro-core-center-ads
-valora.co.id##img[src^="http://www.valora.co.id/banner/"]
 ! ------------------------------------------------------------!
 ! *** abid:addons/annoyances.txt ***
 ##.berlangganan-box
@@ -4318,6 +4320,7 @@ kaskus.co.id##.top-feature
 ||rweqvydtzyre.com^
 ||rwtvvdspsbll.com^
 ||rwxzeoqfj.com^
+||rxczemggfsxx.com^
 ||rxeospfus.bid^
 ||rxisfwvggzot.com^
 ||rxjyjfkzzbl.bid^
@@ -7052,20 +7055,26 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.s
 ||stackpathdns.com/assets/javascript/cr.js
 ||vidfile.net^$third-party,websocket,xmlhttprequest
 ! *** abid:AdBlockID/whitelist.txt ***
-@@/ad/*$domain=ad4msan.com|anisubsia.xyz|mastekno.com|oploverz.in|pesnewupdate.click|safelkmeong.blogspot.com
+@@/ad/*$domain=ad4msan.com|adigunawan.id|anisubsia.xyz|gudangfirmwere.com|mastekno.com|nembal.club|oploverz.in|pesnewupdate.click|safelkmeong.blogspot.com
 @@/advertisement.$domain=samehadaku.tv
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||anisubsia.xyz^$generichide
+@@||gudangfirmwere.com^$generichide
 @@||indoshares.com^$generichide
 @@||inwepo.co^$generichide
-@@||mangaindo.web.id^$generichide
+@@||mangaindo.net^$generichide
 @@||mangashiro.net^$generichide
+@@||mangavy.com^$generichide
+@@||nembal.club^$generichide
 @@||oploverz.in^$generichide
 @@||piratefiles.org^$generichide
 @@||safelkmeong.blogspot.com^$generichide
+@@||sirozuki.com^$generichide
 @@||tutorialweb.net^$generichide
+adigunawan.id#@##adsense
+adigunawan.id#@##skyline_ad
 agroindustri.id#@#.category-advertorial
 dutaislam.com#@##ads-wrapper
 eramuslim.com#@##topAd
@@ -7075,4 +7084,4 @@ short.awsubs.co#@#.iklan
 ! https://github.com/AdguardTeam/AdguardFilters/issues/6338
 @@||ainodorama.web.id^$generichide
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: Rd6o20IEHj6/WWfeRFozhQ
+! Checksum: T+dNR6IUUs5AzIc/PZD/lA
