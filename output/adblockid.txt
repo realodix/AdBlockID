@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0219.0418
+! Version: 18.0219.1409
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 Feb 2018 04:18 UTC
+! Last modified: 19 Feb 2018 14:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -24,6 +24,7 @@
 /ad200x50/*
 /ads-img/*
 /ads.jpg
+/adsfixed.
 /adsspace-
 /ban670x80.
 /banner-atas1
@@ -38,6 +39,7 @@
 /bannerkosong2.
 /bnr-samping.
 /bnr-tengah.
+/gg-ads-
 /iklan-
 /iklan/*
 /iklan1.
@@ -47,7 +49,6 @@
 /iklan5.
 /iklan6.
 /iklan_
-/gg-ads-
 /iklancpm.
 /indofreeads_
 /promo/banner/*
@@ -57,8 +58,10 @@
 /spaceads.
 _iklan.
 _iklan_
+_iklanatas/
 _iklansidebar_
 _iklantengah/
+_iklantengah_
 _promosi.
 ! 
 ! Popular dimension sizes
@@ -66,8 +69,6 @@ _promosi.
 -1000x60.
 -1000x70.
 -100x450.
--678x100-
--950x240_
 -100x500.
 -1010x183.
 -1040x65.
@@ -129,6 +130,7 @@ _promosi.
 -640x76.
 -65x300-
 -65X440.
+-678x100-
 -680x60.
 -700x70.
 -700x70px
@@ -144,6 +146,7 @@ _promosi.
 -800X70.
 -80x300-
 -85x445.
+-950x240_
 -970-190.
 -970x80.
 -980x70.
@@ -440,12 +443,14 @@ _996x50.gif
 ###btm_banner-foot
 ###desaiklan
 ###dewiqq
+###edit-logo-iklan
 ###et_ads-2
 ###fbawah
 ###fbbanner
 ###flowads
 ###footer-adcont
 ###hbanner
+###hide-fixed-ads
 ###idmuvi-popup
 ###iklan
 ###iklan-pos
@@ -473,6 +478,8 @@ _996x50.gif
 ##.SectionAds
 ##.ad-bawah
 ##.ad-float-image
+##.ad-image
+##.ad-image-small
 ##.ad1-desktop
 ##.ad1-wrapper
 ##.ad_primex
@@ -508,6 +515,8 @@ _996x50.gif
 ##.detads
 ##.disads300px
 ##.disads720px
+##.dt-top-ads
+##.fixed-ads
 ##.forads
 ##.g-ads
 ##.gg-ads_wrapper
@@ -544,6 +553,7 @@ _996x50.gif
 ##.kotak_iklan
 ##.kotak_iklan2
 ##.kotak_iklan3
+##.magazine-block-medium-ad
 ##.mainads
 ##.minipusat
 ##.pasangiklan
@@ -570,6 +580,7 @@ _996x50.gif
 ##.video-content-top-ads
 ##.widget_adace_ads_widget
 ##.widget_supermag_ad
+##.wrap-fixed-ads
 ##[id*="adgshp"]
 ##a[href*="/iklan/"]
 ##a[href="/iklan-ads/"]
@@ -919,18 +930,21 @@ ferboes.com##div.wpcnt[class]:contains(Iklan)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_block.txt ***
 -adv-$image,domain=suroboyo.id
--banner.$image,domain=inilahonline.com|jurnalotaku.com
+-banner.$image,domain=inilahonline.com|jurnalotaku.com|sumaterapost.co
 -banner/$image,domain=acmobilindonesia.com
-/*banner*.$image,domain=backpackstory.me|doktersehat.com|inikebumen.net|prfmnews.com|zonabola.co.id|zonabola.id
+/*banner*.$image,domain=backpackstory.me|doktersehat.com|inikebumen.net|jejamo.com|konkritnews.com|prfmnews.com|zonabola.co.id|zonabola.id
+/*IKLAN*.$image,domain=harianpilar.com
 /affiliate-$image,domain=imsahadi.com
 /balipostcom_float-$image,domain=balipost.com
 /banner-$image,domain=jagokata.com|sumselupdate.com
 /banner_$image,domain=resep.web.id
+/ikl*.$image,domain=lampungnews.com
 banner_$image,domain=bogornews.com
 ||beritajakarta.id/banner/$image
 ||beritapagi.co.id/ads/$image
 ||detiksumsel.com/media/banner/$image
 ||edukasibitcoin.com/wp-content/uploads/*.gif$image
+||elshinta.com/banner/$image
 ||eramuslim.com/banners/
 ||forumbitcoin.co.id^*/banner/$image
 ||harianjogja.com/banner/
@@ -940,6 +954,7 @@ banner_$image,domain=bogornews.com
 ||indotelko.com/images/banner/$image
 ||inilahkoran.com^*/banners/$image
 ||kabar47.com/wp-content/uploads/*.gif
+||kba.one/files/sewaan/$image
 ||klikpositif.com^*/banner/
 ||komiku.net/wp-content/uploads/*.gif
 ||kotakgame.com/images/bnr/$image
@@ -951,8 +966,10 @@ banner_$image,domain=bogornews.com
 ||motorexpertz.com/uploads/*.gif
 ||prfmnews.com/images/*.gif$image
 ||rmol.co/banner/$image
+||rri.co.id^*/banner/$image
 ||selebuzz.co.id/wp-content/uploads/*.gif
 ||solopos.com/banner/
+||suarapedia.com^*/banner/$image
 ||suarasurabaya.net^*/banner/$image
 ||teropongsenayan.com/banner/$image
 ||waralabakan.com^*/banner/$image
@@ -986,11 +1003,15 @@ otosia.com###box-mobil-dijual
 mangacanblog.com,pecintakomik.com###btm_banner
 komiku.net###floatads3
 carapedia.com###floating-banner
+taktiklampung.com###footer-wrapper
 droidlime.com###it-ad-header
 idblanter.com###largebanner
 lytogame.com###lytoads
 detik.com###otp_banner
 polisionline.com###postfeature
+duajurai.co###text-5
+duajurai.co###text-7
+duajurai.co###text-9
 bola.net###top_leaderboard
 otosia.com###v5-leaderboard
 kapanlagi.com###v5-marcommpromotion
@@ -1019,6 +1040,7 @@ cosmogirl.co.id##.bnr
 kaskus.co.id##.bnr-ads
 detik.com##.bottom_banner
 harianbhirawa.com##.box-banner
+lampungpro.com##.cs-widget-banner-300x250
 detik.com##.detikads
 beritakini.co##.funds
 teknodiary.com##.googlepublisherads
@@ -1027,6 +1049,7 @@ kaskus.co.id##.header__kasad
 carapedia.com##.img-banner
 kaskus.co.id##.kaskus-ads
 kompas.com##.kcm__horizontal.kcm
+lampung1.com,nenemonews.com##.ktz_banner
 tribunsumbar.com##.majalahpro-core-center-ads
 detik.com##.newsfeed-ads
 viva.co.id##.paralax_banner-detail
@@ -1039,8 +1062,9 @@ cermati.com##.sticky-banner
 hotabis.com,jurnalsumbar.com##.td-a-rec
 covesia.com##.topbanner
 inilah.com##.wb-300x250
+penaberlian.com,sakanews.com,suaralampung.com##a[href="#"] > img
 duta.co##a[href^="//goo.gl/"] > img
-idblanter.com,pojoksatu.id##a[target="_blank"] > img
+idblanter.com,pojoksatu.id,radarlampung.co.id##a[target="_blank"] > img
 valora.co.id##img[src^="http://www.valora.co.id/banner/"]
 ! 
 radiotemansejati.com##.bannersinglefot
@@ -1433,6 +1457,7 @@ kaskus.co.id##.top-feature
 ||buauaamx.bid^
 ||budyxjttmjkf.com^
 ||bufqrxzyrecf.com^
+||buhxsaifjxupaj.com^
 ||buitxcrnucyi.com^
 ||burvyzqwfqg.bid^
 ||bvevgygeu.bid^
@@ -1525,6 +1550,7 @@ kaskus.co.id##.top-feature
 ||cjnwobsladbq.com^
 ||cjprndsozzdu.bid^
 ||cjxdbmxtnqmy.com^
+||ckfctuaga.com^
 ||ckjdnyvcop.bid^
 ||ckjflngcqcfl.bid^
 ||ckqfackpj.bid^
@@ -1715,6 +1741,7 @@ kaskus.co.id##.top-feature
 ||djxvususwvso.com^
 ||dkadbasc.bid^
 ||dkdnvbueigxs.bid^
+||dkfdpglo.com^
 ||dkgdinrubwxro.bid^
 ||dkjgyysfincxps.bid^
 ||dkvblgxkihtys.bid^
@@ -2119,6 +2146,7 @@ kaskus.co.id##.top-feature
 ||ftqhgapqugv.bid^
 ||ftusprfqtu.bid^
 ||ftvkgkkmthed.com^
+||ftymjfywuyv.com^
 ||ftytssqazcqx.com^
 ||fuckaqunrcjj.bid^
 ||fucrzdux.bid^
@@ -2743,6 +2771,7 @@ kaskus.co.id##.top-feature
 ||jdzmcidlajwwzi.bid^
 ||jebfktzfjqghv.bid^
 ||jebuorwrqfflzl.com^
+||jeksffryglas.com^
 ||jertwakjcaym.com^
 ||jevijshpvnwm.com^
 ||jezqighae.bid^
@@ -3459,6 +3488,7 @@ kaskus.co.id##.top-feature
 ||msvgmziu.bid^
 ||mszfmpseoqbu.com^
 ||mtbadedrhcx.bid^
+||mtbnqoixmb.com^
 ||mtbpqzke.bid^
 ||mtbsdhzpikjt.com^
 ||mtlieuvyoikf.com^
@@ -4396,6 +4426,7 @@ kaskus.co.id##.top-feature
 ||rxuqpktyqixa.com^
 ||rxyeukffow.bid^
 ||ryhrabmmprehm.com^
+||rylkihtmnvsh.com^
 ||rylnirfbokjd.com^
 ||ryxpmonwqeg.com^
 ||ryzrdgdvg.bid^
@@ -4574,6 +4605,7 @@ kaskus.co.id##.top-feature
 ||sxucahrsnam.bid^
 ||sxvqdslmbqyk.bid^
 ||syataqoszu.bid^
+||sydhbmlmdxzd.com^
 ||syfdkngkksn.bid^
 ||syfoauwvcwi.bid^
 ||syhfcveeizqp.bid^
@@ -4979,6 +5011,7 @@ kaskus.co.id##.top-feature
 ||vbjwswnic.bid^
 ||vblunqrovanf.com^
 ||vbmvbljjer.bid^
+||vbnvvzedvgx.com^
 ||vbyefnnrswpn.com^
 ||vcavpwzzx.bid^
 ||vcegsisugrwd.bid^
@@ -5042,6 +5075,7 @@ kaskus.co.id##.top-feature
 ||vhzzzbdtxhh.bid^
 ||vicofhozbuaf.com^
 ||vigrjuksi.bid^
+||vimenhhpqnb.com^
 ||vimlsrcfgjyr.bid^
 ||viqfxgmgacxv.com^
 ||vivcdctagoij.com^
@@ -5235,6 +5269,7 @@ kaskus.co.id##.top-feature
 ||wkgaqvvwvqjg.com^
 ||wkggjmkrkvot.com^
 ||wkjcdukkwcvr.com^
+||wkmuxmlk.com^
 ||wkqmeskbz.bid^
 ||wktlsedohnly.com^
 ||wkuayaogbegtyp.bid^
@@ -5594,6 +5629,7 @@ kaskus.co.id##.top-feature
 ||ylbhlvqqyp.bid^
 ||ylhjsrwqtqqb.com^
 ||yljrefexjymy.com^
+||ylmnpenjdn.com^
 ||ylqezcnlzfsj.com^
 ||ylsbuudmpiks.bid^
 ||ymgjxtmtfl.bid^
@@ -7179,4 +7215,4 @@ dutaislam.com#@##ads-wrapper
 eramuslim.com#@##topAd
 lindung.in#@#.afs_ads
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: uusKW/9uNdhD21tRC15RIA
+! Checksum: u1rM1gKV7KscoqogzchT3g
