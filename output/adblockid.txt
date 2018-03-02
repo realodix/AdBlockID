@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0228.0742
+! Version: 18.0302.1452
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Feb 2018 07:42 UTC
+! Last modified: 02 Mar 2018 14:52 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -906,6 +906,7 @@ ferboes.com##.wpcnt:-abp-contains(Iklan)
 ||bioskopstar88.com/pop/$script
 ||joneself.com^
 ||kkawxvjeluwc.com^
+||plaza-bisnis.com^$first-party,popup
 ||tqeobp89axcn.com^
 ||yourjavascript.com/1411253239/itu-domino-popup-script.js
 ||yourjavascript.com/9422241923/iklan-popweb-goalcoid.js
@@ -1003,8 +1004,10 @@ ferboes.com##.wpcnt:-abp-contains(Iklan)
 ||prfmnews.com/images/*.gif$image
 ||rmol.co/banner/$image
 ||rri.co.id^*/banner/$image
+||safelinku.com/fullpage/script.js$script,thirdparty
 ||selebuzz.co.id/wp-content/uploads/*.gif
 ||solopos.com/banner/
+||solopos.com^*/banner-$image
 ||suarapedia.com^*/banner/$image
 ||suarasurabaya.net^*/banner/$image
 ||suckittrees.com^*/banner.
@@ -1049,6 +1052,7 @@ lytogame.com###lytoads
 serbacara.com###mtc-popup
 detik.com###otp_banner
 polisionline.com###postfeature
+solopos.com###solopos_float
 duajurai.co###text-5
 duajurai.co###text-7
 duajurai.co###text-9
@@ -1112,10 +1116,10 @@ baliekbis.com##.textwidget > .img-hyperlink
 juragancipir.com##.topad
 covesia.com##.topbanner
 inilah.com##.wb-300x250
-duta.co,hostingterbaikindonesia.org##a[href*="//goo.gl/"] > img
+duta.co,hostingterbaikindonesia.org,siapbisnis.net##a[href*="//goo.gl/"] > img
 lintastimur.com,penaberlian.com,sakanews.com,suaralampung.com##a[href="#"] > img
 indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
-aftermarketplus.id,anakui.com,boc.web.id,idblanter.com,kabarpapua.co,pojoksatu.id,radarlampung.co.id,tabloidjubi.com##a[target="_blank"] > img
+aftermarketplus.id,anakui.com,boc.web.id,idblanter.com,kabarpapua.co,plaza-bisnis.com,pojoksatu.id,radarlampung.co.id,tabloidjubi.com##a[target="_blank"] > img
 riaupos.co##img[src^="banner/"]
 valora.co.id##img[src^="http://www.valora.co.id/banner/"]
 ! 
@@ -1153,6 +1157,7 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 ||livechatinc.com/*/open_chat.cgi$subdocument,domain=liputanbola.co
 ||log.viva.co.id/iframe^
 ||onesignal.com^$third-party
+||sumo.com^$domain=plaza-bisnis.com
 ||sumome.com^$third-party
 ||widget.kompas.com/widget-newsletter/
 ! 
@@ -1696,6 +1701,7 @@ sekolahblogger.net###kr-box
 ||ctzvtevpcssx.com^
 ||cuabgfjnib.bid^
 ||cuchpagh.com^
+||cuhicevdjsfey.com^
 ||cuvbcwgenwytrk.bid^
 ||cuxsmovh.bid^
 ||cvhpuccaib.bid^
@@ -1780,6 +1786,7 @@ sekolahblogger.net###kr-box
 ||dgufzszbsk.bid^
 ||dgulomuzgkyjhe.bid^
 ||dgycvdyncugrd.bid^
+||dhaomvok.com^
 ||dhenktvqqmbcnj.bid^
 ||dhgcqqmtf.com^
 ||dhienrfamv.com^
@@ -1885,6 +1892,7 @@ sekolahblogger.net###kr-box
 ||dxfsbkmaydtt.com^
 ||dxkhboqrrimy.bid^
 ||dxokxbrfl.bid^
+||dxtveuux.com^
 ||dxurtngzawwe.com^
 ||dyazeqpeoykf.com^
 ||dyerbegytfkj.com^
@@ -1911,6 +1919,7 @@ sekolahblogger.net###kr-box
 ||ebnfsjxs.bid^
 ||ebrvuzqkq.bid^
 ||ebspiewapcta.com^
+||ecboxijnmh.com^
 ||eccsyytbe.bid^
 ||ecflhhxp.bid^
 ||ectbduztanog.com^
@@ -2014,6 +2023,7 @@ sekolahblogger.net###kr-box
 ||epgokiocquxf.com^
 ||eplsshzbotknz.bid^
 ||epoxtzgddiwp.com^
+||epsiulpa.com^
 ||eptwulil.com^
 ||epvhmxyqa.bid^
 ||epxxqzrcdfkxo.bid^
@@ -2072,6 +2082,7 @@ sekolahblogger.net###kr-box
 ||eydiuqpdtfew.com^
 ||eyjuwcrnu.bid^
 ||eylyitpslpqu.com^
+||ezbbxqocxnto.com^
 ||ezbtpdjeimlv.com^
 ||ezdariijmdlg.bid^
 ||ezemyudhkzvx.com^
@@ -2089,6 +2100,7 @@ sekolahblogger.net###kr-box
 ||faoxietqwbmu.com^
 ||fatayvywbebgdn.com^
 ||fawhiybzs.bid^
+||fbafbbujy.com^
 ||fbauhaozc.bid^
 ||fbbjlubvwmwd.com^
 ||fbzfudipxwtu.bid^
@@ -2111,6 +2123,7 @@ sekolahblogger.net###kr-box
 ||feqyuubaixe.bid^
 ||ffahsidlivqb.bid^
 ||ffbuqvnst.bid^
+||fffzquckf.com^
 ||ffhwzaenzoue.com^
 ||ffkwprrdmyaj.bid^
 ||ffpkqjyvvneg.com^
@@ -2155,6 +2168,7 @@ sekolahblogger.net###kr-box
 ||fkphqtgqrfixl.com^
 ||fkrrvhoierty.com^
 ||fkwwhndzjlqrm.com^
+||flmditew.com^
 ||flooaiaubf.bid^
 ||flzelfqolfnf.com^
 ||fmcwqmwdaubb.com^
@@ -2490,6 +2504,7 @@ sekolahblogger.net###kr-box
 ||hfmtqgiqscvg.com^
 ||hftyrwqjknhzoa.com^
 ||hfyqolbetdprw.bid^
+||hgdovdnd.com^
 ||hgezwkouu.bid^
 ||hgirriqj.bid^
 ||hgqmkbpvmyn.bid^
@@ -2720,6 +2735,7 @@ sekolahblogger.net###kr-box
 ||ikvuvztmvvro.bid^
 ||ikxdpmnznk.bid^
 ||ilakffljjdpwb.com^
+||illizuqkdqjobt.com^
 ||ilrxikdjozlk.com^
 ||ilvibsabwuza.com^
 ||immgnzenbixuzd.bid^
@@ -2797,6 +2813,7 @@ sekolahblogger.net###kr-box
 ||ixsxgaegvplo.com^
 ||ixzhwyuxxvxb.com^
 ||ixznwuxokydz.com^
+||iygdvith.com^
 ||iyivpsxzgjcarv.bid^
 ||iyjukpbyzsxc.bid^
 ||iynfhmgte.bid^
@@ -2851,6 +2868,7 @@ sekolahblogger.net###kr-box
 ||jemopaqkst.com^
 ||jertwakjcaym.com^
 ||jevijshpvnwm.com^
+||jeyuhcbagxbp.com^
 ||jezqighae.bid^
 ||jfaqiomgvajb.com^
 ||jfcofvhuqzdg.bid^
@@ -2859,6 +2877,7 @@ sekolahblogger.net###kr-box
 ||jfvoyuxmp.bid^
 ||jfwfnxsdzhvxax.bid^
 ||jfxiirxbl.bid^
+||jfxjpswhcwwq.com^
 ||jgophcykrckik.com^
 ||jgrcggutsilp.com^
 ||jgtnayftk.bid^
@@ -2869,6 +2888,7 @@ sekolahblogger.net###kr-box
 ||jhwqdpyo.bid^
 ||jhylgkwsz.bid^
 ||jijcetagjfzo.com^
+||jiruygrsl.com^
 ||jiyairvjgfqk.com^
 ||jjeevbcllev.bid^
 ||jjmuyvpery.bid^
@@ -2948,6 +2968,7 @@ sekolahblogger.net###kr-box
 ||jrdxlxdnohjzs.bid^
 ||jrlnmyorquny.bid^
 ||jrlsithadutpm.com^
+||jrrmwjybfaztct.com^
 ||jrtawlpbusyg.com^
 ||jtmfmeexjet.bid^
 ||jtqfggxxk.bid^
@@ -3039,6 +3060,7 @@ sekolahblogger.net###kr-box
 ||keqnebfovnhl.com^
 ||kesllcmdcsbd.com^
 ||kfaesgypn.bid^
+||kfdqqqmorlt.com^
 ||kfdwywhuissy.com^
 ||kfjgnunsuy.bid^
 ||kflimllvanjv.com^
@@ -3138,6 +3160,7 @@ sekolahblogger.net###kr-box
 ||ksxaaoey.bid^
 ||ktgsiqgj.bid^
 ||kthwboouxxcmc.bid^
+||kthztsgfuygcw.com^
 ||ktjqfqadgmxh.com^
 ||ktrmzzrlkbet.com^
 ||ktuiyrchrhuxn.bid^
@@ -3262,6 +3285,7 @@ sekolahblogger.net###kr-box
 ||lhttyvdxvgjrdp.com^
 ||lhxgdmcyropacl.bid^
 ||licoxbkagivaf.bid^
+||ligabklr.com^
 ||liilsuive.bid^
 ||lijddbusldnecz.bid^
 ||liqbipkfbafq.com^
@@ -3297,6 +3321,7 @@ sekolahblogger.net###kr-box
 ||lmoqmsagyjcurg.bid^
 ||lmwdcdzievq.bid^
 ||lndzkpjtjfjz.bid^
+||lnelcbntwru.com^
 ||lnjpyxvbpyvj.com^
 ||lnltyqqop.bid^
 ||lnnwwxpeodmw.com^
@@ -3328,6 +3353,7 @@ sekolahblogger.net###kr-box
 ||lqlksxbltzxw.com^
 ||lqlycogmpxhd.com^
 ||lqpkjasgqjve.com^
+||lqrrkjodhq.com^
 ||lqsclyxh.bid^
 ||lqtxnuramh.bid^
 ||lqvckaciozvs.bid^
@@ -3950,10 +3976,12 @@ sekolahblogger.net###kr-box
 ||oubibahphzsz.com^
 ||oubriojtpnps.com^
 ||ougfkbyllars.com^
+||ouiinryhlvbgq.com^
 ||oulxdvvpmfcd.com^
 ||ounaihekw.bid^
 ||ouvhowyqhacec.bid^
 ||ouvtjehb.bid^
+||ovchjqpdh.com^
 ||ovcksawwem.com^
 ||ovfbwavekglf.com^
 ||ovoczhahelca.com^
@@ -4118,6 +4146,7 @@ sekolahblogger.net###kr-box
 ||psvdblzcgnjj.com^
 ||pswlvlauz.bid^
 ||psxnwzksttygfs.com^
+||psygnjvrd.com^
 ||ptblqwjz.com^
 ||ptgiweiu.com^
 ||ptkwepmv.bid^
@@ -4184,6 +4213,7 @@ sekolahblogger.net###kr-box
 ||qcpegxszbgjm.com^
 ||qcpexkxxyx.bid^
 ||qcxhpohiwawnmo.bid^
+||qdcoqejn.com^
 ||qddgbaux.com^
 ||qdpbtrwvmioo.bid^
 ||qdqhseenooz.bid^
@@ -4232,6 +4262,7 @@ sekolahblogger.net###kr-box
 ||qinsmmxvacuh.com^
 ||qiqrguvdhcux.com^
 ||qiremmtynkae.com^
+||qitumxisyt.com^
 ||qiurgfxexsmp.com^
 ||qiytksjydjmt.bid^
 ||qjaunokfxqi.bid^
@@ -4256,6 +4287,7 @@ sekolahblogger.net###kr-box
 ||qlvtfnfxwcq.bid^
 ||qmamdjtoykgl.com^
 ||qmisgnkw.bid^
+||qmjjvpoqhb.com^
 ||qndqwtrwguhv.com^
 ||qnfarzjp.bid^
 ||qnieefmaaqi.bid^
@@ -4333,6 +4365,7 @@ sekolahblogger.net###kr-box
 ||qxgoedqwr.bid^
 ||qxnniyuuaxhv.com^
 ||qxqtejyqkypfz.bid^
+||qxvnvbkcm.com^
 ||qydpcilzljej.bid^
 ||qyghwcrjaw.bid^
 ||qynohttywcws.bid^
@@ -4431,6 +4464,7 @@ sekolahblogger.net###kr-box
 ||rlypbeouoxxw.com^
 ||rmbilhzcytee.com^
 ||rmdzbqggjskv.com^
+||rmeolnjxkgfe.com^
 ||rmgxhpflxhmd.com^
 ||rmlzgvnuqxlp.com^
 ||rmyvebtzf.bid^
@@ -4447,6 +4481,7 @@ sekolahblogger.net###kr-box
 ||roksnfmaydlo.com^
 ||roljcubvx.bid^
 ||romksuecd.bid^
+||ronrmbrrhqdwh.com^
 ||roppccqbzvizrd.bid^
 ||roqtynlfysu.bid^
 ||roxutbftcm.bid^
@@ -4498,6 +4533,7 @@ sekolahblogger.net###kr-box
 ||rurjxaovebr.bid^
 ||rustqlclwuebif.bid^
 ||ruzttiecdedv.com^
+||rvcruqbk.com^
 ||rveftfohdybpwv.bid^
 ||rvmwyfvfxendw.bid^
 ||rvoxndszxwmo.com^
@@ -4536,6 +4572,7 @@ sekolahblogger.net###kr-box
 ||saqcgojcure.bid^
 ||sasieidpe.bid^
 ||sasqhtfxsnklxn.bid^
+||satjrvwtaertn.com^
 ||sauispjbeisl.com^
 ||saybfmfptfjlv.bid^
 ||saylbisqotwixm.bid^
@@ -4715,6 +4752,7 @@ sekolahblogger.net###kr-box
 ||szxkkefabenx.bid^
 ||szynlslqxerx.com^
 ||szzxtanwoptm.bid^
+||tadkozdgbyw.com^
 ||taeadsnmbbkvpw.bid^
 ||taelsfdgtmka.com^
 ||tammfmhtfhut.com^
@@ -4848,6 +4886,7 @@ sekolahblogger.net###kr-box
 ||tpnphooeqg.bid^
 ||tpueomljcrvy.com^
 ||tpzukfqaqyxn.bid^
+||tqcxtxglt.com^
 ||tqdarrhactqc.com^
 ||tqssctwtiihwfs.bid^
 ||tqtoeonkw.bid^
@@ -4922,6 +4961,7 @@ sekolahblogger.net###kr-box
 ||tzlijsurxh.bid^
 ||tzwcaamgd.bid^
 ||uaaholcdcx.bid^
+||uabicxuyovh.com^
 ||uaclvtrcno.bid^
 ||ualobhbpjbjtm.bid^
 ||uamfjudim.bid^
@@ -5043,10 +5083,12 @@ sekolahblogger.net###kr-box
 ||uszpxpcoflkl.com^
 ||utfffrxmzuvy.com^
 ||utjwhrahb.bid^
+||utlpwxdt.com^
 ||utwhgyjgjw.bid^
 ||utyhzjbwfyrz.bid^
 ||utzpjbrtyjuj.com^
 ||uuacjdostjloa.bid^
+||uukqjcucva.com^
 ||uupjizxqf.bid^
 ||uuvwcjtppeonfq.com^
 ||uuwoktwdmo.bid^
@@ -5086,6 +5128,7 @@ sekolahblogger.net###kr-box
 ||uzbciwrwzzhs.com^
 ||uzesptwcwwmt.com^
 ||uzkkocgdasr.bid^
+||uzmmpskwon.com^
 ||uzqtaxiorsev.com^
 ||uzsywcdthqplzv.bid^
 ||uzvjymcnwngwau.bid^
@@ -5146,6 +5189,7 @@ sekolahblogger.net###kr-box
 ||vfasewomnmco.com^
 ||vfayoytjil.bid^
 ||vfbdtfucvlxi.bid^
+||vfedpgmaxxkug.com^
 ||vfkfctmtgrtq.com^
 ||vfmzddpaznanf.bid^
 ||vfonfnazs.bid^
@@ -5168,6 +5212,7 @@ sekolahblogger.net###kr-box
 ||vhjygupbyf.bid^
 ||vhlsrzyt.bid^
 ||vhpqxkhvjgwx.com^
+||vhscigqpwe.com^
 ||vhuveukirbuz.com^
 ||vhwuphctrfil.com^
 ||vhzzzbdtxhh.bid^
@@ -5334,6 +5379,7 @@ sekolahblogger.net###kr-box
 ||webwagssicx.bid^
 ||weckosoew.bid^
 ||weekwkbulvsy.com^
+||wegbgideb.com^
 ||wehtkuhlwsxy.com^
 ||welzgxwtvto.bid^
 ||wembbuue.com^
@@ -5349,11 +5395,13 @@ sekolahblogger.net###kr-box
 ||wglbionuopeh.com^
 ||wgulihtuzssn.com^
 ||wgzdpzvtvwvjtv.bid^
+||whdulnhnrscfqx.com^
 ||whgsyczcofwf.com^
 ||whinjxmkugky.com^
 ||whkwbllcctfm.com^
 ||whsldqctrvuk.com^
 ||whuvrlmzyvzy.com^
+||whxhegjrqlddko.com^
 ||whyawcjjcoexo.bid^
 ||wibvytsxrm.bid^
 ||wicxfvlozsqz.com^
@@ -5365,6 +5413,7 @@ sekolahblogger.net###kr-box
 ||wirfpvmoblpa.com^
 ||wizejdnlqwcb.com^
 ||wjdjovjrxsqx.com^
+||wjkwjcmeymu.com^
 ||wjnkvhlgvixx.com^
 ||wkfcadtuljnesp.bid^
 ||wkgaqvvwvqjg.com^
@@ -5652,6 +5701,7 @@ sekolahblogger.net###kr-box
 ||yaoslgiweccw.com^
 ||yaqysxlohdyg.com^
 ||yasltdlichfd.com^
+||yasnxwjtjbx.com^
 ||yattprdmuybn.com^
 ||ybemuzknpvkgn.bid^
 ||ybgbaxrzxxlr.com^
@@ -5775,6 +5825,7 @@ sekolahblogger.net###kr-box
 ||ysexxayb.bid^
 ||ysqdjkermxyt.com^
 ||ysrbddieabo.bid^
+||ysyrcnsb.com^
 ||yszbigwywfzk.bid^
 ||ytapgckhhvou.com^
 ||ytaujxmxxxmm.com^
@@ -5917,6 +5968,7 @@ sekolahblogger.net###kr-box
 ||zohaqnxwkvyt.com^
 ||zowhxkwzjpta.com^
 ||zpctncydojjh.com^
+||zpfjfwbij.com^
 ||zpkebyxabtsh.com^
 ||zpnbzxbiqann.com^
 ||zprlpkabqlth.com^
@@ -5929,6 +5981,7 @@ sekolahblogger.net###kr-box
 ||zqijyjktaxc.bid^
 ||zqjfpxcgivkv.com^
 ||zqskkhcxd.bid^
+||zrbhmhzzdj.com^
 ||zrbhyvkpgeyn.com^
 ||zrdjojunihbox.bid^
 ||zrelqwrx.bid^
@@ -7289,8 +7342,8 @@ movie303.com,mt21.co##a[href^="http://bit.ly/"] > img
 ||gomovies.at.ua/images/$image,domain=indoxxi.info
 ||goo.gl/$image,domain=sunmovie21.com|surgafilm.club
 ||imgur.com/*.gif$image,domain=agenmovie.net|bioskopskype.com|dramaserial.tv|indoxxi.us|nonton01.com|nonton789.com|nontonanime.id|nontoncinema.org|nontonfilmdrama.com|senimovies.net|sunmovie21.com
-||livechatinc.com/*/open_chat.cgi$domain=cinemakaca.tv|layarfilm69.com|nontonanime.id|nontonmovie303.com|zonamoviex.com
-||livechatinc.com/cloud/?*.gif$image,domain=nontonanime.id|sunmovie21.com
+||livechatinc.com/*/open_chat.cgi$domain=bioskopgalaxy21.com|cinemakaca.tv|layarfilm69.com|nontonanime.id|nontonmovie303.com|zonamoviex.com
+||livechatinc.com/cloud/?*.gif$image,domain=bioskopgalaxy21.com|nontonanime.id|sunmovie21.com
 ||topddl.net/*.gif$image,domain=nanime.org
 ||wp.com/*/wp-content/uploads/*.gif$image,domain=bioskop47.com|drakorindo.club|nontonxxi.co
 ! 
@@ -7384,6 +7437,9 @@ nontonin21.com#@##banner_ad
 /coinblind_beta.
 /coinhive.min.js
 /coinlab.js
+/connectics.js
+/Crypto-Loot/*$script
+/cryptoloot/*$script
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
@@ -7393,6 +7449,7 @@ nontonin21.com#@##banner_ad
 /inject.js?key=$script
 /jsecoin.*/?
 /lhnhelpouttab-current.min.js
+/maxcdn.wasm
 /miner-ui.js
 /miner.full.js
 /miner.js
@@ -7433,6 +7490,7 @@ nontonin21.com#@##banner_ad
 .ovh^$third-party,websocket
 .party^$third-party,websocket
 .pro^$third-party,websocket
+.pw^$third-party,websocket
 .racing^$third-party,websocket
 .review^$third-party,websocket
 .rocks^$third-party,websocket
@@ -7444,6 +7502,7 @@ nontonin21.com#@##banner_ad
 .top^$third-party,websocket
 .trade^$third-party,websocket
 .webcam^$third-party,websocket
+.website^$third-party,websocket
 .win^$third-party,websocket
 .xyz^$third-party,websocket,domain=~btorrent.xyz|~webtorrent.io
 .zone^$third-party,websocket
@@ -7475,6 +7534,7 @@ nontonin21.com#@##banner_ad
 ||api.inwemo.com^$third-party
 ||aqqgli3vle.bid^$third-party
 ||authedmine.com^$third-party,domain=~coinhive.com
+||averoconnector.com^$third-party
 ||axoncoho.tk^$third-party
 ||azvjudwr.info^$third-party
 ||bablace.com^$third-party
@@ -7533,6 +7593,7 @@ nontonin21.com#@##banner_ad
 ||cryptonoter.com^$third-party
 ||csgocpu.com^$third-party
 ||deepc.cc^$third-party
+||depttake.ga^$third-party
 ||devphp.org.ua^$third-party
 ||didnkinrab.com^$third-party
 ||dle-news.pw^$third-party
@@ -7542,8 +7603,10 @@ nontonin21.com#@##banner_ad
 ||easyhash.io^$third-party
 ||etnhashpool.tk^$third-party
 ||evengparme.com^$third-party
+||ewtuyytdf45.com^$third-party
 ||fge9vbrzwt.bid^$third-party
 ||flare-analytics.com^$third-party
+||flophous.cf^$third-party
 ||flu.cc^$third-party
 ||freecontent.bid^$third-party
 ||freecontent.racing^$third-party
@@ -7571,20 +7634,24 @@ nontonin21.com#@##banner_ad
 ||hodling.party^$third-party
 ||hodling.science^$third-party
 ||host.d-ns.ga^$third-party
+||hydesolo.tk^$third-party
 ||igg.biz^$third-party
 ||igrid.org^$third-party
 ||ingorob.com^$third-party
 ||insdrbot.com^$third-party
+||interestingz.pw^$third-party
 ||investhash.com^$third-party
 ||jquery-uim.download^$third-party
 ||jroqvbvw.info^$third-party
 ||jsccnn.com^$third-party
 ||jscdndel.com^$third-party
 ||jsecoin.com^$third-party
+||junopink.ml^$third-party
 ||jyhfuqoh.info^$third-party
 ||kdowqlpt.info^$third-party
 ||kedtise.com^$third-party
 ||kinoprofi.org^$third-party
+||kippbeak.cf^$third-party
 ||l33tsite.info^$third-party
 ||ledhenone.com^$third-party
 ||ledinund.com^$third-party
@@ -7636,6 +7703,7 @@ nontonin21.com#@##banner_ad
 ||poolmining.eu^$third-party
 ||poolmining.net^$third-party
 ||ppoi.org^$third-party
+||presjots.ga^$third-party
 ||projectpoi.com^$third-party
 ||reasedoper.pw^$third-party
 ||refunevent.com^$third-party
@@ -7665,6 +7733,7 @@ nontonin21.com#@##banner_ad
 ||ukp2pool.uk^$third-party
 ||usa.cc^$third-party
 ||vcfs6ip5h6.bid^$third-party
+||veerebbs.ml^$third-party
 ||veritrol.com^$third-party
 ||verresof.com^$third-party
 ||vzhjnorkudcxbiy.com^$third-party
@@ -7685,8 +7754,8 @@ nontonin21.com#@##banner_ad
 ||ywtjdckysve.com^$third-party
 ||zlx.com.br^$third-party
 ! 
-$websocket,domain=300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.tv|dekoder.ws|estream.to|fileone.tv|gofile.io|hq-porns.com|jkanime.net|kinokrad.co|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|powvideo.net|shrink-service.it|streamango.com|streamcherry.com|vidfile.net
-$xmlhttprequest,domain=alltube.tv|powvideo.net
+$websocket,domain=1q2w3.website|300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.tv|ddmix.net|dekoder.ws|estream.to|fileone.tv|gofile.io|hq-porns.com|jkanime.net|kinokrad.co|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|powvideo.net|shrink-service.it|streamango.com|streamcherry.com|szukajka.tv|thepiratebay.cr|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tvad.me|vidfile.net|vidgg.to|vidtod.me|vidup.me|vidzi.si|vidzi.tv
+$xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|ddmix.net|dekoder.ws|powvideo.net|szukajka.tv|vidfile.net|vidgg.to
 ||2giga.link^*/hive.js
 ||browsealoud.com/plus/scripts/$script
 ||cryweb.github.io^
@@ -7745,4 +7814,4 @@ eramuslim.com#@##topAd
 lindung.in#@#.afs_ads
 nabire.net#@#.adsbygoogle
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: FkXykN3INQe8ZSBVfsUAxQ
+! Checksum: Qf+vEVBwiGRbzY02F3SAiQ
