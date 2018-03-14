@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0311.1608
+! Version: 18.0314.0947
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Mar 2018 16:08 UTC
+! Last modified: 14 Mar 2018 09:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -610,6 +610,10 @@ _996x50.gif
 ##.widget_adace_ads_widget
 ##.widget_supermag_ad
 ##.wrap-fixed-ads
+##[class*="iklan-kiri"]
+##[id*="-iklan-kanan-"]
+##[id*="-iklan-kiri-"]
+##[id*="_iklan-block_"]
 ##[id*="adgshp"]
 ##a[href*="/iklan/"]
 ##a[href="/iklan-ads/"]
@@ -853,11 +857,13 @@ _996x50.gif
 ##object[width="982"][height="150"]
 ##object[width="990"][height="206"]
 ! *** abid:AdBlockID/css_extended.txt ***
+harianrakyatbengkulu.com##.content .cat-box:-abp-contains(Advertisement)
 arenasmartphone.com##.entry-content > div:-abp-contains(Advertisement)
 loveindonesia.com##.panel:-abp-contains(Iklan)
 turbonesia.com##.panel:-abp-has(a[href*="/iklanbaris/"])
 onwap.xyz##.widget:-abp-contains(Ads)
 sumseldaily.com##.widget:-abp-contains(IKLAN)
+swara-bengkulu.com##.widget:-abp-contains(SPACE AVAILABLE)
 tampilcantik.com##.widget:-abp-contains(Sponsored)
 mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ferboes.com##.wpcnt:-abp-contains(Iklan)
@@ -974,6 +980,7 @@ ferboes.com##.wpcnt:-abp-contains(Iklan)
 /banner-$image,domain=beritaasatu.com|jagokata.com|majalahgadget.com|sumselupdate.com|versiriau.com
 /banner_$image,domain=bogornews.com|koranrakyat.co.id|resep.web.id
 /ikl*.$image,domain=lampungnews.com|versiriau.com
+||adbtc.top/promo/banner_$third-party
 ||beritabali.com^*/banner/$image
 ||beritajakarta.id/banner/$image
 ||beritapagi.co.id/ads/$image
@@ -1016,6 +1023,7 @@ ferboes.com##.wpcnt:-abp-contains(Iklan)
 ||suarasurabaya.net^*/banner/$image
 ||suckittrees.com^*/banner.
 ||teropongsenayan.com/banner/$image
+||tuntasonline.com^*/promotion/$image
 ||waralabakan.com^*/banner/$image
 ||winnetnews.com/image/*/banner/$image
 ||yourjavascript.com/0653544211/lompatin.js
@@ -1071,9 +1079,11 @@ kapanlagi.com###v8-leaderboard
 mangacanblog.com##.ad
 teknobos.com##.adcontainer
 radioonline.co.id##.add-box-top
+cendananews.com##.adloc-is-banner
 gogirl.id,jalantikus.com,tempointeraktif.co##.ads
 cermati.com##.ads-container
 detik.com,mangaku.web.id,panjimas.com##.adv
+bengkuluekspress.com##.adv-wrapper
 arenalte.com,krjogja.com##.advertisement
 arenalte.com##.arenalte-ads
 autonetmagz.com##.autonetmagz__meta--ads-elements
@@ -1116,15 +1126,17 @@ harianjogja.com##.sp-griya
 mydramalist.com##.spnsr
 mydramalist.com##.spnsr-wrapper
 cermati.com##.sticky-banner
-hotabis.com,jurnalsumbar.com,tmcblog.com##.td-a-rec
+hotabis.com,jurnalsumbar.com,liputanbengkulu.com,tmcblog.com##.td-a-rec
+pedomanbengkulu.com##.td-header-rec-wrap
 baliekbis.com##.textwidget > .img-hyperlink
 juragancipir.com##.topad
 covesia.com##.topbanner
 inilah.com##.wb-300x250
 duta.co,hostingterbaikindonesia.org,siapbisnis.net##a[href*="//goo.gl/"] > img
-lintastimur.com,penaberlian.com,sakanews.com,suaralampung.com##a[href="#"] > img
+harianrakyatbengkulu.com##a[href*="/Advertisement/"]
+harianrakyatbengkulu.com,lintastimur.com,penaberlian.com,sakanews.com,suaralampung.com##a[href="#"] > img
 indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
-aftermarketplus.id,anakui.com,boc.web.id,idblanter.com,kabarpapua.co,plaza-bisnis.com,pojoksatu.id,radarlampung.co.id,tabloidjubi.com##a[target="_blank"] > img
+aftermarketplus.id,anakui.com,boc.web.id,garudadaily.com,harianrakyatbengkulu.com,idblanter.com,kabarpapua.co,plaza-bisnis.com,pojoksatu.id,radarlampung.co.id,redaksibengkulu.co.id,reportaserakyat.com,tabloidjubi.com##a[target="_blank"] > img
 riaupos.co##img[src^="banner/"]
 valora.co.id##img[src^="http://www.valora.co.id/banner/"]
 ! 
@@ -1507,6 +1519,7 @@ sekolahblogger.net###kr-box
 ||bspjagxietut.com^
 ||bsqliktzudq.bid^
 ||bsupflnjmuzn.com^
+||bsxctkajqdp.com^
 ||btbapoifsphl.com^
 ||btcwkbqojiyg.com^
 ||btjxbwiehrm.bid^
@@ -1612,6 +1625,7 @@ sekolahblogger.net###kr-box
 ||cixjiydrsyq.bid^
 ||cjbaeegayainxl.bid^
 ||cjnoeafncyzb.com^
+||cjnqsrzyhil.com^
 ||cjnwobsladbq.com^
 ||cjprndsozzdu.bid^
 ||cjxdbmxtnqmy.com^
@@ -1643,6 +1657,7 @@ sekolahblogger.net###kr-box
 ||cmrxvyjyaerf.com^
 ||cmwsdhdyregbyn.bid^
 ||cmyjgtiihmit.bid^
+||cnjkrbhtbv.com^
 ||cnntsmnymvnp.com^
 ||cnnzfijy.bid^
 ||cnoytvqomyhjz.com^
@@ -2090,6 +2105,7 @@ sekolahblogger.net###kr-box
 ||exucfbmppagqta.bid^
 ||exvgzhwssyivz.bid^
 ||eydiuqpdtfew.com^
+||eyinwxkojgkfgs.com^
 ||eyjuwcrnu.bid^
 ||eylefeyrwl.com^
 ||eylyitpslpqu.com^
@@ -2179,6 +2195,7 @@ sekolahblogger.net###kr-box
 ||fkphqtgqrfixl.com^
 ||fkrrvhoierty.com^
 ||fkwwhndzjlqrm.com^
+||flkyhwjhp.com^
 ||flmditew.com^
 ||flooaiaubf.bid^
 ||flzelfqolfnf.com^
@@ -2709,6 +2726,7 @@ sekolahblogger.net###kr-box
 ||idvuakamkzmx.com^
 ||ieavcqhxtpak.com^
 ||iebnsqfwfhl.bid^
+||ieeawxjool.com^
 ||iekztyhqfs.bid^
 ||ielqcwzwjczpx.bid^
 ||ieoexdjxrwtq.com^
@@ -2810,6 +2828,7 @@ sekolahblogger.net###kr-box
 ||itbiwlsxtigx.com^
 ||itdfougdewupfd.bid^
 ||itsskxyyi.bid^
+||iuabiwhclldt.com^
 ||iuewancpgd.bid^
 ||iuhzosuy.club^
 ||iukvnikhn.bid^
@@ -2880,6 +2899,7 @@ sekolahblogger.net###kr-box
 ||jczpcviiurut.bid^
 ||jdbzloynedpylr.bid^
 ||jdcwnccdx.com^
+||jdgilrlyqtrly.com^
 ||jdhhehwkvl.com^
 ||jdhnfbmrhwkn.com^
 ||jdiliqkjk.bid^
@@ -2999,6 +3019,7 @@ sekolahblogger.net###kr-box
 ||jrrmwjybfaztct.com^
 ||jrtawlpbusyg.com^
 ||jrtzehrbg.com^
+||jryyekccnw.com^
 ||jtmfmeexjet.bid^
 ||jtqfggxxk.bid^
 ||jtumenosmrte.com^
@@ -3222,6 +3243,8 @@ sekolahblogger.net###kr-box
 ||kvrozyibdkkt.com^
 ||kvrzoosj.com^
 ||kvsyksorguja.com^
+||kvtblvquxxzbim.com^
+||kvtxztiys.com^
 ||kvvvdfimdxnu.com^
 ||kvwvhpthqyaxk.bid^
 ||kvzvtiswjroe.com^
@@ -3237,6 +3260,7 @@ sekolahblogger.net###kr-box
 ||kwzuhmpwvsbsc.bid^
 ||kxareafqwjop.com^
 ||kxhnlmrnqw.bid^
+||kxjzvfrhyf.com^
 ||kxounmvfkmvv.com^
 ||kxphhdia.bid^
 ||kxtkfkqkrzz.bid^
@@ -3656,6 +3680,7 @@ sekolahblogger.net###kr-box
 ||mvkmhjlqqjnay.bid^
 ||mvlcwazi.bid^
 ||mvncasmaxapgyk.bid^
+||mvrmyxkw.com^
 ||mvtunjij.bid^
 ||mvvecbfomk.com^
 ||mvyfuwczzotfe.bid^
@@ -3702,6 +3727,7 @@ sekolahblogger.net###kr-box
 ||nceuiwtnpyuqtn.bid^
 ||ncjjybttngffe.com^
 ||ncouqiwjjaot.com^
+||ncruzwye.com^
 ||ncsirrabtlant.bid^
 ||ncspvnslmmbv.com^
 ||ndemlviibdyc.com^
@@ -3750,6 +3776,7 @@ sekolahblogger.net###kr-box
 ||njswarysemyf.bid^
 ||njvpulnxjzhhf.bid^
 ||nkbvvlhdnagkd.bid^
+||nkclrxanzeossa.com^
 ||nkcyhqvzmzlnh.bid^
 ||nkfqetvgeytp.bid^
 ||nkgvtmwdb.com^
@@ -3909,6 +3936,7 @@ sekolahblogger.net###kr-box
 ||ofmeapowymywx.bid^
 ||ofmuojegzbxo.com^
 ||ofpwdoovxs.bid^
+||ofuqmgatoli.com^
 ||ofwwrgelrvx.bid^
 ||ogbamfpcfac.bid^
 ||ogegqayudrypc.bid^
@@ -3995,6 +4023,7 @@ sekolahblogger.net###kr-box
 ||oqfoiwjwysbffe.com^
 ||oqxwefyi.bid^
 ||orddiltnmmlu.com^
+||orgvevacxlinrr.com^
 ||orgzjdgtjmvzi.bid^
 ||ormnduxoewtl.com^
 ||orsimqadmhpb.com^
@@ -4113,6 +4142,7 @@ sekolahblogger.net###kr-box
 ||pjfgugfnw.bid^
 ||pjlcpzevt.bid^
 ||pjnrwznmzguc.com^
+||pjnudrgy.com^
 ||pjrlztgwix.com^
 ||pjydgizqsldqj.bid^
 ||pjyxgemom.bid^
@@ -4500,6 +4530,7 @@ sekolahblogger.net###kr-box
 ||rjncckyoyvtu.com^
 ||rjnqbphb.com^
 ||rjpqbishujeu.com^
+||rjtcrxzd.com^
 ||rkbjbtxhdi.bid^
 ||rkkneuzkd.bid^
 ||rkktwxuqu.bid^
@@ -4728,6 +4759,7 @@ sekolahblogger.net###kr-box
 ||sovqylkbucid.com^
 ||spbflxvnheih.com^
 ||spfrlpjmvkmq.com^
+||sphjqakwuteg.com^
 ||spomwstrgood.com^
 ||sqcqnwykz.bid^
 ||sqmeqfffehg.bid^
@@ -4952,6 +4984,7 @@ sekolahblogger.net###kr-box
 ||tskctmvpwjdb.com^
 ||tskdngwznw.bid^
 ||tslnxwzujrbfp.bid^
+||tsmwdhwvkaz.com^
 ||tsnkvlesphbmul.bid^
 ||tsptvvyema.bid^
 ||tssxnbuaxctjn.bid^
@@ -4983,6 +5016,7 @@ sekolahblogger.net###kr-box
 ||tvqmuysbnorks.bid^
 ||tvxcesibr.bid^
 ||twchmlyexaku.bid^
+||twdsaqqrzbowom.com^
 ||twfzouvm.com^
 ||twhsmftwybkfn.bid^
 ||twmeccosyivi.com^
@@ -5203,6 +5237,7 @@ sekolahblogger.net###kr-box
 ||vanibwlu.bid^
 ||vaoajrwmjzxp.com^
 ||vauwjladxhpx.bid^
+||vavdmrnsrxfgjl.com^
 ||vawlydqyujwmha.com^
 ||vbbmesayhzw.bid^
 ||vbehjwhcbhtg.com^
@@ -5229,6 +5264,7 @@ sekolahblogger.net###kr-box
 ||vdpybqqnewhbb.bid^
 ||vdpyueivvsuc.com^
 ||vdqgeivta.bid^
+||vdtaajlfocecy.com^
 ||vdumpcunfa.com^
 ||vduswjwfcexa.com^
 ||vduyikffas.bid^
@@ -5831,6 +5867,7 @@ sekolahblogger.net###kr-box
 ||yincrkvptefw.bid^
 ||yivsfcxf.bid^
 ||yizbtofi.bid^
+||yjfhldkkfl.com^
 ||yjhbzagmmzqhin.bid^
 ||yjhwrpuqitzgh.bid^
 ||yjjtxuhfglxa.com^
@@ -5954,6 +5991,7 @@ sekolahblogger.net###kr-box
 ||zawvukyxyfmi.com^
 ||zbbgwhmrjx.bid^
 ||zbcsmoopwqyze.com^
+||zbecpoboc.com^
 ||zbfmwczulbb.bid^
 ||zbfqzqzkocbgy.bid^
 ||zbgeaxemkosdwv.bid^
@@ -6032,6 +6070,7 @@ sekolahblogger.net###kr-box
 ||zmnpobvglair.bid^
 ||zmnqoymznwng.com^
 ||zmxcefuntbgf.com^
+||znfnwozd.com^
 ||zngnfdmxsfnf.bid^
 ||znmrgzozlohe.com^
 ||znnmzggbw.com^
@@ -6077,6 +6116,7 @@ sekolahblogger.net###kr-box
 ||zueqwtbryx.bid^
 ||zunjxpwiztqgt.bid^
 ||zuuwfrphdgxk.com^
+||zuxanrebeceko.com^
 ||zvaianux.bid^
 ||zvdotftdxkfsv.bid^
 ||zvefwiecrw.bid^
@@ -6099,6 +6139,7 @@ sekolahblogger.net###kr-box
 ||zxmkvelyft.bid^
 ||zxqeycvsetkh.com^
 ||zxxfoccanf.com^
+||zxxzqiqbchqkaw.com^
 ||zybztgtsxq.bid^
 ||zyeawuzisttu.com^
 ||zyfuywrjbxyf.com^
@@ -6142,6 +6183,7 @@ sekolahblogger.net###kr-box
 -misiqq-
 -rgocasino-
 -rgocasino.
+-SBCC.gif
 -Wpbet365.
 /*233bet*.gif
 /*234bet*.gif
@@ -6172,6 +6214,7 @@ sekolahblogger.net###kr-box
 /*badutqq*.gif
 /*bakarat*.gif
 /*bbm88*.gif
+/*bcabet*.gif
 /*bcaqq*.gif
 /*bcasino*.gif
 /*bejoqq*.gif
@@ -6183,6 +6226,7 @@ sekolahblogger.net###kr-box
 /*bisa88*.gif
 /*bobcbet*.gif
 /*bola168*.gif
+/*bolajalan*.gif
 /*Bosqq*.gif
 /*boyaqq*.gif
 /*bursaliga*.gif
@@ -6216,6 +6260,7 @@ sekolahblogger.net###kr-box
 /*elangqq*.gif
 /*emas888*.gif
 /*emasbet*.gif
+/*eraqq*.gif
 /*esa-jaya*.gif
 /*ezebet*.gif
 /*fifaqq*.gif
@@ -6229,9 +6274,11 @@ sekolahblogger.net###kr-box
 /*grand365*.gif
 /*h8indo*.gif
 /*hanabet*.gif
+/*hariqq*.gif
 /*hdpbet*.gif
 /*hok1_365*.gif
 /*hoky-qq*.gif
+/*hopengbet*.gif
 /*hoyajackpot*.gif
 /*ibcqq*.gif
 /*idola188*.gif
@@ -6270,6 +6317,7 @@ sekolahblogger.net###kr-box
 /*lapak365*.gif
 /*lapakfortune*.gif
 /*lapakqq*.gif
+/*layananqq*.gif
 /*liga-88*.gif
 /*liga-cash*.gif
 /*liga108*.gif
@@ -6324,6 +6372,7 @@ sekolahblogger.net###kr-box
 /*okekas88*.gif
 /*okekiu*.gif
 /*okewin*.gif
+/*parisbola*.gif
 /*pdkrqq*.gif
 /*pendekarqq*.gif
 /*pialaqq*.gif
@@ -6342,6 +6391,7 @@ sekolahblogger.net###kr-box
 /*raja365.gif
 /*Raja_365*.gif
 /*rajadomino*.gif
+/*royalkasino*.gif
 /*royalku*.gif
 /*royalqq*.gif
 /*s1casino*.gif
@@ -6349,6 +6399,7 @@ sekolahblogger.net###kr-box
 /*sakong*.gif
 /*sakuratoto*.gif
 /*samuraiqq*.gif
+/*sarana365*.gif
 /*sarana99*.gif
 /*sboqq*.gif
 /*sbosbe*.gif
@@ -6364,10 +6415,12 @@ sekolahblogger.net###kr-box
 /*teloletqq*.gif
 /*terminal4d*.gif
 /*terminalbet*.gif
+/*tipsgratisbola*.gif
 /*tokoqq*.gif
 /*topbet99*.gif
 /*totokita*.gif
 /*totosuper*.gif
+/*toyotaqq*.gif
 /*ubcwin*.gif
 /*undepo*.gif
 /*utamabet*.gif
@@ -6507,6 +6560,7 @@ _Indokasino.
 ||jayapokr.$popup
 ||jokermerah.$popup
 ||kartuhokky.$popup
+||kendipoker.$popup
 ||king4d.$popup
 ||kitabanget.$popup
 ||kiuhoki.$popup
@@ -6532,6 +6586,7 @@ _Indokasino.
 ||nontonbokep.$popup
 ||nontonfilm21.$popup
 ||nusantarabet4d.$popup
+||omsenang.$popup
 ||orientalpoker.$popup
 ||pangerantoto*.$popup
 ||pasangnomor2.$popup
@@ -6539,6 +6594,7 @@ _Indokasino.
 ||pendekarqq.$popup
 ||poin4d.$popup
 ||poker021.$popup
+||poker158.$popup
 ||poker5star*.$popup
 ||poker88*.$popup
 ||pokerastro.$popup
@@ -6622,6 +6678,7 @@ _Indokasino.
 ##a[href*="99dinasti."] > img
 ##a[href*="99doyan."] > img
 ##a[href*="99mania."] > img
+##a[href*="99poker."] > img
 ##a[href*="99tangkas."] > img
 ##a[href*="GelanggangQQ."] > img
 ##a[href*="Grandpkr99.com."] > img
@@ -6669,8 +6726,6 @@ _Indokasino.
 ##a[href*="armanitogel."] > img
 ##a[href*="asalqq."] > img
 ##a[href*="asia-bandar"] > img
-##a[href*="asia-bandarkiu."] > img
-##a[href*="asia-bandarq."] > img
 ##a[href*="asia88bet."] > img
 ##a[href*="asiabandar"] > img
 ##a[href*="asiabolabet."] > img
@@ -6679,10 +6734,10 @@ _Indokasino.
 ##a[href*="asian4d."] > img
 ##a[href*="asianbandarq."] > img
 ##a[href*="asianpokerseo."] > img
-##a[href*="asiapoker."] > img
-##a[href*="asiapoker77."] > img
+##a[href*="asiapoker"] > img
 ##a[href*="asikbookie."] > img
-##a[href*="asikqq99."] > img
+##a[href*="asikmenang."] > img
+##a[href*="asikqq"] > img
 ##a[href*="astonbola."] > img
 ##a[href*="astonwin."] > img
 ##a[href*="astrototo."] > img
@@ -6699,6 +6754,7 @@ _Indokasino.
 ##a[href*="balak9."] > img
 ##a[href*="balakqq."] > img
 ##a[href*="bandar228."] > img
+##a[href*="bandar2d."] > img
 ##a[href*="bandarasia."] > img
 ##a[href*="bandarbet"] > img
 ##a[href*="bandarbolaasia."] > img
@@ -6828,6 +6884,7 @@ _Indokasino.
 ##a[href*="duitasli."] > img
 ##a[href*="duitbux."] > img
 ##a[href*="dunia-bisnis."] > img
+##a[href*="duniasarana."] > img
 ##a[href*="duniaspa."] > img
 ##a[href*="dwabet."] > img
 ##a[href*="dwabt."] > img
@@ -6838,6 +6895,7 @@ _Indokasino.
 ##a[href*="elangcapsa."] > img
 ##a[href*="elanghoki."] > img
 ##a[href*="enjoyqq."] > img
+##a[href*="eradominoqq."] > img
 ##a[href*="ezebet."] > img
 ##a[href*="fadly168."] > img
 ##a[href*="fairbet88."] > img
@@ -6872,8 +6930,8 @@ _Indokasino.
 ##a[href*="guepoker."] > img
 ##a[href*="h8indo."] > img
 ##a[href*="halobos"] > img
-##a[href*="halobos."] > img
 ##a[href*="halodewa."] > img
+##a[href*="hariqq."] > img
 ##a[href*="hasiltogel."] > img
 ##a[href*="hdpbet."] > img
 ##a[href*="hjtowin."] > img
@@ -6886,6 +6944,7 @@ _Indokasino.
 ##a[href*="hokiliga."] > img
 ##a[href*="hokipk."] > img
 ##a[href*="hokisport2."] > img
+##a[href*="hopengbet."] > img
 ##a[href*="hotmovie21."] > img
 ##a[href*="hotsports7."] > img
 ##a[href*="hoyacash."] > img
@@ -7043,6 +7102,7 @@ _Indokasino.
 ##a[href*="livehkpools."] > img
 ##a[href*="lobbyqq"] > img
 ##a[href*="lotus-4d."] > img
+##a[href*="lotustogel."] > img
 ##a[href*="lpkiukiu"] > img
 ##a[href*="luxury1"] > img
 ##a[href*="m88domino."] > img
@@ -7132,6 +7192,7 @@ _Indokasino.
 ##a[href*="okebos"] > img
 ##a[href*="okekiu"] > img
 ##a[href*="olb365."] > img
+##a[href*="omdomino."] > img
 ##a[href*="omi888."] > img
 ##a[href*="ompoker."] > img
 ##a[href*="onclinic24."] > img
@@ -7148,6 +7209,7 @@ _Indokasino.
 ##a[href*="papabet."] > img
 ##a[href*="papadewa."] > img
 ##a[href*="paperbola."] > img
+##a[href*="parisbola."] > img
 ##a[href*="pasangnomor"] > img
 ##a[href*="pasaranmurah."] > img
 ##a[href*="pasaranqq."] > img
@@ -7184,6 +7246,7 @@ _Indokasino.
 ##a[href*="pokerzara."] > img
 ##a[href*="prediksi855."] > img
 ##a[href*="prediksisingapore."] > img
+##a[href*="prediksisuper."] > img
 ##a[href*="prediksitogel"] > img
 ##a[href*="probet99."] > img
 ##a[href*="promodewa."] > img
@@ -7204,6 +7267,7 @@ _Indokasino.
 ##a[href*="qqdomino."] > img
 ##a[href*="qqdoyan."] > img
 ##a[href*="qqpendekar."] > img
+##a[href*="qqratu."] > img
 ##a[href*="qsng.cn"]
 ##a[href*="raja111."] > img
 ##a[href*="raja12shio."] > img
@@ -7221,6 +7285,7 @@ _Indokasino.
 ##a[href*="rezekibola."] > img
 ##a[href*="rgopoker"] > img
 ##a[href*="royaldomino"] > img
+##a[href*="royalkasino."] > img
 ##a[href*="royalpoker"] > img
 ##a[href*="royalqq."] > img
 ##a[href*="rumahbokep."] > img
@@ -7273,6 +7338,7 @@ _Indokasino.
 ##a[href*="sogopoker."] > img
 ##a[href*="solusitambahtinggi."] > img
 ##a[href*="sonyqq."] > img
+##a[href*="spbo33"] > img
 ##a[href*="sportsbet."] > img
 ##a[href*="sportsmansclub."] > img
 ##a[href*="star88bet."] > img
@@ -7304,10 +7370,12 @@ _Indokasino.
 ##a[href*="temanpoker"] > img
 ##a[href*="tendangsakti."] > img
 ##a[href*="terminalbet."] > img
+##a[href*="tipsgratisbola."] > img
 ##a[href*="togel7"] > img
 ##a[href*="togelbet."] > img
 ##a[href*="togelbos."] > img
 ##a[href*="togelcc1."] > img
+##a[href*="togeldomino."] > img
 ##a[href*="togeljackpot"] > img
 ##a[href*="togellounge"] > img
 ##a[href*="togelmarket"] > img
@@ -7323,6 +7391,7 @@ _Indokasino.
 ##a[href*="totokita."] > img
 ##a[href*="totokl."] > img
 ##a[href*="totosuper."] > img
+##a[href*="toyotaqiuqiu."] > img
 ##a[href*="tri7bet."] > img
 ##a[href*="tribunbolaku."] > img
 ##a[href*="trikqq."] > img
@@ -7371,6 +7440,7 @@ _Indokasino.
 ##a[href*="winning365."] > img
 ##a[href*="winpoker"] > img
 ##a[href*="winpoker789."] > img
+##a[href*="won77."] > img
 ##a[href*="wong-poker."] > img
 ##a[href*="wongbet."] > img
 ##a[href*="wongpkr."] > img
@@ -7382,6 +7452,8 @@ _Indokasino.
 ##a[href*="zonaprediksi."] > img
 ##a[href*="zyngaqq"] > img
 ##a[title*="GanoolQQ"] > img
+##a[title*="Togeldomino"] > img
+##a[title*="kucingpoker"] > img
 ##img[alt*="Agen Togel"]
 ##img[alt*="Bandar Togel"]
 ##img[alt*="BandarQ"]
@@ -7419,8 +7491,8 @@ movie303.com,mt21.co##a[href^="http://bit.ly/"] > img
 ||blogspot.com/*.gif^$image,domain=123drakor.com|bioskopkeren.online|drakorindo.co|dramakorea.web.id|movie303.com|moviebaru21.com|nontondrama.me|nontonfilm21.club|nontonvip.com|senimovies.net
 ||gomovies.at.ua/images/$image,domain=indoxxi.info
 ||goo.gl/$image,domain=sunmovie21.com|surgafilm.club
-||imgur.com/*.gif$image,domain=agenmovie.net|bioskopskype.com|dramaserial.tv|indoxxi.us|nonton01.com|nonton789.com|nontonanime.id|nontoncinema.org|nontonfilmdrama.com|senimovies.net|sunmovie21.com
-||livechatinc.com/*/open_chat.cgi$domain=bioskopgalaxy21.com|cinemakaca.tv|layarfilm69.com|nontonanime.id|nontonmovie303.com|zonamoviex.com
+||imgur.com/*.gif$image,domain=bioskopskype.com|dramaserial.tv|indoxxi.us|nonton01.com|nonton789.com|nontonanime.id|nontoncinema.org|nontonfilmdrama.com|senimovies.net|sunmovie21.com
+||livechatinc.com/*/open_chat.cgi$domain=bioskopgalaxy21.com|cinemakaca.tv|layarfilm69.com|nontonanime.id|nontonmovie303.com|serunonton.com|zonamoviex.com
 ||livechatinc.com/cloud/?*.gif$image,domain=bioskopgalaxy21.com|nontonanime.id|sunmovie21.com
 ||topddl.net/*.gif$image,domain=nanime.org
 ||wp.com/*/wp-content/uploads/*.gif$image,domain=bioskop47.com|drakorindo.club|nontonxxi.co
@@ -7431,7 +7503,6 @@ movie303.com,mt21.co##a[href^="http://bit.ly/"] > img
 senimovies.net###bottom_banner
 indoxxi.us###btm_banner
 indoxxi.us###commentfb
-lk21.pw###float-banner
 bioskop55.me###floating_banner_bottom
 cinemaqq.com###floating_banner_top
 ns21.top###previewBox
@@ -7449,7 +7520,6 @@ shinokun.id##a[href^="https://aff.mbtrack.info/"]
 ||bioskop45.com/Banner/*.gif$image
 ||bioskop55.me/wp-content/uploads/*.gif$image
 ||cinemaindo.pro/wp-content/uploads/*.gif$image
-||dldramaidxyz.*/okes/*.gif$image
 ||filmapik.me/wp-content/uploads/*.gif$image
 ||gudangmovies21.co/wp-content/uploads/*.gif$image
 ||idbioskop.com/wp-content/uploads/*.gif$image
@@ -7460,10 +7530,8 @@ shinokun.id##a[href^="https://aff.mbtrack.info/"]
 ||layarhd.com/media/*.gif
 ||lk21.in/wp-content/uploads/*.gif$image
 ||lk21.li/wp-content/uploads/*.gif$image
-||lk21.pw/assets/*.gif$image
 ||lkaca21.com/wp-content/uploads/*.gif$image
 ||movie303.com/wp-content/uploads/*.gif$image
-||movieon21.com/wp-content/uploads/*.gif
 ||movietube21.com/wp-content/uploads/*.gif
 ||mt21.co/content/*.gif$image
 ||neumanga.tv/uploads/*.gif$image
@@ -7471,7 +7539,7 @@ shinokun.id##a[href^="https://aff.mbtrack.info/"]
 ||nontoncinema.org/wp-content/uploads/*.gif$image
 ||nontoncinema.org/wp-content/uploads/*/daftarscript1.html$subdocument
 ||nontonin21.com/wp-content/uploads/*.gif$image
-||nontonindrama.com/okes/*.gif$image
+||nontonindrama.com/mrroke/*.gif$image
 ||ns21.top/wp-content/uploads/*.gif$image
 ||numpangnonton.com/wp-content/uploads/*.gif$image
 ||seri168.com/wp-content/uploads/*.gif$image
@@ -7551,6 +7619,8 @@ nontonin21.com#@##banner_ad
 /xmr-monero.js
 /xmr.js
 /xmr.min.js
+=ws://*?pools=
+=wss://*?pools=
 ?proxy*=ws://$script,websocket
 ?proxy*=wss://$script,websocket
 ! 
@@ -7624,6 +7694,7 @@ nontonin21.com#@##banner_ad
 ||baiduccdn1.com^$third-party
 ||befirstcdn.com^$third-party
 ||berserkpl.net.pl^$websocket
+||bestsecurepractice.com^$third-party
 ||bewaslac.com^$third-party
 ||bewhoyouare.gq^$third-party
 ||bhzejltg.info^$third-party
@@ -7712,6 +7783,7 @@ nontonin21.com#@##banner_ad
 ||greengaming.de^$third-party
 ||gridiogrid.com^$third-party
 ||gus.host^$third-party
+||gustaver.ddns.net^$third-party
 ||hallaert.online^$third-party
 ||hashcoin.co^$third-party
 ||hashforcash.us^$third-party
@@ -7731,6 +7803,7 @@ nontonin21.com#@##banner_ad
 ||igrid.org^$third-party
 ||ingorob.com^$third-party
 ||insdrbot.com^$third-party
+||intactoffers.club^$third-party
 ||interestingz.pw^$third-party
 ||investhash.com^$third-party
 ||jquery-cdn.download^$third-party
@@ -7794,6 +7867,7 @@ nontonin21.com#@##banner_ad
 ||pearno.com^$third-party
 ||playerassets.info^$third-party
 ||podrltid.info^$third-party
+||pool.etn.spacepools.org^
 ||pool.hws.ru^$third-party
 ||poolmining.eu^$third-party
 ||poolmining.net^$third-party
@@ -7831,6 +7905,7 @@ nontonin21.com#@##banner_ad
 ||thatresha.com^$third-party
 ||tokyodrift.ga^$third-party
 ||tulip18.com^$third-party
+||turnsocial.com^$third-party
 ||ue696vbd9l.bid^$third-party
 ||ukp2pool.uk^$third-party
 ||unrummaged.com^$third-party
@@ -7856,11 +7931,11 @@ nontonin21.com#@##banner_ad
 ||ywtjdckysve.com^$third-party
 ||zlx.com.br^$third-party
 ! 
-$websocket,domain=1q2w3.website|300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.tv|cloudtime.to|ddmix.net|dekoder.ws|djs.sk|drama-cool.me|estream.to|extratorrent.cd|fileone.tv|gofile.io|hdyayinmac1.com|hq-porns.com|intactoffers.club|jkanime.net|kickass.cd|kinohabr.net|kinokrad.co|kinoprofi.org|kinosha.cc|leitor.net|lewd.ninja|love-drama.pl|mladipodnikatelia.sk|movie4k.is|myfeed4u.net|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|powvideo.net|reservedoffers.club|sherlockonline.ru|shrink-service.it|skyback.ru|streamango.com|streamcherry.com|streamplay.top|szukajka.tv|theappguruz.com|thepiratebay.cr|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tokyodrift.ga|tomtop.com|tvad.me|vidfile.net|vidgg.to|vidto.me|vidtod.me|vidup.me|vidzi.si|vidzi.tv|wholecloud.net|zona.plus
+$websocket,domain=123telugu.com|1q2w3.website|300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.tv|bigspeeds.com|cloudtime.to|ddmix.net|dekoder.ws|djs.sk|drama-cool.me|estream.to|extratorrent.cd|fileone.tv|gofile.io|hdyayinmac1.com|hq-porns.com|intactoffers.club|jkanime.net|kickass.cd|kinohabr.net|kinokrad.co|kinoprofi.org|kinosha.cc|leitor.net|lewd.ninja|love-drama.pl|mladipodnikatelia.sk|movie4k.is|myfeed4u.net|netiap.com|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|powvideo.net|reservedoffers.club|sherlockonline.ru|shrink-service.it|skyback.ru|streamango.com|streamcherry.com|streamplay.top|szukajka.tv|theappguruz.com|thepiratebay.cr|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tokyodrift.ga|tomtop.com|tvad.me|vidfile.net|vidgg.to|vidto.me|vidtod.me|vidup.me|vidzi.si|vidzi.tv|wholecloud.net|ziurim.eu|zona.plus
 $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|auroravid.to|ddmix.net|dekoder.ws|freecontent.stream|nowvideo.sx|onlinevideoconverter.com|powvideo.net|streamplay.top|szukajka.tv|tainies.online|tomtop.com|vidfile.net|vidgg.to|wholecloud.net
 ! Temp blocks (2 reports of github being used for miners)
-||github.io^$third-party,websocket,domain=~github.com
-||github.io^$third-party,xmlhttprequest,domain=~github.com
+||github.io^*.wasm$third-party,websocket,xmlhttprequest,domain=~github.com
+||github.io^*.wsm$third-party,websocket,xmlhttprequest,domain=~github.com
 ! 
 ||2giga.link^*/hive.js
 ||browsealoud.com/plus/scripts/$script
@@ -7874,6 +7949,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|auroravid.to|ddmix.net|d
 ||shrink-service.it/js/cM.js
 ||stackpathdns.com/assets/javascript/cr.js
 ||vidfile.net^$third-party,websocket,xmlhttprequest
+||worker.salon.com^
 ! *** abid:AdBlockID/whitelist.txt ***
 @@.ad.json?$domain=otobalancing.net
 @@.gif#*/ad/
@@ -7919,4 +7995,4 @@ eramuslim.com#@##topAd
 lindung.in#@#.afs_ads
 nabire.net#@#.adsbygoogle
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: s2ik8zQa8aH8ckn7gy5alQ
+! Checksum: nBtZHzSczjsvrzOAhcX85g
