@@ -54,7 +54,7 @@ COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 IGNORE = ("adblockid.txt")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS = ("collapse", "document", "elemhide",
+KNOWNOPTIONS = ("collapse", "csp", "document", "elemhide",
                 "font", "genericblock", "generichide", "image", "match-case",
                 "object", "media", "object-subrequest", "other", "ping", "popup", 
                 "script", "stylesheet", "subdocument", "third-party", "websocket", "webrtc", "xmlhttprequest")
