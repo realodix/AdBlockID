@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0519.0727
+! Version: 18.0525.2205
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 May 2018 07:27 UTC
+! Last modified: 25 May 2018 22:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -159,6 +159,7 @@ _promosi.
 -710x140.
 -728-90-
 -728-x-90.
+-728-x90-
 -728-x90.
 -728-x900.
 -728x60-
@@ -636,6 +637,7 @@ _996x50.gif
 ##.pasangiklan
 ##.pengiklan
 ##.player-ads-left
+##.player-ads-left-2
 ##.player-ads-top
 ##.player-ads-top-1
 ##.post-ad3
@@ -651,6 +653,7 @@ _996x50.gif
 ##.td-ad-m
 ##.td-ad-p
 ##.td-ad-tp
+##.top-ads
 ##.top-ads-container
 ##.topadsense
 ##.topline-ads
@@ -1017,6 +1020,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||d138am4hd4ke4y.cloudfront.net^
 ||d162nnmwf9bggr.cloudfront.net^
 ||d1qk9ujrmkucbl.cloudfront.net^
+||d24afgsm39csxt.cloudfront.net^
 ||d27x580xb9ao1l.cloudfront.net^
 ||d2ghscazvn398x.cloudfront.net^
 ||d2pc0q32fod0ha.cloudfront.net^
@@ -1024,6 +1028,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||dc08i221b0n8a.cloudfront.net^
 ||filmseks.online^$third-party
 ||jadwaltelevisi.com^$third-party
+||jagoanhosting.com/*/banner/$image,third-party
 ||klikmbc.co.id/promo/promo-agen.php?$subdocument,third-party
 ||kumpulblogger.com^$third-party
 ||masnico.website^$third-party
@@ -1050,6 +1055,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 /banners.$image,domain=dimedan.co
 /ikl*.$image,domain=lampungnews.com|versiriau.com
 ||ads-server.hipwee.com/
+||adsimg.kompas.com^
 ||beritabali.com^*/banner/$image
 ||beritajakarta.id/banner/$image
 ||beritapagi.co.id/ads/$image
@@ -1095,6 +1101,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||nusabali.com/super_images/*.gif$image
 ||otobalancing.net/wp-content/uploads/*.gif$image
 ||prfmnews.com/images/*.gif$image
+||pwbjlbz.com^$domain=kompas.com
 ||rmol.co/banner/$image
 ||rri.co.id^*/banner/$image
 ||safelinku.com/fullpage/script.js$script,thirdparty
@@ -1202,6 +1209,7 @@ traveltextonline.com##.imageblock-image
 carapedia.com##.img-banner
 ligaolahraga.com##.infeedcenter_homepage
 kompas.com##.kcm__horizontal.kcm
+kompas.com##.kcm__rectangle.kcm
 faktabali.com,inforakyat.com,klikkalsel.com,lampung1.com,nenemonews.com,otomakassar.com,populinews.com,pressmedia.co.id,sijorikepri.com##.ktz_banner
 tribunsumbar.com##.majalahpro-core-center-ads
 detik.com##.newsfeed-ads
@@ -1228,7 +1236,7 @@ inilah.com##.wb-300x250
 angkasareview.com##.widget_random_banner_widget
 ardisaz.com,iphincow.com,koreanindo.net,langitselatan.com,nonikhairani.com##.wpa
 duta.co##[href="#"] > img
-siapbisnis.net##[href^="http://bit.ly/"] > img
+forumbitcoin.co.id,siapbisnis.net##[href^="http://bit.ly/"] > img
 jalantikus.com##[id*="-gpt-ad-"]
 jasasipil.com##[id^="post-body-"] > div:nth-of-type(1)
 harianrakyatbengkulu.com##a[href*="/Advertisement/"]
@@ -1275,6 +1283,7 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 ||onesignal.com^$third-party
 ||sumo.com^$domain=plaza-bisnis.com
 ||sumome.com^$third-party
+||vidio.com/embed/*?autoplay=true&player_only=true&$domain=kapanlagi.com|otosia.com
 ||widget.kompas.com/widget-newsletter/
 ! 
 kaskus.co.id##.more-video
@@ -1381,6 +1390,7 @@ katadata.co.id###newsletter
 ||alajwtqyw.com^
 ||alasdzdnfvtj.com^
 ||algkebjdgafa.com^
+||algnnojsdr.com^
 ||alidnquxirv.bid^
 ||alnisdrmhs.bid^
 ||alxetzfhlzekv.bid^
@@ -1563,6 +1573,7 @@ katadata.co.id###newsletter
 ||bgfgaduyvocz.com^
 ||bgibeluywjhgb.com^
 ||bgpxrwjrbsjb.com^
+||bgrojtcdymmcdr.com^
 ||bgtmceqoipodkv.com^
 ||bgxjypaeyocjy.bid^
 ||bgybufwnfxkcr.bid^
@@ -1655,6 +1666,7 @@ katadata.co.id###newsletter
 ||bqyphmwr.bid^
 ||bqytfutmwulr.com^
 ||brhkraeknmjk.com^
+||briqsnyafmmkxr.com^
 ||briqumvlvzshh.com^
 ||brjbzbxbcqjb.com^
 ||brjycsvgpo.bid^
@@ -1758,7 +1770,9 @@ katadata.co.id###newsletter
 ||cddlngatmpthc.bid^
 ||cdfyuyoyfxohj.bid^
 ||cdhzxcwuibzk.com^
+||cdobneyuq.com^
 ||cdtojdrhoc.bid^
+||ceidxneoogpuh.com^
 ||cesxssavc.com^
 ||ceugjbwb.com^
 ||cewegncr.com^
@@ -1803,6 +1817,7 @@ katadata.co.id###newsletter
 ||ckjflngcqcfl.bid^
 ||ckjjcarzu.com^
 ||ckqfackpj.bid^
+||ckqgkazihvwc.com^
 ||ckqjezikww.bid^
 ||ckqkwhampiyb.com^
 ||ckqpusmxvilv.com^
@@ -2045,6 +2060,7 @@ katadata.co.id###newsletter
 ||dnoucjqzsasm.com^
 ||dnqejgrbtlxe.com^
 ||dnrtjavop.com^
+||dnrzajdjq.com^
 ||dnsqqdordvpv.com^
 ||dntlpwpjwcfu.com^
 ||dnvndngbn.bid^
@@ -2530,6 +2546,7 @@ katadata.co.id###newsletter
 ||fuhgvhuukl.bid^
 ||fukchwgbsl.com^
 ||fuurqgbfhvqx.com^
+||fvbtqaijuo.com^
 ||fvkdatbzswo.bid^
 ||fvozquqvnuv.bid^
 ||fvrbloxygbrv.com^
@@ -2567,11 +2584,13 @@ katadata.co.id###newsletter
 ||fzhwvlpnqg.bid^
 ||fzpseyhkanhopd.com^
 ||fzqxefkbjzwiqa.com^
+||fzrcalpbcu.com^
 ||fzsiwzxnqadb.com^
 ||fztrvkdqzv.bid^
 ||fzxraumht.bid^
 ||fzzudxglrnrr.com^
 ||gaaprokoduuyyn.bid^
+||gabyuyxwcubwdp.com^
 ||gahhlbxdgw.com^
 ||gaxafjlxgoqfj.bid^
 ||gaxmdcfkxygs.com^
@@ -2596,6 +2615,7 @@ katadata.co.id###newsletter
 ||gcwhhynufwnj.com^
 ||gcxsbflncu.bid^
 ||gcypxlue.bid^
+||gdbohhvoo.com^
 ||gdekvzhsqwau.com^
 ||gdhlysucwzyzu.com^
 ||gdhtshpyz.bid^
@@ -2734,6 +2754,7 @@ katadata.co.id###newsletter
 ||gthrdhxhwdt.bid^
 ||gtmonytxxglu.com^
 ||gttrngwnuuvy.bid^
+||gtvnygwfzrhfti.com^
 ||gtxfafvoohbc.com^
 ||gtzyfaro.bid^
 ||gubdadtxwqow.com^
@@ -2783,6 +2804,7 @@ katadata.co.id###newsletter
 ||gyvyokpmmb.bid^
 ||gyzzpyez.bid^
 ||gzhazcfkr.bid^
+||gziedzbliamx.com^
 ||gzkoehgbpozz.com^
 ||gzozvhryjcf.com^
 ||gzqccijroe.bid^
@@ -2895,6 +2917,7 @@ katadata.co.id###newsletter
 ||hnivikwwypcv.com^
 ||hnkbivnten.com^
 ||hnoajsaivjsg.com^
+||hnopgrab.com^
 ||hnqnftzzytjl.com^
 ||hntpbpeiuajc.com^
 ||hnuhqaslqaqtb.bid^
@@ -3087,9 +3110,11 @@ katadata.co.id###newsletter
 ||ijuawecwqhwyou.bid^
 ||ijvolcqtnxohl.com^
 ||ijyzkjjabc.bid^
+||ikdhuhcigpoc.com^
 ||ikealcmavhpk.com^
 ||ikgxfzfjxmp.bid^
 ||ikmmsoihdmfkbh.bid^
+||ikmymeivze.com^
 ||iknctklddhoh.com^
 ||ikpzwbrzzfg.bid^
 ||ikrvzjdds.bid^
@@ -3123,6 +3148,7 @@ katadata.co.id###newsletter
 ||iooxsrjgkb.bid^
 ||ioryejnzvbbluh.bid^
 ||ioupfmge.com^
+||ioyixcprbghm.com^
 ||ipadxqhm.bid^
 ||ipcouosurtdqc.bid^
 ||ipdcgsdjkz.bid^
@@ -3193,6 +3219,7 @@ katadata.co.id###newsletter
 ||ixqpfqtwi.bid^
 ||ixrtmzmk.bid^
 ||ixsxgaegvplo.com^
+||ixtkiofaoudis.com^
 ||ixvsxjiw.com^
 ||ixzhwyuxxvxb.com^
 ||ixznwuxokydz.com^
@@ -3211,6 +3238,7 @@ katadata.co.id###newsletter
 ||izmwtewwobxy.com^
 ||iznhvszyizwd.com^
 ||iztsbnkxphnj.com^
+||iztxikfgw.com^
 ||izxdpodiowdgp.bid^
 ||jabcdkwmwnek.com^
 ||jacroxrssmme.bid^
@@ -3258,6 +3286,7 @@ katadata.co.id###newsletter
 ||jebuorwrqfflzl.com^
 ||jeksffryglas.com^
 ||jemopaqkst.com^
+||jemyvtomzyha.com^
 ||jeqixokniyny.com^
 ||jertwakjcaym.com^
 ||jevijshpvnwm.com^
@@ -3266,6 +3295,7 @@ katadata.co.id###newsletter
 ||jfaqiomgvajb.com^
 ||jfcofvhuqzdg.bid^
 ||jffhbunkrxmyhf.bid^
+||jfkfojgkrk.com^
 ||jfribvstvcqy.com^
 ||jfvoyuxmp.bid^
 ||jfwfnxsdzhvxax.bid^
@@ -3307,6 +3337,7 @@ katadata.co.id###newsletter
 ||jkjwifmep.com^
 ||jkoiwpjk.bid^
 ||jkpdxsqpyl.bid^
+||jkuuoecpgecwla.com^
 ||jkxzawjvp.bid^
 ||jlarmqbypyku.com^
 ||jldnphwwu.bid^
@@ -3340,11 +3371,13 @@ katadata.co.id###newsletter
 ||jnwsojzuahwbeq.com^
 ||jnxqlltlnezn.com^
 ||jnylpjlnjfsp.com^
+||jnyorvlxy.com^
 ||jnyyqfarzgijbj.bid^
 ||joaqicgtmndbc.bid^
 ||jobveibsozms.com^
 ||jogccrwnpsmliq.bid^
 ||jollqxplkz.bid^
+||jomznuefrw.com^
 ||joqnoyniblzm.com^
 ||joqpatxugyug.com^
 ||jorndvyzchaq.com^
@@ -3430,6 +3463,7 @@ katadata.co.id###newsletter
 ||jyauuwrrigim.com^
 ||jydbctzvbqrh.com^
 ||jyezgitcx.com^
+||jynbcpfwvazazd.com^
 ||jypmcknqvnfd.com^
 ||jyrjjhdas.bid^
 ||jyryxwvdjqobg.bid^
@@ -3469,6 +3503,7 @@ katadata.co.id###newsletter
 ||kceptbgdczkd.bid^
 ||kcgmgnejfp.bid^
 ||kcqdidtq.bid^
+||kcwvkoxn.com^
 ||kdaskxrcgxhp.com^
 ||kdekyymbn.bid^
 ||kdhndryipp.com^
@@ -3530,6 +3565,7 @@ katadata.co.id###newsletter
 ||klepuazuxv.com^
 ||klfqffhvdpkd.com^
 ||klidpcdzfqj.com^
+||klmdwvqhi.com^
 ||klmfvshct.bid^
 ||klmvharqoxdq.com^
 ||klnbyxhdilss.bid^
@@ -3565,6 +3601,7 @@ katadata.co.id###newsletter
 ||kpcflxxodhoxev.bid^
 ||kpgcyqkktm.bid^
 ||kplzvizvsqrh.com^
+||kprkrbatuob.com^
 ||kpsdnlprwclz.com^
 ||kpucctqryjdvx.bid^
 ||kpwhkeehpsp.bid^
@@ -3602,6 +3639,7 @@ katadata.co.id###newsletter
 ||kthztsgfuygcw.com^
 ||ktjqfqadgmxh.com^
 ||ktrmzzrlkbet.com^
+||kttjowlrr.com^
 ||ktuiyrchrhuxn.bid^
 ||kuavzcushxyd.com^
 ||kuaygqohsbeg.com^
@@ -3807,6 +3845,7 @@ katadata.co.id###newsletter
 ||lpiqwtsuduhh.com^
 ||lplqyocxmify.com^
 ||lplznzccvn.bid^
+||lpohfjht.com^
 ||lppaepra.bid^
 ||lppyumumznf.bid^
 ||lpzltglosmbqul.bid^
@@ -3966,6 +4005,7 @@ katadata.co.id###newsletter
 ||mfjegjqb.com^
 ||mflkgrgxadij.com^
 ||mfnjkgzqhoipe.bid^
+||mfpqojya.com^
 ||mfryftaguwuv.com^
 ||mftbfgcusnzl.com^
 ||mfuebmooizdr.com^
@@ -4009,6 +4049,7 @@ katadata.co.id###newsletter
 ||mkfumtmi.bid^
 ||mkfzovhrfrre.com^
 ||mkgtdofakiifqb.bid^
+||mkjcjqcn.com^
 ||mklplkwniazaql.bid^
 ||mkpdquuxcnhl.com^
 ||mkqepsxaz.bid^
@@ -4026,6 +4067,7 @@ katadata.co.id###newsletter
 ||mlnvmpmgzfk.bid^
 ||mlrocrzhrgbyi.bid^
 ||mmaigzevcfws.com^
+||mmauckxrzh.com^
 ||mmcltttqfkbh.com^
 ||mmdcibihoimt.com^
 ||mmdifgneivng.com^
@@ -4069,6 +4111,7 @@ katadata.co.id###newsletter
 ||mpmfdpakljrv.bid^
 ||mpnkfljjfjqd.bid^
 ||mpoboqvqhjqv.com^
+||mpxxjdqpru.com^
 ||mqcnrhxdsbwr.com^
 ||mqlkcicnrgpntw.bid^
 ||mqmbbiadhb.bid^
@@ -4150,6 +4193,7 @@ katadata.co.id###newsletter
 ||mznijqwjkqadk.com^
 ||mzqxeqrmgzxv.com^
 ||mzrhjbbikqm.com^
+||naaifqdqsnxtsp.com^
 ||nahvyfyfpffm.com^
 ||namjixxurjam.com^
 ||nasfrzhbqvgq.bid^
@@ -4158,6 +4202,7 @@ katadata.co.id###newsletter
 ||naznwrruruvf.com^
 ||nbbvpxfxnamb.com^
 ||nbclkgok.bid^
+||nbfvybpkasjs.com^
 ||nbhbqvfcsds.com^
 ||nbhubocsduzn.com^
 ||nbmffortfyyg.com^
@@ -4393,6 +4438,7 @@ katadata.co.id###newsletter
 ||odyoudvaar.bid^
 ||oehjxqhiasrk.com^
 ||oeoogwkwm.bid^
+||oetwplgu.com^
 ||oexupdqy.bid^
 ||ofajzowbwzzi.com^
 ||ofbqjpaamioq.com^
@@ -4535,6 +4581,7 @@ katadata.co.id###newsletter
 ||ovchjqpdh.com^
 ||ovcksawwem.com^
 ||ovfbwavekglf.com^
+||ovjlgvapqhmpy.com^
 ||ovoczhahelca.com^
 ||ovrdkhamiljt.com^
 ||ovzmelkxgtgf.com^
@@ -4624,6 +4671,7 @@ katadata.co.id###newsletter
 ||piljbvnykkt.bid^
 ||pixjqfvlsqvu.com^
 ||piyzmkcxa.bid^
+||pjeledftjxfnd.com^
 ||pjffrqroudcp.com^
 ||pjfgugfnw.bid^
 ||pjlcpzevt.bid^
@@ -4678,6 +4726,7 @@ katadata.co.id###newsletter
 ||pooxbpxm.com^
 ||popadscdn.net^
 ||popzkvfimbox.com^
+||poqqvnychl.com^
 ||potmbbqbaqxwp.com^
 ||ppjjbzcxripw.com^
 ||pppjxzcu.bid^
@@ -4705,6 +4754,7 @@ katadata.co.id###newsletter
 ||prmvrxcn.bid^
 ||prncfucwvi.bid^
 ||prnxtmtbbqs.bid^
+||prpkhpjxghhn.com^
 ||prunwxph.bid^
 ||psbadfsth.bid^
 ||psehuhxpqip.bid^
@@ -4756,6 +4806,7 @@ katadata.co.id###newsletter
 ||pycvhwxtqhknb.com^
 ||pydpcqjenhjx.com^
 ||pyjjxogzlzcxii.bid^
+||pykexoeeibq.com^
 ||pyscgael.bid^
 ||pzcpotzdkfyn.com^
 ||pzkqiwezugsucg.com^
@@ -4774,6 +4825,7 @@ katadata.co.id###newsletter
 ||qavqnwwlxh.bid^
 ||qawaqcurthru.com^
 ||qazzzxwynmot.com^
+||qbahsvxo.com^
 ||qbdgnjwaknl.bid^
 ||qblpxxcjusgmq.bid^
 ||qblttqtvn.bid^
@@ -5123,6 +5175,7 @@ katadata.co.id###newsletter
 ||rrhzlgzazz.bid^
 ||rriqwzgmaazsp.com^
 ||rrjkbdgwoh.bid^
+||rrptobfpqeftyg.com^
 ||rrqmebej.bid^
 ||rrrdddbtofnf.com^
 ||rrscdnsfunoe.com^
@@ -5198,6 +5251,7 @@ katadata.co.id###newsletter
 ||salhbbkvs.com^
 ||samlmqljptbd.com^
 ||sandzfuay.bid^
+||sanksvohixxnlf.com^
 ||sapvummffiay.com^
 ||saqcgojcure.bid^
 ||sasieidpe.bid^
@@ -5776,6 +5830,7 @@ katadata.co.id###newsletter
 ||utlpwxdt.com^
 ||utwhgyjgjw.bid^
 ||utyhzjbwfyrz.bid^
+||utyynepwwnl.com^
 ||utzpjbrtyjuj.com^
 ||uuacjdostjloa.bid^
 ||uuiqhzpvfql.com^
@@ -5819,6 +5874,7 @@ katadata.co.id###newsletter
 ||uyiqmcfidci.bid^
 ||uyojmlzpk.bid^
 ||uypeevqdjnbtfc.bid^
+||uyrmpnojgzi.com^
 ||uyusewjlkadj.com^
 ||uzbboiydfzog.com^
 ||uzbciwrwzzhs.com^
@@ -5888,6 +5944,7 @@ katadata.co.id###newsletter
 ||vegmvagvesye.com^
 ||vehvkcnild.bid^
 ||vejrnvdsrvrbij.bid^
+||velzqrqrucvmqc.com^
 ||vepcsswlpolz.com^
 ||veswrzdcvcdooh.bid^
 ||vevjbdxyththv.bid^
@@ -5920,6 +5977,7 @@ katadata.co.id###newsletter
 ||vhiaxerjzbqi.com^
 ||vhjgxutx.bid^
 ||vhjygupbyf.bid^
+||vhlnpaaxxxz.com^
 ||vhlsrzyt.bid^
 ||vhpqxkhvjgwx.com^
 ||vhscigqpwe.com^
@@ -6123,6 +6181,7 @@ katadata.co.id###newsletter
 ||wfmcdmmulkwwp.bid^
 ||wfnmmrtw.bid^
 ||wfquqjxu.bid^
+||wfywchrzpic.com^
 ||wgclurzhgrjoq.bid^
 ||wghscopehrcafp.bid^
 ||wgkurvzvd.com^
@@ -6347,6 +6406,7 @@ katadata.co.id###newsletter
 ||xjsqhlfscjxo.com^
 ||xjvjhqkmmst.bid^
 ||xjwtyrklinni.com^
+||xjzqmgyr.com^
 ||xkawgrrrpszb.com^
 ||xkbsohnosdmoa.bid^
 ||xkeeqmvs.bid^
@@ -6650,12 +6710,14 @@ katadata.co.id###newsletter
 ||ywldkddqx.bid^
 ||ywmbgxmtupll.bid^
 ||ywpkgqasoe.bid^
+||ywrfqzdvd.com^
 ||ywsugrjvusc.com^
 ||ywwefdjjc.bid^
 ||ywxjbwauqznf.com^
 ||ywzutugurhqpvs.bid^
 ||yxahzybkggol.com^
 ||yxbtyzqcczra.com^
+||yxcdiyaidaakp.com^
 ||yxcwyiipjsksc.bid^
 ||yxghdgwi.bid^
 ||yxhyxfyibqhd.com^
@@ -6745,6 +6807,7 @@ katadata.co.id###newsletter
 ||zggbloudx.com^
 ||zgghentqc.com^
 ||zgobyecdtpfq.bid^
+||zgxlwlffm.com^
 ||zgydngnax.bid^
 ||zhabyesrdnvn.com^
 ||zhbzxeis.bid^
@@ -6803,6 +6866,7 @@ katadata.co.id###newsletter
 ||zpnbzxbiqann.com^
 ||zprlpkabqlth.com^
 ||zprrfpczfpnh.com^
+||zpsgqvvzcbni.com^
 ||zpwqekgztngd.bid^
 ||zpznbracwdai.com^
 ||zpzsdmpvqudhsz.com^
@@ -6895,10 +6959,10 @@ katadata.co.id###newsletter
 46.166.167.16##.semprotnenenmontok_2
 46.166.167.16##.semprotnenenmontok_adalah_pujaan_hatiku
 46.166.167.16##.semprotnenenmontok_h
+||blogspot.com/*.gif^$image,domain=128.199.94.20|23.252.126.183
 ||gambar123.com/js/$script,domain=46.166.167.16
 ||gambar123.com/xf/$image,domain=46.166.167.16
 ! 
-/*agen*.gif
 /*bandar*.gif
 /*capsa*.gif
 /*dewa*.gif
@@ -6909,6 +6973,7 @@ katadata.co.id###newsletter
 /*taruhan*.gif
 /*togel*.gif
 ! 
+-agen-judi-
 -agen-poker-
 -indopokerlink-
 -kartu-online.
@@ -6927,6 +6992,18 @@ katadata.co.id###newsletter
 /*aceh4d*.gif
 /*aduqq*.gif
 /*afb-365*.gif
+/*agen558*.gif
+/*agen688*.gif
+/*agen_bola_online.gif|
+/*agenasia88*.gif
+/*agenbola*.gif
+/*agenbola24*.gif
+/*agenibc*.gif
+/*agenjudionline*.gif
+/*agenqq*.gif
+/*agent926*.gif
+/*agentaruhan*.gif
+/*agenvimaxindo*.gif
 /*agungqq*.gif
 /*ahliqq*.gif
 /*aladincash*.gif
@@ -7027,6 +7104,7 @@ katadata.co.id###newsletter
 /*incar-qq*.gif
 /*incarq*.gif
 /*indkasino*.gif
+/*indoagenbola*.gif
 /*indobet*.gif
 /*indocash99*.gif
 /*indofreebet*.gif
@@ -7159,6 +7237,7 @@ katadata.co.id###newsletter
 /*samuraiqq*.gif
 /*sarana365*.gif
 /*sarana99*.gif
+/*sbcagent*.gif
 /*sbonaga*.gif
 /*sboqq*.gif
 /*sbosbe*.gif
@@ -7443,6 +7522,7 @@ _Indokasino.
 ##a[href*="855bandar."] > img
 ##a[href*="888kartu."] > img
 ##a[href*="88beto."] > img
+##a[href*="88duit."] > img
 ##a[href*="88indo."] > img
 ##a[href*="899-cash."] > img
 ##a[href*="899bola."] > img
@@ -7507,6 +7587,7 @@ _Indokasino.
 ##a[href*="asianbandarq."] > img
 ##a[href*="asianpokerseo."] > img
 ##a[href*="asiapoker"] > img
+##a[href*="asiaqq."] > img
 ##a[href*="asikbookie."] > img
 ##a[href*="asikmenang."] > img
 ##a[href*="asikqq"] > img
@@ -7765,6 +7846,7 @@ _Indokasino.
 ##a[href*="indo381."] > img
 ##a[href*="indoagenbola."] > img
 ##a[href*="indobandar"] > img
+##a[href*="indodewa365."] > img
 ##a[href*="indokiu."] > img
 ##a[href*="indolapak"] > img
 ##a[href*="indomaxb."] > img
@@ -7811,6 +7893,7 @@ _Indokasino.
 ##a[href*="jarumpoker."] > img
 ##a[href*="jasa88"] > img
 ##a[href*="jasadomino"] > img
+##a[href*="jasagol88."] > img
 ##a[href*="jasapoker."] > img
 ##a[href*="jasaqq."] > img
 ##a[href*="javtoys."] > img
@@ -7886,6 +7969,7 @@ _Indokasino.
 ##a[href*="liga-emas."] > img
 ##a[href*="liga0"] > img
 ##a[href*="liga1"] > img
+##a[href*="liga228."] > img
 ##a[href*="liga3"] > img
 ##a[href*="liga7"] > img
 ##a[href*="liga8"] > img
@@ -7906,6 +7990,7 @@ _Indokasino.
 ##a[href*="lotustogel."] > img
 ##a[href*="lpkiukiu"] > img
 ##a[href*="luckypoker188."] > img
+##a[href*="lux138"] > img
 ##a[href*="luxury1"] > img
 ##a[href*="m88domino."] > img
 ##a[href*="m8livepoker."] > img
@@ -7926,6 +8011,7 @@ _Indokasino.
 ##a[href*="makelarjudi."] > img
 ##a[href*="mamatogel."] > img
 ##a[href*="mandirimenang."] > img
+##a[href*="maniakartu."] > img
 ##a[href*="maniakqq."] > img
 ##a[href*="marina-365."] > img
 ##a[href*="maruduthutabarat."] > img
@@ -8077,6 +8163,7 @@ _Indokasino.
 ##a[href*="qqboya."] > img
 ##a[href*="qqdomino."] > img
 ##a[href*="qqdoyan."] > img
+##a[href*="qqjempol."] > img
 ##a[href*="qqpendekar."] > img
 ##a[href*="qqratu."] > img
 ##a[href*="raja1"] > img
@@ -8210,6 +8297,7 @@ _Indokasino.
 ##a[href*="tugupoker."] > img
 ##a[href*="tujuhbet."] > img
 ##a[href*="u16822."] > img
+##a[href*="uang365."] > img
 ##a[href*="uang4d."] > img
 ##a[href*="ubc7."] > img
 ##a[href*="ujungkontol."] > img
@@ -8226,6 +8314,7 @@ _Indokasino.
 ##a[href*="venombet."] > img
 ##a[href*="vibol."] > img
 ##a[href*="vidiojav."] > img
+##a[href*="vimax-original."] > img
 ##a[href*="vimaxasli."] > img
 ##a[href*="vimaxcentral."] > img
 ##a[href*="vimaxherbal."] > img
@@ -8270,9 +8359,13 @@ _Indokasino.
 ##a[title*="BANDARQ"] > img
 ##a[title*="Bandar Q"] > img
 ##a[title*="BandarQ"] > img
+##a[title*="GARUDAQQ"] > img
 ##a[title*="GanoolQQ"] > img
+##a[title*="INIDEWA365"] > img
+##a[title*="SBOQQ"] > img
 ##a[title*="Sakong Online"]
 ##a[title*="Togeldomino"] > img
+##a[title*="bandar sakong"] > img
 ##a[title*="domino99"] > img
 ##a[title*="kucingpoker"] > img
 ##img[alt*="Agen Bola"]
@@ -8296,6 +8389,7 @@ _Indokasino.
 ##img[alt*="Togel Online"]
 ##img[alt*="Wahana303"]
 ##img[alt*="bandar casino"]
+##img[alt*="bandar sakong"]
 ##img[alt*="bandarq"]
 ##img[alt*="bintangbola"]
 ##img[alt*="glxgames"]
@@ -8308,6 +8402,10 @@ _Indokasino.
 ##img[alt*="kampusbet"]
 ##img[alt*="novapoker"]
 ##img[alt*="pasang iklan"]
+##img[alt*="situs poker"]
+##img[alt^="GARUDAQQ"]
+##img[alt^="INIDEWA365"]
+##img[alt^="SBOQQ"]
 ##img[alt^="agen bola"]
 ##img[alt^="agen poker"]
 ##img[alt^="poker online"]
@@ -8322,67 +8420,52 @@ _Indokasino.
 ##img[title*="Bandar Togel"]
 ##img[title*="Bandar toto"]
 ##img[title*="BandarQ"]
+##img[title*="GARUDAQQ"]
+##img[title*="INIDEWA365"]
 ##img[title*="PokerJazz"]
+##img[title*="SBOQQ"]
 ##img[title*="Taruhan Bola"]
+##img[title*="bandar sakong"]
 ! *** abid:addons/movie.txt ***
-film-drama.co,indoxxi.info,nontonanimeindo.net,ns21.pw##a[href*="//goo.gl/"] > img
-indoxxi.tv##a[target="_blank"] > img
-movie303.com,mt21.co##a[href*="//bit.ly/"] > img
-||akubebas.com/images/*.gif$image,domain=indoxxi.tv
+movie303.com##a[href*="//bit.ly/"] > img
+nontonanimeindo.net,ns21.co##a[href*="//goo.gl/"] > img
+indoxx1.com##a[target="_blank"] > img
+||akubebas.com/images/*.gif$image,domain=indoxx1.com
 ||blogspot.com/*.gif^$image,domain=animeku.tv|drakorindo.tv|dramakorea.web.id|movie303.com|nonton-streaming.com|nontondrama.me|nontonmovie81.com|senimovies.info
-||gomovies.at.ua/images/$image,domain=indoxxi.info
-! ||imgur.com/*.gif$image,domain=dramaserial.tv|indoxxi.ws|nonton01.com|nontonanime.id|nontonfilmdrama.com|senimovies.info
+! ||imgur.com/*.gif$image,domain=dramaserial.tv|nonton01.com|nontonanime.id|senimovies.info
 ||livechatinc.com/*/open_chat.cgi$domain=cinemakaca.tv|nonton-streaming.com|nontonanime.id|nontonmovie81.com|serunonton.com|zonamoviex.com
 ||livechatinc.com/cloud/?*.gif$image,domain=nontonanime.id
 ||postimg.cc/*.gif^$image,domain=cinemaindo21.info|lk21tv.com
 ||topddl.net/*.gif$image,domain=nanime.in
 ||wp.com/*/wp-content/uploads/*.gif$image,domain=bioskop47.com|nontonxxi.co
 ! 
-/popup-maker/*$script,domain=nontondramaserial.com|nontonfilmdrama.com
+/popup-maker/*$script,domain=nontondramaserial.com
 |http:$popup,third-party,domain=movie303.com|nontonsub.com|senimovies.info|serunonton.com
 ! 
-dunia21.top###fb1
-dunia21.top###fb2
-dunia21.top###fb3
-dunia21.top###fb4
-dunia21.top###fb5
-dunia21.top###fb6
-dunia21.top###fb7
-dunia21.top###fb8
-dunia21.top##tr
-! 
 senimovies.info###bottom_banner
-indoxxi.ws###btm_banner
 cinemaindo.pro###close-teaser
-indoxxi.ws###commentfb
 cinemaqq.com###floating_banner_top
-ns21.pw###previewBox
-ns21.pw###previewBox2
-ns21.pw###previewBox3
-ns21.pw###previewBox4
+ns21.co###previewBox
+ns21.co###previewBox2
+ns21.co###previewBox3
+ns21.co###previewBox4
 nonton.com##.adds
-indoxxi.ws##.blocker
-ns21.pw##.modal-backdrop
+ns21.co##.modal-backdrop
 sukamovie.mobi##.sukam-atas-post
 sukamovie.mobi##.sukam-bawah
-shinokun.id##a[href^="http://adserver.adreactor.com/"]
-shinokun.id##a[href^="https://aff.mbtrack.info/"]
 ||akubebas.com/images/*.gif$image,domain=indoxx1.com
 ||bioskop45.com/Banner/*.gif$image
 ||cinemaindo.pro/wp-content/uploads/*.gif$image
 ||gudangmovies21.cc/wp-content/uploads/*.gif$image
 ||indexmovie.biz/assets/*.gif$image
 ||indexmovie.biz/iframe/content.php$first-party,subdocument
-||indocinema21.com/banner/*.gif$image
-||layarcinema.co/wp-content/uploads/*.gif$image
 ||lkaca21.com/wp-content/uploads/*.gif$image
 ||movie303.com/wp-content/uploads/*.gif$image
 ||movieon21.org/wp-content/uploads/*.gif$image
 ||movietube21.com/wp-content/uploads/*.gif
 ||mt21.co/content/*.gif$image
 ||nontoncinema.org/wp-content/uploads/*/script.html
-||nontonindrama.com/mrroke/*.gif$image
-||ns21.pw/wp-content/uploads/*.gif$image
+||ns21.co/wp-content/uploads/*.gif$image
 ||numpangnonton.com/wp-content/uploads/*.gif$image
 ! 
 @@/indoxxi-logo-
@@ -8398,6 +8481,7 @@ bioskop55.me###floating_banner_bottom
 |https:$popup,third-party,domain=ayononton.online
 ||bioskop55.me/wp-content/uploads/*.gif$image
 ||blogspot.com/*.gif^$image,domain=nonton33.net|nonton33.tv
+||gomovies.at.ua/images/$image,domain=indoxxi.info
 ||imgur.com/*.gif$image,domain=ayononton.online
 ||indomv.net/wp-content/uploads/*.gif$image
 ||nonton33.tv/wp-content/uploads/*.gif$image
@@ -8892,13 +8976,17 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||szukajka.tv/szukaj|$~third-party,xmlhttprequest
 @@||ws.webcaster.pro^$websocket
 ! *** abid:AdBlockID/whitelist.txt ***
+@@-iklan.$domain=agency-iklan.com
 @@.ad.json?$domain=otobalancing.net
 @@.gif#*/ad/
 @@.jpg#*/ad/
 @@.png#*/ad/
+@@/*pasangiklan*.$domain=pasangiklan.com|pasangiklankompas.com|pasangiklankompasposkota.com
 @@/advertisement.$domain=samehadaku.tv
+@@/iklan-$domain=baktiartha.co.id|iklankoran.net
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@/pagead2.$domain=bloggerku.com|eirudo.com|mufasi.ga|unduh.in
+@@_iklan_$domain=pusatpemasanganiklan.com
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||ainodorama.web.id^$generichide
@@ -8944,4 +9032,4 @@ kostjakarta.net#@#a[href*="/iklan/"]
 lindung.in#@#.afs_ads
 nabire.net#@#.adsbygoogle
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: Y9oOhwSjDJxLrwQcNiZ01g
+! Checksum: YPJyInLicaWVYzWZVIQ5+A
