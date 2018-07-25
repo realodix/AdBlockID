@@ -100,6 +100,8 @@ class FILTER_OPTION:  # flake8: noqa (this is a namespace of constants).
     COLLAPSE = 'collapse'
     SITEKEY = 'sitekey'
     DONOTTRACK = 'donottrack'
+    CSP = 'csp'
+    REWRITE = 'rewrite'
 
 
 def _line_type(name, field_names, format_string):
@@ -145,7 +147,7 @@ INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
 HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
 HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?])?#(.+)$')
 FILTER_OPTIONS_REGEXP = re.compile(
-    r'\$(~?[\w-]+(?:=[^,\s]+)?(?:,~?[\w-]+(?:=[^,\s]+)?)*)$'
+    r'\$(~?[\w-]+(?:=[^,]+)?(?:,~?[\w-]+(?:=[^,]+)?)*)$'
 )
 
 

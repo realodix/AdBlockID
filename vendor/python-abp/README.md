@@ -38,6 +38,17 @@ Python-abp contains a script that can do this called `flrender`:
 This will take the top level fragment in `fragment.txt`, render it and save into
 `filterlist.txt`.
 
+The `flrender` script can also be used by only specifying `fragment.txt`:
+    
+    $flrender fragment.txt
+   
+in which case the rendering result will be sent to `stdout`. Moreover, when 
+it's run with no positional arguments:
+
+    $flrender
+
+it will read from `stdin` and send the results to `stdout`.
+
 Fragments might reference other fragments that should be included into them.
 The references come in two forms: http(s) includes and local includes:
 

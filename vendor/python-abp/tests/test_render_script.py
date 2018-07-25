@@ -93,20 +93,39 @@ def dstfile(tmpdir):
 def run_script(*args, **kw):
     """Run rendering script with given arguments and return its output."""
     cmd = ['flrender'] + list(args)
-    proc = subprocess.Popen(cmd, stderr=subprocess.PIPE, **kw)
-    stdout, stderr = proc.communicate()
-    return proc.returncode, stderr.decode('utf-8')
+
+    test_in = kw.pop('test_in', None)
+    if test_in is not None:
+        test_in = test_in.encode('utf-8')
+
+    proc = subprocess.Popen(cmd, stderr=subprocess.PIPE,
+                            stdout=subprocess.PIPE, stdin=subprocess.PIPE,
+                            **kw)
+    stdout, stderr = proc.communicate(input=test_in)
+    return proc.returncode, stderr.decode('utf-8'), stdout.decode('utf-8')
 
 
-def test_render_no_includes(rootdir, dstfile):
-    run_script(str(rootdir.join('simple.txt')), str(dstfile))
-    result = dstfile.read()
-    assert 'Ok' in result
-    assert '! Checksum:' in result
+@pytest.mark.parametrize('test_input, args', [
+    ('None', ["'simple.txt'", 'str(dstfile)']),
+    ('None', ["'simple.txt'"]),
+    ("rootdir.join('simple.txt').read()", []),
+])
+def test_render_no_includes(test_input, args, rootdir, dstfile):
+    test_input = eval(test_input)
+    args = list(map(eval, args))
+    _, _, stdout = run_script(*args, cwd=str(rootdir), test_in=test_input)
+
+    if len(args) > 1:
+        output = dstfile.read()
+    else:
+        output = stdout
+
+    assert 'Ok' in output
+    assert '! Checksum:' in output
 
 
 def test_render_unicode(rootdir, dstfile):
-    code, err = run_script(str(rootdir.join('unicode.txt')), str(dstfile))
+    code, err, _ = run_script(str(rootdir.join('unicode.txt')), str(dstfile))
     assert '\u1234' in dstfile.read(mode='rb').decode('utf-8')
 
 
@@ -122,33 +141,34 @@ def test_render_with_includes_relative(rootdir, dstfile):
 
 
 def test_render_verbose(rootdir, dstfile):
-    code, err = run_script('includer.txt', str(dstfile),
-                           '-i', 'inc=inc', '-v', cwd=str(rootdir))
+    code, err, _ = run_script('includer.txt', str(dstfile),
+                              '-i', 'inc=inc', '-v', cwd=str(rootdir))
     assert err == 'Rendering: includer.txt\n- including: inc:includee.txt\n'
 
 
 def test_no_header(rootdir, dstfile):
-    code, err = run_script('inc/includee.txt', str(dstfile), cwd=str(rootdir))
+    code, err, _ = run_script('inc/includee.txt', str(dstfile),
+                              cwd=str(rootdir))
     assert code == 1
     assert err == 'No header found at the beginning of the input.\n'
 
 
 def test_wrong_file(dstfile):
-    code, err = run_script('wrong.txt', str(dstfile))
+    code, err, _ = run_script('wrong.txt', str(dstfile))
     assert code == 1
     assert err == "File not found: 'wrong.txt'\n"
 
 
 def test_wrong_include_source(rootdir, dstfile):
-    code, err = run_script('brk.txt', str(dstfile), cwd=str(rootdir))
+    code, err, _ = run_script('brk.txt', str(dstfile), cwd=str(rootdir))
     assert code == 1
     assert err == ("Unknown source: 'inc' when including 'inc:broken.txt' "
                    "from 'brk.txt'\n")
 
 
 def test_wrong_include(rootdir, dstfile):
-    code, err = run_script('brk.txt', str(dstfile),
-                           '-i', 'inc=inc', cwd=str(rootdir))
+    code, err, _ = run_script('brk.txt', str(dstfile),
+                              '-i', 'inc=inc', cwd=str(rootdir))
     missing_path = str(rootdir.join('inc', 'missing.txt'))
     expect = ("File not found: '{}' when including 'missing.txt' "
               "from 'inc:broken.txt' from 'brk.txt'\n").format(missing_path)
@@ -157,8 +177,8 @@ def test_wrong_include(rootdir, dstfile):
 
 
 def test_circular_includes(rootdir, dstfile):
-    code, err = run_script('circ.txt', str(dstfile),
-                           '-i', 'inc=inc', cwd=str(rootdir))
+    code, err, _ = run_script('circ.txt', str(dstfile),
+                              '-i', 'inc=inc', cwd=str(rootdir))
     expect = ("Include loop encountered when including 'circular.txt' "
               "from 'circular.txt' from 'inc:circular.txt' from 'circ.txt'\n")
     assert code == 1
@@ -166,7 +186,7 @@ def test_circular_includes(rootdir, dstfile):
 
 
 def test_wrong_source(rootdir, dstfile):
-    code, err = run_script('foo:bar.txt', str(dstfile))
+    code, err, _ = run_script('foo:bar.txt', str(dstfile))
     assert code == 1
     assert err == "Unknown source: 'foo'\n"
 
@@ -177,7 +197,7 @@ def test_web_include(rootdir, dstfile, webserver_port):
     url = 'http://localhost:{}/metainc.txt'.format(webserver_port)
     webinc = rootdir.join('webinc.txt')
     webinc.write('[Adblock]\n%include {}%'.format(url))
-    code, err = run_script(str(webinc), str(dstfile))
+    code, err, _ = run_script(str(webinc), str(dstfile))
     assert 'Web \u1234' in dstfile.read(mode='rb').decode('utf-8')
 
 
@@ -186,7 +206,7 @@ def test_failed_web_include(rootdir, dstfile, webserver_port):
     url = 'http://localhost:{}/missing.txt'.format(webserver_port)
     webinc = rootdir.join('webinc.txt')
     webinc.write('[Adblock]\n%include {}%'.format(url))
-    code, err = run_script(str(webinc), str(dstfile))
+    code, err, _ = run_script(str(webinc), str(dstfile))
     assert code == 1
     assert err.startswith(
         "HTTP 404 Not found: '{0}' when including '{0}'".format(url))

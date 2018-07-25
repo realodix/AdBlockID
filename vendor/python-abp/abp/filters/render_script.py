@@ -30,8 +30,9 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Render a filter list.')
     parser.add_argument(
         'infile', help='top level filter list fragment from which the '
-        'rendering starts')
-    parser.add_argument('outfile', help='output filter list file')
+        'rendering starts', default='-', nargs='?')
+    parser.add_argument('outfile', help='output filter list file',
+                        default='-', nargs='?')
     parser.add_argument(
         '-i', '--include', action='append', default=[], metavar='NAME=PATH',
         help='define include path (could be given multiple times)')
@@ -48,7 +49,6 @@ def main():
         'https': WebSource('https'),
     }
     args = parse_args()
-
     if args.verbose:
         logging.basicConfig(level=logging.INFO, stream=sys.stderr,
                             format='%(message)s')
@@ -59,8 +59,12 @@ def main():
 
     try:
         lines = render_filterlist(args.infile, sources, TopSource())
-        with io.open(args.outfile, 'w', encoding='utf-8') as out_fp:
+        if args.outfile == '-':
             for line in lines:
-                out_fp.write(line.to_string() + '\n')
+                sys.stdout.write(line.to_string() + '\n')
+        else:
+            with io.open(args.outfile, 'w', encoding='utf-8') as out_fp:
+                for line in lines:
+                    out_fp.write(line.to_string() + '\n')
     except (MissingHeader, NotFound, IncludeError) as exc:
         sys.exit(exc)

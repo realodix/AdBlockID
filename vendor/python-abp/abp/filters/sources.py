@@ -17,6 +17,7 @@
 
 import io
 from os import path
+import sys
 
 try:
     from urllib2 import urlopen, HTTPError
@@ -105,6 +106,29 @@ class TopSource(FSSource):
 
     def _resolve_path(self, path_in_source):
         return path_in_source
+
+    def get(self, path_in_source):
+        """Read the data. Handles stdin, on top of file input.
+
+        Parameters
+        ----------
+        path_in_source : str
+            Path to the file inside of source or '-' for stdin.
+
+        Returns
+        -------
+        generator or str
+            Lines in the file/ from stdin.
+
+        """
+        if path_in_source == '-':
+            lines = sys.stdin.readlines()
+            for line in lines:
+                yield line.rstrip('\n')
+        else:
+            lines = super(TopSource, self).get(path_in_source)
+            for line in lines:
+                yield line
 
 
 class WebSource(object):
