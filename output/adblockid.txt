@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0820.0527
+! Version: 18.0820.0605
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Aug 2018 05:27 UTC
+! Last modified: 20 Aug 2018 06:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -972,6 +972,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||pasangiklan.com^$third-party
 ||pegel.pw^$image
 ||pondokiklan.com^$third-party
+||ppc.buzz^$third-party
 ||props.id^$third-party
 ||publish.web.id^$third-party
 ||rumahgratis.tk^$third-party
@@ -1001,8 +1002,6 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||strainemergency.com^$popup
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/thirdparty.adbl ***
-||uzone.id^$third-party
-! 
 ||amazonaws.com^*/banner/$third-party,domain=bogornews.com
 ||blogspot.com/*.gif^$image,domain=agungjakanugraha.com|alladsnetwork.web.id|duniabaca.com|horassumutnews.com|kombatch.com|mangashiro.net|smallencode.com
 ||bucket.id/assets/images/users/*.gif$domain=enthus1ast.com|idfl.me
@@ -1035,18 +1034,22 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||d3oep4gb91kpuv.cloudfront.net^
 ||dc08i221b0n8a.cloudfront.net^
 ||filmseks.online^$third-party
+||glxfls.com^$third-party
 ||jadwaltelevisi.com^$third-party
 ||jagoanhosting.com/*/banner/$image,third-party
 ||klikmbc.co.id/promo/promo-agen.php?$subdocument,third-party
 ||kumpulblogger.com^$third-party
 ||masnico.website^$third-party
 ||metroworldhost.com^$third-party
+||moveadrenaline.com^$third-party
 ||naloindo.net^$third-party
 ||nererut.com^$third-party
 ||pengusahamodalkecil.com^$third-party
+||speedlinkdown.com^$third-party
 ||sukipli.com/*.gif^$third-party
 ||tempelin.website^$third-party
 ||ubloger.com^$third-party
+||windowmentaria.com^$third-party
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_block.adbl ***
 -500X500.$image,domain=kabarpapua.co
@@ -1280,6 +1283,23 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
 ! ------------------------------------------------------------!
 ! *** abid:addons/annoyances.adbl ***
+! Telkom Indihome
+||cdn.uzone.id^$third-party
+||cdn3.uzone.id^$third-party
+||cfs.uzone.id^$third-party
+||csf.uzone.id^$third-party
+||d01.notifa.info^$third-party
+||d31qbv1cthcecs.cloudfront.net^$third-party
+||d5nxst8fruw4z.cloudfront.net^$third-party
+||expose.uzone.id^$third-party
+||kendedes.uzone.id^$third-party
+||mercusuar.uzone.id^$third-party
+||p01.notifa.info^$third-party
+||p02.notifa.info^$third-party
+||p03.notifa.info^$third-party
+||p05.notifa.info^$third-party
+||usearch.co.id^$third-party
+! 
 ##.berlangganan-box
 ##.idmuvi-social-share
 ##.newsletter__wrapper
@@ -8328,6 +8348,7 @@ katadata.co.id###newsletter
 /*utamabet*.gif
 /*vazbet*.gif
 /*vegas77*.gif
+/*vegas78bet*.gif
 /*vegas855*.gif
 /*vegasidr*.gif
 /*venombet*.gif
@@ -9691,9 +9712,7 @@ _Indokasino.
 ##img[title*="texaspoker."]
 ##img[title*="wigobet"]
 ! *** abid:addons/movie.adbl ***
-indoxx1.com##a[target="_blank"] > img
-nontonanimeindo.net,ns21.co##a[href*="//goo.gl/"] > img
-||akubebas.com/images/*.gif$image,domain=indoxx1.com
+nontonanimeindo.net,ns21.club##a[href*="//goo.gl/"] > img
 ||blogspot.com/*.gif^$image,domain=animeku.tv|drakorindo.tv|dramakorea.web.id|movie303.com|nontondrama.me
 ||imgur.com/*.gif$image,domain=dramaserial.tv|nonton01.com
 ||livechatinc.com/*/open_chat.cgi$domain=cinemakaca.tv|movie303.com|nonton-streaming.com|serunonton.com|zonamoviex.com
@@ -9707,15 +9726,14 @@ nontonanimeindo.net,ns21.co##a[href*="//goo.gl/"] > img
 ! 
 cinemaindo.pro###close-teaser
 cinemaqq.com###floating_banner_top
-dunia21.top,ns21.co###previewBox
-dunia21.top,ns21.co###previewBox2
-dunia21.top,ns21.co###previewBox3
-dunia21.top,ns21.co###previewBox4
+dunia21.top,ns21.club###previewBox
+dunia21.top,ns21.club###previewBox2
+dunia21.top,ns21.club###previewBox3
+dunia21.top,ns21.club###previewBox4
 nonton.com##.adds
-ns21.co##.modal-backdrop
+ns21.club##.modal-backdrop
 sukamovie.mobi##.sukam-atas-post
 sukamovie.mobi##.sukam-bawah
-||akubebas.com/images/*.gif$image,domain=indoxx1.com
 ||bioskop45.com/Banner/*.gif$image
 ||cinemaindo.pro/wp-content/uploads/*.gif$image
 ||gudangmovies21.cc/wp-content/uploads/*.gif$image
@@ -9726,13 +9744,12 @@ sukamovie.mobi##.sukam-bawah
 ||movietube21.com/wp-content/uploads/*.gif
 ||mt21.co/content/*.gif$image
 ||nontoncinema.org/wp-content/uploads/*/script.html
-||ns21.co/wp-content/uploads/*.gif$image
+||ns21.club/wp-content/uploads/*.gif$image
 ||numpangnonton.com/wp-content/uploads/*.gif$image
 ! 
 @@/indoxxi-logo-
 @@||animeku.tv^$generichide
 @@||cinemaindo21.info^$generichide
-@@||indoxx1.com/js/v53.js$first-party,script
 @@||mivo.com^$generichide
 @@||sobatdrama.net^$generichide
 bioskop45.com#@#.iklan
@@ -10351,7 +10368,6 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||ainodorama.web.id^$generichide
-@@||akubebas.com/js/v60.js$script,domain=indoxx1.com
 @@||anggasave.com^$generichide
 @@||anisubsia.xyz^$generichide
 @@||bagikancara.com^$generichide
@@ -10398,4 +10414,4 @@ kostjakarta.net#@#a[href*="/iklan/"]
 lindung.in#@#.afs_ads
 nabire.net#@#.adsbygoogle
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: BVlv0H+5c6504ztn6YbsiA
+! Checksum: rTzHlBUVWl2N3gKVTihGUA

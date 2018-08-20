@@ -1,6 +1,6 @@
 # AdBlockID
 
-Total rules: 10,438
+Total rules: 10,453
 
 AdblockID adalah suplemen tambahan untuk [easylist](https://github.com/easylist/easylist) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
@@ -10,6 +10,8 @@ AdblockID adalah suplemen tambahan untuk [easylist](https://github.com/easylist/
 3. Block miner
 4. Menghilangkan elemen website yang dirasa cukup menggangu.
 
-
 ## Cara Menggunakan
 Anda dapat menggunakannya secara manual dengan menambahkan alamat ini `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt` pada plugin adblock Anda.
+
+## Berkontribusi
+Perkebangan web di Indonesia begitu cepat, terutama web yang memajang iklan berkonten dewasa. Jika Anda menemukan web yang tidak terfilter oleh AdBlockID, jangan ragu untuk membuat issue di sini :D
