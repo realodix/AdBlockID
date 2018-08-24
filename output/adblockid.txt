@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.0820.0605
+! Version: 18.0824.1114
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Aug 2018 06:05 UTC
+! Last modified: 24 Aug 2018 11:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -166,9 +166,11 @@ _promosi.
 -728-x90-
 -728-x90.
 -728-x900.
+-728X100-$image
 -728x60-
 -729x90.
 -730x220.
+-760x60-$image
 -780x102px.
 -790-90.
 -800X70.
@@ -458,6 +460,7 @@ _996x50.gif
 ! 
 ###Ad300B
 ###Box-Banner-ads
+###Gadget-AdSense
 ###ad_bgbottomleft
 ###ad_bgbottomright
 ###ad_divRight
@@ -520,6 +523,7 @@ _996x50.gif
 ###top_ad_full
 ###tupiklan
 ###under-video-ads
+##.Gadget-AdSense
 ##.Iklan
 ##.SectionAds
 ##.ad-bawah
@@ -548,6 +552,7 @@ _996x50.gif
 ##.adsFramedet
 ##.adsSpot
 ##.ads__banner
+##.ads__horizontal
 ##.ads_image
 ##.ads_top_728
 ##.adsbyadop
@@ -602,16 +607,21 @@ _996x50.gif
 ##.iklan-kanan
 ##.iklan-kecilatas
 ##.iklan-kiri
+##.iklan-puff
 ##.iklan1
 ##.iklan160kanan
 ##.iklan160kiri
 ##.iklan2
+##.iklan300
 ##.iklan468x60
 ##.iklan728
+##.iklanBox
 ##.iklan_blanter
 ##.iklan_kanan
+##.iklan_kiri
 ##.iklan_semprot
 ##.iklan_semprot_h
+##.iklan_tengah
 ##.iklandetail
 ##.iklanhead
 ##.iklanleft
@@ -657,6 +667,7 @@ _996x50.gif
 ##.sf-ad-header-below
 ##.single_ad_728x90
 ##.sponsor_ads
+##.subIklan
 ##.supermag-ad-widget
 ##.td-ad-m
 ##.td-ad-p
@@ -1019,6 +1030,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||45.76.146.8^$third-party
 ||agenjudionline.in^$third-party
 ||agungqiu.org^$third-party
+||bolagalaxy.org^$third-party
 ||bookepindo.com^$third-party
 ||booking.com^$subdocument,domain=venuemagz.com
 ||bosqq.online^$third-party
@@ -1034,6 +1046,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||d3oep4gb91kpuv.cloudfront.net^
 ||dc08i221b0n8a.cloudfront.net^
 ||filmseks.online^$third-party
+||gebyarbola.org^$third-party
 ||glxfls.com^$third-party
 ||jadwaltelevisi.com^$third-party
 ||jagoanhosting.com/*/banner/$image,third-party
@@ -1044,7 +1057,10 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||moveadrenaline.com^$third-party
 ||naloindo.net^$third-party
 ||nererut.com^$third-party
+||noblemagnition.com^$third-party
+||onclickbright.com^$third-party
 ||pengusahamodalkecil.com^$third-party
+||pndelfast.com^$third-party
 ||speedlinkdown.com^$third-party
 ||sukipli.com/*.gif^$third-party
 ||tempelin.website^$third-party
@@ -1057,11 +1073,11 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 -adv-$image,domain=suroboyo.id
 -banner.$image,domain=cidahu.com|inilahonline.com|jurnalotaku.com|sumaterapost.co|today.id
 -banner/$image,domain=acmobilindonesia.com
-/*banner*.$image,domain=anangcozz.com|backpackstory.me|berita-papua.com|doktersehat.com|ilmukita.org|inikebumen.net|iwanbanaran.com|jejamo.com|konkritnews.com|mariodevan.com|motomazine.com|pertamax7.com|potretbikers.com|prfmnews.com|raftingbatu.id|zonabola.co.id|zonabola.id
+/*banner*.$image,domain=anangcozz.com|backpackstory.me|berita-papua.com|desainstudio.com|doktersehat.com|ilmukita.org|inikebumen.net|iwanbanaran.com|jejamo.com|konkritnews.com|mariodevan.com|motomazine.com|pertamax7.com|potretbikers.com|prfmnews.com|raftingbatu.id|zonabola.co.id|zonabola.id
 /*iklan*.$image,domain=britaloka.com|harianpilar.com|suluhbali.co|sumut24.co
 /ad-$image,domain=batampos.co.id|theairline.co.id
 /affiliate-$image,domain=imsahadi.com
-/banner-$image,domain=beritaasatu.com|iconews.co.id|jagokata.com|kabarmedan.com|majalahgadget.com|mandiripos.com|patromaks.com|sumselupdate.com|tanjungpinangpos.id|versiriau.com
+/banner-$image,domain=beritaasatu.com|iconews.co.id|jagokata.com|kabarmedan.com|majalahgadget.com|mandiripos.com|patromaks.com|sumselupdate.com|tanjungpinangpos.id|vebma.com|versiriau.com
 /banner_$image,domain=adbtc.top|bogornews.com|koranrakyat.co.id|resep.web.id
 /banners.$image,domain=dimedan.co
 /ikl*.$image,domain=lampungnews.com|versiriau.com
@@ -1130,10 +1146,12 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||winnetnews.com/image/*/banner/$image
 ||yourjavascript.com/0653544211/lompatin.js
 ||zonasumut.com^*-300x200.$image
+! 
+/*forza*.jpg$image,domain=iwanbanaran.com|tmcblog.com
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_hide.adbl ***
 sehatlega.com###iklan1
-anggasave.com,bagikancara.com,bloggerszones.com,hobybaca.com,majalahikan.com,obengplus.com,omahkpop.com,panduaneka.com,seniberpikir.com,suryapero.com,tikusliar.com##.adsbygoogle
+anggasave.com,bagikancara.com,bloggerszones.com,contohblog.com,hobybaca.com,kelasdesain.com,majalahikan.com,obengplus.com,omahkpop.com,panduaneka.com,seniberpikir.com,suryapero.com,tikusliar.com##.adsbygoogle
 hobybaca.com##.td-adspot-title
 ! 
 inikebumen.net,polisionline.com###HTML1
@@ -1206,6 +1224,7 @@ emerer.com##.banner_wrapper
 alasannews.com##.banneritem
 unduh.in##.bannersingletop
 cosmogirl.co.id##.bnr
+dnaindia.com##.bnr300
 detik.com##.bottom_banner
 harianbhirawa.com##.box-banner
 lampungpro.com##.cs-widget-banner-300x250
@@ -1246,9 +1265,9 @@ covesia.com##.topbanner
 newskaltim.com##.vc_single_image-img
 inilah.com##.wb-300x250
 angkasareview.com##.widget_random_banner_widget
-ardisaz.com,iphincow.com,koreanindo.net,langitselatan.com,nonikhairani.com##.wpa
+ardisaz.com,danirachmat.com,iphincow.com,koreanindo.net,langitselatan.com,nonikhairani.com,warungasep.net##.wpa
 duta.co##[href="#"] > img
-forumbitcoin.co.id,siapbisnis.net##[href^="http://bit.ly/"] > img
+bogornews.com,forumbitcoin.co.id,siapbisnis.net##[href^="http://bit.ly/"] > img
 jalantikus.com##[id*="-gpt-ad-"]
 jasasipil.com##[id^="post-body-"] > div:nth-of-type(1)
 harianrakyatbengkulu.com##a[href*="/Advertisement/"]
@@ -1256,7 +1275,7 @@ centralnews.co.id,harianrakyataceh.com,harianrakyatbengkulu.com,kabarkota.com,li
 kaltengpos.web.id##a[href="iklan/"] > img
 indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
 sehatnomorsatu.com##a[id^="http"] > img
-andreasagung.com,kostjakarta.com,nutrisi-pelangsing.com,tempat-kost.com##a[rel="nofollow"] > img
+andreasagung.com,centerklik.com,kostjakarta.com,nutrisi-pelangsing.com,tempat-kost.com##a[rel="nofollow"] > img
 aftermarketplus.id,anakui.com,blogdokter.net,boc.web.id,borukaro.com,faktabanten.co.id,garudadaily.com,gigapurbalingga.net,harianindo.com,harianrakyatbengkulu.com,iconews.co.id,idblanter.com,irondumbbell.com,kabar-banten.com,kabarmedan.com,kabarpapua.co,kendaripos.co.id,koransultra.com,kostjakarta.net,lenterasultra.com,lintaskepri.com,maxmanroe.com,metrobatam.com,newsbalikpapan.com,pariwisatasumut.net,pemmzchannel.com,plaza-bisnis.com,pojoksatu.id,radarkepri.com,radarlampung.co.id,redaksibengkulu.co.id,reportaserakyat.com,suarakristen.com,tabloidjubi.com,wartakepri.co.id##a[target="_blank"] > img
 riaupos.co##img[src^="banner/"]
 valora.co.id##img[src^="http://www.valora.co.id/banner/"]
@@ -1283,6 +1302,21 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
 ! ------------------------------------------------------------!
 ! *** abid:addons/annoyances.adbl ***
+###onesignal-popover-container
+###onesignal-popover-dialog
+##.onesignal-popover-container
+##.onesignal-popover-dialog
+||log.viva.co.id/iframe^
+||onesignal.com^$third-party
+||sumo.com^$domain=plaza-bisnis.com
+||sumome.com^$third-party
+! 
+! Cookie
+###cookie-notice
+##.bs-gdpr-law
+##.cc-type-info
+##.cookie-notice-container
+! 
 ! Telkom Indihome
 ||cdn.uzone.id^$third-party
 ||cdn3.uzone.id^$third-party
@@ -1299,37 +1333,6 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 ||p03.notifa.info^$third-party
 ||p05.notifa.info^$third-party
 ||usearch.co.id^$third-party
-! 
-##.berlangganan-box
-##.idmuvi-social-share
-##.newsletter__wrapper
-##a[href*="bitcoin.co.id/ref/"] > img
-/outbrain.js|
-||crowdynews.com^$third-party
-||livechatinc.com/*/open_chat.cgi$domain=bolajitu.net|liputanbola.co
-||livechatinc.com/cloud/?*.gif$image,domain=bolajitu.net
-||log.viva.co.id/iframe^
-||onesignal.com^$third-party
-||sumo.com^$domain=plaza-bisnis.com
-||sumome.com^$third-party
-||vidio.com/embed/*?autoplay=true&player_only=true&$domain=kapanlagi.com|otosia.com
-||widget.kompas.com/widget-newsletter/
-! 
-kaskus.co.id##.more-video
-m.kaskus.co.id##.nm-alert
-fjb.kaskus.co.id##.slick-dotted
-||microsite.kaskus.co.id/anniversary/
-||microsite.kaskus.co.id/showcase/index/$xmlhttprequest
-! 
-sekolahblogger.net###kr-box
-katadata.co.id###newsletter
-! 
-! Perlu dicek
-! Experiment
-! contoh ada di https://www.brilio.net
-||infeed.id^$third-party
-! http://www.klikdokter.com/info-sehat/read/3155308/5-olahraga-ini-cocok-untuk-usia-di-atas-40-tahun
-||preco.analisis.io
 ! *** abid:addons/antipopads.adbl ***
 ||aacgeuvaoqbw.com^
 ||aaeqlxdgx.bid^
@@ -1379,6 +1382,7 @@ katadata.co.id###newsletter
 ||afbfoxmwzlqa.com^
 ||afdyfxfrwbfy.com^
 ||afedispdljgb.com^
+||afgbvhocfvpm.com^
 ||aflcdijgmr.bid^
 ||afpisdddjik.bid^
 ||afqvtomlqjioeo.com^
@@ -1572,6 +1576,7 @@ katadata.co.id###newsletter
 ||ayozhcgcsyun.com^
 ||ayyvsbbbav.com^
 ||ayyxveilslz.com^
+||azdhfnoojvpuvr.com^
 ||azditojzcdkc.com^
 ||azfmulmqcz.bid^
 ||azhdgruuvllzxg.com^
@@ -2174,6 +2179,7 @@ katadata.co.id###newsletter
 ||dhzmxkoq.bid^
 ||dibpvaoi.bid^
 ||didibvyl.bid^
+||dieohupl.com^
 ||digwzeutydo.com^
 ||dinmbegj.bid^
 ||diqstzzbqin.bid^
@@ -2205,6 +2211,7 @@ katadata.co.id###newsletter
 ||dlntzbuskygwj.com^
 ||dlpgebxqq.com^
 ||dlsgjkayn.com^
+||dlwmksxohvw.com^
 ||dlzksaqygxare.com^
 ||dmatquyckwtu.com^
 ||dmbjbgiifpfo.com^
@@ -2447,6 +2454,7 @@ katadata.co.id###newsletter
 ||elsgsgxywj.bid^
 ||eluhhfyxx.com^
 ||elvirvln.com^
+||elwbhndbxfqk.com^
 ||elwwxuigpk.bid^
 ||elxkjyvdo.bid^
 ||elzlogcphhka.com^
@@ -2651,6 +2659,7 @@ katadata.co.id###newsletter
 ||fghtrrasovlsu.com^
 ||fgilgpmoudkzx.bid^
 ||fglwxjklf.com^
+||fgsjjpjhdlfthp.com^
 ||fgvjjulaegidb.com^
 ||fgwsjwiaqtjc.com^
 ||fgxgzjeip.bid^
@@ -2787,6 +2796,7 @@ katadata.co.id###newsletter
 ||ftqhgapqugv.bid^
 ||fttsgimpiagrwa.com^
 ||ftuisdlnbp.com^
+||ftuohzeijbkm.com^
 ||ftusprfqtu.bid^
 ||ftvkgkkmthed.com^
 ||ftwdbhsztw.com^
@@ -2988,6 +2998,7 @@ katadata.co.id###newsletter
 ||goowurzdotcom.bid^
 ||gopamdzgpdrwe.bid^
 ||gosvhpsc.com^
+||gouowkjmewn.com^
 ||gouytrujxuhkzk.bid^
 ||gozfsvoqn.com^
 ||gozmioancm.bid^
@@ -3195,6 +3206,7 @@ katadata.co.id###newsletter
 ||hixuxtufzqcq.com^
 ||hiypucxjvfka.com^
 ||hjeoncuvklqh.com^
+||hjjdmohuzp.com^
 ||hjnfurphlwsui.bid^
 ||hjopehvzspngi.com^
 ||hjtgpkwppx.bid^
@@ -3251,6 +3263,7 @@ katadata.co.id###newsletter
 ||hosqkmnjt.com^
 ||hotdzbtmngof.bid^
 ||howjkpaynzwf.com^
+||hoyqhygv.com^
 ||hoytzfyok.bid^
 ||hpabkunldxhpc.com^
 ||hpcniufqp.bid^
@@ -3726,6 +3739,7 @@ katadata.co.id###newsletter
 ||jkpdxsqpyl.bid^
 ||jkuuoecpgecwla.com^
 ||jkxzawjvp.bid^
+||jkywbooyc.com^
 ||jlarmqbypyku.com^
 ||jldnphwwu.bid^
 ||jldstutlnz.com^
@@ -3945,6 +3959,7 @@ katadata.co.id###newsletter
 ||kfxrukfzqazrs.com^
 ||kfzimhbhjdqa.com^
 ||kgdmlsbtd.com^
+||kgkkfrvujnqf.com^
 ||kgnxtdcf.bid^
 ||kgvgtudoridc.com^
 ||kgzuerzjysxw.com^
@@ -4126,6 +4141,7 @@ katadata.co.id###newsletter
 ||kwjglwybtlhm.com^
 ||kwovwwkevyu.bid^
 ||kwshmdfgijgu.com^
+||kwsmqtposrub.com^
 ||kwspcwwjju.com^
 ||kwuaiymxezji.bid^
 ||kwuewixsnttz.com^
@@ -4274,6 +4290,7 @@ katadata.co.id###newsletter
 ||lljtgiwhqtue.com^
 ||llluzqrvfyrbt.com^
 ||llnxfuxszevf.com^
+||llpdtbmowsg.com^
 ||llrmbabwjlzutw.com^
 ||llrxxhljtmylaa.bid^
 ||llwemrshzovw.com^
@@ -4455,6 +4472,7 @@ katadata.co.id###newsletter
 ||mbtalhkebpbpwb.com^
 ||mbyponflbv.bid^
 ||mcagbtdcwklf.com^
+||mcaybfrnrqpmv.com^
 ||mciyblxplucm.bid^
 ||mclwrdzj.bid^
 ||mcrjoftwhprkrx.bid^
@@ -4470,6 +4488,7 @@ katadata.co.id###newsletter
 ||mdpjnppsbjv.bid^
 ||mdrkqbsirbry.com^
 ||mdsrggcnmybae.bid^
+||mdulmrphzsnvw.com^
 ||mdvrxmzofurvkm.com^
 ||meagjivconqt.com^
 ||mecounxmawn.bid^
@@ -4642,6 +4661,7 @@ katadata.co.id###newsletter
 ||msoiqafieh.com^
 ||mspaimzv.com^
 ||msrwoxdkffcl.com^
+||mstmrspnqqevsu.com^
 ||msvgmziu.bid^
 ||mszfmpseoqbu.com^
 ||mtbadedrhcx.bid^
@@ -4696,6 +4716,7 @@ katadata.co.id###newsletter
 ||mxtcafifuufp.com^
 ||mxvvvoqbgzdq.com^
 ||mxxrzwibnlnmd.bid^
+||mxzxeersjv.com^
 ||myawrthcsjc.com^
 ||myfebqficpi.com^
 ||myfrvfxqeimp.com^
@@ -5012,6 +5033,7 @@ katadata.co.id###newsletter
 ||ofwznbbxso.com^
 ||ogbamfpcfac.bid^
 ||ogegqayudrypc.bid^
+||ogjascdgq.com^
 ||ogkmakmofd.bid^
 ||ogluyourrvv.com^
 ||ogonhsbjxrxnv.bid^
@@ -5307,6 +5329,7 @@ katadata.co.id###newsletter
 ||pminnsodv.com^
 ||pmjnelusn.com^
 ||pmkvqmtjniwtyl.com^
+||pmohsibnim.com^
 ||pmpdqkjio.bid^
 ||pmpeylkaxooynu.bid^
 ||pmpgazgz.bid^
@@ -5392,6 +5415,7 @@ katadata.co.id###newsletter
 ||pttmqpogyu.bid^
 ||ptvjsyfayezb.com^
 ||ptwnvihnxvg.bid^
+||ptxqjyqhscs.com^
 ||ptzbgvqpwnxg.com^
 ||pudptxanhspld.bid^
 ||pudswlbzob.bid^
@@ -5406,6 +5430,7 @@ katadata.co.id###newsletter
 ||pviztjecuczh.com^
 ||pvjhglgpil.bid^
 ||pvoplkodbxra.com^
+||pvpqgjkgvszq.com^
 ||pvptwhhkfmog.com^
 ||pvrybwoqcprogc.bid^
 ||pwdmtyzyq.com^
@@ -5510,6 +5535,7 @@ katadata.co.id###newsletter
 ||qfqseouk.bid^
 ||qfrhhvbfofbt.com^
 ||qfzhppwfkenbmv.bid^
+||qgawivqfotfyrw.com^
 ||qgevavwyafjf.com^
 ||qgggccolqyi.bid^
 ||qghirkrh.bid^
@@ -5689,6 +5715,7 @@ katadata.co.id###newsletter
 ||qykxbnflqvjxvk.com^
 ||qynohttywcws.bid^
 ||qysextrlhpoc.bid^
+||qytabshszekf.com^
 ||qyvebeos.com^
 ||qyvpgddwqynp.com^
 ||qyzoejyqbqyd.com^
@@ -5782,6 +5809,7 @@ katadata.co.id###newsletter
 ||rhpwhkwzhpy.bid^
 ||rhqkduodhizrr.com^
 ||rhvgtmgkahm.com^
+||rhypgggd.com^
 ||riaetcuycxjz.com^
 ||riaxuuidsnws.bid^
 ||rieyjzuyhigobg.bid^
@@ -5810,6 +5838,7 @@ katadata.co.id###newsletter
 ||rkbldvgcjebh.com^
 ||rkbndiwznhul.com^
 ||rkcemktaasoxew.com^
+||rkczvumivvb.com^
 ||rkgznnhikrfphq.com^
 ||rkkneuzkd.bid^
 ||rkktwxuqu.bid^
@@ -6474,6 +6503,7 @@ katadata.co.id###newsletter
 ||tzjrmfipwurtc.com^
 ||tzlijsurxh.bid^
 ||tzwcaamgd.bid^
+||tzyvolvenvyim.com^
 ||uaaholcdcx.bid^
 ||uabicxuyovh.com^
 ||uaclvtrcno.bid^
@@ -7021,6 +7051,7 @@ katadata.co.id###newsletter
 ||wapnrjqhtmm.bid^
 ||wapvhtyc.bid^
 ||watunxckibtvfm.bid^
+||wawlfosfkdy.com^
 ||waynsnuu.bid^
 ||wbejophctdunop.bid^
 ||wbgusiedyn.bid^
@@ -7075,6 +7106,7 @@ katadata.co.id###newsletter
 ||wgkurvzvd.com^
 ||wglbionuopeh.com^
 ||wgroobsxrnijg.com^
+||wgssxjoac.com^
 ||wgtfdzopmae.com^
 ||wgulihtuzssn.com^
 ||wguuomjdav.com^
@@ -7305,9 +7337,11 @@ katadata.co.id###newsletter
 ||xcvlescqkwan.com^
 ||xcxepcbypxwf.com^
 ||xcxetqrzckvy.com^
+||xcyptaqhl.com^
 ||xdcdlfejo.com^
 ||xdiyxgwojtbxft.bid^
 ||xdjeestdoiis.com^
+||xdonzpjglqxi.com^
 ||xdoygumiams.com^
 ||xdqlnidntqmz.com^
 ||xdqoopws.bid^
@@ -7316,6 +7350,7 @@ katadata.co.id###newsletter
 ||xdzccbxbmja.bid^
 ||xedwdjnyya.com^
 ||xeeyzkylhgprgx.bid^
+||xeflnvycs.com^
 ||xegavyzkxowj.com^
 ||xegvnhpwytev.com^
 ||xewzazxkmzpc.com^
@@ -7340,6 +7375,7 @@ katadata.co.id###newsletter
 ||xicnoklyvgldzh.bid^
 ||xicuxxferbnn.com^
 ||xiebddgbseoxa.com^
+||xihkdzijh.com^
 ||ximeldnjuusl.com^
 ||xinpmsvinfmc.bid^
 ||xissjuywmpk.bid^
@@ -7378,6 +7414,8 @@ katadata.co.id###newsletter
 ||xljfxjbjw.bid^
 ||xlvausdwsmyoww.bid^
 ||xmbyoyvs.bid^
+||xmgrjuqqc.com^
+||xmlqerwrehfqo.com^
 ||xmmsyipahbq.com^
 ||xmoyoxsx.com^
 ||xmsgobwy.com^
@@ -7709,6 +7747,7 @@ katadata.co.id###newsletter
 ||yuywwcizs.com^
 ||yvfsfoctkls.com^
 ||yvjdvcgomph.bid^
+||yvlhxqxw.com^
 ||yvlmcehqt.com^
 ||yvmosixxo.com^
 ||yvmzmyol.bid^
@@ -7783,6 +7822,7 @@ katadata.co.id###newsletter
 ||zbqblhqlrm.com^
 ||zbqochqhke.bid^
 ||zbquabayubqbbg.bid^
+||zbsqhxyjlh.com^
 ||zbtqpkimkjcr.com^
 ||zbutxofdxe.bid^
 ||zbwzxxysgs.bid^
@@ -7826,6 +7866,7 @@ katadata.co.id###newsletter
 ||zggbloudx.com^
 ||zgghentqc.com^
 ||zgobyecdtpfq.bid^
+||zgwuvfye.com^
 ||zgxlwlffm.com^
 ||zgydngnax.bid^
 ||zhabyesrdnvn.com^
@@ -7987,20 +8028,11 @@ katadata.co.id###newsletter
 ||zzhgpbovlhinj.com^
 ||zziblxasbl.bid^
 ||zzkrxder.com^
+||zzmyypjedpfxck.com^
 ||zzqnkezokbegc.bid^
 ||zzvjaqnkq.bid^
 ||zzwzjidz.bid^
 ! *** abid:addons/dewasa.adbl ***
-46.166.167.16###semprotnenenmontok_3
-46.166.167.16###semprotnenenmontok_4
-46.166.167.16##.semprotnenenmontok_1
-46.166.167.16##.semprotnenenmontok_2
-46.166.167.16##.semprotnenenmontok_adalah_pujaan_hatiku
-46.166.167.16##.semprotnenenmontok_h
-||blogspot.com/*.gif^$image,domain=128.199.94.20|23.252.126.183
-||gambar123.com/js/$script,domain=46.166.167.16
-||gambar123.com/xf/$image,domain=46.166.167.16
-! 
 /*bandar*.gif
 /*capsa*.gif
 /*dewa*.gif
@@ -8044,10 +8076,11 @@ katadata.co.id###newsletter
 /*agent926*.gif
 /*agentaruhan*.gif
 /*agenvimaxindo*.gif
-/*AGENWIN*.gif
+/*agenwin*.gif
 /*agungqq*.gif
 /*ahliqq*.gif
 /*aladincash*.gif
+/*amanQQ*.gif
 /*amdbet*.gif
 /*antikqq*.gif
 /*area-bola*.gif
@@ -8103,6 +8136,7 @@ katadata.co.id###newsletter
 /*cmcbet*.gif
 /*cmcwin*.gif
 /*cmd368*.gif
+/*dahsyatqq*.gif
 /*damqq*.gif
 /*danaqq*.gif
 /*demenqq*.gif
@@ -8166,25 +8200,29 @@ katadata.co.id###newsletter
 /*indomaxbet*.gif
 /*indonalo*.gif
 /*indowin99*.gif
+/*ingatbola*.gif
 /*intanbet*.gif
 /*interwin*.gif
 /*istana168*.gif
 /*itu99*.gif
 /*itucasino*.gif
 /*itudomino*.gif
-/*ituqq.gif
+/*ituqq*.gif
 /*jakartaqq*.gif
 /*jasa-domino*.gif
 /*jasa_qq*.gif
 /*jasagol*.gif
 /*jasaqq*.gif
+/*javtoys*.gif
 /*jaya-bet*.gif
 /*jayabet*.gif
 /*jembut-halus*.gif
 /*jempolqq*.gif
+/*jokerbet88*.gif
 /*josbet*.gif
 /*JosBet1*.gif
 /*josbet88*.gif
+/*jpbet*.gif
 /*jppoke*.gif
 /*kaisar88*.gif
 /*kartu66*.gif
@@ -8212,7 +8250,7 @@ katadata.co.id###newsletter
 /*liga108*.gif
 /*liga365*.gif
 /*liga77*.gif
-/*liga855*.
+/*liga855*.gif
 /*liga88*.gif
 /*liga99*.gif
 /*ligacapsa*.gif
@@ -8265,6 +8303,7 @@ katadata.co.id###newsletter
 /*naloqq*.gif
 /*neobola*.gif
 /*neotangkas*.gif
+/*nikeqq*.gif
 /*nikmatiqq*.gif
 /*obobet*.gif
 /*oke-kiu*.gif
@@ -8292,13 +8331,12 @@ katadata.co.id###newsletter
 /*qq1221*.gif
 /*qq288*.gif
 /*qqhok*.gif
-/*qqnewbet*.$image
 /*qqnewbet*.gif
 /*qqpilihan*.gif
 /*qqterbaik*.gif
 /*rahasiaqq*.gif
-/*raja365.gif
-/*Raja_365*.gif
+/*raja365*.gif
+/*raja_365*.gif
 /*rajadomino*.gif
 /*rajajdqq*.gif
 /*rajapoker*.gif
@@ -8319,7 +8357,9 @@ katadata.co.id###newsletter
 /*sbonaga*.gif
 /*sboqq*.gif
 /*sbosbe*.gif
+/*seniorbola*.gif
 /*sentosa88*.gif
+/*simpatiqq*.gif
 /*soccerbet*.gif
 /*sponsor-qq*.gif
 /*sponsorqq*.gif
@@ -8330,6 +8370,7 @@ katadata.co.id###newsletter
 /*sundul88*.gif
 /*surgawin*.gif
 /*tahun-qq*.gif
+/*tahunqq*.gif
 /*tahunqq.gif
 /*tajirqq*.gif
 /*teloletqq*.gif
@@ -8339,6 +8380,7 @@ katadata.co.id###newsletter
 /*tipsgratisbola*.gif
 /*tokoqq*.gif
 /*topbet99*.gif
+/*toto21*.gif
 /*totokita*.gif
 /*totosuper*.gif
 /*toyotaqq*.gif
@@ -8347,6 +8389,7 @@ katadata.co.id###newsletter
 /*universal-qq*.gif
 /*utamabet*.gif
 /*vazbet*.gif
+/*vbet188*.gif
 /*vegas77*.gif
 /*vegas78bet*.gif
 /*vegas855*.gif
@@ -8586,11 +8629,13 @@ _Indokasino.
 ! 
 ##[href*="103.10.200.57"] > img
 ##[href*="103.10.200.61"] > img
+##[href*="103.10.200.63"] > img
 ##[href*="108cash."] > img
 ##[href*="116poker."] > img
 ##[href*="11bola."] > img
 ##[href*="11juni."] > img
 ##[href*="128cash."] > img
+##[href*="166.62.6.160"] > img
 ##[href*="167.114.87.240"] > img
 ##[href*="168liga."] > img
 ##[href*="168wbtoto."] > img
@@ -8601,7 +8646,8 @@ _Indokasino.
 ##[href*="1xme."] > img
 ##[href*="228poker."] > img
 ##[href*="233bet."] > img
-##[href*="234betting."] > img
+##[href*="234bet"] > img
+##[href*="28bet."] > img
 ##[href*="323win."] > img
 ##[href*="365dewa."] > img
 ##[href*="365hoki."] > img
@@ -8611,13 +8657,15 @@ _Indokasino.
 ##[href*="4dasli."] > img
 ##[href*="560bet."] > img
 ##[href*="588poker."] > img
+##[href*="5starsbet."] > img
 ##[href*="77megabet"] > img
 ##[href*="7nagabet."] > img
 ##[href*="7nagapoker."] > img
 ##[href*="7nagatoto."] > img
+##[href*="805bet"] > img
 ##[href*="855bandar."] > img
 ##[href*="888kartu."] > img
-##[href*="88beto."] > img
+##[href*="88bet"] > img
 ##[href*="88duit."] > img
 ##[href*="88indo."] > img
 ##[href*="899-cash."] > img
@@ -8630,16 +8678,16 @@ _Indokasino.
 ##[href*="99doyan."] > img
 ##[href*="99mania."] > img
 ##[href*="99poker."] > img
+##[href*="99samsung"] > img
 ##[href*="99tangkas."] > img
-##[href*="Aon-bet."] > img
-##[href*="ArmaniQQ."] > img
-##[href*="DuniaSarana."] > img
-##[href*="IbcWin."] > img
-##[href*="abgqq."] > img
+##[href*="9bet"] > img
+##[href*="abgqq"] > img
+##[href*="aceh4d"] > img
 ##[href*="acerpoker."] > img
 ##[href*="acmbet."] > img
 ##[href*="adatogel."] > img
 ##[href*="adjarabet."] > img
+##[href*="adscantikqq"] > img
 ##[href*="adskartu66"] > img
 ##[href*="adsklik365"] > img
 ##[href*="adsklik66"] > img
@@ -8648,82 +8696,110 @@ _Indokasino.
 ##[href*="adsligabola"] > img
 ##[href*="adsligacapsa "] > img
 ##[href*="adsligapoker"] > img
+##[href*="adubalak."] > img
+##[href*="aduqkartuqq."] > img
+##[href*="aduqq"] > img
 ##[href*="afapkr."] > img
-##[href*="afatogel1."] > img
+##[href*="afapoker69"] > img
+##[href*="afatogel"] > img
 ##[href*="afb-365."] > img
-##[href*="afb-365.com"] > img
 ##[href*="agen-vimaxcanada."] > img
 ##[href*="agen558."] > img
 ##[href*="agen688."] > img
 ##[href*="agenasia88."] > img
 ##[href*="agenbandarq."] > img
 ##[href*="agenbola"] > img
+##[href*="agenbola24"] > img
 ##[href*="agenibc."] > img
+##[href*="agenjoker123."] > img
+##[href*="agenjudionline"] > img
 ##[href*="agenqq."] > img
 ##[href*="agensakong."] > img
 ##[href*="agent926."] > img
 ##[href*="agentaruhan."] > img
 ##[href*="agenvimaxindo."] > img
+##[href*="agenwin"] > img
+##[href*="agtwpoker."] > img
 ##[href*="agungpoker."] > img
+##[href*="agungqq"] > img
+##[href*="agwcash."] > img
 ##[href*="ahliqq."] > img
 ##[href*="ajobola."] > img
 ##[href*="aktorqq."] > img
-##[href*="aladincash7"] > img
+##[href*="aladincash"] > img
 ##[href*="aladinpoker."] > img
 ##[href*="alamiqq."] > img
 ##[href*="alampoker."] > img
 ##[href*="alexisonline."] > img
 ##[href*="alternatif188bet."] > img
 ##[href*="alto123."] > img
+##[href*="aman99."] > img
+##[href*="amanqq"] > img
 ##[href*="amanqq."] > img
+##[href*="amdbet"] > img
 ##[href*="amdbet88."] > img
 ##[href*="anekaqq."] > img
 ##[href*="angkajitutogel."] > img
 ##[href*="angkakembar."] > img
+##[href*="antikqq"] > img
 ##[href*="aoecash."] > img
 ##[href*="aon-bet."] > img
 ##[href*="aonbet."] > img
+##[href*="area-bola"] > img
 ##[href*="areabet."] > img
 ##[href*="areabola."] > img
+##[href*="arena99"] > img
 ##[href*="arenacapsa."] > img
 ##[href*="arenacash88."] > img
+##[href*="arenaqq"] > img
 ##[href*="armanipoker."] > img
+##[href*="armaniqq"] > img
+##[href*="armaniqq."] > img
 ##[href*="armanitogel."] > img
 ##[href*="asalqq."] > img
 ##[href*="asbet888."] > img
 ##[href*="aseangol."] > img
 ##[href*="aseanqq."] > img
+##[href*="asetbet"] > img
 ##[href*="asia-bandar"] > img
 ##[href*="asia88bet."] > img
 ##[href*="asiabandar"] > img
 ##[href*="asiabandarqq."] > img
-##[href*="asiabet66."] > img
-##[href*="asiabetindo."] > img
+##[href*="asiabet"] > img
 ##[href*="asiabolabet."] > img
+##[href*="asiacapsa"] > img
 ##[href*="asiacapsa."] > img
 ##[href*="asiaforbet."] > img
+##[href*="asiagol"] > img
 ##[href*="asiakasino."] > img
 ##[href*="asian4d."] > img
 ##[href*="asianbandarq."] > img
+##[href*="asianbrain."] > img
 ##[href*="asianpokerseo."] > img
 ##[href*="asiapoker"] > img
-##[href*="asiaqq."] > img
+##[href*="asiaqq"] > img
 ##[href*="asikbookie."] > img
 ##[href*="asikmenang."] > img
 ##[href*="asikqq"] > img
+##[href*="asliqq"] > img
+##[href*="astonbet"] > img
 ##[href*="astonbola."] > img
 ##[href*="astonwin."] > img
 ##[href*="astrototo."] > img
 ##[href*="auxbet."] > img
+##[href*="avoqq"] > img
 ##[href*="axiobola."] > img
 ##[href*="axiooqq."] > img
 ##[href*="ayomainqq."] > img
-##[href*="ayoqq."] > img
+##[href*="ayoqq"] > img
+##[href*="ayukqq"] > img
 ##[href*="b2poker."] > img
+##[href*="babeq"] > img
 ##[href*="bacanfortune."] > img
+##[href*="badutqq"] > img
 ##[href*="baftarbandarkiu."] > img
 ##[href*="bagusqq."] > img
-##[href*="bakaratonline."] > img
+##[href*="bakarat"] > img
 ##[href*="balak9."] > img
 ##[href*="balakdewa."] > img
 ##[href*="balakqq."] > img
@@ -8746,20 +8822,28 @@ _Indokasino.
 ##[href*="barakjudi."] > img
 ##[href*="barutogel."] > img
 ##[href*="batman303."] > img
+##[href*="bbm88"] > img
 ##[href*="bca99."] > img
+##[href*="bcabet"] > img
 ##[href*="bcadomino."] > img
+##[href*="bcaqq"] > img
+##[href*="bcasino"] > img
 ##[href*="bdr99."] > img
 ##[href*="bdrqq."] > img
 ##[href*="bejopoker."] > img
 ##[href*="bejoqq."] > img
 ##[href*="bejototo."] > img
 ##[href*="beliqq."] > img
+##[href*="bendera-bet"] > img
+##[href*="bendera168."] > img
 ##[href*="benderabet"] > img
 ##[href*="benderabet."] > img
 ##[href*="benderapoker."] > img
 ##[href*="benderaqq"] > img
 ##[href*="bersama365."] > img
+##[href*="bet2indo"] > img
 ##[href*="bet365."] > img
+##[href*="betawiqq"] > img
 ##[href*="betawiqq."] > img
 ##[href*="bethost24."] > img
 ##[href*="betindoasia."] > img
@@ -8768,7 +8852,9 @@ _Indokasino.
 ##[href*="betsaja."] > img
 ##[href*="betting303."] > img
 ##[href*="betwin188."] > img
+##[href*="bianglalaqq."] > img
 ##[href*="bigextracash."] > img
+##[href*="bijipeler"] > img
 ##[href*="bintangbola."] > img
 ##[href*="bintangcapsa."] > img
 ##[href*="bisa88."] > img
@@ -8776,9 +8862,13 @@ _Indokasino.
 ##[href*="bla168."] > img
 ##[href*="blue5star."] > img
 ##[href*="bnipoker."] > img
+##[href*="bobcbet"] > img
 ##[href*="bola168."] > img
 ##[href*="bola168bet."] > img
 ##[href*="bola180."] > img
+##[href*="bola228"] > img
+##[href*="bola24."] > img
+##[href*="bola24co"] > img
 ##[href*="bola777."] > img
 ##[href*="bola83."] > img
 ##[href*="boladunia88bet."] > img
@@ -8792,20 +8882,24 @@ _Indokasino.
 ##[href*="bolasukses."] > img
 ##[href*="bolavegas."] > img
 ##[href*="bolped77."] > img
+##[href*="bosqq"] > img
 ##[href*="bossdollar."] > img
 ##[href*="boya13."] > img
 ##[href*="boyaaqq."] > img
+##[href*="boyaqq"] > img
 ##[href*="bromopoker"] > img
-##[href*="bromopoker."] > img
 ##[href*="bsaja."] > img
 ##[href*="btybet."] > img
 ##[href*="bursabet."] > img
+##[href*="bursaliga"] > img
 ##[href*="bursatogel."] > img
+##[href*="buyu905."] > img
 ##[href*="bwindomino."] > img
 ##[href*="cacingnaga."] > img
 ##[href*="cafeskor."] > img
 ##[href*="cahayapoker."] > img
 ##[href*="cahayaqq."] > img
+##[href*="cantikqq"] > img
 ##[href*="capqq."] > img
 ##[href*="capsa88."] > img
 ##[href*="caradaftarpoker."] > img
@@ -8813,13 +8907,18 @@ _Indokasino.
 ##[href*="cash-harvest."] > img
 ##[href*="cash303."]
 ##[href*="cash381"] > img
+##[href*="cashbet99"] > img
 ##[href*="cashburners."] > img
+##[href*="casinoeve"] > img
 ##[href*="casinoitu."] > img
 ##[href*="casinosport88."] > img
+##[href*="casinoterbaik"] > img
 ##[href*="cbnpoker88."] > img
 ##[href*="cbo303."] > img
+##[href*="cebanqq"] > img
 ##[href*="cekakses."] > img
 ##[href*="ceki899."] > img
+##[href*="cekqq"] > img
 ##[href*="cemejudi."] > img
 ##[href*="cemepkjazz."] > img
 ##[href*="cendanagaming."] > img
@@ -8828,9 +8927,11 @@ _Indokasino.
 ##[href*="champspoker."] > img
 ##[href*="cimbbet."] > img
 ##[href*="cinaqq."] > img
-##[href*="cintacapsa."]
+##[href*="cintacapsa."] > img
+##[href*="citybet"] > img
 ##[href*="clc.la"] > img
 ##[href*="clickadu."] > img
+##[href*="cmcbet"] > img
 ##[href*="cmcwin."] > img
 ##[href*="cmd368"] > img
 ##[href*="cmobet."] > img
@@ -8843,12 +8944,19 @@ _Indokasino.
 ##[href*="daftarfun88."] > img
 ##[href*="daftarpoker"] > img
 ##[href*="daftarqq"] > img
+##[href*="daftarsbobet"] > img
 ##[href*="daftarsboid."] > img
-##[href*="daftartogelonline."] > img
+##[href*="daftartogel"] > img
 ##[href*="dahsyatqq."] > img
+##[href*="damqq"] > img
+##[href*="danaqq"] > img
 ##[href*="danaqq."] > img
 ##[href*="dellpoker."] > img
+##[href*="demenqq"] > img
 ##[href*="depodomino."] > img
+##[href*="depohhqq"] > img
+##[href*="depoqq"] > img
+##[href*="depototo"] > img
 ##[href*="dermaga4d."] > img
 ##[href*="detikbet."] > img
 ##[href*="dewa757."] > img
@@ -8860,18 +8968,28 @@ _Indokasino.
 ##[href*="dewapoker."] > img
 ##[href*="dewapokerqq."] > img
 ##[href*="dewazeus."] > img
+##[href*="dewiqq"] > img
 ##[href*="dewiqq."] > img
+##[href*="dimensiqq"] > img
 ##[href*="dinastybet."] > img
+##[href*="diskonqq"] > img
 ##[href*="divahoki."] > img
 ##[href*="divaindo."] > img
 ##[href*="divaliga."] > img
+##[href*="divaqq"] > img
 ##[href*="divisix."] > img
 ##[href*="dkipoker."] > img
 ##[href*="domino-168."] > img
+##[href*="domino-99"] > img
+##[href*="domino-qq"] > img
 ##[href*="domino168."] > img
+##[href*="domino365.gif
 ##[href*="domino757."] > img
 ##[href*="domino99."] > img
+##[href*="dominobca"] > img
 ##[href*="dominobet"] > img
+##[href*="dominobetqq."] > img
+##[href*="dominoqq"] > img
 ##[href*="dominoqqwin."] > img
 ##[href*="dompetbola."] > img
 ##[href*="dorabet."] > img
@@ -8883,6 +9001,7 @@ _Indokasino.
 ##[href*="doyankiu."] > img
 ##[href*="doyanqq."] > img
 ##[href*="doyansakong."] > img
+##[href*="dracobet"] > img
 ##[href*="duapoker."] > img
 ##[href*="duatelor."] > img
 ##[href*="duitasli."] > img
@@ -8892,34 +9011,44 @@ _Indokasino.
 ##[href*="duniaspa."] > img
 ##[href*="dwabet."] > img
 ##[href*="dwabt."] > img
+##[href*="dwoqq"] > img
 ##[href*="earneasycash."] > img
 ##[href*="elang13."] > img
 ##[href*="elang88."] > img
 ##[href*="elangbola."] > img
 ##[href*="elangcapsa."] > img
 ##[href*="elanghoki."] > img
+##[href*="elangqq"] > img
+##[href*="emas888"] > img
+##[href*="emasbet"] > img
 ##[href*="enjoydepo."] > img
 ##[href*="enjoydomino."] > img
 ##[href*="enjoyqq."] > img
 ##[href*="eradominoqq."] > img
+##[href*="eraqq"] > img
+##[href*="esa-jaya"] > img
+##[href*="eze99."] > img
 ##[href*="ezebet."] > img
 ##[href*="fadly168."] > img
 ##[href*="fairbet88."] > img
 ##[href*="faktavimax."] > img
 ##[href*="fast2bet."] > img
 ##[href*="fifadomino."] > img
-##[href*="fifaqq."] > img
+##[href*="fifaqq"] > img
+##[href*="filmbokep"] > img
 ##[href*="formulabisnis."] > img
 ##[href*="fullbet."] > img
 ##[href*="fullbet88."] > img
 ##[href*="gadingpoker."] > img
 ##[href*="gadispoker."] > img
+##[href*="gajah4d"] > img
 ##[href*="galaksipoker."] > img
 ##[href*="galaxybola."] > img
 ##[href*="galaxytoto."] > img
 ##[href*="galeripoker88."] > img
 ##[href*="gamebandarq."] > img
 ##[href*="gamegua88."] > img
+##[href*="gangrumah."] > img
 ##[href*="ganoolqq."] > img
 ##[href*="garampoker."] > img
 ##[href*="garamqq"] > img
@@ -8927,92 +9056,114 @@ _Indokasino.
 ##[href*="garena99."] > img
 ##[href*="garenapoker."] > img
 ##[href*="garudakiu."] > img
+##[href*="garudaqq"] > img
 ##[href*="gebyarbola."] > img
 ##[href*="gebyarliga."] > img
 ##[href*="gelanggangqq."] > img
 ##[href*="gemarcapsa."] > img
 ##[href*="gemarpoker."] > img
+##[href*="gemarqq"] > img
 ##[href*="gengtoto."] > img
 ##[href*="gerhanaqq."] > img
 ##[href*="global303."] > img
+##[href*="go88sbo."] > img
 ##[href*="goalgoal365."] > img
 ##[href*="gohbet."] > img
+##[href*="gol88"] > img
 ##[href*="goldencrownpoker."] > img
 ##[href*="goodlucky99."] > img
 ##[href*="gopiyopiyo."] > img
 ##[href*="gopoker."] > img
+##[href*="grand365"] > img
 ##[href*="grandpkr99."] > img
 ##[href*="guepoker."] > img
 ##[href*="h8indo."] > img
 ##[href*="halobos"] > img
 ##[href*="halodewa."] > img
 ##[href*="hammerofthor-no1."] > img
+##[href*="hanabet"] > img
+##[href*="hariqq"] > img
 ##[href*="hariqq."] > img
 ##[href*="hasiltogel."] > img
 ##[href*="hdp365."] > img
 ##[href*="hdpbet"] > img
 ##[href*="hdpbet."] > img
+##[href*="hdpvip."] > img
 ##[href*="hebatqq."] > img
 ##[href*="hjtowin."] > img
 ##[href*="hm21."] > img
 ##[href*="hnbwin."] > img
 ##[href*="hobibet."]
 ##[href*="hobibet."] > img
+##[href*="hok1_365"] > img
 ##[href*="hoki228."] > img
 ##[href*="hoki365."] > img
 ##[href*="hokibandar"] > img
-##[href*="hokibandarkiu."]
 ##[href*="hokibet78."] > img
 ##[href*="hokicapsa."] > img
 ##[href*="hokicapsa11."] > img
 ##[href*="hokiliga."] > img
 ##[href*="hokinusa."] > img
-##[href*="hokinusa.com"] > img
 ##[href*="hokipk."] > img
 ##[href*="hokisport2."] > img
+##[href*="hoky-qq"] > img
 ##[href*="hopengbet."] > img
 ##[href*="hotmovie21."] > img
 ##[href*="hotsports7."] > img
+##[href*="hoyabolajp"] > img
 ##[href*="hoyacash."] > img
 ##[href*="hoyajackpot."] > img
 ##[href*="hoyapoker99."] > img
 ##[href*="hoyatoto"] > img
 ##[href*="hypertracker."] > img
 ##[href*="i88cash."] > img
+##[href*="ib889."] > img
 ##[href*="ibcqq."] > img
+##[href*="ibcwin."] > img
 ##[href*="ibet44cash."] > img
 ##[href*="ibet44s."] > img
 ##[href*="ibobandarq."] > img
 ##[href*="icebola88."] > img
+##[href*="iconwin."] > img
 ##[href*="id-13."] > img
 ##[href*="idb365."] > img
 ##[href*="idbet88."] > img
 ##[href*="idn55bet."] > img
-##[href*="idola88."] > img
-##[href*="idola888."] > img
+##[href*="idola188"] > img
+##[href*="idola88"] > img
 ##[href*="idola999."] > img
 ##[href*="idolabet."] > img
 ##[href*="idolakini."] > img
 ##[href*="idomn."] > img
+##[href*="idpokerlink."] > img
 ##[href*="idrajaqq."] > img
 ##[href*="ikanmerah."] > img
 ##[href*="iklanheader"] > img
 ##[href*="iklanqq."] > img
 ##[href*="ikutqq."] > img
+##[href*="imcbet"] > img
 ##[href*="impian3."] > img
+##[href*="incar-qq"] > img
+##[href*="incarq"] > img
 ##[href*="incarsakong."] > img
 ##[href*="incrasebux."] > img
+##[href*="indkasino"] > img
 ##[href*="indkasino."] > img
 ##[href*="indo-13."] > img
 ##[href*="indo381."] > img
 ##[href*="indo42."] > img
 ##[href*="indoagenbola."] > img
 ##[href*="indobandar"] > img
+##[href*="indobet"] > img
+##[href*="indocash99"] > img
 ##[href*="indodewa365."] > img
+##[href*="indofreebet"] > img
 ##[href*="indokiu."] > img
 ##[href*="indolapak"] > img
 ##[href*="indomaxb."] > img
+##[href*="indomaxbet"] > img
 ##[href*="indomb."] > img
+##[href*="indonalo"] > img
 ##[href*="indopk365."] > img
 ##[href*="indoqq."] > img
 ##[href*="indorajaqq."] > img
@@ -9023,9 +9174,10 @@ _Indokasino.
 ##[href*="indukbet."] > img
 ##[href*="infolinks."] > img
 ##[href*="infoterapis"] > img
-##[href*="ingatbola88."] > img
+##[href*="ingatbola"] > img
 ##[href*="inibos."] > img
 ##[href*="inidomino."] > img
+##[href*="intanbet"] > img
 ##[href*="intanku."] > img
 ##[href*="intanqq."] > img
 ##[href*="interqq."] > img
@@ -9036,51 +9188,68 @@ _Indokasino.
 ##[href*="istana-impian"] > img
 ##[href*="istana1"] > img
 ##[href*="istana3"] > img
+##[href*="istana3."] > img
 ##[href*="istana8"] > img
+##[href*="istanaimpian*."] > img
 ##[href*="istanaimpian1"] > img
 ##[href*="istanaimpian2"] > img
 ##[href*="istanaimpian3"] > img
 ##[href*="istanapoker"] > img
 ##[href*="istanasbobet."] > img
 ##[href*="itu365."] > img
+##[href*="itu99"] > img
 ##[href*="itubandar."] > img
+##[href*="itubd."] > img
+##[href*="itucasino"] > img
 ##[href*="itudewa."] > img
+##[href*="itudomino"] > img
 ##[href*="itupk."] > img
 ##[href*="itupoker77."] > img
+##[href*="ituqq.gif
 ##[href*="ivopoker."] > img
 ##[href*="jackpotgua."] > img
+##[href*="jago188."] > img
 ##[href*="jagoanpoker99."] > img
-##[href*="jakartaqq."]
+##[href*="jakartaqq"] > img
 ##[href*="jalanalternatif."] > img
 ##[href*="jaluralternatif."] > img
 ##[href*="jamhoki."] > img
 ##[href*="japsex."] > img
 ##[href*="jarumpk."] > img
 ##[href*="jarumpoker."] > img
+##[href*="jasa-domino"] > img
 ##[href*="jasa88"] > img
+##[href*="jasa_qq"] > img
 ##[href*="jasadomino"] > img
-##[href*="jasagol88."] > img
+##[href*="jasagol"] > img
 ##[href*="jasapoker."] > img
 ##[href*="jasaqq."] > img
 ##[href*="javtoys."] > img
 ##[href*="jawadomino."] > img
 ##[href*="jawaraqq."] > img
+##[href*="jaya-bet"] > img
+##[href*="jayabet"] > img
 ##[href*="jayabola."] > img
 ##[href*="jayahoki."] > img
 ##[href*="jayamania."] > img
 ##[href*="jayapokr."] > img
+##[href*="jembut-halus"] > img
 ##[href*="jembuthalus."] > img
+##[href*="jempolqq"] > img
 ##[href*="jendralpoker."] > img
 ##[href*="jituangka."] > img
 ##[href*="jkt99."] > img
+##[href*="joindomino365."] > img
 ##[href*="jokerbet"] > img
-##[href*="jokerbet888."] > img
+##[href*="jokerbet88"] > img
 ##[href*="jokermerah."] > img
 ##[href*="jokerqq."] > img
 ##[href*="jokersakong."] > img
 ##[href*="jollywallet."] > img
 ##[href*="josbet"] > img
-##[href*="josbet88c."] > img
+##[href*="josbet1"] > img
+##[href*="josbet88"] > img
+##[href*="jpbet"] > img
 ##[href*="jpbet."] > img
 ##[href*="jppkr."] > img
 ##[href*="jppoker."] > img
@@ -9089,17 +9258,25 @@ _Indokasino.
 ##[href*="juarapoker."] > img
 ##[href*="judionline"] > img
 ##[href*="kaisar365."] > img
+##[href*="kaisar88"] > img
 ##[href*="kakakdewa."] > img
 ##[href*="kamarjudi."] > img
 ##[href*="kamusjudi."] > img
 ##[href*="kartu365."] > img
+##[href*="kartu66"] > img
 ##[href*="kartu855."] > img
 ##[href*="kartuacak."] > img
 ##[href*="kartuajaib."] > img
+##[href*="kartuhokky"] > img
 ##[href*="kartuhokky."] > img
 ##[href*="kartuking."] > img
+##[href*="kartuonline"] > img
+##[href*="kartuqq."] > img
 ##[href*="kasinobet."] > img
 ##[href*="kayatogel."] > img
+##[href*="kemilauqq"] > img
+##[href*="kendipoker."] > img
+##[href*="kenyangsekali."] > img
 ##[href*="kepalakontol."] > img
 ##[href*="ketuapkr."] > img
 ##[href*="ketuapoker."] > img
@@ -9109,68 +9286,108 @@ _Indokasino.
 ##[href*="kitahaha."] > img
 ##[href*="kiuhoki."] > img
 ##[href*="kiumaster."] > img
+##[href*="klik365"] > img
+##[href*="klik66"] > img
+##[href*="klikbet"] > img
 ##[href*="klikkiu"] > img
+##[href*="klikqq"] > img
 ##[href*="kliksakong."] > img
 ##[href*="klikuntung."] > img
 ##[href*="kodealam"] > img
+##[href*="kodealam2."] > img
 ##[href*="koinhoki."] > img
 ##[href*="kokibet."] > img
 ##[href*="kokipoker99."] > img
+##[href*="kokoqq"] > img
+##[href*="komisiqq."] > img
 ##[href*="komopoker."] > img
 ##[href*="kontolkuda."] > img
 ##[href*="kosmetik-obatkuat."] > img
+##[href*="kota88"] > img
 ##[href*="kotasemi."] > img
 ##[href*="kristalqq."] > img
+##[href*="ktlkuda"] > img
+##[href*="kucingpoker."] > img
 ##[href*="kudamenang."] > img
 ##[href*="kursiqq."] > img
 ##[href*="kursiraja."] > img
+##[href*="ladangqq"] > img
 ##[href*="ladangqq."] > img
 ##[href*="lagakartuqiu."] > img
 ##[href*="lagasakong."] > img
+##[href*="lagihoki."] > img
+##[href*="lahan-portune.gif
+##[href*="lahanbet"] > img
 ##[href*="lahanpoker."] > img
 ##[href*="lajupoker."] > img
 ##[href*="lakibet."] > img
 ##[href*="lakigoal."] > img
 ##[href*="langitqq"] > img
+##[href*="lapak365"] > img
 ##[href*="lapak88."] > img
 ##[href*="lapakdewa."] > img
+##[href*="lapakfortune"] > img
 ##[href*="lapakgol."] > img
 ##[href*="lapakmovie."] > img
+##[href*="lapakqq"] > img
 ##[href*="lapaksakong."] > img
 ##[href*="lautpoker."] > img
+##[href*="layananqq"] > img
+##[href*="lazabet"] > img
+##[href*="lazabet."] > img
 ##[href*="lexusdomino."] > img
 ##[href*="liberema3g."]
 ##[href*="liburpoker."] > img
 ##[href*="lig369."] > img
+##[href*="liga-88"] > img
+##[href*="liga-cash"] > img
 ##[href*="liga-emas."] > img
 ##[href*="liga0"] > img
 ##[href*="liga1"] > img
+##[href*="liga108"] > img
 ##[href*="liga138."] > img
 ##[href*="liga168."] > img
 ##[href*="liga228."] > img
 ##[href*="liga3"] > img
+##[href*="liga365"] > img
 ##[href*="liga7"] > img
+##[href*="liga77"] > img
 ##[href*="liga8"] > img
+##[href*="liga85"] > img
+##[href*="liga88"] > img
+##[href*="liga88."] > img
+##[href*="liga99"] > img
 ##[href*="ligaasia."] > img
 ##[href*="ligabet"] > img
+##[href*="ligacapsa"] > img
 ##[href*="ligacash."] > img
 ##[href*="ligahoki."] > img
 ##[href*="ligajudi."]
+##[href*="ligajudi."] > img
 ##[href*="ligakita."] > img
 ##[href*="ligakiu"] > img
 ##[href*="liganation."] > img
+##[href*="ligapkv."] > img
+##[href*="ligaqq-1"] > img
 ##[href*="ligaqq."] > img
 ##[href*="linkalternatif."] > img
 ##[href*="linksbobet2016."] > img
 ##[href*="linktrack."] > img
+##[href*="lintasanqq"] > img
 ##[href*="lintasqq."] > img
+##[href*="livegoal188"] > img
 ##[href*="livehkpools."] > img
 ##[href*="lobbyqq"] > img
 ##[href*="lombatogel."] > img
+##[href*="lontecantik"] > img
+##[href*="lotto01"] > img
 ##[href*="lotus-4d."] > img
+##[href*="lotus55"] > img
+##[href*="lotus55."] > img
 ##[href*="lotustogel."] > img
 ##[href*="lpkiukiu"] > img
 ##[href*="luckypoker188."] > img
+##[href*="luckywin"] > img
 ##[href*="lux138"] > img
 ##[href*="luxury1"] > img
 ##[href*="luxury777bb."] > img
@@ -9183,41 +9400,60 @@ _Indokasino.
 ##[href*="mahadewa88."] > img
 ##[href*="mahadewapoker."] > img
 ##[href*="mahkotabola."] > img
+##[href*="mahkotaqq"] > img
 ##[href*="mahkotaqq."] > img
+##[href*="main-domino"] > img
 ##[href*="mainbandarsakong."] > img
 ##[href*="maincapsa."] > img
 ##[href*="maindomino"] > img
+##[href*="maindomino*."] > img
+##[href*="maindomino99"] > img
 ##[href*="mainidb."] > img
 ##[href*="mainqiu."] > img
+##[href*="mainqq"] > img
 ##[href*="mainqq."] > img
 ##[href*="mainsakong."] > img
 ##[href*="maintogel"] > img
+##[href*="maintogelonline."] > img
 ##[href*="majupoker."] > img
 ##[href*="makelarjudi."] > img
 ##[href*="mamatogel."] > img
+##[href*="mamibet1"] > img
+##[href*="mandiri88."] > img
 ##[href*="mandirimenang."] > img
+##[href*="mandiriqq"] > img
+##[href*="mandiritogel."] > img
+##[href*="manggaduabet"] > img
 ##[href*="maniakartu."] > img
 ##[href*="maniakqq."] > img
+##[href*="maniaqq"] > img
+##[href*="mantapjiwa"] > img
 ##[href*="marina-365."] > img
+##[href*="marina365"] > img
 ##[href*="maruduthutabarat."] > img
 ##[href*="master138."] > img
 ##[href*="master88"] > img
-##[href*="masterbaccarat."] > img
+##[href*="masterbaccarat"] > img
 ##[href*="masterbandar"] > img
 ##[href*="mastercapsa3"] > img
 ##[href*="mastercapsa365."] > img
+##[href*="mastercasino88"] > img
 ##[href*="masterdomino"] > img
 ##[href*="masternaga."] > img
 ##[href*="masterpoker9"] > img
 ##[href*="matasayu."] > img
 ##[href*="maxbbm."] > img
+##[href*="maxbetindonesia."] > img
 ##[href*="maxisbet."] > img
 ##[href*="maxwin303."] > img
 ##[href*="mayorbet."] > img
 ##[href*="mbandarq."] > img
+##[href*="mbo4d"] > img
 ##[href*="mbsdewa."] > img
 ##[href*="mdomino99."] > img
 ##[href*="mediaqq."] > img
+##[href*="mega389"] > img
+##[href*="megawin"] > img
 ##[href*="megawin77."] > img
 ##[href*="meja13."] > img
 ##[href*="meja365."] > img
@@ -9233,26 +9469,36 @@ _Indokasino.
 ##[href*="mikirpoker."] > img
 ##[href*="mimpi4d."] > img
 ##[href*="mingguqq."] > img
+##[href*="mingu-qq"] > img
 ##[href*="misapoker."] > img
 ##[href*="misi-qq."] > img
 ##[href*="misiq"] > img
 ##[href*="mister888."] > img
+##[href*="mitraqq"] > img
+##[href*="miyabivideo"] > img
 ##[href*="mkvgames."] > img
 ##[href*="mkvpoker."] > img
 ##[href*="mobapoker"] > img
 ##[href*="mobilgoyang."] > img
+##[href*="modalqq"] > img
 ##[href*="momopk2."] > img
 ##[href*="momopoker88."] > img
-##[href*="monasbet."]
+##[href*="monasbet."] > img
+##[href*="motorqq"] > img
 ##[href*="motorqq."] > img
 ##[href*="mta77."] > img
+##[href*="musim99."] > img
+##[href*="musimnewqq"] > img
 ##[href*="musimqq."] > img
+##[href*="musimtogel."] > img
+##[href*="musimtoto."] > img
 ##[href*="mustika168."] > img
 ##[href*="mustikaku."] > img
 ##[href*="mustikapoker."] > img
 ##[href*="muvbet."] > img
 ##[href*="muvi."] > img
 ##[href*="muvibet."] > img
+##[href*="mybestpoker."] > img
 ##[href*="mybet188"] > img
 ##[href*="mybet188."] > img
 ##[href*="mydragonku."] > img
@@ -9260,28 +9506,40 @@ _Indokasino.
 ##[href*="nagahoki"] > img
 ##[href*="nagalaut."] > img
 ##[href*="nagalaut99."] > img
+##[href*="naganew"] > img
 ##[href*="naloindo."] > img
+##[href*="naloqq"] > img
 ##[href*="nanatoto."] > img
 ##[href*="nasapoker."] > img
 ##[href*="natabet."] > img
 ##[href*="negarakartu."] > img
 ##[href*="neobola."] > img
 ##[href*="neotangkas."] > img
+##[href*="nikeqq"] > img
 ##[href*="nikitapoker."] > img
+##[href*="nikmatiqq"] > img
 ##[href*="nomorkeluar."] > img
 ##[href*="nontonbokep"] > img
+##[href*="nontonfilm21."] > img
 ##[href*="nusantarabet"] > img
+##[href*="nusantarabet4d."] > img
 ##[href*="obat-klg-herbal."] > img
 ##[href*="obatjogja."] > img
 ##[href*="obatpembesar"] > img
 ##[href*="obcbet."] > img
 ##[href*="obccash."] > img
 ##[href*="obipoker."] > img
+##[href*="obobet."] > img
+##[href*="oke-kiu"] > img
 ##[href*="oke77."] > img
 ##[href*="okebos"] > img
 ##[href*="okecas."] > img
 ##[href*="okecash88."] > img
+##[href*="okecashh"] > img
+##[href*="okecgoaloo"] > img
+##[href*="okekas88"] > img
 ##[href*="okekiu"] > img
+##[href*="okewin"] > img
 ##[href*="okewon."] > img
 ##[href*="olb365."] > img
 ##[href*="omdomino."] > img
@@ -9289,6 +9547,7 @@ _Indokasino.
 ##[href*="ompoker."] > img
 ##[href*="ompokerasia."] > img
 ##[href*="omsakong."] > img
+##[href*="omsenang."] > img
 ##[href*="onclinic24."] > img
 ##[href*="onesbet."] > img
 ##[href*="oppopoker."] > img
@@ -9310,20 +9569,28 @@ _Indokasino.
 ##[href*="pasarantogel."] > img
 ##[href*="pastibet."] > img
 ##[href*="pastipoker"] > img
+##[href*="paypalbisnis."] > img
+##[href*="pdkrqq"] > img
 ##[href*="pemaintogel."] > img
-##[href*="pendekarqq."] > img
+##[href*="pendekarqq"] > img
+##[href*="pepsi77"] > img
+##[href*="pesona88."] > img
 ##[href*="pesonaqq."] > img
 ##[href*="pialaduniamild88."] > img
+##[href*="pialaqq"] > img
 ##[href*="pialasports."] > img
 ##[href*="pilarqq."] > img
 ##[href*="pkjmp."] > img
 ##[href*="pkq13."] > img
 ##[href*="pkrvqq."] > img
+##[href*="pkstar8"] > img
 ##[href*="pkv99."] > img
 ##[href*="poin4d."] > img
 ##[href*="poinqq."] > img
 ##[href*="poker021."] > img
 ##[href*="poker1"] > img
+##[href*="poker158."] > img
+##[href*="poker5star"] > img
 ##[href*="poker8"] > img
 ##[href*="pokerajaib."] > img
 ##[href*="pokerampm."] > img
@@ -9331,22 +9598,28 @@ _Indokasino.
 ##[href*="pokerdex."] > img
 ##[href*="pokergalaxy."] > img
 ##[href*="pokergo"] > img
+##[href*="pokergo8."] > img
 ##[href*="pokergolden."]
 ##[href*="pokergua."] > img
+##[href*="pokerhost24."] > img
 ##[href*="pokerindo"] > img
+##[href*="pokerindo88."] > img
 ##[href*="pokerintan."] > img
 ##[href*="pokerjingga."] > img
 ##[href*="pokermon"] > img
+##[href*="pokermon24."] > img
 ##[href*="pokernasional."] > img
 ##[href*="pokerpediaz."] > img
 ##[href*="pokerqq13."] > img
 ##[href*="pokerstar"] > img
 ##[href*="pokerww."] > img
 ##[href*="pokerzara."] > img
+##[href*="power338bet"] > img
 ##[href*="prediksi8"] > img
 ##[href*="prediksisingapore."] > img
 ##[href*="prediksisuper."] > img
 ##[href*="prediksitogel"] > img
+##[href*="pro-qq"] > img
 ##[href*="probet99."] > img
 ##[href*="prokiu."] > img
 ##[href*="promodewa."] > img
@@ -9363,63 +9636,91 @@ _Indokasino.
 ##[href*="q99bet."] > img
 ##[href*="qbandars."] > img
 ##[href*="qq-domino."] > img
+##[href*="qq-online"] > img
+##[href*="qq1221"] > img
+##[href*="qq288"] > img
 ##[href*="qq2889yes."] > img
 ##[href*="qq288hh."] > img
 ##[href*="qq338menang."] > img
 ##[href*="qq338proses."] > img
 ##[href*="qq338super."] > img
+##[href*="qqasli."] > img
 ##[href*="qqboya."] > img
 ##[href*="qqdomino."] > img
 ##[href*="qqdoyan."] > img
+##[href*="qqhok"] > img
 ##[href*="qqjempol."] > img
 ##[href*="qqnalo."] > img
+##[href*="qqnewbet"] > img
 ##[href*="qqpendekar."] > img
+##[href*="qqpilihan"] > img
 ##[href*="qqpokerplay."] > img
 ##[href*="qqratu."] > img
+##[href*="qqterbaik"] > img
 ##[href*="qquniversal."] > img
+##[href*="rahasiaqq"] > img
 ##[href*="raja1"] > img
 ##[href*="raja3"] > img
 ##[href*="raja7"] > img
+##[href*="raja_365"] > img
 ##[href*="rajadewabet."] > img
 ##[href*="rajadomino"] > img
+##[href*="rajajdqq"] > img
 ##[href*="rajanusantara."] > img
 ##[href*="rajanyapoker."] > img
+##[href*="rajapoker"] > img
+##[href*="rajaqq"] > img
 ##[href*="rajaremi."] > img
 ##[href*="rajasakong"] > img
 ##[href*="rakensu."] > img
 ##[href*="ramuanobatherball."] > img
 ##[href*="ratubet88."] > img
 ##[href*="ratubola."] > img
+##[href*="ratukasino."] > img
 ##[href*="ratuqq"] > img
 ##[href*="ratusakong."] > img
+##[href*="rayapoker."] > img
 ##[href*="redbullqq."] > img
 ##[href*="redmiqq."] > img
 ##[href*="rezekibola."] > img
+##[href*="rgobet69"] > img
 ##[href*="rgopoker"] > img
 ##[href*="royal369."] > img
 ##[href*="royalbet"] > img
 ##[href*="royaldomino"] > img
-##[href*="royalkasino."] > img
+##[href*="royalflush"] > img
+##[href*="royalkasino"] > img
 ##[href*="royalku."] > img
 ##[href*="royalpoker"] > img
-##[href*="royalqq."] > img
+##[href*="royalqq"] > img
 ##[href*="rumahbokep."] > img
+##[href*="s1casino"] > img
 ##[href*="s7bola."] > img
 ##[href*="sahabat-arena.net"]
 ##[href*="sahabatarena."] > img
 ##[href*="sahamdomino."] > img
 ##[href*="sakongkiu."] > img
+##[href*="sakuratoto"] > img
 ##[href*="samsunghoki."] > img
+##[href*="samuraiqq"] > img
 ##[href*="sanadomino."] > img
+##[href*="sarana365"] > img
+##[href*="sarana99"] > img
 ##[href*="saranapoker."] > img
 ##[href*="saranaqq."] > img
 ##[href*="sbbanner."] > img
+##[href*="sbcagent"] > img
 ##[href*="sbo303."] > img
 ##[href*="sbobet"] > img
+##[href*="sbobet138."] > img
+##[href*="sbobeta88"] > img
+##[href*="sbobetips."] > img
 ##[href*="sbokiu."] > img
 ##[href*="sbokiukiu."] > img
 ##[href*="sbonaga."] > img
 ##[href*="sbopoker."] > img
+##[href*="sboqq"] > img
+##[href*="sbosbe"] > img
 ##[href*="sbsbet."] > img
 ##[href*="sdsblotto"] > img
 ##[href*="sedapq"] > img
@@ -9431,6 +9732,7 @@ _Indokasino.
 ##[href*="senangpoker"] > img
 ##[href*="seni888."] > img
 ##[href*="senibola."] > img
+##[href*="seniorbola"] > img
 ##[href*="seniqq."] > img
 ##[href*="sentabet."] > img
 ##[href*="sentanapoker."] > img
@@ -9446,9 +9748,9 @@ _Indokasino.
 ##[href*="seventogel."] > img
 ##[href*="sgopoker."] > img
 ##[href*="shiokambing"] > img
-##[href*="shiokambing2."] > img
 ##[href*="shiokuda."] > img
 ##[href*="siapbet."] > img
+##[href*="simpatiqq"] > img
 ##[href*="sinar365."] > img
 ##[href*="sinarkiukiu."] > img
 ##[href*="sinarqq."] > img
@@ -9460,49 +9762,62 @@ _Indokasino.
 ##[href*="skorbola."] > img
 ##[href*="sobatpkr."] > img
 ##[href*="sobatpoker"] > img
-##[href*="soccerbet99."] > img
+##[href*="soccerbet"] > img
 ##[href*="sogopoker."] > img
 ##[href*="solusitambahtinggi."] > img
 ##[href*="sonyqq."] > img
 ##[href*="spbo33"] > img
+##[href*="sponsor-qq"] > img
+##[href*="sponsorqq"] > img
 ##[href*="sportsbet."] > img
 ##[href*="sportsmansclub."] > img
+##[href*="sq881"] > img
 ##[href*="star88bet."] > img
 ##[href*="star88bola."] > img
 ##[href*="star88win."] > img
 ##[href*="starcasino88."] > img
+##[href*="stardomino"] > img
 ##[href*="starsbet."] > img
+##[href*="suaraemas."] > img
+##[href*="suhu-qq"] > img
 ##[href*="suhu88."] > img
 ##[href*="suhu99."] > img
 ##[href*="suhubet."] > img
 ##[href*="suhubola."] > img
 ##[href*="suhukiu."] > img
-##[href*="suhuqq."] > img
+##[href*="suhuq"] > img
 ##[href*="suhutogel."] > img
 ##[href*="sumberqq."] > img
-##[href*="sundul88."] > img
+##[href*="sundul88"] > img
 ##[href*="sundul99."] > img
 ##[href*="sundulqq."] > img
+##[href*="surgawin"] > img
 ##[href*="surya4d."] > img
+##[href*="suryaemas."] > img
+##[href*="tahun-qq"] > img
 ##[href*="tahun99."] > img
 ##[href*="tahunqq"] > img
-##[href*="tahunqq."] > img
+##[href*="tajirqq"] > img
 ##[href*="tamanqq."] > img
-##[href*="tangkas"] > img
 ##[href*="tangkas9."] > img
 ##[href*="tangkasq."] > img
-##[href*="taruhan"] > img
+##[href*="taruhan1"] > img
+##[href*="taruhan8"] > img
+##[href*="taruhanbet"] > img
 ##[href*="tatobet."] > img
 ##[href*="tatonaga."] > img
 ##[href*="tehbatuk."] > img
 ##[href*="tekopecah."] > img
 ##[href*="telolet99."] > img
-##[href*="teloletqq."] > img
+##[href*="teloletqq"] > img
 ##[href*="temanjudi."] > img
 ##[href*="temanpoker"] > img
 ##[href*="tendangsakti."] > img
+##[href*="terminal4d"] > img
+##[href*="terminalbet"] > img
 ##[href*="terminalbet."] > img
-##[href*="tipsgratisbola."] > img
+##[href*="texaspoker"] > img
+##[href*="tipsgratisbola"] > img
 ##[href*="togel212."] > img
 ##[href*="togel7"] > img
 ##[href*="togelbet."] > img
@@ -9511,22 +9826,31 @@ _Indokasino.
 ##[href*="togeldomino."] > img
 ##[href*="togeldulu."] > img
 ##[href*="togeljackpot"] > img
+##[href*="togelkita."] > img
 ##[href*="togelkite."] > img
 ##[href*="togellounge"] > img
 ##[href*="togelmarket"] > img
 ##[href*="togelmaya."] > img
 ##[href*="togeltoto."] > img
 ##[href*="togeltoto8"]
-##[href*="topbet"] > img
+##[href*="tokoqq"] > img
+##[href*="topbet7"] > img
+##[href*="topbet8"] > img
+##[href*="topbet9"] > img
 ##[href*="toppoker7"] > img
 ##[href*="tores4d."] > img
+##[href*="toto21"] > img
 ##[href*="totobet"] > img
+##[href*="totobett."] > img
 ##[href*="totohoki1."] > img
 ##[href*="totoking4d."] > img
+##[href*="totokini."] > img
+##[href*="totokita"] > img
 ##[href*="totokita."] > img
 ##[href*="totokl"] > img
 ##[href*="totosuper."] > img
 ##[href*="toyotaqiuqiu."] > img
+##[href*="toyotaqq"] > img
 ##[href*="transpoker."] > img
 ##[href*="tri7bet."] > img
 ##[href*="tribunbolaku."] > img
@@ -9539,17 +9863,24 @@ _Indokasino.
 ##[href*="uang365."] > img
 ##[href*="uang4d."] > img
 ##[href*="ubc7."] > img
+##[href*="ubcwin"] > img
 ##[href*="ujungkontol."] > img
 ##[href*="undepo."] > img
+##[href*="universal-qq"] > img
 ##[href*="unogoal88."] > img
 ##[href*="usahatoto."] > img
+##[href*="utamabet"] > img
 ##[href*="utamaqq."] > img
 ##[href*="v798879."] > img
 ##[href*="vazbet."] > img
+##[href*="vbet188."] > img
 ##[href*="vcbola."] > img
 ##[href*="vegas303."] > img
+##[href*="vegas77"] > img
 ##[href*="vegas78bet"] > img
+##[href*="vegas855"] > img
 ##[href*="vegas99bet"] > img
+##[href*="vegasidr"] > img
 ##[href*="vegasmarketonline."] > img
 ##[href*="vegasonlineweb."] > img
 ##[href*="venombet."] > img
@@ -9565,23 +9896,38 @@ _Indokasino.
 ##[href*="vipmandiriqq."] > img
 ##[href*="visitogel."] > img
 ##[href*="viva188."] > img
-##[href*="vivacm"] > img
+##[href*="vivacm."] > img
+##[href*="vivacm8"] > img
 ##[href*="vivobetting."] > img
 ##[href*="vodkapoker"] > img
+##[href*="w22bet"] > img
+##[href*="w88domino."] > img
+##[href*="wahana88"] > img
+##[href*="wahanatoto*."] > img
 ##[href*="wahanatoto1."] > img
 ##[href*="wahyu168"] > img
+##[href*="wahyupoker"] > img
 ##[href*="waletjp."] > img
 ##[href*="waltpoker."] > img
 ##[href*="warnetbokep."] > img
 ##[href*="warung365."] > img
 ##[href*="warungqiu."] > img
+##[href*="warungqiuqiu"] > img
+##[href*="warungqq"] > img
 ##[href*="we585."] > img
+##[href*="webajaib"] > img
 ##[href*="wedepoker."] > img
+##[href*="wedeqq.gif
 ##[href*="wespoker."] > img
+##[href*="wigobet"] > img
+##[href*="wikaqq."] > img
 ##[href*="win11bet."] > img
+##[href*="win228"] > img
+##[href*="win323"] > img
 ##[href*="win7poker."] > img
 ##[href*="winclub88."] > img
 ##[href*="windewa."] > img
+##[href*="window-close."] > img
 ##[href*="winft95."] > img
 ##[href*="wingspoker."] > img
 ##[href*="wingsqq."] > img
@@ -9592,19 +9938,21 @@ _Indokasino.
 ##[href*="winwinbola."] > img
 ##[href*="wismaqq."] > img
 ##[href*="won77."] > img
-##[href*="won77.asia"] > img
 ##[href*="wong-poker."] > img
 ##[href*="wongbet."] > img
 ##[href*="wongpkr."] > img
+##[href*="wpbet365"] > img
+##[href*="wwwsgopoker."] > img
 ##[href*="yoyopoker."] > img
 ##[href*="ysbindo."] > img
 ##[href*="ysbjaya88."] > img
 ##[href*="zenbola."] > img
 ##[href*="zeushoki."] > img
+##[href*="zientoto"] > img
 ##[href*="ziobet."] > img
 ##[href*="zonaprediksi."] > img
+##[href*="zynga365."] > img
 ##[href*="zyngaqq"] > img
-##[href*="zyngaqq."] > img
 ##a[title*="Agen Capsa"] > img
 ##a[title*="Agen Poker"] > img
 ##a[title*="BANDARQ"] > img
@@ -9620,12 +9968,12 @@ _Indokasino.
 ##a[title*="kucingpoker"] > img
 ##img[alt*="Agen Bola"]
 ##img[alt*="Agen Poker"]
+##img[alt*="Agen SBOBET"]
 ##img[alt*="Agen Togel"]
 ##img[alt*="Bandar Bakong"]
 ##img[alt*="Bandar Bola"]
 ##img[alt*="Bandar Togel"]
 ##img[alt*="BandarQ"]
-##img[alt*="Bandarq"]
 ##img[alt*="Ceme Judi"]
 ##img[alt*="DNAPoker"]
 ##img[alt*="Dewa Poker"]
@@ -9633,8 +9981,8 @@ _Indokasino.
 ##img[alt*="GoldenPoker"]
 ##img[alt*="HokiQQ"]
 ##img[alt*="HoyaJackpot"]
+##img[alt*="Judi Bola"]
 ##img[alt*="Judi Online"]
-##img[alt*="Kakak Dewa"]
 ##img[alt*="LigaQQ"]
 ##img[alt*="Live Score"]
 ##img[alt*="Luxury 138"]
@@ -9656,29 +10004,25 @@ _Indokasino.
 ##img[alt*="bandar casino"]
 ##img[alt*="bandar sakong"]
 ##img[alt*="bandarq"]
-##img[alt*="bintangbola"]
-##img[alt*="glxgames"]
 ##img[alt*="hm88poker"]
 ##img[alt*="hokisport"]
-##img[alt*="indowins"]
 ##img[alt*="jendralpoker"]
 ##img[alt*="judi bola"]
 ##img[alt*="judi online"]
 ##img[alt*="kampusbet"]
 ##img[alt*="novapoker"]
 ##img[alt*="pasang iklan"]
+##img[alt*="pesonaqq"]
 ##img[alt*="situs poker"]
 ##img[alt*="taruhan bola online"]
-##img[alt*="texaspoker"]
-##img[alt*="togel online terpercaya"]
+##img[alt*="togel online"]
 ##img[alt*="wigobet"]
-##img[alt^="GARUDAQQ"]
-##img[alt^="INIDEWA365"]
-##img[alt^="SBOQQ"]
-##img[alt^="agen bola"]
-##img[alt^="agen poker"]
-##img[alt^="poker online"]
-##img[title*=" judi bola online"]
+##img[alt*=GARUDAQQ"]
+##img[alt*=INIDEWA365"]
+##img[alt*=SBOQQ"]
+##img[alt*=agen bola"]
+##img[alt*=agen poker"]
+##img[alt*=poker online"]
 ##img[title*="7naga bet"]
 ##img[title*="7naga poker"]
 ##img[title*="AGEN JUDI"]
@@ -9700,7 +10044,6 @@ _Indokasino.
 ##img[title*="LigaQQ"]
 ##img[title*="MEJASAKONG"]
 ##img[title*="Poker Bola"]
-##img[title*="PokerJazz"]
 ##img[title*="RGOBET"]
 ##img[title*="SBOQQ"]
 ##img[title*="Sbosbet"]
@@ -9709,7 +10052,6 @@ _Indokasino.
 ##img[title*="jayabet"]
 ##img[title*="judi bola online"]
 ##img[title*="situs togel online"]
-##img[title*="texaspoker."]
 ##img[title*="wigobet"]
 ! *** abid:addons/movie.adbl ***
 nontonanimeindo.net,ns21.club##a[href*="//goo.gl/"] > img
@@ -9731,6 +10073,7 @@ dunia21.top,ns21.club###previewBox2
 dunia21.top,ns21.club###previewBox3
 dunia21.top,ns21.club###previewBox4
 nonton.com##.adds
+xxi.movie##.glx-container
 ns21.club##.modal-backdrop
 sukamovie.mobi##.sukam-atas-post
 sukamovie.mobi##.sukam-bawah
@@ -10358,8 +10701,11 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 @@.gif#*/ad/
 @@.jpg#*/ad/
 @@.png#*/ad/
+@@/*.css$stylesheet,domain=danirachmat.com
+@@/*.ttf$font,domain=danirachmat.com
 @@/*pasangiklan*.$domain=pasangiklan.com|pasangiklankompas.com|pasangiklankompasposkota.com
-@@/advertisement.$domain=samehadaku.tv
+@@/advertisement.$domain=ikurniawan.com|samehadaku.tv
+@@/fuckadblock.js$domain=nandatrio.com
 @@/iklan-$domain=baktiartha.co.id|iklankoran.net
 @@/mts_ad_sense/*$domain=onphpid.com
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
@@ -10373,6 +10719,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 @@||bagikancara.com^$generichide
 @@||bloggerszones.com^$generichide
 @@||blogogut.com^$generichide
+@@||contohblog.com^$generichide
 @@||dedykuncoro.com^$generichide
 @@||gudangfirmwere.com^$generichide
 @@||hobybaca.com^$generichide
@@ -10380,6 +10727,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 @@||inwepo.co^$generichide
 @@||juraganmumut.com^$generichide
 @@||kabarmakkah.com^$generichide
+@@||kelasdesain.com^$generichide
 @@||lanjutkeun.blogspot.com^$generichide
 @@||majalahikan.com^$generichide
 @@||mangaindo.net^$generichide
@@ -10403,9 +10751,11 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 @@||tribunislam.com^$generichide
 @@||tutorialweb.net^$generichide
 @@||wincamp.org^$generichide
+@@||zonexweb.com^$generichide
 adigunawan.id#@##adsense
 adigunawan.id#@##skyline_ad
 agroindustri.id#@#.category-advertorial
+aplikasipc.com#@#.afs_ads
 bagilagi.com#@##banner_ad
 dutaislam.com#@##ads-wrapper
 duwitmu.com#@#.category-advertorial
@@ -10413,5 +10763,6 @@ eramuslim.com#@##topAd
 kostjakarta.net#@#a[href*="/iklan/"]
 lindung.in#@#.afs_ads
 nabire.net#@#.adsbygoogle
+otakuindo.net#@##banner_ad
 ||mangacanblog.com/adblock/src/adblock-checker.js
-! Checksum: rTzHlBUVWl2N3gKVTihGUA
+! Checksum: 3kcV4S4w94BYLxjXUTRhaQ
