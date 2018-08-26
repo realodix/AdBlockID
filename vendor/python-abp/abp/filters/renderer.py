@@ -17,8 +17,6 @@
 
 from __future__ import unicode_literals
 
-import base64
-import hashlib
 import itertools
 import logging
 import time
@@ -139,23 +137,6 @@ def _remove_duplicates(lines):
             yield line
 
 
-def _insert_checksum(lines):
-    """Add checksum to the filter list.
-
-    See https://adblockplus.org/filters#special-comments for description
-    of the checksum algorithm.
-    """
-    md5sum = hashlib.md5()
-
-    for line in lines:
-        if line.type != 'emptyline':
-            md5sum.update(line.to_string().encode('utf-8') + b'\n')
-        yield line
-
-    checksum = base64.b64encode(md5sum.digest()).rstrip(b'=')
-    yield Metadata('Checksum', checksum.decode('utf-8'))
-
-
 def _validate(lines):
     """Validate the final list."""
     first_line, rest = _first_and_rest(lines)
@@ -196,6 +177,6 @@ def render_filterlist(name, sources, top_source=None):
     lines, default_source = _get_and_parse_fragment(name, sources, top_source)
     lines = _process_includes(sources, default_source, [name], lines)
     for proc in [_process_timestamps, _insert_version, _remove_duplicates,
-                 _insert_checksum, _validate]:
+                 _validate]:
         lines = proc(lines)
     return lines

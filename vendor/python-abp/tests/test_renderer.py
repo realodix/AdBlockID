@@ -56,7 +56,7 @@ def render_str(*args, **kw):
 def test_simple_render(head):
     src = MockSource(fl='[Adblock]\n! Comment.')
     got = render_str('fl', {}, src)
-    assert got == head + '! Comment.\n! Checksum: bmdRu7Y9gm9DAV6vOoAv4Q'
+    assert got == head + '! Comment.'
 
 
 def test_include(head):
@@ -118,3 +118,9 @@ def test_missing_header():
     src = MockSource(fl='! No header')
     with pytest.raises(MissingHeader):
         render_str('fl', {}, src)
+
+
+def test_remove_checksum(head):
+    src = MockSource(fl='[Adblock]\n! Comment\n! Checksum: foo')
+    got = render_str('fl', {}, src)
+    assert got == head + '! Comment'

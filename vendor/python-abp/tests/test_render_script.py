@@ -121,7 +121,6 @@ def test_render_no_includes(test_input, args, rootdir, dstfile):
         output = stdout
 
     assert 'Ok' in output
-    assert '! Checksum:' in output
 
 
 def test_render_unicode(rootdir, dstfile):

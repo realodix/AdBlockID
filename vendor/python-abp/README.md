@@ -28,8 +28,7 @@ consumed by the adblocking software such as Adblock Plus.
 
 Rendering is a process that combines filter list fragments into a filter list.
 It starts with one fragment that can include other ones and so forth.
-The produced filter list is marked with a version, a timestamp and 
-a [checksum][1].
+The produced filter list is marked with a [version and a timestamp][1].
 
 Python-abp contains a script that can do this called `flrender`:
 
@@ -129,9 +128,9 @@ tests for some usage examples.
 ## Testing
 
 Unit tests for `python-abp` are located in the `/tests` directory.
-[Pytest][3] is used for quickly running the tests
+[Pytest][2] is used for quickly running the tests
 during development.
-[Tox][4] is used for testing in different
+[Tox][3] is used for testing in different
 environments (Python 2.7, Python 3.5+ and PyPy) and code quality
 reporting.
 
@@ -156,11 +155,10 @@ coverage (as measured by `tox -e qa`) should not decrease and the tests
 should pass in all Tox environments.
 
 All public functions, classes and methods should have docstrings compliant with
-[NumPy/SciPy documentation guide][5]. One exception is the constructors of
+[NumPy/SciPy documentation guide][4]. One exception is the constructors of
 classes that the user is not expected to instantiate (such as exceptions).
 
  [1]: https://adblockplus.org/filters#special-comments
- [2]: https://adblockplus.org/filters#options
- [3]: http://pytest.org/
- [4]: https://tox.readthedocs.org/
- [5]: https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
+ [2]: http://pytest.org/
+ [3]: https://tox.readthedocs.org/
+ [4]: https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
