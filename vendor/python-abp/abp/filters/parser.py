@@ -140,9 +140,7 @@ Filter = _line_type('Filter', 'text selector action options', '{.text}')
 Include = _line_type('Include', 'target', '%include {0.target}%')
 
 
-METADATA_REGEXP = re.compile(r'!\s*(\w+)\s*:\s*(.*)')
-METADATA_KEYS = {'Homepage', 'Title', 'Expires', 'Checksum', 'Redirect',
-                 'Version'}
+METADATA_REGEXP = re.compile(r'!\s*([\w-]+)\s*:(?!//)\s*(.*)')
 INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
 HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
 HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?])?#(.+)$')
@@ -153,7 +151,7 @@ FILTER_OPTIONS_REGEXP = re.compile(
 
 def _parse_comment(text):
     match = METADATA_REGEXP.match(text)
-    if match and match.group(1) in METADATA_KEYS:
+    if match:
         return Metadata(match.group(1), match.group(2))
     return Comment(text[1:].strip())
 

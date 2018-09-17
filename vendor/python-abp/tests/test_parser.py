@@ -154,11 +154,6 @@ def test_parse_meta():
     assert line.value == 'http://aaa.com/b'
 
 
-def test_parse_nonmeta():
-    line = parse_line('! WrongHeader: something')
-    assert line.type == 'comment'
-
-
 def test_parse_instruction():
     line = parse_line('%include foo:bar/baz.txt%')
     assert line.type == 'include'

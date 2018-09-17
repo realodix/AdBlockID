@@ -24,7 +24,7 @@ import time
 from .parser import parse_filterlist, Comment, Metadata
 from .sources import NotFound
 
-__all__ = ['IncludeError', 'MissingHeader', 'render_filterlist']
+__all__ = ['IncludeError', 'MissingHeader', 'render_filterlist', 'render_diff']
 
 _logger = logging.getLogger(__name__)
 
@@ -124,11 +124,12 @@ def _remove_duplicates(lines):
     """Remove duplicate metadata and headers."""
     # Always remove checksum -- a checksum coming from a fragment
     # will not match for the rendered list.
-    seen = {'Checksum'}
+    seen = {'checksum'}
     for i, line in enumerate(lines):
         if line.type == 'metadata':
-            if line.key not in seen:
-                seen.add(line.key)
+            key = line.key.lower()
+            if key not in seen:
+                seen.add(key)
                 yield line
         elif line.type == 'header':
             if i == 0:
@@ -180,3 +181,47 @@ def render_filterlist(name, sources, top_source=None):
                  _validate]:
         lines = proc(lines)
     return lines
+
+
+def _split_list_for_diff(list_in):
+    """Split a filter list into metadata, keys, and rules."""
+    metadata = {}
+    rules = set()
+    for line in parse_filterlist(list_in):
+        if line.type == 'metadata':
+            metadata[line.key.lower()] = line
+        elif line.type == 'filter':
+            rules.add(line.to_string())
+    return metadata, rules
+
+
+def render_diff(base, latest):
+    """Return a diff between two filter lists.
+
+    Parameters
+    ----------
+    base : iterator of str
+        The base (old) list that we want to update to latest.
+    lastest : iterator  of str
+        The latest (most recent) list that we want to update to.
+
+    Returns
+    -------
+    iterable of str
+        A diff between two lists (https://issues.adblockplus.org/ticket/6685)
+
+    """
+    latest_metadata, latest_rules = _split_list_for_diff(latest)
+    base_metadata, base_rules = _split_list_for_diff(base)
+
+    yield '[Adblock Plus Diff]'
+    for key, latest in latest_metadata.items():
+        base = base_metadata.get(key)
+        if not base or base.value != latest.value:
+            yield latest.to_string()
+    for key in set(base_metadata) - set(latest_metadata):
+        yield '! {}:'.format(base_metadata[key].key)
+    for rule in base_rules - latest_rules:
+        yield '- {}'.format(rule)
+    for rule in latest_rules - base_rules:
+        yield '+ {}'.format(rule)
