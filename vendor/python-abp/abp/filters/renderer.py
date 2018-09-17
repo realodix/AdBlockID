@@ -184,7 +184,7 @@ def render_filterlist(name, sources, top_source=None):
 
 
 def _split_list_for_diff(list_in):
-    """Split a filter list into metadata, keys, and rules."""
+    """Split a filter list into metadata and rules."""
     metadata = {}
     rules = set()
     for line in parse_filterlist(list_in):
