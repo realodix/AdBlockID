@@ -172,7 +172,7 @@ def test_parse_filterlist():
                                '! Note: bla bla'])
 
     assert next(result) == Header('Adblock Plus 1.1')
-    assert next(result).type == 'comment'
+    assert next(result) == Metadata('Last modified', '26 Jul 2018 02:10 UTC')
     assert next(result) == Metadata('Homepage', 'http://aaa.com/b')
     assert next(result).type == 'filter'
     assert next(result) == Metadata('Checksum', 'OaopkIiiAl77sSHk/VAWDA')

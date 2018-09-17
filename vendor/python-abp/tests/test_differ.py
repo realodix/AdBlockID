@@ -21,7 +21,6 @@ BASE = '''[Adblock Plus 2.0]
 ! diff-url: https://easylist-downloads.adblockplus.org/easylist/diffs/111.txt
 ! diff-expires: 1 hours
 ! Title: EasyList
-! Last modified: 26 Jul 2018 02:10 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -43,7 +42,6 @@ LATEST = '''[Adblock Plus 2.0]
 ! Diff-URL: https://easylist-downloads.adblockplus.org/easylist/diffs/123.txt
 ! Diff-Expires: 1 hours
 ! Title: EasyList
-! Last modified: 26 Jul 2018 21:00 UTC
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
 !

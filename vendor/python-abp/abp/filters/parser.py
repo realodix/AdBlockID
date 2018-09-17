@@ -140,7 +140,7 @@ Filter = _line_type('Filter', 'text selector action options', '{.text}')
 Include = _line_type('Include', 'target', '%include {0.target}%')
 
 
-METADATA_REGEXP = re.compile(r'([\w-]+)\s*:\s*(.*)')
+METADATA_REGEXP = re.compile(r'(.*?)\s*:\s*(.*)')
 INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
 HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
 HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?])?#(.+)$')
@@ -319,7 +319,7 @@ def parse_filterlist(lines):
     for line in lines:
         result = parse_line(line)
 
-        if isinstance(result, Comment):
+        if result.type == 'comment':
             match = METADATA_REGEXP.match(result.text)
             if match:
                 key, value = match.groups()
@@ -330,12 +330,9 @@ def parse_filterlist(lines):
                 # we have to make sure to still parse them regardless of
                 # their position in the filter list.
                 if not metadata_closed or key.lower() == 'checksum':
-                    yield Metadata(key, value)
-                    continue
+                    result = Metadata(key, value)
 
-            if not result.text:
-                metadata_closed = True
-        elif not isinstance(result, Header):
+        if result.type not in {'header', 'metadata'}:
             metadata_closed = True
 
         yield result

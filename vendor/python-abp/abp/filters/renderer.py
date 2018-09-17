@@ -89,7 +89,8 @@ def _process_includes(sources, default_source, parent_include_stack, lines):
                 _logger.info('- including: %s', name)
                 yield Comment('*** {} ***'.format(name))
                 for line in all_included:
-                    yield line
+                    if line.type not in {'header', 'metadata'}:
+                        yield line
             except (NotFound, ValueError) as exc:
                 raise IncludeError(exc, include_stack)
         else:
@@ -99,9 +100,9 @@ def _process_includes(sources, default_source, parent_include_stack, lines):
 def _process_timestamps(lines):
     """Convert timestamp markers into actual timestamps."""
     for line in lines:
-        if line.type == 'comment' and '%timestamp%' in line.text:
+        if line.type == 'metadata' and line.value == '%timestamp%':
             timestamp = time.strftime('%d %b %Y %H:%M UTC', time.gmtime())
-            yield Comment(text=line.text.replace('%timestamp%', timestamp))
+            yield Metadata(line.key, timestamp)
         else:
             yield line
 
@@ -120,21 +121,16 @@ def _insert_version(lines):
     return itertools.chain([first_line, version], rest)
 
 
-def _remove_duplicates(lines):
-    """Remove duplicate metadata and headers."""
-    # Always remove checksum -- a checksum coming from a fragment
-    # will not match for the rendered list.
-    seen = {'checksum'}
-    for i, line in enumerate(lines):
-        if line.type == 'metadata':
-            key = line.key.lower()
-            if key not in seen:
-                seen.add(key)
-                yield line
-        elif line.type == 'header':
-            if i == 0:
-                yield line
-        else:
+def _remove_checksum(lines):
+    """Remove metadata comments giving a checksum.
+
+    Adblock Plus is no longer verifying checksums, so we don't have to
+    calculate the checksum for the resulting filter list. But we have
+    to strip them for compatibility with older versions of Adblock Plus
+    and other ad blockers which might still verify a checksum if given.
+    """
+    for line in lines:
+        if line.type != 'metadata' or line.key.lower() != 'checksum':
             yield line
 
 
@@ -177,7 +173,7 @@ def render_filterlist(name, sources, top_source=None):
     _logger.info('Rendering: %s', name)
     lines, default_source = _get_and_parse_fragment(name, sources, top_source)
     lines = _process_includes(sources, default_source, [name], lines)
-    for proc in [_process_timestamps, _insert_version, _remove_duplicates,
+    for proc in [_process_timestamps, _insert_version, _remove_checksum,
                  _validate]:
         lines = proc(lines)
     return lines
