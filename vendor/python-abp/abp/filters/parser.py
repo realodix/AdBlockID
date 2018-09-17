@@ -140,20 +140,13 @@ Filter = _line_type('Filter', 'text selector action options', '{.text}')
 Include = _line_type('Include', 'target', '%include {0.target}%')
 
 
-METADATA_REGEXP = re.compile(r'!\s*([\w-]+)\s*:(?!//)\s*(.*)')
+METADATA_REGEXP = re.compile(r'([\w-]+)\s*:\s*(.*)')
 INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
 HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
 HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?])?#(.+)$')
 FILTER_OPTIONS_REGEXP = re.compile(
     r'\$(~?[\w-]+(?:=[^,]+)?(?:,~?[\w-]+(?:=[^,]+)?)*)$'
 )
-
-
-def _parse_comment(text):
-    match = METADATA_REGEXP.match(text)
-    if match:
-        return Metadata(match.group(1), match.group(2))
-    return Comment(text[1:].strip())
 
 
 def _parse_header(text):
@@ -261,6 +254,10 @@ def parse_filter(text):
 def parse_line(line_text):
     """Parse one line of a filter list.
 
+    Note that parse_line() doesn't handle special comments, hence never returns
+    a Metadata() object, Adblock Plus only considers metadata when parsing the
+    whole filter list and only if they are given at the top of the filter list.
+
     Parameters
     ----------
     line_text : str
@@ -284,7 +281,7 @@ def parse_line(line_text):
     if content == '':
         line = EmptyLine()
     elif content.startswith('!'):
-        line = _parse_comment(content)
+        line = Comment(content[1:].lstrip())
     elif content.startswith('%') and content.endswith('%'):
         line = _parse_instruction(content)
     elif content.startswith('[') and content.endswith(']'):
@@ -317,5 +314,28 @@ def parse_filterlist(lines):
         If `lines` is not iterable.
 
     """
+    metadata_closed = False
+
     for line in lines:
-        yield parse_line(line)
+        result = parse_line(line)
+
+        if isinstance(result, Comment):
+            match = METADATA_REGEXP.match(result.text)
+            if match:
+                key, value = match.groups()
+
+                # Historically, checksums can occur at the bottom of the
+                # filter list. Checksums are no longer used by Adblock Plus,
+                # but in order to strip them (in abp.filters.renderer),
+                # we have to make sure to still parse them regardless of
+                # their position in the filter list.
+                if not metadata_closed or key.lower() == 'checksum':
+                    yield Metadata(key, value)
+                    continue
+
+            if not result.text:
+                metadata_closed = True
+        elif not isinstance(result, Header):
+            metadata_closed = True
+
+        yield result

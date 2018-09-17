@@ -33,14 +33,6 @@ _TEST_EXAMPLES = {
             b'version': b'Adblock Plus 2.0',
         },
     },
-    'metadata': {
-        'in': b'! Title: Example list',
-        'out': {
-            b'type': b'Metadata',
-            b'key': b'Title',
-            b'value': b'Example list',
-        },
-    },
     'comment': {
         'in': b'! Comment',
         'out': {

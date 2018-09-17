@@ -21,7 +21,7 @@ from abp.filters import (
     parse_line, parse_filterlist, ParseError,
     SELECTOR_TYPE as ST, FILTER_ACTION as FA, FILTER_OPTION as OPT,
 )
-from abp.filters.parser import Comment, Metadata
+from abp.filters.parser import Comment, Metadata, Header
 
 
 def test_parse_empty():
@@ -147,13 +147,6 @@ def test_parse_comment():
     assert line.text == 'Block foo'
 
 
-def test_parse_meta():
-    line = parse_line('! Homepage  :  http://aaa.com/b')
-    assert line.type == 'metadata'
-    assert line.key == 'Homepage'
-    assert line.value == 'http://aaa.com/b'
-
-
 def test_parse_instruction():
     line = parse_line('%include foo:bar/baz.txt%')
     assert line.type == 'include'
@@ -165,20 +158,28 @@ def test_parse_bad_instruction():
         parse_line('%foo bar%')
 
 
-def test_parse_header():
-    line = parse_line('[Adblock Plus 1.1]')
-    assert line.type == 'header'
-    assert line.version == 'Adblock Plus 1.1'
-
-
 def test_parse_bad_header():
     with pytest.raises(ParseError):
         parse_line('[Adblock 1.1]')
 
 
 def test_parse_filterlist():
-    result = parse_filterlist(['! foo', '! Title: bar'])
-    assert list(result) == [Comment('foo'), Metadata('Title', 'bar')]
+    result = parse_filterlist(['[Adblock Plus 1.1]',
+                               '! Last modified: 26 Jul 2018 02:10 UTC',
+                               '! Homepage  :  http://aaa.com/b',
+                               '||example.com^',
+                               '! Checksum: OaopkIiiAl77sSHk/VAWDA',
+                               '! Note: bla bla'])
+
+    assert next(result) == Header('Adblock Plus 1.1')
+    assert next(result).type == 'comment'
+    assert next(result) == Metadata('Homepage', 'http://aaa.com/b')
+    assert next(result).type == 'filter'
+    assert next(result) == Metadata('Checksum', 'OaopkIiiAl77sSHk/VAWDA')
+    assert next(result).type == 'comment'
+
+    with pytest.raises(StopIteration):
+        next(result)
 
 
 def test_exception_timing():
