@@ -158,6 +158,26 @@ All public functions, classes and methods should have docstrings compliant with
 [NumPy/SciPy documentation guide][4]. One exception is the constructors of
 classes that the user is not expected to instantiate (such as exceptions).
 
+
+## Using the library with R
+
+Clone the repo to you local machine. Then create a virtualenv and install 
+python abp there:
+
+        $ cd python-abp
+        $ virtualenv env
+        $ pip install --upgrade .
+
+Then import it with `reticulate` in R:
+
+        > library(reticulate)
+        > use_virtualenv("~/python-abp/env", required=TRUE)
+        > abp <- import("abp.filters.rpy")
+
+Now you can use the functions with `abp$functionname`, e.g. 
+`abp.line2dict("@@||g.doubleclick.net/pagead/$subdocument,domain=hon30.org")`
+
+
  [1]: https://adblockplus.org/filters#special-comments
  [2]: http://pytest.org/
  [3]: https://tox.readthedocs.org/
