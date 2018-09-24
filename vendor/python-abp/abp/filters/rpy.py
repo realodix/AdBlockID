@@ -72,7 +72,7 @@ def strings2utf8(data):
     return data
 
 
-def line2dict(text):
+def line2dict(text, mode='body'):
     """Convert a filterlist line to a dictionary.
 
     All strings in the output dictionary will be UTF8 byte strings. This is
@@ -82,6 +82,8 @@ def line2dict(text):
     ----------
     text: str
         The filter text we want to parse
+    mode: str
+        Parsing mode (see `abp.filters.parser.parse_line`).
 
     Returns
     -------
@@ -90,4 +92,4 @@ def line2dict(text):
         strings.
 
     """
-    return strings2utf8(tuple2dict(parse_line(text)))
+    return strings2utf8(tuple2dict(parse_line(text, mode)))

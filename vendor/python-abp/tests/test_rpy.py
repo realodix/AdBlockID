@@ -33,6 +33,14 @@ _TEST_EXAMPLES = {
             b'version': b'Adblock Plus 2.0',
         },
     },
+    'metadata': {
+        'in': b'! Title: Example list',
+        'out': {
+            b'type': b'Metadata',
+            b'key': b'Title',
+            b'value': b'Example list',
+        },
+    },
     'comment': {
         'in': b'! Comment',
         'out': {
@@ -135,6 +143,7 @@ def test_line2dict_format(line_type):
 
     Checks for both keys and datatypes.
     """
-    data = line2dict(_TEST_EXAMPLES[line_type]['in'])
+    position = 'start' if line_type in {'header', 'metadata'} else 'body'
+    data = line2dict(_TEST_EXAMPLES[line_type]['in'], position)
 
     assert data == _TEST_EXAMPLES[line_type]['out']

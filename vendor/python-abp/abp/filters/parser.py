@@ -140,20 +140,14 @@ Filter = _line_type('Filter', 'text selector action options', '{.text}')
 Include = _line_type('Include', 'target', '%include {0.target}%')
 
 
-METADATA_REGEXP = re.compile(r'(.*?)\s*:\s*(.*)')
+METADATA_REGEXP = re.compile(r'\s*!\s*(.*?)\s*:\s*(.*)')
 INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
-HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
+HEADER_REGEXP = re.compile(r'\[(?:(Adblock(?:\s*Plus\s*[\d\.]+?)?)|.*)\]',
+                           flags=re.I)
 HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?])?#(.+)$')
 FILTER_OPTIONS_REGEXP = re.compile(
     r'\$(~?[\w-]+(?:=[^,]+)?(?:,~?[\w-]+(?:=[^,]+)?)*)$'
 )
-
-
-def _parse_header(text):
-    match = HEADER_REGEXP.match(text)
-    if not match:
-        raise ParseError('Malformed header', text)
-    return Header(match.group(1))
 
 
 def _parse_instruction(text):
@@ -251,17 +245,28 @@ def parse_filter(text):
     return _parse_blocking_filter(text)
 
 
-def parse_line(line_text):
+def parse_line(line, position='body'):
     """Parse one line of a filter list.
 
-    Note that parse_line() doesn't handle special comments, hence never returns
-    a Metadata() object, Adblock Plus only considers metadata when parsing the
-    whole filter list and only if they are given at the top of the filter list.
+    The types of lines that that the parser recognizes depend on the position.
+    If position="body", the parser only recognizes filters, comments,
+    processing instructions and empty lines. If position="metadata", it in
+    addition recognizes metadata. If position="start", it also recognizes
+    headers.
+
+    Note: Checksum metadata lines are recognized in all positions for backwards
+    compatibility. Historically, checksums can occur at the bottom of the
+    filter list. They are are no longer used by Adblock Plus, but in order to
+    strip them (in abp.filters.renderer), we have to make sure to still parse
+    them regardless of their position in the filter list.
 
     Parameters
     ----------
-    line_text : str
+    line : str
         Line of a filter list.
+    position : str
+        Position in the filter list, one of "start", "metadata" or "body"
+        (default is "body").
 
     Returns
     -------
@@ -272,25 +277,40 @@ def parse_line(line_text):
     ------
     ParseError
         ParseError: If the line can't be parsed.
+
     """
-    if isinstance(line_text, type(b'')):
-        line_text = line_text.decode('utf-8')
+    POSITIONS = {'body', 'start', 'metadata'}
+    if position not in POSITIONS:
+        raise ValueError('position should be one of {}'.format(POSITIONS))
 
-    content = line_text.strip()
+    if isinstance(line, type(b'')):
+        line = line.decode('utf-8')
 
-    if content == '':
-        line = EmptyLine()
-    elif content.startswith('!'):
-        line = Comment(content[1:].lstrip())
-    elif content.startswith('%') and content.endswith('%'):
-        line = _parse_instruction(content)
-    elif content.startswith('[') and content.endswith(']'):
-        line = _parse_header(content)
-    else:
-        line = parse_filter(content)
+    stripped = line.strip()
 
-    assert line.to_string().replace(' ', '') == content.replace(' ', '')
-    return line
+    if stripped == '':
+        return EmptyLine()
+
+    if position == 'start':
+        match = HEADER_REGEXP.search(line)
+        if match:
+            version = match.group(1)
+            if not version:
+                raise ParseError('Malformed header', line)
+            return Header(version)
+
+    if stripped.startswith('!'):
+        match = METADATA_REGEXP.match(line)
+        if match:
+            key, value = match.groups()
+            if position != 'body' or key.lower() == 'checksum':
+                return Metadata(key, value)
+        return Comment(stripped[1:].lstrip())
+
+    if stripped.startswith('%') and stripped.endswith('%'):
+        return _parse_instruction(stripped)
+
+    return parse_filter(stripped)
 
 
 def parse_filterlist(lines):
@@ -314,25 +334,15 @@ def parse_filterlist(lines):
         If `lines` is not iterable.
 
     """
-    metadata_closed = False
+    position = 'start'
 
     for line in lines:
-        result = parse_line(line)
+        parsed_line = parse_line(line, position)
+        yield parsed_line
 
-        if result.type == 'comment':
-            match = METADATA_REGEXP.match(result.text)
-            if match:
-                key, value = match.groups()
-
-                # Historically, checksums can occur at the bottom of the
-                # filter list. Checksums are no longer used by Adblock Plus,
-                # but in order to strip them (in abp.filters.renderer),
-                # we have to make sure to still parse them regardless of
-                # their position in the filter list.
-                if not metadata_closed or key.lower() == 'checksum':
-                    result = Metadata(key, value)
-
-        if result.type not in {'header', 'metadata'}:
-            metadata_closed = True
-
-        yield result
+        if position != 'body' and parsed_line.type in {'header', 'metadata'}:
+            # Continue parsing metadata until it's over...
+            position = 'metadata'
+        else:
+            # ...then switch to parsing the body.
+            position = 'body'

@@ -158,21 +158,56 @@ def test_parse_bad_instruction():
         parse_line('%foo bar%')
 
 
-def test_parse_bad_header():
+def test_parse_start():
+    # Header-line lines are headers.
+    assert parse_line('[Adblock Plus 1.1]', 'start').type == 'header'
+    # Even if they have extra characters around.
+    assert parse_line('foo[Adblock Plus 1.1] bar', 'start').type == 'header'
+
     with pytest.raises(ParseError):
-        parse_line('[Adblock 1.1]')
+        # But the inside of the header needs to be right.
+        parse_line('[Adblock Minus 1.1]', 'start').type
+
+    with pytest.raises(ParseError):
+        # Really right!
+        parse_line('[Adblock 1.1]', 'start')
+
+    # Metadata-like lines are metadata.
+    assert parse_line('! Foo: bar', 'metadata').type == 'metadata'
+
+
+def test_parse_metadata():
+    # Header-like lines are just filters.
+    assert parse_line('[Adblock 1.1]', 'metadata').type == 'filter'
+    # Metadata-like lines are metadata.
+    assert parse_line('! Foo: bar', 'metadata').type == 'metadata'
+
+
+def test_parse_body():
+    # Header-like lines are just filters.
+    assert parse_line('[Adblock 1.1]', 'body').type == 'filter'
+    # Metadata-like lines are comments.
+    assert parse_line('! Foo: bar', 'body').type == 'comment'
+    # But there's an exception for the checksum.
+    assert parse_line('! Checksum: 42', 'body').type == 'metadata'
+
+
+def test_parse_invalid_position():
+    with pytest.raises(ValueError):
+        parse_line('', 'nonsense')
 
 
 def test_parse_filterlist():
     result = parse_filterlist(['[Adblock Plus 1.1]',
-                               '! Last modified: 26 Jul 2018 02:10 UTC',
+                               ' ! Last modified: 26 Jul 2018 02:10 UTC ',
                                '! Homepage  :  http://aaa.com/b',
                                '||example.com^',
                                '! Checksum: OaopkIiiAl77sSHk/VAWDA',
                                '! Note: bla bla'])
 
     assert next(result) == Header('Adblock Plus 1.1')
-    assert next(result) == Metadata('Last modified', '26 Jul 2018 02:10 UTC')
+    # Check that trailing space is not stripped (like in ABP).
+    assert next(result) == Metadata('Last modified', '26 Jul 2018 02:10 UTC ')
     assert next(result) == Metadata('Homepage', 'http://aaa.com/b')
     assert next(result).type == 'filter'
     assert next(result) == Metadata('Checksum', 'OaopkIiiAl77sSHk/VAWDA')
