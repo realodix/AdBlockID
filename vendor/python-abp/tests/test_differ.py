@@ -13,6 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with Adblock Plus.  If not, see <http://www.gnu.org/licenses/>.
 
+from __future__ import unicode_literals
 
 from abp.filters.renderer import render_diff
 
@@ -53,7 +54,7 @@ LATEST = '''[Adblock Plus 2.0]
 ! *** easylist:easylist/easylist_general_block.txt ***
 &act=ads_
 &ad_box_
-&ad_channel=
+&ad_channel=\U000000a3
  test
 '''
 
@@ -63,7 +64,7 @@ EXPECTED = '''[Adblock Plus Diff]
 ! Expires:
 ! Version: 123
 - &ad.vid=$~xmlhttprequest
-+ &ad_channel=
++ &ad_channel=\U000000a3
 '''
 
 

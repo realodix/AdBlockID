@@ -86,6 +86,28 @@ just run `flrender` and it will report what it's missing:
 You can clone the necessary repositories to a local directory and add `-i`
 options accordingly.
 
+## Rendering diffs
+
+A diff allows a client running ad blocking software such as Adblock Plus to update
+the filter lists incrementally, instead of downloading a new copy of a full list
+during each update. This is meant to lessen the amount of resources used when updating
+filter lists (e.g. network data, memory usage, battery consumption, etc.), allowing 
+clients to update their lists more frequently using less resources.
+
+Python-abp contains a script that produces the diff between two versions of a
+filter list called `fldiff`:
+
+    $ fldiff base.txt latest.txt output.txt
+
+This will produce a diff that shows how a client may get from `base.txt` to
+`latest.txt`, and write the output to `output.txt`. The output argument is
+optional. If ommitted, the data will be written to `stdout`.
+
+The script produces three types of lines, as specified in the [technical specification][5]:
+* Special comments of the form `! <name>:[ <value>]`
+* Added filters of the form `+ <filter-text>`
+* Removed filter of the form `- <filter-text>`
+
 ## Library API
 
 Python-abp can also be used as a library for parsing filter lists. For example
@@ -182,3 +204,4 @@ Now you can use the functions with `abp$functionname`, e.g.
  [2]: http://pytest.org/
  [3]: https://tox.readthedocs.org/
  [4]: https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
+ [5]: https://docs.google.com/document/d/1SoEqaOBZRCfkh1s5Kds5A5RwUC_nqbYYlGH72sbsSgQ/

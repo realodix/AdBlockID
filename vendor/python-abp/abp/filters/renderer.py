@@ -217,6 +217,9 @@ def render_diff(base, latest):
             yield latest.to_string()
     for key in set(base_metadata) - set(latest_metadata):
         yield '! {}:'.format(base_metadata[key].key)
+    # The removed filters are listed first because, in case a filter is both
+    # removed and added, (and the client processes the diff in order), the
+    # filter will be added.
     for rule in base_rules - latest_rules:
         yield '- {}'.format(rule)
     for rule in latest_rules - base_rules:

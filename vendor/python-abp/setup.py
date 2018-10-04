@@ -52,7 +52,8 @@ setup(
     packages=['abp', 'abp.filters'],
     cmdclass={'devenv': DevEnvCommand},
     entry_points={
-        'console_scripts': ['flrender=abp.filters.render_script:main'],
+        'console_scripts': ['flrender=abp.filters.render_script:main',
+                            'fldiff=abp.filters.diff_script:main'],
     },
     include_package_data=True,
     license='GPLv3',
