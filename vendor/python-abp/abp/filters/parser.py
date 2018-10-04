@@ -142,8 +142,7 @@ Include = _line_type('Include', 'target', '%include {0.target}%')
 
 METADATA_REGEXP = re.compile(r'\s*!\s*(.*?)\s*:\s*(.*)')
 INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
-HEADER_REGEXP = re.compile(r'\[(?:(Adblock(?:\s*Plus\s*[\d\.]+?)?)|.*)\]',
-                           flags=re.I)
+HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
 HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?])?#(.+)$')
 FILTER_OPTIONS_REGEXP = re.compile(
     r'\$(~?[\w-]+(?:=[^,]+)?(?:,~?[\w-]+(?:=[^,]+)?)*)$'
@@ -294,10 +293,7 @@ def parse_line(line, position='body'):
     if position == 'start':
         match = HEADER_REGEXP.search(line)
         if match:
-            version = match.group(1)
-            if not version:
-                raise ParseError('Malformed header', line)
-            return Header(version)
+            return Header(match.group(1))
 
     if stripped.startswith('!'):
         match = METADATA_REGEXP.match(line)

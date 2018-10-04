@@ -164,13 +164,11 @@ def test_parse_start():
     # Even if they have extra characters around.
     assert parse_line('foo[Adblock Plus 1.1] bar', 'start').type == 'header'
 
-    with pytest.raises(ParseError):
-        # But the inside of the header needs to be right.
-        parse_line('[Adblock Minus 1.1]', 'start').type
-
-    with pytest.raises(ParseError):
-        # Really right!
-        parse_line('[Adblock 1.1]', 'start')
+    # But the inside of the header needs to be right.
+    assert parse_line('[Adblock Minus 1.1]', 'start').type == 'filter'
+    # Really right!
+    assert parse_line('[Adblock 1.1]', 'start').type == 'filter'
+    # Otherwise it's just considered a filter.
 
     # Metadata-like lines are metadata.
     assert parse_line('! Foo: bar', 'metadata').type == 'metadata'
