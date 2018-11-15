@@ -56,6 +56,7 @@ LATEST = '''[Adblock Plus 2.0]
 &ad_box_
 &ad_channel=\U000000a3
  test
+&test_
 '''
 
 
@@ -65,6 +66,7 @@ EXPECTED = '''[Adblock Plus Diff]
 ! Version: 123
 - &ad.vid=$~xmlhttprequest
 + &ad_channel=\U000000a3
++ &test_
 '''
 
 

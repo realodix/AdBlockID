@@ -20,25 +20,45 @@ from __future__ import unicode_literals
 import pytest
 import subprocess
 import io
+import os
+import re
 
 from test_differ import BASE, LATEST
 
 
 @pytest.fixture
 def rootdir(tmpdir):
-    """Directory with example filter lists."""
+    """Root directory for test files."""
     rootdir = tmpdir.join('root')
     rootdir.mkdir()
-    rootdir.join('base.txt').write_text(BASE, encoding='utf8')
     rootdir.join('latest.txt').write_text(LATEST, encoding='utf8')
-
     return rootdir
 
 
 @pytest.fixture
-def dstfile(tmpdir):
-    """Destination file for saving the diff output."""
-    return tmpdir.join('dst')
+def archive_dir(rootdir):
+    return rootdir.mkdir('archive')
+
+
+@pytest.fixture
+def diff_dir(rootdir):
+    return rootdir.mkdir('diff')
+
+
+@pytest.fixture
+def archived_files(archive_dir):
+    base2 = BASE + '&adnet=\n'
+    base2 = re.sub(r'! Version: \d+', '! Version: 112', base2)
+    archive_dir.join('list111.txt').write_text(BASE, encoding='utf8')
+    archive_dir.join('list112.txt').write_text(base2, encoding='utf8')
+    return [str(x) for x in archive_dir.listdir()]
+
+
+@pytest.fixture
+def base_no_version(archive_dir):
+    base = re.sub(r'! Version: \d+', '! ', BASE)
+    archive_dir.join('list113.txt').write_text(base, encoding='utf8')
+    return [str(x) for x in archive_dir.listdir()]
 
 
 def run_script(*args, **kw):
@@ -52,34 +72,68 @@ def run_script(*args, **kw):
     return proc.returncode, stderr.decode('utf-8'), stdout.decode('utf-8')
 
 
-def test_diff_with_outfile(rootdir, dstfile):
-    run_script(str(rootdir.join('base.txt')),
-               str(rootdir.join('latest.txt')),
-               str(dstfile))
-    with io.open(str(dstfile), encoding='utf-8') as dst:
-        result = dst.read()
-    assert '+ &ad_channel=\xa3' in result
+def test_diff_with_outfile(rootdir, archived_files, diff_dir):
+    run_script(str(rootdir.join('latest.txt')), '-o', str(diff_dir),
+               *archived_files)
+    assert len(diff_dir.listdir()) == 2
+    for file in diff_dir.visit():
+        with io.open(str(file), encoding='utf-8') as dst:
+            result = dst.read()
+        assert '- &ad.vid=$~xmlhttprequest' in result
+        assert '+ &ad_channel=\xa3' in result
+        assert '! Version: 123' in result
 
 
-def test_no_outfile(rootdir):
-    _, _, out = run_script(str(rootdir.join('base.txt')),
-                           str(rootdir.join('latest.txt')))
-    assert '[Adblock Plus Diff]' in out
+def test_diff_no_outfile(rootdir, archived_files):
+    os.chdir(str(rootdir))
+    run_script(str(rootdir.join('latest.txt')), *archived_files)
+    for file in ['diff111.txt', 'diff112.txt']:
+        with io.open(file, encoding='utf-8') as dst:
+            result = dst.read()
+        assert '- &ad.vid=$~xmlhttprequest' in result
+        assert '+ &ad_channel=\xa3' in result
+        assert '! Version: 123' in result
 
 
 def test_no_base_file(rootdir):
-    code, err, _ = run_script('wrong.txt', str(rootdir.join('latest.txt')))
-    assert code == 1
-    assert 'No such file or directory' in err
+    code, err, _ = run_script(str(rootdir.join('latest.txt')))
+    assert code == 2
+    assert 'usage: fldiff' in err
 
 
-def test_no_latest_file(rootdir):
+def test_wrong_file(rootdir):
     code, err, _ = run_script(str(rootdir.join('base.txt')), 'wrong.txt')
     assert code == 1
     assert 'No such file or directory' in err
 
 
-def test_diff_to_self(rootdir):
-    _, _, out = run_script(str(rootdir.join('latest.txt')),
-                           str(rootdir.join('latest.txt')))
-    assert out == '[Adblock Plus Diff]\n'
+def test_diff_to_self(rootdir, diff_dir):
+    run_script(str(rootdir.join('latest.txt')), '-o', str(diff_dir),
+               str(rootdir.join('latest.txt')))
+    assert len(diff_dir.listdir()) == 1
+    for file in diff_dir.visit():
+        with io.open(str(file), encoding='utf-8') as dst:
+            result = dst.read()
+        assert result == '[Adblock Plus Diff]\n'
+
+
+def test_no_version(rootdir, base_no_version):
+    code, err, _ = run_script(str(rootdir.join('latest.txt')), '-o',
+                              str(diff_dir), *base_no_version)
+    assert code == 1
+    assert 'Unable to find Version in ' in err
+
+
+def test_write_and_overwrite(rootdir, archived_files, diff_dir):
+    test_diff_with_outfile(rootdir, archived_files, diff_dir)
+    latest = re.sub(r'&act=ads_', '! ', BASE) + '&adurl=\n'
+    rootdir.join('latest.txt').write_text(latest, encoding='utf8')
+    run_script(str(rootdir.join('latest.txt')), '-o', str(diff_dir),
+               *archived_files)
+    assert len(diff_dir.listdir()) == 2
+    for file in diff_dir.visit():
+        with io.open(str(file), encoding='utf-8') as dst:
+            result = dst.read()
+        assert '- &act=ads_' in result
+        assert '+ &adurl=' in result
+        assert '- &ad.vid=$~xmlhttprequest' not in result

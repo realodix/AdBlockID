@@ -20,41 +20,53 @@ from __future__ import print_function
 import argparse
 import io
 import sys
+import os
 
 from .renderer import render_diff
+from .parser import parse_filterlist
 
 __all__ = ['main']
 
 
+class MissingVersionError(Exception):
+    """Unable to find Version in filter list."""
+
+
+def _get_version(filterlist, filename):
+    for line in parse_filterlist(filterlist):
+        if line.type == 'metadata' and line.key == 'Version':
+            return line.value
+    raise MissingVersionError('Unable to find Version in {}'.format(filename))
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description='Render a filter list diff.')
-    parser.add_argument(
-        'base', help='the older filter list that needs to be updated',
-        nargs='?')
-    parser.add_argument(
-        'latest', help='the most recent version of the filter list',
-        nargs='?')
-    parser.add_argument(
-        'outfile', help='output file for filter list diff',
-        default='-', nargs='?')
+    parser.add_argument('latest',
+                        help='The most recent version of the filter list')
+    parser.add_argument('-o', '--output_dir', default=os.getcwd(),
+                        help='The directory to write the diffs to')
+    parser.add_argument('base_files', nargs='+',
+                        help='One or more archived filter lists')
     return parser.parse_args()
 
 
 def main():
     """Entry point for the diff rendering script (fldiff)."""
     args = parse_args()
+    with io.open(args.latest, 'r', encoding='utf8') as latest_list:
+        latest = latest_list.readlines()
 
-    with io.open(args.base, 'r', encoding='utf-8') as base, \
-            io.open(args.latest, 'r', encoding='utf-8') as latest:
+    for base_file in args.base_files:
+        with io.open(base_file, 'r', encoding='utf8') as base_file:
+            base = base_file.readlines()
 
         lines = render_diff(base, latest)
-        if args.outfile == '-':
-            outfile = io.open(sys.stdout.fileno(), 'w',
-                              closefd=False,
-                              encoding=sys.stdout.encoding or 'utf-8')
-        else:
-            outfile = io.open(args.outfile, 'w', encoding='utf-8')
+        try:
+            version = _get_version(base, base_file.name)
+        except MissingVersionError as exc:
+            sys.exit(exc)
 
-        with outfile:
+        outfile = os.path.join(args.output_dir, 'diff{}.txt'.format(version))
+        with io.open(outfile, 'w', encoding='utf-8') as out_fp:
             for line in lines:
-                print(line, file=outfile)
+                out_fp.write(line + '\n')

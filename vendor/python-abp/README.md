@@ -88,25 +88,35 @@ options accordingly.
 
 ## Rendering diffs
 
-A diff allows a client running ad blocking software such as Adblock Plus to update
-the filter lists incrementally, instead of downloading a new copy of a full list
-during each update. This is meant to lessen the amount of resources used when updating
-filter lists (e.g. network data, memory usage, battery consumption, etc.), allowing 
-clients to update their lists more frequently using less resources.
+A diff allows a client running ad blocking software such as Adblock Plus to
+update the filter lists incrementally, instead of downloading a new copy of a
+full list during each update. This is meant to lessen the amount of resources
+used when updating filter lists (e.g. network data, memory usage, battery
+consumption, etc.), allowing clients to update their lists more frequently using
+less resources.
 
-Python-abp contains a script that produces the diff between two versions of a
-filter list called `fldiff`:
+Python-abp contains a script called `fldiff` that will find the diff between the
+latest filter list, and any number of previous filter lists:
 
-    $ fldiff base.txt latest.txt output.txt
+    $ fldiff -o diffs/easylist easylist.txt archive/*
 
-This will produce a diff that shows how a client may get from `base.txt` to
-`latest.txt`, and write the output to `output.txt`. The output argument is
-optional. If ommitted, the data will be written to `stdout`.
+where `-o diffs/easylist` is the (optional) output directory where the diffs
+should be written, `easylist.txt` is the most recent version of the filter list,
+and `archive/*` is the directory where all the archived filter lists are. When
+called like this, the shell should automatically expand the `archive/*`
+directory, giving the script each of the filenames separately.
 
-The script produces three types of lines, as specified in the [technical specification][5]:
+In the above example, the output of each archived `list[version].txt` will be
+written to `diffs/diff[version].txt`. If the output argument is omitted, the
+diffs will be written to the current directory.
+
+The script produces three types of lines, as specified in the [technical
+specification][5]:
+
 * Special comments of the form `! <name>:[ <value>]`
 * Added filters of the form `+ <filter-text>`
-* Removed filter of the form `- <filter-text>`
+* Removed filters of the form `- <filter-text>`
+
 
 ## Library API
 
