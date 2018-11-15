@@ -70,8 +70,9 @@ def test_include2(head):
                       inc1='%include src2:inc2%')
     src2 = MockSource(inc2='%include inc3%', inc3='Included')
     got = render_str('src1:fl', {'src1': src1, 'src2': src2})
-    expect = (head +
-              '! *** inc1 ***\n! *** src2:inc2 ***\n! *** inc3 ***\nIncluded')
+    expect = (
+        head + '! *** inc1 ***\n! *** src2:inc2 ***\n! *** inc3 ***\nIncluded'
+    )
     assert got.startswith(expect)
 
 

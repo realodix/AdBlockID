@@ -67,8 +67,8 @@ def test_parse_empty():
             (OPT.SITEKEY, ['foo', 'bar']),
         ],
     },
-    "||foo.com^$csp=script-src 'self' * 'unsafe-inline',script,sitekey=foo," +
-    'other,match-case,domain=foo.com': {
+    "||foo.com^$csp=script-src 'self' * 'unsafe-inline',script,sitekey=foo,"
+    + 'other,match-case,domain=foo.com': {
         'selector': {'type': ST.URL_PATTERN, 'value': '||foo.com^'},
         'action': FA.BLOCK,
         'options': [

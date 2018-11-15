@@ -51,6 +51,7 @@ class ParseError(Exception):
 # Constants related to filters (see https://adblockplus.org/filters).
 class SELECTOR_TYPE:  # flake8: noqa (this is a namespace of constants).
     """Selector type constants."""
+
     URL_PATTERN = 'url-pattern'  # Normal URL patterns.
     URL_REGEXP = 'url-regexp'    # Regular expressions for URLs.
     CSS = 'css'                  # CSS selectors for hiding filters.
@@ -60,6 +61,7 @@ class SELECTOR_TYPE:  # flake8: noqa (this is a namespace of constants).
 
 class FILTER_ACTION:  # flake8: noqa (this is a namespace of constants).
     """Filter action constants."""
+
     BLOCK = 'block'              # Block the request.
     ALLOW = 'allow'              # Allow the request (whitelist).
     HIDE = 'hide'                # Hide selected element(s).
@@ -68,6 +70,7 @@ class FILTER_ACTION:  # flake8: noqa (this is a namespace of constants).
 
 class FILTER_OPTION:  # flake8: noqa (this is a namespace of constants).
     """Filter option constants."""
+
     # Resource types.
     OTHER = 'other'
     SCRIPT = 'script'
@@ -145,7 +148,7 @@ INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
 HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
 HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?])?#(.+)$')
 FILTER_OPTIONS_REGEXP = re.compile(
-    r'\$(~?[\w-]+(?:=[^,]+)?(?:,~?[\w-]+(?:=[^,]+)?)*)$'
+    r'\$(~?[\w-]+(?:=[^,]+)?(?:,~?[\w-]+(?:=[^,]+)?)*)$',
 )
 
 
@@ -197,8 +200,8 @@ def _parse_blocking_filter(text):
             selector = selector[:opt_match.start(0)]
             options = _parse_filter_options(opt_match.group(1))
 
-    if (len(selector) > 1 and
-            selector.startswith('/') and selector.endswith('/')):
+    if (len(selector) > 1
+            and selector.startswith('/') and selector.endswith('/')):
         selector = {'type': SELECTOR_TYPE.URL_REGEXP, 'value': selector[1:-1]}
     else:
         selector = {'type': SELECTOR_TYPE.URL_PATTERN, 'value': selector}
@@ -278,9 +281,9 @@ def parse_line(line, position='body'):
         ParseError: If the line can't be parsed.
 
     """
-    POSITIONS = {'body', 'start', 'metadata'}
-    if position not in POSITIONS:
-        raise ValueError('position should be one of {}'.format(POSITIONS))
+    positions = {'body', 'start', 'metadata'}
+    if position not in positions:
+        raise ValueError('position should be one of {}'.format(positions))
 
     if isinstance(line, type(b'')):
         line = line.decode('utf-8')

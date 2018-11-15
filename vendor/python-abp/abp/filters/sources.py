@@ -169,8 +169,8 @@ class WebSource(object):
             info = response.info()
             # info.getparam became info.get_param in Python 3 so we'll
             # try both.
-            get_param = (getattr(info, 'get_param', None) or
-                         getattr(info, 'getparam', None))
+            get_param = (getattr(info, 'get_param', None)
+                         or getattr(info, 'getparam', None))
             encoding = get_param('charset') or self.default_encoding
             for line in response:
                 yield line.decode(encoding).rstrip()
