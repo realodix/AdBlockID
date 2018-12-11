@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 18.1115.1745
+! Version: 18.1211.0353
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Nov 2018 17:45 UTC
+! Last modified: 11 Dec 2018 03:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -497,6 +497,8 @@ _996x50.gif
 ###h5ab-advert-cont
 ###hbanner
 ###hide-fixed-ads
+###idblog-adb-enabled
+###idmuvi-adb-enabled
 ###idmuvi-popup
 ###iklan
 ###iklan-pos
@@ -679,6 +681,7 @@ _996x50.gif
 ##.stay-ads-left
 ##.stay-ads-right
 ##.subIklan
+##.subiklan
 ##.supermag-ad-widget
 ##.td-ad-m
 ##.td-ad-p
@@ -976,6 +979,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||caribanner.bid^$third-party
 ||cdnasiaclub.com^$popup,third-party
 ||clickmedia.co.id^$third-party
+||easyhits4u.com^$third-party
 ||forumiklan.com^$third-party
 ||gudangbanner.com^$third-party
 ||halal.ad^$third-party
@@ -1029,6 +1033,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||bucket.id/assets/images/users/*.gif$domain=enthus1ast.com|idfl.me
 ||iframe.ly^$domain=tampilcantik.com
 ||imgur.com/*.gif$image,domain=mangashiro.net
+||learningtoolkit.club/ad.js$script,domain=youngster.id
 ||postimg.org/*.gif$domain=idfl.biz|idfl.info|idfl.me|idfl.my.id
 ||staticflickr.com^$domain=barometermedan.net
 ||wp.com/*/wp-content/uploads/*.gif$image,domain=etalasebisnis.com|hotabis.com
@@ -1175,6 +1180,9 @@ unduh.in##.bannersingletop
 cosmogirl.co.id##.bnr
 dnaindia.com##.bnr300
 ! 
+hdtvku.com###bannerkategoriheader
+hdtvku.com###mybannerpopup
+waralabakan.com##.banneritem
 teknodiary.com##.googlepublisherads
 jasabuatsurat.com##.idblog-topbanner
 traveltextonline.com##.imageblock-image
@@ -1246,11 +1254,11 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 ! Telkom Indihome
 ! https://github.com/sentabi/telkom/blob/master/internet-positif.md
 ||118.97.116.10^$third-party
-||118.97.116.2^$third-party
 ||118.97.116.27^$third-party
+||118.97.116.2^$third-party
 ||202.69.110.78^$third-party
-||36.66.1.2^$third-party
 ||36.66.1.10^$third-party
+||36.66.1.2^$third-party
 ||36.86.63.180^$third-party
 ||36.86.63.182^$third-party
 ||36.86.63.185^$third-party
@@ -1302,6 +1310,7 @@ translate.google.co.id,translate.google.com#$#body > div[class^="gb_"][id="gba"]
 google.com,google.co.id#$##app-container > #pushdown > .gb_Cc.gb_g { display: none!important; }
 google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ #content-container { top:0px!important; }
 ! *** abid:addons/antipopads.adbl ***
+||aabmxezph.com^
 ||aacgeuvaoqbw.com^
 ||aaeqlxdgx.bid^
 ||aahfcroigwso.com^
@@ -1316,6 +1325,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||aayaknbn.com^
 ||aazwugtom.com^
 ||abaujsqnndg.bid^
+||abbahoxgss.com^
 ||abbowtxibib.com^
 ||abekjzzhfbr.com^
 ||abfcfxfkzmiqht.com^
@@ -1325,7 +1335,9 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||abyvhqmfnvih.com^
 ||acduswfvyjylzq.com^
 ||achsijkc.com^
+||aclhagvngkjf.com^
 ||aclsqdpgeaik.com^
+||aclwlkyzxxhn.com^
 ||acnsavlosahs.com^
 ||acpxgmzozlxtbj.bid^
 ||acrsgxeah.com^
@@ -1408,6 +1420,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ajttqxeqg.com^
 ||ajuegtbkqnh.com^
 ||ajxwyowuylhos.bid^
+||ajzdkkzv.com^
 ||ajzxdeslpbnhp.bid^
 ||akbiokbinnzh.com^
 ||akdzimverrss.com^
@@ -1441,6 +1454,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||amgkkjgjktml.com^
 ||amhpbhyxfgvd.com^
 ||amjbzzicysu.bid^
+||amlcscfr.com^
 ||amlyrket.bid^
 ||ammqwpksb.bid^
 ||ammuburyqlhsjx.bid^
@@ -1460,6 +1474,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||anluecyopslm.com^
 ||anogjkubvdfe.com^
 ||anoufpjmkled.com^
+||anpwsppugpu.com^
 ||anqnimezkdjm.com^
 ||anvagsqctxsaz.bid^
 ||anvskelwpvvmtg.bid^
@@ -1481,6 +1496,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||apddozcgdh.com^
 ||apfbtiqdly.bid^
 ||aphjbgth.com^
+||apiryrkxkhil.com^
 ||aplfkrppjsutf.com^
 ||apmgzzaej.bid^
 ||apmkcdsnv.bid^
@@ -1504,6 +1520,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||aqussxtpjfelp.com^
 ||aqyhsqhggq.com^
 ||arawegnvvufy.com^
+||arcfwcxi.com^
 ||arfttojxv.com^
 ||arkhamxojvr.com^
 ||arllvzkoh.com^
@@ -1539,6 +1556,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||aueceijyp.bid^
 ||aufyuiavvkf.bid^
 ||aultemeztokc.com^
+||authmoumrl.com^
 ||autkmgrbdlbj.com^
 ||auyyklnpj.com^
 ||avbnzstidjh.com^
@@ -1547,6 +1565,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||avefyjulko.bid^
 ||avfymwmwpky.com^
 ||avjxftprif.com^
+||avkigyhrazah.com^
 ||avlysyhuvxebl.bid^
 ||avokvnpqunol.bid^
 ||avpgdzdesjnt.com^
@@ -1590,6 +1609,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||azdhfnoojvpuvr.com^
 ||azditojzcdkc.com^
 ||azfmulmqcz.bid^
+||azfoibmukpwz.com^
 ||azgmbqhlr.com^
 ||azgwyeyjufdqc.com^
 ||azgyimccolyyo.com^
@@ -1634,6 +1654,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bddaxoaaco.bid^
 ||bddfeltry.bid^
 ||bdggxjonzbmq.com^
+||bdhxpxohwssdfd.com^
 ||bdkduogsu.bid^
 ||bdotqoqzxauf.com^
 ||bdozkocgkljj.com^
@@ -1651,6 +1672,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||begxhuqfrx.bid^
 ||behjgnhniasz.com^
 ||behybmunweid.com^
+||bekiruvppl.com^
 ||bektvxxfv.bid^
 ||beufosew.bid^
 ||bewcmime.com^
@@ -1661,6 +1683,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bezqvpliexxtfw.com^
 ||bfcazxhkofa.club^
 ||bfdihioj.com^
+||bfhlxjwc.com^
 ||bfidvcsuazwy.com^
 ||bflcuvtyffao.bid^
 ||bfmrffluuazwn.com^
@@ -1670,6 +1693,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bgbdzfeeoko.com^
 ||bgbmtqzoc.bid^
 ||bgdacrgsnt.com^
+||bgfdrngowyy.com^
 ||bgfgaduyvocz.com^
 ||bgibeluywjhgb.com^
 ||bgpxrwjrbsjb.com^
@@ -1689,6 +1713,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bhmenavkijeufq.bid^
 ||bhmenywkptbkga.bid^
 ||bhmqoolzgxnp.com^
+||bhmzjxrf.com^
 ||bhuewuodwz.bid^
 ||bhyqllgtzjee.com^
 ||bhyyevhmha.com^
@@ -1702,6 +1727,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||birpidnl.com^
 ||birslhmnnc.com^
 ||bisvljlzmai.com^
+||biupcyhpmjazv.com^
 ||biwjfwhxoy.bid^
 ||bixolsoqluvzpu.com^
 ||bjcunwelpd.com^
@@ -1739,6 +1765,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||blorgkjhbhoqr.bid^
 ||blrdumgvqkmq.com^
 ||blvqxlczxeda.com^
+||blwfqlmhi.com^
 ||blyppvdjofkqg.bid^
 ||bmalhekpohve.bid^
 ||bmayhacntxax.com^
@@ -1777,9 +1804,11 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bpehfety.bid^
 ||bpfxtrzapdxdr.bid^
 ||bpglbuxwx.com^
+||bpniszadiuc.com^
 ||bpnjigwalqjho.com^
 ||bpprksdgogtw.com^
 ||bprnphojtfl.bid^
+||bpudfbrc.com^
 ||bqbagfhhbhyzq.bid^
 ||bqdpscae.bid^
 ||bqgvtryyrhjmf.com^
@@ -1830,6 +1859,8 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||btwpplvcqao.com^
 ||btxoeiisonxh.com^
 ||btxyusxfbx.com^
+||btzuecidcshmmv.com^
+||buadnqirhykcyc.com^
 ||buauaamx.bid^
 ||budyxjttmjkf.com^
 ||bufqrxzyrecf.com^
@@ -1903,7 +1934,9 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||cavdzowr.com^
 ||cawcwpvmpcje.com^
 ||cayaaebmb.com^
+||cayqecxokz.com^
 ||cbbabemymc.com^
+||cbdjzemui.com^
 ||cbehcazifywmro.bid^
 ||cbnrvzfvmd.com^
 ||cbolsxvresvu.bid^
@@ -2080,6 +2113,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||cqsmswwidrn.bid^
 ||cqvbvpxnqqcfwl.bid^
 ||cqzqdoqsgxyf.com^
+||cracwrddcb.com^
 ||credbgvhijbcj.com^
 ||creyboif.bid^
 ||crgfbmzsk.com^
@@ -2121,6 +2155,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||cuecxgwkjtan.com^
 ||cuhicevdjsfey.com^
 ||cukabtvyl.com^
+||cukwbpne.com^
 ||cupzwcxgx.com^
 ||cuvbcwgenwytrk.bid^
 ||cuxsmovh.bid^
@@ -2136,6 +2171,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||cwmxsgbllbee.bid^
 ||cwmycjoddoq.com^
 ||cwofongvtbsi.com^
+||cwvqtapvqbmxfd.com^
 ||cwxblalyyvbj.com^
 ||cwxkywbndfue.com^
 ||cwxmevdteoxqi.com^
@@ -2150,6 +2186,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||cybzsdkmrqgy.com^
 ||cyfzthaduxhb.com^
 ||cyhcpeprgy.com^
+||cymeeoolym.com^
 ||cyrirvvrn.com^
 ||cyrrbejq.bid^
 ||cyssfnqt.com^
@@ -2186,6 +2223,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||daizzagvvnv.com^
 ||dajoetsja.com^
 ||daljntupdaoejb.com^
+||danunnpvy.com^
 ||daohvygdwvj.bid^
 ||dapvmnnttetuu.bid^
 ||daqdksam.bid^
@@ -2249,10 +2287,13 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dggcgurqynie.com^
 ||dgghbqysqzs.bid^
 ||dgjlfdvqb.bid^
+||dglfkgmhahilp.com^
 ||dgmlubjidcxc.com^
 ||dgnjovmuao.bid^
 ||dgnqzxsw.bid^
 ||dgnuumyxpqiget.com^
+||dgowzelhoaqqb.com^
+||dgqktjmxtlp.com^
 ||dgrvnlhz.com^
 ||dgufzszbsk.bid^
 ||dgulomuzgkyjhe.bid^
@@ -2263,6 +2304,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dhienrfamv.com^
 ||dhlnlwxspczc.com^
 ||dhmhdiozqbnq.com^
+||dhmwedckf.com^
 ||dhnxwgxszvi.com^
 ||dhomixidnkas.com^
 ||dhrjzwqpweidm.bid^
@@ -2308,6 +2350,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dlemeyrkjy.com^
 ||dlganxfc.bid^
 ||dlntzbuskygwj.com^
+||dlotljikswmvq.com^
 ||dlpgebxqq.com^
 ||dlsgjkayn.com^
 ||dlwmksxohvw.com^
@@ -2353,9 +2396,11 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dpkdwhfdrvxzcr.bid^
 ||dpmvpttamz.com^
 ||dpmyrskvbznvn.com^
+||dpoffxqjlgt.com^
 ||dpqytzwxohcd.bid^
 ||dprdhzofq.bid^
 ||dpwmloknxtuw.com^
+||dpwsvrkmfxrt.com^
 ||dqcqavgqk.bid^
 ||dqdnwhyxeblt.com^
 ||dqekudhbwprx.com^
@@ -2369,6 +2414,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||drcfjmkmy.com^
 ||drdvvfgqzwkutc.bid^
 ||drragqvk.bid^
+||drsemkuhpg.com^
 ||drtqfejznjnl.com^
 ||drumuwimmzxqps.com^
 ||dsdiztki.bid^
@@ -2481,6 +2527,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ecflhhxp.bid^
 ||ectbduztanog.com^
 ||ectxnsxezdg.com^
+||ectysptouy.com^
 ||ecvladelayk.com^
 ||ecxtuyttpfe.bid^
 ||edfthzanlsyse.com^
@@ -2510,6 +2557,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||efbxevtnq.com^
 ||efcnevmojvfs.com^
 ||efebafmqn.com^
+||efekvyyynwd.com^
 ||efhevptuqxpr.bid^
 ||efjucmgdzexeab.com^
 ||efkxhoeoqsv.bid^
@@ -2534,6 +2582,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||eheewlwlebwpd.com^
 ||ehfmhsqzxfrsz.bid^
 ||ehkovmky.com^
+||ehlfynuo.com^
 ||ehlnakqlcvuxk.bid^
 ||ehoksipmkejqt.bid^
 ||ehrwekypesnl.bid^
@@ -2569,6 +2618,8 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ekiickqfxqtp.bid^
 ||ekiytcllwboe.com^
 ||ekmunhjbh.bid^
+||ekmztfadigi.com^
+||ekuuarqe.com^
 ||ekxlneryaiefwn.com^
 ||ekzstfriawl.bid^
 ||elcolpplwua.com^
@@ -2642,6 +2693,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||erbsqnmglmnv.com^
 ||erckgobvi.com^
 ||erhpodgijusvi.bid^
+||erificyggw.com^
 ||erqqhfsu.com^
 ||ervinguewty.com^
 ||erzrulbjdd.bid^
@@ -2838,6 +2890,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fjmxpixte.bid^
 ||fjqngeqkhlruto.bid^
 ||fjrlvkpjfimw.com^
+||fjszsffyfihqlg.com^
 ||fjuouqwxgbir.com^
 ||fjvolzrojowa.com^
 ||fjxdsslczu.bid^
@@ -2858,6 +2911,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||flbecoidmt.com^
 ||flcfstbzncsim.com^
 ||fldlyzvhgjq.com^
+||flgstgrcwapk.com^
 ||flkyhwjhp.com^
 ||flmditew.com^
 ||flnqkhnqjcmvp.com^
@@ -2899,6 +2953,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fpluhtibx.com^
 ||fpnxicejwel.com^
 ||fppgjkkjq.bid^
+||fpqeowmsv.com^
 ||fpqippsowc.bid^
 ||fpqxcvrewdqd.com^
 ||fpriycwxw.com^
@@ -2976,6 +3031,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fucrzdux.bid^
 ||fuhgvhuukl.bid^
 ||fukchwgbsl.com^
+||fukkzdxfyrchhc.com^
 ||fuurqgbfhvqx.com^
 ||fuwgbbkktwbu.com^
 ||fvbtqaijuo.com^
@@ -3016,6 +3072,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fxpjkzwveswgtt.bid^
 ||fxsbodcjjmofm.bid^
 ||fxteikyi.bid^
+||fxvbsnwnwoib.com^
 ||fxwkhwcmsqne.com^
 ||fxzdwisjdihwj.bid^
 ||fyblldnlr.com^
@@ -3033,8 +3090,10 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fzpseyhkanhopd.com^
 ||fzqxefkbjzwiqa.com^
 ||fzrcalpbcu.com^
+||fzrqfakeaqikwm.com^
 ||fzsiwzxnqadb.com^
 ||fztrvkdqzv.bid^
+||fzwxuqoy.com^
 ||fzxraumht.bid^
 ||fzzudxglrnrr.com^
 ||gaaprokoduuyyn.bid^
@@ -3078,9 +3137,12 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||gdtbpaqa.com^
 ||gduubghr.bid^
 ||gdyelbwku.com^
+||gdyjhclaxvqz.com^
 ||geazikjazoid.com^
+||gecxceztcnhkmh.com^
 ||gedmodsxbebd.com^
 ||gefaqjwdgzbo.com^
+||gekywqwky.com^
 ||genqrabot.com^
 ||geudyhlxmbj.bid^
 ||gevrsbmqvp.bid^
@@ -3132,6 +3194,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||gjikkwtrstaku.com^
 ||gjjsfchh.bid^
 ||gjliurjvfnkymq.com^
+||gjriyqsfrnvuv.com^
 ||gjvuxnfwsngmux.bid^
 ||gjwqxjqdvtldbh.bid^
 ||gkaatcjxwa.com^
@@ -3178,6 +3241,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||gnmjiishaldus.com^
 ||gnnmdzbroemx.com^
 ||gnqqajovkhfmq.com^
+||gnreqzzts.com^
 ||goacestnzgrd.com^
 ||gobijnwbyri.com^
 ||gobljmgamwfjrc.bid^
@@ -3274,7 +3338,9 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||gulvkhfah.bid^
 ||guoijslfm.bid^
 ||guowsqbyh.bid^
+||guoyhfjrpt.com^
 ||gurrfwsscwda.com^
+||gutccaxnwso.com^
 ||guwegqmvqxfa.bid^
 ||guziwptcqucio.bid^
 ||guzwqarqdxai.bid^
@@ -3347,6 +3413,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hattifkklbo.bid^
 ||hauvkkwrbme.com^
 ||hayxktgbqpmult.com^
+||hbbgrhzqezz.com^
 ||hbbxkbjhiiue.bid^
 ||hbchwmrqb.bid^
 ||hbdosljhhpov.bid^
@@ -3373,6 +3440,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hctcdmqp.com^
 ||hcyqwhquqjosn.com^
 ||hcyxksgsxnzb.com^
+||hdcfyrzx.com^
 ||hddgigiwip.bid^
 ||hdeiyrdw.bid^
 ||hdimfhptnjgm.bid^
@@ -3399,12 +3467,14 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hezasoiduicbha.com^
 ||hfbnztgnmheyd.bid^
 ||hfcczxpyfdhl.bid^
+||hfedqcww.com^
 ||hffqgxgjiqdlx.bid^
 ||hfgevdzcoocs.com^
 ||hfhhijsewsqn.com^
 ||hfmtqgiqscvg.com^
 ||hfslmsbj.com^
 ||hftyrwqjknhzoa.com^
+||hfubvezyoyqs.com^
 ||hfyqolbetdprw.bid^
 ||hfzikiht.com^
 ||hgbxmqyqoplpif.com^
@@ -3421,6 +3491,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hhfgemuvmyq.com^
 ||hhghlgxioqjefi.com^
 ||hhiprhclh.com^
+||hhleomgyiruth.com^
 ||hhnamywutsvovm.bid^
 ||hhnvtfiiitzf.bid^
 ||hhrxmgaepe.com^
@@ -3429,6 +3500,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hhzqedgjajvi.com^
 ||hibiaygg.com^
 ||hibtgsibarfg.bid^
+||higishzxn.com^
 ||higrbwtxkjuw.com^
 ||hihyunxtiuqhhm.bid^
 ||hiitwzyvkdyvxn.com^
@@ -3641,6 +3713,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hzxtamstwecry.bid^
 ||hzyvjghy.bid^
 ||hzyxaqdr.bid^
+||iacexhglty.com^
 ||iagsqudxpcfr.com^
 ||iagvkdeienla.com^
 ||iaimnsxepxdy.bid^
@@ -3692,6 +3765,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||idkyfrsbzesx.com^
 ||idopjddmtzo.bid^
 ||idqsygpvizjp.bid^
+||idqzpnea.com^
 ||idvuakamkzmx.com^
 ||ieajwbir.com^
 ||ieavcqhxtpak.com^
@@ -3700,6 +3774,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||iekztyhqfs.bid^
 ||ielqcwzwjczpx.bid^
 ||ieoexdjxrwtq.com^
+||ieqbsnteuyn.com^
 ||ieqprskfariw.com^
 ||ieuezabolxphga.com^
 ||iewsaprgerkjny.com^
@@ -3809,6 +3884,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||iomixrscvtw.bid^
 ||iooxsrjgkb.bid^
 ||ioryejnzvbbluh.bid^
+||ioujbpldicfgm.com^
 ||ioupfmge.com^
 ||ioyixcprbghm.com^
 ||ipadxqhm.bid^
@@ -3836,6 +3912,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||irbipwnr.bid^
 ||irbkobqlrbtt.com^
 ||iretlniy.bid^
+||irfiysdcrnleu.com^
 ||irlklysyeqek.bid^
 ||irmfncjihlb.com^
 ||iroktywi.bid^
@@ -3850,6 +3927,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||isggimkjabpa.com^
 ||ishdyglxfckw.com^
 ||ishwuhvow.bid^
+||isnsgjhthhaqtu.com^
 ||ispyveemlvygba.com^
 ||isvwylcazk.com^
 ||isxwajatbig.com^
@@ -3864,6 +3942,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||iuewancpgd.bid^
 ||iuhzosuy.club^
 ||iukvnikhn.bid^
+||iuncajvw.com^
 ||iupqelechcmj.com^
 ||iuumkigdfcz.com^
 ||iuymaolvzery.com^
@@ -3900,6 +3979,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ixsogpaexhgzn.com^
 ||ixsxgaegvplo.com^
 ||ixtkiofaoudis.com^
+||ixtmbdajhvimtv.com^
 ||ixvsxjiw.com^
 ||ixwbgjnjf.com^
 ||ixzhwyuxxvxb.com^
@@ -3976,6 +4056,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jdnbrccndsxly.bid^
 ||jdniyyricenx.com^
 ||jdrlnicvn.com^
+||jdskyjntuhea.com^
 ||jdtufqcyumvb.com^
 ||jdzmcidlajwwzi.bid^
 ||jeakofzseo.com^
@@ -3987,10 +4068,12 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jeksffryglas.com^
 ||jemopaqkst.com^
 ||jemyvtomzyha.com^
+||jenaowzhtbi.com^
 ||jeqixokniyny.com^
 ||jertwakjcaym.com^
 ||jeuqrslzoxdcz.com^
 ||jevijshpvnwm.com^
+||jevxjcdnrd.com^
 ||jeyuhcbagxbp.com^
 ||jezqighae.bid^
 ||jfaqiomgvajb.com^
@@ -4025,6 +4108,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jiifnvkesug.com^
 ||jiiyddosyv.com^
 ||jijcetagjfzo.com^
+||jimqcqsyhser.com^
 ||jiruygrsl.com^
 ||jixvywxefnwm.com^
 ||jiyairvjgfqk.com^
@@ -4111,6 +4195,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jovepjufhmmw.com^
 ||jovzikimk.com^
 ||joxocqrbxe.bid^
+||jozfwcmrxkwva.com^
 ||jpcfosuswcqy.com^
 ||jpdauipgz.com^
 ||jpflmmxdflmm.com^
@@ -4201,6 +4286,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jxgbdhbilbsgf.bid^
 ||jxhmvjrpkdyn.com^
 ||jxnbwgea.bid^
+||jxnwpeqkhtkrw.com^
 ||jxsixnzrm.bid^
 ||jxuezvyaakks.com^
 ||jxusrymeeqyi.com^
@@ -4249,6 +4335,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kbluliqpjq.bid^
 ||kbnhoiax.com^
 ||kbprllyfvqns.bid^
+||kbqebfcubeiaa.com^
 ||kbrnfzgglehh.com^
 ||kbsceyleonkq.com^
 ||kbwortdqjbns.com^
@@ -4264,10 +4351,13 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kcgmgnejfp.bid^
 ||kcitwbcc.com^
 ||kcnyhfmowc.com^
+||kcodndvh.com^
 ||kcqdidtq.bid^
+||kcugdqmmfcqrb.com^
 ||kcwvkoxn.com^
 ||kdaskxrcgxhp.com^
 ||kdekyymbn.bid^
+||kdfjjvidllnbaa.com^
 ||kdhkjeklzihiwh.com^
 ||kdhndryipp.com^
 ||kdiunbsaw.com^
@@ -4278,6 +4368,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kdtstmiptmvk.com^
 ||kdvcvkwwtbwn.com^
 ||kdwygzatplqrao.bid^
+||kdyfsgpa.com^
 ||kecldktirqzk.com^
 ||keeedoleeroe.com^
 ||keellcvwpzgj.com^
@@ -4393,6 +4484,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kovykpybtuylq.bid^
 ||kozloiczght.com^
 ||kpcflxxodhoxev.bid^
+||kpchywhqcrkz.com^
 ||kpgcyqkktm.bid^
 ||kplzvizvsqrh.com^
 ||kpoplhjnhlagy.com^
@@ -4421,6 +4513,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||krovrhmqgupd.com^
 ||krpdqnnb.com^
 ||krsdoqvsmgld.com^
+||krtdobasy.com^
 ||krxexwfnghfu.com^
 ||krxpudrzyvko.com^
 ||krynjumnqlix.com^
@@ -4437,6 +4530,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kslgvaexlw.com^
 ||ksloibpah.com^
 ||ksrcnyrntlyfo.com^
+||ksufusxqd.com^
 ||ksveztrxudtt.com^
 ||ksxaaoey.bid^
 ||ktbcsulyildmm.com^
@@ -4497,6 +4591,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kweayxzfazrws.com^
 ||kwiaofifmdqpif.com^
 ||kwjglwybtlhm.com^
+||kwkxvbjz.com^
 ||kwomkjjoajcyyt.com^
 ||kwovwwkevyu.bid^
 ||kwshmdfgijgu.com^
@@ -4506,6 +4601,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kwuewixsnttz.com^
 ||kwunqjqntrnf.bid^
 ||kwvoafkdebdaxz.bid^
+||kwygntce.com^
 ||kwystoaqjvml.com^
 ||kwyxncikkzz.bid^
 ||kwzuhmpwvsbsc.bid^
@@ -4548,6 +4644,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lacrxqvydzlan.bid^
 ||ladhyjqqgerr.com^
 ||lafvopkskbeuj.bid^
+||lajpmujdntg.com^
 ||lanktydm.com^
 ||lapbekessbozpx.bid^
 ||laqiccblmxfewa.bid^
@@ -4660,6 +4757,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||llbevorurncfcc.bid^
 ||llbynwyuoj.bid^
 ||llddarkinywtmg.bid^
+||llgvjtkg.com^
 ||llhjbwcjnuii.com^
 ||lliumrpvj.com^
 ||lljtgiwhqtue.com^
@@ -4690,6 +4788,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lnltyqqop.bid^
 ||lnnwwxpeodmw.com^
 ||lnsthqzdsvzboo.bid^
+||lnwbiuetoymifj.com^
 ||loakfiiggz.bid^
 ||locjzfoh.com^
 ||lofipgeld.bid^
@@ -4703,6 +4802,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lovvznyhujf.com^
 ||lowqnzsxtmvb.bid^
 ||loxmetwdjrmh.com^
+||lpbhbwpbpnl.com^
 ||lpdeuhyakoits.bid^
 ||lpiqwtsuduhh.com^
 ||lplqyocxmify.com^
@@ -4804,6 +4904,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lwasxldakmhx.com^
 ||lwbextsnjgw.com^
 ||lwepsxhcm.bid^
+||lwequndmgc.com^
 ||lwjzsigenxsl.com^
 ||lwljmcved.bid^
 ||lwmxykibvt.bid^
@@ -4817,11 +4918,13 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lwysswaxnutn.com^
 ||lxbaocqsmg.bid^
 ||lxcfaekywx.com^
+||lxcpprjfgkt.com^
 ||lxelgoqzvjfw.com^
 ||lxghhxdcmumk.com^
 ||lxkqybzanzug.com^
 ||lxlisrvzz.com^
 ||lxnimmyikuekn.com^
+||lxpgdkskkt.com^
 ||lxqoxgijpbmrg.bid^
 ||lxvuwsqp.bid^
 ||lxyadcffdpaytd.com^
@@ -4843,6 +4946,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lzblbcsemihk.com^
 ||lzbzwpmozwfy.com^
 ||lzfvonzwjzhz.com^
+||lzkuqbptcjqta.com^
 ||lzopoqzlihfbc.com^
 ||lzpqpstowpvz.bid^
 ||lzrfxzvfbkay.com^
@@ -4873,6 +4977,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||mcagbtdcwklf.com^
 ||mcaxqvcu.com^
 ||mcaybfrnrqpmv.com^
+||mcfdnvewqws.com^
 ||mciyblxplucm.bid^
 ||mclwrdzj.bid^
 ||mcnklvsodqqa.com^
@@ -4921,6 +5026,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||mfvirwqgmck.bid^
 ||mfxxpyhzofbsg.com^
 ||mgjoqdmjofl.bid^
+||mgpejafvxxn.com^
 ||mgrutivnzs.com^
 ||mgrxsztbcfeg.com^
 ||mguzayfzp.bid^
@@ -5024,6 +5130,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||modkehkcihvzi.bid^
 ||mofrupteeuqnvc.bid^
 ||mofvrnbngcern.bid^
+||moginhstnxswt.com^
 ||mogrbrydixdvmc.bid^
 ||mohcafpwpldi.com^
 ||molqvpnnlmnb.com^
@@ -5125,6 +5232,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||mwcouuxv.bid^
 ||mwenzdgzgez.bid^
 ||mwgairxva.bid^
+||mwggummxeygq.com^
 ||mwgjoofxf.bid^
 ||mwlucuvbyrff.com^
 ||mwnhdnkevthkz.com^
@@ -5201,14 +5309,17 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ndkvzncsuxgx.com^
 ||ndndptjtonhh.com^
 ||ndpegjgxzbbv.com^
+||ndprxvzgy.com^
 ||ndpxcdodtjhfv.bid^
 ||ndqvlall.com^
 ||ndqwtlseuqjbc.com^
 ||ndtlcaudedxz.com^
 ||ndxidnvvyvwx.com^
+||ndxtyryloc.com^
 ||neaozrrjd.com^
 ||neddwrmmced.bid^
 ||nedmppiilnld.com^
+||neecnuaa.com^
 ||neentjsdrgsf.com^
 ||neevjrhxk.com^
 ||nehmhyktj.bid^
@@ -5217,6 +5328,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nelgpwiezcwynt.bid^
 ||nemzdfjnyqy.bid^
 ||neopqlhmnow.bid^
+||neschaypaxkk.com^
 ||newnyqfgkkjht.com^
 ||nfaqnqsfhih.bid^
 ||nfbjwvmndabthb.com^
@@ -5242,12 +5354,14 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nharaeklya.com^
 ||nhbklvpswckx.com^
 ||nheanvabodkw.com^
+||nhkhxvnhfdkn.com^
 ||niaqaltky.com^
 ||nicucircvp.bid^
 ||nidjppokmlcx.com^
 ||nidksyrrrtckzj.com^
 ||nijksigqjzalcf.com^
 ||nikxhdrys.com^
+||nirqmbrzplvtjr.com^
 ||niviemwsmiaq.com^
 ||niydbkjpz.bid^
 ||njcdmsgjbbbz.com^
@@ -5288,6 +5402,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nlnhfsmo.com^
 ||nlpsxhgmdywaoq.com^
 ||nlrhavhbkxlsl.bid^
+||nlyqwlyykvjl.com^
 ||nmaafswoiecv.com^
 ||nmayxdwzhaus.com^
 ||nmesbjkqkkoy.bid^
@@ -5312,6 +5427,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nnrcjzith.bid^
 ||nnrdntrrjf.bid^
 ||nnroeulsnslk.com^
+||nnulezwhvbrzwu.com^
 ||nnzkabsgmfjn.bid^
 ||nnztrsuu.com^
 ||nobosrekns.bid^
@@ -5321,6 +5437,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nofoxnalt.com^
 ||nogxucpaktrya.com^
 ||nohsshsxpv.club^
+||noiaifyednjt.com^
 ||nolzqbzxiq.com^
 ||nomlxyhfgeny.com^
 ||nomzkqffqsz.com^
@@ -5343,10 +5460,12 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||npzlzsxkq.bid^
 ||nqbhezlm.com^
 ||nqkttgrapot.bid^
+||nqlrewsfmywgbx.com^
 ||nqtxbweqb.com^
 ||nqtyrwyklcmh.com^
 ||nqugsnsoghz.bid^
 ||nqxhehxadtswz.bid^
+||nrcrbfqa.com^
 ||nrectoqhwdhi.com^
 ||nrepcbiqaasqih.bid^
 ||nrfltkshqgzowk.bid^
@@ -5385,6 +5504,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nubarwcziykx.bid^
 ||nucpzlpmp.bid^
 ||nucqkjkvppgs.com^
+||nudooapfildwbz.com^
 ||nuhcibapynaj.bid^
 ||nuihcvbixjea.com^
 ||nuilpwatzeuvzp.com^
@@ -5422,7 +5542,10 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nyaisjsghvj.bid^
 ||nycgwaknv.com^
 ||nyfsjqxopdzvvm.bid^
+||nyltsyud.com^
 ||nyrszeos.bid^
+||nyskocbhfz.com^
+||nytqlenw.com^
 ||nyvdouydkxmaws.bid^
 ||nywpxugigwfzb.com^
 ||nywuthdzdacoq.com^
@@ -5441,10 +5564,12 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||oalicqudnfhf.com^
 ||oamhzvwle.com^
 ||oamrraft.com^
+||oansiwcmc.com^
 ||oaogilidstvm.bid^
 ||oaqaxjmyuxkpm.com^
 ||oaqwxxjhwpyxjd.com^
 ||oarqgvtkco.com^
+||oartozvwzv.com^
 ||oaxwtgfhsxod.com^
 ||oazznjmbchmpdg.com^
 ||obczphph.com^
@@ -5479,9 +5604,11 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||odplbueosuzw.com^
 ||odsljzffiixm.com^
 ||odtcspsrhbko.com^
+||odukhsymyua.com^
 ||odwymewlu.com^
 ||odyoudvaar.bid^
 ||oebdarcqsqcdk.com^
+||oeevatisopdl.com^
 ||oehjxqhiasrk.com^
 ||oeoogwkwm.bid^
 ||oeppesfmzlbpa.com^
@@ -5524,6 +5651,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ohnohaijfq.com^
 ||ohpojzltnt.bid^
 ||ohprlushvz.com^
+||ohrdpvkzhzbg.com^
 ||oiahzjhwpsokt.com^
 ||oicbwkyjsyxjgj.bid^
 ||oickwqmwerbnq.bid^
@@ -5607,6 +5735,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ooqgpbkpmq.bid^
 ||ooqjqnurblp.com^
 ||oosdjdhqayjm.com^
+||ootqfqjhzfrtn.com^
 ||oouggjayokzx.com^
 ||oougyykaeipzg.bid^
 ||ooutqfslr.com^
@@ -5646,6 +5775,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||otpckmnnfm.com^
 ||otrjvabiv.bid^
 ||otusnijhkyihod.com^
+||otuveoqm.com^
 ||otxjkjhugtzro.bid^
 ||otxqautshpb.bid^
 ||otyammyiovhru.com^
@@ -5712,6 +5842,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ozwtmmcdglos.com^
 ||ozyjicurrutehe.bid^
 ||ozymwqsycimr.com^
+||paecbeeavmopbl.com^
 ||pafovocg.bid^
 ||pajmxvlsuxyks.bid^
 ||palzblimzpdk.com^
@@ -5770,6 +5901,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||pfiuzxey.com^
 ||pfjwtzlfaivp.com^
 ||pfltlwftndq.com^
+||pfoohjpdbxt.com^
 ||pfvfwielz.com^
 ||pfvgazngauezhk.com^
 ||pfxcnvjoysztb.com^
@@ -5788,9 +5920,12 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||phxwwaznm.club^
 ||phyhggbk.com^
 ||pibizrfgsrkji.bid^
+||pidbbdxixp.com^
 ||pifaojvaiofw.com^
 ||pifsistcwycouc.com^
 ||piljbvnykkt.bid^
+||pimygjumeyrtxe.com^
+||pitduougk.com^
 ||pixjqfvlsqvu.com^
 ||piyzmkcxa.bid^
 ||pjeledftjxfnd.com^
@@ -5803,6 +5938,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||pjrlztgwix.com^
 ||pjtycinmerhb.com^
 ||pjydgizqsldqj.bid^
+||pjyuftrh.com^
 ||pjyxgemom.bid^
 ||pjzabhzetdmt.com^
 ||pkdzrxdn.bid^
@@ -5831,6 +5967,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||pmiiylss.bid^
 ||pminnsodv.com^
 ||pmjnelusn.com^
+||pmjwztzpuhb.com^
 ||pmkvqmtjniwtyl.com^
 ||pmohsibnim.com^
 ||pmpdqkjio.bid^
@@ -5848,6 +5985,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||pnrqhqixc.com^
 ||pnuwjsilfz.bid^
 ||pnuymnyhbbuf.com^
+||pnwhrmyit.com^
 ||pnzaduoelv.bid^
 ||pnzchguyctrsyb.com^
 ||poaxupoqbw.com^
@@ -5862,6 +6000,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||potmbbqbaqxwp.com^
 ||povqrvsoljy.com^
 ||poxwphidbuedh.com^
+||ppbvmesssyacij.com^
 ||ppcpsjihmydhr.com^
 ||ppgzokht.com^
 ||ppjjbzcxripw.com^
@@ -5871,6 +6010,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ppupdbeoth.bid^
 ||ppuuwencqopa.com^
 ||ppvjsmuexf.bid^
+||ppxoxkdpxtu.com^
 ||ppxrlfhsouac.com^
 ||ppzfvypsurty.com^
 ||pqajjgjg.com^
@@ -5911,6 +6051,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||pswlvlauz.bid^
 ||psxnwzksttygfs.com^
 ||psygnjvrd.com^
+||ptarywzhyzri.com^
 ||ptblqwjz.com^
 ||ptgiweiu.com^
 ||ptiniretm.com^
@@ -5985,6 +6126,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qabmhhrfi.bid^
 ||qadtkdlqlemf.com^
 ||qahajvkyfjpg.com^
+||qaiqromd.com^
 ||qairctxn.com^
 ||qajaohrcbpkd.com^
 ||qajjyxsifzfe.com^
@@ -6040,6 +6182,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qefjdsfny.bid^
 ||qegndwekwc.com^
 ||qekmxaimxkok.com^
+||qenprsuoashu.com^
 ||qeqsibev.com^
 ||qerlbvqwsqtb.com^
 ||qerlrppx.com^
@@ -6078,6 +6221,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qgiumuzmxj.com^
 ||qgjllgijf.bid^
 ||qgmrchjuqro.bid^
+||qgnakeddgtdw.com^
 ||qgraprebabxo.com^
 ||qgrycwxbn.com^
 ||qgtbxtex.com^
@@ -6169,10 +6313,12 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qolrlwwirf.com^
 ||qopqudzeaywc.com^
 ||qotuhsvlqlpnfd.com^
+||qouiruhpxoa.com^
 ||qovfvxbl.bid^
 ||qowmqduocv.com^
 ||qoxalhnndufp.bid^
 ||qoxsriddwmqx.com^
+||qpbaammdcwu.com^
 ||qpcyafunjtir.com^
 ||qpganepbkw.com^
 ||qpjowolqlpg.com^
@@ -6217,6 +6363,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qscefywopqfkm.com^
 ||qsdqpvkuglq.com^
 ||qsfckfyv.com^
+||qsfogpmciyl.com^
 ||qsgiqllpfthg.com^
 ||qsgsfnixw.com^
 ||qshsaocjet.com^
@@ -6227,8 +6374,10 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qsxggbsthsk.bid^
 ||qtahsbgdqbu.com^
 ||qtavukgrtgk.com^
+||qtbvatpkwxq.com^
 ||qtczaglj.bid^
 ||qteoslcm.bid^
+||qtjxalkllc.com^
 ||qtkluwmebrtbrt.com^
 ||qttmjwno.com^
 ||qtvnesozf.com^
@@ -6280,6 +6429,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qycxhqkddcc.com^
 ||qydpcilzljej.bid^
 ||qydylxmzlnqw.com^
+||qyfunsvmtudozq.com^
 ||qyghwcrjaw.bid^
 ||qyiiudex.com^
 ||qykxbnflqvjxvk.com^
@@ -6308,6 +6458,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||raiybbvwefbcji.bid^
 ||ralyqgglrbgrd.bid^
 ||raossycpodtr.bid^
+||raqucjjblu.com^
 ||raqueocznwden.bid^
 ||rascnezpxpe.com^
 ||raspiadkwcecz.com^
@@ -6491,6 +6642,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||rptdyukab.bid^
 ||rpulxcwmnuxi.com^
 ||rpzcwgrpbkltp.com^
+||rqbxfbls.com^
 ||rqgrdrqs.com^
 ||rqigvkwoqafpjz.com^
 ||rqjgepzyowyr.com^
@@ -6500,6 +6652,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||rqthkhiuddlg.com^
 ||rquagrre.com^
 ||rqufdlfe.bid^
+||rqwozrkmtwiuri.com^
 ||rqyezhetbspk.com^
 ||rrbiprsifnmv.com^
 ||rrcdzcts.bid^
@@ -6600,6 +6753,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||rzgqfvhfj.com^
 ||rzjbuovkp.bid^
 ||rzsliqwo.bid^
+||rzuwelgm.com^
 ||rzwzstbiqk.com^
 ||sagbgtnmlaj.com^
 ||sagukjshgifebs.bid^
@@ -6620,6 +6774,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||saylbisqotwixm.bid^
 ||sbdedksgqu.com^
 ||sbdufkkcp.bid^
+||sbifdctojpisuw.com^
 ||sbkcxjaktdv.bid^
 ||sbkuytscekitph.bid^
 ||sblqlcjk.bid^
@@ -6641,6 +6796,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||scrltyokacghvd.bid^
 ||scvonjdwad.bid^
 ||scxxbyqjslyp.com^
+||sdeadbqsjam.com^
 ||sdemctwaiazt.com^
 ||sdfmxhdj.bid^
 ||sdmfzlswxgzl.com^
@@ -6667,6 +6823,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||sfmziexfvvru.com^
 ||sfpkwhncpllt.com^
 ||sfrsuihcubepzd.com^
+||sfxmdqbi.com^
 ||sfzcbcrwxhic.com^
 ||sfzfjiefentwe.com^
 ||sgccsauvct.bid^
@@ -6682,6 +6839,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||shhngaasah.com^
 ||shhrbeffgz.com^
 ||shjuivapg.bid^
+||shkfrsif.com^
 ||shnoadlvpylf.com^
 ||shohabiymgjxdb.com^
 ||shthbopqoz.bid^
@@ -6758,6 +6916,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||soirqzccdtyk.com^
 ||sokanffuyinr.com^
 ||sopzefqypxas.bid^
+||sosbyncpkyw.com^
 ||sossxjmotqqs.com^
 ||soszgtvox.bid^
 ||sovcbhem.bid^
@@ -6807,6 +6966,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||sufjqebhmfo.bid^
 ||sufzmohljbgw.com^
 ||suhprdfb.bid^
+||sukgtuksypr.com^
 ||sumvztfze.com^
 ||suonvyzivnfy.com^
 ||suqufucjzffhay.bid^
@@ -6918,6 +7078,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||tdxuojiufz.bid^
 ||teefpagayhb.com^
 ||tefwraudu.bid^
+||tehkvecryl.com^
 ||teipgupp.com^
 ||tepazmynhvo.com^
 ||teqceeivmpvv.com^
@@ -6947,12 +7108,14 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||tgdlekikqbdc.com^
 ||tgfehyikznu.bid^
 ||tgjdebebaama.com^
+||tgkcxtvryb.com^
 ||tgrxxuwpvinoiy.bid^
 ||tgvedmttabgfvy.bid^
 ||tgyswiymvtxg.com^
 ||thbuhcnpt.com^
 ||thcumizbjxnp.bid^
 ||thibzxxtotyqg.bid^
+||thjlnyagmxrbt.com^
 ||thjuvpgdmjj.com^
 ||thncnkzupxwlbo.bid^
 ||thnqemehtyfe.com^
@@ -7068,6 +7231,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||tpkpnyiaylp.com^
 ||tpmbgoiabxu.bid^
 ||tpmemhesupkn.bid^
+||tpnaabdwy.com^
 ||tpnphooeqg.bid^
 ||tpranctof.com^
 ||tptfopotrzg.com^
@@ -7127,6 +7291,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||tusfzbkirabi.com^
 ||tuthokcb.com^
 ||tuxdipdej.com^
+||tuxgnhcrhyugjf.com^
 ||tuxphjbzmjfuh.com^
 ||tuxzictbrqietq.com^
 ||tuzmouxn.com^
@@ -7199,6 +7364,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||uafgymcern.com^
 ||ualobhbpjbjtm.bid^
 ||uamfjudim.bid^
+||uamgajydnv.com^
 ||uanomwcxixed.com^
 ||uaofcvzlhhh.com^
 ||uaxdkesuxtvu.com^
@@ -7234,6 +7400,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||uehdljkrsfaa.bid^
 ||uehtuvguuf.com^
 ||uejnzoaayhr.com^
+||uembrcfeuwtsjy.com^
 ||uemjnvyn.com^
 ||uenpibqyjvim.com^
 ||ueosdjscxucj.com^
@@ -7286,6 +7453,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ujebryyesbeymm.bid^
 ||ujjotriglqpkjh.com^
 ||ujlpbcsx.com^
+||ujpakyfu.com^
 ||ujqafhcsrhyz.com^
 ||ujqbxbcqtbqt.com^
 ||ujrfwuzv.com^
@@ -7297,6 +7465,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ukdjbubvp.com^
 ||ukffjaqtxhor.com^
 ||ukjrbrvisps.bid^
+||ukjsibgu.com^
 ||ukjzdydnveuc.com^
 ||ukksghzwxha.com^
 ||ukngpcuyc.com^
@@ -7316,6 +7485,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ulwsjpfxwniz.com^
 ||ulyppmnm.bid^
 ||umafkdswjuwz.bid^
+||umaglven.com^
 ||umboffikfkoc.com^
 ||umffsefd.bid^
 ||umjdbaog.bid^
@@ -7336,8 +7506,10 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||unwlrtefzfzj.bid^
 ||unxuwvntk.com^
 ||unztsvrjofqp.com^
+||uoapkzwkoqnk.com^
 ||uoarbhxfyygn.com^
 ||uoccvsdh.com^
+||uohpnvpynvsz.com^
 ||uokehbea.bid^
 ||uonbbttwys.bid^
 ||uoottsfgy.com^
@@ -7352,6 +7524,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||uqhqcoezkn.com^
 ||uqhtuahgfmcx.com^
 ||uqihbnpqtwwzdv.com^
+||uqmkkfaoqnnmlx.com^
 ||uqoboyvqsqpy.com^
 ||uqouplgwlmeqt.com^
 ||uqqgyniatjtf.com^
@@ -7467,6 +7640,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||uzvjymcnwngwau.bid^
 ||uzwweczttqlayd.com^
 ||uzxbnlwauycnp.bid^
+||uzxyqxolrc.com^
 ||uzylpwfamhcb.com^
 ||uzzhylmprb.bid^
 ||vacnuuitxqot.com^
@@ -7489,6 +7663,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vavdmrnsrxfgjl.com^
 ||vawlydqyujwmha.com^
 ||vbbmesayhzw.bid^
+||vbdrzplqtgk.com^
 ||vbehjwhcbhtg.com^
 ||vbfjqnvw.bid^
 ||vbguaqweaif.com^
@@ -7497,6 +7672,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vblunqrovanf.com^
 ||vbmvbljjer.bid^
 ||vbnvvzedvgx.com^
+||vbqcwfleda.com^
 ||vbskcvjdabdp.com^
 ||vbwakfbazxd.com^
 ||vbyefnnrswpn.com^
@@ -7546,6 +7722,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||veswrzdcvcdooh.bid^
 ||vevjbdxyththv.bid^
 ||vevlcnvy.bid^
+||vewpwrqebmwu.com^
 ||veytkljszaoutc.com^
 ||vfasewomnmco.com^
 ||vfayoytjil.bid^
@@ -7569,6 +7746,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vgckzqudqhfr.com^
 ||vgfoaxddf.bid^
 ||vgjawpqjn.com^
+||vglpukrekfij.com^
 ||vgogzrukn.com^
 ||vgomgphs.bid^
 ||vgqwwfkkgvufn.bid^
@@ -7597,6 +7775,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vimenhhpqnb.com^
 ||vimhuspifwyy.com^
 ||vimlsrcfgjyr.bid^
+||viphdsrlec.com^
 ||viqfxgmgacxv.com^
 ||viqmadjqndqkm.com^
 ||vivcdctagoij.com^
@@ -7604,6 +7783,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vixqjiypv.com^
 ||viysseop.bid^
 ||vizsvhgfkcli.com^
+||vjcewkcjqu.com^
 ||vjgfelirts.bid^
 ||vjjoarpmzb.bid^
 ||vjmoisjmh.bid^
@@ -7613,6 +7793,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vjwjjytlbqhvmb.bid^
 ||vjwmtavlnvjdu.bid^
 ||vjyzfgwkzp.com^
+||vjzcgotoy.com^
 ||vjzqadxswfb.bid^
 ||vjzqmbcx.com^
 ||vjzttumdetao.com^
@@ -7671,6 +7852,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vouekcjmiu.com^
 ||voxucaldgpicqh.com^
 ||vpklpmvzbogn.com^
+||vppabbakjzxmz.com^
 ||vpshsuvlh.bid^
 ||vptkyunlzfy.com^
 ||vqaizaukh.com^
@@ -7681,6 +7863,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vqmqhkjfbksda.com^
 ||vqnruxpecsn.com^
 ||vqozayvwb.bid^
+||vqqvpouifhv.com^
 ||vqtjeddutdix.com^
 ||vqvnavwaxiizc.bid^
 ||vqvqgfpc.com^
@@ -7710,6 +7893,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vswaapygj.bid^
 ||vsxjjmyz.com^
 ||vtcquvxsaosz.com^
+||vtcxhnri.com^
 ||vtdvhmbouayj.club^
 ||vtewggxzbrcv.bid^
 ||vtgdjgtwl.com^
@@ -7798,6 +7982,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||wafavwthigmc.com^
 ||wafrszmnbshq.com^
 ||walftgaqiemcx.com^
+||wanrtqneiissrb.com^
 ||wanuqtwwpvglcr.bid^
 ||wapnrjqhtmm.bid^
 ||wapvhtyc.bid^
@@ -7911,6 +8096,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||wkfcadtuljnesp.bid^
 ||wkgaqvvwvqjg.com^
 ||wkggjmkrkvot.com^
+||wkhkffefck.com^
 ||wkjcdukkwcvr.com^
 ||wkmuxmlk.com^
 ||wkqmeskbz.bid^
@@ -7981,6 +8167,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||wpysazovofdui.com^
 ||wqgaevqpbwgx.com^
 ||wqndqrxoi.bid^
+||wqnpcflbcv.com^
 ||wqnxcthitqpf.com^
 ||wqobjrevtkqym.com^
 ||wqocynupmbad.com^
@@ -8019,6 +8206,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||wtybgaghcqxoae.com^
 ||wuatqdbzzamj.bid^
 ||wubdkryfkr.com^
+||wucbuvitibyiy.com^
 ||wuekfshqhydg.bid^
 ||wufpseev.bid^
 ||wugwwcqjdfa.com^
@@ -8031,6 +8219,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||wuqdejnjxj.bid^
 ||wurgaxfamfgyo.com^
 ||wuthucbqpd.bid^
+||wvetuwwcojfgw.com^
 ||wvfputwcdbkoip.com^
 ||wvgrpwdaol.bid^
 ||wvhbzhlbdlq.bid^
@@ -8085,6 +8274,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xahwjirrejjh.bid^
 ||xakkasmwpdwzvv.bid^
 ||xakmsoaozjgm.com^
+||xamxwvtsxdva.com^
 ||xanqdskuyb.com^
 ||xapcwrvqooihr.bid^
 ||xapnrbvpb.com^
@@ -8095,6 +8285,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xavmcsvas.bid^
 ||xbbcwbsadlrn.com^
 ||xbdlsolradeh.com^
+||xblcqncce.com^
 ||xbljpezkd.bid^
 ||xbmnbfzoeug.com^
 ||xboamxtcnfcwyf.com^
@@ -8106,6 +8297,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xcakezoqgkmj.com^
 ||xcbiscycvs.bid^
 ||xcgebfplttrdg.com^
+||xcjelwzs.com^
 ||xcmfhdbumademo.bid^
 ||xconeeitqrrq.com^
 ||xcrruqesggzc.com^
@@ -8126,8 +8318,10 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xdqoopws.bid^
 ||xdtliokpaiej.com^
 ||xdurrrklybny.com^
+||xdxzfqxudc.com^
 ||xdzccbxbmja.bid^
 ||xedwdjnyya.com^
+||xedybxtqd.com^
 ||xeeyzkylhgprgx.bid^
 ||xeflnvycs.com^
 ||xegavyzkxowj.com^
@@ -8142,7 +8336,10 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xfvzkoevuw.bid^
 ||xfxjdoot.com^
 ||xgaethsnmbzi.com^
+||xghretunapafes.com^
+||xgmlmmulciz.com^
 ||xgpijbqair.com^
+||xgpiuhyxbevjgs.com^
 ||xgrfmoisvy.com^
 ||xgspfcpxt.com^
 ||xgtrznovqaqp.com^
@@ -8185,6 +8382,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xkgitcod.com^
 ||xkhxejeaarq.com^
 ||xkjlcqbufdlwrq.com^
+||xklrckmslshvq.com^
 ||xkotbziugfturl.com^
 ||xkoyfyaqk.com^
 ||xkpogkffibjejj.bid^
@@ -8219,9 +8417,11 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xnlxpsbs.com^
 ||xnmphtmerao.bid^
 ||xnnbvckd.com^
+||xnqfpnszqwpijd.com^
 ||xnqlhbddabfsy.com^
 ||xnuuzwthzaol.com^
 ||xnvsheyceyjv.com^
+||xnwqhydt.com^
 ||xojwkixxdkx.com^
 ||xonrbvtejfy.bid^
 ||xoqwirroygxv.com^
@@ -8304,6 +8504,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xurrehqawu.com^
 ||xuwxbdafults.com^
 ||xvfzxuzvxcv.bid^
+||xvgfmbrifa.com^
 ||xvjigtcdiogu.bid^
 ||xvtbumnuj.com^
 ||xvtgouzdsmoeb.com^
@@ -8346,6 +8547,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xzcdzfkwk.com^
 ||xzfhewclnun.com^
 ||xzfjznfiuawv.bid^
+||xzfswipynyuj.com^
 ||xzhmjoch.bid^
 ||xzibhixbsler.bid^
 ||xziqvbico.com^
@@ -8373,6 +8575,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ybhaoglgbgdk.com^
 ||ybhpbkyzbihlrk.bid^
 ||ybikaghc.bid^
+||yblileapbnc.com^
 ||ybmdgyywbhk.com^
 ||ybnuasihsy.com^
 ||ybofeikeckfxh.com^
@@ -8393,10 +8596,12 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ycrbzasmjuo.bid^
 ||yctquwjbbkfa.com^
 ||ycxpmdwail.bid^
+||yczdebjfskegsd.com^
 ||yczvwlqexzhtf.bid^
 ||yddazzul.com^
 ||yddbgolpjwv.bid^
 ||ydeoxwomjpvxoz.com^
+||ydfntydegmdbk.com^
 ||ydgjaoes.bid^
 ||ydlrdzlbgs.com^
 ||ydoexgadghunl.bid^
@@ -8430,6 +8635,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yfzcjqpxunsn.com^
 ||yfzohuuguor.bid^
 ||ygbokgipe.bid^
+||ygdnflmhslwi.com^
 ||ygkovmqdty.com^
 ||ygkqjensf.bid^
 ||ygngaqihz.com^
@@ -8458,6 +8664,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yioklzvjkaumf.com^
 ||yivsfcxf.bid^
 ||yizbtofi.bid^
+||yjdbnkgonfp.com^
 ||yjfhldkkfl.com^
 ||yjhbzagmmzqhin.bid^
 ||yjhwrpuqitzgh.bid^
@@ -8515,6 +8722,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yobxvotn.bid^
 ||yocnxozede.bid^
 ||yocsprvjl.com^
+||yofyzgkoktwlc.com^
 ||yogkshigsy.com^
 ||yojxoefvnyrc.com^
 ||yoorjlleqtquez.bid^
@@ -8528,7 +8736,9 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ypfghpqnkgbxu.bid^
 ||yphyzxdm.com^
 ||ypictqesjuib.com^
+||ypixrvxi.com^
 ||ypmdszuxupnxk.bid^
+||ypnespepnln.com^
 ||yqhgbmyfiomx.com^
 ||yqjoqncxmufi.com^
 ||yqlfiutmnbazmj.bid^
@@ -8577,6 +8787,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yukwxqnxwzghxb.com^
 ||yupwqyocvvnw.com^
 ||yuywwcizs.com^
+||yvbrgzeu.com^
 ||yvfsfoctkls.com^
 ||yvjdvcgomph.bid^
 ||yvlhxqxw.com^
@@ -8587,6 +8798,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yvqpoiqcijc.bid^
 ||ywbfhuofnvuk.com^
 ||ywbpprhlpins.com^
+||ywegbjiv.com^
 ||ywldkddqx.bid^
 ||ywmbgxmtupll.bid^
 ||ywpkgqasoe.bid^
@@ -8625,6 +8837,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yylmqzhoveg.bid^
 ||yyndmhkv.com^
 ||yyqowjogchca.bid^
+||yyupkqqokrus.com^
 ||yyxknmmvdvv.bid^
 ||yzlwuuzzehjh.com^
 ||yzreywobobmw.com^
@@ -8637,6 +8850,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zacbwfgqvxan.com^
 ||zacqkexd.com^
 ||zaczpeabsygpdz.bid^
+||zadhrsvmawp.com^
 ||zafwmwiaqckgmc.bid^
 ||zahlmvosqsxmp.com^
 ||zansceeifcmm.com^
@@ -8732,6 +8946,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zjhnmbfqylme.com^
 ||zjjcsdfqewqqi.bid^
 ||zjkdrqtjowihn.com^
+||zjsbeont.com^
 ||zjvlymwonwbp.bid^
 ||zjwcddahpz.com^
 ||zkduhoyaxw.bid^
@@ -8765,6 +8980,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||znsonssdb.bid^
 ||znsqykdmcjh.com^
 ||znvctmolksaj.com^
+||znztvqgtaivf.com^
 ||zodorxfj.bid^
 ||zohaqnxwkvyt.com^
 ||zoktycom.com^
@@ -8776,6 +8992,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zpfjfwbij.com^
 ||zpfoyfae.com^
 ||zpkebyxabtsh.com^
+||zpkshggvjif.com^
 ||zplvjgpxvh.com^
 ||zpnbzxbiqann.com^
 ||zprlpkabqlth.com^
@@ -8796,6 +9013,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zrbhyvkpgeyn.com^
 ||zrdjojunihbox.bid^
 ||zrelqwrx.bid^
+||zreqmcewq.com^
 ||zrhskqzfh.com^
 ||zricmrcrlmdeg.com^
 ||zrrgjpsb.bid^
@@ -9513,6 +9731,7 @@ _Indokasino.
 ##[href*="168wbtoto."] > img
 ##[href*="173.199.138.212"] > img
 ##[href*="188bet."] > img
+##[href*="1gpoker."] > img
 ##[href*="1sakong."] > img
 ##[href*="1x2018."] > img
 ##[href*="1xliga."] > img
@@ -9525,6 +9744,7 @@ _Indokasino.
 ##[href*="365dewa."] > img
 ##[href*="365hoki."] > img
 ##[href*="365kiu."] > img
+##[href*="365qiuqiu."] > img
 ##[href*="388cash."] > img
 ##[href*="396club."] > img
 ##[href*="4dasli."] > img
@@ -9578,6 +9798,7 @@ _Indokasino.
 ##[href*="adubalak."] > img
 ##[href*="aduqkartuqq."] > img
 ##[href*="aduqq"] > img
+##[href*="aduqvip."] > img
 ##[href*="afapkr."] > img
 ##[href*="afapoker69"] > img
 ##[href*="afatogel"] > img
@@ -9683,6 +9904,7 @@ _Indokasino.
 ##[href*="balak9."] > img
 ##[href*="balakdewa."] > img
 ##[href*="balakqq."] > img
+##[href*="bancikaleng88"] > img
 ##[href*="bandar228."] > img
 ##[href*="bandar2d."] > img
 ##[href*="bandar66."] > img
@@ -10044,6 +10266,7 @@ _Indokasino.
 ##[href*="indoagenbola."] > img
 ##[href*="indobandar"] > img
 ##[href*="indobet"] > img
+##[href*="indobet77."] > img
 ##[href*="indobola88"] > img
 ##[href*="indocash99"] > img
 ##[href*="indodewa365."] > img
@@ -10087,6 +10310,7 @@ _Indokasino.
 ##[href*="istanaimpian3"] > img
 ##[href*="istanapoker"] > img
 ##[href*="istanasbobet."] > img
+##[href*="itu-casino"] > img
 ##[href*="itu365."] > img
 ##[href*="itu99"] > img
 ##[href*="itubandar."] > img
@@ -10284,7 +10508,7 @@ _Indokasino.
 ##[href*="luckywin"] > img
 ##[href*="lux138"] > img
 ##[href*="luxury1"] > img
-##[href*="luxury777bb."] > img
+##[href*="luxury77"] > img
 ##[href*="m88domino."] > img
 ##[href*="m8livepoker."] > img
 ##[href*="mabesqq."] > img
@@ -10461,6 +10685,7 @@ _Indokasino.
 ##[href*="papabet."] > img
 ##[href*="papadewa."] > img
 ##[href*="paperbola."] > img
+##[href*="parisbandarq."] > img
 ##[href*="parisbola."] > img
 ##[href*="pasangnomor"] > img
 ##[href*="pasaranmurah."] > img
@@ -10549,6 +10774,7 @@ _Indokasino.
 ##[href*="qqboya."] > img
 ##[href*="qqdomino."] > img
 ##[href*="qqdoyan."] > img
+##[href*="qqemas."] > img
 ##[href*="qqhok"] > img
 ##[href*="qqjempol."] > img
 ##[href*="qqnalo."] > img
@@ -10585,6 +10811,7 @@ _Indokasino.
 ##[href*="redbullqq."] > img
 ##[href*="redmiqq."] > img
 ##[href*="rezekibola."] > img
+##[href*="rgo-new"] > img
 ##[href*="rgobet69"] > img
 ##[href*="rgopoker"] > img
 ##[href*="rgtogel."] > img
@@ -10647,6 +10874,7 @@ _Indokasino.
 ##[href*="sepakbolagol."] > img
 ##[href*="serbakas88."] > img
 ##[href*="serbaqq."] > img
+##[href*="serbupoker."] > img
 ##[href*="sevenbola."] > img
 ##[href*="seventogel."] > img
 ##[href*="sgopoker."] > img
@@ -10660,6 +10888,7 @@ _Indokasino.
 ##[href*="sindoqq"] > img
 ##[href*="singa168."] > img
 ##[href*="sinidomino."] > img
+##[href*="sirajaqq"] > img
 ##[href*="situsbet368."] > img
 ##[href*="situsjudi."] > img
 ##[href*="skorbola."] > img
@@ -10807,6 +11036,7 @@ _Indokasino.
 ##[href*="w22bet"] > img
 ##[href*="w88domino."] > img
 ##[href*="wahana88"] > img
+##[href*="wahanabet."] > img
 ##[href*="wahanatoto*."] > img
 ##[href*="wahanatoto1."] > img
 ##[href*="wahyu168"] > img
@@ -10840,7 +11070,7 @@ _Indokasino.
 ##[href*="winpoker"] > img
 ##[href*="winpoker789."] > img
 ##[href*="winwinbola."] > img
-##[href*="wismaqq."] > img
+##[href*="wismaqq"] > img
 ##[href*="won77."] > img
 ##[href*="wong-poker."] > img
 ##[href*="wongbet."] > img
@@ -11612,7 +11842,6 @@ eramuslim.com#@##topAd
 ||onvid.club^$third-party
 ||open-hive-server-1.pp.ua^$third-party
 ||openguid.org^$third-party
-||outbrainimg.com^$third-party
 ||oxwwoeukjispema.ru^$third-party
 ||p2poolmining.com^$third-party
 ||p2poolmining.net^$third-party
@@ -11771,6 +12000,7 @@ $xmlhttprequest,domain=adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|catrumahmi
 /([0-9]{1,3}\.){3}[0-9]{1,3}.*(\/proxy|\.wasm|\.wsm|\.wa)$/$third-party,websocket
 /.*(\/proxy|\.wasm|\.wsm|\.wa)$/$websocket,xmlhttprequest,domain=~aochagavia.github.io|~edwin0cheng.github.io|github.io|rawgit.com|reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to|tubetitties.com|vidfile.net
 ! 
+/assets/application-$domain=iamdisappoint.com|shitbrix.com|tattoofailure.com
 ||2giga.link^*/hive.js
 ||browsealoud.com/plus/scripts/$script
 ||cdn1.pebx.pl^
@@ -11797,6 +12027,10 @@ $xmlhttprequest,domain=adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|catrumahmi
 ||vidzi.tv/*bootstrap.
 ||wallpoper.com^*/c.js
 ||worker.salon.com^
+! salon.com cpu mining
+@@||content.jwplatform.com^$script,domain=salon.com
+@@||platform.tout.com^$script,domain=salon.com
+|http*://$script,third-party,domain=salon.com
 ! CSP Mining
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.net|extratorrent.cd|gofile.io|hq-porns.com|intactoffers.club|kickass.cd|myfeed4u.net|reservedoffers.club|skyback.ru|szukajka.tv|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tvad.me|vidoza.net|vidup.me
@@ -11830,6 +12064,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@_iklan_$domain=pusatpemasanganiklan.com
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
+@@||adturl.com^$generichide
 @@||ainodorama.web.id^$generichide
 @@||anggasave.com^$generichide
 @@||anisubsia.xyz^$generichide
@@ -11839,6 +12074,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||contohblog.com^$generichide
 @@||dedykuncoro.com^$generichide
 @@||gudangfirmwere.com^$generichide
+@@||hightech.web.id^$generichide
 @@||hobybaca.com^$generichide
 @@||indoshares.com^$generichide
 @@||inwepo.co^$generichide
