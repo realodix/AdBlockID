@@ -13,44 +13,22 @@
 # You should have received a copy of the GNU General Public License
 # along with Adblock Plus.  If not, see <http://www.gnu.org/licenses/>.
 
-import subprocess
 from os import path
-from setuptools import setup, Command
+from setuptools import setup
 
-
-DEVENV = 'devenv'
-PIP = path.join(DEVENV, 'bin', 'pip')
-DEV_DEPENDENCIES = ['pytest', 'mock', 'tox']
-
-
-class DevEnvCommand(Command):
-    """Set up development virtualenv."""
-
-    description = 'set up development virtualenv'
-    user_options = [('python=', 'p', 'the python interpreter to use')]
-
-    def initialize_options(self):
-        self.python = 'python'
-
-    def finalize_options(self):
-        pass
-
-    def run(self):
-        subprocess.check_call(['virtualenv', '-p', self.python, DEVENV])
-        subprocess.check_call([PIP, 'install'] + DEV_DEPENDENCIES)
-        subprocess.check_call([PIP, 'install', '-e', '.'])
-
+with open(path.join(path.dirname(__file__), 'README.rst')) as fh:
+    long_description = fh.read()
 
 setup(
     name='python-abp',
-    version='0.0.1',
-    description='ABP python tools',
-    long_description='A library for working with Adblock Plus filter lists.',
-    author='Eyeo GmbH',
+    version='0.1.0',
+    description='A library for working with Adblock Plus filter lists.',
+    long_description=long_description,
+    long_description_content_type='text/x-rst',
+    author='eyeo GmbH',
     author_email='info@adblockplus.org',
     url='https://hg.adblockplus.org/python-abp/',
     packages=['abp', 'abp.filters'],
-    cmdclass={'devenv': DevEnvCommand},
     entry_points={
         'console_scripts': ['flrender=abp.filters.render_script:main',
                             'fldiff=abp.filters.diff_script:main'],
@@ -60,7 +38,7 @@ setup(
     zip_safe=False,
     keywords='filterlist adblockplus ABP',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Natural Language :: English',
@@ -69,5 +47,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Operating System :: OS Independent',
+        'Topic :: Software Development :: Libraries :: Python Modules',
     ],
 )

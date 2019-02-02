@@ -18,8 +18,8 @@ from __future__ import unicode_literals
 import pytest
 
 from abp.filters import (
-    parse_line, parse_filterlist, ParseError,
-    SELECTOR_TYPE as ST, FILTER_ACTION as FA, FILTER_OPTION as OPT,
+    parse_line, parse_filterlist, ParseError, SelectorType as SelType,
+    FilterAction, FilterOption,
 )
 from abp.filters.parser import Comment, Metadata, Header
 
@@ -32,47 +32,47 @@ def test_parse_empty():
 @pytest.mark.parametrize('filter_text, expected', {
     # Blocking filters with patterns and regexps and blocking exceptions.
     '*asdf*d**dd*': {
-        'selector': {'type': ST.URL_PATTERN, 'value': '*asdf*d**dd*'},
-        'action': FA.BLOCK,
+        'selector': {'type': SelType.URL_PATTERN, 'value': '*asdf*d**dd*'},
+        'action': FilterAction.BLOCK,
     },
     '@@|*asd|f*d**dd*|': {
-        'selector': {'type': ST.URL_PATTERN, 'value': '|*asd|f*d**dd*|'},
-        'action': FA.ALLOW,
+        'selector': {'type': SelType.URL_PATTERN, 'value': '|*asd|f*d**dd*|'},
+        'action': FilterAction.ALLOW,
     },
     '/ddd|f?a[s]d/': {
-        'selector': {'type': ST.URL_REGEXP, 'value': 'ddd|f?a[s]d'},
-        'action': FA.BLOCK,
+        'selector': {'type': SelType.URL_REGEXP, 'value': 'ddd|f?a[s]d'},
+        'action': FilterAction.BLOCK,
     },
     '@@/ddd|f?a[s]d/': {
-        'selector': {'type': ST.URL_REGEXP, 'value': 'ddd|f?a[s]d'},
-        'action': FA.ALLOW,
+        'selector': {'type': SelType.URL_REGEXP, 'value': 'ddd|f?a[s]d'},
+        'action': FilterAction.ALLOW,
     },
     # Blocking filters with some options.
     'bla$match-case,~script,domain=foo.com|~bar.com,sitekey=foo': {
-        'selector': {'type': ST.URL_PATTERN, 'value': 'bla'},
-        'action': FA.BLOCK,
+        'selector': {'type': SelType.URL_PATTERN, 'value': 'bla'},
+        'action': FilterAction.BLOCK,
         'options': [
-            (OPT.MATCH_CASE, True),
-            (OPT.SCRIPT, False),
-            (OPT.DOMAIN, [('foo.com', True), ('bar.com', False)]),
-            (OPT.SITEKEY, ['foo']),
+            (FilterOption.MATCH_CASE, True),
+            (FilterOption.SCRIPT, False),
+            (FilterOption.DOMAIN, [('foo.com', True), ('bar.com', False)]),
+            (FilterOption.SITEKEY, ['foo']),
         ],
     },
     '@@http://bla$~script,~other,sitekey=foo|bar': {
-        'selector': {'type': ST.URL_PATTERN, 'value': 'http://bla'},
-        'action': FA.ALLOW,
+        'selector': {'type': SelType.URL_PATTERN, 'value': 'http://bla'},
+        'action': FilterAction.ALLOW,
         'options': [
-            (OPT.SCRIPT, False),
-            (OPT.OTHER, False),
-            (OPT.SITEKEY, ['foo', 'bar']),
+            (FilterOption.SCRIPT, False),
+            (FilterOption.OTHER, False),
+            (FilterOption.SITEKEY, ['foo', 'bar']),
         ],
     },
     "||foo.com^$csp=script-src 'self' * 'unsafe-inline',script,sitekey=foo,"
     + 'other,match-case,domain=foo.com': {
-        'selector': {'type': ST.URL_PATTERN, 'value': '||foo.com^'},
-        'action': FA.BLOCK,
+        'selector': {'type': SelType.URL_PATTERN, 'value': '||foo.com^'},
+        'action': FilterAction.BLOCK,
         'options': [
-            (OPT.CSP, "script-src 'self' * 'unsafe-inline'"),
+            (FilterOption.CSP, "script-src 'self' * 'unsafe-inline'"),
             ('script', True),
             ('sitekey', ['foo']),
             ('other', True),
@@ -81,8 +81,8 @@ def test_parse_empty():
         ],
     },
     '@@bla$script,other,domain=foo.com|~bar.foo.com,csp=c s p': {
-        'selector': {'type': ST.URL_PATTERN, 'value': 'bla'},
-        'action': FA.ALLOW,
+        'selector': {'type': SelType.URL_PATTERN, 'value': 'bla'},
+        'action': FilterAction.ALLOW,
         'options': [
             ('script', True),
             ('other', True),
@@ -91,42 +91,42 @@ def test_parse_empty():
         ],
     },
     '||content.server.com/files/*.php$rewrite=$1': {
-        'selector': {'type': ST.URL_PATTERN,
+        'selector': {'type': SelType.URL_PATTERN,
                      'value': '||content.server.com/files/*.php'},
-        'action': FA.BLOCK,
+        'action': FilterAction.BLOCK,
         'options': [
             ('rewrite', '$1'),
         ],
     },
     # Element hiding filters and exceptions.
     '##ddd': {
-        'selector': {'type': ST.CSS, 'value': 'ddd'},
-        'action': FA.HIDE,
+        'selector': {'type': SelType.CSS, 'value': 'ddd'},
+        'action': FilterAction.HIDE,
         'options': [],
     },
     '#@#body > div:first-child': {
-        'selector': {'type': ST.CSS, 'value': 'body > div:first-child'},
-        'action': FA.SHOW,
+        'selector': {'type': SelType.CSS, 'value': 'body > div:first-child'},
+        'action': FilterAction.SHOW,
         'options': [],
     },
     'foo,~bar##ddd': {
-        'options': [(OPT.DOMAIN, [('foo', True), ('bar', False)])],
+        'options': [(FilterOption.DOMAIN, [('foo', True), ('bar', False)])],
     },
     # Element hiding emulation filters (extended CSS).
     'foo,~bar#?#:-abp-properties(abc)': {
-        'selector': {'type': ST.XCSS, 'value': ':-abp-properties(abc)'},
-        'action': FA.HIDE,
-        'options': [(OPT.DOMAIN, [('foo', True), ('bar', False)])],
+        'selector': {'type': SelType.XCSS, 'value': ':-abp-properties(abc)'},
+        'action': FilterAction.HIDE,
+        'options': [(FilterOption.DOMAIN, [('foo', True), ('bar', False)])],
     },
     'foo.com#?#aaa :-abp-properties(abc) bbb': {
         'selector': {
-            'type': ST.XCSS,
+            'type': SelType.XCSS,
             'value': 'aaa :-abp-properties(abc) bbb',
         },
     },
     '#?#:-abp-properties(|background-image: url(data:*))': {
         'selector': {
-            'type': ST.XCSS,
+            'type': SelType.XCSS,
             'value': ':-abp-properties(|background-image: url(data:*))',
         },
         'options': [],

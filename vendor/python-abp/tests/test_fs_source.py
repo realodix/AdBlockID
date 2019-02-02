@@ -47,3 +47,8 @@ def test_escape_source(fssource):
 def test_read_missing_file(fssource):
     with pytest.raises(NotFound):
         list(fssource.get('foo/baz.txt'))
+
+
+def test_fssource_get_err(fssource):
+    with pytest.raises(IOError):
+        list(fssource.get(''))

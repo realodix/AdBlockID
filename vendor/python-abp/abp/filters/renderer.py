@@ -117,7 +117,7 @@ def _first_and_rest(iterable):
 def _insert_version(lines):
     """Insert metadata comment with version (a.k.a. date)."""
     first_line, rest = _first_and_rest(lines)
-    version = Metadata('Version', time.strftime('%y.%m%d.%H%M', time.gmtime()))
+    version = Metadata('Version', time.strftime('%Y%m%d%H%M', time.gmtime()))
     return itertools.chain([first_line, version], rest)
 
 

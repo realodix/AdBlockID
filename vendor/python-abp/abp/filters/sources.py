@@ -21,7 +21,7 @@ import sys
 
 try:
     from urllib2 import urlopen, HTTPError
-except ImportError:  # The module was renamed in Python 3.
+except ImportError:  # pragma: no py2 cover
     from urllib.request import urlopen
     from urllib.error import HTTPError
 

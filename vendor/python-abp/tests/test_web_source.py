@@ -69,3 +69,10 @@ def test_404(web_mock, http_source):
     web_mock.side_effect = HTTPError('', 404, 'Not found', [], StringIO(b''))
     with pytest.raises(NotFound):
         list(http_source.get('//foo/bar.txt'))
+
+
+def test_500(web_mock, http_source):
+    web_mock.side_effect = HTTPError('', 500, 'Internal Server Error', [],
+                                     StringIO(b''))
+    with pytest.raises(HTTPError):
+        list(http_source.get('//foo/bar.txt'))

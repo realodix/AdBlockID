@@ -58,8 +58,8 @@ Exceptions that thrown by the functions in this module:
 
 Constants for code that works with filter lists:
 
-  - SELECTOR_TYPE - Namespace for constants that determine how the filter
-    matches content (for example: SELECTOR_TYPE.CSS):
+  - SelectorType - Namespace for constants that determine how the filter
+    matches content (for example: SelectorType.CSS):
 
     - URL_PATTERN - Match URL against a pattern (see
       https://adblockplus.org/filters#basic),
@@ -68,16 +68,16 @@ Constants for code that works with filter lists:
     - XCSS - CSS selector with extensions (to emulate CSS4),
     - ABP_SIMPLE - Deprecated simplified element selection syntax.
 
-  - FILTER_ACTION - Namespace for constants that determine what the filter does
-    with selected content (for example: FILTER_ACTION.BLOCK):
+  - FilterAction - Namespace for constants that determine what the filter does
+    with selected content (for example: FilterAction.BLOCK):
 
     - BLOCK - Block the request,
     - ALLOW - Allow the request (even if blocked by other filters),
     - HIDE - Hide selected element,
     - SHOW - Show selected element (even if hidden by other filters).
 
-  - FILTER_OPTION - Namespace for filter option constants (for example
-    FILTER_OPTION.IMAGE). See https://adblockplus.org/filters#options for the
+  - FilterOption - Namespace for filter option constants (for example
+    FilterOption.IMAGE). See https://adblockplus.org/filters#options for the
     full list of options.
 
 See docstrings of module members for further information.
@@ -90,9 +90,9 @@ meaning of `str`).
 """
 
 from .parser import (
-    FILTER_ACTION,
-    FILTER_OPTION,
-    SELECTOR_TYPE,
+    FilterAction,
+    FilterOption,
+    SelectorType,
     ParseError,
     parse_filterlist,
     parse_line,
@@ -110,9 +110,9 @@ from .sources import (
 
 __all__ = [
     # Constants
-    'FILTER_ACTION',
-    'FILTER_OPTION',
-    'SELECTOR_TYPE',
+    'FilterAction',
+    'FilterOption',
+    'SelectorType',
     # Exceptions
     'ParseError',
     'IncludeError',

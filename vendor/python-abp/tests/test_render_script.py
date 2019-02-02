@@ -30,8 +30,8 @@ try:
     import SimpleHTTPServer
     import SocketServer
 except ImportError:  # The modules were renamed/moved in Python 3.
-    import http.server as SimpleHTTPServer
-    import socketserver as SocketServer
+    from http import server as SimpleHTTPServer  # noqa: N812
+    import socketserver as SocketServer  # noqa: N812
 
 
 @pytest.fixture

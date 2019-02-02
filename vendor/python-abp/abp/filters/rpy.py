@@ -66,8 +66,8 @@ def strings2utf8(data):
         return [strings2utf8(v) for v in data]
     if isinstance(data, tuple):
         return tuple(strings2utf8(v) for v in data)
-    if isinstance(data, type('')):  # Python 2/3 compatible way of
-                                    # saying "unicode string".
+    if isinstance(data, type('')):
+        # The condition is a Python 2/3 way of saying "unicode string".
         return data.encode('utf-8')
     return data
 
@@ -93,3 +93,31 @@ def line2dict(text, mode='body'):
 
     """
     return strings2utf8(tuple2dict(parse_line(text, mode)))
+
+
+def lines2dicts(string_list, mode='body'):
+    """Convert a list of filterlist strings to a dictionary.
+
+    All strings in the output dictionary will be UTF8 byte strings. This is
+    necessary to prevent unicode encoding errors in rPython conversion layer.
+
+    Parameters
+    ----------
+    string_list: iterable of str
+        Each string in the list can be an empty line, include instruction, or
+        filter. If the mode is 'start', headers and metadata can also be
+        parsed.
+    mode: str
+        Parsing mode (see `abp.filters.parser.parse_line`).
+
+    Returns
+    -------
+    list of dict
+        With the parsing results and all strings converted to utf8 byte
+        strings.
+
+    """
+    result = []
+    for string in string_list:
+        result.append(line2dict(string, mode))
+    return result

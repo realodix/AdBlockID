@@ -20,7 +20,7 @@ from collections import namedtuple
 import pytest
 import sys
 
-from abp.filters.rpy import tuple2dict, line2dict
+from abp.filters.rpy import tuple2dict, line2dict, lines2dicts
 
 
 _SAMPLE_TUPLE = namedtuple('tuple', 'foo,bar')
@@ -147,3 +147,28 @@ def test_line2dict_format(line_type):
     data = line2dict(_TEST_EXAMPLES[line_type]['in'], position)
 
     assert data == _TEST_EXAMPLES[line_type]['out']
+
+
+def test_lines2dicts_start_mode():
+    """Test that the API returns the correct result in the appropriate format.
+
+    Checks for 'start' mode, which can handle headers and metadata.
+    """
+    tests = [t for t in _TEST_EXAMPLES.values()]
+    ins = [ex['in'] for ex in tests]
+    outs = [ex['out'] for ex in tests]
+
+    assert lines2dicts(ins, 'start') == outs
+
+
+def test_lines2dicts_default():
+    """Test that the API returns the correct result in the appropriate format.
+
+    By default, lines2dicts() does not correctly parse headers and metadata.
+    """
+    tests = [t for t in _TEST_EXAMPLES.values()
+             if t['out'][b'type'] not in {b'Header', b'Metadata'}]
+    ins = [ex['in'] for ex in tests]
+    outs = [ex['out'] for ex in tests]
+
+    assert lines2dicts(ins) == outs

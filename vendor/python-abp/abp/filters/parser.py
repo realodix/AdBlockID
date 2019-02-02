@@ -21,9 +21,9 @@ import re
 from collections import namedtuple
 
 __all__ = [
-    'FILTER_ACTION',
-    'FILTER_OPTION',
-    'SELECTOR_TYPE',
+    'FilterAction',
+    'FilterOption',
+    'SelectorType',
     'ParseError',
     'parse_filterlist',
     'parse_line',
@@ -49,7 +49,7 @@ class ParseError(Exception):
 
 
 # Constants related to filters (see https://adblockplus.org/filters).
-class SELECTOR_TYPE:  # flake8: noqa (this is a namespace of constants).
+class SelectorType:
     """Selector type constants."""
 
     URL_PATTERN = 'url-pattern'  # Normal URL patterns.
@@ -59,7 +59,7 @@ class SELECTOR_TYPE:  # flake8: noqa (this is a namespace of constants).
     ABP_SIMPLE = 'abp-simple'    # Simplified element hiding syntax.
 
 
-class FILTER_ACTION:  # flake8: noqa (this is a namespace of constants).
+class FilterAction:
     """Filter action constants."""
 
     BLOCK = 'block'              # Block the request.
@@ -68,7 +68,7 @@ class FILTER_ACTION:  # flake8: noqa (this is a namespace of constants).
     SHOW = 'show'                # Show selected element(s) (whitelist).
 
 
-class FILTER_OPTION:  # flake8: noqa (this is a namespace of constants).
+class FilterOption:
     """Filter option constants."""
 
     # Resource types.
@@ -171,9 +171,9 @@ def _parse_filter_option(option):
     name, value = _parse_option(option)
 
     # Handle special cases of multivalued options.
-    if name == FILTER_OPTION.DOMAIN:
+    if name == FilterOption.DOMAIN:
         value = [_parse_option(o) for o in value.split('|')]
-    elif name == FILTER_OPTION.SITEKEY:
+    elif name == FilterOption.SITEKEY:
         value = value.split('|')
 
     return name, value
@@ -186,12 +186,12 @@ def _parse_filter_options(options):
 def _parse_blocking_filter(text):
     # Based on RegExpFilter.fromText in lib/filterClasses.js
     # in https://hg.adblockplus.org/adblockpluscore.
-    action = FILTER_ACTION.BLOCK
+    action = FilterAction.BLOCK
     options = []
     selector = text
 
     if selector.startswith('@@'):
-        action = FILTER_ACTION.ALLOW
+        action = FilterAction.ALLOW
         selector = selector[2:]
 
     if '$' in selector:
@@ -202,26 +202,26 @@ def _parse_blocking_filter(text):
 
     if (len(selector) > 1
             and selector.startswith('/') and selector.endswith('/')):
-        selector = {'type': SELECTOR_TYPE.URL_REGEXP, 'value': selector[1:-1]}
+        selector = {'type': SelectorType.URL_REGEXP, 'value': selector[1:-1]}
     else:
-        selector = {'type': SELECTOR_TYPE.URL_PATTERN, 'value': selector}
+        selector = {'type': SelectorType.URL_PATTERN, 'value': selector}
 
     return Filter(text, selector, action, options)
 
 
 def _parse_hiding_filter(text, domain, type_flag, selector_value):
-    selector = {'type': SELECTOR_TYPE.CSS, 'value': selector_value}
-    action = FILTER_ACTION.HIDE
+    selector = {'type': SelectorType.CSS, 'value': selector_value}
+    action = FilterAction.HIDE
     options = []
 
     if type_flag == '@':
-        action = FILTER_ACTION.SHOW
+        action = FilterAction.SHOW
     elif type_flag == '?':
-        selector['type'] = SELECTOR_TYPE.XCSS
+        selector['type'] = SelectorType.XCSS
 
     if domain:
         domains = [_parse_option(d) for d in domain.split(',')]
-        options.append((FILTER_OPTION.DOMAIN, domains))
+        options.append((FilterOption.DOMAIN, domains))
 
     return Filter(text, selector, action, options)
 
