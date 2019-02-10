@@ -1,6 +1,6 @@
 # AdBlockID
 
-Total rules: 12,483
+Total rules: 12,523
 
 AdblockID adalah filter tambahan untuk [easylist](https://github.com/easylist/easylist) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
