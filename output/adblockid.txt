@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201902120619
+! Version: 201902120703
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Feb 2019 06:19 UTC
+! Last modified: 12 Feb 2019 07:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -247,7 +247,6 @@ _promosi.
 /100x790.
 /1060-X-70-
 /1195X20.
-/160x600.
 /200x200.gif
 /259x100px.
 /285-x-285.
@@ -546,7 +545,6 @@ _996x50.gif
 ##.adblock2
 ##.adblock3
 ##.adct
-##.addads
 ##.adka
 ##.adkaki
 ##.adki
@@ -12644,24 +12642,18 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||szukajka.tv/szukaj|$~third-party,xmlhttprequest
 @@||ws.webcaster.pro^$websocket
 ! *** abid:AdBlockID/whitelist.adbl ***
-@@-iklan.$domain=agency-iklan.com
 @@.ad.json?$domain=otobalancing.net
 @@.gif#*/ad/
 @@.jpg#*/ad/
 @@.png#*/ad/
 @@/*.css$stylesheet,domain=danirachmat.com
 @@/*.ttf$font,domain=danirachmat.com
-@@/*pasangiklan*.$domain=pasangiklan.com|pasangiklankompas.com|pasangiklankompasposkota.com
 @@/advertisement.$script,domain=ikurniawan.com|rukim.id|samehadaku.tv
-@@/advertising-$domain=advertising-indonesia.id
 @@/fuckadblock.js$domain=nandatrio.com
-@@/iklan-$domain=baktiartha.co.id|iklankoran.net
+@@/images/ads/*$domain=promozia.com
 @@/js/ads.$domain=iovoproduction.info
-@@/mts_ad_sense/*$domain=onphpid.com
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@/pagead2.$script,domain=bloggerku.com|datasekolah.co.id|eirudo.com|hightech.web.id|mufasi.ga|unduh.in
-@@://ads.$domain=ads.id|ads.kaskus.co.id
-@@_iklan_$domain=pusatpemasanganiklan.com
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||adturl.com^$generichide
@@ -12718,10 +12710,28 @@ aplikasipc.com#@#.afs_ads
 bagilagi.com#@##banner_ad
 dutaislam.com#@##ads-wrapper
 duwitmu.com#@#.category-advertorial
-kostjakarta.net#@#a[href*="/iklan/"]
 lindung.in#@#.afs_ads
 nabire.net#@#.adsbygoogle
 otakuindo.net#@##banner_ad
 ! 
 /wp-adblock-dedect/js/dedect.js$script
 ||mangacanblog.com/adblock/src/adblock-checker.js
+! 
+! Memperbaiki kerusakan karena AdBlockID
+! 
+@@-iklan.$domain=agency-iklan.com|pusatiklan.co.id
+@@/*pasangiklan*.$domain=pasangiklan.com|pasangiklangratis.id|pasangiklankompas.com|pasangiklankompasposkota.com
+@@/iklan-$domain=baktiartha.co.id|iklankoran.net|promozia.com|webiklan.com
+@@/iklan/*$domain=pusatiklan.co.id
+@@_iklan_$domain=pusatpemasanganiklan.com
+kostjakarta.net#@#a[href*="/iklan/"]
+ngarepp.com#@#.iklan
+pasangiklangratis.id#@#.iklan
+promozia.com#@#img[alt*="pasang iklan"]
+! 
+! Memperbaiki kerusakan karena EasyList
+! 
+@@/ads/banner-$domain=promozia.com
+@@/advertising-$domain=advertising-indonesia.id
+@@/mts_ad_sense/*$domain=onphpid.com
+@@://ads.$domain=ads.id|ads.kaskus.co.id
