@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201902120513
+! Version: 201902120619
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Feb 2019 05:13 UTC
+! Last modified: 12 Feb 2019 06:19 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -460,8 +460,6 @@ _981x100.gif
 _996x50.gif
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/general_hide.adbl ***
-##a[href="http://www.an.web.id/"]
-! 
 ###Ad300B
 ###Box-Banner-ads
 ###Gadget-AdSense
@@ -595,6 +593,7 @@ _996x50.gif
 ##.content-kuss-ads
 ##.cp-advertisement
 ##.detads
+##.detads-bottom
 ##.disads300px
 ##.disads720px
 ##.dt-top-ads
@@ -1166,6 +1165,7 @@ otosia.com###v5-showcase1
 kapanlagi.com,otosia.com###v5-showcase2
 kapanlagi.com###v8-leaderboard
 mangacanblog.com##.ad
+ads.id##.adManager
 teknobos.com##.adcontainer
 radioonline.co.id##.add-box-top
 gogirl.id,jalantikus.com##.ads
@@ -2018,6 +2018,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||chnvilhrmeaw.bid^
 ||chqulqxfghdz.com^
 ||chuvzwxbpf.bid^
+||chvwtxtzmzbggo.com^
 ||chyfjrkstyzl.bid^
 ||chytrrvwvabg.com^
 ||chzashakbgds.com^
@@ -7253,6 +7254,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||swfqsfewk.bid^
 ||swgvpkwmojcv.com^
 ||swkhaeiymk.bid^
+||swmwgptzlgsc.com^
 ||swpopynngk.com^
 ||swrvnnelfyay.bid^
 ||swtwtbiwbjvq.com^
@@ -12651,12 +12653,14 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@/*.ttf$font,domain=danirachmat.com
 @@/*pasangiklan*.$domain=pasangiklan.com|pasangiklankompas.com|pasangiklankompasposkota.com
 @@/advertisement.$script,domain=ikurniawan.com|rukim.id|samehadaku.tv
+@@/advertising-$domain=advertising-indonesia.id
 @@/fuckadblock.js$domain=nandatrio.com
 @@/iklan-$domain=baktiartha.co.id|iklankoran.net
 @@/js/ads.$domain=iovoproduction.info
 @@/mts_ad_sense/*$domain=onphpid.com
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@/pagead2.$script,domain=bloggerku.com|datasekolah.co.id|eirudo.com|hightech.web.id|mufasi.ga|unduh.in
+@@://ads.$domain=ads.id|ads.kaskus.co.id
 @@_iklan_$domain=pusatpemasanganiklan.com
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
