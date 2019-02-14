@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201902120703
+! Version: 201902140535
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Feb 2019 07:03 UTC
+! Last modified: 14 Feb 2019 05:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -20,10 +20,7 @@
 -ikln.
 -jasa-iklan-
 -promosi.
--slot-iklan-
 .id/adv/
-/*pasangiklan*.
-/*space-iklan*.
 /200ad.
 /ad-placeholder-
 /ad125x125/*
@@ -64,7 +61,6 @@
 /imgiklanz/*
 /indofreeads_
 /ngiklan/*$image
-/P-A-S-A-N-G-B-A-N-N-E-R.
 /promo/banner/*
 /SkinADkanan.
 /SkinADkiri.
@@ -171,6 +167,7 @@ _promosi.
 -728-x900.
 -728X100-$image
 -728x60-
+-728x90px1.
 -729x90.
 -730x220.
 -760x60-$image
@@ -186,13 +183,13 @@ _promosi.
 -980x70.
 -990x100.
 /*110x220*.gif
-/*1195x120*.
+/*1195x120*.gif
 /*120x250*.gif
-/*120x280*.
+/*120x280*.gif
 /*120x300*.gif
 /*125x125*.gif
-/*150x500*.
-/*160x600*.
+/*150x500*.gif
+/*160x600*.gif
 /*173x614*.gif
 /*192x596*.gif
 /*195x596*.gif
@@ -203,42 +200,42 @@ _promosi.
 /*300*x250*.gif
 /*300x*250*.gif
 /*300x300*.gif
-/*355x80*.
-/*383x90*.
-/*400x50*.
-/*400x80*.
-/*420x60*.
-/*468-x-60*.
-/*468x60*.
+/*355x80*.gif
+/*383x90*.gif
+/*400x50*.gif
+/*400x80*.gif
+/*420x60*.gif
+/*468-x-60*.gif
+/*468x60*.gif
 /*480x120*.gif
 /*490x70.
 /*500x60*.gif
 /*500x80.
-/*522x70*.
+/*522x70*.gif
 /*530x63.
 /*535x66.
 /*585x80*.gif
-/*600x100*.
+/*600x100*.gif
 /*600x40*.gif
 /*680x100*.gif
 /*70x140*.gif
 /*718x90*.gif
-/*720x90*.
-/*728-x-90*.
+/*720x90*.gif
+/*728-x-90*.gif
 /*72890*.gif
 /*728x120*.gif
 /*728x180*.gif
 /*728x90*.
 /*729x50*.gif
-/*780x90*.
+/*780x90*.gif
 /*80x600*.gif
-/*85x455*.
-/*920x120*.
-/*960x120*.
-/*970x90*.
+/*85x455*.gif
+/*920x120*.gif
+/*960x120*.gif
+/*970x90*.gif
 /*975x70*.gif
-/*976x70*.
-/*980x90*.
+/*976x70*.gif
+/*980x90*.gif
 /*w250-h250-$image
 /*w300-h250-$image
 /*w380-h80-$image
@@ -576,6 +573,10 @@ _996x50.gif
 ##.aggads-ad-location-header
 ##.aggads-ad-type-plain
 ##.an-advert-banner
+##.anm__flying--ads-holder
+##.anm__flying--ads-left
+##.anm__flying--ads-right
+##.anm__flying--ads-wrap
 ##.banner-adv-1
 ##.banner-footer-ads
 ##.banner-iklan
@@ -587,6 +588,7 @@ _996x50.gif
 ##.bottom-ads-new
 ##.box-iklan-sidesearch
 ##.cari-ads
+##.center-block-ads
 ##.column_classified_ads
 ##.content-kuss-ads
 ##.cp-advertisement
@@ -686,7 +688,6 @@ _996x50.gif
 ##.sponsor_ads
 ##.stay-ads-left
 ##.stay-ads-right
-##.subIklan
 ##.subiklan
 ##.supermag-ad-widget
 ##.td-ad-m
@@ -703,13 +704,16 @@ _996x50.gif
 ##.widget_adace_ads_widget
 ##.widget_supermag_ad
 ##.wrap-fixed-ads
+##[class*="iklan-kanan"]
 ##[class*="iklan-kiri"]
+##[href*="/ads-"]
 ##[id*="-iklan-kanan-"]
 ##[id*="-iklan-kiri-"]
 ##[id*="_iklan-block_"]
 ##[id*="adgshp"]
 ##a[href*="/iklan-ads/"]
 ##a[href*="/iklan/"] > img
+##a[href*="/iklan1"]
 ##a[href*="/info-iklan/"]
 ##a[href^="//mellowads."]
 ! 
@@ -1032,7 +1036,6 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||mobileofferplace.site^$popup
 ||motosal.net^$popup
 ||partlepool.com^$popup,third-party
-||strainemergency.com^$popup
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/thirdparty.adbl ***
 ||amazonaws.com^*/banner/$third-party,domain=bogornews.com
@@ -1051,6 +1054,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||188affiliates.com^$third-party
 ||365wp.org^$third-party
 ||45.76.146.8^$third-party
+||advertnative.com^$third-party
 ||agenjudionline.in^$third-party
 ||agungqiu.org^$third-party
 ||bolagalaxy.org^$third-party
@@ -1083,7 +1087,6 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||noblemagnition.com^$third-party
 ||onclickbright.com^$third-party
 ||pengusahamodalkecil.com^$third-party
-||pndelfast.com^$third-party
 ||safelinku.com/fullpage/script.js$script,thirdparty
 ||speedlinkdown.com^$third-party
 ||sukipli.com/*.gif^$third-party
@@ -1148,7 +1151,6 @@ hukumonline.com###adsp3
 inilah.com###apDiv1
 dibalikseo.com###banner
 mobilwow.com###bottombanner
-otosia.com###box-mobil-dijual
 mangacanblog.com,pecintakomik.com###btm_banner
 komiku.net###floatads3
 carapedia.com###floating-banner
@@ -1156,22 +1158,11 @@ idblanter.com,sekolahpendidikan.com###largebanner
 lytogame.com###lytoads
 serbacara.com###mtc-popup
 polisionline.com###postfeature
-otosia.com###v5-leaderboard
-kapanlagi.com###v5-marcommpromotion
-kapanlagi.com###v5-marcommpromotion2
-otosia.com###v5-showcase1
-kapanlagi.com,otosia.com###v5-showcase2
-kapanlagi.com###v8-leaderboard
 mangacanblog.com##.ad
 ads.id##.adManager
 teknobos.com##.adcontainer
 radioonline.co.id##.add-box-top
-gogirl.id,jalantikus.com##.ads
 cermati.com##.ads-container
-detik.com##.adv
-arenalte.com##.advertisement
-arenalte.com##.arenalte-ads
-autonetmagz.com##.autonetmagz__meta--ads-elements
 onlineradiobox.com##.banner--vertical
 rajamobil.com##.banner-billboard
 klikpenajam.com##.banner-item
@@ -1182,8 +1173,6 @@ heyriad.com##.banner-toped
 cgv.id##.banner-wrapper
 emerer.com##.banner_wrapper
 unduh.in##.bannersingletop
-cosmogirl.co.id##.bnr
-dnaindia.com##.bnr300
 ! 
 hdtvku.com###bannerkategoriheader
 hdtvku.com###mybannerpopup
@@ -1212,7 +1201,7 @@ jasasipil.com##[id^="post-body-"] > div:nth-of-type(1)
 indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
 sehatnomorsatu.com##a[id^="http"] > img
 andreasagung.com,centerklik.com,kostjakarta.com,nutrisi-pelangsing.com,tempat-kost.com##a[rel="nofollow"] > img
-aftermarketplus.id,anakui.com,blogdokter.net,boc.web.id,borukaro.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,kostjakarta.net,maxmanroe.com,plaza-bisnis.com##a[target="_blank"] > img
+aftermarketplus.id,anakui.com,blogdokter.net,boc.web.id,borukaro.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,klikmania.net,kostjakarta.net,maxmanroe.com,plaza-bisnis.com##a[target="_blank"] > img
 iskrim.com##img[width="317"][height="89"]
 ! 
 radiotemansejati.com##.bannersinglefot
@@ -9644,6 +9633,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*gohbet*.gif$image
 /*gol88*.gif$image
 /*grand365*.gif$image
+/*guebet*.gif$image
 /*h8indo*.gif$image
 /*hanabet*.gif$image
 /*hariqq*.gif$image
@@ -9716,8 +9706,10 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*lapak365*.gif$image
 /*lapakfortune*.gif$image
 /*lapakqq*.gif$image
+/*larisqq*.gif$image
 /*layananqq*.gif$image
 /*lazabet*.gif$image
+/*lenovopoker*.gif$image
 /*liga-88*.gif$image
 /*liga-cash*.gif$image
 /*liga108*.gif$image
@@ -9841,6 +9833,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*sbosbe*.gif$image
 /*seniorbola*.gif$image
 /*sentosa88*.gif$image
+/*simpatiq*.gif$image
 /*simpatiqq*.gif$image
 /*soccerbet*.gif$image
 /*sponsor-qq*.gif$image
@@ -9851,6 +9844,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*suhuq*.gif$image
 /*sundul88*.gif$image
 /*surgawin*.gif$image
+/*suster_poker*.gif$image
 /*tahun-qq*.gif$image
 /*tahunqq*.gif$image
 /*tahunqq.gif$image
@@ -9899,15 +9893,13 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /1xbetnew.gif$image
 /b2indo.gif$image
 /cashbackharian.gif$image
-/DemenQQ-
+/demenqq-
 /emoqq-
 /goalgoal365-
 /hoyajpnew*.gif$image
 /hoyapkrnew*.gif$image
+/jual_obat_aborsi_
 /kartu-online.gif$image
-/linkalternatif.$image
-/mb88.gif$image
-/MboCasino.gif$image
 /misiqq-$image
 /newAFA.gif$image
 /newhoya-$image
@@ -9932,7 +9924,8 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /togel-$image
 /vibol.$image
 /wigo.gif$image
-_Indokasino.$image
+_indokasino.$image
+_penggugur_kandungan_$image
 ! 
 ||128cash.$popup
 ||1sakong.$popup
@@ -10134,6 +10127,7 @@ _Indokasino.$image
 ##[href*="1x2018."] > img
 ##[href*="1xliga."] > img
 ##[href*="1xme."] > img
+##[href*="206.189.121.4"] > img
 ##[href*="228poker."] > img
 ##[href*="233bet."] > img
 ##[href*="234bet"] > img
@@ -10263,6 +10257,7 @@ _Indokasino.$image
 ##[href*="aseanqq."] > img
 ##[href*="asetbet"] > img
 ##[href*="asia-bandar"] > img
+##[href*="asia77winnet"] > img
 ##[href*="asia88bet."] > img
 ##[href*="asiabandar"] > img
 ##[href*="asiabandarqq."] > img
@@ -10291,6 +10286,7 @@ _Indokasino.$image
 ##[href*="auxbet."] > img
 ##[href*="avoqq"] > img
 ##[href*="awbet."] > img
+##[href*="axakartunet"] > img
 ##[href*="axiobola."] > img
 ##[href*="axiooqq."] > img
 ##[href*="ayomainqq."] > img
@@ -10314,6 +10310,7 @@ _Indokasino.$image
 ##[href*="bandarbet"] > img
 ##[href*="bandarbolaasia."] > img
 ##[href*="bandarbursa."] > img
+##[href*="bandarindo77"] > img
 ##[href*="bandarjitu."] > img
 ##[href*="bandarjudi."] > img
 ##[href*="bandarkiu."] > img
@@ -10377,8 +10374,10 @@ _Indokasino.$image
 ##[href*="bola24co"] > img
 ##[href*="bola777."] > img
 ##[href*="bola83."] > img
+##[href*="bolaafb."] > img
 ##[href*="boladunia88bet."] > img
 ##[href*="bolagalaxy."] > img
+##[href*="bolaindo77"] > img
 ##[href*="bolaindo77."] > img
 ##[href*="bolajp."] > img
 ##[href*="bolaketangkasan."] > img
@@ -10427,6 +10426,7 @@ _Indokasino.$image
 ##[href*="cekakses."] > img
 ##[href*="ceki899."] > img
 ##[href*="cekqq"] > img
+##[href*="ceme188"] > img
 ##[href*="cemejudi."] > img
 ##[href*="cemepkjazz."] > img
 ##[href*="cendanagaming."] > img
@@ -10436,6 +10436,7 @@ _Indokasino.$image
 ##[href*="cimbbet."] > img
 ##[href*="cinaqq."] > img
 ##[href*="cintacapsa."] > img
+##[href*="cintacasino."] > img
 ##[href*="citybet"] > img
 ##[href*="clc.la"] > img
 ##[href*="clickadu."] > img
@@ -10556,6 +10557,7 @@ _Indokasino.$image
 ##[href*="fortunebet99"] > img
 ##[href*="fullbet."] > img
 ##[href*="fullbet88."] > img
+##[href*="funbet77"] > img
 ##[href*="gadingpoker."] > img
 ##[href*="gadispoker."] > img
 ##[href*="gajah4d"] > img
@@ -10832,6 +10834,8 @@ _Indokasino.$image
 ##[href*="kodealam"] > img
 ##[href*="kodealam2."] > img
 ##[href*="koinhoki."] > img
+##[href*="koinmas88"] > img
+##[href*="koinmaspoker"] > img
 ##[href*="kokibet."] > img
 ##[href*="kokipoker99."] > img
 ##[href*="kokoqq"] > img
@@ -10869,11 +10873,13 @@ _Indokasino.$image
 ##[href*="lapakmovie."] > img
 ##[href*="lapakqq"] > img
 ##[href*="lapaksakong."] > img
+##[href*="larisqiu"] > img
 ##[href*="lautpoker."] > img
 ##[href*="layananqq"] > img
 ##[href*="layarqq."] > img
 ##[href*="lazabet"] > img
 ##[href*="lazabet."] > img
+##[href*="lenovopoker"] > img
 ##[href*="lexusdomino."] > img
 ##[href*="liberema3g."]
 ##[href*="liburpoker."] > img
@@ -11036,6 +11042,7 @@ _Indokasino.$image
 ##[href*="monasbet."] > img
 ##[href*="motorqq"] > img
 ##[href*="motorqq."] > img
+##[href*="mpo11."] > img
 ##[href*="mta77."] > img
 ##[href*="musim99."] > img
 ##[href*="musimnewqq"] > img
@@ -11076,6 +11083,7 @@ _Indokasino.$image
 ##[href*="obat-klg-herbal."] > img
 ##[href*="obatjogja."] > img
 ##[href*="obatpembesar"] > img
+##[href*="obatpenggugurcytotec"] > img
 ##[href*="obcbet."] > img
 ##[href*="obccash."] > img
 ##[href*="obipoker."] > img
@@ -11156,6 +11164,7 @@ _Indokasino.$image
 ##[href*="pokergolden."]
 ##[href*="pokergua."] > img
 ##[href*="pokerhost24."] > img
+##[href*="pokerhunter77"] > img
 ##[href*="pokerindo"] > img
 ##[href*="pokerindo88."] > img
 ##[href*="pokerintan."] > img
@@ -11203,6 +11212,7 @@ _Indokasino.$image
 ##[href*="qq338proses."] > img
 ##[href*="qq338super."] > img
 ##[href*="qq338tt."] > img
+##[href*="qq8821."] > img
 ##[href*="qqasia99"] > img
 ##[href*="qqasli."] > img
 ##[href*="qqboya."] > img
@@ -11259,6 +11269,7 @@ _Indokasino.$image
 ##[href*="royalflush"] > img
 ##[href*="royalkasino"] > img
 ##[href*="royalku."] > img
+##[href*="royalpk99"] > img
 ##[href*="royalpoker"] > img
 ##[href*="royalqq"] > img
 ##[href*="rumahbokep."] > img
@@ -11314,7 +11325,7 @@ _Indokasino.$image
 ##[href*="sepakbolagol."] > img
 ##[href*="serbakas88."] > img
 ##[href*="serbaqq."] > img
-##[href*="serbupoker."] > img
+##[href*="serbupoker"] > img
 ##[href*="sevenbola."] > img
 ##[href*="seventogel."] > img
 ##[href*="sgopoker."] > img
@@ -11368,6 +11379,8 @@ _Indokasino.$image
 ##[href*="surgawin"] > img
 ##[href*="surya4d."] > img
 ##[href*="suryaemas."] > img
+##[href*="susterimut"] > img
+##[href*="susterpk"] > img
 ##[href*="tahun-qq"] > img
 ##[href*="tahun99."] > img
 ##[href*="tahunqq"] > img
@@ -11406,6 +11419,7 @@ _Indokasino.$image
 ##[href*="togellounge"] > img
 ##[href*="togelmarket"] > img
 ##[href*="togelmaya."] > img
+##[href*="togelone"] > img
 ##[href*="togeltoto."] > img
 ##[href*="togeltoto8"]
 ##[href*="tokoqq"] > img
@@ -11431,6 +11445,7 @@ _Indokasino.$image
 ##[href*="tri7bet."] > img
 ##[href*="tribunbolaku."] > img
 ##[href*="trikqq."] > img
+##[href*="trio4dcom"] > img
 ##[href*="tuanbola."] > img
 ##[href*="tugupoker."] > img
 ##[href*="tujuhbet."] > img
@@ -11453,6 +11468,7 @@ _Indokasino.$image
 ##[href*="vbet188."] > img
 ##[href*="vbndr."] > img
 ##[href*="vcbola."] > img
+##[href*="vegas1001."] > img
 ##[href*="vegas303."] > img
 ##[href*="vegas77"] > img
 ##[href*="vegas78bet"] > img
@@ -11482,6 +11498,7 @@ _Indokasino.$image
 ##[href*="vodkapoker"] > img
 ##[href*="w22bet"] > img
 ##[href*="w88domino."] > img
+##[href*="w88hero."] > img
 ##[href*="wahana88"] > img
 ##[href*="wahanabet."] > img
 ##[href*="wahanatoto*."] > img
@@ -11492,8 +11509,7 @@ _Indokasino.$image
 ##[href*="waltpoker."] > img
 ##[href*="warnetbokep."] > img
 ##[href*="warung365."] > img
-##[href*="warungqiu."] > img
-##[href*="warungqiuqiu"] > img
+##[href*="warungqiu"] > img
 ##[href*="warungqq"] > img
 ##[href*="we585."] > img
 ##[href*="webajaib"] > img
@@ -11524,6 +11540,7 @@ _Indokasino.$image
 ##[href*="wongpkr."] > img
 ##[href*="wpbet365"] > img
 ##[href*="wwwsgopoker."] > img
+##[href*="wymbet168."] > img
 ##[href*="yoyopoker."] > img
 ##[href*="ysbindo."] > img
 ##[href*="ysbjaya88."] > img
@@ -11605,7 +11622,6 @@ _Indokasino.$image
 ##img[alt*="kampusbet"]
 ##img[alt*="lakibet"]
 ##img[alt*="novapoker"]
-##img[alt*="pasang iklan"]
 ##img[alt*="pesonaqq"]
 ##img[alt*="situs poker"]
 ##img[alt*="taruhan bola online"]
@@ -11759,6 +11775,7 @@ kabarnagari.com,pasbana.com###HTML6
 pasbana.com###HTML8
 inikebumen.net###HTML9
 kabargames.id###banner-home-top
+otosia.com###box-mobil-dijual
 jurnalkepri.com###content .entry-header > img[src^="http://jurnalkepri.com/"]
 faktabanten.co.id###fixedban
 taktiklampung.com###footer-wrapper
@@ -11768,23 +11785,33 @@ duajurai.co###text-5
 duajurai.co###text-7
 duajurai.co###text-9
 bola.net###top_leaderboard
+otosia.com###v5-leaderboard
+kapanlagi.com###v5-marcommpromotion
+kapanlagi.com###v5-marcommpromotion2
+otosia.com###v5-showcase1
+kapanlagi.com,otosia.com###v5-showcase2
+kapanlagi.com###v8-leaderboard
 tribunnews.com###wideskyscraper
 cendananews.com,sultrakini.com##.adloc-is-banner
-gerbangkepri.co.id,tempointeraktif.co##.ads
+gerbangkepri.co.id,gogirl.id,jalantikus.com,tempointeraktif.co##.ads
 kontan.co.id##.ads-r1
 detik.com##.adv
 bengkuluekspress.com##.adv-wrapper
-krjogja.com##.advertisement
+arenalte.com,krjogja.com##.advertisement
+arenalte.com##.arenalte-ads
+autonetmagz.com##.autonetmagz__meta--ads-elements
 beritagar.id##.banner--300x600
 kontan.co.id##.banner-adv-1
 kabargames.id##.banner-kanan
 kabargames.id##.banner-kiri
 beritagar.id##.banner300x250
 alasannews.com##.banneritem
+cosmogirl.co.id##.bnr
 detik.com##.bottom_banner
 harianbhirawa.com##.box-banner
 lampungpro.com##.cs-widget-banner-300x250
 detik.com##.detikads
+dream.co.id##.drm-banner-x
 suaramedannews.com##.e3lan
 beritakini.co##.funds
 detik.com##.gtm_newsfeed_ads
@@ -12719,19 +12746,28 @@ otakuindo.net#@##banner_ad
 ! 
 ! Memperbaiki kerusakan karena AdBlockID
 ! 
-@@-iklan.$domain=agency-iklan.com|pusatiklan.co.id
-@@/*pasangiklan*.$domain=pasangiklan.com|pasangiklangratis.id|pasangiklankompas.com|pasangiklankompasposkota.com
-@@/iklan-$domain=baktiartha.co.id|iklankoran.net|promozia.com|webiklan.com
+@@-iklan.$domain=agency-iklan.com|pasangiklankompasposkota.com|pusatiklan.co.id
+@@-pasang-iklan.
+@@/bnrs/*$domain=sebariklanonline.com
+@@/iklan-$domain=baktiartha.co.id|banyumedia.co.id|iklankoran.net|karyaiklan.co.id|muslim.or.id|pasangiklankompasposkota.com|promozia.com|webiklan.com
+@@/iklan-gratis-
+@@/iklan-gratis.
 @@/iklan/*$domain=pusatiklan.co.id
+@@/info-iklan.
+@@/pasang-iklan.
+@@/pasang_iklan_
 @@_iklan_$domain=pusatpemasanganiklan.com
+@@_iklan_gratis.
+@@_Pasangiklangratis_
 kostjakarta.net#@#a[href*="/iklan/"]
 ngarepp.com#@#.iklan
 pasangiklangratis.id#@#.iklan
-promozia.com#@#img[alt*="pasang iklan"]
 ! 
 ! Memperbaiki kerusakan karena EasyList
 ! 
 @@/ads/banner-$domain=promozia.com
 @@/advertising-$domain=advertising-indonesia.id
+@@/bnrs/*$domain=sebariklanbaris.net|sebariklanmassalpremium.com
 @@/mts_ad_sense/*$domain=onphpid.com
 @@://ads.$domain=ads.id|ads.kaskus.co.id
+sebariklanbaris.net#@#.content-ads
