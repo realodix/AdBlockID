@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201902140535
+! Version: 201902140605
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Feb 2019 05:35 UTC
+! Last modified: 14 Feb 2019 06:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -12765,9 +12765,22 @@ pasangiklangratis.id#@#.iklan
 ! 
 ! Memperbaiki kerusakan karena EasyList
 ! 
+@@.ads1-$domain=adnow.com
+@@.ads2-$domain=adnow.com
+@@.ads3-$domain=adnow.com
+@@.ads5-$domain=adnow.com
 @@/ads/banner-$domain=promozia.com
 @@/advertising-$domain=advertising-indonesia.id
 @@/bnrs/*$domain=sebariklanbaris.net|sebariklanmassalpremium.com
 @@/mts_ad_sense/*$domain=onphpid.com
+@@/wp-content/uploads/*$domain=adstarsmedia.co.id
 @@://ads.$domain=ads.id|ads.kaskus.co.id
 sebariklanbaris.net#@#.content-ads
+! 
+! Special
+! 
+@@||.ac.id^$generichide
+@@||.go.id^$generichide
+@@||.mil.id^$generichide
+@@||.my.id^$generichide
+@@||.sch.id^$generichide
