@@ -1,6 +1,6 @@
 # AdBlockID
 
-Total rules: 12,845
+Total rules: 12,865
 
 AdblockID adalah filter tambahan untuk [EasyList](https://github.com/easylist/easylist) dan [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
@@ -8,8 +8,8 @@ AdblockID adalah filter tambahan untuk [EasyList](https://github.com/easylist/ea
 ## Fitur Yang Tersedia
 1. Block iklan.
 2. Block popups.
-3. Block miner.
-4. Menghilangkan elemen website yang dirasa cukup menggangu.
+3. Block [crypto mining scripts](https://www.mycryptopedia.com/crypto-mining-scripts/).
+4. Menghilangkan element website yang dirasa cukup menggangu.
 
 
 ## Cara Menggunakan
