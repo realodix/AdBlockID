@@ -35,7 +35,7 @@ def gmtime(request):
 @pytest.fixture()
 def head(gmtime):
     """Typical start of the rendered list."""
-    version = time.strftime('%Y%m%d%H%M', gmtime())
+    version = time.strftime('%y.%m%d.%H%M', gmtime())
     return '[Adblock]\n! Version: {}\n'.format(version)
 
 
