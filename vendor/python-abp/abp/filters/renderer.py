@@ -17,6 +17,8 @@
 
 from __future__ import unicode_literals
 
+import base64
+import hashlib
 import itertools
 import logging
 import time
@@ -121,17 +123,20 @@ def _insert_version(lines):
     return itertools.chain([first_line, version], rest)
 
 
-def _remove_checksum(lines):
-    """Remove metadata comments giving a checksum.
-
-    Adblock Plus is no longer verifying checksums, so we don't have to
-    calculate the checksum for the resulting filter list. But we have
-    to strip them for compatibility with older versions of Adblock Plus
-    and other ad blockers which might still verify a checksum if given.
+def _insert_checksum(lines):
+    """Add checksum to the filter list.
+    See https://adblockplus.org/filters#special-comments for description
+    of the checksum algorithm.
     """
+    md5sum = hashlib.md5()
+
     for line in lines:
-        if line.type != 'metadata' or line.key.lower() != 'checksum':
-            yield line
+        if line.type != 'emptyline':
+            md5sum.update(line.to_string().encode('utf-8') + b'\n')
+        yield line
+
+    checksum = base64.b64encode(md5sum.digest()).rstrip(b'=')
+    yield Metadata('Checksum', checksum.decode('utf-8'))
 
 
 def _validate(lines):
@@ -173,8 +178,8 @@ def render_filterlist(name, sources, top_source=None):
     _logger.info('Rendering: %s', name)
     lines, default_source = _get_and_parse_fragment(name, sources, top_source)
     lines = _process_includes(sources, default_source, [name], lines)
-    for proc in [_process_timestamps, _insert_version, _remove_checksum,
-                 _validate]:
+    for proc in [_process_timestamps, _insert_version,
+                 _insert_checksum, _validate]:
         lines = proc(lines)
     return lines
 
