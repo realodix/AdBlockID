@@ -1,8 +1,8 @@
 # AdBlockID
 
-Total rules: 13,047
+Total rules: 13,061
 
-AdblockID adalah filter tambahan untuk [EasyList](https://github.com/easylist/easylist) dan [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
+AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
 
 ## Fitur Yang Tersedia
@@ -26,7 +26,7 @@ Perkebangan web di Indonesia begitu cepat, terutama web yang memajang iklan berk
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt), Anda membutuhkan:
 
 * [Python (2.7 atau 3.5+)](https://www.python.org/downloads/),
-* pip.
+* [pip](https://pypi.org/project/pip/).
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
