@@ -8,7 +8,6 @@
 /banner_$image,domain=bogornews.com|koranrakyat.co.id
 /banners.$image,domain=
 /whatsapp-image-$image,domain=totabuan.co|totabuan.news
-prfmnews.com
 ||adsimg.kompas.com^
 ||beritabali.com^*/banner/$image
 ||beritajakarta.id^*/banner/$image
@@ -44,6 +43,7 @@ prfmnews.com
 ||moralriau.com^*/banner-$image
 ||newrevive.detik.com^
 ||nusabali.com/super_images/*.gif$image
+||papuatoday.com^*/banner-$image
 ||prfmnews.com/images/*.gif$image
 ||pwbjlbz.com^$domain=kompas.com
 ||rmol.co/banner/$image
@@ -53,8 +53,10 @@ prfmnews.com
 ||suarasurabaya.net^*/banner/$image
 ||teropongsenayan.com^*/banner/$image
 ||tuntasonline.com^*/promotion/$image
+||valora.co.id^*/banner/$image
 ||wartaekonomi.co.id^*/online_banner/
 ||winnetnews.com/image/*/banner/$image
+||winnetnews.com/uploads/banner/$image
 ||zonasumut.com^*-300x200.$image
 !
 inikebumen.net###HTML1
@@ -89,6 +91,9 @@ solopos.com##.adcontainer
 cendananews.com,sultrakini.com##.adloc-is-banner
 gerbangkepri.co.id,gogirl.id,jalantikus.com,okezone.com,tempointeraktif.co##.ads
 kontan.co.id##.ads-r1
+winnetnews.com##.ads-slider
+sindonews.com##.adsload
+winnetnews.com##.adswrapper
 detik.com##.adv
 bengkuluekspress.com##.adv-wrapper
 arenalte.com,krjogja.com##.advertisement
@@ -119,6 +124,7 @@ tribunsumbar.com##.majalahpro-core-center-ads
 detik.com##.newsfeed-ads
 viva.co.id##.paralax_banner
 viva.co.id##.paralax_banner-detail
+medcom.id##.parallax_ads
 harianjogja.com##.size-300x250
 harianjogja.com##.sp-griya
 hotabis.com,jorongpos.com,jurnalsumbar.com,liputanbengkulu.com,teropongmetro.com,tobasatu.com##.td-a-rec
@@ -126,6 +132,7 @@ pedomanbengkulu.com##.td-header-rec-wrap
 newskaltim.com##.vc_single_image-img
 inilah.com##.wb-300x250
 kabar-cirebon.com##[href*=".jpg"]
+winnetnews.com##[href*="winnetnews.com/other/ads/"]
 duta.co##[href="#"] > img
 bogornews.com,zonabola.id##[href^="http://bit.ly/"] > img
 harianrakyatbengkulu.com##a[href*="/Advertisement/"]
@@ -138,7 +145,10 @@ valora.co.id##img[src^="http://www.valora.co.id/banner/"]
 ! Filters optimized for uBlock (https://github.com/uBlockOrigin/uAssets)
 kompas.com## + js(abort-current-inline-script.js, setTimeout, iframeTestTimeMS)
 kompas.com,tribunnews.com## + js(abort-on-property-read.js, $getWin)
+tabloidjubi.com##img[alt*="advertisement"]
 !
+@@/bplogo.$domain=beritapagi.co.id
 @@||kabarmakkah.com^$generichide
 @@||tribunislam.com^$generichide
 eramuslim.com#@##topAd
+radarmalang.id#@#.td-ad-background-link
