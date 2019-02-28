@@ -15,6 +15,7 @@
 !
 ! Cookie
 ###cookie-notice
+###eu-cookie-law
 ###js-gdpr-consent-banner
 ###modal-cookie
 ##.bs-gdpr-law
@@ -25,7 +26,9 @@
 ##.cc_container--open
 ##.cookie-notice-container
 ##.cookieBanner
+##.eu-cookie-law
 ##.modal-cookie
+##.widget_eu_cookie_law_widget
 !
 ! Telkom Indihome
 ! https://github.com/sentabi/telkom/blob/master/internet-positif.md
@@ -60,15 +63,14 @@
 !
 !###########################
 !# Google self promotion #
-!
-!- Google Chrome banner in IE
-google.co.id,google.com##div[aria-label="promo"]
-!- Google Chrome banner in non-IE browsers ---
+!--- Google Chrome banner in IE ----------------
+,google.co.id,google.com##div[aria-label="promo"]
+!--- Google Chrome banner in non-IE browsers ---
 ! Edge
 google.co.id,google.com###gbwa + * + .gb_g[role="dialog"][style="behavior:url(#default#userData)"]
 google.co.id,google.com#$#.pdp-psy > .gb_Lc.gb_g[data-ved]{display:none!important;}
 google.co.id,google.com#$#.pdp-psy[-ext-has='>.gb_Lc.gb_g[data-ved]'] + #searchform{top:20px;}
-! Google App ad on the Google seach page
+! Google App ad on the Google search page
 google.co.id,google.com##mobile-promo
 !
 google.co.id,google.com###prt div.pmoabs
@@ -80,11 +82,11 @@ google.co.id,google.com##.pdp-psyv
 google.co.id,google.com##.pmoabs
 google.co.id,google.com##div[class="gb_Xc gb_xc gb_g"][data-ved]
 ! Google Chrome banner at translate.google.com
-translate.google.co.id,translate.google.com##body > div[id="gb"][style="min-width: 750px;"] > div.gb_g
+translate.google.co.id,translate.google.com##header[role="banner"] > div.gb_se > div.gb_0c.gb_g
 translate.google.co.id,translate.google.com#$#body > div[class^="gb_"][id="gba"] { height: 60px!important; }
 ! Google Chrome banner at google.com/maps
-google.com,google.co.id#$##app-container > #pushdown > .gb_Cc.gb_g { display: none!important; }
-google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ #content-container { top:0px!important; }
+google.co.id,google.com#$##app-container > #pushdown > .gb_Cc.gb_g { display: none!important; }
+google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ #content-container { top: 0!important; }
 !
 !###########################
 ! Privacy

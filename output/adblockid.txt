@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0226.0515
+! Version: 19.0228.0446
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Feb 2019 05:15 UTC
+! Last modified: 28 Feb 2019 04:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -79,7 +79,6 @@
 /spaceads.
 _iklan-
 _iklan.
-_iklan_
 _iklanatas/
 _iklansidebar_
 _iklantengah/
@@ -1037,6 +1036,7 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||iklanhemat.com^$third-party
 ||iklanhoki.com^$third-party
 ||iklaninter.net^$third-party
+||ivastoor.com^
 ||jasaiklan.com^$third-party
 ||jayaiklan.com^$third-party
 ||jomys.xyz$script,third-party
@@ -1047,9 +1047,11 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||lokeriklan.com^$third-party
 ||masteriklan.net^$third-party
 ||mesiniklan.andipublisher.com^$third-party
+||mousheen.net^
 ||naetoris.pw^
 ||pasangiklan.com^$third-party
 ||pegel.pw^$image
+||phastoag.com^
 ||pondokiklan.com^$third-party
 ||ppc.buzz^$third-party
 ||publish.web.id^$third-party
@@ -1194,6 +1196,15 @@ klubwanita.com##span > center:-abp-contains(Sponsors Link)
 ||visitjateng.com^*/banner/banner-$image
 ||waralabakan.com^*/banner/$image
 ||yourjavascript.com/0653544211/lompatin.js
+! 
+! MOTOR
+||aripitstop.com/wp-content/uploads/*.gif$image
+||bmspeed7.com/wp-content/uploads/*.gif$image
+||bonsaibiker.com/wp-content/uploads/*.gif$image
+||files.wordpress.com/*.gif$domain=mariodevan.com
+||ridertua.com/wp-content/uploads/*/720x100-$image
+||tmcblog.com/wp-content/uploads/*.gif$image
+||warungasep.net/wp-content/uploads/*.gif$image
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/specific_hide.adbl ***
 sehatlega.com###iklan1
@@ -1262,7 +1273,7 @@ baliekbis.com##.textwidget > .img-hyperlink
 dulandroid.com,juragancipir.com##.topad
 covesia.com##.topbanner
 angkasareview.com##.widget_random_banner_widget
-ardisaz.com,danirachmat.com,iphincow.com,koreanindo.net,langitselatan.com,nonikhairani.com,warungasep.net##.wpa
+ardisaz.com,danirachmat.com,iphincow.com,koreanindo.net,langitselatan.com,nonikhairani.com##.wpa
 forumbitcoin.co.id,siapbisnis.net##[href^="http://bit.ly/"] > img
 jalantikus.com##[id*="-gpt-ad-"]
 jasasipil.com##[id^="post-body-"] > div:nth-of-type(1)
@@ -1284,6 +1295,9 @@ grid.id###head-banner-ads
 grid.id##.ads-mr
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(11)
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
+! 
+! MOTOR
+warungasep.net##.wpa
 ! ------------------------------------------------------------!
 ! *** abid:addons/annoyances.adbl ***
 ###onesignal-bell-container
@@ -1303,6 +1317,7 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 ! 
 ! Cookie
 ###cookie-notice
+###eu-cookie-law
 ###js-gdpr-consent-banner
 ###modal-cookie
 ##.bs-gdpr-law
@@ -1313,7 +1328,9 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 ##.cc_container--open
 ##.cookie-notice-container
 ##.cookieBanner
+##.eu-cookie-law
 ##.modal-cookie
+##.widget_eu_cookie_law_widget
 ! 
 ! Telkom Indihome
 ! https://github.com/sentabi/telkom/blob/master/internet-positif.md
@@ -1348,15 +1365,14 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 ! 
 ! ###########################
 ! # Google self promotion #
-! 
-! - Google Chrome banner in IE
-google.co.id,google.com##div[aria-label="promo"]
-! - Google Chrome banner in non-IE browsers ---
+! --- Google Chrome banner in IE ----------------
+,google.co.id,google.com##div[aria-label="promo"]
+! --- Google Chrome banner in non-IE browsers ---
 ! Edge
 google.co.id,google.com###gbwa + * + .gb_g[role="dialog"][style="behavior:url(#default#userData)"]
 google.co.id,google.com#$#.pdp-psy > .gb_Lc.gb_g[data-ved]{display:none!important;}
 google.co.id,google.com#$#.pdp-psy[-ext-has='>.gb_Lc.gb_g[data-ved]'] + #searchform{top:20px;}
-! Google App ad on the Google seach page
+! Google App ad on the Google search page
 google.co.id,google.com##mobile-promo
 ! 
 google.co.id,google.com###prt div.pmoabs
@@ -1368,11 +1384,11 @@ google.co.id,google.com##.pdp-psyv
 google.co.id,google.com##.pmoabs
 google.co.id,google.com##div[class="gb_Xc gb_xc gb_g"][data-ved]
 ! Google Chrome banner at translate.google.com
-translate.google.co.id,translate.google.com##body > div[id="gb"][style="min-width: 750px;"] > div.gb_g
+translate.google.co.id,translate.google.com##header[role="banner"] > div.gb_se > div.gb_0c.gb_g
 translate.google.co.id,translate.google.com#$#body > div[class^="gb_"][id="gba"] { height: 60px!important; }
 ! Google Chrome banner at google.com/maps
-google.com,google.co.id#$##app-container > #pushdown > .gb_Cc.gb_g { display: none!important; }
-google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ #content-container { top:0px!important; }
+google.co.id,google.com#$##app-container > #pushdown > .gb_Cc.gb_g { display: none!important; }
+google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ #content-container { top: 0!important; }
 ! 
 ! ###########################
 ! Privacy
@@ -1500,6 +1516,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||aizopowmtnho.com^
 ||ajaeihzlcwvn.com^
 ||ajfziqehnwvz.com^
+||ajizjpjkrnh.com^
 ||ajkjnofeqrra.bid^
 ||ajmggjgrardn.com^
 ||ajmwuweeif.com^
@@ -1700,9 +1717,11 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||axkiznybznfa.bid^
 ||axmxarqxbkc.com^
 ||axsczaklngkxx.com^
+||axvabgnr.com^
 ||axzrxkkklakka.com^
 ||ayhdwulehfdwn.com^
 ||ayjebauqdrys.com^
+||aykgxavgrooa.com^
 ||aykosfkx.bid^
 ||ayloqdal.bid^
 ||ayozhcgcsyun.com^
@@ -1728,6 +1747,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bajofdblygev.com^
 ||bakdsoarxjab.com^
 ||bakjtxvku.bid^
+||banuhqxbc.com^
 ||baommitouduxo.bid^
 ||baphruesqm.com^
 ||bardogjvsa.com^
@@ -1802,6 +1822,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bgfdrngowyy.com^
 ||bgfgaduyvocz.com^
 ||bgibeluywjhgb.com^
+||bgiiubagsuvv.com^
 ||bgpxrwjrbsjb.com^
 ||bgrojtcdymmcdr.com^
 ||bgtmceqoipodkv.com^
@@ -2298,11 +2319,13 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||cuchpagh.com^
 ||cuecxgwkjtan.com^
 ||cuhicevdjsfey.com^
+||cujsutkdbz.com^
 ||cukabtvyl.com^
 ||cukwbpne.com^
 ||cupzwcxgx.com^
 ||cuvbcwgenwytrk.bid^
 ||cuxsmovh.bid^
+||cvdvexais.com^
 ||cvffhevoebnz.com^
 ||cvhcrbbbfaa.com^
 ||cvhpuccaib.bid^
@@ -2545,6 +2568,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dojmlztmbrvp.com^
 ||doljrizlsem.bid^
 ||domdtvbhgg.com^
+||donhyxngg.com^
 ||dosanrnlq.com^
 ||douangvwl.com^
 ||dovltuzibsfs.com^
@@ -2897,6 +2921,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||esqjuilubnaoey.com^
 ||esrpxyahzna.bid^
 ||esznfpbro.com^
+||eszpmsipks.com^
 ||etbmvqjnfxtk.com^
 ||etbrjgpsadke.com^
 ||etggealva.com^
@@ -2980,6 +3005,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ezknqsblzmsl.com^
 ||ezqldmevi.com^
 ||ezuosstmbcle.com^
+||fabrtgzehf.com^
 ||facqgdunsgf.com^
 ||facsowlaufzk.com^
 ||faegbmhey.com^
@@ -3095,6 +3121,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fjszsffyfihqlg.com^
 ||fjuouqwxgbir.com^
 ||fjvolzrojowa.com^
+||fjwagiuqmeymw.com^
 ||fjxdsslczu.bid^
 ||fjxlbkwhtpil.com^
 ||fjyapvqvgjmwy.com^
@@ -3171,6 +3198,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fpzcaabzhvzz.com^
 ||fpzxmdjjpphzc.bid^
 ||fqazjwxovxlu.com^
+||fqbrdnpf.com^
 ||fqckdxjgle.com^
 ||fqemzrkwuiaq.bid^
 ||fqesuuyzhxpz.bid^
@@ -3277,6 +3305,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fwslcjmfdqyvmg.com^
 ||fwutbizwevr.com^
 ||fwvfntvmhhxx.bid^
+||fwwdmnkjg.com^
 ||fwwnbucwoc.bid^
 ||fwxmscriszl.bid^
 ||fwzlsugrflhh.com^
@@ -3465,6 +3494,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||gmquualzdmqtxp.com^
 ||gmutfgxdvwmtf.com^
 ||gmwqmjkggg.com^
+||gmxetthnzmqo.com^
 ||gnadhzstittd.com^
 ||gnaizrodp.com^
 ||gncfttutoiwwq.com^
@@ -3758,6 +3788,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hiypucxjvfka.com^
 ||hjeoncuvklqh.com^
 ||hjgmasrve.com^
+||hjihwmtsltqi.com^
 ||hjjdmohuzp.com^
 ||hjnekvux.com^
 ||hjnfurphlwsui.bid^
@@ -3793,6 +3824,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hmdmvaxmmwoso.bid^
 ||hmeojqyjoascs.com^
 ||hmepgymo.com^
+||hmgozryqbc.com^
 ||hmjkyzdmoxp.com^
 ||hmjtutipevtmg.com^
 ||hmkrfmtra.bid^
@@ -4161,6 +4193,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||iohyjoomzoufn.bid^
 ||ioighavxylne.com^
 ||ioitfufxdsxtq.bid^
+||ioiylgyf.com^
 ||iokggekuz.bid^
 ||iolzwhbf.bid^
 ||iomixrscvtw.bid^
@@ -4334,6 +4367,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jciieszytnk.bid^
 ||jcmdvfrn.com^
 ||jcnoeyqsdfrc.com^
+||jcsisvtb.com^
 ||jctszdppy.bid^
 ||jcwejhrrch.bid^
 ||jcytzfvrm.bid^
@@ -4428,6 +4462,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jjyysfxhn.com^
 ||jjzqygrh.com^
 ||jkawfxvh.com^
+||jkcvevwvgfopog.com^
 ||jkfgdkesrpx.bid^
 ||jkiicqewzn.com^
 ||jkiwvfgrsythrw.com^
@@ -4478,6 +4513,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jnlcnmin.bid^
 ||jnnjnuyiic.com^
 ||jnnmisngfscreq.bid^
+||jnnswtdifjgx.com^
 ||jnoaexgpdlnu.com^
 ||jnwsojzuahwbeq.com^
 ||jnxqlltlnezn.com^
@@ -4632,6 +4668,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kacfofrcndc.com^
 ||kadjwdpzxdxd.com^
 ||kahbkhlb.bid^
+||kaktokualscgea.com^
 ||kakywxgevuv.com^
 ||kalfiydydtnhxk.com^
 ||kallwqgnec.com^
@@ -4906,6 +4943,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kvikjeqepjrq.bid^
 ||kvkoqywl.com^
 ||kvmsbpzptwm.bid^
+||kvnldhrlw.com^
 ||kvootrjvinkuae.bid^
 ||kvpofpkxmlpb.com^
 ||kvprhbqnmszru.com^
@@ -4995,6 +5033,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lbpndcvhuqlm.com^
 ||lbtcymxcocwh.bid^
 ||lbtifiprfzy.com^
+||lburmovcjefv.com^
 ||lbytagcqxefsn.com^
 ||lceihiuarfqbn.bid^
 ||lcmkcvisyynkw.com^
@@ -5039,6 +5078,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lfzbgckyctztj.bid^
 ||lgbpcbddfs.bid^
 ||lgbshazoug.com^
+||lghrdwdl.com^
 ||lgisbsiocy.bid^
 ||lgjqgatg.com^
 ||lgkzfskybz.com^
@@ -5208,6 +5248,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lsgystgg.bid^
 ||lshwezesshks.com^
 ||lskzcjgerhzn.com^
+||lsmxicydlj.com^
 ||lsslotuojpud.com^
 ||lstkfdmmxbmv.com^
 ||ltaporjivped.com^
@@ -5311,6 +5352,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lzopoqzlihfbc.com^
 ||lzpqpstowpvz.bid^
 ||lzrfxzvfbkay.com^
+||lzscunjyovitc.com^
 ||lzsiojww.com^
 ||lzvnaaozpqyb.com^
 ||maboflgkaxqn.com^
@@ -5349,6 +5391,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||mcvyeitc.com^
 ||mcwvyuifwml.bid^
 ||mcyopesbusomqf.com^
+||mczemvlzkndplq.com^
 ||mczuljmdpysftg.com^
 ||mdagsecyvd.com^
 ||mdbdmbdrjaklht.bid^
@@ -5554,6 +5597,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||msiegurhgfyl.com^
 ||msisvvxmnpm.com^
 ||msjpmpumsf.bid^
+||msmaijsxlo.com^
 ||msmyjmkshh.bid^
 ||msoiqafieh.com^
 ||mspaimzv.com^
@@ -5940,6 +5984,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nycnjewyxex.com^
 ||nyfsjqxopdzvvm.bid^
 ||nyltsyud.com^
+||nypmjsgpmhd.com^
 ||nyrszeos.bid^
 ||nyskocbhfz.com^
 ||nytqlenw.com^
@@ -6218,6 +6263,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||owlmjcogunzx.com^
 ||owmldgrzsc.bid^
 ||owodfrquhqui.com^
+||owoeaicjtds.com^
 ||owqhtqryzggt.com^
 ||owqipeknkcudyi.bid^
 ||owqobhxvaack.com^
@@ -6385,6 +6431,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||plquutxxewil.com^
 ||plxtejszb.com^
 ||plyftjxmrxrk.com^
+||plzjcnyxcdl.com^
 ||pmachrxhrwkd.com^
 ||pmecfluqpkwjg.bid^
 ||pmgmbpuiblak.com^
@@ -6415,6 +6462,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||poaxupoqbw.com^
 ||poazvacfzbed.com^
 ||poewhatnvxydts.com^
+||pogdlwpmck.com^
 ||pohguiypgprqr.bid^
 ||poorybdbh.bid^
 ||pooxbpxm.com^
@@ -7131,6 +7179,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||rquagrre.com^
 ||rqufdlfe.bid^
 ||rqwozrkmtwiuri.com^
+||rqxjnkgcobp.com^
 ||rqxwisgin.com^
 ||rqyezhetbspk.com^
 ||rrbiprsifnmv.com^
@@ -7801,11 +7850,13 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||tsybqlldfsstw.bid^
 ||ttdaxwrryiou.com^
 ||ttdrlihuqgklvc.com^
+||ttdtuwbxgyveg.com^
 ||ttegjzxzxyetf.com^
 ||ttgwyqmuhfhx.com^
 ||tthxqtogskzp.com^
 ||ttmnngecelky.bid^
 ||ttqdlwzgpml.bid^
+||ttulyfbkatyzp.com^
 ||ttwiehwr.bid^
 ||ttxqfeuiakgn.bid^
 ||ttyvbqif.bid^
@@ -7878,6 +7929,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||tylzbdkjsjig.com^
 ||tyoaclrjeb.com^
 ||tytzcsgxpaywui.bid^
+||tyuawmgqsbz.com^
 ||tyvtfohnwmpu.bid^
 ||tyxihxxtpumgm.bid^
 ||tyxnmpfi.bid^
@@ -7912,6 +7964,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ubazpxeafwjr.com^
 ||ubecybzqf.bid^
 ||ubiqqzmldivih.bid^
+||ubjnuclsgxu.com^
 ||ubktdzjnjkpon.com^
 ||ubliwesgzq.bid^
 ||ubnmyycf.bid^
@@ -8117,6 +8170,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||uszpxpcoflkl.com^
 ||utbclxmcv.com^
 ||utfffrxmzuvy.com^
+||uthifuehb.com^
 ||utiiamqdsku.com^
 ||utjwhrahb.bid^
 ||utlpwxdt.com^
@@ -8146,6 +8200,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||uvlyzxml.com^
 ||uvmsfffedzzw.com^
 ||uvniygdwmoojfm.com^
+||uvppdseel.com^
 ||uvstluoomeys.bid^
 ||uvxaafcozjgh.com^
 ||uvyascqbm.bid^
@@ -8201,6 +8256,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||uzqtaxiorsev.com^
 ||uzsywcdthqplzv.bid^
 ||uzvjymcnwngwau.bid^
+||uzvuhhyymmkc.com^
 ||uzwweczttqlayd.com^
 ||uzxbnlwauycnp.bid^
 ||uzxyqxolrc.com^
@@ -8444,6 +8500,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vqvnavwaxiizc.bid^
 ||vqvqgfpc.com^
 ||vqxmeseasarc.com^
+||vqzqkhumdad.com^
 ||vrcjxjtco.bid^
 ||vreqpavawpbfl.bid^
 ||vrewpywootyu.com^
@@ -8456,6 +8513,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vrpkzrquqnhl.bid^
 ||vrrupikcfcf.com^
 ||vrsceilj.bid^
+||vrvyearwxo.com^
 ||vrwfujmni.bid^
 ||vrzparvhipmo.com^
 ||vsfagdicznrdsp.bid^
@@ -8465,6 +8523,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vsicchyqydlwb.com^
 ||vsrpztnxdejo.com^
 ||vsrsviytlb.com^
+||vsstaewjpqcymx.com^
 ||vsvdwpuomwjhd.com^
 ||vswaapygj.bid^
 ||vsxjjmyz.com^
@@ -8846,6 +8905,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||wwgysckwouvzkm.bid^
 ||wwiqinsra.bid^
 ||wwkowjxms.com^
+||wwmcuhvqaf.com^
 ||wwngdgldlsv.com^
 ||wwyblltamlcr.com^
 ||wwzchzpluwuon.com^
@@ -8988,6 +9048,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xiwhhcyzhtem.com^
 ||xjehskjzyedb.com^
 ||xjfaqocrss.bid^
+||xjjfgxdfpr.com^
 ||xjjjohojeeozv.com^
 ||xjompsubsozc.com^
 ||xjrjgfns.bid^
@@ -9154,6 +9215,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xxelvfyvgcjo.bid^
 ||xxhgzzinkrbbo.com^
 ||xxpfoxmvpjoh.bid^
+||xxqriuedmqzs.com^
 ||xxrniridsnzr.com^
 ||xxwpminhccoq.com^
 ||xxxdeducu.bid^
@@ -9375,6 +9437,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yovbkyylqlmkg.bid^
 ||yovqbcixogwc.com^
 ||yoxlrphhmphq.com^
+||yoxrhwtvyqt.com^
 ||yoywgmzjgtfl.com^
 ||ypcuhmevrq.bid^
 ||ypecrrktyo.com^
@@ -9447,6 +9510,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yvjdvcgomph.bid^
 ||yvlhxqxw.com^
 ||yvlmcehqt.com^
+||yvlrhnzid.com^
 ||yvmosixxo.com^
 ||yvmzmyol.bid^
 ||yvqdhpyaoike.bid^
@@ -9574,6 +9638,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zfjmdpvlvcidyd.bid^
 ||zfkkmayphqrw.com^
 ||zfmqywrpazlx.com^
+||zfoeiywwiqo.com^
 ||zfqpjxuycxdl.com^
 ||zftgljkhrdze.com^
 ||zfubrpobdf.bid^
@@ -9676,6 +9741,8 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zpkshggvjif.com^
 ||zplvjgpxvh.com^
 ||zpnbzxbiqann.com^
+||zpolivtjrhjquo.com^
+||zppkpktskuf.com^
 ||zprlpkabqlth.com^
 ||zprrfpczfpnh.com^
 ||zpsgqvvzcbni.com^
@@ -9686,6 +9753,7 @@ google.com,google.co.id#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zqbjcsodjiz.bid^
 ||zqddlgcrxjmwbz.bid^
 ||zqdvdygz.com^
+||zqeskyeg.com^
 ||zqijyjktaxc.bid^
 ||zqjfpxcgivkv.com^
 ||zqlkekbqp.com^
@@ -13064,12 +13132,14 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@/*.css$stylesheet,domain=danirachmat.com
 @@/*.ttf$font,domain=danirachmat.com
 @@/advertisement-$script,domain=duosia.id
-@@/advertisement.$script,domain=ikurniawan.com|rukim.id|samehadaku.tv
+@@/advertisement.$script,domain=ikurniawan.com|rukim.id|samehadaku.tv|wizardsubs.com
 @@/fuckadblock.js$domain=nandatrio.com
 @@/images/ads/*$domain=promozia.com
 @@/js/ads.$domain=iovoproduction.info
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@/pagead2.$script,domain=bloggerku.com|datasekolah.co.id|eirudo.com|hightech.web.id|mufasi.ga|unduh.in
+@@klikshowtime.com^$generichide
+@@tokusatsuindo.com^$generichide
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||adturl.com^$generichide
@@ -13134,6 +13204,7 @@ otakuindo.net#@##banner_ad
 ! Memperbaiki kerusakan karena AdBlockID
 ! 
 @@-iklan-$domain=otomedan.net|refrez.com
+@@-iklan-gratis-
 @@-iklan-gratis-$domain=~data.alexa.com
 @@-iklan-gratis.
 @@-iklan-massal.
@@ -13144,7 +13215,6 @@ otakuindo.net#@##banner_ad
 @@/belanja_iklan-
 @@/bnrs/*$domain=iklanbogor.com|sebariklanonline.com
 @@/cara-beriklan.
-@@/harga_iklan_
 @@/iklan-$domain=agency-iklan.com|baktiartha.co.id|banyumedia.co.id|doremindo.co.id|hartikaad.com|iklan.joglosemarnews.com|iklanet.co.id|iklankoran.net|karyaiklan.co.id|logique.co.id|muslim.or.id|pasangiklan.com|pasangiklankompasposkota.com|promozia.com|refrez.com|rumahdijual.com|webiklan.com
 @@/iklan-adwords-
 @@/iklan-adwords1.
@@ -13157,26 +13227,13 @@ otakuindo.net#@##banner_ad
 @@/iklan_baris.
 @@/iklan_gratis.
 @@/iklanbaris-gratis.
-@@/kelola_iklan_
 @@/pasang-iklan-
 @@/pasang-iklan.
 @@/pasang_iklan.
-@@/pasang_iklan_
 @@/pasangiklan.
 @@/space-iklan-
-@@=harga_iklan_
-@@=jasa_iklan_
-@@=kelola_iklan_
-@@=pasang_iklan_
 @@=pasangiklangratis_
-@@=pembuatan_iklan_
-@@_iklan_$domain=carmudi.co.id|pusatpemasanganiklan.com
-@@_iklan_gratis.
-@@_jasa_iklan_
-@@_pasang_iklan_
 @@_pasangiklangratis_
-@@_pembuatan_iklan_
-@@facebook.com/*_iklan_
 doremindo.co.id#@#.iklan
 jualo.com#@#[href*="/iklan-"] > img
 jualo.com#@#[href*="/iklan/"] > img
@@ -13201,4 +13258,4 @@ pendidikan.id#@#.iklan
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com^$generichide
 sebariklanbaris.net#@#.content-ads
-! Checksum: c/tqdY6xZ5TyZC32Bh8B1Q
+! Checksum: v32nUoLOWOaf0Gd32YUG1A
