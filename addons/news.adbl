@@ -8,7 +8,15 @@
 /banner_$image,domain=bogornews.com|koranrakyat.co.id
 /banners.$image,domain=
 /whatsapp-image-$image,domain=totabuan.co|totabuan.news
+||blogspot.com/*/Iklan*.$image,domain=investigasindo.com
+||blogspot.com/*/IMG-*-WA*.$image,domain=investigasindo.com
+||blogspot.com/*/WhatsApp*Image*.$image,domain=pasbana.com
+||pwbjlbz.com^$domain=kompas.com
+!
 ||adsimg.kompas.com^
+||bengkuluekspress.com/wp-content/uploads/*-banner-$image
+||bengkuluekspress.com/wp-content/uploads/*_Banner_$image
+||bengkuluvoice.com/wp-content/uploads/*/Benner-$image
 ||beritabali.com^*/banner/$image
 ||beritajakarta.id^*/banner/$image
 ||beritapagi.co.id/ads/$image
@@ -26,6 +34,8 @@
 ||haluankepri.com^*/banners/$image
 ||harianhaluan.com^*/banner/$image
 ||harianjogja.com^*/banner/$image
+||harianrakyatbengkulu.com/wp-content/uploads/*/Banner_$image
+||harianrakyatbengkulu.com/wp-content/uploads/*/WhatsApp-Image-$image
 ||hotabis.com/wp-content/uploads/*.gif
 ||iklan.beritajatim.com/$image
 ||iklan.sorotmedianusantara.com/*^$third-party
@@ -33,6 +43,7 @@
 ||inilah.com/*-banner*.html$subdocument
 ||inilahkoran.com^*/banners/$image
 ||kabar47.com/wp-content/uploads/*.gif
+||kalimantanpost.com/wp-content/uploads/*/Iklan*.$image
 ||kalimantanpost.com^*/400x400px-300x300.$image
 ||kba.one/files/sewaan/$image
 ||klikbalikpapan.co^*/img_iklan/$image
@@ -44,9 +55,11 @@
 ||newrevive.detik.com^
 ||nusabali.com/super_images/*.gif$image
 ||papuatoday.com^*/banner-$image
+||pedomanbengkulu.com/wp-content/uploads/*/IMG-*-WA*.$image
 ||prfmnews.com/images/*.gif$image
-||pwbjlbz.com^$domain=kompas.com
+||referensipublik.com/wp-content/uploads/*/banner-$image
 ||rmol.co/banner/$image
+||semarakpost.com/wp-content/uploads/*/BANER-$image
 ||solopos.com/banner/
 ||solopos.com^*/banner-$image
 ||suarapedia.com^*/banner/$image
@@ -55,8 +68,7 @@
 ||tuntasonline.com^*/promotion/$image
 ||valora.co.id^*/banner/$image
 ||wartaekonomi.co.id^*/online_banner/
-||winnetnews.com/image/*/banner/$image
-||winnetnews.com/uploads/banner/$image
+||winnetnews.com^*/banner/$image
 ||zonasumut.com^*-300x200.$image
 !
 inikebumen.net###HTML1
@@ -68,6 +80,7 @@ inikebumen.net###HTML4
 kabarnagari.com,pasbana.com###HTML6
 pasbana.com###HTML8
 inikebumen.net###HTML9
+detik.com###banner_top_detail
 otosia.com###box-mobil-dijual
 jurnalkepri.com###content .entry-header > img[src^="http://jurnalkepri.com/"]
 jambiupdate.co###custom-bar
@@ -109,11 +122,14 @@ cosmogirl.co.id##.bnr
 detik.com##.bottom_banner
 beritatotabuan.com,harianbhirawa.com##.box-banner
 lampungpro.com##.cs-widget-banner-300x250
+referensipublik.com##.custom-banners-theme-default_style
+referensipublik.com##.custom_banners_big_link
 detik.com##.detikads
 dream.co.id##.drm-banner-x
 suaramedannews.com##.e3lan
 beritakini.co##.funds
 detik.com##.gtm_newsfeed_ads
+semarakpost.com##.header-ad-section
 tangerangcorner.com##.header-adds
 jurnalbandung.com##.header-image
 ligaolahraga.com##.infeedcenter_homepage
@@ -126,6 +142,7 @@ viva.co.id##.paralax_banner
 viva.co.id##.paralax_banner-detail
 medcom.id##.parallax_ads
 harianjogja.com##.size-300x250
+detik.com##.skybanner
 harianjogja.com##.sp-griya
 hotabis.com,jorongpos.com,jurnalsumbar.com,liputanbengkulu.com,teropongmetro.com,tobasatu.com##.td-a-rec
 pedomanbengkulu.com##.td-header-rec-wrap
@@ -145,6 +162,7 @@ valora.co.id##img[src^="http://www.valora.co.id/banner/"]
 ! Filters optimized for uBlock (https://github.com/uBlockOrigin/uAssets)
 kompas.com## + js(abort-current-inline-script.js, setTimeout, iframeTestTimeMS)
 kompas.com,tribunnews.com## + js(abort-on-property-read.js, $getWin)
+kompas.com##^script:has-text(axtd)
 tabloidjubi.com##img[alt*="advertisement"]
 !
 @@/bplogo.$domain=beritapagi.co.id

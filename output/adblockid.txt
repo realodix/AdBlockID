@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0228.0446
+! Version: 19.0301.0626
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Feb 2019 04:46 UTC
+! Last modified: 01 Mar 2019 06:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -470,14 +470,17 @@ _996x50.gif
 ###Ad300B
 ###Box-Banner-ads
 ###Gadget-AdSense
+###Iklan-Melayang
+###Kolom-Iklan-728
 ###LeftFloatAds
 ###RightFloatAds
+###SidebarIklan-wrapper
 ###ad_bgbottomleft
 ###ad_bgbottomright
 ###ad_divRight
-###ad_global_below_navbar
-###adctn
+###ads-960-mid
 ###ads-pop
+###ads-vert-300
 ###ads_banner_left1
 ###adsground
 ###adsimgxatas
@@ -611,6 +614,9 @@ _996x50.gif
 ##.disads720px
 ##.dt-top-ads
 ##.fixed-ads
+##.fixed-ads-atas
+##.fixed-ads-bawah
+##.fixed-ads-tengah
 ##.forads
 ##.g-ads
 ##.gg-ads_wrapper
@@ -629,6 +635,7 @@ _996x50.gif
 ##.idmuvi-topbanner-aftermenu
 ##.idmuvi-topbanner-archive
 ##.idmuvi-topplayer
+##.iframeiklan
 ##.ikl-atas-artikel
 ##.ikl-bawah-artikel
 ##.ikl-big
@@ -674,6 +681,7 @@ _996x50.gif
 ##.islemag-ad-banner-content
 ##.islemag_content_ad
 ##.jx-ads
+##.kb-ads-dynamic
 ##.keep-adsme
 ##.kiwi-ad-sticky-wrapper
 ##.kiwiad-desktop-popup-300x600-overlay
@@ -1244,8 +1252,10 @@ polisionline.com###postfeature
 mangacanblog.com##.ad
 ads.id##.adManager
 teknobos.com##.adcontainer
+radioonline.co.id##.add-box-top
 cermati.com##.ads-container
 seniberpikir.com##.advads-before-content
+onlineradiobox.com##.banner--vertical
 rajamobil.com##.banner-billboard
 klikpenajam.com##.banner-item
 diskon.com##.banner-middle
@@ -1255,11 +1265,15 @@ heyriad.com##.banner-toped
 cgv.id##.banner-wrapper
 emerer.com##.banner_wrapper
 waralabakan.com##.banneritem
+radiotemansejati.com##.bannersinglefot
 unduh.in##.bannersingletop
 teknodiary.com##.googlepublisherads
+kaskus.co.id##.header__kasad
 jasabuatsurat.com##.idblog-topbanner
 traveltextonline.com##.imageblock-image
 carapedia.com##.img-banner
+kaskus.co.id##.kaskus-ads
+radiotemansejati.com##.ktz_banner
 medcom.id##.parallax_wrap
 jadwaltelevisi.com##.promo-banner
 pasardana.id##.sda-banner
@@ -1280,16 +1294,8 @@ jasasipil.com##[id^="post-body-"] > div:nth-of-type(1)
 indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
 sehatnomorsatu.com##a[id^="http"] > img
 andreasagung.com,centerklik.com,kostjakarta.com,nutrisi-pelangsing.com,tempat-kost.com##a[rel="nofollow"] > img
-aftermarketplus.id,anakui.com,blogdokter.net,boc.web.id,borukaro.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,klikmania.net,kostjakarta.net,maxmanroe.com,plaza-bisnis.com##a[target="_blank"] > img
+aftermarketplus.id,anakui.com,blogdokter.net,boc.web.id,borukaro.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,klikmania.net,kostjakarta.net,maxmanroe.com,plaza-bisnis.com,rakosa-fm.co.id##a[target="_blank"] > img
 iskrim.com##img[width="317"][height="89"]
-! 
-radioonline.co.id##.add-box-top
-onlineradiobox.com##.banner--vertical
-radiotemansejati.com##.bannersinglefot
-kaskus.co.id##.header__kasad
-kaskus.co.id##.kaskus-ads
-radiotemansejati.com##.ktz_banner
-rakosa-fm.co.id##a[target="_blank"] > img
 ! 
 grid.id###head-banner-ads
 grid.id##.ads-mr
@@ -1306,6 +1312,7 @@ warungasep.net##.wpa
 ##.sumome-image-sharer
 ##.sumome-share-client-wrapper
 /onesignal-modal.
+||20.detik.com/embed/*?smartautoplay=
 ||crowdynews.com^$third-party
 ||foxpush.com^$third-party
 ||izooto.com^$third-party
@@ -1498,6 +1505,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ahjljmxfxuet.com^
 ||ahkilcrublxn.bid^
 ||ahstrelgnh.com^
+||ahuivddkvrrebo.com^
 ||ahuosyyqprt.com^
 ||ahvnvtxbk.bid^
 ||ahwjxktemuyz.com^
@@ -1530,6 +1538,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ajzdkkzv.com^
 ||ajzxdeslpbnhp.bid^
 ||akbiokbinnzh.com^
+||akcdinzvcenhjh.com^
 ||akdzimverrss.com^
 ||akgustnmy.com^
 ||akmihtdbbz.com^
@@ -2133,8 +2142,10 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||cgdvsvczduzq.bid^
 ||cgjyesqhxzzm.com^
 ||cgkpwhkgjxo.com^
+||cglpmszvpzzxj.com^
 ||cglqqjxaaowb.com^
 ||cgmkpdqjnedb.com^
+||cgnfyfer.com^
 ||cgociipdf.com^
 ||cgrvnpkwuytts.com^
 ||cgtqfbnviajcx.com^
@@ -2147,6 +2158,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||chqulqxfghdz.com^
 ||chuvzwxbpf.bid^
 ||chvwtxtzmzbggo.com^
+||chxwlqtvgrw.com^
 ||chyfjrkstyzl.bid^
 ||chytrrvwvabg.com^
 ||chzashakbgds.com^
@@ -2428,6 +2440,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dcybolsar.bid^
 ||dcyeufoq.com^
 ||dcznhkojghrl.com^
+||ddbnikwub.com^
 ||ddczayne.bid^
 ||ddhnjkaojrcv.bid^
 ||ddjodgzhxyjtaa.bid^
@@ -2522,6 +2535,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dktaqipmquo.com^
 ||dkvblgxkihtys.bid^
 ||dkvzpqcqan.com^
+||dkxeorhjmua.com^
 ||dlahijuwjsv.com^
 ||dlemeyrkjy.com^
 ||dlganxfc.bid^
@@ -2928,6 +2942,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||etggiddfdaqd.com^
 ||etglnloj.com^
 ||etizspyjmjhxo.com^
+||etkdximarcsq.com^
 ||etkhujhmhjix.com^
 ||etprpfuw.bid^
 ||etsqitgro.bid^
@@ -3182,6 +3197,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fpbmjwoebzby.com^
 ||fpcptdqmjlnlu.com^
 ||fpdsavexteno.com^
+||fpfivothg.com^
 ||fpguuwnpkvqsq.bid^
 ||fpluhtibx.com^
 ||fpnxicejwel.com^
@@ -3255,6 +3271,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ftisvrpsfu.bid^
 ||ftjrekbpjkwe.com^
 ||ftodxdoolvdm.com^
+||ftqgkcmbkptohh.com^
 ||ftqhgapqugv.bid^
 ||fttsgimpiagrwa.com^
 ||ftttziizhuplfj.com^
@@ -4088,6 +4105,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ifbhceoxx.com^
 ||ifdmdfqysaacqa.com^
 ||ifecuwzjajkiq.com^
+||iffzxqnhd.com^
 ||ifgnsrtjcz.com^
 ||iflndvke.com^
 ||ifmobkrjonnm.com^
@@ -4334,6 +4352,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||izwzyhlm.com^
 ||izxdpodiowdgp.bid^
 ||jabcdkwmwnek.com^
+||jacmnkcusf.com^
 ||jacroxrssmme.bid^
 ||jaihowgr.com^
 ||jairtejvkqiux.com^
@@ -4367,6 +4386,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jciieszytnk.bid^
 ||jcmdvfrn.com^
 ||jcnoeyqsdfrc.com^
+||jcrqhscfqqbgby.com^
 ||jcsisvtb.com^
 ||jctszdppy.bid^
 ||jcwejhrrch.bid^
@@ -4661,6 +4681,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jzjhcpdf.com^
 ||jzllgntkazui.com^
 ||jzlzdnvvktcf.com^
+||jzqvmpkppjlgc.com^
 ||jzthapvjlq.bid^
 ||jzurzhjqrp.com^
 ||jzvuglclkdnb.bid^
@@ -4988,6 +5009,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kxyevjvmalerq.bid^
 ||kxzmmtdx.com^
 ||kyckfuuzdzmsv.bid^
+||kycsebgx.com^
 ||kyegtutis.bid^
 ||kyelvsyayysa.com^
 ||kyfekvgsyraz.bid^
@@ -5196,6 +5218,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lowqnzsxtmvb.bid^
 ||loxmetwdjrmh.com^
 ||lpbhbwpbpnl.com^
+||lpbuaqfgwkzrep.com^
 ||lpdeuhyakoits.bid^
 ||lpiqwtsuduhh.com^
 ||lplqyocxmify.com^
@@ -6591,6 +6614,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||pyjjxogzlzcxii.bid^
 ||pykexoeeibq.com^
 ||pyscgael.bid^
+||pyubjvvdsrja.com^
 ||pzcpotzdkfyn.com^
 ||pzfittkdqrrsa.com^
 ||pzkqiwezugsucg.com^
@@ -6709,6 +6733,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qgnakeddgtdw.com^
 ||qgraprebabxo.com^
 ||qgrycwxbn.com^
+||qgslgwfxar.com^
 ||qgtbxtex.com^
 ||qguirbzulwmdm.bid^
 ||qgxrmkbzpm.com^
@@ -6893,6 +6918,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qukqptxilr.com^
 ||qulsqiqrev.com^
 ||qumzxkpexf.com^
+||qunnvfhdgfm.com^
 ||qupiinlyjuf.com^
 ||qupycbhfvqtj.bid^
 ||quqyiobevrc.com^
@@ -7021,6 +7047,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||realnwspfbumn.com^
 ||regbigltd.bid^
 ||regqrfuvncqcm.com^
+||reiqwxxd.com^
 ||rejbqhagczm.com^
 ||relnocyyxhpjb.com^
 ||repefwairfkx.com^
@@ -7043,6 +7070,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||rfnzncprr.bid^
 ||rfozndpggjvlm.bid^
 ||rfpnlsbbu.com^
+||rfrsnqen.com^
 ||rfvicvayyfsp.com^
 ||rfvilsmvo.bid^
 ||rfvnhjnnkifyx.com^
@@ -7686,6 +7714,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||thbuhcnpt.com^
 ||thcumizbjxnp.bid^
 ||thibzxxtotyqg.bid^
+||thivsxubn.com^
 ||thjlnyagmxrbt.com^
 ||thjuvpgdmjj.com^
 ||thncnkzupxwlbo.bid^
@@ -7962,6 +7991,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||uaxdkesuxtvu.com^
 ||uazyqjztrhi.bid^
 ||ubazpxeafwjr.com^
+||ubdudsdfcll.com^
 ||ubecybzqf.bid^
 ||ubiqqzmldivih.bid^
 ||ubjnuclsgxu.com^
@@ -8521,6 +8551,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vsgumkkc.bid^
 ||vshsjxfjehju.com^
 ||vsicchyqydlwb.com^
+||vsmqqjwwnoshrj.com^
 ||vsrpztnxdejo.com^
 ||vsrsviytlb.com^
 ||vsstaewjpqcymx.com^
@@ -8646,6 +8677,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||wcgquaaknuha.com^
 ||wcksovhmd.com^
 ||wclnrjxefu.bid^
+||wcobqyeqpckkzh.com^
 ||wcoloqvrhhcf.com^
 ||wcqlebpges.com^
 ||wcwzzauws.com^
@@ -9313,6 +9345,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yecxfxsbkb.com^
 ||yefttzzn.com^
 ||yejkuusxijvzz.com^
+||yennwmfmbnfz.com^
 ||yenrsvttsfmqd.bid^
 ||yeonenukejm.bid^
 ||yeouakimhubraf.com^
@@ -9610,6 +9643,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zcchnqgq.com^
 ||zcczlrtbbx.com^
 ||zcczvunkmmcg.com^
+||zcfbwlgydxo.com^
 ||zcinaovb.com^
 ||zcjxeitlmnuq.com^
 ||zclivukslm.bid^
@@ -9747,6 +9781,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zprrfpczfpnh.com^
 ||zpsgqvvzcbni.com^
 ||zpwqekgztngd.bid^
+||zpwtylxpfeje.com^
 ||zpxlmtujszhixe.com^
 ||zpznbracwdai.com^
 ||zpzsdmpvqudhsz.com^
@@ -9952,6 +9987,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*bandarjudiqq*.$image
 /*bape-qq*.$image
 /*bapeqq*.$image
+/*baru666.*.$image
 /*batman303*.$image
 /*batman88*.$image
 /*bbm88*.$image
@@ -10719,6 +10755,7 @@ _penggugur_kandungan_$image
 ##[href*="amanqq."] > img
 ##[href*="amdbet"] > img
 ##[href*="amdbet88."] > img
+##[href*="andpoker."] > img
 ##[href*="anekaqq."] > img
 ##[href*="angkajitutogel."] > img
 ##[href*="angkakembar."] > img
@@ -11201,6 +11238,7 @@ _penggugur_kandungan_$image
 ##[href*="imcqq88."] > img
 ##[href*="impian3."] > img
 ##[href*="incar-qq"] > img
+##[href*="incarkiu."] > img
 ##[href*="incarq"] > img
 ##[href*="incarsakong."] > img
 ##[href*="incrasebux."] > img
@@ -11273,6 +11311,7 @@ _penggugur_kandungan_$image
 ##[href*="itupk."] > img
 ##[href*="itupoker77."] > img
 ##[href*="ituqq."] > img
+##[href*="ituqqs."] > img
 ##[href*="itutoto."] > img
 ##[href*="ivopoker."] > img
 ##[href*="jackpotgua."] > img
@@ -11681,6 +11720,7 @@ _penggugur_kandungan_$image
 ##[href*="pabrikpoker."] > img
 ##[href*="pamanbolanet"] > img
 ##[href*="pamelapoker."] > img
+##[href*="panen123."] > img
 ##[href*="panenpk2."] > img
 ##[href*="panenpoker."] > img
 ##[href*="pangerantoto"] > img
@@ -12342,7 +12382,15 @@ sukamovie.*##.sukam-bawah
 /banner_$image,domain=bogornews.com|koranrakyat.co.id
 /banners.$image,domain=
 /whatsapp-image-$image,domain=totabuan.co|totabuan.news
+||blogspot.com/*/Iklan*.$image,domain=investigasindo.com
+||blogspot.com/*/IMG-*-WA*.$image,domain=investigasindo.com
+||blogspot.com/*/WhatsApp*Image*.$image,domain=pasbana.com
+||pwbjlbz.com^$domain=kompas.com
+! 
 ||adsimg.kompas.com^
+||bengkuluekspress.com/wp-content/uploads/*-banner-$image
+||bengkuluekspress.com/wp-content/uploads/*_Banner_$image
+||bengkuluvoice.com/wp-content/uploads/*/Benner-$image
 ||beritabali.com^*/banner/$image
 ||beritajakarta.id^*/banner/$image
 ||beritapagi.co.id/ads/$image
@@ -12360,6 +12408,8 @@ sukamovie.*##.sukam-bawah
 ||haluankepri.com^*/banners/$image
 ||harianhaluan.com^*/banner/$image
 ||harianjogja.com^*/banner/$image
+||harianrakyatbengkulu.com/wp-content/uploads/*/Banner_$image
+||harianrakyatbengkulu.com/wp-content/uploads/*/WhatsApp-Image-$image
 ||hotabis.com/wp-content/uploads/*.gif
 ||iklan.beritajatim.com/$image
 ||iklan.sorotmedianusantara.com/*^$third-party
@@ -12367,6 +12417,7 @@ sukamovie.*##.sukam-bawah
 ||inilah.com/*-banner*.html$subdocument
 ||inilahkoran.com^*/banners/$image
 ||kabar47.com/wp-content/uploads/*.gif
+||kalimantanpost.com/wp-content/uploads/*/Iklan*.$image
 ||kalimantanpost.com^*/400x400px-300x300.$image
 ||kba.one/files/sewaan/$image
 ||klikbalikpapan.co^*/img_iklan/$image
@@ -12378,9 +12429,11 @@ sukamovie.*##.sukam-bawah
 ||newrevive.detik.com^
 ||nusabali.com/super_images/*.gif$image
 ||papuatoday.com^*/banner-$image
+||pedomanbengkulu.com/wp-content/uploads/*/IMG-*-WA*.$image
 ||prfmnews.com/images/*.gif$image
-||pwbjlbz.com^$domain=kompas.com
+||referensipublik.com/wp-content/uploads/*/banner-$image
 ||rmol.co/banner/$image
+||semarakpost.com/wp-content/uploads/*/BANER-$image
 ||solopos.com/banner/
 ||solopos.com^*/banner-$image
 ||suarapedia.com^*/banner/$image
@@ -12389,8 +12442,7 @@ sukamovie.*##.sukam-bawah
 ||tuntasonline.com^*/promotion/$image
 ||valora.co.id^*/banner/$image
 ||wartaekonomi.co.id^*/online_banner/
-||winnetnews.com/image/*/banner/$image
-||winnetnews.com/uploads/banner/$image
+||winnetnews.com^*/banner/$image
 ||zonasumut.com^*-300x200.$image
 ! 
 inikebumen.net###HTML1
@@ -12402,6 +12454,7 @@ inikebumen.net###HTML4
 kabarnagari.com,pasbana.com###HTML6
 pasbana.com###HTML8
 inikebumen.net###HTML9
+detik.com###banner_top_detail
 otosia.com###box-mobil-dijual
 jurnalkepri.com###content .entry-header > img[src^="http://jurnalkepri.com/"]
 jambiupdate.co###custom-bar
@@ -12443,11 +12496,14 @@ cosmogirl.co.id##.bnr
 detik.com##.bottom_banner
 beritatotabuan.com,harianbhirawa.com##.box-banner
 lampungpro.com##.cs-widget-banner-300x250
+referensipublik.com##.custom-banners-theme-default_style
+referensipublik.com##.custom_banners_big_link
 detik.com##.detikads
 dream.co.id##.drm-banner-x
 suaramedannews.com##.e3lan
 beritakini.co##.funds
 detik.com##.gtm_newsfeed_ads
+semarakpost.com##.header-ad-section
 tangerangcorner.com##.header-adds
 jurnalbandung.com##.header-image
 ligaolahraga.com##.infeedcenter_homepage
@@ -12460,6 +12516,7 @@ viva.co.id##.paralax_banner
 viva.co.id##.paralax_banner-detail
 medcom.id##.parallax_ads
 harianjogja.com##.size-300x250
+detik.com##.skybanner
 harianjogja.com##.sp-griya
 hotabis.com,jorongpos.com,jurnalsumbar.com,liputanbengkulu.com,teropongmetro.com,tobasatu.com##.td-a-rec
 pedomanbengkulu.com##.td-header-rec-wrap
@@ -12479,6 +12536,7 @@ valora.co.id##img[src^="http://www.valora.co.id/banner/"]
 ! Filters optimized for uBlock (https://github.com/uBlockOrigin/uAssets)
 kompas.com## + js(abort-current-inline-script.js, setTimeout, iframeTestTimeMS)
 kompas.com,tribunnews.com## + js(abort-on-property-read.js, $getWin)
+kompas.com##^script:has-text(axtd)
 tabloidjubi.com##img[alt*="advertisement"]
 ! 
 @@/bplogo.$domain=beritapagi.co.id
@@ -13258,4 +13316,4 @@ pendidikan.id#@#.iklan
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com^$generichide
 sebariklanbaris.net#@#.content-ads
-! Checksum: v32nUoLOWOaf0Gd32YUG1A
+! Checksum: /l2MujcTLQtdMeJxZ+Hqlw
