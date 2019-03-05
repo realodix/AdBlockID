@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0304.1806
+! Version: 19.0305.1747
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Mar 2019 18:06 UTC
+! Last modified: 05 Mar 2019 17:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -221,6 +221,7 @@ _promosi.
 -800X70.
 -80x300-
 -825-x-76.
+-825x76.
 -85x445.
 -936x60.
 -950x240_
@@ -640,6 +641,7 @@ _996x50.gif
 ##.ads__banner
 ##.ads__boxr
 ##.ads__horizontal
+##.ads__r1
 ##.ads_image
 ##.ads_top_728
 ##.ads_top_nav
@@ -704,6 +706,8 @@ _996x50.gif
 ##.g-ads
 ##.gg-ads_wrapper
 ##.googlepublisherads
+##.gridlove-ad
+##.gridlove-ad-below-header
 ##.head-advertisement
 ##.headads
 ##.header-advertisement
@@ -1165,13 +1169,12 @@ _996x50.gif
 ##object[width="982"][height="150"]
 ##object[width="990"][height="206"]
 ! *** abid:AdBlockID/css_extended.adbl ***
-fazar.net##.widget:-abp-contains(Advertisement)
-fazar.net##.widget:-abp-contains(Our Sponsor)
-! 
 arenasmartphone.com##.entry-content > div:-abp-contains(Advertisement)
-jurnalkepri.com##.widget:-abp-contains(Advertisement)
+fazar.net,jurnalkepri.com##.widget:-abp-contains(Advertisement)
+fazar.net##.widget:-abp-contains(Our Sponsor)
 swara-bengkulu.com##.widget:-abp-contains(SPACE AVAILABLE)
 tampilcantik.com##.widget:-abp-contains(Sponsored)
+instep.id##.widget:-abp-contains(advertisement)
 mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/adservers.adbl ***
@@ -1366,6 +1369,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||motogokil.com/wp-content/uploads/*.gif$image
 ||motorexpertz.com/uploads/*.gif
 ||neumanga.tv/uploads/*.gif$image
+||ofiskita.com^*/Ad_Ed2/$image
 ||otobalancing.net/wp-content/uploads/*.gif$image
 ||potretbikers.com/wp-content/uploads/*.gif$image
 ||rawcdn.githack.com/riandiramdani/safelinku.com/*/script.js
@@ -1448,6 +1452,7 @@ traveltextonline.com##.imageblock-image
 carapedia.com##.img-banner
 kaskus.co.id##.kaskus-ads
 radiotemansejati.com##.ktz_banner
+ofiskita.com##.longAddsBox
 smartphoneku.com##.margin-right-40.left
 medcom.id##.parallax_wrap
 jadwaltelevisi.com##.promo-banner
@@ -1458,6 +1463,7 @@ musiklib.org##.sidebar-sponsor
 mydramalist.com##.spnsr
 mydramalist.com##.spnsr-wrapper
 cermati.com##.sticky-banner
+duniafintech.com##.td-a-rec
 baliekbis.com##.textwidget > .img-hyperlink
 dulandroid.com,juragancipir.com##.topad
 covesia.com##.topbanner
@@ -1469,7 +1475,7 @@ jasasipil.com##[id^="post-body-"] > div:nth-of-type(1)
 indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
 sehatnomorsatu.com##a[id^="http"] > img
 andreasagung.com,centerklik.com,kostjakarta.com,nutrisi-pelangsing.com,tempat-kost.com##a[rel="nofollow"] > img
-aftermarketplus.id,anakui.com,blogdokter.net,boc.web.id,borukaro.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,klikmania.net,kostjakarta.net,maxmanroe.com,plaza-bisnis.com,rakosa-fm.co.id##a[target="_blank"] > img
+aftermarketplus.id,anakui.com,blogdokter.net,boc.web.id,borukaro.com,coinvestasi.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,klikmania.net,kostjakarta.net,maxmanroe.com,plaza-bisnis.com,rakosa-fm.co.id##a[target="_blank"] > img
 iskrim.com##img[width="317"][height="89"]
 ! 
 grid.id###head-banner-ads
@@ -10892,6 +10898,7 @@ _penggugur_kandungan_$image
 ##[href*="162.213.253.73"] > img
 ##[href*="166.62.6.160"] > img
 ##[href*="167.114.87.240"] > img
+##[href*="168agen."] > img
 ##[href*="168liga."] > img
 ##[href*="168wbtoto."] > img
 ##[href*="173.199.138.212"] > img
@@ -12661,6 +12668,7 @@ sukamovie.*##.sukam-bawah
 ||idxxi.*.gif$image
 ||indexmovie.biz/assets/*.gif$image
 ||indexmovie.biz/iframe/content.php$first-party,subdocument
+||jwplayer21.com/images/*.gif$image
 ! 
 @@/indoxxi-logo-
 @@||animeku.tv^$generichide
@@ -12773,6 +12781,7 @@ duajurai.co###text-5
 duajurai.co###text-7
 duajurai.co###text-9
 bola.net###top_leaderboard
+beritasatu.com###topbanner
 otosia.com###v5-leaderboard
 kapanlagi.com###v5-marcommpromotion
 kapanlagi.com###v5-marcommpromotion2
@@ -13633,4 +13642,4 @@ pendidikan.id#@#.iklan
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com^$generichide
 sebariklanbaris.net#@#.content-ads
-! Checksum: R9igG+pl9nT8gvMMuPmLGQ
+! Checksum: eLVsNrreQnTfL7RaWFJdoQ
