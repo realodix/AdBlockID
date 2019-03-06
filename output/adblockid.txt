@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0306.1810
+! Version: 19.0306.1850
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Mar 2019 18:10 UTC
+! Last modified: 06 Mar 2019 18:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -479,6 +479,7 @@ _700x70.
 _710x210.gif
 _712x72.gif
 _720x111.gif
+_728_x_90.
 _730x80.gif
 _750x80.
 _760x60.gif
@@ -895,6 +896,7 @@ _996x50.gif
 ##.set-ads-468
 ##.sf-ad-header-below
 ##.single_ad_728x90
+##.skidAds
 ##.sponsor_ads
 ##.stay-ads-left
 ##.stay-ads-right
@@ -1354,7 +1356,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 -ads-$image,domain=inikpop.com
 -banner.$image,domain=jurnalotaku.com
 -banner/$image,domain=acmobilindonesia.com
-.gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|duniabaca.com|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|horassumutnews.com|hotabis.com|idfl.biz|idfl.info|idfl.me|idfl.my.id|kombatch.com|komiku.net|mangashiro.net|monkeymotoblog.com|motogokil.com|motorexpertz.com|neumanga.tv|otobalancing.net|potretbikers.com|selebuzz.co.id|smallencode.com
+.gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|duniabaca.com|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|horassumutnews.com|hotabis.com|idfl.biz|idfl.info|idfl.me|idfl.my.id|kombatch.com|komiku.net|mangashiro.net|neumanga.tv|selebuzz.co.id|smallencode.com
 /*banner*.$image,domain=anangcozz.com|backpackstory.me|desainstudio.com|ilmukita.org|jejamo.com|mariodevan.com|motomazine.com|pertamax7.com|zonabola.id
 /ad-$image,domain=theairline.co.id
 /banner-$image,domain=jagokata.com
@@ -1375,17 +1377,23 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||kxcdn.com/assets/*-ads-$image
 ||lenterapendidikan.com/assets/img/loader.jpg$image
 ||lenterapendidikan.com^*/banner/$image
-||modifikasi.com/images/banner/
 ||ofiskita.com^*/Ad_Ed2/$image
 ||plaza-bisnis.com/wp-content/uploads/*-Banner.$image
 ||rri.co.id^*/banner/$image
 ||static.domainesia.com/assets/images/afiliasi/
 ||suckittrees.com^*/banner.
-||visitjateng.com^*/banner/banner-$image
+||visitjateng.com^*/banner/$image
 ||waralabakan.com^*/banner/$image
 ! 
-! MOTOR
-.gif$image,domain=aripitstop.com|bmspeed7.com|bonsaibiker.com|mariodevan.com|motorrio.com|tmcblog.com|warungasep.net
+! OTOMOTIF
+.gif$image,domain=aripitstop.com|bmspeed7.com|bonsaibiker.com|mariodevan.com|monkeymotoblog.com|motogokil.com|motorexpertz.com|motorrio.com|otobalancing.net|potretbikers.com|tmcblog.com|warungasep.net
+||balapmotor.net^*/*Banner.$image
+||balapmotor.net^*/Banner-$image
+||duniascooter.com/piciklan/$image
+||modifikasi.com/images/banner/
+||motoraceid.com/piciklan/$image
+||otomotifxtra.com/piciklan/$image
+||otomotifzone.com/banner/$image
 ||ridertua.com/wp-content/uploads/*/720x100-$image
 ! 
 ! 
@@ -1415,7 +1423,6 @@ bangbil.com,polisiinternet.com###HTML2
 ekagoblog.com,kompiajaib.com,polisiinternet.com###HTML3
 berkonten.com###HTML4
 bloggerszones.com###HTML9
-mobilwow.com###add
 hukumonline.com###adsa2
 hukumonline.com###adsa3
 hukumonline.com###adsb2b3
@@ -1428,7 +1435,6 @@ kabargames.id###banner-home-top
 hdtvku.com###bannerkategoriheader
 kotakgame.com###bannertheme_left
 kotakgame.com###bannertheme_right
-mobilwow.com###bottombanner
 mangacanblog.com,pecintakomik.com###btm_banner
 tribunjualbeli.com###div-Top-Leaderboard
 komiku.net###floatads3
@@ -1446,7 +1452,6 @@ cermati.com##.ads-container
 seniberpikir.com##.advads-before-content
 kurazone.net##.anuads
 onlineradiobox.com##.banner--vertical
-rajamobil.com##.banner-billboard
 klikpenajam.com##.banner-item
 diskon.com##.banner-middle
 ngopibareng.id##.banner-timeline
@@ -1485,7 +1490,6 @@ forumbitcoin.co.id,kazefuri.web.id,siapbisnis.net##[href*="//bit.ly/"] > img
 jalantikus.com##[id*="-gpt-ad-"]
 jasasipil.com##[id^="post-body-"] > div:nth-of-type(1)
 arlinadzgn.com##[src^="data:image/png;base64,"]
-indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
 sehatnomorsatu.com##a[id^="http"] > img
 andreasagung.com,centerklik.com,kostjakarta.com,nutrisi-pelangsing.com,tempat-kost.com##a[rel="nofollow"] > img
 aftermarketplus.id,anakui.com,blogdokter.net,boc.web.id,borukaro.com,coinvestasi.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,klikmania.net,kostjakarta.net,maxmanroe.com,plaza-bisnis.com,rakosa-fm.co.id##a[target="_blank"] > img
@@ -1496,8 +1500,13 @@ grid.id##.ads-mr
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(11)
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
 ! 
-! MOTOR
+! OTOMOTIF
+mobilwow.com###add
+mobilwow.com###bottombanner
+rajamobil.com##.banner-billboard
 warungasep.net##.wpa
+indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
+otomotifmax.com##a[target="_blank"] > img
 ! ------------------------------------------------------------!
 ! *** abid:addons/annoyances.adbl ***
 ###onesignal-bell-container
@@ -13612,7 +13621,7 @@ otakuindo.net#@##banner_ad
 @@-reseller-iklan-$domain=~data.alexa.com
 @@/ayopasangiklan.
 @@/belanja_iklan-
-@@/bnrs/*$domain=iklanbogor.com|sebariklanonline.com
+@@/bnrs/*$domain=iklanbogor.com|iklanpopuler.com|sebariklanonline.com
 @@/cara-beriklan.
 @@/iklan-$domain=agency-iklan.com|baktiartha.co.id|banyumedia.co.id|doremindo.co.id|hartikaad.com|iklan.joglosemarnews.com|iklanet.co.id|iklankoran.net|karyaiklan.co.id|logique.co.id|muslim.or.id|pasangiklan.com|pasangiklankompasposkota.com|promozia.com|refrez.com|rumahdijual.com|webiklan.com
 @@/iklan-adwords-
@@ -13621,7 +13630,7 @@ otakuindo.net#@##banner_ad
 @@/iklan-baris.
 @@/iklan-gratis-
 @@/iklan-gratis.
-@@/iklan/*$domain=duniaiklangratis.com|iklanbogor.com|iklankotalemank.com|pusatiklan.co.id|sewa-apartemen.net
+@@/iklan/*$domain=duniaiklangratis.com|iklanbogor.com|iklankotalemank.com|iklanpopuler.com|pusatiklan.co.id|sewa-apartemen.net
 @@/iklan_$domain=autoglaze.co.id|iklan.krjogja.com|iklanbaris.tribunjateng.com|neonlite.co.id|niadesain.com
 @@/iklan_baris.
 @@/iklan_gratis.
@@ -13636,6 +13645,7 @@ otakuindo.net#@##banner_ad
 @@_pasang_klan_
 @@_pasangiklangratis_
 doremindo.co.id#@#.iklan
+iklanpopuler.com#@#[src*="/iklan/"]
 jualo.com#@#[href*="/iklan-"] > img
 jualo.com#@#[href*="/iklan/"] > img
 kostjakarta.net#@#[href*="/iklan/"] > img
@@ -13660,4 +13670,4 @@ pendidikan.id#@#.iklan
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com^$generichide
 sebariklanbaris.net#@#.content-ads
-! Checksum: hhVni1u9oMjxo/WGYWPEZw
+! Checksum: jmMv+y2YA8BUj1w6WzICHA
