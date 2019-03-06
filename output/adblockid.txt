@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0306.1037
+! Version: 19.0306.1810
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Mar 2019 10:37 UTC
+! Last modified: 06 Mar 2019 18:10 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -18,7 +18,6 @@
 -banner-300.
 -banner-728.
 -ikln.
--promosi.
 .id/ad.
 .id/ad/
 .id/ad1/
@@ -218,6 +217,7 @@ _promosi.
 -728x60-
 -728x90px.
 -728x90px1.
+-729x80.
 -729x90.
 -730x220.
 -760x60-$image
@@ -1204,9 +1204,10 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||bnjhbghjznq.com^$third-party
 ||brand.ad^$third-party
 ||caribanner.bid^$third-party
-||cdnasiaclub.com^$popup,third-party
+||cdnasiaclub.com^$third-party
 ||chqspuonctkgz.com^$third-party
 ||clickmedia.co.id^$third-party
+||daezorwyn.xyz^
 ||easyhits4u.com^$third-party
 ||etoads.net^$third-party
 ||fairnessels.com^$third-party
@@ -1229,8 +1230,10 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||jasaiklan.com^$third-party
 ||jayaiklan.com^$third-party
 ||jomys.xyz$script,third-party
+||katurars.com^
 ||kelsaurt.com^$third-party
 ||keqi7dh3df.com^$third-party
+||kistutch.net^$third-party
 ||klikabadi.net^$third-party
 ||klikajadeh.com^$third-party
 ||lokeriklan.com^$third-party
@@ -1246,9 +1249,11 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||pondokiklan.com^$third-party
 ||ppc.buzz^$third-party
 ||publish.web.id^$third-party
+||pvclouds.com^
 ||rereegny.net^
 ||rumahgratis.tk^$third-party
 ||sentrapromosi.com^$third-party
+||septembership.com^
 ||shmokiads.com^$third-party
 ||sitti.co.id^$third-party
 ||ssigftlcuc.com^$third-party
@@ -1256,41 +1261,40 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||toads.id^$third-party
 ||ucvrtwfh.com^$third-party
 ||uppybbhxbblxa.com^
+||usairguw.com^
+||wapoawoo.net^
+||whehilru.com^
 ||wlpromo.info^$third-party
+||ys3e965d.top^
+||yx-ads6.com^$third-party
 ! 
 ! POPUP
 ! 
 /wp-content/plugins/popup-builder/*
-||35.188.59.75^$popup,third-party
-||abourselfi.com^$popup,third-party
+||35.188.59.75^$popup
+||abourselfi.com^$popup
 ||bioskopstar88.com/pop/$script
+||cdnasiaclub.com^$popup
 ||downloadgot.com^$popup
-||elthamely.com^$popup,third-party
-||g383912402.com^$popup,third-party
-||iarfina.pw^$popup,third-party
+||elthamely.com^$popup
+||g383912402.com^$popup
+||iarfina.pw^$popup
 ||inclk.com^$popup
 ||joneself.com^
 ||kkawxvjeluwc.com^
 ||methinkinge.com^$popup,third-party
 ||mobileofferplace.site^$popup
 ||motosal.net^$popup
-||partlepool.com^$popup,third-party
 ||plaza-bisnis.com^$first-party,popup
 ||ridingintractable.com^$popup
 ||tqeobp89axcn.com^
-||yourjavascript.com/1411253239/itu-domino-popup-script.js
-||yourjavascript.com/9422241923/iklan-popweb-goalcoid.js
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/thirdparty.adbl ***
 ||amazonaws.com^*/banner/$third-party,domain=bogornews.com
-||blogspot.com/*.gif^$image,domain=agungjakanugraha.com|alladsnetwork.web.id|duniabaca.com|horassumutnews.com|kombatch.com|mangashiro.net|smallencode.com
-||bucket.id/assets/images/users/*.gif$domain=enthus1ast.com|idfl.me
 ||iframe.ly^$domain=tampilcantik.com
 ||imgur.com/*.gif$image,domain=mangashiro.net
 ||learningtoolkit.club/ad.js$script,domain=youngster.id
-||postimg.org/*.gif$domain=idfl.biz|idfl.info|idfl.me|idfl.my.id
 ||staticflickr.com^$domain=barometermedan.net
-||wp.com/*/wp-content/uploads/*.gif$image,domain=etalasebisnis.com|hotabis.com
 ||wp.com/affiliate.$domain=kompaswisata.com
 ||ximg.us^$domain=acehtraffic.com
 ! 
@@ -1317,6 +1321,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||d2pc0q32fod0ha.cloudfront.net^
 ||d3oep4gb91kpuv.cloudfront.net^
 ||dc08i221b0n8a.cloudfront.net^
+||drda5yf9kgz5p.cloudfront.net^
 ||filmseks.online^$third-party
 ||gebyarbola.org^$third-party
 ||glxfls.com^$third-party
@@ -1349,59 +1354,47 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 -ads-$image,domain=inikpop.com
 -banner.$image,domain=jurnalotaku.com
 -banner/$image,domain=acmobilindonesia.com
+.gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|duniabaca.com|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|horassumutnews.com|hotabis.com|idfl.biz|idfl.info|idfl.me|idfl.my.id|kombatch.com|komiku.net|mangashiro.net|monkeymotoblog.com|motogokil.com|motorexpertz.com|neumanga.tv|otobalancing.net|potretbikers.com|selebuzz.co.id|smallencode.com
 /*banner*.$image,domain=anangcozz.com|backpackstory.me|desainstudio.com|ilmukita.org|jejamo.com|mariodevan.com|motomazine.com|pertamax7.com|zonabola.id
 /ad-$image,domain=theairline.co.id
 /banner-$image,domain=jagokata.com
 /banner_$image,domain=adbtc.top|resep.web.id
 /whatsapp-image-$domain=infodigimarket.com
 ||ads-server.hipwee.com^
-||aftermarketplus.id/*.gif$image
 ||alumni-atwsolo.com/images/banner/banner-$image
 ||anjingkita.com/sponsor/$image
 ||anjingkita.com^*/banners/$image
 ||anjingras.com^*/images/banner-$image
 ||anjingras.com^*/images/banner_$image
-||cdn.rawgit.com/sdnime09/Ngewe-om/*/sayang.js
-||edukasibitcoin.com/wp-content/uploads/*.gif$image
 ||elshinta.com/banner/$image
 ||forumbitcoin.co.id^*/banner/$image
 ||indotelko.com/images/banner/$image
 ||klikpositif.com^*/banner/
-||komiku.net/wp-content/uploads/*.gif
 ||kotakgame.com/images/bnr/$image
 ||kumpulblogger.com/tl_*.php?uid=
 ||kxcdn.com/assets/*-ads-$image
 ||lenterapendidikan.com/assets/img/loader.jpg$image
 ||lenterapendidikan.com^*/banner/$image
 ||modifikasi.com/images/banner/
-||monkeymotoblog.com/wp-content/uploads/*.gif$image
-||motogokil.com/wp-content/uploads/*.gif$image
-||motorexpertz.com/uploads/*.gif
-||neumanga.tv/uploads/*.gif$image
 ||ofiskita.com^*/Ad_Ed2/$image
-||otobalancing.net/wp-content/uploads/*.gif$image
-||potretbikers.com/wp-content/uploads/*.gif$image
+||plaza-bisnis.com/wp-content/uploads/*-Banner.$image
 ||rri.co.id^*/banner/$image
-||selebuzz.co.id/wp-content/uploads/*.gif
 ||static.domainesia.com/assets/images/afiliasi/
 ||suckittrees.com^*/banner.
 ||visitjateng.com^*/banner/banner-$image
 ||waralabakan.com^*/banner/$image
 ! 
 ! MOTOR
-||aripitstop.com/wp-content/uploads/*.gif$image
-||bmspeed7.com/wp-content/uploads/*.gif$image
-||bonsaibiker.com/wp-content/uploads/*.gif$image
-||files.wordpress.com/*.gif$image,domain=mariodevan.com|motorrio.com
+.gif$image,domain=aripitstop.com|bmspeed7.com|bonsaibiker.com|mariodevan.com|motorrio.com|tmcblog.com|warungasep.net
 ||ridertua.com/wp-content/uploads/*/720x100-$image
-||tmcblog.com/wp-content/uploads/*.gif$image
-||warungasep.net/wp-content/uploads/*.gif$image
 ! 
 ! 
 ||githack.com/riandiramdani/safelinku.com/*/script.js
 ||hxload.co^*/ads.js
 ||indotelko.com/inc/c_banner.js
 ||pergi.klik-link.us/wpsafelink.js$script
+||rawgit.com/pashalovarian/pasha/*/safelinkea.js
+||rawgit.com/sdnime09/Ngewe-om/*/sayang.js
 ||safelinku.com/fullpage/script.js
 ||staticaly.com/gh/sotazer/sotazone/de221301/kurazoneAdblock.js
 ||terafile.net/luxury3.xml$~third-party,xmlhttprequest
@@ -10423,6 +10416,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*josbet88*.$image
 /*jpbet*.$image
 /*jppoke*.$image
+/*juaracapsa*.$image
 /*juditogelhk*.$image
 /*kaisar88*.$image
 /*kartu66*.$image
@@ -10552,6 +10546,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*pemainkasino*.$image
 /*pendekarqq*.$image
 /*pepsi77*.$image
+/*perkasa99*.$image
 /*pesqq*.$image
 /*pialaqq*.$image
 /*pkstar8*.$image
@@ -12185,6 +12180,7 @@ _penggugur_kandungan_$image
 ##[href*="rajapoker"] > img
 ##[href*="rajaqq"] > img
 ##[href*="rajaremi."] > img
+##[href*="rajaremi88."] > img
 ##[href*="rajasakong"] > img
 ##[href*="rajawaliqq"] > img
 ##[href*="rakensu."] > img
@@ -12666,13 +12662,10 @@ _penggugur_kandungan_$image
 ##img[title*="situs togel"]
 ##img[title*="wigobet"]
 ! *** abid:addons/movie.adbl ***
+.gif$image,domain=animeku.tv|dramakorea.web.id|dramaserial.tv|movie303.com|nanime.in|nontondrama.me
 nontonanimeindo.net##a[href*="//goo.gl/"] > img
-||blogspot.com/*.gif^$image,domain=animeku.tv|dramakorea.web.id|movie303.com|nontondrama.me
-||imgur.com/*.gif$image,domain=dramaserial.tv
 ||livechatinc.com/*/open_chat.cgi$domain=cinemakaca.tv|movie303.com|nonton-streaming.com|serunonton.com|zonamoviex.com
 ||livechatinc.com/cloud/?*.gif$image,domain=
-||topddl.net/*.gif$image,domain=nanime.in
-||wp.com/*/wp-content/uploads/*.gif$image,domain=
 ! 
 /popup-maker/*$script,domain=
 |http:$popup,third-party,domain=nontonsub.com|serunonton.com
@@ -12695,6 +12688,7 @@ sukamovie.*##.sukam-bawah
 ! 
 @@/indoxxi-logo-
 @@||animeku.tv^$generichide
+@@||anoboy.org^$generichide
 @@||sobatdrama.net^$generichide
 ! *** abid:addons/news.adbl ***
 -500X500.$image,domain=kabarpapua.co
@@ -13666,4 +13660,4 @@ pendidikan.id#@#.iklan
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com^$generichide
 sebariklanbaris.net#@#.content-ads
-! Checksum: G7KegnjveylZT+5BASLs0Q
+! Checksum: hhVni1u9oMjxo/WGYWPEZw
