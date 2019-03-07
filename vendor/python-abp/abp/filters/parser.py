@@ -306,7 +306,7 @@ def parse_line(line, position='body'):
                 return Metadata(key, value)
         return Comment(stripped[1:].lstrip())
 
-    if stripped.startswith('%') and stripped.endswith('%'):
+    if stripped.startswith('%include') and stripped.endswith('%'):
         return _parse_instruction(stripped)
 
     return parse_filter(stripped)
