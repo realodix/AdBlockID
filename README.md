@@ -1,6 +1,6 @@
 # AdBlockID
 
-Total rules: 13,711
+Total rules: 13,719
 
 AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
@@ -14,8 +14,12 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 ## Cara Menggunakan
 - Buka browser favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Safari](http://www.apple.com/safari/), [Opera](http://www.opera.com/), ...)
-- Install ekstensi [uBlock Origin](https://github.com/gorhill/uBlock#installation), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi ad blocker lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
-- Anda dapat menggunakannya secara manual dengan menambahkan alamat ini `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt` pada plugin adblock yang Anda gunakan.
+- Install salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore#install-links), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi ad blocker lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
+- Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada plugin adblock yang Anda gunakan.
+
+   `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`.
+   
+   Untuk tutorialnya, Anda dapat membuka halaman ini salah satu dari link berikut ini [uBlock Origin](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web), [Nano Adblocker](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web).
 
 
 ## Berkontribusi
