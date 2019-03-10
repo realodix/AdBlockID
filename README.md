@@ -19,7 +19,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
    `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`.
    
-   Untuk tutorialnya, Anda dapat membuka halaman ini salah satu dari link berikut ini [uBlock Origin](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web), [Nano Adblocker](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web).
+   Untuk tutorialnya, Anda dapat membuka salah satu dari link berikut ini [uBlock Origin](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web), [Nano Adblocker](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web).
 
 
 ## Berkontribusi
