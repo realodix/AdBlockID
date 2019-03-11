@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0311.0920
+! Version: 19.0311.1926
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Mar 2019 09:20 UTC
+! Last modified: 11 Mar 2019 19:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -524,6 +524,7 @@ _996x50.gif
 ###ad_bgbottomleft
 ###ad_bgbottomright
 ###ad_divRight
+###ad_global_below_navbar
 ###ads-960-mid
 ###ads-pop
 ###ads-vert-300
@@ -1216,6 +1217,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||daezorwyn.xyz^
 ||easyhits4u.com^$third-party
 ||elatumal.xyz^
+||elwraek.xyz^
 ||etoads.net^$third-party
 ||fairnessels.com^$third-party
 ||fortpush.com^$third-party
@@ -1237,6 +1239,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||jomys.xyz$script,third-party
 ||joneself.com^
 ||katurars.com^
+||kelris.pw^
 ||kelsaurt.com^$third-party
 ||keqi7dh3df.com^$third-party
 ||kistutch.net^$third-party
@@ -1251,6 +1254,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||peevopoy.com^
 ||pegel.pw^$image
 ||phastoag.com^
+||pndelfast.com^
 ||pondokiklan.com^$third-party
 ||ppc.buzz^$third-party
 ||publish.web.id^$third-party
@@ -1269,11 +1273,15 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||wlpromo.info^$third-party
 ||ys3e965d.top^
 ||yx-ads6.com^$third-party
+||zy16eoat1w.com^
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/thirdparty.adbl ***
 ||amazonaws.com^*/banner/$third-party,domain=bogornews.com
+||bucket.id^*/*.gif$domain=idfl.me
 ||iframe.ly^$domain=tampilcantik.com
 ||imgur.com/*.gif$image,domain=mangashiro.net
+||livechatinc.com/*/open_chat.cgi?$subdocument,domain=idfl.me
+||livechatinc.com/cloud/?*.gif$image,domain=idfl.me
 ||wp.com/affiliate.$domain=kompaswisata.com
 ! 
 ||166.62.7.206^$third-party
@@ -1330,7 +1338,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 -ads-$image,domain=inikpop.com
 -banner.$image,domain=jurnalotaku.com
 -banner/$image,domain=acmobilindonesia.com
-.gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|duniabaca.com|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|horassumutnews.com|hotabis.com|idfl.biz|idfl.info|idfl.me|idfl.my.id|kombatch.com|komiku.net|mangashiro.net|neumanga.tv|selebuzz.co.id|smallencode.com
+.gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|duniabaca.com|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|horassumutnews.com|hotabis.com|kombatch.com|komiku.net|mangashiro.net|neumanga.tv|selebuzz.co.id|smallencode.com
 /*banner*.$image,domain=anangcozz.com|backpackstory.me|desainstudio.com|ilmukita.org|jejamo.com|mariodevan.com|motomazine.com|pertamax7.com|zonabola.id
 /ad-$image,domain=theairline.co.id
 /banner-$image,domain=jagokata.com
@@ -1831,6 +1839,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||apmgzzaej.bid^
 ||apmkcdsnv.bid^
 ||aprddnfuzc.bid^
+||apsntakwzycu.com^
 ||aptaeabkg.com^
 ||apuorlaqiscu.bid^
 ||apwtlkkd.bid^
@@ -3026,6 +3035,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ehlfynuo.com^
 ||ehlnakqlcvuxk.bid^
 ||ehoksipmkejqt.bid^
+||ehraxliuwt.com^
 ||ehrwekypesnl.bid^
 ||ehrxkeosifmksi.bid^
 ||ehuomemzh.com^
@@ -4694,6 +4704,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jgrcggutsilp.com^
 ||jgsoloqaqp.com^
 ||jgtnayftk.bid^
+||jguczdjzvfp.com^
 ||jguhktakkykrsb.com^
 ||jgvjzbrnjmxoq.com^
 ||jgxlxsnqz.bid^
@@ -6135,6 +6146,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nmpmgmldzvrmra.com^
 ||nmtikqygo.com^
 ||nmuwmfgdwpwb.com^
+||nmvqhlengcrur.com^
 ||nmxpownvqtc.bid^
 ||nmywwgnnkmud.com^
 ||nmzouxbmqghpb.bid^
@@ -7084,6 +7096,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qknfsqxxm.com^
 ||qknuubmfneib.com^
 ||qkpwdakgxynv.com^
+||qkwbygfsbfmj.com^
 ||qkyzjwhyeh.com^
 ||qlatsfeyg.com^
 ||qlgeofwhy.bid^
@@ -10715,6 +10728,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*totosuper*.$image
 /*toyotaqq*.$image
 /*tri7bet*.$image
+/*tstotosaja*.$image
 /*ubcwin*.$image
 /*undepo*.$image
 /*universal-qq*.$image
@@ -11021,6 +11035,7 @@ _penggugur_kandungan_$image
 ##[href*="5starsbet."] > img
 ##[href*="66.42.61.3"] > img
 ##[href*="69qiuqiu"] > img
+##[href*="77dewan."] > img
 ##[href*="77megabet"] > img
 ##[href*="7mmbet"] > img
 ##[href*="7nagabet."] > img
@@ -11416,6 +11431,7 @@ _penggugur_kandungan_$image
 ##[href*="dkipoker."] > img
 ##[href*="dmbet99."] > img
 ##[href*="dnahoki."] > img
+##[href*="dnsmaju."] > img
 ##[href*="domino-168."] > img
 ##[href*="domino-99"] > img
 ##[href*="domino-qq"] > img
@@ -11444,6 +11460,7 @@ _penggugur_kandungan_$image
 ##[href*="duatelor."] > img
 ##[href*="duitasli."] > img
 ##[href*="duitbux."] > img
+##[href*="duitpd."] > img
 ##[href*="dunia-bisnis."] > img
 ##[href*="dunialotto1."] > img
 ##[href*="duniasarana."] > img
@@ -11549,6 +11566,7 @@ _penggugur_kandungan_$image
 ##[href*="hobi88."] > img
 ##[href*="hobibet."]
 ##[href*="hobibet."] > img
+##[href*="hobiduit."] > img
 ##[href*="hok1_365"] > img
 ##[href*="hoki228."] > img
 ##[href*="hoki365."] > img
@@ -11807,6 +11825,7 @@ _penggugur_kandungan_$image
 ##[href*="kontolkuda."] > img
 ##[href*="kosmetik-obatkuat."] > img
 ##[href*="kota88"] > img
+##[href*="kotakbaru."] > img
 ##[href*="kotasemi."] > img
 ##[href*="kristal-qq"] > img
 ##[href*="kristalqq"] > img
@@ -11937,6 +11956,7 @@ _penggugur_kandungan_$image
 ##[href*="mainsakong."] > img
 ##[href*="maintogel"] > img
 ##[href*="maintogelonline."] > img
+##[href*="majudam."] > img
 ##[href*="majupoker."] > img
 ##[href*="makelarjudi."] > img
 ##[href*="mamatogel."] > img
@@ -11995,6 +12015,7 @@ _penggugur_kandungan_$image
 ##[href*="mejasakong"] > img
 ##[href*="membertoto."] > img
 ##[href*="menangqq."] > img
+##[href*="menangvip."] > img
 ##[href*="merahmeria."] > img
 ##[href*="mgmcash"] > img
 ##[href*="mgmcash88."] > img
@@ -12128,6 +12149,7 @@ _penggugur_kandungan_$image
 ##[href*="pdkrqq"] > img
 ##[href*="pelarisandagang"] > img
 ##[href*="peluangpoker."] > img
+##[href*="pemainbaik."] > img
 ##[href*="pemaintogel."] > img
 ##[href*="pencetpoker."] > img
 ##[href*="pendekarqq"] > img
@@ -12358,6 +12380,7 @@ _penggugur_kandungan_$image
 ##[href*="seomarina365."] > img
 ##[href*="sepakbolagol."] > img
 ##[href*="serbakas88."] > img
+##[href*="serbakiu."] > img
 ##[href*="serbaqq."] > img
 ##[href*="serbupoker"] > img
 ##[href*="sevenbola."] > img
@@ -12443,9 +12466,9 @@ _penggugur_kandungan_$image
 ##[href*="temanjudi."] > img
 ##[href*="temanpoker"] > img
 ##[href*="tendangsakti."] > img
+##[href*="teras111."] > img
 ##[href*="terminal4d"] > img
 ##[href*="terminalbet"] > img
-##[href*="terminalbet."] > img
 ##[href*="texaspoker"] > img
 ##[href*="tiketjackpot."] > img
 ##[href*="tipsgratisbola"] > img
@@ -13744,4 +13767,4 @@ pendidikan.id#@#.iklan
 @@||adsmart.detik.com^$generichide
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: H5DkJe66gZIp8tEJm3jziA
+! Checksum: Zo283wj82pLZn5OH304gGw
