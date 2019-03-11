@@ -1,6 +1,6 @@
 # AdBlockID
 
-Total rules: 13,719
+Total rules: 13,762
 
 AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
@@ -19,7 +19,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
    `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`.
    
-   Untuk tutorialnya, Anda dapat membuka salah satu dari link berikut ini [uBlock Origin](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web), [Nano Adblocker](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web).
+   Untuk tutorial cara menambahkan AdBlockID secara manual, Anda dapat membuka salah satu dari link berikut ini [uBlock Origin](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock-import-filter.md), [Nano Adblocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock-import-filter.md), [AdGuard](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adguard-import-filter.md), [Adblock Plus](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adblock-Plus-import-filter.md).
 
 
 ## Berkontribusi
