@@ -1,5 +1,7 @@
-
-Anda dapat mengimpor daftar filter eksternal dengan mengklik kotak centang Impor di bagian Custom di panel "Filter list" di dasbor dan paste alamat URL daftar filter ke area teks di bawah ini:
+1. **Buka *dashboard* uBlock Origin.**
+2. **Klik tab *Filter lists*.**
+3. ***Scroll* ke bawah, centang Import di bagian Custom**
+4. **Paste URL AdBlockID**
 
 https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
 

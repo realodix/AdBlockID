@@ -41,6 +41,8 @@
 ||inilah.com/*-banner*.html$subdocument
 ||inilahkoran.com^*/banners/$image
 ||kabar47.com/wp-content/uploads/*.gif$image
+||kalbaronline.com/*-240x300.$image
+||kalbaronline.com/*-300x250.$image
 ||kalimantanpost.com/wp-content/uploads/*/Iklan*.$image
 ||kalimantanpost.com^*/400x400px-300x300.$image
 ||kba.one/files/sewaan/$image
@@ -52,6 +54,7 @@
 ||moralriau.com^*/banner-$image
 ||newrevive.detik.com^
 ||nusabali.com/super_images/*.gif$image
+||palapanews.com^*/BANNER-$image
 ||papuatoday.com^*/banner-$image
 ||prfmnews.com/images/*.gif$image
 ||referensipublik.com/wp-content/uploads/*/banner-$image
@@ -80,7 +83,6 @@ kabarnagari.com,pasbana.com###HTML6
 pasbana.com###HTML8
 inikebumen.net###HTML9
 detik.com###banner_top_detail
-otosia.com###box-mobil-dijual
 jambiupdate.co###custom-bar
 kontan.co.id###div-Halfpage-Analisis
 kontan.co.id###div-Halfpage-Caritahu
@@ -107,25 +109,22 @@ duajurai.co###text-7
 duajurai.co###text-9
 bola.net###top_leaderboard
 beritasatu.com###topbanner
-otosia.com###v5-leaderboard
 kapanlagi.com###v5-marcommpromotion
 kapanlagi.com###v5-marcommpromotion2
-otosia.com###v5-showcase1
-kapanlagi.com,otosia.com###v5-showcase2
+kapanlagi.com###v5-showcase2
 kapanlagi.com###v8-leaderboard
 tribunnews.com###wideskyscraper
 solopos.com##.adcontainer
 cendananews.com,sultrakini.com##.adloc-is-banner
-gerbangkepri.co.id,gogirl.id,jalantikus.com,okezone.com,tempointeraktif.co##.ads
+gerbangkepri.co.id,gogirl.id,jalantikus.com,okezone.com,tempointeraktif.co,terasjabar.id##.ads
 kontan.co.id##.ads-r1
 winnetnews.com##.ads-slider
+pontianakpost.co.id##.adsense
 sindonews.com##.adsload
 winnetnews.com##.adswrapper
 detik.com##.adv
 bengkuluekspress.com##.adv-wrapper
-arenalte.com,krjogja.com##.advertisement
-arenalte.com##.arenalte-ads
-autonetmagz.com##.autonetmagz__meta--ads-elements
+krjogja.com##.advertisement
 beritagar.id##.banner--300x600
 kontan.co.id##.banner-adv-1
 kabargames.id##.banner-kanan
@@ -140,7 +139,7 @@ referensipublik.com##.custom-banners-theme-default_style
 referensipublik.com##.custom_banners_big_link
 detik.com##.detikads
 dream.co.id##.drm-banner-x
-suaramedannews.com##.e3lan
+kabar6.com,suaramedannews.com##.e3lan
 beritakini.co##.funds
 detik.com##.gtm_newsfeed_ads
 semarakpost.com##.header-ad-section
@@ -151,6 +150,7 @@ kompas.com##.kcm__horizontal.kcm
 kompas.com##.kcm__rectangle.kcm
 faktabali.com,inforakyat.com,klikkalsel.com,lampung1.com,nenemonews.com,otomakassar.com,populinews.com,pressmedia.co.id,sijorikepri.com##.ktz_banner
 tribunsumbar.com##.majalahpro-core-center-ads
+kabarmedia.co##.marketing-box
 detik.com##.newsfeed-ads
 viva.co.id##.paralax_banner
 viva.co.id##.paralax_banner-detail
@@ -169,7 +169,7 @@ bogornews.com,zonabola.id##[href^="http://bit.ly/"] > img
 harianrakyatbengkulu.com##a[href*="/Advertisement/"]
 centralnews.co.id,harianrakyataceh.com,harianrakyatbengkulu.com,kabarkota.com,lintastimur.com,mandiripos.com,penaberlian.com,radarbanten.co.id,redkal.com,sakanews.com,suaralampung.com##a[href="#"] > img
 kaltengpos.web.id##a[href="iklan/"] > img
-faktabanten.co.id,garudadaily.com,harianindo.com,harianrakyatbengkulu.com,iconews.co.id,kabar-banten.com,kabar-cirebon.com,kabarmedan.com,kabarpapua.co,kendaripos.co.id,koransultra.com,lenterasultra.com,lintaskepri.com,metrobatam.com,newsbalikpapan.com,pariwisatasumut.net,pemmzchannel.com,pojoksatu.id,radarkepri.com,radarlampung.co.id,redaksibengkulu.co.id,reportaserakyat.com,riauterkini.com,suarakristen.com,tabloidjubi.com,wartakepri.co.id##a[target="_blank"] > img
+citrust.id,faktabanten.co.id,garudadaily.com,harianindo.com,harianrakyatbengkulu.com,iconews.co.id,kabar-banten.com,kabar-cirebon.com,kabarmedan.com,kabarpapua.co,kendaripos.co.id,koransultra.com,lenterasultra.com,lintaskepri.com,metrobatam.com,newsbalikpapan.com,pariwisatasumut.net,pemmzchannel.com,pojoksatu.id,radarkepri.com,radarlampung.co.id,rakyatjabarnews.com,redaksibengkulu.co.id,reportaserakyat.com,riauterkini.com,suarakristen.com,tabloidjubi.com,wartakepri.co.id##a[target="_blank"] > img
 kontan.co.id##div[id^="div-Topregular-"]
 riaupos.co##img[src^="banner/"]
 valora.co.id##img[src^="http://www.valora.co.id/banner/"]
@@ -181,12 +181,12 @@ kompas.com##^script:has-text(axtd)
 tabloidjubi.com##img[alt*="advertisement"]
 !
 @@/bplogo.$domain=beritapagi.co.id
+@@/fuckadblock.js$domain=suaranasional.com
 @@/iklan-langganan.$domain=radarlombok.co.id
 @@://ads.$domain=klasika.kompas.com
 @@kompas.com/pasangiklan/api/ads/
 @@||kabarmakkah.com^$generichide
 @@||radarlombok.co.id^$generichide
 @@||tribunislam.com^$generichide
-eramuslim.com#@##topAd
 radarlombok.co.id##.adsbygoogle
 radarmalang.id#@#.td-ad-background-link
