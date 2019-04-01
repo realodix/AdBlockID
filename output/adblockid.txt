@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0401.1400
+! Version: 19.0401.1919
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Apr 2019 14:00 UTC
+! Last modified: 01 Apr 2019 19:19 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -51,6 +51,7 @@
 .id/video-ad-
 .iklan.controller.
 .iklan.css
+/1iklan-
 /200ad.
 /ad-150x300-
 /ad-placeholder-
@@ -106,10 +107,12 @@
 /iklanjpecmotor.
 /iklanmpdigital.
 /iklantvg.
+/ikldesktop.
 /imgiklan/*
 /imgiklanz/*
 /indofreeads_
 /ngiklan/*
+/piciklan/*
 /promo/banner/*
 /SkinADkanan.
 /SkinADkiri.
@@ -943,6 +946,7 @@ _996x50.gif
 ##[href*="/info-iklan/"]
 ##[href*="bit.ly/ads"]
 ##[href^="/mellowads."]
+##[href^="https://publishers.propellerads.com/"] > img
 ##[id*="-iklan-kanan-"]
 ##[id*="-iklan-kiri-"]
 ##[id*="_iklan-block_"]
@@ -1233,7 +1237,7 @@ _996x50.gif
 ||iklanhoki.com^$third-party
 ||iklaninter.net^$third-party
 ||ivastoor.com^
-||ivideosmart.com^$domain=brilio.net|feedme.id|geeq.id|idntimes.com|kompas.com|kontan.co.id|styl.id
+||ivideosmart.com^$domain=brilio.net|feedme.id|geeq.id|idntimes.com|kompas.com|kontan.co.id|styl.id|sulselsatu.com
 ||jasaiklan.com^$third-party
 ||jayaiklan.com^$third-party
 ||jomys.xyz$script,third-party
@@ -1372,15 +1376,13 @@ _996x50.gif
 ||waralabakan.com^*/banner/$image
 ! 
 ! OTOMOTIF
-.gif$image,domain=aripitstop.com|bmspeed7.com|bonsaibiker.com|mariodevan.com|monkeymotoblog.com|motogokil.com|motorexpertz.com|motorrio.com|otobalancing.net|potretbikers.com|tmcblog.com|warungasep.net
-||balapmotor.net^*/*Banner.$image
-||balapmotor.net^*/Banner-$image
-||duniascooter.com/piciklan/$image
+.gif$image,domain=aripitstop.com|bonsaibiker.com|mariodevan.com|monkeymotoblog.com|motogokil.com|motorexpertz.com|motorrio.com|otobalancing.net|potretbikers.com|tmcblog.com|warungasep.net
+/720x100-$image,domain=ridertua.com
+||balapmotor.net^*/*banner.$image
+||balapmotor.net^*/banner-$image
+||bmspeed7.com^*/banner-
 ||modifikasi.com/images/banner/
-||motoraceid.com/piciklan/$image
-||otomotifxtra.com/piciklan/$image
 ||otomotifzone.com/banner/$image
-||ridertua.com/wp-content/uploads/*/720x100-$image
 ! 
 ! 
 ||githack.com/riandiramdani/safelinku.com/*/script.js
@@ -13229,6 +13231,7 @@ tabloidjubi.com##img[alt*="advertisement"]
 @@||tribunislam.com^$generichide
 radarlombok.co.id##.adsbygoogle
 radarmalang.id#@#.td-ad-background-link
+terkini.id#@#.iklan
 ! *** abid:addons/resource-abuse.adbl ***
 ! Resource-abuse
 ! 
@@ -13970,6 +13973,7 @@ otakuindo.net#@##banner_ad
 @@/iklan-baris.
 @@/iklan-gratis-
 @@/iklan-gratis.
+@@/iklan-terpopular-
 @@/iklan/*$domain=duniaiklangratis.com|iklanbogor.com|iklankotalemank.com|iklanpopuler.com|pusatiklan.co.id|sebariklanbaris.net|sewa-apartemen.net
 @@/iklan_$domain=autoglaze.co.id|iklan.krjogja.com|iklanbaris.tribunjateng.com|neonlite.co.id|niadesain.com
 @@/iklan_baris.
@@ -14011,4 +14015,4 @@ pendidikan.id#@#.iklan
 @@||adsmart.detik.com^$generichide
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: eoWucr4AcctX86GV6XYppA
+! Checksum: wdJIwjP39R1lfPFYAFIHTw
