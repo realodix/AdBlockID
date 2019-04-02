@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0402.0836
+! Version: 19.0402.1528
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Apr 2019 08:36 UTC
+! Last modified: 02 Apr 2019 15:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1371,6 +1371,7 @@ _996x50.gif
 ||kxcdn.com/assets/*-ads-$image
 ||lenterapendidikan.com/assets/img/loader.jpg$image
 ||lenterapendidikan.com^*/banner/$image
+||niagahoster.co.id/banners/$image
 ||ofiskita.com^*/Ad_Ed2/$image
 ||plaza-bisnis.com/wp-content/uploads/*-Banner.$image
 ||rri.co.id^*/banner/$image
@@ -1493,9 +1494,10 @@ jasasipil.com##[id^="post-body-"] > div:nth-of-type(1)
 arlinadzgn.com##[src^="data:image/png;base64,"]
 sehatnomorsatu.com##a[id^="http"] > img
 andreasagung.com,centerklik.com,kostjakarta.com,nutrisi-pelangsing.com,tempat-kost.com##a[rel="nofollow"] > img
-aftermarketplus.id,anakui.com,bacalagers.com,blogdokter.net,boc.web.id,borukaro.com,coinvestasi.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,klikmania.net,kostjakarta.net,maxmanroe.com,plaza-bisnis.com,rakosa-fm.co.id##a[target="_blank"] > img
+aftermarketplus.id,anakui.com,bacalagers.com,bagas31.info,blogdokter.net,boc.web.id,borukaro.com,coinvestasi.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,klikmania.net,kostjakarta.net,maxmanroe.com,plaza-bisnis.com,rakosa-fm.co.id##a[target="_blank"] > img
 iskrim.com##img[width="310"][height="152"]
 iskrim.com##img[width="317"][height="89"]
+pintuwawasan.com,xidnax.com##img[width="350"][height="250"]
 ! 
 grid.id###head-banner-ads
 grid.id##.ads-mr
@@ -1547,6 +1549,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ! 
 ###catapult-cookie-bar
 ###cookie-notice
+###cookie-pop
 ###eu-cookie-law
 ###js-gdpr-consent-banner
 ###modal-cookie
@@ -13892,11 +13895,9 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@/advertisement.$script,domain=ikurniawan.com|kumpulmanga.org|lifesurance.info|overlordfree.web.id|rukim.id|samehadaku.tv|wizardsubs.com
 @@/fuckadblock.js$domain=leantoro.com|nandatrio.com|serbakuis.com
 @@/images/ads/*$domain=promozia.com
-@@/js/ads.$domain=iovoproduction.info|mylinkblog.com
+@@/js/ads.$domain=blogshortener.com|iovoproduction.info|mylinkblog.com
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@/pagead2.$script,domain=bloggerku.com|datasekolah.co.id|eirudo.com|hightech.web.id|mufasi.ga|unduh.in
-@@klikshowtime.com^$generichide
-@@tokusatsuindo.com^$generichide
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||adturl.com^$generichide
@@ -13921,6 +13922,7 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@||juraganmumut.com^$generichide
 @@||kazefuri.web.id^$generichide
 @@||kelasdesain.com^$generichide
+@@||klikshowtime.com^$generichide
 @@||kurikulum.co.id^$generichide
 @@||majalahikan.com^$generichide
 @@||mangashiro.net^$generichide
@@ -13948,6 +13950,7 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@||suryapero.com^$generichide
 @@||tigajalur.com^$generichide
 @@||tikusliar.com^$generichide
+@@||tokusatsuindo.com^$generichide
 @@||tutorialweb.net^$generichide
 @@||wincamp.org^$generichide
 @@||zonexweb.com^$generichide
@@ -13999,6 +14002,7 @@ otakuindo.net#@##banner_ad
 @@=pasangiklangratis_
 @@_pasang_klan_
 @@_pasangiklangratis_
+ads-ina.org#@#[href*="/ads-"]
 doremindo.co.id#@#.iklan
 iklanpopuler.com#@#[src*="/iklan/"]
 jualo.com#@#[href*="/iklan-"] > img
@@ -14026,4 +14030,4 @@ pendidikan.id#@#.iklan
 @@||adsmart.detik.com^$generichide
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: Z/s0S4aSFyQYA9zh8y+xyw
+! Checksum: +1xD78+y9ZYYf7L6v8hm5g
