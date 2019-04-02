@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0402.1528
+! Version: 19.0402.1908
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Apr 2019 15:28 UTC
+! Last modified: 02 Apr 2019 19:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -17,6 +17,7 @@
 -Ads300.
 -banner-300.
 -banner-728.
+-banner-ads.
 -ikln.
 .id/ad.
 .id/ad/
@@ -1300,6 +1301,7 @@ _996x50.gif
 ||agenjudionline.in^$third-party
 ||agungqiu.org^$third-party
 ||bbm88.org^$third-party
+||binpartner.com^$third-party
 ||bolagalaxy.org^$third-party
 ||booking.com^$subdocument,domain=venuemagz.com
 ||bosqq.online^$third-party
@@ -1359,6 +1361,7 @@ _996x50.gif
 ||anjingras.com^*/images/banner-$image
 ||anjingras.com^*/images/banner_$image
 ||bitcoin.co.id/banner/$image
+||borukaro.com/wp-content/uploads/*-promo.$image
 ||cinemags.co.id/*-banner-$image
 ||elshinta.com/banner/$image
 ||esports.id/img/adds/$image
@@ -1374,6 +1377,7 @@ _996x50.gif
 ||niagahoster.co.id/banners/$image
 ||ofiskita.com^*/Ad_Ed2/$image
 ||plaza-bisnis.com/wp-content/uploads/*-Banner.$image
+||rakosa-fm.co.id^*/partner/$image
 ||rri.co.id^*/banner/$image
 ||static.domainesia.com/assets/images/afiliasi/
 ||suckittrees.com^*/banner.
@@ -1440,6 +1444,8 @@ lytogame.com###lytoads
 serbacara.com###mtc-popup
 hdtvku.com###mybannerpopup
 polisionline.com###postfeature
+blogdokter.net###text-3 > .textwidget
+blogdokter.net###text-4 > .textwidget
 mangacanblog.com##.ad
 ads.id##.adManager
 teknobos.com##.adcontainer
@@ -1494,10 +1500,15 @@ jasasipil.com##[id^="post-body-"] > div:nth-of-type(1)
 arlinadzgn.com##[src^="data:image/png;base64,"]
 sehatnomorsatu.com##a[id^="http"] > img
 andreasagung.com,centerklik.com,kostjakarta.com,nutrisi-pelangsing.com,tempat-kost.com##a[rel="nofollow"] > img
-aftermarketplus.id,anakui.com,bacalagers.com,bagas31.info,blogdokter.net,boc.web.id,borukaro.com,coinvestasi.com,gigapurbalingga.net,idblanter.com,irondumbbell.com,klikmania.net,kostjakarta.net,maxmanroe.com,plaza-bisnis.com,rakosa-fm.co.id##a[target="_blank"] > img
+bagas31.info,blogdokter.net,coinvestasi.com,gigapurbalingga.net,idblanter.com,kostjakarta.net##a[target="_blank"] > img
+mastekno.com##img[style="width:100%;height:250px;"]
+blogdokter.net##img[width="300"][height="210"]
+maxmanroe.com##img[width="300"][height="250"]
+plaza-bisnis.com##img[width="300"][height="300"]
 iskrim.com##img[width="310"][height="152"]
 iskrim.com##img[width="317"][height="89"]
 pintuwawasan.com,xidnax.com##img[width="350"][height="250"]
+klikmania.net##img[width="366"][height="280"]
 ! 
 grid.id###head-banner-ads
 grid.id##.ads-mr
@@ -13897,7 +13908,7 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@/images/ads/*$domain=promozia.com
 @@/js/ads.$domain=blogshortener.com|iovoproduction.info|mylinkblog.com
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
-@@/pagead2.$script,domain=bloggerku.com|datasekolah.co.id|eirudo.com|hightech.web.id|mufasi.ga|unduh.in
+@@/pagead2.$script,domain=bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|hightech.web.id|mufasi.ga|unduh.in
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||adturl.com^$generichide
@@ -14021,6 +14032,7 @@ pendidikan.id#@#.iklan
 @@/advertising/*$domain=client.okezone.com
 @@/bg_advertise.
 @@/bnrs/*$domain=sebariklanbaris.net|sebariklanmassalpremium.com
+@@/google-adsense-$image,domain=jurnalweb.com
 @@/images/ads/*$domain=adsmart.detik.com
 @@/mts_ad_sense/*$domain=onphpid.com
 @@/scripts/ads.$domain=ads.kaskus.co.id
@@ -14030,4 +14042,4 @@ pendidikan.id#@#.iklan
 @@||adsmart.detik.com^$generichide
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: +1xD78+y9ZYYf7L6v8hm5g
+! Checksum: IzcBcDitquUmMKLhCHyRxw
