@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0401.1919
+! Version: 19.0402.0836
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Apr 2019 19:19 UTC
+! Last modified: 02 Apr 2019 08:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -176,6 +176,7 @@ _promosi.
 -395-60.
 -395-x-604.
 -395x60.
+-400x100pxl-
 -460-X-110_
 -460x110.
 -460x110px-
@@ -208,6 +209,7 @@ _promosi.
 -640x76.
 -65x300-
 -65X440.
+-660x110pxl-
 -678x100-
 -680x60.
 -690-x-90-
@@ -476,6 +478,7 @@ _640x88.gif
 _640x90.gif
 _650x90.gif
 _65x85.gif
+_660x110_
 _660x60.
 _664x40.gif
 _666x50.gif
@@ -945,6 +948,7 @@ _996x50.gif
 ##[href*="/iklan4"]
 ##[href*="/info-iklan/"]
 ##[href*="bit.ly/ads"]
+##[href^="/api/1/ad/"]
 ##[href^="/mellowads."]
 ##[href^="https://publishers.propellerads.com/"] > img
 ##[id*="-iklan-kanan-"]
@@ -1343,7 +1347,7 @@ _996x50.gif
 -banner.$image,domain=jurnalotaku.com
 -banner/$image,domain=acmobilindonesia.com
 .gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|duniabaca.com|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|horassumutnews.com|hotabis.com|kombatch.com|komiku.net|mangashiro.net|neumanga.tv|selebuzz.co.id|smallencode.com
-/*banner*.$image,domain=anangcozz.com|backpackstory.me|desainstudio.com|ilmukita.org|jejamo.com|mariodevan.com|motomazine.com|pertamax7.com|zonabola.id
+/*banner*.$image,domain=anangcozz.com|backpackstory.me|desainstudio.com|ilmukita.org|jejamo.com|mariodevan.com|zonabola.id
 /ad-$image,domain=theairline.co.id
 /banner-$image,domain=jagokata.com
 /banner_$image,domain=adbtc.top|resep.web.id
@@ -1377,7 +1381,8 @@ _996x50.gif
 ! 
 ! OTOMOTIF
 .gif$image,domain=aripitstop.com|bonsaibiker.com|mariodevan.com|monkeymotoblog.com|motogokil.com|motorexpertz.com|motorrio.com|otobalancing.net|potretbikers.com|tmcblog.com|warungasep.net
-/720x100-$image,domain=ridertua.com
+/*banner*.$image,domain=iwanbanaran.com|motomazine.com|pertamax7.com
+/720x100-$image,domain=ridertua.com|tmcblog.com
 ||balapmotor.net^*/*banner.$image
 ||balapmotor.net^*/banner-$image
 ||bmspeed7.com^*/banner-
@@ -4127,6 +4132,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hjgmasrve.com^
 ||hjihwmtsltqi.com^
 ||hjjdmohuzp.com^
+||hjjjsurdhtt.com^
 ||hjknszojbbecy.com^
 ||hjnekvux.com^
 ||hjnfurphlwsui.bid^
@@ -6483,6 +6489,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||oehjxqhiasrk.com^
 ||oeoogwkwm.bid^
 ||oeppesfmzlbpa.com^
+||oertmxfsryji.com^
 ||oetwplgu.com^
 ||oexupdqy.bid^
 ||ofajzowbwzzi.com^
@@ -6653,6 +6660,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||otcqlckpafizv.bid^
 ||otdgnmvw.com^
 ||otewxlcmkih.com^
+||otoxkqlivsqr.com^
 ||otpckmnnfm.com^
 ||otrjvabiv.bid^
 ||otruzjgxof.com^
@@ -7250,6 +7258,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qnfpskgtzkw.com^
 ||qnhwhedcrzeodd.com^
 ||qnieefmaaqi.bid^
+||qnjdtefk.com^
 ||qnjxxbvgfgz.bid^
 ||qnrzdwhlsd.com^
 ||qnsdwkjctkso.com^
@@ -7983,6 +7992,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ssdsylfzav.com^
 ||sshvbkdyxprk.com^
 ||ssigftlcuc.com^
+||ssjgkyyrqiwjol.com^
 ||ssjhkvwjoovf.com^
 ||ssloemwiszaz.com^
 ||ssmklfrn.bid^
@@ -8945,6 +8955,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vkywqkbmdkmmg.com^
 ||vkzziiuqacv.com^
 ||vlaqqdwltcuk.com^
+||vletnguozhvm.com^
 ||vlgqpikka.com^
 ||vlhdmywfi.com^
 ||vlijpebmjxmlbp.bid^
@@ -14015,4 +14026,4 @@ pendidikan.id#@#.iklan
 @@||adsmart.detik.com^$generichide
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: wdJIwjP39R1lfPFYAFIHTw
+! Checksum: Z/s0S4aSFyQYA9zh8y+xyw
