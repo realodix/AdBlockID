@@ -1,13 +1,14 @@
 -500X500.$image,domain=kabarpapua.co
 -adv-$image,domain=suroboyo.id
 -banner.$image,domain=cidahu.com|inilahonline.com|sumaterapost.co|today.id
+/720x90-$image,domain=suaralampung.com
 /banner-$image,domain=ayobandung.com|beritaasatu.com|beritatotabuan.com|kabarmedan.com|mandiripos.com|sumselupdate.com|tanjungpinangpos.id|totabuan.co
 /banner_$image,domain=bogornews.com|koranrakyat.co.id
 /IMG-*-WA*.$image,domain=pedomanbengkulu.com
-/whatsapp-image-$image,domain=harianrakyatbengkulu.com|totabuan.co|totabuan.news
+/promo-$image,domain=suaralampung.com
+/whatsapp-image-$image,domain=totabuan.co|totabuan.news
 ||blogspot.com/*/Iklan*.$image,domain=investigasindo.com
 ||blogspot.com/*/IMG-*-WA*.$image,domain=investigasindo.com
-||blogspot.com/*/WhatsApp*Image*.$image,domain=pasbana.com
 ||pwbjlbz.com^$domain=kompas.com
 !
 ||adsimg.kompas.com^
@@ -34,6 +35,7 @@
 ||harianhaluan.com^*/banner/$image
 ||harianjogja.com^*/banner/$image
 ||harianrakyatbengkulu.com/wp-content/uploads/*/Banner_$image
+||harianrakyatbengkulu.com^*-banner-$image
 ||hotabis.com/wp-content/uploads/*.gif$image
 ||iklan.beritajatim.com/$image
 ||iklan.sorotmedianusantara.com/*^$third-party
@@ -59,6 +61,7 @@
 ||prfmnews.com/images/*.gif$image
 ||referensipublik.com/wp-content/uploads/*/banner-$image
 ||riauonline.co.id^*/ads/$image
+||riaupos.co/banner/$image
 ||rmol.co/banner/$image
 ||semarakpost.com/wp-content/uploads/*/BANER-$image
 ||solopos.com/banner/$image
@@ -163,23 +166,29 @@ hotabis.com,jorongpos.com,jurnalsumbar.com,liputanbengkulu.com,teropongmetro.com
 pedomanbengkulu.com##.td-header-rec-wrap
 newskaltim.com##.vc_single_image-img
 inilah.com##.wb-300x250
-kabar-cirebon.com##[href*=".jpg"]
 winnetnews.com##[href*="winnetnews.com/other/ads/"]
-duta.co##[href="#"] > img
 bogornews.com,zonabola.id##[href^="http://bit.ly/"] > img
-harianrakyatbengkulu.com##a[href*="/Advertisement/"]
-centralnews.co.id,harianrakyataceh.com,harianrakyatbengkulu.com,kabarkota.com,lintastimur.com,mandiripos.com,penaberlian.com,radarbanten.co.id,redkal.com,sakanews.com,suaralampung.com##a[href="#"] > img
+centralnews.co.id,duta.co,harianrakyataceh.com,kabarkota.com,lintastimur.com,mandiripos.com,penaberlian.com,radarbanten.co.id,redkal.com,sakanews.com##a[href="#"] > img
 kaltengpos.web.id##a[href="iklan/"] > img
 citrust.id,faktabanten.co.id,garudadaily.com,harianindo.com,harianrakyatbengkulu.com,iconews.co.id,kabar-banten.com,kabar-cirebon.com,kabarmedan.com,kabarpapua.co,kendaripos.co.id,koransultra.com,lenterasultra.com,lintaskepri.com,metrobatam.com,newsbalikpapan.com,pariwisatasumut.net,pemmzchannel.com,pojoksatu.id,radarkepri.com,radarlampung.co.id,rakyatjabarnews.com,redaksibengkulu.co.id,reportaserakyat.com,riauterkini.com,suarakristen.com,tabloidjubi.com,wartakepri.co.id##a[target="_blank"] > img
 kontan.co.id##div[id^="div-Topregular-"]
-riaupos.co##img[src^="banner/"]
+harianrakyatbengkulu.com##iframe[width="560"][height="315"]
+tabloidjubi.com##img[alt*="advertisement"]
 valora.co.id##img[src^="http://www.valora.co.id/banner/"]
+pasbana.com##img[width="451"][height="640"]
+ceposonline.com##img[width="455"][height="640"]
+duta.co##img[width="696"][height="1034"]
+duta.co##img[width="696"][height="1093"]
+kabarcirebon.co.id##img[width="709"][height="1063"]
+kabarcirebon.co.id##img[width="710"][height="1065"]
+harianrakyatbengkulu.com##img[width="800"][height="400"]
+hariansinggalang.co.id##img[width="897"][height="1280"]
+kabarcirebon.co.id##img[width="903"][height="1280"]
 !
 ! Filters optimized for uBlock (https://github.com/uBlockOrigin/uAssets)
 kompas.com## + js(abort-current-inline-script.js, setTimeout, iframeTestTimeMS)
 kompas.com,tribunnews.com## + js(abort-on-property-read.js, $getWin)
 kompas.com##^script:has-text(axtd)
-tabloidjubi.com##img[alt*="advertisement"]
 !
 @@/bplogo.$domain=beritapagi.co.id
 @@/fuckadblock.js$domain=suaranasional.com
