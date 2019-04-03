@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0403.1638
+! Version: 19.0403.2019
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Apr 2019 16:38 UTC
+! Last modified: 03 Apr 2019 20:19 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -148,6 +148,7 @@ _promosi.
 -1280X195.
 -150x300px
 -160-x-300.
+-160-X-600-
 -200x200.gif
 -200x500px.
 -220x500.
@@ -1263,6 +1264,7 @@ _996x50.gif
 ||mesiniklan.andipublisher.com^$third-party
 ||mousheen.net^
 ||naetoris.pw^
+||parentelement.ml^
 ||pasangiklan.com^$third-party
 ||peevopoy.com^
 ||pegel.pw^$image
@@ -1274,6 +1276,7 @@ _996x50.gif
 ||pvclouds.com^
 ||rereegny.net^
 ||rumahgratis.tk^$third-party
+||sebariklanbaris.com^$third-party
 ||sentrapromosi.com^$third-party
 ||septembership.com^
 ||shmokiads.com^$third-party
@@ -1437,7 +1440,7 @@ kabargames.id###banner-home-top
 hdtvku.com###bannerkategoriheader
 kotakgame.com###bannertheme_left
 kotakgame.com###bannertheme_right
-mangacanblog.com,pecintakomik.com###btm_banner
+mangacanblog.com,narashika.cc,pecintakomik.com###btm_banner
 tribunjualbeli.com###div-Top-Leaderboard
 komiku.net###floatads3
 carapedia.com###floating-banner
@@ -1478,6 +1481,7 @@ alona.co.id##.inf_infusionsoft_popup
 kaskus.co.id##.kaskus-ads
 radiotemansejati.com##.ktz_banner
 kumpulmanga.org##.kzl
+advertising-indonesia.id##.lded
 ofiskita.com##.longAddsBox
 smartphoneku.com##.margin-right-40.left
 medcom.id##.parallax_wrap
@@ -10614,6 +10618,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*depototo*.$image
 /*dewa757*.$image
 /*dewahoky*.$image
+/*dewapoker*.$image
 /*dewaqq*.$image
 /*dewiqq*.$image
 /*dimensiqq*.$image
@@ -10725,6 +10730,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*jpbet*.$image
 /*jppoke*.$image
 /*juaracapsa*.$image
+/*juarapoker*.$image
 /*judi_online*.$image
 /*juditogelhk*.$image
 /*kaisar88*.$image
@@ -10840,6 +10846,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*mybet188*.$image
 /*mygoldenbet88*.$image
 /*naganew*.$image
+/*nagapoker*.$image
 /*naloqq*.$image
 /*negaraqq*.$image
 /*neobola*.$image
@@ -10871,6 +10878,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*pialaqq*.$image
 /*pk99banner*.$image
 /*pkstar8*.$image
+/*poker228*.$image
 /*power338bet*.$image
 /*priaqq*.$image
 /*pro-qq*.$image
@@ -11019,7 +11027,6 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /emoqq-
 /goalgoal365-
 /goodbola-bannerfilm.gif|
-/Gtrbet99-
 /hoyajpnew*.$image
 /hoyapkrnew*.$image
 /jual_obat_aborsi_
@@ -12449,6 +12456,7 @@ _penggugur_kandungan_$image
 ##[href*="poker021."] > img
 ##[href*="poker1"] > img
 ##[href*="poker158."] > img
+##[href*="poker228"] > img
 ##[href*="poker357."] > img
 ##[href*="poker5star"] > img
 ##[href*="poker8"] > img
@@ -12788,6 +12796,7 @@ _penggugur_kandungan_$image
 ##[href*="totodewa."] > img
 ##[href*="totohoki1."] > img
 ##[href*="totoisin."] > img
+##[href*="totojitu"] > img
 ##[href*="totoking4d."] > img
 ##[href*="totokini."] > img
 ##[href*="totokita"] > img
@@ -13049,7 +13058,7 @@ _penggugur_kandungan_$image
 ##img[title*="situs togel"]
 ##img[title*="wigobet"]
 ! *** abid:addons/movie.adbl ***
-.gif$image,domain=animeku.tv|dramakorea.web.id|dramaserial.tv|movie303.com|nanime.in|nontondrama.me
+.gif$image,domain=animeku.tv|dramakorea.web.id|dramaserial.tv|korenlovers.com|movie303.com|nanime.in|nontondrama.me
 nontonanimeindo.net##a[href*="//goo.gl/"] > img
 ||livechatinc.com/*/open_chat.cgi$domain=cinemakaca.tv|movie303.com|nonton-streaming.com|serunonton.com|zonamoviex.com
 ! 
@@ -13934,7 +13943,6 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@/advertisement-$script,domain=duosia.id
 @@/advertisement.$script,domain=ikurniawan.com|kumpulmanga.org|lifesurance.info|overlordfree.web.id|rukim.id|samehadaku.tv|wizardsubs.com
 @@/fuckadblock.js$domain=leantoro.com|nandatrio.com|serbakuis.com
-@@/images/ads/*$domain=promozia.com
 @@/js/ads.$domain=blogshortener.com|iovoproduction.info|mylinkblog.com
 @@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
 @@/pagead2.$script,domain=bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|hightech.web.id|mufasi.ga|unduh.in
@@ -14019,9 +14027,9 @@ otakuindo.net#@##banner_ad
 @@-reseller-iklan-$domain=~data.alexa.com
 @@/ayopasangiklan.
 @@/belanja_iklan-
-@@/bnrs/*$domain=iklanbogor.com|iklanpopuler.com|sebariklanonline.com
+@@/bnrs/*$domain=duniaiklangratis.com|iklanbogor.com|iklanpopuler.com|sebariklanonline.com
 @@/cara-beriklan.
-@@/iklan-$domain=agency-iklan.com|baktiartha.co.id|banyumedia.co.id|doremindo.co.id|hartikaad.com|iklan.joglosemarnews.com|iklanet.co.id|iklankoran.net|karyaiklan.co.id|logique.co.id|muslim.or.id|pasangiklan.com|pasangiklankompasposkota.com|promozia.com|refrez.com|rumahdijual.com|webiklan.com
+@@/iklan-$domain=agency-iklan.com|baktiartha.co.id|banyumedia.co.id|doremindo.co.id|duniaiklangratis.com|hartikaad.com|iklan.joglosemarnews.com|iklanet.co.id|iklankoran.net|karyaiklan.co.id|logique.co.id|muslim.or.id|pasangiklan.com|pasangiklankompasposkota.com|promozia.com|refrez.com|rumahdijual.com|webiklan.com
 @@/iklan-adwords-
 @@/iklan-adwords1.
 @@/iklan-baris-
@@ -14029,7 +14037,7 @@ otakuindo.net#@##banner_ad
 @@/iklan-gratis-
 @@/iklan-gratis.
 @@/iklan-terpopular-
-@@/iklan/*$domain=duniaiklangratis.com|iklanbogor.com|iklankotalemank.com|iklanpopuler.com|pusatiklan.co.id|sebariklanbaris.net|sewa-apartemen.net
+@@/iklan/*$domain=1rajaiklan.com|duniaiklangratis.com|iklan123.net|iklanbogor.com|iklankotalemank.com|iklanpopuler.com|iklansmart.com|megaiklan.com|pasangiklanmurah.xyz|pusatiklan.co.id|sebariklanbaris.net|sentrapromosi.com|sewa-apartemen.net
 @@/iklan_$domain=autoglaze.co.id|iklan.krjogja.com|iklanbaris.tribunjateng.com|neonlite.co.id|niadesain.com
 @@/iklan_baris.
 @@/iklan_gratis.
@@ -14061,15 +14069,18 @@ pendidikan.id#@#.iklan
 @@/advertising.$domain=advertising.katadata.co.id
 @@/advertising/*$domain=client.okezone.com
 @@/bg_advertise.
-@@/bnrs/*$domain=sebariklanbaris.net|sebariklanmassalpremium.com
+@@/bnrs/*$domain=iklan123.net|iklansmart.com|megaiklan.com|sebariklanbaris.net|sebariklanmassalpremium.com
 @@/google-adsense-$image,domain=jurnalweb.com
 @@/images/ads/*$domain=adsmart.detik.com
-@@/mts_ad_sense/*$domain=onphpid.com
 @@/scripts/ads.$domain=ads.kaskus.co.id
+@@/wp-content/themes/adsense-child/*$~third-party
+@@/wp-content/themes/classified-ads/*$~third-party
+@@/wp-content/themes/mts_ad_sense/*$~third-party
+@@/wp-content/themes/superads-$~third-party
 @@/wp-content/uploads/*$domain=adstarsmedia.co.id
 @@://ads.$domain=ads.hukumonline.com|ads.id|ads.iklandaerah.com|ads.kaskus.co.id
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com^$generichide
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: WsGxL6feYnGQ5of2OViD8w
+! Checksum: EKB1J4Eg0qq/pT+bezU8+A
