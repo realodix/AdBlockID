@@ -50,9 +50,10 @@ log_downhost='downhost.log'
 # list of exclude host being check
 exclusions = [
   'blogspot.com',
-  'abpindo.blogspot.com',
+  'rawgit.com',
   'raw.githubusercontent.com',
   'forums.lanik.us',
+  'yourjavascript.com',
 ]
 
 log_fh = False
