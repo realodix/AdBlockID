@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0405.0832
+! Version: 19.0405.2058
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Apr 2019 08:32 UTC
+! Last modified: 05 Apr 2019 20:58 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -58,6 +58,8 @@
 /ad-placeholder-
 /ad125x125/*
 /ad200x50/*
+/ad_url_image/*
+/ad_url_image_
 /ads-img/*
 /ads.jpg
 /adsfixed.
@@ -67,12 +69,14 @@
 /banner-atas1
 /banner-baru-
 /banner-free-space-
+/banner-iklan-
 /banner-kanan/*
 /banner-kiri/*
 /banner-samping-
 /banner728.
 /banner980.
 /banner_iklan/*
+/banner_iklan_
 /banneriklan/*
 /bb17-iklan.
 /blank_spnsr.
@@ -314,6 +318,7 @@ _promosi.
 /*w728-h90-$image
 /100x790.
 /1060-X-70-
+/110-pixeX660-
 /1195X20.
 /200x200.gif
 /259x100px.
@@ -346,6 +351,7 @@ _promosi.
 /960-80-
 /960x70.
 /965x120.
+/Banner-Ads.jpg
 /pp728-200.
 =w440-h90-
 _1000x100.gif
@@ -634,6 +640,9 @@ _996x50.gif
 ##.adka
 ##.adkaki
 ##.adki
+##.ads-970-panjang-1
+##.ads-970-panjang-2
+##.ads-970-panjang-3
 ##.ads-artikel
 ##.ads-artikel--atas
 ##.ads-artikel--bawah
@@ -780,6 +789,14 @@ _996x50.gif
 ##.iklan-besarbawah
 ##.iklan-besarkanan
 ##.iklan-besarkiri
+##.iklan-col-kanan
+##.iklan-col-kanan1
+##.iklan-col-kanan2
+##.iklan-col-kanan3
+##.iklan-col-kiri
+##.iklan-col-kiri1
+##.iklan-col-kiri2
+##.iklan-col-kiri3
 ##.iklan-home-headline-bottom
 ##.iklan-item
 ##.iklan-kanan
@@ -798,6 +815,8 @@ _996x50.gif
 ##.iklan-kecilkiri
 ##.iklan-kiri
 ##.iklan-kiri-player
+##.iklan-latest-kanan
+##.iklan-latest-kiri
 ##.iklan-left
 ##.iklan-puff
 ##.iklan-right
@@ -1392,15 +1411,19 @@ _996x50.gif
 ||plaza-bisnis.com/wp-content/uploads/*-Banner.$image
 ||rakosa-fm.co.id^*/partner/$image
 ||rri.co.id^*/banner/$image
+||safelinku.com/728x20.$image,third-party
 ||static.domainesia.com/assets/images/afiliasi/
 ||suckittrees.com^*/banner.
 ||visitjateng.com^*/banner/$image
 ||waralabakan.com^*/banner/$image
 ! 
 ! OTOMOTIF
+-640-200.$image,domain=warungbiker.com
+-promo-$image,domain=warungbiker.com
 .gif$image,domain=aripitstop.com|bonsaibiker.com|mariodevan.com|monkeymotoblog.com|motogokil.com|motorexpertz.com|motorrio.com|otobalancing.net|potretbikers.com|tmcblog.com|warungasep.net
-/*banner*.$image,domain=iwanbanaran.com|motomazine.com|pertamax7.com
+/*banner*.$image,domain=iwanbanaran.com|pertamax7.com
 /720x100-$image,domain=ridertua.com|tmcblog.com
+@@||gstatic.com/*/images/$image,domain=otobalancing.net
 ||balapmotor.net^*/*banner.$image
 ||balapmotor.net^*/banner-$image
 ||bmspeed7.com^*/banner-
@@ -1527,6 +1550,7 @@ bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajians
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
 ! 
 ! OTOMOTIF
+adventuriderz.com###ac-belowpost
 mobilwow.com###add
 mobilwow.com###bottombanner
 otosia.com###box-mobil-dijual
@@ -1534,7 +1558,8 @@ otosia.com###v5-leaderboard
 otosia.com###v5-showcase1
 otosia.com###v5-showcase2
 rajamobil.com##.banner-billboard
-warungasep.net##.wpa
+motomazine.com##.idblog-topbanner-aftermenu
+adventuriderz.com,anangcozz.com,iwanbanaran.com,warungasep.net,warungbiker.com##.wpa
 indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
 maniakmotor.com,otomotifmax.com##a[target="_blank"] > img
 ! 
@@ -13148,6 +13173,7 @@ sukamovie.*##.sukam-bawah
 ||beritatotabuan.com^*/baner-$image
 ||bingkairiau.com^*/banner/$image
 ||cdnstatic.detik.com^
+||dashboard.rmol.co/assets/images/banner/$image
 ||detak.co/*/AD_$image
 ||detiknews.id/wp-content/uploads/*/ads-$image
 ||detiknews.id/wp-content/uploads/*/ADV-$image
@@ -13155,6 +13181,7 @@ sukamovie.*##.sukam-bawah
 ||detiksumsel.com/media/header_kiri/*/thumbheader_kiri*.jpeg$image
 ||eramuslim.com^*/banners/$image
 ||gagasanriau.com^*/banner/$image
+||gatra.com/images/*/banner/$image
 ||haluankepri.com^*/banners/$image
 ||harianhaluan.com^*/banner/$image
 ||harianjogja.com^*/banner/$image
@@ -13164,6 +13191,7 @@ sukamovie.*##.sukam-bawah
 ||iklan.beritajatim.com/$image
 ||iklan.sorotmedianusantara.com/*^$third-party
 ||indopos.co.id/*/a/*.gif$image
+||indopos.co.id//storage/uploads/a/$image
 ||inilah.com/*-banner*.html$subdocument
 ||inilahkoran.com^*/banners/$image
 ||kabar47.com/wp-content/uploads/*.gif$image
@@ -13963,15 +13991,11 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@.gif#*/ad/
 @@.jpg#*/ad/
 @@.png#*/ad/
-@@/*.css$stylesheet,domain=danirachmat.com
-@@/*.ttf$font,domain=danirachmat.com
-@@/ad-inserter/*$domain=overlordfree.web.id
-@@/advertisement-$script,domain=duosia.id
+@@/advertisement-$domain=duosia.id
 @@/advertisement.$script,domain=ikurniawan.com|kumpulmanga.org|lifesurance.info|overlordfree.web.id|rukim.id|samehadaku.tv|wizardsubs.com
-@@/fuckadblock.js$domain=leantoro.com|nandatrio.com|serbakuis.com
+@@/fuckadblock.js$domain=leantoro.com|serbakuis.com
 @@/js/ads.$domain=blogshortener.com|iovoproduction.info|mylinkblog.com
-@@/overlay-adblock.$xmlhttprequest,domain=aplikasipc.com
-@@/pagead2.$script,domain=bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|hightech.web.id|mufasi.ga|unduh.in
+@@/pagead2.$script,domain=bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|hightech.web.id|unduh.in
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||adturl.com^$generichide
@@ -14101,10 +14125,10 @@ pendidikan.id#@#.iklan
 @@/wp-content/themes/mts_ad_sense/*$~third-party
 @@/wp-content/themes/superads-$~third-party
 @@/wp-content/uploads/*$domain=adstarsmedia.co.id|jurnalweb.com
-@@://ads.$domain=ads.hukumonline.com|ads.id|ads.iklandaerah.com|ads.kaskus.co.id
+@@://ads.$domain=ads.hukumonline.com|ads.id|ads.iklandaerah.com|ads.kaskus.co.id|ads.kontan.co.id|ads.wartaekonomi.co.id
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com^$generichide
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: e2qAjzUO9L6/VMv7iLf9RA
+! Checksum: VLKxQ02jnEtJQUCdOHlfaA
