@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0404.2007
+! Version: 19.0405.0832
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Apr 2019 20:07 UTC
+! Last modified: 05 Apr 2019 08:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -597,6 +597,9 @@ _996x50.gif
 ###islemag_content_ad-widget-2
 ###it-ad-header
 ###keep-ads
+###kode-iklan-atas
+###kode-iklan-bawah
+###kode-iklan-samping
 ###kontolbanner
 ###kopa_widget_advertising-2
 ###lAds
@@ -1406,6 +1409,7 @@ _996x50.gif
 ! 
 ! 
 ||githack.com/riandiramdani/safelinku.com/*/script.js
+||githack.com/riandiramdani/safelinku.com/*/scriptlinku.js
 ||hxload.co^*/ads.js
 ||indotelko.com/inc/c_banner.js
 ||pergi.klik-link.us/wpsafelink.js$script
@@ -4429,6 +4433,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||icxssspyxquw.bid^
 ||icyddcsjbqjxz.bid^
 ||icyfqtjj.bid^
+||idbjhskxiablsi.com^
 ||idbtfwllhogxc.com^
 ||idbxnzgmn.com^
 ||idcoyhwzthhjv.com^
@@ -6699,6 +6704,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ouannxwziw.bid^
 ||oubibahphzsz.com^
 ||oubriojtpnps.com^
+||oucywciij.com^
 ||ougfkbyllars.com^
 ||ouiinryhlvbgq.com^
 ||oulxdvvpmfcd.com^
@@ -10979,6 +10985,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*sundul88*.$image
 /*superbet888*.$image
 /*surgawin*.$image
+/*suryabola*.$image
 /*suster_poker*.$image
 /*tahun-qq*.$image
 /*tahunqq*.$image
@@ -12550,6 +12557,7 @@ _penggugur_kandungan_$image
 ##[href*="qq338ww"] > img
 ##[href*="qq8788"] > img
 ##[href*="qq8821"] > img
+##[href*="qq96ace."] > img
 ##[href*="qqasia99"] > img
 ##[href*="qqasli."] > img
 ##[href*="qqboya."] > img
@@ -13088,6 +13096,7 @@ nontonanimeindo.net##a[href*="//goo.gl/"] > img
 bioskop45.*,lk21.*,indoxxi.bz##[href*="/bit.ly/"]
 dunia21.*###overlay-pop
 indoxxi.*##.popUpBannerBox
+kantaii.web.id##[href*="/ref/bangago"]
 mivo.com##.home-banner-big-ads
 nonton.com##.adds
 sukamovie.*##.sukam-atas-post
@@ -13299,11 +13308,6 @@ kabarcirebon.co.id##img[width="710"][height="1065"]
 harianrakyatbengkulu.com##img[width="800"][height="400"]
 hariansinggalang.co.id##img[width="897"][height="1280"]
 kabarcirebon.co.id##img[width="903"][height="1280"]
-! 
-! Filters optimized for uBlock (https://github.com/uBlockOrigin/uAssets)
-kompas.com## + js(abort-current-inline-script.js, setTimeout, iframeTestTimeMS)
-kompas.com,tribunnews.com## + js(abort-on-property-read.js, $getWin)
-kompas.com##^script:has-text(axtd)
 ! 
 @@/bplogo.$domain=beritapagi.co.id
 @@/fuckadblock.js$domain=suaranasional.com
@@ -14103,4 +14107,4 @@ pendidikan.id#@#.iklan
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: dgSF8MuLPvNlEMG9ugPcqA
+! Checksum: e2qAjzUO9L6/VMv7iLf9RA
