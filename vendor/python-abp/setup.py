@@ -28,7 +28,7 @@ setup(
     author='eyeo GmbH',
     author_email='info@adblockplus.org',
     url='https://hg.adblockplus.org/python-abp/',
-    packages=['abp', 'abp.filters'],
+    packages=['abp', 'abp.filters', 'abp.stats'],
     entry_points={
         'console_scripts': ['flrender=abp.filters.render_script:main',
                             'fldiff=abp.filters.diff_script:main'],
