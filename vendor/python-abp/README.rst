@@ -210,25 +210,53 @@ instantiate (such as exceptions).
 
 Using the library with R
 ------------------------
+Installation
+~~~~~~~~~~~~
+``python-abp`` can be installed from PyPI or from the source code, either
+directly onto a system or in a virtual environment.
 
-``python-abp`` can be installed directly onto your system, or in a virtual
-environment. To install it directly onto your system::
+To install from PyPI::
 
-    $ pip install --upgrade python-abp
+    $ pip install -U python-abp
 
-To install it in a virtual environment::
+To install from a local source, clone the repo and then::
 
-    $ virtualenv venv
-    $ venv/bin/pip install --upgrade python-abp
+    $ pip install -U /path/to/python-abp
 
+To use the virtual environment, it must first be created. Python 2 and 3 use
+different scripts to create a virtualenv.
 
-Then import it with ``reticulate`` in R:
+In Python 2::
+
+    $ virtualenv env
+
+In Python 3::
+
+    $ python3 -m venv env
+
+Then, use the virtualenv's version of pip to install python-abp, either from
+PyPI or from source (as shown above)::
+
+    $ env/bin/pip install -U python-abp
+
+For more information about virtualenv, please see the `User Guide`_ and the
+docs_.
+
+Usage
+~~~~~
+In R, ``python-abp`` can be imported with ``reticulate``:
 
 .. code-block:: R
 
     > library(reticulate)
-    > use_virtualenv("~/python-abp/env", required=TRUE)  # If using virtualenv
+    > use_virtualenv("~/path/to/env", required=TRUE)  # If using virtualenv
     > abp <- import("abp.filters.rpy")
 
 Now you can use the functions with ``abp$functionname``, e.g.
-``abp.line2dict("@@||g.doubleclick.net/pagead/$subdocument,domain=hon30.org")``.
+``abp$line2dict("@@||g.doubleclick.net/pagead/$subdocument,domain=hon30.org")``
+
+For more information about the reticulate package, see their guide_.
+
+.. _User Guide: https://virtualenv.pypa.io/en/latest/userguide/#usage
+.. _docs: https://docs.python.org/3/library/venv.html
+.. _guide: https://rstudio.github.io/reticulate/
