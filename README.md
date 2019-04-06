@@ -29,7 +29,7 @@ AdblockID juga mendukung beberapa negara ASEAN lainnya
 
 
 ## Berkontribusi
-Perkebangan web di Indonesia begitu cepat, terutama web yang memajang iklan berkonten dewasa. Jika Anda menemukan web yang tidak terfilter oleh AdBlockID, jangan ragu untuk membuat [issue di sini](https://github.com/realodix/AdBlockID/issues) :D
+Perkebangan iklan di web Indonesia begitu cepat, terutama web yang memajang iklan berkonten dewasa. Jika Anda menemukan web yang tidak terfilter oleh AdBlockID, jangan ragu untuk membuat [issue di sini](https://github.com/realodix/AdBlockID/issues) :D
 
 
 ## Generate File
@@ -37,13 +37,14 @@ Perkebangan web di Indonesia begitu cepat, terutama web yang memajang iklan berk
 ### Persiapan
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt), Anda membutuhkan:
 
-* [Python (2.7 atau 3.5+)](https://www.python.org/downloads/),
+* [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
 * [pip](https://pypi.org/project/pip/).
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
 `$ pip install -e vendor/python-abp`
 
-### Perintah untuk generate
-* Klik file `FOP.py` untuk mengurutkan.
-* Klik file `generate.py` untuk menyatukan.
+### Tools pendukung
+* `FOP.py` untuk mengurutkan.
+* `generate.py` untuk menyatukan.
+* `validatehost.py` untuk memeriksa host apakah masih aktif atau tidak.
