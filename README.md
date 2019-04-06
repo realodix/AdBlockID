@@ -1,9 +1,9 @@
-[![git](https://img.shields.io/badge/Update%20via-GitHub%20Desktop-663399.svg?style=flat-square&logo=github)](https://gitforwindows.org) 
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-abp.svg?logo=python&style=flat-square)
+[![git](https://img.shields.io/badge/Update%20via-GitHub%20Desktop-663399.svg?style=popout-square&logo=github)](https://gitforwindows.org)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-abp.svg?logo=python&style=popout-square)
 
 # AdBlockID
 
-Total rules: 14,164
+Total rules: 14,159
 
 AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
