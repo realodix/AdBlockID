@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0407.1250
+! Version: 19.0407.2044
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Apr 2019 12:50 UTC
+! Last modified: 07 Apr 2019 20:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -229,6 +229,7 @@ _promosi.
 -728--x-90-
 -728-90-
 -728-x-80-
+-728-x-90-
 -728-x-90.
 -728-x90-
 -728-x90.
@@ -3428,6 +3429,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||feqyuubaixe.bid^
 ||fevrbniqa.com^
 ||ffahsidlivqb.bid^
+||ffaspwzfq.com^
 ||ffbuqvnst.bid^
 ||ffcqkvdaklrqkg.com^
 ||ffdkffnj.com^
@@ -3985,6 +3987,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||gubisowidb.com^
 ||gudlhvxz.com^
 ||gufjfwopsez.bid^
+||guhpyglt.com^
 ||guhtjoqtobac.com^
 ||gujyvlvoewweg.bid^
 ||gulvkhfah.bid^
@@ -9830,6 +9833,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xwwvcsquuhbd.com^
 ||xwzhazcuyf.com^
 ||xxamqnqeygbk.com^
+||xxdjmuekj.com^
 ||xxehantfkywk.com^
 ||xxelvfyvgcjo.bid^
 ||xxhgzzinkrbbo.com^
@@ -13191,6 +13195,7 @@ sukamovie.*##.sukam-bawah
 ||detiknews.id/wp-content/uploads/*/ADV-$image
 ||detiksumsel.com/media/banner/$image
 ||detiksumsel.com/media/header_kiri/*/thumbheader_kiri*.jpeg$image
+||dutatv.com^*/ads-$image
 ||eramuslim.com^*/banners/$image
 ||gagasanriau.com^*/banner/$image
 ||gatra.com/images/*/banner/$image
@@ -13199,6 +13204,7 @@ sukamovie.*##.sukam-bawah
 ||harianjogja.com^*/banner/$image
 ||harianrakyatbengkulu.com/wp-content/uploads/*/Banner_$image
 ||harianrakyatbengkulu.com^*-banner-$image
+||harianrakyatbengkulu.com^*/Iklan-$image
 ||hotabis.com/wp-content/uploads/*.gif$image
 ||iklan.beritajatim.com/$image
 ||iklan.sorotmedianusantara.com/*^$third-party
@@ -13215,6 +13221,7 @@ sukamovie.*##.sukam-bawah
 ||klikbalikpapan.co^*/img_iklan/$image
 ||klikkaltim.com^*/img_iklan/$image
 ||kompasads.com^
+||kupastuntas.co^*/iklan-$image
 ||liputan46.com/wp-content/uploads/*.gif$image
 ||mediaindonesia.com^*/banners/$image
 ||moralriau.com^*/banner-$image
@@ -13224,6 +13231,7 @@ sukamovie.*##.sukam-bawah
 ||papuatoday.com^*/banner-$image
 ||prfmnews.com/images/*.gif$image
 ||referensipublik.com/wp-content/uploads/*/banner-$image
+||riaulink.com/assets/banner/$image
 ||riaumandiri.co/assets/banner/$image
 ||riauonline.co.id^*/ads/$image
 ||riaupos.co/banner/$image
@@ -13320,6 +13328,7 @@ kompas.com##.kcm__rectangle.kcm
 faktabali.com,inforakyat.com,klikkalsel.com,lampung1.com,nenemonews.com,otomakassar.com,populinews.com,pressmedia.co.id,sijorikepri.com##.ktz_banner
 tribunsumbar.com##.majalahpro-core-center-ads
 kabarmedia.co##.marketing-box
+baritopost.co.id##.newkarma-core-topbanner
 detik.com##.newsfeed-ads
 viva.co.id##.paralax_banner
 viva.co.id##.paralax_banner-detail
@@ -13339,19 +13348,27 @@ citrust.id,faktabanten.co.id,garudadaily.com,harianindo.com,harianrakyatbengkulu
 kontan.co.id##div[id^="div-Topregular-"]
 harianrakyatbengkulu.com##iframe[width="560"][height="315"]
 tabloidjubi.com##img[alt*="advertisement"]
+lampungpro.com##img[alt^="Iklan"]
 valora.co.id##img[src^="http://www.valora.co.id/banner/"]
+baritopost.co.id##img[width="300"][height="150"]
+radarlampung.co.id##img[width="300"][height="424"]
+radarlampung.co.id##img[width="300"][height="498"]
+kupastuntas.co##img[width="325"][height="245"]
+kupastuntas.co##img[width="328"][height="186"]
 pasbana.com##img[width="451"][height="640"]
 ceposonline.com##img[width="455"][height="640"]
+beritabanjarmasin.com##img[width="493"][height="657"]
 duta.co##img[width="696"][height="1034"]
 duta.co##img[width="696"][height="1093"]
 kabarcirebon.co.id##img[width="709"][height="1063"]
 kabarcirebon.co.id##img[width="710"][height="1065"]
 harianrakyatbengkulu.com##img[width="800"][height="400"]
+baritopost.co.id##img[width="834"][height="1280"]
 hariansinggalang.co.id##img[width="897"][height="1280"]
 kabarcirebon.co.id##img[width="903"][height="1280"]
 ! 
 @@/bplogo.$domain=beritapagi.co.id
-@@/fuckadblock.js$domain=suaranasional.com
+@@/fuckadblock.js$domain=baritopost.co.id|suaranasional.com
 @@/iklan-langganan.$domain=radarlombok.co.id
 @@://ads.$domain=klasika.kompas.com
 @@kompas.com/pasangiklan/api/ads/
@@ -14133,4 +14150,4 @@ pendidikan.id#@#.iklan
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: rWqj1ZuW7IsQG5BDQ7Kbcg
+! Checksum: nS3fFB8t4sbE47PLztwBHg
