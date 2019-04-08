@@ -13,8 +13,8 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 2. **Block popads**.
 3. **Block [crypto mining scripts](https://www.mycryptopedia.com/crypto-mining-scripts/)**.
 4. **Speed you need:** mengurangi waktu pemuatan halaman hingga setengah dari waktu sebenarnya!
-5. **Privacy:**  dengan adanya annoyances blocking, ini `meningkatkan`  privacy.
-6. **Saves expense:**  greatly decreases data consumption  `saving`  expense.
+5. **Privacy:** dengan adanya annoyances blocking, ini `meningkatkan`  privacy.
+6. **Saves expense:** mengurangi  `biaya` konsumsi data.
 7. **Clean:**  no  `extra`  abracadabra!
 
 
