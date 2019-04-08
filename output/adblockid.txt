@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0407.2044
+! Version: 19.0408.1230
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Apr 2019 20:44 UTC
+! Last modified: 08 Apr 2019 12:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -252,6 +252,7 @@ _promosi.
 -85x445.
 -936x60.
 -950x240_
+-960X120px_
 -970-190.
 -970x80.
 -980x70.
@@ -1266,7 +1267,7 @@ _996x50.gif
 ||iklanhoki.com^$third-party
 ||iklaninter.net^$third-party
 ||ivastoor.com^
-||ivideosmart.com^$domain=brilio.net|feedme.id|geeq.id|idntimes.com|kompas.com|kontan.co.id|styl.id|sulselsatu.com
+||ivideosmart.com^$domain=bolasport.com|brilio.net|feedme.id|geeq.id|idntimes.com|kompas.com|kontan.co.id|styl.id|sulselsatu.com
 ||jasaiklan.com^$third-party
 ||jayaiklan.com^$third-party
 ||jomys.xyz$script,third-party
@@ -1425,10 +1426,14 @@ _996x50.gif
 @@||gstatic.com/*/images/$image,domain=otobalancing.net
 ||balapmotor.net^*/*banner.$image
 ||balapmotor.net^*/banner-$image
-||bmspeed7.com^*/banner-
-||modifikasi.com/images/banner/
+||bmspeed7.com^*/banner-$image
+||modifikasi.com/images/banner/$image
+||motobikerz.com^*/WebBanner-$image
 ||otomotifzone.com/banner/$image
-! 
+||stradamotoblog.com^*-banner-$image
+||thegreenblog.net^*-kanan.$image
+||thegreenblog.net^*-kiri.$image
+||thegreenblog.net^*/Banner-$image
 ! 
 ||githack.com/riandiramdani/safelinku.com/*/script.js
 ||githack.com/riandiramdani/safelinku.com/*/scriptlinku.js
@@ -1559,8 +1564,11 @@ otosia.com###v5-showcase2
 rajamobil.com##.banner-billboard
 motomazine.com##.idblog-topbanner-aftermenu
 adventuriderz.com,anangcozz.com,iwanbanaran.com,warungasep.net,warungbiker.com##.wpa
+stradamotoblog.com##.wpcnt
 indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
 maniakmotor.com,otomotifmax.com##a[target="_blank"] > img
+! 
+pertamax7.com#@#.iklan
 ! 
 arenasmartphone.com##.entry-content > div:-abp-contains(Advertisement)
 pilaradiocirebon.com##.sidebar-item:-abp-contains(ADVERTISEMENT)
@@ -4627,6 +4635,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ipndulsempjgb.bid^
 ||ipntpfokhkrh.com^
 ||ippninrrcl.com^
+||ippwkczttno.com^
 ||iptrkboffhf.com^
 ||ipvvitntvja.com^
 ||ipwwqitqsh.com^
@@ -5058,6 +5067,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jwnlqtdvnm.bid^
 ||jwwlyiicjkuh.com^
 ||jwwotfckxcyv.bid^
+||jwwyuxjv.com^
 ||jwzegfmsgyba.com^
 ||jwzuohydf.com^
 ||jxanmrdurjhw.com^
@@ -8240,6 +8250,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||tgjdebebaama.com^
 ||tgkcxtvryb.com^
 ||tgrxxuwpvinoiy.bid^
+||tgugqkjvinvgv.com^
 ||tgujinopirjgnn.com^
 ||tgvedmttabgfvy.bid^
 ||tgyswiymvtxg.com^
@@ -8647,6 +8658,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ukngpcuyc.com^
 ||uknlxuxflvlw.com^
 ||ukolwxqopahb.com^
+||ukrzsrrydyysim.com^
 ||ukvkloytfaw.bid^
 ||ukxeudykhgdi.com^
 ||ukxpwwdnnbmqzu.bid^
@@ -14121,6 +14133,7 @@ otakuindo.net#@##banner_ad
 ads-ina.org#@#[href*="/ads-"]
 doremindo.co.id#@#.iklan
 iklanpopuler.com#@#[src*="/iklan/"]
+indosport.com#@#.iklan
 jualo.com#@#[href*="/iklan-"] > img
 jualo.com#@#[href*="/iklan/"] > img
 kostjakarta.net#@#[href*="/iklan/"] > img
@@ -14150,4 +14163,4 @@ pendidikan.id#@#.iklan
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: nS3fFB8t4sbE47PLztwBHg
+! Checksum: BrnNFBTW+o5qdM/ymu00Vw
