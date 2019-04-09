@@ -3,7 +3,7 @@
 
 # AdBlockID
 
-Total rules: 14,201
+Total rules: 14,247
 
 AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
@@ -23,9 +23,14 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - Install salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore#install-links), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi ad blocker lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
 - Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada plugin adblock yang Anda gunakan.
 
-   `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`.
+   `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`
    
-   Untuk tutorial cara menambahkan AdBlockID secara manual, Anda dapat membuka salah satu dari link berikut ini [uBlock Origin](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock-import-filter.md), [Nano Adblocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock-import-filter.md), [AdGuard](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adguard-import-filter.md), [Adblock Plus](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adblock-Plus-import-filter.md), [Opera Ad Blocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/Opera-AdBlocker-import-filter.md).
+   Tutorial spesifik cara memasang AdBlockID:
+   - [uBlock Origin](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock-import-filter.md)
+   - [Nano Adblocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock-import-filter.md)
+   - [AdGuard Browser extension](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adguard-import-filter.md)
+   - [Adblock Plus](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adblock-Plus-import-filter.md)
+   - [Opera Ad Blocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/Opera-AdBlocker-import-filter.md)
 
 
 ## Berkontribusi

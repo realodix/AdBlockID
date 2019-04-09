@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0408.1809
+! Version: 19.0409.1846
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Apr 2019 18:09 UTC
+! Last modified: 09 Apr 2019 18:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -86,6 +86,7 @@
 /bnr-tengah.
 /dewaweb-affiliate-banner-
 /gambarpromosi-
+/gbr_iklan/*
 /gg-ads-
 /iklan/*
 /iklan1-
@@ -1374,6 +1375,7 @@ _996x50.gif
 ||ubloger.com^$third-party
 ||windowmentaria.com^$third-party
 ! *** abid:AdBlockID/specific_block.adbl ***
+-300x300.$image,domain=rekblogging.com
 -ads-$image,domain=inikpop.com
 -banner.$image,domain=jurnalotaku.com|plaza-bisnis.com
 -banner/$image,domain=acmobilindonesia.com
@@ -1414,6 +1416,7 @@ _996x50.gif
 ||static.domainesia.com/assets/images/afiliasi/
 ||studentpreneur.co^*-banner-$image
 ||suckittrees.com^*/banner.
+||terasjakarta.id^*/adv-$image
 ||visitjateng.com^*/banner/$image
 ||waralabakan.com^*/banner/$image
 ! 
@@ -1545,6 +1548,8 @@ maxmanroe.com##img[width="300"][height="250"]
 plaza-bisnis.com##img[width="300"][height="300"]
 iskrim.com##img[width="310"][height="152"]
 iskrim.com##img[width="317"][height="89"]
+kurajin.com##img[width="320"][height="266"]
+bacaterus.com##img[width="336"][height="280"]
 pintuwawasan.com,xidnax.com##img[width="350"][height="250"]
 klikmania.net##img[width="366"][height="280"]
 ! 
@@ -13185,9 +13190,10 @@ sukamovie.*##.sukam-bawah
 /720x90-$image,domain=suaralampung.com
 /banner-$image,domain=ayobandung.com|beritaasatu.com|beritatotabuan.com|kabarmedan.com|mandiripos.com|sumselupdate.com|tanjungpinangpos.id|totabuan.co
 /banner_$image,domain=bogornews.com|koranrakyat.co.id
+/iklan-$image,domain=kabarselebes.id
 /IMG-*-WA*.$image,domain=pedomanbengkulu.com
 /promo-$image,domain=suaralampung.com
-/whatsapp-image-$image,domain=totabuan.co|totabuan.news
+/whatsapp-image-$image,domain=redkal.com|totabuan.co|totabuan.news
 ||blogspot.com/*/Iklan*.$image,domain=investigasindo.com
 ||blogspot.com/*/IMG-*-WA*.$image,domain=investigasindo.com
 ||pwbjlbz.com^$domain=kompas.com
@@ -13204,7 +13210,9 @@ sukamovie.*##.sukam-bawah
 ||beritapenajam.net^*/benner-$image
 ||beritatotabuan.com^*/baner-$image
 ||bingkairiau.com^*/banner/$image
+||bukalapak.com/affiliate/$third-party
 ||cdnstatic.detik.com^
+||centralnews.co.id^*/iklan-$image
 ||dashboard.rmol.co/assets/images/banner/$image
 ||detak.co/*/AD_$image
 ||detiknews.id/wp-content/uploads/*/ads-$image
@@ -13255,9 +13263,13 @@ sukamovie.*##.sukam-bawah
 ||semarakpost.com/wp-content/uploads/*/BANER-$image
 ||solopos.com/banner/$image
 ||solopos.com^*/banner-$image
+||suarakarya.id/banner1.$image
 ||suaramerdeka.com^*/banners/$image
 ||suarapedia.com^*/banner/$image
 ||suarasurabaya.net^*/banner/$image
+||sultengnews.com^*/banner300x300.$image
+||sultengterkini.com^*/banner-$image
+||sultengterkini.com^*/iklan-$image
 ||teropongsenayan.com^*/banner/$image
 ||tuntasonline.com^*/promotion/$image
 ||valora.co.id^*/banner/$image
@@ -13323,6 +13335,7 @@ klikpositif.com##.banner-item
 kabargames.id##.banner-kanan
 kabargames.id##.banner-kiri
 beritagar.id##.banner300x250
+suarakarya.id##.bannerabc
 alasannews.com##.banneritem
 cosmogirl.co.id##.bnr
 detik.com##.bottom_banner
@@ -13358,30 +13371,59 @@ newskaltim.com##.vc_single_image-img
 inilah.com##.wb-300x250
 winnetnews.com##[href*="winnetnews.com/other/ads/"]
 bogornews.com,zonabola.id##[href^="http://bit.ly/"] > img
-centralnews.co.id,duta.co,harianrakyataceh.com,kabarkota.com,lintastimur.com,mandiripos.com,penaberlian.com,radarbanten.co.id,redkal.com,sakanews.com##a[href="#"] > img
+sakanews.com##a[href="#"] > img
 kaltengpos.web.id##a[href="iklan/"] > img
-citrust.id,faktabanten.co.id,garudadaily.com,harianindo.com,harianrakyatbengkulu.com,iconews.co.id,kabar-banten.com,kabar-cirebon.com,kabarmedan.com,kabarpapua.co,kendaripos.co.id,koransultra.com,lenterasultra.com,lintaskepri.com,metrobatam.com,newsbalikpapan.com,pariwisatasumut.net,pemmzchannel.com,pojoksatu.id,radarkepri.com,radarlampung.co.id,rakyatjabarnews.com,redaksibengkulu.co.id,reportaserakyat.com,riauterkini.com,suarakristen.com,tabloidjubi.com,wartakepri.co.id##a[target="_blank"] > img
+citrust.id,faktabanten.co.id,garudadaily.com,harianindo.com,harianrakyatbengkulu.com,iconews.co.id,kabar-banten.com,kabar-cirebon.com,kabarmedan.com,kabarpapua.co,kendaripos.co.id,koransultra.com,lenterasultra.com,lintaskepri.com,metrobatam.com,newsbalikpapan.com,pariwisatasumut.net,pemmzchannel.com,pojoksatu.id,radarkepri.com,radarlampung.co.id,rakyatjabarnews.com,redaksibengkulu.co.id,reportaserakyat.com,riauterkini.com,suarakarya.id,suarakristen.com,tabloidjubi.com,wartakepri.co.id##a[target="_blank"] > img
 kontan.co.id##div[id^="div-Topregular-"]
 harianrakyatbengkulu.com##iframe[width="560"][height="315"]
 tabloidjubi.com##img[alt*="advertisement"]
+sakanews.com##img[alt="Your ads"]
 lampungpro.com##img[alt^="Iklan"]
 valora.co.id##img[src^="http://www.valora.co.id/banner/"]
+sultengterkini.com##img[width="1000"][height="333"]
+kailipost.com##img[width="1233"][height="1600"]
+kailipost.com##img[width="1280"][height="310"]
+kailipost.com##img[width="1600"][height="417"]
+mediasembilan.co.id##img[width="188"][height="300"]
+mediasembilan.co.id##img[width="225"][height="300"]
+kabarselebes.id,sultengterkini.com##img[width="248"][height="330"]
+kabarselebes.id,sultengterkini.com##img[width="298"][height="598"]
 baritopost.co.id##img[width="300"][height="150"]
+mediasembilan.co.id##img[width="300"][height="182"]
+beritasulteng.id##img[width="300"][height="224"]
+beritasulteng.id##img[width="300"][height="229"]
+beritasulteng.id##img[width="300"][height="235"]
+beritasulteng.id##img[width="300"][height="300"]
 radarlampung.co.id##img[width="300"][height="424"]
+radarbanten.co.id##img[width="300"][height="450"]
 radarlampung.co.id##img[width="300"][height="498"]
 kupastuntas.co##img[width="325"][height="245"]
 kupastuntas.co##img[width="328"][height="186"]
+radarbanten.co.id##img[width="332"][height="404"]
+sultengterkini.com##img[width="3661"][height="5551"]
 pasbana.com##img[width="451"][height="640"]
 ceposonline.com##img[width="455"][height="640"]
+kabarselebes.id,sultengterkini.com##img[width="486"][height="126"]
 beritabanjarmasin.com##img[width="493"][height="657"]
+harianrakyataceh.com##img[width="5553"][height="3782"]
+sultengterkini.com##img[width="577"][height="509"]
+kailipost.com##img[width="638"][height="161"]
+jabarekspres.com##img[width="640"][height="534"]
+kailipost.com##img[width="683"][height="1024"]
 duta.co##img[width="696"][height="1034"]
 duta.co##img[width="696"][height="1093"]
 kabarcirebon.co.id##img[width="709"][height="1063"]
 kabarcirebon.co.id##img[width="710"][height="1065"]
+kabarselebes.id,sultengterkini.com##img[width="715"][height="1000"]
+kabarselebes.id,kailipost.com,sultengterkini.com##img[width="722"][height="1006"]
+kailipost.com##img[width="731"][height="1024"]
 harianrakyatbengkulu.com##img[width="800"][height="400"]
 baritopost.co.id##img[width="834"][height="1280"]
 hariansinggalang.co.id##img[width="897"][height="1280"]
 kabarcirebon.co.id##img[width="903"][height="1280"]
+kailipost.com##img[width="938"][height="1280"]
+kabarselebes.id,kailipost.com,sultengterkini.com##img[width="970"][height="250"]
+kabarselebes.id,kailipost.com,sultengterkini.com##img[width="970"][height="291"]
 ! 
 @@/bplogo.$domain=beritapagi.co.id
 @@/fuckadblock.js$domain=baritopost.co.id|suaranasional.com
@@ -13391,6 +13433,7 @@ kabarcirebon.co.id##img[width="903"][height="1280"]
 @@||kabarmakkah.com^$generichide
 @@||radarlombok.co.id^$generichide
 @@||tribunislam.com^$generichide
+harianrakyataceh.com#@#.iklan
 radarlombok.co.id##.adsbygoogle
 radarmalang.id#@#.td-ad-background-link
 terkini.id#@#.iklan
@@ -14149,6 +14192,7 @@ pendidikan.id#@#.iklan
 ! 
 @@/ads/*$domain=phd.co.id|promozia.com
 @@/advertise/*$domain=brilio.net
+@@/advertisement.$domain=advertisement.keepo.me
 @@/advertising-$domain=advertising-indonesia.id
 @@/advertising.$domain=advertising.katadata.co.id
 @@/advertising/*$domain=client.okezone.com
@@ -14167,4 +14211,4 @@ pendidikan.id#@#.iklan
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: A905DjjteZQq4lzD6lOG7Q
+! Checksum: y+WE49KjHOLpVnHiM1mGOw
