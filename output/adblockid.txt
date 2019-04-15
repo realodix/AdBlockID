@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0411.1001
+! Version: 19.0415.0931
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Apr 2019 10:01 UTC
+! Last modified: 15 Apr 2019 09:31 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -18,6 +18,8 @@
 -banner-300.
 -banner-728.
 -banner-ads.
+-iklan1.
+-iklan2.
 -ikln.
 .id/ad.
 .id/ad/
@@ -126,7 +128,9 @@
 /smartfren/ads.
 /space-available.
 /spaceads.
+/top_iklan1.
 /xbanner-mediaads.
+/xbanner_iklan_
 _iklan-
 _iklan.
 _iklanatas/
@@ -158,12 +162,14 @@ _promosi.
 -150x300px
 -160-x-300.
 -160-X-600-
+-160-x-600.
 -200x200.gif
 -200x500px.
 -220x500.
 -234x60.
 -259x100px
 -276x100.
+-300-x-1000.
 -300-x-250-
 -300-x-250.
 -300-X-300-
@@ -467,6 +473,7 @@ _336x280.gif
 _350x230.gif
 _350x60.
 _350x90.gif
+_352x1030px_
 _465x45.gif
 _470x70.gif
 _475x80.gif
@@ -991,6 +998,7 @@ _996x50.gif
 ##[href^="/api/1/ad/"]
 ##[href^="/mellowads."]
 ##[href^="https://publishers.propellerads.com/"] > img
+##[href^="https://tpro.co.id/affiliate/"] > img
 ##[id*="-iklan-kanan-"]
 ##[id*="-iklan-kiri-"]
 ##[id*="_iklan-block_"]
@@ -1251,18 +1259,19 @@ _996x50.gif
 ||ads.vidoomy.com^$third-party
 ||adscpm.site^$third-party
 ||adshost.site^$third-party
-||adskom.com^$third-party
 ||adstarsmedia.co.id^$third-party
 ||adtival.com^$third-party
 ||advertnative.com^$third-party
 ||adxscope.com^$third-party
 ||aiwhebey.com^
+||aseanbanner.tk^$third-party
 ||bileth.pw^$third-party
 ||brand.ad^$third-party
 ||caribanner.bid^$third-party
 ||cdnasiaclub.com^$third-party
 ||clickmedia.co.id^$third-party
 ||daezorwyn.xyz^
+||dgafgadsgkjg.top^
 ||easyhits4u.com^$third-party
 ||elatumal.xyz^
 ||elwraek.xyz^
@@ -1275,7 +1284,6 @@ _996x50.gif
 ||haupsoti.net^
 ||hitadsmedia.com^$third-party
 ||iarfina.pw^$third-party
-||iklanads.com^$third-party
 ||iklanbogor.com^$third-party
 ||iklanhemat.com^$third-party
 ||iklanhoki.com^$third-party
@@ -1298,6 +1306,7 @@ _996x50.gif
 ||mesiniklan.andipublisher.com^$third-party
 ||mousheen.net^
 ||naetoris.pw^
+||newthuads.com^
 ||parentelement.ml^
 ||pasangiklan.com^$third-party
 ||peevopoy.com^
@@ -1308,6 +1317,7 @@ _996x50.gif
 ||ppc.buzz^$third-party
 ||publish.web.id^$third-party
 ||pvclouds.com^
+||remtoaku.net^$third-party
 ||rereegny.net^
 ||rumahgratis.tk^$third-party
 ||sebariklanbaris.com^$third-party
@@ -1324,6 +1334,31 @@ _996x50.gif
 ||ys3e965d.top^
 ||yx-ads6.com^$third-party
 ||zy16eoat1w.com^
+! 
+||2d7bd9e6eb370143.com^
+||3585656d9351553f.com^
+||3b9eb5ed04721bef.com^
+||3da86d9fe797f228.com^
+||41df76c67812005c.com^
+||43031aaaecd84428.com^
+||47f624b2e6c6072e.com^
+||564d28256cddaeba.com^
+||6868bbe42af8e518.com^
+||7667bab1751ff777.com^
+||88461059da0a12ea.com^
+||93c8c9a28e1db445.com^
+||a1a5ab31bcd1bc68.com^
+||a2b108bd2461b12e.com^
+||aa53df329975c325.com^
+||ae25079147984d4d.com^
+||b13481647cf775c5.com^
+||b60228e270e363f6.com^
+||d4fed03105c9f65b.com^
+||e6081b73afec581f.com^
+||e7393e33565ce805.com^
+||eca1d7792ad5de43.com^
+||f3c1cc473b337ded.com^
+||fd9523b31ff93b5c.com^
 ! *** abid:AdBlockID/thirdparty.adbl ***
 ||amazonaws.com^*/banner/$third-party,domain=bogornews.com
 ||bucket.id^*/*.gif$domain=idfl.me
@@ -1348,6 +1383,7 @@ _996x50.gif
 ||bosqq.online^$third-party
 ||bukalapak.com/affiliate/$third-party
 ||cmcpoker.info^$third-party
+||craydark.pw^$third-party
 ||d10lumateci472.cloudfront.net^
 ||d138am4hd4ke4y.cloudfront.net^
 ||d162nnmwf9bggr.cloudfront.net^
@@ -1356,6 +1392,7 @@ _996x50.gif
 ||d27x580xb9ao1l.cloudfront.net^
 ||d2ghscazvn398x.cloudfront.net^
 ||d3oep4gb91kpuv.cloudfront.net^
+||daftarsb1m.net/file/get/path/banners.$image,third-party
 ||dc08i221b0n8a.cloudfront.net^
 ||domainesia-assets.s3.amazonaws.com/Affiliasi/$third-party
 ||drda5yf9kgz5p.cloudfront.net^
@@ -1394,9 +1431,8 @@ _996x50.gif
 -ads-$image,domain=inikpop.com
 -banner.$image,domain=jurnalotaku.com|plaza-bisnis.com
 -banner/$image,domain=acmobilindonesia.com
-.gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|duniabaca.com|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|horassumutnews.com|hotabis.com|kombatch.com|komiku.net|mangashiro.net|neumanga.tv|selebuzz.co.id|smallencode.com
+.gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|horassumutnews.com|hotabis.com|kombatch.com|komiku.net|mangashiro.net|neumanga.tv|selebuzz.co.id|smallencode.com
 /*banner*.$image,domain=anangcozz.com|backpackstory.me|desainstudio.com|ilmukita.org|jejamo.com|mariodevan.com|zonabola.id
-/ad-$image,domain=theairline.co.id
 /banner-$image,domain=jagokata.com
 /whatsapp-image-$image,domain=infodigimarket.com|inspirasipagi.id
 ||ads-server.hipwee.com^
@@ -1412,8 +1448,10 @@ _996x50.gif
 ||esports.id/img/adds/$image
 ||faucethub.io/assets/img/banners/$image
 ||forumbitcoin.co.id^*/banner/$image
+||franchiseglobal.com/images/banners/$image
 ||image.wapsite.info/wp-content/uploads/*/ezgif-$image
 ||indotelko.com/images/banner/$image
+||infobrand.id^*/banner-$image
 ||infotografi.com/wp-content/uploads/*/Ads-$image
 ||klikpositif.com^*/banner/
 ||kotakgame.com/images/bnr/$image
@@ -1515,7 +1553,6 @@ kurazone.net##.anuads
 arenalte.com##.arenalte-ads
 autonetmagz.com##.autonetmagz__meta--ads-elements
 onlineradiobox.com##.banner--vertical
-klikpenajam.com##.banner-item
 diskon.com##.banner-middle
 ngopibareng.id##.banner-timeline
 kompasiana.com##.banner-top
@@ -1527,7 +1564,6 @@ radiotemansejati.com##.bannersinglefot
 unduh.in##.bannersingletop
 teknodiary.com##.googlepublisherads
 kaskus.co.id##.header__kasad
-jasabuatsurat.com##.idblog-topbanner
 traveltextonline.com##.imageblock-image
 carapedia.com##.img-banner
 alona.co.id##.inf_infusionsoft_popup
@@ -1555,7 +1591,7 @@ ardisaz.com,danirachmat.com,iphincow.com,koreanindo.net,langitselatan.com,mydirt
 forumbitcoin.co.id,kazefuri.web.id,siapbisnis.net##[href*="//bit.ly/"] > img
 jalantikus.com##[id*="-gpt-ad-"]
 arlinadzgn.com##[src^="data:image/png;base64,"]
-andreasagung.com,centerklik.com,kostjakarta.com,nutrisi-pelangsing.com,tempat-kost.com##a[rel="nofollow"] > img
+andreasagung.com,centerklik.com,kostjakarta.com,tempat-kost.com##a[rel="nofollow"] > img
 bagas31.info,blogdokter.net,coinvestasi.com,gigapurbalingga.net,idblanter.com,kostjakarta.net,polisionline.com,venuemagz.com##a[target="_blank"] > img
 mastekno.com##img[style="width:100%;height:250px;"]
 blogdokter.net##img[width="300"][height="210"]
@@ -1701,6 +1737,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ! 
 ||academia.edu/record_hit
 ||adop.cc^$third-party
+||adskom.com^$third-party
 ||bat.bing.com^
 ||dable.io^$third-party
 ||data.alexa.com^
@@ -1709,6 +1746,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||metrics.brightcove.com^
 ||props.id^$third-party
 ||stats.wp.com^
+||useinsider.com^$third-party
 ! 
 ! ###########################
 ! POPUP
@@ -1769,6 +1807,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||acxujxzdluum.com^
 ||addgfxnb.com^
 ||adeyujimmmh.com^
+||adfoitjumerzge.com^
 ||adfpkxvaqeyj.com^
 ||adgsfoxoavmc.com^
 ||admlqqewbede.com^
@@ -1804,6 +1843,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||aflcdijgmr.bid^
 ||afpisdddjik.bid^
 ||afqvtomlqjioeo.com^
+||afxtcajgtzcugb.com^
 ||afyqzjxzuupmz.bid^
 ||afzkqajwcbub.com^
 ||afzoyaquhjltdd.com^
@@ -1971,6 +2011,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||arawegnvvufy.com^
 ||arcfwcxi.com^
 ||arfttojxv.com^
+||arjgnqlsdo.com^
 ||arkhamxojvr.com^
 ||arllvzkoh.com^
 ||arloxpiosxzjw.bid^
@@ -1992,6 +2033,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||asqbwneriyvur.com^
 ||asrjtcddksm.com^
 ||asrjxxzxmxy.com^
+||astpvgpwbewx.com^
 ||aszdmbftkccdkj.com^
 ||ataufekxogxr.com^
 ||atcyboopajyp.com^
@@ -2021,6 +2063,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||avkigyhrazah.com^
 ||avlysyhuvxebl.bid^
 ||avokvnpqunol.bid^
+||avonnfckdeqeyr.com^
 ||avpgdzdesjnt.com^
 ||avptczdpdh.bid^
 ||avrdrpwt.com^
@@ -2035,6 +2078,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||awjgketgdpzqxo.bid^
 ||awjkbnhylulcl.bid^
 ||awogbtinorwx.com^
+||awpxjguq.com^
 ||awrspmpj.com^
 ||awrxkucpfbsq.com^
 ||awvuhwqyimgd.com^
@@ -2132,6 +2176,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bdyzewccsqpw.com^
 ||bebufuspldzh.com^
 ||bebxxrgjigz.com^
+||beelzgkdjr.com^
 ||beeseggjfru.bid^
 ||befxqicnz.bid^
 ||begbkbqywd.bid^
@@ -2191,6 +2236,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bictxzszwkwghn.com^
 ||biftbtajfs.bid^
 ||bihzqdflxeelc.com^
+||biijdpauyvf.com^
 ||bikuetrh.com^
 ||bimwswreljucxa.com^
 ||binasmdul.com^
@@ -2288,6 +2334,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bpfxtrzapdxdr.bid^
 ||bpglbuxwx.com^
 ||bplzgzpqp.com^
+||bpmskwgodi.com^
 ||bpniszadiuc.com^
 ||bpnjigwalqjho.com^
 ||bpprksdgogtw.com^
@@ -2401,11 +2448,13 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||bypjftbwbpj.bid^
 ||byqmzodcdhhu.com^
 ||byspwzspx.bid^
+||bysziktift.com^
 ||byufpbvjpedvpx.com^
 ||byuwgtzpawzzd.com^
 ||byxlivaqzo.com^
 ||byxlzyvfgb.bid^
 ||bzeidqugwde.bid^
+||bzeitvxguf.com^
 ||bzfguipyjops.com^
 ||bzgwkxnjqjdz.com^
 ||bzkmfzoxqmau.com^
@@ -2454,6 +2503,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ccscpyeeiqhs.bid^
 ||ccvewygyjqbq.bid^
 ||ccyttdkwntyhx.com^
+||cdbhmahnjb.com^
 ||cdbxuzzlgfhh.com^
 ||cddlngatmpthc.bid^
 ||cdegnloptetj.com^
@@ -2559,6 +2609,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||clgyhwaoh.com^
 ||clhkbfqzwpst.com^
 ||clhqmynew.bid^
+||clkkcokl.com^
 ||clomggnzxsyf.bid^
 ||clonsvyhy.bid^
 ||clouxtnxsmxdva.com^
@@ -2807,6 +2858,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ddczayne.bid^
 ||ddhnjkaojrcv.bid^
 ||ddjodgzhxyjtaa.bid^
+||ddmlzfwsb.com^
 ||debuackedhkvu.bid^
 ||deebwmbbytr.com^
 ||degitlwfezpe.com^
@@ -2915,6 +2967,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dlzksaqygxare.com^
 ||dmatquyckwtu.com^
 ||dmbjbgiifpfo.com^
+||dmgcxznqmmiek.com^
 ||dmgexalrtsqrvx.com^
 ||dmjcabavsraf.com^
 ||dmkadnohjoqh.com^
@@ -2969,6 +3022,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dqdnwhyxeblt.com^
 ||dqekudhbwprx.com^
 ||dqfhklmwj.com^
+||dqiokxyebdc.com^
 ||dqkeldpjzq.bid^
 ||dqlcgelw.com^
 ||dqpamcouthqv.com^
@@ -3040,6 +3094,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||dwbqmlvjpvv.com^
 ||dwhvkier.com^
 ||dwopbruzifg.com^
+||dwuvmraztukg.com^
 ||dwvfccxbj.com^
 ||dwxaciqlebqemh.com^
 ||dxcqavshmvst.com^
@@ -3206,6 +3261,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ejlsbfqqxoc.com^
 ||ejoyjumnsft.com^
 ||ejwocojjv.bid^
+||ekbiwwngwig.com^
 ||ekdamsibldrg.bid^
 ||ekdjdrmqqlc.bid^
 ||ekggptrw.com^
@@ -3218,6 +3274,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ekmztfadigi.com^
 ||eknfrwtxsde.com^
 ||ekuuarqe.com^
+||ekxfupdlyst.com^
 ||ekxlneryaiefwn.com^
 ||ekzstfriawl.bid^
 ||elatsadlux.com^
@@ -3347,6 +3404,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||eutdrjvsrmav.com^
 ||eutklhuazxlt.com^
 ||euuikdao.com^
+||euwyhbib.com^
 ||euxisszoyader.com^
 ||evfatcuv.com^
 ||evfwfkwufbjtd.com^
@@ -3406,6 +3464,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ezjrnbpjthir.com^
 ||ezkbzmwigo.bid^
 ||ezknqsblzmsl.com^
+||ezlxnyhbjtqr.com^
 ||ezqldmevi.com^
 ||ezuosstmbcle.com^
 ||fabrtgzehf.com^
@@ -3450,6 +3509,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fdnxojzwbmie.bid^
 ||fdogfuqpgeub.com^
 ||fdrkesvb.com^
+||fdrqokusnwpq.com^
 ||fdtvsqnkujlwaa.bid^
 ||fduyzzjazngphw.bid^
 ||fdvmskmentjob.com^
@@ -3458,6 +3518,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||feacamnliz.bid^
 ||febalwby.com^
 ||fefzohgedqp.com^
+||fejbkpidkkwts.com^
 ||fembsflungod.com^
 ||fengrtnoxuwwe.com^
 ||fepzygektdt.com^
@@ -3584,6 +3645,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||foguumjql.com^
 ||fojgpvkhu.com^
 ||foovyagf.com^
+||fosclhrsdhhn.com^
 ||fpbmjwoebzby.com^
 ||fpcptdqmjlnlu.com^
 ||fpdsavexteno.com^
@@ -3672,7 +3734,9 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ftuohzeijbkm.com^
 ||ftusprfqtu.bid^
 ||ftvkgkkmthed.com^
+||ftvwoljibdwd.com^
 ||ftwdbhsztw.com^
+||ftxekufylzqis.com^
 ||ftymjfywuyv.com^
 ||ftymzxmic.com^
 ||ftytssqazcqx.com^
@@ -3726,6 +3790,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||fxcayktrneld.com^
 ||fxdglnldbnyq.com^
 ||fxjgprpozntk.com^
+||fxlmstfrxtqp.com^
 ||fxlyhuluw.com^
 ||fxoryjxrnuoo.com^
 ||fxpjkzwveswgtt.bid^
@@ -3844,6 +3909,8 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ghjlhnbc.com^
 ||ghjwogfexch.com^
 ||ghkajgexob.com^
+||ghkhvajwsiy.com^
+||ghomifuzhobtoo.com^
 ||ghttzqpeyunwdr.bid^
 ||ghycvwos.bid^
 ||ghygzvdh.bid^
@@ -4306,6 +4373,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hpbczauldndnep.com^
 ||hpcniufqp.bid^
 ||hpdmnmehzcor.com^
+||hpkkzzyek.com^
 ||hpkwirncwvxo.com^
 ||hplgpoicsnea.com^
 ||hpltfwbm.com^
@@ -4349,6 +4417,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hrykyhqtgcro.com^
 ||hsdjvuayagt.bid^
 ||hseyrxoi.com^
+||hsgatgymg.com^
 ||hshbyyuh.bid^
 ||hsivniaui.bid^
 ||hsllwumsezanll.com^
@@ -4382,6 +4451,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hubvotrpjios.com^
 ||huewmezzodzdv.com^
 ||hufaymllqce.club^
+||hugjupzdpvuzdr.com^
 ||huhrxmgiofzna.com^
 ||huigyetqu.com^
 ||humcyddkxxm.bid^
@@ -4428,6 +4498,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||hxajxyvnpou.bid^
 ||hxcoxdyzzd.com^
 ||hxhabfjy.bid^
+||hxhxjcffzp.com^
 ||hxhyejtblmu.com^
 ||hxkanryhktub.com^
 ||hxlkmsib.bid^
@@ -4518,6 +4589,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||idqsygpvizjp.bid^
 ||idqzpnea.com^
 ||idrdmyixk.com^
+||idszrbmjvkdodt.com^
 ||idvuakamkzmx.com^
 ||ieajwbir.com^
 ||ieavcqhxtpak.com^
@@ -4538,6 +4610,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ifgnsrtjcz.com^
 ||iflndvke.com^
 ||ifmobkrjonnm.com^
+||ifoldmuxqjeddk.com^
 ||iftvlrkyvubnn.com^
 ||ifvgsekkvcc.bid^
 ||ifyngpctovtv.com^
@@ -4570,6 +4643,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||iihwyqhxajtn.com^
 ||iijmodcvlwfk.com^
 ||iikhhkwryiqq.bid^
+||iilrgkor.com^
 ||iinkhwsh.bid^
 ||iipivevueme.com^
 ||iipkiyju.bid^
@@ -4699,6 +4773,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||isbzjaedbdjr.com^
 ||iscaebizkzyd.com^
 ||isfouztifttwha.bid^
+||isfxsiooyjad.com^
 ||isggimkjabpa.com^
 ||ishdyglxfckw.com^
 ||ishwuhvow.bid^
@@ -4731,6 +4806,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ivktdwmjhkqy.com^
 ||ivldzqidbv.com^
 ||ivnpbikks.com^
+||ivowhzku.com^
 ||ivqoqtozlmjp.com^
 ||ivqvzkwedcjo.com^
 ||ivsqnmridfxn.com^
@@ -4738,6 +4814,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ivuqekelizp.bid^
 ||ivvoooxuyjfuo.com^
 ||ivyfsbbwsf.com^
+||iwapwcqg.com^
 ||iwbwvowdidkuo.com^
 ||iweacndqhiht.com^
 ||iwfzluau.com^
@@ -4848,6 +4925,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jdrlnicvn.com^
 ||jdskyjntuhea.com^
 ||jdtufqcyumvb.com^
+||jducqfnxeypyw.com^
 ||jdzmcidlajwwzi.bid^
 ||jeakofzseo.com^
 ||jebfktzfjqghv.bid^
@@ -4881,6 +4959,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jfwfnxsdzhvxax.bid^
 ||jfxiirxbl.bid^
 ||jfxjpswhcwwq.com^
+||jgerrmaktdzyh.com^
 ||jgjpicgy.com^
 ||jgophcykrckik.com^
 ||jgqcraids.com^
@@ -4919,6 +4998,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jjhnnzef.com^
 ||jjmuyvpery.bid^
 ||jjokekbfoxwip.com^
+||jjokvprdxwf.com^
 ||jjpnveujkk.com^
 ||jjpoxurorlsb.com^
 ||jjqoosuum.com^
@@ -5004,6 +5084,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||joqnoyniblzm.com^
 ||joqpatxugyug.com^
 ||jorndvyzchaq.com^
+||josxzdszqaivb.com^
 ||jotpybmcjvg.com^
 ||jovepjufhmmw.com^
 ||jovzikimk.com^
@@ -5022,6 +5103,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||jpqmviofsf.com^
 ||jprtqxwhtrjejx.com^
 ||jpuiucicqwan.com^
+||jpvmwnnwuzo.com^
 ||jpwvdpvsmhow.com^
 ||jpxevzab.com^
 ||jpybcyxyepsc.bid^
@@ -5201,6 +5283,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kdiunbsaw.com^
 ||kdkzvfzmgvm.com^
 ||kdmilqoiaucqto.com^
+||kdpqydaxbxztnh.com^
 ||kdtictjmofbl.com^
 ||kdtrdexby.com^
 ||kdtstmiptmvk.com^
@@ -5252,6 +5335,8 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||khpgychzfdmpm.bid^
 ||khwfemkr.bid^
 ||khzbeucrltin.com^
+||kieecarfftwf.com^
+||kiejztfpkfayak.com^
 ||kihmdiimzzab.bid^
 ||kihxncfpkimfx.bid^
 ||kiinvgntnnw.com^
@@ -5318,6 +5403,8 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kmuxsbdjxsjqe.com^
 ||kmveerigfvyy.com^
 ||kmyelzmlkl.bid^
+||kmypiwpbastt.com^
+||knepsiwviviwed.com^
 ||knimmqli.com^
 ||knnvmkbemftwgj.com^
 ||knoyiwlxahoh.bid^
@@ -5413,6 +5500,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||kujkgfzzyeol.com^
 ||kujwlsnl.com^
 ||kumekqeccmob.com^
+||kumjidmumktzq.com^
 ||kumtwckyq.com^
 ||kunkmdvgwvfo.bid^
 ||kuplohinctdwk.com^
@@ -5548,6 +5636,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ldigvkkjquvyn.com^
 ||ldkyzudgbksh.com^
 ||ldlritslfej.bid^
+||ldvmpopwd.com^
 ||ldybupeeeoq.bid^
 ||ldyiuvdoahxz.com^
 ||lebeiivzmm.com^
@@ -5588,6 +5677,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lhapwjkoltogf.bid^
 ||lhaqzqjbafcu.com^
 ||lhbkkztxg.com^
+||lhdndgmsy.com^
 ||lhedywrtanrgz.bid^
 ||lhekiqlzatfv.com^
 ||lhfcddgwg.bid^
@@ -5708,6 +5798,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lpohfjht.com^
 ||lppaepra.bid^
 ||lppyumumznf.bid^
+||lprkphlgaybvtn.com^
 ||lptggobhuuxcdw.com^
 ||lpxxafsupgsho.com^
 ||lpzltglosmbqul.bid^
@@ -5755,6 +5846,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||lshwezesshks.com^
 ||lskzcjgerhzn.com^
 ||lsmxicydlj.com^
+||lsooyivois.com^
 ||lsslotuojpud.com^
 ||lstkchbeoey.com^
 ||lstkfdmmxbmv.com^
@@ -5877,6 +5969,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||makumuvgxfogq.com^
 ||malgyhuytbnjb.bid^
 ||mardjxrw.club^
+||marguvpydbrr.com^
 ||mascqybw.com^
 ||masrtwfevkqd.bid^
 ||mavmlkzt.com^
@@ -6125,6 +6218,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||msrwoxdkffcl.com^
 ||mstmrspnqqevsu.com^
 ||msvgmziu.bid^
+||msxmfyhwgkos.com^
 ||mszfmpseoqbu.com^
 ||mtbadedrhcx.bid^
 ||mtbnqoixmb.com^
@@ -6298,6 +6392,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nfxusyviqsnh.com^
 ||nfxzakrvymtuhs.com^
 ||nfzaustkhtkd.com^
+||ngfsciiu.com^
 ||ngkqlfcm.com^
 ||ngnofhussaao.com^
 ||ngptxgpbdnutvi.com^
@@ -6308,6 +6403,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nhbklvpswckx.com^
 ||nheanvabodkw.com^
 ||nhkhxvnhfdkn.com^
+||nhqmomir.com^
 ||niaqaltky.com^
 ||nicmtzkucd.com^
 ||nicucircvp.bid^
@@ -6444,6 +6540,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nrzhlsvqxbgpbn.com^
 ||nrzkcztiaum.bid^
 ||nsbugtfudztsgq.bid^
+||nscjgmhyeov.com^
 ||nscjodfvzemwpc.bid^
 ||nselnhbwlm.com^
 ||nsfocddqbiilg.bid^
@@ -6451,6 +6548,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||nsnfokcikwf.com^
 ||nsqdwwwoxs.com^
 ||nsqitedrzv.bid^
+||nswnseld.com^
 ||ntbftkhrsrh.com^
 ||ntduattgboduk.com^
 ||ntejdhcom.bid^
@@ -6460,6 +6558,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ntfhglciig.bid^
 ||ntgqcnferh.com^
 ||nthssedj.bid^
+||nticqzrucdg.com^
 ||ntjcrsfvszoen.com^
 ||ntkuokicthbxc.com^
 ||ntlhrttump.com^
@@ -6597,6 +6696,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||oebdarcqsqcdk.com^
 ||oeevatisopdl.com^
 ||oehjxqhiasrk.com^
+||oeidusggzj.com^
 ||oeoogwkwm.bid^
 ||oeppesfmzlbpa.com^
 ||oertmxfsryji.com^
@@ -6735,10 +6835,12 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ootqfqjhzfrtn.com^
 ||oouggjayokzx.com^
 ||oougyykaeipzg.bid^
+||oounzfsyxiuj.com^
 ||ooutqfslr.com^
 ||oowivxijrgbrzc.bid^
 ||opawiftgis.com^
 ||opbneuozwyuvpk.com^
+||opcyvbwkbiaqyt.com^
 ||opdfugwvncf.bid^
 ||opdmxlsdzd.bid^
 ||opflriars.com^
@@ -6972,6 +7074,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||pjzabhzetdmt.com^
 ||pkdzrxdn.bid^
 ||pkfqaxlxh.bid^
+||pkitdifnkz.com^
 ||pkklpazhqqda.com^
 ||pkkuouvecratte.bid^
 ||pkougirndckw.com^
@@ -7047,6 +7150,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ppupdbeoth.bid^
 ||ppuuwencqopa.com^
 ||ppvjsmuexf.bid^
+||ppvlukah.com^
 ||ppxoxkdpxtu.com^
 ||ppxrlfhsouac.com^
 ||ppzfvypsurty.com^
@@ -7161,12 +7265,14 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||pyhtclpgzbe.com^
 ||pyjjxogzlzcxii.bid^
 ||pykexoeeibq.com^
+||pyllxjfkjhpjbq.com^
 ||pyqwtxicjodcij.com^
 ||pyscgael.bid^
 ||pyubjvvdsrja.com^
 ||pzbqocjaphp.com^
 ||pzcpotzdkfyn.com^
 ||pzfittkdqrrsa.com^
+||pzjdrhrlzdli.com^
 ||pzkqiwezugsucg.com^
 ||pznxzeflhuad.com^
 ||pzopzjlhqbkgnp.com^
@@ -7285,6 +7391,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qgjllgijf.bid^
 ||qgmrchjuqro.bid^
 ||qgnakeddgtdw.com^
+||qgpmtdrm.com^
 ||qgraprebabxo.com^
 ||qgrycwxbn.com^
 ||qgslgwfxar.com^
@@ -7469,6 +7576,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qtkluwmebrtbrt.com^
 ||qttmjwno.com^
 ||qtvnesozf.com^
+||qtxihhkvln.com^
 ||qtywrdgxid.com^
 ||qtzjozseyxskxw.bid^
 ||quaizzywzluk.com^
@@ -7506,6 +7614,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qwqqliynxufj.com^
 ||qwrkigqtgygc.com^
 ||qwtuviguywtza.bid^
+||qwuejlmct.com^
 ||qwufihkhgxphq.com^
 ||qwuxwxdr.com^
 ||qwvktoqxqum.bid^
@@ -7544,10 +7653,12 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||qzbnokxxvvpwf.com^
 ||qzcpotzdkfyn.com^
 ||qzhaqsxb.com^
+||qzismxssqf.com^
 ||qzizjjyvsa.com^
 ||qzpxhebrm.com^
 ||qzpzspna.bid^
 ||qzwhzahnieipgz.com^
+||rabjkklvegagrn.com^
 ||radbtqjfp.bid^
 ||rafvxnikmn.bid^
 ||rafymfnvvzqlp.com^
@@ -7577,6 +7688,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||rbnpljzf.bid^
 ||rbrbvedkazkr.com^
 ||rbrnmvfiambn.bid^
+||rbrpamcygqplm.com^
 ||rbrxrcikro.com^
 ||rbsfglbipyfs.com^
 ||rbtpsbtzh.com^
@@ -7889,6 +8001,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||rzfldcrlwe.com^
 ||rzgiiioqfpny.com^
 ||rzgqfvhfj.com^
+||rzizcnhoobxw.com^
 ||rzjbuovkp.bid^
 ||rzjhxwfbxp.com^
 ||rzmrzylebgq.com^
@@ -7969,6 +8082,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||sfgkhgfdsochwd.com^
 ||sfgymajb.bid^
 ||sfhyxyodjllrd.bid^
+||sfmgzvam.com^
 ||sfmzbrdtse.com^
 ||sfmziexfvvru.com^
 ||sfpkwhncpllt.com^
@@ -7985,6 +8099,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||sgmneqaebkzjug.com^
 ||sgpbbfdchy.com^
 ||sgqmhpqrstwzwd.com^
+||sgxaqysyilwkiu.com^
 ||shapzwwy.com^
 ||shasnvadkustw.com^
 ||shgvuhvf.com^
@@ -8010,6 +8125,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||siogczwibswm.com^
 ||sirablivefbxul.bid^
 ||sisrgcvomn.com^
+||sisyqzktimhrgo.com^
 ||siuhfvgambevyz.bid^
 ||siuletrtmkk.com^
 ||sivqblzejhx.com^
@@ -8022,6 +8138,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||sjqpctsz.com^
 ||sjqskcctmv.com^
 ||sjtevvoviqhe.com^
+||sjwdbzsa.com^
 ||skaulppmndy.bid^
 ||skcyigichh.com^
 ||skgnompyiusim.com^
@@ -8206,6 +8323,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||szzxtanwoptm.bid^
 ||tadaeizih.com^
 ||tadkozdgbyw.com^
+||tadozqgv.com^
 ||taeadsnmbbkvpw.bid^
 ||taelsfdgtmka.com^
 ||taljdzwer.com^
@@ -8321,6 +8439,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||thxdbyracswy.com^
 ||thzaiqqwsbpps.com^
 ||thzshxisa.bid^
+||tibzpgmogjqa.com^
 ||ticpqxnv.com^
 ||tiemuantodayus.bid^
 ||tienribwjswv.com^
@@ -8597,6 +8716,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ubdudsdfcll.com^
 ||ubecybzqf.bid^
 ||ubiqqzmldivih.bid^
+||ubjapvhzffdreq.com^
 ||ubjnuclsgxu.com^
 ||ubktdzjnjkpon.com^
 ||ubliwesgzq.bid^
@@ -8651,6 +8771,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ufkdsnlvxoqw.com^
 ||ufnozeotbqsn.com^
 ||ufnzapqvrbyx.com^
+||ufptmejous.com^
 ||ufrzvzpympib.com^
 ||ufugfbtpp.com^
 ||ugbmcjmpapeo.bid^
@@ -8674,6 +8795,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||uhnuskfd.bid^
 ||uhpdodqzxewhcv.com^
 ||uhvbjjse.com^
+||uhyyacioq.com^
 ||uicybyysyllad.com^
 ||uietsotq.bid^
 ||uigruwtql.com^
@@ -9059,6 +9181,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||viphdsrlec.com^
 ||viqfxgmgacxv.com^
 ||viqmadjqndqkm.com^
+||virgbmkmear.com^
 ||vivcdctagoij.com^
 ||vivetivcuggz.com^
 ||viwsqbbvfknp.com^
@@ -9130,6 +9253,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vnufxjwndhsfbj.com^
 ||vnyginzinvmq.com^
 ||vnzlgmfd.com^
+||voaalhaobdl.com^
 ||vodbordnhhemq.com^
 ||vodhaqaujopg.com^
 ||vokskdqa.com^
@@ -9141,6 +9265,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vouekcjmiu.com^
 ||voxucaldgpicqh.com^
 ||vpklpmvzbogn.com^
+||vplvywqxsm.com^
 ||vpndcpxavg.com^
 ||vppabbakjzxmz.com^
 ||vpshsuvlh.bid^
@@ -9220,6 +9345,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||vuysooqimdbt.com^
 ||vvcnnvcruobhr.bid^
 ||vvgttgprssiy.com^
+||vvjlrhuzmhzlws.com^
 ||vvkvlqubnge.com^
 ||vvnfgohclkf.bid^
 ||vvoowcdnogp.com^
@@ -9372,6 +9498,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||whjxqqdhfp.com^
 ||whkwbllcctfm.com^
 ||whlugpfcuvryx.com^
+||whlvjuprdpkg.com^
 ||whrnvjdv.com^
 ||whsldqctrvuk.com^
 ||whtuzkvpeer.com^
@@ -9521,6 +9648,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||wrzwnpmgt.bid^
 ||wsaijhlcnsqu.com^
 ||wsrjplhhhfmfsx.com^
+||wssejwluqthda.com^
 ||wssqvrcqfcfn.bid^
 ||wstfgpdmb.bid^
 ||wstvcgfkvc.com^
@@ -9616,6 +9744,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||wznnfwhwwjkp.com^
 ||wzyagambcfn.bid^
 ||xacexccntjbrht.com^
+||xafkdsxnwinmj.com^
 ||xaftihkjg.com^
 ||xahwjirrejjh.bid^
 ||xairgknb.com^
@@ -9631,6 +9760,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xasvtjprmgz.bid^
 ||xavipejcznxf.com^
 ||xavmcsvas.bid^
+||xaxggjsa.com^
 ||xbbcwbsadlrn.com^
 ||xbdlsolradeh.com^
 ||xblcqncce.com^
@@ -9791,6 +9921,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xnuuzwthzaol.com^
 ||xnvsheyceyjv.com^
 ||xnwqhydt.com^
+||xocecytufu.com^
 ||xojwkixxdkx.com^
 ||xonrbvtejfy.bid^
 ||xoqkhbtpnzblh.com^
@@ -9815,6 +9946,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xqhwdjuk.bid^
 ||xqiqnxxy.com^
 ||xqjhszpussoeur.com^
+||xqkqkfszveqvm.com^
 ||xqopbyfjdqfs.com^
 ||xqquphzq.bid^
 ||xqrjfouxkrs.com^
@@ -9944,6 +10076,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||xzywlbgldmpi.com^
 ||xzzcasiospbn.com^
 ||yafsixmo.com^
+||yahbdmyvvmjh.com^
 ||yaifxxudxyns.com^
 ||yaikleyabl.com^
 ||yaizwjvnxctz.com^
@@ -10124,6 +10257,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||ynhonjqahrh.com^
 ||ynkakgknfljv.com^
 ||ynlvwynnsstalh.com^
+||ynoiezey.com^
 ||ynopkisq.com^
 ||yntwcepykkts.com^
 ||ynuyzeqtswtd.com^
@@ -10132,6 +10266,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yobxvotn.bid^
 ||yocnxozede.bid^
 ||yocsprvjl.com^
+||yodyfofkb.com^
 ||yofyzgkoktwlc.com^
 ||yogkshigsy.com^
 ||yojxoefvnyrc.com^
@@ -10211,6 +10346,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||yuimtqtp.com^
 ||yukwxqnxwzghxb.com^
 ||yupwqyocvvnw.com^
+||yurttitxfyfh.com^
 ||yuywwcizs.com^
 ||yvbrgzeu.com^
 ||yvfsfoctkls.com^
@@ -10316,6 +10452,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zbsqhxyjlh.com^
 ||zbtqpkimkjcr.com^
 ||zbutxofdxe.bid^
+||zbvrqrjecs.com^
 ||zbwzxxysgs.bid^
 ||zbxzcrldzzgv.com^
 ||zbzdylsefv.bid^
@@ -10340,6 +10477,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zdolhnqbtnbcx.com^
 ||zdqsrdamdgmn.com^
 ||zdvyzlbvrwqpf.bid^
+||zdydvjzexmp.com^
 ||zeantqrix.bid^
 ||zehwjplnopevjt.bid^
 ||zenpmagn.bid^
@@ -10415,6 +10553,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zkqpoamv.com^
 ||zkvdsdsftimj.bid^
 ||zkzpfpoazfgq.com^
+||zlahmbwm.com^
 ||zldgcyoxtk.com^
 ||zldnbkznfs.bid^
 ||zlegojgwg.com^
@@ -10467,6 +10606,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zprrfpczfpnh.com^
 ||zpsgqvvzcbni.com^
 ||zpwqekgztngd.bid^
+||zpwqnicvzi.com^
 ||zpwtylxpfeje.com^
 ||zpxlmtujszhixe.com^
 ||zpznbracwdai.com^
@@ -10481,6 +10621,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ||zqouofoilmqfje.com^
 ||zqqyhcqf.com^
 ||zqskkhcxd.bid^
+||zqswmyzlkcvrtu.com^
 ||zramisxvxmkf.com^
 ||zrbhmhzzdj.com^
 ||zrbhyvkpgeyn.com^
@@ -10603,6 +10744,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 ! 
 -agen-judi-$image
 -agen-poker-$image
+-bandarkiu.
 -indopokerlink-$image
 -kartu-online.$image
 -lotus2d1.
@@ -10661,6 +10803,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*arenabetting*.$image
 /*arenaqq*.$image
 /*armaniqq*.$image
+/*aseanqq*.$image
 /*asetbet*.$image
 /*asia7bet*.$image
 /*asiabet*.$image
@@ -10682,7 +10825,6 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*bandarjudiqq*.$image
 /*bandarpkv*.$image
 /*bandarq*.$image
-/*bandarq168*.$image
 /*bape-qq*.$image
 /*bapeqq*.$image
 /*baru666.*.$image
@@ -10792,6 +10934,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /*hanabet*.$image
 /*hariqq*.$image
 /*hdpbet*.$image
+/*hebatqq*.$image
 /*hobicasino*.$image
 /*hok1_365*.$image
 /*hokinusa*.$image
@@ -11152,6 +11295,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /Agen-Bola-dan-Live-Game.$image
 /Agen-Game-Slots-Terpercaya.$image
 /apibet.gif|
+/Asean99-
 /b2indo.gif$image
 /betsaja-$image
 /bolavita-
@@ -11162,6 +11306,7 @@ google.co.id,google.com#$##app-container > #pushdown[-ext-has=">.gb_Cc.gb_g"] ~ 
 /goodbola-bannerfilm.gif|
 /hoyajpnew*.$image
 /hoyapkrnew*.$image
+/isiqq-
 /jual_obat_aborsi_
 /kartu-online.gif$image
 /megabet-$image
@@ -11567,6 +11712,7 @@ _penggugur_kandungan_$image
 ##[href*="armanitogel."] > img
 ##[href*="asalqq."] > img
 ##[href*="asbet888."] > img
+##[href*="asean99."] > img
 ##[href*="aseangol."] > img
 ##[href*="aseanqq."] > img
 ##[href*="aset11."] > img
@@ -12097,6 +12243,7 @@ _penggugur_kandungan_$image
 ##[href*="inulqq."] > img
 ##[href*="investasiceria."] > img
 ##[href*="ionwin88."] > img
+##[href*="isiqq."] > img
 ##[href*="isopoker"] > img
 ##[href*="isototo"] > img
 ##[href*="istana-impian"] > img
@@ -12137,8 +12284,10 @@ _penggugur_kandungan_$image
 ##[href*="jasa-domino"] > img
 ##[href*="jasa88"] > img
 ##[href*="jasa_qq"] > img
+##[href*="jasabet."] > img
 ##[href*="jasadomino"] > img
 ##[href*="jasagol"] > img
+##[href*="jasalonte."] > img
 ##[href*="jasapoker."] > img
 ##[href*="jasaqq."] > img
 ##[href*="javtoys."] > img
@@ -12336,6 +12485,7 @@ _penggugur_kandungan_$image
 ##[href*="lpk303online."] > img
 ##[href*="lpkiukiu"] > img
 ##[href*="lt770."] > img
+##[href*="luasqq."] > img
 ##[href*="luckybet168"] > img
 ##[href*="luckypoker188."] > img
 ##[href*="luckywin"] > img
@@ -12602,7 +12752,7 @@ _penggugur_kandungan_$image
 ##[href*="pokerajaib."] > img
 ##[href*="pokerampm."] > img
 ##[href*="pokerastro."] > img
-##[href*="pokerbintang."] > img
+##[href*="pokerbintang"] > img
 ##[href*="pokerbola."] > img
 ##[href*="pokerdex."] > img
 ##[href*="pokerdia."] > img
@@ -12683,6 +12833,7 @@ _penggugur_kandungan_$image
 ##[href*="qqhadir."] > img
 ##[href*="qqhappy21"] > img
 ##[href*="qqhbo."] > img
+##[href*="qqhebat."] > img
 ##[href*="qqhok"] > img
 ##[href*="qqjempol."] > img
 ##[href*="qqkartu"] > img
@@ -13105,6 +13256,7 @@ _penggugur_kandungan_$image
 ##img[alt*="Agen Poker"]
 ##img[alt*="Agen SBOBET"]
 ##img[alt*="Agen Togel"]
+##img[alt*="Agen judi"]
 ##img[alt*="Bandar Bakong"]
 ##img[alt*="Bandar Bola"]
 ##img[alt*="Bandar Togel"]
@@ -13115,9 +13267,12 @@ _penggugur_kandungan_$image
 ##img[alt*="DNAPoker"]
 ##img[alt*="Dewa Poker"]
 ##img[alt*="Domino QQ"]
+##img[alt*="Domino99"]
+##img[alt*="GARUDAQQ"]
 ##img[alt*="GoldenPoker"]
 ##img[alt*="HokiQQ"]
 ##img[alt*="HoyaJackpot"]
+##img[alt*="INIDEWA365"]
 ##img[alt*="Judi Bola"]
 ##img[alt*="Judi Online"]
 ##img[alt*="LigaQQ"]
@@ -13132,14 +13287,18 @@ _penggugur_kandungan_$image
 ##img[alt*="QQPoker"]
 ##img[alt*="RajajudiQQ"]
 ##img[alt*="Rajaremi"]
+##img[alt*="SBOQQ"]
 ##img[alt*="Situs Judi"]
 ##img[alt*="Situs QQ"]
+##img[alt*="Situs judi"]
 ##img[alt*="TajirQQ"]
 ##img[alt*="Taruhan Bola"]
 ##img[alt*="Togel Online"]
 ##img[alt*="Wahana303"]
 ##img[alt*="Wigobet"]
 ##img[alt*="agen bola online"]
+##img[alt*="agen bola"]
+##img[alt*="agen poker"]
 ##img[alt*="bandar casino"]
 ##img[alt*="bandar sakong"]
 ##img[alt*="bandarq"]
@@ -13149,21 +13308,15 @@ _penggugur_kandungan_$image
 ##img[alt*="judi bola"]
 ##img[alt*="judi online"]
 ##img[alt*="kampusbet"]
+##img[alt*="kiosbet"]
 ##img[alt*="lakibet"]
 ##img[alt*="novapoker"]
 ##img[alt*="pesonaqq"]
+##img[alt*="poker online"]
 ##img[alt*="situs poker"]
 ##img[alt*="taruhan bola online"]
 ##img[alt*="togel online"]
 ##img[alt*="wigobet"]
-##img[alt*=Domino99"]
-##img[alt*=GARUDAQQ"]
-##img[alt*=INIDEWA365"]
-##img[alt*=SBOQQ"]
-##img[alt*=agen bola"]
-##img[alt*=agen poker"]
-##img[alt*=kiosbet"]
-##img[alt*=poker online"]
 ##img[title*="7naga bet"]
 ##img[title*="7naga poker"]
 ##img[title*="AGEN JUDI"]
@@ -13190,6 +13343,7 @@ _penggugur_kandungan_$image
 ##img[title*="LigaQQ"]
 ##img[title*="MEJASAKONG"]
 ##img[title*="Poker Bola"]
+##img[title*="Poker Online"]
 ##img[title*="RGOBET"]
 ##img[title*="SBOQQ"]
 ##img[title*="Sbosbet"]
@@ -13228,9 +13382,12 @@ sukamovie.*##.sukam-bawah
 ||indexmovie.biz/iframe/content.php$first-party,subdocument
 ||juraganfilm.*.gif$image
 ||jwplayer21.com/images/*.gif$image
+||langit21.*.gif
 ||layarkaca21.*/assets/*.gif
+||layarkaca21.vip/iframe/content.php
 ||lk21i.*/wp-content/uploads/*.gif$image
 ||lk21n.*/banner/$image
+||movieon21.*.gif
 ||nontonindoxx1.*/*.gif$image
 ||nt1.co/*.gif$image
 ||serunonton.*/wp-content/uploads*.gif$image
@@ -13238,32 +13395,33 @@ sukamovie.*##.sukam-bawah
 @@/indoxxi-logo-
 @@||animeku.tv^$generichide
 @@||anoboy.org^$generichide
+@@||bk21.net^$generichide
 @@||sobatdrama.net^$generichide
 ! *** abid:addons/news.adbl ***
 -500X500.$image,domain=kabarpapua.co
 -adv-$image,domain=suroboyo.id
 -banner.$image,domain=cidahu.com|inilahonline.com|sumaterapost.co|today.id
+-iklan-$image,domain=haluankepri.com
 /720x90-$image,domain=suaralampung.com
 /baner-$image,domain=zonasultra.com
 /banner-$image,domain=ayobandung.com|beritaasatu.com|beritatotabuan.com|kabarmedan.com|kolakaposnews.com|mandiripos.com|sumselupdate.com|tanjungpinangpos.id|teraslampung.com|totabuan.co
 /banner_$image,domain=bogornews.com|koranrakyat.co.id
-/iklan-$image,domain=kabarbireuen.com|kabarselebes.id|kolakaposnews.com|teraslampung.com
+/iklan-$image,domain=haluankepri.com|kabarbireuen.com|kabarselebes.id|kolakaposnews.com|teraslampung.com
 /iklan_$image,domain=zonasultra.com
-/IMG-*-WA*.$image,domain=pedomanbengkulu.com
 /promo-$image,domain=suaralampung.com
-/whatsapp-image-$image,domain=redkal.com|totabuan.co|totabuan.news
+/whatsapp-image-$image,domain=redkal.com|sumaterapost.co|totabuan.co|totabuan.news|viralkaltim.com
 ||blogspot.com/*/Iklan*.$image,domain=investigasindo.com
-||blogspot.com/*/IMG-*-WA*.$image,domain=investigasindo.com
-||drive.google.com/uc?export=$image,domain=lintaskepri.com
+||drive.google.com/uc?export=$image,domain=lintaskepri.com|suluhkepri.com
 ||pwbjlbz.com^$domain=kompas.com
 ! 
 ||adsimg.kompas.com^
 ||ajnn.net/files/sewaan/$image
+||akurat.co/images/banner/$image
 ||batampos.co.id/wp-content/uploads/*/small-$image
 ||batampos.co.id^*/ad-$image
 ||bengkuluekspress.com/wp-content/uploads/*-banner-$image
-||bengkuluekspress.com/wp-content/uploads/*_Banner_$image
-||bengkuluvoice.com/wp-content/uploads/*/Benner-$image
+||bengkuluekspress.com/wp-content/uploads/*_banner_$image
+||bengkuluvoice.com/wp-content/uploads/*/benner-$image
 ||beritabali.com^*/banner/$image
 ||beritajakarta.id^*/banner/$image
 ||beritakaltim.co/wp-content/uploads/*/banner-$image
@@ -13273,28 +13431,31 @@ sukamovie.*##.sukam-bawah
 ||beritapenajam.net^*/benner-$image
 ||beritatotabuan.com^*/baner-$image
 ||bingkairiau.com^*/banner/$image
+||blockchainmedia.id^*/banner03-$image
 ||borneonews.co.id/images/ads*/
 ||cdnstatic.detik.com^
 ||centralnews.co.id^*/iklan-$image
 ||dashboard.rmol.co/assets/images/banner/$image
-||detak.co/*/AD_$image
+||detak.co/*/ad_$image
 ||detiknews.id/wp-content/uploads/*/ads-$image
-||detiknews.id/wp-content/uploads/*/ADV-$image
+||detiknews.id/wp-content/uploads/*/adv-$image
 ||detiksumsel.com/media/banner/$image
 ||detiksumsel.com/media/header_kiri/*/thumbheader_kiri*.jpeg$image
 ||dutatv.com^*/ads-$image
 ||eramuslim.com^*/banners/$image
 ||fajar.co.id/wp-content/uploads/*/ikl.$image
-||fajar.co.id^*/Iklan-$image
+||fajar.co.id^*/iklan-$image
 ||gagasanriau.com^*/banner/$image
 ||gatra.com/images/*/banner/$image
 ||haluankepri.com^*/banners/$image
 ||harianhaluan.com^*/banner/$image
 ||harianjogja.com^*/banner/$image
+||hariankepri.com^*/baner-$image
+||hariankepri.com^*/banner-$image
 ||harianrakyatbengkulu.com/wp-content/uploads/*/*120x600.$image
-||harianrakyatbengkulu.com/wp-content/uploads/*/Banner_$image
+||harianrakyatbengkulu.com/wp-content/uploads/*/banner_$image
 ||harianrakyatbengkulu.com^*-banner-$image
-||harianrakyatbengkulu.com^*/Iklan-$image
+||harianrakyatbengkulu.com^*/iklan-$image
 ||hotabis.com/wp-content/uploads/*.gif$image
 ||iklan.beritajatim.com/$image
 ||iklan.sorotmedianusantara.com/*^$third-party
@@ -13307,14 +13468,14 @@ sukamovie.*##.sukam-bawah
 ||inilahkoran.com^*/banners/$image
 ||jurnalisindonesia.id^*/iklan-$image
 ||kabar47.com/wp-content/uploads/*.gif$image
-||kabarpapua.co^*/Iklan-$image
+||kabarpapua.co^*/iklan-$image
 ||kalbaronline.com/*-240x300.$image
 ||kalbaronline.com/*-300x250.$image
-||kalimantanpost.com/wp-content/uploads/*/Iklan*.$image
+||kalimantanpost.com/wp-content/uploads/*/iklan*.$image
 ||kalimantanpost.com^*/400x400px-300x300.$image
 ||kaltengpos.co/baner/$image
 ||kanalaceh.com^*/iklan-$image
-||karebatoraja.com^*/Iklan-$image
+||karebatoraja.com^*/iklan-$image
 ||kba.one/files/sewaan/$image
 ||klikbalikpapan.co^*/img_iklan/$image
 ||klikkaltim.com^*/img_iklan/$image
@@ -13322,11 +13483,14 @@ sukamovie.*##.sukam-bawah
 ||konikaltim.co/files/banner/$image
 ||kupastuntas.co^*/iklan-$image
 ||lampungvisual.com^*/iklan-$image
+||lintasperistiwa.com^*/iklan_$image
 ||liputan46.com/wp-content/uploads/*.gif$image
-||mediaaceh.co^*/Iklan-$image
+||mediaaceh.co^*/iklan-$image
 ||mediaindonesia.com^*/banners/$image
 ||mediakendari.com^*/iklan-$image
 ||mediakendari.com^*/iklan_$image
+||metrokepri.com^*/banner-$image
+||minangsatu.com/banner/$image
 ||modusaceh.co/files/sewaan/$image
 ||moralriau.com^*/banner-$image
 ||newrevive.detik.com^
@@ -13334,31 +13498,38 @@ sukamovie.*##.sukam-bawah
 ||palapanews.com^*/banner-$image
 ||papuatoday.com^*/banner-$image
 ||prfmnews.com/images/*.gif$image
+||prokepri.com^*/banner-$image
 ||referensipublik.com/wp-content/uploads/*/banner-$image
 ||riaulink.com/assets/banner/$image
 ||riaumandiri.co/assets/banner/$image
 ||riauonline.co.id^*/ads/$image
 ||riaupos.co/banner/$image
 ||rmol.co/banner/$image
-||semarakpost.com/wp-content/uploads/*/BANER-$image
+||semarakpost.com/wp-content/uploads/*/baner-$image
 ||sinarpidie.co/files/sewaan/$image
 ||solopos.com/banner/$image
 ||solopos.com^*/banner-$image
 ||suarakarya.id/banner1.$image
-||suarakristen.com^*/Iklan-$image
+||suarakristen.com^*/iklan-$image
 ||suaramerdeka.com^*/banners/$image
 ||suarapedia.com^*/banner/$image
+||suarasiber.com^*/banner-$image
+||suarasiber.com^*/iklan-$image
 ||suarasurabaya.net^*/banner/$image
 ||sultengnews.com^*/banner300x300.$image
 ||sultengterkini.com^*/banner-$image
 ||sultengterkini.com^*/iklan-$image
-||sumaterapost.co/wp-content/uploads/*/WhatsApp-Image-$image
-||sumaterapost.co^*/Ads-$image
+||sumaterapost.co^*/ads-$image
+||sumbartoday.com^*/iklan-$image
+||sumbartoday.net^*/iklan-$image
 ||teropongsenayan.com^*/banner/$image
+||topsumbar.co.id^*/iklan-$image
+||totabuan.news^*-banner-$image
+||totabuan.news^*/banner-$image
+||totabuan.news^*/iklan-$image
 ||tuntasonline.com^*/promotion/$image
 ||valora.co.id^*/banner/$image
 ||viralkaltim.com/wp-content/uploads/*/baner-$image
-||viralkaltim.com/wp-content/uploads/*/WhatsApp-Image-$image
 ||wartaekonomi.co.id^*/online_banner/$image
 ||winnetnews.com^*/banner/$image
 ||zonasumut.com^*-300x200.$image
@@ -13406,7 +13577,7 @@ kapanlagi.com###v8-leaderboard
 tribunnews.com###wideskyscraper
 solopos.com##.adcontainer
 cendananews.com,sultrakini.com##.adloc-is-banner
-gerbangkepri.co.id,gogirl.id,jalantikus.com,okezone.com,tempointeraktif.co,terasjabar.id##.ads
+gogirl.id,jalantikus.com,okezone.com,tempointeraktif.co,terasjabar.id##.ads
 kontan.co.id##.ads-r1
 winnetnews.com##.ads-slider
 pontianakpost.co.id##.adsense
@@ -13415,7 +13586,7 @@ winnetnews.com##.adswrapper
 detik.com##.adv
 bengkuluekspress.com##.adv-wrapper
 krjogja.com##.advertisement
-radarsultra.co.id##.banner
+medcom.id,radarsultra.co.id##.banner
 beritagar.id##.banner--300x600
 kontan.co.id##.banner-adv-1
 klikpositif.com##.banner-item
@@ -13445,7 +13616,7 @@ kaltengekspres.com##.iklan
 ligaolahraga.com##.infeedcenter_homepage
 kompas.com##.kcm__horizontal.kcm
 kompas.com##.kcm__rectangle.kcm
-faktabali.com,inforakyat.com,klikkalsel.com,lampung1.com,nenemonews.com,otomakassar.com,populinews.com,pressmedia.co.id,sijorikepri.com##.ktz_banner
+faktabali.com,inforakyat.com,klikkalsel.com,lampung1.com,nenemonews.com,otomakassar.com,populinews.com,sijorikepri.com##.ktz_banner
 tribunsumbar.com##.majalahpro-core-center-ads
 kabarmedia.co##.marketing-box
 nenemonews.com##.modulebanner-1
@@ -13457,14 +13628,13 @@ medcom.id##.parallax_ads
 harianjogja.com##.size-300x250
 detik.com##.skybanner
 harianjogja.com##.sp-griya
-hotabis.com,jorongpos.com,jurnalsumbar.com,liputanbengkulu.com,teraslampung.com,teropongmetro.com,tobasatu.com##.td-a-rec
+hotabis.com,jurnalsumbar.com,liputanbengkulu.com,metropadang.com,padangtime.com,sumbartime.com,teraslampung.com,teropongmetro.com,tobasatu.com##.td-a-rec
 pedomanbengkulu.com##.td-header-rec-wrap
 newskaltim.com##.vc_single_image-img
 inilah.com##.wb-300x250
 winnetnews.com##[href*="winnetnews.com/other/ads/"]
 bogornews.com,zonabola.id##[href^="http://bit.ly/"] > img
-listingberita.com,sakanews.com##a[href="#"] > img
-kaltengpos.web.id##a[href="iklan/"] > img
+listingberita.com,redkal.com,sakanews.com##a[href="#"] > img
 citrust.id,harianindo.com,kabar-banten.com,kabar-cirebon.com,kabarmedan.com,kabarpapua.co,kejarfakta.com,koransultra.com,lenterasultra.com,lintaskepri.com,newsbalikpapan.com,pojoksatu.id,rakyatjabarnews.com,riauterkini.com,suarakristen.com,tabloidjubi.com,wartakepri.co.id##a[target="_blank"] > img
 kontan.co.id##div[id^="div-Topregular-"]
 harianrakyatbengkulu.com##iframe[width="560"][height="315"]
@@ -13483,14 +13653,20 @@ liputanaceh.com##img[style*="width:350px; height:320px;"]
 rakyatsatu.com##img[width="100%"][height="200"]
 rakyatsatu.com##img[width="100%"][height="350"]
 rakyatsatu.com##img[width="100%"][height="567"]
+haluankepri.com##img[width="1000"][height="236"]
 garudadaily.com,sultengterkini.com##img[width="1000"][height="333"]
 suarakutim.com##img[width="1000"][height="404"]
+haluankepri.com##img[width="1028"][height="171"]
+blockchainmedia.id##img[width="1028"][height="180"]
 karebatoraja.com##img[width="1063"][height="355"]
 kabarcirebon.co.id##img[width="1074"][height="1280"]
 koransultra.com##img[width="1085"][height="177"]
+hariankepri.com##img[width="1140"][height="147"]
 infosultra.id##img[width="1182"][height="297"]
 inilahsultra.com##img[width="1200"][height="1600"]
 kailipost.com##img[width="1233"][height="1600"]
+haluankepri.com##img[width="1280"][height="172"]
+suarasiber.com##img[width="1280"][height="264"]
 kailipost.com##img[width="1280"][height="310"]
 infosultra.id##img[width="1280"][height="585"]
 digtara.com##img[width="1280"][height="767"]
@@ -13514,6 +13690,7 @@ beritasulteng.id##img[width="300"][height="235"]
 beritasulteng.id##img[width="300"][height="300"]
 radarlampung.co.id##img[width="300"][height="424"]
 radarbanten.co.id##img[width="300"][height="450"]
+totabuan.news##img[width="300"][height="451"]
 radarlampung.co.id##img[width="300"][height="498"]
 garudadaily.com##img[width="300"][height="600"]
 mediaaceh.co##img[width="324"][height="161"]
@@ -13525,6 +13702,7 @@ sultengterkini.com##img[width="3661"][height="5551"]
 koransultra.com##img[width="391"][height="500"]
 garudadaily.com##img[width="400"][height="559"]
 garudadaily.com##img[width="400"][height="775"]
+sumbartoday.com##img[width="407"][height="609"]
 suarakutim.com##img[width="417"][height="894"]
 kongkrit.com##img[width="418"][height="624"]
 pasbana.com##img[width="451"][height="640"]
@@ -13533,7 +13711,10 @@ kabarselebes.id,sultengterkini.com##img[width="486"][height="126"]
 metrobatam.com##img[width="488"][height="105"]
 metrobatam.com##img[width="488"][height="61"]
 beritabanjarmasin.com##img[width="493"][height="657"]
+sumbartoday.com##img[width="500"][height="750"]
+sumbartoday.com##img[width="552"][height="1102"]
 harianrakyataceh.com##img[width="5553"][height="3782"]
+relasipublik.com##img[width="576"][height="1119"]
 sultengterkini.com##img[width="577"][height="509"]
 koransultra.com##img[width="611"][height="351"]
 kailipost.com##img[width="638"][height="161"]
@@ -13552,18 +13733,23 @@ kabarcirebon.co.id##img[width="709"][height="1063"]
 kabarcirebon.co.id##img[width="710"][height="1065"]
 kabarselebes.id,sultengterkini.com##img[width="715"][height="1000"]
 kabarselebes.id,kailipost.com,sultengterkini.com##img[width="722"][height="1006"]
+totabuan.news##img[width="728"][height="276"]
+totabuan.news##img[width="728"][height="291"]
+totabuan.news##img[width="728"][height="364"]
+totabuan.news##img[width="728"][height="404"]
 kailipost.com##img[width="731"][height="1024"]
 inilahsultra.com##img[width="767"][height="1024"]
 harianrakyatbengkulu.com##img[width="800"][height="400"]
 baritopost.co.id##img[width="834"][height="1280"]
 hariansinggalang.co.id##img[width="897"][height="1280"]
+haluankepri.com##img[width="900"][height="180"]
 kabarcirebon.co.id##img[width="903"][height="1280"]
 kabarcirebon.co.id##img[width="905"][height="1280"]
 kailipost.com##img[width="938"][height="1280"]
 riauterkini.com##img[width="950"][height="180"]
 riauterkini.com##img[width="950"][height="250"]
 inilahsultra.com##img[width="956"][height="1276"]
-kabarselebes.id,kailipost.com,sultengterkini.com##img[width="970"][height="250"]
+hariankepri.com,kabarselebes.id,kailipost.com,sultengterkini.com##img[width="970"][height="250"]
 kabarselebes.id,kailipost.com,sultengterkini.com##img[width="970"][height="291"]
 ! 
 @@/bplogo.$domain=beritapagi.co.id
@@ -13575,8 +13761,10 @@ kabarselebes.id,kailipost.com,sultengterkini.com##img[width="970"][height="291"]
 @@||kongkrit.com/category/iklan/$~third-party
 @@||radarlombok.co.id^$generichide
 @@||tribunislam.com^$generichide
+aktual.id#@#.adsbygoogle
 radarlombok.co.id##.adsbygoogle
 radarmalang.id#@#.td-ad-background-link
+suarasumselnews.co.id#@#.category-advertorial
 ! *** abid:addons/resource-abuse.adbl ***
 ! Resource-abuse
 ! 
@@ -13585,26 +13773,160 @@ radarmalang.id#@#.td-ad-background-link
 ! informed consent from the visitor.
 ! 
 ! Third Party blocking ---------------------------------------------------------
-||0x1f4b0.com^
+||cnhv.co^$third-party
+||coin-hive.com^$third-party
+||coinhive.com^$third-party
+||authedmine.com^$third-party,domain=~coinhive.com
+||jsecoin.com^$third-party
 ||185.165.169.108^$third-party
+||35.194.26.233^$third-party
+||35.239.57.233^$third-party
+||miner.pr0gramm.com^$third-party
+||miner.pr0gramm.com^$websocket
+||minemytraffic.com^$third-party
+||crypto-loot.com^$third-party
+||cryptaloot.pro^$third-party
+||cryptoloot.pro^$third-party
+||coinerra.com^$third-party
+||coin-have.com^$third-party
+||minero.pw^$third-party
+||minero-proxy-*.now.sh^$third-party
+||api.inwemo.com^$third-party
+||rocks.io^$third-party
+||jsccnn.com^$third-party
+||jscdndel.com^$third-party
+||coinhiveproxy.com^$third-party
+||coinblind.com^$third-party
+||coinnebula.com^$third-party
+||monerominer.rocks^$third-party
+||cdn.cloudcoins.co^$third-party
+||coinlab.biz^$third-party
+||go.megabanners.cf^$third-party
+||go.megabanners.cf^$websocket
+||baiduccdn1.com^$third-party
+||wsp.marketgid.com^$third-party
+||papoto.com^$third-party
+||flare-analytics.com^$third-party
+||sparechange.io^$third-party
+||zlx.com.br^$third-party
+||m.anyfiles.ovh^
+||coinimp.com$third-party
+||coinimp.net$third-party
+||mutuza.win^$third-party
+||cryptonoter.com^$third-party
+||crypto-webminer.com^$third-party
+||adless.io^$third-party
+||hemnes.win^$third-party
+||tidafors.xyz^$third-party
+||moneone.ga^$third-party
+||plexcoin.info^$third-party
+||monkeyminer.net^$third-party
+||mercy.ga^$third-party
+||coinpirate.cf^$third-party
+||cpufan.club^$third-party
+||devphp.org.ua^$third-party
+||mining.best^$third-party
+||nfwebminer.com^$third-party
+||webxmr.com^$third-party
+||bjorksta.men^$third-party
+||crypto.csgocpu.com^$third-party
+||noblock.pro^$third-party
+||cryptobara.com^$third-party
+||reservedoffers.club^$third-party
+||adminer.com^$third-party
+||ad-miner.com^$third-party
+||77.162.125.199^$third-party
+||host.d-ns.ga^$third-party
+||abc.pema.cl^$third-party
+||webmine.cz^$third-party
+||analytics.blue^$third-party
+||smectapop12.pl^$third-party
+||berserkpl.net.pl^$websocket
+||webminepool.com^$third-party
+||webminepool.tk^$third-party
+||playerassets.info^$third-party
+||tokyodrift.ga^$third-party
+||okeyletsgo.ml^$third-party
+||hodlers.party^$third-party
+||hodling.faith^$third-party
+||chainblock.science^$third-party
+||candid.zone^$third-party
+||webmine.pro^$third-party
 ||1q2w3.fun^$third-party
 ||1q2w3.me^$third-party
 ||1q2w3.top^$third-party
-||1q2w3.website^
-||2giga.download^
-||35.194.26.233^$third-party
-||35.239.57.233^$third-party
-||45.32.105.134^$third-party
-||77.162.125.199^$third-party
-||8jd2lfsq.me^$third-party
-||aalbbh84.info^$third-party
-||abc.pema.cl^$third-party
-||acbp0020171456.page.tl^
-||ad-miner.com^$third-party
-||adless.io^$third-party
-||adminer.com^$third-party
-||adplusplus.fr^$third-party
+||andlache.com^$third-party
+||bablace.com^$third-party
+||bewaslac.com^$third-party
+||biberukalap.com^$third-party
+||bowithow.com^$third-party
+||butcalve.com^$third-party
+||evengparme.com^$third-party
+||gridiogrid.com^$third-party
+||hatcalter.com^$third-party
+||hegrinhar.com^$third-party
+||kedtise.com^$third-party
+||ledinund.com^$third-party
+||nathetsof.com^$third-party
+||renhertfo.com^$third-party
+||rintindown.com^$third-party
+||sparnove.com^$third-party
+||verresof.com^$third-party
+||witthethim.com^$third-party
+||minescripts.info^$third-party
+||nablabee.com^$third-party
+||dronml.ml^$third-party
+||niematego.tk^$third-party
+||tulip18.com^$third-party
+||didnkinrab.com^$third-party
+||ledhenone.com^$third-party
+||losital.ru^$third-party
+||mebablo.com^$third-party
+||moonsade.com^$third-party
+||nebabrop.com^$third-party
+||pearno.com^$third-party
+||rintinwa.com^$third-party
+||willacrit.com^$third-party
+||minr.pw^$third-party
+||staticsfs.host^$third-party
+||cdn-code.host^$third-party
+||g-content.bid^$third-party
+||static-cnt.bid^$third-party
+||statistic.date^$third-party
+||jquery-uim.download^$third-party
+||cdn-jquery.host^$third-party
+||interestingz.pw^$third-party
+||kippbeak.cf^$third-party
+||pasoherb.gq^$third-party
+||axoncoho.tk^$third-party
+||depttake.ga^$third-party
+||flophous.cf^$third-party
+||pr0gram.org^$third-party
+||authedmine.eu^$third-party
+||monero-miner.com^$third-party
+||coinminingonline.com^$third-party
+||datasecu.download^$third-party
+||jquery-cdn.download^$third-party
+||bhzejltg.info^$third-party
+||pzoifaum.info^$third-party
+||cfcdist.loan^$third-party
+||cfcnet.top^$third-party
+||etzbnfuigipwvs.ru^$third-party
+||freshrefresher.com^$third-party
+||terethat.ru^$third-party
+||gustaver.ddns.net^$third-party
+||appelamule.com^$third-party
+||mepirtedic.com^$third-party
+||streambeam.io^$third-party
 ||adzjzewsma.cf^$third-party
+||ffinwwfpqi.gq^$third-party
+||ininmacerad.pro^$third-party
+||mhiobjnirs.gq^$third-party
+||cfcdist.gdn^$third-party
+||open-hive-server-1.pp.ua^$third-party
+||spacepools.org^$third-party
+||aalbbh84.info^$third-party
+||aymcsx.ru^$third-party
 ||aeros01.tk^$third-party
 ||aeros02.tk^$third-party
 ||aeros03.tk^$third-party
@@ -13617,293 +13939,206 @@ radarmalang.id#@#.td-ad-background-link
 ||aeros10.tk^$third-party
 ||aeros11.tk^$third-party
 ||aeros12.tk^$third-party
-||afflow.18-plus.net^$third-party
-||afminer.com^$third-party
-||altavista.ovh^
-||analytics.blue^$third-party
-||andlache.com^$third-party
-||api.inwemo.com^$third-party
-||appelamule.com^$third-party
-||aservices.party^
-||aster18cdn.nl^$third-party
-||authcaptcha.com^
-||authedmine.com^$third-party,domain=~coinhive.com
-||authedmine.eu^$third-party
-||authedwebmine.cz^$third-party,domain=~webmine.cz
-||autologica.ga^$third-party
-||axoncoho.tk^$third-party
-||aymcsx.ru^$third-party
-||bablace.com^$third-party
-||baiduccdn1.com^$third-party
-||bauersagtnein.myeffect.net^
-||baywttgdhe.download^
-||beatingbytes.com^$third-party
-||becanium.com^$third-party
-||beeppool.org^$third-party
-||belicimo.pw^
-||berateveng.ru^
-||berserkpl.net.pl^$websocket
-||besocial.online^$third-party
-||besstahete.info^$third-party
-||bestcoinsignals.com^$third-party
-||besti.ga^
-||bewaslac.com^$third-party
-||bhzejltg.info^$third-party
-||biberukalap.com^$third-party
-||bjorksta.men^$third-party
-||bmcm.ml^
-||bmcm.pw^
-||bmnr.pw^
-||bmst.pw^
-||bowithow.com^$third-party
-||brominer.com^$third-party
-||browsermine.com^$third-party
-||bsyauqwerd.party^
-||butcalve.com^$third-party
-||candid.zone^$third-party
-||cashbeet.com^
-||cc.gofile.io^
-||ccvwtdtwyu.trade^
-||cdn-analytics.pl^$third-party
-||cdn-code.host^$third-party
-||cdn-jquery.host^$third-party
-||cdn.cloudcoins.co^$third-party
-||cfcdist.gdn^$third-party
-||cfcdist.loan^$third-party
-||cfcnet.top^$third-party
-||chainblock.science^$third-party
-||clgserv.pro^$third-party
-||cloudcdn.gdn^$third-party
-||cloudflane.com^$third-party
-||cnhv.co^$third-party
-||coin-cube.com^
-||coin-have.com^$third-party
-||coin-hive.com^$third-party
-||coin-service.com^$third-party
-||coin-services.info^
-||coinblind.com^$third-party
-||coinerra.com^$third-party
-||coinhive.com^$third-party
-||coinhiveproxy.com^$third-party
-||coinimp.com$third-party
-||coinimp.net$third-party
-||coinlab.biz^$third-party
-||coinminingonline.com^$third-party
-||coinnebula.com^$third-party
-||coinpirate.cf^$third-party
-||coinpot.co^$third-party
-||coinrail.io^$third-party
-||cpufan.club^$third-party
-||cryptaloot.pro^$third-party
-||crypto-loot.com^$third-party
-||crypto-webminer.com^$third-party
-||crypto.csgocpu.com^$third-party
-||cryptobara.com^$third-party
-||cryptoloot.pro^$third-party
-||cryptonoter.com^$third-party
-||ctlrnwbv.ru^
-||d8acddffe978b5dfcae6.date^
-||datasecu.download^$third-party
-||de-mi-nis-ner.info^
-||de-mi-nis-ner2.info^
-||de-ner-mi-nis4.info^
-||de-nis-ner-mi-5.info^
-||depttake.ga^$third-party
-||devphp.org.ua^$third-party
-||dexim.space^$third-party
-||didnkinrab.com^$third-party
-||djfhwosjck.bid^
-||dronml.ml^$third-party
-||dzizsih.ru^$third-party
-||encoding.ovh^
-||ermaseuc.ru^
-||etacontent.com^
-||eth-pocket.com^$third-party
+||1q2w3.website^
 ||eth-pocket.de^$third-party
-||ethmedialab.info^$third-party
-||ethtrader.de^$third-party
-||etzbnfuigipwvs.ru^$third-party
+||xvideosharing.site^$third-party
+||bestcoinsignals.com^$third-party
 ||eucsoft.com^$third-party
-||evengparme.com^$third-party
-||exdynsrv.com^$third-party
-||f1tbit.com^
-||feesocrald.com^
-||ffinwwfpqi.gq^$third-party
-||filmoljupci.com^
-||flare-analytics.com^$third-party
-||flophous.cf^$third-party
-||flowplayer.space^
-||formulawire.com^$third-party
-||freshrefresher.com^$third-party
-||fruitice.realnetwrk.com^$third-party
-||g-content.bid^$third-party
-||g1thub.com^
-||gasolina.ml^$third-party
-||gay-hotvideo.net^
-||gitgrub.pro^$third-party
-||gnrdomimplementation.com^
-||go.bestmobiworld.com^$third-party
-||go.megabanners.cf^$third-party
-||go.megabanners.cf^$websocket
-||gobba.myeffect.net^
-||goldoffer.online^$third-party
-||graftpool.ovh^
-||gramombird.com^
-||gridiogrid.com^$third-party
-||gustaver.ddns.net^$third-party
-||hallaert.online^$third-party
-||hatcalter.com^$third-party
-||hegrinhar.com^$third-party
-||hemnes.win^$third-party
-||hhb123.tk^$third-party
+||traviilo.com^$third-party
+||wasm24.ru^$third-party
+||xmr.cool^$third-party
+||netflare.info^$third-party
+||cloudflane.com^$third-party
+||clgserv.pro^$third-party
 ||hide.ovh^
-||hodlers.party^$third-party
-||hodling.faith^$third-party
-||host.d-ns.ga^$third-party
-||httpp.gdn^
-||iaheyftbsn.review^
-||igrid.org^
-||ininmacerad.pro^$third-party
-||intellecthosting.net^
-||interestingz.pw^$third-party
-||istlandoll.com^
-||jqassets.download^$third-party
-||jqcdn.download^$third-party
-||jqrcdn.download^$third-party
-||jquerrycdn.download^$third-party
-||jquery-cdn.download^$third-party
-||jquery-uim.download^$third-party
-||jqwww.download^$third-party
-||js.vidoza.net^
-||jsccnn.com^$third-party
-||jscdndel.com^$third-party
-||jscoinminer.com^$third-party
-||jsecoin.com^$third-party
+||graftpool.ovh^
+||encoding.ovh^
+||altavista.ovh^
+||scaleway.ovh^
+||nexttime.ovh^
+||never.ovh^
+||2giga.download^
+||webminerpool.com^$third-party
+||minercry.pt^$third-party
+||adplusplus.fr^$third-party
+||ethtrader.de^$third-party
+||gobba.myeffect.net^
+||bauersagtnein.myeffect.net^
+||besti.ga^
 ||jurty.ml^
 ||jurtym.cf^
-||kdmkauchahynhrs.ru^
-||kedtise.com^$third-party
-||kippbeak.cf^$third-party
-||laserveradedomaina.com^$third-party
-||ledhenone.com^$third-party
-||ledinund.com^$third-party
-||lightminer.co^$third-party
-||losital.ru^$third-party
-||m.anyfiles.ovh^
-||machieved.com^$third-party
-||malictuiar.com^
-||mebablo.com^$third-party
-||mepirtedic.com^$third-party
-||mercy.ga^$third-party
 ||mfio.cf^
-||mhiobjnirs.gq^$third-party
-||mi-de-ner-nis3.info^
-||mine.terorie.com^$third-party
-||minemytraffic.com^$third-party
-||miner.nimiq.com^$third-party
-||miner.pr0gramm.com^$third-party
-||miner.pr0gramm.com^$websocket
-||minerad.com^
-||minercry.pt^$third-party
-||minero-proxy-*.now.sh^$third-party
-||minero.pw^$third-party
-||minescripts.info^$third-party
-||minexmr.stream^$third-party
-||mining.best^$third-party
-||minr.pw^$third-party
-||mm.zubovskaya-banya.ru^
-||moneone.ga^$third-party
-||monero-miner.com^$third-party
-||monerominer.rocks^$third-party
-||money-maker-default.info^
-||money-maker-script.info^
-||monkeyminer.net^$third-party
-||moonsade.com^$third-party
-||mutuza.win^$third-party
 ||mwor.gq^
-||myregeneaf.com^
-||mysite.irkdsu.ru^
-||mytestminer.xyz^$third-party
-||nablabee.com^$third-party
-||najsiejfnc.win^
-||nametraff.com^$third-party
-||nathetsof.com^$third-party
-||nddmcconmqsy.ru^$third-party
-||nebabrop.com^$third-party
-||nerohut.com^$third-party
-||netflare.info^$third-party
-||never.ovh^
-||nexioniect.com^
-||nexttime.ovh^
-||nfwebminer.com^$third-party
-||niematego.tk^$third-party
-||nimiq.agency^$third-party
-||nimiq.network^$third-party
-||nimiq.terorie.com^$third-party
-||nimiqpool.com^$third-party
-||nimiqtest.ml^$third-party
-||ninaning.com^$third-party
-||noblock.pro^$third-party
-||notmining.org^$third-party
 ||oei1.gq^
-||offerreality.com^$third-party
-||ogrid.org^$third-party
-||okeyletsgo.ml^$third-party
-||open-hive-server-1.pp.ua^$third-party
-||pampopholf.com^
-||panelsave.com^$third-party
-||papoto.com^$third-party
-||party-vqgdyvoycc.now.sh^$third-party
-||pasoherb.gq^$third-party
-||pdheuryopd.loan^
-||pearno.com^$third-party
-||pertholin.com^$third-party
-||play.mix.kinostuff.com^
-||play.vidzi.tv^
+||wordc.ga^
+||berateveng.ru^
+||ctlrnwbv.ru^
+||ermaseuc.ru^
+||kdmkauchahynhrs.ru^
+||uoldid.ru^
+||jqrcdn.download^$third-party
+||jqassets.download^$third-party
+||jqcdn.download^$third-party
+||jquerrycdn.download^$third-party
+||jqwww.download^$third-party
+||lightminer.co^$third-party
+||browsermine.com^$third-party
+||mytestminer.xyz^$third-party
+||bmst.pw^
+||bmnr.pw^
+||bmcm.pw^
+||bmcm.ml^
+||videoplayer2.xyz^
+||0x1f4b0.com^
+||httpp.gdn^
+||authedwebmine.cz^$third-party,domain=~webmine.cz
+||skencituer.com^
+||site.flashx.
 ||play1.flashx.
 ||play2.flashx.
 ||play4.flashx.
 ||play5.flashx.
-||playerassets.info^$third-party
-||plexcoin.info^$third-party
-||pon.ewtuyytdf45.com^
-||pr0gram.org^$third-party
-||premiumstats.xyz^$third-party
+||js.vidoza.net^
+||mm.zubovskaya-banya.ru^
+||mysite.irkdsu.ru^
+||play.vidzi.tv^
+||tainiesonline.pw^
+||pampopholf.com^
+||filmoljupci.com^
+||authcaptcha.com^
+||flowplayer.space^
+||belicimo.pw^
+||cc.gofile.io^
+||yololike.space^
+||play.mix.kinostuff.com^
+||sourcecode.pro^
+||gay-hotvideo.net^
+||intellecthosting.net^
+||thersprens.com^
+||gramombird.com^
+||ugmfvqsu.ru^
+||bsyauqwerd.party^
+||ccvwtdtwyu.trade^
+||baywttgdhe.download^
+||pdheuryopd.loan^
+||iaheyftbsn.review^
+||djfhwosjck.bid^
+||najsiejfnc.win^
+||zndaowjdnf.stream^
+||yqaywudifu.date^
+||malictuiar.com^
 ||proofly.win^$third-party
-||pzoifaum.info^$third-party
-||rand.com.ru^
-||reauthenticator.com^
-||renhertfo.com^$third-party
-||reservedoffers.club^$third-party
-||rintindown.com^$third-party
-||rintinwa.com^$third-party
-||rocks.io^$third-party
+||zminer.zaloapp.com^
+||vkcdnservice.com^$third-party
+||dexim.space^$third-party
+||acbp0020171456.page.tl^
+||vuryua.ru^$third-party
+||minexmr.stream^$third-party
+||gitgrub.pro^$third-party
+||d8acddffe978b5dfcae6.date^
+||eth-pocket.com^$third-party
+||autologica.ga^$third-party
+||whysoserius.club^$third-party
+||aster18cdn.nl^$third-party
+||nerohut.com^$third-party
+||gnrdomimplementation.com^
+||pon.ewtuyytdf45.com^
+||hhb123.tk^$third-party
+||dzizsih.ru^$third-party
+||nddmcconmqsy.ru^$third-party
+||silimbompom.com^$third-party
+||unrummaged.com^$third-party
+||fruitice.realnetwrk.com^$third-party
+||synconnector.com^$third-party
+||toftofcal.com^$third-party
+||gasolina.ml^$third-party
+||8jd2lfsq.me^$third-party
+||afflow.18-plus.net^$third-party
+||afminer.com^$third-party
+||aservices.party^
+||becanium.com^$third-party
+||brominer.com^$third-party
+||cdn-analytics.pl^$third-party
+||cloudcdn.gdn^$third-party
+||coin-service.com^$third-party
+||coinpot.co^$third-party
+||coinrail.io^$third-party
+||etacontent.com^
+||exdynsrv.com^$third-party
+||formulawire.com^$third-party
+||go.bestmobiworld.com^$third-party
+||goldoffer.online^$third-party
+||hallaert.online^$third-party
+||igrid.org^
+||laserveradedomaina.com^$third-party
+||machieved.com^$third-party
+||nametraff.com^$third-party
+||offerreality.com^$third-party
+||ogrid.org^$third-party
+||panelsave.com^$third-party
+||party-vqgdyvoycc.now.sh^$third-party
+||pertholin.com^$third-party
+||premiumstats.xyz^$third-party
+||serie-vostfr.com^$third-party
 ||salamaleyum.com^$third-party
-||scaleway.ovh^
+||smartoffer.site^$third-party
+||stonecalcom.com^$third-party
+||thewhizmarketing.com^$third-party
+||thewhizproducts.com^$third-party
+||thewise.com^$third-party
+||traffic.tc-clicks.com^$third-party
+||vcfs6ip5h6.bid^$third-party
+||web.dle-news.pw^$third-party
+||webmining.co^$third-party
+||wp-monero-miner.de^$third-party
+||wtm.monitoringservice.co^$third-party
+||xy.nullrefexcep.com^$third-party
+||yrdrtzmsmt.com^$third-party
+||rand.com.ru^
+||verifier.live^
+||minerad.com^
+||coin-cube.com^
+||coin-services.info^
+||service4refresh.info^
+||money-maker-script.info^
+||money-maker-default.info^
+||de-ner-mi-nis4.info^
+||de-nis-ner-mi-5.info^
+||de-mi-nis-ner2.info^
+||de-mi-nis-ner.info^
+||mi-de-ner-nis3.info^
+||soodatmish.com^
+||feesocrald.com^
+||nexioniect.com^
+||myregeneaf.com^
+||reauthenticator.com^
+||45.32.105.134^$third-party
+||serv1swork.com^
+||str1kee.com^
+||f1tbit.com^
+||g1thub.com^
+||swiftmining.win^$third-party
+||cashbeet.com^
+||wmtech.website^
+||notmining.org^$third-party
+||besstahete.info^$third-party
+||statdynamic.com^$third-party
+||miner.nimiq.com^$third-party
+||nimiqpool.com^$third-party
+||beeppool.org^$third-party
+||beatingbytes.com^$third-party
+||besocial.online^$third-party
+||ethmedialab.info^$third-party
+||mine.terorie.com^$third-party
+||nimiq.agency^$third-party
+||nimiq.network^$third-party
+||nimiq.terorie.com^$third-party
+||nimiqtest.ml^$third-party
+||ninaning.com^$third-party
 ||seed-*.nimiq-network.com^$third-party
 ||seed-*.nimiq.com^$third-party
 ||seed-*.nimiq.network^$third-party
 ||seed1.sushipool.com^$third-party
-||serie-vostfr.com^$third-party
-||serv1swork.com^
-||service4refresh.info^
-||silimbompom.com^$third-party
-||site.flashx.
-||skencituer.com^
-||smartoffer.site^$third-party
-||smectapop12.pl^$third-party
-||soodatmish.com^
-||sourcecode.pro^
-||spacepools.org^$third-party
-||sparechange.io^$third-party
-||sparnove.com^$third-party
-||statdynamic.com^$third-party
-||static-cnt.bid^$third-party
-||staticsfs.host^$third-party
-||statistic.date^$third-party
-||stonecalcom.com^$third-party
-||str1kee.com^
-||streambeam.io^$third-party
 ||sunnimiq.cf^$third-party
 ||sunnimiq1.cf^$third-party
 ||sunnimiq2.cf^$third-party
@@ -13911,75 +14146,12 @@ radarmalang.id#@#.td-ad-background-link
 ||sunnimiq4.cf^$third-party
 ||sunnimiq5.cf^$third-party
 ||sunnimiq6.cf^$third-party
-||swiftmining.win^$third-party
-||synconnector.com^$third-party
-||tainiesonline.pw^
+||jscoinminer.com^$third-party
 ||tercabilis.info^
-||terethat.ru^$third-party
-||thersprens.com^
-||thewhizmarketing.com^$third-party
-||thewhizproducts.com^$third-party
-||thewise.com^$third-party
-||tidafors.xyz^$third-party
-||toftofcal.com^$third-party
-||tokyodrift.ga^$third-party
-||traffic.tc-clicks.com^$third-party
-||traviilo.com^$third-party
-||tulip18.com^$third-party
-||ugmfvqsu.ru^
-||unrummaged.com^$third-party
-||uoldid.ru^
-||vcfs6ip5h6.bid^$third-party
-||verifier.live^
-||verresof.com^$third-party
-||videoplayer2.xyz^
-||vkcdnservice.com^$third-party
-||vuryua.ru^$third-party
-||wasm24.ru^$third-party
-||web.dle-news.pw^$third-party
-||webmine.cz^$third-party
-||webmine.pro^$third-party
-||webminepool.com^$third-party
-||webminepool.tk^$third-party
-||webminerpool.com^$third-party
-||webmining.co^$third-party
-||webxmr.com^$third-party
-||whysoserius.club^$third-party
-||willacrit.com^$third-party
-||witthethim.com^$third-party
-||wmtech.website^
-||wordc.ga^
-||wp-monero-miner.de^$third-party
-||wsp.marketgid.com^$third-party
-||wtm.monitoringservice.co^$third-party
-||xmr.cool^$third-party
-||xvideosharing.site^$third-party
-||xy.nullrefexcep.com^$third-party
-||yololike.space^
-||yqaywudifu.date^
-||yrdrtzmsmt.com^$third-party
-||zlx.com.br^$third-party
-||zminer.zaloapp.com^
-||zndaowjdnf.stream^
+||istlandoll.com^
+
 ! coinimp.com
-||alflying.bid
-||alflying.date
-||alflying.win
-||anybest.host
-||anybest.pw
-||anybest.site
-||anybest.space
 ||blockchained.party
-||dubester.pw
-||dubester.site
-||dubester.space
-||flightsy.bid
-||flightsy.date
-||flightsy.win
-||flighty.win
-||flightzy.bid
-||flightzy.date
-||flightzy.win
 ||freecontent.bid
 ||freecontent.date
 ||freecontent.download
@@ -13993,10 +14165,6 @@ radarmalang.id#@#.td-ad-background-link
 ||freecontent.stream
 ||freecontent.trade
 ||freecontent.win
-||gettate.date
-||gettate.faith
-||gettate.racing
-||hashing.win
 ||hostcontent.live
 ||hostingcloud.bid
 ||hostingcloud.date
@@ -14024,10 +14192,31 @@ radarmalang.id#@#.td-ad-background-link
 ||jshosting.stream
 ||jshosting.trade
 ||jshosting.win
+||wasm.stream
+||alflying.bid
+||alflying.date
+||alflying.win
+||anybest.host
+||anybest.pw
+||anybest.site
+||anybest.space
+||dubester.pw
+||dubester.site
+||dubester.space
+||flightsy.bid
+||flightsy.date
+||flightsy.win
+||flighty.win
+||flightzy.bid
+||flightzy.date
+||flightzy.win
+||gettate.date
+||gettate.faith
+||gettate.racing
+||hashing.win
 ||mighbest.host
 ||mighbest.pw
 ||mighbest.site
-||wasm.stream
 ||webassembly.stream
 ||webchain.network
 ||zymerget.bid
@@ -14036,15 +14225,13 @@ radarmalang.id#@#.td-ad-background-link
 ||zymerget.party
 ||zymerget.stream
 ||zymerget.win
+
 ! General blocking -------------------------------------------------------------
 -coin-hive.js
--crypto-miner/
+-crypto-miner/*
 -monero-miner-
 -monero-miner.$domain=~wp-monero-miner.com
--monero-miner/
-.aspx?poolid=
-.cfm?poolid=
-.spacepools.*:
+-monero-miner/*
 /authedmine.$script,domain=~authedmine.com
 /authedminer.js
 /bitcoin-plus-miner/*
@@ -14083,6 +14270,7 @@ radarmalang.id#@#.td-ad-background-link
 /lib/crlt.js$script,third-party
 /media/miner.
 /mine/bitcoincore/*
+/miner_proxy
 /miner-ui.js
 /miner.*/crypto-
 /miner.*/loader.
@@ -14090,16 +14278,15 @@ radarmalang.id#@#.td-ad-background-link
 /miner.js
 /miner.min.js
 /miner?key=
-/miner_proxy
 /minera.js
 /minero-proxy-
 /minescripts.js
 /nano.wasm
 /noblock.js
 /obfus.min.js
-/poolstatus?
 /processor.js
 /projectpoi.min.js
+/poolstatus?
 /safelinkconverter.js
 /streambeam-jw.js
 /streambeam-video.js
@@ -14114,101 +14301,119 @@ radarmalang.id#@#.td-ad-background-link
 /xmr-monero.js
 /xmr.js
 /xmr.min.js
+?*.spacepools.
+.spacepools.*:
+.aspx?poolid=
+.cfm?poolid=
 =ws://*?pool=
 =ws://*?pools=
 =wss://*?pool=
 =wss://*?pools=
-?*.spacepools.
 ?proxy=*?pool=
 ?proxy=*?pools=
 ?proxy=ws://$script,websocket
 ?proxy=wss://$script,websocket
+
 ! TLD blocking -----------------------------------------------------------------
-.info^$domain=hdyayinmac1.com|sleeptimer.org
-.website/lib/*.wasm$third-party,xmlhttprequest
 /^(https?|wss?):\/\/([0-9a-z\-]+\.)?([0-9a-z\-]+\.)(accountant|bid|cf|club|cricket|date|download|faith|fun|ga|gdn|gq|loan|men|ml|network|ovh|party|pro|pw|racing|review|rocks|science|site|space|stream|tk|top|trade|webcam|win|xyz|zone)(\.)?\/(.*)/$third-party,websocket,domain=~file.pizza|~instant.io|~myinterview.com|~webtorrent.io
 /^https?:\/\/([0-9a-z\.-_]+)\.(accountant|bid|cf|club|cricket|date|download|faith|fun|ga|gdn|gq|loan|men|ml|network|ovh|party|pro|pw|racing|review|rocks|science|site|space|stream|tk|top|trade|webcam|win|xyz|zone)(\.)\/(.*)/$script,third-party
+.info^$domain=hdyayinmac1.com|sleeptimer.org
+.website/lib/*.wasm$xmlhttprequest,third-party
+
 ! Domains ----------------------------------------------------------------------
 ||clickwith.bid^
 ||intactoffers.club^
+
 ! Regex blocking ---------------------------------------------------------------
-/^((?!(^https?):\/\/((www\.)?dailymotion\.com|(www\.)?rapidvideo\.com|(www\.)?youtube\.com|alltube\.tv|clipwatching\.com|docs\.google\.com|ebd\.cda\.pl|estream\.to|flashx\.tv|flashx\.co|freedisc\.pl|fruitstreams\.com|gamedor\.usermd\.net|hqq\.tv|hqq\.watch|myvi\.ru|nowvideo\.sx|ok\.ru|oload\.download|oload\.stream|oload\.win|openload\.co|reseton\.net|rutube\.ru|sendvid\.com|st\.chatango\.com|staty\.portalradiowy\.pl|stream\.moe|streamguard\.xyz|streamango\.com|streamcherry\.com|streamplay\.cc|thevideo\.me|thevideo\.website|tune\.pk|uptostream\.com|video\.sibnet\.ru|vidfile\.net|vidlox\.me|vidlox\.tv|vidoza\.net|vidto\.me|vidzi\.tv|vshare\.eu|vshare\.io|www\.google\.com\/recaptcha|www\.speedvid\.co|www\.speedvid\.net)\/).)*$/$subdocument,domain=123telugu.com|2giga.link|alltube.pl|alltube.tv|centrum-dramy.pl|estream.nu|estream.to|estream.xyz|funtik.tv|love-drama.pl|netiap.com|szukajka.tv|vev.io|vidfile.net|vidoza.net|vidup.io|vidzi.si|vidzi.tv
-/^((?!(^https?):\/\/(ajax\.googleapis\.com|cdn\.jsdelivr\.net|cdnjs\.cloudflare\.com|code\.jquery\.com|code\.responsivevoice\.org|codeorigin\.jquery\.com|content\.jwplatform\.com|embed\.tawk\.to|maxcdn\.bootstrapcdn\.com|p\.jwpcdn\.com|player\.twitch\.tv|player\.vimeo\.com|releases\.flowplayer\.org|s\.ytimg\.com|static\.escdn\.co|vjs\.zencdn\.net|vk\.com|www\.google\.com|www\.gstatic\.com)\/).)*$/$script,third-party,domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|2giga.link|7tors.com|alltube.tv|animeteatr.ru|annuaire-bleu.net|atk-exotics.com|atkebony.com|babyjav.com|bitcoincashfaucet.co|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bustrain.net|bypassed.ws|cinemafacil.com|citypaintsupplyghana.com|clipwatching.com|cmovieshd.nl|coinfaucet.eu|coinhub.win|deltabit.co|descargas2020.com|domnuleprimar.ro|dragonballzpolo.blogspot.com|emuleed2k.com|estream.nu|estream.to|estream.xyz|fbmovies.org|filmovix.com|filmovix.net|filmovix.org|filmstreamvk.site|filmyhd.cz|flashx.cc|flashx.co|flashx.pw|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|fruitadblock.net|fruithosts.net|fruitstreams.com|funtik.tv|genashowalter.com|gomovie123.me|gomovies123.me|happyjav.com|hdvid.life|hdvid.tv|hdvid.xyz|idope.tv|ifrp.xyz|javbros.com|javdl.co|javsuper.com|kinokong.cc|kinokrad.co|lafmacun.net|litecoinfaucet.co|mp3free.pw|novator.az|novoscrb.ru|oladblock.xyz|oload.cc|oload.club|oload.info|oload.live|oload.site|oload.space|oload.stream|oload.tv|oload.win|onvid.club|onvid.fun|onvid.host|onvid.icu|onvid.online|onvid.pw|onvid.xyz|openload.co|openload.pw|openloed.co|ovid.icu|ovid.live|ovid.pro|ovid.pw|ovid.site|ovid.space|ovid.world|pelisplus.online|pezeshk.us|povwideo.cc|povwideo.net|powvideo.cc|powvideo.net|protect-iframe.com|protect-link.biz|proxyportal.eu|seriesenlinea.net|seventorrents.cc|severita-service.ru|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|stream247.me|streamango.com|streamcherry.com|studio100.it|tapemovie.com|thisjav.com|torrentrapid.com|unblockall.org|unblocked.app|unblocked.gdn|vev.io|vidhd.club|vidhd.fun|vidhd.online|vidhd.pw|vidoza.net|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|vidup.io|watch-free.co|watchfreemovies.tv|wearesaudis.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|yourjav.com|zenexplayer.com
+/^((?!(^https?):\/\/((www\.)?dailymotion\.com|(www\.)?rapidvideo\.com|(www\.)?youtube\.com|alltube\.tv|clipwatching\.com|docs\.google\.com|ebd\.cda\.pl|estream\.to|flashx\.tv|flashx\.co|freedisc\.pl|fruitstreams\.com|gamedor\.usermd\.net|hqq\.tv|hqq\.watch|myvi\.ru|nowvideo\.sx|ok\.ru|oload\.download|oload\.stream|oload\.win|openload\.co|reseton\.net|rutube\.ru|sendvid\.com|st\.chatango\.com|staty\.portalradiowy\.pl|stream\.moe|streamguard\.xyz|streamango\.com|streamcherry\.com|streamplay\.cc|thevideo\.me|thevideo\.website|tune\.pk|uptostream\.com|video\.sibnet\.ru|vidfile\.net|vidlox\.me|vidlox\.tv|vidoza\.net|vidto\.me|vidzi\.tv|vshare\.eu|vshare\.io|www\.google\.com\/recaptcha|www\.speedvid\.co|www\.speedvid\.net)\/).)*$/$subdocument,domain=123telugu.com|2giga.link|alltube.pl|alltube.tv|centrum-dramy.pl|estream.nu|estream.to|estream.xyz|love-drama.pl|netiap.com|funtik.tv|szukajka.tv|vev.io|vidfile.net|vidoza.net|vidup.io|vidzi.si|vidzi.tv
+
+/^((?!(^https?):\/\/(ajax\.googleapis\.com|cdn\.jsdelivr\.net|cdnjs\.cloudflare\.com|code\.jquery\.com|code\.responsivevoice\.org|codeorigin\.jquery\.com|content\.jwplatform\.com|embed\.tawk\.to|maxcdn\.bootstrapcdn\.com|p\.jwpcdn\.com|player\.twitch\.tv|player\.vimeo\.com|releases\.flowplayer\.org|s\.ytimg\.com|static\.escdn\.co|vjs\.zencdn\.net|vk\.com|www\.google\.com|www\.gstatic\.com)\/).)*$/$script,third-party,domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|2giga.link|7tors.com|alltube.tv|animeteatr.ru|annuaire-bleu.net|arnaques-internet.info|atk-exotics.com|atkebony.com|babyjav.com|bamekoohrang.ir|bitcoincashfaucet.co|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bustrain.net|bypassed.ws|chemikino.ru|cinemafacil.com|citypaintsupplyghana.com|clipwatching.com|cmovieshd.nl|coinfaucet.eu|coinhub.win|cracklists.com|crimedocumentary.com|deltabit.co|descargas2020.com|domnuleprimar.ro|dragonballzpolo.blogspot.com|emuleed2k.com|estream.nu|estream.to|estream.xyz|fbmovies.org|filmovix.com|filmovix.net|filmovix.org|filmstreamvk.site|filmyhd.cz|firstone.tv|firstonetv.eu|firstonetv.live|flashx.cc|flashx.co|flashx.pw|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|fruitadblock.net|fruithosts.net|fruitstreams.com|funtik.tv|genashowalter.com|gomovie123.me|gomovies123.me|happyjav.com|hdvid.life|hdvid.tv|hdvid.xyz|hospital.plus|idope.tv|ifrp.xyz|javbros.com|javdl.co|javsuper.com|kapuso.be|kinokong.cc|kinokrad.co|lafmacun.net|litecoinfaucet.co|mobology.ir|mp3free.pw|neurozinzin.com|novator.az|novoscrb.ru|oladblock.me|oladblock.xyz|oload.cc|oload.club|oload.info|oload.live|oload.site|oload.space|oload.stream|oload.tv|oload.win|onvid.club|onvid.fun|onvid.host|onvid.icu|onvid.online|onvid.pw|onvid.xyz|openload.co|openload.pw|openloed.co|ovid.icu|ovid.live|ovid.pro|ovid.pw|ovid.site|ovid.space|ovid.world|pelisplus.online|pezeshk.us|pinoyrewind.info|povwideo.cc|povwideo.net|powvideo.cc|powvideo.net|protect-iframe.com|protect-link.biz|proxyportal.eu|rednubes.de|seriesenlinea.net|seventorrents.cc|severita-service.ru|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|stream247.me|streamango.com|streamcherry.com|studio100.it|tapemovie.com|thisjav.com|torrentrapid.com|unblockall.org|unblocked.app|unblocked.gdn|vev.io|vidhd.club|vidhd.fun|vidhd.online|vidhd.world|vidhd.pw|vidoza.net|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|vidup.io|voirfilms.mx|wallpoper.com|watch-free.co|watchfreemovies.tv|wearesaudis.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|yourjav.com|zenexplayer.com|ziurim.eu
+
 /^https?:\/\/([0-9a-z\.-_]+)\.(accountant|bid|cf|club|cricket|date|download|faith|fun|ga|gdn|gq|loan|men|ml|ovh|party|pro|pw|racing|review|rocks|ru|science|site|space|stream|tk|top|trade|webcam|win|xyz|zone)\.\/(.*)/$script,third-party
+
 ! Websocket blocking -----------------------------------------------------------
-$websocket,domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|1q2w3.website|2giga.link|300mbfilms.co|7tors.com|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|alstreams.org|animeteatr.ru|annuaire-bleu.net|atk-exotics.com|atkebony.com|babyjav.com|bigspeeds.com|bitcoincashfaucet.co|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bustrain.net|bypassed.in|bypassed.ws|bypassed.wtf|byter.tv|catrumahminimalis.me|centrum-dramy.pl|cinemafacil.com|citypaintsupplyghana.com|clipwatching.com|cloudtime.to|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|crictime.com|crictime.is|ddmix.net|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|domnuleprimar.ro|dragonballzpolo.blogspot.com|drama-cool.me|eduardolegatti.blogspot.com|emuleed2k.com|estream.nu|estream.to|estream.xyz|extratorrent.cd|fbmovies.org|fileone.tv|filmai.ws|filmonet.com|filmovix.com|filmovix.net|filmovix.org|filmstreamvk.biz|filmstreamvk.co|filmstreamvk.com|filmstreamvk.io|filmstreamvk.me|filmstreamvk.net|filmstreamvk.org|filmstreamvk.site|filmstreamvk.top|filmstreamvk.ws|filmstreamvk1.net|filmyhd.cz|flashx.cc|flashx.co|flashx.pw|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|fruitadblock.net|fruithosts.net|fruitstreams.com|full-mp3.com|funtik.tv|genashowalter.com|gofile.io|gomovie123.me|gomovies123.me|happyjav.com|hdvid.life|hdvid.tv|hdvid.xyz|hdyayinmac1.com|hentai-online.pl|hq-porns.com|hqq.tv|hqq.watch|ianimes.co|idope.tv|ifrp.xyz|ikwildepiratebay.xyz|indiaproxydl.org|intactoffers.club|javbros.com|javdl.co|javsuper.com|jkanime.net|kickass.cd|kinohabr.net|kinokongo.cc|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|lewd.ninja|litecoinfaucet.co|logovo.net|love-drama.pl|luckybitco.in|mladipodnikatelia.sk|monero-miner.com|movie4k.is|mp3free.pw|mrunlock.icu|myfeed4u.net|myvidaanime.com|nahnoji.cz|netiap.com|nod-key.su|novator.az|novoscrb.ru|nowvideo.sx|oipeirates.online|oladblock.xyz|oload.cc|oload.club|oload.download|oload.fun|oload.info|oload.live|oload.site|oload.space|oload.stream|oload.tv|oload.win|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.host|onvid.icu|onvid.online|onvid.pw|onvid.xyz|openload.co|openload.pw|openloed.co|ovid.icu|ovid.live|ovid.pro|ovid.pw|ovid.site|ovid.space|ovid.world|pebx.pl|peliculas24.me|pelisplus.online|pezeshk.us|piratebay.tel|potomy.ru|povwideo.cc|povwideo.net|powvideo.cc|powvideo.net|protect-iframe.com|protect-link.biz|proxyportal.eu|rapidvideo.com|reactor.cc|reservedoffers.club|salon.com|seriesenlinea.net|seventorrents.cc|severita-service.ru|sherlockonline.ru|shrink-service.it|shush.se|sickrage.ca|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.top|studio100.it|szukajka.tv|tainies.online|tapemovie.com|tarntercum.ru|theappguruz.com|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|thevideo.website|thisjav.com|tokyodrift.ga|tomadivx.tv|torrentrapid.com|tubetitties.com|tugaanimado.net|unblockall.org|unblocked.app|unblocked.gdn|unblocked.ms|unblocked.vet|unblocked.wtf|uptobox.com|uptostream.com|vev.io|vidfile.net|vidgg.to|vidhd.club|vidhd.fun|vidhd.online|vidhd.pw|vidoza.net|vidstodo.me|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|vidup.io|vidup.me|vidup.tv|vidzi.si|vidzi.tv|void.cat|voirfilm.ws|voirfilms.ws|wallpoper.com|watch-free.co|watchfreemovies.tv|wearesaudis.net|wholecloud.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|yourjav.com|zenexplayer.com|ziurim.eu|zona.plus
+$websocket,domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|1q2w3.website|2giga.link|300mbfilms.co|7tors.com|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|alstreams.org|animeteatr.ru|annuaire-bleu.net|arnaques-internet.info|atk-exotics.com|atkebony.com|babyjav.com|bamekoohrang.ir|bigspeeds.com|bitcoincashfaucet.co|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bustrain.net|bypassed.in|bypassed.ws|bypassed.wtf|byter.tv|catrumahminimalis.me|centrum-dramy.pl|chemikino.ru|cinemafacil.com|citypaintsupplyghana.com|clipwatching.com|cloudtime.to|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|cracklists.com|crictime.com|crictime.is|crimedocumentary.com|ddmix.net|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|domnuleprimar.ro|dragonballzpolo.blogspot.com|drama-cool.me|eduardolegatti.blogspot.com|emuleed2k.com|estream.nu|estream.to|estream.xyz|extratorrent.cd|fbmovies.org|fileone.tv|filmai.ws|filmonet.com|filmovix.com|filmovix.net|filmovix.org|filmstreamvk.biz|filmstreamvk.co|filmstreamvk.com|filmstreamvk.io|filmstreamvk.me|filmstreamvk.net|filmstreamvk.org|filmstreamvk.site|filmstreamvk.top|filmstreamvk.ws|filmstreamvk1.net|filmyhd.cz|firstone.tv|firstonetv.eu|firstonetv.live|flashx.cc|flashx.co|flashx.pw|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|fruitadblock.net|fruithosts.net|fruitstreams.com|full-mp3.com|funtik.tv|genashowalter.com|gofile.io|gomovie123.me|gomovies123.me|happyjav.com|hdvid.life|hdvid.tv|hdvid.xyz|hdyayinmac1.com|hentai-online.pl|hospital.plus|hq-porns.com|hqq.tv|hqq.watch|ianimes.co|idope.tv|ifrp.xyz|ikwildepiratebay.xyz|indiaproxydl.org|intactoffers.club|javbros.com|javdl.co|javsuper.com|jkanime.net|kapuso.be|kickass.cd|kinohabr.net|kinokongo.cc|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|lewd.ninja|litecoinfaucet.co|logovo.net|love-drama.pl|luckybitco.in|mladipodnikatelia.sk|mobology.ir|monero-miner.com|movie4k.is|mp3free.pw|mrunlock.icu|myfeed4u.net|myvidaanime.com|nahnoji.cz|netiap.com|neurozinzin.com|nod-key.su|novator.az|novoscrb.ru|nowvideo.sx|oipeirates.online|oladblock.me|oladblock.xyz|oload.cc|oload.club|oload.download|oload.fun|oload.info|oload.live|oload.site|oload.space|oload.stream|oload.tv|oload.win|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.host|onvid.icu|onvid.online|onvid.pw|onvid.xyz|openload.co|openload.pw|openloed.co|ovid.icu|ovid.live|ovid.pro|ovid.pw|ovid.site|ovid.space|ovid.world|pebx.pl|peliculas24.me|pelisplus.online|pezeshk.us|pinoyrewind.info|piratebay.tel|potomy.ru|povwideo.cc|povwideo.net|powvideo.cc|powvideo.net|protect-iframe.com|protect-link.biz|proxyportal.eu|rapidvideo.com|reactor.cc|rednubes.de|reservedoffers.club|salon.com|seriesenlinea.net|seventorrents.cc|severita-service.ru|sherlockonline.ru|shrink-service.it|shush.se|sickrage.ca|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.top|studio100.it|szukajka.tv|tainies.online|tapemovie.com|tarntercum.ru|theappguruz.com|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|thevideo.website|thisjav.com|tokyodrift.ga|tomadivx.tv|torrentrapid.com|tubetitties.com|tugaanimado.net|unblockall.org|unblocked.app|unblocked.gdn|unblocked.ms|unblocked.vet|unblocked.wtf|uptobox.com|uptostream.com|vev.io|vidfile.net|vidgg.to|vidhd.club|vidhd.fun|vidhd.online|vidhd.world|vidhd.pw|vidoza.net|vidstodo.me|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|vidup.io|vidup.me|vidup.tv|vidzi.si|vidzi.tv|void.cat|voirfilm.ws|voirfilms.mx|voirfilms.ws|wallpoper.com|watch-free.co|watchfreemovies.tv|wearesaudis.net|wholecloud.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|yourjav.com|zenexplayer.com|ziurim.eu|zona.plus
+
 ! XMLHttpRequest blocking ------------------------------------------------------
 $xmlhttprequest,domain=adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|ddmix.net|dekoder.ws|nowvideo.sx|povwideo.cc|povwideo.net|powvideo.cc|powvideo.net|sorteosrd.com|streambeam.io|streamplay.top|szukajka.tv|tainies.online|vidfile.net|vidgg.to|wholecloud.net
+
 ! CSP blocking -----------------------------------------------------------------
+$csp=worker-src 'none',domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|1q2w3.website|2giga.link|300mbfilms.co|7tors.com|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|alstreams.org|animeteatr.ru|annuaire-bleu.net|arnaques-internet.info|atk-exotics.com|atkebony.com|babyjav.com|bamekoohrang.ir|bigspeeds.com|bitcoincashfaucet.co|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bustrain.net|bypassed.in|bypassed.ws|bypassed.wtf|byter.tv|catrumahminimalis.me|centrum-dramy.pl|chemikino.ru|cinemafacil.com|citypaintsupplyghana.com|clipwatching.com|cloudtime.to|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|cracklists.com|crictime.com|crictime.is|crimedocumentary.com|ddmix.net|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|domnuleprimar.ro|dragonballzpolo.blogspot.com|drama-cool.me|eduardolegatti.blogspot.com|emuleed2k.com|estream.nu|estream.to|estream.xyz|extratorrent.cd|fbmovies.org|fileone.tv|filmai.ws|filmonet.com|filmovix.com|filmovix.net|filmovix.org|filmstreamvk.biz|filmstreamvk.co|filmstreamvk.com|filmstreamvk.io|filmstreamvk.me|filmstreamvk.net|filmstreamvk.org|filmstreamvk.site|filmstreamvk.top|filmstreamvk.ws|filmstreamvk1.net|filmyhd.cz|firstone.tv|firstonetv.eu|firstonetv.live|flashx.cc|flashx.co|flashx.pw|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|fruitadblock.net|fruithosts.net|fruitstreams.com|full-mp3.com|funtik.tv|genashowalter.com|gofile.io|gomovie123.me|gomovies123.me|happyjav.com|hdvid.life|hdvid.tv|hdvid.xyz|hdyayinmac1.com|hentai-online.pl|hospital.plus|hq-porns.com|ianimes.co|idope.tv|ifrp.xyz|ikwildepiratebay.xyz|indiaproxydl.org|intactoffers.club|javbros.com|javdl.co|javsuper.com|jkanime.net|kapuso.be|kickass.cd|kinohabr.net|kinokongo.cc|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|lewd.ninja|litecoinfaucet.co|logovo.net|love-drama.pl|luckybitco.in|mladipodnikatelia.sk|mobology.ir|monero-miner.com|movie4k.is|mp3free.pw|mrunlock.icu|myfeed4u.net|myvidaanime.com|nahnoji.cz|netiap.com|neurozinzin.com|nod-key.su|novator.az|novoscrb.ru|nowvideo.sx|oipeirates.online|oladblock.me|oladblock.xyz|oload.cc|oload.club|oload.download|oload.fun|oload.info|oload.live|oload.site|oload.space|oload.stream|oload.tv|oload.win|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.host|onvid.icu|onvid.online|onvid.pw|onvid.xyz|openload.co|openload.pw|openloed.co|ovid.icu|ovid.live|ovid.pro|ovid.pw|ovid.site|ovid.space|ovid.world|pebx.pl|peliculas24.me|pelisplus.online|pezeshk.us|pinoyrewind.info|piratebay.tel|potomy.ru|povwideo.cc|povwideo.net|powvideo.cc|powvideo.net|protect-iframe.com|protect-link.biz|proxyportal.eu|rapidvideo.com|reactor.cc|rednubes.de|reservedoffers.club|salon.com|seriesenlinea.net|seventorrents.cc|severita-service.ru|sherlockonline.ru|shrink-service.it|shush.se|sickrage.ca|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.top|studio100.it|szukajka.tv|tainies.online|tapemovie.com|tarntercum.ru|theappguruz.com|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|thevideo.website|thisjav.com|tokyodrift.ga|tomadivx.tv|torrentrapid.com|tubetitties.com|tugaanimado.net|unblockall.org|unblocked.app|unblocked.gdn|unblocked.ms|unblocked.vet|unblocked.wtf|uptobox.com|uptostream.com|vev.io|vidfile.net|vidgg.to|vidhd.club|vidhd.fun|vidhd.online|vidhd.world|vidhd.pw|vidoza.net|vidstodo.me|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|vidup.io|vidup.me|vidup.tv|vidzi.si|vidzi.tv|void.cat|voirfilm.ws|voirfilms.mx|voirfilms.ws|wallpoper.com|watch-free.co|watchfreemovies.tv|wearesaudis.net|wholecloud.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|yourjav.com|zenexplayer.com|ziurim.eu|zona.plus
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.net|extratorrent.cd|gofile.io|hq-porns.com|intactoffers.club|kickass.cd|myfeed4u.net|reservedoffers.club|skyback.ru|szukajka.tv|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|vidoza.net|vidup.me|vidup.tv
-$csp=worker-src 'none',domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|1q2w3.website|2giga.link|300mbfilms.co|7tors.com|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|alstreams.org|animeteatr.ru|annuaire-bleu.net|atk-exotics.com|atkebony.com|babyjav.com|bigspeeds.com|bitcoincashfaucet.co|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bustrain.net|bypassed.in|bypassed.ws|bypassed.wtf|byter.tv|catrumahminimalis.me|centrum-dramy.pl|cinemafacil.com|citypaintsupplyghana.com|clipwatching.com|cloudtime.to|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|crictime.com|crictime.is|ddmix.net|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|domnuleprimar.ro|dragonballzpolo.blogspot.com|drama-cool.me|eduardolegatti.blogspot.com|emuleed2k.com|estream.nu|estream.to|estream.xyz|extratorrent.cd|fbmovies.org|fileone.tv|filmai.ws|filmonet.com|filmovix.com|filmovix.net|filmovix.org|filmstreamvk.biz|filmstreamvk.co|filmstreamvk.com|filmstreamvk.io|filmstreamvk.me|filmstreamvk.net|filmstreamvk.org|filmstreamvk.site|filmstreamvk.top|filmstreamvk.ws|filmstreamvk1.net|filmyhd.cz|flashx.cc|flashx.co|flashx.pw|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|fruitadblock.net|fruithosts.net|fruitstreams.com|full-mp3.com|funtik.tv|genashowalter.com|gofile.io|gomovie123.me|gomovies123.me|happyjav.com|hdvid.life|hdvid.tv|hdvid.xyz|hdyayinmac1.com|hentai-online.pl|hq-porns.com|ianimes.co|idope.tv|ifrp.xyz|ikwildepiratebay.xyz|indiaproxydl.org|intactoffers.club|javbros.com|javdl.co|javsuper.com|jkanime.net|kickass.cd|kinohabr.net|kinokongo.cc|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|lewd.ninja|litecoinfaucet.co|logovo.net|love-drama.pl|luckybitco.in|mladipodnikatelia.sk|monero-miner.com|movie4k.is|mp3free.pw|mrunlock.icu|myfeed4u.net|myvidaanime.com|nahnoji.cz|netiap.com|nod-key.su|novator.az|novoscrb.ru|nowvideo.sx|oipeirates.online|oladblock.xyz|oload.cc|oload.club|oload.download|oload.fun|oload.info|oload.live|oload.site|oload.space|oload.stream|oload.tv|oload.win|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.host|onvid.icu|onvid.online|onvid.pw|onvid.xyz|openload.co|openload.pw|openloed.co|ovid.icu|ovid.live|ovid.pro|ovid.pw|ovid.site|ovid.space|ovid.world|pebx.pl|peliculas24.me|pelisplus.online|pezeshk.us|piratebay.tel|potomy.ru|povwideo.cc|povwideo.net|powvideo.cc|powvideo.net|protect-iframe.com|protect-link.biz|proxyportal.eu|rapidvideo.com|reactor.cc|reservedoffers.club|salon.com|seriesenlinea.net|seventorrents.cc|severita-service.ru|sherlockonline.ru|shrink-service.it|shush.se|sickrage.ca|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.top|studio100.it|szukajka.tv|tainies.online|tapemovie.com|tarntercum.ru|theappguruz.com|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|thevideo.website|thisjav.com|tokyodrift.ga|tomadivx.tv|torrentrapid.com|tubetitties.com|tugaanimado.net|unblockall.org|unblocked.app|unblocked.gdn|unblocked.ms|unblocked.vet|unblocked.wtf|uptobox.com|uptostream.com|vev.io|vidfile.net|vidgg.to|vidhd.club|vidhd.fun|vidhd.online|vidhd.pw|vidoza.net|vidstodo.me|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|vidup.io|vidup.me|vidup.tv|vidzi.si|vidzi.tv|void.cat|voirfilm.ws|voirfilms.ws|wallpoper.com|watch-free.co|watchfreemovies.tv|wearesaudis.net|wholecloud.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|yourjav.com|zenexplayer.com|ziurim.eu|zona.plus
+
 ! Generic blocking -------------------------------------------------------------
-@@||szukajka.tv/jsverify.php?op=tag|$~third-party,xmlhttprequest
-@@||szukajka.tv/szukaj|$~third-party,xmlhttprequest
 |http://*:$script,domain=centrum-dramy.pl|hentai-online.pl
 |https://*:$script,domain=centrum-dramy.pl|hentai-online.pl
+@@||szukajka.tv/jsverify.php?op=tag|$xmlhttprequest,~third-party
+@@||szukajka.tv/szukaj|$xmlhttprequest,~third-party
+
 ! Specific blocking ------------------------------------------------------------
-||adfreetv.ch/js/jquery.js
-||adfreetv.ch^$xmlhttprequest
-||cdn1.pebx.pl^
-||cinemafacil.com/js.php
+||dekoder.ws^*?proxy=
+||openkatalog.com^$subdocument
+||mine.torrent.pw^
 ||cryptobara.com/client/worker.js
+||nahnoji.cz^$websocket
+||js.nahnoji.cz^
+||mine.nahnoji.cz^
+||hive.tubetitties.com^
+||miner.nablabee.com^
+||shrink-service.it/js/cM.js
+||p.estream.to^
+||www2.adfreetv.ch^
+||adfreetv.ch^*$xmlhttprequest
+||adfreetv.ch/js/jquery.js
 ||ddns.net^*=ws://$third-party
 ||ddns.net^*=wss://$third-party
-||dekoder.ws^*?proxy=
-||directprimal.com^$websocket
-||hive.tubetitties.com^
-||js.nahnoji.cz^
-||kinokongo.cc^*.php
-||mine.nahnoji.cz^
-||mine.torrent.pw^
-||miner.nablabee.com^
 ||myeffect.net^*=ws://$third-party
 ||myeffect.net^*=wss://$third-party
-||nahnoji.cz^$websocket
-||on.animeteatr.ru^
-||openkatalog.com^$subdocument
-||p.estream.to^
+||worker.salon.com^
+||streamplay.*.wasm$xmlhttprequest
+||sleeptimer.org/playerc.js
+||kinokongo.cc^*.php
+||video.videos.vidto.me^
+||play.play1.videos.vidto.me^
+||playe.vidto.se^
+||video.streaming.estream.to^
+||support.2giga.link^
+||vidzi.tv/bootstrap.
+||directprimal.com^$websocket
 ||play.estream.nu^
 ||play.estream.to^
 ||play.estream.xyz^
-||play.play1.videos.vidto.me^
 ||play.s01.vidtodo.pro^
+||on.animeteatr.ru^
 ||play.vb.wearesaudis.net^
-||playe.vidto.se^
-||shrink-service.it/js/cM.js
-||shush.se/loader/load.js
-||sleeptimer.org/playerc.js
-||streamplay.*.wasm$xmlhttprequest
-||support.2giga.link^
-||video.streaming.estream.to^
-||video.videos.vidto.me^
-||vidzi.tv/bootstrap.
+||cinemafacil.com/js.php
+||cdn1.pebx.pl^
 ||wallpoper.com^*/c.js
-||worker.salon.com^
-||www2.adfreetv.ch^
+||shush.se/loader/load.js
+
 ! TPB
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=ahoypirate.click|ahoypirate.in|ahoypiratebaai.eu|airproxyproxy.pw|airproxytpb.red|alivbay.org|batpirate.info|bay.maik.rocks|bayception.pw|baypirate.click|baypiratebay.be|baypirateproxy.org|baypirateproxy.pw|bayproxy.eu|bypassed.st|capjackproxy.net|cruzing.xyz|depiratenbaai.nl|duckingproxy.eu|hyperproxy.net|ikwildepiratebay.org|ikwildepiratebay.xyzbrowse|indiaproxy.in|indiaproxydl.orgbrowse|magnetbay.eu|noobnoob.rocks|pietpiraat.org|pirat2.club|pirataibay.in|piratbaypirate.link|pirate.bet|pirate.blue|pirate.trade|pirateahoy.net|piratebaai.click|piratebaai.club|piratebay.click|piratebay.red|piratebay.telbrowse|piratebay.town|piratebay.website|piratebay247.net|piratebayblocked.com|piratebaymirror.eu|piratebayproxy.tf|piratebays.be|piratebays.co|piratenbucht.eu|piratepirate.eu|pirateprox.club|pirateproxy.click|pirateproxy.ist|pirateproxy.mx|pirateproxy.tf|pirateproxy.wf|pirateproxy.yt|piratetoday.click|proxybayduck.fi|proxydl.cf|proxyfl.info|proxyindia.net|proxyme.site|proxyme.win|proxyoneahoy.net|proxypirate.in|proxypirate.website|proxyproxyproxy.nl|proxyship.click|proxytpb.org|proxytpb.pw|rowpirate.org|superbay.link|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepirate.click|thepirate.xyz|thepiratebay-proxy.com|thepiratebay.bet|thepiratebay.blue|thepiratebay.cr|thepiratebay.futbol|thepiratebay.kiwi|thepiratebay.org|thepiratebay.pet|thepiratebay.pictures|thepiratebay.red|thepiratebay.rocks|thepiratebay.se.net|thepiratebay.tel|thepiratebay.wtf|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|tpb.crushus.com|tpb.one|tpb.tw|tpbairproxy.in|tpbbay.eu|tpbduck.com|tpbmirror.us|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbportal.in|tpbproxy.club|tpbproxy.win|tpbproxyone.org|tpbrun.win|tpproxy.website|ukpirate.click|ukpirate.org|ukpirateproxy.xyz|unblockedhyperbay.info|unblocktheship.org|unblocktpb.com|urbanproxy.eu|wearepirates.click|zombay.org
 $script,websocket,domain=ahoypirate.click|ahoypirate.in|ahoypiratebaai.eu|airproxyproxy.pw|airproxytpb.red|alivbay.org|batpirate.info|bay.maik.rocks|bayception.pw|baypirate.click|baypiratebay.be|baypirateproxy.org|baypirateproxy.pw|bayproxy.eu|bypassed.st|capjackproxy.net|cruzing.xyz|depiratenbaai.nl|duckingproxy.eu|hyperproxy.net|ikwildepiratebay.org|ikwildepiratebay.xyzbrowse|indiaproxy.in|indiaproxydl.orgbrowse|magnetbay.eu|noobnoob.rocks|pietpiraat.org|pirat2.club|pirataibay.in|piratbaypirate.link|pirate.bet|pirate.blue|pirate.trade|pirateahoy.net|piratebaai.click|piratebaai.club|piratebay.click|piratebay.red|piratebay.telbrowse|piratebay.town|piratebay.website|piratebay247.net|piratebayblocked.com|piratebaymirror.eu|piratebayproxy.tf|piratebays.be|piratebays.co|piratenbucht.eu|piratepirate.eu|pirateprox.club|pirateproxy.click|pirateproxy.ist|pirateproxy.mx|pirateproxy.tf|pirateproxy.wf|pirateproxy.yt|piratetoday.click|proxybayduck.fi|proxydl.cf|proxyfl.info|proxyindia.net|proxyme.site|proxyme.win|proxyoneahoy.net|proxypirate.in|proxypirate.website|proxyproxyproxy.nl|proxyship.click|proxytpb.org|proxytpb.pw|rowpirate.org|superbay.link|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepirate.click|thepirate.xyz|thepiratebay-proxy.com|thepiratebay.bet|thepiratebay.blue|thepiratebay.cr|thepiratebay.futbol|thepiratebay.kiwi|thepiratebay.org|thepiratebay.pet|thepiratebay.pictures|thepiratebay.red|thepiratebay.rocks|thepiratebay.se.net|thepiratebay.tel|thepiratebay.wtf|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|tpb.crushus.com|tpb.one|tpb.tw|tpbairproxy.in|tpbbay.eu|tpbduck.com|tpbmirror.us|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbportal.in|tpbproxy.club|tpbproxy.win|tpbproxyone.org|tpbrun.win|tpproxy.website|ukpirate.click|ukpirate.org|ukpirateproxy.xyz|unblockedhyperbay.info|unblocktheship.org|unblocktpb.com|urbanproxy.eu|wearepirates.click|zombay.org
+
 ! https://git.io/vxeAt
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40185
 ! https://git.io/fp0eZ
 ! https://forums.lanik.us/viewtopic.php?f=91&t=42871
-||github.io^$third-party,websocket,xmlhttprequest,domain=~docuss.org|~facebook.com|~gametactic.org|~github.com|~github.io|~tumblr.com|~wottactic.com
+||github.io^$third-party,xmlhttprequest,websocket,domain=~docuss.org|~facebook.com|~gametactic.org|~github.com|~github.io|~tumblr.com|~wottactic.com
+
 ! Pools
-||grf.easyhash.io^
-||minexmr.com^$third-party
-||pool.minexmr.com^
 ||pool.supportxmr.com^
+||grf.easyhash.io^
+||pool.minexmr.com^
+||minexmr.com^$third-party
+
 ! Whitelists to fix broken sites -----------------------------------------------
 @@||api.nyda.pro^$websocket
+@@||ws.webcaster.pro^$websocket
 @@||broadcastt.xyz/apps/$websocket
-@@||matt-kruse.github.io/socialfixerdata/$xmlhttprequest
+@@||viebel.github.io/klipse$xmlhttprequest
 @@||viebel.github.io/cljs-analysis-cache/$xmlhttprequest
 @@||viebel.github.io/cljsjs-hosted/$xmlhttprequest
-@@||viebel.github.io/klipse$xmlhttprequest
-@@||ws.webcaster.pro^$websocket
+@@||matt-kruse.github.io/socialfixerdata/$xmlhttprequest
+
 ! Filters optimized for uBlock -------------------------------------------------
 descargas2020.com##script:inject(abort-current-inline-script.js, atob, _0x)
 csgoconfigs.com##script:inject(abort-current-inline-script.js, m, ch.Anonymous)
@@ -14228,7 +14433,8 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@/advertisement.$script,domain=ikurniawan.com|kumpulmanga.org|lifesurance.info|overlordfree.web.id|rukim.id|samehadaku.tv|wizardsubs.com
 @@/fuckadblock.js$domain=leantoro.com|serbakuis.com
 @@/fuckadblock.min.js$domain=caranetizen.info
-@@/pagead2.$script,domain=bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|hightech.web.id|unduh.in
+@@/js/ads.js$script,domain=icutlink.com
+@@/pagead2.$script,domain=bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|gembel9.xyz|gembelcit.net|hightech.web.id|unduh.in
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||adturl.com^$generichide
@@ -14241,8 +14447,10 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@||caranetizen.info^$generichide
 @@||contohblog.com^$generichide
 @@||dedykuncoro.com^$generichide
+@@||dukun-cit.com^$generichide
 @@||eirudo.com^$generichide
 @@||fendy.web.id^$generichide
+@@||fmlawkers.$generichide
 @@||gadget2reviews.com^$generichide
 @@||gudangfirmwere.com^$generichide
 @@||gurusd.web.id^$generichide
@@ -14254,6 +14462,7 @@ thepiratebay.*##script:inject(abort-on-property-read.js, _wm)
 @@||kazefuri.web.id^$generichide
 @@||kelasdesain.com^$generichide
 @@||klikshowtime.com^$generichide
+@@||komikindo.web.id^$generichide
 @@||kurikulum.co.id^$generichide
 @@||majalahikan.com^$generichide
 @@||mangashiro.net^$generichide
@@ -14291,8 +14500,10 @@ eramuslim.com#@##topAd
 nabire.net#@#.adsbygoogle
 otakuindo.net#@##banner_ad
 ! Safelink & Shortlink
-@@/js/ads.$script,domain=akuno.net|blogshortener.com|daily-sale.in|indigitz.org|iovoproduction.info|mylinkblog.com|shln.pw|shrink.vip|templink.org|wi.cr
+1idsly.com,daily-sale.in,idsly.bid,pendeksafelink.blogspot.com,suarankri.me##.adsbygoogle
+@@/js/ads.$script,domain=akuno.net|blogshortener.com|daily-sale.in|indigitz.org|iovoproduction.info|mylinkblog.com|shln.pw|shrink.vip|templink.org|urlto.id|wi.cr
 @@/js/ads2.$script,domain=tmearn.com
+@@||1idsly.com^$generichide
 @@||daily-sale.in^$generichide
 @@||get.web.id^$generichide
 @@||idsly.bid^$generichide
@@ -14302,7 +14513,7 @@ otakuindo.net#@##banner_ad
 @@||safelkmeong.blogspot.com^$generichide
 @@||semutlink.blogspot.com^$generichide
 @@||suarankri.me^$generichide
-daily-sale.in,idsly.bid,pendeksafelink.blogspot.com,suarankri.me##.adsbygoogle
+safejobsbos.blogspot.com#@##adsense
 ||adsafelink.com/banner/
 ! 
 ! Memperbaiki kerusakan karena AdBlockID
@@ -14318,7 +14529,7 @@ daily-sale.in,idsly.bid,pendeksafelink.blogspot.com,suarankri.me##.adsbygoogle
 @@/ayopasangiklan.
 @@/belanja_iklan-
 @@/cara-beriklan.
-@@/iklan/*$domain=1rajaiklan.com|duniaiklangratis.com|iklan123.net|iklanbogor.com|iklankotalemank.com|iklanpopuler.com|iklansmart.com|megaiklan.com|pasangiklanmurah.xyz|pusatiklan.co.id|sebariklanbaris.net|sentrapromosi.com|sewa-apartemen.net
+@@/iklan/*$domain=1rajaiklan.com|duniaiklangratis.com|iklan123.net|iklanbogor.com|iklankotalemank.com|iklanpopuler.com|iklansmart.com|megaiklan.com|pasangiklanmurah.xyz|pusatiklan.co.id|sebariklanbaris.net|sebariklanmassalpremium.com|sentrapromosi.com|sewa-apartemen.net
 @@/iklanbaris-gratis.
 @@/pasang-iklan-
 @@/pasang-iklan.
@@ -14334,28 +14545,37 @@ iklanpopuler.com#@#[src*="/iklan/"]
 jualo.com#@#[href*="/iklan-"] > img
 jualo.com#@#[href*="/iklan/"] > img
 kostjakarta.net#@#[href*="/iklan/"] > img
+sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! Memperbaiki kerusakan karena EasyList dan uBlock filters
 ! 
+@@-adwords.$domain=bocdigital.id|idkeyword.com
+@@/ad4.png$image,domain=palingseru.com
 @@/ads/*$domain=phd.co.id|promozia.com
+@@/adsense.$domain=herosoftmedia.co.id
 @@/advertise/*$domain=brilio.net
 @@/advertisement.$domain=advertisement.keepo.me
-@@/advertising-$domain=advertising-indonesia.id
+@@/advertising-$domain=advertising-indonesia.id|reoncomics.com
 @@/advertising.$domain=advertising.katadata.co.id
 @@/advertising/*$domain=client.okezone.com
 @@/bg_advertise.
 @@/bnrs/*$domain=duniaiklangratis.com|iklan123.net|iklanbogor.com|iklanpopuler.com|iklansmart.com|megaiklan.com|sebariklanbaris.net|sebariklanmassalpremium.com|sebariklanonline.com
+@@/display-ads-$domain=idkeyword.com
+@@/google-ads-$domain=bocdigital.id
 @@/images/ads/*$domain=adsmart.detik.com
+@@/istilah-google-
+@@/pasang-google-
 @@/scripts/ads.$domain=ads.kaskus.co.id
+@@/wp-content/plugins/adsense-click-fraud-monitoring/*$~third-party
 @@/wp-content/themes/adsense-child/*$~third-party
 @@/wp-content/themes/classified-ads/*$~third-party
 @@/wp-content/themes/mts_ad_sense/*$~third-party
 @@/wp-content/themes/superads-$~third-party
 @@/wp-content/uploads/*$image,domain=adstarsmedia.co.id|dhadigital.com|jurnalweb.com
-@@://ads.$domain=ads.gadgetsquad.id|ads.hukumonline.com|ads.id|ads.iklandaerah.com|ads.kaskus.co.id|ads.kontan.co.id|ads.wartaekonomi.co.id
+@@://ads.$domain=ads.gadgetsquad.id|ads.genmuda.com|ads.hukumonline.com|ads.id|ads.iklandaerah.com|ads.kaskus.co.id|ads.kontan.co.id|ads.wartaekonomi.co.id
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com^$generichide
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: LdUtizG2+hU5lRYpXCm5hA
+! Checksum: IFm9rUdEiaq0NN+hnpkyHA
