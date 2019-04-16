@@ -26,6 +26,27 @@ from abp.filters import parse_line
 __all__ = ['line2dict']
 
 
+def option_list_to_dict(options):
+    """Recursively parse filter options into dicts.
+
+    Parameters
+    ----------
+    options: A list of tuples
+        The filter options
+
+    Returns
+    -------
+    dict
+        The resulting dictionary
+
+    """
+    result = dict(options)
+    if 'domain' in result:
+        result['domain'] = option_list_to_dict(result['domain'])
+
+    return result
+
+
 def tuple2dict(data):
     """Convert a parsed filter from a namedtuple to a dict.
 
@@ -41,6 +62,9 @@ def tuple2dict(data):
 
     """
     result = dict(data._asdict())
+    if 'options' in result:
+        result['options'] = option_list_to_dict(result['options'])
+
     result['type'] = data.__class__.__name__
 
     return result
@@ -64,8 +88,6 @@ def strings2utf8(data):
         return {strings2utf8(k): strings2utf8(v) for k, v in data.items()}
     if isinstance(data, list):
         return [strings2utf8(v) for v in data]
-    if isinstance(data, tuple):
-        return tuple(strings2utf8(v) for v in data)
     if isinstance(data, type('')):
         # The condition is a Python 2/3 way of saying "unicode string".
         return data.encode('utf-8')
