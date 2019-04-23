@@ -3,14 +3,14 @@
 
 # AdBlockID
 
-Total rules: 14,601
+Total rules: 14,826
 
-AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdguardFilters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
+AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdGuard Ad Blocking Filters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
 
 ## Manfaat Yang Anda Dapatkan
-1. **No Iklan**: menghilangkan iklan, terutama iklan yang bermuatan konten dewasa.
-2. **Block popads**.
+1. **No Iklan**: menghilangkan banner iklan, terutama iklan yang bermuatan konten dewasa.
+2. **Block iklan pop-up dan PopAds**: meminimalisir iklan pop-up.
 3. **Block [crypto mining scripts](https://www.mycryptopedia.com/crypto-mining-scripts/)**.
 4. **Speed you need:** mengurangi waktu pemuatan halaman hingga setengah dari waktu sebenarnya!
 5. **Privacy:** dengan adanya annoyances blocking, ini `meningkatkan` privacy.
