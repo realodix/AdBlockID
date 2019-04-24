@@ -3,19 +3,18 @@
 
 # AdBlockID
 
-Total rules: 14,826
+Total rules: 14,829
 
-AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdGuard Ad Blocking Filters](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk menghilangkan iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
+AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk memblokir iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
 
 ## Manfaat Yang Anda Dapatkan
-1. **No Iklan**: menghilangkan banner iklan, terutama iklan yang bermuatan konten dewasa.
-2. **Block iklan pop-up dan PopAds**: meminimalisir iklan pop-up.
-3. **Block [crypto mining scripts](https://www.mycryptopedia.com/crypto-mining-scripts/)**.
-4. **Speed you need:** mengurangi waktu pemuatan halaman hingga setengah dari waktu sebenarnya!
-5. **Privacy:** dengan adanya annoyances blocking, ini `meningkatkan` privacy.
-6. **Saves expense:** mengurangi `biaya` konsumsi data.
-7. **Clean:** no `extra` abracadabra!
+1. **No Iklan**: menghilangkan iklan, terutama iklan yang bermuatan konten dewasa.
+2. **Block [crypto mining scripts](https://www.mycryptopedia.com/crypto-mining-scripts/)**.
+3. **Speed you need:** mengurangi waktu pemuatan halaman hingga setengah dari waktu sebenarnya!
+4. **Privacy:** dengan adanya annoyances blocking, ini `meningkatkan` privacy.
+5. **Saves expense:** mengurangi `biaya` konsumsi data.
+6. **Clean:** no `extra` abracadabra!
 
 
 ## Cara Menggunakan
@@ -24,17 +23,17 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada plugin adblock yang Anda gunakan.
 
    `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`
-   
+
    Tutorial spesifik cara memasang AdBlockID:
-   - [uBlock Origin](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock-import-filter.md)
-   - [Nano Adblocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock-import-filter.md)
-   - [AdGuard Browser extension](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adguard-import-filter.md)
-   - [Adblock Plus](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adblock-Plus-import-filter.md)
-   - [Opera Ad Blocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/Opera-AdBlocker-import-filter.md)
+   - [uBlock Origin](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock.md) & [Nano Adblocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock.md)
+   - [AdGuard Browser extension](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adguard.md)
+   - [Adblock Plus](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adblock-Plus.md)
+   - [AdBlock](https://github.com/realodix/AdBlockID/new/master/tutorial#cara-memasang-adblockid-pada-adblock)
+   - [Opera Ad Blocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/Opera-AdBlocker.md)
 
 
 ## Berkontribusi
-Perkebangan iklan di web Indonesia begitu cepat, terutama web yang memajang iklan berkonten dewasa. Jika Anda menemukan web yang tidak terfilter oleh AdBlockID, jangan ragu untuk membuat [issue di sini](https://github.com/realodix/AdBlockID/issues) :D
+Perkebangan iklan pada website di Indonesia begitu cepat, terutama website yang memajang iklan berkonten dewasa. Jika Anda menemukan website yang belum terblokir iklannya oleh AdBlockID, jangan ragu untuk membuat [issue di sini](https://github.com/realodix/AdBlockID/issues) :D
 
 
 ## Generate File
