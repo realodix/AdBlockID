@@ -28,7 +28,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
    - [uBlock Origin](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock.md) & [Nano Adblocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock.md)
    - [AdGuard Browser extension](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adguard.md)
    - [Adblock Plus](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adblock-Plus.md)
-   - [AdBlock](https://github.com/realodix/AdBlockID/new/master/tutorial#cara-memasang-adblockid-pada-adblock)
+   - [AdBlock](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adblock-Plus.md#cara-memasang-adblockid-pada-adblock)
    - [Opera Ad Blocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/Opera-AdBlocker.md)
 
 
