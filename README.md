@@ -49,6 +49,9 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 `$ pip install -e vendor/python-abp`
 
 ### Tools pendukung
-* `FOP.py` untuk mengurutkan.
-* `generate.py` untuk menyatukan.
-* `validatehost.py` untuk memeriksa host apakah masih aktif atau tidak.
+
+| File              | Deskripsi                                 |
+| ----------------- | ----------------------------------------- |
+| `FOP.py`          | Mengurutkan filter pada file `output/adblockid.txt` |
+| `generate.py`     | Menyatukan semua file `.adbl` pada folder AdBlockID dan addons ke dalam file `output/adblockid.txt` |
+| `validatehost.py` | Memeriksa host apakah masih aktif atau tidak.                           |
