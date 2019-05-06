@@ -3,7 +3,7 @@
 
 # AdBlockID
 
-Total rules: 14,924
+Total rules: 15,106
 
 AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk memblokir iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
@@ -54,4 +54,4 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 | ----------------- | ----------------------------------------- |
 | `FOP.py`          | Mengurutkan filter pada file `output/adblockid.txt` |
 | `generate.py`     | Menyatukan semua file `.adbl` pada folder AdBlockID dan addons ke dalam file `output/adblockid.txt` |
-| `validatehost.py` | Memeriksa host apakah masih aktif atau tidak.                           |
+| `validatehost.py` | Memeriksa host apakah masih aktif atau tidak. |
