@@ -181,6 +181,22 @@ For further information on the library API use ``help()`` on ``abp.filters`` and
 its contents in an interactive Python session, read the docstrings, or look at
 the tests for some usage examples.
 
+Blocks of filters
+~~~~~~~~~~~~~~~~~
+
+Further processing of blocks of filters separated by comments can be performed
+using ``to_blocks`` function from ``abp.filters.blocks``:
+
+.. code-block:: python
+
+    from abp.filters import parse_filterlist
+    from abp.filters.blocks import to_blocks
+
+    with open(fl_path) as f:
+        for block in to_blocks(parse_filterlist(f)):
+            print(json.dumps(block.to_dict(), indent=2))
+
+Use ``help()`` on ``abp.filters.blocks`` for more information.
 
 Testing
 -------
@@ -193,7 +209,6 @@ quality reporting.
 Use tox for a comprehensive report of unit tests and test coverage::
 
     $ tox
-
 
 Development
 -----------

@@ -26,50 +26,6 @@ from abp.filters import parse_line
 __all__ = ['line2dict']
 
 
-def option_list_to_dict(options):
-    """Recursively parse filter options into dicts.
-
-    Parameters
-    ----------
-    options: A list of tuples
-        The filter options
-
-    Returns
-    -------
-    dict
-        The resulting dictionary
-
-    """
-    result = dict(options)
-    if 'domain' in result:
-        result['domain'] = option_list_to_dict(result['domain'])
-
-    return result
-
-
-def tuple2dict(data):
-    """Convert a parsed filter from a namedtuple to a dict.
-
-    Parameters
-    ----------
-    data: namedtuple
-        The parsed filter.
-
-    Returns
-    -------
-    dict
-        The resulting dictionary
-
-    """
-    result = dict(data._asdict())
-    if 'options' in result:
-        result['options'] = option_list_to_dict(result['options'])
-
-    result['type'] = data.__class__.__name__
-
-    return result
-
-
 def strings2utf8(data):
     """Convert strings in a data structure to utf8 byte strings.
 
@@ -114,7 +70,7 @@ def line2dict(text, mode='body'):
         strings.
 
     """
-    return strings2utf8(tuple2dict(parse_line(text, mode)))
+    return strings2utf8(parse_line(text, mode).to_dict())
 
 
 def lines2dicts(string_list, mode='body'):

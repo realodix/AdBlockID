@@ -107,6 +107,50 @@ class FilterOption:
     REWRITE = 'rewrite'
 
 
+def _option_list_to_dict(options):
+    """Recursively parse filter options into dicts.
+
+    Parameters
+    ----------
+    options: A list of tuples
+        The filter options
+
+    Returns
+    -------
+    dict
+        The resulting dictionary
+
+    """
+    result = dict(options)
+    if 'domain' in result:
+        result['domain'] = _option_list_to_dict(result['domain'])
+
+    return result
+
+
+def _to_dict(line):
+    """Convert a parsed filter list line from a namedtuple to a dict.
+
+    Parameters
+    ----------
+    line: namedtuple
+        The parsed filter.
+
+    Returns
+    -------
+    dict
+        The resulting dictionary
+
+    """
+    result = dict(line._asdict())
+    if 'options' in result:
+        result['options'] = _option_list_to_dict(result['options'])
+
+    result['type'] = line.__class__.__name__
+
+    return result
+
+
 def _line_type(name, field_names, format_string):
     """Define a line type.
 
@@ -132,6 +176,7 @@ def _line_type(name, field_names, format_string):
     lt = namedtuple(name, field_names)
     lt.type = name.lower()
     lt.to_string = lambda self: format_string.format(self)
+    lt.to_dict = _to_dict
     return lt
 
 
