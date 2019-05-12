@@ -21,7 +21,7 @@ with open(path.join(path.dirname(__file__), 'README.rst')) as fh:
 
 setup(
     name='python-abp',
-    version='0.1.1',
+    version='0.1.2',
     description='A library for working with Adblock Plus filter lists.',
     long_description=long_description,
     long_description_content_type='text/x-rst',
