@@ -128,7 +128,7 @@ written to ``diffs/diff[version].txt``. If the output argument is omitted, the
 diffs will be written to the current directory.
 
 The script produces three types of lines, as specified in the `technical
-specification <https://docs.google.com/document/d/1SoEqaOBZRCfkh1s5Kds5A5RwUC_nqbYYlGH72sbsSgQ/>`_:
+specification <https://gitlab.com/eyeo/devops/python-abp/wikis/iflu-0.1>`_:
 
 
 * Special comments of the form ``! <name>:[ <value>]``
