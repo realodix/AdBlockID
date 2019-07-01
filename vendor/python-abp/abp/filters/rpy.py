@@ -19,35 +19,9 @@ Functions for integrating with rPython.
 see: https://cran.r-project.org/web/packages/rPython/index.html
 """
 
-from __future__ import unicode_literals
-
 from abp.filters import parse_line
 
 __all__ = ['line2dict']
-
-
-def strings2utf8(data):
-    """Convert strings in a data structure to utf8 byte strings.
-
-    Parameters
-    ----------
-    data: dict
-        The data to convert. Can include nested dicts, lists and tuples.
-
-    Returns
-    -------
-    dict
-        With all strings encoded as unicode.
-
-    """
-    if isinstance(data, dict):
-        return {strings2utf8(k): strings2utf8(v) for k, v in data.items()}
-    if isinstance(data, list):
-        return [strings2utf8(v) for v in data]
-    if isinstance(data, type('')):
-        # The condition is a Python 2/3 way of saying "unicode string".
-        return data.encode('utf-8')
-    return data
 
 
 def line2dict(text, mode='body'):
@@ -70,7 +44,7 @@ def line2dict(text, mode='body'):
         strings.
 
     """
-    return strings2utf8(parse_line(text, mode).to_dict())
+    return parse_line(text, mode).to_dict()
 
 
 def lines2dicts(string_list, mode='body'):
