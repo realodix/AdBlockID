@@ -57,6 +57,7 @@ class SelectorType:
     CSS = 'css'                  # CSS selectors for hiding filters.
     XCSS = 'extended-css'        # Extended CSS selectors (to emulate CSS4).
     ABP_SIMPLE = 'abp-simple'    # Simplified element hiding syntax.
+    SNIPPET = 'snippet'          # Snippet to run on the page
 
 
 class FilterAction:
@@ -191,7 +192,7 @@ Include = _line_type('Include', 'target', '%include {0.target}%')
 METADATA_REGEXP = re.compile(r'\s*!\s*([\w\-\s]*\w)\s*:\s*(.*)')
 INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
 HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
-HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?])?#(.+)$')
+HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?$])?#(.+)$')
 FILTER_OPTIONS_REGEXP = re.compile(
     r'\$(~?[\w-]+(?:=[^,]+)?(?:,~?[\w-]+(?:=[^,]+)?)*)$',
 )
@@ -263,6 +264,8 @@ def _parse_hiding_filter(text, domain, type_flag, selector_value):
         action = FilterAction.SHOW
     elif type_flag == '?':
         selector['type'] = SelectorType.XCSS
+    elif type_flag == '$':
+        selector['type'] = SelectorType.SNIPPET
 
     if domain:
         domains = [_parse_option(d) for d in domain.split(',')]
