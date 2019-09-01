@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0901.0732
+! Version: 19.0901.1235
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Sep 2019 07:32 UTC
+! Last modified: 01 Sep 2019 12:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -16375,7 +16375,21 @@ cloudtime.to,nowvideo.sx,sleeptimer.org,tomadivx.tv,wholecloud.net##+js(abort-on
 thepiratebay.*##+js(abort-on-property-read.js, _wm)
 hqq.tv,hqq.watch##+js(abort-on-property-read.js,  mscript)
 descargas2020.com##+js(abort-current-inline-script.js, atob, _0x)
-! *** abid:addons/ublock.adbl ***
+! *** abid:addons/scriptlet-adguard.adbl ***
+! Scriptlets khusus untuk AdGuard
+! https://github.com/AdguardTeam/Scriptlets
+! 
+blogrp.me#%#//scriptlet(abort-on-property-read, app_vars.force_disable_adblock)
+ceklink.co#%#//scriptlet(abort-on-property-read, app_vars.force_disable_adblock)
+ceklink.co#%#//scriptlet(abort-on-property-read, tampilkanUrl)
+kabarviral.blog#%#//scriptlet(noeval)
+kabarviral.blog#%#//scriptlet(window.open-defuser)
+lewat.club#%#//scriptlet(window.open-defuser)
+razorlink.us#%#//scriptlet(set-constant, safelink.adblock, false)
+! *** abid:addons/scriptlet-ublock.adbl ***
+! Scriptlets khusus untuk uBlock dan turunannya
+! https://github.com/gorhill/uBlock/wiki/Resources-Library
+! 
 blogrp.me##+js(abort-on-property-read, app_vars.force_disable_adblock)
 ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
 ceklink.co##+js(abort-on-property-read, tampilkanUrl)
@@ -16546,4 +16560,4 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: DfOS5emGtbJ4LxRKkIfPrQ
+! Checksum: UVzUEKjQJceuvmnqwVmRrQ
