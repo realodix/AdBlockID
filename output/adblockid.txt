@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0901.1235
+! Version: 19.0901.1406
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Sep 2019 12:35 UTC
+! Last modified: 01 Sep 2019 14:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1626,6 +1626,7 @@ _996x50.gif
 ||amdhlyqfy.bid^
 ||amgkkjgjktml.com^
 ||amhpbhyxfgvd.com^
+||amifgpprfrbsm.com^
 ||amjbzzicysu.bid^
 ||amjrfmhtmoyan.com^
 ||amkwvxhw.com^
@@ -3061,6 +3062,7 @@ _996x50.gif
 ||dymzcxgdvf.com^
 ||dyoyiydbwdcr.com^
 ||dypmzetaj.com^
+||dyucosivnycndc.com^
 ||dywqwrtnhegyz.com^
 ||dyykxositkqt.bid^
 ||dyzstwcqbgjk.com^
@@ -6703,6 +6705,7 @@ _996x50.gif
 ||moquxotvyuoo.com^
 ||mosdqxsgjhes.com^
 ||mousvowpfso.com^
+||mouuhrprxixwrw.com^
 ||moxdmkdzvkgxow.bid^
 ||moxvufgh.com^
 ||moyeluljrail.com^
@@ -7405,6 +7408,7 @@ _996x50.gif
 ||ohprlushvz.com^
 ||ohrdpvkzhzbg.com^
 ||ohrkrzvndwitaa.com^
+||ohscoczrnhzd.com^
 ||ohwlwlus.com^
 ||oiahzjhwpsokt.com^
 ||oicbwkyjsyxjgj.bid^
@@ -9577,6 +9581,7 @@ _996x50.gif
 ||trvposbevwxvo.bid^
 ||trwbkkxk.com^
 ||tsdzmkpewrdxyl.com^
+||tsfgnmyhi.com^
 ||tsjnzilsuzoxm.bid^
 ||tskctmvpwjdb.com^
 ||tskdngwznw.bid^
@@ -10253,6 +10258,7 @@ _996x50.gif
 ||vgjawpqjn.com^
 ||vgjwkjinwkud.com^
 ||vglpukrekfij.com^
+||vgodvvcwrshk.com^
 ||vgogzrukn.com^
 ||vgomgphs.bid^
 ||vgqwwfkkgvufn.bid^
@@ -10407,6 +10413,7 @@ _996x50.gif
 ||vqaizaukh.com^
 ||vqdwwkficr.com^
 ||vqfksrwnxodc.com^
+||vqfoxxxnunqkgm.com^
 ||vqfplemoftllvm.bid^
 ||vqirfafd.bid^
 ||vqkkbbivznoso.com^
@@ -11426,6 +11433,7 @@ _996x50.gif
 ||ydfntydegmdbk.com^
 ||ydgjaoes.bid^
 ||ydkhkjmefxy.com^
+||ydkrabhtgci.com^
 ||ydlrdzlbgs.com^
 ||ydoexgadghunl.bid^
 ||ydoksieuml.com^
@@ -12493,6 +12501,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /wp-content/plugins/soralink/*/soralink.js$script
 /wpsafelink.js$script,domain=daizurin.com|klik-link.us|lucikun.com|shitaranime.com|sinanime.net
 ||adsafelink.com/banner/
+||adsafelink.com/js/webscript.js$script,third-party
 ||adsafelink.com^*/js/webscript.js$script,third-party
 ||bloggerku.com/safelink/auto.js$script,third-party
 ! 
@@ -12689,6 +12698,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*bola24co*.$image
 /*bolajalan*.$image
 /*bolamas88*.$image
+/*bolatangkas*.$image
 /*bolped*.$image
 /*bonanza88*.$image
 /*bonusqq*.$image
@@ -12800,6 +12810,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*indobola88*.$image
 /*indocash99*.$image
 /*indofreebet*.$image
+/*indolasvegas*.$image
 /*indomaxbet*.$image
 /*indonalo*.$image
 /*indowin99*.$image
@@ -14211,6 +14222,7 @@ _penggugur_kandungan_$image
 ##[href*="kasinobet."] > img
 ##[href*="kasqq"] > img
 ##[href*="kayatogel."] > img
+##[href*="kdslots."] > img
 ##[href*="kebeletmain."] > img
 ##[href*="kemilauqq"] > img
 ##[href*="kendipoker."] > img
@@ -15273,8 +15285,10 @@ sukamovie.*##.sukam-bawah
 @@||animeku.tv^$generichide
 @@||anoboy.org^$generichide
 @@||bk21.net^$generichide
+@@||daizurin.com^$generichide
 @@||indexmovie.club^$generichide
 @@||mivo.com^$generichide
+@@||shirainime.com^$generichide
 @@||sobatdrama.net^$generichide
 @@||streamxxi.com^$generichide
 ! *** abid:addons/news.adbl ***
@@ -16393,6 +16407,8 @@ razorlink.us#%#//scriptlet(set-constant, safelink.adblock, false)
 blogrp.me##+js(abort-on-property-read, app_vars.force_disable_adblock)
 ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
 ceklink.co##+js(abort-on-property-read, tampilkanUrl)
+daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
+filmbioskop21.cc##+js(window.open-defuser.js)
 kabarviral.blog##+js(noeval)
 kabarviral.blog##+js(window.open-defuser)
 lewat.club##+js(window.open-defuser)
@@ -16560,4 +16576,4 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: UVzUEKjQJceuvmnqwVmRrQ
+! Checksum: rm1cvwDHjUQtTjzS7qN8cw
