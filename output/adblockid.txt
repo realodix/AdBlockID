@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0901.0330
+! Version: 19.0901.0343
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Sep 2019 03:30 UTC
+! Last modified: 01 Sep 2019 03:43 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -16376,9 +16376,11 @@ hqq.tv,hqq.watch##+js(abort-on-property-read.js,  mscript)
 descargas2020.com##+js(abort-current-inline-script.js, atob, _0x)
 ! *** abid:addons/ublock.adbl ***
 blogrp.me##+js(abort-on-property-read, app_vars.force_disable_adblock)
+lewat.club##+js(window.open-defuser)
+razorlink.us##+js(set-constant, safelink.adblock, false)
+! 
 nekopoi.*##+js(abort-current-inline-script, atob, tabunder)
 nekopoi.*##+js(set-constant, isAdsDisplayed, true)
-razorlink.us##+js(set-constant, safelink.adblock, false)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/whitelist.adbl ***
 @@.ad.json?$domain=otobalancing.net
@@ -16539,4 +16541,4 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: MSVcIpPsyXdA0VZirEOWZQ
+! Checksum: 9Xqu22LudUfbGjj5ioSIcQ
