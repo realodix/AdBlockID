@@ -15,15 +15,25 @@
 
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
+
+# Based on the custom FOP by PolishFiltersTeam
+# https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/blob/master/scripts/FOP.py
+
 # FOP version number
-VERSION = 3.9
+VERSION = 3.15
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
+import argparse
+
+ap = argparse.ArgumentParser()
+ap.add_argument('--dir', nargs='+', help='Set directories', default=None)
+ap.add_argument('--commit', help='Enable commit mode', action='store_true', default=False)
+arg = ap.parse_args()
 
 # Check the version of Python for language compatibility and subprocess.check_output()
 MAJORREQUIRED = 3
-MINORREQUIRED = 1
+MINORREQUIRED = 2
 if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
     raise RuntimeError("FOP requires Python {reqmajor}.{reqminor} or greater, but Python {ismajor}.{isminor} is being used to run this program.".format(reqmajor = MAJORREQUIRED, reqminor = MINORREQUIRED, ismajor = sys.version_info.major, isminor = sys.version_info.minor))
 
@@ -31,9 +41,9 @@ if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
 from urllib.parse import urlparse
 
 # Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
-ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#\@?#")
+ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#?\$?\$?\??\@?#")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
-ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#\@?#?)([^{}]+)$")
+ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(\$?\$?#?\@?#\+?)([^{\*\\}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # Compile regular expressions that match element tags and pseudo classes and strings and tree selectors; "@" indicates either the beginning or the end of a selector
@@ -51,15 +61,21 @@ BLANKPATTERN = re.compile(r"^\s*$")
 COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
-IGNORE = ("adblockid.txt, resource-abuse.adbl, scriptlet-adguard.adbl, scriptlet-ublock.adbl")
+IGNORE = ("adblockid.txt, resource-abuse.adbl")
 
-# List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS = ("collapse", "csp", "document", "elemhide",
+# List all Adblock Plus and uBlock Origin options (excepting domain, which is handled separately), as of version 1.3.9
+KNOWNOPTIONS = ("badfilter", "collapse", "csp", "document", "elemhide",
                 "font", "genericblock", "generichide", "image", "match-case",
                 "object", "media", "object-subrequest", "other", "ping", "popup",
-                "rewrite=abp-resource:blank-css", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-text",
-                "rewrite=abp-resource:1x1-transparent-gif", "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png",
-                "script", "stylesheet", "subdocument", "third-party", "websocket", "webrtc", "xmlhttprequest")
+                "script", "stylesheet", "subdocument", "third-party", "first-party",
+                "websocket", "webrtc", "xmlhttprequest", "important", "redirect=googletagmanager_gtm.js",
+                "redirect=google-analytics_ga.js", "redirect=google-analytics_analytics.js", "redirect=googletagservices_gpt.js",
+                "redirect=google-analytics_cx_api.js", "redirect=googlesyndication_adsbygoogle.js", "redirect=doubleclick_instream_ad_status.js",
+                "redirect=ampproject_v0.js", "redirect=noop.js", "redirect=noop.html", "redirect=noop.txt",
+                "redirect=noop-0.1s.mp3", "redirect=noop-1s.mp4", "redirect=1x1.gif", "redirect=2x2.png",
+                "redirect=3x2.png", "redirect=32x32.png",
+                "rewrite=abp-resource:blank-css", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-text", "rewrite=abp-resource:1x1-transparent-gif", "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png",
+                "1p", "3p", "inline-script", "xhr")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
@@ -78,7 +94,7 @@ def start ():
     print("=" * characters)
 
     # Convert the directory names to absolute references and visit each unique location
-    places = sys.argv[1:]
+    places = arg.dir
     if places:
         places = [os.path.abspath(place) for place in places]
         for place in sorted(set(places)):
@@ -143,7 +159,7 @@ def main (location):
                     pass
 
     # If in a repository, offer to commit any changes
-    if repository:
+    if repository and arg.commit:
         commit(repository, basecommand, originaldifference)
 
 def fopsort (filename):
@@ -212,6 +228,16 @@ def fopsort (filename):
                         filterlines = elementlines = 0
                     outputfile.write("{line}\n".format(line = line))
                 else:
+                    # Convert script:inject to +js
+                    line = line.replace("##script:inject", "##+js")
+
+                    # Convert deprecated noop resources to new names
+                    line = line.replace("redirect=noopjs", "redirect=noop.js")
+                    line = line.replace("redirect=noopframe", "redirect=noop.html")
+                    line = line.replace("redirect=nooptext", "redirect=noop.txt")
+                    line = line.replace("redirect=noopmp3-0.1s", "redirect=noop-0.1s.mp3")
+                    line = line.replace("redirect=noopmp4-1s", "redirect=noop-1s.mp4")
+
                     # Neaten up filters and, if necessary, check their type for the sorting algorithm
                     elementparts = re.match(ELEMENTPATTERN, line)
                     if elementparts:
@@ -306,14 +332,14 @@ def elementtidy (domains, separator, selector):
         ac = untag.group(5)
         selector = selector.replace("{before}{untag}{after}".format(before = bc, untag = untagname, after = ac), "{before}{after}".format(before = bc, after = ac), 1)
     # Make the remaining tags lower case wherever possible
-    for tag in each(SELECTORPATTERN, selector):
-        tagname = tag.group(1)
-        if tagname in selectoronlystrings or not tagname in selectorwithoutstrings: continue
-        if re.search(UNICODESELECTOR, selectorwithoutstrings) != None: break
-        ac = tag.group(3)
-        if ac == None:
-            ac = tag.group(4)
-        selector = selector.replace("{tag}{after}".format(tag = tagname, after = ac), "{tag}{after}".format(tag = tagname.lower(), after = ac), 1)
+    # for tag in each(SELECTORPATTERN, selector):
+    #     tagname = tag.group(1)
+    #     if tagname in selectoronlystrings or not tagname in selectorwithoutstrings: continue
+    #     if re.search(UNICODESELECTOR, selectorwithoutstrings) != None: break
+    #     ac = tag.group(3)
+    #     if ac == None:
+    #         ac = tag.group(4)
+    #     selector = selector.replace("{tag}{after}".format(tag = tagname, after = ac), "{tag}{after}".format(tag = tagname.lower(), after = ac), 1)
     # Make pseudo classes lower case where possible
     for pseudo in each(PSEUDOPATTERN, selector):
         pseudoclass = pseudo.group(1)
@@ -374,22 +400,21 @@ def isglobalelement (domains):
     return True
 
 def removeunnecessarywildcards (filtertext):
-    """ Where possible, remove unnecessary wildcards from the beginnings
-    and ends of blocking filters."""
+    # Where possible, remove unnecessary wildcards from the beginnings and ends of blocking filters.
     whitelist = False
     hadStar = False
     if filtertext[0:2] == "@@":
         whitelist = True
         filtertext = filtertext[2:]
-    while len(filtertext) > 1 and filtertext[0] == "*" and not filtertext[1] == "|" and not filtertext[1] == "!":
+    while len(filtertext) > 1 and filtertext[0] == "" and not filtertext[1] == "|" and not filtertext[1] == "!":
         filtertext = filtertext[1:]
         hadStar = True
-    while len(filtertext) > 1 and filtertext[-1] == "*" and not filtertext[-2] == "|" and not filtertext[-2] == " ":
+    while len(filtertext) > 1 and filtertext[-1] == "" and not filtertext[-2] == "|":
         filtertext = filtertext[:-1]
         hadStar = True
     if hadStar and filtertext[0] == "/" and filtertext[-1] == "/":
         filtertext = "{filtertext}*".format(filtertext = filtertext)
-    if filtertext == "*":
+    if filtertext == "":
         filtertext = ""
     if whitelist:
         filtertext = "@@{filtertext}".format(filtertext = filtertext)

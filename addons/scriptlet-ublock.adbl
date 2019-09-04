@@ -1,12 +1,10 @@
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 !
-blogrp.me##+js(abort-on-property-read, app_vars.force_disable_adblock)
-ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
+blogrp.me,ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
 ceklink.co##+js(abort-on-property-read, tampilkanUrl)
-daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
-filmbioskop21.cc##+js(window.open-defuser.js)
 kabarviral.blog##+js(noeval)
-kabarviral.blog##+js(window.open-defuser)
-lewat.club##+js(window.open-defuser)
 razorlink.us##+js(set-constant, safelink.adblock, false)
+daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
+kabarviral.blog,lewat.club##+js(window.open-defuser)
+filmbioskop21.cc##+js(window.open-defuser.js)
