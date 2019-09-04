@@ -20,7 +20,7 @@
 # https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/blob/master/scripts/FOP.py
 
 # FOP version number
-VERSION = 3.16
+VERSION = 3.17
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -41,9 +41,9 @@ if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
 from urllib.parse import urlparse
 
 # Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
-ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#?\$?\$?\??\@?#")
+ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#|\$)\@?\??\@?(#|\$)")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
-ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(\$?\$?#?\@?#\+?)([^{]+)$")
+ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(\$|##\@?\$|#\@?#?\+?)([^{]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # Compile regular expressions that match element tags and pseudo classes and strings and tree selectors; "@" indicates either the beginning or the end of a selector
@@ -63,7 +63,7 @@ COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("adblockid.txt, resource-abuse.adbl")
 
-# List all Adblock Plus and uBlock Origin options (excepting domain, which is handled separately), as of version 1.3.9
+# List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = ("badfilter", "collapse", "csp", "document", "elemhide",
                 "font", "genericblock", "generichide", "image", "match-case",
                 "object", "media", "object-subrequest", "other", "ping", "popup",
@@ -75,7 +75,17 @@ KNOWNOPTIONS = ("badfilter", "collapse", "csp", "document", "elemhide",
                 "redirect=noop-0.1s.mp3", "redirect=noop-1s.mp4", "redirect=1x1.gif", "redirect=2x2.png",
                 "redirect=3x2.png", "redirect=32x32.png",
                 "rewrite=abp-resource:blank-css", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-text", "rewrite=abp-resource:1x1-transparent-gif", "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png",
-                "1p", "3p", "inline-script", "xhr")
+                "1p", "3p", "inline-script", "xhr", "protobuf", "urlblock", "jsinject"
+                # redirect-rule= This new option allows to create a pure redirect directive, without a corresponding block filter
+                # https://github.com/gorhill/uBlock/releases/tag/1.21.9b7
+                "redirect-rule=googletagmanager_gtm.js",
+                "redirect-rule=google-analytics_ga.js", "redirect-rule=google-analytics_analytics.js", "redirect-rule=googletagservices_gpt.js",
+                "redirect-rule=google-analytics_cx_api.js", "redirect-rule=googlesyndication_adsbygoogle.js", "redirect-rule=doubleclick_instream_ad_status.js",
+                "redirect-rule=ampproject_v0.js", "redirect-rule=noop.js", "redirect-rule=noop.html", "redirect-rule=noop.txt",
+                "redirect-rule=noop-0.1s.mp3", "redirect-rule=noop-1s.mp4", "redirect-rule=1x1.gif", "redirect-rule=2x2.png",
+                "redirect-rule=3x2.png", "redirect-rule=32x32.png",
+                # Support for AdGuard's empty and mp4 filter https://github.com/gorhill/uBlock/releases/tag/1.21.9b7
+                "empty", "mp4")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
