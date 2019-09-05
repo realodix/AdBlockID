@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0904.2106
+! Version: 19.0905.0443
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Sep 2019 21:06 UTC
+! Last modified: 05 Sep 2019 04:43 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1388,11 +1388,13 @@ _996x50.gif
 ||daezorwyn.xyz^
 ||elatumal.xyz^
 ||elwraek.xyz^
+||enmaer.com^
 ||g383912402.com^
 ||iarfina.pw^
 ||jomys.xyz^
 ||phastoag.com^
 ||pndelfast.com^
+||rufadses.net^
 ||septembership.com^
 ||sifuglie.com^
 ! 
@@ -12580,6 +12582,8 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||cdnasiaclub.com^$popup
 ||downloadgot.com^$popup
 ||elthamely.com^$popup
+||idfl.me$important,popup,third-party
+||idfl.me/fancyboxidfl2/*
 ||inclk.com^$popup
 ||mobileofferplace.site^$popup
 ||motosal.net^$popup
@@ -12935,6 +12939,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*ligaqq*.$image
 /*ligaqq-1*.$image
 /*lintasanqq*.$image
+/*lintasbet*.$image
 /*livegoal188*.$image
 /*lobbyqq*.$image
 /*lontecantik*.$image
@@ -14367,6 +14372,7 @@ _penggugur_kandungan_$image
 ##[href*="linksbobet2016."] > img
 ##[href*="linktrack."] > img
 ##[href*="lintasanqq"] > img
+##[href*="lintasbet."] > img
 ##[href*="lintasqq."] > img
 ##[href*="livegoal188"] > img
 ##[href*="livehkpools."] > img
@@ -16421,6 +16427,7 @@ descargas2020.com##+js(abort-current-inline-script.js, atob, _0x)
 ! 
 blogrp.me,ceklink.co#%#//scriptlet(abort-on-property-read, app_vars.force_disable_adblock)
 ceklink.co#%#//scriptlet(abort-on-property-read, tampilkanUrl)
+idfl.me#%#//scriptlet("prevent-window-open")
 kabarviral.blog#%#//scriptlet(noeval)
 kabarviral.blog,lewat.club#%#//scriptlet(window.open-defuser)
 razorlink.us#%#//scriptlet(set-constant, safelink.adblock, false)
@@ -16434,7 +16441,7 @@ kabarviral.blog##+js(noeval)
 razorlink.us##+js(set-constant, safelink.adblock, false)
 daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
 kabarviral.blog,lewat.club##+js(window.open-defuser)
-filmbioskop21.cc##+js(window.open-defuser.js)
+filmbioskop21.cc,idfl.me##+js(window.open-defuser.js)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/whitelist.adbl ***
 @@.ad.json?$domain=otobalancing.net
@@ -16600,4 +16607,4 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: 2UYvy5Lg0slu9KDczpRvQA
+! Checksum: YQtFtiTbAvg8YXw98Dgn+Q
