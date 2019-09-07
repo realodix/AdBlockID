@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0906.1531
+! Version: 19.0907.1412
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Sep 2019 15:31 UTC
+! Last modified: 07 Sep 2019 14:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -371,6 +371,7 @@ _promosi.
 /640x60.gif
 /700x300_
 /725X220-
+/728x90AB.
 /790x200nb.
 /800x60.
 /940x50-
@@ -1362,6 +1363,7 @@ _996x50.gif
 ||pegel.pw^$image
 ||pondokiklan.com^$third-party
 ||ppc.buzz^$third-party
+||presbanise.pw^$third-party
 ||publish.web.id^$third-party
 ||pvclouds.com^
 ||relandssymphoking.info^
@@ -12654,6 +12656,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*805bet*.$image
 /*88bet*.$image
 /*899bola*.$image
+/*99-gamble*.$image
 /*99mania*.$image
 /*99samsung*.$image
 /*9bet*.$image
@@ -13147,6 +13150,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*terminal4d*.$image
 /*terminalbet*.$image
 /*texaspoker*.$image
+/*texasqq*.$image
 /*tipsgratisbola*.$image
 /*togelotto*.$image
 /*tokoqq*.$image
@@ -13462,6 +13466,7 @@ _penggugur_kandungan_$image
 ##[href*="1x2018."] > img
 ##[href*="1xliga."] > img
 ##[href*="1xme."] > img
+##[href*="202.95.10.141"] > img
 ##[href*="206.189.121.4"] > img
 ##[href*="206.189.175.126"] > img
 ##[href*="228poker."] > img
@@ -15294,15 +15299,15 @@ nontonanimeindo.net##a[href*="//goo.gl/"] > img
 /rmp-blockadblock.js$domain=mivo.com
 |http:$popup,third-party,domain=serunonton.com
 ! 
-dunia21.*###overlay-pop
-indoxxi.*##.popUpBannerBox
-kantaii.web.id##[href*="/ref/bangago"]
-lk21c.*##[href*="/rebrand.ly/"]
-mivo.com##.home-banner-big-ads
-mivo.com##.top-ads
 mivo.com#$#div[class^="player-ads-"] { visibility: hidden!important; }
 nonton.com##.adds
-oujanime.com##.iklan
+mivo.com##.home-banner-big-ads
+drakorindofilms.net,inidramaku.com,korenlovers.co,oujanime.com##.iklan
+mivo.com##.top-ads
+kantaii.web.id##[href*="/ref/bangago"]
+dunia21.*###overlay-pop
+indoxxi.*##.popUpBannerBox
+lk21c.*##[href*="/rebrand.ly/"]
 sukamovie.*##.sukam-atas-post
 sukamovie.*##.sukam-bawah
 ||api.nontongo.win/promomenubola.xml$xmlhttprequest
@@ -16447,7 +16452,9 @@ descargas2020.com##+js(abort-current-inline-script.js, atob, _0x)
 ! 
 blogrp.me,ceklink.co#%#//scriptlet(abort-on-property-read, app_vars.force_disable_adblock)
 ceklink.co#%#//scriptlet(abort-on-property-read, tampilkanUrl)
+drakorindofilms.net#%#//scriptlet(abort-on-property-read, popup_custom_data.showMethod)
 idfl.me#%#//scriptlet("prevent-window-open")
+inidramaku.com#%#//scriptlet(abort-on-property-read, popup_custom_data.showMethod)
 kabarviral.blog#%#//scriptlet(noeval)
 kabarviral.blog,lewat.club#%#//scriptlet(window.open-defuser)
 razorlink.us#%#//scriptlet(set-constant, safelink.adblock, false)
@@ -16456,6 +16463,7 @@ razorlink.us#%#//scriptlet(set-constant, safelink.adblock, false)
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 ! 
 blogrp.me,ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
+drakorindofilms.net,inidramaku.com##+js(abort-on-property-read, popup_custom_data.showMethod)
 ceklink.co##+js(abort-on-property-read, tampilkanUrl)
 kabarviral.blog##+js(noeval)
 razorlink.us##+js(set-constant, safelink.adblock, false)
@@ -16627,4 +16635,4 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: TEt/m9RRxklZybOsASeHMg
+! Checksum: kVrvUNLa5YFO+xFOgRySkw
