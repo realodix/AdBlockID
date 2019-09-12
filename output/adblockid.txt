@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0910.0907
+! Version: 19.0912.1236
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Sep 2019 09:07 UTC
+! Last modified: 12 Sep 2019 12:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -15860,13 +15860,9 @@ aktual.id#@#.adsbygoogle
 radarlombok.co.id##.adsbygoogle
 radarmalang.id#@#.td-ad-background-link
 suarasumselnews.co.id#@#.category-advertorial
-! *** abid:addons/resource-abuse.adbl ***
-! Resource-abuse
-! 
-! To foil sites potentially abusing CPU/bandwidth resources without informed
-! consent. Any such resource-abuse scripts MUST be opt-in, with complete
-! informed consent from the visitor.
-! 
+! *** https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt ***
+! -------------------------------------------------------------------------------
+
 ! Third Party blocking ---------------------------------------------------------
 ||cnhv.co^$third-party
 ||coin-hive.com^$third-party
@@ -16513,6 +16509,11 @@ $script,websocket,domain=ahoypirate.click|ahoypirate.in|ahoypiratebaai.eu|airpro
 @@||matt-kruse.github.io/socialfixerdata/$xmlhttprequest
 
 ! Filters optimized for uBlock -------------------------------------------------
+! #include nocoin-ublock.txt
+! -------------------------------------------------------------------------------
+! *** https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin-ublock.txt ***
+# NoCoin filter list optimized for uBlock
+
 csgoconfigs.com##+js(abort-current-inline-script.js, m, CH.Anonymous)
 djs.sk,mladipodnikatelia.sk,tubettajat.net##+js(abort-on-property-read.js, miner)
 tasma.ru,vidzi.tv##+js(abort-on-property-write.js, decodeURIComponent)
@@ -16710,4 +16711,4 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: lnxNCY5VA+NE66tVgLCEgA
+! Checksum: JOmYDX7KWvR+gesvi07/fA
