@@ -1,3 +1,3 @@
 import subprocess
 
-subprocess.call("flrender -i abid=. adblockid.adbl output/adblockid.txt")
+subprocess.run("flrender -i abid=. adblockid.adbl output/adblockid.txt")
