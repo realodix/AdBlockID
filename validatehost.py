@@ -57,11 +57,9 @@ exclusions = [
   'yourjavascript.com',
   'adservers.adbl',
   'annoyances.adbl',
-  'antipopads.adbl',
   'dewasa.adbl',
   'movie.adbl',
   'news.adbl',
-  'resource-abuse.adbl',
   'thirdparty.adbl',
   'whitelist.adbl',
 ]
