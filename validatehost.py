@@ -59,7 +59,6 @@ exclusions = [
   'annoyances.adbl',
   'antipopads.adbl',
   'dewasa.adbl',
-  'internet-positif.md',
   'movie.adbl',
   'news.adbl',
   'resource-abuse.adbl',
