@@ -52,6 +52,6 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
 | File              | Deskripsi                                 |
 | ----------------- | ----------------------------------------- |
-| `build.sh`     | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
+| `build.sh`        | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
 | `FOP.py`          | Mengurutkan  dan membersihkan filter. |
 | `validatehost.py` | Memeriksa host apakah masih aktif atau tidak. |
