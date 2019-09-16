@@ -39,7 +39,7 @@
     along with this program. If not, see <http://www.gnu.org/licenses/>.
 '''
 import os, sys, subprocess
-import re, datetime, time, argparse 
+import re, datetime, time, argparse
 
 # host resources will be parsed from this file
 filename='output/adblockid.txt'
@@ -57,12 +57,9 @@ exclusions = [
   'yourjavascript.com',
   'adservers.adbl',
   'annoyances.adbl',
-  'antipopads.adbl',
   'dewasa.adbl',
-  'internet-positif.md',
   'movie.adbl',
   'news.adbl',
-  'resource-abuse.adbl',
   'thirdparty.adbl',
   'whitelist.adbl',
 ]
@@ -260,7 +257,7 @@ else:
       is_OK = ping(host, dummy_args)
 
 
-    if is_OK == True: 
+    if is_OK == True:
       print(" [OK]")
     else:
       print(" >>>> [DOWN] !! " + host + "")
