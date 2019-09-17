@@ -4,6 +4,7 @@ flrender -i abid=. addons/vendor.adbl content.txt
 
 # cleanup
 sed '/^!/d' -i content.txt
+sed '/^#/d' -i content.txt
 sed '/Adblock/d' -i content.txt
 
 python FOP.py
