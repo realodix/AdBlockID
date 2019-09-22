@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.0922.0712
+! Version: 19.0922.0833
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 22 Sep 2019 07:12 UTC
+! Last modified: 22 Sep 2019 08:33 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1551,6 +1551,8 @@ _996x50.gif
 ||ubloger.com^$third-party
 ||windowmentaria.com^$third-party
 ! *** abid:AdBlockID/specific_block.adbl ***
+||blogspot.com/*.gif$image,domain=mangashiro.org
+! 
 -300x300.$image,domain=rekblogging.com
 -ads-$image,domain=inikpop.com
 -banner-$image,domain=tumeskecil.com
@@ -1688,6 +1690,7 @@ emerer.com##.banner_wrapper
 waralabakan.com##.banneritem
 radiotemansejati.com##.bannersinglefot
 unduh.in##.bannersingletop
+mangashiro.org##.bixbox > div[style] > a[target="_blank"][rel="Dofollow"] > img
 teknodiary.com##.googlepublisherads
 kaskus.co.id##.header__kasad
 traveltextonline.com##.imageblock-image
@@ -1957,6 +1960,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*bakarat*.$image
 /*bandar36*.$image
 /*bandar855*.$image
+/*bandarbetqq*.$image
 /*bandargame*.$image
 /*bandarjudiqq*.$image
 /*bandarpkv*.$image
@@ -2594,6 +2598,7 @@ _penggugur_kandungan_$image
 ||kucingpoker.$popup
 ||lapakqq.$popup
 ||liga88.$popup
+||ligapools88.$popup
 ||livehkpools.$popup
 ||lotus-4d.$popup
 ||lotus55.$popup
@@ -3018,6 +3023,7 @@ _penggugur_kandungan_$image
 ##[href*="bola228"] > img
 ##[href*="bola24."] > img
 ##[href*="bola24co"] > img
+##[href*="bola3m."] > img
 ##[href*="bola777."] > img
 ##[href*="bola83."] > img
 ##[href*="bolaafb."] > img
@@ -3080,6 +3086,7 @@ _penggugur_kandungan_$image
 ##[href*="ceki899."] > img
 ##[href*="cekqq"] > img
 ##[href*="ceme188"] > img
+##[href*="cemebetqq."] > img
 ##[href*="cemejudi."] > img
 ##[href*="cemepkjazz."] > img
 ##[href*="cendanagaming."] > img
@@ -3462,6 +3469,7 @@ _penggugur_kandungan_$image
 ##[href*="jasa88"] > img
 ##[href*="jasa_qq"] > img
 ##[href*="jasabet."] > img
+##[href*="jasacash."] > img
 ##[href*="jasadomino"] > img
 ##[href*="jasagol"] > img
 ##[href*="jasalonte."] > img
@@ -3637,6 +3645,7 @@ _penggugur_kandungan_$image
 ##[href*="ligacash."] > img
 ##[href*="ligacash168."] > img
 ##[href*="ligadewa."] > img
+##[href*="ligaduniacash."] > img
 ##[href*="ligahoki."] > img
 ##[href*="ligaindo55."] > img
 ##[href*="ligajudi."] > img
@@ -3882,6 +3891,7 @@ _penggugur_kandungan_$image
 ##[href*="pamanbolanet"] > img
 ##[href*="pamelapoker."] > img
 ##[href*="panen123."] > img
+##[href*="panenbonus."] > img
 ##[href*="panenpk2."] > img
 ##[href*="panenpoker."] > img
 ##[href*="pangerantoto"] > img
@@ -4772,6 +4782,7 @@ sukamovie.*##.sukam-bawah
 ||wartaekonomi.co.id^*/online_banner/$image
 ||wartapati.com^*/iklan-$image
 ||wartapati.com^*_ads.$image
+||winnetnews.com/api/v*/banner/
 ||winnetnews.com^*/banner/$image
 ||zonasumut.com^*-300x200.$image
 ! 
@@ -4806,6 +4817,7 @@ tribunjualbeli.com###div-Right-MediumRectangle-1
 faktabanten.co.id###fixedban
 taktiklampung.com###footer-wrapper
 detik.com###otp_banner
+depokpos.com###secondary div[id^="text-"] a[href][rel="noopener noreferrer"] > img
 solopos.com###solopos_float
 duajurai.co###text-5
 duajurai.co###text-7
@@ -4873,7 +4885,8 @@ kabarmanado.com,memo.co.id##.majalahpro-core-topbanner
 memo.co.id##.majalahpro-core-topbanner-aftermenu
 kabarmedia.co##.marketing-box
 nenemonews.com##.modulebanner-1
-baritopost.co.id,jurnaljatim.com,seputarkepri.co.id##.newkarma-core-topbanner
+depokpos.com##.newkarma-core-floatbanner
+baritopost.co.id,depokpos.com,jurnaljatim.com,seputarkepri.co.id##.newkarma-core-topbanner
 detik.com##.newsfeed-ads
 viva.co.id##.paralax_banner
 viva.co.id##.paralax_banner-detail
@@ -13570,6 +13583,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||suewgrsq.com^
 ||sufjqebhmfo.bid^
 ||sufzmohljbgw.com^
+||sugqlryshxarn.com^
 ||suhprdfb.bid^
 ||sukgtuksypr.com^
 ||sumizxwhfsrke.com^
@@ -15253,18 +15267,20 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ! Scriptlets khusus untuk AdGuard
 ! https://github.com/AdguardTeam/Scriptlets
 ! 
-blogrp.me,ceklink.co#%#//scriptlet(abort-on-property-read, app_vars.force_disable_adblock)
-ceklink.co#%#//scriptlet(abort-on-property-read, tampilkanUrl)
-drakorindofilms.net#%#//scriptlet(abort-on-property-read, popup_custom_data.showMethod)
+blogrp.me,ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
+ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
+drakorindofilms.net#%#//scriptlet("abort-on-property-read", "popup_custom_data.showMethod")
+hightech.web.id#%#//scriptlet("abort-current-inline-script", "document.getElementById", "adback")
 idfl.me#%#//scriptlet("prevent-window-open")
-inidramaku.com#%#//scriptlet(abort-on-property-read, popup_custom_data.showMethod)
-kabarviral.blog#%#//scriptlet(noeval)
-kabarviral.blog,lewat.club#%#//scriptlet(window.open-defuser)
-razorlink.us#%#//scriptlet(set-constant, safelink.adblock, false)
+inidramaku.com#%#//scriptlet("abort-on-property-read", "popup_custom_data.showMethod")
+kabarviral.blog#%#//scriptlet("noeval")
+kabarviral.blog,lewat.club#%#//scriptlet("window.open-defuser")
+razorlink.us#%#//scriptlet("set-constant", "safelink.adblock", false)
 ! *** abid:addons/scriptlet-ublock.adbl ***
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 ! 
+hightech.web.id##+js(abort-current-inline-script.js, document.getElementById, adback)
 blogrp.me,ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
 drakorindofilms.net,inidramaku.com##+js(abort-on-property-read, popup_custom_data.showMethod)
 kuyhaa-me.com##+js(abort-on-property-read, protected_links)
@@ -15286,7 +15302,7 @@ filmbioskop21.cc,idfl.me##+js(window.open-defuser.js)
 @@/fuckadblock.js$domain=leantoro.com|serbakuis.com
 @@/fuckadblock.min.js$domain=caranetizen.info
 @@/js/ads.js$script,domain=icutlink.com
-@@/pagead2.$script,domain=animenyus.com|belajarbro.id|bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|gembel9.xyz|gembelcit.net|hightech.web.id|nekopoi.web.id|unduh.in
+@@/pagead2.$script,domain=animenyus.com|belajarbro.id|bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|gembel9.xyz|gembelcit.net|nekopoi.web.id|unduh.in
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||adturl.com^$generichide
@@ -15379,6 +15395,7 @@ otakuindo.net#@##banner_ad
 @@||jelajahinternet.me^$generichide
 @@||kabarviral.blog/js/ads.js$script,~third-party
 @@||kabarviral.blog^$generichide
+@@||kotanopan.com^$generichide
 @@||link.akuno.net^$generichide
 @@||ljutkeunvpn.blogspot.com^$generichide
 @@||megaurl.in^$generichide
@@ -15439,4 +15456,4 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: EMSppDtITeuuDVZT3tSwPg
+! Checksum: na4i0Cpd3VmgTqN8/N/RbA
