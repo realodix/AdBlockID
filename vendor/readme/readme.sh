@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 README_TEMPLATE="vendor/readme/readme.template"
 README_TEMP="vendor/readme/readme.tmp"
