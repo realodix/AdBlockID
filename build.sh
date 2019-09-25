@@ -11,4 +11,6 @@ python FOP.py
 
 flrender -i abid=. adblockid.adbl output/adblockid.txt
 
+sh vendor/readme/readme.sh
+
 rm content.txt
