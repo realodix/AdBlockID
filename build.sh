@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 flrender -i abid=. addons/vendor.adbl content.txt
 
@@ -10,5 +10,7 @@ sed '/Adblock/d' -i content.txt
 python FOP.py
 
 flrender -i abid=. adblockid.adbl output/adblockid.txt
+
+vendor/readme/readme.sh
 
 rm content.txt
