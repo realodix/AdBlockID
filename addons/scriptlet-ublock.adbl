@@ -1,7 +1,10 @@
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 !
-hightech.web.id##+js(abort-current-inline-script.js, document.getElementById, adback)
+tribunnews.com##+js(abort-current-inline-script, Math, ='\x)
+hightech.web.id##+js(abort-current-inline-script, document.getElementById, adback)
+kompas.com##+js(abort-current-inline-script, setTimeout, iframeTestTimeMS)
+kompas.com,tribunnews.com##+js(abort-on-property-read, $getWin)
 blogrp.me,ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
 drakorindofilms.net,inidramaku.com##+js(abort-on-property-read, popup_custom_data.showMethod)
 kuyhaa-me.com##+js(abort-on-property-read, protected_links)
@@ -9,5 +12,4 @@ ceklink.co##+js(abort-on-property-read, tampilkanUrl)
 kabarviral.blog##+js(noeval)
 razorlink.us##+js(set-constant, safelink.adblock, false)
 daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
-kabarviral.blog,lewat.club##+js(window.open-defuser)
-filmbioskop21.cc,idfl.me##+js(window.open-defuser.js)
+filmbioskop21.cc,idfl.me,kabarviral.blog,lewat.club##+js(window.open-defuser)

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.09.2606
+! Version: 19.09.2610
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Sep 2019 06:34 UTC
+! Last modified: 26 Sep 2019 10:10 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1311,7 +1311,13 @@ _996x50.gif
 ##object[width="982"][height="150"]
 ##object[width="990"][height="206"]
 ! *** abid:AdBlockID/adservers.adbl ***
+||088653e3c1c6.com^
+||0fb3eaa80d.com^
+||12c72b7d3ce.com^
+||15257dddaccde96.com^
+||2013b42f102806.com^
 ||2go7v1nes8.com^
+||83e40c947d01f.com^
 ||accesstrade.co.id^$third-party
 ||addesigner.com^$third-party
 ||adflazz.com^$third-party
@@ -1478,8 +1484,8 @@ _996x50.gif
 ||cfs1.uzone.id^$third-party
 ||csf.uzone.id^$third-party
 ||d01.notifa.info^$third-party
-||d31qbv1cthcecs.cloudfront.net^$third-party
-||d5nxst8fruw4z.cloudfront.net^$third-party
+||d31qbv1cthcecs.cloudfront.net^$third-party,domain=~kaskus.co.id
+||d5nxst8fruw4z.cloudfront.net^$third-party,domain=~bukalapak.com
 ||expose.uzone.id^$third-party
 ||kendedes.uzone.id^$third-party
 ||mercusuar.uzone.id^$third-party
@@ -1672,6 +1678,7 @@ mangacanblog.com##.ad
 ads.id##.adManager
 teknobos.com##.adcontainer
 radioonline.co.id##.add-box-top
+sosiali.com##.ads
 cermati.com##.ads-container
 seniberpikir.com##.advads-before-content
 arenalte.com,krjogja.com##.advertisement
@@ -11000,6 +11007,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||mrzpfpgh.com^
 ||msbmckzmcu.com^
 ||msegeqxwopq.com^
+||msgwxozk.com^
 ||msiegurhgfyl.com^
 ||msigpurubzkm.com^
 ||msisvvxmnpm.com^
@@ -14842,6 +14850,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||xclgusxcdjd.com^
 ||xcqgkkccjjucf.com^
 ||xctiblmetgwr.com^
+||xcvibxsdchxh.com^
 ||xcvtpwxz.com^
 ||xcwmyyglayg.com^
 ||xcwnwrgvwg.com^
@@ -15329,7 +15338,10 @@ razorlink.us#%#//scriptlet("set-constant", "safelink.adblock", false)
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 ! 
-hightech.web.id##+js(abort-current-inline-script.js, document.getElementById, adback)
+tribunnews.com##+js(abort-current-inline-script, Math, ='\x)
+hightech.web.id##+js(abort-current-inline-script, document.getElementById, adback)
+kompas.com##+js(abort-current-inline-script, setTimeout, iframeTestTimeMS)
+kompas.com,tribunnews.com##+js(abort-on-property-read, $getWin)
 blogrp.me,ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
 drakorindofilms.net,inidramaku.com##+js(abort-on-property-read, popup_custom_data.showMethod)
 kuyhaa-me.com##+js(abort-on-property-read, protected_links)
@@ -15337,8 +15349,7 @@ ceklink.co##+js(abort-on-property-read, tampilkanUrl)
 kabarviral.blog##+js(noeval)
 razorlink.us##+js(set-constant, safelink.adblock, false)
 daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
-kabarviral.blog,lewat.club##+js(window.open-defuser)
-filmbioskop21.cc,idfl.me##+js(window.open-defuser.js)
+filmbioskop21.cc,idfl.me,kabarviral.blog,lewat.club##+js(window.open-defuser)
 ! ------------------------------------------------------------!
 ! *** abid:AdBlockID/whitelist.adbl ***
 @@.ad.json?$domain=otobalancing.net
@@ -15351,7 +15362,7 @@ filmbioskop21.cc,idfl.me##+js(window.open-defuser.js)
 @@/fuckadblock.js$domain=leantoro.com|serbakuis.com
 @@/fuckadblock.min.js$domain=caranetizen.info
 @@/js/ads.js$script,domain=icutlink.com
-@@/pagead2.$script,domain=animenyus.com|belajarbro.id|bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|gembel9.xyz|gembelcit.net|nekopoi.web.id|unduh.in
+@@/pagead2.$script,domain=animenyus.com|belajarbro.id|bersamatekno.com|bloggerku.com|blognetid.com|datasekolah.co.id|eirudo.com|gembel9.xyz|gembelcit.net|nekopoi.web.id|sosiali.com|unduh.in
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||adturl.com^$generichide
@@ -15414,11 +15425,13 @@ adigunawan.id#@##skyline_ad
 agroindustri.id#@#.category-advertorial
 aplikasipc.com#@#.afs_ads
 bagilagi.com#@##banner_ad
+bersamatekno.com#@#.adsbygoogle
 dutaislam.com#@##ads-wrapper
 duwitmu.com#@#.category-advertorial
 eramuslim.com#@##topAd
 nabire.net#@#.adsbygoogle
 otakuindo.net#@##banner_ad
+sosiali.com#@#.adsbygoogle
 ! Safelink & Shortlink
 @@/fuckadblock.min.js$domain=giga74.com
 @@/js/ads.$script,domain=adlink.pw|akuno.net|ceklink.co|indigitz.org|iovoproduction.info|lewat.club|megaurl.in|mylinkblog.com|shln.pw|shrink.vip|templink.org|urlto.id|wi.cr
@@ -15458,7 +15471,7 @@ otakuindo.net#@##banner_ad
 @@||suarankri.me^$generichide
 @@||virtualdata.me/webroot/js/ads.js$script,~third-party
 @@||zonangopi.ml^$generichide
-hexafile.net,zonangopi.ml##.adsbygoogle
+ad4msan.win,hexafile.net,zonangopi.ml##.adsbygoogle
 safejobsbos.blogspot.com#@##adsense
 ! 
 ! Memperbaiki kerusakan karena AdBlockID
@@ -15503,4 +15516,4 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: e3GnCzspIHVzD5n8hCQT+w
+! Checksum: Kl9K52YfaRT3gIEQb7QG2g
