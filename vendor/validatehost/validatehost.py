@@ -55,13 +55,6 @@ exclusions = [
   'rawgit.com',
   'raw.githubusercontent.com',
   'yourjavascript.com',
-  'adservers.adbl',
-  'annoyances.adbl',
-  'dewasa.adbl',
-  'movie.adbl',
-  'news.adbl',
-  'thirdparty.adbl',
-  'whitelist.adbl',
 ]
 
 log_fh = False
