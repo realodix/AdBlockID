@@ -42,7 +42,7 @@ import os, sys, subprocess
 import re, datetime, time, argparse
 
 # host resources will be parsed from this file
-filename='output/adblockid.txt'
+filename='host.txt'
 
 # down host will be writen to this file
 log_downhost='downhost.log'
