@@ -7,7 +7,7 @@ sed '/^!/d' -i content.txt
 sed '/^#/d' -i content.txt
 sed '/Adblock/d' -i content.txt
 
-python FOP.py
+python vendor/fop/FOP.py
 
 flrender -i abid=. adblockid.adbl output/adblockid.txt
 
