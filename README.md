@@ -1,6 +1,6 @@
-![AdBlockID Version](https://img.shields.io/badge/Version-19.09.2712-blue.svg?longCache=true&style=flat-square)
-<img src="https://img.shields.io/badge/Updated-Sep 27, 2019-orange.svg?longCache=true&style=flat-square"
-    alt="Sep 27, 2019" />
+![AdBlockID Version](https://img.shields.io/badge/Version-19.09.2807-blue.svg?longCache=true&style=flat-square)
+<img src="https://img.shields.io/badge/Updated-Sep 28, 2019-orange.svg?longCache=true&style=flat-square"
+    alt="Sep 28, 2019" />
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-abp.svg?logo=python&style=popout-square)
 
 # AdBlockID
