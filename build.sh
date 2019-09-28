@@ -9,7 +9,7 @@ sed '/Adblock/d' -i ffromvendor.txt
 
 python vendor/fop/FOP.py
 
-flrender -i abid=. adblockid.adbl output/adblockid.txt
+flrender -i abid=. src/template/adblockid.adbl output/adblockid.txt
 
 vendor/readme/readme.sh
 
