@@ -10,7 +10,7 @@
 ! GitHub issues: https://github.com/realodix/AdBlockID/issues
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
-! *** abid:AdBlockID/general_block.adbl ***
+! *** abid:src/general_block.adbl ***
 /smartfren/ads.
 ! 
 -Ads-300.
@@ -569,7 +569,7 @@ _980x60.
 _980x90.
 _981x100.gif
 _996x50.gif
-! *** abid:AdBlockID/general_hide.adbl ***
+! *** abid:src/general_hide.adbl ***
 ###Ad300B
 ###Box-Banner-ads
 ###Gadget-AdSense
@@ -1310,7 +1310,7 @@ _996x50.gif
 ##object[width="980"][height="250"]
 ##object[width="982"][height="150"]
 ##object[width="990"][height="206"]
-! *** abid:AdBlockID/adservers.adbl ***
+! *** abid:src/adservers.adbl ***
 ||088653e3c1c6.com^
 ||0fb3eaa80d.com^
 ||12c72b7d3ce.com^
@@ -1505,7 +1505,7 @@ _996x50.gif
 ||upoint.id^$third-party
 ||usearch.co.id^$third-party
 ||welcome.indihome.co.id^$third-party
-! *** abid:AdBlockID/thirdparty.adbl ***
+! *** abid:src/thirdparty.adbl ***
 ||amazonaws.com^*/banner/$third-party,domain=bogornews.com
 ||bucket.id^*/*.gif$domain=idfl.me
 ||iframe.ly^$domain=tampilcantik.com
@@ -1565,7 +1565,7 @@ _996x50.gif
 ||tempelin.website^$third-party
 ||ubloger.com^$third-party
 ||windowmentaria.com^$third-party
-! *** abid:AdBlockID/specific_block.adbl ***
+! *** abid:src/specific_block.adbl ***
 ||blogspot.com/*.gif$image,domain=mangashiro.org
 ! 
 -300x300.$image,domain=rekblogging.com
@@ -1650,7 +1650,7 @@ _996x50.gif
 ||yourjavascript.com^*/itu-domino-popup-script.js$script
 ||yourjavascript.com^*/lompatin.js$script
 ||zonawibu.me/data/ngentod.js$script
-! *** abid:AdBlockID/specific_hide.adbl ***
+! *** abid:src/specific_hide.adbl ***
 bagikancara.com,belajarbro.id,bloggerszones.com,contohblog.com,eirudo.com,gadget2reviews.com,gurusd.web.id,hobybaca.com,kelasdesain.com,majalahikan.com,obengplus.com,omahkpop.com,panduaneka.com,rumahsleman.com,seniberpikir.com,suryapero.com,tikusliar.com##.adsbygoogle
 hobybaca.com##.td-adspot-title
 ! 
@@ -1782,7 +1782,7 @@ tampilcantik.com##.widget:-abp-contains(Sponsored)
 instep.id##.widget:-abp-contains(advertisement)
 mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ! ------------------------------------------------------------!
-! *** abid:addons/annoyances.adbl ***
+! *** abid:src/addons/annoyances.adbl ***
 ###onesignal-bell-container
 ###onesignal-popover-container
 ##.onesignal-bell-container
@@ -1871,7 +1871,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||motosal.net^$popup
 ||plaza-bisnis.com^$first-party,popup
 ||ridingintractable.com^$popup
-! *** abid:addons/dewasa.adbl ***
+! *** abid:src/addons/dewasa.adbl ***
 ||166.62.7.206^$third-party
 ||188affiliates.com^$third-party
 ||agenjudionline.in^$third-party
@@ -4679,7 +4679,7 @@ _penggugur_kandungan_$image
 ##img[title*="situs poker online"]
 ##img[title*="situs togel"]
 ##img[title*="wigobet"]
-! *** abid:addons/movie.adbl ***
+! *** abid:src/addons/movie.adbl ***
 .gif$image,domain=animeku.tv|dramakorea.web.id|dramaserial.tv|korenlovers.com|movie303.com|nanime.in|nontondrama.me
 bioskop45.*,bioskopbos.*,kawanfilm21.*,lk21.*##[href*="/bit.ly/"] > img
 nontonanimeindo.net##a[href*="//goo.gl/"] > img
@@ -4740,7 +4740,7 @@ sukamovie.*##.sukam-bawah
 @@||shirainime.com^$generichide
 @@||sobatdrama.net^$generichide
 @@||streamxxi.com^$generichide
-! *** abid:addons/news.adbl ***
+! *** abid:src/addons/news.adbl ***
 -500x500.$image,domain=kabarpapua.co
 -adv-$image,domain=suroboyo.id
 -banner.$image,domain=cidahu.com|inilahonline.com|sumaterapost.co|today.id
@@ -5180,7 +5180,7 @@ aktual.id#@#.adsbygoogle
 radarlombok.co.id##.adsbygoogle
 radarmalang.id#@#.td-ad-background-link
 suarasumselnews.co.id#@#.category-advertorial
-! *** abid:ffromvendor.txt ***
+! *** abid:thirdparties-filter.txt ***
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ahoypirate.click|ahoypirate.in|ahoypiratebaai.eu|airproxyproxy.pw|airproxytpb.red|alivbay.org|batpirate.info|bay.maik.rocks|bayception.pw|baypirate.click|baypiratebay.be|baypirateproxy.org|baypirateproxy.pw|bayproxy.eu|bypassed.st|capjackproxy.net|cruzing.xyz|ddmix.net|depiratenbaai.nl|duckingproxy.eu|extratorrent.cd|extratorrent.si|gofile.io|hq-porns.com|hyperproxy.net|ikwildepiratebay.org|ikwildepiratebay.xyzbrowse|indiaproxy.in|indiaproxydl.orgbrowse|intactoffers.club|kickass.cd|magnetbay.eu|myfeed4u.net|noobnoob.rocks|pietpiraat.org|pirat2.club|pirataibay.in|piratbaypirate.link|pirate.bet|pirate.blue|pirate.trade|pirateahoy.net|piratebaai.click|piratebaai.club|piratebay.click|piratebay.red|piratebay.telbrowse|piratebay.town|piratebay.website|piratebay247.net|piratebayblocked.com|piratebaymirror.eu|piratebayproxy.tf|piratebays.be|piratebays.co|piratenbucht.eu|piratepirate.eu|pirateprox.club|pirateproxy.click|pirateproxy.ist|pirateproxy.mx|pirateproxy.tf|pirateproxy.wf|pirateproxy.yt|piratetoday.click|proxybayduck.fi|proxydl.cf|proxyfl.info|proxyindia.net|proxyme.site|proxyme.win|proxyoneahoy.net|proxypirate.in|proxypirate.website|proxyproxyproxy.nl|proxyship.click|proxytpb.org|proxytpb.pw|reservedoffers.club|rowpirate.org|skyback.ru|superbay.link|szukajka.tv|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepirate.click|thepirate.xyz|thepiratebay-proxy.com|thepiratebay.bet|thepiratebay.blue|thepiratebay.cr|thepiratebay.futbol|thepiratebay.kiwi|thepiratebay.org|thepiratebay.pet|thepiratebay.pictures|thepiratebay.red|thepiratebay.rocks|thepiratebay.se.net|thepiratebay.tel|thepiratebay.wtf|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tpb.crushus.com|tpb.one|tpb.tw|tpbairproxy.in|tpbbay.eu|tpbduck.com|tpbmirror.us|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbportal.in|tpbproxy.club|tpbproxy.win|tpbproxyone.org|tpbrun.win|tpproxy.website|ukpirate.click|ukpirate.org|ukpirateproxy.xyz|unblockedhyperbay.info|unblocktheship.org|unblocktpb.com|urbanproxy.eu|vidoza.co|vidoza.net|vidup.me|vidup.tv|wearepirates.click|zombay.org
 $csp=worker-src 'none',domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|1q2w3.website|2giga.link|300mbfilms.co|7tors.com|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|alstreams.org|animeteatr.ru|annuaire-bleu.net|arnaques-internet.info|atk-exotics.com|atkebony.com|babyjav.com|bamekoohrang.ir|bigspeeds.com|bitcoincashfaucet.co|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bustrain.net|bypassed.in|bypassed.ws|bypassed.wtf|byter.tv|catrumahminimalis.me|centrum-dramy.pl|chemikino.ru|cinemafacil.com|citypaintsupplyghana.com|clipwatching.com|cloudtime.to|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|cracklists.com|crictime.com|crictime.is|crimedocumentary.com|ddmix.net|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|domnuleprimar.ro|dragonballzpolo.blogspot.com|drama-cool.me|eduardolegatti.blogspot.com|emuleed2k.com|estream.nu|estream.to|estream.xyz|extratorrent.cd|extratorrent.si|fbmovies.org|fileone.tv|filmai.ws|filmonet.com|filmovix.com|filmovix.net|filmovix.org|filmstreamvk.biz|filmstreamvk.co|filmstreamvk.com|filmstreamvk.io|filmstreamvk.me|filmstreamvk.net|filmstreamvk.org|filmstreamvk.site|filmstreamvk.top|filmstreamvk.ws|filmstreamvk1.net|filmyhd.cz|firstone.tv|firstonetv.eu|firstonetv.live|flashx.cc|flashx.co|flashx.pw|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|fruitadblock.net|fruithosts.net|fruitstreams.com|full-mp3.com|funtik.tv|genashowalter.com|gofile.io|gomovie123.me|gomovies123.me|happyjav.com|hdvid.life|hdvid.tv|vidon.xyz|hdvid.xyz|hdyayinmac1.com|hentai-online.pl|hospital.plus|hq-porns.com|ianimes.co|ianimes.top|idope.tv|ifrp.xyz|ikwildepiratebay.xyz|indiaproxydl.org|intactoffers.club|javbros.com|javdl.co|javsuper.com|jkanime.net|kapuso.be|kickass.cd|kinohabr.net|kinokongo.cc|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|lewd.ninja|litecoinfaucet.co|logovo.net|love-drama.pl|luckybitco.in|mladipodnikatelia.sk|mobology.ir|monero-miner.com|movie4k.is|mp3free.pw|mrunlock.icu|myfeed4u.net|myvidaanime.com|nahnoji.cz|netiap.com|neurozinzin.com|nod-key.su|novator.az|novoscrb.ru|nowvideo.sx|oipeirates.online|oladblock.me|oladblock.services|oladblock.xyz|oload.best|oload.biz|oload.cc|oload.cloud|oload.club|oload.download|oload.fun|oload.info|oload.life|oload.live|oload.press|oload.services|oload.site|oload.space|oload.stream|oload.tv|oload.website|oload.win|olpair.com|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.host|onvid.icu|onvid.online|onvid.pro|onvid.pw|onvid.site|onvid.space|onvid.website|onvid.xyz|openload.cc|openload.co|openload.fun|openload.pw|openloed.co|ovid.club|ovid.fun|ovid.host|ovid.icu|ovid.life|ovid.live|ovid.online|ovid.pro|ovid.pw|ovid.site|ovid.space|ovid.website|ovid.world|ovid.xyz|pebx.pl|peliculas24.me|pelisplus.online|pezeshk.us|pinoyrewind.info|piratebay.tel|potomy.ru|povwideo.cc|povwideo.net|powvideo.cc|powvideo.net|protect-iframe.com|protect-link.biz|proxyportal.eu|rapidvideo.com|reactor.cc|rednubes.de|reservedoffers.club|salon.com|seriesenlinea.net|seventorrents.cc|severita-service.ru|sherlockonline.ru|shrink-service.it|shush.se|sickrage.ca|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.top|studio100.it|szukajka.tv|tainies.online|tapemovie.com|tarntercum.ru|theappguruz.com|thehdvid.club|thehdvid.fun|thehdvid.host|thehdvid.icu|thehdvid.life|thehdvid.live|thehdvid.online|thehdvid.pro|thehdvid.pw|thehdvid.site|thehdvid.space|thehdvid.tv|thehdvid.website|thehdvid.world|thehdvid.xyz|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|thevidhd.club|thevidhd.fun|thevidhd.host|thevidhd.icu|thevidhd.life|thevidhd.live|thevidhd.online|thevidhd.pro|thevidhd.pw|thevidhd.site|thevidhd.space|thevidhd.tv|thevidhd.website|thevidhd.world|thevidhd.xyz|thisjav.com|tokyodrift.ga|tomadivx.tv|torrentrapid.com|tubetitties.com|tugaanimado.net|unblockall.org|unblocked.app|unblocked.gdn|unblocked.ms|unblocked.vet|unblocked.wtf|uptobox.com|uptostream.com|vidfile.net|vidgg.to|vidhd.club|vidhd.fun|vidhd.host|vidhd.online|vidhd.pro|vidhd.pw|vidhd.site|vidhd.space|vidhd.world|vidoza.co|vidoza.net|vidstodo.me|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|vidup.io|vidup.me|vidup.tv|vidzi.si|vidzi.tv|void.cat|voirfilm.ws|voirfilms.mx|voirfilms.ws|wallpoper.com|watch-free.co|watchfreemovies.tv|wearesaudis.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|yourjav.com|zenexplayer.com|ziurim.eu|zona.plus
@@ -15437,7 +15437,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||zzomiuob.com^
 ||zzpzenvmibvm.com^
 ||zzwajufm.com^
-! *** abid:addons/scriptlet-adguard.adbl ***
+! *** abid:src/addons/scriptlet-adguard.adbl ***
 ! Scriptlets khusus untuk AdGuard
 ! https://github.com/AdguardTeam/Scriptlets
 ! 
@@ -15450,7 +15450,7 @@ inidramaku.com#%#//scriptlet("abort-on-property-read", "popup_custom_data.showMe
 kabarviral.blog#%#//scriptlet("noeval")
 kabarviral.blog,lewat.club#%#//scriptlet("window.open-defuser")
 razorlink.us#%#//scriptlet("set-constant", "safelink.adblock", false)
-! *** abid:addons/scriptlet-ublock.adbl ***
+! *** abid:src/addons/scriptlet-ublock.adbl ***
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 ! 
@@ -15467,7 +15467,7 @@ razorlink.us##+js(set-constant, safelink.adblock, false)
 daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
 filmbioskop21.cc,idfl.me,kabarviral.blog,lewat.club##+js(window.open-defuser)
 ! ------------------------------------------------------------!
-! *** abid:AdBlockID/whitelist.adbl ***
+! *** abid:src/whitelist.adbl ***
 @@.ad.json?$domain=otobalancing.net
 @@.gif#*/ad/
 @@.jpg#*/ad/
@@ -15640,4 +15640,4 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
-! Checksum: 9uyTzXNx50FXjoCigbK6fQ
+! Checksum: OA2tqepoq5ZMXsRZ9vIvpQ

@@ -27,11 +27,11 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
    `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`
 
    Tutorial spesifik cara memasang AdBlockID:
-   - [uBlock Origin & Nano Adblocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/uBlock.md)
-   - [AdGuard](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
-   - [Adblock Plus](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adblock-Plus.md)
-   - [AdBlock](https://github.com/realodix/AdBlockID/blob/master/tutorial/Adblock-Plus.md#cara-memasang-adblockid-pada-adblock)
-   - [Opera Ad Blocker](https://github.com/realodix/AdBlockID/blob/master/tutorial/Opera-AdBlocker.md)
+   - [uBlock Origin & Nano Adblocker](https://github.com/realodix/AdBlockID/blob/master/doc/uBlock.md)
+   - [AdGuard](https://github.com/realodix/AdBlockID/blob/master/doc/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
+   - [Adblock Plus](https://github.com/realodix/AdBlockID/blob/master/doc/Adblock-Plus.md)
+   - [AdBlock](https://github.com/realodix/AdBlockID/blob/master/doc/Adblock-Plus.md#cara-memasang-adblockid-pada-adblock)
+   - [Opera Ad Blocker](https://github.com/realodix/AdBlockID/blob/master/doc/Opera-AdBlocker.md)
 
 
 ## Berkontribusi

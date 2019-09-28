@@ -1,16 +1,16 @@
 #!/bin/bash
 
-flrender -i abid=. vendor/ffromvendor/filter.adbl ffromvendor.txt
+flrender -i abid=. src/template/thirdparties.adbl thirdparties-filter.txt
 
 # cleanup
-sed '/^!/d' -i ffromvendor.txt
-sed '/^#/d' -i ffromvendor.txt
-sed '/Adblock/d' -i ffromvendor.txt
+sed '/^!/d' -i thirdparties-filter.txt
+sed '/^#/d' -i thirdparties-filter.txt
+sed '/Adblock/d' -i thirdparties-filter.txt
 
 python vendor/fop/FOP.py
 
-flrender -i abid=. adblockid.adbl output/adblockid.txt
+flrender -i abid=. src/template/adblockid.adbl output/adblockid.txt
 
 vendor/readme/readme.sh
 
-rm ffromvendor.txt
+rm thirdparties-filter.txt
