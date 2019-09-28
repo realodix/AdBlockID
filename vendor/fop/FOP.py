@@ -57,7 +57,7 @@ BLANKPATTERN = re.compile(r"^\s*$")
 COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
-IGNORE = ("output", "requirements.txt", "templates", "node_modules")
+IGNORE = ("adblockid.txt", "output", "vendor")
 
 # List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = ("badfilter", "collapse", "csp", "document", "elemhide",
@@ -154,7 +154,7 @@ def main (location):
             address = os.path.join(path, filename)
             extension = os.path.splitext(filename)[1]
             # Sort all text files that are not blacklisted
-            if extension == ".txt" and filename not in IGNORE:
+            if (extension == ".txt" or extension == ".adbl") and filename not in IGNORE:
                 fopsort(address)
             # Delete unnecessary backups and temporary files
             if extension == ".orig" or extension == ".temp":
