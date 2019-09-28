@@ -16,7 +16,3 @@ echo "- Adding Version"
 
 # remove tmp file
 rm -rf $README_TEMP
-
-# remove extra text
-echo "- Removing Extras"
-sed -i -e 's/# Entries: //g' README.md
