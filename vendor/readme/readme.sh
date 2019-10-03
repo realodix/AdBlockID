@@ -1,18 +1,18 @@
 #!/bin/bash
 
-README_TEMPLATE="vendor/readme/readme.template"
-README_TEMP="vendor/readme/readme.tmp"
+readme_template="vendor/readme/readme.template"
+readme_temp="vendor/readme/readme.tmp"
 
-TIMESTAMP=`date -u +'%b %d, %Y'`
-VERSION=`date -u +'%y.%m.%d%H'`
+timestamp=`date -u +'%b %d, %Y'`
+version=`date -u +'%y.%m.%d%H'`
 
 # add to readme
-sed -e "s/_timestamp_/$TIMESTAMP/g" -e "s/_version_/$VERSION/g" $README_TEMPLATE > $README_TEMP
+sed -e "s/_timestamp_/$timestamp/g" -e "s/_version_/$version/g" $readme_template > $readme_temp
 
 # add to file
-cat $README_TEMP > README.md
+cat $readme_temp > README.md
 echo "- Adding Date"
 echo "- Adding Version"
 
 # remove tmp file
-rm -rf $README_TEMP
+rm -rf $readme_temp
