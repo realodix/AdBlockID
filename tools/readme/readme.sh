@@ -1,7 +1,7 @@
 #!/bin/bash
 
-readonly readme_template="vendor/readme/readme.template"
-readonly readme_temp="vendor/readme/readme.tmp"
+readonly readme_template="tools/readme/readme.template"
+readonly readme_temp="tools/readme/readme.tmp"
 
 timestamp=`date -u +'%b %d, %Y'`
 version=`date -u +'%y.%m.%d%H'`

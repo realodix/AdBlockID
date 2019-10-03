@@ -47,7 +47,7 @@ Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](https://raw.git
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
-`$ pip install -e vendor/python-abp`
+`$ pip install -e tools/python-abp`
 
 ### Tools pendukung
 
