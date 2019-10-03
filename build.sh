@@ -7,10 +7,10 @@ sed '/^!/d' -i thirdparties-filter.txt
 sed '/^#/d' -i thirdparties-filter.txt
 sed '/Adblock/d' -i thirdparties-filter.txt
 
-python vendor/fop/FOP.py
+python tools/fop/FOP.py
 
 flrender -i abid=. src/template/adblockid.adbl output/adblockid.txt
 
-vendor/readme/readme.sh
+tools/readme/readme.sh
 
 rm thirdparties-filter.txt
