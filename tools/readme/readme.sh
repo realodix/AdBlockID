@@ -4,8 +4,8 @@ readonly readme_template="tools/readme/readme.template"
 readonly readme_temp="tools/readme/readme.tmp"
 
 v_minor=`date -u +'%d'`+`date -u +'%m'`-1
-
 version=`date -u +'%y.'`$((v_minor))`date -u +'.%H%M'`
+
 release_date=`date -u +'%b %d, %Y'`
 
 # Buat file temporary
