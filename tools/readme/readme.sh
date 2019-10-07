@@ -3,6 +3,7 @@
 readonly readme_template="tools/readme/readme.template"
 readonly readme_temp="tools/readme/readme.tmp"
 
+v_mayor=`date -u +'%y'`-17
 v_minor=`date -u +'%d'`+`date -u +'%m'`-1
 version=$((v_mayor)).$((v_minor))`date -u +'.%H%M'`
 
