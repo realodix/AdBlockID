@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Script ini digunakan untuk memperbarui versi dan tanggal perilisan AdBlockID
+# pada file readme. Versi yang tertulis harus sama persis dengan yang tertulis
+# pada ./output/adblockid.txt
+
+
 readonly readme_template="tools/readme/readme.template"
 readonly readme_temp="tools/readme/readme.tmp"
 
