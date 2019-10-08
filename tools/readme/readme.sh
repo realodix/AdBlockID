@@ -5,7 +5,7 @@
 # pada ./output/adblockid.txt
 
 
-readonly readme_tmplate="tools/readme/readme.template"
+readonly readme_template="tools/readme/readme.template"
 readonly readme_tmp="tools/readme/readme.tmp"
 
 v_mayor=`date -u +'%y'`
@@ -16,7 +16,7 @@ version=$((v_mayor)).$((v_minor)).$((v_build))
 release_date=`date -u +'%b %d, %Y'`
 
 # Buat file temporary
-sed -e "s/_release_date_/$release_date/g" -e "s/_version_/$version/g" $readme_tmplate > $readme_tmp
+sed -e "s/_release_date_/$release_date/g" -e "s/_version_/$version/g" $readme_template > $readme_tmp
 
 # Ubah file temporary menjadi file readme yang sebenarnya
 cat $readme_tmp > README.md
