@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Render thirdparties filter
 flrender -i abid=. src/template/thirdparties.adbl thirdparties-filter.txt
 
 # cleanup
