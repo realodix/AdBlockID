@@ -49,6 +49,10 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
 `$ pip install -e tools/python-abp`
 
+atau
+
+`$ pip install -t tools tools/python-abp`
+
 ### Tools pendukung
 
 | File              | Deskripsi                                 |
