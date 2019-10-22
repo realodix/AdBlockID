@@ -22,7 +22,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Safari](http://www.apple.com/safari/), [Opera](http://www.opera.com/), ...)
 - *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi *ad blocker* lainnya.
 
-  *_Secara pribadi Saya menggunakan uBlock Origin untuk membuat dab testing filter AdBlockID._
+  *_Secara pribadi Saya menggunakan uBlock Origin untuk membuat dan testing filter AdBlockID._
 
 - Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada ekstensi adblock yang Anda gunakan.
 
