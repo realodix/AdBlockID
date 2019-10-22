@@ -10,7 +10,7 @@ readonly readme_tmp="tools/readme/readme.tmp"
 
 v_mayor=`date -u +'%y'`
 v_minor=`date -u +'%j'`
-v_build=`date -u +'%H%M'`
+v_build=(`date -u +'%H'`*60)+`date -u +'%M'`
 version=$((v_mayor)).$((v_minor)).$((v_build))
 
 release_date=`date -u +'%b %d, %Y'`
