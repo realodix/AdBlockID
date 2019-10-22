@@ -22,6 +22,7 @@ import hashlib
 import itertools
 import logging
 import time
+import datetime
 
 from .parser import parse_filterlist, Comment, Metadata
 from .sources import NotFound
@@ -119,7 +120,8 @@ def _first_and_rest(iterable):
 def _insert_version(lines):
     """Insert metadata comment with version (a.k.a. date)."""
     first_line, rest = _first_and_rest(lines)
-    version = Metadata('Version', time.strftime('%y.%j.%H%M', time.gmtime()))
+    v_build = (datetime.datetime.utcnow().hour*60)+datetime.datetime.utcnow().minute
+    version = Metadata('Version', time.strftime('%y.%j.{}'.format(v_build), time.gmtime()))
     return itertools.chain([first_line, version], rest)
 
 
