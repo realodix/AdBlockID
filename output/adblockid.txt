@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.296.564
+! Version: 19.296.586
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 23 Oct 2019 09:24 UTC
+! Last modified: 23 Oct 2019 09:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1024,7 +1024,6 @@ _996x50.gif
 ##.player-ads-top-1
 ##.post-ad3
 ##.post-ad4
-##.post-ads
 ##.post-ads-top
 ##.post-adv
 ##.posts-ad
@@ -15844,11 +15843,14 @@ ad4msan.win,hexafile.net,wikiall.org,zonangopi.ml##.adsbygoogle
 @@/ayopasangiklan.
 @@/belanja_iklan-
 @@/cara-beriklan.
+@@/iklan-sidebar.$image,domain=karyaiklan.co.id
 @@/iklan/*$domain=1rajaiklan.com|duniaiklangratis.com|iklan123.net|iklanbogor.com|iklankotalemank.com|iklanpopuler.com|iklansmart.com|megaiklan.com|pasangiklanmurah.xyz|pusatiklan.co.id|sebariklanbaris.net|sebariklanmassalpremium.com|sentrapromosi.com|sewa-apartemen.net
+@@_iklan-$image,domain=agency-iklan.com
 ads-ina.org#@#[href*="/ads-"]
 iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 jualo.com#@#[href*="/iklan-"] > img
 jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
+pusatpemasanganiklan.com#@#[href*="/iklan/"] > img
 ! 
 ! Memperbaiki kerusakan karena EasyList dan uBlock filters
 ! 
@@ -15861,14 +15863,17 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@/advertising-$domain=advertising-indonesia.id|reoncomics.com
 @@/advertising.$domain=advertising.katadata.co.id
 @@/advertising/*$domain=client.okezone.com
+@@/bannerad.$image,domain=ad.co.id
 @@/bg_advertise.
 @@/bnrs/*$domain=duniaiklangratis.com|iklan123.net|iklanbogor.com|iklanpopuler.com|iklansmart.com|megaiklan.com|sebariklanbaris.net|sebariklanmassalpremium.com|sebariklanonline.com
 @@/display-ads-$domain=idkeyword.com
 @@/google-ads-$domain=bocdigital.id
+@@/images/ads.$domain=jualo.com
 @@/images/ads/*$domain=adsmart.detik.com
 @@/istilah-google-
 @@/pasang-google-
 @@/scripts/ads.$domain=ads.kaskus.co.id
+@@/videojs.ads.$domain=20.detik.com
 @@/wp-content/plugins/adsense-click-fraud-monitoring/*$~third-party
 @@/wp-content/themes/adsense-child/*$~third-party
 @@/wp-content/themes/classified-ads/*$~third-party
@@ -15876,14 +15881,16 @@ jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
 @@/wp-content/themes/superads-$~third-party
 @@/wp-content/uploads/*$image,domain=adstarsmedia.co.id|dhadigital.com|jurnalweb.com
 @@://ads.$domain=ads.gadgetsquad.id|ads.genmuda.com|ads.hukumonline.com|ads.id|ads.iklandaerah.com|ads.kaskus.co.id|ads.kontan.co.id|ads.wartaekonomi.co.id
+@@_300x250px.$image,domain=agency-iklan.com
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com^$generichide
 @@||hipwee.com/advertise/
 baliadvertiser.biz#@#.ads-carousel
+jualo.com#@#.ad-title
 sebariklanbaris.net#@#.content-ads
 ! 
 ! Memperbaiki kerusakan karena EasyPrivacy
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: f7oJ7x6gJsMwWwIUhPrtqQ
+! Checksum: NcOH7C5YKbxUTPbQf/5lZA
