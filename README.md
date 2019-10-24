@@ -1,6 +1,6 @@
-![AdBlockID Version](https://img.shields.io/badge/Version-19.296.1199-blue.svg?longCache=true&style=flat-square)
-<img src="https://img.shields.io/badge/Updated-Oct 23, 2019-orange.svg?longCache=true&style=flat-square"
-    alt="Oct 23, 2019" />
+![AdBlockID Version](https://img.shields.io/badge/Version-19.297.475-blue.svg?longCache=true&style=flat-square)
+<img src="https://img.shields.io/badge/Updated-Oct 24, 2019-orange.svg?longCache=true&style=flat-square"
+    alt="Oct 24, 2019" />
 
 # AdBlockID
 
