@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = 3.17
+VERSION = 3.18
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -60,7 +60,7 @@ COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 IGNORE = ("adblockid.txt", "output", "vendor")
 
 # List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, which is handled separately), as of version 1.3.9
-KNOWNOPTIONS = ("badfilter", "collapse", "csp", "document", "elemhide",
+KNOWNOPTIONS = ("badfilter", "collapse", "csp", "css", "document", "elemhide",
                 "font", "genericblock", "generichide", "image", "match-case",
                 "object", "media", "object-subrequest", "other", "ping", "popup",
                 "script", "stylesheet", "subdocument", "third-party", "first-party",
@@ -69,19 +69,16 @@ KNOWNOPTIONS = ("badfilter", "collapse", "csp", "document", "elemhide",
                 "redirect=google-analytics_cx_api.js", "redirect=googlesyndication_adsbygoogle.js", "redirect=doubleclick_instream_ad_status.js",
                 "redirect=ampproject_v0.js", "redirect=noop.js", "redirect=noop.html", "redirect=noop.txt",
                 "redirect=noop-0.1s.mp3", "redirect=noop-1s.mp4", "redirect=1x1.gif", "redirect=2x2.png",
-                "redirect=3x2.png", "redirect=32x32.png",
+                "redirect=3x2.png", "redirect=32x32.png", "redirect=noeval-silent.js",
                 "rewrite=abp-resource:blank-css", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-text", "rewrite=abp-resource:1x1-transparent-gif", "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png",
-                "1p", "3p", "inline-script", "xhr", "protobuf", "urlblock", "jsinject"
-                # redirect-rule= This new option allows to create a pure redirect directive, without a corresponding block filter
-                # https://github.com/gorhill/uBlock/releases/tag/1.21.9b7
+                "1p", "3p", "inline-script", "xhr", "protobuf", "urlblock", "jsinject",
                 "redirect-rule=googletagmanager_gtm.js",
                 "redirect-rule=google-analytics_ga.js", "redirect-rule=google-analytics_analytics.js", "redirect-rule=googletagservices_gpt.js",
                 "redirect-rule=google-analytics_cx_api.js", "redirect-rule=googlesyndication_adsbygoogle.js", "redirect-rule=doubleclick_instream_ad_status.js",
                 "redirect-rule=ampproject_v0.js", "redirect-rule=noop.js", "redirect-rule=noop.html", "redirect-rule=noop.txt",
                 "redirect-rule=noop-0.1s.mp3", "redirect-rule=noop-1s.mp4", "redirect-rule=1x1.gif", "redirect-rule=2x2.png",
                 "redirect-rule=3x2.png", "redirect-rule=32x32.png",
-                # Support for AdGuard's empty and mp4 filter https://github.com/gorhill/uBlock/releases/tag/1.21.9b7
-                "empty", "mp4")
+                "empty", "mp4", "extension", "stealth", "content", "redirect=noeval.js")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
@@ -293,6 +290,8 @@ def filtertidy (filterin):
             if option[0:7] == "domain=":
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
+            elif option[0:4] == "app=" or option[0:9] == "protobuf=" or option[0:7] == "cookie=" or option[0:8] == "replace=":
+                optionlist = optionsplit.group(2).split(",")
             elif option.strip("~") not in KNOWNOPTIONS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
         # Sort all options other than domain alphabetically
