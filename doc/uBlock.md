@@ -1,3 +1,9 @@
+Tutorial ini dapat membantu Anda untuk menggunakan AdBlockID pada:
+- [uBlock Origin](https://github.com/gorhill/uBlock)
+- [Nano Adblocker](https://github.com/NanoAdblocker)
+- [uBlock](https://ublock.org/)
+- dan beberapa ad blocker turunan dari uBlock Origin.
+
 ## Cara Memasang AdBlockID
 
 1. Buka *dashboard*.
