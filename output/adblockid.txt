@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.302.1247
+! Version: 19.303.592
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Oct 2019 20:47 UTC
+! Last modified: 30 Oct 2019 09:52 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -7321,6 +7321,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ebuurwhnjdvtau.com^
 ||ecboxijnmh.com^
 ||eccsyytbe.bid^
+||ecezkkrm.com^
 ||ecflhhxp.bid^
 ||ectbduztanog.com^
 ||ectxnsxezdg.com^
@@ -7622,6 +7623,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||eunysqxppf.bid^
 ||eupwogkcjczz.com^
 ||eurifsiooyof.bid^
+||eusmhdvvddcr.com^
 ||eutdrjvsrmav.com^
 ||eutklhuazxlt.com^
 ||eutsbhvtao.com^
@@ -10450,6 +10452,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||kwcrryneebg.com^
 ||kweayxzfazrws.com^
 ||kwflzktzaxczm.com^
+||kwhgsdnkrusyw.com^
 ||kwiaofifmdqpif.com^
 ||kwjglwybtlhm.com^
 ||kwkxvbjz.com^
@@ -10700,6 +10703,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||lkohqfilvpked.com^
 ||lkojwhiwcsum.com^
 ||lkpwmhjfvpctw.com^
+||lkrojmvmxxqze.com^
 ||lkubjgrjslmgxo.com^
 ||lkuirehx.com^
 ||lkyuoybczr.com^
@@ -11379,6 +11383,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||mtyqtczr.bid^
 ||mtysahmkqqdo.com^
 ||mtzddtrs.com^
+||mtzszlpypbxjm.com^
 ||muasoctv.com^
 ||mueyqvzw.com^
 ||muhexvakuawzo.com^
@@ -12809,6 +12814,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||qbldzsktv.com^
 ||qblpxxcjusgmq.bid^
 ||qblttqtvn.bid^
+||qbovhtdejygua.com^
 ||qbpamfcntbprjw.com^
 ||qbpawthj.com^
 ||qbpuavqlsu.com^
@@ -14054,6 +14060,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||svdmxetbyfyg.com^
 ||svdnqszxgucgd.com^
 ||svdsutdq.com^
+||svevbvsjeicl.com^
 ||svfqoztfopv.com^
 ||svjloaomrher.com^
 ||svmtvfuok.com^
@@ -15004,6 +15011,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||vmyzwzgggbcp.com^
 ||vndrcewnard.com^
 ||vngztuqon.com^
+||vnjeqfwmotkvbg.com^
 ||vnlqgiuul.com^
 ||vnrapyiaxxj.com^
 ||vntcxqxuqki.com^
@@ -15793,15 +15801,16 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ! Scriptlets khusus untuk AdGuard
 ! https://github.com/AdguardTeam/Scriptlets
 ! 
-blogrp.me,ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
-ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
 drakorindofilms.net#%#//scriptlet("abort-on-property-read", "popup_custom_data.showMethod")
 hightech.web.id#%#//scriptlet("abort-current-inline-script", "document.getElementById", "adback")
 idfl.me#%#//scriptlet("prevent-window-open")
 inidramaku.com#%#//scriptlet("abort-on-property-read", "popup_custom_data.showMethod")
-kabarviral.blog#%#//scriptlet("noeval")
-kabarviral.blog,lewat.club#%#//scriptlet("window.open-defuser")
+lewat.club#%#//scriptlet("window.open-defuser")
 razorlink.us#%#//scriptlet("set-constant", "safelink.adblock", false)
+! 
+! Safelink & Shortlink
+blogrp.me,ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
+ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
 ! *** abid:src/addons/scriptlet-ublock.adbl ***
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
@@ -15810,14 +15819,16 @@ tribunnews.com##+js(abort-current-inline-script, Math, ='\x)
 hightech.web.id##+js(abort-current-inline-script, document.getElementById, adback)
 kompas.com##+js(abort-current-inline-script, setTimeout, iframeTestTimeMS)
 kompas.com,tribunnews.com##+js(abort-on-property-read, $getWin)
-blogrp.me,ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
 drakorindofilms.net,inidramaku.com##+js(abort-on-property-read, popup_custom_data.showMethod)
 kuyhaa-me.com##+js(abort-on-property-read, protected_links)
-ceklink.co##+js(abort-on-property-read, tampilkanUrl)
-kabarviral.blog##+js(noeval)
-razorlink.us##+js(set-constant, safelink.adblock, false)
 daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
-filmbioskop21.cc,idfl.me,kabarviral.blog,lewat.club##+js(window.open-defuser)
+filmbioskop21.cc,idfl.me##+js(window.open-defuser)
+! 
+! Safelink & Shortlink
+blogrp.me,ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
+ceklink.co##+js(abort-on-property-read, tampilkanUrl)
+razorlink.us##+js(set-constant, safelink.adblock, false)
+lewat.club##+js(window.open-defuser)
 ! ------------------------------------------------------------!
 ! *** abid:src/whitelist.adbl ***
 dutaislam.com#@##ads-wrapper
@@ -16020,4 +16031,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: ckoypBAwKJjiVJUShHtl4g
+! Checksum: GtJbIS1D0JXUYwJc9wZGiw
