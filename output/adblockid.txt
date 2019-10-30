@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.303.592
+! Version: 19.303.634
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Oct 2019 09:52 UTC
+! Last modified: 30 Oct 2019 10:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1001,6 +1001,7 @@ _996x50.gif
 ##.kiwi-ad-sticky-wrapper
 ##.kiwiad-desktop-popup-300x600-overlay
 ##.kiwiad-popup-ad-container
+##.klan300
 ##.kotak_iklan
 ##.kotak_iklan2
 ##.kotak_iklan3
@@ -1343,6 +1344,8 @@ _996x50.gif
 ||adxscope.com^$third-party
 ||aiwhebey.com^
 ||aseanbanner.tk^$third-party
+||ashaidbit.club^
+||ashamparm.site^
 ||badskies.com^$third-party
 ||bileth.pw^$third-party
 ||brand.ad^$third-party
@@ -1381,6 +1384,7 @@ _996x50.gif
 ||klikajadeh.com^$third-party
 ||lokeriklan.com^$third-party
 ||loppjod.online^
+||magrie.pw^
 ||masteriklan.net^$third-party
 ||mesiniklan.andipublisher.com^$third-party
 ||mousheen.net^
@@ -2385,6 +2389,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*pialaqq*.$image
 /*pk99banner*.$image
 /*pkstar8*.$image
+/*pokehwd*$image
 /*poker-vivo*.$image
 /*poker228*.$image
 /*pokerclick88*.$image
@@ -2468,6 +2473,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*serbaqq*.$image
 /*sevebola*.$image
 /*sevenbola*.$image
+/*sifutempek*.$image
 /*simpatiq*.$image
 /*simpatiqq*.$image
 /*sindikatku*.$image
@@ -2842,6 +2848,7 @@ _penggugur_kandungan_$image
 ##[href*="1x2018."] > img
 ##[href*="1xliga."] > img
 ##[href*="1xme."] > img
+##[href*="202.95.10.126"] > img
 ##[href*="202.95.10.141"] > img
 ##[href*="206.189.121.4"] > img
 ##[href*="206.189.175.126"] > img
@@ -4181,6 +4188,7 @@ _penggugur_kandungan_$image
 ##[href*="qq8788"] > img
 ##[href*="qq8821"] > img
 ##[href*="qq96ace."] > img
+##[href*="qq998a."] > img
 ##[href*="qqasia99"] > img
 ##[href*="qqasli."] > img
 ##[href*="qqboya."] > img
@@ -4337,6 +4345,8 @@ _penggugur_kandungan_$image
 ##[href*="shiokambing"] > img
 ##[href*="shiokuda."] > img
 ##[href*="siapbet."] > img
+##[href*="sifujudi."] > img
+##[href*="sifutempek."] > img
 ##[href*="simpatiqq"] > img
 ##[href*="sinar365."] > img
 ##[href*="sinarkiukiu."] > img
@@ -4493,6 +4503,7 @@ _penggugur_kandungan_$image
 ##[href*="unikpoker."] > img
 ##[href*="universal-qq"] > img
 ##[href*="unogoal88."] > img
+##[href*="untungvip."] > img
 ##[href*="updatetogel."] > img
 ##[href*="usahatoto."] > img
 ##[href*="utamabet"] > img
@@ -11431,6 +11442,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||mwgairxva.bid^
 ||mwggummxeygq.com^
 ||mwgjoofxf.bid^
+||mwhjamwra.com^
 ||mwhtoxix.com^
 ||mwlucuvbyrff.com^
 ||mwnhdnkevthkz.com^
@@ -15495,6 +15507,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||yiqyefznxc.com^
 ||yjctwdeuz.com^
 ||yjdbnkgonfp.com^
+||yjoldnbcw.com^
 ||yjseeodbma.com^
 ||yjtdbdnhcu.com^
 ||yjwtxskmswcjc.com^
@@ -15811,6 +15824,7 @@ razorlink.us#%#//scriptlet("set-constant", "safelink.adblock", false)
 ! Safelink & Shortlink
 blogrp.me,ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
 ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
+machineworlds.me#%#//scriptlet("abort-on-property-read", "open")
 ! *** abid:src/addons/scriptlet-ublock.adbl ***
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
@@ -15825,7 +15839,8 @@ daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
 filmbioskop21.cc,idfl.me##+js(window.open-defuser)
 ! 
 ! Safelink & Shortlink
-blogrp.me,ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
+blogrp.me,ceklink.co,machineworlds.me##+js(abort-on-property-read, app_vars.force_disable_adblock)
+machineworlds.me##+js(abort-on-property-read, open)
 ceklink.co##+js(abort-on-property-read, tampilkanUrl)
 razorlink.us##+js(set-constant, safelink.adblock, false)
 lewat.club##+js(window.open-defuser)
@@ -15913,6 +15928,8 @@ agroindustri.id,duwitmu.com#@#.category-advertorial
 ! 
 safejobsbos.blogspot.com#@##adsense
 ad4msan.win,hexafile.net,wikiall.org,zonangopi.ml##.adsbygoogle
+machineworlds.me##.banner-inner
+machineworlds.me##.blog-item
 bagilagi.com##.klnsora
 ! 
 @@/advertisement.$script,domain=mangalist.org
@@ -16031,4 +16048,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: GtJbIS1D0JXUYwJc9wZGiw
+! Checksum: qXaoyZ5W3ofAoWz+XLHcQA
