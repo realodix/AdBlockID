@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.294.1634
+! Version: 19.303.634
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 Oct 2019 16:34 UTC
+! Last modified: 30 Oct 2019 10:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -66,7 +66,6 @@
 /ads.jpg
 /adsfixed.
 /adsspace-
-/background-ads.
 /ban670x80.
 /ban670x80_
 /banner-atas1
@@ -260,6 +259,7 @@ _promosi.
 -700x87-
 -710x140.
 -717x1024.
+-726x90px-
 -728--x-90-
 -728-90-
 -728-x-80-
@@ -589,8 +589,12 @@ _996x50.gif
 ###ads_banner_left1
 ###adsbawah1
 ###adsground
+###adsic435
 ###adsimgxatas
 ###adsimgxatass
+###adsimgxbawah
+###adsimgxkanan
+###adsimgxkiri
 ###adskanan1
 ###adskiri1
 ###adskiri2
@@ -670,10 +674,12 @@ _996x50.gif
 ##.ad-bawah
 ##.ad-before
 ##.ad-float-image
-##.ad-image
-##.ad-image-small
 ##.ad1-desktop
 ##.ad1-wrapper
+##.ad2-desktop
+##.ad2-wrapper
+##.ad3-desktop
+##.ad3-wrapper
 ##.ad728-wrapper
 ##.ad_primex
 ##.adace-slot
@@ -745,6 +751,10 @@ _996x50.gif
 ##.adsbymgid
 ##.adsbyown
 ##.adsbyrunactive
+##.adsimgxatas
+##.adsimgxbawah
+##.adsimgxkanan
+##.adsimgxkiri
 ##.adskanan1
 ##.adskanan2
 ##.adskanan3
@@ -991,6 +1001,7 @@ _996x50.gif
 ##.kiwi-ad-sticky-wrapper
 ##.kiwiad-desktop-popup-300x600-overlay
 ##.kiwiad-popup-ad-container
+##.klan300
 ##.kotak_iklan
 ##.kotak_iklan2
 ##.kotak_iklan3
@@ -1013,7 +1024,6 @@ _996x50.gif
 ##.player-ads-top-1
 ##.post-ad3
 ##.post-ad4
-##.post-ads
 ##.post-ads-top
 ##.post-adv
 ##.posts-ad
@@ -1066,6 +1076,7 @@ _996x50.gif
 ! 
 ##[href*="//goraps.com/fullpage.php?"] > img
 ##[href*="bit.ly/ads"] > img
+##[href^="//mellowads.com/networkspace/"]
 ##[href^="https://publishers.propellerads.com/"] > img
 ##[href^="https://safelinku.com/ref/"] > img
 ##[href^="https://submit.shutterstock.com/?ref="] > img
@@ -1311,14 +1322,9 @@ _996x50.gif
 ##object[width="982"][height="150"]
 ##object[width="990"][height="206"]
 ! *** abid:src/adservers.adbl ***
-||088653e3c1c6.com^
-||0fb3eaa80d.com^
-||12c72b7d3ce.com^
 ||15257dddaccde96.com^
-||2013b42f102806.com^
 ||2go7v1nes8.com^
 ||65vk1fba34.com^
-||83e40c947d01f.com^
 ||86a6b542l7.com^
 ||accesstrade.co.id^$third-party
 ||addesigner.com^$third-party
@@ -1338,6 +1344,8 @@ _996x50.gif
 ||adxscope.com^$third-party
 ||aiwhebey.com^
 ||aseanbanner.tk^$third-party
+||ashaidbit.club^
+||ashamparm.site^
 ||badskies.com^$third-party
 ||bileth.pw^$third-party
 ||brand.ad^$third-party
@@ -1349,7 +1357,6 @@ _996x50.gif
 ||dable.io^$third-party
 ||dgafgadsgkjg.top^
 ||easyhits4u.com^$third-party
-||ece1c07fe0.com^
 ||etoads.net^$third-party
 ||etreflased.info^
 ||fairnessels.com^$third-party
@@ -1371,12 +1378,13 @@ _996x50.gif
 ||jayaiklan.com^$third-party
 ||katurars.com^
 ||kelris.pw^
-||kelsaurt.com^$third-party
-||keqi7dh3df.com^$third-party
+||kelsaurt.com^
 ||kistutch.net^$third-party
 ||klikabadi.net^$third-party
 ||klikajadeh.com^$third-party
 ||lokeriklan.com^$third-party
+||loppjod.online^
+||magrie.pw^
 ||masteriklan.net^$third-party
 ||mesiniklan.andipublisher.com^$third-party
 ||mousheen.net^
@@ -1393,7 +1401,6 @@ _996x50.gif
 ||publish.web.id^$third-party
 ||pvclouds.com^
 ||reevaipi.com^$third-party
-||relandssymphoking.info^
 ||remotefilez.info^$third-party
 ||remtoaku.net^
 ||rereegny.net^
@@ -1402,8 +1409,9 @@ _996x50.gif
 ||shmokiads.com^$third-party
 ||sitti.co.id^$third-party
 ||taiphaib.net^$third-party
+||terrapsps.com^$third-party
 ||toads.id^$third-party
-||tqeobp89axcn.com^
+||toftokiy.net^
 ||usairguw.com^
 ||wachipho.net^
 ||wapoawoo.net^
@@ -1470,43 +1478,40 @@ _996x50.gif
 ! Telkom Indihome
 ! https://github.com/sentabi/telkom/blob/master/internet-positif.md
 ||118.97.116.10^$third-party
-||118.97.116.27^$third-party
-||118.97.116.28^$third-party
-||118.97.116.2^$third-party
-||13.228.245.212^$third-party
-||202.69.110.78^$third-party
-||36.66.1.10^$third-party
-||36.66.1.2^$third-party
-||36.86.63.180^$third-party
-||36.86.63.181^$third-party
-||36.86.63.182^$third-party
-||36.86.63.184^$third-party
-||36.86.63.185^$third-party
-||36.86.63.186^$third-party
 ||a01.uadexchange.com^$third-party
 ||a03.uadexchange.com^$third-party
-||cdn.uzone.id^$third-party
+||block.uzone.id^$third-party
+||cdn.uzone.id^$third-party^$third-party
 ||cdn1.uzone.id^$third-party
 ||cdn2.uzone.id^$third-party
 ||cdn3.uzone.id^$third-party
 ||cdn4.uzone.id^$third-party
 ||cdn5.uzone.id^$third-party
-||cfs.uzone.id^$third-party
-||cfs1.uzone.id^$third-party
-||csf.uzone.id^$third-party
+||cfs.uzone.id^$third-party^$third-party
+||csf.uzone.id^$third-party^$third-party
 ||d01.notifa.info^$third-party
-||d31qbv1cthcecs.cloudfront.net^$third-party,domain=~kaskus.co.id
-||d5nxst8fruw4z.cloudfront.net^$third-party,domain=~bukalapak.com
+||das.uadexchange.com^$third-party
+||digiads.co.id^$third-party
+||digilife.uzone.id^$third-party
 ||expose.uzone.id^$third-party
+||food.uzone.id^$third-party
+||internetpositif.uzone.id^$third-party
+||js.digiads.co.id^$third-party
 ||kendedes.uzone.id^$third-party
 ||mercusuar.uzone.id^$third-party
+||news.uzone.id^$third-party
 ||p01.notifa.info^$third-party
 ||p02.notifa.info^$third-party
 ||p03.notifa.info^$third-party
 ||p05.notifa.info^$third-party
+||terbaru.uzone.id^$third-party
+||terpopuler.uzone.id^$third-party
+||uadexchange.com^$third-party
 ||upoint.id^$third-party
 ||usearch.co.id^$third-party
 ||welcome.indihome.co.id^$third-party
+! ||d31qbv1cthcecs.cloudfront.net^$third-party,domain=~advertisingfresh.com|~kaskus.co.id
+! ||d5nxst8fruw4z.cloudfront.net^$third-party,domain=~bukalapak.com
 ! *** abid:src/thirdparty.adbl ***
 ||amazonaws.com^*/banner/$third-party,domain=bogornews.com
 ||bucket.id^*/*.gif$domain=idfl.me
@@ -1516,8 +1521,10 @@ _996x50.gif
 ||livechatinc.com/cloud/?*.gif$image,domain=idfl.me
 ||wp.com/affiliate.$domain=kompaswisata.com
 ! 
+||128.199.102.136^$third-party
 ||365wp.org^$third-party
 ||advertnative.com^$third-party
+||anon.wapsite.info^$third-party
 ||ardetamedia.com/images/affiliate/$third-party
 ||ardetamedia.com/images/banner-affiliate/$third-party
 ||binpartner.com^$third-party
@@ -1573,11 +1580,11 @@ _996x50.gif
 -300x300.$image,domain=rekblogging.com
 -ads-$image,domain=inikpop.com
 -banner-$image,domain=tumeskecil.com
--banner.$image,domain=jurnalotaku.com|plaza-bisnis.com
+-banner.$image,domain=jurnalotaku.com|plaza-bisnis.com|toffeedev.com
 -banner/$image,domain=acmobilindonesia.com
 .gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|horassumutnews.com|hotabis.com|kombatch.com|komiku.net|mangashiro.net|neumanga.tv|selebuzz.co.id|smallencode.com
 /*banner*.$image,domain=anangcozz.com|backpackstory.me|desainstudio.com|ilmukita.org|jejamo.com|mariodevan.com|zonabola.id
-/banner-$image,domain=jagokata.com
+/banner-$image,domain=jagokata.com|toffeedev.com
 /whatsapp-image-$image,domain=infodigimarket.com|inspirasipagi.id
 ||ads-server.hipwee.com^
 ||alumni-atwsolo.com/images/banner/$image
@@ -1861,7 +1868,6 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ! ###########################
 ! POPUP
 ! 
-/wp-content/plugins/popup-builder/*
 ||abourselfi.com^$popup
 ||cdnasiaclub.com^$popup
 ||downloadgot.com^$popup
@@ -1873,8 +1879,20 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 ||motosal.net^$popup
 ||plaza-bisnis.com^$first-party,popup
 ||ridingintractable.com^$popup
+! 
+||4exlkjnngs.com^$popup
+||57e3ascxh1.com^$popup
+||bnsjb1ab1e.com^$popup
+||c02o3mpych.com^$popup
+||h3lw971ym6.com^$popup
+||llahnch259.com^$popup
+||vkaofq64zz.com^$popup
 ||yr9n47004g.com^$popup
 ! *** abid:src/addons/dewasa.adbl ***
+||139.99.33.240^$third-party
+||139.99.33.244^$third-party
+||139.99.33.248^$third-party
+||139.99.33.249^$third-party
 ||166.62.7.206^$third-party
 ||188affiliates.com^$third-party
 ||agenjudionline.in^$third-party
@@ -1910,11 +1928,13 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 -rgocasino-$image
 -rgocasino.$image
 -sbcc.gif$image
+-simontok.$image
 -wpbet365.$image
 /*1001bet*.$image
 /*11bola*.$image
 /*233bet*.$image
 /*234bet*.$image
+/*333betting*.$image
 /*365qiuqiu*.$image
 /*69qiuqiu*.$image
 /*7mmbet*.$image
@@ -1955,6 +1975,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*agenwin*.$image
 /*agungqq*.$image
 /*ahliqq*.$image
+/*aktifqq*.$image
 /*aladincash*.$image
 /*alexisqq*.$image
 /*amanqq*.$image
@@ -2020,6 +2041,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*bisa88*.$image
 /*bisabet*.$image
 /*bobcbet*.$image
+/*bokep-update*.$image
 /*bola-228*.$image
 /*bola-tangkas*.$image
 /*bola168*.$image
@@ -2118,6 +2140,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*hatipoker*.$image
 /*hdpbet*.$image
 /*hebatqq*.$image
+/*hepiqq*.$image
 /*hobicasino*.$image
 /*hok1_365*.$image
 /*hokinusa*.$image
@@ -2366,6 +2389,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*pialaqq*.$image
 /*pk99banner*.$image
 /*pkstar8*.$image
+/*pokehwd*$image
 /*poker-vivo*.$image
 /*poker228*.$image
 /*pokerclick88*.$image
@@ -2449,6 +2473,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*serbaqq*.$image
 /*sevebola*.$image
 /*sevenbola*.$image
+/*sifutempek*.$image
 /*simpatiq*.$image
 /*simpatiqq*.$image
 /*sindikatku*.$image
@@ -2462,6 +2487,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*sq881*.$image
 /*stardomino*.$image
 /*suhu-qq*.$image
+/*suhubola*.$image
 /*suhuq*.$image
 /*sukapokeronline*.$image
 /*sundul88*.$image
@@ -2513,6 +2539,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*wahana88*.$image
 /*wahyupoker*.$image
 /*wargapoker*.$image
+/*warisqq*.$image
 /*warnaqq*.$image
 /*warungqiuqiu*.$image
 /*warungqq*.$image
@@ -2537,6 +2564,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /Agen-Bola-dan-Live-Game.$image
 /Agen-Game-Slots-Terpercaya.$image
 /Asean99-
+/adsimontok/*
 /apibet.gif|
 /b2indo.gif$image
 /betsaja-$image
@@ -2553,6 +2581,8 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /jual_obat_aborsi_
 /kartu-online.gif$image
 /kd777.gif$image
+/mamibit-$image
+/master88-$image
 /megabet-$image
 /misiqq-$image
 /newafa.gif$image
@@ -2565,6 +2595,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /otto4d.gif$image
 /pendekarqq-$image
 /pkutama2-$image
+/poker24s-$image
 /pokerstar8-$image
 /pokerstar8.jpg$image
 /pokevita-
@@ -2696,6 +2727,7 @@ _penggugur_kandungan_$image
 ||master88club.$popup
 ||masterbandar88.$popup
 ||masterpoker99.$popup
+||menangbesar.$popup
 ||menangqq.$popup
 ||menubola.$popup
 ||mgmcash88.$popup
@@ -2791,6 +2823,12 @@ _penggugur_kandungan_$image
 ##[href*="139.180.219.33"] > img
 ##[href*="139.59.96.74"] > img
 ##[href*="139.99.21.218"] > img
+##[href*="139.99.33.240"] > img
+##[href*="139.99.33.243"] > img
+##[href*="139.99.33.244"] > img
+##[href*="139.99.33.245"] > img
+##[href*="139.99.33.248"] > img
+##[href*="139.99.33.249"] > img
 ##[href*="139.99.4.120"] > img
 ##[href*="139.99.55.217"] > img
 ##[href*="142.44.144.187"] > img
@@ -2810,6 +2848,7 @@ _penggugur_kandungan_$image
 ##[href*="1x2018."] > img
 ##[href*="1xliga."] > img
 ##[href*="1xme."] > img
+##[href*="202.95.10.126"] > img
 ##[href*="202.95.10.141"] > img
 ##[href*="206.189.121.4"] > img
 ##[href*="206.189.175.126"] > img
@@ -2819,7 +2858,9 @@ _penggugur_kandungan_$image
 ##[href*="28bet."] > img
 ##[href*="31.220.54.222"] > img
 ##[href*="323win."] > img
+##[href*="333betting."] > img
 ##[href*="337poker."] > img
+##[href*="35.200.169.1"] > img
 ##[href*="365dewa."] > img
 ##[href*="365hoki."] > img
 ##[href*="365indoqiu."] > img
@@ -2860,6 +2901,7 @@ _penggugur_kandungan_$image
 ##[href*="8mpoker."] > img
 ##[href*="8togel."] > img
 ##[href*="93.188.162.66"] > img
+##[href*="93.188.163.21"] > img
 ##[href*="9411532."] > img
 ##[href*="96.30.29.47"] > img
 ##[href*="988bet."] > img
@@ -2934,6 +2976,7 @@ _penggugur_kandungan_$image
 ##[href*="agwcash."] > img
 ##[href*="ahliqq."] > img
 ##[href*="ajobola."] > img
+##[href*="aktifqq."] > img
 ##[href*="aktorqq."] > img
 ##[href*="aladincash"] > img
 ##[href*="aladinpoker."] > img
@@ -3112,6 +3155,7 @@ _penggugur_kandungan_$image
 ##[href*="blue5star."] > img
 ##[href*="bnipoker."] > img
 ##[href*="bobcbet"] > img
+##[href*="bokep-barat."] > img
 ##[href*="bola-228"] > img
 ##[href*="bola-tangkas"] > img
 ##[href*="bola168"] > img
@@ -3402,6 +3446,7 @@ _penggugur_kandungan_$image
 ##[href*="hdpvip."] > img
 ##[href*="hebatqq."] > img
 ##[href*="hebohqq"] > img
+##[href*="hepiqq."] > img
 ##[href*="hgpoker4."] > img
 ##[href*="hjtowin."] > img
 ##[href*="hm21."] > img
@@ -3569,6 +3614,7 @@ _penggugur_kandungan_$image
 ##[href*="jalanalternatif."] > img
 ##[href*="jaluralternatif."] > img
 ##[href*="jamhoki."] > img
+##[href*="jandamanja."] > img
 ##[href*="japsex."] > img
 ##[href*="jarumpk."] > img
 ##[href*="jarumpoker."] > img
@@ -4056,6 +4102,7 @@ _penggugur_kandungan_$image
 ##[href*="poker1"] > img
 ##[href*="poker158."] > img
 ##[href*="poker228"] > img
+##[href*="poker24s"] > img
 ##[href*="poker357."] > img
 ##[href*="poker5star"] > img
 ##[href*="poker8"] > img
@@ -4141,6 +4188,7 @@ _penggugur_kandungan_$image
 ##[href*="qq8788"] > img
 ##[href*="qq8821"] > img
 ##[href*="qq96ace."] > img
+##[href*="qq998a."] > img
 ##[href*="qqasia99"] > img
 ##[href*="qqasli."] > img
 ##[href*="qqboya."] > img
@@ -4297,6 +4345,8 @@ _penggugur_kandungan_$image
 ##[href*="shiokambing"] > img
 ##[href*="shiokuda."] > img
 ##[href*="siapbet."] > img
+##[href*="sifujudi."] > img
+##[href*="sifutempek."] > img
 ##[href*="simpatiqq"] > img
 ##[href*="sinar365."] > img
 ##[href*="sinarkiukiu."] > img
@@ -4453,6 +4503,7 @@ _penggugur_kandungan_$image
 ##[href*="unikpoker."] > img
 ##[href*="universal-qq"] > img
 ##[href*="unogoal88."] > img
+##[href*="untungvip."] > img
 ##[href*="updatetogel."] > img
 ##[href*="usahatoto."] > img
 ##[href*="utamabet"] > img
@@ -4505,6 +4556,7 @@ _penggugur_kandungan_$image
 ##[href*="waletjp."] > img
 ##[href*="waltpoker."] > img
 ##[href*="warga-poker"] > img
+##[href*="warisqq."] > img
 ##[href*="warnetbokep."] > img
 ##[href*="warung365."] > img
 ##[href*="warungqiu"] > img
@@ -4598,6 +4650,7 @@ _penggugur_kandungan_$image
 ##img[alt*="Bandar Bakong"]
 ##img[alt*="Bandar Bola"]
 ##img[alt*="Bandar Togel"]
+##img[alt*="Bandar303"]
 ##img[alt*="BandarQ"]
 ##img[alt*="Bola Tangkas Online"]
 ##img[alt*="CapsaQQ"]
@@ -4651,6 +4704,7 @@ _penggugur_kandungan_$image
 ##img[alt*="novapoker"]
 ##img[alt*="pesonaqq"]
 ##img[alt*="poker online"]
+##img[alt*="qqpuma"]
 ##img[alt*="situs poker"]
 ##img[alt*="taruhan bola online"]
 ##img[alt*="togel online"]
@@ -4695,13 +4749,13 @@ _penggugur_kandungan_$image
 ##img[title*="situs togel"]
 ##img[title*="wigobet"]
 ! *** abid:src/addons/movie.adbl ***
-.gif$image,domain=animeku.tv|dramakorea.web.id|dramaserial.tv|korenlovers.com|movie303.com|nanime.in|nontondrama.me
+.gif$image,domain=animeku.tv|animenonton.tv|dramakorea.web.id|dramaserial.tv|korenlovers.com|nanime.in|nontondrama.me
 bioskop45.*,bioskopbos.*,kawanfilm21.*,lk21.*##[href*="/bit.ly/"] > img
 nontonanimeindo.net##a[href*="//goo.gl/"] > img
 ||blogspot.com/*.gif$image,domain=lk21id.com|netnot21.com
 ||cloudinary.com^*/image/*.gif$image,domain=kebioskop21.fun
 ||ibb.co/*.gif$image,domain=kazefuri.web.id
-||livechatinc.com/*/open_chat.cgi$domain=movie303.com|nonton-streaming.com|serunonton.com|zonamoviex.com
+||livechatinc.com/*/open_chat.cgi$domain=nonton-streaming.com|serunonton.com|zonamoviex.com
 ! 
 /rmp-blockadblock.js$domain=mivo.com
 |http:$popup,third-party,domain=serunonton.com
@@ -4726,12 +4780,12 @@ sukamovie.*##.sukam-bawah
 ||cdn.indexmovie.site/*.gif$image
 ||cinemaxx1.*/wp-content/uploads/*.gif$image
 ||duniafilm21.*/wp-content/uploads/*.gif$image
+||grandxxi.*/img/banner/$image
 ||gudangmovies21.*.gif$image
 ||idxxi.*.gif$image
 ||img.akubebas.com/images/*.gif$image
 ||img.teman.stream/*.gif$image
 ||indexmovie.biz/assets/*.gif$image
-||indexmovie.biz/iframe/content.php$first-party,subdocument
 ||juraganfilm.*.gif$image
 ||jwplayer21.com/images/*.gif$image
 ||kebioskop21.*/*.gif$image
@@ -4747,15 +4801,16 @@ sukamovie.*##.sukam-bawah
 ||nontonindoxx1.*/*.gif$image
 ||nt1.co/*.gif$image
 ||serunonton.*/wp-content/uploads*.gif$image
-||subindo.id/iclan/$image
+! 
+||bebasdownloadfilm.com/iframe/content.php$subdocument
+||indexmovie.biz/iframe/content.php$subdocument
 ! 
 @@/indoxxi-logo-
 @@||anibatch.me^$generichide
 @@||animeku.tv^$generichide
+@@||animenonton.tv^$generichide
 @@||anoboy.org^$generichide
-@@||bk21.net^$generichide
 @@||daizurin.com^$generichide
-@@||indexmovie.club^$generichide
 @@||kazefuri.me^$generichide
 @@||kazefuri.web.id^$generichide
 @@||mivo.com^$generichide
@@ -5352,6 +5407,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||aatfnptblbxpuy.bid^
 ||aaxtuhit.com^
 ||aayaknbn.com^
+||aayeljzpuu.com^
 ||aazwugtom.com^
 ||abaujsqnndg.bid^
 ||abbahoxgss.com^
@@ -5386,6 +5442,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||adakgpoi.com^
 ||addgfxnb.com^
 ||adeyujimmmh.com^
+||adezrvjcbyu.com^
 ||adfoitjumerzge.com^
 ||adfpkxvaqeyj.com^
 ||adfreetv.ch/js/jquery.js
@@ -5452,6 +5509,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||afnrmofoljod.com^
 ||afpisdddjik.bid^
 ||afqvtomlqjioeo.com^
+||afrfndbumyyt.com^
 ||afruetdxrbxz.com^
 ||afxtcajgtzcugb.com^
 ||afyqzjxzuupmz.bid^
@@ -5612,6 +5670,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||anqnimezkdjm.com^
 ||anvagsqctxsaz.bid^
 ||anvskelwpvvmtg.bid^
+||anvtnqpbkjyk.com^
 ||anybest.host
 ||anybest.pw
 ||anybest.site
@@ -5661,6 +5720,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||aqdrzqsuxxvd.com^
 ||aqeukceruxzd.com^
 ||aqfpqzxzk.com^
+||aqftikmr.com^
 ||aqjdigkqvmakz.com^
 ||aqkujuggztyn.bid^
 ||aqocbcnfxkuw.com^
@@ -5695,6 +5755,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||asdtwttky.com^
 ||aseabnyw.com^
 ||asecxggulyrf.com^
+||asenytuhlhwrwz.com^
 ||aservices.party^
 ||ashwlrtiazee.com^
 ||asiinbyu.com^
@@ -5847,6 +5908,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||baywttgdhe.download^
 ||bbackcssmwam.com^
 ||bbbrhcxtdkfui.bid^
+||bbckaxifryxcno.com^
 ||bbfasycx.com^
 ||bbheuxcancwj.com^
 ||bbillwowlfur.com^
@@ -6089,6 +6151,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||bnjhbghjznq.com^
 ||bnjrtdsafo.com^
 ||bnjuhrbpdjtjul.com^
+||bnlqhnqnqveo.com^
 ||bnnsgqjofzar.com^
 ||bnpmudgktroz.com^
 ||bnqaljyjkpwmiu.bid^
@@ -6165,6 +6228,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||bsepyppitmkkf.com^
 ||bsjhbxtrbvkr.com^
 ||bskijhtct.com^
+||bskwrsjudrp.com^
 ||bslgmaxqild.bid^
 ||bslqjxmltuel.bid^
 ||bsmryjou.com^
@@ -6229,6 +6293,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||bwbbcdkkocx.bid^
 ||bwcpnpkkncszi.com^
 ||bweqokcd.bid^
+||bwjteztqdlg.com^
 ||bwlstzzqxpuxr.bid^
 ||bwnrgfhbd.bid^
 ||bwoefrhtycp.com^
@@ -6284,6 +6349,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||bzqqaoeufrld.com^
 ||bzrsybcg.com^
 ||bzsbtfiz.com^
+||bzspzpdrqjopj.com^
 ||bzsukdfbotd.com^
 ||bzvimexwdle.com^
 ||bzyrhqbdldds.com^
@@ -6294,6 +6360,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||cadulscdfhtcb.bid^
 ||cafvzpusl.com^
 ||cahepysgenpb.com^
+||caljqsml.com^
 ||camrfajedgku.com^
 ||candid.zone^$third-party
 ||capquqhuiazl.com^
@@ -6400,6 +6467,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||cgdvsvczduzq.bid^
 ||cgjbizumzm.com^
 ||cgjyesqhxzzm.com^
+||cgkeasqkzfpepr.com^
 ||cgkpwhkgjxo.com^
 ||cglcdshkqiuic.com^
 ||cglpmszvpzzxj.com^
@@ -6511,6 +6579,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||cmdjujqlfbts.com^
 ||cmdnzbuynnm.com^
 ||cmdotgwjhpqf.com^
+||cmhomlaipa.com^
 ||cmhwwdwfiyx.com^
 ||cmjjzwddw.com^
 ||cmncgeqivmjki.com^
@@ -6589,10 +6658,12 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||cpufan.club^$third-party
 ||cpxjivpayggg.com^
 ||cpynfeqyqfby.com^
+||cpzxmrne.com^
 ||cqaiylftp.com^
 ||cqbabfsyfqse.com^
 ||cqbphspgvhuk.com^
 ||cqcebzspxptwfl.bid^
+||cqflplcldh.com^
 ||cqhxrlnhzlda.com^
 ||cqieqaxlphdi.com^
 ||cqindhgqi.com^
@@ -6723,6 +6794,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||cwyvnvukvkxqv.com^
 ||cwznlbsep.bid^
 ||cxhfzipv.com^
+||cxhtodgorrq.com^
 ||cxkllhjrrpjp.bid^
 ||cxmakekcesubep.com^
 ||cxqevkkfhdqu.bid^
@@ -6737,6 +6809,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||cyfzthaduxhb.com^
 ||cygngisr.com^
 ||cyhcpeprgy.com^
+||cyjybkrmzstpid.com^
 ||cymeeoolym.com^
 ||cyqbtxpgarmc.com^
 ||cyrirvvrn.com^
@@ -6825,6 +6898,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||dclmmbjyshy.com^
 ||dcmatjqifoim.com^
 ||dcmhpbpdcsy.com^
+||dcoxxsbn.com^
 ||dcqhbqwlcukxu.com^
 ||dcqyyaprodclf.bid^
 ||dcxitlzzmyxbwn.com^
@@ -6878,10 +6952,12 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||dfmedtntwcepqx.com^
 ||dfnnhwiyxjajhq.com^
 ||dfomexjuokpuxi.com^
+||dfpejgtwrgawen.com^
 ||dfrcdywe.com^
 ||dfrekewe.com^
 ||dfujqyjifvoe.com^
 ||dfxemnxrsal.bid^
+||dfyudpyceqoy.com^
 ||dgbhmpumhxy.bid^
 ||dgcxsmiavpg.bid^
 ||dgeggjwyhkrr.com^
@@ -6952,6 +7028,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||djqercix.com^
 ||djrkauxla.bid^
 ||djtclldgsocbv.bid^
+||djtfkakbufpwot.com^
 ||djuxmbjauluis.com^
 ||djvpsxtkdmga.com^
 ||djwdefnov.com^
@@ -6964,6 +7041,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||dkjgyysfincxps.bid^
 ||dklvewbgjksyy.com^
 ||dkmdklhu.com^
+||dkorusxgputkrb.com^
 ||dkroonzvxvansw.com^
 ||dksvmumbi.com^
 ||dktaqipmquo.com^
@@ -7082,6 +7160,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||dronml.ml^$third-party
 ||droqnswhcfk.com^
 ||drpmtzjanjqjpj.com^
+||drqlvjwhg.com^
 ||drragqvk.bid^
 ||drsemkuhpg.com^
 ||drtqfejznjnl.com^
@@ -7156,6 +7235,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||dvtwezyzog.com^
 ||dvzyppnmfgtr.com^
 ||dwabissw.com^
+||dwaceiiywjwcyf.com^
 ||dwbqmlvjpvv.com^
 ||dwgfwxiecp.com^
 ||dwhvkier.com^
@@ -7215,6 +7295,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||dzwagxju.bid^
 ||dzyqqwixizp.com^
 ||dzzawlkmtvug.com^
+||dzznyesmwj.com^
 ||dzztjcbt.com^
 ||eaaqsama.com^
 ||eabgoszdtq.com^
@@ -7251,6 +7332,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ebuurwhnjdvtau.com^
 ||ecboxijnmh.com^
 ||eccsyytbe.bid^
+||ecezkkrm.com^
 ||ecflhhxp.bid^
 ||ectbduztanog.com^
 ||ectxnsxezdg.com^
@@ -7359,6 +7441,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ejgdixiddmruql.com^
 ||ejgxyfzciwyi.com^
 ||ejjgrmutgrdwxg.com^
+||ejkeshrzwoe.com^
 ||ejkoolhhepojeu.com^
 ||ejktviknfv.com^
 ||ejlsbfqqxoc.com^
@@ -7406,6 +7489,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||emfprumou.bid^
 ||emirdzzvhviv.com^
 ||emoknbcnwamv.bid^
+||emqeafoztotu.com^
 ||emrcrjcxjdsccz.bid^
 ||emrflqumwcz.bid^
 ||emrumkgmdmdq.com^
@@ -7441,6 +7525,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||eoepqqkg.com^
 ||eofaplocyrcxhq.com^
 ||eojrldtucqsf.com^
+||eopazyxdkppnz.com^
 ||eoqsbpvdxllxo.com^
 ||eoruxpqn.com^
 ||eotbkgjqu.com^
@@ -7448,6 +7533,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||eozegbfpvhasf.com^
 ||epbathcyav.com^
 ||epernepojkle.com^
+||epexcjdkzcl.com^
 ||epgokiocquxf.com^
 ||ephtwbxuqy.com^
 ||eplocjhuxsoj.com^
@@ -7470,6 +7556,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||eqfnhtthkog.com^
 ||eqhawyidkdug.com^
 ||eqkccjinroye.bid^
+||eqnqxfrxsmuy.com^
 ||eqonwbgcqi.bid^
 ||eqqhbzmaf.bid^
 ||eqqhiwfjcfx.bid^
@@ -7547,6 +7634,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||eunysqxppf.bid^
 ||eupwogkcjczz.com^
 ||eurifsiooyof.bid^
+||eusmhdvvddcr.com^
 ||eutdrjvsrmav.com^
 ||eutklhuazxlt.com^
 ||eutsbhvtao.com^
@@ -7669,6 +7757,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||fbtfhgydrovyxs.com^
 ||fbvvuwtejcvdza.com^
 ||fbwswktiaxmldz.com^
+||fbxnqsviqujxv.com^
 ||fbzfudipxwtu.bid^
 ||fcafnvgdokqfo.com^
 ||fcbykurluasdeu.com^
@@ -7711,6 +7800,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||fejbkpidkkwts.com^
 ||fembsflungod.com^
 ||fengrtnoxuwwe.com^
+||feozcthyfbdc.com^
 ||fepzygektdt.com^
 ||feqlklwaafgc.com^
 ||feqyuubaixe.bid^
@@ -7765,6 +7855,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||fhsohqtif.com^
 ||fhsxhewkajqwgf.bid^
 ||fhtlyoqzyjjof.com^
+||fhtoxxda.com^
 ||fhxmqthpjswm.bid^
 ||fhylnqzxwsbo.com^
 ||fhzgapsfnlsvx.bid^
@@ -7809,6 +7900,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||fkianrxjfumm.com^
 ||fkivuntlyd.bid^
 ||fkkjsdpppv.bid^
+||fkloazpi.com^
 ||fkpbbmgqa.bid^
 ||fkphqtgqrfixl.com^
 ||fkrgfktdvta.com^
@@ -8037,6 +8129,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||fvenxjtzuaxu.com^
 ||fveugxikrgrbsh.com^
 ||fvffhcyxc.com^
+||fvflgigyryacgp.com^
 ||fvgfcotnmj.com^
 ||fvhxlrcd.com^
 ||fvipinzac.com^
@@ -8571,6 +8664,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||gzxjfkhwvhwfzr.com^
 ||gzyddiyiyme.bid^
 ||gzzctcekf.com^
+||habdhuhuzi.com^
 ||hadczwhwfvhcc.com^
 ||haezawhdumz.bid^
 ||hafksvqiir.com^
@@ -8649,6 +8743,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||hdxfyoziizy.com^
 ||heaaizwhm.com^
 ||heawnqbmsi.bid^
+||heeevykjhujfy.com^
 ||heefwozhlxgz.com^
 ||hefgfqcyfmv.com^
 ||hefgynqlzwi.com^
@@ -8770,6 +8865,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||hlsqjrgeuw.com^
 ||hlvvlouaeicp.com^
 ||hlvzvisiwbtuwv.com^
+||hlykwstrvxa.com^
 ||hmbgumjgey.com^
 ||hmcczsoimnjxzi.com^
 ||hmcjupvbxxyx.com^
@@ -8913,6 +9009,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||hsnvnmjriom.com^
 ||hsoyrqqsludd.com^
 ||hsqslxewsnga.com^
+||hsqujerwg.com^
 ||hsqvofrzwluvns.com^
 ||hstqqjxqwnrfhy.com^
 ||hsufwxpdtddlh.com^
@@ -9327,6 +9424,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||iqpfextjfphjnn.com^
 ||iqqbwhrf.com^
 ||iqsqqyoqry.com^
+||iqtygxmjgbakm.com^
 ||iqwbqjnst.bid^
 ||iqwczlbxvtcnh.com^
 ||iqwhwomdmjg.bid^
@@ -9617,6 +9715,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||jheduynirrxkro.com^
 ||jheplryxvzvx.com^
 ||jhewbownkjobl.bid^
+||jhhlhneavuo.com^
 ||jhijojlatyvri.com^
 ||jhmmbrfsqm.com^
 ||jhnteodwqtk.com^
@@ -9752,6 +9851,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||jogrgddvb.com^
 ||johonmtpyv.com^
 ||jollqxplkz.bid^
+||jomrhqkqvvxix.com^
 ||jomznuefrw.com^
 ||joqnoyniblzm.com^
 ||joqpatxugyug.com^
@@ -9958,6 +10058,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||jzbskhgpivyl.com^
 ||jzbutifk.com^
 ||jzckyzvlxetror.com^
+||jzcqmatkjfihv.com^
 ||jzeigwioirde.com^
 ||jzfzgkepkjcf.com^
 ||jzgskqccroqg.com^
@@ -9968,6 +10069,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||jzllgntkazui.com^
 ||jzlzdnvvktcf.com^
 ||jzohcwnovrk.com^
+||jzowfnqah.com^
 ||jzqemifphogo.com^
 ||jzqoddurnu.com^
 ||jzqvmpkppjlgc.com^
@@ -10022,6 +10124,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||kcetcukaolxc.com^
 ||kcgmgnejfp.bid^
 ||kcitwbcc.com^
+||kcnjwtaj.com^
 ||kcnyhfmowc.com^
 ||kcodndvh.com^
 ||kcpntbycuswz.com^
@@ -10126,6 +10229,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||kjizuuuvqbcd.com^
 ||kjkdagfnjm.bid^
 ||kjkwrmwdyhi.com^
+||kjlahwtvckpaci.com^
 ||kjltrjvjfran.com^
 ||kjlvutytm.com^
 ||kjmddlhlejeh.com^
@@ -10175,6 +10279,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||kmkdkefa.com^
 ||kmkweqtfjw.com^
 ||kmpcmafvqf.com^
+||kmpxgnnoom.com^
 ||kmqlirdx.bid^
 ||kmtyyvemtscac.com^
 ||kmuvzufk.com^
@@ -10242,6 +10347,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||kqvpjbau.com^
 ||kqyckxlnll.bid^
 ||kraruzatefci.com^
+||krboeyeq.com^
 ||krdvzahyr.com^
 ||krezqajxv.bid^
 ||krfbhbhal.com^
@@ -10272,6 +10378,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ksjjpsjymdekyr.bid^
 ||kslgvaexlw.com^
 ||ksloibpah.com^
+||ksnbdfzjlyqmxs.com^
 ||ksrcnyrntlyfo.com^
 ||ksufusxqd.com^
 ||ksukpuyqs.com^
@@ -10303,9 +10410,11 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||kuhlorflbeq.com^
 ||kujfhmyoeemqxb.bid^
 ||kujkgfzzyeol.com^
+||kujpycorr.com^
 ||kujwlsnl.com^
 ||kumekqeccmob.com^
 ||kumjidmumktzq.com^
+||kumpzfcczy.com^
 ||kumtwckyq.com^
 ||kunkmdvgwvfo.bid^
 ||kuplohinctdwk.com^
@@ -10329,6 +10438,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||kvflzevaaco.com^
 ||kvgtjwduvn.bid^
 ||kvhkfptcv.bid^
+||kvhnsbkhxhlgkv.com^
 ||kvhxckkd.com^
 ||kvikjeqepjrq.bid^
 ||kvirgytkit.com^
@@ -10353,6 +10463,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||kwcrryneebg.com^
 ||kweayxzfazrws.com^
 ||kwflzktzaxczm.com^
+||kwhgsdnkrusyw.com^
 ||kwiaofifmdqpif.com^
 ||kwjglwybtlhm.com^
 ||kwkxvbjz.com^
@@ -10603,6 +10714,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||lkohqfilvpked.com^
 ||lkojwhiwcsum.com^
 ||lkpwmhjfvpctw.com^
+||lkrojmvmxxqze.com^
 ||lkubjgrjslmgxo.com^
 ||lkuirehx.com^
 ||lkyuoybczr.com^
@@ -10643,6 +10755,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||lmlvzeeag.com^
 ||lmoqmsagyjcurg.bid^
 ||lmrlanov.com^
+||lmsdoihmsoifx.com^
 ||lmsycyfh.com^
 ||lmwdcdzievq.bid^
 ||lndvtedtayqy.com^
@@ -10660,6 +10773,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||lnvnzrqdajau.com^
 ||lnwbiuetoymifj.com^
 ||lnwqvhcqw.com^
+||lnyypjocad.com^
 ||loakfiiggz.bid^
 ||locjzfoh.com^
 ||lodqycbq.com^
@@ -10723,6 +10837,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||lqvckaciozvs.bid^
 ||lqvmjokehnlffq.bid^
 ||lqvuvkmohlktl.bid^
+||lqxoqvqljmfyt.com^
 ||lqydjvdrq.bid^
 ||lramhnoefoz.bid^
 ||lrbllelemsx.com^
@@ -10743,6 +10858,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||lryenoty.bid^
 ||lryfmcok.com^
 ||lsdgtifuqrwjax.com^
+||lseddehpo.com^
 ||lsegvhvzrpqc.com^
 ||lsghawrw.bid^
 ||lsgystgg.bid^
@@ -10769,6 +10885,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ltmdqbrxjaqn.bid^
 ||ltnfhltuksarpq.com^
 ||ltnjtphbbvigi.bid^
+||ltnkbvcm.com^
 ||ltsdzcgcystyak.bid^
 ||ltsnideak.bid^
 ||lttsvesujmry.com^
@@ -10917,6 +11034,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||mbjrejhbcaihz.com^
 ||mbmjqinvsil.com^
 ||mbmwfufkaxll.com^
+||mbpjpmcz.com^
 ||mbrxgolis.com^
 ||mbsivmsbuteaz.com^
 ||mbtalhkebpbpwb.com^
@@ -11133,6 +11251,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||mmojdtejhgeg.com^
 ||mmoxoatieyam.bid^
 ||mmpcqstnkcelx.com^
+||mmqidlebc.com^
 ||mmqsbtpmdrib.bid^
 ||mmsbbbki.com^
 ||mmsdewfvxhw.com^
@@ -11160,6 +11279,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||modkehkcihvzi.bid^
 ||mofrupteeuqnvc.bid^
 ||mofvrnbngcern.bid^
+||mofzedjmlhds.com^
 ||moginhstnxswt.com^
 ||mogqlceldpwbxe.com^
 ||mogrbrydixdvmc.bid^
@@ -11250,6 +11370,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||mswysfgnr.com^
 ||msxmfyhwgkos.com^
 ||mszfmpseoqbu.com^
+||mszoioqvm.com^
 ||mtbadedrhcx.bid^
 ||mtbgrgscjwcjc.com^
 ||mtbnqoixmb.com^
@@ -11272,9 +11393,12 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||mtveughs.com^
 ||mtyqtczr.bid^
 ||mtysahmkqqdo.com^
+||mtzddtrs.com^
+||mtzszlpypbxjm.com^
 ||muasoctv.com^
 ||mueyqvzw.com^
 ||muhexvakuawzo.com^
+||mujzsntbwzwc.com^
 ||mukxblrkoaaa.com^
 ||mumbldnn.com^
 ||munqaasewcla.bid^
@@ -11318,6 +11442,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||mwgairxva.bid^
 ||mwggummxeygq.com^
 ||mwgjoofxf.bid^
+||mwhjamwra.com^
 ||mwhtoxix.com^
 ||mwlucuvbyrff.com^
 ||mwnhdnkevthkz.com^
@@ -11331,6 +11456,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||mxadtjluuv.com^
 ||mxctsflkxs.com^
 ||mxltxnomp.bid^
+||mxphrvkcgvcpl.com^
 ||mxpzslze.com^
 ||mxqxkljb.bid^
 ||mxsuikhqaggf.com^
@@ -11419,6 +11545,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ncitwacpa.com^
 ||ncjjybttngffe.com^
 ||nclfwbnmcrci.com^
+||ncmcbufifgcu.com^
 ||ncoibhdzttozh.com^
 ||ncouqiwjjaot.com^
 ||ncqlobobtqc.com^
@@ -11693,8 +11820,10 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||nsqdwwwoxs.com^
 ||nsqitedrzv.bid^
 ||nstjenxcpvm.com^
+||nstlnjtrufu.com^
 ||nswnseld.com^
 ||ntbftkhrsrh.com^
+||ntdbjlngermplx.com^
 ||ntduattgboduk.com^
 ||ntejdhcom.bid^
 ||nterfvetypi.bid^
@@ -11702,6 +11831,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ntewqfsjum.bid^
 ||ntfhglciig.bid^
 ||ntgqcnferh.com^
+||ntgygnke.com^
 ||nthssedj.bid^
 ||nticqzrucdg.com^
 ||ntjcrsfvszoen.com^
@@ -11782,6 +11912,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||nychunlnlca.com^
 ||nycnjewyxex.com^
 ||nyfsjqxopdzvvm.bid^
+||nyibqkuhqdz.com^
 ||nyltsyud.com^
 ||nypmjsgpmhd.com^
 ||nyrszeos.bid^
@@ -11795,6 +11926,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||nyzobnpbcwjwfs.com^
 ||nzbbsxujqlhjn.com^
 ||nzbtvquutdr.com^
+||nzcjjhkd.com^
 ||nzcpdaboaayv.com^
 ||nzhuswwhd.com^
 ||nzkjbazl.com^
@@ -11948,6 +12080,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ohscoczrnhzd.com^
 ||ohszjtbehoo.com^
 ||ohwlwlus.com^
+||ohzczsyjadw.com^
 ||oiahzjhwpsokt.com^
 ||oicbwkyjsyxjgj.bid^
 ||oickwqmwerbnq.bid^
@@ -11970,6 +12103,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ojbevkqot.com^
 ||ojiffvsutzrx.com^
 ||ojjsoozoerpt.com^
+||ojktwzisvpb.com^
 ||ojmkcnuur.com^
 ||ojmokfvfi.com^
 ||ojngisbfwwyp.com^
@@ -12056,6 +12190,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ookdapjylpvq.com^
 ||ookiqhfioldxwj.com^
 ||oonenbygymsl.com^
+||oonnmaxhz.com^
 ||ooqgpbkpmq.bid^
 ||ooqjqnurblp.com^
 ||oosdjdhqayjm.com^
@@ -12140,6 +12275,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||oulxdvvpmfcd.com^
 ||ounaihekw.bid^
 ||ounyrilukncbj.com^
+||ouuktjcoh.com^
 ||ouvhowyqhacec.bid^
 ||ouvtjehb.bid^
 ||ouytveod.com^
@@ -12187,6 +12323,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||oyiqkjsjmmde.com^
 ||oyiqurfqulhuq.com^
 ||oylqnzunnw.com^
+||oymlttqg.com^
 ||oyndqimgof.com^
 ||oynmftlgufr.com^
 ||oyrgxjuvsedi.com^
@@ -12394,6 +12531,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||pkoyiqjjxhsy.com^
 ||pkqfuffahcdbm.com^
 ||pkrgwlwhhsie.com^
+||pkscjfqekfahb.com^
 ||pktgargbhjmo.com^
 ||pkucwwgcnuxzo.bid^
 ||pkvhprfhbtft.com^
@@ -12461,6 +12599,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||pnuymnyhbbuf.com^
 ||pnwhrmyit.com^
 ||pnzaduoelv.bid^
+||pnzamawzgw.com^
 ||pnzchguyctrsyb.com^
 ||poaxupoqbw.com^
 ||poazvacfzbed.com^
@@ -12687,6 +12826,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||qbldzsktv.com^
 ||qblpxxcjusgmq.bid^
 ||qblttqtvn.bid^
+||qbovhtdejygua.com^
 ||qbpamfcntbprjw.com^
 ||qbpawthj.com^
 ||qbpuavqlsu.com^
@@ -12774,6 +12914,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||qfrhhvbfofbt.com^
 ||qfsutura.com^
 ||qfubwupddefjw.com^
+||qfymuoqugz.com^
 ||qfypbqbumu.com^
 ||qfzhppwfkenbmv.bid^
 ||qgawivqfotfyrw.com^
@@ -12847,6 +12988,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||qjobvxqp.com^
 ||qjoqfapllsbtw.bid^
 ||qjpxalhvenbt.com^
+||qjrlcrkhnj.com^
 ||qjskosdsxanp.com^
 ||qjttowndvet.com^
 ||qjuzjpkihvya.com^
@@ -12909,6 +13051,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||qnssgaxxcpvwro.bid^
 ||qnugsbuo.com^
 ||qnvdwezdshagls.bid^
+||qnxqhrww.com^
 ||qnzelsgj.com^
 ||qnzztgwd.bid^
 ||qoapuppy.com^
@@ -13038,12 +13181,14 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||quyxxofx.com^
 ||qveoxhidesgy.bid^
 ||qveuxmbhbhmg.com^
+||qvfwckuehf.com^
 ||qvgjqhfnbdeur.com^
 ||qvilmdus.com^
 ||qvivzreleolawc.com^
 ||qvovzakydfvi.bid^
 ||qvqqvistxqvy.bid^
 ||qvrfxlskqr.com^
+||qvrpqwrp.com^
 ||qvsbroqoaggw.com^
 ||qvsogqqd.com^
 ||qvsshkcr.com^
@@ -13054,6 +13199,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||qwgafzaujn.bid^
 ||qwhkndqqxxbq.com^
 ||qwittqgogiip.com^
+||qwkiafssml.com^
 ||qwlckbrwxizg.com^
 ||qwqqliynxufj.com^
 ||qwrkigqtgygc.com^
@@ -13188,6 +13334,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||rdmccvanlx.bid^
 ||rdoovrzqazvpgv.com^
 ||rdooybwcuyg.com^
+||rdoudrenv.com^
 ||rdpqiqlirf.com^
 ||rdqyasdstllr.com^
 ||rdrkxlmlqpqns.com^
@@ -13195,6 +13342,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||rdvrxbxwxspxd.com^
 ||rdwcvesg.com^
 ||rdwfotuyp.bid^
+||rdwsjnifcemg.com^
 ||rdxwaydglehog.com^
 ||realnwspfbumn.com^
 ||reauthenticator.com^
@@ -13445,6 +13593,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||rtdogcdkovndho.com^
 ||rtgngrwtngms.com^
 ||rtgpaohds.com^
+||rtogkeafeedde.com^
 ||rtpibuckwnp.com^
 ||rtqlmwfywl.com^
 ||rttclyuvippyw.bid^
@@ -13504,6 +13653,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||rwugglxboxgw.com^
 ||rwxivmfldvo.com^
 ||rwxzeoqfj.com^
+||rxavnjqxvszrz.com^
 ||rxbbddhkl.com^
 ||rxczemggfsxx.com^
 ||rxeospfus.bid^
@@ -13697,6 +13847,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||shush.se/loader/load.js
 ||shuxcbgab.com^
 ||shvdvzydgryx.com^
+||shvjvbmyyyfa.com^
 ||shxbqzirzonks.bid^
 ||shyyyxjw.com^
 ||siaiscphvghttd.com^
@@ -13834,11 +13985,13 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||sqnezuqjdbhe.com^
 ||sqnkkpba.com^
 ||sqopuafrwvnouz.bid^
+||sqrmweiehtpwp.com^
 ||sqsdyfgyjdjbx.com^
 ||sqwyxzrajzsxpx.com^
 ||sqykpwpgqqt.com^
 ||sqyvhynwl.com^
 ||srbrdogg.bid^
+||srezrzsyqrikab.com^
 ||srfizvugkheq.com^
 ||srgszwexkpehb.com^
 ||srhovuokux.com^
@@ -13852,6 +14005,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||srtvohoivnrahq.bid^
 ||srxgnzdkjucr.com^
 ||ssallqcu.bid^
+||ssdiwjkarblih.com^
 ||ssdsylfzav.com^
 ||ssfpubkjjhftpy.com^
 ||sshvbkdyxprk.com^
@@ -13918,6 +14072,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||svdmxetbyfyg.com^
 ||svdnqszxgucgd.com^
 ||svdsutdq.com^
+||svevbvsjeicl.com^
 ||svfqoztfopv.com^
 ||svjloaomrher.com^
 ||svmtvfuok.com^
@@ -14003,6 +14158,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||tamrczjeedauh.com^
 ||taoclfxgf.com^
 ||taodggarfrmd.com^
+||taowjygwtm.com^
 ||tapffdskgjr.com^
 ||taqesyqne.com^
 ||taqyljgaqsaz.com^
@@ -14188,6 +14344,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||tkkfmqbisu.com^
 ||tkncbgwor.com^
 ||tkoatkkdwyky.com^
+||tkroqotredk.com^
 ||tksljtdqkqxh.com^
 ||tktyinaabq.com^
 ||tlagvdqrsarf.com^
@@ -14225,6 +14382,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||tmkcofbjv.com^
 ||tmmpbkwnzilv.com^
 ||tmmpiibtfi.com^
+||tmpnencifbe.com^
 ||tmrhtbbhrfbx.bid^
 ||tmrsjdxavhjgww.com^
 ||tmtuohxkv.com^
@@ -14328,6 +14486,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||tsupbmgacu.com^
 ||tsvlkxhdbc.com^
 ||tsvqrrmq.com^
+||tswxyvxm.com^
 ||tsybqlldfsstw.bid^
 ||ttdaxwrryiou.com^
 ||ttdrlihuqgklvc.com^
@@ -14549,6 +14708,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ufrzvzpympib.com^
 ||ufugfbtpp.com^
 ||ufvehyxuiwe.com^
+||ufvzwshjkhocjn.com^
 ||ugahbedypf.com^
 ||ugbmcjmpapeo.bid^
 ||ugfxrrqz.bid^
@@ -14564,6 +14724,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ugwkyqdbmpwbbi.com^
 ||ugxqfkslreop.bid^
 ||ugxshqnodoha.com^
+||ugyuyuccjgrtht.com^
 ||ugyymqcxyoi.bid^
 ||ugzpvflxa.com^
 ||uhavijwye.bid^
@@ -14658,6 +14819,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||umusjdiehxbn.com^
 ||umvgcqaxmie.com^
 ||umwsjnsvfzuo.com^
+||umxxuqpbhylyy.com^
 ||umybobusjo.com^
 ||umyiwkxzf.com^
 ||umzrccpfbnuu.com^
@@ -14684,6 +14846,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||uoyznzsggodnl.com^
 ||uozfvskaqrgm.com^
 ||upckrtagwpwk.com^
+||upijhkdcovdep.com^
 ||upikeoshfhw.com^
 ||upogbpseso.com^
 ||uppybbhxbblxa.com^
@@ -14738,6 +14901,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||uxzbsinjyld.com^
 ||uydeapvmmlvdp.com^
 ||uyeluxauiq.com^
+||uymjshdxxneu.com^
 ||uymxsbbh.com^
 ||uytabzmvei.com^
 ||uyxjnuqbti.com^
@@ -14773,6 +14937,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||vcfnspbgztl.com^
 ||vcfs6ip5h6.bid^$third-party
 ||vcjbxucwrprtu.com^
+||vctgwjsgivo.com^
 ||vcvapkiua.com^
 ||vcwrigdrnh.com^
 ||vcxoizuwy.com^
@@ -14851,12 +15016,14 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||vlyuopulvewg.com^
 ||vmftwflt.com^
 ||vmrsmnrvzh.com^
+||vmtjybwfb.com^
 ||vmtwnkpskok.com^
 ||vmvuptdijjwi.com^
 ||vmyvsltb.com^
 ||vmyzwzgggbcp.com^
 ||vndrcewnard.com^
 ||vngztuqon.com^
+||vnjeqfwmotkvbg.com^
 ||vnlqgiuul.com^
 ||vnrapyiaxxj.com^
 ||vntcxqxuqki.com^
@@ -14895,6 +15062,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||vtbyvtmabpclx.com^
 ||vtcxhnri.com^
 ||vtemaaftwexu.com^
+||vtgcvsmzxiyoz.com^
 ||vtgdjgtwl.com^
 ||vthhmbfo.com^
 ||vuaardbsbcppb.com^
@@ -14937,6 +15105,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||vyatdrilrtgeh.com^
 ||vygekimhrfto.com^
 ||vysgpewbyfbiob.com^
+||vzbbzzasjtn.com^
 ||vzkdyladanuudb.com^
 ||vzkyivowceqcsd.com^
 ||vzlyapss.com^
@@ -14962,6 +15131,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||wbxzrxarmzyx.com^
 ||wclurprkyk.com^
 ||wcobqyeqpckkzh.com^
+||wcwcypfnvih.com^
 ||wcwdjojsxbbl.com^
 ||wcwzzauws.com^
 ||wcyrjlszoo.com^
@@ -14984,6 +15154,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||wenpsnpqher.com^
 ||weoukcpr.com^
 ||wepyyttx.com^
+||wfcvhhmumb.com^
 ||wfcxcblmy.com^
 ||wffiuoyzo.com^
 ||wfjdmkjetpbgv.com^
@@ -14995,6 +15166,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||wgaycnmfz.com^
 ||wghmgbjpxmlxa.com^
 ||wglbucuhxxxj.com^
+||wgqirxevoh.com^
 ||whdzxabhqsdnlc.com^
 ||whgvyswets.com^
 ||whjibbprhng.com^
@@ -15034,6 +15206,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||wmrlljpj.com^
 ||wmtech.website^
 ||wmtyrdrpjbhnj.com^
+||wndwhzjmfshthv.com^
 ||wnmtmdlvqqscs.com^
 ||wntpgjzwg.com^
 ||wnuvhicameqiso.com^
@@ -15103,6 +15276,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||wyjdunwcqnetus.com^
 ||wykskkpplgfi.com^
 ||wymoviciyvj.com^
+||wyvyikcnalvil.com^
 ||wyycgfyum.com^
 ||wyyrjymqewhulr.com^
 ||wzdrtzvp.com^
@@ -15110,8 +15284,10 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||wzghuwvuyxknpv.com^
 ||wzhdjexsw.com^
 ||wzhmaehmunibp.com^
+||wziaqxvxmpfshx.com^
 ||wznupnxp.com^
 ||wzvlxncapmi.com^
+||wzwetfprojnyx.com^
 ||xafkdsxnwinmj.com^
 ||xahwybxa.com^
 ||xairgknb.com^
@@ -15121,6 +15297,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||xauhsixqkymkra.com^
 ||xawpdwil.com^
 ||xaxggjsa.com^
+||xbfuorhxpa.com^
 ||xbgoulaxoen.com^
 ||xbinjxvdnjqllh.com^
 ||xblcqncce.com^
@@ -15134,6 +15311,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||xclgusxcdjd.com^
 ||xcqgkkccjjucf.com^
 ||xctiblmetgwr.com^
+||xcttavcu.com^
 ||xcvibxsdchxh.com^
 ||xcvtpwxz.com^
 ||xcwmyyglayg.com^
@@ -15152,6 +15330,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||xedybxtqd.com^
 ||xeiwcnwmlv.com^
 ||xellvrgouivty.com^
+||xeqbdmuvjqt.com^
 ||xfasadle.com^
 ||xffljxbbpy.com^
 ||xfmjleuaqgnuvv.com^
@@ -15223,6 +15402,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||xrkfqpbubaq.com^
 ||xrlnnjsitjhnvb.com^
 ||xrluvlmyuxqjme.com^
+||xrsfwclojycu.com^
 ||xruuohzpxmmw.com^
 ||xrvyetdriwzp.com^
 ||xsgcobwd.com^
@@ -15256,6 +15436,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||xwcqrzkle.com^
 ||xwdlgzrnuyo.com^
 ||xwetmeeynns.com^
+||xwoexbipp.com^
 ||xwonghmweu.com^
 ||xwvofxgqilhy.com^
 ||xwxbiywlavgpm.com^
@@ -15326,6 +15507,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||yiqyefznxc.com^
 ||yjctwdeuz.com^
 ||yjdbnkgonfp.com^
+||yjoldnbcw.com^
 ||yjseeodbma.com^
 ||yjtdbdnhcu.com^
 ||yjwtxskmswcjc.com^
@@ -15345,6 +15527,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ymsutnllwwcm.com^
 ||ymwvkruyidppb.com^
 ||ymzrrizntbhde.com^
+||ynebbsldruvfb.com^
 ||ynhetcoypgnl.com^
 ||ynhonjqahrh.com^
 ||ynkakgknfljv.com^
@@ -15364,6 +15547,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ypictqesjuib.com^
 ||ypixrvxi.com^
 ||ypksjcnrsett.com^
+||ypmwkketrdbwn.com^
 ||ypnespepnln.com^
 ||yprnopqzs.com^
 ||yptwqjdgikmcqc.com^
@@ -15451,6 +15635,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||zasccycohek.com^
 ||zatrlsov.com^
 ||zavlamhx.com^
+||zaxdnhfdchet.com^
 ||zayhipbcxig.com^
 ||zbbqhdnef.com^
 ||zblbiqpv.com^
@@ -15493,6 +15678,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||zhihrotpyphycy.com^
 ||zhlfogiy.com^
 ||zhpdtoott.com^
+||zhqigwbchfnqn.com^
 ||zhrmtsxcdkjj.com^
 ||zhxdiirwhtico.com^
 ||ziebgbikz.com^
@@ -15572,6 +15758,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||zsikmzoehqw.com^
 ||zsrycovuxfgzyn.com^
 ||ztiqalyrbfsnl.com^
+||ztsletmncez.com^
 ||ztslmijniaoqip.com^
 ||ztstwgxjhkuwj.com^
 ||ztxohhagymj.com^
@@ -15591,6 +15778,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||zvswmofga.com^
 ||zweigciinmslan.com^
 ||zwfvzxmc.com^
+||zwigjtgnzfn.com^
 ||zwmauyerfotyh.com^
 ||zwpaujzg.com^
 ||zwprxzbnzxc.com^
@@ -15606,6 +15794,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||zxqudunt.com^
 ||zxwnolwaump.com^
 ||zyadwzlxllogm.com^
+||zydvsvwgqqyxb.com^
 ||zygrlkimddjzd.com^
 ||zyikzhgqzjyvgu.com^
 ||zymerget.bid
@@ -15625,15 +15814,17 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ! Scriptlets khusus untuk AdGuard
 ! https://github.com/AdguardTeam/Scriptlets
 ! 
-blogrp.me,ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
-ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
 drakorindofilms.net#%#//scriptlet("abort-on-property-read", "popup_custom_data.showMethod")
 hightech.web.id#%#//scriptlet("abort-current-inline-script", "document.getElementById", "adback")
 idfl.me#%#//scriptlet("prevent-window-open")
 inidramaku.com#%#//scriptlet("abort-on-property-read", "popup_custom_data.showMethod")
-kabarviral.blog#%#//scriptlet("noeval")
-kabarviral.blog,lewat.club#%#//scriptlet("window.open-defuser")
+lewat.club#%#//scriptlet("window.open-defuser")
 razorlink.us#%#//scriptlet("set-constant", "safelink.adblock", false)
+! 
+! Safelink & Shortlink
+blogrp.me,ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
+ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
+machineworlds.me#%#//scriptlet("abort-on-property-read", "open")
 ! *** abid:src/addons/scriptlet-ublock.adbl ***
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
@@ -15642,16 +15833,28 @@ tribunnews.com##+js(abort-current-inline-script, Math, ='\x)
 hightech.web.id##+js(abort-current-inline-script, document.getElementById, adback)
 kompas.com##+js(abort-current-inline-script, setTimeout, iframeTestTimeMS)
 kompas.com,tribunnews.com##+js(abort-on-property-read, $getWin)
-blogrp.me,ceklink.co##+js(abort-on-property-read, app_vars.force_disable_adblock)
 drakorindofilms.net,inidramaku.com##+js(abort-on-property-read, popup_custom_data.showMethod)
 kuyhaa-me.com##+js(abort-on-property-read, protected_links)
-ceklink.co##+js(abort-on-property-read, tampilkanUrl)
-kabarviral.blog##+js(noeval)
-razorlink.us##+js(set-constant, safelink.adblock, false)
 daizurin.com##+js(setTimeout-defuser, nextFunction, 250)
-filmbioskop21.cc,idfl.me,kabarviral.blog,lewat.club##+js(window.open-defuser)
+filmbioskop21.cc,idfl.me##+js(window.open-defuser)
+! 
+! Safelink & Shortlink
+blogrp.me,ceklink.co,machineworlds.me##+js(abort-on-property-read, app_vars.force_disable_adblock)
+machineworlds.me##+js(abort-on-property-read, open)
+ceklink.co##+js(abort-on-property-read, tampilkanUrl)
+razorlink.us##+js(set-constant, safelink.adblock, false)
+lewat.club##+js(window.open-defuser)
 ! ------------------------------------------------------------!
 ! *** abid:src/whitelist.adbl ***
+dutaislam.com#@##ads-wrapper
+adigunawan.id#@##adsense
+bagilagi.com,mangaid.id,otakuindo.net#@##banner_ad
+adigunawan.id#@##skyline_ad
+eramuslim.com#@##topAd
+bersamatekno.com,nabire.net,sosiali.com#@#.adsbygoogle
+aplikasipc.com#@#.afs_ads
+agroindustri.id,duwitmu.com#@#.category-advertorial
+! 
 @@.ad.json?$domain=otobalancing.net
 @@.gif#*/ad/
 @@.jpg#*/ad/
@@ -15687,6 +15890,7 @@ filmbioskop21.cc,idfl.me,kabarviral.blog,lewat.club##+js(window.open-defuser)
 @@||hightech.web.id^$generichide
 @@||hobybaca.com^$generichide
 @@||indoshares.com^$generichide
+@@||infokupedia.id^$generichide
 @@||inwepo.co^$generichide
 @@||juraganmumut.com^$generichide
 @@||kaze-batch.blogspot.com^$generichide
@@ -15695,6 +15899,7 @@ filmbioskop21.cc,idfl.me,kabarviral.blog,lewat.club##+js(window.open-defuser)
 @@||komikindo.web.id^$generichide
 @@||kurikulum.co.id^$generichide
 @@||majalahikan.com^$generichide
+@@||mangacanblog.com^$generichide
 @@||mangashiro.net^$generichide
 @@||nama.web.id^$generichide
 @@||neumanga.tv^$generichide
@@ -15712,39 +15917,32 @@ filmbioskop21.cc,idfl.me,kabarviral.blog,lewat.club##+js(window.open-defuser)
 @@||sanjayaops.com^$generichide
 @@||seniberpikir.com^$generichide
 @@||shirosafe.web.id^$generichide
-@@||sirozuki.com^$generichide
 @@||suryapero.com^$generichide
 @@||tikusliar.com^$generichide
 @@||tokusatsuindo.com^$generichide
 @@||tutorialweb.net^$generichide
 @@||wincamp.org^$generichide
-@@||zonexweb.com^$generichide
-adigunawan.id#@##adsense
-adigunawan.id#@##skyline_ad
-agroindustri.id#@#.category-advertorial
-aplikasipc.com#@#.afs_ads
-bagilagi.com#@##banner_ad
-bersamatekno.com#@#.adsbygoogle
-dutaislam.com#@##ads-wrapper
-duwitmu.com#@#.category-advertorial
-eramuslim.com#@##topAd
-nabire.net#@#.adsbygoogle
-otakuindo.net#@##banner_ad
-sosiali.com#@#.adsbygoogle
+@@||zaqe.xyz^$generichide
 ! 
 ! Safelink & Shortlink
 ! 
 safejobsbos.blogspot.com#@##adsense
 ad4msan.win,hexafile.net,wikiall.org,zonangopi.ml##.adsbygoogle
+machineworlds.me##.banner-inner
+machineworlds.me##.blog-item
+bagilagi.com##.klnsora
 ! 
+@@/advertisement.$script,domain=mangalist.org
 @@/fuckadblock.$script,domain=wikiall.org
 @@/fuckadblock.min.js$domain=giga74.com
 @@/js/ads.$script,domain=akuno.net|ceklink.co|indigitz.org|iovoproduction.info|lewat.club|link48.net|machineworlds.me|megaurl.in|mylinkblog.com|shln.pw|shrink.vip|templink.org|unyumerdeka.com|urlto.id|wegner.tech|wi.cr
 @@/js/ads2.$script,domain=tmearn.com
-@@/pagead2.$script,domain=animexin.jin-7.com|giga74.com|informations-library.blogspot.com|linkberuang.blogspot.com|ljutkeunvpn.blogspot.com
+@@/pagead2.$script,domain=animexin.jin-7.com|giga74.com|informations-library.blogspot.com|lewatisaja.com|linkberuang.blogspot.com|ljutkeunvpn.blogspot.com|sedot.link|teknorizen.blogspot.com
 @@||1idsly.com^$generichide
 @@||adsafelink.com^$generichide
 @@||adsafelink.net/webroot/js/ads.js$script,~third-party
+@@||autoride.pw^$generichide
+@@||bagilagi.com^$generichide
 @@||ceklink.co^$generichide
 @@||closetopic.site^$generichide
 @@||giga74.com^$generichide
@@ -15760,6 +15958,7 @@ ad4msan.win,hexafile.net,wikiall.org,zonangopi.ml##.adsbygoogle
 @@||kotanopan.com^$generichide
 @@||link.akuno.net^$generichide
 @@||ljutkeunvpn.blogspot.com^$generichide
+@@||mawataki.com^$generichide
 @@||megaurl.in^$generichide
 @@||merdekaid.online^$generichide
 @@||muhammadyoga.me^$generichide
@@ -15780,51 +15979,73 @@ ad4msan.win,hexafile.net,wikiall.org,zonangopi.ml##.adsbygoogle
 @@||wikiall.org^$generichide
 @@||zonangopi.ml^$generichide
 ! 
-! Memperbaiki kerusakan karena AdBlockID
-! 
 @@/ayopasangiklan.
 @@/belanja_iklan-
+@@/biaya-google-adwords-
 @@/cara-beriklan.
-@@/iklan/*$domain=1rajaiklan.com|duniaiklangratis.com|iklan123.net|iklanbogor.com|iklankotalemank.com|iklanpopuler.com|iklansmart.com|megaiklan.com|pasangiklanmurah.xyz|pusatiklan.co.id|sebariklanbaris.net|sebariklanmassalpremium.com|sentrapromosi.com|sewa-apartemen.net
+@@/contoh-iklan-
+@@/google-ads-logo.
+@@/istilah-google-
+@@/jasa-google-adwords.
+@@/pasang-google-
+! 
+! Situs Iklan
+! 
+riaume.com#@##iklan
+jualo.com#@#.ad-title
+baliadvertiser.biz#@#.ads-carousel
+sebariklanbaris.net#@#.content-ads
 ads-ina.org#@#[href*="/ads-"]
-iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 jualo.com#@#[href*="/iklan-"] > img
-jualo.com,kostjakarta.net#@#[href*="/iklan/"] > img
+jualo.com,kostjakarta.net,pusatpemasanganiklan.com#@#[href*="/iklan/"] > img
+iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
+! 
+@@-adwords.$image,domain=jasaiklanbandung.com
+@@-google-ads-$image,domain=oasisme.com
+@@/ads/*$domain=promozia.com
+@@/advertise-$domain=ubiklan.com
+@@/advertising-$domain=advertising-indonesia.id
+@@/bannerad.$image,domain=ad.co.id
+@@/bnrs/*$domain=duniaiklangratis.com|iklan123.net|iklanbogor.com|iklanpopuler.com|iklansmart.com|megaiklan.com|sebariklanbaris.net|sebariklanmassalpremium.com
+@@/iklan-sidebar.$image,domain=karyaiklan.co.id
+@@/iklan/*$domain=1rajaiklan.com|duniaiklangratis.com|iklan123.net|iklanbogor.com|iklankotalemank.com|iklanpopuler.com|iklansmart.com|megaiklan.com|pasangiklanmurah.xyz|pusatiklan.co.id|sebariklanbaris.net|sebariklanmassalpremium.com|sentrapromosi.com|sewa-apartemen.net
+@@/wp-content/uploads/*$image,domain=adstarsmedia.co.id|dhadigital.com
+@@://ads.$domain=ads.id|ads.iklandaerah.com
+@@||adsmart.detik.com^$generichide
+@@||agency-iklan.com/wp-content/uploads/$first-party
+@@||doxadigital.com/wp-content/uploads/$first-party,image
+@@||hipwee.com/advertise/$first-party
+@@||idkeyword.com/wp-content/uploads/$first-party
+@@||jualo.com/images/$first-party
+@@||tomato.co.id/wp-content/uploads/$first-party,image
+@@||winstarlink.com/wp-content/uploads/$first-party,image
 ! 
 ! Memperbaiki kerusakan karena EasyList dan uBlock filters
 ! 
-@@-adwords.$domain=bocdigital.id|idkeyword.com
 @@/ad4.png$image,domain=palingseru.com
-@@/ads/*$domain=phd.co.id|promozia.com
+@@/ads/*$domain=phd.co.id
 @@/adsense.$domain=herosoftmedia.co.id
 @@/advertise/*$domain=brilio.net
 @@/advertisement.$domain=advertisement.keepo.me
-@@/advertising-$domain=advertising-indonesia.id|reoncomics.com
+@@/advertising-$domain=reoncomics.com
 @@/advertising.$domain=advertising.katadata.co.id
 @@/advertising/*$domain=client.okezone.com
-@@/bg_advertise.
-@@/bnrs/*$domain=duniaiklangratis.com|iklan123.net|iklanbogor.com|iklanpopuler.com|iklansmart.com|megaiklan.com|sebariklanbaris.net|sebariklanmassalpremium.com|sebariklanonline.com
-@@/display-ads-$domain=idkeyword.com
-@@/google-ads-$domain=bocdigital.id
 @@/images/ads/*$domain=adsmart.detik.com
-@@/istilah-google-
-@@/pasang-google-
 @@/scripts/ads.$domain=ads.kaskus.co.id
+@@/videojs.ads.$domain=20.detik.com
 @@/wp-content/plugins/adsense-click-fraud-monitoring/*$~third-party
 @@/wp-content/themes/adsense-child/*$~third-party
 @@/wp-content/themes/classified-ads/*$~third-party
 @@/wp-content/themes/mts_ad_sense/*$~third-party
 @@/wp-content/themes/superads-$~third-party
-@@/wp-content/uploads/*$image,domain=adstarsmedia.co.id|dhadigital.com|jurnalweb.com
-@@://ads.$domain=ads.gadgetsquad.id|ads.genmuda.com|ads.hukumonline.com|ads.id|ads.iklandaerah.com|ads.kaskus.co.id|ads.kontan.co.id|ads.wartaekonomi.co.id
+@@/wp-content/uploads/*$image,domain=jurnalweb.com
+@@://ads.$domain=ads.gadgetsquad.id|ads.genmuda.com|ads.hukumonline.com|ads.kaskus.co.id|ads.kontan.co.id|ads.wartaekonomi.co.id
 @@_advertising/$domain=advertising.katadata.co.id
-@@||adsmart.detik.com^$generichide
-@@||hipwee.com/advertise/
-baliadvertiser.biz#@#.ads-carousel
-sebariklanbaris.net#@#.content-ads
+@@||resolusiweb.com/images/$first-party
+@@||resolusiweb.com/img/$first-party
 ! 
 ! Memperbaiki kerusakan karena EasyPrivacy
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: D/cOWe7+eWROneKedGijrA
+! Checksum: qXaoyZ5W3ofAoWz+XLHcQA
