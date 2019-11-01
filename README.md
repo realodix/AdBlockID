@@ -1,4 +1,4 @@
-![AdBlockID Version](https://img.shields.io/badge/Version-19.305.630-blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.305.722-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Nov 01, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Nov 01, 2019 UTC" />
 
@@ -41,7 +41,7 @@ Perkebangan iklan pada website di Indonesia begitu cepat, terutama website yang 
 ## Panduan Untuk Developer
 
 ### Persiapan
-Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt), Anda membutuhkan:
+Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
 * [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
 * [pip](https://pypi.org/project/pip/).
@@ -59,4 +59,4 @@ atau
 | File              | Deskripsi                                 |
 | ----------------- | ----------------------------------------- |
 | `build.sh`        | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
-| `validatehost.sh` | Periksa apakah host/domain sedang up atau down berdasarkan header yang dikembalikan dari curl. Hasilnya ada di `/tools/validatehost/downhost.log`. |
+| `validatehost.sh` | Periksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl. |
