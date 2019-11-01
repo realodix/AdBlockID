@@ -4,7 +4,7 @@
     (r2c) 2016 Idx
 
     Simply check host state is up or down based on returned header from curl
-    This app will parse and preload all host from: /output/adblockid.txt
+    This app will parse and preload all host from: /host.txt
     Make sure FOP.py has been generated for any changes in unit filters
 
     By knowing down host, should come in handy adjusting obsolete filter
@@ -12,7 +12,7 @@
     Usage:
       python validatehost.py -h
 
-      python validatehost.py -f output/adblockid.txt -t 9050
+      python validatehost.py -f host.txt -t 9050
 
       # run in background
       nohup python validatehost.py -t 9050 &
@@ -42,10 +42,10 @@ import os, sys, subprocess
 import re, datetime, time, argparse
 
 # host resources will be parsed from this file
-filename='host.txt'
+filename='tools/validatehost/host.txt'
 
 # down host will be writen to this file
-log_downhost='downhost.log'
+log_downhost='tools/validatehost/downhost.log'
 
 # list of exclude host being check
 exclusions = [
@@ -55,6 +55,19 @@ exclusions = [
   'rawgit.com',
   'raw.githubusercontent.com',
   'yourjavascript.com',
+  'general_block.adbl',
+  'general_hide.adbl',
+  'adservers.adbl',
+  'thirdparty.adbl',
+  'specific_block.adbl',
+  'specific_hide.adbl',
+  'addons/annoyances.adbl',
+  'addons/dewasa.adbl',
+  'addons/movie.adbl',
+  'addons/news.adbl',
+  'addons/scriptlet-adguard.adbl',
+  'addons/scriptlet-ublock.adbl',
+  'whitelist.adbl',
 ]
 
 log_fh = False
