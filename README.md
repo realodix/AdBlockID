@@ -59,5 +59,4 @@ atau
 | File              | Deskripsi                                 |
 | ----------------- | ----------------------------------------- |
 | `build.sh`        | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
-| `FOP.py`          | Mengurutkan  dan membersihkan filter. |
-| `validatehost.py` | Memeriksa host apakah masih aktif atau tidak. |
+| `validatehost.sh` | Periksa apakah host/domain sedang up atau down berdasarkan header yang dikembalikan dari curl. Hasilnya ada di `/tools/validatehost/downhost.log`. |
