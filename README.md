@@ -1,8 +1,12 @@
-![AdBlockID Version](https://img.shields.io/badge/Version-19.307.1258-blue.svg?longCache=true&style=flat-square)
-<img src="https://img.shields.io/badge/Updated-Nov 03, 2019 UTC-orange.svg?longCache=true&style=flat-square"
-    alt="Nov 03, 2019 UTC" />
+> <sup>Ingin jadi **contributor**? Jangan ragu untuk membuat issue / pull request!
+> <br>
+> Ingin jadi **[collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository#collaborator-access-on-a-repository-owned-by-a-user-account)**? Jangan ragu untuk beritahu Saya 😃</sup>
 
 # AdBlockID
+
+![AdBlockID Version](https://img.shields.io/badge/Version-19.307.1280-blue.svg?longCache=true&style=flat-square)
+<img src="https://img.shields.io/badge/Updated-Nov 03, 2019 UTC-orange.svg?longCache=true&style=flat-square"
+    alt="Nov 03, 2019 UTC" />
 
 Total rules: 16K+
 
