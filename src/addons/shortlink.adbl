@@ -35,6 +35,7 @@
 @@||megaurl.in^$generichide
 @@||merdekaid.online^$generichide
 @@||muhammadyoga.me^$generichide
+@@||netijenshare.com^$generichide
 @@||news-tech.xyz^$generichide
 @@||newsteez.com^$generichide
 @@||onkarir.com^$generichide
@@ -71,6 +72,7 @@ telolet.in##+js(abort-current-inline-script, addEventListener, DivTopAd)
 blogrp.me,ceklink.co,machineworlds.me,shrinkme.io##+js(abort-on-property-read, app_vars.force_disable_adblock)
 machineworlds.me,shrinkme.io##+js(abort-on-property-read, open)
 ceklink.co##+js(abort-on-property-read, tampilkanUrl)
+netijenshare.com##+js(abort-on-property-write.js, adBlockDetected)
 razorlink.us##+js(set-constant, safelink.adblock, false)
 lewat.club##+js(window.open-defuser)
 !
@@ -79,5 +81,6 @@ ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblo
 ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
 lewat.club#%#//scriptlet("window.open-defuser")
 machineworlds.me#%#//scriptlet("abort-on-property-read", "open")
+netijenshare.com#%#//scriptlet("abort-on-property-write", "adBlockDetected")
 shrinkme.io#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
 shrinkme.io#%#//scriptlet("abort-on-property-read", "open")
