@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.308.488
+! Version: 19.308.611
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Nov 2019 08:08 UTC
+! Last modified: 04 Nov 2019 10:11 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -251,7 +251,6 @@ _promosi.
 -65X440.
 -660x110pxl-
 -678x100-
--678x381.
 -680x60.
 -690-x-90-
 -690x90px
@@ -4946,6 +4945,9 @@ _banner.$image,domain=bantennews.co.id
 ||bengkuluekspress.com/wp-content/uploads/*-banner-$image
 ||bengkuluekspress.com/wp-content/uploads/*_banner_$image
 ||bengkuluekspress.com^*/banner-$image
+||bengkuluinteraktif.com^*/promo/$image
+||bengkulutoday.com^*/banner/$image
+||bengkulutoday.com^*/banner_$image
 ||bengkuluvoice.com^*/benner-$image
 ||beritabali.com^*/banner/$image
 ||beritabojonegoro.com/upload/banner/$image
@@ -4988,6 +4990,7 @@ _banner.$image,domain=bantennews.co.id
 ||harianmemokepri.com^*/banner-$image
 ||harianrakyatbengkulu.com/wp-content/uploads/*/*120x600.$image
 ||harianrakyatbengkulu.com^*-banner-$image
+||harianrakyatbengkulu.com^*/banner-$image
 ||harianrakyatbengkulu.com^*/banner_$image
 ||harianrakyatbengkulu.com^*/iklan-$image
 ||hotabis.com/wp-content/uploads/*.gif$image
@@ -5166,7 +5169,7 @@ detik.com##.adv
 bengkuluekspress.com##.adv-wrapper
 krjogja.com##.advertisement
 aliansirakyatnews.com##.baner
-medcom.id,mitratoday.com,radarsultra.co.id##.banner
+bengkulunews.co.id,medcom.id,mitratoday.com,radarsultra.co.id##.banner
 beritagar.id##.banner--300x600
 kontan.co.id##.banner-adv-1
 riaukarya.com##.banner-content
@@ -5339,6 +5342,8 @@ sultengterkini.com##img[width="3661"][height="5551"]
 protapriau.com##img[width="369"][height="960"]
 koransultra.com##img[width="391"][height="500"]
 koransultra.com##img[width="394"][height="500"]
+garudadaily.com##img[width="400"][height="525"]
+garudadaily.com##img[width="400"][height="533"]
 garudadaily.com##img[width="400"][height="559"]
 bantennews.co.id##img[width="400"][height="600"]
 garudadaily.com##img[width="400"][height="775"]
@@ -5485,6 +5490,7 @@ suarasumselnews.co.id#@#.category-advertorial
 @@||megaurl.in^$generichide
 @@||merdekaid.online^$generichide
 @@||muhammadyoga.me^$generichide
+@@||netijenshare.com^$generichide
 @@||news-tech.xyz^$generichide
 @@||newsteez.com^$generichide
 @@||onkarir.com^$generichide
@@ -5520,7 +5526,9 @@ safejobsbos.blogspot.com#@##adsense
 telolet.in##+js(abort-current-inline-script, addEventListener, DivTopAd)
 blogrp.me,ceklink.co,machineworlds.me,shrinkme.io##+js(abort-on-property-read, app_vars.force_disable_adblock)
 machineworlds.me,shrinkme.io##+js(abort-on-property-read, open)
+shrtfly.net##+js(abort-on-property-read, tabUnder)
 ceklink.co##+js(abort-on-property-read, tampilkanUrl)
+netijenshare.com##+js(abort-on-property-write.js, adBlockDetected)
 razorlink.us##+js(set-constant, safelink.adblock, false)
 lewat.club##+js(window.open-defuser)
 ! 
@@ -5529,8 +5537,10 @@ ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblo
 ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
 lewat.club#%#//scriptlet("window.open-defuser")
 machineworlds.me#%#//scriptlet("abort-on-property-read", "open")
+netijenshare.com#%#//scriptlet("abort-on-property-write", "adBlockDetected")
 shrinkme.io#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
 shrinkme.io#%#//scriptlet("abort-on-property-read", "open")
+shrtfly.net#%#//scriptlet("abort-on-property-read", "tabUnder")
 ! *** abid:thirdparties-filter.txt ***
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ahoypirate.click|ahoypirate.in|ahoypiratebaai.eu|airproxyproxy.pw|airproxytpb.red|alivbay.org|batpirate.info|bay.maik.rocks|bayception.pw|baypirate.click|baypiratebay.be|baypirateproxy.org|baypirateproxy.pw|bayproxy.eu|bypassed.st|capjackproxy.net|cruzing.xyz|ddmix.net|depiratenbaai.nl|duckingproxy.eu|extratorrent.cd|extratorrent.si|gofile.io|hq-porns.com|hyperproxy.net|ikwildepiratebay.org|ikwildepiratebay.xyzbrowse|indiaproxy.in|indiaproxydl.orgbrowse|intactoffers.club|kickass.cd|magnetbay.eu|myfeed4u.net|noobnoob.rocks|pietpiraat.org|pirat2.club|pirataibay.in|piratbaypirate.link|pirate.bet|pirate.blue|pirate.trade|pirateahoy.net|piratebaai.click|piratebaai.club|piratebay.click|piratebay.red|piratebay.telbrowse|piratebay.town|piratebay.website|piratebay247.net|piratebayblocked.com|piratebaymirror.eu|piratebayproxy.tf|piratebays.be|piratebays.co|piratenbucht.eu|piratepirate.eu|pirateprox.club|pirateproxy.click|pirateproxy.ist|pirateproxy.mx|pirateproxy.tf|pirateproxy.wf|pirateproxy.yt|piratetoday.click|proxybayduck.fi|proxydl.cf|proxyfl.info|proxyindia.net|proxyme.site|proxyme.win|proxyoneahoy.net|proxypirate.in|proxypirate.website|proxyproxyproxy.nl|proxyship.click|proxytpb.org|proxytpb.pw|reservedoffers.club|rowpirate.org|skyback.ru|superbay.link|szukajka.tv|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepirate.click|thepirate.xyz|thepiratebay-proxy.com|thepiratebay.bet|thepiratebay.blue|thepiratebay.cr|thepiratebay.futbol|thepiratebay.kiwi|thepiratebay.org|thepiratebay.pet|thepiratebay.pictures|thepiratebay.red|thepiratebay.rocks|thepiratebay.se.net|thepiratebay.tel|thepiratebay.wtf|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tpb.crushus.com|tpb.one|tpb.tw|tpbairproxy.in|tpbbay.eu|tpbduck.com|tpbmirror.us|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbportal.in|tpbproxy.club|tpbproxy.win|tpbproxyone.org|tpbrun.win|tpproxy.website|ukpirate.click|ukpirate.org|ukpirateproxy.xyz|unblockedhyperbay.info|unblocktheship.org|unblocktpb.com|urbanproxy.eu|vidoza.co|vidoza.net|vidup.me|vidup.tv|wearepirates.click|zombay.org
@@ -8000,6 +8010,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ezemyudhkzvx.com^
 ||ezfncojpnrmj.com^
 ||ezgswchaz.com^
+||ezhdgoeat.com^
 ||ezhinpwh.com^
 ||ezhkfxskimqnqk.com^
 ||ezjepifcz.com^
@@ -9561,6 +9572,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ihgkmgwfhjam.com^
 ||ihgwekwwxbuxy.com^
 ||ihmevshz.bid^
+||ihpekyhfanmljo.com^
 ||ihqmycsct.bid^
 ||ihqxhokndcfq.com^
 ||ihriduffgkel.com^
@@ -16320,4 +16332,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: 4Dh79HwOazi9zaO4psmOcg
+! Checksum: 4qSc3pb3+ah+T3gC7V99+w
