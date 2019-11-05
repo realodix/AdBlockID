@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.308.826
+! Version: 19.309.413
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Nov 2019 13:46 UTC
+! Last modified: 05 Nov 2019 06:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1219,7 +1219,6 @@ _996x50.gif
 ##iframe[width="240"][height="400"]
 ##iframe[width="300"][height="250"]
 ##iframe[width="468"][height="60"]
-##iframe[width="600"][height="100"]
 ##iframe[width="600"][height="90"]
 ##iframe[width="728"][height="90"]
 ##iframe[width="780"][height="120"]
@@ -4864,6 +4863,7 @@ nontonanimeindo.net##a[href*="//goo.gl/"] > img
 ||ibb.co/*.gif$image,domain=kazefuri.web.id
 ||livechatinc.com/*/open_chat.cgi$domain=nonton-streaming.com|serunonton.com|zonamoviex.com
 ! 
+/popup.$script,domain=drakorindo.cc
 /rmp-blockadblock.js$domain=mivo.com
 |http:$popup,third-party,domain=serunonton.com
 ! 
@@ -4873,7 +4873,6 @@ manganime.id##.ads720
 mivo.com##.home-banner-big-ads
 drakorindofilms.net,inidramaku.com,korenlovers.co,oujanime.com##.iklan
 mivo.com##.top-ads
-/popup.$script,domain=drakorindo.cc
 kazefuri.web.id##[class^="SC_TBlock_"]
 kantaii.web.id##[href*="/ref/bangago"]
 mivo.com##div[class^="player-ads-"] { visibility: hidden!important; }
@@ -5596,6 +5595,7 @@ safejobsbos.blogspot.com#@##adsense
 ! 
 ! SCRIPTLET
 ! 
+ironimesafelink.my.id##+js(abort-current-inline-script, Math, zfgloaded)
 telolet.in##+js(abort-current-inline-script, addEventListener, DivTopAd)
 blogrp.me,ceklink.co,machineworlds.me,shrinkme.io##+js(abort-on-property-read, app_vars.force_disable_adblock)
 machineworlds.me,shrinkme.io##+js(abort-on-property-read, open)
@@ -5605,6 +5605,7 @@ netijenshare.com##+js(abort-on-property-write.js, adBlockDetected)
 razorlink.us##+js(set-constant, safelink.adblock, false)
 lewat.club##+js(window.open-defuser)
 ! 
+ironimesafelink.my.id##+js("abort-current-inline-script", "Math", "zfgloaded")
 blogrp.me#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
 ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
 ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
@@ -5951,6 +5952,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||akoeurmzrqjg.com^
 ||akovcxrklaq.bid^
 ||akrzgxzjynpi.com^
+||akuettddwkwtdx.com^
 ||akviqfqbwqqj.com^
 ||akvtmvoolwlm.bid^
 ||akwajlcoap.com^
@@ -6191,6 +6193,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||awvuhwqyimgd.com^
 ||awxjpkxoqfwaj.bid^
 ||awzdbycpiwncrp.com^
+||axadaldlozmqu.com^
 ||axaggthnkquj.com^
 ||axbouiklwghehw.com^
 ||axbpixbcucv.bid^
@@ -7636,6 +7639,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||dyhwaacbbntu.com^
 ||dyjifezeyagm.com^
 ||dyjkbkpzxgpjfs.com^
+||dyllkretnnzuhm.com^
 ||dylsjsmqjbbcs.com^
 ||dymaffzxk.com^
 ||dymzcxgdvf.com^
@@ -7716,6 +7720,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||edoolqkrnmmnj.com^
 ||edplsrtjpxamr.bid^
 ||edpnkcsrp.bid^
+||edsnnfqazn.com^
 ||edudktabmq.bid^
 ||edvbyybaviln.com^
 ||edwywpsufuda.com^
@@ -7759,6 +7764,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||efotdwuui.bid^
 ||efsjxinbtzirs.bid^
 ||efukznkfmrck.com^
+||efxjqdymvzqqkt.com^
 ||efzhzqtyomldfj.com^
 ||egcocjwpzqsa.com^
 ||egcsbdrj.com^
@@ -7896,6 +7902,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||eofaplocyrcxhq.com^
 ||eojrldtucqsf.com^
 ||eopazyxdkppnz.com^
+||eoqgguubvksu.com^
 ||eoqsbpvdxllxo.com^
 ||eoruxpqn.com^
 ||eotbkgjqu.com^
@@ -8351,6 +8358,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||formulawire.com^$third-party
 ||fosclhrsdhhn.com^
 ||foswrohqoadp.com^
+||foxlaytg.com^
 ||fpbmjwoebzby.com^
 ||fpcptdqmjlnlu.com^
 ||fpdsavexteno.com^
@@ -9101,6 +9109,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||hcyqwhquqjosn.com^
 ||hcyxksgsxnzb.com^
 ||hdcfyrzx.com^
+||hdcqfqnn.com^
 ||hddgigiwip.bid^
 ||hddzzizitskc.com^
 ||hdeiyrdw.bid^
@@ -11362,6 +11371,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||lxymfyptdrast.com^
 ||lxzwknybfvycxr.com^
 ||lybmmxah.com^
+||lycnjtuomkpgca.com^
 ||lydgyhthfb.com^
 ||lyeannqhhf.bid^
 ||lyghoxyxohkrdk.com^
@@ -13387,6 +13397,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||qjmkidiwbndolx.com^
 ||qjmrqglqxlodj.bid^
 ||qjobvxqp.com^
+||qjokrqhidpki.com^
 ||qjoqfapllsbtw.bid^
 ||qjpxalhvenbt.com^
 ||qjrlcrkhnj.com^
@@ -15065,6 +15076,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||ubwzawpqlsk.com^
 ||ubwzlpjxgnlgl.bid^
 ||ubxtoqsqusyx.com^
+||ubxxnfcatv.com^
 ||uccmprpzju.com^
 ||ucczuwzqfrqqgu.bid^
 ||uceqxvjwnxksdq.bid^
@@ -16099,6 +16111,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||zgzczklewpt.com^
 ||zhihrotpyphycy.com^
 ||zhlfogiy.com^
+||zhovjymmkg.com^
 ||zhpdtoott.com^
 ||zhqigwbchfnqn.com^
 ||zhrmtsxcdkjj.com^
@@ -16407,4 +16420,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: tNN2eWzdQC76WS2phybaCQ
+! Checksum: nlGnnRhybTSNuVSYQghDcg
