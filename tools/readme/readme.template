@@ -64,3 +64,16 @@ atau
 | ----------------- | ----------------------------------------- |
 | `build.sh`        | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
 | `validatehost.sh` | Periksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl. |
+
+#### Format Pesan Commit
+
+Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk membuat pesan. Untuk contoh penggunaannya, Anda dapat melihat [history commit](https://github.com/realodix/AdBlockID/commits).
+
+| Optional Scope | Deskripsi |
+| -------------- | --------- |
+| `A`     | Semua jenis iklan, termasuk banner, pop-up, ad server, dll. |
+| `AA`    | Anti-Adblock. |
+| `P`     | Problem. |
+| `M`     | Maintain filter. |
+| `docs`  | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada filter (`/src`) dan file mentah readme (`/tools/readme/readme.template`). |
+| `tools` | Semua pengeditan pada folder `/tools`, tidak termasuk file mentah readme (`/tools/readme/readme.template`). |
