@@ -4,7 +4,7 @@
 
 # AdBlockID
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.311.485-blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.311.569-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Nov 07, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Nov 07, 2019 UTC" />
 
@@ -29,22 +29,22 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
    `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`
 
-#### Tutorial spesifik cara memasang AdBlockID:
-   - [uBlock Origin & Nano Adblocker](/doc/uBlock.md)
-   - [AdGuard](/doc/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
-   - [Adblock Plus](/doc/Adblock-Plus.md)
-   - [AdBlock](/doc/Adblock-Plus.md#cara-memasang-adblockid-pada-adblock)
-   - [Opera Ad Blocker](/doc/Opera-AdBlocker.md)
-   - [Adaware ad block](/doc/adaware-ad-block.md)
+**Tutorial spesifik cara memasang AdBlockID:**
+   - [uBlock Origin & Nano Adblocker](/docs/uBlock.md)
+   - [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
+   - [Adblock Plus](/docs/Adblock-Plus.md)
+   - [AdBlock](/docs/Adblock-Plus.md#cara-memasang-adblockid-pada-adblock)
+   - [Opera Ad Blocker](/docs/Opera-AdBlocker.md)
+   - [Adaware ad block](/docs/adaware-ad-block.md)
 
 
 ## Berkontribusi
 Perkebangan iklan pada website di Indonesia begitu cepat, terutama website yang memajang iklan berkonten dewasa. Jika Anda menemukan website yang belum terblokir iklannya oleh AdBlockID, jangan ragu untuk membuat [issue di sini](https://github.com/realodix/AdBlockID/issues) :D
 
 
-## Panduan Untuk Developer
+### Panduan Untuk Developer
 
-### Persiapan
+#### Persiapan
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
 * [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
@@ -58,9 +58,22 @@ atau
 
 `$ pip install -t tools tools/python-abp`
 
-### Tools pendukung
+#### Tools pendukung
 
 | File              | Deskripsi                                 |
 | ----------------- | ----------------------------------------- |
 | `build.sh`        | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
 | `validatehost.sh` | Periksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl. |
+
+#### Format Pesan Commit
+
+Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk membuat pesan. Untuk contoh penggunaannya, Anda dapat melihat [history commit](https://github.com/realodix/AdBlockID/commits).
+
+| Optional Scope | Deskripsi |
+| -------------- | --------- |
+| `A`     | Semua jenis iklan, termasuk banner, pop-up, ad server, dll. |
+| `AA`    | Anti-Adblock. |
+| `P`     | Problem. |
+| `M`     | Maintain filter. |
+| `docs`  | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada filter (`/src`) dan file mentah readme (`/tools/readme/readme.template`). |
+| `tools` | Semua pengeditan pada folder `/tools`, tidak termasuk file mentah readme (`/tools/readme/readme.template`). |
