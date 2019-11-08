@@ -4,9 +4,9 @@
 
 # AdBlockID
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.311.1173-blue.svg?longCache=true&style=flat-square)
-<img src="https://img.shields.io/badge/Updated-Nov 07, 2019 UTC-orange.svg?longCache=true&style=flat-square"
-    alt="Nov 07, 2019 UTC" />
+![AdBlockID Version](https://img.shields.io/badge/Version-19.312.337-blue.svg?longCache=true&style=flat-square)
+<img src="https://img.shields.io/badge/Updated-Nov 08, 2019 UTC-orange.svg?longCache=true&style=flat-square"
+    alt="Nov 08, 2019 UTC" />
 
 Total rules: 17K+
 
