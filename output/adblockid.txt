@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.313.596
+! Version: 19.313.653
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Nov 2019 09:56 UTC
+! Last modified: 09 Nov 2019 10:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1673,7 +1673,7 @@ _996x50.gif
 ||niagahoster.co.id/banners/$image,third-party
 ||noblemagnition.com^$third-party
 ||onclickbright.com^$third-party
-||safelinku.com/fullpage/script.js$script,thirdparty
+||safelinku.com/fullpage/script.js$script,third-party
 ||speedlinkdown.com^$third-party
 ||sukipli.com/*.gif^$third-party
 ||targaubs.com^$third-party
@@ -3862,7 +3862,7 @@ _penggugur_kandungan_$image
 ##[href*="lagakartuqiu."] > img
 ##[href*="lagasakong."] > img
 ##[href*="lagihoki."] > img
-##[href*="lahan-portune.gif$image
+##[href*="lahan-portune."] > img
 ##[href*="lahanbet"] > img
 ##[href*="lahanpoker."] > img
 ##[href*="lajupoker."] > img
@@ -4875,12 +4875,10 @@ nontonanimeindo.net##a[href*="//goo.gl/"] > img
 nonton.com##.adds
 manganime.id##.ads720
 103.194.171.75##.bnner
-mivo.com##.home-banner-big-ads
+mivo.com##.home-page .player-ads-top-1
 drakorindofilms.net,inidramaku.com,korenlovers.co,oujanime.com##.iklan
-mivo.com##.top-ads
 kazefuri.web.id##[class^="SC_TBlock_"]
 kantaii.web.id##[href*="/ref/bangago"]
-mivo.com##div[class^="player-ads-"] { visibility: hidden!important; }
 dunia21.*###overlay-pop
 indoxxi.*##.popUpBannerBox
 lk21c.*##[href*="/rebrand.ly/"]
@@ -5255,6 +5253,7 @@ annews.co.id##img[width="1280"][height="699"]
 digtara.com##img[width="1280"][height="767"]
 annews.co.id##img[width="1280"][height="776"]
 akurasinews.com##img[width="1280"][height="800"]
+rakyatmaluku.com##img[width="1280"][height="959"]
 sasambonews.com##img[width="1344"][height="1600"]
 beritamerdekaonline.com##img[width="1400"][height="850"]
 inilahsultra.com##img[width="1600"][height="1066"]
@@ -5366,6 +5365,7 @@ sidoarjopos.net##img[width="640"][height="214"]
 annews.co.id##img[width="640"][height="320"]
 jabarekspres.com##img[width="640"][height="534"]
 koranmemo.com##img[width="640"][height="905"]
+malutnews.com##img[width="640"][height="960"]
 annews.co.id##img[width="648"][height="1188"]
 protapriau.com##img[width="650"][height="100"]
 kabarjawatimur.com##img[width="653"][height="308"]
@@ -5391,6 +5391,7 @@ jurnalisindonesia.id##img[width="700"][height="350"]
 koransultra.com##img[width="700"][height="395"]
 koransultra.com##img[width="700"][height="429"]
 annews.co.id##img[width="700"][height="689"]
+rakyatmaluku.com##img[width="700"][height="755"]
 suarabantennews.com##img[width="702"][height="697"]
 halopantura.com##img[width="712"][height="1118"]
 annews.co.id##img[width="714"][height="364"]
@@ -16435,4 +16436,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: /hVbOCpIh9L3ZOdE3QKs+A
+! Checksum: aZvPnmyaTyTml+6H65l2fg
