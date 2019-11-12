@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.316.224
+! Version: 19.316.250
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Nov 2019 03:44 UTC
+! Last modified: 12 Nov 2019 04:10 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -118,6 +118,7 @@
 /iklan6-
 /iklan6.
 /iklan6_
+/iklan_banner_
 /iklancpm.
 /iklanjpecmotor.
 /iklanmpdigital.
@@ -4953,6 +4954,7 @@ kazefuri.web.id##[href*="//bit.ly/"] > img
 ! *** abid:src/addons/news.adbl ***
 -500x500.$image,domain=kabarpapua.co
 -adv-$image,domain=suroboyo.id
+-banner-$image,domain=indoaviation.asia
 -banner.$image,domain=cidahu.com|inilahonline.com|sumaterapost.co|today.id
 -iklan-$image,domain=haluankepri.com|protapriau.com|beritabalionline.com
 /720x90-$image,domain=suaralampung.com
@@ -5193,7 +5195,7 @@ harianjogja.com##.size-300x250
 detik.com##.skybanner
 cnnindonesia.com##.smartbanner_new
 harianjogja.com##.sp-griya
-batampos.co.id,blockchainmedia.id,derapfakta.com,hariannusa.com,hotabis.com,jurnalsumbar.com,liputanbengkulu.com,metropadang.com,padangtime.com,pwmu.co,sidoarjopos.net,sumbartime.com,tangerangekspres.co.id,teraslampung.com,teropongmetro.com,tobasatu.com,waspadaaceh.com##.td-a-rec
+batampos.co.id,blockchainmedia.id,derapfakta.com,hariannusa.com,hotabis.com,jurnalsumbar.com,koransultra.com,liputanbengkulu.com,metropadang.com,padangtime.com,pwmu.co,sidoarjopos.net,sumbartime.com,tangerangekspres.co.id,teraslampung.com,teropongmetro.com,tobasatu.com,waspadaaceh.com##.td-a-rec
 jambiline.com##.td-a-rec-id-sidebar
 harapanrakyat.com##.td-banner-wrap-full
 pedomanbengkulu.com##.td-header-rec-wrap
@@ -5331,6 +5333,7 @@ kupastuntas.co##img[width="328"][height="186"]
 radarbanten.co.id##img[width="332"][height="404"]
 pewarta.co##img[width="336"][height="167"]
 pewarta.co##img[width="336"][height="400"]
+bisnissulawesi.com##img[width="350"][height="450"]
 bantennews.co.id##img[width="350"][height="500"]
 sultengterkini.com##img[width="3661"][height="5551"]
 protapriau.com##img[width="369"][height="960"]
@@ -16476,7 +16479,7 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 @@/wp-content/themes/mts_ad_sense/*$~third-party
 @@/wp-content/themes/superads-$~third-party
 @@/wp-content/uploads/*$image,domain=jurnalweb.com
-@@://ads.$domain=ads.gadgetsquad.id|ads.genmuda.com|ads.hukumonline.com|ads.kaskus.co.id|ads.kontan.co.id|ads.wartaekonomi.co.id
+@@://ads.$domain=ads.bisnisjakarta.co.id|ads.gadgetsquad.id|ads.genmuda.com|ads.hukumonline.com|ads.kaskus.co.id|ads.kontan.co.id|ads.wartaekonomi.co.id
 @@_advertising/$domain=advertising.katadata.co.id
 @@||resolusiweb.com/images/$first-party
 @@||resolusiweb.com/img/$first-party
@@ -16485,4 +16488,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: Zu0TVZE++9WKfd3a4AOR9w
+! Checksum: lKe6ZJS/hqUs+oWoHUDr4g
