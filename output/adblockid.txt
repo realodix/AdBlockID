@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.316.250
+! Version: 19.316.271
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Nov 2019 04:10 UTC
+! Last modified: 12 Nov 2019 04:31 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -4969,6 +4969,7 @@ kazefuri.web.id##[href*="//bit.ly/"] > img
 ?w=640&ssl=1$image,domain=beritatangsel.com
 _banner.$image,domain=bantennews.co.id
 ||blogspot.com/*/Iklan*.$image,domain=investigasindo.com
+||blogspot.com^*iklan$image,domain=inilahsultra.com
 ||drive.google.com/uc?export=$image,domain=lintaskepri.com|suluhkepri.com
 ||pwbjlbz.com^$domain=kompas.com
 ! 
@@ -5032,6 +5033,7 @@ _banner.$image,domain=bantennews.co.id
 ||kaltengpos.co/baner/$image
 ||katim.id^*/img/banner/$image
 ||kba.one/files/sewaan/$image
+||kendaripos.co.id^*/banner-
 ||konikaltim.co/files/banner/$image
 ||korantransparansi.com/images/banners/$image
 ||lenterasultra.com^*/thumb-$image
@@ -5041,6 +5043,7 @@ _banner.$image,domain=bantennews.co.id
 ||medanbisnisdaily.com/imagesads/$image
 ||mediaaceh.com^*/sewaan/$image
 ||mediaindonesia.com^*/banners/$image
+||mediakendari.com^*/ikl-$image
 ||minangsatu.com/banner/$image
 ||modusaceh.co/files/sewaan/$image
 ||newrevive.detik.com^
@@ -5216,8 +5219,8 @@ penamerdeka.com##img[alt*="ads"]
 tabloidjubi.com##img[alt*="advertisement"]
 corongrakyat.co.id##img[alt*="banner"]
 sakanews.com##img[alt="Your ads"]
-bogornews.com,lampungpro.com,mediakendari.com##img[alt^="Iklan"]
-nasionalnews.id,zonasultra.com##img[alt^="iklan"]
+bogornews.com,lampungpro.com,mediakendari.com,zonasultra.com##img[alt^="Iklan"]
+mediakendari.com,nasionalnews.id,zonasultra.com##img[alt^="iklan"]
 radaraceh.com##img[data-original-width="1259"][data-original-height="429"]
 radaraceh.com##img[data-original-width="1280"][data-original-height="320"]
 radaraceh.com##img[data-original-width="700"][data-original-height="393"]
@@ -5482,6 +5485,7 @@ protapriau.com##img[width="989"][height="153"]
 @@/bplogo.$domain=beritapagi.co.id
 @@/fuckadblock.$script,domain=baritopost.co.id|kabar6.com|listingberita.com|nusantarapos.co.id|suaranasional.com|terasmaluku.com
 @@/iklan-langganan.$domain=radarlombok.co.id
+@@/pagead2.$domain=kalimantanpost.com
 @@://ads.$domain=klasika.kompas.com
 @@kompas.com/pasangiklan/api/ads/
 @@||balipost.com^$generichide
@@ -16488,4 +16492,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: lKe6ZJS/hqUs+oWoHUDr4g
+! Checksum: Wjf2bHSBq8AIOipbVpTfGQ
