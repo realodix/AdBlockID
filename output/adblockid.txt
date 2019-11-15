@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.319.807
+! Version: 19.319.1272
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Nov 2019 13:27 UTC
+! Last modified: 15 Nov 2019 21:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -4752,6 +4752,7 @@ _penggugur_kandungan_$image
 ##[src*="mbsbetting."]
 ##[src*="rejekibet."]
 ##a[alt*="Bandar"] > img
+##a[alt*="OLE777"] > img
 ##a[alt*="bandar"] > img
 ##a[title*="Agen Capsa"] > img
 ##a[title*="Agen Poker Terpercaya"] > img
@@ -4901,6 +4902,7 @@ nontonanimeindo.net##a[href*="//goo.gl/"] > img
 /rmp-blockadblock.js$domain=mivo.com
 |http:$popup,third-party,domain=serunonton.com
 ! 
+doramaku.me###banner-tengah
 nonton.com##.adds
 manganime.id##.ads720
 103.194.171.75##.bnner
@@ -4920,6 +4922,7 @@ sukamovie.*##.sukam-bawah
 ||bioskopstar88.com/pop/$script
 ||cdn.indexmovie.site/*.gif$image
 ||cinemaxx1.*/wp-content/uploads/*.gif$image
+||doramaku.me^*/ads700v3.$image
 ||duniafilm21.*/wp-content/uploads/*.gif$image
 ||grandxxi.*/img/banner/$image
 ||gudangmovies21.*.gif$image
@@ -4956,6 +4959,7 @@ sukamovie.*##.sukam-bawah
 @@||anoboy.org^$generichide
 @@||daizurin.com^$generichide
 @@||dramaencode.com^$generichide
+@@||driverays.com^$generichide
 @@||kazefuri.me^$generichide
 @@||kazefuri.web.id^$generichide
 @@||mivo.com^$generichide
@@ -5530,8 +5534,8 @@ suarasumselnews.co.id#@#.category-advertorial
 ! *** abid:src/addons/shortlink.adbl ***
 @@/^https?:\/\/.*\/.*sw[0-9a-z(.|_)].*/$script,domain=uiz.io
 @@/advertisement.$script,domain=mangalist.org
-@@/fuckadblock.$script,domain=ac-mo.com|giga74.com|hargawebsite.com|newsteez.com|wikiall.org
-@@/js/ads.$script,domain=ac-mo.com|adsafelink.com|akuno.net|ceklink.co|cutlinks.pro|fc.lc|higud.com|iddeas.xyz|indigitz.org|iovoproduction.info|lewat.club|link48.net|machineworlds.me|megaurl.in|movienear.me|mylinkblog.com|shln.pw|shrink.vip|shrtfly.net|templink.org|unyumerdeka.com|urlto.id|wegner.tech|wi.cr
+@@/fuckadblock.$script,domain=ac-mo.com|giga74.com|hargawebsite.com|newsteez.com|ngantukberat.me|wikiall.org
+@@/js/ads.$script,domain=ac-mo.com|adsafelink.com|akuno.net|ceklink.co|cutlinks.pro|fc.lc|higud.com|iddeas.xyz|indigitz.org|iovoproduction.info|lewat.club|link48.net|machineworlds.me|megaurl.in|movienear.me|mylinkblog.com|safeku.com|shln.pw|shrink.vip|shrtfly.net|templink.org|unyumerdeka.com|urlto.id|wegner.tech|wi.cr
 @@/js/ads2.$script,domain=tmearn.com
 @@/pagead2.$script,domain=animexin.jin-7.com|elsfile.org|giga74.com|informations-library.blogspot.com|lewatisaja.com|linkberuang.blogspot.com|ljutkeunvpn.blogspot.com|sedot.link|teknorizen.blogspot.com
 @@/showads.$script,domain=motorbalap.id
@@ -5540,6 +5544,7 @@ suarasumselnews.co.id#@#.category-advertorial
 @@||adsafelink.com^$generichide
 @@||adsafelink.net/webroot/js/ads.js$script,~third-party
 @@||apamanfaat.id^$generichide
+@@||apasih.pw^$generichide
 @@||autoride.pw^$generichide
 @@||bagilagi.com^$generichide
 @@||begitulah.net^$generichide
@@ -5576,12 +5581,16 @@ suarasumselnews.co.id#@#.category-advertorial
 @@||netijenshare.com^$generichide
 @@||news-tech.xyz^$generichide
 @@||newsteez.com^$generichide
+@@||ngantukberat.me^$generichide
+@@||nurhamka.com^$generichide
 @@||onkarir.com^$generichide
 @@||otw-link.blogspot.com^$generichide
 @@||otw-link.xyz^$generichide
+@@||pasbisa.site^$generichide
 @@||pendeksafelink.blogspot.com^$generichide
 @@||razerflixs.com^$generichide
 @@||razorlink.us^$generichide
+@@||rikucan.com^$generichide
 @@||safe.mirrordown.com/js/ads.js$script,~third-party
 @@||safelkmeong.blogspot.com^$generichide
 @@||semutlink.blogspot.com^$generichide
@@ -5594,17 +5603,16 @@ suarasumselnews.co.id#@#.category-advertorial
 @@||webgate.tn^$generichide
 @@||wikiall.org^$generichide
 @@||zonangopi.ml^$generichide
-ad4msan.win,elsfile.org,hexafile.net,wikiall.org,zonangopi.ml##.adsbygoogle
-aii.sh,shrtfly.net##.banner
-bagilagi.com##.klnsora
-higud.com##.banner
-higud.com##.klikdisini
-infosehatku.club##.adsbygoogle
+! 
 kertashitam.com###blockblockA
 kertashitam.com###blockblockB:style(visibility: visible !important; display: block !important;)
+ad4msan.win,apasih.pw,elsfile.org,hexafile.net,infosehatku.club,nurhamka.com,wikiall.org,zonangopi.ml##.adsbygoogle
+aii.sh,higud.com,shrtfly.net##.banner
 machineworlds.me##.banner-inner
-machineworlds.me##.blog-item
 unduh.in##.bannersingletop
+machineworlds.me##.blog-item
+higud.com##.klikdisini
+bagilagi.com##.klnsora
 ! 
 safejobsbos.blogspot.com#@##adsense
 ! 
@@ -7395,6 +7403,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||dibpvaoi.bid^
 ||didibvyl.bid^
 ||didnkinrab.com^$third-party
+||diekhxpwngawme.com^
 ||dieohupl.com^
 ||digwzeutydo.com^
 ||dijutbdzbv.com^
@@ -9775,6 +9784,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||illqbirymsr.com^
 ||ilqufadqxd.com^
 ||ilrxikdjozlk.com^
+||ilsuuqcab.com^
 ||ilugfyhlfv.com^
 ||ilupcgzhagwb.com^
 ||iluwjbuwm.com^
@@ -16277,6 +16287,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||zmnhcswlu.com^
 ||zmoawpfsz.com^
 ||zmogtyau.com^
+||zmpvyyey.com^
 ||zmutugjqvia.com^
 ||znbokxhkwx.com^
 ||znckkjdguw.com^
@@ -16434,6 +16445,7 @@ mi-globe.com#@#.an-advert-banner
 @@||contohblog.com^$generichide
 @@||dedykuncoro.com^$generichide
 @@||dukun-cit.com^$generichide
+@@||duniaislamku.com^$generichide
 @@||eirudo.com^$generichide
 @@||faucetcrypto.site^$generichide
 @@||fendy.web.id^$generichide
@@ -16558,4 +16570,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: aJ0YvRzBXXi1k8RsEosjdw
+! Checksum: jo6oHWNx5Pq0oGSmsxCs/g
