@@ -4,7 +4,7 @@
 
 # AdBlockID
 
-![AdBlockID Version](https://img.shields.io/badge/Version--blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.322.668-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Nov 18, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Nov 18, 2019 UTC" />
 
@@ -73,17 +73,26 @@ Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 | `build.sh`        | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
 | `validatehost.sh` | Periksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl. |
 
-Sebagian besar filter pada AdBlockID ditulis dengan [Visual Studio Code](https://code.visualstudio.com/) dan dioptimalkan untuk itu. VS Code Tasks sudah ditambahkan untuk memudahkan Anda dalam pengembangan. Anda dapat mengakses VS Code Tasks dengan menekan `Ctrl+Shift+P`, lalu tekan `Tasks: Run Task`.
+Sebagian besar filter pada AdBlockID ditulis dengan [Visual Studio Code](https://code.visualstudio.com/) dan berbagai tools pendukung telah diintegrasikan ke dalam Visual Studio Code melalui Tasks.
+
+#### Visual Studio Code Tasks
+
+Anda dapat mengakses Visual Studio Code Tasks dengan menekan `Ctrl+Shift+P`, lalu tekan `Tasks: Run Task`.
+
+- **Generate**: Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
+- **FOP**: Mengurutkan dan menggabungkan beberapa filter jika memungkinkan.
+- **Render Readme**: Render file `readme.template` ke dalam `readme.md`.
+- **Validate Host**: Memeriksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl.
 
 ### Format Pesan Commit
 
 Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk membuat pesan. Untuk contoh penggunaannya, Anda dapat melihat [history commit](https://github.com/realodix/AdBlockID/commits).
 
-| Optional Scope | Deskripsi |
-| -------------- | --------- |
-| `A`     | Semua jenis iklan, termasuk banner, pop-up, ad server, dll. |
-| `AA`    | Anti-Adblock. |
-| `P`     | Problem. |
-| `M`     | Maintain filter. |
-| `docs`  | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada filter (`/src`) dan file mentah readme (`/tools/readme/readme.template`). |
-| `tools` | Semua pengeditan pada folder `/tools`, tidak termasuk file mentah readme (`/tools/readme/readme.template`). |
+| Type   | Deskripsi |
+| ------ | --------- |
+| `A`    | Semua jenis iklan, termasuk banner, pop-up, ad server, dll. |
+| `AA`   | Anti-Adblock. |
+| `P`    | Problem. |
+| `M`    | Maintain filter. |
+| `docs` | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada filter (folder `src`) dan file mentah readme (`/tools/readme/readme.template`). |
+| `chore(<scope>)` | Semua pengeditan pada `/tools`, `/.vscode`, `.editorconfig`, `.gitignore`, `build.sh` dan `validatehost.sh`. Tidak termasuk file mentah readme (`/tools/readme/readme.template`). |
