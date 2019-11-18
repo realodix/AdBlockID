@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.322.262
+! Version: 19.322.296
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Nov 2019 04:22 UTC
+! Last modified: 18 Nov 2019 04:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -4993,10 +4993,10 @@ kazefuri.web.id##[href*="//bit.ly/"] > img
 -banner-$image,domain=indoaviation.asia
 -iklan-$image,domain=haluankepri.com|protapriau.com|beritabalionline.com
 /ads-$image,domain=suarabojonegoro.com
-/baner-$image,domain=beritatotabuan.com|hariankepri.com|memo.co.id|semarakpost.com|viralkaltim.com
-/banner-$image,domain=ayobandung.com|beritaasatu.com|beritamerdekaonline.com|beritatotabuan.com|inibengkulu.com|kabarmedan.com|kolakaposnews.com|manadoline.com|mandiripos.com|radarmalang.id|radarpekalongan.co.id|suarabekasi.id|sumselupdate.com|tanjungpinangpos.id|teraslampung.com|totabuan.co
-/banner_$image,domain=bengkulutoday.com|bogornews.com|harianrakyatbengkulu.com|inijabar.com|koranrakyat.co.id|metrojambi.com
-/iklan-$image,domain=beritamerdekaonline.com|equator.co.id|haluankepri.com|inilahonline.com|kabarbireuen.com|kabarselebes.id|kilasbengkulu.com|kolakaposnews.com|lintasntt.com|obor-nusantara.com|posbali.co.id|sulselsatu.com|tabikpun.com|teraslampung.com|wartasas.com
+/baner-$image,domain=hariankepri.com|memo.co.id|semarakpost.com|viralkaltim.com
+/banner-$image,domain=kabarmedan.com|manadoline.com|sumselupdate.com|tanjungpinangpos.id
+/banner_$image,domain=inijabar.com
+/iklan-$image,domain=equator.co.id|haluankepri.com|inilahonline.com|obor-nusantara.com|tabikpun.com
 /ikln-$image,domain=kabarpapua.co
 /ilkn-$image,domain=kabarpapua.co
 /whatsapp-image-$image,domain=totabuan.news|viralkaltim.com
@@ -5006,12 +5006,13 @@ _banner.$image,domain=bantennews.co.id
 ||drive.google.com/uc?export=$image,domain=kepri.info|lintaskepri.com|seputarkepri.co.id|suluhkepri.com
 ||pwbjlbz.com^$domain=kompas.com
 ! 
-||86news.co/wp-content/uploads/*/Iklan-
-||acehekspres.com/wp-content/uploads/*/iklan-
+||86news.co/wp-content/uploads/*/iklan-$image
+||acehekspres.com/wp-content/uploads/*/iklan-$image
 ||adsimg.kompas.com^
 ||ajnn.net/files/sewaan/$image
 ||akurasinews.com/wp-content/uploads/*-640x905.$image
 ||akurat.co/images/banner/$image
+||ayobandung.com/assets/img/banner-$image
 ||ayosemarang.com/assets/img/banner_$image
 ||ayotegal.com/assets/img/banner/$image
 ||ayoyogya.com/assets/img/banner/$image
@@ -5024,15 +5025,18 @@ _banner.$image,domain=bantennews.co.id
 ||bengkuluinteraktif.com^*/promo/$image
 ||bengkulutoday.com^*/banner/$image
 ||bengkuluvoice.com^*/benner-$image
+||beritaasatu.com^*/banner-$image
 ||beritabali.com^*/banner/$image
 ||beritabojonegoro.com/upload/banner/$image
 ||beritadaerah.co.id^*/banner-$image
 ||beritajakarta.id^*/banner/$image
 ||beritajateng.net^*/banner-$image
 ||beritakaltim.co^*/banner-$image
-||beritamerdekaonline.com^*/bener-$image
+||beritamerdekaonline.com^*/banner-
+||beritamerdekaonline.com^*/banner-$image
 ||beritapenajam.net^*/bener-$image
 ||beritapenajam.net^*/benner-$image
+||beritatotabuan.com^*/banner-$image
 ||bingkairiau.com^*/banner/$image
 ||blokbojonegoro.com/files/source/banners/$image
 ||blokbojonegoro.com/files/source/iklan-$image
@@ -5078,6 +5082,7 @@ _banner.$image,domain=bantennews.co.id
 ||infosultra.id/wp-content/uploads/*-1024x768.$image
 ||infosultra.id/wp-content/uploads/*-768x1024.$image
 ||infosultra.id^*/iklan-$image
+||inibengkulu.com^*/banner-$image
 ||inilahkoran.com^*/banners/$image
 ||inspirasinews.co^*/promotion_$image
 ||intim.news^*/iklan-$image
@@ -5088,6 +5093,7 @@ _banner.$image,domain=bantennews.co.id
 ||jurnalisindonesia.id^*/iklan-$image
 ||kabar.news//sites/default/files/gbb-uploads/$image
 ||kabar47.com/wp-content/uploads/*.gif$image
+||kabarselebes.id^*/iklan-
 ||kahaba.net^*/iklan-$image
 ||kajanglako.com^*/banner/$image
 ||kalbaronline.com/*-240x300.$image
@@ -5101,6 +5107,7 @@ _banner.$image,domain=bantennews.co.id
 ||kba.one/files/sewaan/$image
 ||kendaripos.co.id^*/banner-
 ||kepridays.co.id^*/iklan-$image
+||kilasbengkulu.com^*/iklan-
 ||konikaltim.co/files/banner/$image
 ||korantransparansi.com/images/banners/$image
 ||kualitasnews.com^*/iklan-$image
@@ -5108,12 +5115,14 @@ _banner.$image,domain=bantennews.co.id
 ||lampungvisual.com^*/iklan-$image
 ||lenterasultra.com^*/thumb-$image
 ||lintangnews.com^*/iklan-$image
+||lintasntt.com^*/iklan-
 ||lintasperistiwa.com^*/banner-$image
 ||lintasperistiwa.com^*/iklan_$image
 ||liputan46.com/wp-content/uploads/*.gif$image
 ||liputanpalu.com^*/iklan-$image
 ||malang-post.com/asset/foto_banner/$image
 ||malangvoice.com^*/ads_$image
+||mandiripos.com^*/banner-$image
 ||medanbisnisdaily.com/imagesads/$image
 ||medanmerdeka.com^*/banner-$image
 ||medanmerdeka.com^*/iklan-$image
@@ -5122,6 +5131,7 @@ _banner.$image,domain=bantennews.co.id
 ||mediaindonesia.com^*/banners/$image
 ||mediakendari.com^*/ikl-$image
 ||mediakendari.com^*/iklan-
+||metrojambi.com/images/banner_
 ||metrokepri.com^*/banner-$image
 ||minangsatu.com/banner/$image
 ||modusaceh.co/files/sewaan/$image
@@ -5137,6 +5147,7 @@ _banner.$image,domain=bantennews.co.id
 ||papuatoday.com^*/banner-$image
 ||penanusantara.id^*/iklan-$image
 ||pilarmalut.id^*/iklan-$image
+||posbali.co.id^*/iklan-
 ||prfmnews.com/images/*.gif$image
 ||prokepri.com^*/banner-$image
 ||protapriau.com^*/banner-$image
@@ -5146,6 +5157,8 @@ _banner.$image,domain=bantennews.co.id
 ||pulausumbawanews.net^*/iklan-$image
 ||radarbanyumas.co.id^*/online_radar_$image
 ||radarlombok.co.id^*/iklan-$image
+||radarmalang.id^*/banner-$image
+||radarpekalongan.co.id^*/banner-$image
 ||rakyatjambi.co^*/iklan-$image
 ||referensipublik.com^*/banner-$image
 ||riaulink.com/assets/banner/$image
@@ -5159,6 +5172,7 @@ _banner.$image,domain=bantennews.co.id
 ||sindomanado.com^*/banner-$image
 ||siwalimanews.com^*/iklan-$image
 ||solopos.com/banner/$image
+||suarabekasi.id^*/banner-$image
 ||suarabojonegoro.com^*/ademos-$image
 ||suaraindonesianews.com^*/iklan-$image
 ||suarakarya.id/banner1.$image
@@ -5168,6 +5182,7 @@ _banner.$image,domain=bantennews.co.id
 ||suarasiber.com^*/banner-$image
 ||suarasiber.com^*/iklan-$image
 ||suarasurabaya.net^*/banner/$image
+||sulselsatu.com^*/iklan-$image
 ||sultengnews.com^*/banner300x300.$image
 ||sultengterkini.com^*/banner-$image
 ||sultengterkini.com^*/iklan-$image
@@ -5181,6 +5196,7 @@ _banner.$image,domain=bantennews.co.id
 ||teropongsenayan.com/banner/$image
 ||teropongsenayan.com^*/banner/$image
 ||topsumbar.co.id^*/iklan-$image
+||totabuan.co^*/banner-$image
 ||totabuan.news^*-banner-$image
 ||totabuan.news^*/banner-$image
 ||totabuan.news^*/iklan-$image
@@ -16673,4 +16689,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: Ct9qW3xrQLRVppUIdBZbnw
+! Checksum: 7OqtWfImXkB2efWOMdwajw
