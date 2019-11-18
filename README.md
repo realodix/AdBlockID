@@ -4,7 +4,7 @@
 
 # AdBlockID
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.322.4-blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.322.175-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Nov 18, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Nov 18, 2019 UTC" />
 
@@ -42,9 +42,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 Perkebangan iklan pada website di Indonesia begitu cepat, terutama website yang memajang iklan berkonten dewasa. Jika Anda menemukan website yang belum terblokir iklannya oleh AdBlockID, jangan ragu untuk membuat [issue di sini](https://github.com/realodix/AdBlockID/issues) :D
 
 
-### Panduan Untuk Developer
-
-#### Persiapan
+### Persiapan
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
 * [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
@@ -58,14 +56,26 @@ atau
 
 `$ pip install -t tools tools/python-abp`
 
-#### Tools pendukung
+### Panduan untuk menulis filter
+
+Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
+
+- **Adblock Plus**: [How to write filters](https://help.eyeo.com/en/adblockplus/how-to-write-filters)
+- **AdGuard**: [How to create your own ad filters](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
+- **uBlock Origin**: [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
+- [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md)
+
+
+### Development Tools
 
 | File              | Deskripsi                                 |
 | ----------------- | ----------------------------------------- |
 | `build.sh`        | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
 | `validatehost.sh` | Periksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl. |
 
-#### Format Pesan Commit
+Sebagian besar filter pada AdBlockID ditulis dengan [Visual Studio Code](https://code.visualstudio.com/) dan dioptimalkan untuk itu. VS Code Tasks sudah ditambahkan untuk memudahkan Anda dalam pengembangan. Anda dapat mengakses VS Code Tasks dengan menekan `Ctrl+Shift+P`, lalu tekan `Tasks: Run Task`.
+
+### Format Pesan Commit
 
 Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk membuat pesan. Untuk contoh penggunaannya, Anda dapat melihat [history commit](https://github.com/realodix/AdBlockID/commits).
 

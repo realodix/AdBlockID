@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.322.4
+! Version: 19.322.175
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Nov 2019 00:04 UTC
+! Last modified: 18 Nov 2019 02:55 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1746,6 +1746,7 @@ _996x50.gif
 ||ofiskita.com^*/banner$image
 ||rajabacklink.com/tm_images/banneraff/$image
 ||rakosa-fm.co.id^*/partner/$image
+||robo-indonesia.com/files/banners/$image,third-party
 ||rri.co.id^*/banner/$image
 ||safelinku.com/728x20.$image,third-party
 ||static.domainesia.com/assets/images/afiliasi/
@@ -4989,12 +4990,10 @@ sukamovie.*##.sukam-bawah
 kazefuri.web.id##[href*="//bit.ly/"] > img
 ! *** abid:src/addons/news.adbl ***
 -817x639.$image,domain=kabarpapua.co
--adv-$image,domain=suroboyo.id
 -banner-$image,domain=indoaviation.asia
--banner.$image,domain=cidahu.com|inilahonline.com|sumaterapost.co|today.id
 -iklan-$image,domain=haluankepri.com|protapriau.com|beritabalionline.com
 /720x90-$image,domain=suaralampung.com
-/ads-$image,domain=detiknews.id|dutatv.com|geunta.com|kabarmalut.co.id|suarabojonegoro.com|sumaterapost.co|terasbalinews.com
+/ads-$image,domain=detiknews.id|dutatv.com|geunta.com|kabarmalut.co.id|suarabojonegoro.com|terasbalinews.com
 /baner-$image,domain=beritatotabuan.com|hariankepri.com|memo.co.id|semarakpost.com|viralkaltim.com|zonasultra.com
 /banner-$image,domain=ayobandung.com|bengkuluekspress.com|beritaasatu.com|beritadaerah.co.id|beritajateng.net|beritakaltim.co|beritamerdekaonline.com|beritatotabuan.com|hariankepri.com|harianmemokepri.com|harianrakyatbengkulu.com|infojambi.com|infosekitarpekalongan.com|inibengkulu.com|jatengtoday.com|jemberpost.net|kabarmedan.com|kolakaposnews.com|manadoline.com|mandiripos.com|medanmerdeka.com|metrokepri.com|moralriau.com|okemedan.com|palapanews.com|papuatoday.com|prokepri.com|protapriau.com|pulausumbawanews.net|radarmalang.id|radarpekalongan.co.id|referensipublik.com|solopos.com|suarabekasi.id|suaralampung.com|suarasiber.com|sultengterkini.com|sumeks.co|sumselupdate.com|tangerang7.com|tanjungpinangpos.id|teraslampung.com|totabuan.co|totabuan.news
 /banner_$image,domain=bengkulutoday.com|bogornews.com|harianrakyatbengkulu.com|inijabar.com|koranrakyat.co.id|metrojambi.com
@@ -5003,7 +5002,7 @@ kazefuri.web.id##[href*="//bit.ly/"] > img
 /ikln-$image,domain=kabarpapua.co
 /ilkn-$image,domain=kabarpapua.co
 /promo-$image,domain=suaralampung.com
-/whatsapp-image-$image,domain=redkal.com|sumaterapost.co|totabuan.co|totabuan.news|viralkaltim.com
+/whatsapp-image-$image,domain=redkal.com|totabuan.co|totabuan.news|viralkaltim.com
 ?w=640&ssl=1$image,domain=beritatangsel.com
 _banner.$image,domain=bantennews.co.id
 ||blogspot.com/*/Iklan*.$image,domain=investigasindo.com
@@ -5045,6 +5044,7 @@ _banner.$image,domain=bantennews.co.id
 ||eramuslim.com^*/banners/$image
 ||fajar.co.id/wp-content/uploads/*/ikl.$image
 ||fajarbali.co.id/images/banners/$image
+||fajarsumatera.co.id^*/iklan-$image
 ||faktualnews.co/images/*-300px.$image
 ||gagasanriau.com^*/banner/$image
 ||gatra.com/images/*/banner/$image
@@ -5532,6 +5532,7 @@ techno-okezone-com.cdn.ampproject.org##amp-iframe:-abp-has([src^="https://click.
 @@://ads.$domain=klasika.kompas.com
 @@kompas.com/pasangiklan/api/ads/
 @@||balipost.com^$generichide
+@@||cidahu.com^$generichide
 @@||kabarmakkah.com^$generichide
 @@||kongkrit.com/category/iklan/$~third-party
 @@||konten.co.id^$generichide
@@ -16597,4 +16598,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: ue2E541Uf+EZOwcrySseLw
+! Checksum: iGl9gLwZYtQssU5fNDwE0g
