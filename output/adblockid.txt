@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.324.1428
+! Version: 19.325.51
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Nov 2019 23:48 UTC
+! Last modified: 21 Nov 2019 00:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -15,6 +15,7 @@
 ! 
 -728-200-
 -728x70-
+-729-x-90.
 -750-200v8.
 -750x300_
 -773x130-
@@ -1556,7 +1557,8 @@ _996x50.gif
 ||yim3eyv5.top^
 ||ys3e965d.top^
 ||yx-ads6.com^$third-party
-||zy16eoat1w.com^
+||zy16eoat1w.com^$popup
+||zy16eoat1w.com^$third-party
 ! 
 ||aenan.pw^
 ||allartand.club^
@@ -2199,6 +2201,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*bolajalan*.$image
 /*bolamas88*.$image
 /*bolatangkas*.$image
+/*bolavita*.$image
 /*bolped*.$image
 /*bonanza88*.$image
 /*bonusqq*.$image
@@ -2226,6 +2229,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*cobaqiu*.$image
 /*cocaqq*.$image
 /*dadupoker*.$image
+/*dafabet*.$image
 /*dahsyatqq*.$image
 /*damqq*.$image
 /*danaqq*.$image
@@ -2244,6 +2248,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*dimensiqq*.$image
 /*dinastybet*.$image
 /*diskonqq*.$image
+/*divapoker*.$image
 /*divaqq*.$image
 /*domino-99*.$image
 /*domino-qq*.$image
@@ -2292,6 +2297,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*hepiqq*.$image
 /*hobicasino*.$image
 /*hok1_365*.$image
+/*hoki-nussa*.$image
 /*hokinusa*.$image
 /*hoky-qq*.$image
 /*hongkongtoto49*.$image
@@ -2539,6 +2545,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*pesqq*.$image
 /*pialaqq*.$image
 /*pk99banner*.$image
+/*pkrvita*.$image
 /*pkstar8*.$image
 /*pokehwd*$image
 /*poker-vivo*.$image
@@ -2621,6 +2628,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /*senangdomino*.$image
 /*seniorbola*.$image
 /*sentosa88*.$image
+/*seputarbet*.$image
 /*serbacasino*.$image
 /*serbaqq*.$image
 /*sevebola*.$image
@@ -2732,6 +2740,7 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 /hoyapkrnew*.$image
 /iblis4d-$image
 /isiqq-
+/itudomino728*.$image
 /ituvip.gif$image
 /jual_obat_aborsi_
 /kartu-online.gif$image
@@ -3035,6 +3044,7 @@ _penggugur_kandungan_$image
 ##[href*="45.32.108.55" i] > img
 ##[href*="45.76.157.45"] > img
 ##[href*="45.77.241.206"] > img
+##[href*="47.252.1.213" i] > img
 ##[href*="4dasli." i] > img
 ##[href*="4dhoki." i] > img
 ##[href*="512xiaojin." i] > img
@@ -3046,6 +3056,7 @@ _penggugur_kandungan_$image
 ##[href*="69qiuqiu" i] > img
 ##[href*="77dewan." i] > img
 ##[href*="77megabet" i] > img
+##[href*="7liveasia3." i] > img
 ##[href*="7mmbet" i] > img
 ##[href*="7nagabet." i] > img
 ##[href*="7nagapoker." i] > img
@@ -3330,6 +3341,7 @@ _penggugur_kandungan_$image
 ##[href*="bola24" i] > img
 ##[href*="bola3m." i] > img
 ##[href*="bola777." i] > img
+##[href*="bola79." i] > img
 ##[href*="bola83." i] > img
 ##[href*="bolaafb." i] > img
 ##[href*="boladunia88bet." i] > img
@@ -3466,6 +3478,7 @@ _penggugur_kandungan_$image
 ##[href*="dewiqq" i] > img
 ##[href*="dewiqq." i] > img
 ##[href*="df011." i] > img
+##[href*="dfkuailian." i] > img
 ##[href*="dimensiqq" i] > img
 ##[href*="dinastybet." i] > img
 ##[href*="dinastybet88" i] > img
@@ -3473,6 +3486,7 @@ _penggugur_kandungan_$image
 ##[href*="divahoki." i] > img
 ##[href*="divaindo." i] > img
 ##[href*="divaliga." i] > img
+##[href*="divapkr." i] > img
 ##[href*="divaqq" i] > img
 ##[href*="divisix." i] > img
 ##[href*="dkipoker." i] > img
@@ -4283,6 +4297,7 @@ _penggugur_kandungan_$image
 ##[href*="pepsi77" i] > img
 ##[href*="pesona88." i] > img
 ##[href*="pesonaqq." i] > img
+##[href*="petuahjudi." i] > img
 ##[href*="pialaduniamild88." i] > img
 ##[href*="pialaqq" i] > img
 ##[href*="pialasports." i] > img
@@ -4375,16 +4390,7 @@ _penggugur_kandungan_$image
 ##[href*="qq1221" i] > img
 ##[href*="qq24jam" i] > img
 ##[href*="qq288" i] > img
-##[href*="qq2889yes" i] > img
-##[href*="qq288hh" i] > img
 ##[href*="qq338" i] > img
-##[href*="qq338menang" i] > img
-##[href*="qq338nn" i] > img
-##[href*="qq338pp" i] > img
-##[href*="qq338proses" i] > img
-##[href*="qq338super" i] > img
-##[href*="qq338tt" i] > img
-##[href*="qq338ww" i] > img
 ##[href*="qq39" i] > img
 ##[href*="qq8788" i] > img
 ##[href*="qq8821" i] > img
@@ -4398,7 +4404,6 @@ _penggugur_kandungan_$image
 ##[href*="qqdomino." i] > img
 ##[href*="qqdoyan." i] > img
 ##[href*="qqemas" i] > img
-##[href*="qqemas." i] > img
 ##[href*="qqfullbetxyz." i] > img
 ##[href*="qqhadir." i] > img
 ##[href*="qqhappy21" i] > img
@@ -4544,6 +4549,7 @@ _penggugur_kandungan_$image
 ##[href*="seoincarqq." i] > img
 ##[href*="seomarina365." i] > img
 ##[href*="sepakbolagol." i] > img
+##[href*="seputarbet" i] > img
 ##[href*="serbakas88." i] > img
 ##[href*="serbakiu." i] > img
 ##[href*="serbaqq" i] > img
@@ -4656,6 +4662,7 @@ _penggugur_kandungan_$image
 ##[href*="thm999." i] > img
 ##[href*="tiketjackpot." i] > img
 ##[href*="tipsgratisbola" i] > img
+##[href*="togegel." i] > img
 ##[href*="togel212." i] > img
 ##[href*="togel7" i] > img
 ##[href*="togelbet." i] > img
@@ -5349,6 +5356,7 @@ dream.co.id##.drm-banner-x
 kabar6.com,suaramedannews.com##.e3lan
 harianrakyatbengkulu.com##.e3lan-below_header
 faktabanten.co.id##.ezbxifolk-image
+suara.com##.footer-ads__container
 cnnindonesia.com,detik.com##.footer_banner
 beritakini.co##.funds
 akurasinews.com,beritakaltim.co,infosekitarpekalongan.com,memorandum.co.id,seputarkepri.co.id,suarabojonegoro.com##.gmr-between-post-banner
@@ -16755,4 +16763,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: rRVbT8tlT6WnytaOBX2jNg
+! Checksum: xJ5hkbFszM6AkwaLVcndTA
