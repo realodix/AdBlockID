@@ -63,7 +63,6 @@ exclusions = [
   'general_hide.adbl',
   'movie.adbl',
   'news.adbl',
-  'scriptlet-adguard.adbl',
   'scriptlet-ublock.adbl',
   'specific_block.adbl',
   'specific_hide.adbl',
