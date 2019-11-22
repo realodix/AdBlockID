@@ -16,6 +16,8 @@
 
 ## Cara Memasang AdBlockID Pada Adblock Plus
 
+> Cara di bawah ini juga berlaku untuk [StopAll Ads](https://www.stopallads.com/).
+
 1. Buka *dashboard* Adblock Plus.
 2. Klik tab ***Advanced***.
 3. Pada bagian *FILTER LIST*, klik ***ADD A NEW FILTER LIST***
