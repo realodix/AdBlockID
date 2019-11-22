@@ -1,15 +1,20 @@
 *$popup,domain=icutlink.com
 @@/^https?:\/\/.*\/.*sw[0-9a-z(.|_)].*/$script,domain=uiz.io
-@@/advertisement.$script,domain=mangalist.org
+@@/advertisement.$script,domain=mangalist.org|shortgoo.blogspot.com
 @@/fuckadblock.$script,domain=ac-mo.com|giga74.com|hargawebsite.com|newsteez.com|ngantukberat.me|wikiall.org
-@@/js/ads.$script,domain=ac-mo.com|adsafelink.com|akuno.net|ceklink.co|cutlinks.pro|fc.lc|higud.com|iddeas.xyz|indigitz.org|iovoproduction.info|lewat.club|link48.net|machineworlds.me|megaurl.in|movienear.me|mylinkblog.com|safeku.com|shln.pw|shrink.vip|shrtfly.net|skip.az|templink.org|unyumerdeka.com|urlto.id|wegner.tech|wi.cr
+@@/js/ads.$script,domain=ac-mo.com|adsafelink.com|akuno.net|ceklink.co|cutlinks.pro|fc.lc|higud.com|indigitz.org|iovoproduction.info|lewat.club|link48.net|machineworlds.me|megaurl.in|movienear.me|mylinkblog.com|safeku.com|shln.pw|shrink.vip|shrtfly.net|skip.az|templink.org|unyumerdeka.com|urlto.id|wegner.tech|wi.cr
 @@/js/ads2.$script,domain=tmearn.com
 @@/pagead2.$script,domain=animexin.jin-7.com|elsfile.org|giga74.com|informations-library.blogspot.com|lewatisaja.com|linkberuang.blogspot.com|ljutkeunvpn.blogspot.com|sedot.link|teknorizen.blogspot.com
 @@/showads.$script,domain=motorbalap.id
+@@||adsafelink.net/webroot/js/ads.js$script,~third-party
+@@||kabarviral.blog/js/ads.js$script,~third-party
+@@||rawgit.com/sdnime09/Ngewe-om/*/sayang.$script,domain=shortgoo.blogspot.com
+@@||safe.mirrordown.com/js/ads.js$script,~third-party
+@@||virtualdata.me/webroot/js/ads.js$script,~third-party
+!
 @@||1idsly.com^$generichide
 @@||ac-mo.com^$generichide
 @@||adsafelink.com^$generichide
-@@||adsafelink.net/webroot/js/ads.js$script,~third-party
 @@||apamanfaat.id^$generichide
 @@||apasih.pw^$generichide
 @@||autoride.pw^$generichide
@@ -27,14 +32,12 @@
 @@||hargawebsite.com^$generichide
 @@||hexafile.net^$generichide
 @@||higud.com^$generichide
-@@||iddeas.xyz^$generichide
 @@||idsly.bid^$generichide
 @@||idzone.site^$generichide
 @@||infosehatku.club^$generichide
 @@||infotrendy.me^$generichide
 @@||internationalexcavator.info^$generichide
 @@||jelajahinternet.me^$generichide
-@@||kabarviral.blog/js/ads.js$script,~third-party
 @@||kabarviral.blog^$generichide
 @@||keisekaikuy.blogspot.com^$generichide
 @@||kompisafe.blogspot.com^$generichide
@@ -60,7 +63,6 @@
 @@||razerflixs.com^$generichide
 @@||razorlink.us^$generichide
 @@||rikucan.com^$generichide
-@@||safe.mirrordown.com/js/ads.js$script,~third-party
 @@||safelkmeong.blogspot.com^$generichide
 @@||semutlink.blogspot.com^$generichide
 @@||shrtfly.net^$generichide
@@ -68,7 +70,6 @@
 @@||suarankri.me^$generichide
 @@||unyumerdeka.com^$generichide
 @@||usesafelink.blogspot.com^$generichide
-@@||virtualdata.me/webroot/js/ads.js$script,~third-party
 @@||vivads.net^$generichide
 @@||webgate.tn^$generichide
 @@||wikiall.org^$generichide
@@ -83,7 +84,7 @@ unduh.in##.bannersingletop
 machineworlds.me##.blog-item
 higud.com,lewat.club##.klikdisini
 bagilagi.com##.klnsora
-sukakesehattan.com##[src^="/download"]
+sukakesehattan.com##[href*="/sukakesehattan.com"] > img
 !
 safejobsbos.blogspot.com#@##adsense
 !
@@ -98,14 +99,3 @@ ceklink.co##+js(abort-on-property-read, tampilkanUrl)
 netijenshare.com##+js(abort-on-property-write.js, adBlockDetected)
 razorlink.us##+js(set-constant, safelink.adblock, false)
 ac-mo.com,higud.com##+js(window.open-defuser)
-!
-ac-mo.com#%#//scriptlet("prevent-window-open")
-blogrp.me#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
-ceklink.co#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
-ceklink.co#%#//scriptlet("abort-on-property-read", "tampilkanUrl")
-higud.com#%#//scriptlet("prevent-window-open")
-machineworlds.me#%#//scriptlet("abort-on-property-read", "open")
-netijenshare.com#%#//scriptlet("abort-on-property-write", "adBlockDetected")
-shrinkme.io#%#//scriptlet("abort-on-property-read", "app_vars.force_disable_adblock")
-shrinkme.io#%#//scriptlet("abort-on-property-read", "open")
-shrtfly.net#%#//scriptlet("abort-on-property-read", "tabUnder")

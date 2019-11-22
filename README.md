@@ -1,7 +1,7 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.326.455-blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.326.1282-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Nov 22, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Nov 22, 2019 UTC" />
 
@@ -31,10 +31,9 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
    `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`
 
 **Tutorial spesifik cara memasang AdBlockID:**
-   - [uBlock Origin & Nano Adblocker](/docs/uBlock.md)
+   - [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam, uBlock Plus Adblocker.
    - [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
-   - [Adblock Plus](/docs/Adblock-Plus.md)
-   - [AdBlock](/docs/Adblock-Plus.md#cara-memasang-adblockid-pada-adblock)
+   - [AdBlock](/docs/Adblock-Plus.md): AdBlock, Adblock Plus, StopAll Ads.
    - [Opera Ad Blocker](/docs/Opera-AdBlocker.md)
    - [Adaware ad block](/docs/adaware-ad-block.md)
 
@@ -62,6 +61,7 @@ atau
 Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
 - **Adblock Plus**: [How to write filters](https://help.eyeo.com/en/adblockplus/how-to-write-filters)
+- **Adblock Plus**: [Adblock Plus filters explained](https://adblockplus.org/filter-cheatsheet)
 - **AdGuard**: [How to create your own ad filters](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
 - **uBlock Origin**: [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
 - [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md)
