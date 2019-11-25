@@ -23,4 +23,3 @@ rm thirdparties-filter.txt
 # https://github.com/AdguardTeam/FiltersCompiler/issues/41
 cp ./src/addons/adult-hide.adbl ./src/addons/adult-hide-adguard.adbl
 sed -i 's/" i]/"]/g' src/addons/adult-hide-adguard.adbl
-sed -i 's/ext_ublock/!ext_ublock/g' src/addons/adult-hide-adguard.adbl
