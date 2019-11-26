@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.330.664
+! Version: 19.330.739
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Nov 2019 11:04 UTC
+! Last modified: 26 Nov 2019 12:19 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1435,6 +1435,12 @@ _996x50.gif
 ##object[width="982"][height="150"]
 ##object[width="990"][height="206"]
 ! *** abid:src/adservers.adbl ***
+! adsterra.com
+||badsabs.com^$third-party
+||badsbads.com^$third-party
+||badskies.com^$third-party
+||madsans.com^$third-party
+! 
 ||15257dddaccde96.com^
 ||2go7v1nes8.com^
 ||4exlkjnngs.com^
@@ -1464,9 +1470,6 @@ _996x50.gif
 ||ashaidbit.club^
 ||ashamparm.site^
 ||aspampbrr.online^
-||badsabs.com^$third-party
-||badsbads.com^$third-party
-||badskies.com^$third-party
 ||banianspaddi.info^
 ||bileth.pw^$third-party
 ||brand.ad^$third-party
@@ -1512,7 +1515,6 @@ _996x50.gif
 ||ladsdown.com^
 ||lokeriklan.com^$third-party
 ||loppjod.online^
-||madsans.com^$third-party
 ||magrie.pw^
 ||masteriklan.net^$third-party
 ||mediaoaktree.com/pu-placer.js$script,third-party
@@ -2208,6 +2210,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 /*bola168*.$image
 /*bola228*.$image
 /*bola24co*.$image
+/*bola855*.$image
 /*bola88*.$image
 /*bolajalan*.$image
 /*bolamas88*.$image
@@ -2389,6 +2392,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 /*juditogelhk*.$image
 /*juniortoto*.$image
 /*kaisar88*.$image
+/*kakakdewa*.$image
 /*kartu66*.$image
 /*kartudewa12*.$image
 /*kartuemas-banner*.$image
@@ -2519,6 +2523,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 /*muvibet*.$image
 /*mybet188*.$image
 /*mygoldenbet88*.$image
+/*nagajuara*.$image
 /*nagalaut99*.$image
 /*naganew*.$image
 /*nagapoker*.$image
@@ -2651,6 +2656,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 /*simpatiq*.$image
 /*simpatiqq*.$image
 /*sindikatku*.$image
+/*situs303*.$image
 /*situs_judi*.$image
 /*soccerbet*.$image
 /*sogo-1*.$image
@@ -2672,7 +2678,8 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 /*tahun-qq*.$image
 /*tahunqq*.$image
 /*tajirqq*.$image
-/*tangkasnet-agen*.$image
+/*tangkaskita*.$image
+/*tangkasnet*.$image
 /*tatacasino*.$image
 /*tbet303*.$image
 /*teloletqq*.$image
@@ -2722,6 +2729,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 /*webajaib*.$image
 /*wedeqq.$image
 /*wigobet*.$image
+/*win11bet*.$image
 /*win228*.$image
 /*win323*.$image
 /*winbet188*.$image
@@ -3359,6 +3367,7 @@ _penggugur_kandungan_$image
 ##[href*="bola777." i] > img
 ##[href*="bola79." i] > img
 ##[href*="bola83." i] > img
+##[href*="bola855" i] > img
 ##[href*="bolaafb." i] > img
 ##[href*="boladunia88bet." i] > img
 ##[href*="bolagalaxy." i] > img
@@ -3898,7 +3907,7 @@ _penggugur_kandungan_$image
 ##[href*="kaisar365." i] > img
 ##[href*="kaisar88" i] > img
 ##[href*="kaisarpoker." i] > img
-##[href*="kakakdewa." i] > img
+##[href*="kakakdewa" i] > img
 ##[href*="kamarjudi." i] > img
 ##[href*="kamusjudi." i] > img
 ##[href*="kartu365." i] > img
@@ -4223,6 +4232,7 @@ _penggugur_kandungan_$image
 ##[href*="mydragonku." i] > img
 ##[href*="myindomacau." i] > img
 ##[href*="nagahoki" i] > img
+##[href*="nagajuara" i] > img
 ##[href*="nagalaut." i] > img
 ##[href*="nagalaut99" i] > img
 ##[href*="naganew" i] > img
@@ -4596,6 +4606,7 @@ _penggugur_kandungan_$image
 ##[href*="sini78." i] > img
 ##[href*="sinidomino." i] > img
 ##[href*="sirajaqq" i] > img
+##[href*="situs303" i] > img
 ##[href*="situsbet368." i] > img
 ##[href*="situsjudi." i] > img
 ##[href*="skorbola." i] > img
@@ -4659,7 +4670,8 @@ _penggugur_kandungan_$image
 ##[href*="tamanqq." i] > img
 ##[href*="tangkas."]
 ##[href*="tangkas9." i] > img
-##[href*="tangkasnet-agen" i] > img
+##[href*="tangkaskita" i] > img
+##[href*="tangkasnet" i] > img
 ##[href*="tangkasq" i] > img
 ##[href*="taruhan1" i] > img
 ##[href*="taruhan8" i] > img
@@ -4824,7 +4836,7 @@ _penggugur_kandungan_$image
 ##[href*="wespoker." i] > img
 ##[href*="wigobet" i] > img
 ##[href*="wikaqq." i] > img
-##[href*="win11bet." i] > img
+##[href*="win11bet" i] > img
 ##[href*="win228" i] > img
 ##[href*="win323" i] > img
 ##[href*="win7poker." i] > img
@@ -4838,7 +4850,6 @@ _penggugur_kandungan_$image
 ##[href*="winning365." i] > img
 ##[href*="winnipoker." i] > img
 ##[href*="winpoker" i] > img
-##[href*="winpoker789." i] > img
 ##[href*="winwinbola." i] > img
 ##[href*="wismaqq" i] > img
 ##[href*="won77." i] > img
@@ -16816,4 +16827,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: UvEdM2MMXol+xoxl5q279w
+! Checksum: S4O8DB7uHGfUDw7YQN1YcQ
