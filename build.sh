@@ -18,8 +18,6 @@ tools/readme/readme.sh
 # Hapus thirdparties-filter.txt, karena sudah tidak digunakan lagi
 rm thirdparties-filter.txt
 
-# Khusus untuk AdGuard
-# https://github.com/AdguardTeam/FiltersRegistry/issues/259
-# https://github.com/AdguardTeam/FiltersCompiler/issues/41
-cp ./src/addons/adult-hide.adbl ./src/addons/adult-hide-adguard.adbl
-sed -i 's/" i]/"]/g' src/addons/adult-hide-adguard.adbl
+# Format ulang uBlock Pre-parsing directives yang ngaco setelah filter dirender
+sed -i 's/! #if false/!#if false/g' output/adblockid.txt
+sed -i 's/! #endif/!#endif/g' output/adblockid.txt
