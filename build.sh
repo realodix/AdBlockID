@@ -18,6 +18,4 @@ tools/readme/readme.sh
 # Hapus thirdparties-filter.txt, karena sudah tidak digunakan lagi
 rm thirdparties-filter.txt
 
-# Format ulang uBlock Pre-parsing directives yang ngaco setelah filter dirender
-sed -i 's/! #if false/!#if false/g' output/adblockid.txt
-sed -i 's/! #endif/!#endif/g' output/adblockid.txt
+tools/adguard-filter/adguard-filter.sh
