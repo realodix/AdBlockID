@@ -1,13 +1,13 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.330.1234-blue.svg?longCache=true&style=flat-square)
-<img src="https://img.shields.io/badge/Updated-Nov 26, 2019 UTC-orange.svg?longCache=true&style=flat-square"
-    alt="Nov 26, 2019 UTC" />
+![AdBlockID Version](https://img.shields.io/badge/Version-19.332.1241-blue.svg?longCache=true&style=flat-square)
+<img src="https://img.shields.io/badge/Updated-Nov 28, 2019 UTC-orange.svg?longCache=true&style=flat-square"
+    alt="Nov 28, 2019 UTC" />
 
-> <sup>Ingin jadi **contributor**? Jangan ragu untuk membuat issue / pull request!
+> <sup>Tertarik jadi **contributor**? Jangan ragu untuk membuat issue / pull request!
 > <br>
-> Ingin jadi **[collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository#collaborator-access-on-a-repository-owned-by-a-user-account)**? Jangan ragu untuk beritahu Saya 😃</sup>
+> Tertarik jadi **[collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository#collaborator-access-on-a-repository-owned-by-a-user-account) / maintainer** pada AdBlockID? Jangan ragu untuk beritahu Saya 😃</sup>
 
 Total rules: 17K+
 
@@ -96,4 +96,4 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 | `P`    | Problem. |
 | `M`    | Maintain filter. |
 | `docs` | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada filter (folder `src`) dan file mentah readme (`/tools/readme/readme.template`). |
-| `chore(<scope>)` | Semua pengeditan pada `/tools`, `/.vscode`, `.editorconfig`, `.gitignore`, `build.sh` dan `validatehost.sh`. Tidak termasuk file mentah readme (`/tools/readme/readme.template`). |
+| `chore(<scope>)` | Semua pengeditan pada `/tools`, `/.vscode`, `/.github`, `.editorconfig`, `.gitignore`, `build.sh` dan `validatehost.sh`. Tidak termasuk file mentah readme (`/tools/readme/readme.template`). |
