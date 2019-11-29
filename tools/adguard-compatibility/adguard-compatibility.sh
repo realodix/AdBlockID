@@ -15,13 +15,16 @@ sed -i '/title/d' $aha
 
 # Tulis waning pada file adult-hide-adguard.adbl
 sed -i '2s/^/! Jangan melakukan perubahan di sini, karena karena file ini (adult-hide-adguard.adbl)\n/' $aha
-sed -i '3s/^/! dibuat secara otomatis. Filter ini digunakan sebagai solusi untuk bug yang terdapat\n/' $aha
-sed -i '4s/^/! pada AdGuard FiltersCompiler yang menyebabkan beberapa filter pada AdBlockID dianggap\n/' $aha
-sed -i '5s/^/! tidak valid, sehingga filter AdBlockID di AdGuard tidak bisa disalurkan pada AdGuard.\n/' $aha
-sed -i '6s/^/!\n/' $aha
-sed -i '7s/^/! Info lebih lanjut:\n/' $aha
-sed -i '8s/^/! - https:\/\/github.com\/AdguardTeam\/FiltersRegistry\/issues\/259\n/' $aha
-sed -i '9s/^/! - https:\/\/github.com\/AdguardTeam\/FiltersCompiler\/issues\/41\n/' $aha
+sed -i '3s/^/! dibuat secara otomatis. File ini digunakan sebagai solusi untuk mengatasi rule pada\n/' $aha
+sed -i '4s/^/! fileadult-hide.adbl yang tidak kompatibel dengan AdGuard FiltersCompiler.\n/' $aha
+sed -i '5s/^/!\n/' $aha
+sed -i '6s/^/! Bug yang terdapat pada AdGuard FiltersCompiler menyebabkan beberapa filter pada AdBlockID\n/' $aha
+sed -i '7s/^/! dianggap invalid, sehingga AdBlockID di AdGuard kehilangan kemampuan untuk menghilangkan\n/' $aha
+sed -i '8s/^/! iklan berkonten dewasa.\n/' $aha
+sed -i '9s/^/!\n/' $aha
+sed -i '10s/^/! Info lebih lanjut:\n/' $aha
+sed -i '11s/^/! - https:\/\/github.com\/AdguardTeam\/FiltersRegistry\/issues\/259\n/' $aha
+sed -i '12s/^/! - https:\/\/github.com\/AdguardTeam\/FiltersCompiler\/issues\/41\n/' $aha
 
 # Gunakan Pre-parsing directives untuk mencegah uBlock Origin dan turunannya
 # membaca rule pada adult-hide-adguard.adbl
