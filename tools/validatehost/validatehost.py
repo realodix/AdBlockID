@@ -58,6 +58,7 @@ exclusions = [
   'adservers.adbl',
   'adult-block.adbl',
   'adult-hide.adbl',
+  'adult-hide-adguard.adbl',
   'annoyances.adbl',
   'general_block.adbl',
   'general_hide.adbl',
