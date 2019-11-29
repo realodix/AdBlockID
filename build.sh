@@ -18,4 +18,4 @@ tools/readme/readme.sh
 # Hapus thirdparties-filter.txt, karena sudah tidak digunakan lagi
 rm thirdparties-filter.txt
 
-tools/adguard-filter/adguard-filter.sh
+tools/adguard-filter-compatibility/adguard-filter-compatibility.sh
