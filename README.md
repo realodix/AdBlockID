@@ -1,7 +1,7 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.333.1256-blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.333.1396-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Nov 29, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Nov 29, 2019 UTC" />
 
@@ -39,9 +39,16 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 
 ## Berkontribusi
-Perkembangan iklan pada website di Indonesia begitu cepat, terutama website yang memajang iklan berkonten dewasa. Jika Anda menemukan website yang belum terblokir iklannya oleh AdBlockID, jangan ragu untuk membuat [issue di sini](https://github.com/realodix/AdBlockID/issues) :D
+Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai komitmen Anda. Menggunakan filter AdBlockID di Ad Blocker favorit Anda sudah merupakan dukungan besar, tetapi ada cara terbaik lainnya untuk berkontribusi:
+
+- Beri AdBlockID bintang/star di GitHub. Karena jika Anda menggunakan dan menyukainya, Anda setidaknya bisa menjadi stargazer!
+- Laporkan masalah di GitHub. Semua umpan balik diterima.
+- Open pull requests di GitHub untuk memberikan perbaikan dan peningkatan. Otomatis terdaftar sebagai [kontributor](https://github.com/realodix/AdBlockID/graphs/contributors)!
+- Beritahu orang terdekat Anda, agar makin banyak yang bisa merasakan manfaat dari AdBlockID.
+- Mari kita kopdar jika Anda sedang berada di dekat Jakarta!
 
 
+## Membuat Paket AdBlockID
 ### Persiapan
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
