@@ -1,7 +1,7 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.334.555-blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.334.797-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Nov 30, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Nov 30, 2019 UTC" />
 
@@ -48,7 +48,7 @@ Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai 
 - Mari kita kopdar jika Anda sedang berada di dekat Jakarta!
 
 
-## Membuat Paket AdBlockID
+## Development
 ### Persiapan
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
@@ -87,9 +87,9 @@ Sebagian besar filter pada AdBlockID ditulis dengan [Visual Studio Code](https:/
 
 Anda dapat mengakses Visual Studio Code Tasks dengan menekan `Ctrl+Shift+P`, lalu tekan `Tasks: Run Task`.
 
-- **Generate**: Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
-- **FOP**: Mengurutkan dan menggabungkan beberapa filter jika memungkinkan.
-- **Render Readme**: Render file `readme.template` ke dalam `readme.md`.
+- **Build**: Render _filter list fragments_ ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
+- **FOP**: Mengurutkan, menggabungkan dan memformat ulang beberapa  filter jika memungkinkan.
+- **Build Readme**: Render file `readme.template` ke dalam `readme.md`.
 - **Validate Host**: Memeriksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl.
 
 ### Format Pesan Commit
