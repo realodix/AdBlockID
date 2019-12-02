@@ -1,9 +1,9 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.335.461-blue.svg?longCache=true&style=flat-square)
-<img src="https://img.shields.io/badge/Updated-Dec 01, 2019 UTC-orange.svg?longCache=true&style=flat-square"
-    alt="Dec 01, 2019 UTC" />
+![AdBlockID Version](https://img.shields.io/badge/Version-19.336.708-blue.svg?longCache=true&style=flat-square)
+<img src="https://img.shields.io/badge/Updated-Dec 02, 2019 UTC-orange.svg?longCache=true&style=flat-square"
+    alt="Dec 02, 2019 UTC" />
 
 > <sup>Tertarik jadi **contributor**? Jangan ragu untuk membuat issue / pull request!
 > <br>
