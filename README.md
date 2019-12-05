@@ -1,7 +1,7 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.339.427-blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.339.699-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Dec 05, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Dec 05, 2019 UTC" />
 
@@ -42,10 +42,11 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai komitmen Anda. Menggunakan filter AdBlockID di Ad Blocker favorit Anda sudah merupakan dukungan besar, tetapi ada cara terbaik lainnya untuk berkontribusi:
 
 - Beri AdBlockID bintang/star di GitHub. Karena jika Anda menggunakan dan menyukainya, Anda setidaknya bisa menjadi stargazer!
-- Laporkan masalah di GitHub. Semua umpan balik diterima.
-- Open pull requests di GitHub untuk memberikan perbaikan dan peningkatan. Otomatis terdaftar sebagai [kontributor](https://github.com/realodix/AdBlockID/graphs/contributors)!
+- [Membuat issue](https://github.com/realodix/AdBlockID/issues/new/choose). Bantu Kami mengetahui jika ada iklan yang masih mengganggu Anda di luar sana.
+- Bantu Kami menjawab dan memecahkan masalah pada issue yang masih terbuka. Jawaban Anda sangat membantu.
+- Buat `pull requests` di GitHub untuk memberikan perbaikan dan peningkatan. Otomatis terdaftar sebagai [kontributor](https://github.com/realodix/AdBlockID/graphs/contributors)!
 - Beritahu orang terdekat Anda, agar makin banyak yang bisa merasakan manfaat dari AdBlockID.
-- Mari kita kopdar jika Anda sedang berada di dekat Jakarta!
+- Mari kita kopdar jika Anda sedang berada di sekitar Jakarta!
 
 
 ## Development
@@ -100,7 +101,7 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 | ------ | --------- |
 | `A`    | Semua jenis iklan, termasuk banner, pop-up, ad server, dll. |
 | `AA`   | Anti-Adblock. |
-| `P`    | Problem. |
 | `M`    | Maintain filter. |
+| `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
 | `docs` | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada filter (folder `src`) dan file mentah readme (`/tools/readme/readme.template`). |
 | `chore(<scope>)` | Semua pengeditan pada `/tools`, `/.vscode`, `/.github`, `.editorconfig`, `.gitignore`, `build.sh` dan `validatehost.sh`. Tidak termasuk file mentah readme (`/tools/readme/readme.template`). |
