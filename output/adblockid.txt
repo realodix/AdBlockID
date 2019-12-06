@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.340.550
+! Version: 19.340.584
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Dec 2019 09:10 UTC
+! Last modified: 06 Dec 2019 09:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1911,6 +1911,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 ||tv.kaskus.co.id/api/embed/widget/*&ads=$subdocument
 ||vidio.com/embed/*autoplay=true$subdocument
 ! 
+! ----------------------------------------
 ! Cookie
 ! 
 ###catapult-cookie-bar
@@ -1932,7 +1933,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 ##.modal-cookie
 ##.widget_eu_cookie_law_widget
 ! 
-! ###########################
+! ----------------------------------------
 ! Privacy
 ! 
 ||academia.edu/record_hit
@@ -1951,7 +1952,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 ||useinsider.com^$third-party
 ||visualwebsiteoptimizer.com^$third-party
 ! 
-! ###########################
+! ----------------------------------------
 ! POPUP
 ! 
 ||abourselfi.com^$popup
@@ -7307,6 +7308,8 @@ sukamovie.*##.sukam-bawah
 ||bebasdownloadfilm.com/iframe/content.php$subdocument
 ||indexmovie.biz/iframe/content.php$subdocument
 ! 
+! --------------------------------------------------------------
+! ANTI-ADBLOCK
 @@/adsbygoogle.$script,domain=nekopoi.care
 @@/indoxxi-logo-
 @@||anibatch.me^$generichide
@@ -7934,6 +7937,8 @@ bisnis-tempo-co.cdn.ampproject.org##.amp-flying-carpet-text-border
 bisnis-tempo-co.cdn.ampproject.org##amp-fx-flying-carpet
 techno-okezone-com.cdn.ampproject.org##amp-iframe:-abp-has([src^="https://click.advertnative.com"])
 ! 
+! --------------------------------------------------------------
+! ANTI-ADBLOCK
 @@/bplogo.$domain=beritapagi.co.id
 @@/fuckadblock.$script,domain=baritopost.co.id|kabar6.com|konten.co.id|listingberita.com|nusantarapos.co.id|suaranasional.com|terasmaluku.com
 @@/iklan-langganan.$domain=radarlombok.co.id
@@ -7956,8 +7961,7 @@ radarlombok.co.id##.adsbygoogle
 radarmalang.id#@#.td-ad-background-link
 suarasumselnews.co.id#@#.category-advertorial
 ! *** abid:src/addons/shortlink.adbl ***
-safejobsbos.blogspot.com#@##adsense
-! 
+*$popup,domain=icutlink.com
 /wp-content/plugins/soralink/*/soralink.js$script
 /wpsafelink.js$script,domain=daizurin.com|klik-link.us|lucikun.com|shitaranime.com|sinanime.net
 =autosafeklinkz350_
@@ -7970,7 +7974,8 @@ safejobsbos.blogspot.com#@##adsense
 ||rikucan.com^*/js/looping.js$script,third-party
 ||shorten.sh/js/full-page-script.js$script,third-party
 ! 
-*$popup,domain=icutlink.com
+! --------------------------------------------------------------
+! ANTI-ADBLOCK
 @@/^https?:\/\/.*\/.*sw[0-9a-z(.|_)].*/$script,domain=uiz.io
 @@/advertisement.$script,domain=anifiles.org|mangalist.org|shortgoo.blogspot.com
 @@/fuckadblock.$script,domain=ac-mo.com|dares.xyz|elnurtech.com|giga74.com|hargawebsite.com|newhealthblog.com|newsdecorate.com|newsteez.com|ngantukberat.me|wikiall.org|yungeblog.xyz|yusepjaelani.blogspot.com
@@ -8059,14 +8064,21 @@ safejobsbos.blogspot.com#@##adsense
 @@||yusepjaelani.blogspot.com^$generichide
 @@||zonangopi.ml^$generichide
 ! 
-kertashitam.com###blockblockA
-kertashitam.com###blockblockB:style(visibility: visible !important; display: block !important;)
+safejobsbos.blogspot.com#@##adsense
+! 
+! --------------------------------------------------------------
+! PLACEHOLDER
 apasih.pw,elsfile.org,hexafile.net,infosehatku.club,lastfashions.xyz,ljutkeunvpn.blogspot.com,nurhamka.com,wikiall.org,zonangopi.ml##.adsbygoogle
-dares.xyz##.aicp
 aii.sh,higud.com,shrtfly.net##.banner
 lewat.club##.banner-container a img
 machineworlds.me##.banner-inner
 unduh.in##.bannersingletop
+! 
+! --------------------------------------------------------------
+! ANNOYANCES
+kertashitam.com###blockblockA
+kertashitam.com###blockblockB:style(visibility: visible !important; display: block !important;)
+dares.xyz##.aicp
 machineworlds.me##.blog-item
 higud.com,lewat.club##.klikdisini
 bagilagi.com##.klnsora
@@ -8078,8 +8090,8 @@ movienear.me##img[width="336"][height="280"]
 ! 
 /download-now-$image,domain=lewat.club
 ! 
+! --------------------------------------------------------------
 ! SCRIPTLET
-! 
 ironimesafelink.my.id##+js(abort-current-inline-script, Math, zfgloaded)
 telolet.in##+js(abort-current-inline-script, addEventListener, DivTopAd)
 blogrp.me,ceklink.co,machineworlds.me,shrinkme.io##+js(abort-on-property-read, app_vars.force_disable_adblock)
@@ -19056,6 +19068,8 @@ mi-globe.com#@#.an-advert-banner
 @@||wincamp.org^$generichide
 @@||zaqe.xyz^$generichide
 ! 
+! --------------------------------------------------------------
+! PLACEHOLDER
 bagikancara.com,belajarbro.id,bloggerszones.com,contohblog.com,eirudo.com,gadget2reviews.com,gurusd.web.id,hightech.web.id,hobybaca.com,kelasdesain.com,majalahikan.com,novelgo.id,obengplus.com,omahkpop.com,panduaneka.com,rumahsleman.com,seniberpikir.com,suryapero.com,tikusliar.com##.adsbygoogle
 hobybaca.com##.td-adspot-title
 ! *** abid:src/whitelist.adbl ***
@@ -19076,9 +19090,9 @@ hobybaca.com##.td-adspot-title
 @@/workhsop-google-$image
 @@_belajar_$image
 ! 
+! --------------------------------------------------------------
 ! Situs Iklan
 ! 
-riaume.com#@##iklan
 jualo.com#@#.ad-title
 baliadvertiser.biz#@#.ads-carousel
 sebariklanbaris.net#@#.content-ads
@@ -19108,6 +19122,7 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 @@||tomato.co.id/wp-content/uploads/$first-party,image
 @@||winstarlink.com/wp-content/uploads/$first-party,image
 ! 
+! --------------------------------------------------------------
 ! Memperbaiki kerusakan karena EasyList dan uBlock filters
 ! 
 @@-google-ads-$image,domain=suranegara.com
@@ -19134,8 +19149,9 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 @@||resolusiweb.com/images/$first-party
 @@||resolusiweb.com/img/$first-party
 ! 
+! --------------------------------------------------------------
 ! Memperbaiki kerusakan karena EasyPrivacy
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: thgRJ86oOWqu5Co+fYyWQA
+! Checksum: jPIEA4VX57DOa0lMQOBbNg
