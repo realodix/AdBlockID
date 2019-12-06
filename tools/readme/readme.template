@@ -133,7 +133,7 @@ Semua file AdBlockID ada di dalam folder `src`, seperti bagan di bawah ini:
 </pre>
 
 - `adservers.adbl`: Domain penyedia layanan iklan pihak ketiga.
-- `anti-adblock.adbl`: Filter khsus menangani web yang mendeteksi AdBlocker.
+- `anti-adblock.adbl`: Filter khusus menangani web yang mendeteksi dan melarang Anda menggunakan Ad Blocker.
 - `general_block.adbl`: Filter umum untuk blockir content pada halaman web.
 - `general_hide.adbl`: Filter umum untuk menyembunyikan content pada halaman web.
 - `specific_block.adbl`: Secara spesifik hanya memblokir content pada domain yang disebutkan.
