@@ -1,9 +1,9 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.339.699-blue.svg?longCache=true&style=flat-square)
-<img src="https://img.shields.io/badge/Updated-Dec 05, 2019 UTC-orange.svg?longCache=true&style=flat-square"
-    alt="Dec 05, 2019 UTC" />
+![AdBlockID Version](https://img.shields.io/badge/Version-19.340.550-blue.svg?longCache=true&style=flat-square)
+<img src="https://img.shields.io/badge/Updated-Dec 06, 2019 UTC-orange.svg?longCache=true&style=flat-square"
+    alt="Dec 06, 2019 UTC" />
 
 > <sup>Tertarik jadi **contributor**? Jangan ragu untuk membuat issue / pull request!
 > <br>
@@ -31,11 +31,11 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
    `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`
 
 **Tutorial spesifik cara memasang AdBlockID:**
-   - [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam, uBlock Plus Adblocker.
-   - [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
-   - [AdBlock](/docs/Adblock-Plus.md): AdBlock, Adblock Plus, StopAll Ads.
-   - [Opera Ad Blocker](/docs/Opera-AdBlocker.md)
-   - [Adaware ad block](/docs/adaware-ad-block.md)
+- [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam, uBlock Plus Adblocker.
+- [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
+- [AdBlock](/docs/Adblock-Plus.md): AdBlock, Adblock Plus, StopAll Ads.
+- [Opera Ad Blocker](/docs/Opera-AdBlocker.md)
+- [Adaware ad block](/docs/adaware-ad-block.md)
 
 
 ## Berkontribusi
@@ -53,8 +53,8 @@ Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai 
 ### Persiapan
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
-* [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
-* [pip](https://pypi.org/project/pip/).
+- [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
+- [pip](https://pypi.org/project/pip/).
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
@@ -105,3 +105,45 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 | `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
 | `docs` | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada filter (folder `src`) dan file mentah readme (`/tools/readme/readme.template`). |
 | `chore(<scope>)` | Semua pengeditan pada `/tools`, `/.vscode`, `/.github`, `.editorconfig`, `.gitignore`, `build.sh` dan `validatehost.sh`. Tidak termasuk file mentah readme (`/tools/readme/readme.template`). |
+
+### Struktur Direktori
+
+Semua file AdBlockID ada di dalam folder `src`, seperti di bawah ini:
+
+<pre>
+/src
+ ├─ /addons
+ │   ├─ adult-block.adbl
+ │   ├─ adult-hide.adbl
+ │   ├─ annoyances.adbl
+ │   ├─ movie.adbl
+ │   ├─ news.adbl
+ │   ├─ scriptlet-ublock.adbl
+ │   └─ shortlink.adbl
+ ├─ /template
+ │   └─ ...
+ ├─ adservers.adbl
+ ├─ anti-adblock.adbl
+ ├─ general_block.adbl
+ ├─ general_hide.adbl
+ ├─ specific_block.adbl
+ ├─ specific_hide.adbl
+ ├─ thirdparty.adbl
+ └─ whitelist.adbl
+</pre>
+
+- `adservers.adbl`: Domain penyedia layanan iklan pihak ketiga.
+- `anti-adblock.adbl`: Filter khsus menangani web yang mendeteksi AdBlocker.
+- `general_block.adbl`: Filter umum untuk blockir content pada halaman web.
+- `general_hide.adbl`: Filter umum untuk menyembunyikan content pada halaman web.
+- `specific_block.adbl`: Secara spesifik hanya memblokir content pada domain yang disebutkan.
+- `specific_hide.adbl`: Secara spesifik hanya menyembunyikan content pada domain yang disebutkan.
+- `thirdparty.adbl`: Domain yang fungsi utamanya bukan sebagai server, namun dalam beberapa kasus dijadikan tempat untuk host iklan.
+- `whitelist.adbl`: Dalam kasus tertentu, Kita perlu memasukkan web ke dalam whitelist. Contoh: Fungsi utama dari web tersebut tidak jalan karena kesalahan blokir.
+- `/addons/adult-block.adbl`: Filter umum untuk blockir iklan berkonten dewasa.
+- `/addons/adult-hide.adbl`: Filter umum untuk menyembunyikan iklan berkonten dewasa.
+- `/addons/annoyances.adbl`: Filter untuk menghilangkan element web yang cukup mengganggu. Contoh: notifikasi cookie.
+- `/addons/movie.adbl`: Filter untuk menangani iklan pada situs nonton film online.
+- `/addons/news.adbl`: Filter untuk menangani iklan pada situs berita.
+- `/addons/scriptlet-ublock.adbl`:
+- `/addons/shortlink.adbl`: Filter untuk menangani iklan pada situs safelink / shortlink.
