@@ -1,7 +1,7 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.340.584-blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.340.621-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Dec 06, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Dec 06, 2019 UTC" />
 
@@ -103,12 +103,12 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 | `AA`   | Anti-Adblock. |
 | `M`    | Maintain filter. |
 | `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
-| `docs` | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada filter (folder `src`) dan file mentah readme (`/tools/readme/readme.template`). |
-| `chore(<scope>)` | Semua pengeditan pada `/tools`, `/.vscode`, `/.github`, `.editorconfig`, `.gitignore`, `build.sh` dan `validatehost.sh`. Tidak termasuk file mentah readme (`/tools/readme/readme.template`). |
+| `docs` | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada file fragment AdBlockID (folder `src`) dan file template untuk readme (`/tools/readme/readme.template`). |
+| `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore`, `build.sh` & `validatehost.sh`). Tidak termasuk file template untuk readme (`/tools/readme/readme.template`). |
 
 ### Struktur Direktori
 
-Semua file AdBlockID ada di dalam folder `src`, seperti bagan di bawah ini:
+Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah ini:
 
 <pre>
 /src
