@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.342.860
+! Version: 19.343.480
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Dec 2019 14:20 UTC
+! Last modified: 09 Dec 2019 08:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -2970,6 +2970,9 @@ _penggugur_kandungan_$image
 ##[href*="1gpoker."] > img
 ##[href*="1sakong."] > img
 ##[href*="1x2018."] > img
+##[href*="1xbetindo."] > img
+##[href*="1xdota2."] > img
+##[href*="1xhoya."] > img
 ##[href*="1xliga."] > img
 ##[href*="1xme."] > img
 ##[href*="228poker."] > img
@@ -5112,6 +5115,9 @@ _penggugur_kandungan_$image
 ##[href*="1gpoker." i] > img
 ##[href*="1sakong." i] > img
 ##[href*="1x2018." i] > img
+##[href*="1xbetindo." i] > img
+##[href*="1xdota2." i] > img
+##[href*="1xhoya." i] > img
 ##[href*="1xliga." i] > img
 ##[href*="1xme." i] > img
 ##[href*="228poker." i] > img
@@ -8137,12 +8143,11 @@ higud.com,lewat.club##.klikdisini
 bagilagi.com##.klnsora
 sukakesehattan.com##[href*="/sukakesehattan.com"] > img
 semawur.com##[href*="semawur.com/links/share/"]
-movienear.me##img[width="200"][height="60"]
-movienear.me##img[width="320"][height="81"]
-movienear.me##img[width="336"][height="280"]
+movienear.me##[href^="https://bit.ly/"] > img
 ! 
 *$popup,domain=icutlink.com
 *$subdocument,third-party,domain=glory-link.com
+/download%$image,domain=movienear.me
 /download-now-$image,domain=lewat.club
 /skips.png$image,domain=semawur.com
 ! 
@@ -8924,6 +8929,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||bgdacrgsnt.com^
 ||bgfdrngowyy.com^
 ||bgfgaduyvocz.com^
+||bggvfsvaqjvamg.com^
 ||bgibeluywjhgb.com^
 ||bgibrhkn.com^
 ||bgiiubagsuvv.com^
@@ -12028,6 +12034,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||htrprrrtrwrc.com^
 ||httftlckaxj.com^
 ||httpp.gdn^
+||htunjeuczuox.com^
 ||htvlulpbhtkgr.com^
 ||htyazxwc.com^
 ||huayucnblhgy.com^
@@ -13293,6 +13300,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||klhjuuwrmxyjsn.com^
 ||klhvqeajy.com^
 ||klidpcdzfqj.com^
+||klljshial.com^
 ||klmdwvqhi.com^
 ||klmfvshct.bid^
 ||klmvharqoxdq.com^
@@ -14797,6 +14805,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||nmpmgmldzvrmra.com^
 ||nmqgjoytd.com^
 ||nmrcieuvb.com^
+||nmrlcnuok.com^
 ||nmtikqygo.com^
 ||nmuwmfgdwpwb.com^
 ||nmvqhlengcrur.com^
@@ -17047,6 +17056,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||skoyuoqhcpxol.bid^
 ||sksalqvpoc.com^
 ||skspurybnv.com^
+||sksytkvnvnmz.com^
 ||sktmonpbfgxamj.bid^
 ||skzhfyqozkic.com^
 ||skzpsnpp.com^
@@ -17066,6 +17076,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||slwclrwmruuxav.com^
 ||smapohsnoww.com^
 ||smartoffer.site^$third-party
+||smazvhjn.com^
 ||smectapop12.pl^$third-party
 ||smgaklckpszzd.com^
 ||smhqmrxplvnx.com^
@@ -18329,6 +18340,7 @@ thepiratebay.*##+js(abort-on-property-read.js, _wm)
 ||wbthdphsb.com^
 ||wbufuclb.com^
 ||wbxzrxarmzyx.com^
+||wcgrrjyjiaeocd.com^
 ||wclurprkyk.com^
 ||wcobqyeqpckkzh.com^
 ||wcwcypfnvih.com^
@@ -19282,4 +19294,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: s8hTZYdS6oHT+E7Qh4CjZA
+! Checksum: xrNHX/mZ7ytFr45yd10THw
