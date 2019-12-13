@@ -143,5 +143,5 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
 - `/addons/annoyances.adbl`: Filter untuk menghilangkan element web yang cukup mengganggu. Contoh: notifikasi cookie.
 - `/addons/movie.adbl`: Filter untuk menangani iklan pada situs nonton film online.
 - `/addons/news.adbl`: Filter untuk menangani iklan pada situs berita.
-- `/addons/scriptlet-ublock.adbl`: Filter umum untuk [uBlock Resources](https://github.com/gorhill/uBlock/wiki/Resources-Library)
+- `/addons/scriptlet-ublock.adbl`: Filter umum untuk [uBlock Resources](https://github.com/gorhill/uBlock/wiki/Resources-Library).
 - `/addons/shortlink.adbl`: Filter untuk menangani iklan pada situs safelink / shortlink.
