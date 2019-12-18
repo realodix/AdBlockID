@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.352.549
+! Version: 19.352.751
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Dec 2019 09:09 UTC
+! Last modified: 18 Dec 2019 12:31 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -784,6 +784,7 @@ _996x50.gif
 ##.ads-bawah
 ##.ads-bawah-player
 ##.ads-bock-1
+##.ads-bottom-fixed
 ##.ads-kanan
 ##.ads-kanan-player
 ##.ads-kiri
@@ -809,7 +810,6 @@ _996x50.gif
 ##.ads-two
 ##.ads-widget-kanan
 ##.ads-widget-kecil
-##.ads300
 ##.adsFrame500
 ##.adsFrameSideLeft
 ##.adsFrameSideRight
@@ -5506,6 +5506,7 @@ _banner.$image,domain=bantennews.co.id
 ||kilasbengkulu.com^*/iklan-
 ||konikaltim.co/files/banner/$image
 ||korantransparansi.com/images/banners/$image
+||koropak.co.id^*/koropak_co_id_$image
 ||kualitasnews.com^*/iklan-$image
 ||kupastuntas.co^*/iklan-$image
 ||lampungvisual.com^*/iklan-$image
@@ -5640,7 +5641,6 @@ kontan.co.id###div-Halfpage-Yangter
 faktabanten.co.id###fixedban
 swarnajambi.co.id###leader-wrap
 detik.com###otp_banner
-viva.co.id###sticky-bottom
 bola.net###top_leaderboard
 beritasatu.com###topbanner
 kapanlagi.com###v5-marcommpromotion
@@ -5686,8 +5686,6 @@ dream.co.id##.drm-banner-x
 kabar6.com,suaramedannews.com##.e3lan
 harianrakyatbengkulu.com##.e3lan-below_header
 faktabanten.co.id##.ezbxifolk-image
-suara.com##.footer-ads__container
-cnnindonesia.com,detik.com##.footer_banner
 beritakini.co##.funds
 akurasinews.com,beritakaltim.co,infosekitarpekalongan.com,memorandum.co.id,seputarkepri.co.id,suarabojonegoro.com##.gmr-between-post-banner
 detik.com##.gtm_newsfeed_ads
@@ -5711,13 +5709,10 @@ nenemonews.com,suaralomboknews.com##.modulebanner-1
 beritaasatu.com,depokpos.com##.newkarma-core-floatbanner
 baritopost.co.id,depokpos.com,jurnaljatim.com,seputarkepri.co.id##.newkarma-core-topbanner
 detik.com##.newsfeed-ads
-viva.co.id##.paralax_banner
-viva.co.id##.paralax_banner-detail
 koropak.co.id##.parallax-ads
 medcom.id##.parallax_ads
 harianjogja.com##.size-300x250
 detik.com##.skybanner
-cnnindonesia.com##.smartbanner_new
 harianjogja.com##.sp-griya
 terkininews.com##.sponsor
 batampos.co.id,blockchainmedia.id,derapfakta.com,hariannusa.com,hotabis.com,jurnalsumbar.com,koransultra.com,liputanbengkulu.com,metropadang.com,padangtime.com,pwmu.co,sidoarjopos.net,sumbartime.com,tangerangekspres.co.id,teraslampung.com,teropongmetro.com,tobasatu.com,totabuan.news,waspadaaceh.com##.td-a-rec
@@ -5772,6 +5767,7 @@ acehekspres.com##img[width="1048"][height="437"]
 karebatoraja.com##img[width="1063"][height="355"]
 protapriau.com##img[width="1065"][height="189"]
 annews.co.id##img[width="1070"][height="410"]
+kabarrakyat.id##img[width="1071"][height="1764"]
 annews.co.id##img[width="1080"][height="1351"]
 koransultra.com##img[width="1085"][height="177"]
 sasambonews.com##img[width="1131"][height="1600"]
@@ -5895,6 +5891,7 @@ radarlombok.co.id##img[width="591"][height="1241"]
 detaksatu.com##img[width="591"][height="259"]
 protapriau.com##img[width="591"][height="275"]
 lampungcentral.com##img[width="600"][height="328"]
+kabarrakyat.id##img[width="600"][height="800"]
 duta.co##img[width="600"][height="853"]
 gatra.com##img[width="600px"][style="cursor:pointer;"]
 koransultra.com##img[width="611"][height="351"]
@@ -5987,9 +5984,15 @@ kailipost.com,sultengterkini.com##img[width="970"][height="291"]
 protapriau.com##img[width="989"][height="153"]
 ! 
 ! Mobile
-bisnis-tempo-co.cdn.ampproject.org,m-jatimnow-com.cdn.ampproject.org##.amp-flying-carpet-text-border
+viva.co.id###sticky-bottom
+bisnis-tempo-co.cdn.ampproject.org,m-jatimnow-com.cdn.ampproject.org,metro-tempo-co.cdn.ampproject.org##.amp-flying-carpet-text-border
+suara.com##.footer-ads__container
+cnnindonesia.com,detik.com##.footer_banner
+kontan.co.id##.paralax-ad
+viva.co.id##.paralax_banner
+cnnindonesia.com##.smartbanner_new
 amp-suara-com.cdn.ampproject.org##.suara-populer-feed ~ amp-embed
-bisnis-tempo-co.cdn.ampproject.org##amp-fx-flying-carpet
+bisnis-tempo-co.cdn.ampproject.org,metro-tempo-co.cdn.ampproject.org##amp-fx-flying-carpet
 m-jatimnow-com.cdn.ampproject.org##amp-fx-flying-carpet[height="300px"]
 m-jatimnow-com.cdn.ampproject.org,techno-okezone-com.cdn.ampproject.org##amp-iframe[src^="https://click.advertnative.com/"]
 ! 
@@ -7022,4 +7025,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: SLc4uUrrRSqW4Lrm+uTA1A
+! Checksum: EumOhHC8H1XuJqkukbCn3g
