@@ -1,7 +1,7 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-19.356.839-blue.svg?longCache=true&style=flat-square)
+![AdBlockID Version](https://img.shields.io/badge/Version-19.356.842-blue.svg?longCache=true&style=flat-square)
 <img src="https://img.shields.io/badge/Updated-Dec 22, 2019 UTC-orange.svg?longCache=true&style=flat-square"
     alt="Dec 22, 2019 UTC" />
 
