@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.360.655
+! Version: 19.360.714
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Dec 2019 10:55 UTC
+! Last modified: 26 Dec 2019 11:54 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1687,6 +1687,19 @@ _996x50.gif
 ||ubloger.com^$third-party
 ||windowmentaria.com^$third-party
 ! 
+! AFFILIATES
+##[href*="dijaminmurah.com/aff.php?aff="] > img
+||ardhosting.com/img/affiliate-logo.$image,third-party
+||ardhosting.com/upload/affiliasi/$image,third-party
+||dewabiz.com/assets/images/affiliate/$image,third-party
+||dijaminmurah.com/images/affi.jpg$image,third-party
+||dijaminmurah.com/images/affi1.jpg$image,third-party
+||dijaminmurah.com/images/affi2.jpg$image,third-party
+||dijaminmurah.com/images/affi3.jpg$image,third-party
+||dijaminmurah.com/images/dj_affiliasi01.$image,third-party
+||dijaminmurah.com/images/dj_affiliasi02.$image,third-party
+||dijaminmurah.com/images/dj_affiliasi03.$image,third-party
+||dijaminmurah.com/images/dj_affiliasi04.$image,third-party
 ||hoster.co.id/images/affiliasi/$image,third-party
 ||jagoanhosting.com/*/banner/$image,third-party
 ||jogjahost.co.id/images/affiliate/$third-party
@@ -1974,7 +1987,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 ||inclk.com^$popup
 ||mobileofferplace.site^$popup
 ||motosal.net^$popup
-||plaza-bisnis.com^$first-party,popup
+||plaza-bisnis.com^$popup,~third-party
 ||ridingintractable.com^$popup
 ! 
 ||4exlkjnngs.com^$popup
@@ -7106,13 +7119,13 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 @@/wp-content/uploads/*$image,domain=adstarsmedia.co.id|dhadigital.com
 @@://ads.$domain=ads.id|ads.iklandaerah.com
 @@||adsmart.detik.com^$generichide
-@@||agency-iklan.com/wp-content/uploads/$first-party
-@@||doxadigital.com/wp-content/uploads/$first-party,image
-@@||hipwee.com/advertise/$first-party
-@@||idkeyword.com/wp-content/uploads/$first-party
-@@||jualo.com/images/$first-party
-@@||tomato.co.id/wp-content/uploads/$first-party,image
-@@||winstarlink.com/wp-content/uploads/$first-party,image
+@@||agency-iklan.com/wp-content/uploads/$~third-party
+@@||doxadigital.com/wp-content/uploads/$image,~third-party
+@@||hipwee.com/advertise/$~third-party
+@@||idkeyword.com/wp-content/uploads/$~third-party
+@@||jualo.com/images/$~third-party
+@@||tomato.co.id/wp-content/uploads/$image,~third-party
+@@||winstarlink.com/wp-content/uploads/$image,~third-party
 ! 
 ! --------------------------------------------------------------
 ! Memperbaiki kerusakan karena EasyList dan uBlock filters
@@ -7138,8 +7151,9 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 @@://ads.$domain=ads.bisnisjakarta.co.id|ads.gadgetsquad.id|ads.genmuda.com|ads.hukumonline.com|ads.kaskus.co.id|ads.kontan.co.id|ads.wartaekonomi.co.id
 @@_advertising/$domain=advertising.katadata.co.id
 @@||ad6media.fr^$script,domain=multiup.org
-@@||resolusiweb.com/images/$first-party
-@@||resolusiweb.com/img/$first-party
+@@||masterweb.com/wp-content/uploads/$~third-party
+@@||resolusiweb.com/images/$~third-party
+@@||resolusiweb.com/img/$~third-party
 ! 
 ! --------------------------------------------------------------
 ! Memperbaiki kerusakan karena EasyPrivacy
@@ -7152,4 +7166,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: t9gSZyMqZ3fKIV4e+1oGRA
+! Checksum: OWfMKaNleETUeo59B/gnkw
