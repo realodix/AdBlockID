@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.361.33
+! Version: 19.361.705
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Dec 2019 00:33 UTC
+! Last modified: 27 Dec 2019 11:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8202,7 +8202,7 @@ semawur.com##[href*="semawur.com/links/share/"]
 movienear.me##[href^="https://bit.ly/"] > img
 movienear.me##img[width="200"][height="60"]
 ! 
-*$popup,domain=icutlink.com
+*$popup,domain=icutlink.com|movienear.me
 *$subdocument,third-party,domain=glory-link.com
 /down.png$image,domain=movienear.me|shrink.world
 /download%$image,domain=movienear.me
@@ -8222,7 +8222,7 @@ shrtfly.net##+js(abort-on-property-read, tabUnder)
 ceklink.co##+js(abort-on-property-read, tampilkanUrl)
 netijenshare.com##+js(abort-on-property-write.js, adBlockDetected)
 razorlink.us##+js(set-constant, safelink.adblock, false)
-ac-mo.com,higud.com,movienear.me##+js(window.open-defuser)
+ac-mo.com,higud.com##+js(window.open-defuser)
 ! *** abid:thirdparties-filter.txt ***
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ahoypirate.click|ahoypirate.in|ahoypiratebaai.eu|airproxyproxy.pw|airproxytpb.red|alivbay.org|batpirate.info|bay.maik.rocks|bayception.pw|baypirate.click|baypiratebay.be|baypirateproxy.org|baypirateproxy.pw|bayproxy.eu|bypassed.st|capjackproxy.net|cruzing.xyz|ddmix.net|depiratenbaai.nl|duckingproxy.eu|extratorrent.cd|extratorrent.si|hq-porns.com|hyperproxy.net|ikwildepiratebay.org|ikwildepiratebay.xyzbrowse|indiaproxy.in|indiaproxydl.orgbrowse|intactoffers.club|kickass.cd|magnetbay.eu|myfeed4u.net|noobnoob.rocks|pietpiraat.org|pirat2.club|pirataibay.in|piratbaypirate.link|pirate.bet|pirate.blue|pirate.trade|pirateahoy.net|piratebaai.click|piratebaai.club|piratebay.click|piratebay.red|piratebay.telbrowse|piratebay.town|piratebay.website|piratebay247.net|piratebayblocked.com|piratebaymirror.eu|piratebayproxy.tf|piratebays.be|piratebays.co|piratenbucht.eu|piratepirate.eu|pirateprox.club|pirateproxy.click|pirateproxy.ist|pirateproxy.mx|pirateproxy.tf|pirateproxy.wf|pirateproxy.yt|piratetoday.click|proxybayduck.fi|proxydl.cf|proxyfl.info|proxyindia.net|proxyme.site|proxyme.win|proxyoneahoy.net|proxypirate.in|proxypirate.website|proxyproxyproxy.nl|proxyship.click|proxytpb.org|proxytpb.pw|reservedoffers.club|rowpirate.org|skyback.ru|superbay.link|szukajka.tv|thehiddenbay.cc|themagnetbay.info|thepbay.ga|thepirate.click|thepirate.xyz|thepiratebay-proxy.com|thepiratebay.bet|thepiratebay.blue|thepiratebay.cr|thepiratebay.futbol|thepiratebay.kiwi|thepiratebay.org|thepiratebay.pet|thepiratebay.pictures|thepiratebay.red|thepiratebay.rocks|thepiratebay.se.net|thepiratebay.tel|thepiratebay.wtf|thepirateproxy.host|thepirateproxy.pro|thepirateproxy.win|thepirateproxy.ws|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tpb.crushus.com|tpb.one|tpb.tw|tpbairproxy.in|tpbbay.eu|tpbduck.com|tpbmirror.us|tpbmonk.com|tpbonion.win|tpbpirate.info|tpbpirate.pw|tpbpirate.site|tpbportal.in|tpbproxy.club|tpbproxy.win|tpbproxyone.org|tpbrun.win|tpproxy.website|ukpirate.click|ukpirate.org|ukpirateproxy.xyz|unblockedhyperbay.info|unblocktheship.org|unblocktpb.com|urbanproxy.eu|vidoza.co|vidoza.net|vidup.me|vidup.tv|wearepirates.click|zombay.org
@@ -9062,4 +9062,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: 9NdQmRlZPGROKSwYyVr00A
+! Checksum: bL4tBpVPVyB/xwJv5/8GZA
