@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 19.365.569
+! Version: 19.365.621
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 31 Dec 2019 09:29 UTC
+! Last modified: 31 Dec 2019 10:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -186,6 +186,7 @@ _promosi.
 -120x327-
 -120x440pxl.
 -120x450-
+-1235x180.
 -1280X195.
 -1497x186.
 -150x300px
@@ -2807,6 +2808,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 /tangkas-500x500.$image
 /togel-$image
 /vibol.$image
+/w88131-$image
 /wigo.gif$image
 _indokasino.$image
 _penggugur_kandungan_$image
@@ -4451,9 +4453,11 @@ _penggugur_kandungan_$image
 ##[href*="96.30.29.47"] > img
 ! 
 ##[href*="-agen-sabung-"] > img
+##[href*=".rpslot."] > img
 ##[href*="//bltks."] > img
 ##[href*="//nagaikn."] > img
 ##[href*="/master88"] > img
+##[href*="/rpslot."] > img
 ##[href*="/situs-judi-"] > img
 ##[href*="/xtubecinema"] > img
 ##[href*="1001bet"] > img
@@ -4961,6 +4965,7 @@ _penggugur_kandungan_$image
 ##[href*="bsakong2."] > img
 ##[href*="btybet."] > img
 ##[href*="bukutogel"] > img
+##[href*="buluprwn"] > img
 ##[href*="bunchofwinners."] > img
 ##[href*="bursabet."] > img
 ##[href*="bursajudibola."] > img
@@ -5235,6 +5240,8 @@ _penggugur_kandungan_$image
 ##[href*="enjoydomino."] > img
 ##[href*="enjoyqq."] > img
 ##[href*="entaplyid."] > img
+##[href*="entotin"] > img
+##[href*="entotxyz"] > img
 ##[href*="eradominoqq."] > img
 ##[href*="eraqq"] > img
 ##[href*="esa-jaya"] > img
@@ -5508,6 +5515,7 @@ _penggugur_kandungan_$image
 ##[href*="indomb."] > img
 ##[href*="indonalo"] > img
 ##[href*="indopk365."] > img
+##[href*="indoporn"] > img
 ##[href*="indoqq."] > img
 ##[href*="indoremi."] > img
 ##[href*="indosbobet88."] > img
@@ -6229,6 +6237,7 @@ _penggugur_kandungan_$image
 ##[href*="palapabola.info"] > img
 ##[href*="palapabola.org"] > img
 ##[href*="palapabola.site"] > img
+##[href*="palapabola88."] > img
 ##[href*="pamanbolanet"] > img
 ##[href*="pamelapoker."] > img
 ##[href*="panduanjudionline."] > img
@@ -6247,7 +6256,7 @@ _penggugur_kandungan_$image
 ##[href*="parisbola."] > img
 ##[href*="parisdomino."] > img
 ##[href*="parisqq."] > img
-##[href*="paristogel."] > img
+##[href*="paristogel"] > img
 ##[href*="partai99"] > img
 ##[href*="pasang88."] > img
 ##[href*="pasangagenjudi."] > img
@@ -7045,6 +7054,7 @@ _penggugur_kandungan_$image
 ##[href*="totokini."] > img
 ##[href*="totokita"] > img
 ##[href*="totokl."] > img
+##[href*="totokl4d."] > img
 ##[href*="totomaster."] > img
 ##[href*="totomilenial."] > img
 ##[href*="totoonlinehk"] > img
@@ -7336,11 +7346,13 @@ _penggugur_kandungan_$image
 ##img[alt*="luxury777" i]
 ##img[alt*="maxbetqq" i]
 ##img[alt*="mejasakong" i]
+##img[alt*="nonton video bokep" i]
 ##img[alt*="novapoker" i]
 ##img[alt*="obat pembesar penis" i]
 ##img[alt*="pesonaQQ" i]
 ##img[alt*="poker jingga" i]
 ##img[alt*="pokercip" i]
+##img[alt*="promo togel" i]
 ##img[alt*="rajajudiQQ" i]
 ##img[alt*="rajaremi" i]
 ##img[alt*="sahamQQ" i]
@@ -7352,9 +7364,11 @@ _penggugur_kandungan_$image
 ##img[alt*="situs poker" i]
 ##img[alt*="situs slot online" i]
 ##img[alt*="situs taruhan" i]
+##img[alt*="streaming video bokep" i]
 ##img[alt*="tajirQQ" i]
 ##img[alt*="taruhan bola" i]
 ##img[alt*="togel online" i]
+##img[alt*="video bokep online" i]
 ##img[alt*="viralQQ" i]
 ##img[alt*="wahana303" i]
 ##img[alt*="wigobet" i]
@@ -7401,6 +7415,7 @@ _penggugur_kandungan_$image
 ##img[title*="kiosbet" i]
 ##img[title*="ligaQQ" i]
 ##img[title*="mejasakong" i]
+##img[title*="nonton video bokep" i]
 ##img[title*="poker bola" i]
 ##img[title*="rgobet" i]
 ##img[title*="sboQQ" i]
@@ -7412,7 +7427,9 @@ _penggugur_kandungan_$image
 ##img[title*="situs judi" i]
 ##img[title*="situs poker online" i]
 ##img[title*="situs togel" i]
+##img[title*="streaming video bokep" i]
 ##img[title*="taruhan bola" i]
+##img[title*="video bokep online" i]
 ##img[title*="wigobet" i]
 ! *** abid:src/addons/movie.adbl ***
 .gif$image,domain=anoboy.us|conan.id|gudangfilm.top|nanime.in|nontondrama.me
@@ -9208,4 +9225,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: 0wGk/bAq1empYpvTqg8Jsw
+! Checksum: ESM7ONU1whjuRi1B4xq39A
