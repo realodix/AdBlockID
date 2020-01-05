@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.005.743
+! Version: 20.005.766
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Jan 2020 12:23 UTC
+! Last modified: 05 Jan 2020 12:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -148,6 +148,7 @@
 /smartfren/ads.
 /space-available.
 /spaceads.
+/sponsor-iklan.
 /top_iklan1.
 /vg728x90.
 /vic_image/iklan/*
@@ -157,6 +158,8 @@ _iklan-
 _iklan.
 _iklan_tengah_
 _iklanatas/
+_iklanfixed/
+_iklanheader/
 _iklansidebar_
 _iklantengah/
 _iklantengah_
@@ -714,6 +717,7 @@ _996x50.gif
 ###iklanpost
 ###iklanresponsiveatas
 ###iklansidebar
+###iklansidebar3
 ###islemag_content_ad-widget-2
 ###it-ad-header
 ###ixlan
@@ -731,11 +735,13 @@ _996x50.gif
 ###kopa_widget_advertising-2
 ###lAds
 ###left_ads_float_phonedevelop
+###m_spaceiklan
 ###mvp-post-bot-ad
 ###pbanner
 ###popupinfoAd1
 ###popupinfoAd_img1
 ###popupinfoAd_main1
+###related-iklan
 ###safelink-iklan-kanan
 ###safelink-iklan-kiri
 ###safelink-iklan-top
@@ -1155,6 +1161,7 @@ _996x50.gif
 ##.mask-ads
 ##.mks_adswidget_ul
 ##.mobileadstop
+##.myiklan
 ##.newkarma-core-topbanner
 ##.newkarma-core-topbanner-aftermenu
 ##.news__ads
@@ -1896,6 +1903,7 @@ pasardana.id##.sda-banner
 musiklib.org##.sidebar-sponsor
 mydramalist.com##.spnsr
 mydramalist.com##.spnsr-wrapper
+beasiswaindo.com##.sponsor-1
 cermati.com##.sticky-banner
 duniafintech.com##.td-a-rec
 baliekbis.com##.textwidget > .img-hyperlink
@@ -9144,6 +9152,7 @@ mi-globe.com#@#.an-advert-banner
 @@||majalahikan.com^$generichide
 @@||mangacanblog.com^$generichide
 @@||mangashiro.net^$generichide
+@@||mynotescode.com^$generichide
 @@||nama.web.id^$generichide
 @@||neumanga.tv^$generichide
 @@||novelgo.id^$generichide
@@ -9170,7 +9179,7 @@ mi-globe.com#@#.an-advert-banner
 ! 
 ! --------------------------------------------------------------
 ! EMPTY ADS PLACEHOLDERS
-bagikancara.com,belajarbro.id,bloggerszones.com,contohblog.com,eirudo.com,gadget2reviews.com,gurusd.web.id,hightech.web.id,hobybaca.com,kelasdesain.com,majalahikan.com,novelgo.id,obengplus.com,omahkpop.com,panduaneka.com,rumahsleman.com,seniberpikir.com,suryapero.com,tikusliar.com##.adsbygoogle
+bagikancara.com,belajarbro.id,bloggerszones.com,contohblog.com,eirudo.com,gadget2reviews.com,gurusd.web.id,hightech.web.id,hobybaca.com,kelasdesain.com,majalahikan.com,mynotescode.com,novelgo.id,obengplus.com,omahkpop.com,panduaneka.com,rumahsleman.com,seniberpikir.com,suryapero.com,tikusliar.com##.adsbygoogle
 hobybaca.com##.td-adspot-title
 ! *** abid:src/whitelist.adbl ***
 @@-belajar-$image
@@ -9255,4 +9264,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: 9cWnhsqPGtX1c3hK5OLUXQ
+! Checksum: HzOk3NBylSAr2tKSXRRnJQ
