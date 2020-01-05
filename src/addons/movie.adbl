@@ -1,30 +1,36 @@
-.gif$image,domain=anoboy.us|conan.id|gudangfilm.top|nanime.in|nontondrama.me
-/banner%$image,domain=huntersekai.website
-bioskop45.*,bioskopbos.*,kawanfilm21.*,layarindo21.*,lk21.*,manganime.*,nekopoi.*,nontongratis88.*##[href*="/bit.ly/"] > img
+! SPECIFIC HIDE
+! --------------------------------------------------------------
+bioskop45.*,bioskopbos.*,kawanfilm21.*,kazefuri.web.id,layarindo21.*,lk21.*,manganime.*,nekopoi.*,nontongratis88.*##[href*="/bit.ly/"] > img
 nontonanimeindo.net##a[href*="//goo.gl/"] > img
-||blogspot.com/*.gif$image,domain=lk21id.com|netnot21.com
-!
-*$popup,domain=awnime.net
-/popup.$script,domain=drakorindo.cc
-|http:$popup,third-party,domain=serunonton.com
 !
 doramaku.me###banner-tengah
 narashika.cc###btm_banner
 layarkeren.com###divFLRALeft
 lk21sub.net###form_view
+kazefuri.web.id###iklan-pos
+dramamu.net###netkevin-overlay
+d21.tv###overlay-pop
+dramamu.net###popup_content
 nonton.com##.adds
+kazefuri.web.id##.ads300
 manganime.id##.ads720
+kazefuri.web.id##.adsbawah1
 neonime.org##.berlangganan-300
 neonime.org##.berlangganan-460
 103.194.171.75##.bnner
 mivo.com##.home-page .player-ads-top-1
 drakorindofilms.net,inidramaku.com,korenlovers.co,oujanime.com##.iklan
 layarkeren.com##.mfp-bg
+dutafilm.live##.swal-overlay
+animelink.net##.toast:-abp-contains(Promosi)
+kazefuri.web.id##[class^="SC_TBlock_"]
 kantaii.web.id##[href*="/ref/bangago"]
+asiaxxi.*##.bnner
 bioskopkerenin.*###float-banner
 bioskopkerenin.*###middle-banner
 bioskopkerenin.*###ptbanner
 bioskopkerenin.*###top-banner
+dutafilm.live,kotaksilver.casa##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 cinemaindo.*##.iklan
 dunia21.*###overlay-pop
 dunia21.*,filmapik.*,ns21.ltd,terbit21.*##[href*="/advertising"] > img
@@ -33,7 +39,14 @@ indoxxi.*##.popUpBannerBox
 lk21c.*##[href*="/rebrand.ly/"]
 sukamovie.*##.sukam-atas-post
 sukamovie.*##.sukam-bawah
-||api.nontongo.win/promomenubola.xml$xmlhttprequest
+!
+! SPECIFIC BLOCK
+! --------------------------------------------------------------
+.gif$image,domain=animenonton.tv|anoboy.us|conan.id|gudangfilm.top|nanime.in|nontondrama.me
+/banner%$image,domain=huntersekai.website
+||blogspot.com/*.gif$image,domain=lk21id.com|netnot21.com|rmcmv.us
+||ibb.co/*.gif$image,domain=kazefuri.web.id
+!
 ||awnime.net/*.gif
 ||bioskop168.*.gif
 ||bioskop45.*/banner/$image
@@ -65,16 +78,23 @@ sukamovie.*##.sukam-bawah
 ||nontonindoxx1.*/*.gif$image
 ||serunonton.*/wp-content/uploads*.gif$image
 !
+||api.nontongo.win/promomenubola.xml$xmlhttprequest
 ||bebasdownloadfilm.com/iframe/content.php$subdocument
 ||indexmovie.biz/iframe/content.php$subdocument
 !
+! ANNOYANCES
 ! --------------------------------------------------------------
+*$popup,domain=awnime.net
+/popup.$script,domain=drakorindo.cc
+|http:$popup,third-party,domain=serunonton.com
+!
 ! ANTI-ADBLOCK
+! --------------------------------------------------------------
 /rmp-blockadblock.js$domain=mivo.com
 @@/ads.$script,domain=negumo.com
 @@/adsbygoogle.$script,domain=nekopoi.care
-@@/indoxxi-logo-
 @@/pagead2.$script,domain=downmovie21.site
+!
 @@||anibatch.me^$generichide
 @@||animee.xyz$generichide
 @@||animenonton.tv^$generichide
@@ -99,22 +119,14 @@ drakoric.com,samehadaku.net.in#@##banner_ad
 filmboxoffice.web.id#@#.an-advert-banner
 cinemaindo21.*#@##topad
 !
-.gif$image,domain=animenonton.tv
-||blogspot.com/*.gif$image,domain=rmcmv.us
-||ibb.co/*.gif$image,domain=kazefuri.web.id
-!
-kazefuri.web.id###iklan-pos
-dramamu.net###netkevin-overlay
-d21.tv###overlay-pop
-dramamu.net###popup_content
-kazefuri.web.id##.ads300
-kazefuri.web.id##.adsbawah1
-dutafilm.live##.swal-overlay
-animelink.net##.toast:-abp-contains(Promosi)
-kazefuri.web.id##[class^="SC_TBlock_"]
-kazefuri.web.id##[href*="//bit.ly/"] > img
-asiaxxi.*##.bnner
-dutafilm.live,kotaksilver.casa##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
-! --------------------------------------------------------------
 ! ANNOYANCES
+! --------------------------------------------------------------
+*$popup,domain=awnime.net
+/popup.$script,domain=drakorindo.cc
+|http:$popup,third-party,domain=serunonton.com
+!
 /Download-Button.png$image,domain=anime-indo.id
+!
+! WHITELIST
+! --------------------------------------------------------------
+@@/indoxxi-logo-
