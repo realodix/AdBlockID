@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.006.51
+! Version: 20.006.546
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Jan 2020 00:51 UTC
+! Last modified: 06 Jan 2020 09:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -19,6 +19,7 @@
 -banner-300.
 -banner-728.
 -banner-ads.
+-banner-iklan-
 -banner750x200-
 -iklan1.
 -iklan2.
@@ -1005,6 +1006,8 @@ _996x50.gif
 ##.iklan-col-kiri1
 ##.iklan-col-kiri2
 ##.iklan-col-kiri3
+##.iklan-desktop-hide-desktop
+##.iklan-desktop-hide-mobile
 ##.iklan-home-headline-bottom
 ##.iklan-item
 ##.iklan-kanan
@@ -1026,6 +1029,7 @@ _996x50.gif
 ##.iklan-latest-kanan
 ##.iklan-latest-kiri
 ##.iklan-left
+##.iklan-matched
 ##.iklan-pos
 ##.iklan-puff
 ##.iklan-right
@@ -1068,6 +1072,7 @@ _996x50.gif
 ##.iklan_tengah
 ##.iklan_zone
 ##.iklana
+##.iklanbukaweb
 ##.iklandetail
 ##.iklanhead
 ##.iklanheader
@@ -1189,6 +1194,9 @@ _996x50.gif
 ##.safelink-iklankanan
 ##.safelink-iklankiri
 ##.safelink-iklantop
+##.sec-iklan-lands
+##.sec-iklan-lands-top-v2
+##.sec-iklan-pot
 ##.set-ads-468
 ##.sf-ad-header-below
 ##.single_ad_728x90
@@ -1771,6 +1779,7 @@ _996x50.gif
 ||anjingkita.com^*/banners/$image
 ||anjingras.com^*/images/banner-$image
 ||anjingras.com^*/images/banner_$image
+||banghasan.com/banner/$image
 ||bisablog.com^*/banner-promo-$image
 ||bitcoin.co.id/banner/$image
 ||borukaro.com/wp-content/uploads/*-promo.$image
@@ -1985,7 +1994,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 ||sumome.com^$third-party
 ||tangkas.gold$third-party
 ||tv.kaskus.co.id/api/embed/widget/*&ads=$subdocument
-||vidio.com/embed/*autoplay=true$subdocument
+||vidio.com/embed/*autoplay=true&player_only=true&live_chat=false&mute=true$subdocument,third-party
 ! 
 ! ----------------------------------------
 ! Cookie
@@ -8240,7 +8249,7 @@ cnnindonesia.com##.smartbanner_new
 amp-suara-com.cdn.ampproject.org##.suara-populer-feed ~ amp-embed
 metro-tempo-co.cdn.ampproject.org,tempo.co##amp-fx-flying-carpet
 bisnis-tempo-co.cdn.ampproject.org,blog-tempo-co.cdn.ampproject.org,bola-tempo-co.cdn.ampproject.org,creativelab-tempo-co.cdn.ampproject.org,difabel-tempo-co.cdn.ampproject.org,dunia-tempo-co.cdn.ampproject.org,gaya-tempo-co.cdn.ampproject.org,m-jatimnow-com.cdn.ampproject.org,nasional-tempo-co.cdn.ampproject.org,otomotif-tempo-co.cdn.ampproject.org,seleb-tempo-co.cdn.ampproject.org,sport-tempo-co.cdn.ampproject.org,tekno-tempo-co.cdn.ampproject.org,tempo.co,travel-tempo-co.cdn.ampproject.org##amp-fx-flying-carpet[height="300px"]
-m-jatimnow-com.cdn.ampproject.org,techno-okezone-com.cdn.ampproject.org##amp-iframe[src^="https://click.advertnative.com/"]
+bola-okezone-com.cdn.ampproject.org,celebrity-okezone-com.cdn.ampproject.org,economy-okezone-com.cdn.ampproject.org,lifestyle-okezone-com.cdn.ampproject.org,m-jatimnow-com.cdn.ampproject.org,muslim-okezone-com.cdn.ampproject.org,nasional-okezone-com.cdn.ampproject.org,otomotif-okezone-com.cdn.ampproject.org,sports-okezone-com.cdn.ampproject.org,techno-okezone-com.cdn.ampproject.org##amp-iframe[src^="https://click.advertnative.com/"]
 ! 
 ! ANTI-ADBLOCK
 ! --------------------------------------------------------------
@@ -8278,25 +8287,25 @@ suarasumselnews.co.id#@#.category-advertorial
 ||adsafelink.com/js/webscript.js$script,third-party
 ||androidbusiness.us^*/js/safelink.js$script,third-party
 ||bloggerku.com/safelink/auto.js$script,third-party
-||githack.com/andrianadi888/safeevolution/*/Auto.js^$third-party
-||githack.com/arlinadsign/saflink/*/Safelink21.js$third-party
-||githack.com/crezenity/digimoclubwp/*$script,third-party
-||githack.com/crezenity/imoclub/*$script,third-party
-||githack.com/crezenity/online/*$script,third-party
-||githack.com/riandiramdani/safelinku.com/*/script.js
-||githack.com/riandiramdani/safelinku.com/*/scriptlinku.js
-||githack.com/rizkiramdandi/Dev/master/autoconvretlink.js^$third-party
-||jsdelivr.net/gh/Indzign/*/autosafelink.js$third-party
-||kadal.club/js/getlinkz.js$third-party
-||mispuani.xyz^*/sparklingku.js^$script,third-party
-||mispuani.xyz^*/sparklingkuv2.js^$script,third-party
+||githack.com/andrianadi888/safeevolution/*/Auto.js$script,third-party
+||githack.com/arlinadsign/saflink/*/Safelink21.js$script,third-party
+||githack.com/crezenity/digimoclubwp/$script,third-party
+||githack.com/crezenity/imoclub/$script,third-party
+||githack.com/crezenity/online/$script,third-party
+||githack.com/riandiramdani/safelinku.com/*/script.js$script,third-party
+||githack.com/riandiramdani/safelinku.com/*/scriptlinku.js$script,third-party
+||githack.com/rizkiramdandi/Dev/*/autoconvretlink.js$script,third-party
+||jsdelivr.net/gh/Indzign/*/autosafelink.js$script,third-party
+||kadal.club/js/getlinkz.js$script,third-party
+||mispuani.xyz^*/sparklingku.js$script,third-party
+||mispuani.xyz^*/sparklingkuv2.js$script,third-party
 ||pasardownload.com/safelink.js$script,third-party
 ||rawgit.com^*/safelinkea.js$script
 ||rikucan.com^*/js/looping.js$script,third-party
-||safelinku.com/fullpage/script.js$third-party
+||safelinku.com/fullpage/script.js$script,third-party
 ||safelinku.com/js/web-script.js$script,third-party
-||statically.io/gh/awlagu/sflink/*/Auto.js$third-party
-||statically.io/gh/hubgit21/club/*/club.js$third-party
+||statically.io/gh/awlagu/sflink/*/Auto.js$script,third-party
+||statically.io/gh/hubgit21/club/*/club.js$script,third-party
 ! 
 ! ANTI-ADBLOCK
 ! --------------------------------------------------------------
@@ -9200,6 +9209,7 @@ mi-globe.com#@#.an-advert-banner
 @@||suryapero.com^$generichide
 @@||tikusliar.com^$generichide
 @@||tokusatsuindo.com^$generichide
+@@||tutorialjaringan.com^$generichide
 @@||tutorialweb.net^$generichide
 @@||wincamp.org^$generichide
 @@||zaqe.xyz^$generichide
@@ -9207,6 +9217,7 @@ mi-globe.com#@#.an-advert-banner
 ! --------------------------------------------------------------
 ! EMPTY ADS PLACEHOLDERS
 bagikancara.com,belajarbro.id,bloggerszones.com,contohblog.com,eirudo.com,gadget2reviews.com,gurusd.web.id,hightech.web.id,hobybaca.com,kelasdesain.com,majalahikan.com,mynotescode.com,novelgo.id,obengplus.com,omahkpop.com,panduaneka.com,rumahsleman.com,seniberpikir.com,suryapero.com,tikusliar.com##.adsbygoogle
+tutorialjaringan.com##.middle-ads
 hobybaca.com##.td-adspot-title
 ! *** abid:src/whitelist.adbl ***
 @@-belajar-$image
@@ -9231,6 +9242,7 @@ hobybaca.com##.td-adspot-title
 ! 
 jualo.com#@#.ad-title
 baliadvertiser.biz#@#.ads-carousel
+iklandb.com,iklanin.info#@#.afs_ads
 sebariklanbaris.net#@#.content-ads
 ads-ina.org,topbisnis.org#@#[href*="/ads-"]
 jualo.com#@#[href*="/iklan-"] > img
@@ -9291,4 +9303,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: extb70dl9rL1unx6J4V/8A
+! Checksum: 8NSaU0l52R0eLQR+ChPbmg
