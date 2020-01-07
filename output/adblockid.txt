@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.006.1324
+! Version: 20.007.79
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Jan 2020 22:04 UTC
+! Last modified: 07 Jan 2020 01:19 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -25,6 +25,7 @@
 -iklan2.
 -ikln.
 .com/iklan/
+.id/ads/
 .id/iklan/
 .id^*/ad.
 .id^*/ad/
@@ -8000,6 +8001,7 @@ fajarmanado.com,sulutreview.com##.wrap-banner
 winnetnews.com##[href*="winnetnews.com/other/ads/"]
 suarantb.com##[href^="http://bit.ly/"] > img
 nusabali.com##[href^="https://bit.ly/"] > img
+balipost.com##[id^="ads-"]
 bantenkini.com,citrust.id,kabarsumbawa.com,listingberita.com,metrosulawesi.id,redkal.com,sakanews.com,sidakpost.id,suarasikka.com,suaratangsel.com,sumeks.co##a[href="#"] > img
 baliportalnews.com##a[rel="noopener noreferrer"] > img
 beritajatim.com,duta.co,infojambi.com,kejarfakta.com,kompaslima.com,nmcberita.id,pelitasumsel.com,penaberlian.com,radarlampung.co.id,riauterkini.com,samawarea.com,suarakristen.com,sumeks.co##a[target="_blank"] > img
@@ -8298,27 +8300,26 @@ bola-okezone-com.cdn.ampproject.org,celebrity-okezone-com.cdn.ampproject.org,eco
 ! 
 ! ANTI-ADBLOCK
 ! --------------------------------------------------------------
-@@/bplogo.$domain=beritapagi.co.id
 @@/fuckadblock.$script,domain=baritopost.co.id|kabar6.com|konten.co.id|listingberita.com|nusantarapos.co.id|suaranasional.com|terasmaluku.com
-@@/iklan-langganan.$domain=radarlombok.co.id
 @@/pagead2.$domain=kalimantanpost.com
 @@://ads.$domain=klasika.kompas.com
-@@kompas.com/pasangiklan/api/ads/
 @@||balipost.com^$generichide
 @@||cidahu.com^$generichide
 @@||kabarmakkah.com^$generichide
-@@||kongkrit.com/category/iklan/$~third-party
 @@||konten.co.id^$generichide
 @@||newscorner.id^$generichide
 @@||radarlombok.co.id^$generichide
 @@||tribunislam.com^$generichide
-balipost.com##.adsbygoogle
+! 
+! 
+! EMPTY ADS PLACEHOLDERS
+! --------------------------------------------------------------
+balipost.com,konten.co.id,radarlombok.co.id##.adsbygoogle
 balipost.com##.paralax_div
-balipost.com##[id^="ads-"]
-konten.co.id##.adsbygoogle
-radarlombok.co.id##.adsbygoogle
-radarmalang.id#@#.td-ad-background-link
-suarasumselnews.co.id#@#.category-advertorial
+! 
+! WHITELIST
+! --------------------------------------------------------------
+@@/bplogo.$image,domain=beritapagi.co.id
 ! *** abid:src/addons/shortlink.adbl ***
 ##[href*="ouo.io/ref/" i]
 ||adsafelink.com/banner/
@@ -9265,22 +9266,13 @@ bagikancara.com,belajarbro.id,bloggerszones.com,contohblog.com,eirudo.com,gadget
 tutorialjaringan.com##.middle-ads
 hobybaca.com##.td-adspot-title
 ! *** abid:src/whitelist.adbl ***
-@@-belajar-$image
 @@/ayopasangiklan.$image
-@@/belajar-$image
 @@/belanja_iklan-$image
-@@/biaya-google-adwords-$image
 @@/cara-beriklan.$image
 @@/contoh-iklan-$image
-@@/google-ads-logo.$image
-@@/google-adwords-example-$image
-@@/istilah-google-$image
-@@/kelas-google-$image
+@@/iklan-langganan.$image
 @@/pasang-google-$image
 @@/pasang-iklan-$image
-@@/seminar-google-$image
-@@/workhsop-google-$image
-@@_belajar_$image
 ! 
 ! --------------------------------------------------------------
 ! Situs Iklan
@@ -9348,4 +9340,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: jEfwoB9+6685cLcusKZUOg
+! Checksum: +C2ucx404dqevHPlU49EgA
