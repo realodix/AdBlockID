@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.007.79
+! Version: 20.007.101
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Jan 2020 01:19 UTC
+! Last modified: 07 Jan 2020 01:41 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1233,8 +1233,6 @@ _996x50.gif
 ##.wrap-fixed-ads
 ##[href*="/ads-"]
 ##[href*="/iklan-ads/"]
-##[href*="/iklan/"] > img
-##[href*="/info-iklan/"]
 ##[href^="/api/1/ad/"]
 ##[href^="/mellowads."]
 ##[id*="-iklan-kanan-"]
@@ -7724,15 +7722,12 @@ _banner.$image,domain=bantennews.co.id
 ! 
 ||adsimg.kompas.com^
 ||ajnn.net/files/sewaan/$image
-||akurasinews.com/wp-content/uploads/*-640x905.$image
 ||akurat.co/images/banner/$image
 ||ayobandung.com/assets/img/banner-$image
 ||ayosemarang.com/assets/img/banner_$image
 ||ayotegal.com/assets/img/banner/$image
 ||ayoyogya.com/assets/img/banner/$image
 ||banuatv.com^*-iklan-$image
-||batampos.co.id/wp-content/uploads/*/small-$image
-||batampos.co.id^*/ad-$image
 ||bengkuluekspress.com^*/banner-$image
 ||bengkuluinteraktif.com^*/promo/$image
 ||bengkulutoday.com^*/banner/$image
@@ -7744,7 +7739,6 @@ _banner.$image,domain=bantennews.co.id
 ||beritajakarta.id^*/banner/$image
 ||beritajateng.net^*/banner-$image
 ||beritakaltim.co^*/banner-$image
-||beritamerdekaonline.com^*/banner-
 ||beritamerdekaonline.com^*/banner-$image
 ||beritapenajam.net^*/bener-$image
 ||beritapenajam.net^*/benner-$image
@@ -7774,30 +7768,18 @@ _banner.$image,domain=bantennews.co.id
 ||harianjogja.com^*/banner/$image
 ||hariankepri.com^*/banner-$image
 ||harianmemokepri.com^*/banner-$image
-||harianrakyatbengkulu.com/wp-content/uploads/*/*120x600.$image
-||harianrakyatbengkulu.com^*-banner-$image
-||harianrakyatbengkulu.com^*/banner-$image
 ||hotabis.com/wp-content/uploads/*.gif$image
 ||iklan.beritajatim.com/$image
-||iklan.sorotmedianusantara.com/*^$third-party
-||indopos.co.id/assets/images/*_banner-$image
-||indopos.co.id^*/storage/uploads/a/$image
+||iklan.sorotmedianusantara.com/$third-party
 ||infojambi.com^*/banner-$image
 ||infosekitarpekalongan.com^*/banner-$image
-||infosultra.id/wp-content/uploads/*-1024x768.$image
-||infosultra.id/wp-content/uploads/*-768x1024.$image
 ||inibengkulu.com^*/banner-$image
 ||inilahkoran.com^*/banners/$image
 ||inspirasinews.co^*/promotion_$image
 ||jatengtoday.com^*/banner-$image
 ||jejamo.com^*/banner$image
 ||jemberpost.net^*/banner-$image
-||kabar.news//sites/default/files/gbb-uploads/$image
 ||kajanglako.com^*/banner/$image
-||kalbaronline.com/*-240x300.$image
-||kalbaronline.com/*-300x250.$image
-||kalimantanpost.com/wp-content/uploads/*/iklan*.$image
-||kalimantanpost.com^*/400x400px-300x300.$image
 ||kaltengpos.co/baner/$image
 ||katim.id^*/img/banner/$image
 ||kba.one/files/sewaan/$image
@@ -9340,4 +9322,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: +C2ucx404dqevHPlU49EgA
+! Checksum: Xj6XHWx+tW2cV6c7xMfk8g
