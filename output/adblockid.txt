@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.007.111
+! Version: 20.007.121
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Jan 2020 01:51 UTC
+! Last modified: 07 Jan 2020 02:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -153,6 +153,7 @@
 /spaceads.
 /sponsor-iklan.
 /top_iklan1.
+/upload/iklan/*
 /vg728x90.
 /vic_image/iklan/*
 /xbanner-mediaads.
@@ -1226,6 +1227,8 @@ _996x50.gif
 ##.video-content-top-ads
 ##.videoOverAdBig
 ##.vlog-ad
+##.widget-iklan
+##.widget-iklanresponsive
 ##.widget_adace_ads_widget
 ##.widget_adswidget1-quick-adsense
 ##.widget_adswidget2-quick-adsense
@@ -9266,7 +9269,7 @@ sebariklanbaris.net#@#.content-ads
 ads-ina.org,topbisnis.org#@#[href*="/ads-"]
 jualo.com#@#[href*="/iklan-"] > img
 bekas.com,iklankost.com,jualo.com,kostjakarta.net,pusatpemasanganiklan.com#@#[href*="/iklan/"] > img
-iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
+iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 @@-adwords.$image,domain=jasaiklanbandung.com
 @@-google-ads-$image,domain=oasisme.com
@@ -9287,6 +9290,7 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 @@||jualo.com/images/$~third-party
 @@||tomato.co.id/wp-content/uploads/$image,~third-party
 @@||winstarlink.com/wp-content/uploads/$image,~third-party
+@@||ziyata.com/upload/$~third-party
 ! 
 ! --------------------------------------------------------------
 ! Memperbaiki kerusakan karena EasyList dan uBlock filters
@@ -9322,4 +9326,4 @@ iklanpopuler.com,sebariklanbaris.net#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: q/Mw3cnwY/ikwLtclpX4fg
+! Checksum: k9kzrs3hV+l10nVS4hzkzg
