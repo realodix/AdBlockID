@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.011.619
+! Version: 20.011.646
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jan 2020 10:19 UTC
+! Last modified: 11 Jan 2020 10:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -2798,7 +2798,9 @@ m.kaskus.co.id##[id^="postdeleted"]
 /tangkas.gif$image
 /togel-$image
 /vibol.$image
+/w881000.gif$image
 /w88131-$image
+/w88720.gif$image
 /wigo.gif$image
 /willwin8.gif$image
 _indokasino.$image
@@ -4097,6 +4099,7 @@ _penggugur_kandungan_$image
 ||terminalbet.$popup
 ||tipsberjudi.$popup
 ||tipstaruhan*.$popup
+||togel88.$popup
 ||togelanak.$popup
 ||togeltop.$popup
 ||togeltoto*.$popup
@@ -4261,6 +4264,7 @@ _penggugur_kandungan_$image
 ##[href*="103.10.200.63"] > img
 ##[href*="103.10.201.26"] > img
 ##[href*="103.244.96.134"] > img
+##[href*="104.248.152.8"] > img
 ##[href*="104.248.154.44"] > img
 ##[href*="104.248.156.42"] > img
 ##[href*="107.178.109.62"] > img
@@ -4409,6 +4413,7 @@ _penggugur_kandungan_$image
 ##[href*="209.236.126.115"] > img
 ##[href*="209.59.171.166"] > img
 ##[href*="209.59.171.181"] > img
+##[href*="209.97.166.41"] > img
 ##[href*="209.97.174.116"] > img
 ##[href*="216.83.47.119"] > img
 ##[href*="216.83.47.120"] > img
@@ -4610,8 +4615,6 @@ _penggugur_kandungan_$image
 ##[href*="afb-365."] > img
 ##[href*="afb365."] > img
 ##[href*="agb365."] > img
-##[href*="agen-judi-bola"] > img
-##[href*="agen-taruhan"] > img
 ##[href*="agen-vimaxcanada."] > img
 ##[href*="agen1388."] > img
 ##[href*="agen558."] > img
@@ -4619,7 +4622,6 @@ _penggugur_kandungan_$image
 ##[href*="agen99."] > img
 ##[href*="agenasia88."] > img
 ##[href*="agenbandar"] > img
-##[href*="agenbola-judi."] > img
 ##[href*="agenbola."] > img
 ##[href*="agenbola108."] > img
 ##[href*="agenbola24"] > img
@@ -4634,9 +4636,6 @@ _penggugur_kandungan_$image
 ##[href*="agensbobet10"] > img
 ##[href*="agensurga88."] > img
 ##[href*="agent926."] > img
-##[href*="agentaruhan"] > img
-##[href*="agentjudi"] > img
-##[href*="agentogel"] > img
 ##[href*="agentoto88"] > img
 ##[href*="agenvimaxindo."] > img
 ##[href*="agenwin"] > img
@@ -4698,8 +4697,6 @@ _penggugur_kandungan_$image
 ##[href*="arena99"] > img
 ##[href*="arenacapsa."] > img
 ##[href*="arenacash88."] > img
-##[href*="arenajudi."] > img
-##[href*="arenajudionline."] > img
 ##[href*="arenakiu"] > img
 ##[href*="arenaqq"] > img
 ##[href*="armanipoker."] > img
@@ -4779,7 +4776,6 @@ _penggugur_kandungan_$image
 ##[href*="balakqq."] > img
 ##[href*="bambubet."] > img
 ##[href*="bancikaleng88"] > img
-##[href*="bandar-judi-qq"] > img
 ##[href*="bandar12."] > img
 ##[href*="bandar228."] > img
 ##[href*="bandar2d."] > img
@@ -4796,14 +4792,10 @@ _penggugur_kandungan_$image
 ##[href*="bandarenjoy."] > img
 ##[href*="bandarindo77"] > img
 ##[href*="bandarjitu."] > img
-##[href*="bandarjudi"] > img
 ##[href*="bandarkiu."] > img
-##[href*="bandarpoker."] > img
 ##[href*="bandarq"] > img
 ##[href*="bandarsakong."] > img
 ##[href*="bandarsatu."] > img
-##[href*="bandartaruhan"] > img
-##[href*="bandartogel"] > img
 ##[href*="bandartoke."] > img
 ##[href*="bandarwaletaa."] > img
 ##[href*="bandarxl."] > img
@@ -4843,13 +4835,10 @@ _penggugur_kandungan_$image
 ##[href*="benderapoker."] > img
 ##[href*="benderaqq"] > img
 ##[href*="bengkelbola88"] > img
-##[href*="beritaagenjudi."] > img
-##[href*="beritajudionline."] > img
 ##[href*="beritakota88."] > img
 ##[href*="beritataruhanbola."] > img
 ##[href*="berjaya777."] > img
 ##[href*="bermainjudibola."] > img
-##[href*="bernardleepoker."] > img
 ##[href*="bersama365."] > img
 ##[href*="bestpokermoments."] > img
 ##[href*="bet2indo"] > img
@@ -6819,6 +6808,7 @@ _penggugur_kandungan_$image
 ##[href*="suhuq"] > img
 ##[href*="suhutogel."] > img
 ##[href*="sukabandar."] > img
+##[href*="sukabet."] > img
 ##[href*="sukajudi"] > img
 ##[href*="sukapokeronline"] > img
 ##[href*="sukataruhanbola."] > img
@@ -9112,4 +9102,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: xgkoGtofgJVflM0mlQtGnQ
+! Checksum: e0WAQdkPdJEb80z0azpWww
