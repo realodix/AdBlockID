@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.011.779
+! Version: 20.011.1278
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jan 2020 12:59 UTC
+! Last modified: 11 Jan 2020 21:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1587,18 +1587,21 @@ _996x50.gif
 ||phastoag.com^$third-party
 ||rufadses.net^$third-party
 ! 
-! Provider Handphone
-! https://github.com/realodix/AdBlockID/issues/151
+! Telkomsel
+! https://github.com/realodix/AdBlockID/issues/252
 ||ads.telkomsel.com^$third-party
+! XL Axiata
+! https://github.com/realodix/AdBlockID/issues/151
 ||ibn.adreach.co^$third-party
 ||ibnads.xl.co.id^$third-party
+! Indosat Ooredoo
 ! https://github.com/realodix/AdBlockID/issues/213
 ||114.6.128.4^$third-party
 ||ads.indosatooredoo.com^$third-party
+! Smartfren
 ! https://github.com/realodix/AdBlockID/issues/215
 ||10.17.194.50^$third-party
 ||10.24.224.140^$third-party
-! 
 ! Telkom Indihome
 ! https://github.com/sentabi/telkom/blob/master/internet-positif.md
 ||118.97.116.10^$third-party
@@ -1638,6 +1641,7 @@ _996x50.gif
 ! ||d5nxst8fruw4z.cloudfront.net^$third-party,domain=~bukalapak.com
 ! *** abid:src/thirdparty.adbl ***
 ||amazonaws.com^*/banner/$third-party,domain=bogornews.com
+||cloudimg.io/*.gif$image,domain=mangaku.in
 ||iframe.ly^$domain=tampilcantik.com
 ||imgur.com/*.gif$image,domain=mangashiro.net
 ||wp.com/affiliate.$domain=kompaswisata.com
@@ -1758,7 +1762,6 @@ _996x50.gif
 ||laduni.id^*/banner/$image
 ||lenterapendidikan.com/assets/img/loader.jpg$image
 ||lenterapendidikan.com^*/banner/$image
-||mangaku.in^*-banner-$image
 ||marketeers.com^*/iklan_$image
 ||markey.id^*/banner*.$image
 ||mediaformasi.com^*/banner-$image
@@ -1979,6 +1982,9 @@ m.kaskus.co.id##[id^="postdeleted"]
 ! PRIVACY
 ! --------------------------------------------------------------
 ||log.viva.co.id/iframe^
+! https://github.com/realodix/AdBlockID/issues/235
+||scripts.jixie.io^$third-party
+||tr.jixie.io^$third-party
 ! 
 ! POPUP
 ! --------------------------------------------------------------
@@ -8154,7 +8160,6 @@ balipost.com##.paralax_div
 @@/js/ads2.$script,domain=tmearn.com
 @@/pagead2.$domain=softfull.me
 @@/pagead2.$script,domain=animexin.jin-7.com|elsfile.org|felanovia.com|giga74.com|informations-library.blogspot.com|lewatisaja.com|linkberuang.blogspot.com|ljutkeunvpn.blogspot.com|sedot.link|shrink.world|teknorizen.blogspot.com|zaqe.xyz
-@@/showads.$script,domain=motorbalap.id
 @@||adsafelink.net/webroot/js/ads.js$script,~third-party
 @@||kabarviral.blog/js/ads.js$script,~third-party
 @@||rawgit.com/sdnime09/Ngewe-om/*/sayang.$script,domain=shortgoo.blogspot.com
@@ -8959,6 +8964,13 @@ kuyhaa-me.com##+js(abort-on-property-read, protected_links)
 /wp-content/uploads/an-temp/*$script,stylesheet
 _adblock_killer.
 ! 
+! Several wordpress adblock detector plugins
+/wp-content/plugins/adunblocker
+/wp-content/plugins/jgc-adblocker-detector/*
+/wp-content/plugins/simple-adblock-notice-pro^
+/wp-content/plugins/unblock-adsense/*/adunblock
+@@/wp-content/plugins/dh-anti-adblocker/assets/js/showads.js$~third-party
+! 
 ||rawgit.com/sdnime09/Ngewe-om/*/sayang.js$script
 ||rawgit.com^*/arlinablock.js$script
 ||staticaly.com^*/kurazoneAdblock.js$script
@@ -8985,7 +8997,6 @@ download.ipeenk.com,mi-globe.com#@#.an-advert-banner
 @@/noadblock-nice-message/assets/js/ads.js?$script,~third-party
 @@/pagead2.$domain=laluzulfakar.com
 @@/pagead2.$script,domain=agungjakanugraha.com|animenyus.com|antoncabon.us|arlinadzgn.com|belajarbro.id|bersamatekno.com|bloggerku.com|blognetid.com|cariajadisini.com|coretan-uman.com|datasekolah.co.id|digimoclub.com|eirudo.com|gembel9.xyz|gembelcit.net|igniel.com|liputanberita21.com|nekopoi.web.id|onet4u.com|sosiali.com|tipssipit.com|unduh.in
-@@/showads.js$script,domain=fuwaost.net
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||ainodorama.club^$generichide
@@ -9107,4 +9118,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: 2URJsi/xpmu5fqhCe5XA3A
+! Checksum: 5ChioNusUfCNaa1L6aryCA
