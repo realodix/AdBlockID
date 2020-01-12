@@ -67,7 +67,6 @@ exclusions = [
   'scriptlet-ublock.adbl',
   'specific_block.adbl',
   'specific_hide.adbl',
-  'thirdparty.adbl',
   'whitelist.adbl',
 ]
 
