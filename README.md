@@ -1,10 +1,6 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-![AdBlockID Version](https://img.shields.io/badge/Version-20.027.649-blue.svg?longCache=true&style=flat-square)
-<img src="https://img.shields.io/badge/Updated-Jan 27, 2020 UTC-orange.svg?longCache=true&style=flat-square"
-    alt="Jan 27, 2020 UTC" />
-
 > <sup>Tertarik jadi **contributor**? Jangan ragu untuk membuat issue / pull request!
 > <br>
 > Tertarik jadi **[collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository#collaborator-access-on-a-repository-owned-by-a-user-account) / maintainer** pada AdBlockID? Jangan ragu untuk beritahu Saya 😃</sup>
@@ -88,7 +84,6 @@ Anda dapat mengakses Visual Studio Code Tasks dengan menekan `Ctrl+Shift+P`, lal
 
 - **Build**: Render _filter list fragments_ ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
 - **FOP**: Mengurutkan, menggabungkan dan memformat ulang beberapa  filter jika memungkinkan.
-- **Build Readme**: Render file `readme.template` ke dalam `readme.md`.
 - **Validate Host**: Memeriksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl.
 
 ### Format Pesan Commit
@@ -101,8 +96,8 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 | `AA`   | Anti-Adblock. |
 | `M`    | Maintain filter. |
 | `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
-| `docs` | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada file fragment AdBlockID (folder `src`) dan file template untuk readme (`/tools/readme/readme.template`). |
-| `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore`, `build.sh` & `validatehost.sh`). Tidak termasuk file template untuk readme (`/tools/readme/readme.template`). |
+| `docs` | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada file fragment AdBlockID (folder `src`). |
+| `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore`, `build.sh` & `validatehost.sh`). |
 
 ### Struktur Direktori
 
