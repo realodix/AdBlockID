@@ -26,7 +26,10 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore#install-links), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi *ad blocker* lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
 - Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada ekstensi adblock yang Anda gunakan.
 
-   `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`
+   | Nama           | Filter List |
+   | -------------- | ----------- |
+   | AdBlockID      | https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt |
+   | AdBlockID Plus | https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus.txt |
 
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam, uBlock Plus Adblocker.
