@@ -69,6 +69,10 @@ exclusions = [
   'specific_hide.adbl',
   'thirdparty.adbl',
   'whitelist.adbl',
+  'plus_annoyance.adbl',
+  'plus_anti-adblock.adbl',
+  'plus_specific_block.adbl',
+  'plus_specific_hide.adbl',
 ]
 
 log_fh = False

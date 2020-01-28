@@ -21,7 +21,10 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore#install-links), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi *ad blocker* lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
 - Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada ekstensi adblock yang Anda gunakan.
 
-   `https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt`
+   | Nama           | Filter List |
+   | -------------- | ----------- |
+   | AdBlockID      | https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt |
+   | AdBlockID Plus | https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus.txt |
 
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam, uBlock Plus Adblocker.
@@ -95,6 +98,7 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 | `AA`   | Anti-Adblock. |
 | `M`    | Maintain filter. |
 | `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
+| `<type>+` | Contoh: `A+: <commit message>`. Pengeditan hanya pada AdBlockID Plus. Jika dilakukan pada keduanya, maka tidak perlu. |
 | `docs` | Edit file dokumentasi pada folder `docs`, termasuk `readme.md` dan dokumentasi pada file fragment AdBlockID (folder `src`) . |
 | `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore`, `build.sh` & `validatehost.sh`). |
 
@@ -112,6 +116,11 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ news.adbl
  │   ├─ scriptlet-ublock.adbl
  │   └─ shortlink.adbl
+ ├─ /plus
+ │   ├─ plus_annoyance.adbl
+ │   ├─ plus_anti-adblock.adbl
+ │   ├─ plus_specific_block.adbl
+ │   └─ plus_specific_hide.adbl
  ├─ /template
  │   └─ ...
  ├─ adservers.adbl
@@ -139,3 +148,4 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
 - `/addons/news.adbl`: Filter untuk menangani iklan pada situs berita.
 - `/addons/scriptlet-ublock.adbl`: Filter umum untuk [uBlock Resources](https://github.com/gorhill/uBlock/wiki/Resources-Library).
 - `/addons/shortlink.adbl`: Filter untuk menangani iklan pada situs safelink / shortlink.
+- `/plus`: Folder untuk AdBlockID Plus.
