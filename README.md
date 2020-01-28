@@ -116,6 +116,11 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ news.adbl
  │   ├─ scriptlet-ublock.adbl
  │   └─ shortlink.adbl
+ ├─ /plus
+ │   ├─ plus_annoyance.adbl
+ │   ├─ plus_anti-adblock.adbl
+ │   ├─ plus_specific_block.adbl
+ │   └─ plus_specific_hide.adbl
  ├─ /template
  │   └─ ...
  ├─ adservers.adbl
@@ -143,3 +148,4 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
 - `/addons/news.adbl`: Filter untuk menangani iklan pada situs berita.
 - `/addons/scriptlet-ublock.adbl`: Filter umum untuk [uBlock Resources](https://github.com/gorhill/uBlock/wiki/Resources-Library).
 - `/addons/shortlink.adbl`: Filter untuk menangani iklan pada situs safelink / shortlink.
+- `/plus`: Folder untuk AdBlockID Plus.
