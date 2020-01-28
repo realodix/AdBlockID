@@ -95,7 +95,7 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 | `AA`   | Anti-Adblock. |
 | `M`    | Maintain filter. |
 | `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
-| `docs` | Edit file dokumentasi pada folder `docs`, termasuk dokumentasi pada file fragment AdBlockID (folder `src`). |
+| `docs` | Edit file dokumentasi pada folder `docs`, termasuk `readme.md` dan dokumentasi pada file fragment AdBlockID (folder `src`) . |
 | `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore`, `build.sh` & `validatehost.sh`). |
 
 ### Struktur Direktori
