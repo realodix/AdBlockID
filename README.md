@@ -10,11 +10,10 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 ## Manfaat Yang Anda Dapatkan
 1. **No Iklan**: menghilangkan iklan, terutama iklan yang bermuatan konten dewasa.
-2. **Block [crypto mining scripts](https://www.mycryptopedia.com/crypto-mining-scripts/)**.
-3. **Speed you need:** mengurangi waktu pemuatan halaman hingga setengah dari waktu sebenarnya!
-4. **Privacy:** dengan adanya annoyances blocking, ini `meningkatkan` privacy.
-5. **Saves expense:** mengurangi `biaya` konsumsi data.
-6. **Clean:** no `extra` abracadabra!
+2. **Speed you need:** mengurangi waktu pemuatan halaman hingga setengah dari waktu sebenarnya!
+3. **Privacy:** dengan adanya annoyances blocking, ini `meningkatkan` privacy.
+4. **Saves expense:** mengurangi `biaya` konsumsi data.
+5. **Clean:** no `extra` abracadabra!
 
 
 ## Cara Menggunakan
