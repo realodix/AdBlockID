@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.028.1234
-! Title: AdBlockID
+! Version: 20.028.1239
+! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Jan 2020 20:34 UTC
+! Last modified: 28 Jan 2020 20:39 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1796,6 +1796,7 @@ _996x50.gif
 ||terafile.net/luxury3.xml$~third-party,xmlhttprequest
 ||yourjavascript.com^*/itu-domino-popup-script.js$script
 ||yourjavascript.com^*/lompatin.js$script
+! *** abid:src/plus/plus_specific_block.adbl ***
 ! *** abid:src/specific_hide.adbl ***
 ampproject.org##.ads-flying_carpet
 ! 
@@ -1938,6 +1939,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 ! 
 ! Mobile
 pickybest.id###fixedban
+! *** abid:src/plus/plus_specific_hide.adbl ***
 ! ------------------------------------------------------------!
 ! *** abid:src/addons/annoyances.adbl ***
 ##amp-iframe[src^="https://www.vidio.com/embed/"]
@@ -1965,6 +1967,10 @@ m.kaskus.co.id##[id^="postdeleted"]
 ||llahnch259.com^$popup
 ||vkaofq64zz.com^$popup
 ||yr9n47004g.com^$popup
+! *** abid:src/plus/plus_annoyance.adbl ***
+! SAFELINK
+! --------------------------------------------------------------
+animenonton.tv##+js(acis, auto_safelink)
 ! *** abid:src/addons/adult-block.adbl ***
 /luxury_hd_dvd_hd.mp4$media
 ||139.99.33.240^$third-party
@@ -8722,6 +8728,7 @@ download.ipeenk.com,mi-globe.com#@#.an-advert-banner
 bagikancara.com,belajarbro.id,bloggerszones.com,contohblog.com,eirudo.com,gadget2reviews.com,gurusd.web.id,hightech.web.id,hobybaca.com,kelasdesain.com,majalahikan.com,mynotescode.com,novelgo.id,obengplus.com,omahkpop.com,panduaneka.com,rumahsleman.com,seniberpikir.com,suryapero.com,tikusliar.com##.adsbygoogle
 tutorialjaringan.com##.middle-ads
 hobybaca.com##.td-adspot-title
+! *** abid:src/plus/plus_anti-adblock.adbl ***
 ! *** abid:src/whitelist.adbl ***
 @@/ayopasangiklan.$image
 @@/belanja_iklan-$image
@@ -8777,4 +8784,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: VOR6XiQW7iPQEOiFNn4d9w
+! Checksum: kS6tt3fTmVf/h+Cy0xJJww
