@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.028.1239
+! Version: 20.028.1300
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Jan 2020 20:39 UTC
+! Last modified: 28 Jan 2020 21:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1605,6 +1605,7 @@ _996x50.gif
 ||fawenys.xyz^$third-party
 ||iarfina.pw^$third-party
 ||jomys.xyz^$third-party
+||kecmuhot.net^$third-party
 ||kotaksilver.casa^*/*.gif$image,third-party
 ||nouseeth.com^$third-party
 ||onvictinitor.com^$third-party
@@ -1797,6 +1798,7 @@ _996x50.gif
 ||yourjavascript.com^*/itu-domino-popup-script.js$script
 ||yourjavascript.com^*/lompatin.js$script
 ! *** abid:src/plus/plus_specific_block.adbl ***
+.gif$image,domain=anoboy.us
 ! *** abid:src/specific_hide.adbl ***
 ampproject.org##.ads-flying_carpet
 ! 
@@ -1940,6 +1942,11 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 ! Mobile
 pickybest.id###fixedban
 ! *** abid:src/plus/plus_specific_hide.adbl ***
+dramafilm21.com###topbar
+movies21.onl,terbit21.host##.close-banner
+dunia21s.fun##.ns-left
+dunia21s.fun##.ns-right
+filmapik.bid##.puting
 ! ------------------------------------------------------------!
 ! *** abid:src/addons/annoyances.adbl ***
 ##amp-iframe[src^="https://www.vidio.com/embed/"]
@@ -1968,6 +1975,9 @@ m.kaskus.co.id##[id^="postdeleted"]
 ||vkaofq64zz.com^$popup
 ||yr9n47004g.com^$popup
 ! *** abid:src/plus/plus_annoyance.adbl ***
+! OVERLAY
+! --------------------------------------------------------------
+lebahmovie.com##+js(aopr, $.magnificPopup.open)
 ! SAFELINK
 ! --------------------------------------------------------------
 animenonton.tv##+js(acis, auto_safelink)
@@ -4780,9 +4790,9 @@ _penggugur_kandungan_$image
 ##[href*="asikpoker"]
 ##[href*="asikqq"]
 ##[href*="asliqq"] > img
-##[href*="astonbet"] > img
+##[href*="astonbet"]
 ##[href*="astonbola."] > img
-##[href*="astonwin."] > img
+##[href*="astonwin."]
 ##[href*="astrototo."]
 ##[href*="auxbet."] > img
 ##[href*="avatarqq"] > img
@@ -5309,8 +5319,8 @@ _penggugur_kandungan_$image
 ##[href*="europoker."] > img
 ##[href*="everypoker."] > img
 ##[href*="eyangtogel"]
-##[href*="eze99."] > img
-##[href*="ezebet."] > img
+##[href*="eze99."]
+##[href*="ezebet."]
 ##[href*="fadly168."] > img
 ##[href*="fairbet88."] > img
 ##[href*="fajarimam."] > img
@@ -6983,10 +6993,10 @@ _penggugur_kandungan_$image
 ##[href*="star-bet99."] > img
 ##[href*="star88bet."] > img
 ##[href*="star88bola."] > img
-##[href*="star88win."] > img
+##[href*="star88win."]
 ##[href*="starbet99"] > img
 ##[href*="starbola88."] > img
-##[href*="starcasino88."] > img
+##[href*="starcasino88."]
 ##[href*="stardomino"] > img
 ##[href*="stardomino."] > img
 ##[href*="starpoker78."] > img
@@ -7668,7 +7678,7 @@ sukamovie.*##.sukam-bawah
 ! 
 ! SPECIFIC BLOCK
 ! --------------------------------------------------------------
-.gif$image,domain=animenonton.tv|anoboy.us|conan.id|dwanonton.com|gudangfilm.top|nanime.in|nontondrama.me
+.gif$image,domain=animenonton.tv|conan.id|dwanonton.com|nanime.in|nontondrama.me
 /banner%$image,domain=huntersekai.website
 ||blogspot.com/*.gif$image,domain=lk21.london|netnot21.com|rmcmv.us
 ||sharemydrive.xyz/*.gif$domain=149.56.24.226
@@ -7722,7 +7732,6 @@ sukamovie.*##.sukam-bawah
 @@||animee.xyz$generichide
 @@||animenonton.tv^$generichide
 @@||anisubindo.$generichide
-@@||anoboy.*$generichide
 @@||blackavelic.com^$generichide
 @@||daizurin.com^$generichide
 @@||doramaindo.id^$generichide
@@ -8729,6 +8738,7 @@ bagikancara.com,belajarbro.id,bloggerszones.com,contohblog.com,eirudo.com,gadget
 tutorialjaringan.com##.middle-ads
 hobybaca.com##.td-adspot-title
 ! *** abid:src/plus/plus_anti-adblock.adbl ***
+@@||anoboy.us$generichide
 ! *** abid:src/whitelist.adbl ***
 @@/ayopasangiklan.$image
 @@/belanja_iklan-$image
@@ -8784,4 +8794,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: kS6tt3fTmVf/h+Cy0xJJww
+! Checksum: L4eNoPC2hbpbNBAKlUKq+w
