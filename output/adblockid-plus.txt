@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.029.159
+! Version: 20.029.660
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Jan 2020 02:39 UTC
+! Last modified: 29 Jan 2020 11:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -557,6 +557,7 @@ _505x60.gif
 _510x100.gif
 _515x90.gif
 _519x90.gif
+_550x70.
 _570x195.gif
 _580x70.
 _585x60.gif
@@ -1802,6 +1803,7 @@ _996x50.gif
 ! 
 ||dwanonton.com/static/banner/$image
 ||nontoncinema.org^*/daftar.html$subdocument
+||sobatkeren.net/img/banner/$image
 ! *** abid:src/specific_hide.adbl ***
 ampproject.org##.ads-flying_carpet
 ! 
@@ -1946,6 +1948,7 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 pickybest.id###fixedban
 ! *** abid:src/plus/plus_specific_hide.adbl ***
 inonton.com###fadeinbox
+ld2tv.net###floatads
 inonton.com###floating_banner_top
 indoxxifilm.com###floats
 159.65.3.51,indoxxifilm.com###flobwh
@@ -8621,6 +8624,7 @@ hightech.web.id##+js(abort-current-inline-script, document.getElementById, adbac
 kompas.com##+js(abort-current-inline-script, setTimeout, iframeTestTimeMS)
 kompas.com,tribunnews.com##+js(abort-on-property-read, $getWin)
 kuyhaa-me.com##+js(abort-on-property-read, protected_links)
+mangareceh.id##+js(acis, SGPB_POPUP_PARAMS)
 ! ------------------------------------------------------------!
 ! *** abid:src/anti-adblock.adbl ***
 -adblock-notice-
@@ -8765,6 +8769,11 @@ hobybaca.com##.td-adspot-title
 @@||anime-indo.net^$generichide
 @@||animenonton.tv^$generichide
 @@||anoboy.us$generichide
+@@||ld2tv.net^$generichide
+! 
+! EMPTY ADS PLACEHOLDERS
+! --------------------------------------------------------------
+ld2tv.net##.axdx-header
 ! *** abid:src/whitelist.adbl ***
 @@/ayopasangiklan.$image
 @@/belanja_iklan-$image
@@ -8820,4 +8829,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: Lj8CaAVSMcxRYUlBm0RLvw
+! Checksum: JN6KIQfPvHDCPzqK4CC2kA
