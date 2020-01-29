@@ -21,10 +21,10 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore#install-links), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi *ad blocker* lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
 - Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada ekstensi adblock yang Anda gunakan.
 
-   | Nama           | Filter List |
-   | -------------- | ----------- |
-   | AdBlockID      | https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt |
-   | AdBlockID+ (add-on) | https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus.txt |
+   | Name                | Subscribe | Raw Link |
+   | ------------------- | ----------| -------- |
+   | AdBlockID           | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID) |https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt |
+   | AdBlockID+ (add-on) | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus.txt&title=AdBlockID) | https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus.txt |
 
    <sup>**Catatan**</sup> </br>
    <sup>- AdBlockID+ adalah solusi AdBlockID dalam mendukung penghapusan iklan pada situs ilegal di Indonesia.</sup>
