@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.028.1300
+! Version: 20.029.159
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Jan 2020 21:40 UTC
+! Last modified: 29 Jan 2020 02:39 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1798,7 +1798,10 @@ _996x50.gif
 ||yourjavascript.com^*/itu-domino-popup-script.js$script
 ||yourjavascript.com^*/lompatin.js$script
 ! *** abid:src/plus/plus_specific_block.adbl ***
-.gif$image,domain=anoboy.us
+.gif$image,domain=animenonton.tv|anoboy.us
+! 
+||dwanonton.com/static/banner/$image
+||nontoncinema.org^*/daftar.html$subdocument
 ! *** abid:src/specific_hide.adbl ***
 ampproject.org##.ads-flying_carpet
 ! 
@@ -1942,8 +1945,19 @@ tokopedia.com##.unf-card:-abp-has(img[alt*="TopAds"])
 ! Mobile
 pickybest.id###fixedban
 ! *** abid:src/plus/plus_specific_hide.adbl ***
+inonton.com###fadeinbox
+inonton.com###floating_banner_top
+indoxxifilm.com###floats
+159.65.3.51,indoxxifilm.com###flobwh
+gudangfilm.club,lk21.london###tengah
+gudangfilm.club###tengahaa
 dramafilm21.com###topbar
+dwanonton.com##.banner-common
+dwanonton.com##.banner-vertical
+premierexxi.org##.bnr
 movies21.onl,terbit21.host##.close-banner
+juaramovie.org##.footer-sticky
+cafecinema.vip##.idmuvi-topplayer
 dunia21s.fun##.ns-left
 dunia21s.fun##.ns-right
 filmapik.bid##.puting
@@ -1977,9 +1991,17 @@ m.kaskus.co.id##[id^="postdeleted"]
 ! *** abid:src/plus/plus_annoyance.adbl ***
 ! OVERLAY
 ! --------------------------------------------------------------
-lebahmovie.com##+js(aopr, $.magnificPopup.open)
+dwa21.org###main-popup
+cafecinema.vip,dramamu.net,dramaserial.cc,geraifilm.com,juraganfilm.tv,nontonfilmdrama.net###netkevin-overlay
+cafecinema.vip,dramamu.net,dramaserial.cc,geraifilm.com,juraganfilm.tv,nontonfilmdrama.net###netkevin-popup
+149.56.24.226###overlay-pop
+gudangfilm21.com,lebahmovie.com,lk21online.biz##+js(aopr, $.magnificPopup.open)
+lk21.london##.ml-announce
+213.166.69.166##.wpb-outer-wrap
+! 
 ! SAFELINK
 ! --------------------------------------------------------------
+kawanfilm21.org##+js(acis, adtival_base64_encode)
 animenonton.tv##+js(acis, auto_safelink)
 ! *** abid:src/addons/adult-block.adbl ***
 /luxury_hd_dvd_hd.mp4$media
@@ -6183,6 +6205,7 @@ _penggugur_kandungan_$image
 ##[href*="mayorbet."] > img
 ##[href*="mbandarq."] > img
 ##[href*="mbo4d"] > img
+##[href*="mbo99member."]
 ##[href*="mboplay888."] > img
 ##[href*="mbopoker."] > img
 ##[href*="mbscash."] > img
@@ -6264,7 +6287,7 @@ _penggugur_kandungan_$image
 ##[href*="motorqq"] > img
 ##[href*="mpo11."] > img
 ##[href*="mpo189.org"]
-##[href*="mpoagen."] > img
+##[href*="mpoagen."]
 ##[href*="mta77."] > img
 ##[href*="muchospoker."] > img
 ##[href*="mukaqq."] > img
@@ -6682,7 +6705,7 @@ _penggugur_kandungan_$image
 ##[href*="qqhok"]
 ##[href*="qqindo88ok."] > img
 ##[href*="qqjempol."] > img
-##[href*="qqjoker"] > img
+##[href*="qqjoker"]
 ##[href*="qqkartu"] > img
 ##[href*="qqkembar2."] > img
 ##[href*="qqkingbetaa."] > img
@@ -6736,7 +6759,7 @@ _penggugur_kandungan_$image
 ##[href*="rajadomino"] > img
 ##[href*="rajajdqq"] > img
 ##[href*="rajajuara."] > img
-##[href*="rajakasino"] > img
+##[href*="rajakasino"]
 ##[href*="rajanusantara."]
 ##[href*="rajanyapoker."] > img
 ##[href*="rajapkr."] > img
@@ -6869,6 +6892,7 @@ _penggugur_kandungan_$image
 ##[href*="sbobethk."] > img
 ##[href*="sbobetid."] > img
 ##[href*="sbobetips."] > img
+##[href*="sbobetpk1."]
 ##[href*="sbobetuk."] > img
 ##[href*="sbokiu."] > img
 ##[href*="sbokiukiu."] > img
@@ -7588,6 +7612,7 @@ _penggugur_kandungan_$image
 ##[href*="vampirjitu.blogspot.com"]
 ##[href^="https://iklango.com"]
 ! 
+##[href*="bit.ly/1RN8pQw"]
 ##[href*="bit.ly/1RN8pQw"] > img
 ##[href*="bit.ly/1cIzFRu"]
 ##[href*="bit.ly/2BGykJH"] > img
@@ -7610,6 +7635,7 @@ _penggugur_kandungan_$image
 ##[href*="bit.ly/2ZuM9WZ"]
 ##[href*="bit.ly/2dIbfYF"] > img
 ##[href*="bit.ly/2mMMEw6"] > img
+##[href*="bit.ly/32CBY2g"]
 ##[href*="bit.ly/32CBY2g"] > img
 ##[href*="bit.ly/35pSlAA"] > img
 ##[href*="bit.ly/36LHnHE"] > img
@@ -7630,7 +7656,7 @@ _penggugur_kandungan_$image
 ##[href*="is.gd/zkudsJ"]
 ##[href*="rebrand.ly/DUNIA21QQ"] > img
 ##[href*="rebrand.ly/KAKASLOT"]
-##[href*="rebrand.ly/LUXURY111"] > img
+##[href*="rebrand.ly/LUXURY111"]
 ##[href*="rebrand.ly/LUXURY138"]
 ##[href*="rebrand.ly/LUXURY777"] > img
 ##[href*="rebrand.ly/NeonimePopup"]
@@ -7651,11 +7677,10 @@ doramaku.me###banner-tengah
 narashika.cc###btm_banner
 layarkeren.com###divFLRALeft
 lk21sub.net###form_view
-dramamu.net###netkevin-overlay
 d21.tv###overlay-pop
 dramamu.net###popup_content
 nonton.com##.adds
-manganime.id##.ads720
+doramaindo.id##.adsmodal
 neonime.org##.berlangganan-300
 neonime.org##.berlangganan-460
 103.194.171.75##.bnner
@@ -7678,7 +7703,7 @@ sukamovie.*##.sukam-bawah
 ! 
 ! SPECIFIC BLOCK
 ! --------------------------------------------------------------
-.gif$image,domain=animenonton.tv|conan.id|dwanonton.com|nanime.in|nontondrama.me
+.gif$image,domain=conan.id|nanime.in|nontondrama.me
 /banner%$image,domain=huntersekai.website
 ||blogspot.com/*.gif$image,domain=lk21.london|netnot21.com|rmcmv.us
 ||sharemydrive.xyz/*.gif$domain=149.56.24.226
@@ -7723,14 +7748,12 @@ sukamovie.*##.sukam-bawah
 ! --------------------------------------------------------------
 /rmp-blockadblock.js$domain=mivo.com
 @@/ads.$script,domain=negumo.com
-@@/fuckadblock.$script,domain=aibouanime.xyz|anime-indo.net|otaku.tekloggers.com
-@@/pagead2.$script,domain=aibouanime.xyz|downmovie21.site
+@@/fuckadblock.$script,domain=aibouanime.xyz|otaku.tekloggers.com
+@@/pagead2.$script,domain=aibouanime.xyz
 ! 
 @@||aibouanime.xyz$generichide
 @@||anibatch.me^$generichide
-@@||anime-indo.net^$generichide
 @@||animee.xyz$generichide
-@@||animenonton.tv^$generichide
 @@||anisubindo.$generichide
 @@||blackavelic.com^$generichide
 @@||daizurin.com^$generichide
@@ -7742,7 +7765,6 @@ sukamovie.*##.sukam-bawah
 @@||rmcmv.us^$generichide
 @@||shinobijawi.id^$generichide
 @@||shirainime.com^$generichide
-@@||sobatdrama.net^$generichide
 @@||streamxxi.com^$generichide
 @@||zonachina21.blogspot.com^$generichide
 ! 
@@ -8738,6 +8760,10 @@ bagikancara.com,belajarbro.id,bloggerszones.com,contohblog.com,eirudo.com,gadget
 tutorialjaringan.com##.middle-ads
 hobybaca.com##.td-adspot-title
 ! *** abid:src/plus/plus_anti-adblock.adbl ***
+@@/fuckadblock.$script,domain=anime-indo.net
+! 
+@@||anime-indo.net^$generichide
+@@||animenonton.tv^$generichide
 @@||anoboy.us$generichide
 ! *** abid:src/whitelist.adbl ***
 @@/ayopasangiklan.$image
@@ -8794,4 +8820,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: L4eNoPC2hbpbNBAKlUKq+w
+! Checksum: Lj8CaAVSMcxRYUlBm0RLvw
