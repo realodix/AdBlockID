@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.030.1293
+! Version: 20.030.1304
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Jan 2020 21:33 UTC
+! Last modified: 30 Jan 2020 21:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1950,6 +1950,8 @@ pickybest.id###fixedban
 ! *** abid:src/addons/annoyances.adbl ***
 ##amp-iframe[src^="https://www.vidio.com/embed/"]
 ||vidio.com/embed/*autoplay=true&player_only=true&live_chat=false&mute=true$subdocument,third-party
+! 
+kuyhaa-me.com##[type="image"][src*="/sd.png"]
 ! 
 kaskus.co.id###thread_post_list > [id^="moderated-"]:-abp-contains(Post ini telah dihapus oleh)
 m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
@@ -6593,7 +6595,7 @@ _penggugur_kandungan_$image
 ##[href*="proboards76."] > img
 ##[href*="probola."] > img
 ##[href*="prokiu."] > img
-##[href*="promo855.com/"]
+##[href*="promo855.com"]
 ##[href*="promobet"]
 ##[href*="promodewa."] > img
 ##[href*="promosi365.me"]
@@ -8767,4 +8769,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: LkE+91lg2t5b1TWv+yS/SQ
+! Checksum: DTBmc7N6Vch9PhXKZXa2Ww
