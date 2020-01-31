@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.031.955
+! Version: 20.031.1018
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 31 Jan 2020 15:55 UTC
+! Last modified: 31 Jan 2020 16:58 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -17,6 +17,8 @@
 ||dwanonton.com/static/banner/$image
 ||nontoncinema.org^*/daftar.html$subdocument
 ||sobatkeren.net/img/banner/$image
+! 
+||bestvideo2019.xyz/script$script,third-party
 ! *** abid:src/plus/plus_specific_hide.adbl ***
 ! IndoXX1 Closed (domain masih aktif)
 ! https://github.com/realodix/AdBlockID/issues/57
@@ -65,6 +67,7 @@ animelink.net##.toast:-abp-contains(Promosi)
 ! 
 ! OVERLAY
 ! --------------------------------------------------------------
+/wp-content/plugins/popup-builder/*$domain=mangareceh.id
 /wp-content/plugins/uji-popup/*$domain=kordramass.com|kshowsubindo.org
 ! 
 bioskop212.com###fanback
@@ -84,12 +87,13 @@ dutafilm.live##.swal-overlay
 213.166.69.166,rumahdrama.com##.wpb-outer-wrap
 dutafilm.live##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 ! 
-gudangfilm21.com,lebahmovie.com,lk21online.biz##+js(aopr, $.magnificPopup.open)
+gudangfilm21.com,layarkeren.org,lebahmovie.com,lk21online.biz##+js(aopr, $.magnificPopup.open)
 ! 
 ! SAFELINK
 ! --------------------------------------------------------------
 kawanfilm21.org,samehadaku.in.net##+js(acis, adtival_base64_encode)
-animenonton.tv,daizurin.com,neonime.org##+js(acis, auto_safelink)
+animenonton.tv,daizurin.com##+js(acis, auto_safelink)
+neonime.org##+js(aopr, protected_links)
 ! *** abid:src/plus/plus_anti-adblock.adbl ***
 ||gomunime.com^*/autoptimize_single_$script
 ! 
@@ -121,4 +125,4 @@ ld2tv.net##.axdx-header
 otaku.tekloggers.com##.iklan728
 doramaku.me,doramaku.org##.klan728
 aibouanime.xyz##[class$="_bn"]
-! Checksum: YErkoltFnDYpoJo55I9g1A
+! Checksum: ToeiDUSnu2buf625IJiErA
