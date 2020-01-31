@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.030.1312
+! Version: 20.031.110
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Jan 2020 21:52 UTC
+! Last modified: 31 Jan 2020 01:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -19,7 +19,7 @@
 ||sobatkeren.net/img/banner/$image
 ! *** abid:src/plus/plus_specific_hide.adbl ***
 sukamovie.club###banner-tengah
-narashika.cc###btm_banner
+narashika.cc,netnot21.com###btm_banner
 inonton.com###fadeinbox
 bioskopkerenin.org###float-banner
 ld2tv.net###floatads
@@ -45,6 +45,10 @@ dunia21s.fun##.ns-left
 dunia21s.fun##.ns-right
 filmapik.bid##.puting
 ! *** abid:src/plus/plus_annoyance.adbl ***
+! POPUP
+! --------------------------------------------------------------
+*$popup,domain=awnime.net
+! 
 ! OVERLAY
 ! --------------------------------------------------------------
 bioskop212.com###fanback
@@ -68,12 +72,15 @@ dutafilm.live##body > a[href] > div[style^="position:absolute;"][style*="z-index
 kawanfilm21.org,samehadaku.in.net##+js(acis, adtival_base64_encode)
 animenonton.tv,daizurin.com##+js(acis, auto_safelink)
 ! *** abid:src/plus/plus_anti-adblock.adbl ***
+||gomunime.com^*/autoptimize_single_$script
+! 
 @@/fuckadblock.$script,domain=anime-indo.net
 ! 
 @@||anime-indo.net^$generichide
 @@||animenonton.tv^$generichide
 @@||anoboy.us$generichide
 @@||daizurin.com^$generichide
+@@||driverays.com^$generichide
 @@||ld2tv.net^$generichide
 ! 
 filmboxoffice.web.id#@##adsense
@@ -83,4 +90,4 @@ filmboxoffice.web.id#@#.an-advert-banner
 ! EMPTY ADS PLACEHOLDERS
 ! --------------------------------------------------------------
 ld2tv.net##.axdx-header
-! Checksum: wa22/fTLmUWWYotpuftKSQ
+! Checksum: JCFO50HeO9jkaGpdcif3QA
