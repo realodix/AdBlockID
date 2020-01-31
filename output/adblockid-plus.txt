@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.031.110
+! Version: 20.031.670
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 31 Jan 2020 01:50 UTC
+! Last modified: 31 Jan 2020 11:10 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -18,9 +18,15 @@
 ||nontoncinema.org^*/daftar.html$subdocument
 ||sobatkeren.net/img/banner/$image
 ! *** abid:src/plus/plus_specific_hide.adbl ***
+! IndoXX1 Closed (domain masih aktif)
+! https://github.com/realodix/AdBlockID/issues/57
+103.194.171.75##.bnner
+103.194.171.75,idtube.me##.overlay
+! 
 sukamovie.club###banner-tengah
 narashika.cc,netnot21.com###btm_banner
 inonton.com###fadeinbox
+drakorindofilms.tv,kingdrakor.com###fixedban
 bioskopkerenin.org###float-banner
 ld2tv.net###floatads
 lk21.london###floatbot
@@ -30,20 +36,28 @@ indoxxifilm.com###floats
 bioskopkerenin.org###middle-banner
 topfilm21.com###pop-tengah
 bioskopkerenin.org###ptbanner
+blackavelic.com###teaser2
+blackavelic.com###teaser3
 gudangfilm.club,lk21.london###tengah
 gudangfilm.club###tengahaa
 bioskopkerenin.org###top-banner
 dramafilm21.com###topbar
 dwanonton.com##.banner-common
 dwanonton.com##.banner-vertical
+neonime.org##.berlangganan-300
+neonime.org##.berlangganan-460
 premierexxi.org##.bnr
 movies21.onl,terbit21.host##.close-banner
 premierexxi.org##.code-block
 juaramovie.org##.footer-sticky
 cafecinema.vip##.idmuvi-topplayer
+drakorindofilms.net,inidramaku.com,korenlovers.co,oujanime.com##.iklan
 dunia21s.fun##.ns-left
 dunia21s.fun##.ns-right
 filmapik.bid##.puting
+149.56.24.226##.wrapper-inject
+! 
+animelink.net##.toast:-abp-contains(Promosi)
 ! *** abid:src/plus/plus_annoyance.adbl ***
 ! POPUP
 ! --------------------------------------------------------------
@@ -51,14 +65,17 @@ filmapik.bid##.puting
 ! 
 ! OVERLAY
 ! --------------------------------------------------------------
+/wp-content/plugins/uji-popup/*$domain=kordramass.com|kshowsubindo.org
+! 
 bioskop212.com###fanback
 dwa21.org###main-popup
 103.194.171.205,cafecinema.vip,dramamu.net,dramaserial.cc,geraifilm.com,juraganfilm.tv,nontonfilmdrama.net###netkevin-overlay
 103.194.171.205,cafecinema.vip,dramamu.net,dramaserial.cc,geraifilm.com,juraganfilm.tv,nontonfilmdrama.net###netkevin-popup
 149.56.24.226###overlay-pop
-gudangfilm21.com,lebahmovie.com,lk21online.biz##+js(aopr, $.magnificPopup.open)
+dramamu.net###popup_content
 drakoric.com##.afc_popup
-giladrakor.com,inidramaku.com##.cm-popup-modal
+kordramass.com,kshowsubindo.org##.blocker
+giladrakor.com,inidramaku.com,kingdrakor.com##.cm-popup-modal
 lk21.london##.ml-announce
 narashika.cc##.popbox
 drakoric.com,drakorindo.fun##.sg-popup-content
@@ -67,21 +84,32 @@ dutafilm.live##.swal-overlay
 213.166.69.166,rumahdrama.com##.wpb-outer-wrap
 dutafilm.live##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 ! 
+gudangfilm21.com,lebahmovie.com,lk21online.biz##+js(aopr, $.magnificPopup.open)
+! 
 ! SAFELINK
 ! --------------------------------------------------------------
 kawanfilm21.org,samehadaku.in.net##+js(acis, adtival_base64_encode)
-animenonton.tv,daizurin.com##+js(acis, auto_safelink)
+animenonton.tv,daizurin.com,neonime.org##+js(acis, auto_safelink)
 ! *** abid:src/plus/plus_anti-adblock.adbl ***
 ||gomunime.com^*/autoptimize_single_$script
 ! 
-@@/fuckadblock.$script,domain=anime-indo.net
+@@/fuckadblock.$script,domain=aibouanime.xyz|anime-indo.net|otaku.tekloggers.com
+@@/pagead2.$script,domain=aibouanime.xyz
 ! 
+@@||aibouanime.xyz$generichide
 @@||anime-indo.net^$generichide
+@@||animee.xyz$generichide
 @@||animenonton.tv^$generichide
+@@||anisubindo.video$generichide
 @@||anoboy.us$generichide
+@@||blackavelic.com^$generichide
 @@||daizurin.com^$generichide
+@@||dramaencode.com^$generichide
 @@||driverays.com^$generichide
 @@||ld2tv.net^$generichide
+@@||otaku.tekloggers.com^$generichide
+@@||shirainime.com^$generichide
+@@||zonachina21.blogspot.com^$generichide
 ! 
 filmboxoffice.web.id#@##adsense
 drakoric.com,samehadaku.in.net#@##banner_ad
@@ -90,4 +118,7 @@ filmboxoffice.web.id#@#.an-advert-banner
 ! EMPTY ADS PLACEHOLDERS
 ! --------------------------------------------------------------
 ld2tv.net##.axdx-header
-! Checksum: JCFO50HeO9jkaGpdcif3QA
+otaku.tekloggers.com##.iklan728
+doramaku.me,doramaku.org##.klan728
+aibouanime.xyz##[class$="_bn"]
+! Checksum: OLDXwIehswbXJOIzp99+Lg
