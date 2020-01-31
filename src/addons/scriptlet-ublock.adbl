@@ -1,9 +1,5 @@
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 !
-tribunnews.com##+js(abort-current-inline-script, Math, ='\x)
-hightech.web.id##+js(abort-current-inline-script, document.getElementById, adback)
-kompas.com##+js(abort-current-inline-script, setTimeout, iframeTestTimeMS)
-kompas.com,tribunnews.com##+js(abort-on-property-read, $getWin)
 kuyhaa-me.com##+js(abort-on-property-read, protected_links)
 mangareceh.id##+js(acis, SGPB_POPUP_PARAMS)
