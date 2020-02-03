@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.033.1285
+! Version: 20.034.170
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Feb 2020 21:25 UTC
+! Last modified: 03 Feb 2020 02:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -12,6 +12,7 @@
 ! 
 ! *** abid:src/plus/plus_specific_block.adbl ***
 .gif$image,domain=animenonton.tv|anoboy.us
+.gif$image,domain=neumanga.tv
 ! 
 ||bioskopkeren.guru/*.gif|$image
 ||dwanonton.com/static/banner/$image
@@ -26,7 +27,7 @@
 103.194.171.75,idtube.me##.overlay
 ! 
 sukamovie.club###banner-tengah
-narashika.cc,netnot21.com###btm_banner
+mangacanblog.com,narashika.cc,netnot21.com###btm_banner
 inonton.com###fadeinbox
 drakorindofilms.tv,kingdrakor.com###fixedban
 bioskopkerenin.org###float-banner
@@ -48,6 +49,7 @@ gudangfilm.club,lk21.london###tengah
 gudangfilm.club###tengahaa
 bioskopkerenin.org###top-banner
 dramafilm21.com###topbar
+mangacanblog.com##.ad
 animekompi.web.id,mmsubs.com##.addads
 dwanonton.com##.banner-common
 dwanonton.com##.banner-vertical
@@ -103,10 +105,12 @@ neonime.org##+js(aopr, protected_links)
 ! *** abid:src/plus/plus_anti-adblock.adbl ***
 ||gomunime.com^*/autoptimize_single_$script
 ! 
+@@/advertisement.$script,domain=mangatail.me
 @@/fuckadblock.$script,domain=aibouanime.xyz|anime-indo.net|otaku.tekloggers.com
-@@/pagead2.$script,domain=aibouanime.xyz
+@@/pagead2.$script,domain=aibouanime.xyz|nekopoi.web.id
 ! 
 @@||aibouanime.xyz$generichide
+@@||anibatch.id^$generichide
 @@||anime-indo.net^$generichide
 @@||animee.xyz$generichide
 @@||animenonton.tv^$generichide
@@ -116,7 +120,10 @@ neonime.org##+js(aopr, protected_links)
 @@||daizurin.com^$generichide
 @@||dramaencode.com^$generichide
 @@||driverays.com^$generichide
+@@||komikindo.web.id^$generichide
 @@||ld2tv.net^$generichide
+@@||mangacanblog.com^$generichide
+@@||neumanga.tv^$generichide
 @@||otaku.tekloggers.com^$generichide
 @@||shirainime.com^$generichide
 @@||zonachina21.blogspot.com^$generichide
@@ -132,5 +139,7 @@ otaku.tekloggers.com##.iklan728
 doramaku.me,doramaku.org##.klan728
 aibouanime.xyz##[class$="_bn"]
 ! 
+/ads-poi.$image,domain=nekopoi.web.id
+/ads-poi2.$image,domain=nekopoi.web.id
 ||animekompi.web.id/*/antiblocker$image
-! Checksum: b947qdkMFA7+dgzginulzQ
+! Checksum: gmiKVrXUZtbVmUApJXTn7A
