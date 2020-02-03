@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.034.1194
+! Version: 20.034.1400
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Feb 2020 19:54 UTC
+! Last modified: 03 Feb 2020 23:20 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -102,6 +102,10 @@ gudangfilm21.com,layarkeren.org,lebahmovie.com,lk21online.biz,nonton33.tech##+js
 kawanfilm21.org,samehadaku.in.net##+js(acis, adtival_base64_encode)
 animebatch.site,animenonton.tv,daizurin.com,hakanime.com##+js(acis, auto_safelink)
 neonime.org##+js(aopr, protected_links)
+! Abort Blur Event
+get4link.xyz,icutlink.com,lewat.club,modebaca.com,oceantech.xyz,p4link.com,semawur.com,shrink.world##+js(set, blurred, false)
+! Abort window.open
+lewat.club,modebaca.com,oceantech.xyz,p4link.com,semawur.com,shrink.world##+js(window.open-defuser)
 ! *** abid:src/plus/plus_anti-adblock.adbl ***
 ||gomunime.com^*/autoptimize_single_$script
 ! 
@@ -142,4 +146,4 @@ aibouanime.xyz##[class$="_bn"]
 /ads-poi.$image,domain=nekopoi.web.id
 /ads-poi2.$image,domain=nekopoi.web.id
 ||animekompi.web.id/*/antiblocker$image
-! Checksum: Ix9kFcC0zVr+i6Et0Bma1g
+! Checksum: MjDqmQUcqyzg55rubE4l4w
