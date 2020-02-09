@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.040.103
+! Version: 20.040.402
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Feb 2020 01:43 UTC
+! Last modified: 09 Feb 2020 06:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1947,11 +1947,11 @@ m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
 m.kaskus.co.id##[id^="postdeleted"]
 ! OVERLAY
 ! --------------------------------------------------------------
-/wp-content/plugins/popup-builder/*$domain=kabargames.id
-! 
 ponselsoak.com###bukafpop
 tirto.id###delayedPopup
 tirto.id##.backgroundOverlay
+! 
+kabargames.id##+js(aopr, SGPB_POPUP_PARAMS)
 ! 
 ! PRIVACY
 ! --------------------------------------------------------------
@@ -8526,4 +8526,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: mcT031GaTZ1cG5ZAMonaMg
+! Checksum: pqz5Ltt1MmVeJOYVQyeA3g
