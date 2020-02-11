@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.042.403
+! Version: 20.042.414
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Feb 2020 06:43 UTC
+! Last modified: 11 Feb 2020 06:54 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8073,8 +8073,11 @@ safe-your-url.blogspot.com##[href^="http://www.safelinkconverter.com"]
 ! SAFELINK SCRIPT
 ! --------------------------------------------------------------
 /ABSafelink.$script,third-party
+/filesafelink.$script,third-party
 /js/full-page-script.$script,third-party
 /js/fullPageScript.$script,third-party
+/mastersafelink/*$script,third-party
+/safelink-$script,third-party
 /safelink2/*$script,third-party
 /safelink3/*$script,third-party
 /safelink_utama$script,third-party
@@ -8108,7 +8111,6 @@ safe-your-url.blogspot.com##[href^="http://www.safelinkconverter.com"]
 /raflipedia/keneono/*/safelink.$script,third-party
 /raflipedia/protectlink/*/protectlink.$script,third-party
 /raflipedia/safelink/*/safelink.$script,third-party
-/renigit99/safelink-main/*/filesafelink.$script,third-party
 /riedayme/bloggercode/*/autoreplacebyfeednew.$script,third-party
 /rizkiramdandi/Dev/*/autoconvretlink.$script,third-party
 /sancan25/safe/*/safeblog.$script,third-party
@@ -8124,9 +8126,6 @@ safe-your-url.blogspot.com##[href^="http://www.safelinkconverter.com"]
 /asto1/javascript-safelink/*$script,third-party
 /CandraBlackz/slidelink/*$script,third-party
 /comenxnet/conveter/*$script,third-party
-/comenxnet/MasterSafelink/*$script,third-party
-/comenxnet/Safelink-Conveter/*$script,third-party
-/comenxnet/safelink-downloader/*$script,third-party
 /crezenity/digimoclubwp/*$script,third-party
 /crezenity/imoclub/*$script,third-party
 /crezenity/online/*$script,third-party
@@ -8502,4 +8501,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: QrSGsLVfaWKzibNRC6W1jg
+! Checksum: DjdLWZyRxXQ9bFxuW5JXtw
