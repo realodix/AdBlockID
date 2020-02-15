@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.045.1261
+! Version: 20.046.513
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Feb 2020 21:01 UTC
+! Last modified: 15 Feb 2020 08:33 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -10,6 +10,12 @@
 ! GitHub issues: https://github.com/realodix/AdBlockID/issues
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
+! *** abid:src/plus/p_movie.adbl ***
+! ANNOYANCE
+! --------------------------------------------------------------
+! POP-UP
+! -------------------------------
+nontonsub.top##+js(window.open-defuser)
 ! *** abid:src/plus/plus_specific_block.adbl ***
 .gif$image,domain=animenonton.tv|anoboy.us
 .gif$image,domain=neumanga.tv
@@ -162,4 +168,4 @@ aibouanime.xyz##[class$="_bn"]
 /ads-poi.$image,domain=nekopoi.web.id
 /ads-poi2.$image,domain=nekopoi.web.id
 ||animekompi.web.id/*/antiblocker$image
-! Checksum: 4nOZUIiYLECys7hnjlNxEA
+! Checksum: MQ8/oLGr0mqJS7kFpjGG3A
