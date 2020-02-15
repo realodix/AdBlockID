@@ -69,6 +69,7 @@ exclusions = [
   'specific_hide.adbl',
   'thirdparty.adbl',
   'whitelist.adbl',
+  'p_movie.adbl',
   'plus_annoyance.adbl',
   'plus_anti-adblock.adbl',
   'plus_specific_block.adbl',
