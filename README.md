@@ -15,9 +15,9 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 4. **Anti-Safelink**`^^`: Lupakan URL safelink ketika hendak download file kesayangan Anda.
 4. **Clean:** no `extra` abracadabra!
 
-   <sup>**Catatan**</sup> </br>
-   <sup>`^` Tersedia pada AdBlockID dan diperluas pada AdBlockID+. <br>
-   `^^` Hanya tersedia pada AdBlockID+.</sup>
+<sup>**Catatan**</sup> </br>
+<sup>`^` Tersedia pada AdBlockID dan diperluas pada AdBlockID+. <br>
+`^^` Hanya tersedia pada AdBlockID+.</sup>
 
 
 ## Cara Menggunakan
