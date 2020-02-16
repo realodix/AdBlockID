@@ -124,6 +124,7 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ scriptlet-ublock.adbl
  │   └─ shortlink.adbl
  ├─ /plus
+ │   ├─ p_comic.adbl
  │   ├─ p_movie.adbl
  │   ├─ p_safelink.adbl
  │   ├─ plus_anti-adblock.adbl
