@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.046.513
+! Version: 20.047.716
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Feb 2020 08:33 UTC
+! Last modified: 16 Feb 2020 11:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -11,12 +11,8 @@
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
 ! *** abid:src/plus/p_movie.adbl ***
-! ANNOYANCE
+! SPECIFIC BLOCK
 ! --------------------------------------------------------------
-! POP-UP
-! -------------------------------
-nontonsub.top##+js(window.open-defuser)
-! *** abid:src/plus/plus_specific_block.adbl ***
 .gif$image,domain=animenonton.tv|anoboy.us
 .gif$image,domain=neumanga.tv
 ! 
@@ -26,15 +22,16 @@ nontonsub.top##+js(window.open-defuser)
 ||sobatkeren.net/img/banner/$image
 ! 
 ||bestvideo2019.xyz/script$script,third-party
-! *** abid:src/plus/plus_specific_hide.adbl ***
+! 
+! SPECIFIC HIDE
+! --------------------------------------------------------------
 ! IndoXX1 Closed (domain masih aktif)
 ! https://github.com/realodix/AdBlockID/issues/57
 103.194.171.75##.bnner
 103.194.171.75,idtube.me##.overlay
 ! 
 indoxx1.asia,lk21.dev,sukamovie.club###banner-tengah
-mangacanblog.com,narashika.cc,netnot21.com###btm_banner
-sektekomik.com###close-teaser
+narashika.cc,netnot21.com###btm_banner
 inonton.com###fadeinbox
 139.99.120.222###fbawah
 anime-indo.id,drakorindofilms.tv,inidramaku.com,kingdrakor.com###fixedban
@@ -50,14 +47,12 @@ indoxxifilm.com###floats
 bioskopkerenin.org###middle-banner
 topfilm21.com###pop-tengah
 bioskopkerenin.org###ptbanner
-mangashiro.co###teaser1
-blackavelic.com,mangashiro.co###teaser2
+blackavelic.com###teaser2
 blackavelic.com,layarkaca21.my.id###teaser3
 gudangfilm.club,lk21.london,nobarfilm21.club###tengah
 gudangfilm.club,nobarfilm21.club###tengahaa
 bioskopkerenin.org,filmindo.vip,nontonfilm.vip###top-banner
 dramafilm21.com###topbar
-mangacanblog.com##.ad
 animekompi.web.id,mmsubs.com##.addads
 dwanonton.com##.banner-common
 dwanonton.com##.banner-vertical
@@ -71,7 +66,6 @@ animekompi.web.id,mmsubs.com##.headads
 cafecinema.vip##.idmuvi-topplayer
 nimegami.com##.ik
 drakorindofilms.net,inidramaku.com,korenlovers.co,oujanime.com##.iklan
-kumpulmanga.org##.kzl
 139.99.120.222,dunia21s.fun##.ns-left
 139.99.120.222,dunia21s.fun##.ns-right
 filmapik.bid##.puting
@@ -79,15 +73,14 @@ filmapik.bid##.puting
 ! 
 anime-indo.id###sidebar_right > :-abp-contains(Ads)
 animelink.net##.toast:-abp-contains(Promosi)
-! *** abid:src/plus/plus_annoyance.adbl ***
-! POPUP
-! --------------------------------------------------------------
-*$popup,domain=awnime.net
 ! 
-! OVERLAY
+! ANNOYANCE
 ! --------------------------------------------------------------
-/wp-content/plugins/popup-builder/*$domain=mangareceh.id
-/wp-content/plugins/uji-popup/*$domain=bos21.press|kordramass.com|kshowsubindo.org|layarkaca21indoxxi.co
+! Pop-Up
+*$popup,domain=awnime.net
+nontonsub.top##+js(window.open-defuser)
+! Overlay
+/wp-content/plugins/uji-popup/*$domain=bos21.bar|kordramass.com|kshowsubindo.org|layarkaca21indoxxi.co
 ! 
 111.90.142.151,detikxxi.com###divpopup
 bioskop212.com,bioskop55.online###fanback
@@ -98,7 +91,7 @@ dwa21.org###main-popup
 drakoric.com##.afc_popup
 kordramass.com,kshowsubindo.org##.blocker
 giladrakor.com,inidramaku.com,kingdrakor.com##.cm-popup-modal
-bos21.press##.jquery-modal
+bos21.bar##.jquery-modal
 lk21.london##.ml-announce
 narashika.cc##.popbox
 drakoric.com,drakorindo.fun##.sg-popup-content
@@ -109,27 +102,15 @@ dutafilm.live##body > a[href] > div[style^="position:absolute;"][style*="z-index
 ! 
 139.99.120.222##+js(aopr, $, "#myModalSingle")
 gudangfilm21.com,layarkeren.org,lebahmovie.com,lk21online.biz,nonton33.tech##+js(aopr, $.magnificPopup.open)
-! 
-! SAFELINK
-! --------------------------------------------------------------
-kawanfilm21.org,samehadaku.in.net##+js(acis, adtival_base64_encode)
-animebatch.site,animenonton.tv,daizurin.com,hakanime.com##+js(acis, auto_safelink)
-neonime.org##+js(aopr, protected_links)
-! Abort Blur Event
-ceesty.com,clkme.me,clkmein.com,cllkme.com,corneey.com,destyy.com,festyy.com,gestyy.com,jnw0.com,sh.st,viid.me,wiid.me##+js(set, app.options.timerPageVisibilityChecking, false)
-adsafelink.com,get4link.xyz,icutlink.com,lewat.club,modebaca.com,oceantech.xyz,p4link.com,semawur.com,sportif.id##+js(set, blurred, false)
-! Abort window.open
-ceesty.com,clkme.me,clkmein.com,cllkme.com,corneey.com,destyy.com,festyy.com,gestyy.com,jnw0.com,lewat.club,modebaca.com,oceantech.xyz,p4link.com,semawur.com,sh.st,sportif.id,viid.me,wiid.me##+js(window.open-defuser)
-! 
-! FAKE BUTTON
-! --------------------------------------------------------------
+! Fake Button
 sukamovie.club##.sukam-atas-post
 sukamovie.club##.sukam-bawah
-! *** abid:src/plus/plus_anti-adblock.adbl ***
+! 
+! ANTI-ADBLOCK
+! --------------------------------------------------------------
 ||gomunime.com^*/autoptimize_single_$script
 ! 
 @@/adsbygoogle.$domain=dl.nesia.my.id
-@@/advertisement.$script,domain=kumpulmanga.org|mangatail.me
 @@/fuckadblock.$script,domain=aibouanime.xyz|anime-indo.net|otaku.tekloggers.com
 @@/pagead2.$script,domain=aibouanime.xyz|nekopoi.web.id
 ! 
@@ -145,9 +126,7 @@ sukamovie.club##.sukam-bawah
 @@||dramaencode.com^$generichide
 @@||driverays.com^$generichide
 @@||fmoviez.org^$generichide
-@@||komikindo.web.id^$generichide
 @@||ld2tv.net^$generichide
-@@||mangacanblog.com^$generichide
 @@||neumanga.tv^$generichide
 @@||otaku.tekloggers.com^$generichide
 @@||shirainime.com^$generichide
@@ -156,9 +135,7 @@ sukamovie.club##.sukam-bawah
 filmboxoffice.web.id#@##adsense
 cinemamkv.net,drakoric.com,kiminime.com,samehadaku.in.net#@##banner_ad
 filmboxoffice.web.id#@#.an-advert-banner
-! 
-! EMPTY ADS PLACEHOLDERS
-! --------------------------------------------------------------
+! Empty Ads Placeholders
 fmoviez.org,ld2tv.net###floatads
 ld2tv.net##.axdx-header
 otaku.tekloggers.com##.iklan728
@@ -168,4 +145,141 @@ aibouanime.xyz##[class$="_bn"]
 /ads-poi.$image,domain=nekopoi.web.id
 /ads-poi2.$image,domain=nekopoi.web.id
 ||animekompi.web.id/*/antiblocker$image
-! Checksum: MQ8/oLGr0mqJS7kFpjGG3A
+! 
+! ANTI-SAFELINK
+! --------------------------------------------------------------
+kawanfilm21.org,samehadaku.in.net##+js(acis, adtival_base64_encode)
+animebatch.site,animenonton.tv,daizurin.com,hakanime.com##+js(acis, auto_safelink)
+neonime.org##+js(aopr, protected_links)
+! *** abid:src/plus/p_safelink.adbl ***
+! ANTI-SAFELINK
+! --------------------------------------------------------------
+-safelink/*$script,third-party
+/ABSafelink.$script,third-party
+/autosafelink.$script,third-party
+/filesafelink.$script,third-party
+/gf21safelink.$script,third-party
+/gf21safelink_$script,third-party
+/js/full-page-script.$script,third-party
+/js/fullPageScript.$script,third-party
+/kompisafelink$script,third-party
+/mastersafelink/*$script,third-party
+/safe_utama_$script,third-party
+/safelink-$script,third-party
+/safelink/*$script,third-party
+/safelink2/*$script,third-party
+/safelink21.$script,third-party
+/safelink3/*$script,third-party
+/safelink_$script,third-party
+/safelinkea.$script,third-party
+/safelinkv2_$script,third-party
+/safelinkv2a.$script,third-party
+/safelinkv2a_$script,third-party
+/safeplatinum.$script,third-party
+/wp-content/plugins/soralink/*$script,third-party
+/wpsafelink.$script,third-party
+=autosafeklinkz350_$script
+_safelink.$script,third-party
+_safelinkv2.$script,third-party
+_safelinkv_$script,third-party
+_safeurl.$script,third-party
+_shortsafelink.$script,third-party
+_usafelink.$script,third-party
+||adsafelink.com/js/webscript.$script,third-party
+||adtival.network^$third-party
+||akashiro.co.id/safelink.$script,third-party
+||androidbusiness.us^*/js/safelink.$script,third-party
+||cariskuy.com/assets/js/safelink.$script,third-party
+||cemiw.net/safelinks.$script,third-party
+||forek.info/safelink.$script,third-party
+||giga74.com/safelink.$script,third-party
+||kadal.club/js/getlinkz.$script,third-party
+||mispuani.xyz^*/sparklingku.$script,third-party
+||mispuani.xyz^*/sparklingkuv2.$script,third-party
+||safelinku.com/fullpage/script.$script,third-party
+||safelinku.com/js/web-script.$script,third-party
+! CDN - gitcdn.xyz, githack.com, statically.io, etc
+/andrianadi888/safeevolution/*/Auto.$script,third-party
+/awlagu/sflink/*/Auto.$script,third-party
+/CandraBlackz/legitlink/*/jquery.pietimer.$script,third-party
+/comenxnet/master/*/Sefelink.$script,third-party
+/hubgit21/club/*/club.$script,third-party
+/KompiAjaib/js/*/post1-$script,third-party
+/KompiAjaib/js/*/post1_$script,third-party
+/KompiAjaib/js/*/post2-$script,third-party
+/KompiAjaib/js/*/post2_$script,third-party
+/KompiAjaib/js/*/post3-$script,third-party
+/KompiAjaib/js/*/post3_$script,third-party
+/KompiAjaib/js/*/post4-$script,third-party
+/KompiAjaib/js/*/post4_$script,third-party
+/KompiAjaib/js/*/post5_$script,third-party
+/nkpoi/js/*/idb-auto.$script,third-party
+/raflipedia/keneono/*/safelink.$script,third-party
+/raflipedia/protectlink/*/protectlink.$script,third-party
+/riedayme/bloggercode/*/autoreplacebyfeednew.$script,third-party
+/rizkiramdandi/Dev/*/autoconvretlink.$script,third-party
+/sancan25/safe/*/safeblog.$script,third-party
+/skuy99/safelinkmaterialize/*/auto.$script,third-party
+! 
+/alfirohman/tutorapk.com/*$script,third-party
+/antonclanazhary/erpsoftware/*$script,third-party
+/antonclanazhary/inventoryapp/*$script,third-party
+/antonclanazhary/itinventory/*$script,third-party
+/antonclanazhary/kompi/*$script,third-party
+/apps2portable/apps2portable/*$script,third-party
+/CandraBlackz/slidelink/*$script,third-party
+/comenxnet/conveter/*$script,third-party
+/crezenity/digimoclubwp/*$script,third-party
+/crezenity/imoclub/*$script,third-party
+/crezenity/online/*$script,third-party
+/dedi96/newsafelink/*$script,third-party
+/dedi96/safelink$script,third-party
+/johnali099/gmblc-html/*$script,third-party
+/marsksatriagotham/benoja/*$script,third-party
+/marsksatriagotham/safelinku/*$script,third-party
+/marsksatriagotham/wvw/*$script,third-party
+/mascholis/tipsim/*$script,third-party
+/Purnayasagede/androix/*$script,third-party
+/Purnayasagede/androixsafe/*$script,third-party
+/Purnayasagede/angelsafe/*$script,third-party
+/Purnayasagede/NewAngelSafe/*$script,third-party
+/riandiramdani/safelinku.com/*$script,third-party
+/safehos56/project/*$script,third-party
+/sdnime09/myanimeindo/*$script,third-party
+/sdnime09/Ngewe-om/*$script,third-party
+/skuy99/1-erp-software-com/*$script,third-party
+/skuy99/airlites/*$script,third-party
+/skuy99/countmoney7-blogspot-com/*$script,third-party
+/skuy99/erp-louvrenetwork-xyz/*$script,third-party
+/skuy99/erp-ohmedia-club/*$script,third-party
+/skuy99/moneywikii-blogspot-com/*$script,third-party
+/skuy99/pendakicantik/*$script,third-party
+/theboncud/aklista/*$script,third-party
+/theboncud/pe-gi/*$script,third-party
+/theboncud/safepoh/*$script,third-party
+/VoreCorporation/Customer-Host/*$script,third-party
+! 
+! ANNOYANCE
+! --------------------------------------------------------------
+! Abort Blur Event
+ceesty.com,clkme.me,clkmein.com,cllkme.com,corneey.com,destyy.com,festyy.com,gestyy.com,jnw0.com,sh.st,viid.me,wiid.me##+js(set, app.options.timerPageVisibilityChecking, false)
+adsafelink.com,get4link.xyz,icutlink.com,lewat.club,modebaca.com,oceantech.xyz,p4link.com,semawur.com,sportif.id##+js(set, blurred, false)
+! Block Pop-Up
+ceesty.com,clkme.me,clkmein.com,cllkme.com,corneey.com,destyy.com,festyy.com,gestyy.com,jnw0.com,lewat.club,modebaca.com,oceantech.xyz,p4link.com,semawur.com,sh.st,sportif.id,viid.me,wiid.me##+js(window.open-defuser)
+! *** abid:src/plus/plus_specific_hide.adbl ***
+mangacanblog.com###btm_banner
+sektekomik.com###close-teaser
+mangashiro.co###teaser1
+mangashiro.co###teaser2
+mangacanblog.com##.ad
+kumpulmanga.org##.kzl
+! *** abid:src/plus/plus_annoyance.adbl ***
+! OVERLAY
+! --------------------------------------------------------------
+/wp-content/plugins/popup-builder/*$domain=mangareceh.id
+! *** abid:src/plus/plus_anti-adblock.adbl ***
+@@/advertisement.$script,domain=kumpulmanga.org|mangatail.me
+! 
+@@||komikindo.web.id^$generichide
+@@||mangacanblog.com^$generichide
+! Checksum: xl1FI1lvyXjchIg8godU0A
