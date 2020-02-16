@@ -72,7 +72,6 @@ exclusions = [
   'p_comic.adbl',
   'p_movie.adbl',
   'p_safelink.adbl',
-  'plus_anti-adblock.adbl',
   'plus_specific_hide.adbl',
 ]
 
