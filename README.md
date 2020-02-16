@@ -126,10 +126,7 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  ├─ /plus
  │   ├─ p_comic.adbl
  │   ├─ p_movie.adbl
- │   ├─ p_safelink.adbl
- │   ├─ plus_annoyance.adbl
- │   ├─ plus_anti-adblock.adbl
- │   └─ plus_specific_hide.adbl
+ │   └─ p_safelink.adbl
  ├─ /template
  │   └─ ...
  ├─ adservers.adbl
