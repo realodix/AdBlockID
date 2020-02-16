@@ -12,6 +12,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 1. **Lupakan Iklan**`^`
 2. **Anti-AdBlocker Detection**`^`
 3. **Lupakan Pop-Up Gak Jelas**`^`
+4. **Anti-Safelink**`^^`: Lupakan URL safelink ketika hendak download file kesayangan Anda.
 4. **Clean:** no `extra` abracadabra!
 
    <sup>**Catatan**</sup> </br>
