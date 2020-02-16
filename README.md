@@ -9,10 +9,14 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 
 ## Manfaat Yang Anda Dapatkan
-1. **No Iklan**: menghilangkan iklan, terutama iklan yang bermuatan konten dewasa.
-2. **Speed you need:** mengurangi waktu pemuatan halaman hingga setengah dari waktu sebenarnya!
-3. **Saves expense:** mengurangi `biaya` konsumsi data.
+1. **Lupakan Iklan**`^`
+2. **Anti-AdBlocker Detection**`^`
+3. **Lupakan Pop-Up Gak Jelas**`^`
 4. **Clean:** no `extra` abracadabra!
+
+   <sup>**Catatan**</sup> </br>
+   <sup>`^` Tersedia pada AdBlockID dan diperluas pada AdBlockID+. <br>
+   `^^` Hanya tersedia pada AdBlockID+.</sup>
 
 
 ## Cara Menggunakan
