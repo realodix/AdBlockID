@@ -30,8 +30,9 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
    | AdBlockID           | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID) |https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt |
    | AdBlockID+ (add-on) | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus.txt&title=AdBlockID%20Plus) | https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus.txt |
 
-   <sup>**Catatan**</sup> </br>
-   <sup>- AdBlockID+ adalah solusi AdBlockID dalam mendukung penghapusan iklan pada situs ilegal di Indonesia.</sup>
+   <sup>**Note**</sup> </br>
+   <sup>- AdBlockID+ adalah add-on untuk memperluas dan memperkuat kemampuan AdBlockID.</sup> </br>
+   <sup>- AdBlockID+ dioptimalkan untuk uBlock.</sup>
 
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam, uBlock Plus Adblocker.
