@@ -73,7 +73,6 @@ exclusions = [
   'p_safelink.adbl',
   'plus_annoyance.adbl',
   'plus_anti-adblock.adbl',
-  'plus_specific_hide.adbl',
 ]
 
 log_fh = False
