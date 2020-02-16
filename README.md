@@ -14,9 +14,9 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 3. **Lupakan Pop-Up Gak Jelas**`^`
 4. **Clean:** no `extra` abracadabra!
 
-   <sup>**Catatan**</sup> </br>
-   <sup>`^` Tersedia pada AdBlockID dan diperluas pada AdBlockID+. <br>
-   `^^` Hanya tersedia pada AdBlockID+.</sup>
+<sup>**Catatan**</sup> </br>
+<sup>`^` Tersedia pada AdBlockID dan diperluas pada AdBlockID+. <br>
+`^^` Hanya tersedia pada AdBlockID+.</sup>
 
 
 ## Cara Menggunakan
