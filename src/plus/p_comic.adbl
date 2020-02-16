@@ -1,10 +1,14 @@
 ! SPECIFIC BLOCK
 ! --------------------------------------------------------------
+/iklan.$script,domain=komiku.co
+! SPECIFIC HIDE
+! --------------------------------------------------------------
 mangacanblog.com###btm_banner
 sektekomik.com###close-teaser
 mangashiro.co###teaser1
 mangashiro.co###teaser2
 mangacanblog.com##.ad
+mangashiro.org##.bixbox > div[style] > a[target="_blank"][rel="Dofollow"] > img
 kumpulmanga.org##.kzl
 !
 ! ANNOYANCE
@@ -14,7 +18,10 @@ kumpulmanga.org##.kzl
 !
 ! ANTI-ADBLOCK
 ! --------------------------------------------------------------
+komiku.co,mangaid.id#@##banner_ad
+!
 @@/advertisement.$script,domain=kumpulmanga.org|mangatail.me
 !
 @@||komikindo.web.id^$generichide
 @@||mangacanblog.com^$generichide
+! Empty Ads Placeholders
