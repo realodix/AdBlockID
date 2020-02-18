@@ -32,7 +32,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
    <sup>**Note**</sup> </br>
    <sup>- AdBlockID+ adalah add-on untuk memperluas dan memperkuat kemampuan AdBlockID.</sup> </br>
-   <sup>- AdBlockID+ dioptimalkan untuk uBlock.</sup>
+   <sup>- AdBlockID+ dioptimalkan untuk [uBlock Origin](https://github.com/gorhill/uBlock) dan aplikasi yang dibuat berdasarkan uBlock Origin.</sup>
 
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam, uBlock Plus Adblocker.
