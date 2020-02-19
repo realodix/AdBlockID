@@ -120,7 +120,6 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ adult-block.adbl
  │   ├─ adult-hide.adbl
  │   ├─ annoyances.adbl
- │   ├─ movie.adbl
  │   ├─ news.adbl
  │   ├─ scriptlet-ublock.adbl
  │   └─ shortlink.adbl
@@ -151,7 +150,6 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
 - `/addons/adult-block.adbl`: Filter umum untuk blockir iklan berkonten dewasa.
 - `/addons/adult-hide.adbl`: Filter umum untuk menyembunyikan iklan berkonten dewasa.
 - `/addons/annoyances.adbl`: Filter untuk menghilangkan element web yang cukup mengganggu. Contoh: notifikasi cookie.
-- `/addons/movie.adbl`: Filter untuk menangani iklan pada situs nonton film online.
 - `/addons/news.adbl`: Filter untuk menangani iklan pada situs berita.
 - `/addons/scriptlet-ublock.adbl`: Filter umum untuk [uBlock Resources](https://github.com/gorhill/uBlock/wiki/Resources-Library).
 - `/addons/shortlink.adbl`: Filter untuk menangani iklan pada situs safelink / shortlink.
