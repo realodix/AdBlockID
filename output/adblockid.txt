@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.050.465
+! Version: 20.050.471
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 Feb 2020 07:45 UTC
+! Last modified: 19 Feb 2020 07:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1796,6 +1796,7 @@ blogdokter.net###text-4 > .textwidget
 ads.id##.adManager
 teknobos.com##.adcontainer
 radioonline.co.id##.add-box-top
+nonton.com##.adds
 sosiali.com##.ads
 tutgwarnetgold.com##.ads-blog
 cermati.com##.ads-container
@@ -1823,6 +1824,7 @@ bagas31.info##.frame-banner-places-popup
 franchiseglobal.com##.ghw-banner
 franchiseglobal.com##.ghw_banner
 teknodiary.com##.googlepublisherads
+mivo.com##.home-page .player-ads-top-1
 traveltextonline.com##.imageblock-image
 carapedia.com##.img-banner
 alona.co.id##.inf_infusionsoft_popup
@@ -7431,26 +7433,13 @@ _penggugur_kandungan_$image
 ! *** abid:src/addons/movie.adbl ***
 ! SPECIFIC HIDE
 ! --------------------------------------------------------------
-nonton.com##.adds
-mivo.com##.home-page .player-ads-top-1
-kantaii.web.id##[href*="/ref/bangago"]
-kotaksilver.casa##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 ! 
 ! SPECIFIC BLOCK
 ! --------------------------------------------------------------
-.gif$image,domain=conan.id|nontondrama.me
-||sharemydrive.xyz/*.gif$domain=149.56.24.226
-! 
-||jwplayer21.com/images/*.gif$image
-! 
-||api.nontongo.win/promomenubola.xml$xmlhttprequest
-||bebasdownloadfilm.com/iframe/content.php$subdocument
 ! 
 ! ANTI-ADBLOCK
 ! --------------------------------------------------------------
-/rmp-blockadblock.js$domain=mivo.com
 ! 
-@@||mivo.com^$generichide
 ! 
 ! 
 ! WHITELIST
@@ -8297,6 +8286,8 @@ bersamatekno.com,nabire.net,sosiali.com#@#.adsbygoogle
 aplikasipc.com#@#.afs_ads
 download.ipeenk.com,mi-globe.com#@#.an-advert-banner
 ! 
+/rmp-blockadblock.js$domain=mivo.com
+! 
 @@.ad.json?$domain=otobalancing.net
 @@.gif#*/ad/
 @@.jpg#*/ad/
@@ -8309,6 +8300,7 @@ download.ipeenk.com,mi-globe.com#@#.an-advert-banner
 @@/noadblock-nice-message/assets/js/ads.js?$script,~third-party
 @@/pagead2.$domain=laluzulfakar.com
 @@/pagead2.$script,domain=agungjakanugraha.com|animenyus.com|antoncabon.us|arlinadzgn.com|belajarbro.id|bersamatekno.com|bloggerku.com|blognetid.com|cariajadisini.com|coretan-uman.com|datasekolah.co.id|digimoclub.com|eirudo.com|gembel9.xyz|gembelcit.net|igniel.com|liputanberita21.com|onet4u.com|sosiali.com|tipssipit.com|unduh.in
+! 
 @@||ad4msan.com^$generichide
 @@||ad4msan.win^$generichide
 @@||bagikancara.com^$generichide
@@ -8338,6 +8330,7 @@ download.ipeenk.com,mi-globe.com#@#.an-advert-banner
 @@||kurikulum.co.id^$generichide
 @@||m-edukasi.menantisenja.com^$generichide
 @@||majalahikan.com^$generichide
+@@||mivo.com^$generichide
 @@||mynotescode.com^$generichide
 @@||nama.web.id^$generichide
 @@||novelgo.id^$generichide
@@ -8422,4 +8415,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/103
 @@/particles.$script,domain=mangaku.in
-! Checksum: DzVDVUJRnt6DX/jHKpt4Bw
+! Checksum: Sf9fX+VU4WykBLs/RSsnHw

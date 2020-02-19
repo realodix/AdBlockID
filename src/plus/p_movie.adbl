@@ -1,13 +1,16 @@
 ! SPECIFIC BLOCK
 ! --------------------------------------------------------------
-.gif$image,domain=animenonton.tv|anoboy.us
-.gif$image,domain=neumanga.tv
+.gif$image,domain=animenonton.tv|anoboy.us|conan.id|nontondrama.me|neumanga.tv
+||jwplayer21.com/images/*.gif$image
+||sharemydrive.xyz/*.gif$domain=149.56.24.226
 !
 ||bioskopkeren.guru/*.gif|$image
 ||dwanonton.com/static/banner/$image
 ||nontoncinema.org^*/daftar.html$subdocument
 ||sobatkeren.net/img/banner/$image
 !
+||api.nontongo.win/promomenubola.xml$xmlhttprequest
+||bebasdownloadfilm.com/iframe/content.php$subdocument
 ||bestvideo2019.xyz/script$script,third-party
 !
 ! SPECIFIC HIDE
@@ -58,6 +61,8 @@ drakorindofilms.net,inidramaku.com,korenlovers.co,oujanime.com##.iklan
 139.99.120.222,dunia21s.fun##.ns-right
 filmapik.bid##.puting
 149.56.24.226##.wrapper-inject
+kantaii.web.id##[href*="/ref/bangago"]
+kotaksilver.casa##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 !
 anime-indo.id###sidebar_right > :-abp-contains(Ads)
 animelink.net##.toast:-abp-contains(Promosi)
