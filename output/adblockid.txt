@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.051.349
+! Version: 20.051.356
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Feb 2020 05:49 UTC
+! Last modified: 20 Feb 2020 05:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1229,13 +1229,8 @@ _996x50.gif
 ##[href^="//producebreed.com/"] > img
 ##[href^="http://ktbs.in/aplikasikitabisa"] > img
 ##[href^="http://serconmp.com"]
-##[href^="https://darhostmedia.com"] > img
 ##[href^="https://payseluler.com"] > img
 ##[href^="https://publishers.propellerads.com/"] > img
-##[href^="https://safelinku.com/ref/"] > img
-##[href^="https://submit.shutterstock.com/?ref="] > img
-##[href^="https://tpro.co.id/affiliate/"] > img
-##[href^="https://www.niagahoster.co.id/ref/"] > img
 ! 
 ! Popular banner sizes
 ! 
@@ -1674,6 +1669,10 @@ _996x50.gif
 ! AFFILIATES
 ##[href*="dijaminmurah.com/aff.php?aff="] > img
 ##[href*="idcloudhost.com/aff.php"] > img
+##[href^="https://darhostmedia.com"] > img
+##[href^="https://submit.shutterstock.com/?ref="] > img
+##[href^="https://tpro.co.id/affiliate/"] > img
+##[href^="https://www.niagahoster.co.id/ref/"] > img
 ||ardetamedia.com/images/affiliate/$third-party
 ||ardetamedia.com/images/banner-affiliate/$third-party
 ||ardhosting.com/img/affiliate-logo.$image,third-party
@@ -8051,6 +8050,7 @@ m.liputan6.com#@##back-to-top
 ||followlike.net/promo/$image
 ! 
 ##[href*="ouo.io/ref/"]
+##[href^="https://safelinku.com/ref/"] > img
 ! 
 encurta.eu##[href*="ads.encurta.net/"]
 safe-your-url.blogspot.com##[href^="http://www.safelinkconverter.com"]
@@ -8397,4 +8397,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: mrtgr6Wj54FwUasoSiMOvQ
+! Checksum: 7Mc1Cv5LCkMN/geiCchFaQ
