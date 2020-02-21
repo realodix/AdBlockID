@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.052.1308
+! Version: 20.052.1324
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 Feb 2020 21:48 UTC
+! Last modified: 21 Feb 2020 22:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8080,7 +8080,7 @@ safe-your-url.blogspot.com##[href^="http://www.safelinkconverter.com"]
 @@/adsbygoogle.$script,domain=sharetvr.my.id
 @@/advertisement.$script,domain=anifiles.org|berkas.cloud|disingkat.in|mangalist.org|shortgoo.blogspot.com|tribuntekno.com
 @@/fuckadblock.$script,domain=dares.xyz|elnurtech.com|giga74.com|hargawebsite.com|newhealthblog.com|newsdecorate.com|newsteez.com|ngantukberat.me|proapkmod.com|safelinkreviewx.com|wikiall.org|yungeblog.xyz|yusepjaelani.blogspot.com
-@@/js/ads.$script,domain=adsafelink.com|adsafelink.net|bacajenius.id|cutlinks.pro|droidtamvan.me|earnload.co|eio.io|encurta.eu|fc.lc|fodz.xyz|glory-link.com|gpmojo.co|haipedia.com|higud.com|icutlink.com|indigitz.org|lewat.club|link48.net|megaurl.in|memoo.xyz|modebaca.com|movienear.me|mylinkblog.com|ndoqp.com|safeku.com|shln.pw|shortearn.eu|shorten.sh|shrink.vip|shrtfly.net|skip.az|softfull.me|sportt.space|templink.org|unyumerdeka.com|urlto.id|wegner.tech|wi.cr
+@@/js/ads.$script,domain=adsafelink.com|adsafelink.net|bacajenius.id|cutlinks.pro|droidtamvan.me|earnload.co|eio.io|encurta.eu|fc.lc|fodz.xyz|glory-link.com|gpmojo.co|haipedia.com|higud.com|icutlink.com|indigitz.org|lewat.club|link48.net|megaurl.in|memoo.xyz|modebaca.com|movienear.me|mylinkblog.com|ndoqp.com|safeku.com|shln.pw|shortearn.eu|shorten.sh|shrink.vip|skip.az|softfull.me|sportt.space|templink.org|unyumerdeka.com|urlto.id|wegner.tech|wi.cr
 @@/pagead2.$domain=dawnstation.com|softfull.me
 @@/pagead2.$script,domain=animexin.jin-7.com|elsfile.org|felanovia.com|giga74.com|informations-library.blogspot.com|lewatisaja.com|linkberuang.blogspot.com|ljutkeunvpn.blogspot.com|sportif.id|teknorizen.blogspot.com
 ! 
@@ -8160,7 +8160,6 @@ safe-your-url.blogspot.com##[href^="http://www.safelinkconverter.com"]
 @@||semutlink.blogspot.com^$generichide
 @@||sepintek.my.id^$generichide
 @@||sh.st^$generichide
-@@||shrtfly.net^$generichide
 @@||skip.az^$generichide
 @@||sopasti.com^$generichide
 @@||suarankri.me^$generichide
@@ -8195,7 +8194,7 @@ intercelestial.com,sweetlantern.com,tribuntekno.com##.idblog-floatbanner
 kertashitam.com###blockblockA
 kertashitam.com###blockblockB:style(visibility: visible !important; display: block !important;)
 dares.xyz##.aicp
-aii.sh,higud.com,icutlink.com,oceantech.xyz,shrtfly.net,sportif.id##.banner
+aii.sh,higud.com,icutlink.com,oceantech.xyz,sportif.id##.banner
 sportif.id##.banner-container a img
 encurta.eu##.banner-inner
 get4link.xyz,oceantech.xyz,p4link.com,teknisimotor.com##.blog-item
@@ -8226,8 +8225,8 @@ droidtamvan.me,haipedia.com,movienear.me##img[width="200"][height="60"]
 ! SCRIPTLET
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 ! --------------------------------------------------------------
-shrtfly.net##+js(abort-on-property-read, tabUnder)
 netijenshare.com##+js(abort-on-property-write.js, adBlockDetected)
+stfly.io##+js(aopr, app_vars.force_disable_adblock)
 ! *** abid:src/addons/scriptlet-ublock.adbl ***
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
@@ -8418,4 +8417,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: 05uAtRV5qDAqNeMwiOQlXQ
+! Checksum: dDArYZqKUiqWqJU7Cwqbqw
