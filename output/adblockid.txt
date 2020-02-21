@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.052.1324
+! Version: 20.052.1327
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 Feb 2020 22:04 UTC
+! Last modified: 21 Feb 2020 22:07 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8135,7 +8135,6 @@ safe-your-url.blogspot.com##[href^="http://www.safelinkconverter.com"]
 @@||merdekaid.online^$generichide
 @@||muhammadyoga.me^$generichide
 @@||ndoqp.com^$generichide
-@@||netijenshare.com^$generichide
 @@||newhealthblog.com^$generichide
 @@||news-tech.xyz^$generichide
 @@||newsdecorate.com^$generichide
@@ -8225,8 +8224,8 @@ droidtamvan.me,haipedia.com,movienear.me##img[width="200"][height="60"]
 ! SCRIPTLET
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
 ! --------------------------------------------------------------
-netijenshare.com##+js(abort-on-property-write.js, adBlockDetected)
 stfly.io##+js(aopr, app_vars.force_disable_adblock)
+netijenshare.com##+js(aopw, adBlockDetected)
 ! *** abid:src/addons/scriptlet-ublock.adbl ***
 ! Scriptlets khusus untuk uBlock dan turunannya
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
@@ -8417,4 +8416,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/41
 @@/gtm.js$script,domain=tokopedia.com
-! Checksum: dDArYZqKUiqWqJU7Cwqbqw
+! Checksum: 8vTW7nlIi2jo/hWcNbhYog
