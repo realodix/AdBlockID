@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.073.767
+! Version: 20.073.774
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Mar 2020 12:47 UTC
+! Last modified: 13 Mar 2020 12:54 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8295,6 +8295,8 @@ itsafelink.com,loncatin.keneono.site,safe-your-url.blogspot.com,safejobsbos.blog
 mediatulis.net#@##banner_ad
 earnload.co,fodz.xyz,glory-link.com,gpmojo.co,memoo.xyz,shortearn.eu,shorten.sh,sportt.space#@#.ad-banner
 ! 
+cararoot.id###ignielAdBlock
+! 
 ! EMPTY ADS PLACEHOLDERS
 ! --------------------------------------------------------------
 ambyar.info,intercelestial.com,linegee.net,sweetlantern.com,tribuntekno.com###externalinject-gpt-passback-container
@@ -8318,17 +8320,17 @@ uiz.io##.btn-front:-abp-contains(Download)
 bacajenius.id##.download
 higud.com,lewat.club##.klikdisini
 asuransiku.info,bagilagi.com##.klnsora
-cararoot.id##[href*="gubukbisnis."]
 semawur.com##[href*="semawur.com/links/share/"]
 modebaca.com##[href*="tautan.pro"]
 movienear.me##[href^="https://bit.ly/"] > img
+cararoot.id##img[border="0"][src*="blogspot.com"]
 droidtamvan.me,movienear.me,sekilastekno.com##img[width="200"][height="60"]
 ! 
 *$popup,domain=higud.com|icutlink.com|lewat.club|movienear.me
 *$subdocument,third-party,domain=glory-link.com
 /down.png$image,domain=movienear.me|sportif.id
 /download%$image,domain=movienear.me
-/download-now-$image,domain=droidtamvan.me|lewat.club|sekilastekno.com
+/download-now-$image,domain=cararoot.id|droidtamvan.me|lewat.club|sekilastekno.com
 /download-now.$image,domain=icutlink.com
 /download3.$image,domain=link48.net|semawur.com
 /download_$image,domain=asuransiku.info
@@ -8536,4 +8538,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: BxDShjjcBHkgKvgKQrM9xA
+! Checksum: 0+NvTy+1Lc6isiy4jsOv0Q
