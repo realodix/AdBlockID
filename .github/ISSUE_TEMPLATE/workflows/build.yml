@@ -1,6 +1,10 @@
 name: Build AdBlodID
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron:  '* 2 * * *'
 
 jobs:
   build:
@@ -20,7 +24,7 @@ jobs:
         ./build.sh
     - name: Commit files
       run: |
-        git config --local user.email "realodix@yahoo.com"
+        git config --local user.email "secrets.EMAIL"
         git config --local user.name "Realodix"
         git commit -m "AdBlockID - AutoSave" -a
     - name: Push changes
