@@ -21,7 +21,7 @@ jobs:
         pip install -e tools/python-abp
     - name: Build AdBlockID
       run: |
-        ./home/build.sh
+        ./build.sh
     - name: Commit files
       run: |
         git config --local user.email "secrets.EMAIL"
