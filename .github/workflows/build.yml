@@ -12,11 +12,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set-up Python 3.8
+    - name: Set up Python 3.8
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
-    - name: Set-up python-abp
+    - name: Set up python-abp
       run: |
         pip install -e tools/python-abp
     - name: Build AdBlockID
@@ -25,7 +25,7 @@ jobs:
     - name: Commit files
       run: |
         git config user.email "secrets.EMAIL"
-        git config user.name "Realodix Bot"
+        git config user.name "RealodixBot"
         git commit -m "AdBlockID - AutoSave" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
