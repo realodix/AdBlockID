@@ -25,8 +25,8 @@ jobs:
     - name: Commit files
       run: |
         git config user.email "secrets.EMAIL"
-        git config user.name "RealodixBot"
-        git commit -m "AdBlockID - AutoSave" -a
+        git config user.name "realodixbot"
+        git commit -m "[Auto] Rendering of filter lists" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
