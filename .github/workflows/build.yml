@@ -24,6 +24,8 @@ jobs:
         sh ./build.sh
     - name: Commit files
       run: |
+        git config --global user.email "secrets.EMAIL"
+        git config --global user.name "Realodix"
         git commit -m "AdBlockID - AutoSave" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
