@@ -22,6 +22,8 @@ jobs:
     - name: Build AdBlockID
       run: |
         ./build.sh
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Commit files
       run: |
         git config --local user.email "secrets.EMAIL"
