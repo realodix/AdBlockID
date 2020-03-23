@@ -1,0 +1,29 @@
+name: Build AdBlodID
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Set up python-abp
+      run: |
+        pip install -e tools/python-abp
+    - name: Build AdBlockID
+      run: |
+        ./build.sh
+    - name: Commit files
+      run: |
+        git config --local user.email "realodix@yahoo.com"
+        git config --local user.name "Realodix"
+        git commit -m "AdBlockID - AutoSave" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
