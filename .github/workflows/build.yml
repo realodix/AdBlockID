@@ -1,10 +1,8 @@
 name: Build AdBlodID
 
 on:
-  push:
-  pull_request:
   schedule:
-    - cron:  '* 2 * * *'
+    - cron:  '* */1 * * *'
 
 jobs:
   build:
@@ -24,9 +22,9 @@ jobs:
         sh ./build.sh
     - name: Commit files
       run: |
-        git config user.email "secrets.EMAIL"
-        git config user.name "realodixbot"
-        git commit -m "[Auto] Rendering of filter lists" -a
+        git config user.email "secrets.GIT_USER_EMAIL"
+        git config user.name "secrets.GIT_USER_NAME"
+        git commit -m "secrets.GIT_COMMIT_MSG" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
