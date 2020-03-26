@@ -1,8 +1,9 @@
 name: Build AdBlodID
 
 on:
-  schedule:
-    - cron:  '1 */1 * * *'
+  push:
+    paths:
+      - 'src/**'
 
 jobs:
   build:
