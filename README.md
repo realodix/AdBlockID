@@ -94,7 +94,7 @@ Anda dapat mengakses Visual Studio Code Tasks dengan menekan `Ctrl+Shift+P`, lal
 
 - **Build**: Render _filter list fragments_ ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
 - **FOP**: Mengurutkan, menggabungkan dan memformat ulang beberapa  filter jika memungkinkan.
-- **Validate Host**: Memeriksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl.
+
 
 ### Format Pesan Commit
 
