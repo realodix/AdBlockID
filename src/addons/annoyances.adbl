@@ -5,10 +5,13 @@ kaskus.co.id###thread_post_list > [id^="moderated-"]:-abp-contains(Post ini tela
 m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
 m.kaskus.co.id##[id^="postdeleted"]
 !
-! ANTI-RIGHT-CLICK & ANTI-SELECT
+! ANTI-RIGHT-CLICK
+! --------------------------------------------------------------
+psikologicinta.com##+js(aopr, document.oncontextmenu)
+!
+! ANTI-SELECT
 ! --------------------------------------------------------------
 psikologicinta.com##+js(acis, disableSelection, reEnable)
-psikologicinta.com##+js(aopr, document.oncontextmenu)
 psikologicinta.com##.unselectable:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 !
 ! FAKE BUTTON
