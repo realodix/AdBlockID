@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.124.1061
+! Version: 20.124.1068
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 May 2020 17:41 UTC
+! Last modified: 03 May 2020 17:48 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -2095,6 +2095,9 @@ m.kaskus.co.id##[id^="postdeleted"]
 ! 
 ! ANTI-RIGHT-CLICK & ANTI-SELECT
 ! --------------------------------------------------------------
+psikologicinta.com##+js(acis, disableSelection, reEnable)
+psikologicinta.com##+js(aopr, document.oncontextmenu)
+psikologicinta.com##.unselectable:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
 ! 
 ! FAKE BUTTON
 ! --------------------------------------------------------------
@@ -8776,4 +8779,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: lJlrvnzQvxb0Kl5d/9La3w
+! Checksum: 2MitdiQQULFxLpTDkaNtqg
