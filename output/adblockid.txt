@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.125.947
+! Version: 20.125.953
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 May 2020 15:47 UTC
+! Last modified: 04 May 2020 15:53 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -2076,6 +2076,7 @@ shopee.co.id##.shopee-search-item-result__item:-abp-contains(Iklan)
 m.tokopedia.com##[data-testid="masonryProduct"]:-abp-has(img[alt*="topads" i])
 tokopedia.com##[data-testid="topadsCPMWrapper"]
 tokopedia.com##[label-atm="taProduct"]:-abp-has(img[alt*="topads" i])
+tokopedia.com##div[data-testid="divSRPContentProducts"] > div[class^="css-"]:has( > a[data-testid="lnkProductContainer"] > div[data-testid="divProductWrapper"] > div[class^="css-"] > div[class^="css-"] > div[class^="css-"] > img[alt="topads icon"])
 ! 
 ! Mobile
 pickybest.id###fixedban
@@ -8785,4 +8786,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: q8Y8PVjaRTZ4P8QosOaunw
+! Checksum: KowNpyYpgRx/SAZpV0J7vQ
