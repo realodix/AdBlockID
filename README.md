@@ -84,7 +84,7 @@ Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 | File              | Deskripsi                                 |
 | ----------------- | ----------------------------------------- |
 | `build.sh`        | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
-| `validatehost.sh` | Periksa apakah host sedang up / down berdasarkan header yang dikembalikan dari curl. |
+
 
 Sebagian besar filter pada AdBlockID ditulis dengan [Visual Studio Code](https://code.visualstudio.com/) dan berbagai tools pendukung telah diintegrasikan ke dalam Visual Studio Code melalui Tasks.
 
