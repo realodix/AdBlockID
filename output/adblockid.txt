@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.129.1369
+! Version: 20.130.683
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 May 2020 22:49 UTC
+! Last modified: 09 May 2020 11:23 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8456,8 +8456,15 @@ m.liputan6.com#@##back-to-top
 ##[href^="https://safelinkblogger.com/ref/"]
 ##[href^="https://safelinku.com/ref/"] > img
 ! 
-apk.sekilastekno.com,lewat.tautan.pro,semawur.com###fixedban
+apk.sekilastekno.com,apk.sportif.id,lewat.tautan.pro,semawur.com###fixedban
+aii.sh,apk.sportif.id,icutlink.com,liveshootv.com,oceantech.xyz##.banner
+apk.sportif.id##.banner-container a img
+asuransiku.info##.klnsora
+semawur.com##[href*="semawur.com/links/share/"]
+modebaca.com##[href*="tautan.pro"]
 safe-your-url.blogspot.com##[href^="http://www.safelinkconverter.com"]
+movienear.me##[href^="https://bit.ly/"] > img
+cararoot.id##img[border="0"][src*="blogspot.com"]
 ! ANTI-ADBLOCK
 ! --------------------------------------------------------------
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
@@ -8479,7 +8486,7 @@ anirocksite.com,my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 @@/fuckadblock.$script,domain=dares.xyz|newsteez.com|proapkmod.com|safelinkreviewx.com|wikiall.org
 @@/js/ads.$script,domain=adsafelink.net|cutlinks.pro|droidtamvan.me|earnload.co|eio.io|fc.lc|fodz.xyz|glory-link.com|gpmojo.co|icutlink.com|indigitz.org|link48.net|megaurl.in|memoo.xyz|modebaca.com|movienear.me|mylinkblog.com|safeku.com|shln.pw|shortearn.eu|shorten.sh|shrink.vip|softfull.me|sportt.space|templink.org|urlto.id|wegner.tech|wi.cr
 @@/pagead2.$domain=dawnstation.com|softfull.me
-@@/pagead2.$script,domain=animexin.jin-7.com|elsfile.org|felanovia.com|gubukbisnis.me|informations-library.blogspot.com|lewatisaja.com|linkberuang.blogspot.com|sportif.id|teknorizen.blogspot.com
+@@/pagead2.$script,domain=animexin.jin-7.com|apk.sportif.id|elsfile.org|felanovia.com|gubukbisnis.me|informations-library.blogspot.com|lewatisaja.com|linkberuang.blogspot.com|teknorizen.blogspot.com
 ! 
 @@||1idsly.com^$generichide
 @@||autoride.pw^$generichide
@@ -8559,21 +8566,14 @@ intercelestial.com,sweetlantern.com,tribuntekno.com##.idblog-floatbanner
 kertashitam.com###blockblockA
 kertashitam.com###blockblockB:style(visibility: visible !important; display: block !important;)
 dares.xyz##.aicp
-aii.sh,icutlink.com,liveshootv.com,oceantech.xyz,sportif.id##.banner
-sportif.id##.banner-container a img
 get4link.xyz,oceantech.xyz,p4link.com,teknisimotor.com##.blog-item
 uiz.io##.btn-front:-abp-contains(Download)
 lewat.club,lewat.tautan.pro##.klikdisini
-asuransiku.info##.klnsora
-semawur.com##[href*="semawur.com/links/share/"]
-modebaca.com##[href*="tautan.pro"]
-movienear.me##[href^="https://bit.ly/"] > img
-cararoot.id##img[border="0"][src*="blogspot.com"]
 droidtamvan.me,movienear.me,sekilastekno.com##img[width="200"][height="60"]
 ! 
 *$popup,domain=icutlink.com|lewat.club|movienear.me
 *$subdocument,third-party,domain=glory-link.com
-/down.png$image,domain=movienear.me|sportif.id
+/down.png$image,domain=apk.sportif.id|movienear.me
 /download%$image,domain=movienear.me
 /download-now-$image,domain=cararoot.id|droidtamvan.me|lewat.club|sekilastekno.com
 /download-now.$image,domain=icutlink.com
@@ -8789,4 +8789,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: FkwMv/mstR6+zabKhS/wbQ
+! Checksum: h5AEfkuzB9u0gPy3a1vL/A
