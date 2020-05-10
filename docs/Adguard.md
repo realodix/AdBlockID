@@ -34,7 +34,8 @@
 1. Buka aplikasi AdGuard
 2. Pada menu *sidebar*, klik *Setting* -> *Content Blocking*.
 3. Klik menu *Filters*.
-4. Klik menu *Custom filters*.
-5. Klik tombol **+** di pojok kanan bawah.
-6. Isi dengan URL AdBlockID (https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt).
-7. Klik ***IMPORT***.
+4. Klik menu *Language-specific*.
+5. Aktifkan *Language-specific*.
+6. Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span>
+
+   ![](https://i.imgur.com/154mvtG.jpg)
