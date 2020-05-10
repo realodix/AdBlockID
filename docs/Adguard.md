@@ -23,11 +23,14 @@
 1. Buka aplikasi AdGuard
 2. Buka halaman *Settings*.
 3. Pada menu di sebelah kiri, klik *Ad Blocker*.
-4. Klik *Filter Editor*.
-5. Pojok kiri bawah, klik *icon* **+** (*Add a new filter subscription*).
-6. Klik *Import filter*.
-7. Isi dengan URL AdBlockID (https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt).
-8. Klik *Install*.
+4. Pada bagian *Installed filters*, klik *Add a filter*.
+
+   ![](https://i.imgur.com/WzMNuRl.png)
+
+5. Cari **AdBlockID**, lalu centang.
+6. Klik *Add selected*.
+
+   ![](https://i.imgur.com/cZSIyHp.png)
 
 
 ## Cara Memasang AdBlockID Pada AdGuard for Android
