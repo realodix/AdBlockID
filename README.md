@@ -102,7 +102,6 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 
 | Type   | Deskripsi |
 | ------ | --------- |
-| `A`    | Semua jenis iklan, termasuk banner, pop-up, ad server, dll. |
 | `AA`   | Anti-Adblock. |
 | `M`    | Maintain filter. |
 | `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
