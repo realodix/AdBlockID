@@ -39,6 +39,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
 - [AdBlock](/docs/Adblock-Plus.md): AdBlock, Adblock Plus, StopAll Ads.
 - [Opera Ad Blocker](/docs/Opera-AdBlocker.md)
+- [Vivaldi Ad Blocker](/docs/Vivaldi-AdBlocker.md)
 - [Adaware ad block](/docs/adaware-ad-block.md)
 
 
