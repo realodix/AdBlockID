@@ -10,15 +10,13 @@
 
    ![](https://i.imgur.com/W1RiKSr.jpg)
  
-3. *Scroll* ke bawah, lalu klik Custom.
+3. *Scroll* ke bawah, lalu klik *Language-specific*.
 
-   ![](https://i.imgur.com/44W3tgl.jpg)
- 
-4. Copy URL AdBlockID (https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt), lalu paste URL AdBlockID pada kotak yang tersedia.
+   ![](https://i.imgur.com/57mYvTR.png)
 
-5. Klik ***Next***.
+4. Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span>
 
-   ![](https://i.imgur.com/T4QbX7P.jpg)
+   ![](https://i.imgur.com/ohqpQh9.png)
 
 
 ## Cara Memasang AdBlockID Pada AdGuard for Windows
