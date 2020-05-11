@@ -85,7 +85,7 @@ KNOWNOPTIONS = (
     # AdGuard
     "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock"
 )
-IGNORE = ("adblockid.txt", "adblockid-plus.txt", "p_international.adbl", "tools", "template")
+IGNORE = ("adblockid.txt", "adblockid-plus.txt", "p_international.adbl", "docs", "tools", "template")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
