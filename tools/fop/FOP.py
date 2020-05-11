@@ -57,7 +57,6 @@ BLANKPATTERN = re.compile(r"^\s*$")
 COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
-IGNORE = ("adblockid.txt", "adblockid-plus.txt", "p_international.adbl", "tools")
 
 # List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = (
@@ -86,6 +85,7 @@ KNOWNOPTIONS = (
     # AdGuard
     "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock"
 )
+IGNORE = ("adblockid.txt", "adblockid-plus.txt", "p_international.adbl", "tools", "template")
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
