@@ -39,7 +39,7 @@ KNOWNOPTIONS = [
     "redirect=google-analytics_cx_api.js", "redirect-rule=google-analytics_cx_api.js",
     "redirect=google-analytics.com/analytics.js", "redirect-rule=google-analytics.com/analytics.js",
     "redirect=google-analytics.com/ga.js", "redirect-rule=google-analytics.com/ga.js",
-    "redirect=googlesyndication.com/adsbygoogle.js", "redirect-rule=googlesyndication.com/adsbygoogle.js", "redirect=doubleclick_instream_ad_status.js", "redirect-rule=doubleclick_instream_ad_status.js",
+    "redirect=googlesyndication.com/adsbygoogle.js", "redirect-rule=googlesyndication.com/adsbygoogle.js",
     "redirect=googletagmanager.com/gtm.js", "redirect-rule=googletagmanager.com/gtm.js",
     "redirect=googletagservices.com/gpt.js", "redirect-rule=googletagservices.com/gpt.js",
 
