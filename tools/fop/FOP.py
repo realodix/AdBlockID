@@ -21,12 +21,9 @@ VERSION = "3.18.1"
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
 import argparse
+# Import a module only available in Python 3
+from urllib.parse import urlparse
 import common
-
-ap = argparse.ArgumentParser()
-ap.add_argument('--dir', nargs='+', help='Set directories', default=None)
-ap.add_argument('--commit', help='Enable commit mode', action='store_true', default=False)
-arg = ap.parse_args()
 
 # Check the version of Python for language compatibility and subprocess.check_output()
 MAJORREQUIRED = 3
@@ -34,8 +31,11 @@ MINORREQUIRED = 2
 if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
     raise RuntimeError("FOP requires Python {reqmajor}.{reqminor} or greater, but Python {ismajor}.{isminor} is being used to run this program.".format(reqmajor = MAJORREQUIRED, reqminor = MINORREQUIRED, ismajor = sys.version_info.major, isminor = sys.version_info.minor))
 
-# Import a module only available in Python 3
-from urllib.parse import urlparse
+ap = argparse.ArgumentParser()
+ap.add_argument('--dir', nargs='+', help='Set directories', default=None)
+ap.add_argument('--commit', help='Enable commit mode', action='store_true', default=False)
+arg = ap.parse_args()
+
 
 # Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
 ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#|\$)\@?\??\@?(#|\$)")
@@ -54,9 +54,6 @@ UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
 
-# Compile a regular expression that validates commit comments
-COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
-
 # List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("adblockid.txt", "adblockid-plus.txt", "p_international.adbl", "docs", "tools", "template")
 
@@ -65,6 +62,9 @@ REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, re
 GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["commit", "-a", "-m"], ["pull"], ["push"])
 HG = REPODEF(["hg"], "./.hg/", "-R", None, ["stat", "-q"], ["diff"], ["commit", "-m"], ["pull"], ["push"])
 REPOTYPES = (GIT, HG)
+
+# Compile a regular expression that validates commit comments
+COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
 
 def start ():
     """ Print a greeting message and run FOP in the directories
