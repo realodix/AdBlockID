@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
-# List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
+# List the files that should not be sorted, either because they have a special
+# sorting system or because they are not filter files
 IGNORE = ("adblockid.txt", "adblockid-plus.txt", "p_international.adbl", "docs", "tools", "template")
 
-# List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, which is handled separately), as of version 1.3.9
+
+# List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain,
+# which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = [
     "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping", "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
     "rewrite=abp-resource:blank-css", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-text", "rewrite=abp-resource:1x1-transparent-gif", "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png",
