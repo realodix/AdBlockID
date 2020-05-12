@@ -23,6 +23,7 @@ KNOWNOPTIONS = [
 
     # uBlock Origin
     # https://github.com/gorhill/uBlock/blob/master/src/js/redirect-engine.js
+    # https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt
     "1p", "first-party", "3p", "all", "badfilter", "cname", "csp", "css", "denyallow", "ehide", "empty", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr",
     "redirect=1x1.gif", "redirect-rule=1x1.gif",
     "redirect=2x2.png","redirect-rule=2x2.png",
@@ -35,13 +36,14 @@ KNOWNOPTIONS = [
     "redirect=noop.txt", "redirect-rule=noop.txt",
     "redirect=noopcss", "redirect-rule=noopcss",
     "redirect=ampproject_v0.js", "redirect-rule=ampproject_v0.js",
+    "redirect=nofab.js" "redirect-rule=nofab.js"
     "redirect=fuckadblock.js-3.2.0" "redirect-rule=fuckadblock.js-3.2.0"
     "redirect=google-analytics_cx_api.js", "redirect-rule=google-analytics_cx_api.js",
-    "redirect=google-analytics.com/analytics.js", "redirect-rule=google-analytics.com/analytics.js",
-    "redirect=google-analytics.com/ga.js", "redirect-rule=google-analytics.com/ga.js",
-    "redirect=googlesyndication.com/adsbygoogle.js", "redirect-rule=googlesyndication.com/adsbygoogle.js",
-    "redirect=googletagmanager.com/gtm.js", "redirect-rule=googletagmanager.com/gtm.js",
-    "redirect=googletagservices.com/gpt.js", "redirect-rule=googletagservices.com/gpt.js",
+    "redirect=google-analytics_analytics.js", "redirect-rule=google-analytics_analytics.js",
+    "redirect=google-analytics_ga.js", "redirect-rule=google-analytics_ga.js",
+    "redirect=googlesyndication_adsbygoogle.js", "redirect-rule=googlesyndication_adsbygoogle.js",
+    "redirect=googletagmanager_gtm.js", "redirect-rule=googletagmanager_gtm.js",
+    "redirect=googletagservices_gpt.js", "redirect-rule=googletagservices_gpt.js",
 
     # AdGuard
     "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock"
