@@ -54,9 +54,6 @@ UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
 
-# List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
-IGNORE = ("adblockid.txt", "adblockid-plus.txt", "p_international.adbl", "docs", "tools", "template")
-
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, commit, pull, push")
 GIT = REPODEF(["git"], "./.git/", "--work-tree=", "--git-dir=", ["status", "-s", "--untracked-files=no"], ["diff"], ["commit", "-a", "-m"], ["pull"], ["push"])
@@ -123,7 +120,7 @@ def main (location):
     print("\nPrimary location: {folder}".format(folder = os.path.join(os.path.abspath(location), "")))
     for path, directories, files in os.walk(location):
         for direct in directories[:]:
-            if direct.startswith(".") or direct in IGNORE:
+            if direct.startswith(".") or direct in common.IGNORE:
                 directories.remove(direct)
         print("Current directory: {folder}".format(folder = os.path.join(os.path.abspath(path), "")))
         directories.sort()
@@ -131,7 +128,7 @@ def main (location):
             address = os.path.join(path, filename)
             extension = os.path.splitext(filename)[1]
             # Sort all text files that are not blacklisted
-            if (extension == ".txt" or extension == ".adbl") and filename not in IGNORE:
+            if (extension == ".txt" or extension == ".adbl") and filename not in common.IGNORE:
                 fopsort(address)
             # Delete unnecessary backups and temporary files
             if extension == ".orig" or extension == ".temp":

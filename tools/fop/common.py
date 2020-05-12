@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+# List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
+IGNORE = ("adblockid.txt", "adblockid-plus.txt", "p_international.adbl", "docs", "tools", "template")
+
 # List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = [
     "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping", "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
