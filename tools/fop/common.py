@@ -7,7 +7,7 @@
 # sorting system or because they are not filter files
 # -----------------------------------------------------------------------------
 
-IGNORE = ("adblockid.txt", "adblockid-plus.txt", "p_international.adbl", "docs", "tools", "template")
+IGNORE = ("adblockid.txt", "adblockid-plus.txt", "docs", "tools", "template")
 
 
 #
