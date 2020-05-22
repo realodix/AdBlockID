@@ -39,7 +39,7 @@ lk21.london###floatbot
 bioskop021.com,bioskop55.online,bioskop59.club,bioskop59.com,bioskop720.me,bioskop90.org,ganool99.club,ganool99.com,nonton66.com###floating_banner_left
 bioskop021.com,bioskop55.online,bioskop59.club,bioskop59.com,bioskop720.me,bioskop90.org,ganool99.club,ganool99.com,nonton66.com###floating_banner_right
 inonton.com###floating_banner_top
-kawanfilm21.org,zonafilm.xyz###floating_banner_top1
+kawanfilm21.org,kawanfilm21.pro,zonafilm.xyz###floating_banner_top1
 indoxxifilm.com###floats
 159.65.3.51,indoxxifilm.com,lk21c.fun###flobwh
 anoboy.best###judi2
@@ -123,7 +123,7 @@ dutafilm.*##.swal-overlay
 dutafilm.*##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 !
 139.99.120.222##+js(aopr, $, "#myModalSingle")
-194.67.196.93,gudangfilm21.com,indoxxiku.com,layarkaca21indo.com,layarkeren.org,lebahmovie.com,lk21online.biz##+js(aopr, $.magnificPopup.open)
+194.67.196.93,gudangfilm21.com,indoxxiku.com,kawanfilm21.pro,layarkaca21indo.com,layarkeren.org,lebahmovie.com,lk21online.biz##+js(aopr, $.magnificPopup.open)
 ! Fake Button
 ||nekonime.com^*/download-sekarang-$image
 !
@@ -167,5 +167,13 @@ anoboy.best##a[target="_blank"] > amp-img
 ! --------------------------------------------------------------
 samehadaku.in.net##+js(acis, adtival_base64_encode)
 animebatch.site,animenonton.tv,anitoki.web.id,daizurin.com,hakanime.com##+js(acis, auto_safelink)
-kawanfilm21.org##+js(aopr, adtival_domains)
+kawanfilm21.org,kawanfilm21.pro##+js(aopr, adtival_domains)
 nekonime.video##+js(aopr, protected_links)
+!
+! ANTI-RIGHT-CLICK
+! --------------------------------------------------------------
+kawanfilm21.pro##+js(aeld, /^(?:contextmenu|selectstart)$/)
+!
+! ANTI-SELECT
+! --------------------------------------------------------------
+kawanfilm21.pro##+js(set, document.onselectstart, noopFunc)
