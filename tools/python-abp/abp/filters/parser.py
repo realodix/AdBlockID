@@ -192,7 +192,7 @@ Include = _line_type('Include', 'target', '%include {0.target}%')
 METADATA_REGEXP = re.compile(r'\s*!\s*([\w\-\s]*\w)\s*:\s*(.*)')
 INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
 HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
-HIDING_FILTER_REGEXP = re.compile(r'^([^/*|@"!]*?)#([@?$])?#(.+)$')
+HIDING_FILTER_REGEXP = re.compile(r'^([^/|@"!]*?)#([@?$])?#(.+)$')
 FILTER_OPTIONS_REGEXP = re.compile(
     r'\$(~?[\w-]+(?:=[^,]+)?(?:,~?[\w-]+(?:=[^,]+)?)*)$',
 )
