@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.153.1213
+! Version: 20.153.1224
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Jun 2020 20:13 UTC
+! Last modified: 01 Jun 2020 20:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -12,13 +12,18 @@
 ! 
 ! *** abid:src/plus/p_annoyances.adbl ***
 ##amp-iframe[src^="https://www.vidio.com/embed/"]
+||api.cnnindonesia.com/gambas/oembed^$script
+||okezone.visionplus.id/widget-dark.html$subdocument
+||sindikasi.okezone.com/widget/inews$subdocument
+||sindikasi.okezone.com/widget/metube$subdocument
+||sindikasi.okezone.com/widget/okezone$subdocument
+||sindikasi.okezone.com/widget/sindonews$subdocument
 ||vidio.com/embed/*autoplay=true&player_only=true&live_chat=false&mute=true$subdocument,third-party
 ! 
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
 cnnindonesia.com###idautovideocnn
 liputan6.com##.article-content-body .vidio-embed
 kapanlagi.com##.kl-content .nativevideosiframe-loader
-||api.cnnindonesia.com/gambas/oembed^$script
 ! 
 kaskus.co.id###thread_post_list > [id^="moderated-"]:-abp-contains(Post ini telah dihapus oleh)
 m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
@@ -452,4 +457,4 @@ droidtamvan.me,movienear.me,onlinecorp.me,sekilastekno.com##img[width="200"][hei
 /skips.png$image,domain=semawur.com
 ||safeku.com/uploads/getlink.jpg$image
 ||semawur.com/o.png$image
-! Checksum: HVXRkyHrc20m4w5ntYZLOQ
+! Checksum: +OapVHo1s8BMD5c8cxXT+g
