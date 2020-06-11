@@ -25,7 +25,8 @@ import argparse
 from urllib.parse import urlparse
 import common
 
-# Check the version of Python for language compatibility and subprocess.check_output()
+# Check the version of Python for language compatibility and
+# subprocess.check_output()
 MAJORREQUIRED = 3
 MINORREQUIRED = 2
 if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
@@ -37,13 +38,16 @@ ap.add_argument('--commit', help='Enable commit mode', action='store_true', defa
 arg = ap.parse_args()
 
 
-# Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
+# Compile regular expressions to match important filter parts (derived from
+# Wladimir Palant's Adblock Plus source code)
 ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#|\$)\@?\??\@?(#|\$)")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(\$|##\@?\$|#\@?#?\+?)(.*)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
-# Compile regular expressions that match element tags and pseudo classes and strings and tree selectors; "@" indicates either the beginning or the end of a selector
+# Compile regular expressions that match element tags and pseudo classes and
+# strings and tree selectors; "@" indicates either the beginning or the end
+# of a selector
 SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
 PSEUDOPATTERN = re.compile(r"(\:[:][a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
 REMOVALPATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))()(?=([#\.\[\:]))")
@@ -73,7 +77,8 @@ def start ():
     print(greeting)
     print("=" * characters)
 
-    # Convert the directory names to absolute references and visit each unique location
+    # Convert the directory names to absolute references and visit each unique
+    # location
     places = arg.dir
     if places:
         places = [os.path.abspath(place) for place in places]
@@ -97,7 +102,8 @@ def main (location):
         if os.path.isdir(os.path.join(location, repotype.directory)):
             repository = repotype
             break
-    # If this is a repository, record the initial changes; if this fails, give up trying to use the repository
+    # If this is a repository, record the initial changes; if this fails, give up
+    # trying to use the repository
     if repository:
         try:
             basecommand = repository.name
@@ -135,7 +141,8 @@ def main (location):
                 try:
                     os.remove(address)
                 except(IOError, OSError):
-                    # Ignore errors resulting from deleting files, as they likely indicate that the file has already been deleted
+                    # Ignore errors resulting from deleting files, as they likely indicate that the
+                    # file has already been deleted
                     pass
 
     # If in a repository, offer to commit any changes
@@ -150,7 +157,8 @@ def fopsort (filename):
     lineschecked = 1
     filterlines = elementlines = 0
 
-    # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
+    # Read in the input and output files concurrently to allow filters to be saved
+    # as soon as they are finished with
     with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
 
         # Combines domains for (further) identical rules
@@ -199,7 +207,8 @@ def fopsort (filename):
         for line in inputfile:
             line = line.strip()
             if not re.match(BLANKPATTERN, line):
-                # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
+                # Include comments verbatim and, if applicable, sort the preceding section of
+                # filters and save them in the new version of the file
                 if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                     if section:
                         writefilters()
@@ -239,7 +248,9 @@ def fopsort (filename):
 
     # Replace the existing file with the new one only if alterations have been made
     if not filecmp.cmp(temporaryfile, filename):
-        # Check the operating system and, if it is Windows, delete the old file to avoid an exception (it is not possible to rename files to names already in use on this operating system)
+        # Check the operating system and, if it is Windows, delete the old file to avoid
+        # an exception (it is not possible to rename files to names already in use on
+        # this operating system)
         if os.name == "nt":
             os.remove(filename)
         os.rename(temporaryfile, filename)
@@ -256,7 +267,8 @@ def filtertidy (filterin):
         # Remove unnecessary asterisks from filters without any options and return them
         return removeunnecessarywildcards(filterin)
     else:
-        # If applicable, separate and sort the filter options in addition to the filter text
+        # If applicable, separate and sort the filter options in addition to the filter
+        # text
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
         optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
 
@@ -271,8 +283,9 @@ def filtertidy (filterin):
                 optionlist = optionsplit.group(2).split(",")
             elif option.strip("~") not in common.KNOWNOPTIONS:
                 print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
-        # Sort all options other than domain alphabetically
-        # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
+        # Sort all options other than domain alphabetically. For identical options,
+        # the inverse always follows the non-inverse option ($image,~image instead
+        # of $~image,image)
         optionlist = sorted(set(filter(lambda option: option not in removeentries, optionlist)), key = lambda option: (option[1:] + "~") if option[0] == "~" else option)
         # If applicable, sort domain restrictions and append them to the list of options
         if domainlist:
@@ -290,7 +303,8 @@ def elementtidy (domains, separator, selector):
     # Mark the beginning and end of the selector with "@"
     selector = "@{selector}@".format(selector = selector)
     each = re.finditer
-    # Make sure we don't match items in strings (e.g., don't touch Width in ##[style="height:1px; Width: 123px;"])
+    # Make sure we don't match items in strings (e.g., don't touch Width in
+    # ##[style="height:1px; Width: 123px;"])
     selectorwithoutstrings = selector
     selectoronlystrings = ""
     while True:
@@ -382,7 +396,8 @@ def isglobalelement (domains):
     return True
 
 def removeunnecessarywildcards (filtertext):
-    # Where possible, remove unnecessary wildcards from the beginnings and ends of blocking filters.
+    # Where possible, remove unnecessary wildcards from the beginnings and ends of
+    # blocking filters.
     whitelist = False
     hadStar = False
     if filtertext[0:2] == "@@":
@@ -421,7 +436,8 @@ def checkcomment(comment, changed):
                 if not validurl(address):
                     print("Unrecognised address \"{address}\".".format(address = address))
                 else:
-                    # The user has changed the subscription and has written a suitable comment message with a valid address
+                    # The user has changed the subscription and has written a suitable comment
+                    # message with a valid address
                     return True
     print()
     return False
