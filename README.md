@@ -42,6 +42,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - [Vivaldi Ad Blocker](/docs/Vivaldi-AdBlocker.md)
 - [Adaware ad block](/docs/adaware-ad-block.md)
 - [AdBlocker Ultimate](/docs/ad-blocker-ultimate.md)
+- [Cloudopt AdBlocker](/docs/cloudopt-ad-blocker.md)
 
 
 ## Berkontribusi
