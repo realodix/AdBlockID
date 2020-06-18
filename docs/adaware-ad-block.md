@@ -1,4 +1,4 @@
-## Cara Memasang AdBlockID Pada adaware ad block
+## Cara Memasang AdBlockID Pada Adaware Ad Block
 
 1. Buka halaman *settings* adaware ad block.
 2. Klik tab *3rd Party Filters*.
