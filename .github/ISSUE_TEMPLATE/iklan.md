@@ -2,7 +2,7 @@
 name: IKLAN
 about: Semua jenis iklan.
 title: ''
-labels: Ads
+labels: 'T: Native'
 assignees: ''
 
 ---
