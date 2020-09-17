@@ -2,7 +2,7 @@
 name: Anti-Adblock
 about: Anda terdeteksi sedang menggunakan Ad Blocker dan ruang gerak Anda dibatasi.
 title: ''
-labels: Anti-Adblock
+labels: 'T: Anti-Adblock'
 assignees: ''
 
 ---
