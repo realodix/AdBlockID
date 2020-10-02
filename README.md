@@ -57,7 +57,7 @@ Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai 
 
 
 ## Development
-### Persiapan
+### Persiapan:
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
 - [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
@@ -78,7 +78,7 @@ Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 - [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md)
 
 
-### Development Tools
+### Development Tools:
 
 | File              | Deskripsi                                 |
 | ----------------- | ----------------------------------------- |
