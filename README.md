@@ -113,40 +113,32 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 
 Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah ini:
 
-<pre>
+```
 /src
  ├─ /addons
- │   ├─ adult-block.adbl
- │   ├─ adult-hide.adbl
- │   ├─ news.adbl
- │   └─ shortlink.adbl
- ├─ /plus
+ │   ├─ adult-block.adbl    Filter umum untuk blockir iklan berkonten dewasa.
+ │   ├─ adult-hide.adbl     Filter umum untuk menyembunyikan iklan berkonten dewasa.
+ │   ├─ news.adbl           Filter untuk menangani iklan pada situs berita.
+ │   └─ shortlink.adbl      Filter untuk menangani iklan pada situs safelink / shortlink.
+ ├─ /plus                   Folder untuk AdBlockID Plus.
  │   ├─ p_annoyances.adbl
  │   ├─ p_comic.adbl
  │   ├─ p_movie.adbl
  │   └─ p_safelink.adbl
  ├─ /template
  │   └─ ...
- ├─ adservers.adbl
- ├─ anti-adblock.adbl
- ├─ general_block.adbl
- ├─ general_hide.adbl
- ├─ specific_block.adbl
- ├─ specific_hide.adbl
- ├─ thirdparty.adbl
- └─ whitelist.adbl
-</pre>
-
-- `adservers.adbl`: Domain penyedia layanan iklan pihak ketiga.
-- `anti-adblock.adbl`: Filter khusus menangani web yang mendeteksi dan melarang Anda menggunakan Ad Blocker.
-- `general_block.adbl`: Filter umum untuk blockir content pada halaman web.
-- `general_hide.adbl`: Filter umum untuk menyembunyikan content pada halaman web.
-- `specific_block.adbl`: Secara spesifik hanya memblokir content pada domain yang disebutkan.
-- `specific_hide.adbl`: Secara spesifik hanya menyembunyikan content pada domain yang disebutkan.
-- `thirdparty.adbl`: Domain yang fungsi utamanya bukan sebagai server, namun dalam beberapa kasus dijadikan tempat untuk host iklan.
-- `whitelist.adbl`: Dalam kasus tertentu, Kita perlu memasukkan web ke dalam whitelist. Contoh: Fungsi utama dari web tersebut tidak jalan karena kesalahan blokir.
-- `/addons/adult-block.adbl`: Filter umum untuk blockir iklan berkonten dewasa.
-- `/addons/adult-hide.adbl`: Filter umum untuk menyembunyikan iklan berkonten dewasa.
-- `/addons/news.adbl`: Filter untuk menangani iklan pada situs berita.
-- `/addons/shortlink.adbl`: Filter untuk menangani iklan pada situs safelink / shortlink.
-- `/plus`: Folder untuk AdBlockID Plus.
+ ├─ adservers.adbl          Domain penyedia layanan iklan pihak ketiga.
+ ├─ anti-adblock.adbl       Filter khusus menangani web yang mendeteksi dan melarang Anda
+ │                          menggunakan Ad Blocker.
+ ├─ general_block.adbl      Filter umum untuk blockir content pada halaman web.
+ ├─ general_hide.adbl       Filter umum untuk menyembunyikan content pada halaman web.
+ ├─ specific_block.adbl     Secara spesifik hanya menyembunyikan content pada domain yang
+ │                          disebutkan.
+ ├─ specific_hide.adbl      Secara spesifik hanya blockir content pada domain yang
+ │                          disebutkan.
+ ├─ thirdparty.adbl         Domain yang fungsi utamanya bukan sebagai server, namun dalam
+ │                          beberapa kasus dijadikan tempat untuk host iklan.
+ └─ whitelist.adbl          Dalam kasus tertentu, Kita perlu memasukkan web ke dalam
+                            whitelist. Contoh: Fungsi utama dari web tersebut tidak jalan
+                            karena kesalahan blokir.
+```
