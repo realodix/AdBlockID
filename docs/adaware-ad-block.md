@@ -8,6 +8,6 @@
 
    Paste URL AdBlockID pada kotak *Custom* yang disediakan.
 
-   ![img](https://i.imgur.com/QWl2gug.jpg)
+   <br>![img](https://i.imgur.com/QWl2gug.jpg)<br>
 
 5. Klik ***APPLY CHANGES***.

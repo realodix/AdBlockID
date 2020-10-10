@@ -38,11 +38,11 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam.
 - [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
 - [AdBlock](/docs/Adblock-Plus.md): AdBlock, Adblock Plus, StopAll Ads.
-- [Opera Ad Blocker](/docs/Opera-AdBlocker.md)
-- [Vivaldi Ad Blocker](/docs/Vivaldi-AdBlocker.md)
-- [Adaware Ad Block](/docs/adaware-ad-block.md)
-- [AdBlocker Ultimate](/docs/ad-blocker-ultimate.md)
-- [Cloudopt AdBlocker](/docs/cloudopt-ad-blocker.md)
+- [Opera Ad Blocker](/docs/Opera-AdBlocker.md).
+- [Vivaldi Ad Blocker](/docs/Vivaldi-AdBlocker.md).
+- [Adaware Ad Block](/docs/adaware-ad-block.md).
+- [AdBlocker Ultimate](/docs/ad-blocker-ultimate.md).
+- [Cloudopt AdBlocker](/docs/cloudopt-ad-blocker.md).
 
 
 ## Berkontribusi

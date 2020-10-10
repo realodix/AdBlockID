@@ -10,7 +10,7 @@
 
    Paste URL AdBlockID pada kotak *New Filter* yang disediakan.
 
-   ![img](https://i.imgur.com/HddcygH.png)
+   <br>![img](https://i.imgur.com/HddcygH.png)<br>
 
 5. Klik ***SUBMIT***.
 

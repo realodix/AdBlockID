@@ -11,7 +11,7 @@
 4. Copy URL AdBlockID yang dapat Anda temukan di https://github.com/realodix/AdBlockID#cara-menggunakan, lalu paste URL AdBlockID pada kotak yang tersedia di *Custom Filter Lists*.
 5. Klik *Subscribe*.
 
-   ![](https://i.imgur.com/ATnHiLI.jpg)
+   <br>![](https://i.imgur.com/ATnHiLI.jpg)<br>
 
 
 ## Cara Memasang AdBlockID Pada Adblock Plus
@@ -24,4 +24,4 @@
 4. Copy URL AdBlockID yang dapat Anda temukan di https://github.com/realodix/AdBlockID#cara-menggunakan, lalu paste URL AdBlockID pada kotak *Filter list URL*.
 5. Klik ***ADD A FILTER LIST***.
 
-   ![](https://i.imgur.com/0HhvxI1.jpg)
+   <br>![](https://i.imgur.com/0HhvxI1.jpg)
