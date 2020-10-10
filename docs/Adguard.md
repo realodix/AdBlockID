@@ -9,7 +9,7 @@
 2. Klik tab *Filters*.
 
    ![](https://i.imgur.com/W1RiKSr.jpg)
- 
+
 3. *Scroll* ke bawah, lalu klik *Language-specific*.
 
    ![](https://i.imgur.com/57mYvTR.png)
@@ -20,7 +20,7 @@
 
 
 ## Cara Memasang AdBlockID Pada AdGuard for Windows
-1. Buka aplikasi AdGuard
+1. Buka aplikasi AdGuard.
 2. Buka halaman *Settings*.
 3. Pada menu di sebelah kiri, klik *Ad Blocker*.
 4. Pada bagian *Installed filters*, klik *Add a filter*.
@@ -34,7 +34,7 @@
 
 
 ## Cara Memasang AdBlockID Pada AdGuard for Android
-1. Buka aplikasi AdGuard
+1. Buka aplikasi AdGuard.
 2. Pada menu *sidebar*, klik *Setting* -> *Content Blocking*.
 3. Klik menu *Filters*.
 4. Klik menu *Language-specific*.

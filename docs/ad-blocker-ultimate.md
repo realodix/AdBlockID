@@ -4,8 +4,9 @@
 2. Klik tab ***Filters***.
 3. Klik ***Custom Filters***.
 4. Klik ***ADD CUSTOM FILTER***.
-3. Copy URL AdBlockID
-   https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
+3. Copy URL AdBlockID yang dapat Anda temukan di
+
+   https://github.com/realodix/AdBlockID#cara-menggunakan
 
    Paste URL AdBlockID pada kotak *New Filter* yang disediakan.
 
