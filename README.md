@@ -57,7 +57,7 @@ Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai 
 
 
 ## Development
-### Persiapan:
+### Persiapan
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
 - [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
@@ -71,14 +71,14 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
 Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
-- **Adblock Plus**: [How to write filters](https://help.eyeo.com/en/adblockplus/how-to-write-filters)
-- **Adblock Plus**: [Adblock Plus filters explained](https://adblockplus.org/filter-cheatsheet)
-- **AdGuard**: [How to create your own ad filters](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters)
-- **uBlock Origin**: [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
-- [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md)
+- **Adblock Plus**: [How to write filters](https://help.eyeo.com/en/adblockplus/how-to-write-filters).
+- **Adblock Plus**: [Adblock Plus filters explained](https://adblockplus.org/filter-cheatsheet).
+- **AdGuard**: [How to create your own ad filters](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters).
+- **uBlock Origin**: [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax).
+- [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md).
 
 
-### Development Tools:
+### Development Tools
 
 | File              | Deskripsi                                 |
 | ----------------- | ----------------------------------------- |
