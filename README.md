@@ -106,8 +106,7 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 | `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
 | `<type>+` | Contoh: `A+: <commit message>`. Pengeditan hanya pada AdBlockID Plus. Jika dilakukan pada keduanya, maka tidak perlu. |
 | `docs` | Edit file dokumentasi pada folder `docs`, termasuk `readme.md` dan dokumentasi pada file fragment AdBlockID (folder `src`) . |
-| `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore` & `build.sh`
-). |
+| `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore` & `build.sh`). |
 
 ### Struktur Direktori
 
