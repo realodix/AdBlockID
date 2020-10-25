@@ -12,12 +12,11 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 1. **Faster, More Enjoyable Browsing**`^`: Blokir iklan yang mengganggu pengalaman browsing Anda. Ucapkan selamat tinggal pada iklan video, banner gerak, PopAds dan banyak lagi. Memblokir gangguan ini berarti membuka halaman akan lebih cepat.
 2. **Anti-AdBlocker Detection**`^`
 3. **Overlay-Blocker**`^`: Lupakan obtrusive overlay (pop-up) yang mengganggu.
-4. **Anti-Safelink**`^^`: Lupakan URL safelink ketika hendak download file kesayangan Anda.
+4. **Anti-Safelink**: Lupakan URL safelink ketika hendak download file kesayangan Anda.
 5. **Clean:** no `extra` abracadabra!
 
 <sup>**Catatan**</sup> </br>
-<sup>`^` Tersedia pada AdBlockID dan diperluas pada AdBlockID+. <br>
-`^^` Hanya tersedia pada AdBlockID+.</sup>
+<sup>`^` Tersedia pada AdBlockID dan diperluas pada AdBlockID+.</sup>
 
 
 ## Cara Menggunakan
@@ -115,15 +114,16 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
 ```
 /src
  ├─ /packages
- │   ├─ adult-block.adbl    Filter umum untuk blockir iklan berkonten dewasa.
- │   ├─ adult-hide.adbl     Filter umum untuk menyembunyikan iklan berkonten dewasa.
- │   ├─ news.adbl           Filter untuk menangani iklan pada situs berita.
- │   └─ shortlink.adbl      Filter untuk menangani iklan pada situs safelink / shortlink.
+ │   ├─ adult-block.adbl       Filter umum untuk blockir iklan berkonten dewasa.
+ │   ├─ adult-hide.adbl        Filter umum untuk menyembunyikan iklan berkonten dewasa.
+ │   ├─ news.adbl              Filter untuk menangani iklan pada situs berita.
+ │   ├─ sl_anti-adblock.adbl
+ │   ├─ sl_anti-safelink.adbl
+ │   └─ sl_safelink.adbl       Filter untuk menangani iklan pada situs safelink / shortlink.
  ├─ /plus                   Folder untuk AdBlockID Plus.
  │   ├─ p_annoyances.adbl
  │   ├─ p_comic.adbl
- │   ├─ p_movie.adbl
- │   └─ p_safelink.adbl
+ │   └─ p_movie.adbl
  ├─ /template
  │   └─ ...
  ├─ adservers.adbl          Domain penyedia layanan iklan pihak ketiga.
