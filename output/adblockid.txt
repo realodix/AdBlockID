@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.299.685
+! Version: 20.299.690
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Oct 2020 11:25 UTC
+! Last modified: 25 Oct 2020 11:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8156,6 +8156,56 @@ bacaan.id,kabargames.id##+js(aopr, SGPB_POPUP_PARAMS)
 ! 
 ! POPUP
 ! --------------------------------------------------------------
+! *** abid:src/packages/comic.adbl ***
+! SPECIFIC BLOCK
+! --------------------------------------------------------------
+/iklan.$script,domain=komiku.co.id
+||mangaku.link/*.gif$image
+! SPECIFIC HIDE
+! --------------------------------------------------------------
+mangacanblog.com,mangakita.net###btm_banner
+sektekomik.com###close-teaser
+mangaku.in###ftadsth
+mangashiro.co###teaser1
+mangashiro.co###teaser2
+bacakomik.co###teaser3
+mangacanblog.com##.ad
+mangashiro.org##.bixbox > div[style] > a[target="_blank"][rel="Dofollow"] > img
+kumpulmanga.org##.kzl
+mangacanblog.com##.mas_tamvan
+! 
+! ANNOYANCE
+! --------------------------------------------------------------
+! Overlay
+/wp-content/plugins/popup-builder/*$domain=mangareceh.id
+! 
+komiku.co.id###Notifikasi
+! Pop-Up
+mangaindo.web.id##+js(acis, Math, zfgloaded)
+westmanga.info##+js(aopr, document.querySelectorAll, popMagic)
+mangakita.net##+js(window.open-defuser)
+! 
+! ANTI-RIGHT-CLICK
+! --------------------------------------------------------------
+mangaku.pro##+js(acis, $, contextmenu)
+mangaku.pro##+js(aeld, contextmenu)
+! 
+! ANTI-ADBLOCK
+! --------------------------------------------------------------
+mangaindo.web.id##+js(aopr, anOptions)
+komikcast.co.id,komikcast.com,komikindo.web.id##+js(nobab)
+! 
+komiku.co.id#@##banner_ad
+! 
+@@/advertisement.$script,domain=kumpulmanga.org|mangatail.me
+! 
+@@||mangacanblog.com^$generichide
+! Empty Ads Placeholders
+! 
+! Memperbaiki kerusakan karena Fanboy's Annoyances.
+! --------------------------------------------------------------
+! https://github.com/realodix/AdBlockID/issues/103
+@@/particles.$script,domain=mangaku.in
 ! *** abid:src/packages/news.adbl ***
 -banner-$image,domain=indoaviation.asia|manadoline.com
 -banner.$image,domain=cahayasiang.com|haluankepri.com|makassartoday.com|marketing.co.id
@@ -9402,4 +9452,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: 25EvgqS24NHpXcINValoLw
+! Checksum: w87F36tseu88h1hTWk4OFQ

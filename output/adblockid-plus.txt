@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.299.685
+! Version: 20.299.690
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Oct 2020 11:25 UTC
+! Last modified: 25 Oct 2020 11:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -10,56 +10,6 @@
 ! GitHub issues: https://github.com/realodix/AdBlockID/issues
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
-! *** abid:src/plus/p_comic.adbl ***
-! SPECIFIC BLOCK
-! --------------------------------------------------------------
-/iklan.$script,domain=komiku.co.id
-||mangaku.link/*.gif$image
-! SPECIFIC HIDE
-! --------------------------------------------------------------
-mangacanblog.com,mangakita.net###btm_banner
-sektekomik.com###close-teaser
-mangaku.in###ftadsth
-mangashiro.co###teaser1
-mangashiro.co###teaser2
-bacakomik.co###teaser3
-mangacanblog.com##.ad
-mangashiro.org##.bixbox > div[style] > a[target="_blank"][rel="Dofollow"] > img
-kumpulmanga.org##.kzl
-mangacanblog.com##.mas_tamvan
-! 
-! ANNOYANCE
-! --------------------------------------------------------------
-! Overlay
-/wp-content/plugins/popup-builder/*$domain=mangareceh.id
-! 
-komiku.co.id###Notifikasi
-! Pop-Up
-mangaindo.web.id##+js(acis, Math, zfgloaded)
-westmanga.info##+js(aopr, document.querySelectorAll, popMagic)
-mangakita.net##+js(window.open-defuser)
-! 
-! ANTI-RIGHT-CLICK
-! --------------------------------------------------------------
-mangaku.pro##+js(acis, $, contextmenu)
-mangaku.pro##+js(aeld, contextmenu)
-! 
-! ANTI-ADBLOCK
-! --------------------------------------------------------------
-mangaindo.web.id##+js(aopr, anOptions)
-komikcast.co.id,komikcast.com,komikindo.web.id##+js(nobab)
-! 
-komiku.co.id#@##banner_ad
-! 
-@@/advertisement.$script,domain=kumpulmanga.org|mangatail.me
-! 
-@@||mangacanblog.com^$generichide
-! Empty Ads Placeholders
-! 
-! Memperbaiki kerusakan karena Fanboy's Annoyances.
-! --------------------------------------------------------------
-! https://github.com/realodix/AdBlockID/issues/103
-@@/particles.$script,domain=mangaku.in
 ! *** abid:src/plus/p_movie.adbl ***
 ! SPECIFIC BLOCK
 ! --------------------------------------------------------------
@@ -266,4 +216,4 @@ kawanfilm21.pro##+js(aeld, /^(?:contextmenu|selectstart)$/)
 ! --------------------------------------------------------------
 kawanfilm21.pro##+js(set, document.onselectstart, noopFunc)
 malasngeblog.com##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
-! Checksum: 0RzdUVtYlr/quDoJ5kbPlA
+! Checksum: sOSsFmz8q0v4UqJPXpzexw
