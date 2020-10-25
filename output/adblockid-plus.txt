@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.299.658
+! Version: 20.299.685
 ! Title: AdBlockID Plus
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Oct 2020 10:58 UTC
+! Last modified: 25 Oct 2020 11:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -10,80 +10,6 @@
 ! GitHub issues: https://github.com/realodix/AdBlockID/issues
 ! GitHub pull requests: https://github.com/realodix/AdBlockID/pulls
 ! 
-! *** abid:src/plus/p_annoyances.adbl ***
-##amp-iframe[src^="https://www.vidio.com/embed/"]
-||api.cnnindonesia.com/gambas/oembed^$script
-||vidio.com/embed/*autoplay=true&player_only=true&live_chat=false&mute=true$subdocument,third-party
-! 
-bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
-cnnindonesia.com###idautovideocnn
-liputan6.com##.article-content-body .vidio-embed
-kapanlagi.com##.kl-content .nativevideosiframe-loader
-! 
-kaskus.co.id###thread_post_list > [id^="moderated-"]:-abp-contains(Post ini telah dihapus oleh)
-m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
-m.kaskus.co.id##[id^="postdeleted"]
-! 
-okezone.com###metube_div
-||okezone.rctiplus.com/video/$subdocument,domain=okezone.com
-||okezone.visionplus.id/player-prd.html?*&autoplay=true&mute=true$subdocument,domain=okezone.com
-||okezone.visionplus.id/widget-dark.html$subdocument,domain=okezone.com
-||sindikasi.okezone.com/widget/inews$subdocument,domain=okezone.com
-||sindikasi.okezone.com/widget/metube$subdocument,domain=okezone.com
-||sindikasi.okezone.com/widget/okezone$subdocument,domain=okezone.com
-||sindikasi.okezone.com/widget/sindonews$subdocument,domain=okezone.com
-! 
-! ANTI-RIGHT-CLICK
-! --------------------------------------------------------------
-ilmumemikatwanita.com,psikologicinta.com##+js(aopr, document.oncontextmenu)
-! 
-! ANTI-SELECT
-! --------------------------------------------------------------
-rencanamu.id###content_box:style(user-select: text !important; -webkit-touch-callout: default !important;)
-ilmumemikatwanita.com,psikologicinta.com##+js(acis, disableSelection, reEnable)
-steffifauziah.com##+js(set, document.onselectstart, noopFunc)
-bisablog.com##.entry-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
-arlinadzgn.com,bungfrangki.com,dewaplokis.com,teknolalat.com,webkeren.net##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
-jagoandzgn.com,serieswans.com##.post-outer:style(user-select: text !important; -webkit-touch-callout: default !important;)
-santaibareng.net,tigaribu.net##.post:style(user-select: text !important; -webkit-touch-callout: default !important;)
-suatekno.id##.td-post-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
-ilmumemikatwanita.com,psikologicinta.com##.unselectable:style(user-select: text !important; -webkit-touch-callout: default !important;)
-igniel.com,ponselsoak.com##body:style(user-select: text !important; -webkit-touch-callout: default !important;)
-! 
-! ANTI-SAFELINK
-! --------------------------------------------------------------
-kuyhaa-me.com##+js(aopr, protected_links)
-! 
-! FAKE BUTTON
-! --------------------------------------------------------------
-gigapurbalingga.net##.entry-content center button.user
-kuyhaa-me.com##[type="image"][src*="/sd.png"]
-mazterize.co,mazterize.com##center:nth-of-type(1)
-mazterize.co,mazterize.com##center:nth-of-type(2)
-kuyhaa.net##iframe[width="420"][height="100"]
-! 
-! OVERLAY
-! --------------------------------------------------------------
-tirto.id###bkgOverlay
-ponselsoak.com###bukafpop
-tirto.id###delayedPopup
-tirto.id##.backgroundOverlay
-kompaslampung.com##.jqbox_innerhtml
-seputarforex.com##.show.modal-backdrop
-/wp-content/plugins/popup-builder/*$script,domain=sindomanado.com
-! 
-bacaan.id,kabargames.id##+js(aopr, SGPB_POPUP_PARAMS)
-! 
-! PRIVACY
-! --------------------------------------------------------------
-||log.viva.co.id/iframe^
-! MINER
-! --------------------------------------------------------------
-! https://github.com/realodix/AdBlockID/issues/392
-||filmindonesia2020.blogspot.com^$third-party
-! 
-! POPUP
-! --------------------------------------------------------------
 ! *** abid:src/plus/p_comic.adbl ***
 ! SPECIFIC BLOCK
 ! --------------------------------------------------------------
@@ -340,4 +266,4 @@ kawanfilm21.pro##+js(aeld, /^(?:contextmenu|selectstart)$/)
 ! --------------------------------------------------------------
 kawanfilm21.pro##+js(set, document.onselectstart, noopFunc)
 malasngeblog.com##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
-! Checksum: uMksWNF5sMxHgN0SQXcrjg
+! Checksum: 0RzdUVtYlr/quDoJ5kbPlA
