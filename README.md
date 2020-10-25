@@ -9,14 +9,11 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 
 ## Manfaat Yang Anda Dapatkan
-1. **Faster, More Enjoyable Browsing**`^`: Blokir iklan yang mengganggu pengalaman browsing Anda. Ucapkan selamat tinggal pada iklan video, banner gerak, PopAds dan banyak lagi. Memblokir gangguan ini berarti membuka halaman akan lebih cepat.
-2. **Anti-AdBlocker Detection**`^`
-3. **Overlay-Blocker**`^`: Lupakan obtrusive overlay (pop-up) yang mengganggu.
+1. **Faster, More Enjoyable Browsing**: Blokir iklan yang mengganggu pengalaman browsing Anda. Ucapkan selamat tinggal pada iklan video, banner gerak, PopAds dan banyak lagi. Memblokir gangguan ini berarti membuka halaman akan lebih cepat.
+2. **Anti-AdBlocker Detection**
+3. **Overlay-Blocker**: Lupakan obtrusive overlay (pop-up) yang mengganggu.
 4. **Anti-Safelink**: Lupakan URL safelink ketika hendak download file kesayangan Anda.
 5. **Clean:** no `extra` abracadabra!
-
-<sup>**Catatan**</sup> </br>
-<sup>`^` Tersedia pada AdBlockID dan diperluas pada AdBlockID+.</sup>
 
 
 ## Cara Menggunakan
@@ -27,11 +24,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
    | Name                | Subscribe | Raw Link |
    | ------------------- | ----------| -------- |
    | AdBlockID           | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID) |https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt |
-   | AdBlockID+ (add-on) | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus.txt&title=AdBlockID%20Plus) | https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus.txt |
 
-   <sup>**Note**</sup> </br>
-   <sup>- AdBlockID+ adalah add-on untuk memperluas dan memperkuat kemampuan AdBlockID.</sup> </br>
-   <sup>- AdBlockID+ dioptimalkan untuk [uBlock Origin](https://github.com/gorhill/uBlock) dan aplikasi yang dibuat berdasarkan uBlock Origin.</sup>
 
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam.
@@ -103,7 +96,6 @@ Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk me
 | `AA`   | Anti-Adblock. |
 | `M`    | Maintain filter. |
 | `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
-| `<type>+` | Contoh: `A+: <commit message>`. Pengeditan hanya pada AdBlockID Plus. Jika dilakukan pada keduanya, maka tidak perlu. |
 | `docs` | Edit file dokumentasi pada folder `docs`, termasuk `readme.md` dan dokumentasi pada file fragment AdBlockID (folder `src`) . |
 | `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore` & `build.sh`). |
 
@@ -123,7 +115,6 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ sl_anti-adblock.adbl
  │   ├─ sl_anti-safelink.adbl
  │   └─ sl_safelink.adbl       Filter untuk menangani iklan pada situs safelink / shortlink.
- ├─ /plus                   Folder untuk AdBlockID Plus.
  ├─ /template
  │   └─ ...
  ├─ adservers.adbl          Domain penyedia layanan iklan pihak ketiga.
