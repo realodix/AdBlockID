@@ -114,7 +114,7 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
 
 ```
 /src
- ├─ /addons
+ ├─ /packages
  │   ├─ adult-block.adbl    Filter umum untuk blockir iklan berkonten dewasa.
  │   ├─ adult-hide.adbl     Filter umum untuk menyembunyikan iklan berkonten dewasa.
  │   ├─ news.adbl           Filter untuk menangani iklan pada situs berita.
