@@ -799,3 +799,11 @@ balipost.com##.paralax_div
 ! --------------------------------------------------------------
 @@/bplogo.$image,domain=beritapagi.co.id
 ! https://github.com/AdguardTeam/AdguardFilters/issues/43376
+!
+! ANNOYANCE
+! --------------------------------------------------------------
+! Anti Right Click
+wartaterkini.news##+js(aopr, disable_copy)
+! Anti Select
+wartaterkini.news##+js(aopr, document.oncontextmenu)
+wartaterkini.news##body.unselectable:style(-webkit-touch-callout: default!important; user-select: text!important)

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.316.495
+! Version: 20.316.506
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Nov 2020 08:15 UTC
+! Last modified: 11 Nov 2020 08:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -9364,6 +9364,14 @@ balipost.com##.paralax_div
 ! --------------------------------------------------------------
 @@/bplogo.$image,domain=beritapagi.co.id
 ! https://github.com/AdguardTeam/AdguardFilters/issues/43376
+! 
+! ANNOYANCE
+! --------------------------------------------------------------
+! Anti Right Click
+wartaterkini.news##+js(aopr, disable_copy)
+! Anti Select
+wartaterkini.news##+js(aopr, document.oncontextmenu)
+wartaterkini.news##body.unselectable:style(-webkit-touch-callout: default!important; user-select: text!important)
 ! *** abid:src/packages/sl_anti-adblock.adbl ***
 ! SAFE LINK - ANTI-ADBLOCK
 ! --------------------------------------------------------------
@@ -9853,4 +9861,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: vhpu+4GtwY5gWrysBNMBmw
+! Checksum: yFaKbVg9PIVEV1VONo0PSw
