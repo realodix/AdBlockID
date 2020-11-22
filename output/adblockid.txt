@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.324.639
+! Version: 20.327.636
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 Nov 2020 10:39 UTC
+! Last modified: 22 Nov 2020 10:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -12,6 +12,8 @@
 ! 
 ! *** abid:src/general_block.adbl ***
 /smartfren/ads.
+! 
+/wp-content/plugins/floating-ads-bottom/*$image
 ! 
 -ad123-
 -Ads-300.
@@ -732,8 +734,10 @@ _GIF1200x120-
 ###floatads-kiri
 ###floating_ads_bottom_textcss
 ###floating_ads_bottom_textcss2
+###floating_ads_bottom_textcss_ad
 ###floating_ads_bottom_textcss_container
 ###floating_ads_bottom_textcss_wrap
+###floating_ads_bottom_textcss_x
 ###flowads
 ###footer-adcont
 ###gambar-sponsor
@@ -1005,6 +1009,16 @@ _GIF1200x120-
 ##.fixed-ads-atas
 ##.fixed-ads-bawah
 ##.fixed-ads-tengah
+##.floatads-atas
+##.floatads-bawah
+##.floatads-kanan
+##.floatads-kiri
+##.floating_ads_bottom_textcss
+##.floating_ads_bottom_textcss2
+##.floating_ads_bottom_textcss_ad
+##.floating_ads_bottom_textcss_container
+##.floating_ads_bottom_textcss_wrap
+##.floating_ads_bottom_textcss_x
 ##.forads
 ##.fulads
 ##.g-ads
@@ -6542,7 +6556,7 @@ _penggugur_kandungan_$image
 ##[href*="mekinglove."]
 ##[href*="memberasean."] img
 ##[href*="membertoto."]
-##[href*="memekmonyet."] img
+##[href*="memekmonyet."]
 ##[href*="menangbesar."] img
 ##[href*="menangceme."]
 ##[href*="menangdomino99"]
@@ -9919,4 +9933,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: PAnXMYERJYa2EYFJX0owfg
+! Checksum: 2bPU3aX8Zbj+XMT7gR/S1Q
