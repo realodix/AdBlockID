@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.330.583
+! Version: 20.330.1167
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Nov 2020 09:43 UTC
+! Last modified: 25 Nov 2020 19:27 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -78,6 +78,7 @@
 /banner-kiri/*
 /banner-promo-
 /banner-samping-
+/banner/ads-
 /banner/affiliate-$image
 /banner_iklan/*
 /banner_iklan_
@@ -951,6 +952,7 @@ _GIF1200x120-
 ##.adstengah
 ##.adtext01
 ##.adunits
+##.advads-before-content
 ##.advads-widget
 ##.advs_box
 ##.advs_link
@@ -1368,6 +1370,7 @@ _GIF1200x120-
 ##[href*="123klik.xyz/r/"] > img
 ##[href*="bit.ly/ads"] > img
 ##[href*="klook.com/id/promo/"] > img
+##[href*="niagahoster.co.id/ref/"]
 ##[href*="p-store.net/signup/ref/"] > img
 ##[href="https://www.cl1k.com/toefl"]
 ##[href^="//mellowads.com/networkspace/"]
@@ -2056,7 +2059,6 @@ polisionline.com###HTML10
 ekagoblog.com###HTML13
 bangbil.com,polisiinternet.com###HTML2
 ekagoblog.com,kompiajaib.com,polisiinternet.com###HTML3
-bloggerszones.com###HTML9
 budiarto.id###ads
 hukumonline.com###adsa2
 hukumonline.com###adsa3
@@ -2086,12 +2088,11 @@ ads.id##.adManager
 teknobos.com##.adcontainer
 radioonline.co.id##.add-box-top
 nonton.com##.adds
-mivo.com,sosiali.com##.ads
+mivo.com##.ads
 tutgwarnetgold.com##.ads-blog
 cermati.com##.ads-container
 ggwp.id##.ads-desktop
 meowcitizen.com##.adtester-container
-seniberpikir.com##.advads-before-content
 arenalte.com,krjogja.com##.advertisement
 autonetmagz.com##.autonetmagz__meta--ads-elements
 goblintv.xyz,goblintvfree.com,kabargames.id##.banner
@@ -2161,7 +2162,6 @@ juragancipir.com##.topad
 bacaanasik.cc,cerpen.co.id,diaridona.com,pastiseru.com##.ui_adblock
 konsultasisyariah.com##.widget a[target="_blank"] img
 bayufitri.com##.widget-area a[target="_blank"] img
-arlinadzgn.com##.widget-content a[target="_blank"] img
 kompiajaib.com##.widget-wrapper .link-btn:has-text(Iklan)
 angkasareview.com##.widget_random_banner_widget
 ardisaz.com,danirachmat.com,iphincow.com,koreanindo.net,langitselatan.com,mydirtsheet.com,serangid.id##.wpa
@@ -2169,8 +2169,6 @@ forumbitcoin.co.id,siapbisnis.net##[href*="//bit.ly/"] > img
 gamebrott.com##[href*="banner"]
 bagas31.info##[href^="https://rajalisensi.com/"]
 jalantikus.com##[id*="-gpt-ad-"]
-cheatpekalongan.com##[rel^="nofollow"][style^="position: fixed"]
-arlinadzgn.com##[src^="data:image/png;base64,"]
 andreasagung.com,centerklik.com,kostjakarta.com,tempat-kost.com##a[rel="nofollow"] > img
 nabire.net##a[rel="noopener noreferrer"] > img
 bacaan.id,bagas31.info,blogdokter.net,coinvestasi.com,gigapurbalingga.net,idblanter.com,klikmania.net,kostjakarta.net,polisionline.com,venuemagz.com##a[target="_blank"] > img
@@ -8330,12 +8328,12 @@ rencanamu.id###content_box:style(user-select: text !important; -webkit-touch-cal
 ilmumemikatwanita.com,psikologicinta.com##+js(acis, disableSelection, reEnable)
 steffifauziah.com##+js(set, document.onselectstart, noopFunc)
 bisablog.com##.entry-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
-arlinadzgn.com,bungfrangki.com,dewaplokis.com,infoastronomy.org,teknolalat.com,webkeren.net##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
+bungfrangki.com,dewaplokis.com,infoastronomy.org,teknolalat.com,webkeren.net##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
 jagoandzgn.com,serieswans.com##.post-outer:style(user-select: text !important; -webkit-touch-callout: default !important;)
 santaibareng.net,tigaribu.net##.post:style(user-select: text !important; -webkit-touch-callout: default !important;)
 suatekno.id##.td-post-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ilmumemikatwanita.com,psikologicinta.com##.unselectable:style(user-select: text !important; -webkit-touch-callout: default !important;)
-igniel.com,ponselsoak.com##body:style(user-select: text !important; -webkit-touch-callout: default !important;)
+ponselsoak.com##body:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ! 
 ! ANTI-SAFELINK
 ! --------------------------------------------------------------
@@ -8445,9 +8443,8 @@ komiku.co.id#@##banner_ad
 103.194.171.75,idtube.me##.overlay
 ! 
 indoxx1.asia,lk21.dev###banner-tengah
-206.189.151.55,clampschoolholic.com,narashika.cc,netnot21.com,oploverz.in###btm_banner
+206.189.151.55,clampschoolholic.com,narashika.cc,netnot21.com###btm_banner
 anichin.my.id###close-teaser
-oploverz.in###content [id*="ScriptRoot" i]
 bandarmovie21.com,inonton.com###fadeinbox
 207.180.252.218,lk21tv.com###fbanner
 139.99.120.222###fbawah
@@ -8485,7 +8482,6 @@ bioskop.red###top-banner-content
 dramafilm21.com###topbar
 animekompi.web.id,mmsubs.com##.addads
 95.216.163.177,netnot21.xyz##.ads
-oploverz.in##.adsbyadop
 samehadaku.vip##.adsplayer
 139.99.120.222##.ban_empat
 178.128.82.236,cinemaday.org,gabut.net,indxxi.vip,klikfilm.stream##.banner
@@ -8777,6 +8773,7 @@ _banner/$image,domain=mediasulut.co
 ||referensipublik.com^*/banner-$image
 ||riaulink.com/assets/banner/$image
 ||riaumandiri.id/assets/banner/$image
+||riauonline.co.id//ads/$image
 ||riaupos.co/banner/$image
 ||rmco.id/images/banner/$image
 ||rmol.co/banner/$image
@@ -9489,7 +9486,7 @@ anirocksite.com,my-code4you.blogspot.com##+js(nostif, offsetLeft)
 anirocksite.com,my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 ! 
 @@/abb-msg.$script,domain=mangalist.org
-@@/advertisement.$script,domain=anifiles.org|berkas.cloud|disingkat.in|mangalist.org|shortgoo.blogspot.com|teknosafe.info|tribuntekno.com
+@@/advertisement.$script,domain=anifiles.org|berkas.cloud|disingkat.in|gajiancoin.online|lifesurance.info|mangalist.org|shortgoo.blogspot.com|teknosafe.info|tribuntekno.com
 @@/fuckadblock.$script,domain=dares.xyz|newsteez.com|proapkmod.com|safelinkreviewx.com|wikiall.org
 @@/js/ads.$script,domain=adsafelink.net|cutlinks.pro|droidtamvan.me|earnload.co|eio.io|fc.lc|fodz.xyz|glory-link.com|gpmojo.co|icutlink.com|indigitz.org|link48.net|megaurl.in|memoo.xyz|modebaca.com|movienear.me|mylinkblog.com|safeku.com|shln.pw|shortearn.eu|shorten.sh|shrink.vip|softfull.me|sportt.space|templink.org|urlto.id|wegner.tech|wi.cr
 @@/pagead2.$domain=dawnstation.com|softfull.me
@@ -9807,12 +9804,9 @@ _adblock_killer.
 /kurazoneAdblock.$script
 /Script-Anti-AdBlock.$script,third-party
 ! 
-download.ipeenk.com#@##adsense
-indcit.com,ponselharian.com#@##banner_ad
-cheatpekalongan.com,files.cx#@#.adsBox
-bersamatekno.com,nabire.net,sosiali.com#@#.adsbygoogle
+nabire.net#@#.adsbygoogle
 aplikasipc.com#@#.afs_ads
-download.ipeenk.com,mi-globe.com#@#.an-advert-banner
+mi-globe.com#@#.an-advert-banner
 ! 
 pugam.com###ai-adb-message
 pugam.com###ai-adb-overlay
@@ -9822,86 +9816,41 @@ gudangpemain.com,maniakandroid.com##.blocker-overlay
 ! 
 ||vkcdnservice.com/api/$redirect=noop.js,script
 ! 
-@@.ad.json?$domain=otobalancing.net
-@@.com/ads.$script,domain=fastssh.com
 @@.gif#*/ad/
 @@.jpg#*/ad/
 @@.png#*/ad/
 @@/advertisement-$domain=duosia.id
-@@/advertisement.$script,domain=freesms4us.com|gajiancoin.online|ikurniawan.com|lifesurance.info|overlordfree.web.id|rukim.id|surgatekno.com|wizardsubs.com
 @@/fingerprint2.$script,domain=pastelink.pro
-@@/fuckadblock.$domain=caranetizen.info|leantoro.com|serbakuis.com
-@@/js/ads.$script,domain=laluzulfakar.com
 @@/noadblock-nice-message/assets/js/ads.js?$script,~third-party
-@@/pagead2.$domain=laluzulfakar.com
-@@/pagead2.$script,domain=agungjakanugraha.com|animenyus.com|antoncabon.us|arlinadzgn.com|bersamatekno.com|bloggerku.com|blognetid.com|cariajadisini.com|coretan-uman.com|datasekolah.co.id|digimoclub.com|download.web.id|eirudo.com|gatcha.org|gembel9.xyz|gembelcit.net|igniel.com|infolokerserang.com|liputanberita21.com|onet4u.com|sosiali.com|tipssipit.com|unduh.in
+@@/pagead2.$script,domain=bloggerku.com|unduh.in
 ! 
-@@||ad4msan.com^$generichide
-@@||ad4msan.win^$generichide
-@@||bloggerszones.com^$generichide
-@@||caranetizen.info^$generichide
 @@||contohblog.com^$generichide
-@@||dedykuncoro.com^$generichide
-@@||dukun-cit.com^$generichide
-@@||duniaislamku.com^$generichide
-@@||eirudo.com^$generichide
 @@||fendy.web.id^$generichide
-@@||gadget2reviews.com^$generichide
-@@||gudangfirmwere.com^$generichide
-@@||gurusd.web.id^$generichide
-@@||hobybaca.com^$generichide
-@@||indoshares.com^$generichide
-@@||infokupedia.id^$generichide
-@@||juraganmumut.com^$generichide
-@@||kaze-batch.blogspot.com^$generichide
-@@||kelasdesain.com^$generichide
-@@||klikshowtime.com^$generichide
-@@||kurikulum.co.id^$generichide
-@@||m-edukasi.menantisenja.com^$generichide
-@@||majalahikan.com^$generichide
-@@||mawan.net^$generichide
 @@||mynotescode.com^$generichide
 @@||nama.web.id^$generichide
-@@||novelgo.id^$generichide
-@@||obengplus.com^$generichide
 @@||okedroid.com^$generichide
-@@||omahkpop.com^$generichide
-@@||oploverz.in^$generichide
-@@||otobalancing.net^$generichide
-@@||overlordfree.web.id^$generichide
-@@||piratefiles.org^$generichide
-@@||rezakuntokz.xyz^$generichide
-@@||riauonline.co.id^$generichide
-@@||rumahsleman.com^$generichide
-@@||sanjayaops.com^$generichide
-@@||seniberpikir.com^$generichide
-@@||shirosafe.web.id^$generichide
-@@||tikusliar.com^$generichide
-@@||tokusatsuindo.com^$generichide
-@@||tutorialjaringan.com^$generichide
-@@||tutorialweb.net^$generichide
-@@||wincamp.org^$generichide
 ! 
 ! --------------------------------------------------------------
 ! EMPTY ADS PLACEHOLDERS
 /antiblockersjoss.$image
 ! 
 pradjadj.com##.ABD_display_adblock
-bloggerszones.com,contohblog.com,eirudo.com,gadget2reviews.com,gurusd.web.id,hobybaca.com,kelasdesain.com,majalahikan.com,mynotescode.com,novelgo.id,obengplus.com,omahkpop.com,rumahsleman.com,seniberpikir.com,tikusliar.com##.adsbygoogle
-tutorialjaringan.com##.middle-ads
-hobybaca.com##.td-adspot-title
+contohblog.com,mynotescode.com##.adsbygoogle
 ! 
 dropshipin.id##+js(acis, $, ads)
 dafideff.com##+js(acis, addEventListener, google_ad_client)
-download.web.id##+js(acis, jQuery, DHAntiAdBlocker)
+liputanberita21.com##+js(acis, eval, ignielAdBlock)
 semuanyabola.com##+js(acis, jQuery, ai_adb)
+ad4msan.com,ad4msan.win##+js(aopr, DHAntiAdBlocker)
 paraedu.id##+js(aopr, anOptions)
 cuitandokter.com##+js(aopr, mdpDeBlocker)
 saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
+labkom.co.id##+js(aopr, tdBlock)
 saungfirmware.id##+js(nano-sib)
 akbardwi.my.id,nafaskuda.com##+js(nobab)
-download.web.id##+js(nostif, ai_adb)
+rukim.id,surgatekno.com##+js(nofab)
 masihbelajar.com##+js(set, DHAntiAdBlocker, true)
+menantisenja.com##+js(set, adblock, 1)
 selebsquad.com##+js(set, config.adblock, null)
 ! *** abid:src/whitelist.adbl ***
 @@/ayopasangiklan.$image
@@ -9958,4 +9907,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: sZ7Rw5LfPgVxrhxZoHFZ+g
+! Checksum: C8EKHMb/m6ISiGyCKTi+IQ
