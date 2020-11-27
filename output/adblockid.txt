@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.330.1209
+! Version: 20.332.394
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Nov 2020 20:09 UTC
+! Last modified: 27 Nov 2020 06:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -598,6 +598,7 @@ _505x60.gif
 _510x100.gif
 _515x90.gif
 _519x90.gif
+_530x90_$image
 _550x70.
 _570x195.gif
 _580x70.
@@ -1351,6 +1352,7 @@ _GIF1200x120-
 ##[class*="core-floatbanner"]
 ##[class*="core-floatbanner-left"]
 ##[class*="core-floatbanner-right"]
+##[class^="utp_ads_"]
 ##[href*="/ads-"]
 ##[href*="/iklan-ads/"]
 ##[href^="/api/1/ad/"]
@@ -1360,6 +1362,7 @@ _GIF1200x120-
 ##[id*="_iklan-block_"]
 ##[id^="div-adx-ad-"]
 ##[id^="rn_ad_native_"]
+##[id^="utp_ads_"]
 ##[src*="/iklan/"]
 ##div[id^="dfp-gpt-ad"]
 ##img[data-permalink^="/apps/iklan-"]
@@ -1635,6 +1638,7 @@ _GIF1200x120-
 ||2go7v1nes8.com^$third-party
 ||6942f24115b63.com^$third-party
 ||accesstrade.co.id^$third-party
+||ad-loupe.com^$third-party
 ||addesigner.com^$third-party
 ||adflazz.com^$third-party
 ||adplus.co.id^$third-party
@@ -9913,4 +9917,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: xXvk0Mo+0LF2qVhW4MZEUw
+! Checksum: GjY0sZpyfWv2oZZ2JmRAZw
