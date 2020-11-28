@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.333.623
+! Version: 20.333.626
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Nov 2020 10:23 UTC
+! Last modified: 28 Nov 2020 10:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1233,6 +1233,8 @@ _GIF1200x120-
 ##.inner-floatbanner-bottom
 ##.inner-post-ads
 ##.isiAds
+##.ivs-overlay-adcontainer
+##.ivs-overlay-ads
 ##.ixlan
 ##.ixlan-besar
 ##.ixlan-kecil
@@ -1673,7 +1675,6 @@ _GIF1200x120-
 ||iklanhoki.com^$third-party
 ||indoads.xyz^$third-party
 ||itteholm.site^$third-party
-||ivideosmart.com^$domain=bolasport.com|brilio.net|feedme.id|geeq.id|idntimes.com|kompas.com|kontan.co.id|styl.id|sulselsatu.com
 ||jasaiklan.com^$third-party
 ||jayaiklan.com^$third-party
 ||jodklub.online^$third-party
@@ -9481,6 +9482,7 @@ wartaterkini.news##body.unselectable:style(-webkit-touch-callout: default!import
 ! Frame & subdocument
 okezone.com###metube_div
 ||20.detik.com/embed/$frame,redirect=click2load.html,domain=~20.detik.com
+||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|idntimes.com|kompas.com|kontan.co.id|styl.id|sulselsatu.com
 ||okezone.rctiplus.com/video/$subdocument,domain=okezone.com
 ||okezone.visionplus.id/player-prd.html?*&autoplay=true&mute=true$subdocument,domain=okezone.com
 ||sindikasi.okezone.com/widget/metube$subdocument,domain=okezone.com
@@ -9924,4 +9926,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: YQsGtFE84qkxPQzmAiiYKQ
+! Checksum: hVemZ33ae1vERloKiDO84g
