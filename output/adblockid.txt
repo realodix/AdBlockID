@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.332.669
+! Version: 20.333.422
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Nov 2020 11:09 UTC
+! Last modified: 28 Nov 2020 07:02 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -2226,8 +2226,8 @@ mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
 klubpria.com##center:-abp-contains(Sponsor)
 ! 
 bukalapak.com###display_product_search .endorsed-products
-bukalapak.com###product-explorer-container .bl-product-card:-abp-has(img[src*="pc-ico-ads." i])
-bukalapak.com###search-main-mobile .dp-card-container:-abp-has([name*="ico_promotion" i])
+bukalapak.com###product-explorer-container .bl-product-card:has(img[src*="pc-ico-ads." i])
+bukalapak.com###search-main-mobile .dp-card-container:has([name*="ico_promotion" i])
 shopee.co.id##.search-page .item-card-list__item-card-wrapper:-abp-contains(Iklan)
 shopee.co.id##.shopee-search-item-result__item:-abp-contains(Iklan)
 m.tokopedia.com##[data-testid="masonryProduct"]:-abp-has(img[alt*="topads" i])
@@ -9924,4 +9924,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: 3tqlfWu2yzaNJoVQAmRpKg
+! Checksum: wKPigF90yMipYtdiep6xDA
