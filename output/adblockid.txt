@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.333.1331
+! Version: 20.333.1357
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Nov 2020 22:11 UTC
+! Last modified: 28 Nov 2020 22:37 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1830,7 +1830,6 @@ _GIF1200x120-
 ##iframe[width="200"][height="240"]
 ##iframe[width="200"][height="300"]
 ##iframe[width="210"][height="237"]
-##iframe[width="240"][height="300"]
 ##iframe[width="240"][height="350"]
 ##iframe[width="240"][height="400"]
 ##iframe[width="300"][height="250"]
@@ -9395,6 +9394,7 @@ fajarmanado.com,sulutreview.com##.wrap-banner
 winnetnews.com##[href*="winnetnews.com/other/ads/"]
 suarantb.com##[href^="http://bit.ly/"] > img
 nusabali.com##[href^="https://bit.ly/"] > img
+talikanews.com##[id^="adni_widget"]
 balipost.com##[id^="ads-"]
 acehasia.com##[itemtype="https://schema.org/WPAdBlock"]
 bantenkini.com,citrust.id,kabarsumbawa.com,listingberita.com,metrosulawesi.id,redkal.com,sakanews.com,sidakpost.id,suarasikka.com,suaratangsel.com,sumeks.co##a[href="#"] > img
@@ -9620,6 +9620,7 @@ suara45.com##img[width="480"][height="478"]
 prokabar.com##img[width="480"][height="609"]
 annews.co.id##img[width="480"][height="640"]
 akurasinews.com##img[width="481"][height="1280"]
+akurasinews.com##img[width="482"][height="1278"]
 sultengterkini.com##img[width="486"][height="126"]
 metrobatam.com##img[width="488"][height="105"]
 metrobatam.com##img[width="488"][height="61"]
@@ -9840,30 +9841,20 @@ m.akurat.co##body:style(padding-top: 0!important;)
 ! 
 ! ANTI-ADBLOCK
 ! --------------------------------------------------------------
-hightech.web.id##+js(acis, document.getElementById, adback)
 malutsatu.com,sultengraya.com##+js(aopr, adBlockDetected)
 ! 
-@@/fuckadblock.$script,domain=akurasinews.com|baritopost.co.id|kabar6.com|konten.co.id|listingberita.com|nusantarapos.co.id|suaranasional.com|terasmaluku.com
-@@/pagead2.$domain=kalimantanpost.com
-@@://ads.$domain=klasika.kompas.com
-@@||balipost.com^$generichide
-@@||cidahu.com^$generichide
-@@||hightech.web.id^$generichide
-@@||kabarmakkah.com^$generichide
-@@||konten.co.id^$generichide
-@@||newscorner.id^$generichide
-@@||radarlombok.co.id^$generichide
-@@||tribunislam.com^$generichide
+@@/fuckadblock.$script,domain=akurasinews.com|baritopost.co.id|kabar6.com|listingberita.com|nusantarapos.co.id|suaranasional.com|terasmaluku.com
 ! 
 ! EMPTY ADS PLACEHOLDERS
 ! --------------------------------------------------------------
-balipost.com,hightech.web.id,konten.co.id,radarlombok.co.id##.adsbygoogle
 balipost.com##.paralax_div
 ! 
 ! WHITELIST
 ! --------------------------------------------------------------
 @@/bplogo.$image,domain=beritapagi.co.id
+@@://ads.$domain=klasika.kompas.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/43376
+m.liputan6.com#@##back-to-top
 ! 
 ! ANNOYANCE
 ! --------------------------------------------------------------
@@ -10316,4 +10307,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: 0copqjogl3HOsoRzFyoa7w
+! Checksum: URjO7B2Ofzf3Z1kBSV+2Dw
