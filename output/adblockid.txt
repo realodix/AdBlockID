@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.341.1221
+! Version: 20.341.1232
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Dec 2020 20:21 UTC
+! Last modified: 06 Dec 2020 20:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -23,6 +23,7 @@
 -ikln.
 .com/iklan/
 .id/ads/
+.id/iklan-
 .id/iklan/
 .id^*/ad.
 .id^*/ad/
@@ -96,7 +97,6 @@
 /gbr_iklan/*
 /gg-ads-
 /iframe/iklan/*
-/iklan-
 /iklan1-
 /iklan1.
 /iklan1_
@@ -9944,6 +9944,7 @@ viva.co.id##.paralax_banner
 amp-kontan-co-id.cdn.ampproject.org##.post-footer amp-embed
 cnbcindonesia.com,detik.com##.smartbanner_new
 amp-suara-com.cdn.ampproject.org##.suara-populer-feed ~ amp-embed
+hariansilampari.co.id##.theiaStickySidebar div > img
 kompas.com##.voucher__banner
 tempo.co##[id^=Affinity_BTF_]
 aksarajabar-pikiran--rakyat-com.cdn.ampproject.org,bekasi-pikiran--rakyat-com.cdn.ampproject.org,bocimiupdate-pikiran--rakyat-com.cdn.ampproject.org,bulukumba-pikiran--rakyat-com.cdn.ampproject.org,cianjurpedia-pikiran--rakyat-com.cdn.ampproject.org,depok-pikiran--rakyat-com.cdn.ampproject.org,dialektikakuningan-pikiran--rakyat-com.cdn.ampproject.org,fixjambi-pikiran--rakyat-com.cdn.ampproject.org,fixpadang-pikiran--rakyat-com.cdn.ampproject.org,fixpekanbaru-pikiran--rakyat-com.cdn.ampproject.org,halodepok-pikiran--rakyat-com.cdn.ampproject.org,haloyouth-pikiran--rakyat-com.cdn.ampproject.org,indobalinews-pikiran--rakyat-com.cdn.ampproject.org,isubogor-pikiran--rakyat-com.cdn.ampproject.org,jurnalpalopo-pikiran--rakyat-com.cdn.ampproject.org,jurnalsoreang-pikiran--rakyat-com.cdn.ampproject.org,kabartegal-pikiran--rakyat-com.cdn.ampproject.org,kaltarabicara-pikiran--rakyat-com.cdn.ampproject.org,lamongantoday-pikiran--rakyat-com.cdn.ampproject.org,lensapurbalingga-pikiran--rakyat-com.cdn.ampproject.org,literasinews-pikiran--rakyat-com.cdn.ampproject.org,majalengka-pikiran--rakyat-com.cdn.ampproject.org,mediablitar-pikiran--rakyat-com.cdn.ampproject.org,metro-tempo-co.cdn.ampproject.org,pangandaran-pikiran--rakyat-com.cdn.ampproject.org,pikiran-rakyat.com,portalbandungtimur-pikiran--rakyat-com.cdn.ampproject.org,portalbangkabelitung-pikiran--rakyat-com.cdn.ampproject.org,portallebak-pikiran--rakyat-com.cdn.ampproject.org,portalmajalengka-pikiran--rakyat-com.cdn.ampproject.org,prbandungraya-pikiran--rakyat-com.cdn.ampproject.org,prfmnews-pikiran--rakyat-com.cdn.ampproject.org,qeluarga-pikiran--rakyat-com.cdn.ampproject.org,rakyatku-com.cdn.ampproject.org,referensiberita-pikiran--rakyat-com.cdn.ampproject.org,rembangbicara-pikiran--rakyat-com.cdn.ampproject.org,ringtimesbali-pikiran--rakyat-com.cdn.ampproject.org,ringtimesbanyuwangi-pikiran--rakyat-com.cdn.ampproject.org,seputartangsel-pikiran--rakyat-com.cdn.ampproject.org,tempo.co,www-idntimes-com.cdn.ampproject.org,www-malangtimes-com.cdn.ampproject.org,www-pikiran--rakyat-com.cdn.ampproject.org,zonajakarta-pikiran--rakyat-com.cdn.ampproject.org,zonapriangan-pikiran--rakyat-com.cdn.ampproject.org##amp-fx-flying-carpet
@@ -10384,7 +10385,6 @@ selebsquad.com##+js(set, config.adblock, null)
 @@/pasang-google-$image
 @@/pasang-iklan-$image
 ! 
-@@/iklan-$domain=iklan-kolom.com|iklanpengumuman.com|iklanrumah.com|pasangiklan.com|pasangiklan.net|pasangiklankompasposkota.com
 @@_iklan.$domain=iklandisini.com
 ! 
 ! --------------------------------------------------------------
@@ -10434,4 +10434,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: SoA1yE+6W51+YEhWr1/lSA
+! Checksum: MlCocyNU0Ng+AHZdiHEI5Q
