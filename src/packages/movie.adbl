@@ -156,11 +156,10 @@ animekuro.net,kurofansubs.xyz##+js(acis, eval, ignielAdBlock)
 nezunime.com##+js(acis, jQuery, ai_adb)
 soranime.site##+js(aopr, KillAdBlock)
 aibouanime.site,aibouanime.xyz,kudonime.xyz,mikanime.com,onbatch.my.id,otaku.tekloggers.com,xizuanime.blogspot.com##+js(aopr, adBlockDetected)
-maachanime.com##+js(aopr, anOptions)
 animecracks.com##+js(aopr, mdpDeBlocker)
 animee.xyz##+js(aopr, mdpDeBlockerDestroyer)
 aksensei.com,drakoric.com,dramaencode.com,driverays.com,fmoviez.org,kiminime.com,kiranime.pw,ld2tv.net,samehadaku.in.net,shirainime.com##+js(nobab)
-filmboxoffice.web.id,neosubs.net,tohaboy.web.id##+js(set, anOptions.anOptionAdsSelectors, noopFunc)
+filmboxoffice.web.id,maachanime.com,neosubs.net,tohaboy.web.id##+js(set, anOptions.anOptionAdsSelectors, noopFunc)
 !
 ||gomunime.com^*/autoptimize_single_$script
 !
@@ -199,8 +198,10 @@ anitoki.com,nekonime.video##+js(aopr, protected_links)
 ! ANTI-RIGHT-CLICK
 ! --------------------------------------------------------------
 144.91.98.14##+js(aeld, /^(?:contextmenu|selectstart)$/)
+maachanime.com##+js(aopw, nocontext)
 !
 ! ANTI-SELECT
 ! --------------------------------------------------------------
+maachanime.com##+js(acis, disableSelection, reEnable)
 144.91.98.14##+js(set, document.onselectstart, noopFunc)
 malasngeblog.com##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
