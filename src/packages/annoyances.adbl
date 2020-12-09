@@ -15,12 +15,14 @@ m.kaskus.co.id##[id^="postdeleted"]
 !
 ! ANTI-RIGHT-CLICK
 ! --------------------------------------------------------------
+nomis.id##+js(aeld, contextmenu)
 ilmumemikatwanita.com,psikologicinta.com,radiokucing.com##+js(aopr, document.oncontextmenu)
 !
 ! ANTI-SELECT
 ! --------------------------------------------------------------
 rencanamu.id###content_box:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ilmumemikatwanita.com,psikologicinta.com,radiokucing.com##+js(acis, disableSelection, reEnable)
+nomis.id##+js(aeld, selectstart)
 steffifauziah.com##+js(set, document.onselectstart, noopFunc)
 bisablog.com##.entry-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
 bungfrangki.com,dewaplokis.com,infoastronomy.org,teknolalat.com,webkeren.net##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
@@ -29,6 +31,10 @@ santaibareng.net,tigaribu.net##.post:style(user-select: text !important; -webkit
 suatekno.id##.td-post-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ilmumemikatwanita.com,psikologicinta.com##.unselectable:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ponselsoak.com##body:style(user-select: text !important; -webkit-touch-callout: default !important;)
+!
+! ANTI-COPY
+! --------------------------------------------------------------
+nomis.id##+js(aeld, copy)
 !
 ! ANTI-SAFELINK
 ! --------------------------------------------------------------
