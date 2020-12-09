@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.344.1375
+! Version: 20.344.1388
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Dec 2020 22:55 UTC
+! Last modified: 09 Dec 2020 23:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8891,7 +8891,7 @@ komiku.co.id#@##banner_ad
 ! *** abid:src/packages/movie.adbl ***
 ! SPECIFIC BLOCK
 ! --------------------------------------------------------------
-.gif$image,domain=animenonton.tv|anoboy.best|anoboy.us|conan.id|neumanga.tv|nontondrama.me|tancap88.me
+.gif$image,domain=conan.id|neumanga.tv|nontondrama.me|tancap88.me
 /banner-$image,domain=maxnime.com|neonime.moe|neonime.vip
 ||jwplayer21.com/images/*.gif$image
 ||sharemydrive.xyz/*.gif$domain=149.56.24.226
@@ -8935,8 +8935,6 @@ lk21c.fun###flobwh
 mangaku.pro###ftadsth
 207.180.252.218,lk21tv.com###hbanner
 kiminime.com###iklan
-anoboy.best###judi2
-animelu.com###mg-player-bar
 bioskopkerenin.org,movies21.stream,terbit21.cool,terbit21.fun###middle-banner
 ahanime.com###overplay
 207.180.252.218,lk21tv.com###pbanner
@@ -8970,7 +8968,7 @@ cafecinema.vip,layarfilm21.fun,nontonmovie251.org##.idmuvi-topplayer
 nimegami.com##.ik
 199.231.164.28,animebatch.web.id,drakorindofilms.net,drakorindofilms.tv,giladrakor.com,inidramaku.com,inidramaku.net,korenlovers.co,oujanime.com##.iklan
 dutafilm.us##.imgbanner
-anichin.my.id,animelu.com,awsubs.co##.kln
+anichin.my.id,awsubs.co##.kln
 anisora.net##.klnrec > .kln
 anisora.net##.klnrec > .mini
 indoxximovie.com##.mdl_container
@@ -8978,7 +8976,6 @@ indoxximovie.com##.mdl_container
 139.99.120.222,dunia21s.fun,fb21.club,fb21.tv,lk21c.fun##.ns-right
 206.189.151.55,209.97.170.87##.popUpBannerBox
 198.204.248.230##.top-banner
-animelu.com##.videoad
 149.56.24.226##.wrapper-inject
 kantaii.web.id##[href*="/ref/bangago"]
 185.217.95.238##a[href*="_medium=banners"] video
@@ -9042,11 +9039,11 @@ dutafilm.*##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 ! 
 ! ANTI-ADBLOCK
 ! --------------------------------------------------------------
-tohaboy.web.id##+js(acis, addEventListener, DOMNodeRemoved)
+daizurin.com,shinobijawi.id,tohaboy.web.id,zonachina21.blogspot.com##+js(acis, addEventListener, DOMNodeRemoved)
 animekuro.net,kurofansubs.xyz##+js(acis, eval, ignielAdBlock)
 nezunime.com##+js(acis, jQuery, ai_adb)
 soranime.site##+js(aopr, KillAdBlock)
-aibouanime.site,aibouanime.xyz,kudonime.xyz,mikanime.com,onbatch.my.id,otaku.tekloggers.com,xizuanime.blogspot.com##+js(aopr, adBlockDetected)
+aibouanime.site,aibouanime.xyz,blackavelic.com,kudonime.xyz,mikanime.com,onbatch.my.id,otaku.tekloggers.com,xizuanime.blogspot.com##+js(aopr, adBlockDetected)
 animecracks.com##+js(aopr, mdpDeBlocker)
 animee.xyz##+js(aopr, mdpDeBlockerDestroyer)
 aksensei.com,drakoric.com,dramaencode.com,driverays.com,fmoviez.org,kiminime.com,kiranime.pw,ld2tv.net,samehadaku.in.net,shirainime.com##+js(nobab)
@@ -9060,21 +9057,6 @@ cinemamkv.net#@##banner_ad
 @@/adsbygoogle.$domain=dl.nesia.my.id
 @@/pagead2.$script,domain=nekopoi.web.id|tokubatch.com
 ! 
-@@||anibatch.me^$generichide
-@@||animenonton.tv^$generichide
-@@||anisubindo.video^$generichide
-@@||anoboy.best^$generichide
-@@||anoboy.us^$generichide
-@@||blackavelic.com^$generichide
-@@||cinema-mkv.com^$generichide
-@@||daizurin.com^$generichide
-@@||nanonime.com^$generichide
-@@||shinobijawi.id^$generichide
-@@||zonachina21.blogspot.com^$generichide
-! Empty Ads Placeholders
-doramaku.me,doramaku.org##.klan728
-anoboy.best##a[target="_blank"] > amp-img
-! 
 /ads-poi.$image,domain=nekopoi.web.id
 /ads-poi2.$image,domain=nekopoi.web.id
 ||animekompi.web.id/*/antiblocker$image
@@ -9082,7 +9064,7 @@ anoboy.best##a[target="_blank"] > amp-img
 ! ANTI-SAFELINK
 ! --------------------------------------------------------------
 samehadaku.in.net##+js(acis, adtival_base64_encode)
-animebatch.web.id,animenonton.tv,anitoki.web.id,daizurin.com,hakanime.com##+js(acis, auto_safelink)
+animebatch.web.id,anitoki.web.id,daizurin.com,hakanime.com##+js(acis, auto_safelink)
 maxnime.com##+js(aopr, go_url)
 anitoki.com,nekonime.video##+js(aopr, protected_links)
 ! 
@@ -10490,4 +10472,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: Aa2cKYfm0xJMBljD2bx4aQ
+! Checksum: +xi56gQYrF4Ha3Bd02yAyw
