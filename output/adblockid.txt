@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.348.1185
+! Version: 20.348.1231
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Dec 2020 19:45 UTC
+! Last modified: 13 Dec 2020 20:31 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -813,6 +813,7 @@ _GIF1200x120-
 ###iklanatas
 ###iklanbawahpos
 ###iklancontainer
+###iklanlayang
 ###iklanpanjang
 ###iklanpersegi
 ###iklanpopup
@@ -1456,6 +1457,7 @@ _GIF1200x120-
 ##.iklanhead
 ##.iklanheader
 ##.iklanlamprotv
+##.iklanlayang
 ##.iklanleft
 ##.iklanmini
 ##.iklanpusat
@@ -10059,25 +10061,15 @@ anirocksite.com,my-code4you.blogspot.com##+js(nostif, offsetLeft)
 anirocksite.com,my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 ! 
 @@/abb-msg.$script,domain=mangalist.org
-@@/advertisement.$script,domain=anifiles.org|berkas.cloud|disingkat.in|gajiancoin.online|lifesurance.info|mangalist.org|shortgoo.blogspot.com|teknosafe.info|tribuntekno.com
-@@/fuckadblock.$script,domain=dares.xyz|newsteez.com|proapkmod.com|safelinkreviewx.com|wikiall.org
-@@/js/ads.$script,domain=adsafelink.net|cutlinks.pro|droidtamvan.me|earnload.co|eio.io|fc.lc|fodz.xyz|glory-link.com|gpmojo.co|icutlink.com|indigitz.org|link48.net|megaurl.in|memoo.xyz|modebaca.com|movienear.me|mylinkblog.com|safeku.com|shln.pw|shortearn.eu|shorten.sh|shrink.vip|softfull.me|sportt.space|templink.org|urlto.id|wegner.tech|wi.cr
+@@/advertisement.$script,domain=anifiles.org|berkas.cloud|disingkat.in|gajiancoin.online|lifesurance.info|mangalist.org|shortgoo.blogspot.com|teknosafe.info
+@@/fuckadblock.$script,domain=newsteez.com|proapkmod.com|safelinkreviewx.com|wikiall.org
+@@/js/ads.$script,domain=adsafelink.net|droidtamvan.me|earnload.co|eio.io|fc.lc|fodz.xyz|glory-link.com|gpmojo.co|icutlink.com|indigitz.org|link48.net|megaurl.in|memoo.xyz|modebaca.com|movienear.me|mylinkblog.com|safeku.com|shln.pw|shortearn.eu|shorten.sh|shrink.vip|softfull.me|sportt.space|templink.org|urlto.id|wegner.tech|wi.cr
 @@/pagead2.$domain=dawnstation.com|softfull.me
 @@/pagead2.$script,domain=apk.sportif.id|elsfile.org|felanovia.com|gubukbisnis.me|informations-library.blogspot.com|lewatisaja.com|linkberuang.blogspot.com|misayukiusagi.blogspot.com|teknorizen.blogspot.com
 ! 
-@@||1idsly.com^$generichide
-@@||autoride.pw^$generichide
-@@||begitulah.net^$generichide
-@@||cariskuy.com^$generichide
-@@||casafelink2.blogspot.com^$generichide
-@@||ceesty.com^$generichide
-@@||clkme.me^$generichide
 @@||clkmein.com^$generichide
 @@||cllkme.com^$generichide
-@@||closetopic.site^$generichide
 @@||corneey.com^$generichide
-@@||cutlinks.pro^$generichide
-@@||dares.xyz^$generichide
 @@||destyy.com^$generichide
 @@||eio.io^$generichide
 @@||elsfile.org^$generichide
@@ -10087,34 +10079,24 @@ anirocksite.com,my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 @@||hexafile.net^$generichide
 @@||idsly.bid^$generichide
 @@||infotrendy.me^$generichide
-@@||ipeenk.id^$generichide
 @@||jnw0.com^$generichide
 @@||kompisafe.blogspot.com^$generichide
 @@||kotanopan.com^$generichide
-@@||lastfashions.xyz^$generichide
 @@||link.kangapip.com^$generichide
 @@||linkvertise.com^$generichide
 @@||mawataki.com^$generichide
 @@||megaurl.in^$generichide
 @@||melonesinpreneur.com^$generichide
-@@||merdekaid.online^$generichide
 @@||muhammadyoga.me^$generichide
-@@||news-tech.xyz^$generichide
 @@||newsteez.com^$generichide
 @@||onkarir.com^$generichide
-@@||otw-link.blogspot.com^$generichide
-@@||otw-link.xyz^$generichide
-@@||pendeksafelink.blogspot.com^$generichide
 @@||proapkmod.com^$generichide
 @@||razerflixs.com^$generichide
 @@||razorlink.us^$generichide
-@@||rysafe.blogspot.com^$generichide
 @@||safeku.com^$generichide
 @@||safelinkreviewx.com^$generichide
 @@||safelkmeong.blogspot.com^$generichide
-@@||semutlink.blogspot.com^$generichide
 @@||sh.st^$generichide
-@@||tribuntekno.com^$generichide
 @@||usesafelink.blogspot.com^$generichide
 @@||viid.me^$generichide
 @@||wiid.me^$generichide
@@ -10130,13 +10112,11 @@ cararoot.id,liveshootv.com,sekilastekno.com###ignielAdBlock
 ! 
 ! EMPTY ADS PLACEHOLDERS
 ! --------------------------------------------------------------
-ambyar.info,intercelestial.com,linegee.net,sweetlantern.com,tribuntekno.com###externalinject-gpt-passback-container
-ambyar.info,intercelestial.com,linegee.net,sweetlantern.com,tribuntekno.com###externalinject-gpt-passback-iframe
-tribuntekno.com##.adsbyadop
-elsfile.org,hexafile.net,lastfashions.xyz,link.kangapip.com,proapkmod.com,wikiall.org##.adsbygoogle
-ipeenk.id##.adsfProtect
+ambyar.info,intercelestial.com,linegee.net,sweetlantern.com###externalinject-gpt-passback-container
+ambyar.info,intercelestial.com,linegee.net,sweetlantern.com###externalinject-gpt-passback-iframe
+elsfile.org,hexafile.net,link.kangapip.com,proapkmod.com,wikiall.org##.adsbygoogle
 unduh.in##.bannersingletop
-intercelestial.com,sweetlantern.com,tribuntekno.com##.idblog-floatbanner
+intercelestial.com,sweetlantern.com##.idblog-floatbanner
 absolutesmmpanel.com##.wmg-vb-container
 ! 
 ! WHITELIST
@@ -10272,6 +10252,7 @@ _usafelink.$script,third-party
 ##[href^="https://safelinku.com/ref/"] > img
 ! 
 apk.miuiku.com,apk.sekilastekno.com,apk.sportif.id,lewat.tautan.pro,onlinecorp.me,semawur.com###fixedban
+casafelink2.blogspot.com##.ads
 aii.sh,apk.sportif.id,icutlink.com,liveshootv.com,oceantech.xyz##.banner
 apk.sportif.id##.banner-container a img
 dr-farfar.net##.footerBar > iframe
@@ -10285,15 +10266,14 @@ cararoot.id##img[border="0"][src*="blogspot.com"]
 ! ANNOYANCE
 ! --------------------------------------------------------------
 ! Abort Blur Event
-ceesty.com,clkme.me,clkmein.com,cllkme.com,corneey.com,destyy.com,festyy.com,gestyy.com,jnw0.com,sh.st,viid.me,wiid.me##+js(set, app.options.timerPageVisibilityChecking, false)
+ceesty.com,clkmein.com,cllkme.com,corneey.com,destyy.com,festyy.com,gestyy.com,jnw0.com,sh.st,viid.me,wiid.me##+js(set, app.options.timerPageVisibilityChecking, false)
 apk.miuiku.com,apk.sportif.id,cararoot.id,droidtamvan.me,encurta.eu,get4link.xyz,icutlink.com,lewat.club,liveshootv.com,luangusaha.com,modebaca.com,oceantech.xyz,onlinecorp.me,p4link.com,sekilastekno.com,semawur.com,stfly.io##+js(set, blurred, false)
 ! Block Pop-Up
 ironimesafelink.my.id##+js(acis, Math, zfgloaded)
-apk.miuiku.com,apk.sportif.id,cararoot.id,ceesty.com,clkme.me,clkmein.com,cllkme.com,corneey.com,destyy.com,droidtamvan.me,earnload.co,festyy.com,gestyy.com,jefriapriyandi.com,jnw0.com,lewat.club,liveshootv.com,luangusaha.com,modebaca.com,oceantech.xyz,onlinecorp.me,p4link.com,sekilastekno.com,semawur.com,sh.st,shortearn.eu,shorten.sh,viid.me,wiid.me##+js(window.open-defuser)
+apk.miuiku.com,apk.sportif.id,cararoot.id,ceesty.com,clkmein.com,cllkme.com,corneey.com,destyy.com,droidtamvan.me,earnload.co,festyy.com,gestyy.com,jefriapriyandi.com,jnw0.com,lewat.club,liveshootv.com,luangusaha.com,modebaca.com,oceantech.xyz,onlinecorp.me,p4link.com,sekilastekno.com,semawur.com,sh.st,shortearn.eu,shorten.sh,viid.me,wiid.me##+js(window.open-defuser)
 ! Fake Button
 kertashitam.com###blockblockA
 kertashitam.com###blockblockB:style(visibility: visible !important; display: block !important;)
-dares.xyz##.aicp
 fotodovana.com,get4link.xyz,jefriapriyandi.com,luangusaha.com,oceantech.xyz,p4link.com,teknisimotor.com,womenhaircolors.review##.blog-item
 fedaro.me##.btn-danger
 uiz.io##.btn-front:-abp-contains(Download)
@@ -10487,4 +10467,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: tuF6JHsCI3YGpJxfI9trhQ
+! Checksum: NTP2AQNd3YYhwzTQElyVeQ
