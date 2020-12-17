@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.352.821
+! Version: 20.352.1312
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Dec 2020 13:41 UTC
+! Last modified: 17 Dec 2020 21:52 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -2370,6 +2370,7 @@ _GIF1200x120-
 ||dgw7ae5vrovs7.cloudfront.net^
 ||drda5yf9kgz5p.cloudfront.net^
 ||iklancpm.files.wordpress.com^$third-party
+||involve.asia/rpss/campaigns_banners/$image,third-party
 ||jadwaltelevisi.com^$third-party
 ||jogglo.com^$third-party
 ||kagetweb.com^*/banner110_$image,third-party
@@ -2553,6 +2554,7 @@ teknobos.com##.adcontainer
 radioonline.co.id##.add-box-top
 nonton.com##.adds
 mivo.com##.ads
+heyriad.com##.ads-below-title
 tutgwarnetgold.com##.ads-blog
 cermati.com##.ads-container
 ggwp.id##.ads-desktop
@@ -2600,6 +2602,7 @@ islampos.com##.labeliklan
 meowcitizen.com##.large-mobile-banner-1
 advertising-indonesia.id##.lded
 kabargames.id##.legend_banner-container
+wandercom.id##.logo-ad-wrapper
 ofiskita.com##.longAddsBox
 kabargames.id##.main_banner
 belapendidikan.com##.majalahpro-core-floatbanner
@@ -8814,29 +8817,29 @@ kaskus.co.id###thread_post_list > [id^="moderated-"]:-abp-contains(Post ini tela
 m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
 m.kaskus.co.id##[id^="postdeleted"]
 ! 
+! GENERAL
+banjirembun.com,cumirproduction.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
+! 
 ! ANTI-RIGHT-CLICK
 ! --------------------------------------------------------------
-1001tutorial.com,blogsecond.com,ilmumemikatwanita.com,kherysuryawan.id,psikologicinta.com,radiokucing.com,teraa.net##+js(acis, document.oncontextmenu)
+1001tutorial.com,banjirembun.com,blogsecond.com,ilmumemikatwanita.com,kherysuryawan.id,psikologicinta.com,radiokucing.com,teraa.net##+js(acis, document.oncontextmenu)
 mahirngoding.blogspot.com,nomis.id,websiteedukasi.com##+js(aeld, contextmenu)
 guru-id.com##+js(aopr, document.oncontextmenu)
-ainamulyana.blogspot.com##+js(ra, oncontextmenu, body)
+ainamulyana.blogspot.com,njongeblog.blogspot.com##+js(ra, oncontextmenu, body)
 /ZaloSec/chuotphai/*$script
 ! 
 ! ANTI-SELECT
 ! --------------------------------------------------------------
-rencanamu.id###content_box:style(user-select: text !important; -webkit-touch-callout: default !important;)
+amtread.com,bisablog.com,boss-ant.blogspot.com,heyriad.com,rencanamu.id,strukturkode.blogspot.com,suatekno.id,suckittrees.com,suryadhi.web.id,warunginter.net##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ilmumemikatwanita.com,psikologicinta.com,teraa.net##+js(acis, disableSelection, reEnable)
 digitaladies.id,radiokucing.com##+js(acis, disableselect, reEnable)
 nomis.id##+js(aeld, selectstart)
 satugoogle.blogspot.com,steffifauziah.com##+js(set, document.onselectstart, noopFunc)
-bisablog.com##.entry-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
-ataeh.blogspot.com,bungfrangki.com,datadikdasmen.com,dewaplokis.com,dezige-in.blogspot.com,geograpik.blogspot.com,infoastronomy.org,infoguruku.net,rahmancyber.net,teknolalat.com,webkeren.net##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
-jagoandzgn.com,serieswans.com##.post-outer:style(user-select: text !important; -webkit-touch-callout: default !important;)
-bloging-gampang.blogspot.com,indravedia.com,kherysuryawan.id,santaibareng.net,tigaribu.net##.post:style(user-select: text !important; -webkit-touch-callout: default !important;)
-strukturkode.blogspot.com##.skmain-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
-suatekno.id##.td-post-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
+agussiswanto097.blogspot.com,ataeh.blogspot.com,banjirembun.com,bungfrangki.com,datadikdasmen.com,dewaplokis.com,dezige-in.blogspot.com,geograpik.blogspot.com,infoastronomy.org,infoguruku.net,inphedia.id,kulcis.blogspot.com,nganggurajah.blogspot.com,rahmancyber.net,seniartaja.blogspot.com,teknolalat.com,webkeren.net##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
+jagoandzgn.com,serieswans.com,struckturcode.blogspot.com,winmahdi.com,zotutorial.com##.post-outer:style(user-select: text !important; -webkit-touch-callout: default !important;)
+bloging-gampang.blogspot.com,indravedia.com,kangghani.com,kherysuryawan.id,njongeblog.blogspot.com,pondok-belajar.com,santaibareng.net,serba-serbi-bisa.blogspot.com,teh-goyang.blogspot.com,tigaribu.net##.post:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ilmumemikatwanita.com,psikologicinta.com##.unselectable:style(user-select: text !important; -webkit-touch-callout: default !important;)
-belajarmembuatwebsite.com,blogsecond.com,igniel.com,inblogspot.com,mahirngoding.blogspot.com,mrmung.com,ponselsoak.com,rzkbdlhsn.blogspot.com,websiteedukasi.com##body:style(user-select: text !important; -webkit-touch-callout: default !important;)
+belajarmembuatwebsite.com,blogsecond.com,elmu-blog.blogspot.com,igniel.com,inblogspot.com,irnanto.com,kurniayoung.com,mahirngoding.blogspot.com,mrmung.com,ponselsoak.com,rzkbdlhsn.blogspot.com,tamboenman.xyz,websiteedukasi.com##body:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ! 
 ! ANTI-COPY
 ! --------------------------------------------------------------
@@ -8865,6 +8868,8 @@ seputarforex.com##.show.modal-backdrop
 /wp-content/plugins/popup-builder/*$script,domain=sindomanado.com
 ! 
 bacaan.id,kabargames.id##+js(aopr, SGPB_POPUP_PARAMS)
+! Content Embed
+||soundcloud.com/player/$frame,important,redirect=click2load.html,domain=cumirproduction.blogspot.com
 ! 
 ! PRIVACY
 ! --------------------------------------------------------------
@@ -10054,7 +10059,7 @@ wartaterkini.news##+js(aopr, disable_copy)
 ! Anti Select
 wartaterkini.news##+js(aopr, document.oncontextmenu)
 wartaterkini.news##body.unselectable:style(-webkit-touch-callout: default!important; user-select: text!important)
-! Video Embed
+! Content Embed
 grid.id##.videoPlaylistPlugClass-carousel
 ||20.detik.com/embed/$frame,redirect=click2load.html,domain=~20.detik.com|~adsmart.detik.com
 ||cnbcindonesia.com/embed/video/$frame,redirect=click2load.html
@@ -10428,7 +10433,7 @@ contohblog.com,mynotescode.com##.adsbygoogle
 ! 
 dropshipin.id##+js(acis, $, ads)
 dafideff.com##+js(acis, addEventListener, google_ad_client)
-kuliahkomputer.com,liputanberita21.com##+js(acis, eval, ignielAdBlock)
+kuliahkomputer.com,liputanberita21.com,winmahdi.com##+js(acis, eval, ignielAdBlock)
 semuanyabola.com##+js(acis, jQuery, ai_adb)
 ad4msan.com,ad4msan.win##+js(aopr, DHAntiAdBlocker)
 paraedu.id##+js(aopr, anOptions)
@@ -10507,4 +10512,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: KT51u5FcPrEV+rxhDwpznQ
+! Checksum: siJ7iGiinxhXcxltFualiw
