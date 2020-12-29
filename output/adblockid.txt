@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20.364.1265
+! Version: 20.364.1301
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Dec 2020 21:05 UTC
+! Last modified: 29 Dec 2020 21:41 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -729,6 +729,7 @@ _GIF1200x120-
 ###adsimgxatass
 ###adsimgxbawah
 ###adsimgxbawah2
+###adsimgxfullatas
 ###adsimgxkanan
 ###adsimgxkanan2
 ###adsimgxkiri
@@ -928,6 +929,7 @@ _GIF1200x120-
 ##.ads-bock-1
 ##.ads-bottom-fixed
 ##.ads-header-wrap
+##.ads-hor
 ##.ads-in-article
 ##.ads-in-article-v2
 ##.ads-kanan
@@ -952,6 +954,7 @@ _GIF1200x120-
 ##.ads-sticky-right
 ##.ads-top-bottom-headline
 ##.ads-two
+##.ads-ver
 ##.ads-widget-kanan
 ##.ads-widget-kecil
 ##.ads-widget-kiri
@@ -2330,6 +2333,13 @@ _GIF1200x120-
 ||static.domainesia.com/assets/images/afiliasi/$third-party
 ||wp.com/*rumahweb.com/*/banner/$domain=~rumahweb.com
 ! *** abid:src/specific_block.adbl ***
+-600x600-$image,domain=rumaysho.com
+-800x800-$image,domain=rumaysho.com
+-800x800.$image,domain=rumaysho.com
+/640x320_$image,domain=ruparupa.com
+_300x100.$image,domain=domigado.com
+_640x320_$image,domain=ruparupa.com
+! 
 -ads-$image,domain=inikpop.com
 -banner.$image,domain=plaza-bisnis.com|tipsbelajarbahasainggris.com
 .gif$image,domain=aftermarketplus.id|agungjakanugraha.com|alladsnetwork.web.id|edukasibitcoin.com|enthus1ast.com|etalasebisnis.com|hotabis.com|smallencode.com
@@ -2389,11 +2399,6 @@ _GIF1200x120-
 ||rajabacklink.com/tm_images/banneraff/$image
 ||rakosa-fm.co.id^*/partner/$image
 ||rri.co.id^*/banner/$image
-||rumaysho.com^*-600x600-$image
-||rumaysho.com^*-800x800-$image
-||rumaysho.com^*-800X800.$image
-||ruparupa.com^*/640x320_$image
-||ruparupa.com^*_640x320_$image
 ||safelinku.com/728x20.$image,third-party
 ||seputarforex.com/aazinc/iklan/$image
 ||storiespace.com^*/banner.$image
@@ -5836,6 +5841,7 @@ _penggugur_kandungan_$image
 ##[href*="dewapoker"]
 ##[href*="dewaqq"]
 ##[href*="dewaslot99."]
+##[href*="dewatagames.com"]
 ##[href*="dewatogel."]
 ##[href*="dewazeus."]
 ##[href*="dewi-qq"]
@@ -8638,6 +8644,7 @@ _penggugur_kandungan_$image
 ##[href*="goo.gl/5PASZ9"]
 ##[href*="goo.gl/gzJKgG"]
 ##[href*="is.gd/zkudsJ"]
+##[href*="k9gambar.com/bioskopgaul"]
 ##[href*="link.gojacksoft.com/angelpoker"]
 ##[href*="link.gojacksoft.com/banner-5starsbet"]
 ##[href*="link.gojacksoft.com/banner-darumabet"]
@@ -8890,6 +8897,7 @@ samehadaku.vip##.adsplayer
 139.99.120.222##.ban_empat
 178.128.82.236,cinemaday.org,gabut.net,indxxi.vip,klikfilm.stream##.banner
 dewanonton.vip,dewanonton.xyz,dwanonton.com##.banner-common
+139.99.33.192##.banner-float-bottom
 dwanonton.com##.banner-vertical
 premierexxi.org##.bnr
 movieajip.com,movies21.onl,terbit21.host##.close-banner
@@ -8939,6 +8947,7 @@ layarlebar.co##+js(aopr, document.querySelectorAll)
 movie-xx1.com##+js(aopr, document.querySelectorAll, popMagic)
 103.194.171.18,111.90.150.31,162.213.249.103,193.164.131.42,204.48.22.58,dutafilm.red,efek.stream,filmonlineindo.com,indxxi.vip,komikcast.com,komikstation.com,layarkacaxxi.org,nontonsub.top,sobatkeren.club##+js(window.open-defuser)
 ! Overlay
+/js/swal.$script,domain=hakamovie.xyz
 /wp-content/plugins/uji-popup/*$domain=bos21.bar|kordramass.com|kshowsubindo.org|layarkaca21indoxxi.co
 ! 
 111.90.142.151,detikxxi.com###divpopup
@@ -10414,4 +10423,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: JRLXQadpkb2QmiiA54Dpzw
+! Checksum: spKnfK/2D0WJgrx+DBsaYQ
