@@ -25,6 +25,7 @@ KNOWNOPTIONS = [
     # https://github.com/gorhill/uBlock/blob/master/src/js/redirect-engine.js
     # https://github.com/gorhill/uBlock/tree/master/src/web_accessible_resources
     "1p", "first-party", "3p", "all", "badfilter", "cname", "csp", "css", "denyallow", "ehide", "empty", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr",
+    "queryprune", # Kemungkinan ganti jadi removeparam
     "redirect=1x1.gif", "redirect-rule=1x1.gif",
     "redirect=2x2.png","redirect-rule=2x2.png",
     "redirect=3x2.png","redirect-rule=3x2.png",
@@ -45,5 +46,5 @@ KNOWNOPTIONS = [
     "redirect=fuckadblock.js-3.2.0", "redirect-rule=fuckadblock.js-3.2.0",
 
     # AdGuard
-    "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock"
+    "app", "content", "cookie", "extension", "jsinject", "network", "removeparam", "replace", "stealth", "urlblock"
 ]
