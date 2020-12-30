@@ -23,7 +23,7 @@ KNOWNOPTIONS = [
 
     # uBlock Origin
     # https://github.com/gorhill/uBlock/blob/master/src/js/redirect-engine.js
-    # https://github.com/uBlockOrigin/uAssets/blob/master/filters/resources.txt
+    # https://github.com/gorhill/uBlock/tree/master/src/web_accessible_resources
     "1p", "first-party", "3p", "all", "badfilter", "cname", "csp", "css", "denyallow", "ehide", "empty", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr",
     "redirect=1x1.gif", "redirect-rule=1x1.gif",
     "redirect=2x2.png","redirect-rule=2x2.png",
