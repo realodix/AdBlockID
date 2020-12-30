@@ -36,8 +36,8 @@ KNOWNOPTIONS = [
     "redirect=noop.txt", "redirect-rule=noop.txt",
     "redirect=noopcss", "redirect-rule=noopcss",
     "redirect=ampproject_v0.js", "redirect-rule=ampproject_v0.js",
-    "redirect=nofab.js" "redirect-rule=nofab.js"
-    "redirect=fuckadblock.js-3.2.0" "redirect-rule=fuckadblock.js-3.2.0"
+    "redirect=nofab.js", "redirect-rule=nofab.js",
+    "redirect=fuckadblock.js-3.2.0", "redirect-rule=fuckadblock.js-3.2.0",
     "redirect=google-analytics_cx_api.js", "redirect-rule=google-analytics_cx_api.js",
     "redirect=google-analytics_analytics.js", "redirect-rule=google-analytics_analytics.js",
     "redirect=google-analytics_ga.js", "redirect-rule=google-analytics_ga.js",
