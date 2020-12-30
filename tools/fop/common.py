@@ -34,7 +34,6 @@ KNOWNOPTIONS = [
     "redirect=noop.html", "redirect-rule=noop.html",
     "redirect=noop.js", "redirect-rule=noop.js",
     "redirect=noop.txt", "redirect-rule=noop.txt",
-    "redirect=noopcss", "redirect-rule=noopcss",
     "redirect=click2load.html", "redirect-rule=click2load.html",
     "redirect=ampproject_v0.js", "redirect-rule=ampproject_v0.js",
     "redirect=nofab.js", "redirect-rule=nofab.js",
