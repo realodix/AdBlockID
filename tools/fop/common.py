@@ -46,5 +46,12 @@ KNOWNOPTIONS = [
     "redirect=fuckadblock.js-3.2.0", "redirect-rule=fuckadblock.js-3.2.0",
 
     # AdGuard
-    "app", "content", "cookie", "extension", "jsinject", "network", "removeparam", "replace", "stealth", "urlblock"
+    # https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#redirect-resources
+    "app", "content", "cookie", "extension", "jsinject", "network", "removeparam", "replace", "stealth", "urlblock",
+    "redirect=1x1-transparent.gif", "redirect=2x2-transparent.png", "redirect=3x2-transparent.png", "redirect=32x32-transparent.png",
+    "redirect=google-analytics", "redirect=google-analytics-ga", "redirect=googlesyndication-adsbygoogle", "redirect=googletagmanager-gtm", "redirect=googletagservices-gpt",
+    "redirect=noeval",
+    "redirect=noopcss", "redirect=noopframe", "redirect=noopjs", "redirect=nooptext", "redirect=noopmp3-0.1s", "redirect=noopmp4-1s", "redirect=noopvmap-1.0", "redirect=noopvast-2.0", "redirect=noopvast-3.0", "redirect=prevent-fab-3.2.0", "redirect=prevent-popads-net", "redirect=scorecardresearch-beacon",
+    "redirect=set-popads-dummy",
+    "redirect=empty"
 ]
