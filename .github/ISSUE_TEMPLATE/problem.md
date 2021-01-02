@@ -11,4 +11,5 @@ assignees: ''
 https://example.com/
 
 **Penjelasan Lebih Lanjut**
-Mohon jelaskan ke Kami serinci dan sejelas mungkin apa yang terjadi.
+<!-- Mohon jelaskan ke Kami serinci dan sejelas mungkin apa yang terjadi.
+Please explain to Us as detailed what happened. -->
