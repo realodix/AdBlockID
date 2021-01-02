@@ -1,7 +1,7 @@
 ---
 name: Problem
 about: AdBlockID menimbulkan masalah, seperti salah blockir atau lainnya.
-title: ''
+title: 'example.com'
 labels: 'C: Bug'
 assignees: ''
 

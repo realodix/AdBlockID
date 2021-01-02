@@ -1,7 +1,7 @@
 ---
 name: IKLAN
 about: Semua jenis iklan.
-title: ''
+title: 'example.com'
 labels: 'C: Native'
 assignees: ''
 

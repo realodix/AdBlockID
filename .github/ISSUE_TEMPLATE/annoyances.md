@@ -1,7 +1,7 @@
 ---
 name: Annoyance
 about: Anti copy-paste, Anti right-click atau lainnya.
-title: ''
+title: 'example.com'
 labels: 'C: Annoyance'
 assignees: ''
 
