@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.009.776
+! Version: 21.009.779
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Jan 2021 12:56 UTC
+! Last modified: 09 Jan 2021 12:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -32,7 +32,6 @@
 .id^*/ad6/
 .id^*/ads/
 .id^*/ads?
-.id^*/ads_
 .id^*/adv-
 .id^*/adv.
 .id^*/adv/
@@ -10393,6 +10392,7 @@ masihbelajar.com##+js(set, DHAntiAdBlocker, true)
 menantisenja.com##+js(set, adblock, 1)
 selebsquad.com##+js(set, config.adblock, null)
 ! *** abid:src/whitelist.adbl ***
+.id^*/ads_$domain=~cartalog.id
 /ngiklan/*$image,domain=~ngiklan.gratis
 ! 
 @@/ayopasangiklan.$image
@@ -10402,8 +10402,6 @@ selebsquad.com##+js(set, config.adblock, null)
 @@/iklan-langganan.$image
 @@/pasang-google-$image
 @@/pasang-iklan-$image
-! 
-@@.id^*/ads_$domain=cartalog.id
 ! 
 ! --------------------------------------------------------------
 jualo.com#@#.ad-title
@@ -10460,4 +10458,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: dVmSxqqqqjZJG1Q6hWG9pg
+! Checksum: o1y7US2bKH8wHYeaq2mKwA
