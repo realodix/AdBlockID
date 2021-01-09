@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.009.1222
+! Version: 21.009.1228
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Jan 2021 20:22 UTC
+! Last modified: 09 Jan 2021 20:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -8996,13 +8996,14 @@ anitoki.com,nekonime.video##+js(aopr, protected_links)
 ! ANTI-RIGHT-CLICK
 ! --------------------------------------------------------------
 144.91.98.14##+js(aeld, /^(?:contextmenu|selectstart)$/)
-maachanime.com##+js(aopw, nocontext)
+maachanime.com,wibudesu.com##+js(aopw, nocontext)
 ! 
 ! ANTI-SELECT
 ! --------------------------------------------------------------
-maachanime.com##+js(acis, disableSelection, reEnable)
+maachanime.com,wibudesu.com##+js(acis, disableSelection, reEnable)
 144.91.98.14##+js(set, document.onselectstart, noopFunc)
 malasngeblog.com##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
+wibudesu.com##html:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ! *** abid:src/packages/news.adbl ***
 -banner-$image,domain=beritasulteng.com|indoaviation.asia|islampos.com|manadoline.com|presmedia.id
 -banner.$image,domain=cahayasiang.com|haluankepri.com|makassartoday.com|marketing.co.id
@@ -10459,4 +10460,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: ZWYTI40I1cDxBNy7QFvEzA
+! Checksum: gLrisbYYVhU1wQ2SGiXmfA
