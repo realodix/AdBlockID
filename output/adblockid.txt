@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.011.940
+! Version: 21.011.1378
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jan 2021 15:40 UTC
+! Last modified: 11 Jan 2021 22:58 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -2237,6 +2237,7 @@ _GIF1200x120-
 ||d2glav2919q4cw.cloudfront.net^
 ||d2t67iukq9ieyq.cloudfront.net^
 ||d2wpknqle9nuv8.cloudfront.net^
+||d3kh1c1apu7ke8.cloudfront.net^
 ||d3oep4gb91kpuv.cloudfront.net^
 ||daftarsb1m.net/file/get/path/banners.$image,third-party
 ||dgw7ae5vrovs7.cloudfront.net^
@@ -8818,10 +8819,12 @@ mangaindo.web.id##+js(acis, Math, zfgloaded)
 komikstation.com,westmanga.info##+js(acis, document.querySelectorAll, popMagic)
 mangakita.net##+js(window.open-defuser)
 ! 
+! ANTI-SELECT
+! --------------------------------------------------------------
+mangaku.pro##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
+! 
 ! ANTI-RIGHT-CLICK
 ! --------------------------------------------------------------
-mangaku.pro##+js(acis, $, contextmenu)
-mangaku.pro##+js(aeld, contextmenu)
 ! 
 ! ANTI-ADBLOCK
 ! --------------------------------------------------------------
@@ -10478,4 +10481,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: zg+uWi8Ngrc2SQMNyfMQqA
+! Checksum: 5I59/MzCgSXBIIMKFp0T3g
