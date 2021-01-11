@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.011.1397
+! Version: 21.011.1405
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jan 2021 23:17 UTC
+! Last modified: 11 Jan 2021 23:25 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -9120,6 +9120,7 @@ _banner/$image,domain=mediasulut.co
 ||harianhaluan.com^*/banner/$image
 ||harianjogja.com^*/banner/$image
 ||hariankepri.com^*/banner-$image
+||hariankepri.com^*/iklan-$image
 ||harianmemokepri.com^*/banner-$image
 ||hotabis.com/wp-content/uploads/*.gif$image
 ||infobekasi.co.id^*/iklan-$image
@@ -9528,12 +9529,14 @@ purworejonews.com##img[width="1171"][height="3062"]
 infosultra.id##img[width="1182"][height="297"]
 riau.haluan.co##img[width="1182"][height="592"]
 lampungtoday.com##img[width="1184"][height="1184"]
+hariankepri.com##img[width="1192"][height="148"]
 halosumsel.co.id##img[width="1200"][height="218"]
 eljabar.com##img[width="1200"][height="240"]
 padangmedia.com##img[width="1200"][height="392"]
 hantaran.co##img[width="1201"][height="1201"]
 riau.haluan.co##img[width="1206"][height="645"]
 riau.haluan.co##img[width="1208"][height="645"]
+swarakaltim.com##img[width="1217"][height="154"]
 inilahjambi.com##img[width="1222"][height="261"]
 parepos.co.id##img[width="1230"][height="153"]
 parepos.co.id##img[width="1230"][height="205"]
@@ -9761,7 +9764,7 @@ upeks.co.id##img[width="638"][height="800"]
 kejoranews.com##img[width="640"][height="112"]
 kuninganterkini.com##img[width="640"][height="120"]
 metrobatam.com##img[width="640"][height="128"]
-ntt-news.com##img[width="640"][height="1280"]
+hariankepri.com,ntt-news.com##img[width="640"][height="1280"]
 kejoranews.com##img[width="640"][height="160"]
 kejoranews.com##img[width="640"][height="162"]
 kejoranews.com##img[width="640"][height="212"]
@@ -9932,6 +9935,7 @@ jubi.co.id##img[width="950"][height="195"]
 riauterkini.com##img[width="950"][height="250"]
 annews.co.id##img[width="950"][height="399"]
 hantaran.co,kliksumatera.com,lintasberita.id,mediamerdeka.co,mediasembilan.co.id##img[width="960"][height="1280"]
+swarakaltim.com##img[width="962"][height="1280"]
 hariankepri.com,kailipost.com,sultengterkini.com##img[width="970"][height="250"]
 kailipost.com,sultengterkini.com##img[width="970"][height="291"]
 jubi.co.id##img[width="970"][height="342"]
@@ -10481,4 +10485,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: fGJpqNlbkUyU/9Ik1CV8ng
+! Checksum: aK7iU19CKALu1yRCsH5UUg
