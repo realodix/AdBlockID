@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.014.536
+! Version: 21.014.1099
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Jan 2021 08:56 UTC
+! Last modified: 14 Jan 2021 18:19 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -3480,13 +3480,26 @@ otomotifzone.com##a[rel="noopener noreferrer"] > img
 anangcozz.com##a[rel="noopener"] > img
 maniakmotor.com,otomotifmax.com##a[target="_blank"] > img
 ! 
+arenabola.id##.col-lg-3:-abp-contains(Ads)
+sindonews.com##.ctn-mid li:-abp-contains(Sponsored)
 arenasmartphone.com##.entry-content > div:-abp-contains(Advertisement)
+kalselpos.com##.listpost-gallery:-abp-contains(IKLAN)
+urbanasia.com##.paralax:has(div[id^="div-gpt-ad"])
+genpi.co##.post-text > .caption:-abp-contains(ADVERTISEMENT)
+sasambonews.com##.sidebar .widget:-abp-contains(IKLAN)
 pilaradiocirebon.com##.sidebar-item:-abp-contains(ADVERTISEMENT)
-fazar.net,jurnalkepri.com##.widget:-abp-contains(Advertisement)
+hops.id##.stream-item:-abp-contains(Sponsored)
+komentar.co.id##.theiaStickySidebar:-abp-contains(Iklan)
+fazar.net,jatimtimes.com,jurnalkepri.com##.widget:-abp-contains(Advertisement)
+tabikpun.com##.widget:-abp-contains(IKLAN)
 fazar.net##.widget:-abp-contains(Our Sponsor)
+detiksumsel.com##.widget:-abp-contains(Pojok Iklan)
 swara-bengkulu.com##.widget:-abp-contains(SPACE AVAILABLE)
 tampilcantik.com##.widget:-abp-contains(Sponsored)
 mariodevan.com,motorrio.com##.wpa:-abp-contains(Advertisement)
+malangtimes.com##aside.widget:-abp-contains(Advertisement)
+radarnews.id##aside.widget:-abp-contains(IKLAN)
+radarnews.id##aside.widget:-abp-contains(Iklan)
 klubpria.com##center:-abp-contains(Sponsor)
 doktersehat.com##div[style*="12px;"]:-abp-contains(Iklan)
 ! 
@@ -9936,20 +9949,6 @@ wibudesu.com##html:style(user-select: text !important; -webkit-touch-callout: de
 ! SPECIFIC HIDE
 ! --------------------------------------------------------------
 ! 
-arenabola.id##.col-lg-3:-abp-contains(Ads)
-sindonews.com##.ctn-mid li:-abp-contains(Sponsored)
-kalselpos.com##.listpost-gallery:-abp-contains(IKLAN)
-urbanasia.com##.paralax:has(div[id^="div-gpt-ad"])
-genpi.co##.post-text > .caption:-abp-contains(ADVERTISEMENT)
-sasambonews.com##.sidebar .widget:-abp-contains(IKLAN)
-hops.id##.stream-item:-abp-contains(Sponsored)
-komentar.co.id##.theiaStickySidebar:-abp-contains(Iklan)
-jatimtimes.com##.widget:-abp-contains(Advertisement)
-tabikpun.com##.widget:-abp-contains(IKLAN)
-detiksumsel.com##.widget:-abp-contains(Pojok Iklan)
-malangtimes.com##aside.widget:-abp-contains(Advertisement)
-radarnews.id##aside.widget:-abp-contains(IKLAN)
-radarnews.id##aside.widget:-abp-contains(Iklan)
 ! Ad reinsertion
 tribunnews.com##+js(acis, Math, ='\x)
 bolasport.com##+js(acis, document.addEventListener, iframe-network)
@@ -10478,4 +10477,4 @@ iklanpopuler.com,sebariklanbaris.net,ziyata.com#@#[src*="/iklan/"]
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: 3hcY/QrHI5UojFUYGR+ynw
+! Checksum: 8sbTTrtTA0bdRaSXJbD2pA
