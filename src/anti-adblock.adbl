@@ -1,3 +1,66 @@
+! SCRIPTLETS
+! --------------------------------------------------------------
+dropshipin.id##+js(acis, $, ads)
+dafideff.com##+js(acis, addEventListener, google_ad_client)
+kuliahkomputer.com,liputanberita21.com,winmahdi.com##+js(acis, eval, ignielAdBlock)
+semuanyabola.com##+js(acis, jQuery, ai_adb)
+ad4msan.com,ad4msan.win##+js(aopr, DHAntiAdBlocker)
+alexanews.id,blog-dnz.com,malutsatu.com,sultengraya.com##+js(aopr, adBlockDetected)
+paraedu.id##+js(aopr, anOptions)
+cuitandokter.com##+js(aopr, mdpDeBlocker)
+isrul.com##+js(aopr, mql)
+saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
+labkom.co.id##+js(aopr, tdBlock)
+saungfirmware.id##+js(nano-sib)
+akbardwi.my.id,nafaskuda.com##+js(nobab)
+rukim.id,surgatekno.com##+js(nofab)
+masihbelajar.com##+js(set, DHAntiAdBlocker, true)
+menantisenja.com##+js(set, adblock, 1)
+selebsquad.com##+js(set, config.adblock, null)
+!
+! SPECIFIC
+! --------------------------------------------------------------
+nabire.net#@#.adsbygoogle
+aplikasipc.com#@#.afs_ads
+mi-globe.com#@#.an-advert-banner
+!
+pugam.com###ai-adb-message
+pugam.com###ai-adb-overlay
+royhanafi.com###levelmaxblock
+gudangpemain.com,maniakandroid.com##.blocker-notice
+gudangpemain.com,maniakandroid.com##.blocker-overlay
+teknoding.com##kbd
+!
+||vkcdnservice.com/api/$redirect=noop.js,script
+!
+@@.gif#*/ad/
+@@.jpg#*/ad/
+@@.png#*/ad/
+@@/advertisement-$domain=duosia.id
+@@/fingerprint2.$script,domain=pastelink.pro
+@@/fuckadblock.$script,domain=akurasinews.com|baritopost.co.id|kabar6.com|listingberita.com|nusantarapos.co.id|suaranasional.com|terasmaluku.com
+@@/noadblock-nice-message/assets/js/ads.js?$script,~third-party
+@@/pagead2.$script,domain=bloggerku.com|unduh.in
+!
+! GENERIC HIDE
+! --------------------------------------------------------------
+@@||carmudi.co.id^$generichide
+@@||cintamobil.com^$generichide
+@@||contohblog.com^$generichide
+@@||fendy.web.id^$generichide
+@@||jualmobil.com^$generichide
+@@||mobilbekas.co.id^$generichide
+@@||okedroid.com^$generichide
+@@||oto.com^$generichide
+! Empty Ads Placeholders
+contohblog.com##.adsbygoogle
+balipost.com##.paralax_div
+/antiblockersjoss.$image
+!
+! GENERAL BLOCK
+! --------------------------------------------------------------
+/blockadblock.$script,domain=~firefaucet.win
+!
 -adblock-notice-
 -adblock-notice/
 /abb-msg.js
@@ -32,9 +95,6 @@
 /SvgAdblockDetected/*
 /wp-content/uploads/an-temp/*$script,stylesheet
 _adblock_killer.
-!
-/blockadblock.$script,domain=~firefaucet.win
-!
 ! Several wordpress adblock detector plugins
 /wp-content/plugins/ad-block-defender/*
 /wp-content/plugins/adunblocker
@@ -53,55 +113,3 @@ _adblock_killer.
 /Indzign/*/levelmaxblock.$script,third-party
 /kurazoneAdblock.$script
 /Script-Anti-AdBlock.$script,third-party
-!
-nabire.net#@#.adsbygoogle
-aplikasipc.com#@#.afs_ads
-mi-globe.com#@#.an-advert-banner
-!
-pugam.com###ai-adb-message
-pugam.com###ai-adb-overlay
-royhanafi.com###levelmaxblock
-gudangpemain.com,maniakandroid.com##.blocker-notice
-gudangpemain.com,maniakandroid.com##.blocker-overlay
-teknoding.com##kbd
-!
-||vkcdnservice.com/api/$redirect=noop.js,script
-!
-@@.gif#*/ad/
-@@.jpg#*/ad/
-@@.png#*/ad/
-@@/advertisement-$domain=duosia.id
-@@/fingerprint2.$script,domain=pastelink.pro
-@@/fuckadblock.$script,domain=akurasinews.com|baritopost.co.id|kabar6.com|listingberita.com|nusantarapos.co.id|suaranasional.com|terasmaluku.com
-@@/noadblock-nice-message/assets/js/ads.js?$script,~third-party
-@@/pagead2.$script,domain=bloggerku.com|unduh.in
-!
-@@||adsmart.detik.com^$generichide
-@@||contohblog.com^$generichide
-@@||fendy.web.id^$generichide
-@@||okedroid.com^$generichide
-!
-! --------------------------------------------------------------
-! EMPTY ADS PLACEHOLDERS
-/antiblockersjoss.$image
-balipost.com##.paralax_div
-!
-contohblog.com##.adsbygoogle
-!
-dropshipin.id##+js(acis, $, ads)
-dafideff.com##+js(acis, addEventListener, google_ad_client)
-kuliahkomputer.com,liputanberita21.com,winmahdi.com##+js(acis, eval, ignielAdBlock)
-semuanyabola.com##+js(acis, jQuery, ai_adb)
-ad4msan.com,ad4msan.win##+js(aopr, DHAntiAdBlocker)
-alexanews.id,blog-dnz.com,malutsatu.com,sultengraya.com##+js(aopr, adBlockDetected)
-paraedu.id##+js(aopr, anOptions)
-cuitandokter.com##+js(aopr, mdpDeBlocker)
-isrul.com##+js(aopr, mql)
-saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
-labkom.co.id##+js(aopr, tdBlock)
-saungfirmware.id##+js(nano-sib)
-akbardwi.my.id,nafaskuda.com##+js(nobab)
-rukim.id,surgatekno.com##+js(nofab)
-masihbelajar.com##+js(set, DHAntiAdBlocker, true)
-menantisenja.com##+js(set, adblock, 1)
-selebsquad.com##+js(set, config.adblock, null)
