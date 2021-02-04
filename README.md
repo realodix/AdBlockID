@@ -111,6 +111,7 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ adult-hide.adbl        Filter umum untuk menyembunyikan iklan berkonten dewasa.
  │   ├─ annoyances.adbl
  │   ├─ comic.adbl
+ │   ├─ international.adbl
  │   ├─ movie.adbl
  │   ├─ sl_anti-adblock.adbl
  │   ├─ sl_anti-safelink.adbl
@@ -120,6 +121,7 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  ├─ adservers.adbl          Domain penyedia layanan iklan pihak ketiga.
  ├─ anti-adblock.adbl       Filter khusus menangani web yang mendeteksi dan melarang Anda
  │                          menggunakan Ad Blocker.
+ ├─ extended.adbl           Extended CSS selectors dan lainnya.
  ├─ general_block.adbl      Filter umum untuk blockir content pada halaman web.
  ├─ general_hide.adbl       Filter umum untuk menyembunyikan content pada halaman web.
  ├─ specific_block.adbl     Secara spesifik hanya menyembunyikan content pada domain yang
