@@ -112,7 +112,6 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ annoyances.adbl
  │   ├─ comic.adbl
  │   ├─ movie.adbl
- │   ├─ news.adbl              Filter untuk menangani iklan pada situs berita.
  │   ├─ sl_anti-adblock.adbl
  │   ├─ sl_anti-safelink.adbl
  │   └─ sl_safelink.adbl       Filter untuk menangani iklan pada situs safelink / shortlink.
