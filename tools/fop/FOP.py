@@ -42,7 +42,7 @@ arg = ap.parse_args()
 # Wladimir Palant's Adblock Plus source code)
 ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#|\$)\@?\??\@?(#|\$)")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
-ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(\$|##\@?\$|#\@?#?\+?)(.*)$")
+ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(\$\@?\$?\??#|##\@?\$|#\@?#?\+?)(.*)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 
 # Compile regular expressions that match element tags and pseudo classes and
