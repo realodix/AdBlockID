@@ -19,7 +19,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 ## Cara Menggunakan
 - Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Safari](http://www.apple.com/safari/), [Opera](http://www.opera.com/), ...)
-- *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore#install-links), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi *ad blocker* lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
+- *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi *ad blocker* lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
 - Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada ekstensi adblock yang Anda gunakan.
 
    | Name                | Subscribe | Raw Link |
@@ -28,7 +28,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 
 **Tutorial spesifik cara memasang AdBlockID:**
-- [uBlock](/docs/uBlock.md): uBlock Origin, Nano Adblocker, AdNauseam.
+- [uBlock](/docs/uBlock.md): uBlock Origin, AdNauseam.
 - [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android.
 - [AdBlock](/docs/Adblock-Plus.md): AdBlock, Adblock Plus, StopAll Ads.
 - [Opera Ad Blocker](/docs/Opera-AdBlocker.md).
