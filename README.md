@@ -134,3 +134,30 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
                             whitelist. Contoh: Fungsi utama dari web tersebut tidak jalan
                             karena kesalahan blokir.
 ```
+
+
+
+### Contributors ✨
+
+Thanks goes to these wonderful people.
+
+<table cellspacing="0">
+    <thead>
+        <th scope="col">#</th>
+        <th scope="col">User</th>
+        <th scope="col">Contribs</th>
+        <th scope="col" width="30">Picture</th>
+    </thead>
+    <tbody>
+    <tr><th scope="row">#1</th>
+        <td>@Recehan-Slayer</td>
+        <td><a href="https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer">490+ issues</a></td>
+        <td><img width="30" height="30" src="https://avatars0.githubusercontent.com/u/9379770?s=30&v=4"></td>
+    </tr>
+    <tr><th scope="row">#2</th>
+        <td>@3xploiton3</td>
+        <td><a href="https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3">40+ issues</a></td>
+        <td><img width="30" height="30" src="https://avatars3.githubusercontent.com/u/19517680?s=30&v=4"></td>
+    </tr>
+    </tbody>
+</table>
