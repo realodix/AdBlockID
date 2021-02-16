@@ -50,7 +50,7 @@ Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai 
 
 
 ## Development
-Lihat [/docs/Development.md](/docs/Opera-AdBlocker.md).
+Lihat [/docs/Development.md](/docs/Development.md).
 
 
 ## Contributors ✨
