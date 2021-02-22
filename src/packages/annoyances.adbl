@@ -13,18 +13,34 @@ kaskus.co.id###thread_post_list > [id^="moderated-"]:-abp-contains(Post ini tela
 m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
 m.kaskus.co.id##[id^="postdeleted"]
 !
-! GENERAL
-ainamulyana.blogspot.com,banjirembun.com,cumirproduction.blogspot.com,kucingmania.net,njongeblog.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
+! POPUP & OVERLAY
+! -----------------------------------------------------------------------------
+tirto.id###bkgOverlay
+kuotamedia.net,paketinternet.net,ponselsoak.com###bukafpop
+tirto.id###delayedPopup
+borneonews.co.id###lipsus-popup
+tirto.id##.backgroundOverlay
+rajawarta.com,timikaexpress.com##.cm-popup-modal
+kompaslampung.com##.jqbox_innerhtml
+kanalkalimantan.com##.lepopup-popup-container
+kanalkalimantan.com##.lepopup-popup-overlay
+indotimur.com##.popup-transparent
+lampungcentral.com##.pum-overlay
+seputarforex.com##.show.modal-backdrop
+/wp-content/plugins/cm-pop-up-banners/*$domain=suaramandiri.co
+/wp-content/plugins/popup-builder/*$script,domain=bacaan.id|papuatoday.com|sindomanado.com|suluttimes.com
 !
-! ANTI-RIGHT-CLICK
-! --------------------------------------------------------------
+bacaan.id,papuatoday.com,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
+!
+! ANTI-RIGHT CLICK & ANTI-SELECT
+! -----------------------------------------------------------------------------
+ainamulyana.blogspot.com,banjirembun.com,cumirproduction.blogspot.com,kucingmania.net,njongeblog.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
+! RIGHT CLICK
 1001tutorial.com,banjirembun.com,beritasampit.co.id,blogsecond.com,ciriseo.net,ilmumemikatwanita.com,isrul.com,kabarrakyat.id,kherysuryawan.id,psikologicinta.com,radiokucing.com,teraa.net##+js(acis, document.oncontextmenu)
 mahirngoding.blogspot.com,nomis.id,radarbengkuluonline.com,websiteedukasi.com##+js(aeld, contextmenu)
 ardra.biz,blog-dnz.com,daftarhewan.com,debgameku.com,guru-id.com,myhewan.com,nusramedia.com,tipssehatcantik.com,wartaterkini.news##+js(aopr, document.oncontextmenu)
 /ZaloSec/chuotphai/*$script
-!
-! ANTI-SELECT
-! --------------------------------------------------------------
+! SELECT
 larantukagypsum.com###post-wrapper:style(user-select: text !important; -webkit-touch-callout: default !important;)
 amtread.com,bisablog.com,boss-ant.blogspot.com,daftarhewan.com,heyriad.com,myhewan.com,ninoartikel.com,rencanamu.id,strukturkode.blogspot.com,suatekno.id,suckittrees.com,suryadhi.web.id,warunginter.net##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
 daftarhewan.com,ilmumemikatwanita.com,kabarrakyat.id,myhewan.com,nusramedia.com,psikologicinta.com,teraa.net,tipssehatcantik.com,yunoya.id##+js(acis, disableSelection, reEnable)
@@ -42,42 +58,24 @@ belajarmembuatwebsite.com,blogsecond.com,elmu-blog.blogspot.com,igniel.com,inblo
 nusramedia.com##html:style(user-select: text !important; -webkit-touch-callout: default !important;)
 !
 ! ANTI-COPY
-! --------------------------------------------------------------
+! -----------------------------------------------------------------------------
 nomis.id##+js(aeld, copy)
 wartaterkini.news##+js(aopr, disable_copy)
 !
 ! ANTI-SAFELINK
-! --------------------------------------------------------------
+! -----------------------------------------------------------------------------
 kuyhaa-me.com##+js(aopr, protected_links)
 !
 ! FAKE BUTTON
-! --------------------------------------------------------------
+! -----------------------------------------------------------------------------
 gigapurbalingga.net##.entry-content center button.user
 kuyhaa-me.com##[type="image"][src*="/sd.png"]
 mazterize.co,mazterize.com##center:nth-of-type(1)
 mazterize.co,mazterize.com##center:nth-of-type(2)
 kuyhaa.net##iframe[width="420"][height="100"]
 !
-! POPUP & OVERLAY
-! --------------------------------------------------------------
-tirto.id###bkgOverlay
-kuotamedia.net,paketinternet.net,ponselsoak.com###bukafpop
-tirto.id###delayedPopup
-borneonews.co.id###lipsus-popup
-tirto.id##.backgroundOverlay
-rajawarta.com,timikaexpress.com##.cm-popup-modal
-kompaslampung.com##.jqbox_innerhtml
-kanalkalimantan.com##.lepopup-popup-container
-kanalkalimantan.com##.lepopup-popup-overlay
-indotimur.com##.popup-transparent
-lampungcentral.com##.pum-overlay
-seputarforex.com##.show.modal-backdrop
-/wp-content/plugins/cm-pop-up-banners/*$domain=suaramandiri.co
-/wp-content/plugins/popup-builder/*$script,domain=bacaan.id|papuatoday.com|sindomanado.com|suluttimes.com
-!
-bacaan.id,papuatoday.com,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
 ! CONTENT EMBED
-! --------------------------------------------------------------
+! -----------------------------------------------------------------------------
 grid.id##.videoPlaylistPlugClass-carousel
 ||20.detik.com/embed/$frame,redirect=click2load.html,domain=~20.detik.com|~adsmart.detik.com
 ||cnbcindonesia.com/embed/video/$frame,redirect=click2load.html
@@ -92,12 +90,12 @@ grid.id##.videoPlaylistPlugClass-carousel
 ||youtube.com/embed/$frame,redirect=click2load.html,domain=grid.id|~video.grid.id
 !
 ! PRIVACY
-! --------------------------------------------------------------
+! -----------------------------------------------------------------------------
 ||analytics.s.id^$third-party
 ||c.lazada.co.id/t/v.gif?__t=
 ||ivstracker.net^$third-party
 ||log.viva.co.id/iframe^
 ! MINER
-! --------------------------------------------------------------
+! -----------------------------------------------------------------------------
 ! https://github.com/realodix/AdBlockID/issues/392
 ||filmindonesia2020.blogspot.com^$third-party

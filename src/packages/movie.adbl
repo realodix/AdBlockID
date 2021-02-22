@@ -1,5 +1,5 @@
 ! SPECIFIC BLOCK
-! --------------------------------------------------------------
+! ----------------------------------------------------------------------------------------
 .gif$image,domain=conan.id|layarfilm21.live|neumanga.tv|nontondrama.me|tancap88.me
 /banner-$image,domain=maxnime.com|neonime.moe|neonime.vip
 ||jwplayer21.com/images/*.gif$image
@@ -13,7 +13,7 @@
 ||sharemydrive.xyz/iframe/content.php$subdocument
 !
 ! SPECIFIC HIDE
-! --------------------------------------------------------------
+! ----------------------------------------------------------------------------------------
 ! IndoXX1 Closed (domain masih aktif)
 ! https://github.com/realodix/AdBlockID/issues/57
 103.194.171.75##.bnner
@@ -93,8 +93,31 @@ downloadbatch.net##.widget:-abp-contains(Advertisement)
 149.28.158.117##.appupig
 melongfilm.org##.ipprtcnt
 !
+! ANTI-ADBLOCK
+! -----------------------------------------------------------------------------
+daizurin.com,shinobijawi.id,tohaboy.web.id,zonachina21.blogspot.com##+js(acis, addEventListener, DOMNodeRemoved)
+animekuro.net,kurofansubs.xyz##+js(acis, eval, ignielAdBlock)
+nezunime.com##+js(acis, jQuery, ai_adb)
+soranime.site##+js(aopr, KillAdBlock)
+subindo.stream##+js(aopr, absda)
+aibouanime.site,aibouanime.xyz,blackavelic.com,kudonime.xyz,mikanime.com,onbatch.my.id,otaku.tekloggers.com,xizuanime.blogspot.com##+js(aopr, adBlockDetected)
+filmboxoffice.web.id,maachanime.com,neosubs.net,tohaboy.web.id##+js(aopr, anOptions)
+animecracks.com##+js(aopr, mdpDeBlocker)
+animee.xyz##+js(aopr, mdpDeBlockerDestroyer)
+aksensei.com,doramaflix.com,drakoric.com,dramaencode.com,dramazon.id,driverays.com,fmoviez.org,kiminime.com,kiranime.pw,nanidrama.com,pahe.stream,shirainime.com##+js(nobab)
+oploverz.in##+js(nostif, nextFunction, 450)
+anidraw.net##+js(set, config.adblock, null)
+!
+@@/ads.$script,domain=negumo.com
+@@/adsbygoogle.$domain=dl.nesia.my.id
+@@/pagead2.$script,domain=nekopoi.web.id|tokubatch.com
+!
+/ads-poi.$image,domain=nekopoi.web.id
+/ads-poi2.$image,domain=nekopoi.web.id
+||animekompi.web.id/*/antiblocker$image
+!
 ! ANNOYANCE
-! --------------------------------------------------------------
+! -----------------------------------------------------------------------------
 /download-button.$image,domain=anime-indo.id|cinema-xx1.com|lndoxxi.com
 ! Pop-Up & Overlay
 139.99.120.222,fb21.club,fb21.tv##+js(aopr, $, #myModalSingle)
@@ -136,44 +159,16 @@ narashika.cc##.popbox
 ! Fake Button
 91.230.121.24,91.230.121.37##.idmuvi-social-share
 ||nekonime.com^*/download-sekarang-$image
-!
-! ANTI-ADBLOCK
-! --------------------------------------------------------------
-daizurin.com,shinobijawi.id,tohaboy.web.id,zonachina21.blogspot.com##+js(acis, addEventListener, DOMNodeRemoved)
-animekuro.net,kurofansubs.xyz##+js(acis, eval, ignielAdBlock)
-nezunime.com##+js(acis, jQuery, ai_adb)
-soranime.site##+js(aopr, KillAdBlock)
-subindo.stream##+js(aopr, absda)
-aibouanime.site,aibouanime.xyz,blackavelic.com,kudonime.xyz,mikanime.com,onbatch.my.id,otaku.tekloggers.com,xizuanime.blogspot.com##+js(aopr, adBlockDetected)
-filmboxoffice.web.id,maachanime.com,neosubs.net,tohaboy.web.id##+js(aopr, anOptions)
-animecracks.com##+js(aopr, mdpDeBlocker)
-animee.xyz##+js(aopr, mdpDeBlockerDestroyer)
-aksensei.com,doramaflix.com,drakoric.com,dramaencode.com,dramazon.id,driverays.com,fmoviez.org,kiminime.com,kiranime.pw,nanidrama.com,pahe.stream,shirainime.com##+js(nobab)
-oploverz.in##+js(nostif, nextFunction, 450)
-anidraw.net##+js(set, config.adblock, null)
-!
-@@/ads.$script,domain=negumo.com
-@@/adsbygoogle.$domain=dl.nesia.my.id
-@@/pagead2.$script,domain=nekopoi.web.id|tokubatch.com
-!
-/ads-poi.$image,domain=nekopoi.web.id
-/ads-poi2.$image,domain=nekopoi.web.id
-||animekompi.web.id/*/antiblocker$image
-!
-! ANTI-SAFELINK
-! --------------------------------------------------------------
+! Anti Safelink
 animebatch.web.id,anitoki.web.id,daizurin.com,drakorku.my.id,hakanime.com,soranime.top##+js(acis, auto_safelink)
 maxnime.com,nimegami.com,yukinime.com##+js(aopr, go_url)
 anitoki.com,nekonime.video##+js(aopr, protected_links)
 !
 aibou.xyz,aksensei.com,cgvindo.vip##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
-! ANTI-RIGHT-CLICK
-! --------------------------------------------------------------
+! Anti Right Click
 144.91.98.14##+js(aeld, /^(?:contextmenu|selectstart)$/)
 maachanime.com,wibudesu.com##+js(aopw, nocontext)
-!
-! ANTI-SELECT
-! --------------------------------------------------------------
+! Anti Select
 maachanime.com,wibudesu.com##+js(acis, disableSelection, reEnable)
 144.91.98.14##+js(set, document.onselectstart, noopFunc)
 malasngeblog.com##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
