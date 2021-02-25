@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program. If not, see <http://www.gnu.org/licenses/>."""
 # FOP version number
-VERSION = "3.19"
+VERSION = "3.19.1 (temporary patches)"
 
 # Import the key modules
 import collections, filecmp, os, re, subprocess, sys
@@ -270,7 +270,7 @@ def filtertidy (filterin):
         # If applicable, separate and sort the filter options in addition to the filter
         # text
         filtertext = removeunnecessarywildcards(optionsplit.group(1))
-        optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
+        optionlist = optionsplit.group(2).lower().replace("_", "_").split(",")
 
         domainlist = []
         removeentries = []
