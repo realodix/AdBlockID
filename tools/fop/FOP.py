@@ -293,7 +293,7 @@ def filtertidy (filterin):
                 queryprune = option[11:]
                 removeentries.append(option)
             elif re.match(REDIWRITEOPTIONPATTERN, option):
-                keepAsterisk = True
+                # keepAsterisk = True
                 rediwritelist.append(option)
             elif option == "popunder":
                 keepAsterisk = True
