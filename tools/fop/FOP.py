@@ -130,7 +130,7 @@ def main (location):
             address = os.path.join(path, filename)
             extension = os.path.splitext(filename)[1]
             # Sort all text files that are not blacklisted
-            if extension == ".txt" and filename not in IGNORE:
+            if (extension == ".txt" or extension == ".adbl") and filename not in IGNORE:
                 fopsort(address)
             # Delete unnecessary backups and temporary files
             if extension == ".orig" or extension == ".temp":
