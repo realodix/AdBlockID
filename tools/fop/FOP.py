@@ -15,16 +15,14 @@ if sys.version_info < (MAJORREQUIRED, MINORREQUIRED):
 # Import a module only available in Python 3
 from urllib.parse import urlparse
 
-# Compile regular expressions to match important filter parts (derived from Wladimir
-# Palant's Adblock Plus source code)
+# Compile regular expressions to match important filter parts (derived from Wladimir Palant's Adblock Plus source code)
 ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#[@$?]?#")
 FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
 ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[@$?]?#)([^{}]+)$")
 OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 REDIWRITEOPTIONPATTERN = re.compile(r"^(redirect(-rule)?|rewrite)=")
 
-# Compile regular expressions that match element tags and pseudo classes and strings and
-# tree selectors; "@" indicates either the beginning or the end of a selector
+# Compile regular expressions that match element tags and pseudo classes and strings and tree selectors; "@" indicates either the beginning or the end of a selector
 SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
 PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
 # (?!:-) - skip Adblock Plus' :-abp-... pseudoclasses, (?!:style\() - skip uBlock Origin's :style() pseudoclass
@@ -41,12 +39,10 @@ SELECTORANDTAILPATTERN = re.compile(r"^(.*?)((:-abp-contains|:style)(.*))?$")
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
 
-# List the files that should not be sorted, either because they have a special sorting
-# system or because they are not filter files
+# List the files that should not be sorted, either because they have a special sorting system or because they are not filter files
 IGNORE = ("adblockid.txt", "docs", "tools", "template")
 
-# List all Adblock Plus options (excepting domain, which is handled separately), as of
-# version 1.3.9
+# List all Adblock Plus options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = (
     "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping", "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
 
@@ -109,8 +105,7 @@ def main (location):
         if os.path.isdir(os.path.join(location, repotype.directory)):
             repository = repotype
             break
-    # If this is a repository, record the initial changes; if this fails, give up trying
-    # to use the repository
+    # If this is a repository, record the initial changes; if this fails, give up trying to use the repository
     if repository:
         try:
             basecommand = repository.name
@@ -148,8 +143,7 @@ def main (location):
                 try:
                     os.remove(address)
                 except(IOError, OSError):
-                    # Ignore errors resulting from deleting files, as they likely indicate
-                    # that the file has already been deleted
+                    # Ignore errors resulting from deleting files, as they likely indicate that the file has already been deleted
                     pass
 
 def fopsort (filename):
@@ -160,8 +154,7 @@ def fopsort (filename):
     lineschecked = 1
     filterlines = elementlines = 0
 
-    # Read in the input and output files concurrently to allow filters to be saved as soon
-    # as they are finished with
+    # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
     with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
 
         # Combines domains for (further) identical rules
@@ -186,12 +179,10 @@ def fopsort (filename):
                         newDomains = "{d1}{sep}{d2}".format(d1=domain1str, sep=domainseparator, d2=domain2str)
                         newDomains = domainseparator.join(sorted(set(newDomains.split(domainseparator)), key = lambda domain: domain.strip("~")))
                         if (domain1str.count("~") != domain1str.count(domainseparator) + 1) != (domain2str.count("~") != domain2str.count(domainseparator) + 1):
-                            # do not combine rules containing included domains with rules
-                            # containing only excluded domains
+                            # do not combine rules containing included domains with rules containing only excluded domains
                             combinedFilters.append(uncombinedFilters[i])
                         else:
-                            # either both contain one or more included domains, or both
-                            # contain only excluded domains
+                            # either both contain one or more included domains, or both contain only excluded domains
                             domainssubstitute = domains1.group(0).replace(domain1str, newDomains, 1)
                             uncombinedFilters[i+1] = re.sub(DOMAINPATTERN, domainssubstitute, uncombinedFilters[i])
                     else:
@@ -213,8 +204,7 @@ def fopsort (filename):
             line = line.strip()
             if re.match(BLANKPATTERN, line):
                 continue
-            # Include comments verbatim and, if applicable, sort the preceding section of
-            # filters and save them in the new version of the file
+            # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
             if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                 if section:
                     writefilters()
@@ -223,8 +213,7 @@ def fopsort (filename):
                     filterlines = elementlines = 0
                 outputfile.write("{line}\n".format(line = line))
             else:
-                # Neaten up filters and, if necessary, check their type for the sorting
-                # algorithm
+                # Neaten up filters and, if necessary, check their type for the sorting algorithm
                 elementparts = re.match(ELEMENTPATTERN, line)
                 if elementparts:
                     domains = elementparts.group(1).lower()
@@ -245,9 +234,7 @@ def fopsort (filename):
 
     # Replace the existing file with the new one only if alterations have been made
     if not filecmp.cmp(temporaryfile, filename):
-        # Check the operating system and, if it is Windows, delete the old file to avoid
-        # an exception (it is not possible to rename files to names already in use on
-        # this operating system)
+        # Check the operating system and, if it is Windows, delete the old file to avoid an exception (it is not possible to rename files to names already in use on this operating system)
         if os.name == "nt":
             os.remove(filename)
         os.rename(temporaryfile, filename)
@@ -256,8 +243,7 @@ def fopsort (filename):
         os.remove(temporaryfile)
 
 def sortfunc (option):
-    # For identical options, the inverse always follows the non-inverse option ($image,
-    # ~image instead of $~image,image) with exception for popup filter
+    # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image) with exception for popup filter
     if option[0] == "~": return option[1:] + "{"
     if option == "popup": return option + "}"
     # Also let third-party will always be first in the list
@@ -303,8 +289,7 @@ def filtertidy (filterin):
         optionlist = sorted(set(filter(lambda option: (option not in removeentries) and (option not in rediwritelist), optionlist)), key = sortfunc)
         # Replace underscore typo with hyphen-minus in options like third_party
         optionlist = list(map(lambda option: option.replace("_", "-"), optionlist))
-        # Append queryprune back at the end (both to keep it at the end and skip
-        # underscore typo fix)
+        # Append queryprune back at the end (both to keep it at the end and skip underscore typo fix)
         if queryprune:
             optionlist.append("queryprune={queryprune}".format(queryprune = queryprune))
         # Append redirect rule back without underscore typo fix
@@ -340,8 +325,7 @@ def elementtidy (domains, separator, selector):
         tailpart = selectorandtail.group(4)
     selector = "@{selector}@".format(selector = selectorandtail.group(1))
     each = re.finditer
-    # Make sure we don't match items in strings (e.g., don't touch Width in
-    # ##[style="height:1px; Width: 123px;"])
+    # Make sure we don't match items in strings (e.g., don't touch Width in ##[style="height:1px; Width: 123px;"])
     selectorwithoutstrings = selector
     selectoronlystrings = ""
     while True:
@@ -352,8 +336,7 @@ def elementtidy (domains, separator, selector):
     # Clean up tree selectors
     for tree in each(TREESELECTOR, selector):
         if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings: continue
-        # added check for case when tree selector were used in :-abp-has() and similar
-        # constructions at first position.
+        # added check for case when tree selector were used in :-abp-has() and similar constructions at first position
         # basically for cases like PARENT:-abp-has(> CHILD)
         replaceby = "{sp}{g2} ".format(sp = ("" if tree.group(1) == "(" else " "), g2 = tree.group(2))
         if replaceby == "   ": replaceby = " "
