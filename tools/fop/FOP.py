@@ -47,13 +47,27 @@ IGNORE = ("adblockid.txt", "docs", "tools", "template")
 
 # List all Adblock Plus options (excepting domain, which is handled separately), as of
 # version 1.3.9
-KNOWNOPTIONS = ("badfilter", "collapse", "doc", "document", "elemhide", "empty", "font",
-                "genericblock", "generichide", "image", "important", "inline-script",
-                "match-case", "media", "object", "object-subrequest", "other", "ping", "popunder", "popup",
-                "script", "stylesheet", "subdocument",  "first-party", "third-party",
-                "websocket", "webrtc", "xmlhttprequest")
+KNOWNOPTIONS = (
+    "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping", "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
+
+    # uBlock Origin
+    # https://github.com/gorhill/uBlock/blob/master/src/js/redirect-engine.js
+    # https://github.com/gorhill/uBlock/tree/master/src/web_accessible_resources
+    "1p", "first-party", "3p", "all", "badfilter", "cname", "csp", "css", "denyallow", "ehide", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr",
+
+    # AdGuard
+    # https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-redirects.md#redirect-resources
+    "app", "content", "cookie", "extension", "jsinject", "network", "removeparam", "replace", "stealth", "urlblock"
+)
 # List of known key=value parameters (domain is not included)
-KNOWNPARAMETERS = ("csp", "queryprune", "rewrite", "redirect", "redirect-rule")
+KNOWNPARAMETERS = (
+    # ABP
+    "rewrite",
+
+    # uBO
+    "csp", "redirect", "redirect-rule",
+    "queryprune" # Kemungkinan ganti jadi removeparam
+)
 
 # List the supported revision control system commands
 REPODEF = collections.namedtuple("repodef", "name, directory, locationoption, repodirectoryoption, checkchanges, difference, pull, checkupdate, update, merge, commit, push")
