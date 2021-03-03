@@ -41,9 +41,6 @@ SELECTORANDTAILPATTERN = re.compile(r"^(.*?)((:-abp-contains|:style)(.*))?$")
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
 
-# Compile a regular expression that validates commit comments
-COMMITPATTERN = re.compile(r"^(A|M|P)\:\s(\((.+)\)\s)?(.*)$")
-
 # List the files that should not be sorted, either because they have a special sorting
 # system or because they are not filter files
 IGNORE = ("adblockid.txt", "docs", "tools", "template")
@@ -140,10 +137,6 @@ def main (location):
                     # Ignore errors resulting from deleting files, as they likely indicate
                     # that the file has already been deleted
                     pass
-
-    # If in a repository, offer to commit any changes
-    if repository:
-        commit(repository, basecommand, originaldifference)
 
 def fopsort (filename):
     """ Sort the sections of the file and save any modifications."""
@@ -389,49 +382,6 @@ def elementtidy (domains, separator, selector):
     # Remove the markers from the beginning and end of the selector and return the complete rule
     return "{domain}{separator}{selector}{splitter}{tail}".format(domain = domains, separator = separator, selector = selector[1:-1], splitter = splitterpart, tail = tailpart)
 
-def commit (repository, basecommand, userchanges):
-    """ Commit changes to a repository using the commands provided."""
-    difference = subprocess.check_output(basecommand + repository.difference)
-    if not difference:
-        print("\nNo changes have been recorded by the repository.")
-        return
-    print("\nThe following changes have been recorded by the repository:")
-    try:
-        print(difference.decode("utf-8"))
-    except UnicodeEncodeError:
-        print("\nERROR: DIFF CONTAINED UNKNOWN CHARACTER(S). Showing unformatted diff instead:\n")
-        print(difference)
-    try:
-        # Persistently request a suitable comment
-        while True:
-            comment = input("Please enter a valid commit comment or quit:\n")
-            if checkcomment(comment, userchanges):
-                break
-    # Allow users to abort the commit process if they do not approve of the changes
-    except (KeyboardInterrupt, SystemExit):
-        print("\nCommit aborted.")
-        return
-
-    print("Comment \"{comment}\" accepted.".format(comment = comment))
-    try:
-        print("\nConnecting to server. Please enter your password if required.")
-        # Update the server repository as required by the revision control system
-        for command in repository[6:]:
-            if command == None:
-                continue
-            if command == repository.commit:
-                command += [comment]
-            command = basecommand + command
-            subprocess.Popen(command).communicate()
-            print()
-    except(subprocess.CalledProcessError):
-        print("Unexpected error with the command \"{command}\".".format(command = command))
-        raise subprocess.CalledProcessError("Aborting FOP.", command)
-    except(OSError):
-        print("Unexpected error with the command \"{command}\".".format(command = command))
-        raise OSError("Aborting FOP.")
-    print("Completed commit process successfully.")
-
 def isglobalelement (domains):
     """ Check whether all domains are negations."""
     for domain in domains.split(","):
@@ -462,43 +412,6 @@ def removeunnecessarywildcards (filtertext, keepAsterisk):
     if allowlist:
         filtertext = "@@{filtertext}".format(filtertext = filtertext)
     return filtertext
-
-def checkcomment(comment, changed):
-    """ Check the commit comment and return True if the comment is
-    acceptable and False if it is not."""
-    sections = re.match(COMMITPATTERN, comment)
-    if sections == None:
-        print("The comment \"{comment}\" is not in the recognised format.".format(comment = comment))
-    else:
-        indicator = sections.group(1)
-        if indicator == "M":
-            # Allow modification comments to have practically any format
-            return True
-        elif indicator == "A" or indicator == "P":
-            if not changed:
-                print("You have indicated that you have added or removed a rule, but no changes were initially noted by the repository.")
-            else:
-                address = sections.group(4)
-                if not validurl(address):
-                    print("Unrecognised address \"{address}\".".format(address = address))
-                else:
-                    # The user has changed the subscription and has written a suitable
-                    # comment message with a valid address
-                    return True
-    print()
-    return False
-
-def validurl (url):
-    """ Check that an address has a scheme (e.g. http), a domain name
-    (e.g. example.com) and a path (e.g. /), or relates to the internal
-    about system."""
-    addresspart = urlparse(url)
-    if addresspart.scheme and addresspart.netloc and addresspart.path:
-        return True
-    elif addresspart.scheme == "about":
-        return True
-    else:
-        return False
 
 if __name__ == '__main__':
     start()
