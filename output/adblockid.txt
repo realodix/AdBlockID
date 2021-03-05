@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.064.1326
+! Version: 21.064.1333
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Mar 2021 22:06 UTC
+! Last modified: 05 Mar 2021 22:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 ! 
@@ -1235,6 +1235,7 @@ _GIF1200x120-
 ###ixlan-kecil
 ###ixlan_besar
 ###ixlan_kecil
+###jwp_gmn_adss
 ###keep-ads
 ###kode-iklan-atas
 ###kode-iklan-bawah
@@ -1794,6 +1795,9 @@ _GIF1200x120-
 ##.center-block-ads
 ##.close-keep-ads
 ##.column_classified_ads
+##.companion-ad-body
+##.companion-ad-body-container
+##.companion-ad-container
 ##.cp-advertisement
 ##.d-iklan
 ##.detads
@@ -2653,6 +2657,7 @@ _GIF1200x120-
 ##[src*="/iklan/"]
 ##banner-besar--top
 ##div[id^="dfp-gpt-ad"]
+##gmn-companion-ad-renderer
 ##img[data-permalink^="/apps/iklan-"]
 ! 
 ##[href*="//geni.us/bnrbrg"] > img
@@ -11173,6 +11178,7 @@ dutafilm.*##.swal-overlay
 dutafilm.*##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 dwa21.org###main-popup
 giladrakor.com,inidramaku.com,inidramaku.net,kingdrakor.com,layarkeren.site,youwatch.pro##.cm-popup-modal
+gomunime.online###promoContainer
 gomunime.vip###promoContainer
 gomunime.vip###promoOverlay
 jagoanime.com,meownime.my.id###hbfanback
@@ -11657,4 +11663,4 @@ semprot.com#@#.adVertical
 ! 
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: SoBRY6sPc+UEHdMWQjJ/ow
+! Checksum: JWXLMRRcBy+bQ6tsuW9nIA
