@@ -23,6 +23,7 @@ import itertools
 import logging
 import time
 import datetime
+import subprocess
 
 from .parser import parse_filterlist, Comment, Metadata
 from .sources import NotFound
@@ -120,8 +121,28 @@ def _first_and_rest(iterable):
 def _insert_version(lines):
     """Insert metadata comment with version (a.k.a. date)."""
     first_line, rest = _first_and_rest(lines)
-    v_build = (datetime.datetime.utcnow().hour*60)+datetime.datetime.utcnow().minute
-    version = Metadata('Version', time.strftime('%y.%j.{}'.format(v_build), time.gmtime()))
+
+    # year.day_of_the_year.
+    # v_build = (datetime.datetime.utcnow().hour*60)+datetime.datetime.utcnow().minute
+    # version = Metadata('Version', time.strftime('%y.%j.{}'.format(v_build), time.gmtime()))
+
+    # year.month.number_of_commits_in_month
+    numberOfCommitsInMonth = subprocess.Popen(
+        [
+            'git', 'rev-list', 'HEAD', '--count', '--after="{} days"' '"+%Y-%m-%dT23:59"'
+            .format(datetime.datetime.now().day)
+        ],
+        stdout=subprocess.PIPE,
+        universal_newlines=True
+    )
+
+    version = Metadata(
+        'Version',
+        time.strftime('%y.X%m.{}'.format(numberOfCommitsInMonth.stdout.read().strip()),
+        time.gmtime()).replace('X0','X').replace('X','')
+        # https://stackoverflow.com/a/5900593
+    )
+
     return itertools.chain([first_line, version], rest)
 
 
