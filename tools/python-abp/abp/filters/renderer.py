@@ -23,6 +23,7 @@ import itertools
 import logging
 import time
 import datetime
+import subprocess
 
 from .parser import parse_filterlist, Comment, Metadata
 from .sources import NotFound
@@ -120,8 +121,21 @@ def _first_and_rest(iterable):
 def _insert_version(lines):
     """Insert metadata comment with version (a.k.a. date)."""
     first_line, rest = _first_and_rest(lines)
-    v_build = (datetime.datetime.utcnow().hour*60)+datetime.datetime.utcnow().minute
-    version = Metadata('Version', time.strftime('%y.%j.{}'.format(v_build), time.gmtime()))
+
+    # v_build = (datetime.datetime.utcnow().hour*60)+datetime.datetime.utcnow().minute
+    # version = Metadata('Version', time.strftime('%y.%j.{}'.format(v_build), time.gmtime()))
+
+    v_build = subprocess.Popen(
+        ['git', 'rev-list', 'HEAD', '--count', '--since=Jan 1 2021'],
+        stdout=subprocess.PIPE,
+        universal_newlines=True
+    )
+    version = Metadata(
+        'Version',
+        time.strftime('%y.%j.{}'.format(v_build.stdout.read().strip()),
+        time.gmtime())
+    )
+
     return itertools.chain([first_line, version], rest)
 
 
