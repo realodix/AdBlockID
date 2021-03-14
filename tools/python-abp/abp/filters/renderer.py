@@ -138,8 +138,9 @@ def _insert_version(lines):
 
     version = Metadata(
         'Version',
-        time.strftime('%y.%m.{}'.format(numberOfCommitsInMonth.stdout.read().strip()),
-        time.gmtime())
+        time.strftime('%y.X%m.{}'.format(numberOfCommitsInMonth.stdout.read().strip()),
+        time.gmtime()).replace('X0','X').replace('X','')
+        # https://stackoverflow.com/a/5900593
     )
 
     return itertools.chain([first_line, version], rest)
