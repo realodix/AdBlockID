@@ -1,34 +1,16 @@
-# This file is part of Adblock Plus <https://adblockplus.org/>,
-# Copyright (C) 2006-present eyeo GmbH
-#
-# Adblock Plus is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License version 3 as
-# published by the Free Software Foundation.
-#
-# Adblock Plus is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with Adblock Plus.  If not, see <http://www.gnu.org/licenses/>.
-
 """Combine filter list fragments to produce filter lists."""
 
 from __future__ import unicode_literals
 
-import base64
-import hashlib
+import base64, datetime, hashlib, subprocess
 import itertools
 import logging
 import time
-import datetime
-import subprocess
 
 from .parser import parse_filterlist, Comment, Metadata
 from .sources import NotFound
 
-__all__ = ['IncludeError', 'MissingHeader', 'render_filterlist', 'render_diff']
+__all__ = ['IncludeError', 'MissingHeader', 'render_filterlist']
 
 _logger = logging.getLogger(__name__)
 
@@ -205,50 +187,3 @@ def render_filterlist(name, sources, top_source=None):
                  _insert_checksum, _validate]:
         lines = proc(lines)
     return lines
-
-
-def _split_list_for_diff(list_in):
-    """Split a filter list into metadata and rules."""
-    metadata = {}
-    rules = set()
-    for line in parse_filterlist(list_in):
-        if line.type == 'metadata':
-            metadata[line.key.lower()] = line
-        elif line.type == 'filter':
-            rules.add(line.to_string())
-    return metadata, rules
-
-
-def render_diff(base, latest):
-    """Return a diff between two filter lists.
-
-    Parameters
-    ----------
-    base : iterator of str
-        The base (old) list that we want to update to latest.
-    lastest : iterator  of str
-        The latest (most recent) list that we want to update to.
-
-    Returns
-    -------
-    iterable of str
-        A diff between two lists (https://issues.adblockplus.org/ticket/6685)
-
-    """
-    latest_metadata, latest_rules = _split_list_for_diff(latest)
-    base_metadata, base_rules = _split_list_for_diff(base)
-
-    yield '[Adblock Plus Diff]'
-    for key, latest in latest_metadata.items():
-        base = base_metadata.get(key)
-        if not base or base.value != latest.value:
-            yield latest.to_string()
-    for key in set(base_metadata) - set(latest_metadata):
-        yield '! {}:'.format(base_metadata[key].key)
-    # The removed filters are listed first because, in case a filter is both
-    # removed and added, (and the client processes the diff in order), the
-    # filter will be added.
-    for rule in base_rules - latest_rules:
-        yield '- {}'.format(rule)
-    for rule in latest_rules - base_rules:
-        yield '+ {}'.format(rule)
