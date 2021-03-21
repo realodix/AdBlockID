@@ -52,7 +52,7 @@ def main (location):
             extension = os.path.splitext(filename)[1]
 
             # Sort all text files that are not blacklisted
-            if (extension == ".{}".format(var.SECTIONS_EXT)) and filename not in var.IGNORE:
+            if (extension in var.SECTIONS_EXT) and filename not in var.IGNORE:
                 sort.fopsort(address)
 
             # Delete unnecessary backups and temporary files

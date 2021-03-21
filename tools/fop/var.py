@@ -1,7 +1,7 @@
 import collections, re
 
-VERSION = "1.1"
-SECTIONS_EXT = "adbl"
+VERSION = "1.2"
+SECTIONS_EXT = [".txt", ".adbl"]
 
 # Compile regular expressions to match important filter parts (derived from Wladimir
 # Palant's Adblock Plus source code)
