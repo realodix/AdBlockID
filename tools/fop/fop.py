@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """ FOP AdBlockID
 
+    Adjusted for AdBlockID
     Based on FOP RU AdList v3.921
 
     Copyright (C) 2011 Michael
@@ -9,7 +10,7 @@
 
 import collections, filecmp, os, re, subprocess, sys
 
-VERSION = "1.3"
+VERSION = "1.4"
 SECTIONS_EXT = [".txt", ".adbl"]
 
 # Compile regular expressions to match important filter parts (derived from Wladimir
@@ -43,8 +44,7 @@ BLANKPATTERN = re.compile(r"^\s*$")
 # system or because they are not filter files
 IGNORE = ("adblockid.txt", "docs", "tools", "template")
 
-# List all Adblock Plus options (excepting domain, which is handled separately), as of
-# version 1.3.9
+# List all options (excepting domain, which is handled separately)
 KNOWNOPTIONS = (
     # ABP
     # https://help.eyeo.com/en/adblockplus/how-to-write-filters#options
@@ -52,11 +52,7 @@ KNOWNOPTIONS = (
 
     # uBlock Origin
     # https://github.com/gorhill/uBlock/wiki/Static-filter-syntax
-    "1p", "first-party", "strict1p", "3p", "strict3p", "all", "badfilter", "cname", "csp", "css", "doc", "ehide", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr",
-
-    # AdGuard
-    # https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters
-    "content", "extension", "jsinject", "network", "stealth", "urlblock"
+    "1p", "first-party", "strict1p", "3p", "strict3p", "all", "badfilter", "cname", "csp", "css", "doc", "ehide", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr"
 )
 
 # List of known key=value parameters (domain is not included)
@@ -65,10 +61,7 @@ KNOWNPARAMETERS = (
     "rewrite",
 
     # uBO
-    "csp", "denyallow", "redirect", "redirect-rule", "removeparam",
-
-    # AdGuard
-    "app", "cookie", "replace"
+    "csp", "denyallow", "redirect", "redirect-rule", "removeparam"
 )
 
 
@@ -313,7 +306,7 @@ def filtertidy (filterin):
 
         domainlist = []
         removeentries = []
-        queryprune = ""
+        removeparam = ""
         rediwritelist = []
         keepAsterisk = False
 
@@ -322,8 +315,8 @@ def filtertidy (filterin):
             if option[0:7] == "domain=":
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
-            elif option[0:11] == "queryprune=":
-                queryprune = option[11:]
+            elif option[0:11] == "removeparam=":
+                removeparam = option[12:]
                 removeentries.append(option)
             elif re.match(REDIWRITEOPTIONPATTERN, option):
                 keepAsterisk = True
@@ -345,10 +338,10 @@ def filtertidy (filterin):
         # Replace underscore typo with hyphen-minus in options like third_party
         optionlist = list(map(lambda option: option.replace("_", "-"), optionlist))
 
-        # Append queryprune back at the end (both to keep it at the end and skip
+        # Append removeparam back at the end (both to keep it at the end and skip
         # underscore typo fix)
-        if queryprune:
-            optionlist.append("queryprune={queryprune}".format(queryprune = queryprune))
+        if removeparam:
+            optionlist.append("removeparam={removeparam}".format(removeparam = removeparam))
 
         # Append redirect rule back without underscore typo fix
         if rediwritelist:
