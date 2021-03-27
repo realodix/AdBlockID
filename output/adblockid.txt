@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.3.51
+! Version: 21.3.53
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Mar 2021 22:25 UTC
+! Last modified: 27 Mar 2021 22:33 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 !
@@ -2875,8 +2875,8 @@ _GIF1200x120-
 ||365wp.org^$third-party
 ||anon.wapsite.info^$third-party
 ||binpartner.com^$third-party
-||booking.com^$subdocument,domain=venuemagz.com
-||cryptobrowser.site/promo/ad/$third-party,subdocument
+||booking.com^$frame,domain=venuemagz.com
+||cryptobrowser.site/promo/ad/$third-party,frame
 ||d138am4hd4ke4y.cloudfront.net^
 ||d24afgsm39csxt.cloudfront.net^
 ||d27x580xb9ao1l.cloudfront.net^
@@ -2898,7 +2898,7 @@ _GIF1200x120-
 ||kagetweb.com^*/banner250_$third-party,image
 ||kagetweb.com^*/banner300_$third-party,image
 ||khasiat.id^$third-party
-||klikmbc.co.id/promo/promo-agen.php?$third-party,subdocument
+||klikmbc.co.id/promo/promo-agen.php?$third-party,frame
 ||kotakbiru.casa/images/*.gif|$third-party,image
 ||kotakputih.casa/images/*.gif|$third-party,image
 ||kumpulblogger.com^$third-party
@@ -3169,7 +3169,7 @@ _iklan$image,domain=sorotmakassar.com
 ||jogjastreamers.com^*/banner/$image
 ||juragancipir.com/wp-content/uploads/*.gif$image
 ||jurnalborneo.co.id^*/iklan-$image
-||justika.com/?location=$third-party,subdocument
+||justika.com/?location=$third-party,frame
 ||kabargames.id/banner/$image
 ||kabarpokja.com^*/iklan-$image
 ||kabarterkini.co.id^*/banner-$image
@@ -3198,7 +3198,7 @@ _iklan$image,domain=sorotmakassar.com
 ||koreri.com^*/iklan-$image
 ||koropak.co.id^*/koropak_co_id_$image
 ||kotakgame.com/images/bnr/$image
-||kotakgame.com/includea/bannermidloadmore.php$subdocument
+||kotakgame.com/includea/bannermidloadmore.php$frame
 ||kroniktotabuan.com^*/banner-$image
 ||kumpulblogger.com/tl_*.php?uid=
 ||kupastuntas.co/uploads/banner/$image
@@ -10907,7 +10907,7 @@ _sbobet.$image
 ! *** abid:src/packages/annoyances.adbl ***
 ##amp-iframe[src^="https://www.vidio.com/embed/"]
 ||api.cnnindonesia.com/gambas/oembed^$script
-||vidio.com/embed/*autoplay=true&player_only=true&live_chat=false&mute=true$third-party,subdocument
+||vidio.com/embed/*autoplay=true&player_only=true&live_chat=false&mute=true$third-party,frame
 !
 download.id##.entry div[style="clear:both; margin-top:0em; margin-bottom:1em;"] > a[rel="nofollow"][target="_self"]
 !
@@ -11056,12 +11056,12 @@ komiku.co.id#@##banner_ad
 ||jwplayer21.com/images/*.gif$image
 ||sharemydrive.xyz/*.gif$domain=149.56.24.226
 !
-||nontoncinema.org^*/daftar.html$subdocument
+||nontoncinema.org^*/daftar.html$frame
 !
 ||api.nontongo.win/promomenubola.xml$xmlhttprequest
-||bebasdownloadfilm.com/iframe/content.php$subdocument
+||bebasdownloadfilm.com/iframe/content.php$frame
 ||bestvideo2019.xyz/script$third-party,script
-||sharemydrive.xyz/iframe/content.php$subdocument
+||sharemydrive.xyz/iframe/content.php$frame
 !
 ! SPECIFIC HIDE
 ! ----------------------------------------------------------------------------------------
@@ -11464,7 +11464,7 @@ petsched.website##button[onclick="myfunction();"]
 droidtamvan.me,movienear.me,onlinecorp.me,sekilastekno.com##img[width="200"][height="60"]
 !
 $popup,domain=icutlink.com|lewat.club|movienear.me
-$third-party,subdocument,domain=glory-link.com
+$third-party,frame,domain=glory-link.com
 /down.png$image,domain=movienear.me
 /download%$image,domain=movienear.me
 /download-now-$image,domain=cararoot.id|droidtamvan.me|lewat.club|sekilastekno.com
@@ -11687,4 +11687,4 @@ semprot.com#@#.adVertical
 !
 ! https://github.com/realodix/AdBlockID/issues/467
 @@/social-sharing-$script,domain=axe.com
-! Checksum: ahzkqolqvW+Abjwn9Qz9NQ
+! Checksum: WOPVqgKmLAYPrqmTPips1g
