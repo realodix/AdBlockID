@@ -10,7 +10,7 @@
 
 import collections, filecmp, os, re, subprocess, sys
 
-VERSION = "1.4"
+VERSION = "1.5"
 SECTIONS_EXT = [".txt", ".adbl"]
 
 # Compile regular expressions to match important filter parts (derived from Wladimir
@@ -25,8 +25,8 @@ REDIWRITEOPTIONPATTERN = re.compile(r"^(redirect(-rule)?|rewrite)=")
 # tree selectors; "@" indicates either the beginning or the end of a selector
 SELECTORPATTERN = re.compile(r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
 PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
-# (?!:-) - skip Adblock Plus' :-abp-... pseudoclasses, (?!:style\() - skip uBlock Origin's
-# :style() pseudoclass
+# (?!:-) - skip Adblock Plus' :-abp-... pseudoclasses
+# (?!:style\() - skip uBo's :style() pseudoclass
 REMOVE_AST_PATTERN = re.compile(r"((?<=([>+~,]\s))|(?<=(@|\s|,)))(\*)(?=([#\.\[\:]))(?!:-)(?!:style\()")
 SELECTORSTYLEPART = re.compile(r":style\(.+\)$")
 REMOVE_0PX_PATTERN = re.compile(r"((?<=([\:\s]0))(px)(?=([\s\!])))")
@@ -106,7 +106,7 @@ def main (location):
             if direct.startswith(".") or direct in IGNORE:
                 directories.remove(direct)
 
-        print("Current directory: {folder}".format(folder = os.path.join(os.path.abspath(path), "")))
+        print("{folder}".format(folder = os.path.join(os.path.abspath(path), "")))
         directories.sort()
         for filename in sorted(files):
             address = os.path.join(path, filename)
@@ -264,7 +264,7 @@ def fopsort (filename):
             os.remove(filename)
 
         os.rename(temporaryfile, filename)
-        print("Sorted: {filename}".format(filename = os.path.abspath(filename)))
+        print("Sorted: {filename}".format(filename = os.path.basename(filename)))
     else:
         os.remove(temporaryfile)
 
@@ -305,8 +305,9 @@ def filtertidy (filterin):
         optionlist = optionsplit.group(2).lower().split(",")
 
         domainlist = []
+        denyallow = []
         removeentries = []
-        removeparam = ""
+        queryprune = ""
         rediwritelist = []
         keepAsterisk = False
 
@@ -315,8 +316,11 @@ def filtertidy (filterin):
             if option[0:7] == "domain=":
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
-            elif option[0:11] == "removeparam=":
-                removeparam = option[12:]
+            elif option[0:10] == "denyallow=":
+                denyallow.extend(option[10:].split("|"))
+                removeentries.append(option)
+            elif option[0:12] == "removeparam=":
+                queryprune = option[12:]
                 removeentries.append(option)
             elif re.match(REDIWRITEOPTIONPATTERN, option):
                 keepAsterisk = True
@@ -338,16 +342,20 @@ def filtertidy (filterin):
         # Replace underscore typo with hyphen-minus in options like third_party
         optionlist = list(map(lambda option: option.replace("_", "-"), optionlist))
 
-        # Append removeparam back at the end (both to keep it at the end and skip
+        # Append queryprune back at the end (both to keep it at the end and skip
         # underscore typo fix)
-        if removeparam:
-            optionlist.append("removeparam={removeparam}".format(removeparam = removeparam))
+        if queryprune:
+            optionlist.append("removeparam={queryprune}".format(queryprune = queryprune))
 
         # Append redirect rule back without underscore typo fix
         if rediwritelist:
             optionlist.extend(rediwritelist)
 
         # If applicable, sort domain restrictions and append them to the list of options
+        if denyallow:
+            optionlist.append(
+                "denyallow={denyallow}".format(denyallow = "|".join(sorted(set(denyallow))))
+            )
         if domainlist:
             optionlist.append(
                 "domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist),
