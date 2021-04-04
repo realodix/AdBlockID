@@ -1,0 +1,26 @@
+! Comment with space
+!Comment without space
+
+!#include ublock-filters.txt
+!#include ublock/filters.txt
+
+*$script,domain=example.com
+||example.com^$third-party
+
+##.ad-class
+###ad-id
+example.com##.ad-class
+example.com#@#.ad-class
+example.com###ad-id
+example.com#@##ad-class
+
+/fuckadblock.$script,redirect-rule=noop.js,domain=example.com
+@@/adsbygoogle.$script,domain=example.com
+||example.com/api/$script,redirect=noop.js
+@@.gif#*/ad/
+@@.jpg#*/ad/
+@@.png#*/ad/
+
+example.com##.entry div[style="clear:both; margin-top:0em; margin-bottom:1em;"] > a[rel="nofollow"][target="_self"]
+example.com###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
+example.com##html:style(user-select: text !important; -webkit-touch-callout: default !important;)
