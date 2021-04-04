@@ -168,6 +168,7 @@ def _line_type(name, field_names, format_string):
 
 Header = _line_type('Header', 'version', '[{.version}]')
 EmptyLine = _line_type('EmptyLine', '', '')
+Comment = _line_type('Comment', 'text', '! {.text}')
 Metadata = _line_type('Metadata', 'key value', '! {0.key}: {0.value}')
 Filter = _line_type('Filter', 'text selector action options', '{.text}')
 Include = _line_type('Include', 'target', '%include {0.target}%')

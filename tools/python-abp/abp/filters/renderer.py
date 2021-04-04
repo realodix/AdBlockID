@@ -2,11 +2,12 @@
 
 from __future__ import unicode_literals
 
+import base64, datetime, hashlib, subprocess
 import itertools
 import logging
 import time
 
-from .parser import parse_filterlist, Metadata
+from .parser import parse_filterlist, Comment, Metadata
 from .sources import NotFound
 
 __all__ = ['IncludeError', 'MissingHeader', 'render_filterlist']
@@ -72,7 +73,7 @@ def _process_includes(sources, default_source, parent_include_stack, lines):
                     sources, inherited_source, include_stack, included)
 
                 _logger.info('- including: %s', name)
-
+                yield Comment('*** {} ***'.format(name))
                 for line in all_included:
                     if line.type not in {'header', 'metadata'}:
                         yield line
@@ -127,17 +128,20 @@ def _insert_version(lines):
     return itertools.chain([first_line, version], rest)
 
 
-def _remove_checksum(lines):
-    """Remove metadata comments giving a checksum.
-
-    Adblock Plus is no longer verifying checksums, so we don't have to
-    calculate the checksum for the resulting filter list. But we have
-    to strip them for compatibility with older versions of Adblock Plus
-    and other ad blockers which might still verify a checksum if given.
+def _insert_checksum(lines):
+    """Add checksum to the filter list.
+    See https://adblockplus.org/filters#special-comments for description
+    of the checksum algorithm.
     """
+    md5sum = hashlib.md5()
+
     for line in lines:
-        if line.type != 'metadata' or line.key.lower() != 'checksum':
-            yield line
+        if line.type != 'emptyline':
+            md5sum.update(line.to_string().encode('utf-8') + b'\n')
+        yield line
+
+    checksum = base64.b64encode(md5sum.digest()).rstrip(b'=')
+    yield Metadata('Checksum', checksum.decode('utf-8'))
 
 
 def _validate(lines):
@@ -183,50 +187,3 @@ def render_filterlist(name, sources, top_source=None):
                  _insert_checksum, _validate]:
         lines = proc(lines)
     return lines
-
-
-def _split_list_for_diff(list_in):
-    """Split a filter list into metadata and rules."""
-    metadata = {}
-    rules = set()
-    for line in parse_filterlist(list_in):
-        if line.type == 'metadata':
-            metadata[line.key.lower()] = line
-        elif line.type == 'filter':
-            rules.add(line.to_string())
-    return metadata, rules
-
-
-def render_diff(base, latest):
-    """Return a diff between two filter lists.
-
-    Parameters
-    ----------
-    base : iterator of str
-        The base (old) list that we want to update to latest.
-    lastest : iterator  of str
-        The latest (most recent) list that we want to update to.
-
-    Returns
-    -------
-    iterable of str
-        A diff between two lists (https://issues.adblockplus.org/ticket/6685)
-
-    """
-    latest_metadata, latest_rules = _split_list_for_diff(latest)
-    base_metadata, base_rules = _split_list_for_diff(base)
-
-    yield '[Adblock Plus Diff]'
-    for key, latest in latest_metadata.items():
-        base = base_metadata.get(key)
-        if not base or base.value != latest.value:
-            yield latest.to_string()
-    for key in set(base_metadata) - set(latest_metadata):
-        yield '! {}:'.format(base_metadata[key].key)
-    # The removed filters are listed first because, in case a filter is both
-    # removed and added, (and the client processes the diff in order), the
-    # filter will be added.
-    for rule in base_rules - latest_rules:
-        yield '- {}'.format(rule)
-    for rule in latest_rules - base_rules:
-        yield '+ {}'.format(rule)
