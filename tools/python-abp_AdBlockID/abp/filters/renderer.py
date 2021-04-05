@@ -10,7 +10,7 @@ import time
 from .parser import parse_filterlist, Metadata
 from .sources import NotFound
 
-__all__ = ['IncludeError', 'MissingHeader', 'render_filterlist']
+__all__ = ['IncludeError', 'MissingHeader', 'render_filterlist', 'render_diff']
 
 _logger = logging.getLogger(__name__)
 
