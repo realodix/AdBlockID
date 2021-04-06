@@ -6,7 +6,7 @@ Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblock
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
-`$ pip install -e tools/python-abp_AdBlockID`
+`$ pip install -e tools/filters-compiler`
 
 ### Panduan untuk menulis filter
 
