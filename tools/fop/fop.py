@@ -10,7 +10,7 @@
 
 import collections, filecmp, os, re, subprocess, sys
 
-VERSION = "1.5"
+VERSION = "1.6"
 SECTIONS_EXT = [".txt", ".adbl"]
 
 # Compile regular expressions to match important filter parts (derived from Wladimir
@@ -42,7 +42,8 @@ BLANKPATTERN = re.compile(r"^\s*$")
 
 # List the files that should not be sorted, either because they have a special sorting
 # system or because they are not filter files
-IGNORE = ("adblockid.txt", "docs", "tools", "template")
+IGNORE = ("adblockid.txt", "docs", "tools", "template",
+          "python-abp", "python-abp_AdBlockID", "VICHS_AdBlockID")
 
 # List all options (excepting domain, which is handled separately)
 KNOWNOPTIONS = (
@@ -354,12 +355,12 @@ def filtertidy (filterin):
         # If applicable, sort domain restrictions and append them to the list of options
         if denyallow:
             optionlist.append(
-                "denyallow={denyallow}".format(denyallow = "|".join(sorted(set(denyallow))))
+                "denyallow={denyallow}".format(denyallow = "|".join(sorted(set(denyallow))).lstrip('|'))
             )
         if domainlist:
             optionlist.append(
                 "domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist),
-                key = lambda domain: domain.strip("~"))))
+                key = lambda domain: domain.strip("~"))).lstrip('|'))
             )
 
         # according to uBO documentation redirect options must start either with * or ||
@@ -380,7 +381,7 @@ def filtertidy (filterin):
 def elementtidy (domains, separator, selector):
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
+        domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~"))).lstrip(',')
 
     # Skip non-selectors (uBO's JS injections and other)
     if re.match(NONSELECTOR, selector) != None:
