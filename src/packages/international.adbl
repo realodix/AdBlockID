@@ -11,14 +11,20 @@ apkmodif.com##amp-ad
 ! Mobile
 apk-support.cdn.ampproject.org##.advertisement
 !
-! INCORRECT BLOCKING (INTERNATIONAL)
-! https://github.com/AdguardTeam/AdguardFilters/issues/70089
-memepedia.ru#@#.banner-top
-! https://github.com/AdguardTeam/AdguardFilters/issues/69599
-banki24.by#@#.banner1
-!
 ! ANTI-ADBLOCK
+! -----------------------------------------------------------------------------
 @@/adsbygoogle.$script,domain=erinsakura.com|pnews.space
 @@||accuweather.com^$ghide,badfilter
 apkgezegeni.com##+js(nofab)
 famfonts.com##+js(nobab)
+!
+! INCORRECT BLOCKING (INTERNATIONAL)
+! -----------------------------------------------------------------------------
+! https://github.com/AdguardTeam/AdguardFilters/issues/69599
+banki24.by#@#.banner1
+! https://github.com/AdguardTeam/AdguardFilters/issues/70089
+memepedia.ru#@#.banner-top
+!
+! Adult Filter
+! https://github.com/AdguardTeam/AdguardFilters/issues/79752
+androidspin.com#@#[href*="idspin."]
