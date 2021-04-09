@@ -6,7 +6,7 @@ with open(path.join(path.dirname(__file__), 'README.rst')) as fh:
 
 setup(
     name='PA-AdBlockID',
-    version='1.0.0',
+    version='1.1.0',
     description='A library for working with Adblock Plus filter lists.',
     long_description=long_description,
     long_description_content_type='text/x-rst',

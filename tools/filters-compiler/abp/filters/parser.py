@@ -322,20 +322,26 @@ def parse_line(line, position='body'):
 
     stripped = line.strip()
 
-    if stripped == '':
-        return EmptyLine()
-
     if position == 'start':
         match = HEADER_REGEXP.search(line)
         if match:
             return Header(match.group(1))
 
-    if stripped.startswith('!'):
+    # if re.search('^\s*$'       # blank line
+    #              '|^!(\s?)\w'  # comment
+    #              '|^#(\s?)\w', # uBo comment
+    #              stripped):
+    if (stripped == ''                      # blank line
+       or stripped.startswith('!')          # comment
+       and not stripped.startswith('!#')
+       or stripped.startswith('#')          # uBo comment
+       and not stripped.startswith('##')):
         match = METADATA_REGEXP.match(line)
         if match:
             key, value = match.groups()
             if position != 'body' or key.lower() == 'checksum':
                 return Metadata(key, value)
+        return EmptyLine()
 
     if stripped.startswith('%include') and stripped.endswith('%'):
         return _parse_instruction(stripped)
