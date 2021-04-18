@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.4.74
+! Version: 21.4.75
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Apr 2021 13:14 UTC
+! Last modified: 18 Apr 2021 13:16 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -1495,6 +1495,7 @@ _GIF1200x120-
 ##.adstengah_kiri
 ##.adtext01
 ##.adunits
+##.adv-link
 ##.adv-sticky-atas
 ##.adv-sticky-bawah
 ##.adv-sticky-kanan
@@ -3103,6 +3104,7 @@ _iklan$image,domain=sorotmakassar.com
 ||franchiseglobal.com/images/banners/$image
 ||gagasanriau.com^*/banner/$image
 ||gamebrott.com/*-Localbanner_$image
+||gamebrott.com^*-ads-$image
 ||garudapos.com^*/iklan-$image
 ||gatra.com/foldershared/images/banners-$image
 ||gatra.com/images/*/banner/$image
@@ -10941,6 +10943,7 @@ seputarforex.com##.show.modal-backdrop
 /wp-content/plugins/cm-pop-up-banners/*$domain=suaramandiri.co
 /wp-content/plugins/popup-builder/*$script,domain=bacaan.id|papuatoday.com|sindomanado.com|suluttimes.com
 bacaan.id,papuatoday.com,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
+gamebrott.com##+js(aopr, advads_options)
 ainamulyana.blogspot.com,banjirembun.com,cumirproduction.blogspot.com,kucingmania.net,njongeblog.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 1001tutorial.com,banjirembun.com,beritasampit.co.id,blogsecond.com,ciriseo.net,ilmumemikatwanita.com,iqrosoft.co.id,isrul.com,kabarrakyat.id,kherysuryawan.id,murianews.com,psikologicinta.com,radiokucing.com,teraa.net,tipspetani.com##+js(acis, document.oncontextmenu)
 mahirngoding.blogspot.com,nomis.id,radarbengkuluonline.com,websiteedukasi.com##+js(aeld, contextmenu)
