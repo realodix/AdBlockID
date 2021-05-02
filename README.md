@@ -59,5 +59,5 @@ Thanks goes to these wonderful people.
 
 | # | User | Contribs | Picture |
 | - | ---- | -------- | ------- |
-| 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [500+ issues](https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer) | <img width="30" height="30" src="https://avatars0.githubusercontent.com/u/9379770?s=30&v=4"> |
+| 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [600+ issues](https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer) | <img width="30" height="30" src="https://avatars0.githubusercontent.com/u/9379770?s=30&v=4"> |
 | 2 | [3xploiton3](https://github.com/3xploiton3) | [40+ issues](https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3) | <img width="30" height="30" src="https://avatars3.githubusercontent.com/u/19517680?s=30&v=4"> |
