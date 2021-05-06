@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.5.46
+! Version: 21.5.47
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 May 2021 10:43 UTC
+! Last modified: 06 May 2021 10:48 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -11186,16 +11186,14 @@ grid.id##.videoPlaylistPlugClass-carousel
 .gif$image,domain=kombatch.com
 /iklan.$script,domain=komiku.co.id
 ||mangaku.link/*.gif$image
-mangacanblog.com,mangakita.net###btm_banner
+mangakita.net###btm_banner
 mangaid.click###catfish
 sektekomik.com###close-teaser
 mangashiro.co###teaser1
 mangashiro.co###teaser2
 bacakomik.co,komikstation.com###teaser3
-mangacanblog.com##.ad
 kiryuu.co##.kln
 kumpulmanga.org##.kzl
-mangacanblog.com##.mas_tamvan
 komiku.co.id###Notifikasi
 klikmanga.com##body > .mtsnb-shown
 mangaindo.web.id##+js(acis, Math, zfgloaded)
@@ -11204,11 +11202,11 @@ klikmanga.com,komikstation.com,manhwaid.co,manhwaindo.com,manhwaland.xyz,westman
 otakudere.net##+js(aopr, Light.Popup)
 mangakita.net,westmanga.info##+js(window.open-defuser)
 mangaku.pro##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
+mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 otakudesu.moe##+js(aopr, document.oncontextmenu)
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
 bacamanhwa.net,kittydesu.com,kombatch.com,komikcast.com,komikindo.web.id,komikmoe.my.id,mangadisk.web.id,mangasusu.world,manhwaid.co,manhwaid.com,manhwaid.me,sektedoujin.xyz##+js(nobab)
 komiku.co.id#@##banner_ad
-@@||mangacanblog.com^$ghide
 .gif$image,domain=animebatchs.net|conan.id|layarfilm21.live|neumanga.tv|nontondrama.me|tancap88.me
 /banner-$image,domain=maxnime.com|neonime.moe|neonime.vip
 ||jwplayer21.com/images/*.gif$image

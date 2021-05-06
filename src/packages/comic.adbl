@@ -5,16 +5,14 @@
 ||mangaku.link/*.gif$image
 ! SPECIFIC HIDE
 ! ----------------------------------------------------------------------------------------
-mangacanblog.com,mangakita.net###btm_banner
+mangakita.net###btm_banner
 mangaid.click###catfish
 sektekomik.com###close-teaser
 mangashiro.co###teaser1
 mangashiro.co###teaser2
 bacakomik.co,komikstation.com###teaser3
-mangacanblog.com##.ad
 kiryuu.co##.kln
 kumpulmanga.org##.kzl
-mangacanblog.com##.mas_tamvan
 !
 ! ANNOYANCE
 ! ----------------------------------------------------------------------------------------
@@ -30,6 +28,7 @@ mangakita.net,westmanga.info##+js(window.open-defuser)
 ! Anti Select
 mangaku.pro##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
 ! Anti Right Click
+mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 otakudesu.moe##+js(aopr, document.oncontextmenu)
 !
 ! ANTI-ADBLOCK
@@ -38,5 +37,4 @@ bacamanhwa.net,kittydesu.com,kombatch.com,komikcast.com,komikindo.web.id,komikmo
 !
 komiku.co.id#@##banner_ad
 !
-@@||mangacanblog.com^$ghide
 ! Empty Ads Placeholders
