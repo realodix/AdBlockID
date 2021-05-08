@@ -130,7 +130,6 @@ animeindo.fun##+js(aopr, Popper)
 oploverz.bz,youwatch.website##+js(aopr, SGPB_POPUP_PARAMS)
 nontonulang.com##+js(aopr, SmartPopunder)
 movie-xx1.com,rumahfilm.live##+js(aopr, document.querySelectorAll, popMagic)
-drakorcute.com,drakorindo.bid,ganool21.co,giladrakor.com,inidramaku.com,inidramaku.net,kingdrakor.com,layarkeren.site,youwatch.pro##+js(aopr, popup_custom_data)
 otakudesu.moe##+js(json-prune, *, pop_type)
 otakudesu.moe##+js(json-prune, *, rot_url)
 oploverz.in##+js(nostif, popup)
@@ -139,7 +138,6 @@ oploverz.in##+js(nostif, popup)
 $popup,domain=awnime.net
 /js/swal.$script,domain=hakamovie.cc|hakamovie.xyz
 /wp-content/plugins/angwp/*$script,domain=dramabarat.com|indoxximovie.org
-/wp-content/plugins/cm-pop-up-banners/*$domain=boomxx1.online|drakorindo.bid|drakorindo.live|giladrakor.tv|nontondrama.site
 /wp-content/plugins/modal-window/*$script,domain=boomxxi.us
 /wp-content/plugins/uji-popup/*$domain=bioskopkere.com|bos21.bar|didrakorindo.com|kordramass.com|kshowsubindo.org
 /wp-content/plugins/wp-popup-banners/*$script,domain=185.63.253.247|213.166.69.166|movieindoxxi.co|movieindoxxi.site|rumahdrama.com
@@ -154,7 +152,6 @@ $popup,domain=awnime.net
 awsubs.co###overplay
 bioskop212.com###fanback
 bos21.bar##.jquery-modal
-drakorcute.com,giladrakor.com,inidramaku.com,inidramaku.net,kingdrakor.com,layarkeren.site,youwatch.pro##.cm-popup-modal
 dutafilm.*##.swal-overlay
 dutafilm.*##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 dwa21.org###main-popup
@@ -168,9 +165,15 @@ lk21.london##.ml-announce
 minioppai.org###overplay
 narashika.cc##.popbox
 oploverz.bz###overplay
+! CM Pop-Up banners
+drakorcute.com,drakorindo.bid,ganool21.co,giladrakor.com,inidramaku.com,inidramaku.net,kingdrakor.com,layarkeren.site,youwatch.pro##+js(aopr, popup_custom_data)
+drakorcute.com,giladrakor.com,inidramaku.com,inidramaku.net,kingdrakor.com,layarkeren.site,youwatch.pro##.cm-popup-modal
+/wp-content/plugins/cm-pop-up-banners/*$domain=boomxx1.online|drakorindo.bid|drakorindo.live|giladrakor.tv|nontondrama.site
+!
 ! Fake Button
 91.230.121.24,91.230.121.37##.idmuvi-social-share
 ||nekonime.com^*/download-sekarang-$image
+!
 ! Anti Safelink
 animebatch.web.id,anitoki.web.id,daizurin.com,drakorku.my.id,hakanime.com,soranime.top##+js(acis, auto_safelink)
 maxnime.com,nimegami.com,yukinime.com##+js(aopr, go_url)
