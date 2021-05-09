@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.5.85
+! Version: 21.5.86
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 May 2021 14:04 UTC
+! Last modified: 09 May 2021 20:24 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -11130,13 +11130,8 @@ _topbandar_$image
 ##[href*="zipansion.com/37Abw"]
 ##[href*="zipansion.com/3uY19"]
 ##[onclick*="rebrand.ly/LUXURY111"]
-##amp-iframe[src^="https://www.vidio.com/embed/"]
-||api.cnnindonesia.com/gambas/oembed^$script
-||vidio.com/embed/*autoplay=true&player_only=true&live_chat=false&mute=true$third-party,frame
 download.id##.entry div[style="clear:both; margin-top:0em; margin-bottom:1em;"] > a[rel="nofollow"][target="_self"]
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
-cnnindonesia.com###idautovideocnn
-liputan6.com##.article-content-body .vidio-embed
 kapanlagi.com##.kl-content .nativevideosiframe-loader
 kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
 m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
@@ -11183,13 +11178,12 @@ wartaterkini.news##+js(aopr, disable_copy)
 kuyhaa-me.com##+js(aopr, protected_links)
 ||gigapurbalingga.net/wpsafelink.$script
 ||kuyhaa-me.com/jamu.$script
-gigapurbalingga.net##.entry-content center button.user
-kuyhaa-me.com##[type="image"][src*="/sd.png"]
-mazterize.co,mazterize.com##center:nth-of-type(1)
-mazterize.co,mazterize.com##center:nth-of-type(2)
-kuyhaa.net##iframe[width="420"][height="100"]
+##amp-iframe[src^="https://www.vidio.com/embed/"]
+cnnindonesia.com###idautovideocnn
 grid.id##.videoPlaylistPlugClass-carousel
+liputan6.com##.article-content-body .vidio-embed
 ||20.detik.com/embed/$frame,redirect=click2load.html,domain=~20.detik.com|~adsmart.detik.com
+||api.cnnindonesia.com/gambas/oembed^$script
 ||cnbcindonesia.com/embed/video/$frame,redirect=click2load.html
 ||dailymotion.com/embed/$important,frame,redirect=click2load.html,domain=viva.co.id
 ||haibunda.com/embed/video/$frame,redirect=click2load.html
@@ -11199,7 +11193,13 @@ grid.id##.videoPlaylistPlugClass-carousel
 ||sindonews.com/frame/$frame,redirect=click2load.html
 ||soundcloud.com/player/$important,frame,redirect=click2load.html,domain=cumirproduction.blogspot.com
 ||video.sindonews.com/embedjw/$frame,redirect=click2load.html
+||vidio.com/embed/*autoplay=true&player_only=true&live_chat=false&mute=true$third-party,frame
 ||youtube.com/embed/$frame,redirect=click2load.html,domain=grid.id|~video.grid.id
+gigapurbalingga.net##.entry-content center button.user
+kuyhaa-me.com##[type="image"][src*="/sd.png"]
+mazterize.co,mazterize.com##center:nth-of-type(1)
+mazterize.co,mazterize.com##center:nth-of-type(2)
+kuyhaa.net##iframe[width="420"][height="100"]
 ||analytics.s.id^$third-party
 ||c.lazada.co.id/t/v.gif?__t=
 ||ivstracker.net^$third-party
