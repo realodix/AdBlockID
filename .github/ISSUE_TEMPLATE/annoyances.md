@@ -1,6 +1,6 @@
 ---
 name: Annoyance
-about: Anti copy-paste, Anti right-click atau lainnya.
+about: Copy-paste, right-click atau lainnya.
 title: 'example.com'
 labels: 'C: Annoyance'
 assignees: ''
@@ -9,6 +9,13 @@ assignees: ''
 
 **Sample URL**
 https://example.com/
+
+**Jenis Gangguan**
+<!--
+- Tidak bisa copy-paste
+- Tidak bisa klik-kanan
+- Lainnya
+-->
 
 **Penjelasan Lebih Lanjut**
 <!-- Jika diperlukan, Anda dapat menjelaskannya secara rinci atau memberikan gambar screenshot.
