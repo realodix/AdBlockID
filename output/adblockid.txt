@@ -1,10 +1,12 @@
 [Adblock Plus 2.0]
-! Version: 21.5.112
+! Version: 21.5.113
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 May 2021 13:16 UTC
+! Last modified: 17 May 2021 20:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
+.id^*/ads_$domain=~cartalog.id
+/ngiklan/*$image,domain=~ngiklan.gratis
 /smartfren/ads.
 /wp-content/plugins/floating-ads-bottom/*$image
 -ad123-
@@ -8331,6 +8333,7 @@ _topbandar_$image
 ##[href*="doyan-99."]
 ##[href*="doyan99."]
 ##[href*="doyanbandar"]
+##[href*="doyanjudi"]
 ##[href*="doyankiu."]
 ##[href*="doyanqq" i]
 ##[href*="doyansakong."]
@@ -8918,7 +8921,7 @@ _topbandar_$image
 ##[href*="judiinternet."]
 ##[href*="judimantapjiwa."]
 ##[href*="judionline"]
-##[href*="judipokerking."]
+##[href*="judipoker"]
 ##[href*="judipro"]
 ##[href*="judiroulette."]
 ##[href*="judiroullete."]
@@ -10817,6 +10820,7 @@ _topbandar_$image
 ##img[alt*="bandarQ" i]
 ##img[alt*="bet388" i]
 ##img[alt*="biangQQ" i]
+##img[alt*="bijiQQ" i]
 ##img[alt*="bola tangkas online" i]
 ##img[alt*="bolavegas8" i]
 ##img[alt*="bonusQQ" i]
@@ -11906,8 +11910,6 @@ _adblock_killer.
 /Indzign/*/levelmaxblock.$third-party,script
 /kurazoneAdblock.$script
 /Script-Anti-AdBlock.$third-party,script
-.id^*/ads_$domain=~cartalog.id
-/ngiklan/*$image,domain=~ngiklan.gratis
 @@-jasa-google-$image
 @@/ayopasangiklan.$image
 @@/belanja_iklan-$image
