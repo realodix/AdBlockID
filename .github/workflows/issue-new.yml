@@ -11,11 +11,12 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           labels-synonyms: '{
               "C: Annoyance":["embed","copy paste","copy-paste","klik kanan","klik-kanan","overlay","right click","right-click"],
-              "C: NSFW":["bercinta","binor","bokep","bugil","colmek","dewasa","hentai","kontol","memek","mesum","ngewe","perawan","sange","sex","threesome"],
+              "C: NSFW":["bercinta","binor","bokep","bugil","colmek","dewasa","hentai","kontol","memek","mesum","ngewe","perawan","sange","sex","threesome","vulgar"],
               "C: Pop-up ads":["Popup","pop-up"],
               "C: safelink":["safelink"],
               "R: Invalid":["ivalid"],"R: Duplicate":["duplicate"],
-              "C: International":["international"],"C: Anti-Adblock":["anti adblock","anti-adblock"],
+              "C: International":["international"],
+              "C: Anti-Adblock":["anti adblock","anti-adblock"],
               "C: Tracker":["privacy","tracker"]
             }'
           labels-not-allowed: '["potential-duplicate"]'
