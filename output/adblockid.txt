@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.5.164
+! Version: 21.5.165
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 May 2021 21:27 UTC
+! Last modified: 23 May 2021 12:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -11444,7 +11444,7 @@ kuyhaa.net##iframe[width="420"][height="100"]
 /iklan.$script,domain=komiku.co.id
 mangakita.net###btm_banner
 mangaid.click###catfish
-sektekomik.com###close-teaser
+sektekomik.com,sheamanga.my.id###close-teaser
 bacakomik.co,komikstation.com###teaser3
 mangaku.pro##.adv
 kiryuu.co,sektekomik.com##.kln
@@ -11453,6 +11453,7 @@ mangaku.pro##.section_ad
 komiku.co.id###Notifikasi
 klikmanga.com##body > .mtsnb-shown
 mangaindo.web.id##+js(acis, Math, zfgloaded)
+sheamanga.my.id##+js(acis, document.querySelectorAll, adConfig)
 klikmanga.com,komikstation.com,manhwaid.co,manhwaindo.com,manhwaland.cc,westmanga.info##+js(acis, document.querySelectorAll, popMagic)
 otakudere.net##+js(aopr, Light.Popup)
 mangakita.net,westmanga.info##+js(window.open-defuser)
