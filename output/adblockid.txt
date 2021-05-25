@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.5.176
+! Version: 21.5.177
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 May 2021 00:39 UTC
+! Last modified: 25 May 2021 17:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -25,11 +25,9 @@
 .id^*/ad-
 .id^*/ad.$~script
 .id^*/ad/
-.id^*/ad/$1p,~image,~xhr
 .id^*/ad/*?
 .id^*/ad1/
 .id^*/ad2/
-.id^*/ad2/$~xhr
 .id^*/ad6/
 .id^*/ad?
 .id^*/ad_
@@ -111,7 +109,10 @@
 /banner-sedang-
 /banner/ads-
 /banner/affiliate-$image
+/banner_iklan.
 /banner_iklan/*
+/banner_iklan1.
+/banner_iklan2.
 /banner_iklan_
 /banneriklan/*
 /bannerkep-$image
@@ -213,10 +214,6 @@
 /iklan-openx.
 /iklan-overlay-
 /iklan-overlay.
-/iklan-page/*
-/iklan-plate/*
-/iklan-plugin/*
-/iklan-point/*
 /iklan-position-
 /iklan-pub.
 /iklan-pulse.
@@ -237,9 +234,6 @@
 /iklan-sovrn.
 /iklan-specs.
 /iklan-sprite.
-/iklan-srv.
-/iklan-strip.
-/iklan-stroeer.min.js$script
 /iklan-stub-
 /iklan-studio/*
 /iklan-styles.
@@ -285,7 +279,6 @@
 /iklan.popup?
 /iklan.premium-
 /iklan.redirect.
-/iklan.sense/*
 /iklan.serve.
 /iklan.skin.
 /iklan.slot.
@@ -315,13 +308,6 @@
 /iklan_article_
 /iklan_Arub_
 /iklan_axt_
-/iklan_banner.
-/iklan_banner/*
-/iklan_banner1.
-/iklan_banner2.
-/iklan_banner_
-/iklan_bannerPool-
-/iklan_banners/*
 /iklan_bar_
 /iklan_base.
 /iklan_big_
@@ -585,10 +571,7 @@
 /iklan_width/*
 /iklan_wrapper.
 /iklan_www_
-/iklanjpecmotor.
 /iklanmpdigital.
-/iklansb.png
-/iklantvg.
 /ikldesktop.
 /images/affiliasi/*$third-party,image
 /img-iklan/*
