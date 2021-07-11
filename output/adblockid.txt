@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.7.24
+! Version: 21.7.25
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jul 2021 05:31 UTC
+! Last modified: 11 Jul 2021 05:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -12857,12 +12857,12 @@ anitoki.com,nekonime.video##+js(aopr, protected_links)
 batchkun.com,drakorlive.xyz##+js(set, auto_safelink, noopFunc)
 @@/gameandroid2017/kampret/*$script,domain=batchkun.com
 aibou.xyz,aksensei.com,cgvindo.vip##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
-144.91.105.32##+js(acis, document.oncontextmenu)
+144.91.105.32,mangapor.com##+js(acis, document.oncontextmenu)
 144.91.98.14##+js(aeld, /^(?:contextmenu|selectstart)$/)
 gatsunime.net##+js(aopr, document.oncontextmenu)
 maachanime.com,wibudesu.com##+js(aopw, nocontext)
 144.91.105.32##+js(ra, oncontextmenu|onselectstart, body)
-144.91.105.32##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
+144.91.105.32,mangapor.com##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
 144.91.105.32##+js(acis, disableEnterKey)
 maachanime.com,wibudesu.com##+js(acis, disableSelection, reEnable)
 144.91.105.32##+js(aeld, /touchstart|touchend/, wccp_pro_is_passive)
@@ -12870,6 +12870,7 @@ maachanime.com,wibudesu.com##+js(acis, disableSelection, reEnable)
 malasngeblog.com##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
 wawang.id##.post-outer:style(user-select: text !important; -webkit-touch-callout: default !important;)
 wibudesu.com##html:style(user-select: text !important; -webkit-touch-callout: default !important;)
+mangapor.com##+js(acis, disable_copy)
 ##[href*="ref=aigodrama"]
 ##[href*="ref=bossinema21"]
 ##[href*="ref=serialdrakor"]
