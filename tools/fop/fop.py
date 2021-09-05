@@ -42,7 +42,7 @@ BLANKPATTERN = re.compile(r"^\s*$")
 
 # List the files that should not be sorted, either because they have a special sorting
 # system or because they are not filter files
-IGNORE = ("adblockid.txt", "docs", "tools", "template",
+IGNORE = ("adblockid.txt", "docs", "tools", "template", "international.adbl",
           "python-abp", "python-abp_AdBlockID", "VICHS_AdBlockID")
 
 # List all options (excepting domain, which is handled separately)
