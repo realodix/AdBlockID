@@ -22,9 +22,14 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi *ad blocker* lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
 - Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada ekstensi adblock yang Anda gunakan.
 
-   | Name                | Subscribe | Raw Link |
-   | ------------------- | ----------| -------- |
-   | AdBlockID           | [subscribe](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID) |https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt |
+   | Name               | Subscribe              | Deskrpsi |
+   | ------------------ | ---------------------- | -------- |
+   | AdBlockID          | [subscribe][ABID_Subs] | [Raw Link][ABID_Raw] |
+   | AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
+
+[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
+[ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
+[ABID_Aadult]: https://github.com/realodix/AdBlockID-Adult
 
 
 **Tutorial spesifik cara memasang AdBlockID:**
