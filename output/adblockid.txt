@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.9.84
+! Version: 21.9.85
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Sep 2021 21:36 UTC
+! Last modified: 08 Sep 2021 21:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3798,7 +3798,6 @@ _GIF1200x120-
 ##[id^="div-adx-iklan-"]
 ##[id^="rn_ad_native_"]
 ##[id^="utp_ads_"]
-##[src*="/iklan/"]
 ##banner-besar--top
 ##div[id^="dfp-gpt-ad"]
 ##gmn-companion-ad-renderer
@@ -3860,6 +3859,7 @@ _GIF1200x120-
 ##img[width="904"][height="1280"]
 ##img[width="905"][height="1280"]
 ~doxadigital.com##.banner-top
+~iklanpopuler.com,~ziyata.com##[src*="/iklan/"]
 ||accesstrade.co.id^$third-party
 ||ad-loupe.com^$third-party
 ||addesigner.com^$third-party
@@ -12955,7 +12955,6 @@ jualo.com#@#.ad-title
 baliadvertiser.biz#@#.ads-carousel
 iklandb.com,iklanin.info#@#.afs_ads
 samuderakepri.co.id#@#.category-advertorial
-iklanpopuler.com,ziyata.com#@#[src*="/iklan/"]
 @@||adsmart.detik.com^$ghide
 @@/ad4.png$image,domain=palingseru.com
 @@/ads/*$domain=adsmart.detik.com|phd.co.id|promozia.com
