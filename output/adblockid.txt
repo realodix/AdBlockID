@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.9.104
+! Version: 21.9.105
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Sep 2021 20:32 UTC
+! Last modified: 09 Sep 2021 20:48 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2223,7 +2223,16 @@ _GIF1200x120-
 ##.ads__r1
 ##.ads__side
 ##.ads__skyscraper
+##.ads__stick
+##.ads__stick--left
+##.ads__stick--right
+##.ads__stick--sticky
+##.ads__stick__fluid
+##.ads__stick__fluid--left
+##.ads__stick__fluid--right
+##.ads__stick__wrap
 ##.ads__top-big
+##.ads__top-big250
 ##.ads_atas
 ##.ads_atas-kanan
 ##.ads_atas-kiri
@@ -2234,6 +2243,7 @@ _GIF1200x120-
 ##.ads_bawah-kiri
 ##.ads_bawah_kanan
 ##.ads_bawah_kiri
+##.ads_below_photo
 ##.ads_besar
 ##.ads_box_1_1
 ##.ads_box_2_2
@@ -3541,6 +3551,7 @@ _GIF1200x120-
 ##.ixlan-kecil
 ##.ixlan_besar
 ##.ixlan_kecil
+##.js-ads-stick
 ##.jx-ads
 ##.jx-iklan
 ##.jx-props-ad-slot-footer-sticky
@@ -5756,6 +5767,7 @@ tipspetani.com##.fixed-rside:has-text(SPONSOR)
 kalselpos.com##.listpost-gallery:has-text(IKLAN)
 urbanasia.com##.paralax:has(div[id^="div-gpt-ad"])
 genpi.co##.post-text > .caption:has-text(ADV)
+gridoto.com##.read__left:matches-css-before(content: /Adv/)
 sasambonews.com##.sidebar .widget:has-text(IKLAN)
 hops.id##.stream-item:has-text(Sponsored)
 asarpua.com##.td-image-container:has-text(Adv)
@@ -12363,7 +12375,7 @@ liputan6.com##.article-content-body .vidio-embed
 ||dailymotion.com/player/$frame,redirect=click2load.html,domain=kompasiana.com
 ||haibunda.com/embed/video/$frame,redirect=click2load.html
 ||insertlive.com/embed/video/$frame,redirect=click2load.html
-||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|grid.id|idntimes.com|jubi.co.id|kompas.com|kontan.co.id|styl.id|sulselsatu.com|tempo.co|~video.tempo.co
+||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|grid.id|gridoto.com|idntimes.com|jubi.co.id|kompas.com|kontan.co.id|styl.id|sulselsatu.com|tempo.co|~video.tempo.co
 ||ivideosmart.com/ivxplayer/$script,domain=grid.id|kompas.com
 ||mnc.sindo.media/embed/$frame,redirect=click2load.html,domain=sindonews.com
 ||sindonews.com/frame/$frame,redirect=click2load.html
