@@ -1,11 +1,12 @@
 [Adblock Plus 2.0]
-! Version: 21.9.106
+! Version: 21.9.107
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Sep 2021 21:01 UTC
+! Last modified: 10 Sep 2021 11:37 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
+.id^*/banner$image,domain=~jtp.id
 /iklan/*$image,domain=~1rajaiklan.com|~duniaiklangratis.com|~iklan123.net|~iklanbogor.com|~iklanpopuler.com|~iklansmart.com|~megaiklan.com|~pusatiklan.co.id|~sebariklanmassalpremium.com|~sewa-apartemen.net
 /ngiklan/*$image,domain=~ngiklan.gratis
 /smartfren/ads.
@@ -57,7 +58,6 @@
 .id^*/adz/
 .id^*/affil/
 .id^*/bads/
-.id^*/banner$image
 .id^*/bannery/
 .id^*/bnr/
 .id^*/doubleclick/
