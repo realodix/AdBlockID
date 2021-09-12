@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.9.112
+! Version: 21.9.113
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Sep 2021 04:47 UTC
+! Last modified: 12 Sep 2021 05:11 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -12586,10 +12586,11 @@ mangapor.com##+js(acis, disable_copy)
 ##[href*="ref=serialdrakor"]
 leafpro.website##+js(acis, addEventListener, DOMNodeRemoved)
 belinfo.my.id##+js(acis, addEventListener, google_ad_client)
+fc-lc.com,fc.lc,fcc.lc##+js(acis, document.addEventListener, nextFunction)
 adikhealth.xyz,duit.cc,liveshootv.com,mangindo.xyz,miuiku.com,safeku.com,sekilastekno.com,sportif.id##+js(acis, eval, ignielAdBlock)
 fc.lc,nurhamka.com,rikucan.com##+js(aopr, adBlockDetected)
 apamanfaat.id##+js(aopr, anOptions, anOptionAdsSelectors)
-adsafelink.com,dz4link.com,fotodovana.com,lewat.club,petsched.website,sekilastekno.com,shrinkme.in,stfly.io,viral-topics.com##+js(aopr, app_vars.force_disable_adblock)
+adsafelink.com,dz4link.com,fotodovana.com,lewat.club,petsched.website,sekilastekno.com,shrinke.me,shrinkme.in,stfly.io,viral-topics.com##+js(aopr, app_vars.force_disable_adblock)
 copydev.com,ljutkeunvpn.blogspot.com##+js(aopr, mql)
 menjelajahi.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 uplink.my.id##+js(aopr, tidakAdaPenghalangAds)
@@ -12767,7 +12768,8 @@ safe-your-url.blogspot.com##[href^="http://www.safelinkconverter.com"]
 ceesty.com##+js(set, app.options.timerPageVisibilityChecking, false)
 apk.miuiku.com,encurta.eu,get4link.xyz,icutlink.com,lewat.club,liveshootv.com,luangusaha.com,modebaca.com,oceantech.xyz,onlinecorp.me,p4link.com,sekilastekno.com,semawur.com,stfly.io##+js(set, blurred, false)
 belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
-apk.miuiku.com,ceesty.com,earnload.co,lewat.club,liveshootv.com,luangusaha.com,modebaca.com,oceantech.xyz,onlinecorp.me,p4link.com,sekilastekno.com,semawur.com,shortearn.eu##+js(window.open-defuser)
+apk.miuiku.com,ceesty.com,earnload.co,fc-lc.com,fc.lc,fcc.lc,lewat.club,liveshootv.com,luangusaha.com,modebaca.com,oceantech.xyz,onlinecorp.me,p4link.com,sekilastekno.com,semawur.com,shortearn.eu,shrinke.me##+js(window.open-defuser)
+shrinke.me###imgAddDirectLink
 fotodovana.com,get4link.xyz,luangusaha.com,oceantech.xyz,p4link.com##.blog-item
 fedaro.me##.btn-danger
 uiz.io##.btn-front:has-text(Download)
