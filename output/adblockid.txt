@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.9.123
+! Version: 21.9.124
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Sep 2021 11:07 UTC
+! Last modified: 13 Sep 2021 17:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -5740,6 +5740,7 @@ indobikermags.com##a[href^="http://indobikermags.com/goto/"] > img
 otomotifzone.com##a[rel="noopener noreferrer"] > img
 anangcozz.com##a[rel="noopener"] > img
 maniakmotor.com,otomotifmax.com##a[target="_blank"] > img
+tokopedia.com##a[label-atm="taProduct"]:has(img[alt^="topads"])
 kompas.com##+js(rc, bapps-show, body.bapps-show)
 tribunnewswiki.com###adsoutofpage-premiumTopframe
 tribunnews.com,tribunnewswiki.com###anchorads
