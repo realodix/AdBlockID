@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.9.369
+! Version: 21.9.370
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Sep 2021 15:31 UTC
+! Last modified: 25 Sep 2021 15:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -5730,8 +5730,10 @@ fokusaktual.co.id,inikata.com##img[width="995"][height="1280"]
 suara-ntt.com##img[width="996"][height="1042"]
 kanalkalimantan.com##img[width="999"][height="380"]
 tempo.co##video[width="468"][height="60"]
+motorplus-online.com###ad-below-photo-container
 kompasiana.com###bannerhorz
 bolasport.com,grid.id###div-Inside-MediumRectangle
+motorplus-online.com###div-ad-below-comment-container
 grid.id###div-bottom-frame-transparent
 motorplus-online.com###div-paralax-container
 grid.id###div-top-banner-transparent
@@ -5739,12 +5741,14 @@ kompas.com###js-banner-sticky
 kompas.tv###jxOutstreamContainer:matches-css-before(content:"Advertisement")
 kompas.com###smartbanner
 kompas.com###voucher__banner1
+motorplus-online.com##.ads
 kompas.tv##.ads-big
 kompas.tv##.ads-flycarpet
 kompas.tv##.ads-foot
 kompas.tv##.ads-jxstream
 kompas.com##.ads-latest-wrap
 kompas.tv##.ads-mgid-pag
+motorplus-online.com##.ads-on
 kompas.com##.ads-on-body
 kompas.com##.ads-partner-wrap
 kompas.tv##.ads-right2
@@ -5869,6 +5873,7 @@ bisnis-tempo-co.cdn.ampproject.org,blog-tempo-co.cdn.ampproject.org,bola-tempo-c
 bola-okezone-com.cdn.ampproject.org,celebrity-okezone-com.cdn.ampproject.org,economy-okezone-com.cdn.ampproject.org,lifestyle-okezone-com.cdn.ampproject.org,m-jatimnow-com.cdn.ampproject.org,muslim-okezone-com.cdn.ampproject.org,nasional-okezone-com.cdn.ampproject.org,otomotif-okezone-com.cdn.ampproject.org,sports-okezone-com.cdn.ampproject.org,techno-okezone-com.cdn.ampproject.org##amp-iframe[src^="https://click.advertnative.com/"]
 tribunnews.com##+js(acis, Math, ='\x)
 bolasport.com##+js(acis, document.addEventListener, iframe-network)
+motorplus-online.com###composite-container:matches-css-before(content:/adv/i)
 gridoto.com###jxOutstreamContainer:matches-css-before(content:/adv/i)
 arenabola.id##.col-lg-3:has-text(/adv/i)
 sindonews.com##.ctn-mid li:has-text(/sponsor/i)
