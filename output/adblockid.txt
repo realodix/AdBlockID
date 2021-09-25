@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.9.365
+! Version: 21.9.366
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Sep 2021 12:44 UTC
+! Last modified: 25 Sep 2021 15:19 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -5866,6 +5866,7 @@ bisnis-tempo-co.cdn.ampproject.org,blog-tempo-co.cdn.ampproject.org,bola-tempo-c
 bola-okezone-com.cdn.ampproject.org,celebrity-okezone-com.cdn.ampproject.org,economy-okezone-com.cdn.ampproject.org,lifestyle-okezone-com.cdn.ampproject.org,m-jatimnow-com.cdn.ampproject.org,muslim-okezone-com.cdn.ampproject.org,nasional-okezone-com.cdn.ampproject.org,otomotif-okezone-com.cdn.ampproject.org,sports-okezone-com.cdn.ampproject.org,techno-okezone-com.cdn.ampproject.org##amp-iframe[src^="https://click.advertnative.com/"]
 tribunnews.com##+js(acis, Math, ='\x)
 bolasport.com##+js(acis, document.addEventListener, iframe-network)
+gridoto.com###jxOutstreamContainer:matches-css-before(content:/adv/i)
 arenabola.id##.col-lg-3:has-text(Ads)
 detik.com##.containerBB:style(margin-top: 0!important;)
 sindonews.com##.ctn-mid li:has-text(Sponsored)
@@ -5874,7 +5875,6 @@ tipspetani.com##.fixed-rside:has-text(SPONSOR)
 kalselpos.com##.listpost-gallery:has-text(IKLAN)
 urbanasia.com##.paralax:has(div[id^="div-gpt-ad"])
 genpi.co##.post-text > .caption:has-text(ADV)
-gridoto.com##.read__left:matches-css-before(content: /Adv/)
 sasambonews.com##.sidebar .widget:has-text(IKLAN)
 hops.id##.stream-item:has-text(Sponsored)
 asarpua.com##.td-image-container:has-text(Adv)
@@ -12848,7 +12848,7 @@ ardra.biz,blog-dnz.com,daftarhewan.com,debgameku.com,goanimedesu.net,guru-id.com
 cikimm.com##+js(aopw, clickIE4)
 /ZaloSec/chuotphai/*$script
 larantukagypsum.com###post-wrapper:style(user-select: text !important; -webkit-touch-callout: default !important;)
-amtread.com,bisablog.com,boss-ant.blogspot.com,daftarhewan.com,gamefinity.id,goozir.com,heyriad.com,id.theasianparent.com,magelang1337.com,murianews.com,myhewan.com,ninoartikel.com,rencanamu.id,strukturkode.blogspot.com,suaraindonesianews.com,suatekno.id,suckittrees.com,suryadhi.web.id,warunginter.net##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
+amtread.com,ardra.biz,bisablog.com,boss-ant.blogspot.com,daftarhewan.com,gamefinity.id,goozir.com,heyriad.com,id.theasianparent.com,ilmumemikatwanita.com,magelang1337.com,malasngoding.com,murianews.com,myhewan.com,ninoartikel.com,nusramedia.com,psikologicinta.com,rencanamu.id,strukturkode.blogspot.com,suaraindonesianews.com,suatekno.id,suckittrees.com,suryadhi.web.id,wartaterkini.news,warunginter.net##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
 daftarhewan.com,fachmycasofa.com,ilmumemikatwanita.com,kabarrakyat.id,milano-ruus.blogspot.com,myhewan.com,nusramedia.com,psikologicinta.com,suaraindonesianews.com,teraa.net,tipssehatcantik.com,yunoya.id##+js(acis, disableSelection, reEnable)
 alfanrenata.com,radiokucing.com##+js(acis, disableselect, reEnable)
 nomis.id##+js(aeld, selectstart)
@@ -12856,12 +12856,8 @@ ardra.biz,dosenonline.id##+js(aopw, disableSelection)
 blog-dnz.com,chiarafarina.blogspot.com,goanimedesu.net,iwakbuncit.com,satugoogle.blogspot.com,steffifauziah.com##+js(set, document.onselectstart, noopFunc)
 agussiswanto097.blogspot.com,aka321.blogspot.com,arlinacode.com,ataeh.blogspot.com,banjirembun.com,bungfrangki.com,datadikdasmen.com,dewaplokis.com,dezige-in.blogspot.com,geograpik.blogspot.com,infoastronomy.org,infoguruku.net,inphedia.id,kangtutorial.com,kulcis.blogspot.com,malasngeblog.com,nganggurajah.blogspot.com,rahmancyber.net,sasihsaum.com,satupiston.com,seniartaja.blogspot.com,smsucapan.com,suhux.com,teknolalat.com,webkeren.net##.post-body:style(user-select: text !important; -webkit-touch-callout: default !important;)
 bangsiagian.id,bimdzgn.com,jagoandzgn.com,serieswans.com,struckturcode.blogspot.com,wawang.id,winmahdi.com,zotutorial.com##.post-outer:style(user-select: text !important; -webkit-touch-callout: default !important;)
-malasngoding.com##.post-single-content:style(user-select: text !important; -webkit-touch-callout: default !important;)
 bloging-gampang.blogspot.com,indravedia.com,isrul.com,kangghani.com,kherysuryawan.id,lapakinfo.net,njongeblog.blogspot.com,pondok-belajar.com,santaibareng.net,serba-serbi-bisa.blogspot.com,teh-goyang.blogspot.com,tigaribu.net##.post:style(user-select: text !important; -webkit-touch-callout: default !important;)
-ardra.biz,ilmumemikatwanita.com,psikologicinta.com##.unselectable:style(user-select: text !important; -webkit-touch-callout: default !important;)
-wartaterkini.news##body.unselectable:style(-webkit-touch-callout: default!important; user-select: text!important)
 belajarmembuatwebsite.com,blogsecond.com,dewainside.blogspot.com,elmu-blog.blogspot.com,igniel.com,inblogspot.com,iqrosoft.co.id,irnanto.com,kurniayoung.com,mahirngoding.blogspot.com,mrmung.com,ponselsoak.com,rzkbdlhsn.blogspot.com,santriema.blogspot.com,tamboenman.xyz,tipspetani.com,websiteedukasi.com##body:style(user-select: text !important; -webkit-touch-callout: default !important;)
-nusramedia.com##html:style(user-select: text !important; -webkit-touch-callout: default !important;)
 nomis.id##+js(aeld, copy)
 wartaterkini.news##+js(aopr, disable_copy)
 kuyhaa-me.com##+js(aopr, protected_links)
