@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.9.383
+! Version: 21.9.384
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Sep 2021 20:36 UTC
+! Last modified: 28 Sep 2021 20:44 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -12893,22 +12893,21 @@ cnbcindonesia.com,insertlive.com##article .sisip_embed_sosmed
 detik.com##article .sisip_video_ds
 detik.com##article .video20detik_0
 ||20.detik.com/embed/$frame,domain=~20.detik.com|~adsmart.detik.com
-||api.cnnindonesia.com/gambas/oembed^$script
-||cnbcindonesia.com/embed/video/$frame
+||cnbcindonesia.com/embed/video/$frame,domain=cnbcindonesia.com
 ||dailymotion.com/embed/*&mute=true$frame,domain=viva.co.id
 ||dailymotion.com/embed/*?ads_params=$frame,domain=medanheadlines.com
 ||dailymotion.com/player/$frame,domain=kompasiana.com
 ||embed.rctiplus.com/live/rcti/$frame,domain=sulselsatu.com
-||haibunda.com/embed/video/$frame
-||insertlive.com/embed/video/$frame
+||haibunda.com/embed/video/$frame,domain=haibunda.com
+||insertlive.com/embed/video/$frame,domain=insertlive.com
 ||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|grid.id|gridoto.com|idntimes.com|jubi.co.id|kompas.com|kontan.co.id|styl.id|sulselsatu.com|tempo.co|~video.tempo.co
 ||ivideosmart.com/ivxplayer/$script,domain=grid.id|kompas.com
 ||mnc.sindo.media/embed/$frame,domain=sindonews.com
-||sindonews.com/frame/$frame
+||sindonews.com/frame/$frame,domain=sindonews.com
 ||soundcloud.com/player/$important,frame,domain=cumirproduction.blogspot.com
-||tv.kaskus.co.id/api/embed/widget/?autoplayInViewPort=true$frame
-||video.sindonews.com/embedjw/$frame
-||vidio.com/embed/*&mute=true$third-party,frame
+||tv.kaskus.co.id/api/embed/widget/?autoplayInViewPort=true$frame,domain=kaskus.co.id
+||video.sindonews.com/embedjw/$frame,domain=sindonews.com
+||vidio.com/embed/*&mute=true$3p,frame
 ||youtube.com/embed/*&mute=1$frame,domain=genpi.co
 mazterize.net##.button:has-text(/download crack/i)
 gigapurbalingga.net##.entry-content center button.user
