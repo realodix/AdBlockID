@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.7
+! Version: 21.10.8
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Oct 2021 09:22 UTC
+! Last modified: 01 Oct 2021 09:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -13053,7 +13053,7 @@ kuyhaa.net##iframe[width="420"][height="100"]
 ||nanime.biz^*/banner-$image
 mangakita.net###btm_banner
 mangaid.click###catfish
-sektekomik.com,sheamanga.my.id###close-teaser
+sektekomik.com,sheamanga.my.id,westmanga.info###close-teaser
 mangaku.club###ftadsth
 bacakomik.co,komikstation.com###teaser3
 mangaku.club##.adv
@@ -13065,9 +13065,10 @@ klikmanga.com##body > .mtsnb-shown
 mangaindo.web.id##+js(acis, Math, zfgloaded)
 ngomik.net##+js(acis, document.createElement, 'script')
 sheamanga.my.id##+js(acis, document.querySelectorAll, adConfig)
-klikmanga.com,komikstation.com,manhwaindo.id,manhwaland.org,westmanga.info##+js(acis, document.querySelectorAll, popMagic)
+klikmanga.com,komikstation.com,manhwaindo.id,manhwaland.org##+js(acis, document.querySelectorAll, popMagic)
 otakudere.net##+js(aopr, Light.Popup)
-bacakomik.co,komikcast.com,komikindo.id,komikstation.com,mangakita.net,mangaku.club,westmanga.info##+js(window.open-defuser)
+westmanga.info##+js(nowoif)
+bacakomik.co,komikcast.com,komikindo.id,komikstation.com,mangakita.net,mangaku.club##+js(window.open-defuser)
 manhwaland.org##+js(acis, SGPopup)
 mangaku.club##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
