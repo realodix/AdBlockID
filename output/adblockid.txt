@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.22
+! Version: 21.10.23
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Oct 2021 16:51 UTC
+! Last modified: 01 Oct 2021 17:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4221,6 +4221,7 @@ _iklan_$image,domain=ntt-news.com
 ||keganjilan.com^*/banner-$image
 ||kendaripos.co.id^*/banner-
 ||keprisatu.com^*/ad-$image
+||klikjatim.com^*/ads_$image
 ||klikpositif.com^*/banner-$image
 ||klikpositif.com^*/banner/
 ||komentaren.net^*/benner-$image
@@ -4409,7 +4410,6 @@ _iklan_$image,domain=ntt-news.com
 ||terafile.net/luxury3.xml$1p,xhr
 ||yourjavascript.com^*/itu-domino-popup-script.js$script
 ||yourjavascript.com^*/lompatin.js$script
-klikjatim.com##img[width="1000"][height="1000"]
 tiraspost.com##img[width="1040"][height="1040"]
 bogopapua.net##img[width="1042"][height="1042"]
 batarapos.com,hariankepri.com,kabarrakyat.id,kailipost.com,koranbanjarmasin.com,matakamera.net,suarasulut.com,terasmaluku.com##img[width="1080"][height="1080"]
@@ -4427,7 +4427,7 @@ notif.id,timur-online.com##img[width="600"][height="600"]
 beritamorut.com,garismerahnews.com,prokabar.com,samuderakepri.co.id,suarahukum-news.com,sulawesiekspress.com##img[width="720"][height="720"]
 seputarkuningan.com##img[width="721"][height="721"]
 annews.co.id##img[width="750"][height="750"]
-bogornetwork.com,klikjatim.com##img[width="768"][height="768"]
+bogornetwork.com##img[width="768"][height="768"]
 garismerahnews.com##img[width="900"][height="900"]
 habanusantara.net###HTML10
 habanusantara.net###HTML11
@@ -4644,10 +4644,8 @@ rakyatsatu.com##img[width="100%"][height="200"]
 rakyatsatu.com##img[width="100%"][height="350"]
 rakyatsatu.com##img[width="100%"][height="567"]
 sultengterkini.com##img[width="1000"][height="1000"]
-klikjatim.com##img[width="1000"][height="1200"]
 eljabar.com##img[width="1000"][height="123"]
-jubir.id,klikjatim.com##img[width="1000"][height="1250"]
-klikjatim.com##img[width="1000"][height="1300"]
+jubir.id##img[width="1000"][height="1250"]
 suaramandiri.co##img[width="1000"][height="1414"]
 wartarakyat.co.id##img[width="1000"][height="144"]
 tribuanapos.net##img[width="1000"][height="1739"]
@@ -5248,9 +5246,6 @@ padangmedia.com##img[width="730"][height="96"]
 kailipost.com##img[width="731"][height="1024"]
 radarlamtim.com##img[width="731"][height="1280"]
 suarasulut.com##img[width="732"][height="960"]
-klikjatim.com##img[width="734"][height="166"]
-klikjatim.com##img[width="734"][height="172"]
-klikjatim.com##img[width="734"][height="250"]
 sekilasindonesia.id##img[width="739"][height="886"]
 inimedanbung.com##img[width="740"][height="158"]
 iglobalnews.co.id##img[width="740"][height="450"]
@@ -5301,7 +5296,6 @@ annews.co.id##img[width="800"][height="160"]
 timur-online.com##img[width="800"][height="189"]
 kabarbireuen.com##img[width="800"][height="237"]
 gajianyuk.com##img[width="800"][height="2548"]
-klikjatim.com##img[width="800"][height="325"]
 harianrakyatbengkulu.com,papuabangkit.com##img[width="800"][height="400"]
 topsatu.com##img[width="800"][height="449"]
 timur-online.com##img[width="800"][height="470"]
@@ -5495,7 +5489,9 @@ sulselsatu.com##.textwidget img[width="728px"][height=""]
 sulselsatu.com##.textwidget img[width="80%"][height=""]
 dutademokrasi.com,kabarselebes.id,koranbanjar.net,satubmr.com##.theiaStickySidebar div > img
 suarakuningan.com##.widget a[target="_blank"] > img
+klikjatim.com##.widget figure img
 zonamerah.net##.widget img[alt=""]
+klikjatim.com##.widget img[style="max-width: 100%; height: auto;"]
 portalntt.com##.widget img[style="width:300px;height:auto;"]
 kabarntt.co##.widget img[title*="Iklan"]
 radarmalaka.com##.widget img[width="540"][height="540"]
@@ -12689,7 +12685,7 @@ gamebrott.com##+js(aopr, advads_options)
 idfl.info##+js(aopr, open)
 /wp-content/plugins/cm-pop-up-banners/*$~css,domain=suaramandiri.co
 rajawarta.com,timikaexpress.com##+js(aopr, popup_custom_data)
-/wp-content/plugins/popup-builder/*$~css,domain=papuatoday.com|sindomanado.com|suluttimes.com
+/wp-content/plugins/popup-builder/*$~css,domain=klikjatim.com|papuatoday.com|sindomanado.com|suluttimes.com
 papuatoday.com,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
 ainamulyana.blogspot.com,banjirembun.com,cumirproduction.blogspot.com,kucingmania.net,njongeblog.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 1001tutorial.com,banjirembun.com,beritasampit.co.id,blogsecond.com,ciriseo.net,dosenonline.id,gamefinity.id,ilmumemikatwanita.com,iqrosoft.co.id,isrul.com,kabarrakyat.id,kherysuryawan.id,murianews.com,psikologicinta.com,radiokucing.com,suaraindonesianews.com,teraa.net,tipspetani.com##+js(acis, document.oncontextmenu)
