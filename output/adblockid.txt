@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.33
+! Version: 21.10.34
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Oct 2021 17:49 UTC
+! Last modified: 01 Oct 2021 17:58 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -5310,7 +5310,6 @@ inilahsultra.com##img[width^="128"][height^="85"]
 papuatoday.com,rakyatmaluku.com##img[width^="128"][height^="95"]
 sulawesion.com##img[width^="256"][height^="53"]
 tempo.co##video[width="468"][height="60"]
-motorplus-online.com###ad-below-photo-container
 kompasiana.com###bannerhorz
 bolasport.com,grid.id###div-Inside-MediumRectangle
 motorplus-online.com###div-ad-below-comment-container
@@ -5343,6 +5342,7 @@ kompas.com##.voucher__banner
 kompas.com,kompas.tv,motorplus-online.com##[class^=ads-]
 grid.id,kompas.com##[class^=banner-]
 grid.id,kompas.com##[id*=-banner-]
+motorplus-online.com##[id^="ad-"]
 grid.id##[id^="afdf-"]
 kompas.com##[id^="div-gpt-ad-"]:upward(1)
 pertamax7.com##.backstretch
@@ -12589,6 +12589,7 @@ kuyhaa-me.com##+js(aopr, protected_links)
 gamefinity.id##+js(acis, wpccpDisablePrintScreen)
 detik.com###detikdetailtext .video20detik_0
 cnnindonesia.com###idautovideocnn
+motorplus-online.com###ivsplayer01-container
 merdeka.com###mdk-content #dnative_video_one_detailpage
 viva.co.id###viva-content .dailymotion-cpe
 liputan6.com##.article-content-body .vidio-embed
@@ -12611,7 +12612,7 @@ detik.com##article .video20detik_0
 ||embed.rctiplus.com/live/rcti/$frame,domain=sulselsatu.com
 ||haibunda.com/embed/video/$frame,domain=haibunda.com
 ||insertlive.com/embed/video/$frame,domain=insertlive.com
-||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|grid.id|gridoto.com|idntimes.com|jubi.co.id|kompas.com|kontan.co.id|styl.id|sulselsatu.com|tempo.co|~video.tempo.co
+||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|grid.id|gridoto.com|idntimes.com|jubi.co.id|kompas.com|kontan.co.id|motorplus-online.com|styl.id|sulselsatu.com|tempo.co|~video.tempo.co
 ||ivideosmart.com/ivxplayer/$script,domain=grid.id|kompas.com
 ||mnc.sindo.media/embed/$frame,domain=sindonews.com
 ||sindonews.com/frame/$frame,domain=sindonews.com
