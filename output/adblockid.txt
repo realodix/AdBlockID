@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.167
+! Version: 21.10.168
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Oct 2021 10:36 UTC
+! Last modified: 04 Oct 2021 10:43 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4265,6 +4265,7 @@ _iklan_$image,domain=ntt-news.com
 ||lenterapendidikan.com^*/banner/$image
 ||lenterasultra.com^*/thumb-$image
 ||lintasbali.com^*/iklan-$image
+||lintaslampung.com^*/adv_$image
 ||lintastungkal.com^*/banner-$image
 ||lokadata.id/images/banner_$image
 ||lomboktoday.co.id^*/iklan-$image
@@ -4472,8 +4473,8 @@ kontan.co.id###div-Halfpage-Personalfinance
 kontan.co.id###div-Halfpage-Regional
 kontan.co.id###div-Halfpage-Yangter
 parapuan.co,sonora.id,tribunnews.com###div-Inside-MediumRectangle
-dailypost.id###divFLRALeft
-dailypost.id###divFLRARight
+dailypost.id,lintaslampung.com###divFLRALeft
+dailypost.id,lintaslampung.com###divFLRARight
 faktabanten.co.id,seruji.co.id###fixedban
 kontan.co.id###fixslowshow
 goblintvfree.com###izlemac-yayin > div.embed-responsive
@@ -4580,6 +4581,7 @@ bantenkini.com,citrust.id,kabarsumbawa.com,listingberita.com,metrosulawesi.id,re
 andreasagung.com,centerklik.com,kostjakarta.com,tempat-kost.com##a[rel="nofollow"] > img
 baliportalnews.com,nabire.net##a[rel="noopener noreferrer"] > img
 bagas31.info,baritorayapost.com,beritajatim.com,coinvestasi.com,detikglobalnews.com,duta.co,gigapurbalingga.net,iblindonesia.com,idblanter.com,infoaktualnews.com,infojambi.com,jambipers.com,kabarterkini.co.id,kejarfakta.com,klikmania.net,kompaslima.com,kostjakarta.net,malangtimes.com,medianews.co.id,nmcberita.id,nusadaily.com,penaberlian.com,polisiinternet.com,potret24.com,radarlampung.co.id,radartuba.com,riauterkini.com,samawarea.com,suarakristen.com,sulselsatu.com,sumeks.co,timesindonesia.co.id,venuemagz.com,zonalampung.co##a[target="_blank"] > img
+lintaslampung.com##a[target="_blank"] img
 sumselindependen.com##a[title*="iklan" i] img
 detik.com##article .parallax
 situsjodoh.com##center a[target="_blank"] img
@@ -4615,7 +4617,6 @@ haluan.co##img[width="1000"][height="500"]
 infosekitarpekalongan.com##img[width="1000"][height="746"]
 prosesnews.id##img[width="1000"][height="93"]
 pojokntb.id##img[width="1013"][height="1280"]
-lintaslampung.com##img[width="1018"][height="583"]
 mediaapakabar.com##img[width="1019"][height="1280"]
 jubir.id##img[width="1020"][height="1500"]
 expontt.com##img[width="1024"][height="152"]
@@ -4787,7 +4788,6 @@ beredukasi.com##img[width="618"][height="709"]
 rakyatbengkulu.com##img[width="618"][height="875"]
 hulondalo.id##img[width="619"][height="1024"]
 acehmonitor.com##img[width="620"][height="310"]
-lintaslampung.com##img[width="626"][height="342"]
 situslampung.com##img[width="626"][height="743"]
 kuninganterkini.com##img[width="633"][height="120"]
 upeks.co.id##img[width="638"][height="800"]
@@ -4814,11 +4814,10 @@ acehtrend.com##img[width="696"][height="348"]
 auramedia.co##img[width="696"][height="464"]
 beritasampit.co.id##img[width="696"][height="696"]
 acehtrend.com##img[width="696"][height="86"]
-lintaslampung.com##img[width="700"][height="160"]
 kabarnuansa.id##img[width="700"][height="300"]
 kabarnuansa.id##img[width="700"][height="316"]
 jurnalisindonesia.id##img[width="700"][height="350"]
-basmilamteng.com,lintaslampung.com##img[width="700"][height="393"]
+basmilamteng.com##img[width="700"][height="393"]
 koransultra.com##img[width="700"][height="395"]
 globalinvesindonews.com##img[width="700"][height="400"]
 koransultra.com##img[width="700"][height="429"]
@@ -12153,6 +12152,7 @@ kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dih
 m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
 m.kaskus.co.id##[id^="postdeleted"]
 .fancybox.$script,domain=seuramoeaceh.com
+/pum-site-scripts.js$script,domain=lintaslampung.com
 tirto.id###bkgOverlay
 kuotamedia.net,paketinternet.net,ponselsoak.com###bukafpop
 tirto.id###delayedPopup
