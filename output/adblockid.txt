@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.138
+! Version: 21.10.139
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Oct 2021 09:19 UTC
+! Last modified: 04 Oct 2021 09:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4059,7 +4059,7 @@ _320x400.$image,domain=fokussumatera.com|impiannews.com
 _320x450.$image,domain=fokussumatera.com
 _400x700cm.$image,domain=pelopor9.com
 _640x320_$image,domain=ruparupa.com
--ads-$image,domain=newsbalikpapan.com
+-ads-$image,domain=newsbalikpapan.com|radarbanten.co.id
 -ads.$image,domain=respublika.id
 -adv-$image,domain=realitasonline.id
 -banner$image,domain=fajar.co.id
@@ -4753,7 +4753,7 @@ fokussumatera.com,radarbogor.id##img[width="300"][height="420"]
 radarlampung.co.id##img[width="300"][height="424"]
 sumselupdate.com##img[width="300"][height="425"]
 fokussumatera.com##img[width="300"][height="434"]
-lampungcentral.com,radarbanten.co.id##img[width="300"][height="450"]
+lampungcentral.com##img[width="300"][height="450"]
 radarlampung.co.id##img[width="300"][height="498"]
 lampungcentral.com##img[width="300"][height="525"]
 beritakita.co.id##img[width="300"][height="599"]
@@ -4775,7 +4775,6 @@ tribratanewsacehbesar.com##img[width="324"][height="576"]
 kupastuntas.co##img[width="325"][height="245"]
 lampungcentral.com##img[width="327"][height="495"]
 kupastuntas.co##img[width="328"][height="186"]
-radarbanten.co.id##img[width="332"][height="404"]
 joglosemarnews.com##img[width="333"][height="400"]
 bacaterus.com##img[width="336"][height="280"]
 metrokaltara.com##img[width="340"][height="481"]
@@ -5142,6 +5141,7 @@ gridoto.com###jxOutstreamContainer:matches-css-before(content:/adv/i)
 suarajatimpost.com##.card:has-text(/adv/i)
 arenabola.id##.col-lg-3:has-text(/adv/i)
 sindonews.com##.ctn-mid li:has-text(/sponsor/i)
+radarbanten.co.id##.elementor-widget-image:not(:has(a[href*="radarbanten.co.id"]))
 kincir.com##.entry-content > .caption.text-center:has-text(/adv/i)
 arenasmartphone.com##.entry-content > div:has-text(/adv/i)
 tipspetani.com##.fixed-rside:has-text(/sponsor/i)
@@ -12254,7 +12254,7 @@ idfl.info##+js(aopr, open)
 /wp-content/plugins/cm-pop-up-banners/*$~css,domain=suaramandiri.co
 rajawarta.com,timikaexpress.com##+js(aopr, popup_custom_data)
 /wp-content/plugins/popup-builder/*$~css,domain=klikjatim.com|papuatoday.com|sindomanado.com|suluttimes.com
-papuatoday.com,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
+papuatoday.com,radarbanten.co.id,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
 detik.com###detikdetailtext .video20detik_0
 cnnindonesia.com###idautovideocnn
 motorplus-online.com###ivsplayer01-container
