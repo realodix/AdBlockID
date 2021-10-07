@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.200
+! Version: 21.10.201
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Oct 2021 08:23 UTC
+! Last modified: 07 Oct 2021 09:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4117,6 +4117,7 @@ _iklan_$image,domain=ntt-news.com
 ||bantenku.co.id^*/banner/$image
 ||baritaitah.co.id/foto_banner/$image
 ||baritopost.co.id^*-iklan.$image
+||baritorayapost.com^*/iklan-$image
 ||bengkuluinteraktif.com^*/promo/$image
 ||bengkulupost.co^*-iklan-$image
 ||bengkulupost.co^*/iklan-$image
@@ -4425,6 +4426,8 @@ ekagoblog.com,kompiajaib.com###HTML3
 habanusantara.net###HTML6
 adventuriderz.com###ac-belowpost
 parapuan.co###ad-below-photo
+motorplus-online.com###ad-below-photo-container
+motorplus-online.com###ad-genie-container
 katadata.co.id###ads-insert
 inews.id###ads_top_center
 sindonews.com###advertnativeDiv
@@ -4450,6 +4453,8 @@ kontan.co.id###div-Halfpage-Regional
 kontan.co.id###div-Halfpage-Yangter
 bolasport.com,grid.id,parapuan.co,sonora.id,tribunnews.com###div-Inside-MediumRectangle
 motorplus-online.com###div-ad-below-comment-container
+motorplus-online.com###div-ad-bottom-container
+motorplus-online.com###div-ad-latest-container
 grid.id###div-bottom-frame-transparent
 motorplus-online.com###div-paralax-container
 dailypost.id,lintaslampung.com###divFLRALeft
@@ -4486,10 +4491,16 @@ suara.com##.adds-top
 minangsatu.com,motorplus-online.com##.ads
 inews.id##.ads-close
 petanikode.com##.ads-content
+kompas.tv##.ads-flycarpet
+kompas.tv##.ads-foot
+kompas.tv##.ads-jxstream
+kompas.tv##.ads-mgid-pag
+kompas.tv##.ads-mgid-read
+kompas.tv##.ads-undifined-live
+kompas.tv##.ads-zone-2
 inews.id##.ads_mobile_wrap
 petanikode.com##.adsense
 sindonews.com##.adtp
-kumparan.com##.adunitContainer:upward(2)
 detik.com##.adv
 arenalte.com,krjogja.com,telusur.co.id##.advertisement
 nusantaratimur.com##.areaiklan
@@ -4558,6 +4569,7 @@ sindonews.com##.parallax-close
 medcom.id##.parallax_wrap
 kompas.com##.premium_div
 jatimnow.com##.punica-ads-3-widget
+kompas.tv##.pushdown-banner
 suara.com##.serbada
 21cineplex.com##.showcase
 21cineplex.com##.showcase2
@@ -4586,7 +4598,6 @@ viralkaltim.com##.wpb_wrapper
 hantaran.co##.wpb_wrapper img[style="max-width: 100%; height: auto;"]
 alasannews.com,angkasareview.com,bengkulunews.co.id,beritaminang.com,beritatotabuan.com,bidiknasional.co.id,carapedia.com,cendananews.com,cgv.id,cut.my.id,dailysocial.id,dibalikseo.com,diskon.com,downloadbatch.net,emerer.com,fajarsumatera.co.id,faktabali.com,forumbitcoin.co.id,franchiseglobal.com,gamebrott.com,garudadaily.com,goodnewsfromindonesia.id,grid.id,haluansumatera.com,haramainsoftware.com,hariansuara.com,id.techinasia.com,indonesiaexpat.id,industry.co.id,inews.id,inisumedang.com,jadwaltelevisi.com,jalurnews.com,jatimnow.com,kabargames.id,kabaroto.com,kampungberita.id,klikpositif.com,kompas.com,kompasiana.com,kompiajaib.com,kupastuntas.co,liputanrakyat.com,lokadata.id,memo.co.id,merdeka.com,metropublik.com,muslim.or.id,nmcberita.id,padangkita.com,panditfootball.com,pasardana.id,petisi.co,radarsultra.co.id,rajamobil.com,riaukarya.com,sebelas12.com,sijorikepri.com,sonora.id,sultrakini.com,sulutreview.com,sumselnian.com,surabayapagi.com,uzone.id##[class*="banner"]
 kaskus.co.id##[class^="skyscrapperAds"]
-kompas.com,kompas.tv,motorplus-online.com##[class^=ads-]
 merahputih.com##[data-placement="banner-special-report"]
 lomboktoday.co.id##[href*="/iklan-"]
 timesindonesia.co.id##[href*="ads-"]
@@ -4600,14 +4611,12 @@ balipost.com##[id*="ads-"]
 apahabar.com,carapedia.com,cnbcindonesia.com,grid.id,karawangnews.com,kompas.com,kompasiana.com,kotakgame.com,lintastungkal.com,portalntt.com,sawerigading-news.com##[id*="banner"]
 jalantikus.com##[id*="div-gpt-ad-"]
 tempo.co##[id^="Affinity_BTF_"]
-motorplus-online.com##[id^="ad-"]
 bantenkini.com,citrust.id,kabarsumbawa.com,listingberita.com,metrosulawesi.id,realitasonline.id,redkal.com,sakanews.com,sidakpost.id,suarasikka.com,suaratangsel.com,sumeks.co##a[href="#"] > img
 andreasagung.com,centerklik.com,kostjakarta.com,tempat-kost.com##a[rel="nofollow"] > img
-baliportalnews.com,nabire.net##a[rel="noopener noreferrer"] > img
-otomotifzone.com##a[target="_blank"]
-bagas31.info,baritorayapost.com,beritajatim.com,coinvestasi.com,detikglobalnews.com,duta.co,gigapurbalingga.net,idblanter.com,infoaktualnews.com,infojambi.com,jambipers.com,kabarterkini.co.id,kejarfakta.com,klikmania.net,kompaslima.com,kostjakarta.net,malangtimes.com,maniakmotor.com,medianews.co.id,nmcberita.id,nusadaily.com,penaberlian.com,polisiinternet.com,potret24.com,radarlampung.co.id,radartuba.com,riauterkini.com,samawarea.com,suarakristen.com,sulselsatu.com,sumeks.co,venuemagz.com,zonalampung.co##a[target="_blank"] > img
+otomotifzone.com##a[target*="blank"]
+bagas31.info,bakata.net,beritajatim.com,beritasatu.com,coinvestasi.com,detikglobalnews.com,duta.co,gigapurbalingga.net,idblanter.com,infoaktualnews.com,infojambi.com,jambipers.com,jambiseru.com,kabarterkini.co.id,kejarfakta.com,klikmania.net,kompaslima.com,korsum.id,kostjakarta.net,lintaslampung.com,malangtimes.com,maniakmotor.com,medianews.co.id,nmcberita.id,nusadaily.com,penaberlian.com,polisiinternet.com,posbali.co.id,potret24.com,radarlampung.co.id,radartuba.com,rakyatbengkulu.com,riauterkini.com,samawarea.com,suarakristen.com,sulselsatu.com,sumateranews.co.id,sumeks.co,venuemagz.com,zonalampung.co##a[target*="blank"] img
+nabire.net##a[target*="blank"][rel="noopener"] img
 iwanbanaran.com##a[target="_blank"] div[style*="position: fixed;"]
-bakata.net,beritasatu.com,lintaslampung.com,posbali.co.id,rakyatbengkulu.com,sumateranews.co.id##a[target="_blank"] img
 sumselindependen.com##a[title*="iklan" i] img
 detik.com##article .parallax
 iwanbanaran.com,tmcblog.com##body:style(background-image: none!important;)
@@ -4729,8 +4738,6 @@ mariodevan.com,motorrio.com##.wpa:has-text(/adv/i)
 garudadaily.com##.wpb_wrapper:has-text(/adv/i)
 cyberlampung.com##.wrapper-posts:has-text(/adv/i)
 koranseruya.com##[id^=local-]:has-text(/adv/i)
-jambiseru.com##a[target="_blank"]:not(:has(a[href*="jambiseru.com"])) img
-korsum.id##a[target="_blank"]:not(:has(a[href*="korsum.id"])) img
 gardapapua.com##aside:has-text(/adv/i)
 klubpria.com##center:has-text(/sponsor/i)
 doktersehat.com##div[style*="12px;"]:has-text(/iklan/i)
@@ -4740,6 +4747,7 @@ shopee.co.id##.shopee-search-item-result__item:has-text(/iklan/i)
 tokopedia.com##a[label-atm="taProduct"]:has(img[alt^="topads"])
 biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
 biggo.id##img[onclick*="AD_SEARCHRESULT"]
+kumparan.com##.adunitContainer:upward(2)
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(11)
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
 grid.id##[id^="afdf-"]
@@ -11836,6 +11844,8 @@ klikpapua.com,radarsriwijaya.com,rajawarta.com,suaramandiri.co,timikaexpress.com
 /wp-content/plugins/popup-builder/*$domain=infosekitarpekalongan.com|klikjatim.com|papuatimes.co.id|papuatoday.com|sindomanado.com|suluttimes.com
 papuatoday.com,radarbanten.co.id,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
 /wp-content/plugins/wp-popups-lite/*$domain=radarlampung.co.id
+kompas.com###content_news #ivsplayer01-container
+kompas.com###content_news .video-inject
 detik.com###detikdetailtext .video20detik_0
 cnnindonesia.com###idautovideocnn
 merdeka.com###ivsplayer01
@@ -11846,6 +11856,7 @@ viva.co.id###viva-content .dailymotion-cpe
 medcom.id##.article [class^="dm__video"]
 liputan6.com##.article-content-body .vidio-embed
 id.theasianparent.com##.article-page-container .player-ivideosmart-wrap
+kompas.com##.content_article #ivsplayer01-container
 sindonews.com##.detail-center .showvideo
 kapanlagi.com##.kl-content .nativevideosiframe-loader
 kompas.com##.latest ~ .ivs-wrap-wp
