@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.198
+! Version: 21.10.199
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Oct 2021 07:53 UTC
+! Last modified: 07 Oct 2021 08:20 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4734,9 +4734,12 @@ korsum.id##a[target="_blank"]:not(:has(a[href*="korsum.id"])) img
 gardapapua.com##aside:has-text(/adv/i)
 klubpria.com##center:has-text(/sponsor/i)
 doktersehat.com##div[style*="12px;"]:has-text(/iklan/i)
+biggo.id##.search-ad-banner-re
 shopee.co.id##.search-page .item-card-list__item-card-wrapper:has-text(/iklan/i)
 shopee.co.id##.shopee-search-item-result__item:has-text(/iklan/i)
 tokopedia.com##a[label-atm="taProduct"]:has(img[alt^="topads"])
+biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
+biggo.id##img[onclick*="AD_SEARCHRESULT"]
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(11)
 bobo.grid.id,cewekbanget.grid.id,hai.grid.id,nakita.grid.id,nova.grid.id,sajiansedap.grid.id##.latest_items:nth-of-type(4)
 grid.id##[id^="afdf-"]
