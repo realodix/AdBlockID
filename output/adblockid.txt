@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.213
+! Version: 21.10.214
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Oct 2021 06:23 UTC
+! Last modified: 08 Oct 2021 06:29 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4729,7 +4729,8 @@ doktersehat.com##div[style*="12px;"]:has-text(/iklan/i)
 biggo.id##.search-ad-banner-re
 shopee.co.id##.search-page .item-card-list__item-card-wrapper:has-text(/iklan/i)
 shopee.co.id##.shopee-search-item-result__item:has-text(/iklan/i)
-tokopedia.com##a[label-atm="taProduct"]:has(img[alt^="topads"])
+tokopedia.com##[data-cy="searchRsltProdgrid"] [data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
+tokopedia.com##[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
 biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
 biggo.id##img[onclick*="AD_SEARCHRESULT"]
 kumparan.com##.adunitContainer:upward(2)
@@ -12449,6 +12450,7 @@ iklandb.com,iklanin.info#@#.banner-125
 @@||resolusiweb.com/images/$1p,image
 @@||resolusiweb.com/img/$1p,image
 @@||temanggungkab.go.id/asset/$image
+@@||tokopedia.net/img/topads/$1p,image
 @@||ziyata.com/upload/$1p,image
 m.liputan6.com#@##back-to-top
 @@||inwepo.co^$ghide,badfilter

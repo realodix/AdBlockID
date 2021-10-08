@@ -37,7 +37,8 @@ doktersehat.com##div[style*="12px;"]:has-text(/iklan/i)
 biggo.id##.search-ad-banner-re
 shopee.co.id##.search-page .item-card-list__item-card-wrapper:has-text(/iklan/i)
 shopee.co.id##.shopee-search-item-result__item:has-text(/iklan/i)
-tokopedia.com##a[label-atm="taProduct"]:has(img[alt^="topads"])
+tokopedia.com##[data-cy="searchRsltProdgrid"] [data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
+tokopedia.com##[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
 biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
 biggo.id##img[onclick*="AD_SEARCHRESULT"]
 !
