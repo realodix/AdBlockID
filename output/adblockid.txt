@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.224
+! Version: 21.10.225
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Oct 2021 11:00 UTC
+! Last modified: 08 Oct 2021 11:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3837,17 +3837,11 @@ _GIF1200x120-
 ~daftarsb1m.net,~sb1m.click##[href*="daftarsb1m.net/aff/"]
 ~klook.com##[href*="klook.com/id/promo/"] > img
 ~mixersing.com##[href*="mixersing.com/api/click?query="]
-##[href*="niagahoster.co.id/ref/"]
-~p-store.net##[href*="p-store.net/signup/ref/"] > img
-~yamaha-jatim.co.id##[href*="yamaha-jatim.co.id/promo/"]
 ##[href="https://www.cl1k.com/toefl"]
 ##[href^="//mellowads.com/networkspace/"]
 ##[href^="//producebreed.com/"] > img
 ~kitabisa.com##[href^="http://ktbs.in/aplikasikitabisa"] > img
-~lazada.co.id##[href^="https://c.lazada.co.id/t/"]
-~domainesia.com##[href^="https://domainesia.com/ref.php"]
 ##[href^="https://publishers.propellerads.com/"] > img
-~uptobox.com##[href^="https://uptobox.com/affiliate"]
 ##img[data-srcset*="-1024x215."]
 ##img[data-srcset*="-1536x322."]
 ##img[data-srcset*="-2048x429."]
@@ -3982,7 +3976,6 @@ _GIF1200x120-
 ||d138am4hd4ke4y.cloudfront.net^
 ||d24afgsm39csxt.cloudfront.net^
 ||d27x580xb9ao1l.cloudfront.net^
-||d2glav2919q4cw.cloudfront.net^
 ||d2t67iukq9ieyq.cloudfront.net^
 ||d2wpknqle9nuv8.cloudfront.net^
 ||d3kh1c1apu7ke8.cloudfront.net^
@@ -4006,7 +3999,6 @@ _GIF1200x120-
 ||kotakputih.casa/images/*.gif|$third-party,image
 ||kumpulblogger.com^$third-party
 ||metroworldhost.com/partner/ajax.php$third-party
-||moveadrenaline.com^$third-party
 ||onclickbright.com^$third-party
 ||optinku.com^$third-party
 ||robo-indonesia.com/files/banners/$third-party,image
@@ -4016,12 +4008,17 @@ _GIF1200x120-
 ||img.nt1.co/bn/$third-party,image
 ||img.nt1.co/jf/$third-party,image
 ||targaubs.com^$third-party
-##[href*="dijaminmurah.com/aff.php?aff="] > img
-##[href*="idcloudhost.com/aff.php"] > img
-##[href^="https://darhostmedia.com"] > img
-##[href^="https://submit.shutterstock.com/?ref="] > img
-##[href^="https://tpro.co.id/affiliate/"] > img
-##[href^="https://www.niagahoster.co.id/ref/"] > img
+~dijaminmurah.com##[href*="dijaminmurah.com/aff.php?aff="] > img
+~idcloudhost.com##[href*="idcloudhost.com/aff.php"] > img
+~niagahoster.co.id##[href*="niagahoster.co.id/ref/"]
+~p-store.net##[href*="p-store.net/signup/ref/"] > img
+~yamaha-jatim.co.id##[href*="yamaha-jatim.co.id/promo/"]
+~lazada.co.id##[href^="https://c.lazada.co.id/t/"]
+~darhostmedia.com##[href^="https://darhostmedia.com"] > img
+~domainesia.com##[href^="https://domainesia.com/ref.php"]
+~shutterstock.com##[href^="https://submit.shutterstock.com/?ref="] > img
+~tpro.co.id##[href^="https://tpro.co.id/affiliate/"] > img
+~uptobox.com##[href^="https://uptobox.com/affiliate"]
 ||ardetamedia.com/images/affiliate/$third-party
 ||ardetamedia.com/images/banner-affiliate/$third-party
 ||ardhosting.com/img/affiliate-logo.$third-party,image
@@ -10600,6 +10597,7 @@ _topbandar_$image
 ##[href*="bit.ly/37wQH3C"]
 ##[href*="bit.ly/38MO506"]
 ##[href*="bit.ly/38U2OqP"]
+##[href*="bit.ly/399p0Pp"]
 ##[href*="bit.ly/39AcpVU"]
 ##[href*="bit.ly/39C9VHa"]
 ##[href*="bit.ly/39GGAJJ"]
@@ -11956,16 +11954,15 @@ komiku.co.id#@##banner_ad
 ||sharemydrive.xyz/iframe/content.php$frame
 103.194.171.75##.bnner
 103.194.171.75,idtube.me##.overlay
-indoxx1.asia###banner-tengah
 oploverz.biz###close-stream-ads
-167.99.31.48,anichin.my.id,animebloom.xyz,animexin.xyz,melongmovie.net,melongmovie.org,oploverz.biz###close-teaser
+167.99.31.48,anichin.my.id,animebloom.xyz,animexin.xyz,oploverz.biz###close-teaser
 inonton.com###fadeinbox
 139.99.120.222###fbawah
-148.163.72.92,199.231.164.29,213.166.69.166,drakorindofilms.work,giladrakor.cc,inidramaku.cc,kingdrakor.club###fixedban
+148.163.72.92,199.231.164.29,213.166.69.166,drakorindofilms.work,giladrakor.cc,inidramaku.cc###fixedban
 139.99.61.225###floatbanner-bottom
 45.67.228.234,lapakfilm.net###floatcenter
 inonton.com###floating_banner_top
-144.91.116.224,144.91.98.14,185.212.128.40,185.63.253.247,194.163.128.129###floating_banner_top1
+144.91.116.224,144.91.98.14,185.212.128.40,185.63.253.247,194.163.128.129,dramakor.club###floating_banner_top1
 anoboy.media###judi
 207.180.252.218,lk21tv.com###pbanner
 blackavelic.com###teaser2
@@ -11985,15 +11982,13 @@ juaramovie.org##.footer-sticky
 23.29.125.182##.idmuvi-afterplayer
 185.212.128.50##.idmuvi-topplayer
 nimegami.com##.ik
-199.231.164.28,animebatch.web.id,anoboy.media,giladrakor.cc,inidramaku.cc,kingdrakor.club,korenlovers.co##.iklan
+199.231.164.28,animebatch.web.id,anoboy.media,giladrakor.cc,inidramaku.cc##.iklan
 148.163.72.92,anichin.my.id,awsubs.co,kazefuri.net,nuflix.online##.kln
-indoxximovie.com##.mdl_container
 139.99.120.222,fb21.tv##.ns-left
 139.99.120.222,fb21.tv##.ns-right
-indomoviez.xyz##.realse a[target="_blank"] img
 149.56.24.226##.wrapper-inject
 167.114.3.50,198.204.248.230##[class$="banner"]
-103.194.171.185,158.69.0.201,159.65.11.63,167.114.3.50,167.99.31.48,185.63.253.222,199.231.164.17,207.180.252.218,51.222.99.98,51.79.157.150,51.79.157.90,51.79.159.65,51.79.160.87,51.79.226.152,51.79.226.153,51.79.244.18,51.79.244.19,54.39.169.27,cinemaindo.watch,clampschoolholic.com,khaanflix.org,lk21tv.com,melongmovie.org##[id$="banner"]
+103.194.171.185,158.69.0.201,159.65.11.63,167.114.3.50,167.99.31.48,185.63.253.222,199.231.164.17,207.180.252.218,51.222.99.98,51.79.157.150,51.79.157.90,51.79.159.65,51.79.160.87,51.79.226.152,51.79.226.153,51.79.244.18,51.79.244.19,54.39.169.27,lk21tv.com##[id$="banner"]
 animasu.tv##[id*="_bnr"]
 185.217.95.238##a[href*="_medium=banners"] video
 topfilm21.com##a[target="_blank"] > img
@@ -12012,7 +12007,7 @@ blackavelic.com,kudonime.xyz,mikanime.com,onbatch.my.id,xizuanime.blogspot.com##
 filmboxoffice.web.id,neosubs.net,tohaboy.web.id##+js(aopr, anOptions)
 animecracks.com##+js(aopr, mdpDeBlocker)
 animee.xyz##+js(aopr, mdpDeBlockerDestroyer)
-167.99.31.48,aksensei.com,cloudfilm.co,doramaflix.com,drakoric.com,dramaencode.com,dramazon.id,driverays.com,fmoviez.org,kiminime.me,kiranime.pw,koenime.com,pahe.stream,shirainime.com##+js(nobab)
+167.99.31.48,aksensei.com,cloudfilm.co,doramaflix.com,drakoric.com,dramaencode.com,dramazon.id,driverays.com,fmoviez.org,koenime.com,pahe.stream##+js(nobab)
 oploverz.biz##+js(nostif, nextFunction, 450)
 anidraw.net##+js(set, config.adblock, null)
 103.9.100.20#@#.ads-atas-player
@@ -12030,23 +12025,21 @@ drakorfans.com##+js(acis, puShown , /doOpen|popundr/)
 139.99.120.222,fb21.tv##+js(aopr, $, #myModalSingle)
 104.161.33.103,1066themovie.biz,107.152.36.57,107.152.46.207,144.91.98.14,173.212.233.209,185.212.128.50,185.212.128.53,185.224.83.128,194.67.196.93,199.231.164.17,213.136.91.132,91.230.121.24,indoxxiku.com,layarkaca21b.com,terimamovie.com##+js(aopr, $.magnificPopup.open)
 gomunime.red##+js(aopr, PBlib)
-animeindo.fun##+js(aopr, Popper)
 185.212.128.40##+js(aopr, popup_custom_data)
 otakudesu.moe##+js(json-prune, *, pop_type)
 otakudesu.moe##+js(json-prune, *, rot_url)
 oploverz.biz##+js(nostif, popup)
-103.194.171.18,111.90.150.31,139.99.120.222,139.99.61.225,162.213.249.103,193.164.131.42,204.48.22.58,51.79.159.65,cinemaindo.co.in,clampschoolholic.web.id,cloudfilm.co,drakorindoo.net,efek.stream,filmonlineindo.com,gosemuts.site,infobioskop.com,layarfilm21.link,nanidrama.com,negumo.com,otakudesu.moe,subindo.cyou,webdrakor.com##+js(window.open-defuser)
+103.194.171.18,111.90.150.31,139.99.120.222,139.99.61.225,162.213.249.103,193.164.131.42,204.48.22.58,51.79.159.65,cinemaindo.co.in,clampschoolholic.web.id,cloudfilm.co,drakorindoo.net,efek.stream,filmonlineindo.com,gosemuts.site,layarfilm21.link,nanidrama.com,negumo.com,otakudesu.moe,subindo.cyou,webdrakor.com##+js(window.open-defuser)
 $popup,domain=awnime.net
 /wp-content/plugins/angwp/*$~css,domain=dramabarat.com|indoxximovie.org
 /wp-content/plugins/cm-pop-up-banners/*$~css,domain=185.212.128.40
 /wp-content/plugins/popup-by-supsystic/*$~css,domain=213.190.4.103
-/wp-content/plugins/uji-popup/*$~css,domain=bioskopkere.club|bos21.bar|didrakorindo.com|kordramass.com|kshowsubindo.org
+/wp-content/plugins/uji-popup/*$~css,domain=bioskopkere.club|didrakorindo.com|kordramass.com|kshowsubindo.org
 /wp-content/plugins/wp-popup-banners/*$~css,domain=185.63.253.247|213.166.69.166|rumahdrama.com
 111.90.142.151,detikxxi.com###divpopup
 144.91.116.224###fadeinbox
 142.4.222.52,148.163.72.92,149.28.158.117,54.39.85.90,95.216.163.177,anichin.my.id,lapakfilm.net###floatcenter
 jagoanime.com,meownime.my.id###hbfanback
-layarkaca21xxi.com###main-popup
 149.56.24.226###overlay-pop
 awsubs.co,minioppai.org,oploverz.biz###overplay
 topfilm21.com###pop-tengah
@@ -12054,13 +12047,12 @@ topfilm21.com###pop-tengah
 anoboy.media###popup_bawah
 anoboy.media###popup_box
 kordramass.com,kshowsubindo.org##.blocker
-bos21.bar##.jquery-modal
 159.65.11.63##.popUpBannerBox
-boomxxi.icu##.popbox
-103.194.171.75,103.9.100.20,111.90.150.31,159.65.7.78,174.138.17.52,178.128.82.236,185.231.223.71,193.164.131.42,195.2.81.61,204.48.22.58,duniaxxi.com,dutafilm.asia,hakamovie.vip,moviesrc.link##.swal-overlay
-103.194.171.205,149.3.170.35,185.224.83.128,45.141.56.23,malwarebytessupport.me##[id^="netkevin-"]
-/wp-content/plugins/cm-pop-up-banners/*$~css,domain=75.119.143.213|drachindo.com|drakorindo.bar|dramakor.club|giladrakor.cc|layarkeren.uno
-194.163.152.200,45.84.1.55,drachindo.com,drakorcute.com,drakorindo.bar,dramakor.club,giladrakor.cc,inidramaku.cc,kingdrakor.club,layarkeren.site##+js(aopr, popup_custom_data)
+boomxxi.monster##.popbox
+103.194.171.75,103.9.100.20,111.90.150.31,159.65.7.78,174.138.17.52,178.128.82.236,185.231.223.71,193.164.131.42,195.2.81.61,204.48.22.58,dutafilm.asia,hakamovie.vip,moviesrc.link##.swal-overlay
+103.194.171.205,149.3.170.35,185.224.83.128,45.141.56.23##[id^="netkevin-"]
+/wp-content/plugins/cm-pop-up-banners/*$~css,domain=75.119.143.213|drachindo.com|dramakor.club|giladrakor.cc
+194.163.152.200,45.84.1.55,drachindo.com,drakorcute.com,dramakor.club,giladrakor.cc,inidramaku.cc##+js(aopr, popup_custom_data)
 194.163.152.200,oploverz.biz,surga21.com##+js(aopr, SGPB_POPUP_PARAMS)
 95.111.231.122##+js(aopr, window.pum_popups)
 213.166.69.166,bioskoplk21.club,rumahdrama.com###wpb_overlay
