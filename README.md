@@ -24,11 +24,14 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
    | Name               | Subscribe              | Deskrpsi |
    | ------------------ | ---------------------- | -------- |
-   | AdBlockID          | [subscribe][ABID_Subs] | [Raw Link][ABID_Raw] |
+   | AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
+   | AdBlockID (CM)     | [Subscribe][ABID_CMSubs] \| [Raw link][ABID_CMRaw] | Mode kompatibilitas untuk ekstensi selain uBlock Origin |
    | AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
 [ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
+[ABID_CMSubs]: https://subscribe.adblockplus.org/?location=https://filters.adtidy.org/extension/chromium/filters/120_optimized.txt&title=AdBlockID
+[ABID_CMRaw]: https://filters.adtidy.org/extension/chromium/filters/120_optimized.txt
 [ABID_Aadult]: https://github.com/realodix/AdBlockID-Adult
 
 
