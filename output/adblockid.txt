@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.294
+! Version: 21.10.295
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Oct 2021 20:57 UTC
+! Last modified: 12 Oct 2021 20:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -10171,7 +10171,7 @@ lner.co.uk,memepedia.ru#@#.banner-top
 androidspin.com#@#[href*="idspin."]
 dropshipin.id##+js(acis, $, ads)
 dafideff.com##+js(acis, addEventListener, google_ad_client)
-kuliahkomputer.com##+js(acis, eval, ignielAdBlock)
+kuliahkomputer.com,massiswo.com##+js(acis, eval, ignielAdBlock)
 ad4msan.com##+js(aopr, DHAntiAdBlocker)
 alexanews.id,blog-dnz.com,malutsatu.com,sultengraya.com##+js(aopr, adBlockDetected)
 paraedu.id##+js(aopr, anOptions)
@@ -10194,7 +10194,6 @@ royhanafi.com###levelmaxblock
 gudangpemain.com,maniakandroid.com##.blocker-notice
 gudangpemain.com,maniakandroid.com##.blocker-overlay
 teknoding.com##kbd
-/adsbygoogle.$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=massiswo.com
 /fuckadblock.$script,redirect=noop.js,domain=akurasinews.com
 @@/adsbygoogle.$script,domain=brotutor.net|igniel.com|woiden.com
 ||vkcdnservice.com/api/$script,redirect=noop.js
