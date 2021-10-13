@@ -8,7 +8,7 @@ Tutorial ini dapat membantu Anda untuk menggunakan AdBlockID pada:
 1. Buka *dashboard*.
 2. Klik tab *Filter lists*.
 3. *Scroll* ke bawah, centang *Import* di bagian *Custom*.
-4. Copy URL AdBlockID yang dapat Anda temukan di https://github.com/realodix/AdBlockID#cara-menggunakan, lalu paste URL AdBlockID pada kotak *Import*.
+4. Copy Raw Link AdBlockID yang dapat Anda temukan di https://github.com/realodix/AdBlockID#cara-menggunakan, lalu paste URL AdBlockID pada kotak *Import*.
 
    <br>![img](https://i.imgur.com/qtP7IcJ.png)<br>
 

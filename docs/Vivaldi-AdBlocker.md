@@ -11,7 +11,7 @@
    <br>![](https://i.imgur.com/IBwn8H8.png)<br>
 
 
-5. Akan muncul kotak *Import New Blocker List*. Copy URL AdBlockID yang dapat Anda temukan di https://github.com/realodix/AdBlockID#cara-menggunakan, lalu paste URL AdBlockID pada kotak yang disediakan.
+5. Akan muncul kotak *Import New Blocker List*. Copy Raw Link AdBlockID yang dapat Anda temukan di https://github.com/realodix/AdBlockID#cara-menggunakan, lalu paste URL AdBlockID pada kotak yang disediakan.
 
    <br>![](https://i.imgur.com/zBKVVGr.png)<br>
 
