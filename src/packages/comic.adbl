@@ -1,11 +1,12 @@
 ! SPECIFIC BLOCK
-! ----------------------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
 .gif$image,domain=kombatch.com
 /banner-$image,domain=komikindo.co
 /iklan.$script,domain=komiku.co.id
 ||nanime.biz^*/banner-$image
 ! SPECIFIC HIDE
-! ----------------------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
+
 mangakita.net###btm_banner
 mangaid.click###catfish
 sektekomik.com,sheamanga.my.id,westmanga.info###close-teaser
@@ -16,8 +17,19 @@ kiryuu.id,komikindo.co,mangakita.net,manhwaindo.id,sektekomik.com##.kln
 kumpulmanga.org##.kzl
 mangaku.club##.section_ad
 !
+! ANTI-ADBLOCK
+! -----------------------------------------------------------------------------
+!
+! ANTI-ADBLOCK
+mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
+kittydesu.com,kombatch.com,komikmoe.my.id,mangadisk.web.id##+js(nobab)
+!
+komiku.co.id#@##banner_ad
+!
+! Empty Ads Placeholders
+!
 ! ANNOYANCE
-! ----------------------------------------------------------------------------------------
+! -----------------------------------------------------------------------------
 ! Overlay
 komiku.co.id###Notifikasi
 klikmanga.com##body > .mtsnb-shown
@@ -37,11 +49,3 @@ mangaku.club##*:style(user-select: text !important; -webkit-touch-callout: defau
 ! Anti Right Click
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 otakudesu.moe##+js(aopr, document.oncontextmenu)
-!
-! ANTI-ADBLOCK
-mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
-kittydesu.com,kombatch.com,komikmoe.my.id,mangadisk.web.id##+js(nobab)
-!
-komiku.co.id#@##banner_ad
-!
-! Empty Ads Placeholders
