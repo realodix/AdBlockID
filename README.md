@@ -5,7 +5,7 @@
 > <br>
 > Tertarik jadi **[collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository#collaborator-access-on-a-repository-owned-by-a-user-account) / maintainer** pada AdBlockID? Jangan ragu untuk beritahu Saya 😃</sup>
 
-AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk memblokir iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
+AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/easylist/easylist), [uBlock filters](https://github.com/uBlockOrigin/uAssets) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters) yang dirancang secara khusus untuk memblokir iklan (terutama iklan yang bermuatan konten dewasa) pada website di Indonesia.
 
 
 ## Manfaat Yang Anda Dapatkan
@@ -19,29 +19,26 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 ## Cara Menggunakan
 - Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Safari](http://www.apple.com/safari/), [Opera](http://www.opera.com/), ...)
-- *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation), [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html), [Adblock Plus](https://adblockplus.org), atau ekstensi *ad blocker* lainnya. (Secara pribadi Saya menggunakan uBlock Origin untuk keperluan testing filter ini)
-- Anda dapat menggunakan filter AdBlockID dengan menambahkan alamat ini secara manual pada ekstensi adblock yang Anda gunakan.
+- *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
+- Install AdBlockID
+  - **uBlock Origin**: Klik `Subscribe` atau tambahkan `Raw link` secara manual.
+  - **AdGuard**: Cukup aktifkan AdBlockID.
 
-   | Name               | Subscribe              | Deskrpsi |
-   | ------------------ | ---------------------- | -------- |
-   | AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
-   | AdBlockID (CM)     | [Subscribe][ABID_CMSubs] \| [Raw link][ABID_CMRaw] | Mode kompatibilitas untuk ekstensi selain uBlock Origin |
-   | AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
+<br>
+
+| Name               | Subscribe | Deskrpsi |
+| ------------------ | --------- | -------- |
+| AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
+| AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
 [ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
-[ABID_CMSubs]: https://subscribe.adblockplus.org/?location=https://filters.adtidy.org/extension/chromium/filters/120_optimized.txt&title=AdBlockID
-[ABID_CMRaw]: https://filters.adtidy.org/extension/chromium/filters/120_optimized.txt
 [ABID_Aadult]: https://github.com/realodix/AdBlockID-Adult
 
 
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, AdNauseam
 - [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android
-- [AdBlock](/docs/Adblock-Plus.md): AdBlock, Adblock Plus, StopAll Ads
-- [Opera Ad Blocker](/docs/Opera-AdBlocker.md)
-- [Vivaldi Ad Blocker](/docs/Vivaldi-AdBlocker.md)
-- [AdBlocker Ultimate](/docs/ad-blocker-ultimate.md)
 
 
 ## Berkontribusi
