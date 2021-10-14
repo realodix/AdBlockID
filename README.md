@@ -21,10 +21,8 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 - Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Safari](http://www.apple.com/safari/), [Opera](http://www.opera.com/), ...)
 - *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
 - Install AdBlockID
-  - **uBlock Origin**
-    Klik `Subscribe` atau tambahkan `Raw link` secara manual.
-  - **AdGuard**
-    Cukup aktifkan AdBlockID.
+  - **uBlock Origin**: Klik `Subscribe` atau tambahkan `Raw link` secara manual.
+  - **AdGuard**: Cukup aktifkan AdBlockID.
 
 <br>
 
