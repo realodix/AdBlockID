@@ -38,10 +38,6 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, AdNauseam
 - [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android
-- [AdBlock](/docs/Adblock-Plus.md): AdBlock, Adblock Plus, StopAll Ads
-- [Opera Ad Blocker](/docs/Opera-AdBlocker.md)
-- [Vivaldi Ad Blocker](/docs/Vivaldi-AdBlocker.md)
-- [AdBlocker Ultimate](/docs/ad-blocker-ultimate.md)
 
 
 ## Berkontribusi
