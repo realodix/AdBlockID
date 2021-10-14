@@ -26,10 +26,12 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
   - **AdGuard**
     Cukup aktifkan AdBlockID.
 
-   | Name               | Subscribe | Deskrpsi |
-   | ------------------ | --------- | -------- |
-   | AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
-   | AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
+<br>
+
+| Name               | Subscribe | Deskrpsi |
+| ------------------ | --------- | -------- |
+| AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
+| AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
 [ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
