@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.348
+! Version: 21.10.350
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Oct 2021 19:13 UTC
+! Last modified: 15 Oct 2021 07:52 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -9762,6 +9762,13 @@ detik.com##article .video20detik_0
 ||video.sindonews.com/embedjw/$frame,domain=sindonews.com
 ||vidio.com/embed/*&mute=true$3p,frame
 ||youtube.com/embed/*&mute=1$frame,domain=genpi.co|katadata.co.id
+/wp-content/plugins/digiproveblog/*$domain=~wordpress.org
+/wp-content/plugins/disable-right-click/*
+/wp-content/plugins/image-watermark/js/no-right-click.js
+/wp-content/plugins/jcwp-copy-paste-blocker/*
+/wp-content/plugins/right-click-disable-orignal/*
+/wp-content/plugins/ungrabber/js/ungrabber.min.js
+/wp-content/plugins/wp-content-copy-protection/assets/*
 ainamulyana.blogspot.com,banjirembun.com,cumirproduction.blogspot.com,kucingmania.net,njongeblog.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 1001tutorial.com,banjirembun.com,beritasampit.co.id,blogsecond.com,ciriseo.net,dosenonline.id,gamefinity.id,ilmumemikatwanita.com,iqrosoft.co.id,isrul.com,kabarrakyat.id,kherysuryawan.id,murianews.com,psikologicinta.com,radiokucing.com,rgamesstore.com,suaraindonesianews.com,teraa.net,tipspetani.com##+js(acis, document.oncontextmenu)
 goozir.com##+js(acis, nocontextmenu)
@@ -9937,19 +9944,19 @@ anitoki.com##+js(aopr, protected_links)
 batchkun.com##+js(set, auto_safelink, noopFunc)
 @@/gameandroid2017/kampret/*$script,domain=batchkun.com
 aibou.xyz,aksensei.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
-144.91.105.32,mangapor.com##+js(acis, document.oncontextmenu)
-akashinime.com##+js(acis, nocontextmenu)
-194.163.142.218##+js(aeld, /^(?:contextmenu|selectstart)$/)
-gatsunime.net##+js(aopr, document.oncontextmenu)
-wibudesu.com##+js(aopw, nocontext)
-144.91.105.32,cgvindo.cyou##+js(ra, oncontextmenu|onselectstart, body)
 144.91.105.32,mangapor.com##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
 144.91.105.32##+js(acis, disableEnterKey)
 wibudesu.com##+js(acis, disableSelection, reEnable)
+mangapor.com##+js(acis, disable_copy)
+144.91.105.32,mangapor.com##+js(acis, document.oncontextmenu)
+akashinime.com##+js(acis, nocontextmenu)
+194.163.142.218##+js(aeld, /^(?:contextmenu|selectstart)$/)
 144.91.105.32##+js(aeld, /touchstart|touchend/, wccp_pro_is_passive)
+gatsunime.net##+js(aopr, document.oncontextmenu)
+wibudesu.com##+js(aopw, nocontext)
+144.91.105.32,cgvindo.cyou##+js(ra, oncontextmenu|onselectstart, body)
 194.163.142.218##+js(set, document.onselectstart, noopFunc)
 wibudesu.com##html:style(user-select: text !important; -webkit-touch-callout: default !important;)
-mangapor.com##+js(acis, disable_copy)
 ##[href*="ref=aigodrama"]
 ##[href*="ref=bossinema21"]
 ##[href*="ref=serialdrakor"]

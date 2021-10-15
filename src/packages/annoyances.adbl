@@ -100,8 +100,15 @@ detik.com##article .video20detik_0
 ||vidio.com/embed/*&mute=true$3p,frame
 ||youtube.com/embed/*&mute=1$frame,domain=genpi.co|katadata.co.id
 !
-! CONTEXT MENU & SELECTION
+! Unblock context menu and other mouse limitations
 ! -----------------------------------------------------------------------------
+/wp-content/plugins/digiproveblog/*$domain=~wordpress.org
+/wp-content/plugins/disable-right-click/*
+/wp-content/plugins/image-watermark/js/no-right-click.js
+/wp-content/plugins/jcwp-copy-paste-blocker/*
+/wp-content/plugins/right-click-disable-orignal/*
+/wp-content/plugins/ungrabber/js/ungrabber.min.js
+/wp-content/plugins/wp-content-copy-protection/assets/*
 ainamulyana.blogspot.com,banjirembun.com,cumirproduction.blogspot.com,kucingmania.net,njongeblog.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 ! Context Menu
 1001tutorial.com,banjirembun.com,beritasampit.co.id,blogsecond.com,ciriseo.net,dosenonline.id,gamefinity.id,ilmumemikatwanita.com,iqrosoft.co.id,isrul.com,kabarrakyat.id,kherysuryawan.id,murianews.com,psikologicinta.com,radiokucing.com,rgamesstore.com,suaraindonesianews.com,teraa.net,tipspetani.com##+js(acis, document.oncontextmenu)
@@ -122,9 +129,7 @@ agussiswanto097.blogspot.com,aka321.blogspot.com,arlinacode.com,ataeh.blogspot.c
 bangsiagian.id,bimdzgn.com,jagoandzgn.com,serieswans.com,struckturcode.blogspot.com,wawang.id,winmahdi.com,zotutorial.com##.post-outer:style(user-select: text !important; -webkit-touch-callout: default !important;)
 bloging-gampang.blogspot.com,indravedia.com,isrul.com,kangghani.com,kherysuryawan.id,lapakinfo.net,njongeblog.blogspot.com,pondok-belajar.com,santaibareng.net,serba-serbi-bisa.blogspot.com,teh-goyang.blogspot.com,tigaribu.net##.post:style(user-select: text !important; -webkit-touch-callout: default !important;)
 belajarmembuatwebsite.com,blogsecond.com,dewainside.blogspot.com,elmu-blog.blogspot.com,inblogspot.com,iqrosoft.co.id,irnanto.com,kurniayoung.com,mahirngoding.blogspot.com,mrmung.com,ponselsoak.com,rzkbdlhsn.blogspot.com,santriema.blogspot.com,tamboenman.xyz,tipspetani.com,websiteedukasi.com##body:style(user-select: text !important; -webkit-touch-callout: default !important;)
-!
-! COPY TEXT
-! -----------------------------------------------------------------------------
+! Copy Text
 nomis.id##+js(aeld, copy)
 rgamesstore.com,wartaterkini.news##+js(aopr, disable_copy)
 !

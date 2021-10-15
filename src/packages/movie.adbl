@@ -147,22 +147,20 @@ batchkun.com##+js(set, auto_safelink, noopFunc)
 @@/gameandroid2017/kampret/*$script,domain=batchkun.com
 !
 aibou.xyz,aksensei.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
-! Anti Right Click
-144.91.105.32,mangapor.com##+js(acis, document.oncontextmenu)
-akashinime.com##+js(acis, nocontextmenu)
-194.163.142.218##+js(aeld, /^(?:contextmenu|selectstart)$/)
-gatsunime.net##+js(aopr, document.oncontextmenu)
-wibudesu.com##+js(aopw, nocontext)
-144.91.105.32,cgvindo.cyou##+js(ra, oncontextmenu|onselectstart, body)
-! Anti Select
+! Unblock context menu and other mouse limitations
 144.91.105.32,mangapor.com##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
 144.91.105.32##+js(acis, disableEnterKey)
 wibudesu.com##+js(acis, disableSelection, reEnable)
+mangapor.com##+js(acis, disable_copy)
+144.91.105.32,mangapor.com##+js(acis, document.oncontextmenu)
+akashinime.com##+js(acis, nocontextmenu)
+194.163.142.218##+js(aeld, /^(?:contextmenu|selectstart)$/)
 144.91.105.32##+js(aeld, /touchstart|touchend/, wccp_pro_is_passive)
+gatsunime.net##+js(aopr, document.oncontextmenu)
+wibudesu.com##+js(aopw, nocontext)
+144.91.105.32,cgvindo.cyou##+js(ra, oncontextmenu|onselectstart, body)
 194.163.142.218##+js(set, document.onselectstart, noopFunc)
 wibudesu.com##html:style(user-select: text !important; -webkit-touch-callout: default !important;)
-! Anti Copy
-mangapor.com##+js(acis, disable_copy)
 !
 ! Referral
 ! -----------------------------------------------------------------------------
