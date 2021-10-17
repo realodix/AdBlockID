@@ -18,6 +18,11 @@ menantisenja.com##+js(set, adblock, 1)
 ! Untuk versi Pro ai_check_and_insert_block
 semuanyabola.com,urbandigital.id##+js(acis, ai_check_and_insert_block)
 duniailkom.com,solotrend.net##+js(acis, ai_run_scripts)
+! Fix for AdGuard Base
+!#if ext_ublock
+! https://github.com/AdguardTeam/AdguardFilters/blob/2bb9ba8/EnglishFilter/sections/antiadblock.txt#L5994
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$important,script,badfilter,redirect-rule=noop.txt,domain=igniel.com
+!#endif
 !
 !
 ! SPECIFIC

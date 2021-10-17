@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.369
+! Version: 21.10.371
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Oct 2021 08:27 UTC
+! Last modified: 17 Oct 2021 08:49 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -10232,6 +10232,9 @@ rukim.id,surgatekno.com##+js(nofab)
 menantisenja.com##+js(set, adblock, 1)
 semuanyabola.com,urbandigital.id##+js(acis, ai_check_and_insert_block)
 duniailkom.com,solotrend.net##+js(acis, ai_run_scripts)
+!#if ext_ublock
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$important,script,badfilter,redirect-rule=noop.txt,domain=igniel.com
+!#endif
 /fuckadblock.$script,redirect=noop.js,domain=akurasinews.com
 ||vkcdnservice.com/api/$script,redirect=noop.js
 @@.gif#*/ad/
