@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.363
+! Version: 21.10.364
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Oct 2021 07:04 UTC
+! Last modified: 17 Oct 2021 07:05 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2612,19 +2612,18 @@ bisnis-tempo-co.cdn.ampproject.org,blog-tempo-co.cdn.ampproject.org,bola-tempo-c
 bola-okezone-com.cdn.ampproject.org,celebrity-okezone-com.cdn.ampproject.org,economy-okezone-com.cdn.ampproject.org,lifestyle-okezone-com.cdn.ampproject.org,m-jatimnow-com.cdn.ampproject.org,muslim-okezone-com.cdn.ampproject.org,nasional-okezone-com.cdn.ampproject.org,otomotif-okezone-com.cdn.ampproject.org,sports-okezone-com.cdn.ampproject.org,techno-okezone-com.cdn.ampproject.org##amp-iframe[src^="https://click.advertnative.com/"]
 motorplus-online.com###composite-container:matches-css-before(content:/adv/i)
 tempo.co###inarticle_2:has-text(/adv/i)
-kompas.tv###jxOutstreamContainer:matches-css-before(content:"Advertisement")
-gridoto.com###jxOutstreamContainer:matches-css-before(content:/adv/i)
+gridoto.com,kompas.tv###jxOutstreamContainer:matches-css-before(content:/adv/i)
 tribunnewswiki.com##.box__reserved:matches-css-before(content:/adv/i)
 suarajatimpost.com##.card:has-text(/adv/i)
 okezone.com##.center-paralax:has([id^="div-gpt-ad"])
-kompas.tv##.clsivs:matches-css-before(content:"Advertisement")
+kompas.tv##.clsivs:matches-css-before(content:/adv/i)
 arenabola.id##.col-lg-3:has-text(/adv/i)
-parapuan.co##.commSkin__fluid:matches-css-before(content:"Advertisement")
+parapuan.co##.commSkin__fluid:matches-css-before(content:/adv/i)
 orami.co.id##.content div:has-text(/adv/i)
 sindonews.com##.ctn-mid li:has-text(/sponsor/i)
 radarbanten.co.id##.elementor-widget-image:not(:has(a[href*="radarbanten.co.id"]))
 tipspetani.com##.fixed-rside:has-text(/sponsor/i)
-kompas.tv##.mgidclsbanner:matches-css-before(content:"Advertisement")
+kompas.tv##.mgidclsbanner:matches-css-before(content:/adv/i)
 urbanasia.com##.paralax:not(:has(a[href*="urbanasia.com"]))
 genpi.co##.post-text > .caption:has-text(/adv/i)
 sasambonews.com##.sidebar .widget:has-text(/iklan/i)
