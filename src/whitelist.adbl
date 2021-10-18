@@ -81,9 +81,12 @@ m.liputan6.com#@##back-to-top
 ! Filter terdapat pada AdGuard Base, dimana hanya pada uBo Firefox memicu
 ! anti-adblock
 ! -----------------------------------------------------------------------------
+!+ PLATFORM(ext_ublock)
 !#if ext_ublock
+! https://github.com/realodix/AdBlockID/commit/1ac64327c978b30d8ea187bae2f37b231b48de64
 ! https://github.com/AdguardTeam/AdguardFilters/blob/2bb9ba8/EnglishFilter/sections/antiadblock.txt#L39
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$important,script,badfilter,redirect=noop.txt,domain=igniel.com
+! https://github.com/realodix/AdBlockID/commit/318d41a47b7c216e699759fbdeb3682f06466207
 ! https://github.com/AdguardTeam/AdguardFilters/blob/2bb9ba8/EnglishFilter/sections/antiadblock.txt#L5994
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$important,script,badfilter,redirect=noop.txt,domain=filecr.com
 !#endif
