@@ -76,13 +76,3 @@ m.liputan6.com#@##back-to-top
 @@/social-sharing-$script,domain=axe.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/85022
 @@||apis.google.com/js/platform.js$domain=tiket.com
-!
-! AdGuard Base Filter
-! Filter terdapat pada AdGuard Base, dimana hanya pada uBo Firefox memicu
-! anti-adblock
-! -----------------------------------------------------------------------------
-! https://github.com/realodix/AdBlockID/commit/1ac64327c978b30d8ea187bae2f37b231b48de64
-! https://github.com/AdguardTeam/AdguardFilters/blob/2bb9ba8/EnglishFilter/sections/antiadblock.txt#L5995
-! https://github.com/AdguardTeam/AdguardFilters/issues/24179
-!+ PLATFORM(ext_ublock)
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$important,script,badfilter,redirect=noop.txt,domain=igniel.com
