@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.431
+! Version: 21.10.433
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 22 Oct 2021 21:45 UTC
+! Last modified: 22 Oct 2021 22:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1842,6 +1842,7 @@ _GIF1200x120-
 ##img[width="720"][height="110"]
 ##img[width="720"][height="90"]
 ##img[width="728"][height="100"]
+##img[width="728"][height="80"]
 ##img[width="728"][height="90"]
 ##img[width="745"][height="222"]
 ##img[width="750"][height="158"]
@@ -9507,6 +9508,7 @@ _topbandar_$image
 ~139.177.184.125##[href*="139.177.184.125"]
 ~139.177.190.165##[href*="139.177.190.165"]
 ~139.180.135.106##[href*="139.180.135.106"]
+~139.180.152.136##[href*="139.180.152.136"]
 ~139.180.159.232##[href*="139.180.159.232"]
 ~139.180.192.183##[href*="139.180.192.183"]
 ~139.180.220.167##[href*="139.180.220.167"]
@@ -9864,9 +9866,10 @@ mangakita.net###btm_banner
 mangaid.click###catfish
 sektekomik.com,sheamanga.my.id,westmanga.info###close-teaser
 mangaku.club###ftadsth
+komikvip.com###sidebar .textwidget:not(:has(#a[href*="komikvip.com"])) img
 bacakomik.co,komikstation.com###teaser3
 mangaku.club##.adv
-kiryuu.id,komikindo.co,mangakita.net,manhwaindo.id,ngomik.net,sektekomik.com##.kln
+kiryuu.id,komikindo.co,komikvip.com,mangakita.net,manhwaindo.id,ngomik.net,sektekomik.com##.kln
 kumpulmanga.org##.kzl
 mangaku.club##.section_ad
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
