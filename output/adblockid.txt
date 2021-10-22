@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.416
+! Version: 21.10.417
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 22 Oct 2021 14:58 UTC
+! Last modified: 22 Oct 2021 15:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1185,6 +1185,8 @@ _GIF1200x120-
 ###advsidebar
 ###ai-adb-ads
 ###ai-adb-sponsors
+###area-iklan-kanan-atas
+###area-iklan-kiri-atas
 ###center-ads
 ###close-floatads
 ###div-ad-mediumrectangle_1
@@ -1378,6 +1380,9 @@ _GIF1200x120-
 ##.anm__flying--ads-left
 ##.anm__flying--ads-right
 ##.anm__flying--ads-wrap
+##.area-iklan-atas
+##.area-iklan-kanan-atas
+##.area-iklan-kiri-atas
 ##.banner-ads-image
 ##.banner-ads-inner
 ##.banner-ads-wrap
@@ -10219,7 +10224,7 @@ banki24.by#@#.banner1
 lner.co.uk,memepedia.ru#@#.banner-top
 androidspin.com#@#[href*="idspin."]
 dropshipin.id##+js(acis, $, ads)
-cydiaguide.app,redaksiid.blogspot.com##+js(acis, addEventListener, DOMNodeRemoved)
+cydiaguide.app,eltelu.blogspot.com,redaksiid.blogspot.com##+js(acis, addEventListener, DOMNodeRemoved)
 dafideff.com##+js(acis, addEventListener, google_ad_client)
 kuliahkomputer.com,massiswo.com##+js(acis, eval, ignielAdBlock)
 ad4msan.com##+js(aopr, DHAntiAdBlocker)
