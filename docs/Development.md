@@ -32,26 +32,28 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ adult-block.adbl       General block, khusus iklan berkonten dewasa.
  │   ├─ adult-hide.adbl        General hide, khusus iklan berkonten dewasa.
  │   ├─ adult-hide-ip.adbl     General hide, khusus iklan berkonten dewasa.
- │   ├─ annoyances.adbl
- │   ├─ comic.adbl
- │   ├─ international.adbl
- │   ├─ movie.adbl
- │   ├─ sl_anti-adblock.adbl
+ │   ├─ annoyances.adbl        Semua jenis filter, khusus untuk menangani beberapa limitasi.
+ │   ├─ comic.adbl             Semua jenis filter, khusus untuk web komik.
+ │   ├─ international.adbl     Semua jenis filter, khusus untuk web internasional.
+ │   ├─ movie.adbl             Semua jenis filter, khusus untuk web nonton ilegal.
+ │   ├─ sl_anti-adblock.adbl   Melumpuhkan detektor ad blocker, khusus untuk situs berjenis
+ |   |                         safelink/shortlink.
  │   ├─ sl_anti-safelink.adbl
- │   └─ sl_safelink.adbl       Filter untuk menangani iklan pada situs safelink/shortlink.
- ├─ adservers.adbl          Domain penyedia layanan iklan pihak ketiga.
- ├─ anti-adblock.adbl       Filter khusus menangani web yang mendeteksi dan melarang Anda menggunakan
- │                          Ad Blocker.
- ├─ extended.adbl           Extended CSS selectors dan lainnya.
- ├─ general_block.adbl
- ├─ general_hide.adbl
- ├─ specific_block.adbl     Secara spesifik hanya menyembunyikan content pada domain yang disebutkan.
- ├─ specific_hide.adbl      Secara spesifik hanya blockir content pada domain yang disebutkan.
- ├─ specific_hide_ext.adbl  Secara spesifik hanya blockir content pada domain yang
- ├─ thirdparty.adbl         Domain yang fungsi utamanya bukan sebagai server, namun dalam beberapa
- │                          kasus dijadikan tempat untuk host iklan.
+ │   └─ sl_safelink.adbl       Semua jenis filter (kecuali yang terdapat pada sl_anti-adblock.adbl dan
+ |                             sl_anti-safelink.adbl), khusus untuk situs berjenis safelink/shortlink.
+ ├─ adservers.adbl          Domain/IP penyedia layanan iklan pihak ketiga.
+ ├─ anti-adblock.adbl       Semua jenis filter, khusus untuk melumpuhkan detektor ad blocker.
+ ├─ extended.adbl           Perbaiki tampilan web setelah iklannya dihilangkan.
+ ├─ general_block.adbl      Semua web terdampak.
+ ├─ general_hide.adbl       Semua web terdampak.
+ ├─ specific_block.adbl     Hanya domain/IP web yang masuk ke dalam daftar yang ikut terdampak.
+ ├─ specific_hide.adbl      Hanya domain/IP web yang masuk ke dalam daftar yang ikut terdampak.
+ ├─ specific_hide_ext.adbl  Hampir mirip seperti specific_hide.adbl, namun prosedural.
+ ├─ thirdparty.adbl         Hampir mirip seperti di adservers.adbl, namun layanan utama dari web
+ │                          tersebut bukan untuk menyediakan iklan.
  └─ whitelist.adbl          Dalam kasus tertentu, Kita perlu memasukkan web ke dalam whitelist.
-                            Contoh: Fungsi utama dari web tersebut tidak jalan karena kesalahan blokir.
+                            Contoh: Fungsi utama dari web tersebut tidak jalan karena terdapat
+                            kesalahan blokir.
 ```
 
 <sup>* GHide</sup>
