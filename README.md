@@ -10,20 +10,24 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 ## Manfaat Yang Anda Dapatkan
 1. **Faster, More Enjoyable Browsing**: Blokir iklan yang mengganggu pengalaman browsing Anda. Ucapkan selamat tinggal pada iklan video, banner gerak, PopAds dan banyak lagi. Memblokir gangguan ini berarti membuka halaman akan lebih cepat.
-2. **Anti-AdBlocker Detector**
-3. **Overlay-Blocker**: Lupakan obtrusive overlay (pop-up) yang mengganggu.
-4. **Annoyances**: Melumpuhkan Anti copy-paste dan Anti right-click, semua akan berjalan normal seperti biasa.
-5. **Anti-Safelink**: Lupakan URL safelink ketika hendak download file kesayangan Anda.
-6. **Clean:** no `extra` abracadabra!
+2. **Bypass AdBlock Detection**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
+3. **Bypass Mouse & Key Limitations**: Melumpuhkan beberapa batasan pada halaman web, seperti tidak bisa klik kanan, tidak bisa copy artikel, dll.
+4. **Bypass Safelink**: Lupakan URL safelink ketika hendak download file kesayangan Anda.
+5. **Clean:** Halaman web jadi bersih dan nyaman. No `extra` abracadabra!
 
 
 ## Cara Menggunakan
-- Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Safari](http://www.apple.com/safari/), [Opera](http://www.opera.com/), ...)
-- *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
-- Install AdBlockID
-  - **uBlock Origin**: Klik `Subscribe` atau tambahkan `Raw link` secara manual.
-  - **AdGuard**: Cukup aktifkan AdBlockID.
+#### Desktop
+1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
+2. *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
+3. Install AdBlockID
+   - **uBlock Origin**: Lihat table di bawah, klik `Subscribe` atau tambahkan `Raw link` secara manual, lebih lanjut lihat [`Import external filter lists`](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web).
+   - **AdGuard**: Cukup aktifkan AdBlockID.
 
+#### Mobile
+- **Android**: [Kiwi Browser](https://kiwibrowser.com) + [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), lalu ikuti caranya seperti install AdBlockID di desktop.
+- **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), lalu aktifkan AdBlockID.
+- **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), lalu aktifkan AdBlockID.
 <br>
 
 | Name               | Subscribe | Deskrpsi |
@@ -38,7 +42,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, AdNauseam
-- [AdGuard](/docs/Adguard.md): AdGuard Browser extension, AdGuard for Windows & AdGuard for Android
+- [AdGuard](/docs/Adguard.md).
 
 
 ## Berkontribusi
