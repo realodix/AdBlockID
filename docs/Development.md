@@ -79,8 +79,8 @@ Anda dapat menggunakannya dengan 2 cara:
 
 Klik `Ctrl+Shift+P`, lalu klik `Tasks: Run Task`, maka akan terdapat beberapa pilihan:
 
-- **Build**: Render _filter list fragments_ ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
-- **FOP**: Mengurutkan, menggabungkan dan memformat ulang beberapa  filter jika memungkinkan.
+- **Build**: Mengurutkan, merapikan dan menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+- **FOP**: Mengurutkan dan merapikan semua filter pada bagan di atas.
 
 #### Web Service
 - [ABP Redundancy check](https://adblockplus.org/redundancy_check)
