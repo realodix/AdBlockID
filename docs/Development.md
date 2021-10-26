@@ -38,10 +38,10 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ movie.adbl             Semua jenis filter, khusus untuk situs nonton ilegal.
  │   ├─ sl_anti-adblock.adbl   Melumpuhkan detektor ad blocker, khusus untuk situs berjenis
  |   |                         safelink/shortlink.
- │   ├─ sl_anti-safelink.adbl
+ │   ├─ sl_anti-safelink.adbl  Melumpuhkan pembuatan safelink secara otomatis.
  │   └─ sl_safelink.adbl       Semua jenis filter (kecuali filter pada sl_anti-adblock.adbl dan
  |                             sl_anti-safelink.adbl), khusus untuk situs berjenis safelink/shortlink.
- ├─ adservers.adbl          Domain/IP penyedia layanan iklan pihak ketiga.
+ ├─ adservers.adbl          Daftar domain/IP penyedia layanan iklan pihak ketiga.
  ├─ anti-adblock.adbl       Semua jenis filter, khusus untuk melumpuhkan detektor ad blocker.
  ├─ extended.adbl           Perbaiki tampilan situs setelah iklannya dihilangkan.
  ├─ general_block.adbl      Semua situs terdampak.
