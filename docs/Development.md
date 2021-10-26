@@ -1,4 +1,4 @@
-### Persiapan
+## Persiapan
 Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
 - [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
@@ -8,7 +8,9 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
 `$ pip install -e tools/filters-compiler`
 
-### Panduan untuk menulis filter
+
+
+## Panduan untuk menulis filter
 
 Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
@@ -19,45 +21,8 @@ Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 - [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md).
 
 
-### Development Tools
 
-Anda dapat menggunakannya dengan 2 cara:
-#### Terminal
-
-- `./build.sh`
-
-  Mengurutkan, merapikan dan menggabungkan semua filter pada folder `src` ke dalam 1 file bernama `adblockid.txt` di folder `output`.
-
-- `python tools/fop/fop.py`
-
-  Mengurutkan dan merapikan semua filter pada folder `src`.
-
-- `flrender -i abid=. template/adblockid.adbl output/adblockid.txt`
-
-  Menggabungkan semua filter pada folder `src` ke dalam 1 file bernama `adblockid.txt` di folder `output`.
-
-
-#### Visual Studio Code Tasks
-
-Klik `Ctrl+Shift+P`, lalu klik `Tasks: Run Task`, maka akan terdapat beberapa pilihan:
-
-- **Build**: Render _filter list fragments_ ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
-- **FOP**: Mengurutkan, menggabungkan dan memformat ulang beberapa  filter jika memungkinkan.
-
-
-### Format Pesan Commit
-
-Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk membuat pesan. Untuk contoh penggunaannya, Anda dapat melihat [history commit](https://github.com/realodix/AdBlockID/commits).
-
-| Type   | Deskripsi |
-| ------ | --------- |
-| `AA`   | Anti-Adblock. |
-| `M`    | Maintain filter. |
-| `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
-| `docs` | Edit file dokumentasi pada folder `docs`, termasuk `readme.md` dan dokumentasi pada file fragment AdBlockID (folder `src`) . |
-| `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore` & `build.sh`). |
-
-### Struktur Direktori
+## Struktur Direktori
 
 Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah ini:
 
@@ -89,3 +54,44 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
                             whitelist. Contoh: Fungsi utama dari web tersebut tidak jalan
                             karena kesalahan blokir.
 ```
+
+
+
+## Development Tools
+
+Anda dapat menggunakannya dengan 2 cara:
+#### Terminal
+
+- `./build.sh`
+
+  Mengurutkan, merapikan dan menggabungkan semua filter pada folder `src` ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+
+- `python tools/fop/fop.py`
+
+  Mengurutkan dan merapikan semua filter pada folder `src`.
+
+- `flrender -i abid=. template/adblockid.adbl output/adblockid.txt`
+
+  Menggabungkan semua filter pada folder `src` ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+
+
+#### Visual Studio Code Tasks
+
+Klik `Ctrl+Shift+P`, lalu klik `Tasks: Run Task`, maka akan terdapat beberapa pilihan:
+
+- **Build**: Render _filter list fragments_ ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
+- **FOP**: Mengurutkan, menggabungkan dan memformat ulang beberapa  filter jika memungkinkan.
+
+
+
+## Format Pesan Commit
+
+Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk membuat pesan. Untuk contoh penggunaannya, Anda dapat melihat [history commit](https://github.com/realodix/AdBlockID/commits).
+
+| Type   | Deskripsi |
+| ------ | --------- |
+| `AA`   | Anti-Adblock. |
+| `M`    | Maintain filter. |
+| `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
+| `docs` | Edit file dokumentasi pada folder `docs`, termasuk `readme.md` dan dokumentasi pada file fragment AdBlockID (folder `src`) . |
+| `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore` & `build.sh`). |
