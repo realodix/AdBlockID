@@ -24,7 +24,7 @@ Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
 ## Struktur Direktori
 
-Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah ini:
+Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberapa file, seperti bagan di bawah ini:
 
 ```
 /src
