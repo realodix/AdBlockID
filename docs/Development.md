@@ -33,9 +33,9 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  │   ├─ adult-hide.adbl        General hide, khusus iklan berkonten dewasa.
  │   ├─ adult-hide-ip.adbl     General hide, khusus iklan berkonten dewasa.
  │   ├─ annoyances.adbl        Semua jenis filter, khusus untuk menangani beberapa limitasi.
- │   ├─ comic.adbl             Semua jenis filter, khusus untuk web komik.
- │   ├─ international.adbl     Semua jenis filter, khusus untuk web internasional.
- │   ├─ movie.adbl             Semua jenis filter, khusus untuk web nonton ilegal.
+ │   ├─ comic.adbl             Semua jenis filter, khusus untuk situs komik ilegal.
+ │   ├─ international.adbl     Semua jenis filter, khusus untuk situs internasional.
+ │   ├─ movie.adbl             Semua jenis filter, khusus untuk situs nonton ilegal.
  │   ├─ sl_anti-adblock.adbl   Melumpuhkan detektor ad blocker, khusus untuk situs berjenis
  |   |                         safelink/shortlink.
  │   ├─ sl_anti-safelink.adbl
@@ -43,17 +43,17 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  |                             sl_anti-safelink.adbl), khusus untuk situs berjenis safelink/shortlink.
  ├─ adservers.adbl          Domain/IP penyedia layanan iklan pihak ketiga.
  ├─ anti-adblock.adbl       Semua jenis filter, khusus untuk melumpuhkan detektor ad blocker.
- ├─ extended.adbl           Perbaiki tampilan web setelah iklannya dihilangkan.
- ├─ general_block.adbl      Semua web terdampak.
- ├─ general_hide.adbl       Semua web terdampak.
- ├─ specific_block.adbl     Hanya domain/IP web yang masuk ke dalam daftar yang ikut terdampak.
- ├─ specific_hide.adbl      Hanya domain/IP web yang masuk ke dalam daftar yang ikut terdampak.
+ ├─ extended.adbl           Perbaiki tampilan situs setelah iklannya dihilangkan.
+ ├─ general_block.adbl      Semua situs terdampak.
+ ├─ general_hide.adbl       Semua situs terdampak.
+ ├─ specific_block.adbl     Hanya domain/IP situs yang masuk ke dalam daftar yang ikut terdampak.
+ ├─ specific_hide.adbl      Hanya domain/IP situs yang masuk ke dalam daftar yang ikut terdampak.
  ├─ specific_hide_ext.adbl  Hampir mirip seperti specific_hide.adbl, namun prosedural.
- ├─ thirdparty.adbl         Hampir mirip seperti di adservers.adbl, namun layanan utama dari web
+ ├─ thirdparty.adbl         Hampir mirip seperti di adservers.adbl, namun layanan utama dari situs
  │                          tersebut bukan untuk menyediakan iklan.
- └─ whitelist.adbl          Dalam kasus tertentu, Kita perlu memasukkan web ke dalam whitelist.
-                            Contoh: Fungsi utama dari web tersebut tidak jalan karena terdapat
-                            kesalahan blokir.
+ └─ whitelist.adbl          Dalam kasus tertentu, Kita perlu memasukkan domain/IP situs ke dalam
+                            whitelist. Contoh: Fungsi utama dari situs tersebut tidak jalan karena
+                            terdapat kesalahan blokir.
 ```
 
 <sup>* GHide</sup>
