@@ -29,9 +29,9 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
 ```
 /src
  ├─ /packages
- │   ├─ adult-block.adbl       General block, khusus iklan berkonten dewasa.
- │   ├─ adult-hide.adbl        General hide, khusus iklan berkonten dewasa.
- │   ├─ adult-hide-ip.adbl     General hide, khusus iklan berkonten dewasa.
+ │   ├─ adult-block.adbl       Mirip general_block.adbl, namun khusus untuk iklan berkonten dewasa.
+ │   ├─ adult-hide.adbl        Mirip general_hide.adbl, namun khusus untuk iklan berkonten dewasa.
+ │   ├─ adult-hide-ip.adbl     Mirip general_hide.adbl, namun khusus untuk iklan berkonten dewasa.
  │   ├─ annoyances.adbl        Semua jenis filter, khusus untuk menangani beberapa limitasi.
  │   ├─ comic.adbl             Semua jenis filter, khusus untuk situs komik ilegal.
  │   ├─ international.adbl     Semua jenis filter, khusus untuk situs internasional.
@@ -44,10 +44,10 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
  ├─ adservers.adbl          Daftar domain/IP penyedia layanan iklan pihak ketiga.
  ├─ anti-adblock.adbl       Semua jenis filter, khusus untuk melumpuhkan detektor ad blocker.
  ├─ extended.adbl           Perbaiki tampilan situs setelah iklannya dihilangkan.
- ├─ general_block.adbl      Semua situs terdampak.
- ├─ general_hide.adbl       Semua situs terdampak.
- ├─ specific_block.adbl     Hanya domain/IP situs yang masuk ke dalam daftar yang ikut terdampak.
- ├─ specific_hide.adbl      Hanya domain/IP situs yang masuk ke dalam daftar yang ikut terdampak.
+ ├─ general_block.adbl      Filter general untuk blokir iklan
+ ├─ general_hide.adbl       Filter general untuk sembunyikan iklan jika tidak dapat di-blokir
+ ├─ specific_block.adbl     Filter spesifik untuk blokir iklan
+ ├─ specific_hide.adbl      Filter spesifik untuk sembunyikan iklan jika tidak dapat di-blokir
  ├─ specific_hide_ext.adbl  Hampir mirip seperti specific_hide.adbl, namun prosedural.
  ├─ thirdparty.adbl         Hampir mirip seperti di adservers.adbl, namun layanan utama dari situs
  │                          tersebut bukan untuk menyediakan iklan.
