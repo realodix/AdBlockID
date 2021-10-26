@@ -75,7 +75,6 @@ Anda dapat menggunakannya dengan 2 cara:
 
   Menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
-
 #### Visual Studio Code Tasks
 
 Klik `Ctrl+Shift+P`, lalu klik `Tasks: Run Task`, maka akan terdapat beberapa pilihan:
@@ -83,7 +82,9 @@ Klik `Ctrl+Shift+P`, lalu klik `Tasks: Run Task`, maka akan terdapat beberapa pi
 - **Build**: Render _filter list fragments_ ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
 - **FOP**: Mengurutkan, menggabungkan dan memformat ulang beberapa  filter jika memungkinkan.
 
-
+#### Web Service
+- [ABP Redundancy check](https://adblockplus.org/redundancy_check)
+- [ABPVN Redundancy check](https://abpvn.com/ruleChecker/redundantRuleChecker.html)
 
 ## Format Pesan Commit
 
