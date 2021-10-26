@@ -21,16 +21,25 @@ Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
 ### Development Tools
 
-| File              | Deskripsi                                 |
-| ----------------- | ----------------------------------------- |
-| `build.sh`        | Menggabungkan filter list ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`. |
+Anda dapat menggunakannya dengan 2 cara:
+#### Terminal
+
+- `./build.sh`
+
+  Mengurutkan, merapikan dan menggabungkan semua filter pada folder `src` ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+
+- `python tools/fop/fop.py`
+
+  Mengurutkan dan merapikan semua filter pada folder `src`.
+
+- `flrender -i abid=. template/adblockid.adbl output/adblockid.txt`
+
+  Menggabungkan semua filter pada folder `src` ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
 
 #### Visual Studio Code Tasks
 
-Sebagian besar filter pada AdBlockID ditulis dengan [Visual Studio Code](https://code.visualstudio.com/) dan berbagai tools pendukung telah diintegrasikan ke dalam Visual Studio Code melalui Tasks.
-
-Anda dapat mengakses Visual Studio Code Tasks dengan menekan `Ctrl+Shift+P`, lalu tekan `Tasks: Run Task`.
+Klik `Ctrl+Shift+P`, lalu klik `Tasks: Run Task`, maka akan terdapat beberapa pilihan:
 
 - **Build**: Render _filter list fragments_ ke dalam file `adblockid.txt`. Hasilnya ada di folder `output`.
 - **FOP**: Mengurutkan, menggabungkan dan memformat ulang beberapa  filter jika memungkinkan.
