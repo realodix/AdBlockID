@@ -29,32 +29,32 @@ Semua file fragment AdBlockID ada di dalam folder `src`, seperti bagan di bawah 
 ```
 /src
  ├─ /packages
- │   ├─ adult-block.adbl       Filter umum untuk blockir iklan berkonten dewasa.
- │   ├─ adult-hide.adbl        Filter umum untuk menyembunyikan iklan berkonten dewasa.
+ │   ├─ adult-block.adbl       General block, khusus iklan berkonten dewasa.
+ │   ├─ adult-hide.adbl        General hide, khusus iklan berkonten dewasa.
+ │   ├─ adult-hide-ip.adbl     General hide, khusus iklan berkonten dewasa.
  │   ├─ annoyances.adbl
  │   ├─ comic.adbl
  │   ├─ international.adbl
  │   ├─ movie.adbl
  │   ├─ sl_anti-adblock.adbl
  │   ├─ sl_anti-safelink.adbl
- │   └─ sl_safelink.adbl       Filter untuk menangani iklan pada situs safelink / shortlink.
+ │   └─ sl_safelink.adbl       Filter untuk menangani iklan pada situs safelink/shortlink.
  ├─ adservers.adbl          Domain penyedia layanan iklan pihak ketiga.
- ├─ anti-adblock.adbl       Filter khusus menangani web yang mendeteksi dan melarang Anda
- │                          menggunakan Ad Blocker.
+ ├─ anti-adblock.adbl       Filter khusus menangani web yang mendeteksi dan melarang Anda menggunakan
+ │                          Ad Blocker.
  ├─ extended.adbl           Extended CSS selectors dan lainnya.
- ├─ general_block.adbl      Filter umum untuk blockir content pada halaman web.
- ├─ general_hide.adbl       Filter umum untuk menyembunyikan content pada halaman web.
- ├─ specific_block.adbl     Secara spesifik hanya menyembunyikan content pada domain yang
- │                          disebutkan.
- ├─ specific_hide.adbl      Secara spesifik hanya blockir content pada domain yang
- │                          disebutkan.
- ├─ thirdparty.adbl         Domain yang fungsi utamanya bukan sebagai server, namun dalam
- │                          beberapa kasus dijadikan tempat untuk host iklan.
- └─ whitelist.adbl          Dalam kasus tertentu, Kita perlu memasukkan web ke dalam
-                            whitelist. Contoh: Fungsi utama dari web tersebut tidak jalan
-                            karena kesalahan blokir.
+ ├─ general_block.adbl
+ ├─ general_hide.adbl
+ ├─ specific_block.adbl     Secara spesifik hanya menyembunyikan content pada domain yang disebutkan.
+ ├─ specific_hide.adbl      Secara spesifik hanya blockir content pada domain yang disebutkan.
+ ├─ specific_hide_ext.adbl  Secara spesifik hanya blockir content pada domain yang
+ ├─ thirdparty.adbl         Domain yang fungsi utamanya bukan sebagai server, namun dalam beberapa
+ │                          kasus dijadikan tempat untuk host iklan.
+ └─ whitelist.adbl          Dalam kasus tertentu, Kita perlu memasukkan web ke dalam whitelist.
+                            Contoh: Fungsi utama dari web tersebut tidak jalan karena kesalahan blokir.
 ```
 
+<sup>* GHide</sup>
 
 
 ## Development Tools
