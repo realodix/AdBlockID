@@ -56,7 +56,6 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
                             terdapat kesalahan blokir.
 ```
 
-<sup>* GHide</sup>
 
 
 ## Development Tools
@@ -66,15 +65,15 @@ Anda dapat menggunakannya dengan 2 cara:
 
 - `./build.sh`
 
-  Mengurutkan, merapikan dan menggabungkan semua filter pada folder `src` ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+  Mengurutkan, merapikan dan menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
 - `python tools/fop/fop.py`
 
-  Mengurutkan dan merapikan semua filter pada folder `src`.
+  Mengurutkan dan merapikan semua filter pada bagan di atas.
 
 - `flrender -i abid=. template/adblockid.adbl output/adblockid.txt`
 
-  Menggabungkan semua filter pada folder `src` ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+  Menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
 
 #### Visual Studio Code Tasks
