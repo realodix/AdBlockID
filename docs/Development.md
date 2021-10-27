@@ -32,9 +32,9 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  │   ├─ adult-block.adbl          [G] Blokir iklan berkonten dewasa.
  │   ├─ adult-hide.adbl           [G] Sembunyikan iklan berkonten dewasa.
  │   ├─ adult-hide-ip.adbl        [G] Sembunyikan iklan berkonten dewasa.
- │   ├─ annoyance.adbl            Menghilangkan elemen yang mengganggu.
- │   ├─ annoyance_limitation.adbl Menangani beberapa limitasi.
- │   ├─ annoyance_safelink.adbl   Menampilkan link aslinya.
+ │   ├─ annoyance.adbl            [G, S] Menghilangkan elemen yang mengganggu.
+ │   ├─ annoyance_limitation.adbl [G, S] Menangani beberapa limitasi.
+ │   ├─ annoyance_safelink.adbl   [G, S] Menampilkan link aslinya.
  │   ├─ comic.adbl                [All] Situs komik ilegal.
  │   ├─ international.adbl        [All] Situs internasional.
  │   ├─ movie.adbl                [All] Situs nonton ilegal.
@@ -55,8 +55,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ```
 
 <sup>
-*[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance. Filter
-bersifat spesifi dan general. <br>
+*[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance. Filter bersifat spesifi dan general. <br>
 *[G]: Filter bersifat general, tidak terbatas pada situs tertentu. <br>
 *[S]: Filter bersifat spesifik, terbatas pada situs tertentu. <br>
 </sup>
