@@ -13,6 +13,45 @@ asuransiku.info##.klnsora
 semawur.com##[href*="semawur.com/links/share/"]
 modebaca.com##[href*="tautan.pro"]
 !
+! ANTI-ADBLOCK
+! -----------------------------------------------------------------------------
+! https://github.com/gorhill/uBlock/wiki/Resources-Library
+fc-lc.com,fc.lc,fcc.lc##+js(acis, addEventListener, DOMNodeRemoved)
+belinfo.my.id,kangapip.com,linkerload.com,metroupdate.biz,skiped.me##+js(acis, addEventListener, google_ad_client)
+bevru.club,bolssc.com,cuts-url.com,eio.io,eririo.club,exe.app,exee.io,exey.io,freshi.site,srek.net##+js(acis, disableItToContinue)
+adikhealth.xyz,duit.cc,liveshootv.com,mangindo.xyz,miuiku.com,safeku.com,sekilastekno.com,sportif.id##+js(acis, eval, ignielAdBlock)
+nurhamka.com,rikucan.com##+js(aopr, adBlockDetected)
+adikinfo.my.id##+js(aopr, adsScript)
+apamanfaat.id##+js(aopr, anOptions, anOptionAdsSelectors)
+adsafelink.com,aii.sh,bevru.club,bolssc.com,cuts-url.com,dz4link.com,eio.io,eririo.club,exe.app,exee.io,exey.io,fotodovana.com,freshi.site,megaurl.in,metroupdate.biz,sekilastekno.com,shrinke.me,shrinkme.in,skiped.me,srek.net,stfly.io,tei.ai,viral-topics.com,wi.cr##+js(aopr, app_vars.force_disable_adblock)
+copydev.com,ljutkeunvpn.blogspot.com##+js(aopr, mql)
+menjelajahi.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
+uplink.my.id##+js(aopr, tidakAdaPenghalangAds)
+agansultan.co,apasih.pw,informatikamu.id,linkpoi.me,sopasti.com##+js(nobab)
+game-kentang.blogspot.com,hargawebsite.com,keisekaikuy.blogspot.com,newhealthblog.com,oploverznews.blogspot.com,safelink-jozz.blogspot.com##+js(nofab)
+my-code4you.blogspot.com##+js(nostif, offsetLeft)
+my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
+!
+@@/adsbygoogle.$script,domain=informations-library.blogspot.com|misayukiusagi.blogspot.com|teknorizen.blogspot.com|zxcfiles.com
+@@/advertisement.$script,domain=anifiles.org|disingkat.in
+@@/js/ads.$script,domain=adsafelink.net|modebaca.com|safeku.com|shrink.vip|templink.org|urlto.id
+!
+@@||kompisafe.blogspot.com^$ghide
+@@||safeku.com^$ghide
+@@||safelkmeong.blogspot.com^$ghide
+@@||usesafelink.blogspot.com^$ghide
+!
+! EMPTY ADS PLACEHOLDERS
+! ----------------------------------------------------------------------------------------
+intercelestial.com,linegee.net,sweetlantern.com###externalinject-gpt-passback-container
+intercelestial.com,linegee.net,sweetlantern.com###externalinject-gpt-passback-iframe
+intercelestial.com,sweetlantern.com##.idblog-floatbanner
+absolutesmmpanel.com##.wmg-vb-container
+!
+! WHITELIST
+! ----------------------------------------------------------------------------------------
+@@/abdiusu/project-safelink-viomagz/*/safelink-ViomagzV3.2-2tombol$3p,script
+!
 ! ANNOYANCE
 ! -----------------------------------------------------------------------------
 ! Block Pop-Up
