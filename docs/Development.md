@@ -54,6 +54,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ```
 
 <sup>
+* Penjelasan lengkap ada di masing-masing file.
 *[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance. Filter bersifat spesifi dan general. <br>
 *[G]: Filter bersifat general, tidak terbatas pada situs tertentu. <br>
 *[S]: Filter bersifat spesifik, terbatas pada situs tertentu. <br>
