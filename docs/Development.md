@@ -29,25 +29,25 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ```
 /src
  ├─ /packages
- │   ├─ adult-block.adbl       Filter general block khusus untuk iklan berkonten dewasa.
- │   ├─ adult-hide.adbl        Filter general hide khusus untuk iklan berkonten dewasa.
- │   ├─ adult-hide-ip.adbl     Filter general hide khusus untuk iklan berkonten dewasa.
- │   ├─ annoyances.adbl        Semua jenis filter, khusus untuk menangani beberapa limitasi.
- │   ├─ comic.adbl             Semua jenis filter, khusus untuk situs komik ilegal.
- │   ├─ international.adbl     Semua jenis filter, khusus untuk situs internasional.
- │   ├─ movie.adbl             Semua jenis filter, khusus untuk situs nonton ilegal.
+ │   ├─ adult-block.adbl       (GBlock) Iklan berkonten dewasa.
+ │   ├─ adult-hide.adbl        (GHide) Iklan berkonten dewasa.
+ │   ├─ adult-hide-ip.adbl     (GHide) Iklan berkonten dewasa.
+ │   ├─ annoyances.adbl        [All] khusus untuk menangani beberapa limitasi.
+ │   ├─ comic.adbl             [All] Situs komik ilegal.
+ │   ├─ international.adbl     [All] Situs internasional.
+ │   ├─ movie.adbl             [All] Situs nonton ilegal.
  │   ├─ sl_anti-adblock.adbl   Melumpuhkan detektor ad blocker, khusus untuk situs berjenis
  |   |                         safelink/shortlink.
  │   ├─ sl_anti-safelink.adbl  Melumpuhkan pembuatan safelink secara otomatis.
- │   └─ sl_safelink.adbl       Semua jenis filter (kecuali filter pada sl_anti-adblock.adbl dan
- |                             sl_anti-safelink.adbl), khusus untuk situs berjenis safelink/shortlink.
+ │   └─ sl_safelink.adbl       [All, except sl_anti-adblock.adbl & sl_anti-safelink.adbl),
+ |                             khusus untuk situs berjenis safelink/shortlink.
  ├─ adservers.adbl          Daftar domain/IP penyedia layanan iklan pihak ketiga.
- ├─ anti-adblock.adbl       Semua jenis filter, khusus untuk melumpuhkan detektor ad blocker.
+ ├─ anti-adblock.adbl       [All] khusus untuk melumpuhkan detektor ad blocker.
  ├─ extended.adbl           Perbaiki tampilan situs setelah iklannya dihilangkan.
  ├─ general_block.adbl      Filter general untuk blokir iklan
- ├─ general_hide.adbl       Filter general untuk sembunyikan iklan jika tidak dapat di-blokir
+ ├─ general_hide.adbl       Filter general untuk sembunyikan iklan jika tidak dapat diblokir
  ├─ specific_block.adbl     Filter spesifik untuk blokir iklan
- ├─ specific_hide.adbl      Filter spesifik untuk sembunyikan iklan jika tidak dapat di-blokir
+ ├─ specific_hide.adbl      Filter spesifik untuk sembunyikan iklan jika tidak dapat diblokir
  ├─ specific_hide_ext.adbl  Hampir mirip seperti specific_hide.adbl, namun prosedural.
  ├─ thirdparty.adbl         Hampir mirip seperti di adservers.adbl, namun layanan utama dari situs
  │                          tersebut bukan untuk menyediakan iklan.
@@ -56,6 +56,9 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
                             terdapat kesalahan blokir.
 ```
 
+<sup>***All**</sup>:
+<sup>***GBlock**</sup>:
+<sup>***GHide**</sup>:
 
 
 ## Development Tools
