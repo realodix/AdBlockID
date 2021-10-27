@@ -22,20 +22,15 @@ kontrastimes.com##+js(set, wpquads_adblocker_check_2, true)
 semuanyabola.com,urbandigital.id##+js(acis, ai_check_and_insert_block)
 duniailkom.com,solotrend.net##+js(acis, ai_run_scripts)
 !
-! SPECIFIC
+! SPECIFIC BLOCK
 ! ---------------------------------------------------------
-/Dualipaid/duablock$3p,script
 /fuckadblock.$script,redirect=noop.js,domain=akurasinews.com
 ||bloggerku.com/antiadblock/$script
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=antoncabon.us|bahyudinnor.com|igniel.com|koderian.my.id|shinryu2.blogspot.com
 ||vkcdnservice.com/api/$script,redirect=noop.js
 !
-@@.gif#*/ad/
-@@.jpg#*/ad/
-@@.png#*/ad/
-@@/noadblock-nice-message/assets/js/ads.js?$1p,script
 !
-! GENERIC HIDE
+! GENERAL HIDE
 ! ---------------------------------------------------------
 ! Empty Ads Placeholders
 /antiblockersjoss.$image
@@ -43,6 +38,11 @@ balipost.com##.paralax_div
 !
 ! GENERAL BLOCK
 ! ---------------------------------------------------------
+@@.gif#*/ad/
+@@.jpg#*/ad/
+@@.png#*/ad/
+@@/noadblock-nice-message/assets/js/ads.js?$1p,script
+!
 -adblock-notice-
 -adblock-notice/
 /abb-msg.js
@@ -69,6 +69,7 @@ balipost.com##.paralax_div
 /blockAndInf.js
 /deadblocker/*
 /disable-adblock.
+/Dualipaid/duablock$3p,script
 /inc/antiblock.
 /mod_ablockdetector/*
 /nonAdBlock/*
