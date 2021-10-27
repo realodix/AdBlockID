@@ -49,9 +49,8 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  ├─ specific_hide_ext.adbl  [S] Mirip seperti filter pada specific_hide.adbl, namun prosedural.
  ├─ thirdparty.adbl         [G] Mirip seperti filter pada adservers.adbl, namun layanan utama
  │                          dari situs tersebut bukan untuk menyediakan iklan.
- └─ whitelist.adbl          [G, S] Memperbaiki elemen bukan iklan atau elemen yang menjadi
-                            layanan utama pada situs tersebut, yang tidak sengaja terblokir/
-                            hilang
+ └─ whitelist.adbl          [G, S] Memperbaiki elemen yang tidak sengaja terblokir/hilang dan
+                            mengganggu fungsi utama dari situs tersebut.
 ```
 
 <sup>
