@@ -54,9 +54,11 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
                             terdapat kesalahan blokir.
 ```
 
-<sup>*[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance.</sup> <br>
-<sup>*[GBlock]: Filter general untuk blokir iklan, tidak terbatas pada jenis web tertentu.</sup> <br>
-<sup>*[GHide]: Filter general untuk menyembunyikan iklan, tidak terbatas pada jenis web tertentu.</sup> <br>
+<sup>
+*[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance. <br>
+*[GBlock]: Filter general untuk blokir iklan, tidak terbatas pada jenis web tertentu. <br>
+*[GHide]: Filter general untuk menyembunyikan iklan, tidak terbatas pada jenis web tertentu.
+</sup>
 
 
 ## Development Tools
