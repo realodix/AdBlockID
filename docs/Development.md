@@ -32,15 +32,15 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  │   ├─ adult-block.adbl          [G] Blokir iklan berkonten dewasa.
  │   ├─ adult-hide.adbl           [G] Sembunyikan iklan berkonten dewasa.
  │   ├─ adult-hide-ip.adbl        [G] Sembunyikan iklan berkonten dewasa.
- │   ├─ annoyance.adbl            [G, S] Menghilangkan elemen yang mengganggu.
- │   ├─ annoyance_limitation.adbl [G, S] Menangani beberapa limitasi.
- │   ├─ annoyance_safelink.adbl   [G, S] Menampilkan link aslinya.
+ │   ├─ annoyance.adbl            [G/S] Menghilangkan elemen yang mengganggu.
+ │   ├─ annoyance_limitation.adbl [G/S] Menangani beberapa limitasi.
+ │   ├─ annoyance_safelink.adbl   [G/S] Menampilkan link aslinya.
  │   ├─ comic.adbl                [All] Situs komik ilegal.
  │   ├─ international.adbl        [All] Situs internasional.
  │   ├─ movie.adbl                [All] Situs nonton ilegal.
  │   └─ safelink.adbl             [All] Situs berjenis safelink/shortlink.
  ├─ adservers.adbl          [G] Daftar domain/IP penyedia layanan iklan pihak ketiga.
- ├─ anti-adblock.adbl       [G, S] Melumpuhkan ad block detection.
+ ├─ anti-adblock.adbl       [G/S] Melumpuhkan ad block detection.
  ├─ extended.adbl           [S] Perbaiki tampilan situs setelah iklannya dihilangkan.
  ├─ general_block.adbl      [G] Blokir iklan.
  ├─ general_hide.adbl       [G] Sembunyikan iklan.
@@ -49,7 +49,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  ├─ specific_hide_ext.adbl  [S] Mirip seperti filter pada specific_hide.adbl, namun prosedural.
  ├─ thirdparty.adbl         [G] Mirip seperti filter pada adservers.adbl, namun layanan utama
  │                          dari situs tersebut bukan untuk menyediakan iklan.
- └─ whitelist.adbl          [G, S] Memperbaiki elemen yang tidak sengaja terblokir/hilang dan
+ └─ whitelist.adbl          [G/S] Memperbaiki elemen yang tidak sengaja terblokir/hilang dan
                             mengganggu fungsi utama dari situs tersebut.
 ```
 
