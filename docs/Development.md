@@ -42,7 +42,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  │   └─ sl_safelink.adbl       [All, except sl_anti-adblock.adbl & sl_anti-safelink.adbl),
  |                             khusus untuk situs berjenis safelink/shortlink.
  ├─ adservers.adbl          Daftar domain/IP penyedia layanan iklan pihak ketiga.
- ├─ anti-adblock.adbl       [All] khusus untuk melumpuhkan detektor ad blocker.
+ ├─ anti-adblock.adbl       [All] Melumpuhkan detektor ad blocker.
  ├─ extended.adbl           Perbaiki tampilan situs setelah iklannya dihilangkan.
  ├─ general_block.adbl      Filter general untuk blokir iklan
  ├─ general_hide.adbl       Filter general untuk sembunyikan iklan jika tidak dapat diblokir
