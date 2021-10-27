@@ -50,8 +50,8 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  ├─ thirdparty.adbl         [G] Mirip seperti filter pada adservers.adbl, namun layanan utama
  │                          dari situs tersebut bukan untuk menyediakan iklan.
  └─ whitelist.adbl          [G, S] Dalam kasus tertentu, Kita perlu memasukkan domain/IP situs ke
-                            dalam whitelist. Contoh: Fungsi utama dari situs tersebut tidak
-                            jalan karena terdapat kesalahan blokir.
+                            dalam whitelist. Contoh: Fungsi utama dari situs tersebut tidak bekerja
+                            karena terdapat kesalahan blokir.
 ```
 
 <sup>
