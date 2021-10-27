@@ -1,3 +1,14 @@
+!! Menghilangkan iklan pada situs tertentu dengan cara menyembunyikannya
+!!
+!! SCOPE
+!! - Semua situs, kecuali situs nonton ilegal, situs komik ilegal dan situs berjenis
+!!   safelink/shortlink
+!! - Procedural cosmetic filters
+!!   https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
+!! - Iklan/banner tentang layanannya di situs sendiri
+!!
+!! --------------------------------------------------------
+!!
 motorplus-online.com###composite-container:matches-css-before(content:/adv/i)
 tempo.co###inarticle_2:has-text(/adv/i)
 gridoto.com,kompas.tv###jxOutstreamContainer:matches-css-before(content:/adv/i)
@@ -48,6 +59,7 @@ biggo.id##img[onclick*="AD_SEARCHRESULT"]
 kumparan.com##.adunitContainer:upward(2)
 grid.id##[id^="afdf-"]
 kompas.com##[id^="div-gpt-ad-"]:upward(1)
+! ---
 ! Mobile
 parenting-orami-co-id.cdn.ampproject.org,parenting.orami.co.id##.container:has-text(/adv/i)
 www-kincir-com.cdn.ampproject.org##.text-center:has-text(/adv/i)
