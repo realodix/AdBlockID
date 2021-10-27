@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.469
+! Version: 21.10.473
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Oct 2021 14:20 UTC
+! Last modified: 27 Oct 2021 21:58 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1893,6 +1893,7 @@ _GIF1200x120-
 ||pondokiklan.com^$3p
 ||rajatraffic.com^$3p
 ||dpyaareaqv.xyz^$3p
+||gciywquey.xyz^$3p
 ||huuyluwjkyd.xyz^$3p
 ||kihvaqymenggd.xyz^$3p
 ||oojexulr.net^$3p
@@ -2709,6 +2710,143 @@ dutaislam.com##.outer-wrapper:style(margin-top:60px!important;)
 gridoto.com##.read_content:style(padding-top: 0!important;)
 uzone.id##.section-top:style(margin: 100px auto 0 auto!important;)
 m.akurat.co##body:style(padding-top: 0!important;)
+dropshipin.id##+js(acis, $, ads)
+cydiaguide.app,eltelu.blogspot.com,redaksiid.blogspot.com##+js(acis, addEventListener, DOMNodeRemoved)
+dafideff.com##+js(acis, addEventListener, google_ad_client)
+kuliahkomputer.com,massiswo.com,ruangcoder.com,tomytech.eu.org##+js(acis, eval, ignielAdBlock)
+ad4msan.com##+js(aopr, DHAntiAdBlocker)
+alexanews.id,blog-dnz.com,malutsatu.com,sultengraya.com##+js(aopr, adBlockDetected)
+choipanwendy.com##+js(aopr, adsansejs)
+paraedu.id##+js(aopr, anOptions)
+cuitandokter.com##+js(aopr, mdpDeBlocker)
+brotutor.net,cikimm.com,isrul.com##+js(aopr, mql)
+saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
+labkom.co.id##+js(aopr, tdBlock)
+saungfirmware.id##+js(nano-sib)
+jagoanssh.com,linkconfig.com,nafaskuda.com,sihentai.my.id##+js(nobab)
+rukim.id,surgatekno.com##+js(nofab)
+menantisenja.com##+js(set, adblock, 1)
+kontrastimes.com##+js(set, wpquads_adblocker_check_2, true)
+semuanyabola.com,urbandigital.id##+js(acis, ai_check_and_insert_block)
+duniailkom.com,solotrend.net##+js(acis, ai_run_scripts)
+/Dualipaid/duablock$3p,script
+/fuckadblock.$script,redirect=noop.js,domain=akurasinews.com
+||bloggerku.com/antiadblock/$script
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=antoncabon.us|bahyudinnor.com|igniel.com|koderian.my.id|shinryu2.blogspot.com
+||vkcdnservice.com/api/$script,redirect=noop.js
+@@.gif#*/ad/
+@@.jpg#*/ad/
+@@.png#*/ad/
+@@/noadblock-nice-message/assets/js/ads.js?$1p,script
+/antiblockersjoss.$image
+balipost.com##.paralax_div
+-adblock-notice-
+-adblock-notice/
+/abb-msg.js
+/adb_script/*
+/adbclk2.
+/adbDetect.
+/adbDetect/*
+/adbl_dtct.
+/adbl_dtct1.
+/adblock-detect/*
+/adblock-notice-
+/adblock-warning-teaser/*
+/adblock_alerter.
+/adblock_alerter/*
+/adblock_gate/images/animated.gif?
+/adblock_notify.js
+/adblocker/modal.
+/adblocker_message_
+/AdblockMessage.
+/AdblockRampok.js$script
+/antiadblock728x90_
+/antiadblockmsg.
+/antibomklikads.js$script
+/blockAndInf.js
+/deadblocker/*
+/disable-adblock.
+/inc/antiblock.
+/mod_ablockdetector/*
+/nonAdBlock/*
+/SvgAdblockDetected/*
+/wp-content/uploads/an-temp/*$css,script
+_adblock_killer.
+/wp-content/plugins/ad-block-defender/*
+/wp-content/plugins/adunblocker
+/wp-content/plugins/dh-anti-adblocker/*$script
+/wp-content/plugins/kill-adblock/*$script
+/wp-content/plugins/unblock-adsense/*/adunblock
+/wp-content/plugins/wp-adblock-dedect/js/dedect-
+@@/wp-content/plugins/dh-anti-adblocker/assets/js/showads.js$1p
+/abdiusu/AntiAdblockJkoding/*$3p
+/Arlina-Design/quasar*/arlinablock.js$3p,script
+/dewaplokis/*/dewablock.$3p,script
+/Indzign/*/levelmaxblock.$3p,script
+/kurazoneAdblock.$script
+/Script-Anti-AdBlock.$3p,script
+@@-jasa-google-$image
+@@-pasang-iklan-$image
+@@/ayopasangiklan.$image
+@@/belanja_iklan-$image
+@@/cara-beriklan.$image
+@@/contoh-iklan-$image
+@@/iklan-google-$image
+@@/iklan-langganan.$image
+@@/jasa-google-$image
+@@/jasa-iklan-$image
+@@/pasang-google-$image
+@@/pasang-iklan-$image
+@@/pasang_iklan$image
+hercodigital.id#@##googleads1
+#@##pasangiklan
+jabarprov.go.id#@#.ad-loader
+jualo.com#@#.ad-title
+baliadvertiser.biz#@#.ads-carousel
+iklandb.com,iklanin.info#@#.afs_ads
+iklandb.com,iklanin.info#@#.banner-125
+#@#.pasangiklan
+@@||adsmart.detik.com^$ghide
+@@/ad4.png$image,domain=palingseru.com
+@@/ads/*$domain=adsmart.detik.com|phd.co.id|promozia.com
+@@/adsense.$domain=herosoftmedia.co.id
+@@/advertise-$domain=ubiklan.com
+@@/advertise/*$domain=brilio.net|hipwee.com
+@@/advertisement.$domain=advertisement.keepo.me
+@@/advertiser/*$image,domain=job.id
+@@/advertising-$domain=advertising-indonesia.id|kennedybrothers.id
+@@/advertising.$domain=advertising.katadata.co.id|advertising.kontan.co.id
+@@/advertising/*$domain=client.okezone.com
+@@/bannerad.$image,domain=ad.co.id
+@@/bnrs/*$image,domain=bagusiklan.com|duniaiklangratis.com|iklan123.net|iklanbogor.com|iklanpopuler.com|iklansmart.com|megaiklan.com
+@@/bplogo.$image,domain=beritapagi.co.id
+@@/files/Ads/*$image,domain=iklanrumah.com
+@@/images/banner/*$image,domain=balicars.info
+@@/scripts/ads.$domain=ads.kaskus.co.id
+@@/uploads/page/banner/*$image,domain=astra-honda.com
+@@/videojs.ads.$domain=20.detik.com
+@@/wp-content/uploads/*$1p,image,domain=adstarsmedia.co.id|agency-iklan.com|banyumedia.co.id|berbagiide.com|bertravel.com|bluecreative.co.id|datamaya.com|dhadigital.com|doxadigital.com|hercodigital.id|herosoftmedia.co.id|idkeyword.com|jasaiklanbandung.com|jetcommerce.co.id|jurnalweb.com|karyaiklan.co.id|korporasi.kompas.id|mandreel.com|masterweb.com|matari-ad.com|merchant.id|oasisme.com|polbisdigital.com|suranegara.com|tomato.co.id|winstarlink.com
+@@/wp-content/uploads/*$image,domain=gamezone.co.id|jefferlyhelian.com|suranegara.com
+@@://ads.$domain=ads.bisnisjakarta.co.id|ads.dewarangga.com|ads.gadgetsquad.id|ads.genmuda.com|ads.id|ads.iklandaerah.com|ads.kaskus.co.id|ads.kontan.co.id|ads.maskoding.com|ads.panindai-ichilife.co.id|ads.pojoksatu.id|ads.wartaekonomi.co.id|klasika.kompas.com
+@@://ads2.$domain=meetkcm.com
+@@://adv.$domain=adv.kontan.co.id
+@@_advertising/$domain=advertising.katadata.co.id
+@@||akudigital.com/images/$1p,image
+@@||boc.co.id/images/$1p,image
+@@||iklandisini.com/banner_ads/$1p
+@@||iklanku.shopee.co.id/img/$1p,image
+@@||jualo.com/images/$1p,image
+@@||pasangiklan.com/pi_b/img/$1p,image
+@@||resolusiweb.com/images/$1p,image
+@@||resolusiweb.com/img/$1p,image
+@@||temanggungkab.go.id/asset/$image
+@@||tokopedia.net/img/topads/$1p,image
+@@||ziyata.com/upload/$1p,image
+@@||inwepo.co^$ghide,badfilter
+berkeluarga.id##.content_wrapper [id^="post-"].share-simple:style(display: inline !important;)
+m.liputan6.com#@##back-to-top
+@@/social-sharing-$script,domain=axe.com
+@@||apis.google.com/js/platform.js$domain=tiket.com
 /luxury_hd_dvd_hd.mp4$media
 ||139.99.33.240^$3p
 ||139.99.33.244^$3p
@@ -9867,6 +10005,15 @@ detik.com##article .video20detik_0
 ||video.sindonews.com/embedjw/$frame,domain=sindonews.com
 ||vidio.com/embed/*&embed_position=article-embed$3p,frame
 ||youtube.com/embed/*&mute=1$frame,domain=genpi.co|katadata.co.id
+mazterize.net##.button:has-text(/download crack/i)
+gigapurbalingga.net##.entry-content center button.user
+kuyhaa-me.com##[type="image"][src*="/sd.png"]
+mazterize.com##button:has-text(/download crack/i)
+kuyhaa.net##iframe[width="420"][height="100"]
+||analytics.s.id^$3p
+||c.lazada.co.id/t/v.gif?__t=
+||log.viva.co.id/iframe^
+||filmindonesia2020.blogspot.com^$3p
 /wp-content/plugins/digiproveblog/*$domain=~wordpress.org
 /wp-content/plugins/disable-right-click/*
 /wp-content/plugins/image-watermark/js/no-right-click.js
@@ -9902,15 +10049,136 @@ bahyudinnor.com,kuyhaa-me.com,pakpandir.com,saifullah.id,tuoka50.com##+js(aopr, 
 ipeenk.com##+js(aopr, app_advert)
 ||gigapurbalingga.net/wpsafelink.$script
 ||kuyhaa-me.com/jamu.$script
-mazterize.net##.button:has-text(/download crack/i)
-gigapurbalingga.net##.entry-content center button.user
-kuyhaa-me.com##[type="image"][src*="/sd.png"]
-mazterize.com##button:has-text(/download crack/i)
-kuyhaa.net##iframe[width="420"][height="100"]
-||analytics.s.id^$3p
-||c.lazada.co.id/t/v.gif?__t=
-||log.viva.co.id/iframe^
-||filmindonesia2020.blogspot.com^$3p
+-safelink/$3p,script
+/ABSafelink.$3p,script
+/autosafe3.$3p,script
+/autosafelink.$3p,script
+/filesafelink.$3p,script
+/Full_Page_Script_Safelink_$3p,script
+/gf21safelink.$3p,script
+/gf21safelink_$3p,script
+/js/full-page-script.$3p,script
+/js/fullPageScript.$3p,script
+/kompisafelink$3p,script
+/mastersafelink/*$3p,script
+/newsafelink/*$3p,script
+/postingan-safelink.$3p,script
+/REsafelink.$3p,script
+/safe_utama_$3p,script
+/safelink-$3p,script
+/safelink2/*$3p,script
+/safelink21.$3p,script
+/safelink3/*$3p,script
+/safelink_$3p,script
+/safelinkea.$3p,script
+/safelinknew/*$3p,script
+/safelinkv2_$3p,script
+/safelinkv2a.$3p,script
+/safelinkv2a_$3p,script
+/safeplatinum.$3p,script
+/wp-content/plugins/soralink/*$3p,script
+/wpsafelink.$3p,script
+=autosafeklinkz350_$script
+_safelink.$3p,script
+_safelinkv2.$3p,script
+_safelinkv_$3p,script
+_safeurl.$3p,script
+_shortsafelink.$3p,script
+_usafelink.$3p,script
+||1shortlink.com/js/shorten.$3p,script
+||adsafelink.com/js/webscript.$3p,script
+||adtival.com^$3p
+||akashiro.co.id/safelink.$3p,script
+||androidbusiness.us^*/js/safelink.$3p,script
+||cemiw.net/safelinks.$3p,script
+||duit.cc/safelink.$3p,script
+||forek.info/safelink.$3p,script
+||giga74.com/safelink.$3p,script
+||kadal.club/js/getlinkz.$3p,script
+||pastebin.com/raw/Rw38SyHy$3p,script
+||rikucan.com/wp-content/*/js/looping.$script
+||safelinkblog.com/js/v2.$3p,script
+||safelinku.com/fullpage/script.$3p,script
+||safelinku.com/js/web-script.$3p,script
+||shrinkads.com/js/$3p,script
+||snacklink.co/js/web-script.$3p,script
+||snacklink.id/js/web-script.$3p,script
+||zflas.com/go/js/link-converter.$3p,script
+/andrianadi888/safeevolution/*/Auto.$3p,script
+/asagichan.com/SafeLink.$3p,script
+/awlagu/sflink/*/Auto.$3p,script
+/CandraBlackz/legitlink/*/jquery.pietimer.$3p,script
+/comenxnet/master/*/Sefelink.$3p,script
+/hubgit21/club/*/club.$3p,script
+/jefcom/jefar/*/jefar.$3p,script
+/kareelproject/klinkz$3p,script
+/KompiAjaib/js/*/post1-$3p,script
+/KompiAjaib/js/*/post1_$3p,script
+/KompiAjaib/js/*/post2-$3p,script
+/KompiAjaib/js/*/post2_$3p,script
+/KompiAjaib/js/*/post3-$3p,script
+/KompiAjaib/js/*/post3_$3p,script
+/KompiAjaib/js/*/post4-$3p,script
+/KompiAjaib/js/*/post4_$3p,script
+/KompiAjaib/js/*/post5_$3p,script
+/nkpoi/js/*/idb-auto.$3p,script
+/raflipedia/keneono/*/safelink.$3p,script
+/raflipedia/protectlink/*/protectlink.$3p,script
+/riedayme/bloggercode/*/autoreplacebyfeednew.$3p,script
+/rizkiramdandi/Dev/*/autoconvretlink.$3p,script
+/sancan25/safe/*/safeblog.$3p,script
+/skuy99/safelinkmaterialize/*/auto.$3p,script
+/SylicaChan/BeNime/*/safelink.$3p,script
+/travelinsuranceweb/realestate@main/realestate.js$3p,script
+/abdiusu/project-safelink-$3p,script
+/alfirohman/tutorapk.com/*$3p,script
+/antonclanazhary/erpsoftware/*$3p,script
+/antonclanazhary/inventoryapp/*$3p,script
+/antonclanazhary/itinventory/*$3p,script
+/antonclanazhary/kompi/*$3p,script
+/apps2portable/apps2portable/*$3p,script
+/bocahmastah/safelink/*$3p,script
+/botamspawn/safelink/*$3p,script
+/CandraBlackz/slidelink/*$3p,script
+/comenxnet/conveter/*$3p,script
+/crezenity/digimoclubwp/*$3p,script
+/crezenity/imoclub/*$3p,script
+/crezenity/online/*$3p,script
+/daimonz01/aman_dn/*$3p,script
+/dedi96/safelink/*$3p,script
+/gameandroid2017/kampret/*$3p,script
+/irfaanprogrammer/safeplatinum/*$3p,script
+/johnali099/gmblc-html/*$3p,script
+/KecoaTerbank/safelink/*$3p,script
+/marsksatriagotham/benoja/*$3p,script
+/marsksatriagotham/safelinku.icu/*$3p,script
+/marsksatriagotham/safelinku/*$3p,script
+/marsksatriagotham/wvw/*$3p,script
+/marwanto606/safeplatinum/*$3p,script
+/mascholis/tipsim/*$3p,script
+/mghifariarfan/linkpunyaku/*$3p,script
+/mghifariarfan/safelink/*$3p,script
+/mghifariarfan/safeplatinum/*$3p,script
+/Purnayasagede/androix/*$3p,script
+/Purnayasagede/androixsafe/*$3p,script
+/Purnayasagede/angelsafe/*$3p,script
+/Purnayasagede/NewAngelSafe/*$3p,script
+/riandiramdani/safelinku.com/*$3p,script
+/safehos56/project/*$3p,script
+/sdnime09/myanimeindo/*$3p,script
+/sdnime09/Ngewe-om/*$3p,script
+/skuy99/1-erp-software-com/*$3p,script
+/skuy99/airlites/*$3p,script
+/skuy99/countmoney7-blogspot-com/*$3p,script
+/skuy99/erp-louvrenetwork-xyz/*$3p,script
+/skuy99/erp-ohmedia-club/*$3p,script
+/skuy99/moneywikii-blogspot-com/*$3p,script
+/skuy99/pendakicantik/*$3p,script
+/theboncud/aklista/*$3p,script
+/theboncud/pe-gi/*$3p,script
+/theboncud/safepoh/*$3p,script
+/VoreCorporation/Customer-Host/*$3p,script
+/xmithzyl/safelink/*$3p,script
 ||komikindo.co^*/banner-$image
 ||nanime.biz^*/banner-$image
 mangakita.net###btm_banner
@@ -10075,6 +10343,18 @@ wibudesu.com##html:style(user-select: text !important; -webkit-touch-callout: de
 ##[href*="ref=aigodrama"]
 ##[href*="ref=bossinema21"]
 ##[href*="ref=serialdrakor"]
+||followlike.net/promo/$image
+##[href*="ouo.io/ref/"]
+##[href^="https://safelinkblogger.com/ref/"]
+##[href^="https://safelinku.com/ref/"] > img
+apk.sekilastekno.com,lewat.tautan.pro,miuiku.com,onlinecorp.me,semawur.com###fixedban
+apk.sekilastekno.com,miuiku.com###teaser2
+casafelink2.blogspot.com##.ads
+aii.sh,liveshootv.com,oceantech.xyz##.banner
+dr-farfar.net##.footerBar > iframe
+asuransiku.info##.klnsora
+semawur.com##[href*="semawur.com/links/share/"]
+modebaca.com##[href*="tautan.pro"]
 fc-lc.com,fc.lc,fcc.lc##+js(acis, addEventListener, DOMNodeRemoved)
 belinfo.my.id,kangapip.com,linkerload.com,metroupdate.biz,skiped.me##+js(acis, addEventListener, google_ad_client)
 bevru.club,bolssc.com,cuts-url.com,eio.io,eririo.club,exe.app,exee.io,exey.io,freshi.site,srek.net##+js(acis, disableItToContinue)
@@ -10102,148 +10382,6 @@ intercelestial.com,linegee.net,sweetlantern.com###externalinject-gpt-passback-if
 intercelestial.com,sweetlantern.com##.idblog-floatbanner
 absolutesmmpanel.com##.wmg-vb-container
 @@/abdiusu/project-safelink-viomagz/*/safelink-ViomagzV3.2-2tombol$3p,script
--safelink/$3p,script
-/ABSafelink.$3p,script
-/autosafe3.$3p,script
-/autosafelink.$3p,script
-/filesafelink.$3p,script
-/Full_Page_Script_Safelink_$3p,script
-/gf21safelink.$3p,script
-/gf21safelink_$3p,script
-/js/full-page-script.$3p,script
-/js/fullPageScript.$3p,script
-/kompisafelink$3p,script
-/mastersafelink/*$3p,script
-/newsafelink/*$3p,script
-/postingan-safelink.$3p,script
-/REsafelink.$3p,script
-/safe_utama_$3p,script
-/safelink-$3p,script
-/safelink2/*$3p,script
-/safelink21.$3p,script
-/safelink3/*$3p,script
-/safelink_$3p,script
-/safelinkea.$3p,script
-/safelinknew/*$3p,script
-/safelinkv2_$3p,script
-/safelinkv2a.$3p,script
-/safelinkv2a_$3p,script
-/safeplatinum.$3p,script
-/wp-content/plugins/soralink/*$3p,script
-/wpsafelink.$3p,script
-=autosafeklinkz350_$script
-_safelink.$3p,script
-_safelinkv2.$3p,script
-_safelinkv_$3p,script
-_safeurl.$3p,script
-_shortsafelink.$3p,script
-_usafelink.$3p,script
-||1shortlink.com/js/shorten.$3p,script
-||adsafelink.com/js/webscript.$3p,script
-||adtival.com^$3p
-||akashiro.co.id/safelink.$3p,script
-||androidbusiness.us^*/js/safelink.$3p,script
-||cemiw.net/safelinks.$3p,script
-||duit.cc/safelink.$3p,script
-||forek.info/safelink.$3p,script
-||giga74.com/safelink.$3p,script
-||kadal.club/js/getlinkz.$3p,script
-||pastebin.com/raw/Rw38SyHy$3p,script
-||rikucan.com/wp-content/*/js/looping.$script
-||safelinkblog.com/js/v2.$3p,script
-||safelinku.com/fullpage/script.$3p,script
-||safelinku.com/js/web-script.$3p,script
-||shrinkads.com/js/$3p,script
-||snacklink.co/js/web-script.$3p,script
-||snacklink.id/js/web-script.$3p,script
-||zflas.com/go/js/link-converter.$3p,script
-/andrianadi888/safeevolution/*/Auto.$3p,script
-/asagichan.com/SafeLink.$3p,script
-/awlagu/sflink/*/Auto.$3p,script
-/CandraBlackz/legitlink/*/jquery.pietimer.$3p,script
-/comenxnet/master/*/Sefelink.$3p,script
-/hubgit21/club/*/club.$3p,script
-/jefcom/jefar/*/jefar.$3p,script
-/kareelproject/klinkz$3p,script
-/KompiAjaib/js/*/post1-$3p,script
-/KompiAjaib/js/*/post1_$3p,script
-/KompiAjaib/js/*/post2-$3p,script
-/KompiAjaib/js/*/post2_$3p,script
-/KompiAjaib/js/*/post3-$3p,script
-/KompiAjaib/js/*/post3_$3p,script
-/KompiAjaib/js/*/post4-$3p,script
-/KompiAjaib/js/*/post4_$3p,script
-/KompiAjaib/js/*/post5_$3p,script
-/nkpoi/js/*/idb-auto.$3p,script
-/raflipedia/keneono/*/safelink.$3p,script
-/raflipedia/protectlink/*/protectlink.$3p,script
-/riedayme/bloggercode/*/autoreplacebyfeednew.$3p,script
-/rizkiramdandi/Dev/*/autoconvretlink.$3p,script
-/sancan25/safe/*/safeblog.$3p,script
-/skuy99/safelinkmaterialize/*/auto.$3p,script
-/SylicaChan/BeNime/*/safelink.$3p,script
-/travelinsuranceweb/realestate@main/realestate.js$3p,script
-/abdiusu/project-safelink-$3p,script
-/alfirohman/tutorapk.com/*$3p,script
-/antonclanazhary/erpsoftware/*$3p,script
-/antonclanazhary/inventoryapp/*$3p,script
-/antonclanazhary/itinventory/*$3p,script
-/antonclanazhary/kompi/*$3p,script
-/apps2portable/apps2portable/*$3p,script
-/bocahmastah/safelink/*$3p,script
-/botamspawn/safelink/*$3p,script
-/CandraBlackz/slidelink/*$3p,script
-/comenxnet/conveter/*$3p,script
-/crezenity/digimoclubwp/*$3p,script
-/crezenity/imoclub/*$3p,script
-/crezenity/online/*$3p,script
-/daimonz01/aman_dn/*$3p,script
-/dedi96/safelink/*$3p,script
-/gameandroid2017/kampret/*$3p,script
-/irfaanprogrammer/safeplatinum/*$3p,script
-/johnali099/gmblc-html/*$3p,script
-/KecoaTerbank/safelink/*$3p,script
-/marsksatriagotham/benoja/*$3p,script
-/marsksatriagotham/safelinku.icu/*$3p,script
-/marsksatriagotham/safelinku/*$3p,script
-/marsksatriagotham/wvw/*$3p,script
-/marwanto606/safeplatinum/*$3p,script
-/mascholis/tipsim/*$3p,script
-/mghifariarfan/linkpunyaku/*$3p,script
-/mghifariarfan/safelink/*$3p,script
-/mghifariarfan/safeplatinum/*$3p,script
-/Purnayasagede/androix/*$3p,script
-/Purnayasagede/androixsafe/*$3p,script
-/Purnayasagede/angelsafe/*$3p,script
-/Purnayasagede/NewAngelSafe/*$3p,script
-/riandiramdani/safelinku.com/*$3p,script
-/safehos56/project/*$3p,script
-/sdnime09/myanimeindo/*$3p,script
-/sdnime09/Ngewe-om/*$3p,script
-/skuy99/1-erp-software-com/*$3p,script
-/skuy99/airlites/*$3p,script
-/skuy99/countmoney7-blogspot-com/*$3p,script
-/skuy99/erp-louvrenetwork-xyz/*$3p,script
-/skuy99/erp-ohmedia-club/*$3p,script
-/skuy99/moneywikii-blogspot-com/*$3p,script
-/skuy99/pendakicantik/*$3p,script
-/theboncud/aklista/*$3p,script
-/theboncud/pe-gi/*$3p,script
-/theboncud/safepoh/*$3p,script
-/VoreCorporation/Customer-Host/*$3p,script
-/xmithzyl/safelink/*$3p,script
-||followlike.net/promo/$image
-##[href*="ouo.io/ref/"]
-##[href^="https://safelinkblogger.com/ref/"]
-##[href^="https://safelinku.com/ref/"] > img
-apk.sekilastekno.com,lewat.tautan.pro,miuiku.com,onlinecorp.me,semawur.com###fixedban
-apk.sekilastekno.com,miuiku.com###teaser2
-casafelink2.blogspot.com##.ads
-aii.sh,liveshootv.com,oceantech.xyz##.banner
-dr-farfar.net##.footerBar > iframe
-asuransiku.info##.klnsora
-semawur.com##[href*="semawur.com/links/share/"]
-modebaca.com##[href*="tautan.pro"]
 belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 bevru.club,bolssc.com,cararegistrasi.com,ceesty.com,cuts-url.com,eio.io,eririo.club,exe.app,exee.io,exey.io,fc-lc.com,fc.lc,fcc.lc,freshi.site,liveshootv.com,luangusaha.com,miuiku.com,modebaca.com,oceantech.xyz,onlinecorp.me,p4link.com,ponselharian.com,sekilastekno.com,semawur.com,shrinke.me,srek.net##+js(window.open-defuser)
 cararegistrasi.com##+js(nano-sib)
@@ -10308,141 +10446,4 @@ famfonts.com##+js(nobab)
 banki24.by#@#.banner1
 lner.co.uk,memepedia.ru#@#.banner-top
 androidspin.com#@#[href*="idspin."]
-dropshipin.id##+js(acis, $, ads)
-cydiaguide.app,eltelu.blogspot.com,redaksiid.blogspot.com##+js(acis, addEventListener, DOMNodeRemoved)
-dafideff.com##+js(acis, addEventListener, google_ad_client)
-kuliahkomputer.com,massiswo.com,ruangcoder.com,tomytech.eu.org##+js(acis, eval, ignielAdBlock)
-ad4msan.com##+js(aopr, DHAntiAdBlocker)
-alexanews.id,blog-dnz.com,malutsatu.com,sultengraya.com##+js(aopr, adBlockDetected)
-choipanwendy.com##+js(aopr, adsansejs)
-paraedu.id##+js(aopr, anOptions)
-cuitandokter.com##+js(aopr, mdpDeBlocker)
-brotutor.net,cikimm.com,isrul.com##+js(aopr, mql)
-saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
-labkom.co.id##+js(aopr, tdBlock)
-saungfirmware.id##+js(nano-sib)
-jagoanssh.com,linkconfig.com,nafaskuda.com,sihentai.my.id##+js(nobab)
-rukim.id,surgatekno.com##+js(nofab)
-menantisenja.com##+js(set, adblock, 1)
-kontrastimes.com##+js(set, wpquads_adblocker_check_2, true)
-semuanyabola.com,urbandigital.id##+js(acis, ai_check_and_insert_block)
-duniailkom.com,solotrend.net##+js(acis, ai_run_scripts)
-/Dualipaid/duablock$3p,script
-/fuckadblock.$script,redirect=noop.js,domain=akurasinews.com
-||bloggerku.com/antiadblock/$script
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=antoncabon.us|bahyudinnor.com|igniel.com|koderian.my.id|shinryu2.blogspot.com
-||vkcdnservice.com/api/$script,redirect=noop.js
-@@.gif#*/ad/
-@@.jpg#*/ad/
-@@.png#*/ad/
-@@/noadblock-nice-message/assets/js/ads.js?$1p,script
-/antiblockersjoss.$image
-balipost.com##.paralax_div
--adblock-notice-
--adblock-notice/
-/abb-msg.js
-/adb_script/*
-/adbclk2.
-/adbDetect.
-/adbDetect/*
-/adbl_dtct.
-/adbl_dtct1.
-/adblock-detect/*
-/adblock-notice-
-/adblock-warning-teaser/*
-/adblock_alerter.
-/adblock_alerter/*
-/adblock_gate/images/animated.gif?
-/adblock_notify.js
-/adblocker/modal.
-/adblocker_message_
-/AdblockMessage.
-/AdblockRampok.js$script
-/antiadblock728x90_
-/antiadblockmsg.
-/antibomklikads.js$script
-/blockAndInf.js
-/deadblocker/*
-/disable-adblock.
-/inc/antiblock.
-/mod_ablockdetector/*
-/nonAdBlock/*
-/SvgAdblockDetected/*
-/wp-content/uploads/an-temp/*$css,script
-_adblock_killer.
-/wp-content/plugins/ad-block-defender/*
-/wp-content/plugins/adunblocker
-/wp-content/plugins/dh-anti-adblocker/*$script
-/wp-content/plugins/kill-adblock/*$script
-/wp-content/plugins/unblock-adsense/*/adunblock
-/wp-content/plugins/wp-adblock-dedect/js/dedect-
-@@/wp-content/plugins/dh-anti-adblocker/assets/js/showads.js$1p
-/abdiusu/AntiAdblockJkoding/*$3p
-/Arlina-Design/quasar*/arlinablock.js$3p,script
-/dewaplokis/*/dewablock.$3p,script
-/Indzign/*/levelmaxblock.$3p,script
-/kurazoneAdblock.$script
-/Script-Anti-AdBlock.$3p,script
-@@-jasa-google-$image
-@@-pasang-iklan-$image
-@@/ayopasangiklan.$image
-@@/belanja_iklan-$image
-@@/cara-beriklan.$image
-@@/contoh-iklan-$image
-@@/iklan-google-$image
-@@/iklan-langganan.$image
-@@/jasa-google-$image
-@@/jasa-iklan-$image
-@@/pasang-google-$image
-@@/pasang-iklan-$image
-@@/pasang_iklan$image
-hercodigital.id#@##googleads1
-#@##pasangiklan
-jabarprov.go.id#@#.ad-loader
-jualo.com#@#.ad-title
-baliadvertiser.biz#@#.ads-carousel
-iklandb.com,iklanin.info#@#.afs_ads
-iklandb.com,iklanin.info#@#.banner-125
-#@#.pasangiklan
-@@||adsmart.detik.com^$ghide
-@@/ad4.png$image,domain=palingseru.com
-@@/ads/*$domain=adsmart.detik.com|phd.co.id|promozia.com
-@@/adsense.$domain=herosoftmedia.co.id
-@@/advertise-$domain=ubiklan.com
-@@/advertise/*$domain=brilio.net|hipwee.com
-@@/advertisement.$domain=advertisement.keepo.me
-@@/advertiser/*$image,domain=job.id
-@@/advertising-$domain=advertising-indonesia.id|kennedybrothers.id
-@@/advertising.$domain=advertising.katadata.co.id|advertising.kontan.co.id
-@@/advertising/*$domain=client.okezone.com
-@@/bannerad.$image,domain=ad.co.id
-@@/bnrs/*$image,domain=bagusiklan.com|duniaiklangratis.com|iklan123.net|iklanbogor.com|iklanpopuler.com|iklansmart.com|megaiklan.com
-@@/bplogo.$image,domain=beritapagi.co.id
-@@/files/Ads/*$image,domain=iklanrumah.com
-@@/images/banner/*$image,domain=balicars.info
-@@/scripts/ads.$domain=ads.kaskus.co.id
-@@/uploads/page/banner/*$image,domain=astra-honda.com
-@@/videojs.ads.$domain=20.detik.com
-@@/wp-content/uploads/*$1p,image,domain=adstarsmedia.co.id|agency-iklan.com|banyumedia.co.id|berbagiide.com|bertravel.com|bluecreative.co.id|datamaya.com|dhadigital.com|doxadigital.com|hercodigital.id|herosoftmedia.co.id|idkeyword.com|jasaiklanbandung.com|jetcommerce.co.id|jurnalweb.com|karyaiklan.co.id|korporasi.kompas.id|mandreel.com|masterweb.com|matari-ad.com|merchant.id|oasisme.com|polbisdigital.com|suranegara.com|tomato.co.id|winstarlink.com
-@@/wp-content/uploads/*$image,domain=gamezone.co.id|jefferlyhelian.com|suranegara.com
-@@://ads.$domain=ads.bisnisjakarta.co.id|ads.dewarangga.com|ads.gadgetsquad.id|ads.genmuda.com|ads.id|ads.iklandaerah.com|ads.kaskus.co.id|ads.kontan.co.id|ads.maskoding.com|ads.panindai-ichilife.co.id|ads.pojoksatu.id|ads.wartaekonomi.co.id|klasika.kompas.com
-@@://ads2.$domain=meetkcm.com
-@@://adv.$domain=adv.kontan.co.id
-@@_advertising/$domain=advertising.katadata.co.id
-@@||akudigital.com/images/$1p,image
-@@||boc.co.id/images/$1p,image
-@@||iklandisini.com/banner_ads/$1p
-@@||iklanku.shopee.co.id/img/$1p,image
-@@||jualo.com/images/$1p,image
-@@||pasangiklan.com/pi_b/img/$1p,image
-@@||resolusiweb.com/images/$1p,image
-@@||resolusiweb.com/img/$1p,image
-@@||temanggungkab.go.id/asset/$image
-@@||tokopedia.net/img/topads/$1p,image
-@@||ziyata.com/upload/$1p,image
-@@||inwepo.co^$ghide,badfilter
-berkeluarga.id##.content_wrapper [id^="post-"].share-simple:style(display: inline !important;)
-m.liputan6.com#@##back-to-top
-@@/social-sharing-$script,domain=axe.com
-@@||apis.google.com/js/platform.js$domain=tiket.com
 ! Compiler: AdBlockID FC v1.0.0
