@@ -54,7 +54,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
                             terdapat kesalahan blokir.
 ```
 
-<sup>***All**: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance.</sup> <br>
+<sup>***[All]**: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance.</sup> <br>
 
 
 ## Development Tools
