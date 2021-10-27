@@ -29,9 +29,9 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ```
 /src
  ├─ /packages
- │   ├─ adult-block.adbl          Blokir iklan berkonten dewasa.
- │   ├─ adult-hide.adbl           Sembunyikan iklan berkonten dewasa.
- │   ├─ adult-hide-ip.adbl        Sembunyikan iklan berkonten dewasa.
+ │   ├─ adult-block.adbl          [GBlock] Blokir iklan berkonten dewasa.
+ │   ├─ adult-hide.adbl           [GHide] Sembunyikan iklan berkonten dewasa.
+ │   ├─ adult-hide-ip.adbl        [GHide] Sembunyikan iklan berkonten dewasa.
  │   ├─ annoyance.adbl            Menghilangkan elemen yang mengganggu.
  │   ├─ annoyance_limitation.adbl Menangani beberapa limitasi.
  │   ├─ annoyance_safelink.adbl   Menampilkan link aslinya.
@@ -55,6 +55,8 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ```
 
 <sup>*[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance.</sup> <br>
+<sup>*[GBlock]: Filter general untuk blokir iklan, tidak terbatas pada jenis web tertentu.</sup> <br>
+<sup>*[GHide]: Filter general untuk menyembunyikan iklan, tidak terbatas pada jenis web tertentu.</sup> <br>
 
 
 ## Development Tools
