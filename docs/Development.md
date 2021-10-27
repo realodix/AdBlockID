@@ -29,9 +29,9 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ```
 /src
  ├─ /packages
- │   ├─ adult-block.adbl       Mirip general_block.adbl, namun khusus untuk iklan berkonten dewasa.
- │   ├─ adult-hide.adbl        Mirip general_hide.adbl, namun khusus untuk iklan berkonten dewasa.
- │   ├─ adult-hide-ip.adbl     Mirip general_hide.adbl, namun khusus untuk iklan berkonten dewasa.
+ │   ├─ adult-block.adbl       Filter general block khusus untuk iklan berkonten dewasa.
+ │   ├─ adult-hide.adbl        Filter general hide khusus untuk iklan berkonten dewasa.
+ │   ├─ adult-hide-ip.adbl     Filter general hide khusus untuk iklan berkonten dewasa.
  │   ├─ annoyances.adbl        Semua jenis filter, khusus untuk menangani beberapa limitasi.
  │   ├─ comic.adbl             Semua jenis filter, khusus untuk situs komik ilegal.
  │   ├─ international.adbl     Semua jenis filter, khusus untuk situs internasional.
