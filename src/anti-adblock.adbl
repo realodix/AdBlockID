@@ -1,3 +1,11 @@
+!! Bypass adblock detector
+!!
+!! SCOPE
+!! Semua situs, kecuali situs nonton ilegal, situs komik ilegal dan situs
+!! safelink/shortlink
+!!
+!! --------------------------------------------------------
+!!
 ! SCRIPTLETS
 ! -----------------------------------------------
 dropshipin.id##+js(acis, $, ads)
@@ -28,7 +36,6 @@ duniailkom.com,solotrend.net##+js(acis, ai_run_scripts)
 ||bloggerku.com/antiadblock/$script
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=antoncabon.us|bahyudinnor.com|igniel.com|koderian.my.id|shinryu2.blogspot.com
 ||vkcdnservice.com/api/$script,redirect=noop.js
-!
 !
 ! GENERAL HIDE
 ! -----------------------------------------------
@@ -84,7 +91,6 @@ _adblock_killer.
 /wp-content/plugins/unblock-adsense/*/adunblock
 /wp-content/plugins/wp-adblock-dedect/js/dedect-
 @@/wp-content/plugins/dh-anti-adblocker/assets/js/showads.js$1p
-!
 ! CDN - gitcdn.xyz, githack.com, statically.io, etc
 /abdiusu/AntiAdblockJkoding/*$3p
 /Arlina-Design/quasar*/arlinablock.js$3p,script
