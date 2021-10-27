@@ -29,9 +29,9 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ```
 /src
  ├─ /packages
- │   ├─ adult-block.adbl          [GBlock] Blokir iklan berkonten dewasa.
- │   ├─ adult-hide.adbl           [GHide] Sembunyikan iklan berkonten dewasa.
- │   ├─ adult-hide-ip.adbl        [GHide] Sembunyikan iklan berkonten dewasa.
+ │   ├─ adult-block.adbl          [G] Blokir iklan berkonten dewasa.
+ │   ├─ adult-hide.adbl           [G] Sembunyikan iklan berkonten dewasa.
+ │   ├─ adult-hide-ip.adbl        [G] Sembunyikan iklan berkonten dewasa.
  │   ├─ annoyance.adbl            Menghilangkan elemen yang mengganggu.
  │   ├─ annoyance_limitation.adbl Menangani beberapa limitasi.
  │   ├─ annoyance_safelink.adbl   Menampilkan link aslinya.
@@ -39,25 +39,26 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  │   ├─ international.adbl        [All] Situs internasional.
  │   ├─ movie.adbl                [All] Situs nonton ilegal.
  │   └─ safelink.adbl             [All] Situs berjenis safelink/shortlink.
- ├─ adservers.adbl          Daftar domain/IP penyedia layanan iklan pihak ketiga.
- ├─ anti-adblock.adbl       Melumpuhkan ad block detection.
- ├─ extended.adbl           Perbaiki tampilan situs setelah iklannya dihilangkan.
- ├─ general_block.adbl      Filter general untuk blokir iklan
- ├─ general_hide.adbl       Filter general untuk menyembunyikan iklan
- ├─ specific_block.adbl     Filter spesifik untuk blokir iklan
- ├─ specific_hide.adbl      Filter spesifik untuk menyembunyikan iklan.
- ├─ specific_hide_ext.adbl  Hampir mirip seperti specific_hide.adbl, namun prosedural.
- ├─ thirdparty.adbl         Hampir mirip seperti di adservers.adbl, namun layanan utama dari situs
- │                          tersebut bukan untuk menyediakan iklan.
- └─ whitelist.adbl          Dalam kasus tertentu, Kita perlu memasukkan domain/IP situs ke dalam
-                            whitelist. Contoh: Fungsi utama dari situs tersebut tidak jalan karena
-                            terdapat kesalahan blokir.
+ ├─ adservers.adbl          [G] Daftar domain/IP penyedia layanan iklan pihak ketiga.
+ ├─ anti-adblock.adbl       [G, S] Melumpuhkan ad block detection.
+ ├─ extended.adbl           [S] Perbaiki tampilan situs setelah iklannya dihilangkan.
+ ├─ general_block.adbl      [G] Blokir iklan.
+ ├─ general_hide.adbl       [G] Sembunyikan iklan.
+ ├─ specific_block.adbl     [S] Blokir iklan.
+ ├─ specific_hide.adbl      [S] Sembunyikan iklan.
+ ├─ specific_hide_ext.adbl  [S] Mirip seperti filter pada specific_hide.adbl, namun prosedural.
+ ├─ thirdparty.adbl         [G] Mirip seperti filter pada adservers.adbl, namun layanan utama
+ │                          dari situs tersebut bukan untuk menyediakan iklan.
+ └─ whitelist.adbl          [G, S] Dalam kasus tertentu, Kita perlu memasukkan domain/IP situs ke
+                            dalam whitelist. Contoh: Fungsi utama dari situs tersebut tidak
+                            jalan karena terdapat kesalahan blokir.
 ```
 
 <sup>
-*[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance. <br>
-*[GBlock]: Filter general untuk blokir iklan, tidak terbatas pada jenis web tertentu. <br>
-*[GHide]: Filter general untuk menyembunyikan iklan, tidak terbatas pada jenis web tertentu.
+*[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance. Filter
+bersifat spesifi dan general. <br>
+*[G]: Filter bersifat general, tidak terbatas pada situs tertentu. <br>
+*[S]: Filter bersifat spesifik, terbatas pada situs tertentu. <br>
 </sup>
 
 
