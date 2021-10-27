@@ -56,9 +56,9 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
                             terdapat kesalahan blokir.
 ```
 
-<sup>***All**:</sup> fsfs.<br>
-<sup>***GBlock**:</sup> fsfs.<br>
-<sup>***GHide**:</sup> fsfs.<br>
+<sup>***All**: fsfs.</sup> <br>
+<sup>***GBlock**: fsfs.</sup> <br>
+<sup>***GHide**: fsfs.</sup> <br>
 
 
 ## Development Tools
