@@ -23,14 +23,14 @@
 1. Buka aplikasi AdGuard.
 2. Buka halaman *Settings*.
 3. Pada menu di sebelah kiri, klik *Ad Blocker*.
-4. Pada bagian *Installed filters*, klik *Add a filter*.
+4. Pada bagian *Installed filters*, klik *Add a filter*. <br>
 
-   <br>![](https://i.imgur.com/WzMNuRl.png)<br>
+   ![](https://i.imgur.com/WzMNuRl.png) <br>
 
 5. Cari **AdBlockID**, lalu centang.
-6. Klik *Add selected*.
+6. Klik *Add selected*. <br>
 
-   <br>![](https://i.imgur.com/cZSIyHp.png)<br>
+   ![](https://i.imgur.com/cZSIyHp.png) <br>
 
 
 ## Cara Memasang AdBlockID Pada AdGuard for Android
@@ -39,6 +39,6 @@
 3. Klik menu *Filters*.
 4. Klik menu *Language-specific*.
 5. Aktifkan *Language-specific*.
-6. Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span>
+6. Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span> <br>
 
-   <br>![](https://i.imgur.com/154mvtG.jpg)<br>
+   ![](https://i.imgur.com/154mvtG.jpg) <br>
