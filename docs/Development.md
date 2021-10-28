@@ -62,7 +62,14 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 
 ## Development Tools
 
-Anda dapat menggunakannya dengan 2 cara:
+**Persiapan kecil**
+- [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
+- [pip](https://pypi.org/project/pip/).
+
+Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
+
+`$ pip install -e tools/filters-compiler`
+
 #### Terminal
 
 - `./build.sh`
