@@ -6,18 +6,17 @@
 
 ## Cara Memasang AdBlockID Pada AdGuard Browser Extension
 1. Buka halaman *dashboard*.
-2. Klik tab *Filters*.
-</ br>
-   ![](https://i.imgur.com/W1RiKSr.jpg)
-</ br>
+2. Klik tab *Filters*. <br>
 
-3. *Scroll* ke bawah, lalu klik *Language-specific*.
+   ![](https://i.imgur.com/W1RiKSr.jpg) <br>
 
-   <br>![](https://i.imgur.com/57mYvTR.png)<br>
+3. *Scroll* ke bawah, lalu klik *Language-specific*. <br>
 
-4. Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span>
+   ![](https://i.imgur.com/57mYvTR.png) <br>
 
-   <br>![](https://i.imgur.com/ohqpQh9.png)<br>
+4. Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span> <br>
+
+   ![](https://i.imgur.com/ohqpQh9.png) <br>
 
 
 ## Cara Memasang AdBlockID Pada AdGuard for Windows
