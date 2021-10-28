@@ -18,6 +18,7 @@
 
    ![](https://i.imgur.com/ohqpQh9.png) <br>
 
+<br><br>
 
 ## Cara Memasang AdBlockID Pada AdGuard for Windows
 1. Buka aplikasi AdGuard.
@@ -32,6 +33,7 @@
 
    ![](https://i.imgur.com/cZSIyHp.png) <br>
 
+<br><br>
 
 ## Cara Memasang AdBlockID Pada AdGuard for Android
 1. Buka aplikasi AdGuard.
