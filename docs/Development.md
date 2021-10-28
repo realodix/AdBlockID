@@ -1,16 +1,3 @@
-## Persiapan
-
-Beberapa tools pendukung
-
-- [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
-- [pip](https://pypi.org/project/pip/).
-
-Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
-
-`$ pip install -e tools/filters-compiler`
-
-
-
 ## Panduan untuk menulis filter
 
 Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
