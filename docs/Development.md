@@ -12,7 +12,7 @@ Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
 ## Struktur Direktori
 
-Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberapa file, seperti bagan di bawah ini:
+Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberapa file. Agar mudah memahaminya, Anda dapat melihat bagan di bawah ini:
 
 ```
 /src
