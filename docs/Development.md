@@ -66,24 +66,17 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
   Mengurutkan, merapikan dan menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
-  VS Code Task: **`Build`**
-
-- `python tools/fop/fop.py`
-
-  Mengurutkan dan merapikan semua filter pada bagan di atas.
+  VSCode Task: **`Build`**
 
 - `flrender -i abid=. template/adblockid.adbl output/adblockid.txt`
 
   Menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
-  VS Code Task: **`FOP`**
+  VSCode Task: **`FOP`**
 
-#### Visual Studio Code Tasks
+- `python tools/fop/fop.py`
 
-Klik `Ctrl+Shift+P`, lalu klik `Tasks: Run Task`, maka akan terdapat beberapa pilihan:
-
-- **Build**: Mengurutkan, merapikan dan menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
-- **FOP**: Mengurutkan dan merapikan semua filter pada bagan di atas.
+  Mengurutkan dan merapikan semua filter pada bagan di atas.
 
 #### Web Service
 - [ABP Redundancy check](https://adblockplus.org/redundancy_check)
