@@ -1,5 +1,4 @@
 ## Persiapan
-Untuk menyatukan semua file ke dalam sebuah file [adblockid.txt](/output/adblockid.txt), Anda membutuhkan:
 
 - [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
 - [pip](https://pypi.org/project/pip/).
