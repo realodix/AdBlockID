@@ -22,7 +22,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  │   ├─ adult-hide-ip.adbl        [G] Sembunyikan iklan berkonten dewasa.
  │   ├─ annoyance.adbl            [G/S] Menghilangkan elemen yang mengganggu.
  │   ├─ annoyance_limitation.adbl [G/S] Menangani beberapa limitasi.
- │   ├─ annoyance_safelink.adbl   [G/S] Menampilkan link aslinya.
+ │   ├─ annoyance_safelink.adbl   [G/S] Menampilkan link asli yang ditutupi oleh safelink.
  │   ├─ comic.adbl                [All] Situs komik ilegal.
  │   ├─ international.adbl        [All] Situs internasional.
  │   ├─ movie.adbl                [All] Situs nonton ilegal.
