@@ -93,10 +93,10 @@ Klik `Ctrl+Shift+P`, lalu klik `Tasks: Run Task`, maka akan terdapat beberapa pi
 
 Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk membuat pesan. Untuk contoh penggunaannya, Anda dapat melihat [history commit](https://github.com/realodix/AdBlockID/commits).
 
-| Type   | Deskripsi |
-| ------ | --------- |
-| `AA`   | Anti-Adblock. |
-| `M`    | Maintain filter. |
-| `P`    | Problem. Tandai dengan `P` untuk perbaikan masalah yang ditimbulkan oleh AdBlockID atau masalah yang disebabkan oleh filter utama (easylist, AdGuard base filter & uBlock filters) yang ingin dibenerin dengan AdBlockID.|
-| `docs` | Edit file dokumentasi pada folder `docs`, termasuk `readme.md` dan dokumentasi pada file fragment AdBlockID (folder `src`) . |
-| `chore(<scope>)` | Semua pengeditan pada folder (`/tools`, `/.vscode`, `/.github`) dan file (`.editorconfig`, `.gitignore` & `build.sh`). |
+| Kode   | Cakupan         |
+| ------ | --------------- |
+| `AA`   | Anti-Adblock    |
+| `M`    | Maintain filter |
+| `P`    | Perbaikan masalah yang disebabkan oleh AdBlockID dan/atau oleh filter utama (easylist, AdGuard base filter & uBlock filters).|
+| `docs` | Semuanya pada folder `docs`, termasuk file `readme.md` dan dokumentasi di setiap file filter AdBlockID (folder `src`) . |
+| `chore(<scope>)` | Semua pengeditan pada repository AdBlockID, kecuali yang masuk dalam cakupan kode `docs`. |
