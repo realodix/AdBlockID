@@ -66,6 +66,8 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
   Mengurutkan, merapikan dan menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
+  a
+
 - `python tools/fop/fop.py`
 
   Mengurutkan dan merapikan semua filter pada bagan di atas.
