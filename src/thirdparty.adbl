@@ -1,3 +1,13 @@
+!! Blokir iklan langsung dari sumbernya.
+!! Mirip seperti filter pada adservers.adbl, namun layanan utama dari domain/IP situs
+!! tersebut bukan untuk menyediakan iklan.
+!!
+!! SCOPE
+!! Semua situs, tetapi tidak termasuk situs ilegal (lihat trustpositif.kominfo.go.id),
+!! situs berjenis safelink/shortlink dan situs yang sering bergonta-ganti alamat.
+!!
+!! --------------------------------------------------------
+!!
 ||amazonaws.com^*/banner/$3p,domain=bogornews.com
 ||drive.google.com/uc?export=view$image,domain=wartarakyat.co.id
 ||iframe.ly^$domain=tampilcantik.com
