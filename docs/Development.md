@@ -66,7 +66,7 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
   Mengurutkan, merapikan dan menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
-  a
+  VS Code Task: `**Build**`
 
 - `python tools/fop/fop.py`
 
@@ -75,6 +75,8 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 - `flrender -i abid=. template/adblockid.adbl output/adblockid.txt`
 
   Menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+
+  VS Code Task: `**FOP**`
 
 #### Visual Studio Code Tasks
 
