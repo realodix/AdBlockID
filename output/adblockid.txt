@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.482
+! Version: 21.10.483
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Oct 2021 16:21 UTC
+! Last modified: 29 Oct 2021 11:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2435,6 +2435,7 @@ pertamax7.com##.backstretch
 aliansirakyatnews.com##.baner
 campusnesia.co.id,presisi.co##.banner
 diadona.id##.banner-sc
+kapanlagi.com##.banner-small
 insertlive.com##.banner__top
 kabarnusa.com##.bannerx
 cosmogirl.co.id##.bnr
@@ -2449,6 +2450,7 @@ kompas.tv##.container_skinad
 kepogaul.com,posbagus.com##.content .box-height-100px-250px
 kepogaul.com,posbagus.com##.content .box-height-300px
 feedme.id##.d-ads
+bolasport.com##.dableclsbanner
 parapuan.co##.div-gpt-ad-top-wrapper
 diadona.id##.drm-banner-x
 delegasi.com,detiksumsel.com,kabar6.com,kalimantantoday.com,lampung1.com,mediamerdeka.co,rakyatbengkulu.com,suaramedannews.com##.e3lan
@@ -2489,6 +2491,7 @@ ofiskita.com##.longAddsBox
 smartphoneku.com##.margin-right-40.left
 detik.com##.megabillboard
 iklandb.com,iklanin.info##.melayang-bawah
+bolasport.com##.mgidclsbanner
 bolasport.com##.mid-banner
 id.theasianparent.com##.mobile-ad-wrap
 feedme.id##.native-ads
@@ -2610,6 +2613,7 @@ papuadalamberita.com##.widget-content img[style="max-width: 100%; height: auto;"
 dailypost.id##.widget_media_image
 penatimor.com##[class^="mvp-side-widget"] img.aligncenter
 penatimor.com##[class^="mvp-widget"] img.aligncenter
+kumparan.com##[data-qa-id*="sticky-bottom-ads"]
 apahabar.com,kumanika.com,lintastungkal.com,sawerigading-news.com##[id^="sidebar"] img[style="max-width: 100%; height: auto;"]
 nusadaily.com##aside .attachment-600x600
 poskata.com##aside > .box-450h
@@ -2624,6 +2628,7 @@ kompas.com##+js(rc, bapps-show, body.bapps-show)
 suara.com###adnow-mobile-baca-juga
 tribunnewswiki.com###adsoutofpage-premiumTopframe
 tribunnews.com,tribunnewswiki.com###anchorads
+pikiran-rakyat.com###cont-megabillboard
 pickybest.id###fixedban
 priceza.co.id###mobilePopupBtm
 viva.co.id###sticky-bottom
@@ -2637,7 +2642,7 @@ jogja-suara-com.cdn.ampproject.org##.article .i-amphtml-element
 beritasatu.com##.flying_carpet-box
 alinea.id,bisnis.com,gadgetren.com,katadata.co.id##.flying_carpet_div
 amp-kontan-co-id.cdn.ampproject.org##.post-footer amp-embed
-sahijab.com##.small-mobile-banner
+intipseleb.com,sahijab.com##.small-mobile-banner
 amp-suara-com.cdn.ampproject.org##.suara-populer-feed ~ amp-embed
 m.kaskus.co.id##.threadDetail a[target="_blank"] img[src^="https://s.kaskus.id/images/"]
 www-cermati-com.cdn.ampproject.org##[class*="banner"]
@@ -2653,6 +2658,7 @@ tribunnewswiki.com##.box__reserved:matches-css-before(content:/adv/i)
 suarajatimpost.com##.card:has-text(/adv/i)
 okezone.com##.center-paralax:has([id^="div-gpt-ad"])
 kompas.tv##.clsivs:matches-css-before(content:/adv/i)
+thelastsurvivors.org##.code-block:has(.adsbygoogle)
 fanicat.com##.code-block:not(:has(a[href*="fanicat.com"])) img
 arenabola.id##.col-lg-3:has-text(/adv/i)
 parapuan.co##.commSkin__fluid:matches-css-before(content:/adv/i)
@@ -2662,6 +2668,7 @@ radarbanten.co.id##.elementor-widget-image:not(:has(a[href*="radarbanten.co.id"]
 narmadi.com##.entry-content div:has([src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"])
 tipspetani.com##.fixed-rside:has-text(/sponsor/i)
 kompas.tv##.mgidclsbanner:matches-css-before(content:/adv/i)
+kompas.com##.native-wrap:matches-css-before(content:/adv/i)
 urbanasia.com##.paralax:not(:has(a[href*="urbanasia.com"]))
 genpi.co##.post-text > .caption:has-text(/adv/i)
 sasambonews.com##.sidebar .widget:has-text(/iklan/i)
@@ -2677,6 +2684,7 @@ swara-bengkulu.com##.widget:has-text(SPACE AVAILABLE)
 mariodevan.com,motorrio.com##.wpa:has-text(/adv/i)
 garudadaily.com##.wpb_wrapper:has-text(/adv/i)
 cyberlampung.com##.wrapper-posts:has-text(/adv/i)
+kumparan.com##[data-qa-id*="mobile-article-page-"]:has-text(/adv/i)
 sehatq.com##[id^="div-gpt-ad"]:upward(1)
 koranseruya.com##[id^=local-]:has-text(/adv/i)
 bikersindonesia.net##aside .widget:not(:has(a[href*="bikersindonesia.net"])) img
@@ -2691,10 +2699,11 @@ tokopedia.com##[data-cy="searchRsltProdgrid"] [data-testid="master-product-card"
 tokopedia.com##[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
 biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
 biggo.id##img[onclick*="AD_SEARCHRESULT"]
-kumparan.com##.adunitContainer:upward(2)
 grid.id##[id^="afdf-"]
-kompas.com##[id^="div-gpt-ad-"]:upward(1)
+merdeka.com###mdk-content div[style*="text-align:center;"]:has([id*="div-gpt-ad-"])
 parenting-orami-co-id.cdn.ampproject.org,parenting.orami.co.id##.container:has-text(/adv/i)
+kapanlagi.com##.dfp-bframe-cont:has([id*="div-gpt-ad-"])
+genpi.co##.text-center:has([id*="div-gpt-ad-"])
 www-kincir-com.cdn.ampproject.org##.text-center:has-text(/adv/i)
 jakselnews-pikiran--rakyat-com.cdn.ampproject.org##center:has-text(/adv/i)
 tribunnews.com##+js(acis, Math, ='\x)
@@ -8946,6 +8955,7 @@ _topbandar_$image
 ~54.255.15.73##[href$="/54.255.15.73"]
 ~63.142.251.79##[href$="/63.142.251.79"]
 ~63.250.34.27##[href$="/63.250.34.27"]
+~63.250.42.42##[href$="/63.250.42.42"]
 ~66.212.22.60##[href$="/66.212.22.60"]
 ~66.23.228.12##[href$="/66.23.228.12"]
 ~66.29.130.53##[href$="/66.29.130.53"]
@@ -9259,6 +9269,7 @@ _topbandar_$image
 ~54.255.15.73##[href*="/54.255.15.73/"]
 ~63.142.251.79##[href*="/63.142.251.79/"]
 ~63.250.34.27##[href*="/63.250.34.27/"]
+~63.250.42.42##[href*="/63.250.42.42/"]
 ~66.212.22.60##[href*="/66.212.22.60/"]
 ~66.23.228.12##[href*="/66.23.228.12/"]
 ~66.29.130.53##[href*="/66.29.130.53/"]
@@ -9963,58 +9974,29 @@ klikpapua.com,papuabaratpos.com,radarsriwijaya.com,rajawarta.com,suaramandiri.co
 papuatoday.com,radarbanten.co.id,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
 papuakita.com##+js(aopr, window.pum_popups)
 /wp-content/plugins/wp-popups-lite/*$domain=radarlampung.co.id
-kompas.com###content_news #ivsplayer01-container
-kompas.com###content_news .video-inject
-detik.com###detikdetailtext .video20detik_0
-cnnindonesia.com###idautovideocnn
-merdeka.com###ivsplayer01
-motorplus-online.com###ivsplayer01-container
-merdeka.com###mdk-content #dnative_video_one_detailpage
-katadata.co.id###streaming-bottom-right
-m.otosia.com###video-slot-1[data-src="Homepage"]
-viva.co.id###viva-content .dailymotion-cpe
-medcom.id##.article [class^="dm__video"]
-liputan6.com##.article-content-body .vidio-embed
-id.theasianparent.com##.article-page-container .player-ivideosmart-wrap
-kompas.com##.content_article #ivsplayer01-container
-sindonews.com##.detail-center .showvideo
-kapanlagi.com##.kl-content .nativevideosiframe-loader
-kompas.com##.latest ~ .ivs-wrap-wp
-detik.com##.list-content:has([class*="dugout-embed-"])
-kapanlagi.com##.main-content .native-video-pinktoon
-parapuan.co##.read #ivsplayer01-container
-gridoto.com##.read .geniee-box
-gridoto.com##.read .ivs-box
-kompasiana.com##.read-artikel .video-pilihan
-kompas.com##.read__article .ivs-wrap
-kompas.com##.read__article .video-box-wrap
-motorplus-online.com##.read_content #ivs-motorplus
-sindonews.com##.showvideo:has(iframe[src*="mnc.sindo.media/embed/"])
-grid.id##.videoPlaylistPlugClass-carousel
-kontan.co.id##.wrap-content #ivsplayer01-container
-suara.com##article #dailymotion-widget
-matamata.com##article .dailymotion-cpe
-cnbcindonesia.com,insertlive.com##article .sisip_embed_sosmed
-detik.com##article .sisip_video_ds
-detik.com##article .video20detik_0
+brilio.net###videoLeftID:has(#ivsplayer01-container)
+kompas.com##.ivs-wrap-wp
+bolasport.com##.section__left .clsivs:has(#ivsplayer01-container)
+kompas.com##.video-inject
+||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|goodnewsfromindonesia.id|grid.id|gridoto.com|herstory.co.id|id.theasianparent.com|idntimes.com|indosport.com|jubi.co.id|kompas.com|kontan.co.id|motorplus-online.com|parapuan.co|styl.id|sulselsatu.com|tempo.co|~video.tempo.co|wartaekonomi.co.id
+||ivideosmart.com/ivxplayer/$script,domain=grid.id|kompas.com
+@@||vidio.com/embed/*embed_position=readpage-headline$3p,frame,domain=merdeka.com
+m.merdeka.com###mdk-content #dnative_video_one_detailpage:has(#iframe-vidio)
+||vidio.com/embed/$3p,frame,domain=merdeka.com
 ||20.detik.com/embed/$frame,domain=~20.detik.com|~adsmart.detik.com
 ||cnbcindonesia.com/embed/video/$frame,domain=cnbcindonesia.com
-||dailymotion.com/embed/*&mute=true$frame,domain=viva.co.id
-||dailymotion.com/embed/*?ads_params=$important,frame,domain=100kpj.com|bisnis.com|intipseleb.com|matamata.com|medanheadlines.com|medcom.id
+||dailymotion.com/embed/*?ads_params=$important,frame,domain=bisnis.com|matamata.com|medanheadlines.com|medcom.id
 ||dailymotion.com/player/$frame,domain=kompasiana.com
+||dailymotion.com/videos?*flags=no_live$domain=100kpj.com|intipseleb.com|viva.co.id
 ||embed.dugout.com/v3.1/detik.js$script,domain=detik.com
 ||embed.rctiplus.com/live/rcti/$frame,domain=sulselsatu.com
 ||haibunda.com/embed/video/$frame,domain=haibunda.com
 ||insertlive.com/embed/video/$frame,domain=insertlive.com
-||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|goodnewsfromindonesia.id|grid.id|gridoto.com|herstory.co.id|id.theasianparent.com|idntimes.com|indosport.com|jubi.co.id|kompas.com|kontan.co.id|merdeka.com|motorplus-online.com|parapuan.co|styl.id|sulselsatu.com|tempo.co|~video.tempo.co|wartaekonomi.co.id
-||ivideosmart.com/ivxplayer/$script,domain=grid.id|kompas.com
 ||mnc.sindo.media/embed/$frame,domain=sindonews.com
 ||sindonews.com/frame/$frame,domain=sindonews.com
 ||soundcloud.com/player/$important,frame,domain=cumirproduction.blogspot.com
 ||tv.kaskus.co.id/api/embed/widget/?autoplayInViewPort=true$frame,domain=kaskus.co.id
 ||video.sindonews.com/embedjw/$frame,domain=sindonews.com
-||vidio.com/embed/*&embed_position=article-embed$3p,frame
-||youtube.com/embed/*&mute=1$frame,domain=genpi.co|katadata.co.id
 mazterize.net##.button:has-text(/download crack/i)
 gigapurbalingga.net##.entry-content center button.user
 kuyhaa-me.com##[type="image"][src*="/sd.png"]
