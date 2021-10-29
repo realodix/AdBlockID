@@ -9,7 +9,7 @@ AdblockID adalah filter tambahan untuk melengkapi [EasyList](https://github.com/
 
 
 ## Manfaat Yang Anda Dapatkan
-1. **Faster, More Enjoyable Browsing**: Blokir iklan yang mengganggu pengalaman browsing Anda. Ucapkan selamat tinggal pada iklan video, banner gerak, PopAds dan banyak lagi. Memblokir gangguan ini berarti membuka halaman akan lebih cepat.
+1. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal pada iklan video, banner gerak, PopAds dan banyak lagi.
 2. **Bypass AdBlock Detection**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
 3. **Bypass Mouse & Key Limitations**: Melumpuhkan beberapa batasan pada halaman web, seperti tidak bisa klik kanan, tidak bisa copy artikel, dll.
 4. **Bypass Safelink**: Lupakan URL safelink ketika hendak download file kesayangan Anda.
