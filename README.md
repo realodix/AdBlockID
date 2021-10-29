@@ -42,7 +42,7 @@ AdblockID adalah filter pemblokir/penghilang iklan pada situs berbahasa Indonesi
 
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, AdNauseam
-- [AdGuard](/docs/Adguard.md).
+- [AdGuard](/docs/Adguard.md)
 
 
 ## Berkontribusi
