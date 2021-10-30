@@ -48,7 +48,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 ## Berkontribusi
 Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai komitmen Anda. Menggunakan filter AdBlockID di Ad Blocker favorit Anda sudah merupakan dukungan besar, tetapi ada cara terbaik lainnya untuk berkontribusi:
 
-- Beri AdBlockID bintang/star di GitHub. Karena jika Anda menggunakan lalu menyukainya dan/atau sebaliknya, Anda setidaknya bisa menjadi stargazer!
+- Beri AdBlockID bintang/star di GitHub. Karena jika Anda menggunakan AdBlockID tetapi menyukainya, Anda setidaknya bisa menjadi stargazer!
 - [Membuat issue](https://github.com/realodix/AdBlockID/issues/new/choose). Bantu Kami mengetahui jika ada iklan yang masih mengganggu Anda di luar sana.
 - Bantu Kami menjawab dan memecahkan masalah di halaman [issues](https://github.com/realodix/AdBlockID/issues) dan [diskusi](https://github.com/realodix/AdBlockID/discussions). Jawaban Anda sangat membantu.
 - Buat `pull requests` di GitHub untuk memberikan perbaikan dan peningkatan. Otomatis terdaftar sebagai [kontributor](https://github.com/realodix/AdBlockID/graphs/contributors)!
