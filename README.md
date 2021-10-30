@@ -21,7 +21,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
 2. *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
 3. Install AdBlockID
-   - **uBlock Origin**: Lihat table di bawah, klik `Subscribe` atau tambahkan `Raw link` secara manual, lebih lanjut lihat [`Import external filter lists`](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web).
+   - **uBlock Origin**: Lihat table di bawah, klik `Subscribe` atau tambahkan [`Raw link`][ABID_Raw] di kotak import. Lebih lanjut lihat [`Import external filter lists`][uBoImport].
    - **AdGuard**: Cukup aktifkan AdBlockID.
 
 #### Mobile
@@ -35,14 +35,15 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 | AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
 | AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
 
-[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
-[ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
-[ABID_Aadult]: https://github.com/realodix/AdBlockID-Adult
-
 
 **Tutorial spesifik cara memasang AdBlockID:**
 - [uBlock](/docs/uBlock.md): uBlock Origin, AdNauseam
 - [AdGuard](/docs/Adguard.md)
+
+[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
+[ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
+[ABID_Aadult]: https://github.com/realodix/AdBlockID-Adult
+[uBoImport]: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
 
 ## Berkontribusi
