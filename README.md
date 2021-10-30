@@ -3,13 +3,13 @@
 
 > <sup>Tertarik jadi **contributor**? Jangan ragu untuk membuat issue / pull request!
 > <br>
-> Tertarik jadi **[collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository#collaborator-access-on-a-repository-owned-by-a-user-account) / maintainer** pada AdBlockID? Jangan ragu untuk beritahu Saya 😃</sup>
+> Tertarik jadi **[collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/permission-levels-for-a-user-account-repository#collaborator-access-on-a-repository-owned-by-a-user-account) / maintainer** di AdBlockID? Jangan ragu untuk beritahu Saya 😃</sup>
 
-AdblockID adalah filter pemblokir/penghilang iklan pada situs berbahasa Indonesia, sebagai tambahan untuk melengkapi filter internasional seperti [EasyList](https://github.com/easylist/easylist), [uBlock filters](https://github.com/uBlockOrigin/uAssets) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters). Dirancang khusus untuk membuat Anda lebih nyaman dalam berselancar di internet.
+AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia, sebagai tambahan untuk melengkapi filter internasional seperti [EasyList](https://github.com/easylist/easylist), [uBlock filters](https://github.com/uBlockOrigin/uAssets) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters). Dirancang khusus untuk membuat Anda lebih nyaman dalam berselancar di internet.
 
 
 ## Manfaat Yang Anda Dapatkan
-1. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal pada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
+1. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
 2. **Bypass AdBlock Detection**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
 3. **Bypass Mouse & Key Limitations**: Melumpuhkan beberapa batasan pada halaman web, seperti tidak bisa klik kanan, tidak bisa copy artikel, dll.
 4. **Bypass Safelink**: Lupakan URL safelink ketika hendak download file kesayangan Anda.
@@ -50,7 +50,7 @@ Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai 
 
 - Beri AdBlockID bintang/star di GitHub. Karena jika Anda menggunakan lalu menyukainya dan/atau sebaliknya, Anda setidaknya bisa menjadi stargazer!
 - [Membuat issue](https://github.com/realodix/AdBlockID/issues/new/choose). Bantu Kami mengetahui jika ada iklan yang masih mengganggu Anda di luar sana.
-- Bantu Kami menjawab dan memecahkan masalah pada halaman [issues](https://github.com/realodix/AdBlockID/issues) dan [diskusi](https://github.com/realodix/AdBlockID/discussions). Jawaban Anda sangat membantu.
+- Bantu Kami menjawab dan memecahkan masalah di halaman [issues](https://github.com/realodix/AdBlockID/issues) dan [diskusi](https://github.com/realodix/AdBlockID/discussions). Jawaban Anda sangat membantu.
 - Buat `pull requests` di GitHub untuk memberikan perbaikan dan peningkatan. Otomatis terdaftar sebagai [kontributor](https://github.com/realodix/AdBlockID/graphs/contributors)!
 - Beritahu orang terdekat Anda, agar makin banyak yang bisa merasakan manfaat dari AdBlockID.
 - Mari kita kopdar jika Anda sedang berada di sekitar Jakarta!
