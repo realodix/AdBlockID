@@ -17,6 +17,11 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 
 
 ## Cara Menggunakan
+
+| Name               | Subscribe | Deskrpsi |
+| ------------------ | --------- | -------- |
+| AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
+| AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
 #### Desktop
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
 2. *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
@@ -28,15 +33,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 - **Android**: [Kiwi Browser](https://kiwibrowser.com) + [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), ikuti caranya seperti install AdBlockID di desktop.
 - **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), aktifkan AdBlockID.
 - **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
-<br>
 
-| Name               | Subscribe | Deskrpsi |
-| ------------------ | --------- | -------- |
-| AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
-| AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
-
-
-**Tutorial spesifik cara memasang AdBlockID:**
+#### Tutorial spesifik cara memasang AdBlockID:
 - [uBlock](/docs/uBlock.md): uBlock Origin, AdNauseam
 - [AdGuard](/docs/Adguard.md)
 
