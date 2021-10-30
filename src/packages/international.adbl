@@ -1,37 +1,35 @@
 ! MALAYSIA
-! ----------------------------------------------------------------------
+! -----------------------------------------------
 ! Block
-! -----
 -1160x250-$image,domain=pandulaju.com.my
 -OnlineAd-$image,domain=funtasticko.net|pandulaju.com.my
 /1020x350_$image,domain=funtasticko.net
 ||gohedgostan.com^*-Banner_$image
 ||mediapermata.com.bn^*/banners/$image
+! ---
 ! Hides
-! -----
 jobstreet.com.my##[data-automation$="-ads"]
 mediahiburan.my##.adplaceholder-mrec
 mekanika.com.my##[data-advadsredirect=""]
 utusantv.com###uts-billboard
 wacana.my##.banner-img
+! ---
 ! Annoyances - Unblock Mouse limitations
-! -----
 mediahiburan.my##+js(acis, disableSelection, reEnable)
 mediahiburan.my##+js(acis, document.oncontextmenu)
 iluminasi.com##*:style(user-select: text !important; -webkit-touch-callout: default !important;)
+! ---
 ! Style Fixer
-! -----
 ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
 !
 ! INTERNATIONAL
-! ----------------------------------------------------------------------
+! -----------------------------------------------
 ! Block
-! -----
 /downloadas1.$image,domain=kolompc.com
 ||dlupload.com/dlaads7.png$image
 ||dlupload.com/dlad3.png$image
+! ---
 ! Hides
-! -----
 androidapksfree.com##.header-ad-heading
 apk.support##.ad-box
 apk.support##.advertisement
@@ -48,23 +46,20 @@ yourdictionary.com##.advertising-container
 bettercrack.com,crackwin.net,getsoftwares.net,haxnode.net##center a[onclick^="window.open("]
 ! Mobile
 apk-support.cdn.ampproject.org##.advertisement
-!
+! ---
 ! Anti Adblock
-! -----
 @@/adsbygoogle.$script,domain=erinsakura.com|pnews.space
 @@||accuweather.com^$ghide,badfilter
 apkgezegeni.com##+js(nofab)
 famfonts.com##+js(nobab)
-!
+! ---
 ! Incorrect Blocking
-! -----
 ! https://github.com/AdguardTeam/AdguardFilters/issues/69599
 banki24.by#@#.banner1
 ! https://github.com/AdguardTeam/AdguardFilters/issues/70089
 ! https://github.com/realodix/AdBlockID/issues/897
 lner.co.uk,memepedia.ru#@#.banner-top
-!
-! Adult Filter
-! -----
+! ---
+! Incorrect Blocking (Adult)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/79752
 androidspin.com#@#[href*="idspin."]

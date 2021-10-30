@@ -1,3 +1,8 @@
+!! Blokir iklan langsung dari sumbernya. Mirip seperti filter di adservers.adbl,
+!! namun layanan utama dari domain/IP situs tersebut bukan untuk menyediakan iklan.
+!!
+!! --------------------------------------------------------
+!!
 ||amazonaws.com^*/banner/$3p,domain=bogornews.com
 ||drive.google.com/uc?export=view$image,domain=wartarakyat.co.id
 ||iframe.ly^$domain=tampilcantik.com
@@ -43,6 +48,7 @@
 ||img.nt1.co/jf/$3p,image
 !
 ! AFFILIATES
+! -----------------------------------------------
 ~dijaminmurah.com##[href*="dijaminmurah.com/aff.php?aff="] > img
 ~idcloudhost.com##[href*="idcloudhost.com/aff.php"] > img
 ~niagahoster.co.id##[href*="niagahoster.co.id/ref/"]

@@ -1,6 +1,11 @@
+!! Blokir iklan di semua situs
+!!
+!! --------------------------------------------------------
+!!
 .id^*/ads_$domain=~cartalog.id
 /iklan/*$image,domain=~1rajaiklan.com|~bagusiklan.com|~duniaiklangratis.com|~iklan123.net|~iklanbogor.com|~iklangratis88.com|~iklanpopuler.com|~iklansmart.com|~megaiklan.com|~pusatiklan.co.id|~sebariklanmassalpremium.com|~sewa-apartemen.net
 /ngiklan/*$image,domain=~ngiklan.gratis
+!
 ! https://github.com/ABPindo/indonesianadblockrules/issues/41
 /smartfren/ads.
 !
@@ -543,7 +548,8 @@ _iklantengah_
 _pasangiklan/
 _promosi.
 !
-! Popular dimension sizes
+! Popular Banner Sizes
+! -----------------------------------------------
 -%2B728x90.$image
 -(1456x180px)-$image
 -1000-60.$image

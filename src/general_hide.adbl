@@ -1,3 +1,24 @@
+!! Sembunyikan iklan di semua situs
+!!
+!! --------------------------------------------------------
+!!
+! WHITELIST
+! -----------------------------------------------
+~fjb.kaskus.co.id##.ads__banner
+~serbada.com##.banner-header
+~doxadigital.com##.banner-top
+~agency-iklan.com##img[data-srcset*="-768x320."]
+~agency-iklan.com##img[srcset*="-768x320."]
+!
+~ascertaincrescenthandbag.com##[href*="ascertaincrescenthandbag.com"]
+~daftarsb1m.net,~sb1m.click##[href*="daftarsb1m.net/aff/"]
+~domainesia.com##[href*="domainesia.com/hosting/?utm_source=banner-ads-"] img
+~klook.com##[href*="klook.com/id/promo/"] > img
+~mixersing.com##[href*="mixersing.com/api/click?query="]
+~kitabisa.com##[href^="http://ktbs.in/aplikasikitabisa"] > img
+!
+! POPULAR HTML ATTRIBUTES
+! -----------------------------------------------
 ###Ad300B
 ###Box-Banner-ads
 ###Gadget-AdSense
@@ -651,15 +672,8 @@
 ##gmn-companion-ad-renderer
 ##img[data-permalink^="/apps/iklan-"]
 !
-~ascertaincrescenthandbag.com##[href*="ascertaincrescenthandbag.com"]
-~daftarsb1m.net,~sb1m.click##[href*="daftarsb1m.net/aff/"]
-~domainesia.com##[href*="domainesia.com/hosting/?utm_source=banner-ads-"] img
-~klook.com##[href*="klook.com/id/promo/"] > img
-~mixersing.com##[href*="mixersing.com/api/click?query="]
-~kitabisa.com##[href^="http://ktbs.in/aplikasikitabisa"] > img
-!
-! Popular banner sizes
-!
+! POPULAR BANNER SIZES
+! -----------------------------------------------
 ##img[data-srcset*="-1024x215."]
 ##img[data-srcset*="-1536x322."]
 ##img[data-srcset*="-2048x429."]
@@ -728,10 +742,3 @@
 ##img[width="904"][height="1280"]
 ##img[width="905"][height="1280"]
 ##img[width="950px"][height="100px"]
-!
-! Whitelis
-~fjb.kaskus.co.id##.ads__banner
-~serbada.com##.banner-header
-~doxadigital.com##.banner-top
-~agency-iklan.com##img[data-srcset*="-768x320."]
-~agency-iklan.com##img[srcset*="-768x320."]
