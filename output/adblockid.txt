@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.10.491
+! Version: 21.10.492
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Oct 2021 09:38 UTC
+! Last modified: 30 Oct 2021 12:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1133,6 +1133,17 @@ _981x100.gif$image
 _996x50.$image
 _ads_733x.$image
 _GIF1200x120-
+~fjb.kaskus.co.id##.ads__banner
+~serbada.com##.banner-header
+~doxadigital.com##.banner-top
+~agency-iklan.com##img[data-srcset*="-768x320."]
+~agency-iklan.com##img[srcset*="-768x320."]
+~ascertaincrescenthandbag.com##[href*="ascertaincrescenthandbag.com"]
+~daftarsb1m.net,~sb1m.click##[href*="daftarsb1m.net/aff/"]
+~domainesia.com##[href*="domainesia.com/hosting/?utm_source=banner-ads-"] img
+~klook.com##[href*="klook.com/id/promo/"] > img
+~mixersing.com##[href*="mixersing.com/api/click?query="]
+~kitabisa.com##[href^="http://ktbs.in/aplikasikitabisa"] > img
 ###Ad300B
 ###Box-Banner-ads
 ###Gadget-AdSense
@@ -1785,12 +1796,6 @@ _GIF1200x120-
 ##div[id^="dfp-gpt-ad"]
 ##gmn-companion-ad-renderer
 ##img[data-permalink^="/apps/iklan-"]
-~ascertaincrescenthandbag.com##[href*="ascertaincrescenthandbag.com"]
-~daftarsb1m.net,~sb1m.click##[href*="daftarsb1m.net/aff/"]
-~domainesia.com##[href*="domainesia.com/hosting/?utm_source=banner-ads-"] img
-~klook.com##[href*="klook.com/id/promo/"] > img
-~mixersing.com##[href*="mixersing.com/api/click?query="]
-~kitabisa.com##[href^="http://ktbs.in/aplikasikitabisa"] > img
 ##img[data-srcset*="-1024x215."]
 ##img[data-srcset*="-1536x322."]
 ##img[data-srcset*="-2048x429."]
@@ -1859,11 +1864,6 @@ _GIF1200x120-
 ##img[width="904"][height="1280"]
 ##img[width="905"][height="1280"]
 ##img[width="950px"][height="100px"]
-~fjb.kaskus.co.id##.ads__banner
-~serbada.com##.banner-header
-~doxadigital.com##.banner-top
-~agency-iklan.com##img[data-srcset*="-768x320."]
-~agency-iklan.com##img[srcset*="-768x320."]
 ||accesstrade.co.id^$3p
 ||ad-loupe.com^$3p
 ||addesigner.com^$3p
@@ -2693,13 +2693,6 @@ gardapapua.com##aside:has-text(/adv/i)
 klubpria.com##center:has-text(/sponsor/i)
 doktersehat.com##div[style*="12px;"]:has-text(/iklan/i)
 berakal.com##p:has-text(/adv/i)
-biggo.id##.search-ad-banner-re
-shopee.co.id##.search-page .item-card-list__item-card-wrapper:has-text(/iklan/i)
-shopee.co.id##.shopee-search-item-result__item:has-text(/iklan/i)
-tokopedia.com##[data-cy="searchRsltProdgrid"] [data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
-tokopedia.com##[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
-biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
-biggo.id##img[onclick*="AD_SEARCHRESULT"]
 grid.id##[id^="afdf-"]
 merdeka.com###mdk-content div[style*="text-align:center;"]:has([id*="div-gpt-ad-"])
 parenting-orami-co-id.cdn.ampproject.org,parenting.orami.co.id##.container:has-text(/adv/i)
@@ -2707,6 +2700,13 @@ kapanlagi.com##.dfp-bframe-cont:has([id*="div-gpt-ad-"])
 genpi.co##.text-center:has([id*="div-gpt-ad-"])
 www-kincir-com.cdn.ampproject.org##.text-center:has-text(/adv/i)
 jakselnews-pikiran--rakyat-com.cdn.ampproject.org##center:has-text(/adv/i)
+biggo.id##.search-ad-banner-re
+shopee.co.id##.search-page .item-card-list__item-card-wrapper:has-text(/iklan/i)
+shopee.co.id##.shopee-search-item-result__item:has-text(/iklan/i)
+tokopedia.com##[data-cy="searchRsltProdgrid"] [data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
+tokopedia.com##[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
+biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
+biggo.id##img[onclick*="AD_SEARCHRESULT"]
 tribunnews.com##+js(acis, Math, ='\x)
 bolasport.com##+js(acis, document.addEventListener, iframe-network)
 m.akurat.co###mainPage:style(margin-top: 0!important;)
@@ -2737,17 +2737,16 @@ menantisenja.com##+js(set, adblock, 1)
 kontrastimes.com##+js(set, wpquads_adblocker_check_2, true)
 semuanyabola.com,urbandigital.id##+js(acis, ai_check_and_insert_block)
 duniailkom.com,solotrend.net##+js(acis, ai_run_scripts)
-/Dualipaid/duablock$3p,script
 /fuckadblock.$script,redirect=noop.js,domain=akurasinews.com
 ||bloggerku.com/antiadblock/$script
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=antoncabon.us|bahyudinnor.com|igniel.com|koderian.my.id|shinryu2.blogspot.com
 ||vkcdnservice.com/api/$script,redirect=noop.js
+/antiblockersjoss.$image
+balipost.com##.paralax_div
 @@.gif#*/ad/
 @@.jpg#*/ad/
 @@.png#*/ad/
 @@/noadblock-nice-message/assets/js/ads.js?$1p,script
-/antiblockersjoss.$image
-balipost.com##.paralax_div
 -adblock-notice-
 -adblock-notice/
 /abb-msg.js
@@ -2774,6 +2773,7 @@ balipost.com##.paralax_div
 /blockAndInf.js
 /deadblocker/*
 /disable-adblock.
+/Dualipaid/duablock$3p,script
 /inc/antiblock.
 /mod_ablockdetector/*
 /nonAdBlock/*
@@ -10373,7 +10373,6 @@ intercelestial.com,linegee.net,sweetlantern.com###externalinject-gpt-passback-co
 intercelestial.com,linegee.net,sweetlantern.com###externalinject-gpt-passback-iframe
 intercelestial.com,sweetlantern.com##.idblog-floatbanner
 absolutesmmpanel.com##.wmg-vb-container
-@@/abdiusu/project-safelink-viomagz/*/safelink-ViomagzV3.2-2tombol$3p,script
 belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 bevru.club,bolssc.com,cararegistrasi.com,ceesty.com,cuts-url.com,eio.io,eririo.club,exe.app,exee.io,exey.io,fc-lc.com,fc.lc,fcc.lc,freshi.site,liveshootv.com,luangusaha.com,miuiku.com,modebaca.com,oceantech.xyz,onlinecorp.me,p4link.com,ponselharian.com,sekilastekno.com,semawur.com,shrinke.me,srek.net##+js(window.open-defuser)
 cararegistrasi.com##+js(nano-sib)
@@ -10398,6 +10397,7 @@ onlinecorp.me,sekilastekno.com,sportif.id##img[width="200"][height="60"]
 ||mrfog.com^$domain=dr-farfar.net
 ||safeku.com/uploads/getlink.jpg$image
 ||semawur.com/o.png$image
+@@/abdiusu/project-safelink-viomagz/*/safelink-ViomagzV3.2-2tombol$3p,script
 -1160x250-$image,domain=pandulaju.com.my
 -OnlineAd-$image,domain=funtasticko.net|pandulaju.com.my
 /1020x350_$image,domain=funtasticko.net
