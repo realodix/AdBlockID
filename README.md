@@ -49,11 +49,17 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai komitmen Anda. Menggunakan filter AdBlockID di Ad Blocker favorit Anda sudah merupakan dukungan besar, tetapi ada cara terbaik lainnya untuk berkontribusi:
 
 - Beri AdBlockID bintang/star di GitHub. Karena jika Anda tidak menggunakan AdBlockID tetapi menyukainya, Anda setidaknya bisa menjadi stargazer!
-- [Membuat issue](https://github.com/realodix/AdBlockID/issues/new/choose). Bantu Kami mengetahui jika ada iklan yang masih mengganggu Anda di luar sana.
-- Bantu Kami menjawab dan memecahkan masalah di halaman [issues](https://github.com/realodix/AdBlockID/issues) dan [diskusi](https://github.com/realodix/AdBlockID/discussions). Jawaban Anda sangat membantu.
-- Buat `pull requests` di GitHub untuk memberikan perbaikan dan peningkatan. Otomatis terdaftar sebagai [kontributor](https://github.com/realodix/AdBlockID/graphs/contributors)!
+- [Membuat issue][GHIssuesNew]. Bantu Kami mengetahui jika ada iklan yang masih mengganggu Anda di luar sana.
+- Bantu Kami menjawab dan memecahkan masalah di halaman [issues][GHIssuesPage] dan [diskusi][GHDiscussionsPage]. Jawaban Anda sangat membantu.
+- Buat [`pull requests`][GHGlossaryPullReq] di GitHub untuk memberikan perbaikan dan peningkatan. Otomatis terdaftar sebagai [kontributor][GHContributorsPage]!
 - Beritahu orang terdekat Anda, agar makin banyak yang bisa merasakan manfaat dari AdBlockID.
 - Mari kita kopdar jika Anda sedang berada di sekitar Jakarta!
+
+[GHIssuesNew]: https://github.com/realodix/AdBlockID/issues/new/choose
+[GHIssuesPage]: https://github.com/realodix/AdBlockID/issues
+[GHDiscussionsPage]: https://github.com/realodix/AdBlockID/discussions
+[GHContributorsPage]: https://github.com/realodix/AdBlockID/graphs/contributors
+[GHGlossaryPullReq]: https://docs.github.com/en/get-started/quickstart/github-glossary#pull-request
 
 
 ## Development
@@ -66,5 +72,8 @@ Thanks goes to these wonderful people.
 
 | # | User | Contribs | Picture |
 | - | ---- | -------- | ------- |
-| 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [600+ issues](https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer) | <img width="30" height="30" src="https://avatars0.githubusercontent.com/u/9379770?s=30&v=4"> |
-| 2 | [3xploiton3](https://github.com/3xploiton3) | [40+ issues](https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3) | <img width="30" height="30" src="https://avatars3.githubusercontent.com/u/19517680?s=30&v=4"> |
+| 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [700+ issues][createdByRecehanSlayer] | <img width="30" height="30" src="https://avatars0.githubusercontent.com/u/9379770?s=30&v=4"> |
+| 2 | [3xploiton3](https://github.com/3xploiton3) | [50+ issues][createdBy3xploiton3] | <img width="30" height="30" src="https://avatars3.githubusercontent.com/u/19517680?s=30&v=4"> |
+
+[createdByRecehanSlayer]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer
+[createdBy3xploiton3]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3
