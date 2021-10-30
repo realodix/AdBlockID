@@ -1,10 +1,10 @@
 ## Daftar Isi
-- [AdGuard Browser extension](#cara-memasang-adblockid-pada-adguard-browser-extension)
-- [AdGuard for Windows](#cara-memasang-adblockid-pada-adguard-for-windows)
-- [AdGuard for Android](#cara-memasang-adblockid-pada-adguard-for-android)
+- [AdGuard Browser extension](#cara-memasang-adblockid-di-adguard-browser-extension)
+- [AdGuard for Windows](#cara-memasang-adblockid-di-adguard-for-windows)
+- [AdGuard for Android](#cara-memasang-adblockid-di-adguard-for-android)
 
 
-## Cara Memasang AdBlockID Pada AdGuard Browser Extension
+## Cara Memasang AdBlockID Di AdGuard Browser Extension
 1. Buka halaman *dashboard*.
 2. Klik tab *Filters*. <br>
 
@@ -20,10 +20,10 @@
 
 <br><br>
 
-## Cara Memasang AdBlockID Pada AdGuard for Windows
+## Cara Memasang AdBlockID Di AdGuard for Windows
 1. Buka aplikasi AdGuard.
 2. Buka halaman *Settings*.
-3. Pada menu di sebelah kiri, klik *Ad Blocker*.
+3. Di menu di sebelah kiri, klik *Ad Blocker*.
 4. Pada bagian *Installed filters*, klik *Add a filter*. <br>
 
    ![](https://i.imgur.com/WzMNuRl.png) <br>
@@ -35,9 +35,9 @@
 
 <br><br>
 
-## Cara Memasang AdBlockID Pada AdGuard for Android
+## Cara Memasang AdBlockID Di AdGuard for Android
 1. Buka aplikasi AdGuard.
-2. Pada menu *sidebar*, klik *Setting* -> *Content Blocking*.
+2. Di menu *sidebar*, klik *Setting* -> *Content Blocking*.
 3. Klik menu *Filters*.
 4. Klik menu *Language-specific*.
 5. Aktifkan *Language-specific*.

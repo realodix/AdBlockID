@@ -34,8 +34,8 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  ├─ general_hide.adbl       [G] Sembunyikan iklan.
  ├─ specific_block.adbl     [S] Blokir iklan.
  ├─ specific_hide.adbl      [S] Sembunyikan iklan.
- ├─ specific_hide_ext.adbl  [S] Mirip seperti filter pada specific_hide.adbl, namun prosedural.
- ├─ thirdparty.adbl         [G] Mirip seperti filter pada adservers.adbl, namun layanan utama
+ ├─ specific_hide_ext.adbl  [S] Mirip seperti filter di specific_hide.adbl, namun prosedural.
+ ├─ thirdparty.adbl         [G] Mirip seperti filter di adservers.adbl, namun layanan utama
  │                          dari domain/IP situs tersebut bukan untuk menyediakan iklan.
  └─ whitelist.adbl          [G/S] Mengembalikan sesuatu yang seharusnya ada, namun hilang
                             karena tidak sengaja terblokir/disembunyikan.
@@ -44,8 +44,8 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 <sup>
 * Penjelasan lengkap ada di masing-masing file. <br>
 *[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance. Filter bersifat spesifi dan general. <br>
-*[G]: Filter bersifat general, tidak terbatas pada situs tertentu. <br>
-*[S]: Filter bersifat spesifik, terbatas pada situs tertentu.
+*[G]: Filter bersifat general, tidak mengarah secara spesifik ke situs tertentu. <br>
+*[S]: Filter bersifat spesifik, mengarah secara spesifik ke situs tertentu.
 </sup>
 
 
@@ -63,19 +63,19 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
 - `./build.sh`
 
-  Mengurutkan, merapikan dan menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+  Mengurutkan dan merapikan, serta menggabungkan semua filter ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
   VSCode Task: **`Build`**
 
 - `flrender -i abid=. template/adblockid.adbl output/adblockid.txt`
 
-  Menggabungkan semua filter pada bagan di atas ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+  Menggabungkan semua filter ke dalam 1 file bernama `adblockid.txt` di folder `output`.
 
   VSCode Task: **`FOP`**
 
 - `python tools/fop/fop.py`
 
-  Mengurutkan dan merapikan semua filter pada bagan di atas.
+  Mengurutkan dan merapikan semua filter.
 
 #### Web Service
 - [ABP Redundancy check](https://adblockplus.org/redundancy_check)
