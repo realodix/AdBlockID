@@ -63,32 +63,20 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
 - `./build.sh`
 
-  Mengurutkan dan merapikan, serta menggabungkan semua filter ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+  Mengurutkan dan merapikan filter, serta menggabungkannya ke dalam 1 file (`adblockid.txt`) di folder `output`.
 
   VSCode Task: **`Build`**
 
 - `flrender -i abid=. template/adblockid.adbl output/adblockid.txt`
 
-  Menggabungkan semua filter ke dalam 1 file bernama `adblockid.txt` di folder `output`.
+  Menggabungkan semua filter ke dalam 1 file (`adblockid.txt`) di folder `output`.
 
   VSCode Task: **`FOP`**
 
 - `python tools/fop/fop.py`
 
-  Mengurutkan dan merapikan semua filter.
+  Mengurutkan dan merapikan filter.
 
 #### Web Service
 - [ABP Redundancy check](https://adblockplus.org/redundancy_check)
 - [ABPVN Redundancy check](https://abpvn.com/ruleChecker/redundantRuleChecker.html)
-
-## Format Pesan Commit
-
-Spesifikasi untuk menambahkan makna yang dapat dibaca manusia dan mesin untuk membuat pesan. Untuk contoh penggunaannya, Anda dapat melihat [history commit](https://github.com/realodix/AdBlockID/commits).
-
-| Kode   | Cakupan         |
-| ------ | --------------- |
-| `AA`   | Anti-Adblock    |
-| `M`    | Maintain filter |
-| `P`    | Perbaikan masalah yang disebabkan oleh AdBlockID dan/atau oleh filter utama (easylist, AdGuard base filter & uBlock filters).|
-| `docs` | Semuanya pada folder `docs`, termasuk file `readme.md` dan dokumentasi di setiap file filter AdBlockID (folder `src`) . |
-| `chore(<scope>)` | Semua pengeditan pada repository AdBlockID, kecuali yang masuk dalam cakupan kode `docs`. |
