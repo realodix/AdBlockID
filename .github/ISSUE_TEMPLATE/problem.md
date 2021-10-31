@@ -1,15 +1,17 @@
 ---
 name: Problem
-about: AdBlockID menimbulkan masalah, seperti salah blockir atau lainnya.
+about: AdBlockID menyebabkan masalah, seperti salah blokir atau hal lainnya.
 title: 'example.com'
 labels: 'C: Bug'
-assignees: ''
-
 ---
 
 **Sample URL**
 https://example.com/
 
 **Penjelasan Lebih Lanjut**
-<!-- Mohon jelaskan ke Kami serinci dan sejelas mungkin apa yang terjadi.
-Please explain to Us as detailed what happened. -->
+<!--
+- Mohon jelaskan ke Kami sedetail dan sejelas mungkin apa yang sebenarnya terjadi.
+- Jika memungkinkan berikan gambar screenshot.
+- Terkadang hal yang Anda laporkan muncul ketika [...]. Mohon jelaskan hal yang memicunya.
+- Berikan detail tentang ad blocker apa yang Anda gunakan dan filter apa saja yang gunakan.
+-->
