@@ -11,9 +11,10 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 ## Manfaat Yang Anda Dapatkan
 1. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
 2. **Bypass AdBlock Detection**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
-3. **Bypass Mouse & Key Limitations**: Melumpuhkan beberapa batasan di halaman web, seperti tidak bisa klik kanan, tidak bisa copy artikel, dll.
-4. **Bypass Safelink**: Lupakan URL safelink ketika hendak download file kesayangan Anda.
-5. **Clean:** Halaman web jadi bersih dan nyaman. No `extra` abracadabra!
+3. **Bypass Mouse/Key Limitations**: Melumpuhkan beberapa batasan di halaman web, seperti tidak bisa klik kanan, tidak bisa copy artikel, dll.
+4. **Disable Safelink**: Mau download, eh malah masuk ke halaman safelink? Lupain deh!
+5. **Disable Automated Link Attribution**: Copy paste artikel malah muncul link sumbernya? Lupain deh!
+6. **Clean:** Halaman web jadi bersih dan nyaman. No `extra` abracadabra!
 
 
 ## Cara Menggunakan
@@ -21,7 +22,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 | Name               | Subscribe | Deskrpsi |
 | ------------------ | --------- | -------- |
 | AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
-| AdBlockID+ (Adult) | -                      | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
+| AdBlockID+ (Adult) | -         | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
 
 #### Desktop
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
