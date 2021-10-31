@@ -5,7 +5,6 @@
 ! GENERAL
 ! -----------------------------------------------
 download.id##.entry div[style="clear:both; margin-top:0em; margin-bottom:1em;"] > a[rel="nofollow"][target="_self"]
-sindonews.com##.parallax-non.t600:style(top: 0 !important;)
 !
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
 !
@@ -50,7 +49,9 @@ papuatoday.com,radarbanten.co.id,sindomanado.com,suluttimes.com##+js(acis, SGPop
 ! Popup Maker / popmake- / pum-
 papuakita.com##+js(aopr, window.pum_popups)
 ! spu-container / spu-content
+/wp-content/plugins/popups/public/*$domain=jurnalweb.com
 /wp-content/plugins/wp-popups-lite/*$domain=radarlampung.co.id
+jurnalweb.com##+js(aopr, $, SPU_master)
 !
 ! CONTENT EMBED
 ! 1st/3rd-party content, videos/slideshow yang tidak terkait langsung dengan
@@ -58,15 +59,14 @@ papuakita.com##+js(aopr, window.pum_popups)
 ! melakukan scroll. Tidak sama dengan video youtube yang disematkan.
 ! -----------------------------------------------
 brilio.net###videoLeftID:has(#ivsplayer01-container)
-kompas.com##.ivs-wrap-wp
+kompas.com##.ivs-wrap:has(#ivsplayer01-container)
 bolasport.com##.section__left .clsivs:has(#ivsplayer01-container)
-kompas.com##.video-inject
 ||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|goodnewsfromindonesia.id|grid.id|gridoto.com|herstory.co.id|id.theasianparent.com|idntimes.com|indosport.com|jubi.co.id|kompas.com|kontan.co.id|motorplus-online.com|parapuan.co|styl.id|sulselsatu.com|tempo.co|~video.tempo.co|wartaekonomi.co.id
 ||ivideosmart.com/ivxplayer/$script,domain=grid.id|kompas.com
 !
-@@||vidio.com/embed/*embed_position=readpage-headline$3p,frame,domain=merdeka.com
+@@||vidio.com/embed/*embed_position=readpage-headline$3p,frame,domain=liputan6.com|merdeka.com
 m.merdeka.com###mdk-content #dnative_video_one_detailpage:has(#iframe-vidio)
-||vidio.com/embed/$3p,frame,domain=merdeka.com
+||vidio.com/embed/$3p,frame,domain=liputan6.com|merdeka.com
 !
 ||20.detik.com/embed/$frame,domain=~20.detik.com|~adsmart.detik.com
 ||cnbcindonesia.com/embed/video/$frame,domain=cnbcindonesia.com
