@@ -63,18 +63,21 @@ gardapapua.com##aside:has-text(/adv/i)
 !
 ! EMPTY ADS PLACEHOLDERS
 ! -----------------------------------------------
-kumparan.com##.adunitContainer:upward(1)
-sehatq.com##[id^="div-gpt-ad"]:upward(1)
+kumparan.com##.adunitContainer:upward(div):matches-css(text-align: center)
+sehatq.com##[id^="div-gpt-ad"]:upward(div):matches-css(text-align: center)
 !
 motorplus-online.com###composite-container:matches-css-before(content:/adv/i)
 tempo.co###inarticle_2:has-text(/adv/i)
 gridoto.com,kompas.tv###jxOutstreamContainer:matches-css-before(content:/adv/i)
+herworld.co.id###konten-2 div[style*="text-align:center"]:has-text(/adv/i)
 bola.net###top_leaderboard:has([id^="div-gpt-ad"])
 babla.co.id###topslot-container
 babla.co.id###topslot_container
 balipost.com##._align_center:has(.adsbygoogle)
 balipost.com##._align_center:has([id^="div-gpt-ad"])
 balipost.com##._ning_parallax_container
+casaindonesia.com##.articleBody > div[style*="text-align:center"]:has-text(/adv/i)
+cosmopolitan.co.id##.artikel-txt > div[style*="text-align:center"]:has-text(/adv/i)
 tribunnewswiki.com##.box__reserved:matches-css-before(content:/adv/i)
 seputarforex.com##.campaign-atas
 suarajatimpost.com##.card:has-text(/adv/i)
@@ -87,6 +90,7 @@ orami.co.id##.content div:has-text(/adv/i)
 tipspetani.com##.fixed-rside:has(.adsbygoogle)
 alinea.id,gadgetren.com,katadata.co.id##.flying_carpet_div
 gadgetren.com,panditfootball.com##.footer_sticky
+mediaindonesia.com##.left.main-page #paralax_div
 kompas.tv##.mgidclsbanner:matches-css-before(content:/adv/i)
 kompas.com##.native-wrap:matches-css-before(content:/adv/i)
 genpi.co##.post-text > .caption:has-text(/adv/i)
@@ -112,6 +116,7 @@ berakal.com##p:has-text(/adv/i)
 ! Mobile
 ! Hanya ditemukan pada mobile
 pikiran-rakyat.com###cont-megabillboard
+mediaindonesia.com###content [class^="parallax_"]:has([id*="div-gpt-ad-"])
 merdeka.com###mdk-content div[style*="text-align:center;"]:has([id*="div-gpt-ad-"])
 kontan.co.id##.center:has(.heightads50)
 parenting.orami.co.id##.container:has-text(/adv/i)
