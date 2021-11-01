@@ -7,17 +7,6 @@
 !!
 !! --------------------------------------------------------
 !!
-fanicat.com##.code-block:not(:has(a[href*="fanicat.com"])) img
-radarbanten.co.id##.elementor-widget-image:not(:has(a[href*="radarbanten.co.id"]))
-annews.co.id##.widget-content img:not(.img-effect)
-kompiajaib.com##.widget-wrapper .link-btn:has-text(/iklan/i)
-aksioma.co.id,fokussumatera.com,headlinelampung.com,kailipost.com,klik-ntt.com,koranakselerasi.com,matangdream.com,radarnews.id,tabikpun.com,timor-media.com,timorline.com,zonalinenews.com##.widget:has-text(/iklan/i)
-annews.co.id,tampilcantik.com##.widget:has-text(/sponsor/i)
-trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
-bikersindonesia.net##aside .widget:not(:has(a[href*="bikersindonesia.net"])) img
-maswarsito.com##aside .widget:not(:has(a[href*="maswarsito.com"])) img
-gardapapua.com##aside:has-text(/adv/i)
-!
 ! ASIDE & WIDGET
 ! -----------------------------------------------
 musiklib.org##.sidebar-sponsor
@@ -42,7 +31,6 @@ infolutim.com##aside a[href=""] img
 bayufitri.com,konsultasisyariah.com,murianews.com##aside a[target="_blank"] img
 panrita.news##aside img[alt^="adv" i]
 expossumbar.com##aside img[id$="_img"]
-
 ! ---
 ! Dimension
 sulawesion.com##.elementor-widget-wrap img[width="1003"][height="1024"]
@@ -61,6 +49,18 @@ apahabar.com,kumanika.com,lintastungkal.com,sawerigading-news.com##[id^="sidebar
 asarpua.com,beritamerdekaonline.com,bogorchannel.id,bogorin.com,bogorupdate.com,expontt.com,fajarmanado.com,investigasibhayangkara.com,jabarekspres.com,jeratntb.com,kabarnuansa.id,kabarpublik.id,kailipost.com,kepridays.co.id,koranbanjar.net,koranmemo.com,lampung1.com,lampungcentral.com,lensantb.com,lutim-news.com,mattanews.co,mediasembilan.co.id,newskaltim.com,ntt-news.com,obor-nusantara.com,papuabaratpos.com,radarlombok.co.id,radarmadiun.co.id,radarmalaka.com,realitalampung.com,redaksisulut.com,sakanews.com,semarakpost.com,sendapaleba.com,senentangnews.com,sindomanado.com,suara-ntt.com,suaramandiri.co,suarasiber.com,sumateranews.co.id,swarakaltim.com,talikanews.com,timur-online.com##aside img[style="max-width: 100%; height: auto;"]
 kriminal.co##aside img[style="max-width: 100%;"]
 berita1bogor.id##aside img[width="212"][height="300"]
+! ---
+! Procedural Cosmetic Filters
+! https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
+radarbanten.co.id##.elementor-widget-image:not(:has(a[href*="radarbanten.co.id"]))
+annews.co.id##.widget-content img:not(.img-effect)
+kompiajaib.com##.widget-wrapper .link-btn:has-text(/iklan/i)
+aksioma.co.id,fokussumatera.com,headlinelampung.com,kailipost.com,klik-ntt.com,koranakselerasi.com,matangdream.com,radarnews.id,tabikpun.com,timor-media.com,timorline.com,zonalinenews.com##.widget:has-text(/iklan/i)
+annews.co.id,tampilcantik.com##.widget:has-text(/sponsor/i)
+trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
+bikersindonesia.net##aside .widget:not(:has(a[href*="bikersindonesia.net"])) img
+maswarsito.com##aside .widget:not(:has(a[href*="maswarsito.com"])) img
+gardapapua.com##aside:has-text(/adv/i)
 !
 ! Empty Ads Placeholders
 ! -----------------------------------------------
