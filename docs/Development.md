@@ -1,4 +1,4 @@
-## Panduan untuk menulis filter
+## Panduan Menulis Filter
 
 Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
