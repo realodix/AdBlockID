@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.13
+! Version: 21.11.14
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Nov 2021 17:59 UTC
+! Last modified: 02 Nov 2021 21:55 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1860,13 +1860,10 @@ _GIF1200x120-
 ##img[width="800"][height="90"]
 ##img[width="818"][height="1280"]
 ##img[width="820"][height="80"]
-##img[width="853"][height="1280"]
 ##img[width="900"][height="150"]
 ##img[width="900"][height="179"]
 ##img[width="900"][height="232"]
 ##img[width="900"][height="280"]
-##img[width="904"][height="1280"]
-##img[width="905"][height="1280"]
 ##img[width="920"][height="126"]
 ##img[width="950px"][height="100px"]
 ||accesstrade.co.id^$3p
@@ -1901,8 +1898,6 @@ _GIF1200x120-
 ||pasangiklan.com^$3p
 ||pondokiklan.com^$3p
 ||rajatraffic.com^$3p
-||bedumbserugate.com^$3p
-||kihvaqymenggd.xyz^$3p
 ||kotaksilver.casa^*/*.gif$3p,image
 ||pc3ads.com^$3p
 ||ibn.adreach.co^$3p
@@ -2731,13 +2726,12 @@ choipanwendy.com##+js(aopr, adsansejs)
 paraedu.id##+js(aopr, anOptions)
 cuitandokter.com##+js(aopr, mdpDeBlocker)
 brotutor.net,cikimm.com,isrul.com##+js(aopr, mql)
+kontrastimes.com##+js(aopr, quadsOptions)
 saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 labkom.co.id##+js(aopr, tdBlock)
 saungfirmware.id##+js(nano-sib)
 jagoanssh.com,linkconfig.com,nafaskuda.com,sihentai.my.id##+js(nobab)
 rukim.id,surgatekno.com##+js(nofab)
-menantisenja.com##+js(set, adblock, 1)
-kontrastimes.com##+js(set, wpquads_adblocker_check_2, true)
 semuanyabola.com,urbandigital.id##+js(acis, ai_check_and_insert_block)
 duniailkom.com,solotrend.net##+js(acis, ai_run_scripts)
 /antiblockersjoss.$image
@@ -10204,8 +10198,8 @@ kiryuu.id,komikindo.co,komikvip.com,mangakita.net,manhwaindo.id,ngomik.net,sekte
 kumpulmanga.org##.kzl
 mangaku.club##.section_ad
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
+komiknesia.com##+js(aopr, quadsOptions)
 kittydesu.com,komikmoe.my.id,mangadisk.web.id,sheamanga.my.id##+js(nobab)
-komiknesia.com##+js(set, wpquads_adblocker_check_2, true)
 klikmanga.com##body > .mtsnb-shown
 mangaindo.web.id##+js(acis, Math, zfgloaded)
 klikmanga.com,komikstation.co,komikstation.com,manhwaindo.id,manhwaland.org,sheamanga.my.id##+js(acis, document.querySelectorAll, popMagic)
@@ -10216,6 +10210,7 @@ komikuindo.id,mangaku.club##*:style(user-select: text !important; -webkit-user-s
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 komikuindo.id,otakudesu.moe##+js(aopr, document.oncontextmenu)
+$3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net,domain=oploverz.eu
 .gif$image,domain=75.119.143.213|animebatchs.net|anoboy.online|conan.id|layarfilm21.live
 /banner-$image,domain=maxnime.com
 ||jwplayer21.com/images/*.gif$image
@@ -10282,7 +10277,6 @@ filmboxoffice.web.id,neosubs.net,tohaboy.web.id##+js(aopr, anOptions)
 animecracks.com##+js(aopr, mdpDeBlocker)
 animee.xyz##+js(aopr, mdpDeBlockerDestroyer)
 107.152.39.187,167.99.31.48,aksensei.com,cloudfilm.co,doramaflix.com,dramaencode.com,dramazon.id,driverays.com,fmoviez.org,koenime.com,pahe.stream##+js(nobab)
-oploverz.eu##+js(nostif, nextFunction, 450)
 anidraw.net##+js(set, config.adblock, null)
 103.9.100.20#@#.ads-atas-player
 /adsby.$image,redirect=2x2.png,domain=anoboy.media
