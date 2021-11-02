@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.7
+! Version: 21.11.8
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Nov 2021 23:34 UTC
+! Last modified: 02 Nov 2021 11:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2639,8 +2639,8 @@ trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
 bikersindonesia.net##aside .widget:not(:has(a[href*="bikersindonesia.net"])) img
 maswarsito.com##aside .widget:not(:has(a[href*="maswarsito.com"])) img
 gardapapua.com##aside:has-text(/adv/i)
-kumparan.com##.adunitContainer:upward(div):matches-css(text-align: center)
-sehatq.com##[id^="div-gpt-ad"]:upward(div):matches-css(text-align: center)
+kumparan.com##div:matches-css(text-align: center):has(> .adunitContainer)
+sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
 motorplus-online.com###composite-container:matches-css-before(content:/adv/i)
 tempo.co###inarticle_2:has-text(/adv/i)
 gridoto.com,kompas.tv###jxOutstreamContainer:matches-css-before(content:/adv/i)

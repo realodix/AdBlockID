@@ -63,8 +63,8 @@ gardapapua.com##aside:has-text(/adv/i)
 !
 ! EMPTY ADS PLACEHOLDERS
 ! -----------------------------------------------
-kumparan.com##.adunitContainer:upward(div):matches-css(text-align: center)
-sehatq.com##[id^="div-gpt-ad"]:upward(div):matches-css(text-align: center)
+kumparan.com##div:matches-css(text-align: center):has(> .adunitContainer)
+sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
 !
 motorplus-online.com###composite-container:matches-css-before(content:/adv/i)
 tempo.co###inarticle_2:has-text(/adv/i)
