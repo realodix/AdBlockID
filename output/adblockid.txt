@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.14
+! Version: 21.11.16
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Nov 2021 21:55 UTC
+! Last modified: 03 Nov 2021 11:00 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1293,6 +1293,7 @@ _GIF1200x120-
 ##.ads-header-bottom
 ##.ads-header-wrap
 ##.ads-hor
+##.ads-iklan
 ##.ads-in-article
 ##.ads-in-article-v2
 ##.ads-kecil
@@ -1368,6 +1369,7 @@ _GIF1200x120-
 ##.adsense-target-dua
 ##.adsense-target-satu
 ##.adsgen1
+##.adsiklan
 ##.adsimgatas
 ##.adsimgbawah
 ##.adsimgkanan
@@ -2354,6 +2356,7 @@ adventuriderz.com###ac-belowpost
 parapuan.co###ad-below-photo
 motorplus-online.com###ad-below-photo-container
 motorplus-online.com###ad-genie-container
+gamereactor.asia###ad_topScroller
 suara.com###adnow-mobile-baca-juga
 pondok-belajar.com###ads-blog-content
 katadata.co.id###ads-insert
@@ -2400,6 +2403,10 @@ suara.com###widget-ads-pariwara
 thejakartapost.com##.JPSinglePageAds
 ads.id##.adManager
 kabarnusa.com##.ad_honda
+gamereactor.asia##.ad_interscroller
+gamereactor.asia##.ad_mobileLeader
+gamereactor.asia##.ad_smartphbig
+gamereactor.asia##.ad_smartphbig2
 teknobos.com##.adcontainer
 radioonline.co.id##.add-box-top
 lampungpro.co##.add-img
@@ -2422,6 +2429,9 @@ bolasport.com##.ads-paralax
 codeflare.net##.ads-parallax
 teknologiprograming.blogspot.com##.ads-posting
 kompas.tv##.ads-right2
+99.co##.ads-skytech-indosat
+tek.id##.ads-stickybottom
+tek.id##.ads-stickybottom__container
 celebrities.id##.ads-top-fixed
 kompas.tv##.ads-undifined-live
 kompas.tv##.ads-zone-2
@@ -2469,7 +2479,6 @@ kompas.tv##.exads
 faktabanten.co.id##.ezbxifolk-image
 gridoto.com##.float-ads
 okezone.com##.flying_ads
-kompas.com##.flying_carpet_div
 bisnis.com##.flying_carpet_show_banner
 styl.id##.foot-sticky-ad
 otakotaku.com##.footer .col-md-3
@@ -2478,6 +2487,7 @@ lagikepo.com##.gmr-banner-stickyright
 ceklissatu.com##.gmr-floatbanner
 parapuan.co##.gpt-ad-head-wrapper
 pontianakpost.co.id##.header-advert-section
+gamefever.co.id##.header__banner
 motomazine.com##.idblog-topbanner-aftermenu
 bungfrangki.com##.imageAD
 traveltextonline.com##.imageblock-image
@@ -2569,7 +2579,7 @@ andreasagung.com,centerklik.com,kostjakarta.com,tempat-kost.com##a[rel="nofollow
 ceklist.id##a[rel="sponsored"] img
 otomotifzone.com##a[target*="blank"]
 bagas31.info,bakata.net,beritajatim.com,beritasatu.com,coinvestasi.com,detikglobalnews.com,duta.co,gigapurbalingga.net,idblanter.com,infoaktualnews.com,infojambi.com,jambipers.com,jambiseru.com,kabarterkini.co.id,kejarfakta.com,klikmania.net,kompaslima.com,korsum.id,kostjakarta.net,lintaslampung.com,malangtimes.com,maniakmotor.com,medianews.co.id,nmcberita.id,nusadaily.com,penaberlian.com,pickybest.id,polisiinternet.com,posbali.co.id,potret24.com,radarlampung.co.id,radartuba.com,rakyatbengkulu.com,riauterkini.com,samawarea.com,suarakristen.com,sulselsatu.com,sumateranews.co.id,sumeks.co,venuemagz.com,zonalampung.co##a[target*="blank"] img
-campusnesia.co.id##a[target="_blank"] > img
+campusnesia.co.id,laptophia.com,yangcanggih.com##a[target="_blank"] > img
 iwanbanaran.com##a[target="_blank"] div[style*="position: fixed;"]
 sumselindependen.com##a[title*="iklan" i] img
 iwanbanaran.com,tmcblog.com##body:style(background-image: none!important;)
@@ -2669,13 +2679,14 @@ arenabola.id##.col-lg-3:has-text(/adv/i)
 parapuan.co##.commSkin__fluid:matches-css-before(content:/adv/i)
 orami.co.id##.content div:has-text(/adv/i)
 tipspetani.com##.fixed-rside:has(.adsbygoogle)
-alinea.id,gadgetren.com,katadata.co.id##.flying_carpet_div
-bisnis.com##.flying_carpet_div:has([id^="div-gpt-ad"])
+alinea.id,bisnis.com,gadgetren.com,katadata.co.id,kompas.com,tek.id##.flying_carpet_div:has([id^="div-gpt-ad"])
 gadgetren.com,panditfootball.com##.footer_sticky
+lokerjakarta.id##.footer_sticky_desktop
 mediaindonesia.com##.left.main-page #paralax_div
 kompas.tv##.mgidclsbanner:matches-css-before(content:/adv/i)
 kompas.com##.native-wrap:matches-css-before(content:/adv/i)
 genpi.co##.post-text > .caption:has-text(/adv/i)
+ggwp.id##.sticky-footer:has([id^="div-gpt-ad"])
 bantenraya.com,infoberita.id,infontt.com,jatimtimes.com,jurnalkepri.com,legaleraindonesia.com,malangtimes.com,meduonline.co.id,metromanado.com,nusadaily.com,pilarjambi.com,prokepri.com,suara-ntt.com##.widget:has-text(/adv/i)
 swara-bengkulu.com##.widget:has-text(/space available/i)
 mariodevan.com,motorrio.com##.wpa:has-text(/adv/i)
@@ -2700,6 +2711,7 @@ dream.co.id,kapanlagi.com##.dfp-bframe-cont:has([id*="div-gpt-ad-"])
 sindonews.com##.parallax-non.t600:style(top: 0 !important;)
 medcom.id##.sticky_bottom:has([id*="div-gpt-ad-"])
 genpi.co##.text-center:has([id*="div-gpt-ad-"])
+gamereactor.asia##.wrapper:has(.ad_interscroller)
 biggo.id##.search-ad-banner-re
 shopee.co.id##.search-page .item-card-list__item-card-wrapper:has-text(/iklan/i)
 shopee.co.id##.shopee-search-item-result__item:has-text(/iklan/i)
@@ -6780,6 +6792,7 @@ _topbandar_$image
 ##[href*="maniakartu."]
 ##[href*="maniakqq" i]
 ##[href*="maniaqq" i]
+##[href*="maniaslot88"]
 ##[href*="mantapkiu."]
 ##[href*="mantappoker."]
 ~marathonarmy.org##[href*="marathonarmy.org"]
@@ -8504,6 +8517,7 @@ _topbandar_$image
 ##[href*="/vlt.me/bengkel21"]
 ##[href*="/vlt.me/boomxxi_180"]
 ##[href*="/vlt.me/drama21-36"]
+##[href*="/vlt.me/giladrakor36"]
 ##[href*="/vlt.me/kebioskop21"]
 ##[href*="/vlt.me/ryuukoi36"]
 ##[href*="b.247.best/DbBtbI"]
@@ -9681,6 +9695,8 @@ _topbandar_$image
 ~103.244.96.134##[href*="103.244.96.134"]
 ~103.244.96.139##[href*="103.244.96.139"]
 ~103.253.147.105##[href*="103.253.147.105"]
+~103.5.47.214##[href*="103.5.47.214"]
+~103.5.47.247##[href*="103.5.47.247"]
 ~103.57.191.122##[href*="103.57.191.122"]
 ~103.57.191.124##[href*="103.57.191.124"]
 ~103.57.191.157##[href*="103.57.191.157"]
@@ -10040,11 +10056,11 @@ nomis.id,seputarkuliah.com##+js(aeld, selectstart)
 besoksore.com,bloggermuntilan.com,bospajak.com,burungnya.com,daftarhewan.com,egsean.com,fachmycasofa.com,ilmumemikatwanita.com,kabarrakyat.id,majalahponsel.org,mengapa.net,milano-ruus.blogspot.com,nusramedia.com,okdogi.com,psikologicinta.com,suaraindonesianews.com,teraa.net,tipssehatcantik.com,yunoya.id##+js(aopr, disableSelection)
 barusinopsis.blogspot.com,contohsurat.co,radiokucing.com##+js(aopr, disableselect)
 ardra.biz,balipost.com,blog-dnz.com,chiarafarina.blogspot.com,dailysocial.id,dosenonline.id,gurupenyemangat.com,icloudice.com,iwakbuncit.com,jagoanredesign.eu.org,sahabat-akmi.blogspot.com,satugoogle.blogspot.com,steffifauziah.com,techno-ct2.eu.org##+js(aopr, document.onselectstart)
-bisnis.com,bloggerkalteng.id,codeflare.net,goindoti.com,inihits.com,kompasiana.com,maswarsito.com,nomis.id,productnation.co,sariksa.com,seputarkuliah.com,tulisanndeso.com##+js(aeld, copy)
+bisnis.com,bloggerkalteng.id,codeflare.net,gizmologi.id,goindoti.com,inihits.com,kompasiana.com,maswarsito.com,nomis.id,productnation.co,sariksa.com,seputarkuliah.com,tribunnews.com,tulisanndeso.com##+js(aeld, copy)
 seputarkuliah.com##+js(aeld, keydown)
 rgamesstore.com,wartaterkini.news##+js(aopr, disable_copy)
 rgamesstore.com##+js(aopr, disable_hot_keys)
-balipost.com,bloggerkauman.blogspot.com,blogrtrwnet.blogspot.com,cnnindonesia.com,detik.com,faris6593.blogspot.com,inews.id,jpnn.com,mediaindonesia.com,navigasi.eu.org,okezone.com,suatekno.id,thejakartapost.com##+js(aopr, document.oncopy)
+balipost.com,bloggerkauman.blogspot.com,blogrtrwnet.blogspot.com,cnnindonesia.com,detik.com,faris6593.blogspot.com,inews.id,jpnn.com,mediaindonesia.com,navigasi.eu.org,okezone.com,rahmatullah.id,suatekno.id,thejakartapost.com##+js(aopr, document.oncopy)
 kucingpersia.co.id##+js(aopr, document.onkeydown)
 /copy_credit.$script,domain=kompas.com
 ||cnnindonesia.com/cnnid/js/clipboard.js
@@ -10226,7 +10242,7 @@ oploverz.eu###close-stream-ads
 167.99.31.48,anichin.my.id,animebloom.xyz,animexin.xyz,oploverz.eu###close-teaser
 inonton.com###fadeinbox
 139.99.120.222###fbawah
-199.231.164.29,91.211.91.176,anikor.top,drakorindofilms.work,giladrakor.cc,inidramaku.cc###fixedban
+199.231.164.29,91.211.91.176,anikor.top,drakorindofilms.work,giladrakor.cc,giladrakor.vip,inidramaku.cc###fixedban
 158.69.0.212###float-banner
 139.99.61.225###floatbanner-bottom
 149.28.158.117,45.67.228.234,54.39.85.90,anichin.my.id###floatcenter
