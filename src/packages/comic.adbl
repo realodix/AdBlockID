@@ -14,20 +14,22 @@
 ! -----------------------------------------------
 mangakita.net###btm_banner
 mangaid.click###catfish
-sektekomik.com,sheamanga.my.id,westmanga.info###close-teaser
+209.126.6.6,manhwaland.top,mihentai.com,sektekomik.com,sheamanga.my.id,westmanga.info###close-teaser
 mangaku.club###ftadsth
 komikvip.com###sidebar .textwidget:not(:has(#a[href*="komikvip.com"])) img
 bacakomik.co###teaser3
+209.126.6.6###tutupen
 mangaku.club##.adv
-kiryuu.id,komikindo.co,komikvip.com,mangakita.net,manhwaindo.id,ngomik.net,sektekomik.com##.kln
+kiryuu.id,komikindo.co,komiktap.in,komikvip.com,mangadewasa.com,mangakita.net,manhwaindo.id,manhwaland.top,ngomik.net,sektekomik.com##.kln
 kumpulmanga.org##.kzl
 mangaku.club##.section_ad
+manhwaid.co##img[data-original-width="720"][data-original-height="120"]
 !
 ! ANTI-ADBLOCK
 ! -----------------------------------------------
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
 komiknesia.com##+js(aopr, quadsOptions)
-kittydesu.com,komikmoe.my.id,mangadisk.web.id,sheamanga.my.id##+js(nobab)
+boosei.club,crotpedia.my.id,doujinpoi.club,kittydesu.com,komik18.com,komikmoe.my.id,mangadisk.web.id,manhwaid.co,mihentai.com,sheamanga.my.id##+js(nobab)
 ! https://github.com/realodix/AdBlockID/issues/53
 ! https://github.com/realodix/AdBlockID/issues/1044
 @@||mangalist.org/url/lib/$1p,script
@@ -47,11 +49,13 @@ manhwaland.org##+js(acis, SGPopup)
 klikmanga.com,komikstation.co,komikstation.com,manhwaindo.id,manhwaland.org,sheamanga.my.id##+js(acis, document.querySelectorAll, popMagic)
 manhwaindo.id##+js(acis, puShown1, /doOpen|popundr/)
 otakudere.net##+js(aopr, Light.Popup)
-bacakomik.co,komikcast.com,komikindo.id,mangakita.net,mangaku.club,masterkomik.com,ngomik.net,westmanga.info##+js(window.open-defuser)
+bacakomik.co,komik18.com,komikcast.com,komikindo.id,mangakita.net,mangaku.club,masterkomik.com,ngomik.net,westmanga.info##+js(window.open-defuser)
 ! ---
 ! Unblock Context Menu And Other Mouse Limitations
-komikuindo.id,mangaku.club##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+komikuindo.id,mangadewasa.com,mangaku.club,manhwaid.co##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 otakudesu.vip##+js(aeld, keydown)
-komikuindo.id,otakudesu.moe,otakudesu.vip##+js(aopr, document.oncontextmenu)
+manhwaid.co##+js(aopr, disableSelection)
+komiktap.in,komikuindo.id,manhwaid.co,otakudesu.moe,otakudesu.vip##+js(aopr, document.oncontextmenu)
+mangadewasa.com##+js(aopr, nocontextmenu)
