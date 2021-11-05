@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.43
+! Version: 21.11.44
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Nov 2021 10:58 UTC
+! Last modified: 05 Nov 2021 11:32 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1902,6 +1902,8 @@ _GIF1200x120-
 ||pasangiklan.com^$3p
 ||pondokiklan.com^$3p
 ||rajatraffic.com^$3p
+||berlipurplin.com^$3p
+||ebraqfrsydm.xyz^$3p
 ||gjuutksuexuo.xyz^$3p
 ||hevtqedhxqicrkj.xyz^$3p
 ||trohmwfo.xyz^$3p
@@ -8441,6 +8443,7 @@ _topbandar_$image
 ##img[title*="bandar taruhan" i]
 ##img[title*="bandar togel" i]
 ##img[title*="bandar toto" i]
+##img[title*="bandar36" i]
 ##img[title*="bandarQ" i]
 ##img[title*="blatogel" i]
 ##img[title*="bola tangkas online" i]
@@ -8471,6 +8474,7 @@ _topbandar_$image
 ##img[title*="sboQQ" i]
 ##img[title*="sbosbet" i]
 ##img[title*="seksipoker" i]
+##img[title*="sgtoto" i]
 ##img[title*="situs agen domino" i]
 ##img[title*="situs agen poker" i]
 ##img[title*="situs agen slot online" i]
@@ -8518,6 +8522,8 @@ _topbandar_$image
 ##[href*="/vlt.me/bengkel21"]
 ##[href*="/vlt.me/boomxxi_180"]
 ##[href*="/vlt.me/drama21-36"]
+##[href*="/vlt.me/gatsunime180"]
+##[href*="/vlt.me/gatsunime36"]
 ##[href*="/vlt.me/giladrakor36"]
 ##[href*="/vlt.me/kebioskop21"]
 ##[href*="/vlt.me/ryuukoi36"]
@@ -8780,6 +8786,7 @@ _topbandar_$image
 ##[href*="bit.ly/mangaku-in"]
 ##[href*="bit.ly/maniakidn"]
 ##[href*="bit.ly/mcdaigo"]
+##[href*="bit.ly/mcdgatsunime"]
 ##[href*="bit.ly/mpo9998"]
 ##[href*="bit.ly/mtphoki"]
 ##[href*="bit.ly/nagaikan"]
@@ -8830,11 +8837,15 @@ _topbandar_$image
 ##[href*="evassmat.com/1oq0"]
 ##[href*="geni.us/binal"]
 ##[href*="k9gambar.com/bioskopgaul"]
+##[href*="klik.fun/Dmi9G"]
+##[href*="klik.fun/Gkqoa"]
 ##[href*="klik.fun/SK6En"]
 ##[href*="klik.fun/aigodraidk"]
 ##[href*="klik.fun/bengke21"]
+##[href*="klik.fun/gatsuvip"]
 ##[href*="klik.fun/kGi0J"]
 ##[href*="klik.fun/layarindo"]
+##[href*="kliksaya.info/gatsunime"]
 ##[href*="kliksaya.info/idlix"]
 ##[href*="kliksaya.info/ikdunia21"]
 ##[href*="kliksaya.info/mcdanoboy"]
@@ -8864,8 +8875,10 @@ _topbandar_$image
 ##[href*="minilink.id/qq8" i]
 ##[href*="pencet.link/befaigo"]
 ##[href*="pencet.link/befbengkel21"]
+##[href*="pencet.link/befgatsunime"]
 ##[href*="pencet.link/idlix"]
 ##[href*="pencet.link/sgaigo"]
+##[href*="pencet.link/sggatsunime"]
 ##[href*="pz99.me/plntflmxpza99"]
 ##[href*="rebrand.ly/1ij6ehk"]
 ##[href*="rebrand.ly/35cq6ff"]
@@ -10269,7 +10282,7 @@ $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net,domain=nonton08.c
 103.194.171.75,idtube.me##.overlay
 112.140.185.111###btm_banner
 oploverz.eu###close-stream-ads
-167.99.31.48,anichin.my.id,animebloom.xyz,animexin.xyz,oploverz.eu###close-teaser
+167.99.31.48,anichin.my.id,animebloom.xyz,animexin.xyz,gatsunime.net,oploverz.eu###close-teaser
 inonton.com###fadeinbox
 139.99.120.222###fbawah
 199.231.164.29,91.211.91.176,anikor.top,drakorindofilms.work,giladrakor.cc,giladrakor.vip,inidramaku.cc###fixedban
@@ -10299,7 +10312,7 @@ juaramovie.org##.footer-sticky
 185.212.128.50##.idmuvi-topplayer
 nimegami.com##.ik
 148.163.72.77##.iklan
-anichin.my.id,awsubs.co,kazefuri.net,nuflix.online##.kln
+anichin.my.id,awsubs.co,gatsunime.net,kazefuri.net,nuflix.online##.kln
 139.99.120.222,fb21.tv##.ns-left
 139.99.120.222,fb21.tv##.ns-right
 149.56.24.226##.wrapper-inject
@@ -10367,8 +10380,8 @@ kordramass.com,kshowsubindo.org##.blocker
 boomxxi.monster##.popbox
 103.194.171.75,103.9.100.20,111.90.150.31,159.65.7.78,174.138.17.52,178.128.82.236,185.231.223.71,193.164.131.42,195.2.81.61,204.48.22.58,dutafilm.asia,hakamovie.vip,moviesrc.link##.swal-overlay
 103.194.171.205,149.3.170.35,185.224.83.128,45.141.56.23##[id^="netkevin-"]
-/wp-content/plugins/cm-pop-up-banners/*$domain=185.212.128.40|75.119.143.213|drachindo.com|dramakor.club|giladrakor.cc
-194.163.152.200,45.12.32.53,45.84.1.55,drachindo.com,drakorcute.com,dramakor.club,giladrakor.cc,inidramaku.cc##+js(aopr, popup_custom_data)
+/wp-content/plugins/cm-pop-up-banners/*$domain=185.212.128.40|75.119.143.213|drachindo.com|dramakor.club|gatsunime.net|giladrakor.cc
+194.163.152.200,45.12.32.53,45.84.1.55,drachindo.com,drakorcute.com,dramakor.club,gatsunime.net,giladrakor.cc,inidramaku.cc##+js(aopr, popup_custom_data)
 bioskoplk21.club,rumahdrama.com###wpb_overlay
 91.211.91.176##.wpb-outer-wrap
 /wp-content/plugins/wp-popup-banners/*$domain=185.63.253.247|91.211.91.176|bioskoplk21.club|rumahdrama.com
