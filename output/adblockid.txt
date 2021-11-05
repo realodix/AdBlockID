@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.54
+! Version: 21.11.57
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Nov 2021 20:23 UTC
+! Last modified: 05 Nov 2021 21:39 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -10255,17 +10255,19 @@ _usafelink.$3p,script
 ||nanime.biz^*/banner-$image
 mangakita.net###btm_banner
 mangaid.click###catfish
-sektekomik.com,sheamanga.my.id,westmanga.info###close-teaser
+209.126.6.6,manhwaland.top,mihentai.com,sektekomik.com,sheamanga.my.id,westmanga.info###close-teaser
 mangaku.club###ftadsth
 komikvip.com###sidebar .textwidget:not(:has(#a[href*="komikvip.com"])) img
 bacakomik.co###teaser3
+209.126.6.6###tutupen
 mangaku.club##.adv
-kiryuu.id,komikindo.co,komikvip.com,mangakita.net,manhwaindo.id,ngomik.net,sektekomik.com##.kln
+kiryuu.id,komikindo.co,komiktap.in,komikvip.com,mangadewasa.com,mangakita.net,manhwaindo.id,manhwaland.top,ngomik.net,sektekomik.com##.kln
 kumpulmanga.org##.kzl
 mangaku.club##.section_ad
+manhwaid.co##img[data-original-width="720"][data-original-height="120"]
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
 komiknesia.com##+js(aopr, quadsOptions)
-kittydesu.com,komikmoe.my.id,mangadisk.web.id,sheamanga.my.id##+js(nobab)
+boosei.club,crotpedia.my.id,doujinpoi.club,kittydesu.com,komik18.com,komikmoe.my.id,mangadisk.web.id,manhwaid.co,mihentai.com,sheamanga.my.id##+js(nobab)
 @@||mangalist.org/url/lib/$1p,script
 mangalist.org#@#.adsbygoogle
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=mangalist.org
@@ -10275,12 +10277,14 @@ manhwaland.org##+js(acis, SGPopup)
 klikmanga.com,komikstation.co,komikstation.com,manhwaindo.id,manhwaland.org,sheamanga.my.id##+js(acis, document.querySelectorAll, popMagic)
 manhwaindo.id##+js(acis, puShown1, /doOpen|popundr/)
 otakudere.net##+js(aopr, Light.Popup)
-bacakomik.co,komikcast.com,komikindo.id,mangakita.net,mangaku.club,masterkomik.com,ngomik.net,westmanga.info##+js(window.open-defuser)
-komikuindo.id,mangaku.club##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+bacakomik.co,komik18.com,komikcast.com,komikindo.id,mangakita.net,mangaku.club,masterkomik.com,ngomik.net,westmanga.info##+js(window.open-defuser)
+komikuindo.id,mangadewasa.com,mangaku.club,manhwaid.co##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 otakudesu.vip##+js(aeld, keydown)
-komikuindo.id,otakudesu.moe,otakudesu.vip##+js(aopr, document.oncontextmenu)
+manhwaid.co##+js(aopr, disableSelection)
+komiktap.in,komikuindo.id,manhwaid.co,otakudesu.moe,otakudesu.vip##+js(aopr, document.oncontextmenu)
+mangadewasa.com##+js(aopr, nocontextmenu)
 $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net,domain=nonton08.com|oploverz.eu
 .gif$image,domain=75.119.143.213|animebatchs.net|anoboy.online|conan.id|layarfilm21.live
 /banner-$image,domain=maxnime.com
