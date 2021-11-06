@@ -169,17 +169,20 @@ def _version(lines):
         specificTarget
     )
 
-    numberOfCommitsInMonth = subprocess.Popen(
-        gitCommand,
-        stdout = subprocess.PIPE,
-        universal_newlines = True
+    numberOfCommitsInMonth = 1 + int(
+        subprocess.Popen(
+            gitCommand,
+            stdout = subprocess.PIPE,
+            universal_newlines = True
+        )
+        .stdout.read().strip()
     )
 
     version = Metadata(
         'Version',
-        time.strftime('%y.X%m.{}'.format(int(numberOfCommitsInMonth.stdout.read().strip()) + 1),
-                      time.gmtime()).replace('X0', 'X').replace('X', '')
-        # https://stackoverflow.com/a/5900593
+        time.strftime('%y.X%m.{}'.format(numberOfCommitsInMonth), time.gmtime())
+        .replace('X0', 'X') # https://stackoverflow.com/a/5900593
+        .replace('X', '')
     )
 
     return itertools.chain([first_line, version], rest)
