@@ -162,15 +162,17 @@ def _version(lines):
     specificTarget = './output/adblockid.txt'
 
     gitCommand = (
-        'git', 'rev-list', 'HEAD', '--count',
+        'git', 'rev-list', 'HEAD',
+        '--count',
         '--after="{} days+%Y-%m-%dT23:59"'.format(date.day),
-        '--', specificTarget
+        '--',
+        specificTarget
     )
 
     numberOfCommitsInMonth = subprocess.Popen(
         gitCommand,
-        stdout=subprocess.PIPE,
-        universal_newlines=True
+        stdout = subprocess.PIPE,
+        universal_newlines = True
     )
 
     version = Metadata(
