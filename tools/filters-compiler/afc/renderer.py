@@ -156,13 +156,19 @@ def _version(lines):
     # year.day_of_the_year.v_build
     # v_build = (datetime.datetime.utcnow().hour*60)+datetime.datetime.utcnow().minute
     # version = Metadata('Version', time.strftime('%y.%j.{}'.format(v_build), time.gmtime()))
-
     # year.month.number_of_commits_in_month
+
+    date = datetime.datetime.now()
+    specificTarget = './output/adblockid.txt'
+
+    gitCommand = (
+        'git', 'rev-list', 'HEAD', '--count',
+        '--after="{} days+%Y-%m-%dT23:59"'.format(date.day),
+        '--', specificTarget
+    )
+
     numberOfCommitsInMonth = subprocess.Popen(
-        [
-            'git', 'rev-list', 'HEAD', '--count', '--after="{} days"' '"+%Y-%m-%dT23:59"'
-            .format(datetime.datetime.now().day)
-        ],
+        gitCommand,
         stdout=subprocess.PIPE,
         universal_newlines=True
     )
