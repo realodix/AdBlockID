@@ -37,7 +37,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 - **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
 
 #### Tutorial spesifik cara memasang AdBlockID:
-- [uBlock](/docs/uBlock.md): uBlock Origin, AdNauseam
+- [uBlock Origin](/docs/uBlock.md)
 - [AdGuard](/docs/Adguard.md)
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
@@ -47,7 +47,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 
 
 ## Berkontribusi
-Terima kasih banyak untuk Anda yang ingin berkontribusi. Saya sangat menghargai komitmen Anda. Menggunakan filter AdBlockID di Ad Blocker favorit Anda sudah merupakan dukungan besar, tetapi ada cara terbaik lainnya untuk berkontribusi:
+Terima kasih telah mempertimbangkan untuk berkontribusi, Saya sangat menghargai komitmen Anda. Menggunakan filter AdBlockID di ad blocker favorit Anda sudah merupakan dukungan besar, tetapi ada cara terbaik lainnya untuk berkontribusi:
 
 - Berikan AdBlockID bintang/star di GitHub. Karena jika Anda tidak menggunakan AdBlockID tetapi menyukainya, Anda setidaknya bisa menjadi stargazer!
 - [Membuat issue][GHIssuesNew]. Bantu Kami mengetahui jika ada iklan yang masih mengganggu Anda di luar sana.
