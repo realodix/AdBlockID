@@ -156,22 +156,33 @@ def _version(lines):
     # year.day_of_the_year.v_build
     # v_build = (datetime.datetime.utcnow().hour*60)+datetime.datetime.utcnow().minute
     # version = Metadata('Version', time.strftime('%y.%j.{}'.format(v_build), time.gmtime()))
-
     # year.month.number_of_commits_in_month
-    numberOfCommitsInMonth = subprocess.Popen(
-        [
-            'git', 'rev-list', 'HEAD', '--count', '--after="{} days"' '"+%Y-%m-%dT23:59"'
-            .format(datetime.datetime.now().day)
-        ],
-        stdout=subprocess.PIPE,
-        universal_newlines=True
+
+    date = datetime.datetime.now()
+    specificTarget = './output/adblockid.txt'
+
+    gitCommand = (
+        'git', 'rev-list', 'HEAD',
+        '--count',
+        '--after="{} days+%Y-%m-%dT23:59"'.format(date.day),
+        '--',
+        specificTarget
+    )
+
+    numberOfCommitsInMonth = 1 + int(
+        subprocess.Popen(
+            gitCommand,
+            stdout = subprocess.PIPE,
+            universal_newlines = True
+        )
+        .stdout.read().strip()
     )
 
     version = Metadata(
         'Version',
-        time.strftime('%y.X%m.{}'.format(numberOfCommitsInMonth.stdout.read().strip()),
-                      time.gmtime()).replace('X0', 'X').replace('X', '')
-        # https://stackoverflow.com/a/5900593
+        time.strftime('%y.X%m.{}'.format(numberOfCommitsInMonth), time.gmtime())
+        .replace('X0', 'X') # https://stackoverflow.com/a/5900593
+        .replace('X', '')
     )
 
     return itertools.chain([first_line, version], rest)
