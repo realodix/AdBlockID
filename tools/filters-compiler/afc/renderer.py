@@ -175,7 +175,7 @@ def _version(lines):
 
     version = Metadata(
         'Version',
-        time.strftime('%y.X%m.{}'.format(numberOfCommitsInMonth.stdout.read().strip()),
+        time.strftime('%y.X%m.{}'.format(int(numberOfCommitsInMonth.stdout.read().strip()) + 1),
                       time.gmtime()).replace('X0', 'X').replace('X', '')
         # https://stackoverflow.com/a/5900593
     )
