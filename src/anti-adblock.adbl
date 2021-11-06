@@ -9,7 +9,7 @@ cydiaguide.app,eltelu.blogspot.com,redaksiid.blogspot.com##+js(acis, addEventLis
 dafideff.com##+js(acis, addEventListener, google_ad_client)
 kuliahkomputer.com,massiswo.com,ruangcoder.com,tomytech.eu.org##+js(acis, eval, ignielAdBlock)
 ad4msan.com##+js(aopr, DHAntiAdBlocker)
-alexanews.id,blog-dnz.com,malutsatu.com,sultengraya.com##+js(aopr, adBlockDetected)
+adikcloud.my.id,adikdrive.my.id,alexanews.id,blog-dnz.com,malutsatu.com,sultengraya.com##+js(aopr, adBlockDetected)
 choipanwendy.com##+js(aopr, adsansejs)
 paraedu.id##+js(aopr, anOptions)
 cuitandokter.com##+js(aopr, mdpDeBlocker)
@@ -17,6 +17,7 @@ brotutor.net,cikimm.com,isrul.com##+js(aopr, mql)
 kontrastimes.com##+js(aopr, quadsOptions)
 saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 labkom.co.id##+js(aopr, tdBlock)
+stokcoding.com##+js(aost, String.prototype.charCodeAt, ai_)
 saungfirmware.id##+js(nano-sib)
 jagoanssh.com,komikmoe.web.id,linkconfig.com,nafaskuda.com,sihentai.my.id##+js(nobab)
 rukim.id,surgatekno.com##+js(nofab)
@@ -32,6 +33,10 @@ duniailkom.com,solotrend.net##+js(acis, ai_run_scripts)
 ||bloggerku.com/antiadblock/$script
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=antoncabon.us|ariefcode.com|bahyudinnor.com|codeflare.net|igniel.com|koderian.my.id|liputanberita21.com|netralid.com|shinryu2.blogspot.com
 ||vkcdnservice.com/api/$script,redirect=noop.js
+!
+! Unbreak
+! -----------------------------------------------
+berga-tech.com,rival-face.com#@#.adspost1
 !
 ! GENERAL BLOCK
 ! -----------------------------------------------
@@ -76,11 +81,13 @@ _adblock_killer.
 ! Several wordpress adblock detector plugins
 /wp-content/plugins/ad-block-defender/*
 /wp-content/plugins/adunblocker
-/wp-content/plugins/dh-anti-adblocker/*$script
+/wp-content/plugins/eazy-ad-unblocker/*
+/wp-content/plugins/jgc-adblocker-detector/*
 /wp-content/plugins/kill-adblock/*$script
+/wp-content/plugins/noti-blocker/js/blocker.js
+/wp-content/plugins/simple-adblock-notice-pro^
 /wp-content/plugins/unblock-adsense/*/adunblock
 /wp-content/plugins/wp-adblock-dedect/js/dedect-
-@@/wp-content/plugins/dh-anti-adblocker/assets/js/showads.js$1p
 ! CDN - gitcdn.xyz, githack.com, statically.io, etc
 /abdiusu/AntiAdblockJkoding/*$3p
 /Arlina-Design/quasar*/arlinablock.js$3p,script
