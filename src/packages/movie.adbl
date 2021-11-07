@@ -11,6 +11,7 @@
 $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net,domain=nanimein.xyz|nonton08.com|oploverz.eu
 .gif$image,domain=75.119.143.213|animebatchs.net|anoboy.online|conan.id|layarfilm21.live
 /banner-$image,domain=maxnime.com
+||imgbox.com/*.gif$image,domain=195.2.81.61
 ||jwplayer21.com/images/*.gif$image
 ||sharemydrive.xyz/*.gif$domain=149.56.24.226
 ||sharemydrive.xyz^$~css,~font,~image,mp4,~script,domain=149.56.24.226
@@ -86,18 +87,18 @@ nanidrama.com,nezunime.com,sinopsisdrama.id##+js(acis, ai_run_scripts)
 subindo.cyou##+js(aopr, absda)
 blackavelic.com,kudonime.xyz,mikanime.com,onbatch.my.id,xizuanime.blogspot.com##+js(aopr, adBlockDetected)
 filmboxoffice.web.id,neosubs.net,tohaboy.web.id##+js(aopr, anOptions)
-animecracks.com##+js(aopr, mdpDeBlocker)
-animee.xyz##+js(aopr, mdpDeBlockerDestroyer)
 107.152.39.187,167.99.31.48,aksensei.com,cloudfilm.co,doramaflix.com,dramaencode.com,dramazon.id,driverays.com,fmoviez.org,koenime.com,pahe.stream##+js(nobab)
 anidraw.net##+js(set, config.adblock, null)
 103.9.100.20#@#.ads-atas-player
-/adsby.$image,redirect=2x2.png,domain=anoboy.media
-@@/adsbygoogle.$domain=akashinime.com
-@@/adsbygoogle.$script,domain=nekopoi.web.id
 ! gothamBatAdblock
 dramaencode.co##div[style*="position: fixed;"]:has-text(ADBLOCK)
+! mdp | deblocker
+5.182.210.145,akashinime.com##+js(acis, eval, replace)
+animecracks.com##+js(aopr, mdpDeBlocker)
+animee.xyz##+js(aopr, mdpDeBlockerDestroyer)
 !
 /ads-$image,domain=nekopoi.web.id
+/adsby.$image,redirect=2x2.png,domain=anoboy.media
 /topadz.$image,domain=nekopoi.web.id
 ||animekompi.web.id/*/antiblocker$image
 ! https://github.com/uBlockOrigin/uAssets/issues/6332
@@ -158,6 +159,7 @@ bioskoplk21.club,rumahdrama.com###wpb_overlay
 animebatch.web.id,drakorku.my.id##+js(acis, auto_safelink)
 maxnime.com,nimegami.com,yukinime.com##+js(aopr, go_url)
 anitoki.com##+js(aopr, protected_links)
+nekopoi.web.id##+js(aopr, showurl)
 batchkun.com##+js(set, auto_safelink, noopFunc)
 @@/gameandroid2017/kampret/*$script,domain=batchkun.com
 ! https://github.com/realodix/AdBlockID/issues/1049#issuecomment-961869815
@@ -176,7 +178,9 @@ akashinime.com##+js(acis, nocontextmenu)
 144.91.105.32##+js(aeld, /touchstart|touchend/, wccp_pro_is_passive)
 oploverz.eu##+js(aeld, contextmenu)
 gatsunime.net##+js(aopr, document.oncontextmenu)
+nekopoi.web.id##+js(aopr, document.oncopy)
 wibudesu.com##+js(aopw, nocontext)
+nekopoi.web.id##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 144.91.105.32,cgvindo.cyou##+js(ra, oncontextmenu|onselectstart, body)
 194.163.142.218##+js(set, document.onselectstart, noopFunc)
 !
