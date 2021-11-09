@@ -12,7 +12,6 @@ FOP offers several advantages over other programs. It can:
 
 ## Reference
 - https://forums.lanik.us/viewtopic.php?p=35541
-- https://hg.adblockplus.org/easylist/file/tip/FOP.py
 - https://github.com/easylist/ruadlist/blob/master/fop.py
 
 ## License
