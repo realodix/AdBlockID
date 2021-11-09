@@ -57,7 +57,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
-`$ pip install -e tools/filters-compiler`
+`$ pip install -e tools/filter-combiner`
 
 #### Terminal Command
 
