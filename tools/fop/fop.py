@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """ FOP AdBlockID
 
-    Adjusted for AdBlockID
-    Based on FOP RU AdList v3.921
+Adjusted for AdBlockID
+Based on FOP RU AdList v3.921
 
-    Copyright (C) 2011 Michael
-    GNU General Public License
+Copyright (C) 2011 Michael
+GNU General Public License
 """
 
 import collections, filecmp, os, re, subprocess, sys
@@ -66,11 +66,12 @@ KNOWNPARAMETERS = (
 )
 
 
-##
-# Print a greeting message and run FOP in the directories specified via the command line,
-# or the current working directory if no arguments have been passed.
-#
+
 def start ():
+    """ Print a greeting message and run FOP in the directories specified via the command
+    line, or the current working directory if no arguments have been passed.
+    """
+
     greeting = "FOP AdBlockID v{version}".format(version = VERSION)
     characters = len(str(greeting))
     print("=" * characters)
@@ -90,11 +91,11 @@ def start ():
         main(os.getcwd())
 
 
-##
-# Find and sort all the files in a given directory, committing changes to a repository if
-# one exists.
-#
+
 def main (location):
+    """ Find and sort all the files in a given directory, committing changes to a
+    repository if one exists.
+    """
     # Check that the directory exists, otherwise return
     if not os.path.isdir(location):
         print("{location} does not exist or is not a folder.".format(location = location))
@@ -127,10 +128,10 @@ def main (location):
                     pass
 
 
-##
-# Sort the sections of the file and save any modifications.
-#
+
 def fopsort (filename):
+    """Sort the sections of the file and save any modifications."""
+
     temporaryfile = "{filename}.temp".format(filename = filename)
     CHECKLINES = 10
     section = []
@@ -141,10 +142,10 @@ def fopsort (filename):
     # as they are finished with
     with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
 
-        ##
-        # Combines domains for (further) identical rules
-        #
+
         def combinefilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
+            """Combines domains for (further) identical rules."""
+
             combinedFilters = []
 
             for i in range(len(uncombinedFilters)):
@@ -191,10 +192,9 @@ def fopsort (filename):
             return combinedFilters
 
 
-        ##
-        # Writes the filter lines to the file
-        #
         def writefilters():
+            """Writes the filter lines to the file"""
+
             if elementlines > filterlines:
                 uncombinedFilters = sorted(
                     set(section),
@@ -270,6 +270,7 @@ def fopsort (filename):
         os.remove(temporaryfile)
 
 
+
 def sortfunc (option):
     # For identical options, the inverse always follows the non-inverse option ($image,
     # ~image instead of $~image,image) with exception for popup filter
@@ -291,10 +292,12 @@ def sortfunc (option):
     return option
 
 
-##
-# Sort the options of blocking filters and make the filter text lower case if applicable.
-#
+
 def filtertidy (filterin):
+    """ Sort the options of blocking filters and make the filter text lower case if
+    applicable.
+    """
+
     optionsplit = re.match(OPTIONPATTERN, filterin)
 
     if not optionsplit:
@@ -374,11 +377,12 @@ def filtertidy (filterin):
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
 
 
-##
-# Sort the domains of element hiding rules, remove unnecessary tags and make the relevant
-# sections of the rule lower case.
-#
+
 def elementtidy (domains, separator, selector):
+    """ Sort the domains of element hiding rules, remove unnecessary tags and make the
+    relevant sections of the rule lower case.
+    """
+
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
         domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~"))).lstrip(',')
@@ -503,10 +507,10 @@ def elementtidy (domains, separator, selector):
     return "{domain}{separator}{selector}{splitter}{tail}".format(domain = domains, separator = separator, selector = selector[1:-1], splitter = splitterpart, tail = tailpart)
 
 
-##
-# Check whether all domains are negations.
-#
+
 def isglobalelement (domains):
+    """Check whether all domains are negations."""
+
     for domain in domains.split(","):
         if domain and not domain.startswith("~"):
             return False
@@ -514,11 +518,12 @@ def isglobalelement (domains):
     return True
 
 
-##
-# Where possible, remove unnecessary wildcards from the beginnings and ends of blocking
-# filters.
-#
+
 def removeunnecessarywildcards (filtertext, keepAsterisk):
+    """ Where possible, remove unnecessary wildcards from the beginnings and ends of
+    blocking filters.
+    """
+
     allowlist = False
     hadStar = False
 
