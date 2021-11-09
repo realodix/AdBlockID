@@ -172,13 +172,13 @@ def fopsort (filename):
 
             # Include comments verbatim and, if applicable, sort the preceding section of
             # filters and save them in the new version of the file
-            if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
+            if (line[0] == "!" or line[:8] == "%include" or line[0] == "["
+              and line[-1] == "]"):
                 if section:
                     writefilters()
                     section = []
                     lineschecked = 1
                     filterlines = elementlines = 0
-
                 outputfile.write("{line}\n".format(line = line))
             else:
                 # Neaten up filters and, if necessary, check their type for the sorting
@@ -224,8 +224,10 @@ def fopsort (filename):
 def sortfunc (option):
     # For identical options, the inverse always follows the non-inverse option ($image,
     # ~image instead of $~image,image) with exception for popup filter
-    if option[0] == "~": return option[1:] + "{"
-    if option == "popup": return option + "}"
+    if option[0] == "~":
+        return option[1:] + "{"
+    if option == "popup":
+        return option + "}"
 
     # Also will always be first in the list
     if (option.find("important") > -1
@@ -233,12 +235,13 @@ def sortfunc (option):
       or option.find("strict1p") > -1
       or option.find("third-party") > -1
       or option.find("strict3p") > -1):
-
         return "0" + option
 
     # And let badfilter and key=value parameters will always be last in the list
-    if option.find("badfilter") > -1: return "|" + option
-    if option.split('=')[0] in KNOWNPARAMETERS: return "}" + option
+    if option.find("badfilter") > -1:
+        return "|" + option
+    if option.split('=')[0] in KNOWNPARAMETERS:
+        return "}" + option
 
     return option
 
@@ -289,9 +292,9 @@ def filtertidy (filterin):
                     .format(option = option, problemfilter = filterin))
 
         # Sort all options other than domain alphabetically with a few exceptions
-        optionlist = sorted(set(
-            filter(
-                lambda option: (option not in removeentries) and (option not in rediwritelist),
+        optionlist = sorted(
+            set(filter(lambda option: (option not in removeentries)
+                and (option not in rediwritelist),
                 optionlist
             )),
             key = sortfunc
@@ -375,7 +378,8 @@ def elementtidy (domains, separator, selector):
     while True:
         stringmatch = re.match(RE_ATTRIBUTEVALUE, selectorwithoutstrings)
 
-        if stringmatch == None: break
+        if stringmatch == None:
+            break
 
         selectorwithoutstrings = selectorwithoutstrings.replace(
             "{before}{stringpart}".format(
@@ -389,7 +393,9 @@ def elementtidy (domains, separator, selector):
     # Clean up tree selectors
     for tree in each(RE_TREESELECTOR, selector):
 
-        if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings: continue
+        if (tree.group(0) in selectoronlystrings
+          or not tree.group(0) in selectorwithoutstrings):
+            continue
 
         # added check for case when tree selector were used in :-abp-has() and similar
         # constructions at first position. Basically for cases like PARENT:-abp-has(> CHILD)
@@ -404,7 +410,8 @@ def elementtidy (domains, separator, selector):
     # Remove unnecessary tags
     for untag in each(RE_REMOVE_AST, selector):
         untagname = untag.group(4)
-        if untagname in selectoronlystrings or not untagname in selectorwithoutstrings: continue
+        if untagname in selectoronlystrings or not untagname in selectorwithoutstrings:
+            continue
 
         bc = untag.group(2)
         if bc == None:
@@ -421,7 +428,8 @@ def elementtidy (domains, separator, selector):
     # Make the remaining tags lower case wherever possible
     for tag in each(RE_SELECTOR, selector):
         tagname = tag.group(1)
-        if tagname in selectoronlystrings or not tagname in selectorwithoutstrings: continue
+        if tagname in selectoronlystrings or not tagname in selectorwithoutstrings:
+            continue
 
         if re.search(RE_UNICODESELECTOR, selectorwithoutstrings) != None: break
 
@@ -439,7 +447,9 @@ def elementtidy (domains, separator, selector):
     for pseudo in each(RE_PSEUDO, selector):
         pseudoclass = pseudo.group(1)
 
-        if pseudoclass in selectoronlystrings or not pseudoclass in selectorwithoutstrings: continue
+        if (pseudoclass in selectoronlystrings
+          or not pseudoclass in selectorwithoutstrings):
+            continue
 
         ac = pseudo.group(2)
         selector = selector.replace(

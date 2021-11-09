@@ -14,8 +14,7 @@ VERSION = "1.7"
 FILE_EXTENSION = [".txt", ".adbl"]
 # List the files that should not be sorted, either because they have a special sorting
 # system or because they are not filter files
-IGNORE = ("adblockid.txt", "docs", "tools", "template", "international.adbl", "python-abp"
-    "python-abp", "python-abp_AdBlockID", "VICHS_AdBlockID")
+IGNORE = ["adblockid.txt", "international.adbl", "template", "tools"]
 
 # Regex to match important filter parts
 RE_ELEMENTDOMAIN = re.compile(r"^([^\/\*\|\@\"\!]*?)#[@$?]?#")
@@ -23,10 +22,9 @@ RE_FILTERDOMAIN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
 RE_ELEMENT = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[@$?]?#)([^{}]+)$")
 RE_OPTION= re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 RE_REDIWRITEOPTION = re.compile(r"^(redirect(-rule)?|rewrite)=")
-
-# Regex to match element tags, pseudo classes, strings and tree selectors; "@" indicates
-# either the beginning or the end of a selector
 RE_SELECTOR = re.compile(r"""
+  # Regex to match element tags, pseudo classes, strings and tree selectors; "@" indicates
+  # either the beginning or the end of a selector
   (?<=[\s\[@])
   ([a-zA-Z]*[A-Z][a-zA-Z0-9]*)
   (
@@ -39,17 +37,12 @@ RE_SELECTOR = re.compile(r"""
   )
 """)
 RE_PSEUDO = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
-# (?!:-) - skip ABP `:-abp-...` pseudoclasses
-# (?!:style\() - skip uBO `:style()` pseudoclass
 RE_REMOVE_AST = re.compile(r"""
-  (
-    (?<=([>+~,]\s))
-    | (?<=(@|\s|,))
-  )
+  ((?<=([>+~,]\s)) | (?<=(@|\s|,)))
   (\*)
   (?=([#\.\[\:]))
-  (?!:-)
-  (?!:style\()
+  (?!:-)       # skip ABP `:-abp-...` Pseudo-classes
+  (?!:style\() # skip uBO `:style()` Pseudo-classes
 """)
 RE_SELECTORSTYLEPART = re.compile(r":style\(.+\)$")
 RE_REMOVE_0PX = re.compile(r"((?<=([\:\s]0))(px)(?=([\s\!])))")
@@ -59,12 +52,11 @@ RE_TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
 RE_UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
 RE_NONSELECTOR = re.compile(r"^(\+js\(|script:inject\()")
 RE_SELECTORANDTAIL = re.compile(r"^(.*?)((:-abp-contains|:style|:matches-css)(.*))?$")
-
 # Regex that describes a completely blank line
 RE_BLANKLINE = re.compile(r"^\s*$")
 
 # List all options (excepting domain and `KNOWNPARAMETERS`, which is handled separately)
-KNOWNOPTIONS = (
+KNOWNOPTIONS = [
     # ABP
     # https://help.eyeo.com/en/adblockplus/how-to-write-filters#options
     "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case",
@@ -76,13 +68,13 @@ KNOWNOPTIONS = (
     "1p", "first-party", "strict1p", "3p", "strict3p", "all", "badfilter", "cname", "csp",
     "css", "doc", "ehide", "frame", "ghide", "important", "inline-font", "inline-script",
     "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr"
-)
+]
 
 # List of known key=value parameters (domain is not included)
-KNOWNPARAMETERS = (
+KNOWNPARAMETERS = [
     # ABP
     "rewrite",
 
     # uBO
     "csp", "denyallow", "redirect", "redirect-rule", "removeparam"
-)
+]
