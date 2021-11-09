@@ -66,7 +66,6 @@ KNOWNPARAMETERS = (
 )
 
 
-
 def start ():
     """ Print a greeting message and run FOP in the directories specified via the command
     line, or the current working directory if no arguments have been passed.
@@ -89,7 +88,6 @@ def start ():
             print()
     else:
         main(os.getcwd())
-
 
 
 def main (location):
@@ -128,7 +126,6 @@ def main (location):
                     pass
 
 
-
 def fopsort (filename):
     """Sort the sections of the file and save any modifications."""
 
@@ -141,7 +138,6 @@ def fopsort (filename):
     # Read in the input and output files concurrently to allow filters to be saved as soon
     # as they are finished with
     with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
-
 
         def combinefilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
             """Combines domains for (further) identical rules."""
@@ -190,7 +186,6 @@ def fopsort (filename):
                         combinedFilters.append(uncombinedFilters[i])
 
             return combinedFilters
-
 
         def writefilters():
             """Writes the filter lines to the file"""
@@ -270,7 +265,6 @@ def fopsort (filename):
         os.remove(temporaryfile)
 
 
-
 def sortfunc (option):
     # For identical options, the inverse always follows the non-inverse option ($image,
     # ~image instead of $~image,image) with exception for popup filter
@@ -290,7 +284,6 @@ def sortfunc (option):
     if option.split('=')[0] in KNOWNPARAMETERS: return "}" + option
 
     return option
-
 
 
 def filtertidy (filterin):
@@ -375,7 +368,6 @@ def filtertidy (filterin):
 
         # Return the full filter
         return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
-
 
 
 def elementtidy (domains, separator, selector):
@@ -507,7 +499,6 @@ def elementtidy (domains, separator, selector):
     return "{domain}{separator}{selector}{splitter}{tail}".format(domain = domains, separator = separator, selector = selector[1:-1], splitter = splitterpart, tail = tailpart)
 
 
-
 def isglobalelement (domains):
     """Check whether all domains are negations."""
 
@@ -516,7 +507,6 @@ def isglobalelement (domains):
             return False
 
     return True
-
 
 
 def removeunnecessarywildcards (filtertext, keepAsterisk):
