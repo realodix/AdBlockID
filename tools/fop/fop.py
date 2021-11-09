@@ -100,7 +100,9 @@ def main (location):
         return
 
     # Work through the directory and any subdirectories, ignoring hidden directories
-    print("\nPrimary location: {folder}".format(folder = os.path.join(os.path.abspath(location), "")))
+    print("\nPrimary location: {folder}"
+        .format(folder = os.path.join(os.path.abspath(location), "")))
+
     for path, directories, files in os.walk(location):
         for direct in directories[:]:
             if direct.startswith(".") or direct in IGNORE:
@@ -137,7 +139,8 @@ def fopsort (filename):
 
     # Read in the input and output files concurrently to allow filters to be saved as soon
     # as they are finished with
-    with open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile, open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile:
+    with (open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile,
+        open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile):
 
         def combinefilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
             """Combines domains for (further) identical rules."""
@@ -164,15 +167,20 @@ def fopsort (filename):
                     if domains1.group(0).replace(domain1str, domain2str, 1) != domains2.group(0):
                         # non-identical filters shouldn't be combined
                         combinedFilters.append(uncombinedFilters[i])
-                    elif re.sub(DOMAINPATTERN, "", uncombinedFilters[i]) == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1]):
-                        # identical filters. Try to combine them...
-                        newDomains = "{d1}{sep}{d2}".format(d1=domain1str, sep=domainseparator, d2=domain2str)
-                        newDomains = domainseparator.join(sorted(
-                            set(newDomains.split(domainseparator)),
-                            key = lambda domain: domain.strip("~")
-                        ))
 
-                        if (domain1str.count("~") != domain1str.count(domainseparator) + 1) != (domain2str.count("~") != domain2str.count(domainseparator) + 1):
+                    elif (re.sub(DOMAINPATTERN, "", uncombinedFilters[i])
+                      == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1])):
+
+                        # identical filters. Try to combine them...
+                        newDomains = "{d1}{sep}{d2}".format(
+                            d1=domain1str, sep=domainseparator, d2=domain2str)
+                        newDomains = domainseparator.join(
+                            sorted(set(newDomains.split(domainseparator)),
+                                key = lambda domain: domain.strip("~"))
+                        )
+
+                        if ((domain1str.count("~") != domain1str.count(domainseparator) + 1)
+                          != (domain2str.count("~") != domain2str.count(domainseparator) + 1)):
                             # do not combine rules containing included domains with rules
                             # containing only excluded domains
                             combinedFilters.append(uncombinedFilters[i])
@@ -180,7 +188,8 @@ def fopsort (filename):
                             # either both contain one or more included domains, or both
                             # contain only excluded domains
                             domainssubstitute = domains1.group(0).replace(domain1str, newDomains, 1)
-                            uncombinedFilters[i+1] = re.sub(DOMAINPATTERN, domainssubstitute, uncombinedFilters[i])
+                            uncombinedFilters[i+1] = re.sub(
+                                DOMAINPATTERN, domainssubstitute, uncombinedFilters[i])
                     else:
                         # non-identical filters shouldn't be combined
                         combinedFilters.append(uncombinedFilters[i])
@@ -197,14 +206,16 @@ def fopsort (filename):
                 )
                 outputfile.write(
                     "{filters}\n".format(
-                        filters = "\n".join(combinefilters(uncombinedFilters, ELEMENTDOMAINPATTERN, ","))
+                        filters = "\n".join(
+                            combinefilters(uncombinedFilters, ELEMENTDOMAINPATTERN, ","))
                     )
                 )
             else:
                 uncombinedFilters = sorted(set(section), key = str.lower)
                 outputfile.write(
                     "{filters}\n".format(
-                        filters = "\n".join(combinefilters(uncombinedFilters, FILTERDOMAINPATTERN, "|"))
+                        filters = "\n".join(
+                            combinefilters(uncombinedFilters, FILTERDOMAINPATTERN, "|"))
                     )
                 )
 
@@ -273,10 +284,11 @@ def sortfunc (option):
 
     # Also will always be first in the list
     if (option.find("important") > -1
-       or option.find("first-party") > -1
-       or option.find("strict1p") > -1
-       or option.find("third-party") > -1
-       or option.find("strict3p") > -1):
+      or option.find("first-party") > -1
+      or option.find("strict1p") > -1
+      or option.find("third-party") > -1
+      or option.find("strict3p") > -1):
+
         return "0" + option
 
     # And let badfilter and key=value parameters will always be last in the list
@@ -324,8 +336,12 @@ def filtertidy (filterin):
                 rediwritelist.append(option)
             elif option == "popunder":
                 keepAsterisk = True
-            elif option.strip("~") not in KNOWNOPTIONS and option.split('=')[0] not in KNOWNPARAMETERS:
-                print("Warning: The option \"{option}\" used on the filter \"{problemfilter}\" is not recognised by FOP".format(option = option, problemfilter = filterin))
+            elif (option.strip("~") not in KNOWNOPTIONS
+                and option.split('=')[0] not in KNOWNPARAMETERS):
+
+                print("Warning: The option \"{option}\" used on the filter"
+                    "\"{problemfilter}\" is not recognised by FOP"
+                    .format(option = option, problemfilter = filterin))
 
         # Sort all options other than domain alphabetically with a few exceptions
         optionlist = sorted(set(
@@ -351,23 +367,32 @@ def filtertidy (filterin):
         # If applicable, sort domain restrictions and append them to the list of options
         if denyallow:
             optionlist.append(
-                "denyallow={denyallow}".format(denyallow = "|".join(sorted(set(denyallow))).lstrip('|'))
+                "denyallow={denyallow}"
+                .format(denyallow = "|".join(sorted(set(denyallow))).lstrip('|'))
             )
         if domainlist:
             optionlist.append(
-                "domain={domainlist}".format(domainlist = "|".join(sorted(set(domainlist),
-                key = lambda domain: domain.strip("~"))).lstrip('|'))
+                "domain={domainlist}"
+                .format(domainlist = "|".join(sorted(set(domainlist),
+                    key = lambda domain: domain.strip("~"))).lstrip('|'))
             )
 
         # according to uBO documentation redirect options must start either with * or ||
         # so, it is not unnecessary wildcard in such case
         filtertext = removeunnecessarywildcards(optionsplit.group(1), keepAsterisk)
 
-        if keepAsterisk and (len(filtertext) < 1 or (len(filtertext) > 0 and filtertext[0] != '*' and filtertext[:2] != '||')):
-            print("Warning: Incorrect filter \"{filterin}\". Such filters must start with either '*' or '||'.".format(filterin = filterin))
+        if (keepAsterisk
+          and (len(filtertext) < 1
+            or (len(filtertext) > 0
+            and filtertext[0] != '*'
+            and filtertext[:2] != '||'))):
+
+            print("Warning: Incorrect filter \"{filterin}\". Such filters must start with"
+                "either '*' or '||'.".format(filterin = filterin))
 
         # Return the full filter
-        return "{filtertext}${options}".format(filtertext = filtertext, options = ",".join(optionlist))
+        return ("{filtertext}${options}"
+            .format(filtertext = filtertext, options = ",".join(optionlist)))
 
 
 def elementtidy (domains, separator, selector):
@@ -377,11 +402,14 @@ def elementtidy (domains, separator, selector):
 
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        domains = ",".join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~"))).lstrip(',')
+        domains = (","
+            .join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
+            .lstrip(','))
 
     # Skip non-selectors (uBO's JS injections and other)
     if re.match(NONSELECTOR, selector) != None:
-        return "{domain}{separator}{selector}".format(domain = domains, separator = separator, selector = selector)
+        return ("{domain}{separator}{selector}"
+            .format(domain = domains, separator = separator, selector = selector))
 
     # Mark the beginning and end of the selector with "@"
     selectorandtail = re.match(SELECTORANDTAILPATTERN, selector) #selector.split(':style(')
@@ -405,11 +433,13 @@ def elementtidy (domains, separator, selector):
         if stringmatch == None: break
 
         selectorwithoutstrings = selectorwithoutstrings.replace(
-            "{before}{stringpart}".format(before = stringmatch.group(1), stringpart = stringmatch.group(2)),
+            "{before}{stringpart}".format(
+                before = stringmatch.group(1), stringpart = stringmatch.group(2)),
             "{before}".format(before = stringmatch.group(1)),
             1
         )
-        selectoronlystrings = "{old}{new}".format(old = selectoronlystrings, new = stringmatch.group(2))
+        selectoronlystrings = "{old}{new}".format(
+            old = selectoronlystrings, new = stringmatch.group(2))
 
     # Clean up tree selectors
     for tree in each(TREESELECTOR, selector):
@@ -496,7 +526,9 @@ def elementtidy (domains, separator, selector):
 
     # Remove the markers from the beginning and end of the selector and return the
     # complete rule
-    return "{domain}{separator}{selector}{splitter}{tail}".format(domain = domains, separator = separator, selector = selector[1:-1], splitter = splitterpart, tail = tailpart)
+    return ("{domain}{separator}{selector}{splitter}{tail}"
+        .format(domain = domains, separator = separator, selector = selector[1:-1],
+            splitter = splitterpart, tail = tailpart))
 
 
 def isglobalelement (domains):
@@ -521,11 +553,17 @@ def removeunnecessarywildcards (filtertext, keepAsterisk):
         allowlist = True
         filtertext = filtertext[2:]
 
-    while len(filtertext) > 1 and filtertext[0] == "*" and not filtertext[1] == "|" and not filtertext[1] == "!":
+    while (len(filtertext) > 1
+      and filtertext[0] == "*"
+      and not filtertext[1] == "|"
+      and not filtertext[1] == "!"):
         filtertext = filtertext[1:]
         hadStar = True
 
-    while len(filtertext) > 1 and filtertext[-1] == "*" and not filtertext[-2] == "|" and not filtertext[-2] == " ":
+    while (len(filtertext) > 1
+      and filtertext[-1] == "*"
+      and not filtertext[-2] == "|"
+      and not filtertext[-2] == " "):
         filtertext = filtertext[:-1]
         hadStar = True
 
