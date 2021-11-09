@@ -18,15 +18,15 @@ IGNORE = ("adblockid.txt", "docs", "tools", "template", "international.adbl", "p
     "python-abp", "python-abp_AdBlockID", "VICHS_AdBlockID")
 
 # Regex to match important filter parts
-ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)#[@$?]?#")
-FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
-ELEMENTPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[@$?]?#)([^{}]+)$")
-OPTIONPATTERN = re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
-REDIWRITEOPTIONPATTERN = re.compile(r"^(redirect(-rule)?|rewrite)=")
+RE_ELEMENTDOMAIN = re.compile(r"^([^\/\*\|\@\"\!]*?)#[@$?]?#")
+RE_FILTERDOMAIN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
+RE_ELEMENT = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[@$?]?#)([^{}]+)$")
+RE_OPTION= re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
+RE_REDIWRITEOPTION = re.compile(r"^(redirect(-rule)?|rewrite)=")
 
 # Regex to match element tags, pseudo classes, strings and tree selectors; "@" indicates
 # either the beginning or the end of a selector
-SELECTORPATTERN = re.compile(r"""
+RE_SELECTOR = re.compile(r"""
   (?<=[\s\[@])
   ([a-zA-Z]*[A-Z][a-zA-Z0-9]*)
   (
@@ -38,10 +38,10 @@ SELECTORPATTERN = re.compile(r"""
     )))
   )
 """)
-PSEUDOPATTERN = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
+RE_PSEUDO = re.compile(r"(\:[a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
 # (?!:-) - skip ABP `:-abp-...` pseudoclasses
 # (?!:style\() - skip uBO `:style()` pseudoclass
-REMOVE_AST_PATTERN = re.compile(r"""
+RE_REMOVE_AST = re.compile(r"""
   (
     (?<=([>+~,]\s))
     | (?<=(@|\s|,))
@@ -51,17 +51,17 @@ REMOVE_AST_PATTERN = re.compile(r"""
   (?!:-)
   (?!:style\()
 """)
-SELECTORSTYLEPART = re.compile(r":style\(.+\)$")
-REMOVE_0PX_PATTERN = re.compile(r"((?<=([\:\s]0))(px)(?=([\s\!])))")
-BANGSPACEIMPORTANT = re.compile(r"(.)(\!\s)(important)")
-ATTRIBUTEVALUEPATTERN = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')")
-TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
-UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
-NONSELECTOR = re.compile(r"^(\+js\(|script:inject\()")
-SELECTORANDTAILPATTERN = re.compile(r"^(.*?)((:-abp-contains|:style|:matches-css)(.*))?$")
+RE_SELECTORSTYLEPART = re.compile(r":style\(.+\)$")
+RE_REMOVE_0PX = re.compile(r"((?<=([\:\s]0))(px)(?=([\s\!])))")
+RE_BANGSPACEIMPORTANT = re.compile(r"(.)(\!\s)(important)")
+RE_ATTRIBUTEVALUE = re.compile(r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')")
+RE_TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
+RE_UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
+RE_NONSELECTOR = re.compile(r"^(\+js\(|script:inject\()")
+RE_SELECTORANDTAIL = re.compile(r"^(.*?)((:-abp-contains|:style|:matches-css)(.*))?$")
 
 # Regex that describes a completely blank line
-BLANKPATTERN = re.compile(r"^\s*$")
+RE_BLANKLINE = re.compile(r"^\s*$")
 
 # List all options (excepting domain and `KNOWNPARAMETERS`, which is handled separately)
 KNOWNOPTIONS = (

@@ -147,12 +147,12 @@ def fopsort (filename):
             if elementlines > filterlines:
                 uncombinedFilters = sorted(
                     set(section),
-                    key = lambda rule: re.sub(ELEMENTDOMAINPATTERN, "", rule)
+                    key = lambda rule: re.sub(RE_ELEMENTDOMAIN, "", rule)
                 )
                 outputfile.write(
                     "{filters}\n".format(
                         filters = "\n".join(
-                            combinefilters(uncombinedFilters, ELEMENTDOMAINPATTERN, ","))
+                            combinefilters(uncombinedFilters, RE_ELEMENTDOMAIN, ","))
                     )
                 )
             else:
@@ -160,14 +160,14 @@ def fopsort (filename):
                 outputfile.write(
                     "{filters}\n".format(
                         filters = "\n".join(
-                            combinefilters(uncombinedFilters, FILTERDOMAINPATTERN, "|"))
+                            combinefilters(uncombinedFilters, RE_FILTERDOMAIN, "|"))
                     )
                 )
 
         for line in inputfile:
             line = line.strip()
 
-            if re.match(BLANKPATTERN, line):
+            if re.match(RE_BLANKLINE, line):
                 continue
 
             # Include comments verbatim and, if applicable, sort the preceding section of
@@ -183,7 +183,7 @@ def fopsort (filename):
             else:
                 # Neaten up filters and, if necessary, check their type for the sorting
                 # algorithm
-                elementparts = re.match(ELEMENTPATTERN, line)
+                elementparts = re.match(RE_ELEMENT, line)
 
                 if elementparts:
                     domains = elementparts.group(1).lower()
@@ -248,7 +248,7 @@ def filtertidy (filterin):
     applicable.
     """
 
-    optionsplit = re.match(OPTIONPATTERN, filterin)
+    optionsplit = re.match(RE_OPTION, filterin)
 
     if not optionsplit:
         # Remove unnecessary asterisks from filters without any options and return them
@@ -276,7 +276,7 @@ def filtertidy (filterin):
             elif option[0:12] == "removeparam=":
                 queryprune = option[12:]
                 removeentries.append(option)
-            elif re.match(REDIWRITEOPTIONPATTERN, option):
+            elif re.match(RE_REDIWRITEOPTION, option):
                 keepAsterisk = True
                 rediwritelist.append(option)
             elif option == "popunder":
@@ -352,12 +352,12 @@ def elementtidy (domains, separator, selector):
             .lstrip(','))
 
     # Skip non-selectors (uBO's JS injections and other)
-    if re.match(NONSELECTOR, selector) != None:
+    if re.match(RE_NONSELECTOR, selector) != None:
         return ("{domain}{separator}{selector}"
             .format(domain = domains, separator = separator, selector = selector))
 
     # Mark the beginning and end of the selector with "@"
-    selectorandtail = re.match(SELECTORANDTAILPATTERN, selector) #selector.split(':style(')
+    selectorandtail = re.match(RE_SELECTORANDTAIL, selector) #selector.split(':style(')
     splitterpart = ""
     tailpart = ""
 
@@ -373,7 +373,7 @@ def elementtidy (domains, separator, selector):
     selectoronlystrings = ""
 
     while True:
-        stringmatch = re.match(ATTRIBUTEVALUEPATTERN, selectorwithoutstrings)
+        stringmatch = re.match(RE_ATTRIBUTEVALUE, selectorwithoutstrings)
 
         if stringmatch == None: break
 
@@ -387,7 +387,7 @@ def elementtidy (domains, separator, selector):
             old = selectoronlystrings, new = stringmatch.group(2))
 
     # Clean up tree selectors
-    for tree in each(TREESELECTOR, selector):
+    for tree in each(RE_TREESELECTOR, selector):
 
         if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings: continue
 
@@ -402,7 +402,7 @@ def elementtidy (domains, separator, selector):
         )
 
     # Remove unnecessary tags
-    for untag in each(REMOVE_AST_PATTERN, selector):
+    for untag in each(RE_REMOVE_AST, selector):
         untagname = untag.group(4)
         if untagname in selectoronlystrings or not untagname in selectorwithoutstrings: continue
 
@@ -419,11 +419,11 @@ def elementtidy (domains, separator, selector):
         )
 
     # Make the remaining tags lower case wherever possible
-    for tag in each(SELECTORPATTERN, selector):
+    for tag in each(RE_SELECTOR, selector):
         tagname = tag.group(1)
         if tagname in selectoronlystrings or not tagname in selectorwithoutstrings: continue
 
-        if re.search(UNICODESELECTOR, selectorwithoutstrings) != None: break
+        if re.search(RE_UNICODESELECTOR, selectorwithoutstrings) != None: break
 
         ac = tag.group(3)
         if ac == None:
@@ -436,7 +436,7 @@ def elementtidy (domains, separator, selector):
         )
 
     # Make pseudo classes lower case where possible
-    for pseudo in each(PSEUDOPATTERN, selector):
+    for pseudo in each(RE_PSEUDO, selector):
         pseudoclass = pseudo.group(1)
 
         if pseudoclass in selectoronlystrings or not pseudoclass in selectorwithoutstrings: continue
@@ -450,7 +450,7 @@ def elementtidy (domains, separator, selector):
 
     # Remove unnecessary 'px' in '0px' and space in "! important"
     if splitterpart == ":style" or splitterpart == ":matches-css" and tailpart != None:
-        for un0px in each(REMOVE_0PX_PATTERN, tailpart):
+        for un0px in each(RE_REMOVE_0PX, tailpart):
             bc = un0px.group(2)
             ac = un0px.group(4)
             tailpart = tailpart.replace(
@@ -459,7 +459,7 @@ def elementtidy (domains, separator, selector):
                 1
             )
 
-        for bsi in each(BANGSPACEIMPORTANT, tailpart):
+        for bsi in each(RE_BANGSPACEIMPORTANT, tailpart):
             bc = bsi.group(1)
             space = "" if bc == " " else " "
             ac = bsi.group(3)
