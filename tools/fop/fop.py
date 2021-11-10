@@ -273,6 +273,9 @@ def filtertidy (filterin):
                 domainlist.extend(option[7:].split("|"))
                 removeentries.append(option)
             elif option[0:10] == "denyallow=":
+                if "domain=" not in filterin:
+                    print("Warning: \"denyallow=\" option requires the \"domain=\" option."
+                        "\n \"{}\"".format(filterin))
                 denyallow.extend(option[10:].split("|"))
                 removeentries.append(option)
             elif option[0:12] == "removeparam=":
