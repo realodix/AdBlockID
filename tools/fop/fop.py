@@ -287,8 +287,8 @@ def filtertidy (filterin):
                 and option.split('=')[0] not in KNOWNPARAMETERS):
 
                 print("Warning: The option \"{option}\" used on the filter"
-                    "\"{problemfilter}\" is not recognised by FOP"
-                    .format(option = option, problemfilter = filterin))
+                    "\"{problemfilter}\" is not recognised by FOP".format(
+                        option = option, problemfilter = filterin))
 
         # Sort all options other than domain alphabetically with a few exceptions
         optionlist = sorted(
@@ -314,8 +314,8 @@ def filtertidy (filterin):
         # If applicable, sort domain restrictions and append them to the list of options
         if denyallow:
             optionlist.append(
-                "denyallow={denyallow}"
-                .format(denyallow = "|".join(sorted(set(denyallow))).lstrip('|'))
+                "denyallow={denyallow}".format(
+                    denyallow = "|".join(sorted(set(denyallow))).lstrip('|'))
             )
         if domainlist:
             optionlist.append(
@@ -327,13 +327,12 @@ def filtertidy (filterin):
         # according to uBO documentation redirect options must start either with * or ||
         # so, it is not unnecessary wildcard in such case
         filtertext = removeunnecessarywildcards(optionsplit.group(1), keepAsterisk)
-
         if (keepAsterisk
                 and (len(filtertext) < 1
                     or (len(filtertext) > 0
-                    and filtertext[0] != '*'
-                    and filtertext[:2] != '||')
-                )):
+                        and filtertext[0] != '*'
+                        and filtertext[:2] != '||'
+            ))):
 
             print("Warning: Incorrect filter \"{filterin}\". Such filters must start with"
                 "either '*' or '||'.".format(filterin = filterin))
