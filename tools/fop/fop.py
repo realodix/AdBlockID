@@ -262,9 +262,9 @@ def filtertidy (filterin):
 
         domainlist = []
         denyallow = []
-        removeentries = []
-        queryprune = ""
         rediwritelist = []
+        removeparam = ""
+        removeentries = []
         keepAsterisk = False
 
         for option in optionlist:
@@ -276,7 +276,7 @@ def filtertidy (filterin):
                 denyallow.extend(option[10:].split("|"))
                 removeentries.append(option)
             elif option[0:12] == "removeparam=":
-                queryprune = option[12:]
+                removeparam = option[12:]
                 removeentries.append(option)
             elif re.match(RE_REDIWRITEOPTION, option):
                 keepAsterisk = True
@@ -302,10 +302,10 @@ def filtertidy (filterin):
         # Replace underscore typo with hyphen-minus in options like third_party
         optionlist = list(map(lambda option: option.replace("_", "-"), optionlist))
 
-        # Append queryprune back at the end (both to keep it at the end and skip
+        # Append `removeparam` back at the end (both to keep it at the end and skip
         # underscore typo fix)
-        if queryprune:
-            optionlist.append("removeparam={queryprune}".format(queryprune = queryprune))
+        if removeparam:
+            optionlist.append("removeparam={}".format(removeparam))
 
         # Append redirect rule back without underscore typo fix
         if rediwritelist:
