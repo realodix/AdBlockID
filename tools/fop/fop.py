@@ -45,8 +45,8 @@ def main (location):
         return
 
     # Work through the directory and any subdirectories, ignoring hidden directories
-    print("\nPrimary location: {folder}"
-        .format(folder = os.path.join(os.path.abspath(location), "")))
+    print("\nPrimary location: {folder}".format(
+        folder = os.path.join(os.path.abspath(location), "")))
 
     for path, directories, files in os.walk(location):
         for direct in directories[:]:
@@ -85,7 +85,7 @@ def fopsort (filename):
     # Read in the input and output files concurrently to allow filters to be saved as soon
     # as they are finished with
     with (open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile,
-        open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile):
+            open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile):
 
         def combinefilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
             """Combines domains for (further) identical rules."""
@@ -109,7 +109,8 @@ def fopsort (filename):
                 else:
                     domain2str = domains2.group(1)
 
-                    if domains1.group(0).replace(domain1str, domain2str, 1) != domains2.group(0):
+                    if domains1.group(0).replace(
+                        domain1str, domain2str, 1) != domains2.group(0):
                         # non-identical filters shouldn't be combined
                         combinedFilters.append(uncombinedFilters[i])
 
@@ -125,7 +126,7 @@ def fopsort (filename):
                         )
 
                         if ((domain1str.count("~") != domain1str.count(domainseparator) + 1)
-                          != (domain2str.count("~") != domain2str.count(domainseparator) + 1)):
+                            != (domain2str.count("~") != domain2str.count(domainseparator) + 1)):
                             # do not combine rules containing included domains with rules
                             # containing only excluded domains
                             combinedFilters.append(uncombinedFilters[i])
@@ -172,8 +173,8 @@ def fopsort (filename):
 
             # Include comments verbatim and, if applicable, sort the preceding section of
             # filters and save them in the new version of the file
-            if (line[0] == "!" or line[:8] == "%include" or line[0] == "["
-              and line[-1] == "]"):
+            if (line[0] == "!" or line[:8] == "%include"
+                    or line[0] == "[" and line[-1] == "]"):
                 if section:
                     writefilters()
                     section = []
@@ -230,11 +231,9 @@ def sortfunc (option):
         return option + "}"
 
     # Also will always be first in the list
-    if (option.find("important") > -1
-      or option.find("first-party") > -1
-      or option.find("strict1p") > -1
-      or option.find("third-party") > -1
-      or option.find("strict3p") > -1):
+    if (option.find("important") > -1 or option.find("first-party") > -1
+            or option.find("strict1p") > -1 or option.find("third-party") > -1
+            or option.find("strict3p") > -1):
         return "0" + option
 
     # And let badfilter and key=value parameters will always be last in the list
@@ -320,8 +319,8 @@ def filtertidy (filterin):
             )
         if domainlist:
             optionlist.append(
-                "domain={domainlist}"
-                .format(domainlist = "|".join(sorted(set(domainlist),
+                "domain={domainlist}".format(
+                    domainlist = "|".join(sorted(set(domainlist),
                     key = lambda domain: domain.strip("~"))).lstrip('|'))
             )
 
@@ -330,17 +329,18 @@ def filtertidy (filterin):
         filtertext = removeunnecessarywildcards(optionsplit.group(1), keepAsterisk)
 
         if (keepAsterisk
-          and (len(filtertext) < 1
-            or (len(filtertext) > 0
-            and filtertext[0] != '*'
-            and filtertext[:2] != '||'))):
+                and (len(filtertext) < 1
+                    or (len(filtertext) > 0
+                    and filtertext[0] != '*'
+                    and filtertext[:2] != '||')
+                )):
 
             print("Warning: Incorrect filter \"{filterin}\". Such filters must start with"
                 "either '*' or '||'.".format(filterin = filterin))
 
         # Return the full filter
-        return ("{filtertext}${options}"
-            .format(filtertext = filtertext, options = ",".join(optionlist)))
+        return ("{filtertext}${options}".format(
+            filtertext = filtertext, options = ",".join(optionlist)))
 
 
 def elementtidy (domains, separator, selector):
@@ -350,14 +350,16 @@ def elementtidy (domains, separator, selector):
 
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        domains = (","
+        domains = (
+            ","
             .join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
-            .lstrip(','))
+            .lstrip(',')
+        )
 
     # Skip non-selectors (uBO's JS injections and other)
     if re.match(RE_NONSELECTOR, selector) != None:
-        return ("{domain}{separator}{selector}"
-            .format(domain = domains, separator = separator, selector = selector))
+        return ("{domain}{separator}{selector}".format(
+            domain = domains, separator = separator, selector = selector))
 
     # Mark the beginning and end of the selector with "@"
     selectorandtail = re.match(RE_SELECTORANDTAIL, selector) #selector.split(':style(')
@@ -394,16 +396,19 @@ def elementtidy (domains, separator, selector):
     for tree in each(RE_TREESELECTOR, selector):
 
         if (tree.group(0) in selectoronlystrings
-          or not tree.group(0) in selectorwithoutstrings):
+                or not tree.group(0) in selectorwithoutstrings):
             continue
 
         # added check for case when tree selector were used in :-abp-has() and similar
         # constructions at first position. Basically for cases like PARENT:-abp-has(> CHILD)
-        replaceby = "{sp}{g2} ".format(sp = ("" if tree.group(1) == "(" else " "), g2 = tree.group(2))
-        if replaceby == "   ": replaceby = " "
+        replaceby = ("{sp}{g2} ".format(
+            sp = ("" if tree.group(1) == "(" else " "), g2 = tree.group(2)))
+        if replaceby == "   ":
+            replaceby = " "
         selector = selector.replace(
             tree.group(0),
-            "{g1}{replaceby}{g3}".format(g1 = tree.group(1), replaceby = replaceby, g3 = tree.group(3)),
+            "{g1}{replaceby}{g3}".format(
+                g1 = tree.group(1), replaceby = replaceby, g3 = tree.group(3)),
             1
         )
 
@@ -448,7 +453,7 @@ def elementtidy (domains, separator, selector):
         pseudoclass = pseudo.group(1)
 
         if (pseudoclass in selectoronlystrings
-          or not pseudoclass in selectorwithoutstrings):
+                or not pseudoclass in selectorwithoutstrings):
             continue
 
         ac = pseudo.group(2)
@@ -481,9 +486,13 @@ def elementtidy (domains, separator, selector):
 
     # Remove the markers from the beginning and end of the selector and return the
     # complete rule
-    return ("{domain}{separator}{selector}{splitter}{tail}"
-        .format(domain = domains, separator = separator, selector = selector[1:-1],
-            splitter = splitterpart, tail = tailpart))
+    return ("{domain}{separator}{selector}{splitter}{tail}".format(
+        domain = domains,
+        separator = separator,
+        selector = selector[1:-1],
+        splitter = splitterpart,
+        tail = tailpart)
+    )
 
 
 def isglobalelement (domains):
@@ -509,16 +518,16 @@ def removeunnecessarywildcards (filtertext, keepAsterisk):
         filtertext = filtertext[2:]
 
     while (len(filtertext) > 1
-      and filtertext[0] == "*"
-      and not filtertext[1] == "|"
-      and not filtertext[1] == "!"):
+            and filtertext[0] == "*"
+            and not filtertext[1] == "|"
+            and not filtertext[1] == "!"):
         filtertext = filtertext[1:]
         hadStar = True
 
     while (len(filtertext) > 1
-      and filtertext[-1] == "*"
-      and not filtertext[-2] == "|"
-      and not filtertext[-2] == " "):
+            and filtertext[-1] == "*"
+            and not filtertext[-2] == "|"
+            and not filtertext[-2] == " "):
         filtertext = filtertext[:-1]
         hadStar = True
 
