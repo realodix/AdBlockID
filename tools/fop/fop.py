@@ -11,7 +11,7 @@ GNU General Public License
 import collections, filecmp, os, re, subprocess, sys
 from config import *
 
-def start ():
+def start():
     """ Print a greeting message and run FOP in the directories specified via the command
     line, or the current working directory if no arguments have been passed.
     """
@@ -35,7 +35,7 @@ def start ():
         main(os.getcwd())
 
 
-def main (location):
+def main(location):
     """ Find and sort all the files in a given directory, committing changes to a
     repository if one exists.
     """
@@ -61,7 +61,7 @@ def main (location):
 
             # Sort all text files that are not blacklisted
             if extension in FILE_EXTENSION and filename not in IGNORE:
-                fopsort(address)
+                _FopSort(address)
 
             # Delete unnecessary backups and temporary files
             if extension == ".orig" or extension == ".temp":
@@ -73,7 +73,7 @@ def main (location):
                     pass
 
 
-def fopsort (filename):
+def _FopSort(filename):
     """Sort the sections of the file and save any modifications."""
 
     temporaryfile = "{filename}.temp".format(filename = filename)
@@ -87,7 +87,7 @@ def fopsort (filename):
     with (open(filename, "r", encoding = "utf-8", newline = "\n") as inputfile,
             open(temporaryfile, "w", encoding = "utf-8", newline = "\n") as outputfile):
 
-        def combinefilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
+        def _CombineFilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
             """Combines domains for (further) identical rules."""
 
             combinedFilters = []
@@ -142,7 +142,7 @@ def fopsort (filename):
 
             return combinedFilters
 
-        def writefilters():
+        def _WriteFilters():
             """Writes the filter lines to the file"""
 
             if elementlines > filterlines:
@@ -153,7 +153,7 @@ def fopsort (filename):
                 outputfile.write(
                     "{filters}\n".format(
                         filters = "\n".join(
-                            combinefilters(uncombinedFilters, RE_ELEMENTDOMAIN, ","))
+                            _CombineFilters(uncombinedFilters, RE_ELEMENTDOMAIN, ","))
                     )
                 )
             else:
@@ -161,7 +161,7 @@ def fopsort (filename):
                 outputfile.write(
                     "{filters}\n".format(
                         filters = "\n".join(
-                            combinefilters(uncombinedFilters, RE_FILTERDOMAIN, "|"))
+                            _CombineFilters(uncombinedFilters, RE_FILTERDOMAIN, "|"))
                     )
                 )
 
@@ -176,7 +176,7 @@ def fopsort (filename):
             if (line[0] == "!" or line[:8] == "%include"
                     or line[0] == "[" and line[-1] == "]"):
                 if section:
-                    writefilters()
+                    _WriteFilters()
                     section = []
                     lineschecked = 1
                     filterlines = elementlines = 0
@@ -193,20 +193,20 @@ def fopsort (filename):
                         elementlines += 1
                         lineschecked += 1
 
-                    line = elementtidy(domains, elementparts.group(2), elementparts.group(3))
+                    line = _ElementTidy(domains, elementparts.group(2), elementparts.group(3))
                 else:
                     if lineschecked <= CHECKLINES:
                         filterlines += 1
                         lineschecked += 1
 
-                    line = filtertidy(line)
+                    line = _FilterTidy(line)
 
                 # Add the filter to the section
                 section.append(line)
 
         # At the end of the file, sort and save any remaining filters
         if section:
-            writefilters()
+            _WriteFilters()
 
     # Replace the existing file with the new one only if alterations have been made
     if not filecmp.cmp(temporaryfile, filename):
@@ -222,7 +222,7 @@ def fopsort (filename):
         os.remove(temporaryfile)
 
 
-def sortfunc (option):
+def _SortFunc(option):
     # For identical options, the inverse always follows the non-inverse option ($image,
     # ~image instead of $~image,image) with exception for popup filter
     if option[0] == "~":
@@ -245,7 +245,7 @@ def sortfunc (option):
     return option
 
 
-def filtertidy (filterin):
+def _FilterTidy(filterin):
     """ Sort the options of blocking filters and make the filter text lower case if
     applicable.
     """
@@ -254,7 +254,7 @@ def filtertidy (filterin):
 
     if not optionsplit:
         # Remove unnecessary asterisks from filters without any options and return them
-        return removeunnecessarywildcards(filterin, False)
+        return _RemoveUnnecessaryWildcards(filterin, False)
     else:
         # If applicable, separate and sort the filter options in addition to the filter
         # text
@@ -299,7 +299,7 @@ def filtertidy (filterin):
                 and (option not in rediwritelist),
                 optionlist
             )),
-            key = sortfunc
+            key = _SortFunc
         )
 
         # Replace underscore typo with hyphen-minus in options like third_party
@@ -329,7 +329,7 @@ def filtertidy (filterin):
 
         # according to uBO documentation redirect options must start either with * or ||
         # so, it is not unnecessary wildcard in such case
-        filtertext = removeunnecessarywildcards(optionsplit.group(1), keepAsterisk)
+        filtertext = _RemoveUnnecessaryWildcards(optionsplit.group(1), keepAsterisk)
         if (keepAsterisk
                 and (len(filtertext) < 1
                     or (len(filtertext) > 0
@@ -345,7 +345,7 @@ def filtertidy (filterin):
             filtertext = filtertext, options = ",".join(optionlist)))
 
 
-def elementtidy (domains, separator, selector):
+def _ElementTidy(domains, separator, selector):
     """ Sort the domains of element hiding rules, remove unnecessary tags and make the
     relevant sections of the rule lower case.
     """
@@ -497,7 +497,7 @@ def elementtidy (domains, separator, selector):
     )
 
 
-def isglobalelement (domains):
+def _IsGlobalElement(domains):
     """Check whether all domains are negations."""
 
     for domain in domains.split(","):
@@ -507,7 +507,7 @@ def isglobalelement (domains):
     return True
 
 
-def removeunnecessarywildcards (filtertext, keepAsterisk):
+def _RemoveUnnecessaryWildcards(filtertext, keepAsterisk):
     """ Where possible, remove unnecessary wildcards from the beginnings and ends of
     blocking filters.
     """
