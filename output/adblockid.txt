@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.42
+! Version: 21.11.43
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Nov 2021 13:13 UTC
+! Last modified: 13 Nov 2021 13:29 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1134,10 +1134,6 @@ _981x100.gif$image
 _996x50.$image
 _ads_733x.$image
 _GIF1200x120-
-~fjb.kaskus.co.id##.ads__banner
-~serbada.com##.banner-header
-~agency-iklan.com##img[data-srcset*="-768x320."]
-~agency-iklan.com##img[srcset*="-768x320."]
 ~ascertaincrescenthandbag.com##[href*="ascertaincrescenthandbag.com"]
 ~daftarsb1m.net,~sb1m.click##[href*="daftarsb1m.net/aff/"]
 ~dewaweb.com##[href*="dewaweb.com/aff.php"]
@@ -1145,6 +1141,8 @@ _GIF1200x120-
 ~klook.com##[href*="klook.com/id/promo/"] > img
 ~mixersing.com##[href*="mixersing.com/api/click?query="]
 ~kitabisa.com##[href^="http://ktbs.in/aplikasikitabisa"] > img
+~fjb.kaskus.co.id##.ads__banner
+~serbada.com##.banner-header
 ###Ad300B
 ###Box-Banner-ads
 ###Gadget-AdSense
@@ -1820,6 +1818,9 @@ _GIF1200x120-
 ##div[id^="dfp-gpt-ad"]
 ##gmn-companion-ad-renderer
 ##img[data-permalink^="/apps/iklan-"]
+~agency-iklan.com##img[data-srcset*="-768x320."]
+~agency-iklan.com##img[srcset*="-768x320."]
+~sindonews.com##img[width="400"][height="80"]
 ##img[data-srcset*="-1024x215."]
 ##img[data-srcset*="-1536x322."]
 ##img[data-srcset*="-2048x429."]
@@ -1850,7 +1851,6 @@ _GIF1200x120-
 ##img[width="160"][height="600"]
 ##img[width="1600"][height="267"]
 ##img[width="370px"][height="60"]
-##img[width="400"][height="80"]
 ##img[width="460"][height="60"]
 ##img[width="468"][height="60"]
 ##img[width="500"][height="70"]
