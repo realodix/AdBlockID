@@ -37,6 +37,8 @@ def main():
         'http': WebSource('http'),
         'https': WebSource('https'),
     }
+
+    global args
     args = parse_args()
     if args.verbose:
         logging.basicConfig(level=logging.INFO, stream=sys.stderr,
@@ -175,7 +177,7 @@ def _insert_version(lines):
         '--count',
         '--after="{} days+%Y-%m-%dT23:59"'.format(date.day),
         '--',
-        config['revisedTarget']
+        args.outfile # Panggil dari main(), otomatis menghitung output file.
     )
 
     # Jumlah commit dalam 1 bulan. Jumlah + 1 untuk menghindari hasil yang dihitung dari

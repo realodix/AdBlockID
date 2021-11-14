@@ -3,8 +3,7 @@
 
 config = {
     'libName'      : 'AdBlockID Filter Combiner',
-    'libVersion'   : '1.0.0',
-    'revisedTarget': './output/adblockid.txt'
+    'libVersion'   : '1.1.0',
 }
 
 
