@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.46
+! Version: 21.11.47
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Nov 2021 08:12 UTC
+! Last modified: 14 Nov 2021 14:12 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2739,6 +2739,7 @@ trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
 bikersindonesia.net##aside .widget:not(:has(a[href*="bikersindonesia.net"])) img
 maswarsito.com##aside .widget:not(:has(a[href*="maswarsito.com"])) img
 gardapapua.com##aside:has-text(/adv/i)
+kafekepo.com###adop_flyingcarpet
 motorplus-online.com###composite-container:matches-css-before(content:/adv/i)
 tempo.co###inarticle_2:has-text(/adv/i)
 gridoto.com,kompas.tv###jxOutstreamContainer:matches-css-before(content:/adv/i)
@@ -2944,6 +2945,7 @@ iklandb.com,iklanin.info#@#.banner-125
 @@||tokopedia.net/img/topads/$1p,image
 @@||ziyata.com/upload/$1p,image
 @@||inwepo.co^$ghide,badfilter
+mizanstore.com#@#.push-wrapper:not(body):not(html)
 berkeluarga.id,gdm.id,indonesiacoding.com##.content_wrapper [id^="post-"].share-simple:style(display: inline !important;)
 ifra-indonesia.com#@##social-float
 m.liputan6.com#@##back-to-top
