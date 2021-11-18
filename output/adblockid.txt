@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.53
+! Version: 21.11.54
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Nov 2021 16:56 UTC
+! Last modified: 18 Nov 2021 00:01 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2780,6 +2780,8 @@ trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
 bikersindonesia.net##aside .widget:not(:has(a[href*="bikersindonesia.net"])) img
 maswarsito.com##aside .widget:not(:has(a[href*="maswarsito.com"])) img
 gardapapua.com##aside:has-text(/adv/i)
+viva.co.id###_popIn_recommend
+viva.co.id###_popIn_recommend_middle
 kafekepo.com###adop_flyingcarpet
 motorplus-online.com###composite-container:matches-css-before(content:/adv/i)
 tempo.co###inarticle_2:has-text(/adv/i)
@@ -11273,29 +11275,19 @@ lampost.co##.pop_ads
 bagas31.info##.popup-rl-custom3
 indotimur.com##.popup-transparent
 seputarforex.com##.show.modal-backdrop
-tempo.co###ivsplayer01-container
-brilio.net###videoLeftID:has(#ivsplayer01-container)
-kompas.com##.ivs-wrap-wp:has(#ivsplayer01-container)
-kompas.com##.ivs-wrap:has(#ivsplayer01-container)
-bolasport.com##.section__left .clsivs:has(#ivsplayer01-container)
+cnbcindonesia.com##+js(aopr, relatedVideos)
+||20.detik.com/embed/$frame,redirect=click2load.html,domain=~20.detik.com|~adsmart.detik.com
+||dailymotion.com/embed/$frame,domain=100kpj.com|intipseleb.com
+||dailymotion.com/embed/*?ads_params=$important,frame,redirect=click2load.html,domain=bisnis.com|matamata.com|medanheadlines.com|medcom.id
+||dailymotion.com/player/*mute=true$frame,redirect=click2load.html,domain=kompasiana.com|viva.co.id
+||embed.rctiplus.com/live/$3p,frame,redirect=click2load.html
+||mnc.sindo.media/embed/$frame,redirect=click2load.html,domain=sindonews.com
+||tv.kaskus.co.id/api/embed/widget/?autoplayInViewPort=true$frame,domain=kaskus.co.id
+bolasport.com,brilio.net,kompas.com,tempo.co###ivsplayer01-container
 ||ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|feedme.id|geeq.id|genpi.co|goodnewsfromindonesia.id|grid.id|gridoto.com|herstory.co.id|id.theasianparent.com|idntimes.com|indosport.com|jubi.co.id|kompas.com|kontan.co.id|magdalene.co|motorplus-online.com|parapuan.co|styl.id|sulselsatu.com|tempo.co|~video.tempo.co|wartaekonomi.co.id
 ||ivideosmart.com/ivxplayer/$script,domain=grid.id|kompas.com
 @@||vidio.com/embed/*embed_position=readpage-headline$3p,frame,domain=liputan6.com|merdeka.com
-m.dream.co.id##.detail-body .iframe-video:has([src*="vidio.com/embed/"])
-m.merdeka.com###mdk-content #dnative_video_one_detailpage:has(#iframe-vidio)
-||vidio.com/embed/$frame,domain=liputan6.com|m.dream.co.id|merdeka.com|otosia.com
-cnbcindonesia.com##+js(aopr, relatedVideos)
-||20.detik.com/embed/$frame,domain=~20.detik.com|~adsmart.detik.com
-||dailymotion.com/embed/*?ads_params=$important,frame,domain=bisnis.com|matamata.com|medanheadlines.com|medcom.id
-||dailymotion.com/player/*mute=true$frame,domain=kompasiana.com|republika.co.id
-||dailymotion.com/videos?*flags=no_live$domain=100kpj.com|intipseleb.com|viva.co.id
-||embed.dugout.com/v3.1/detik.js$script,domain=detik.com
-||embed.rctiplus.com/live/$3p,frame,redirect=click2load.html
-||mnc.sindo.media/embed/$frame,domain=sindonews.com
-||sindonews.com/frame/$frame,domain=sindonews.com
-||soundcloud.com/player/$important,frame,domain=cumirproduction.blogspot.com
-||tv.kaskus.co.id/api/embed/widget/?autoplayInViewPort=true$frame,domain=kaskus.co.id
-||video.sindonews.com/embedjw/$frame,domain=sindonews.com
+||vidio.com/embed/$frame,redirect=click2load.html,domain=liputan6.com|m.dream.co.id|merdeka.com|otosia.com
 gigapurbalingga.net##.entry-content center button.user
 kuyhaa-me.com##[type="image"][src*="/sd.png"]
 kuyhaa.net##a[href*="xshared.link"][target="blank"]
