@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.64
+! Version: 21.11.65
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 Nov 2021 06:35 UTC
+! Last modified: 19 Nov 2021 12:54 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1942,6 +1942,7 @@ _GIF1200x120-
 ||kotaksilver.casa^*/*.gif$3p,image
 ||agletmagilp.com^$3p
 ||berlipurplin.com^$3p
+||bstigg.com^$3p
 ||dkmpptkdgalkc.xyz^$3p
 ||ebraqfrsydm.xyz^$3p
 ||gjuutksuexuo.xyz^$3p
@@ -2397,6 +2398,7 @@ _iklan_$image,domain=ntt-news.com
 ||teropongsenayan.com/banner/
 ||teropongsenayan.com^*/banner/
 ||teropongsulut.com^*/iklan-$image
+||thejakartapost.com^*/banner-$image
 ||timur-online.com^*/iklan-$image
 ||titiknol.co.id^*/banner/$image
 ||tmcblog.com^*/ad-$image
@@ -2483,6 +2485,7 @@ tribunnews.com###wideskyscraper
 suara.com###widget-ads-pariwara
 thejakartapost.com##.JPSinglePageAds
 terkini.id##.ad-layout-1
+thejakartapost.com##.ad-v-box
 terkini.id##.adLoading
 ads.id##.adManager
 kabarnusa.com##.ad_honda
@@ -2505,6 +2508,7 @@ petanikode.com##.ads-content
 kompas.tv##.ads-flycarpet
 kompas.tv##.ads-foot
 kompas.tv##.ads-jxstream
+thejakartapost.com##.ads-large-leaderboard
 kompas.com##.ads-latest-wrap
 bolasport.com,kompas.tv##.ads-mgid-pag
 kompas.tv##.ads-mgid-read
@@ -2514,6 +2518,7 @@ codeflare.net##.ads-parallax
 teknologiprograming.blogspot.com##.ads-posting
 rmol.id##.ads-responsive
 kompas.tv##.ads-right2
+thejakartapost.com##.ads-showcase2
 99.co##.ads-skytech-indosat
 detik.com##.ads-slot
 tek.id##.ads-stickybottom
@@ -2827,6 +2832,8 @@ kompas.tv##.mgidclsbanner:matches-css-before(content:/adv/i)
 kompas.com##.native-wrap:matches-css-before(content:/adv/i)
 gubukpintar.com##.post div:matches-css(text-align: center):has(> .adsbygoogle)
 genpi.co##.post-text > .caption:has-text(/adv/i)
+suara.com##.skin:has(> [data-ad-type])
+investor.id##.sticky
 tvonenews.com##.sticky-bottom
 ggwp.id##.sticky-footer:has([id^="div-gpt-ad"])
 genpi.co##.text-center:has([id*="div-gpt-ad-"])
