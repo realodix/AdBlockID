@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.63
+! Version: 21.11.64
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Nov 2021 20:07 UTC
+! Last modified: 19 Nov 2021 06:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2605,6 +2605,7 @@ kaskus.co.id##.jsSkyscrapperAdsLeft
 kaskus.co.id##.jsSkyscrapperAdsRight
 infojateng.id,kompas.com,sonora.id##.kcm
 motorplus-online.com##.kcm__tower
+bola.com##.layout__ads
 teknologi.id##.lazy-ads
 advertising-indonesia.id##.lded
 minangsatu.com##.localads
@@ -3012,11 +3013,6 @@ iklandb.com,iklanin.info#@#.banner-125
 @@||tokopedia.net/img/topads/$1p,image
 @@||ziyata.com/upload/$1p,image
 @@||inwepo.co^$ghide,badfilter
-mizanstore.com#@#.push-wrapper:not(body):not(html)
-berkeluarga.id,gdm.id,indonesiacoding.com##.content_wrapper [id^="post-"].share-simple:style(display: inline !important;)
-ifra-indonesia.com#@##social-float
-m.liputan6.com#@##back-to-top
-@@/social-sharing-$script,domain=axe.com
 @@||apis.google.com/js/platform.js$domain=tiket.com
 /luxury_hd_dvd_hd.mp4$media
 ||139.99.33.240^$3p
@@ -11287,9 +11283,12 @@ mazterize.com##button:has-text(/download crack/i)
 freesoft.id##button[onclick^="window.open("][rel]
 masterkreatif.net,mazterize.net##center .button:has-text(/download crack/i)
 bagas31.pw,kuyhaa-me.pw##center a[href="javascript:void(0);"]
+mizanstore.com#@#.push-wrapper:not(body):not(html)
+berkeluarga.id,gdm.id,indonesiacoding.com#@#.share-simple
+ifra-indonesia.com#@##social-float
+m.bola.com,m.liputan6.com#@##back-to-top:not(html):not(body)
+@@/social-sharing-$script,domain=axe.com
 ||analytics.s.id^$3p
-||c.lazada.co.id/t/v.gif?__t=
-||log.viva.co.id/iframe^
 ||filmindonesia2020.blogspot.com^$3p
 /wp-content-copy-protection/assets/*
 /wp-content/plugins/copy-link/*
