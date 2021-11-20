@@ -70,14 +70,11 @@ bantenkita.com##aside img[width="819"][height="1024"]
 ! ---
 ! Procedural Cosmetic Filters
 ! https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
-radarbanten.co.id##.elementor-widget-image:not(:has(a[href*="radarbanten.co.id"]))
-annews.co.id##.widget-content img:not(.img-effect)
 kompiajaib.com##.widget-wrapper .link-btn:has-text(/iklan/i)
 aksioma.co.id,detiksumsel.com,fokussumatera.com,headlinelampung.com,kailipost.com,klik-ntt.com,koranakselerasi.com,koransn.com,matangdream.com,radarnews.id,suarakonsumenindonesia.com,tabikpun.com,timor-media.com,timorline.com,zonalinenews.com##.widget:has-text(/iklan/i)
 annews.co.id,tampilcantik.com##.widget:has-text(/sponsor/i)
+bikersindonesia.net##.widget:not(:has(a[href*="bikersindonesia.net"])) > a > img
 trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
-bikersindonesia.net##aside .widget:not(:has(a[href*="bikersindonesia.net"])) img
-maswarsito.com##aside .widget:not(:has(a[href*="maswarsito.com"])) img
 gardapapua.com##aside:has-text(/adv/i)
 !
 ! EMPTY ADS PLACEHOLDERS
@@ -102,6 +99,7 @@ okezone.com##.center-paralax:has([id^="div-gpt-ad"])
 kompas.tv##.clsivs:matches-css-before(content:/adv/i)
 bacalagers.com##.code-block:has(> .adsbyadop)
 berakal.com,bukugue.com,juguran.com,localstartupfest.id,narmadi.com,thelastsurvivors.org##.code-block:has(> .adsbygoogle)
+saintif.com##.code-block:matches-css(text-align: center):has(.adsbygoogle)
 arenabola.id##.col-lg-3:has-text(/adv/i)
 parapuan.co##.commSkin__fluid:matches-css-before(content:/adv/i)
 orami.co.id##.content div:has-text(/adv/i)
@@ -110,7 +108,7 @@ mediaindonesia.com##.content-block #paralax_div
 mediaindonesia.com##.content-block .paralax_div
 tipspetani.com##.fixed-rside:has(.adsbygoogle)
 alinea.id,bisnis.com,gadgetren.com,katadata.co.id,kompas.com,tek.id##.flying_carpet_div:has([id^="div-gpt-ad"])
-gadgetren.com,panditfootball.com,poskota.co.id##.footer_sticky
+gadgetren.com,panditfootball.com,poskota.co.id,teknologi.id##.footer_sticky
 lokerjakarta.id##.footer_sticky_desktop
 kompas.tv##.mgidclsbanner:matches-css-before(content:/adv/i)
 kompas.com##.native-wrap:matches-css-before(content:/adv/i)
