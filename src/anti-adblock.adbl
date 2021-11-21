@@ -7,7 +7,6 @@
 dropshipin.id##+js(acis, $, ads)
 cydiaguide.app,eltelu.blogspot.com,redaksiid.blogspot.com##+js(acis, addEventListener, DOMNodeRemoved)
 dafideff.com##+js(acis, addEventListener, google_ad_client)
-kuliahkomputer.com,massiswo.com,ruangcoder.com,tomytech.eu.org##+js(acis, eval, ignielAdBlock)
 ad4msan.com##+js(aopr, DHAntiAdBlocker)
 kucingmediaid.blogspot.com##+js(aopr, absda)
 adikcloud.my.id,adikdrive.my.id,alexanews.id,blog-dnz.com,malutsatu.com,sultengraya.com##+js(aopr, adBlockDetected)
@@ -18,7 +17,6 @@ brotutor.net,cikimm.com,isrul.com##+js(aopr, mql)
 kontrastimes.com##+js(aopr, quadsOptions)
 saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 labkom.co.id##+js(aopr, tdBlock)
-wendycode.com##+js(aopr, wcadbwp)
 jagoanssh.com,komikmoe.web.id,linkconfig.com,nafaskuda.com,sihentai.my.id,submitclimb.com##+js(nobab)
 idlegionoob.com,rukim.id,surgatekno.com##+js(nofab)
 ! Ad Inserter | https://wordpress.org/plugins/ad-inserter/
@@ -27,6 +25,17 @@ semuanyabola.com,urbandigital.id##+js(acis, ai_check_and_insert_block)
 sinopsisdrama.id##+js(acis, ai_run_scripts)
 duniailkom.com,solotrend.net,upahminimum.com##+js(aopr, ai_run_scripts)
 stokcoding.com##+js(set, ai_adb_detected, noopFunc)
+! ---
+! https://github.com/AdguardTeam/AdguardFilters/issues/99316
+! Diperlukan untuk AG v3. Setelah AG v4 dirilis, maka gunakan pengalihan `/adsbygoogle.js`
+! generic.
+chapteria.com,igniel.com,kuliahkomputer.com,liputanberita21.com,masfadli.com,massiswo.com,netralid.com,ruangcoder.com,rumahit.id,shinryu2.blogspot.com,tamboenman.xyz,tomytech.eu.org##+js(acis, eval, ignielAdBlock)
+! Butuh pengalihan `/adsbygoogle.js`, tetapi juga butuh scriptlet
+bospedia.com##+js(acis, eval, bospediaAdBlock)
+codeflare.net##+js(aopr, titleAd)
+wendycode.com##+js(aopr, wcadbwp)
+ariefcode.com##+js(set, config.adblock.pakai, false)
+seoxui.com##+js(set, sikampret, false)
 !
 ! SPECIFIC BLOCK
 ! -----------------------------------------------
@@ -34,7 +43,7 @@ stokcoding.com##+js(set, ai_adb_detected, noopFunc)
 /fuckadblock.$script,redirect=noop.js,domain=akurasinews.com
 ||ads.maskoding.com/ads.js$script,redirect=noop.js
 ||bloggerku.com/antiadblock/$script
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=antoncabon.us|ariefcode.com|bahyudinnor.com|bospedia.com|chapteria.com|codeflare.net|igniel.com|kinisayangerti.com|koderian.my.id|liputanberita21.com|masfadli.com|netralid.com|rumahit.id|seoxui.com|shinryu2.blogspot.com|tamboenman.xyz|tipssipit.com|wendycode.com
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=koderian.my.id|wendycode.com
 ||vkcdnservice.com/api/$script,redirect=noop.js
 !
 ! Unbreak
@@ -100,6 +109,8 @@ _adblock_killer.
 ! CDN - gitcdn.xyz, githack.com, statically.io, etc
 /abdiusu/AntiAdblockJkoding/*$3p
 /Arlina-Design/quasar*/arlinablock.js$3p,script
+/Ashwathnrayana/SpiderBlogging/*/antiadblock$3p,script
+/choipanwendy/adsBlock$3p,script
 /dewaplokis/*/dewablock.$3p,script
 /Indzign/*/levelmaxblock.$3p,script
 /kurazoneAdblock.$script
