@@ -27,15 +27,16 @@ duniailkom.com,solotrend.net,upahminimum.com##+js(aopr, ai_run_scripts)
 stokcoding.com##+js(set, ai_adb_detected, noopFunc)
 ! ---
 ! https://github.com/AdguardTeam/AdguardFilters/issues/99316
+! https://github.com/AdguardTeam/AdguardBrowserExtension/releases
 ! Diperlukan untuk AG v3. Setelah AG v4 dirilis, maka gunakan pengalihan `/adsbygoogle.js`
-! generic.
-chapteria.com,igniel.com,kuliahkomputer.com,liputanberita21.com,masfadli.com,massiswo.com,netralid.com,ruangcoder.com,rumahit.id,shinryu2.blogspot.com,tamboenman.xyz,tomytech.eu.org##+js(acis, eval, ignielAdBlock)
-! Butuh pengalihan `/adsbygoogle.js`, tetapi juga butuh scriptlet
+! secara generic.
 bospedia.com##+js(acis, eval, bospediaAdBlock)
+chapteria.com,igniel.com,kuliahkomputer.com,liputanberita21.com,masfadli.com,massiswo.com,netralid.com,ruangcoder.com,rumahit.id,shinryu2.blogspot.com,tamboenman.xyz,tomytech.eu.org##+js(acis, eval, ignielAdBlock)
 codeflare.net##+js(aopr, titleAd)
-wendycode.com##+js(aopr, wcadbwp)
 ariefcode.com##+js(set, config.adblock.pakai, false)
 seoxui.com##+js(set, sikampret, false)
+! Scriptlet & googlesyndication_adsbygoogle.js
+wendycode.com##+js(aopr, wcadbwp)
 !
 ! SPECIFIC BLOCK
 ! -----------------------------------------------
@@ -43,7 +44,7 @@ seoxui.com##+js(set, sikampret, false)
 /fuckadblock.$script,redirect=noop.js,domain=akurasinews.com
 ||ads.maskoding.com/ads.js$script,redirect=noop.js
 ||bloggerku.com/antiadblock/$script
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=koderian.my.id|wendycode.com
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=koderian.my.id|wendycode.com
 ||vkcdnservice.com/api/$script,redirect=noop.js
 !
 ! Unbreak
