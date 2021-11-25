@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.11.104
+! Version: 21.11.105
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Nov 2021 05:58 UTC
+! Last modified: 25 Nov 2021 10:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1413,6 +1413,8 @@ _GIF1200x120-
 ##.advads-before-content
 ##.advs_box
 ##.advs_link
+##.afw_ad
+##.afw_ad_image
 ##.aggads-ad-location-header
 ##.aggads-ad-type-plain
 ##.anm__flying--ads-holder
@@ -1923,6 +1925,7 @@ _GIF1200x120-
 ##img[width="745"][height="222"]
 ##img[width="750"][height="100"]
 ##img[width="750"][height="158"]
+##img[width="765"][height="96"]
 ##img[width="770"][height="117"]
 ##img[width="800"][height="200"]
 ##img[width="800"][height="2548"]
@@ -2105,6 +2108,7 @@ _GIF1200x120-
 ||niagahoster.co.id/banners/$3p,image
 ||rumahweb.com/*/banner/$3p,image
 ||static.domainesia.com/assets/images/afiliasi/$3p
+||triv.co.id/images/banner/$3p,image
 ||wp.com/*rumahweb.com/*/banner/$domain=~rumahweb.com
 -1024x512.$image,domain=annews.co.id
 -1600x600.$image,domain=sentralberita.com
@@ -2279,6 +2283,7 @@ _iklan_$image,domain=ntt-news.com
 ||karyaone.co.id^*/banner-$image
 ||karyaone.co.id^*/promo-$image
 ||katada.id^*/iklan.$image
+||katasumbar.com^*/iklan-$image
 ||kba.one/files/sewaan/$image
 ||keganjilan.com^*/banner-$image
 ||kemajuanrakyat.id^*/iklan-
@@ -2288,6 +2293,7 @@ _iklan_$image,domain=ntt-news.com
 ||klikjatim.com^*/ads_$image
 ||klikpositif.com^*/banner$image
 ||komentaren.net^*/benner-$image
+||kompasiana.com^*/banner-
 ||konikaltim.co/files/banner/
 ||konsultasisyariah.com^*/banner-$image
 ||koranmemo.com^*/iklan-$image
@@ -2488,6 +2494,28 @@ _iklan_$image,domain=ntt-news.com
 ||terafile.net/luxury3.xml$1p,xhr
 ||yourjavascript.com^*/itu-domino-popup-script.js$script
 ||yourjavascript.com^*/lompatin.js$script
+portalntt.com###banner
+kotakgame.com###banner_btm_pop
+karawangnews.com,progresif.id###btm_banner
+apahabar.com###header-banner
+lintastungkal.com###news-feed-banner
+lintastungkal.com###news-feed-banner-dua
+kotakgame.com###wrap_banner_btm_pop
+techinasia.com##.artad
+techinasia.com##.artad-vid
+goodnewsfromindonesia.id##.article-photos-ads
+kompasiana.com##.banner
+techinasia.com##.banner-ad-top-link
+kompasiana.com##.banner-center
+merdeka.com##.banner-lb
+kompasiana.com##.banner-top
+forumbitcoin.co.id##.bannerImageSpan
+downloadbatch.org##.idblog-topbanner-aftermenu
+kompas.com##.pushdown-banner
+karawangnews.com##.sidebar-ads
+karawangnews.com##.sidebar-ads2
+alasannews.com,bengkulunews.co.id,beritaminang.com,beritatotabuan.com,bidiknasional.co.id,cendananews.com,cut.my.id,dailysocial.id,dibalikseo.com,diskon.com,downloadbatch.net,emerer.com,fajarsumatera.co.id,faktabali.com,franchiseglobal.com,garudadaily.com,gemparnews.com,haluansumatera.com,haramainsoftware.com,hariansuara.com,id.indonesiaexpat.id,industry.co.id,inisumedang.com,jalurnews.com,jatimnow.com,kabaroto.com,kampungberita.id,kupastuntas.co,liputanrakyat.com,lokadata.id,memo.co.id,metropublik.com,nmcberita.id,padangkita.com,panditfootball.com,pasardana.id,petisi.co,radarsultra.co.id,rajamobil.com,riaukarya.com,sebelas12.com,sijorikepri.com,sonora.id,sultrakini.com,sulutreview.com,sumselnian.com,surabayapagi.com##[class*="banner"]
+kotakgame.com##html:style(background-image: none!important;)
 inews.id###Div-MOBILE-Detail-StickyAd
 ipsaya.com###IP-ads
 blogbiasa.com###aads
@@ -2715,7 +2743,6 @@ infonews.id##.widget-ad-box
 topcareer.id##.widget-ad-content-wrap
 adventuriderz.com,ardisaz.com,danirachmat.com,iphincow.com,koreanindo.net,langitselatan.com,mydirtsheet.com,serangid.id,warungasep.net##.wpa
 inimedanbung.com##.wpb_single_image img[alt=""]
-alasannews.com,angkasareview.com,bengkulunews.co.id,beritaminang.com,beritatotabuan.com,bidiknasional.co.id,carapedia.com,cendananews.com,cgv.id,cnnindonesia.com,cut.my.id,dailysocial.id,dibalikseo.com,diskon.com,downloadbatch.net,emerer.com,fajarsumatera.co.id,faktabali.com,forumbitcoin.co.id,franchiseglobal.com,garudadaily.com,gemparnews.com,goodnewsfromindonesia.id,haluansumatera.com,haramainsoftware.com,hariansuara.com,id.techinasia.com,indonesiaexpat.id,industry.co.id,inews.id,inisumedang.com,jalurnews.com,jatimnow.com,kabargames.id,kabaroto.com,kampungberita.id,klikpositif.com,kompas.com,kompasiana.com,kompiajaib.com,kupastuntas.co,liputanrakyat.com,lokadata.id,memo.co.id,merdeka.com,metropublik.com,muslim.or.id,nmcberita.id,padangkita.com,panditfootball.com,pasardana.id,petisi.co,radarsultra.co.id,rajamobil.com,riaukarya.com,sebelas12.com,sijorikepri.com,sonora.id,sultrakini.com,sulutreview.com,sumselnian.com,surabayapagi.com,uzone.id##[class*="banner"]
 kontan.co.id##[class*="heightads"]
 matamatapolitik.com##[class^="AdsTop_ads"]
 kaskus.co.id##[class^="skyscrapperAds"]
@@ -2732,7 +2759,6 @@ radarcianjur.com##[href] > picture
 bagas31.info##[href^="https://rajalisensi.com/"]
 beepdo.com##[href^="https://www.beepdo.com/linkout/"]
 balipost.com##[id*="ads-"]
-apahabar.com,carapedia.com,cnbcindonesia.com,karawangnews.com,kompas.com,kompasiana.com,kotakgame.com,lintastungkal.com,portalntt.com,sawerigading-news.com##[id*="banner"]
 jalantikus.com##[id*="div-gpt-ad-"]
 cosmopolitan.co.id##[id*="multi_banner"]
 herworld.co.id##[id*="multibanner"]
@@ -2903,18 +2929,7 @@ kumparan.com##div:matches-css(text-align: center):has(> .adunitContainer)
 bola.net,sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
-motorplus-online.com###composite-container:matches-css-before(content: /Adv/)
-gridoto.com,kompas.tv###jxOutstreamContainer:matches-css-before(content: /Adv/)
-tribunnewswiki.com##.box__reserved:matches-css-before(content: /Adv/)
-kompas.tv##.clsivs:matches-css-before(content: /Adv/)
-parapuan.co##.commSkin__fluid:matches-css-before(content: /Adv/)
-kompas.com##.native-wrap:matches-css-before(content: /Adv/)
-suara.com##.placeholder_leaderboard:matches-css-before(content: /Adv/)
-suara.com##.placeholder_r1:matches-css-before(content: /Adv/)
-suara.com##.placeholder_r2:matches-css-before(content: /Adv/)
-suara.com##.placeholder_r3:matches-css-before(content: /Adv/)
-suara.com##.placeholder_read_body:matches-css-before(content: /Adv/)
-grid.id##[class^="nkt__stick-"]:matches-css-before(content: /Adv/)
+grid.id,gridoto.com,kompas.com,kompas.tv,motorplus-online.com,parapuan.co,suara.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
 pikiran-rakyat.com###cont-megabillboard
 mediaindonesia.com###content [class^="parallax_"]:has([id*="div-gpt-ad-"])
 merdeka.com###mdk-content div[style*="text-align:center;"]:has([id*="div-gpt-ad-"])
