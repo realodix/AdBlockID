@@ -128,19 +128,19 @@ kumparan.com##div:matches-css(text-align: center):has(> .adunitContainer)
 bola.net,sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
-! Harusnya pakai matches-css-, harus ditest di AG
-motorplus-online.com###composite-container:matches-css-before(content:/adv/i)
-gridoto.com,kompas.tv###jxOutstreamContainer:matches-css-before(content:/adv/i)
-tribunnewswiki.com##.box__reserved:matches-css-before(content:/adv/i)
-kompas.tv##.clsivs:matches-css-before(content:/adv/i)
-parapuan.co##.commSkin__fluid:matches-css-before(content:/adv/i)
-kompas.com##.native-wrap:matches-css-before(content:/adv/i)
-suara.com##.placeholder_leaderboard
-suara.com##.placeholder_r1
-suara.com##.placeholder_r2
-suara.com##.placeholder_r3
-suara.com##.placeholder_read_body
-grid.id##[class^="nkt__stick-"]:matches-css-before(content:/adv/i)
+! AG tidak mengkonversi regex flags
+motorplus-online.com###composite-container:matches-css-before(content: /Adv/)
+gridoto.com,kompas.tv###jxOutstreamContainer:matches-css-before(content: /Adv/)
+tribunnewswiki.com##.box__reserved:matches-css-before(content: /Adv/)
+kompas.tv##.clsivs:matches-css-before(content: /Adv/)
+parapuan.co##.commSkin__fluid:matches-css-before(content: /Adv/)
+kompas.com##.native-wrap:matches-css-before(content: /Adv/)
+suara.com##.placeholder_leaderboard:matches-css-before(content: /Adv/)
+suara.com##.placeholder_r1:matches-css-before(content: /Adv/)
+suara.com##.placeholder_r2:matches-css-before(content: /Adv/)
+suara.com##.placeholder_r3:matches-css-before(content: /Adv/)
+suara.com##.placeholder_read_body:matches-css-before(content: /Adv/)
+grid.id##[class^="nkt__stick-"]:matches-css-before(content: /Adv/)
 ! ---
 ! Mobile
 ! Hanya ditemukan pada mobile
