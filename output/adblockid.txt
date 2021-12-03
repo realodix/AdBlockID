@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.12.1
+! Version: 21.12.2
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Dec 2021 23:19 UTC
+! Last modified: 03 Dec 2021 23:39 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1196,6 +1196,7 @@ _GIF1200x120-
 ###area-iklan-kiri-atas
 ###center-ads
 ###close-floatads
+###div-ad-dbt
 ###div-ad-leaderboard
 ###div-ad-mediumrectangle_1
 ###div-ad-mediumrectangle_2
@@ -1515,6 +1516,7 @@ _GIF1200x120-
 ##.floating_banner_bottom_textcss_wrap
 ##.floating_banner_bottom_textcss_x
 ##.floatingads
+##.footer-ad-mobile
 ##.footer-ads__container
 ##.forads
 ##.fotads_fxmain
@@ -2528,6 +2530,8 @@ bolasport.com,grid.id,parapuan.co,sonora.id,tribunnews.com###div-Inside-MediumRe
 motorplus-online.com###div-ad-below-comment-container
 motorplus-online.com###div-ad-bottom-container
 motorplus-online.com###div-ad-latest-container
+suara.com###div-ad-mobile_bacajuga
+suara.com###div-ad-pariwara_satu
 motorplus-online.com###div-paralax-container
 grid.id###div-top-banner-transparent
 carasettingterbaru.blogspot.com,faktabanten.co.id,ortax.org,pickybest.id,seruji.co.id###fixedban
@@ -2744,6 +2748,7 @@ klubpria.com##.stickyunit
 tmcblog.com##.td-container a[target="_blank"] div[style*="position: fixed;"]
 timesindonesia.co.id##.text-center a[target="_blank"] > img
 juragancipir.com##.topad
+artikel.rumah123.com##.topleaderboard-banner
 indonesiadaily.co.id##.tpm-ads-unit
 bacaanasik.cc,cerpen.co.id,gosipyuk.com,pastiseru.com##.ui_adblock
 dailyspin.id##.vc_single_image
@@ -2916,6 +2921,12 @@ tipspetani.com##.fixed-rside:has(.adsbygoogle)
 alinea.id,bisnis.com,gadgetren.com,katadata.co.id,kompas.com,tek.id##.flying_carpet_div:has([id^="div-gpt-ad"])
 gadgetren.com,panditfootball.com,poskota.co.id,teknologi.id##.footer_sticky
 lokerjakarta.id##.footer_sticky_desktop
+suara.com##.placeholder_leaderboard
+suara.com##.placeholder_medium
+suara.com##.placeholder_r1
+suara.com##.placeholder_r2
+suara.com##.placeholder_r3
+suara.com##.placeholder_read_body
 gubukpintar.com##.post div:matches-css(text-align: center):has(> .adsbygoogle)
 genpi.co##.post-text > .caption:has-text(/adv/i)
 suara.com##.skin:has(> [data-ad-type])
@@ -2931,12 +2942,14 @@ bospajak.com,dokterpajak.com##.wpipa-align-center:has(.adsbygoogle)
 cyberlampung.com##.wrapper-posts:has-text(/adv/i)
 balipost.com##[align="center"]:has(.adsbygoogle)
 kumparan.com##[data-qa-id*="mobile-article-page-"]:has-text(/adv/i)
+momsmoney.id##[id^="div-Middle-Momsmoney"]
+momsmoney.id##[id^="div-insidearticletop-Momsmoney"]
 koranseruya.com##[id^=local-]:has-text(/adv/i)
 oppotutorial.com,pertamax7.com##center:has(> .adsbygoogle)
 klubpria.com##center:has([id^="div-gpt-ad"])
 br.atsit.in,itnesia.com##div:matches-css(text-align: center):has(> .adsbygoogle)
 kumparan.com##div:matches-css(text-align: center):has(> .adunitContainer)
-bola.net,sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
+bola.net,kapanlagi.com,sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
 grid.id,gridoto.com,kompas.com,kompas.tv,motorplus-online.com,parapuan.co,suara.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
