@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.12.4
+! Version: 21.12.5
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Dec 2021 00:56 UTC
+! Last modified: 06 Dec 2021 13:56 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2970,7 +2970,9 @@ biggo.id##.search-ad-banner-re
 shopee.co.id##.search-page .item-card-list__item-card-wrapper:has-text(/iklan/i)
 shopee.co.id##.shopee-search-item-result__item:has-text(/iklan/i)
 tokopedia.com##[data-cy="searchRsltProdgrid"] [data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
+tokopedia.com##[data-testid="lnkProductContainer"]:has(img[alt*="topads"])
 tokopedia.com##[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
+tokopedia.com##[href^="https://ta.tokopedia.com/promo/"]:has(img[alt*="topads"])
 biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
 biggo.id##img[onclick*="AD_SEARCHRESULT"]
 tokopedia.com###content:has(div[data-testid*="SearchResult"]) #container div[data-testid="masonryProduct"]:has(a[href^="https://ta.tokopedia.com/promo/v1/clicks/"])
