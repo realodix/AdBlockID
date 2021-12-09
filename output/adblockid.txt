@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.12.16
+! Version: 21.12.17
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Dec 2021 00:42 UTC
+! Last modified: 09 Dec 2021 00:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1141,6 +1141,7 @@ _ads_733x.$image
 _GIF1200x120-
 ~fjb.kaskus.co.id##.ads__banner
 ~serbada.com##.banner-header
+##a[target="_blank"] > img[src$=".gif"]
 ###Ad300B
 ###Box-Banner-ads
 ###Gadget-AdSense
@@ -1262,6 +1263,7 @@ _GIF1200x120-
 ###popupinfoAd_main1
 ###props-ad-slot-billboard
 ###props-ad-slot-sticky
+###right_ads_float_phonedevelop
 ###sidebar-ads2
 ###sidebar-banner-mobile-bawah
 ###srcadsurlblock
@@ -1292,6 +1294,7 @@ _GIF1200x120-
 ##.ad3-desktop
 ##.ad3-wrapper
 ##.ad728-wrapper
+##.adBar-vertical
 ##.adMobileBanner
 ##.ad_primex
 ##.adblock2
@@ -1928,6 +1931,7 @@ _GIF1200x120-
 ##img[width="728"][height="100"]
 ##img[width="728"][height="80"]
 ##img[width="728"][height="90"]
+##img[width="728px"][height="90px"]
 ##img[width="745"][height="222"]
 ##img[width="750"][height="100"]
 ##img[width="750"][height="125"]
@@ -5766,7 +5770,7 @@ inonton.com###fadeinbox
 139.99.61.225###floatbanner-bottom
 148.163.72.92,149.28.158.117,45.67.228.234,54.39.85.90,anichin.my.id,lucikun.cc###floatcenter
 139.99.120.222,fb21.tv,inonton.com###floating_banner_top
-144.91.116.224,185.211.5.10,185.211.5.9,185.212.128.40,185.212.131.186,185.63.253.247,194.163.128.129,194.163.129.165,194.163.142.218,194.163.161.214,195.242.110.139,195.242.110.177,45.12.32.5,45.12.32.53,45.12.32.59,62.171.145.31,75.119.133.1,75.119.147.15,75.119.152.230,95.111.226.212,dramakor.club###floating_banner_top1
+144.91.116.224,148.163.72.90,185.211.5.10,185.211.5.9,185.212.128.40,185.212.131.186,185.63.253.247,194.163.128.129,194.163.129.165,194.163.142.218,194.163.161.214,195.242.110.139,195.242.110.177,45.12.32.5,45.12.32.53,45.12.32.59,62.171.145.31,75.119.133.1,75.119.147.15,75.119.152.230,95.111.226.212,dramakor.club###floating_banner_top1
 anoboy.media###judi
 blackavelic.com###teaser2
 anoboy.online,blackavelic.com###teaser3
@@ -5791,13 +5795,13 @@ nimegami.com##.ik
 139.99.120.222,fb21.tv##.ns-left
 139.99.120.222,fb21.tv##.ns-right
 149.56.24.226##.wrapper-inject
-167.114.3.50,198.204.248.230##[class$="banner"]
+167.114.3.50,198.204.248.230##[class*="banner"]
 anoboy.online##[id$="_bnr"]
-103.194.171.185,158.69.0.201,159.65.11.63,167.114.3.50,167.99.31.48,185.63.253.222,199.231.164.17,207.180.252.218,51.222.99.98,51.79.157.150,51.79.157.90,51.79.159.65,51.79.160.87,51.79.226.152,51.79.226.153,51.79.244.18,51.79.244.19,54.39.169.27,lk21tv.com##[id$="banner"]
 animasu.tv##[id*="_bnr"]
+103.194.171.185,158.69.0.201,159.65.11.63,167.114.3.50,167.99.31.48,185.63.253.222,199.231.164.17,207.180.252.218,51.222.99.98,51.79.157.150,51.79.157.90,51.79.159.65,51.79.160.87,51.79.226.152,51.79.226.153,51.79.244.18,51.79.244.19,54.39.169.27,lk21tv.com##[id*="banner"]
 185.217.95.238##a[href*="_medium=banners"] video
-topfilm21.com##a[target="_blank"] > img
-bioskop47.net##aside a[target="_blank"] img
+213.136.91.132,62.171.145.31,bioskop47.net,kebioskop21.xyz,topfilm21.com##a[target="_blank"] > img
+75.119.147.15##a[target="blank"] > img
 kotaksilver.casa##body > a[href] > div[style^="position:absolute;"][style*="z-index:"]
 putarpilem.com##img[alt*="banner" i]
 maxnime.com##img[width="765"][height="100"]
