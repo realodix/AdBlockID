@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.12.23
+! Version: 21.12.24
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Dec 2021 05:59 UTC
+! Last modified: 15 Dec 2021 11:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4068,6 +4068,8 @@ _topbandar_$image
 ||*taruhan*.$popup
 ||*togel*.$popup
 ##.ads-1xbet
+##[href*="luxury111" i]
+##[href*="luxury138" i]
 ##a[href$="bit.ly/Joinfilm"]
 ##a[href$="bit.ly/Joinfilm1"]
 ##a[href*="/3vip.club/nanimexx"]
@@ -4494,18 +4496,20 @@ _usafelink.$3p,script
 /theboncud/safepoh/*$3p,script
 /VoreCorporation/Customer-Host/*$3p,script
 /xmithzyl/safelink/*$3p,script
+.gif$image,domain=mangaku.live
 ||komikindo.co^*/banner-$image
 ||nanime.biz^*/banner-$image
 mangakita.net###btm_banner
 mangaid.click###catfish
 209.126.6.6,manhwaland.top,mihentai.com,sektekomik.com,sheamanga.my.id,westmanga.info###close-teaser
-mangaku.club###ftadsth
+mangaku.live###ftadsth
 bacakomik.co###teaser3
 209.126.6.6###tutupen
-mangaku.club##.adv
+mangaku.live##.adv
+mangaku.live##.ewbnr
 kiryuu.id,komikindo.co,komiktap.in,komikvip.com,mangadewasa.com,mangakita.net,manhwaindo.id,manhwaland.top,ngomik.net,sektekomik.com##.kln
 kumpulmanga.org,overlordfree.web.id##.kzl
-mangaku.club##.section_ad
+mangaku.live##.section_ad
 komikvip.com##.textwidget:not(:has(#a[href*="komikvip.com"])) > a > img
 manhwaid.co##img[data-original-width="720"][data-original-height="120"]
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
@@ -4518,8 +4522,8 @@ klikmanga.com##body > .mtsnb-shown
 mangaindo.web.id##+js(acis, Math, zfgloaded)
 klikmanga.com,komikstation.co,komikstation.com,sheamanga.my.id##+js(acis, document.querySelectorAll, popMagic)
 otakudere.net##+js(aopr, Light.Popup)
-bacakomik.co,komik18.com,komikcast.com,komikindo.id,mangakita.net,mangaku.club,manhwaindo.id,manhwaland.top,masterkomik.com,ngomik.net,westmanga.info##+js(window.open-defuser)
-komikuindo.id,mangadewasa.com,mangaku.club,manhwaid.co,sekaikomik.site##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+bacakomik.co,komik18.com,komikcast.com,komikindo.id,mangakita.net,mangaku.live,manhwaindo.id,manhwaland.top,masterkomik.com,ngomik.net,westmanga.info##+js(window.open-defuser)
+komikuindo.id,mangadewasa.com,mangaku.live,manhwaid.co,sekaikomik.site##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 otakudesu.vip##+js(aeld, keydown)
