@@ -11,10 +11,10 @@ GNU General Public License
 import re
 
 VERSION = "1.7"
-FILE_EXTENSION = [".txt", ".adbl"]
+FILE_EXTENSION = [".adfl.txt", ".adfl"]
 # List the files that should not be sorted, either because they have a special sorting
 # system or because they are not filter files
-IGNORE = ["adblockid.txt", "international.adbl", "template", "tools"]
+IGNORE = ["adblockid.txt", "international.adfl", "template", "tools"]
 
 # Regex to match important filter parts
 RE_ELEMENTDOMAIN = re.compile(r"^([^\/\*\|\@\"\!]*?)#[@$?]?#")

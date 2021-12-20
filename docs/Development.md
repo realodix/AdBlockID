@@ -17,27 +17,27 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ```
 /src
  ├─ /packages
- │   ├─ adult-block.adbl          [G] Blokir iklan berkonten dewasa.
- │   ├─ adult-hide.adbl           [G] Sembunyikan iklan berkonten dewasa.
- │   ├─ adult-hide-ip.adbl        [G] Sembunyikan iklan berkonten dewasa.
- │   ├─ annoyance.adbl            [G/S] Menghilangkan elemen yang mengganggu.
- │   ├─ annoyance_limitation.adbl [G/S] Menangani beberapa limitasi.
- │   ├─ annoyance_safelink.adbl   [G/S] Menampilkan link asli yang ditutupi oleh safelink.
- │   ├─ comic.adbl                [All] Situs komik ilegal.
- │   ├─ international.adbl        [All] Situs internasional.
- │   ├─ movie.adbl                [All] Situs nonton ilegal.
- │   └─ safelink.adbl             [All] Situs berjenis safelink/shortlink.
- ├─ adservers.adbl          [G] Daftar domain/IP penyedia layanan iklan pihak ketiga.
- ├─ anti-adblock.adbl       [G/S] Melumpuhkan ad block detection.
- ├─ extended.adbl           [S] Perbaiki tampilan situs setelah iklannya dihilangkan.
- ├─ general_block.adbl      [G] Blokir iklan.
- ├─ general_hide.adbl       [G] Sembunyikan iklan.
- ├─ specific_block.adbl     [S] Blokir iklan.
- ├─ specific_hide.adbl      [S] Sembunyikan iklan.
- ├─ specific-hide_2.adbl    [S] ...
- ├─ thirdparty.adbl         [G] Mirip seperti filter di adservers.adbl, namun layanan utama
+ │   ├─ adult-block.adfl          [G] Blokir iklan berkonten dewasa.
+ │   ├─ adult-hide.adfl           [G] Sembunyikan iklan berkonten dewasa.
+ │   ├─ adult-hide-ip.adfl        [G] Sembunyikan iklan berkonten dewasa.
+ │   ├─ annoyance.adfl            [G/S] Menghilangkan elemen yang mengganggu.
+ │   ├─ annoyance_limitation.adfl [G/S] Menangani beberapa limitasi.
+ │   ├─ annoyance_safelink.adfl   [G/S] Menampilkan link asli yang ditutupi oleh safelink.
+ │   ├─ comic.adfl                [All] Situs komik ilegal.
+ │   ├─ international.adfl        [All] Situs internasional.
+ │   ├─ movie.adfl                [All] Situs nonton ilegal.
+ │   └─ safelink.adfl             [All] Situs berjenis safelink/shortlink.
+ ├─ adservers.adfl          [G] Daftar domain/IP penyedia layanan iklan pihak ketiga.
+ ├─ anti-adblock.adfl       [G/S] Melumpuhkan ad block detection.
+ ├─ extended.adfl           [S] Perbaiki tampilan situs setelah iklannya dihilangkan.
+ ├─ general_block.adfl      [G] Blokir iklan.
+ ├─ general_hide.adfl       [G] Sembunyikan iklan.
+ ├─ specific_block.adfl     [S] Blokir iklan.
+ ├─ specific_hide.adfl      [S] Sembunyikan iklan.
+ ├─ specific-hide_2.adfl    [S] ...
+ ├─ thirdparty.adfl         [G] Mirip seperti filter di adservers.adfl, namun layanan utama
  │                          dari domain/IP situs tersebut bukan untuk menyediakan iklan.
- └─ whitelist.adbl          [G/S] Mengembalikan sesuatu yang seharusnya ada, namun hilang
+ └─ whitelist.adfl          [G/S] Mengembalikan sesuatu yang seharusnya ada, namun hilang
                             karena tidak sengaja terblokir/disembunyikan.
 ```
 
@@ -67,7 +67,7 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
   VSCode Task: **`Build`**
 
-- `flrender -i abid=. template/adblockid.adbl output/adblockid.txt`
+- `flrender -i abid=. template/adblockid.adfl output/adblockid.txt`
 
   Menggabungkan semua filter ke dalam 1 file (`adblockid.txt`) di folder `output`.
 
