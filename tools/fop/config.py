@@ -11,7 +11,7 @@ GNU General Public License
 import re
 
 VERSION = "1.7"
-FILE_EXTENSION = [".adfl.txt", ".adfl"]
+FILE_EXTENSION = [".adfl", ".txt"]
 # List the files that should not be sorted, either because they have a special sorting
 # system or because they are not filter files
 IGNORE = ["adblockid.txt", "international.adfl", "template", "tools"]
