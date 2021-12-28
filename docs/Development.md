@@ -16,7 +16,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 
 ```
 /src
- ├─ /packages
+ ├─ /modules
  │   ├─ adult-block.adfl          [G] Blokir iklan berkonten dewasa.
  │   ├─ adult-hide.adfl           [G] Sembunyikan iklan berkonten dewasa.
  │   ├─ adult-hide-ip.adfl        [G] Sembunyikan iklan berkonten dewasa.
