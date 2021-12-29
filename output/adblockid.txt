@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 21.12.34
+! Version: 21.12.35
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Dec 2021 19:15 UTC
+! Last modified: 29 Dec 2021 20:20 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2989,13 +2989,13 @@ biggo.id##.search-ad-banner-re
 shopee.co.id##.search-page .item-card-list__item-card-wrapper:has-text(/iklan/i)
 shopee.co.id##.search-page .search-items-container .item-card-list__item-card-wrapper:has([data-sqe="ad"])
 shopee.co.id##.shopee-search-item-result__item:has-text(/iklan/i)
-tokopedia.com##[data-cy="searchRsltProdgrid"] [data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
-tokopedia.com##[data-testid="lnkProductContainer"]:has(img[alt*="topads"])
-tokopedia.com##[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
-tokopedia.com##[href^="https://ta.tokopedia.com/promo/"]:has(img[alt*="topads"])
+tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct"]:has(div[data-testid="master-product-card"] [data-testid="lblTopads"]):remove()
+tokopedia.com##:matches-path(/p/) a[data-testid="lnkProductContainer"]:has([alt*="topads"]):remove()
+tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"]):remove()
 biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
 biggo.id##img[onclick*="AD_SEARCHRESULT"]
-tokopedia.com###content:has(div[data-testid*="SearchResult"]) #container div[data-testid="masonryProduct"]:has(a[href^="https://ta.tokopedia.com/promo/v1/clicks/"])
+tokopedia.com##:matches-path(/find/) div[data-testid="divLazyFindProduct"]:has([data-testid="lblTopads"]):remove()
+tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="linkProductTopads"]):remove()
 m.akurat.co###mainPage:style(margin-top: 0!important;)
 dutaislam.com###xmlthemes-feat1:style(margin-top:60px!important;)
 detik.com##.containerBB:style(margin-top: 0!important;)
