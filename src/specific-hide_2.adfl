@@ -161,13 +161,14 @@ inews.id##div:matches-css(text-align: center):has([id*="-StickyAd" i])
 ! SEARCH ADS AND SELF PROMOTION
 ! -----------------------------------------------
 biggo.id##.search-ad-banner-re
+shopee.co.id##.shopee-search-item-result .shopee-search-item-result__item:has-text(Iklan)
 tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct"]:has(div[data-testid="master-product-card"] [data-testid="lblTopads"]):remove()
 tokopedia.com##:matches-path(/p/) a[data-testid="lnkProductContainer"]:has([alt*="topads"]):remove()
 tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"]):remove()
-shopee.co.id##:matches-path(/search?).shopee-search-item-result__item:has-text(/iklan/i):remove()
 biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
 biggo.id##img[onclick*="AD_SEARCHRESULT"]
 ! ---
 ! Mobile
+shopee.co.id##.search-page .search-items-container .item-card-list__item-card-wrapper:has-text(Ad)
 tokopedia.com##:matches-path(/find/) div[data-testid="divLazyFindProduct"]:has([data-testid="lblTopads"]):remove()
 tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="linkProductTopads"]):remove()
