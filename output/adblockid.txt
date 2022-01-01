@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.1.2
+! Version: 22.1.3
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Jan 2022 05:41 UTC
+! Last modified: 01 Jan 2022 12:22 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1145,6 +1145,7 @@ _GIF1200x120-
 ~fjb.kaskus.co.id##.ads__banner
 ~serbada.com##.banner-header
 ##a[target="_blank"][rel^="nofollow"] > img[src$=".gif"]
+##a[target="_blank"][rel^="nofollow"] > img[width="100%"]
 ###Ad300B
 ###Box-Banner-ads
 ###Gadget-AdSense
@@ -4456,8 +4457,8 @@ animee.xyz##+js(aopr, mdpDeBlockerDestroyer)
 ||animekompi.web.id/*/antiblocker$image
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication_adsbygoogle.js,domain=107.152.46.48
 @@||ryuukoi.web.id^$ghide,badfilter
-103.9.100.20#@#.ads-atas-player
 213.190.4.103#@#.content-kuss-ads
+103.9.100.20#@#[class*="ads-atas"]
 194.163.183.129##+js(acis, Math, break)
 51.79.146.226,dramaindo.xyz,oploverz.eu,oploverz.fan##+js(acis, SGPopup)
 animasu.tv,dramaluv.com##+js(acis, decodeURI, decodeURIComponent)
