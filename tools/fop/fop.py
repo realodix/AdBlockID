@@ -281,7 +281,7 @@ def _FilterTidy(filterin):
             elif option[0:12] == "removeparam=":
                 removeParam = option[12:]
                 removeEntries.append(option)
-            elif re.match(RE_REDIWRITEOPTION, option):
+            elif re.match(RE_OPTION_REDIRECT, option):
                 keepAsterisk = True
                 rediwriteList.append(option)
             elif option == "popunder":

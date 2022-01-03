@@ -21,7 +21,7 @@ RE_ELEMENTDOMAIN = re.compile(r"^([^\/\*\|\@\"\!]*?)#[@$?]?#")
 RE_FILTERDOMAIN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
 RE_ELEMENT = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[@$?]?#)([^{}]+)$")
 RE_OPTION= re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
-RE_REDIWRITEOPTION = re.compile(r"^(redirect(-rule)?|rewrite)=")
+RE_OPTION_REDIRECT = re.compile(r"^(redirect(-rule)?|rewrite)=")
 RE_SELECTOR = re.compile(r"""
   # Regex to match element tags, pseudo classes, strings and tree selectors; "@" indicates
   # either the beginning or the end of a selector
