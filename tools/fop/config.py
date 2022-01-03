@@ -17,8 +17,8 @@ FILE_EXTENSION = [".adfl", ".txt"]
 IGNORE = ["adblockid.txt", "international.adfl", "template", "tools"]
 
 # Regex to match important filter parts
-RE_ELEMENTDOMAIN = re.compile(r"^([^\/\*\|\@\"\!]*?)#[@$?]?#")
-RE_ELEMENT = re.compile(r"^([^\/\*\|\@\"\!]*?)(#[@$?]?#)([^{}]+)$")
+RE_ELEMENTDOMAIN = re.compile(r"^([^\/\|\@\"\!]*?)#[@$?]?#")
+RE_ELEMENT = re.compile(r"^([^\/\|\@\"\!]*?)(#[@$?]?#)([^{}]+)$")
 RE_OPTION= re.compile(r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
 RE_OPTION_DOMAIN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
 RE_OPTION_REDIRECT = re.compile(r"^(redirect(-rule)?|rewrite)=")
