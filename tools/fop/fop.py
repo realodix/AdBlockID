@@ -161,7 +161,7 @@ def _FopSort(fileName):
                 outputFile.write(
                     "{filters}\n".format(
                         filters = "\n".join(
-                            _CombineFilters(uncombinedFilters, RE_FILTERDOMAIN, "|"))
+                            _CombineFilters(uncombinedFilters, RE_OPTION_DOMAIN, "|"))
                     )
                 )
 
