@@ -18,6 +18,12 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "Build Package",
+            "type": "shell",
+            "command": "python tools/fop/fop.py && flcombine -i abid=. src/package/personal/personal.template.txt output/personal.txt",
+            "problemMatcher": [],
         }
     ]
 }
