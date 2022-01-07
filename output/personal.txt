@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.1.15
+! Version: 22.1.16
 ! Title: AdBlockID+ (Personal)
 ! Description: Personal filter.
-! Last modified: 07 Jan 2022 06:25 UTC
+! Last modified: 07 Jan 2022 11:54 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 apkmody.io###above-the-fold-ad
@@ -31,18 +31,22 @@ bola.com##article .js-full-iframe-vidio:remove()
 cnbcindonesia.com##article .videocnbc:remove()
 liputan6.com##article iframe.vidio-embed:remove()
 intipseleb.com###dmRelatedPlayer:remove()
-intipseleb.com,viva.co.id##.dm-player:remove()
-grid.id###ivsplayer01-container:remove()
+bisnis.com,intipseleb.com,viva.co.id##.dm-player:remove()
+bola.tempo.co,grid.id###ivsplayer01-container:remove()
 grid.id##.ivs-sdk-wrapper:remove()
 wartaekonomi.co.id##.ivs-sdk-wrappercore:remove()
 wartaekonomi.co.id##ivs-player:remove()
 liputan6.com##.gateway__mobile-app
 kapanlagi.com##.liputan6-mobileapp-widget
 idntimes.com##.smartbanner
+shopee.co.id##[aria-label="modal"]:has-text(/download/i)
 merdeka.com##header .assambleApp
+tokopedia.com##[data-testid="WTA-TopSticky"]
+tokopedia.com##body:style(margin-top: 0!important;)
 crackshash.com##+js(acis, document.getElementsByClassName, wp-ad)
 piratepc.me##.code-block:matches-css(text-align: center) a[href^="javascript:"]
 ziapc.org##center > a[href^="javascript:"]
 bettercrack.com,crackwin.net,getsoftwares.net,haxnode.net##center a[onclick^="window.open("]
+rgames31.com##center a[target="_blank"] input
 abbaspc.net,haxpc.net##center button:has-text(/download/i)
 ! :: AdBlockID Filter Combiner v1.1.0
