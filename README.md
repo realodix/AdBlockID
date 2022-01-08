@@ -22,7 +22,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 | Name               | Subscribe | Deskrpsi |
 | ------------------ | --------- | -------- |
 | AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | - |
-| AdBlockID+ (Adult) | -         | Harap baca penjelasannya di [realodix/AdBlockID-Adult][ABID_Aadult] |
+| AdBlockID+ (Adult) | [Subscribe][ABID-ADULT_Subs] \| [Raw link][ABID-ADULT_Raw] | - |
 
 #### Desktop
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
@@ -42,7 +42,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
 [ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
-[ABID_Aadult]: https://github.com/realodix/AdBlockID-Adult
+[ABID-ADULT_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus_adult.txt&title=AdBlockID%20Plus%20%28Adult%29
+[ABID-ADULT_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus_adult.txt
 [uBoImport]: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
 
