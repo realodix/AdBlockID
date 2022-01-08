@@ -20,10 +20,16 @@
             }
         },
         {
-            "label": "Build Package",
+            "label": "Build: Package/Personal",
             "type": "shell",
             "command": "python tools/fop/fop.py && flcombine -i abid=. src/package/personal/personal.template.txt output/personal.txt",
             "problemMatcher": [],
+        },
+        {
+            "label": "Build: Package/Adult",
+            "type": "shell",
+            "command": "python tools/fop/fop.py && flcombine -i abid=. src/packages/adult/AdBlockID_Adult.template output/adblockid-plus_adult.txt",
+            "problemMatcher": []
         }
     ]
 }

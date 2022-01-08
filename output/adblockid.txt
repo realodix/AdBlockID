@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.1.8
+! Version: 22.1.14
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Jan 2022 22:13 UTC
+! Last modified: 07 Jan 2022 11:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1397,6 +1397,7 @@ _GIF1200x120-
 ##.ads_widget_kecil
 ##.ads_widget_kiri
 ##.adsbesar
+##.adsbimo
 ##.adsbyadx
 ##.adsbymgid
 ##.adsbyown
@@ -1589,9 +1590,11 @@ _GIF1200x120-
 ##.iklan-bawah-postingan
 ##.iklan-bawahpost
 ##.iklan-header-item
+##.iklan-insertion
 ##.iklan-kanan
 ##.iklan-kiri
 ##.iklan-kiri-postingan
+##.iklan-macaw
 ##.iklan-middle
 ##.iklan-sidebar-ins
 ##.iklan-sticky-kanal
@@ -1645,6 +1648,7 @@ _GIF1200x120-
 ##.ktz-aftermenubanner
 ##.ktz-bannersingletop
 ##.labeliklan
+##.layout__ads
 ##.leaderboard__ads
 ##.magazine-block-medium-ad
 ##.mainads
@@ -2711,6 +2715,7 @@ trenasia.com##.giias-banner
 lagikepo.com##.gmr-banner-stickyright
 ceklissatu.com##.gmr-floatbanner
 parapuan.co##.gpt-ad-head-wrapper
+lifepal.co.id##.gtm_openleadform_inarticlebanner
 pilarbanten.com##.header-ad-color
 pontianakpost.co.id##.header-advert-section
 gamefever.co.id,petisi.co##.header__banner
@@ -2749,6 +2754,7 @@ bolasport.com,kompas.tv##.mgidclsbanner
 bolasport.com##.mid-banner
 id.theasianparent.com##.mobile-ad-wrap
 feedme.id##.native-ads
+wowkeren.com##.ne-banner-layout1
 detik.com##.new_banner_reg_100
 motorplus-online.com##.nkt__stick
 rencanamu.id##.old_left a[target="_blank"] img
@@ -2775,7 +2781,7 @@ karawangnews.com##.sidebar-ads
 karawangnews.com##.sidebar-ads2
 harianjogja.com##.size-300x250
 intipseleb.com,sahijab.com##.small-mobile-banner
-cnnindonesia.com##.smartbanner_new
+cnbcindonesia.com,cnnindonesia.com##.smartbanner_new
 malukuterkini.com##.special-banner
 mydramalist.com##.spnsr
 mydramalist.com##.spnsr-wrapper
@@ -2950,8 +2956,7 @@ seputarforex.com##.campaign-atas
 suarajatimpost.com##.card:has-text(/adv/i)
 okezone.com##.center-paralax:has([id^="div-gpt-ad"])
 bacalagers.com##.code-block:has(.adsbyadop)
-berakal.com,bukugue.com,duwitmu.com,juguran.com,localstartupfest.id,narmadi.com,thelastsurvivors.org,winpreso.com##.code-block:has(.adsbygoogle)
-saintif.com##.code-block:matches-css(text-align: center):has(.adsbygoogle)
+berakal.com,bukugue.com,duwitmu.com,ecaraku.com,juguran.com,localstartupfest.id,mogamugi.com,narmadi.com,penablog.com,saintif.com,thelastsurvivors.org,winpreso.com##.code-block:has(.adsbygoogle)
 arenabola.id##.col-lg-3:has-text(/adv/i)
 orami.co.id##.content div:has-text(/adv/i)
 mediaindonesia.com##.content-block #paralax_div
@@ -4145,7 +4150,7 @@ idfl.info,manfaatke.com##+js(aopr, open)
 matamatamusik.com##+js(aopr, ppsPopups)
 suki48.web.id##+js(aopw, _pop)
 kotakgame.com##+js(set, $.magnificPopup.open, noopFunc)
-kicausejati.com,kurazone.net,newsparodiquote.blogspot.com,visual-effects-motion.blogspot.com##+js(window.open-defuser)
+gigapurbalingga.net,kicausejati.com,kurazone.net,newsparodiquote.blogspot.com,visual-effects-motion.blogspot.com##+js(window.open-defuser)
 /wp-content/plugins/cm-pop-up-banners/*$domain=klikpapua.com|radarsriwijaya.com|rajawarta.com|suaramandiri.co|timikaexpress.com
 klikpapua.com,papuabaratpos.com,radarsriwijaya.com,rajawarta.com,suaramandiri.co,timikaexpress.com##+js(aopr, popup_custom_data)
 /wp-content/plugins/master-popups/*$domain=mediamerdeka.co
@@ -4178,10 +4183,10 @@ seputarforex.com##.show.modal-backdrop
 gigapurbalingga.net##.entry-content center button.user
 kuyhaa-me.com##[type="image"][src*="/sd.png"]
 kuyhaa.net##a[href*="xshared.link"][target="blank"]
-mazterize.com##button:has-text(/download crack/i)
 freesoft.id##button[onclick^="window.open("][rel]
 masterkreatif.net,mazterize.net##center .button:has-text(/download crack/i)
 bagas31.pw,kuyhaa-me.pw##center a[href="javascript:void(0);"]
+mazterize.com##p:matches-css(text-align: center) .dl-g
 mizanstore.com#@#.push-wrapper:not(body):not(html)
 berkeluarga.id,gdm.id,indonesiacoding.com#@#.share-simple
 ifra-indonesia.com#@##social-float
@@ -4214,7 +4219,7 @@ greeners.co,majalahponsel.org,seputarkuliah.com##+js(aeld, keydown)
 katadata.co.id##+js(aopr, addLink)
 alternatifmu.com,fajarsumatera.co.id,jakartastudio.com,rgamesstore.com,wartaterkini.news##+js(aopr, disable_copy)
 rgamesstore.com##+js(aopr, disable_hot_keys)
-anteroaceh.com,balipost.com,bloggerkauman.blogspot.com,blogrtrwnet.blogspot.com,cnnindonesia.com,detik.com,faris6593.blogspot.com,ibtimes.id,inews.id,jpnn.com,mediaindonesia.com,mediaini.com,my24hours.net,navigasi.eu.org,nu.or.id,okezone.com,rahmatullah.id,sanepo.com,suatekno.id,temanshalih.com,thejakartapost.com,viva.co.id##+js(aopr, document.oncopy)
+anteroaceh.com,balipost.com,bloggerkauman.blogspot.com,blogrtrwnet.blogspot.com,cindenian.com,cnnindonesia.com,detik.com,faris6593.blogspot.com,ibtimes.id,inews.id,jpnn.com,mediaindonesia.com,mediaini.com,my24hours.net,navigasi.eu.org,nu.or.id,okezone.com,rahmatullah.id,sanepo.com,suatekno.id,temanshalih.com,thejakartapost.com,viva.co.id##+js(aopr, document.oncopy)
 2lodoe.net,apabedanya.com,besoksore.com,bloggermuntilan.com,bospajak.com,burungnya.com,cilegonnews.com,daftarhewan.com,egsean.com,ekor9.com,ilmumemikatwanita.com,invesnesia.com,kanzalia.com,kucingpersia.co.id,mengapa.net,nandatrio.com,nusramedia.com,okdogi.com,renovrainbow.com,teraa.net,tipssehatcantik.com##+js(aopr, document.onkeydown)
 /copy_credit.$script,domain=kompas.com
 ||cnnindonesia.com/cnnid/js/clipboard.js
@@ -4624,26 +4629,5 @@ mediahiburan.my##+js(acis, disableSelection, reEnable)
 mediahiburan.my##+js(acis, document.oncontextmenu)
 iluminasi.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
-/downloadas1.$image,domain=kolompc.com
-||dlupload.com/dlaads7.png$image
-||dlupload.com/dlad3.png$image
-androidapksfree.com##.header-ad-heading
-apk.support##.ad-box
-apk.support##.advertisement
-apkmodif.com##amp-ad
-apkmody.io###above-the-fold-ad
-apkpure.com##.ad-box-auto
-crackshash.com##.wp-ad
-fandom.com##.ad-slot-wrapper
-fandom.com##.ic-ad-slot-placeholder
-filehorse.com##.dx-sb-1
-filehorse.com###td-top-leaderboard-1
-uptodown.com##.ad
-yourdictionary.com##.advertising-container
-bettercrack.com,crackwin.net,getsoftwares.net,haxnode.net##center a[onclick^="window.open("]
 autokronika.pl#@#img[width="800"][height="200"]
-@@/adsbygoogle.$script,domain=erinsakura.com|pnews.space
-@@||accuweather.com^$ghide,badfilter
-apkgezegeni.com##+js(nofab)
-famfonts.com##+js(nobab)
 ! :: AdBlockID Filter Combiner v1.1.0
