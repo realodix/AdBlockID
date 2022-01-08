@@ -22,7 +22,7 @@
         {
             "label": "Build: Package/Adult",
             "type": "shell",
-            "command": "flcombine -i abid=. src/packages/adult/AdBlockID_Adult.template output/adblockid-plus_adult.txt",
+            "command": "python tools/fop/fop.py && flcombine -i abid=. src/packages/adult/AdBlockID_Adult.template output/adblockid-plus_adult.txt",
             "problemMatcher": []
         }
     ]
