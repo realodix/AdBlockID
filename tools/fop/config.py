@@ -14,7 +14,8 @@ VERSION = "1.7"
 FILE_EXTENSION = [".adfl", ".txt"]
 # List the files that should not be sorted, either because they have a special sorting
 # system or because they are not filter files
-IGNORE = ["adblockid.txt", "international.adfl", "template", "tools"]
+IGNORE = ["adblockid.txt", "adblockid-plus_adult.txt", "personal.txt", "international.adfl",
+            "template", "tools"]
 
 # Regex to match important filter parts
 RE_ELEMENTDOMAIN = re.compile(r"^([^\/\|\@\"\!]*?)#[@$?]?#")
