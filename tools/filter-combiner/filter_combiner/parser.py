@@ -48,9 +48,9 @@ Filter = _line_type('lt_filter', 'text', '{.text}')
 Include = _line_type('lt_include', 'target', '%include {0.target}%')
 
 
-METADATA_REGEXP = re.compile(r'\s*!\s*([\w\-\s]*\w)\s*:\s*(.*)')
-INCLUDE_REGEXP = re.compile(r'%include\s+(.+)%')
-HEADER_REGEXP = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
+RE_METADATA = re.compile(r'\s*!\s*([\w\-\s]*\w)\s*:\s*(.*)')
+RE_INCLUDE = re.compile(r'%include\s+(.+)%')
+RE_HEADER = re.compile(r'\[(Adblock(?:\s*Plus\s*[\d\.]+?)?)\]', flags=re.I)
 
 
 def parse_filterlist(lines):
@@ -138,7 +138,7 @@ def parse_line(line, position='body'):
         return EmptyLine()
 
     if position == 'pHeader':
-        match = HEADER_REGEXP.search(line)
+        match = RE_HEADER.search(line)
         if match:
             return Header(match.group(1))
 
@@ -146,7 +146,7 @@ def parse_line(line, position='body'):
     if re.search('^!$|^![^#+]'                 # Standart comment
                  '|^#$|^#[^#@$?%]|^##(\s|##)', # uBO special comment
                  stripped):
-        match = METADATA_REGEXP.match(line)
+        match = RE_METADATA.match(line)
         if match:
             key, value = match.groups()
             if position != 'pBody' or key.lower() == 'checksum':
@@ -160,7 +160,7 @@ def parse_line(line, position='body'):
 
 
 def _parse_instruction(text):
-    match = INCLUDE_REGEXP.match(text)
+    match = RE_INCLUDE.match(text)
     if not match:
         raise ParseError('Unrecognized instruction', text)
     return Include(match.group(1))
