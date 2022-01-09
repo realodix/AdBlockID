@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.1.15
+! Version: 22.1.16
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Jan 2022 11:52 UTC
+! Last modified: 09 Jan 2022 06:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1370,6 +1370,7 @@ _GIF1200x120-
 ##.ads_2l
 ##.ads_2r
 ##.ads__boxr
+##.ads__horizontal
 ##.ads__r1
 ##.ads__side
 ##.ads__skyscraper
@@ -2561,7 +2562,7 @@ portalntt.com###banner
 dailysocial.id###banner-hp-detail-category
 kotakgame.com###banner_btm_pop
 urbanasia.com###bannerhome
-indosport.com###billboard-ad
+fimela.com,indosport.com###billboard-ad
 anjingk9.com###black-ads
 bolasport.com###bottom-banner-ads
 karawangnews.com,progresif.id###btm_banner
@@ -2597,6 +2598,7 @@ otosia.com###v5-showcase2
 tribunnews.com###wideskyscraper
 kotakgame.com###wrap_banner_btm_pop
 thejakartapost.com##.JPSinglePageAds
+wartaekonomi.co.id##.ad-container:remove()
 jelajahcoin.com##.ad-desk
 terkini.id##.ad-layout-1
 jelajahcoin.com##.ad-mob
@@ -2925,7 +2927,7 @@ mediametropolitan.id##.widget-content img[data-original-width="905"][data-origin
 papuadalamberita.com##.widget-content img[style="max-width: 100%; height: auto;"]
 apahabar.com,kumanika.com,lintastungkal.com,sawerigading-news.com##[id^="sidebar"] img[style="max-width: 100%; height: auto;"]
 tutorial.sangfajarnews.com##aside img[data-original-width="301"][data-original-height="251"]
-asarpua.com,beritamerdekaonline.com,bogorchannel.id,bogorin.com,bogorupdate.com,dejurnal.com,expontt.com,fajarmanado.com,faktajabar.co.id,harianexpose.com,inisumedang.com,investigasibhayangkara.com,jabarekspres.com,jakposnews.com,jeratntb.com,kabarberitasatu.com,kabarlahat.com,kabarnuansa.id,kabarpublik.id,kailipost.com,kaldera.id,kepridays.co.id,koranbanjar.net,koranmemo.com,lampung1.com,lampungcentral.com,lensantb.com,lutim-news.com,malangnews.id,mattanews.co,mediasembilan.co.id,newskaltim.com,ntt-news.com,nuansarealitanews.com,obor-nusantara.com,okemedan.com,papuabaratpos.com,pojokberita.co.id,poskita.id,radarbandung.id,radarlombok.co.id,radarmadiun.co.id,radarmalaka.com,realitalampung.com,redaksisulut.com,sakanews.com,semarakpost.com,sendapaleba.com,senentangnews.com,sindomanado.com,suara-ntt.com,suaramandiri.co,suarasiber.com,sumateranews.co.id,swarakaltim.com,talikanews.com,tapanulipost.com,timur-online.com,tobasatu.com,travelmaker.id,wartamerdekanews.com##aside img[style="max-width: 100%; height: auto;"]
+asarpua.com,beritamerdekaonline.com,bogorchannel.id,bogorin.com,bogorupdate.com,dejurnal.com,expontt.com,fajarmanado.com,faktajabar.co.id,harianexpose.com,inisumedang.com,investigasibhayangkara.com,jabarekspres.com,jakposnews.com,jeratntb.com,kabarberitasatu.com,kabarlahat.com,kabarnuansa.id,kabarpublik.id,kailipost.com,kaldera.id,katakepri.com,kepridays.co.id,koranbanjar.net,koranmemo.com,lampung1.com,lampungcentral.com,lensantb.com,lutim-news.com,malangnews.id,mattanews.co,mediasembilan.co.id,newskaltim.com,ntt-news.com,nuansarealitanews.com,obor-nusantara.com,okemedan.com,papuabaratpos.com,pojokberita.co.id,poskita.id,radarbandung.id,radarlombok.co.id,radarmadiun.co.id,radarmalaka.com,realitalampung.com,redaksisulut.com,sakanews.com,semarakpost.com,sendapaleba.com,senentangnews.com,sindomanado.com,suara-ntt.com,suaramandiri.co,suarasiber.com,sumateranews.co.id,swarakaltim.com,talikanews.com,tapanulipost.com,timur-online.com,tobasatu.com,travelmaker.id,wartamerdekanews.com##aside img[style="max-width: 100%; height: auto;"]
 kriminal.co##aside img[style="max-width: 100%;"]
 beritainspira.com##aside img[width="1080"][height="1080"]
 pewarta-indonesia.com##aside img[width="1182"][height="1182"]
@@ -4193,7 +4195,7 @@ mazterize.com##p:matches-css(text-align: center) .dl-g
 mizanstore.com#@#.push-wrapper:not(body):not(html)
 berkeluarga.id,gdm.id,indonesiacoding.com#@#.share-simple
 ifra-indonesia.com#@##social-float
-m.bola.com,m.liputan6.com#@##back-to-top:not(html):not(body)
+m.bola.com,m.fimela.com,m.liputan6.com#@##back-to-top:not(html):not(body)
 @@/social-sharing-$script,domain=axe.com
 ||analytics.s.id^$3p
 ||filmindonesia2020.blogspot.com^$3p
