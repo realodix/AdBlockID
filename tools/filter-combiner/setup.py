@@ -3,7 +3,7 @@ from setuptools import setup
 from distutils.util import convert_path
 
 main_ns = {}
-ver_path = convert_path('abidfc/config.py')
+ver_path = convert_path('filter_combiner/config.py')
 with open(ver_path) as ver_file:
     exec(ver_file.read(), main_ns)
 
@@ -14,9 +14,9 @@ setup(
     long_description_content_type='text/x-rst',
     author='Realodix',
     url='https://github.com/realodix/AdBlockFilterTools',
-    packages=['abidfc'],
+    packages=['filter_combiner'],
     entry_points={
-        'console_scripts': ['flcombine=abidfc.combiner:main'],
+        'console_scripts': ['flcombine=filter_combiner.combiner:main'],
     },
     include_package_data=True,
     license='GPLv3',

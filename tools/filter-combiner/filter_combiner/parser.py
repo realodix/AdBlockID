@@ -100,7 +100,7 @@ def parse_line(line, position='body'):
 
     Note: Line metadata checksum dikenali di semua posisi untuk backwards compatibility.
     Secara historis, checksum ada di bagian paling bawah filter list. Checksum sudah tidak
-    digunakan oleh ad blocker modern, tetapi untuk menghapusnya (di abidfc.combiner), Kita
+    digunakan oleh ad blocker modern, tetapi untuk menghapusnya (di filter_combiner.combiner), Kita
     harus memastikan untuk tetap menguraikannya terlepas dari posisinya ada dimana di dalam
     filter list.
 
