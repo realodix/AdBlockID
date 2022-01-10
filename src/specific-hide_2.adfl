@@ -134,11 +134,17 @@ momsmoney.id##[id^="div-insidearticletop-Momsmoney"]
 koranseruya.com##[id^=local-]:has-text(/adv/i)
 oppotutorial.com,pertamax7.com##center:has(> .adsbygoogle)
 klubpria.com##center:has([id^="div-gpt-ad"])
+kompas.id##div.justify-center:has([src^="https://ads.kompas.id"])
 br.atsit.in,itnesia.com##div:matches-css(text-align: center):has(> .adsbygoogle)
 kumparan.com##div:matches-css(text-align: center):has(> .adunitContainer)
 bola.net,kapanlagi.com,sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
+! ---
+! Related Article
+tribunnews.com###article #_popIn_recommend_word
+gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://jsc.mgid.com"])
+gridoto.com##.geniee-box
 ! AG tidak mengkonversi regex flags
 ! https://github.com/AdguardTeam/ExtendedCss/issues/138
 grid.id,gridoto.com,kompas.com,kompas.tv,motorplus-online.com,parapuan.co,suara.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
