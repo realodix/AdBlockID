@@ -23,7 +23,6 @@ sadeempc.com##+js(nobab)
 ! -----------------------------------------------
 ! Video Autoplayer
 ||embed.dugout.com^$3p,domain=bolasport.com|indosport.com|skor.id
-||player.ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|grid.id|indosport.com|sonora.id|tempo.co
 !
 fandom.com###fandom-mobile-wrapper .article-featured-video:remove()
 kompas.com##.content_article .rVideo-middle:remove()
@@ -42,6 +41,12 @@ liputan6.com##article iframe.vidio-embed:remove()
 !
 intipseleb.com###dmRelatedPlayer:remove()
 bisnis.com,intipseleb.com,viva.co.id##.dm-player:remove()
+!
+motorplus-online.com###ivsplayer01-container:remove()
+gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://player.ivideosmart.com"]):remove()
+gridoto.com##.ivs-box:remove()
+motorplus-online.com##[id^=ivs-]:remove()
+||player.ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|grid.id|gridoto.com|indosport.com|motorplus-online.com|sonora.id|tempo.co
 ! ---
 ! Download App
 liputan6.com##.gateway__mobile-app

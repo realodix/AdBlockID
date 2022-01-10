@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.1.8
+! Version: 22.1.9
 ! Title: AdBlockID+ (Personal)
 ! Description: Personal filter.
-! Last modified: 10 Jan 2022 09:32 UTC
+! Last modified: 10 Jan 2022 13:45 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 apkmody.io###above-the-fold-ad
@@ -21,7 +21,6 @@ apkmodif.com##amp-ad
 itsfoss.com##amp-fx-flying-carpet
 sadeempc.com##+js(nobab)
 ||embed.dugout.com^$3p,domain=bolasport.com|indosport.com|skor.id
-||player.ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|grid.id|indosport.com|sonora.id|tempo.co
 fandom.com###fandom-mobile-wrapper .article-featured-video:remove()
 kompas.com##.content_article .rVideo-middle:remove()
 kompas.com##.js-read-article .rVideo-player:remove()
@@ -38,6 +37,11 @@ cnbcindonesia.com##article .videocnbc:remove()
 liputan6.com##article iframe.vidio-embed:remove()
 intipseleb.com###dmRelatedPlayer:remove()
 bisnis.com,intipseleb.com,viva.co.id##.dm-player:remove()
+motorplus-online.com###ivsplayer01-container:remove()
+gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://player.ivideosmart.com"]):remove()
+gridoto.com##.ivs-box:remove()
+motorplus-online.com##[id^=ivs-]:remove()
+||player.ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|grid.id|gridoto.com|indosport.com|motorplus-online.com|sonora.id|tempo.co
 liputan6.com##.gateway__mobile-app
 kapanlagi.com##.liputan6-mobileapp-widget
 idntimes.com##.smartbanner
