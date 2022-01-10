@@ -1,27 +1,29 @@
 [Adblock Plus 2.0]
-! Version: 22.1.10
+! Version: 22.1.11
 ! Title: AdBlockID+ (Personal)
 ! Description: Personal filter.
-! Last modified: 10 Jan 2022 16:20 UTC
+! Last modified: 10 Jan 2022 16:36 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 apkmody.io###above-the-fold-ad
-filehorse.com###td-top-leaderboard-1
 uptodown.com##.ad
 apk.support##.ad-box
 apkpure.com##.ad-box-auto
 fandom.com##.ad-slot-wrapper
 apk.support##.advertisement
 yourdictionary.com##.advertising-container
-filehorse.com##.dx-sb-1
+filehorse.com##.dx:has([id^="td-bottom-leaderboard-"])
+filehorse.com##.dx:has([id^="td-top-leaderboard-"])
 androidapksfree.com##.header-ad-heading
 fandom.com##.ic-ad-slot-placeholder
 crackshash.com##.wp-ad
+filehorse.com##[class=^="dx-"]:has([id^="td-top-leaderboard-"])
 apkmodif.com##amp-ad
 itsfoss.com##amp-fx-flying-carpet
 sadeempc.com##+js(nobab)
 ||embed.dugout.com^$3p,domain=bolasport.com|indosport.com|skor.id
 fandom.com###fandom-mobile-wrapper .article-featured-video:remove()
+gamereactor.asia###livestreamBox:remove()
 kompas.com##.content_article .rVideo-middle:remove()
 kompas.com##.content_article .video-box-wrap:remove()
 kompas.com##.js-read-article .rVideo-player:remove()
