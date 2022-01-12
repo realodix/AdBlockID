@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.1.29
+! Version: 22.1.30
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jan 2022 18:26 UTC
+! Last modified: 12 Jan 2022 07:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1318,6 +1318,8 @@ _GIF1200x120-
 ##.adkaki
 ##.adkananbwh
 ##.adki
+##.ads-250-cls
+##.ads-650-cls
 ##.ads-970-panjang-1
 ##.ads-970-panjang-2
 ##.ads-970-panjang-3
@@ -1937,7 +1939,6 @@ _GIF1200x120-
 ##img[width="468"][height="60"]
 ##img[width="468px"][height="60"]
 ##img[width="500"][height="70"]
-##img[width="522px"][height="75px"]
 ##img[width="535"][height="70"]
 ##img[width="550"][height="70"]
 ##img[width="571"][height="1024"]
@@ -1959,7 +1960,6 @@ _GIF1200x120-
 ##img[width="728"][height="100"]
 ##img[width="728"][height="80"]
 ##img[width="728"][height="90"]
-##img[width="728px"][height="90px"]
 ##img[width="745"][height="222"]
 ##img[width="750"][height="100"]
 ##img[width="750"][height="125"]
@@ -1976,9 +1976,12 @@ _GIF1200x120-
 ##img[width="900"][height="232"]
 ##img[width="900"][height="280"]
 ##img[width="920"][height="126"]
-##img[width="950px"][height="100px"]
 ##img[width="970"][height="90"]
 ##img[width="980"][height="120"]
+##img[width^="393px"][height^="90px"]
+##img[width^="522px"][height^="75px"]
+##img[width^="728px"][height^="90px"]
+##img[width^="950px"][height^="100px"]
 ~1stserver.com##a[href*="1stserver.com/aff.php?aff="] > img
 ~ascertaincrescenthandbag.com##a[href*="ascertaincrescenthandbag.com"]
 ~baliorange.net,~boc.co.id##a[href*="baliorange.net/aff.php?aff="] > img
@@ -2090,8 +2093,10 @@ _GIF1200x120-
 ||hatedgeographical.com^$3p
 ||hevtqedhxqicrkj.xyz^$3p
 ||incurvedisagio.com^$3p
+||katukaunamiss.com^$3p
 ||kiltyyoginis.com^$3p
 ||luzulabeguile.com^$3p
+||mafrarc3e9h.com^$3p
 ||mondialwering.com^$3p
 ||newtontanrec.casa^$3p
 ||nuclearillano.casa^$3p
@@ -3021,9 +3026,6 @@ kumparan.com##div:matches-css(text-align: center):has(> .adunitContainer)
 bola.net,kapanlagi.com,sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
-tribunnews.com###article #_popIn_recommend_word
-gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://jsc.mgid.com"])
-gridoto.com##.geniee-box
 grid.id,gridoto.com,kompas.com,kompas.tv,motorplus-online.com,parapuan.co,suara.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
 pikiran-rakyat.com###cont-megabillboard
 mediaindonesia.com###content [class^="parallax_"]:has([id*="div-gpt-ad-"])
@@ -4451,7 +4453,7 @@ inonton.com###fadeinbox
 blackavelic.com###teaser2
 anoboy.online,blackavelic.com###teaser3
 172.96.189.133,172.96.189.146###tengah
-185.63.252.16,54.39.39.152###top-banner
+185.63.252.16,54.39.39.152,80.209.252.146###top-banner
 dramafilm21.com###topbar
 animekompi.web.id,mmsubs.com##.addads
 139.99.120.222,fb21.tv##.ban_empat
@@ -4517,7 +4519,7 @@ animasu.tv,dramaluv.com##+js(acis, decodeURI, decodeURIComponent)
 drakorfans.com##+js(acis, puShown , /doOpen|popundr/)
 139.99.120.222,fb21.tv##+js(aopr, $, #myModalSingle)
 148.163.72.77##+js(aopr, $, SPU_master)
-104.161.33.103,107.152.36.57,107.152.46.207,111.90.142.149,148.163.72.89,173.212.233.209,185.212.128.50,185.212.128.53,185.224.83.128,194.163.142.218,194.67.196.93,199.231.164.17,213.136.91.132,37.49.229.132,91.230.121.24,layarkaca21b.com,terimamovie.com##+js(aopr, $.magnificPopup.open)
+104.161.33.103,107.152.36.57,107.152.46.207,111.90.142.149,148.163.72.89,173.212.233.209,185.173.38.216,185.212.128.50,185.212.128.53,185.224.83.128,194.163.142.218,194.67.196.93,199.231.164.17,213.136.91.132,37.49.229.132,91.230.121.24,layarkaca21b.com,terimamovie.com##+js(aopr, $.magnificPopup.open)
 185.231.223.76##+js(aopr, PBlib)
 194.163.152.200,surga21.com##+js(aopr, SGPB_POPUP_PARAMS)
 lengket.com,sangkut.com##+js(aopr, SmartPopunder)
