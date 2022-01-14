@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.1.60
+! Version: 22.1.62
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Jan 2022 08:49 UTC
+! Last modified: 14 Jan 2022 13:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2023,6 +2023,7 @@ _GIF1200x120-
 ~shutterstock.com##a[href^="https://submit.shutterstock.com/?ref="]
 ~uptobox.com##a[href^="https://uptobox.com/affiliate"]
 /[0-9a-f]{32}\/invoke\.js/$3p,script
+/^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[-a-z0-9]{5,}\.(?:com?|bid|cl(?:ick|ub)|li(?:nk|ve)|net|online|top)\/(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/$3p,script,xhr
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|pw|site)\/[a-z](?=[0-9a-z]{0,15}[A-Z])(?=[a-z]{0,15}[0-9A-Z])[0-9a-zA-Z]{10,16}\/(?:[1-4]\d{4}|[4-9]\d{3})(\?_=\d+)?$/$3p,frame,match-case,script
 /get/*?zoneid=$script
 /1clkn/*$script
@@ -4416,6 +4417,7 @@ $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net|googleapis.com,do
 103.194.171.75##.bnner
 103.194.171.75,idtube.me##.overlay
 103.194.171.75##.top-banner
+107.152.46.48###adf_tera
 112.140.185.111,nuflix.space###btm_banner
 oploverz.fan###close-stream-ads
 148.163.72.92,167.99.31.48,51.79.146.226,anichin.my.id,animebloom.xyz,animelinked.web.id,animexin.xyz,dramaindo.xyz,gatsunime.com,isekaisubs.web.id,lucikun.cc,oploverz.fan###close-teaser
