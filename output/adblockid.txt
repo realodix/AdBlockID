@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.1.56
+! Version: 22.1.57
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Jan 2022 08:04 UTC
+! Last modified: 14 Jan 2022 08:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2023,6 +2023,7 @@ _GIF1200x120-
 ~uptobox.com##a[href^="https://uptobox.com/affiliate"]
 /[0-9a-f]{32}\/invoke\.js/$3p,script
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|pw|site)\/[a-z](?=[0-9a-z]{0,15}[A-Z])(?=[a-z]{0,15}[0-9A-Z])[0-9a-zA-Z]{10,16}\/(?:[1-4]\d{4}|[4-9]\d{3})(\?_=\d+)?$/$3p,frame,match-case,script
+/get/*?zoneid=$script
 /1clkn/*$script
 ||accesstrade.co.id^$3p
 ||ad-loupe.com^$3p
@@ -4490,7 +4491,7 @@ animecracks.com##+js(aopr, mdpDeBlocker)
 animasu.tv,dramaluv.com##+js(acis, decodeURI, decodeURIComponent)
 drakorfans.com##+js(acis, puShown , /doOpen|popundr/)
 139.99.120.222,fb21.tv##+js(aopr, $, #myModalSingle)
-148.163.72.77##+js(aopr, $, SPU_master)
+148.163.72.77,199.231.164.28##+js(aopr, $, SPU_master)
 104.161.33.103,107.152.36.57,107.152.46.207,111.90.142.149,148.163.72.89,149.56.24.226,173.212.233.209,185.173.38.216,185.212.128.50,185.212.128.53,185.224.83.128,194.163.142.218,194.67.196.93,199.231.164.17,213.136.91.132,37.49.229.132,91.230.121.24,terimamovie.com##+js(aopr, $.magnificPopup.open)
 185.231.223.76##+js(aopr, PBlib)
 194.163.152.200,surga21.com##+js(aopr, SGPB_POPUP_PARAMS)

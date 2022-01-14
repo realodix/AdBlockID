@@ -2,11 +2,13 @@
 !!
 !! --------------------------------------------------------
 !!
-! https://github.com/uBlockOrigin/uAssets/blob/b47a60fdda/filters/filters.txt#L21431
+! https://github.com/uBlockOrigin/uAssets/blob/31912b4bf8/filters/filters.txt#L21431
 /[0-9a-f]{32}\/invoke\.js/$3p,script
-! https://github.com/uBlockOrigin/uAssets/blob/b47a60fdda/filters/filters.txt#L21434
+! https://github.com/uBlockOrigin/uAssets/blob/31912b4bf8/filters/filters.txt#L21434
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.(?:com|pw|site)\/[a-z](?=[0-9a-z]{0,15}[A-Z])(?=[a-z]{0,15}[0-9A-Z])[0-9a-zA-Z]{10,16}\/(?:[1-4]\d{4}|[4-9]\d{3})(\?_=\d+)?$/$3p,frame,match-case,script
-! https://github.com/uBlockOrigin/uAssets/blob/b47a60fdda/filters/filters.txt#L15896
+! https://github.com/uBlockOrigin/uAssets/blob/31912b4bf8/filters/filters.txt#L3573
+/get/*?zoneid=$script
+! https://github.com/uBlockOrigin/uAssets/blob/31912b4bf8/filters/filters.txt#L15896
 /1clkn/*$script
 !
 ||accesstrade.co.id^$3p
