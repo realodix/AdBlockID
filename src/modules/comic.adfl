@@ -20,12 +20,13 @@ mangaid.click###catfish
 mangaku.live###ftadsth
 bacakomik.co###teaser3
 209.126.6.6###tutupen
-mangaku.live##.adv
-mangaku.live##.ewbnr
+mangaku.live,mangaku.my.id##.adv
+mangaku.live,mangaku.my.id##.ewbnr
 kiryuu.id,komikindo.co,komiktap.in,komikvip.com,mangadewasa.com,mangakita.net,manhwaindo.id,manhwaland.icu,ngomik.net,sektekomik.com##.kln
 kumpulmanga.org,overlordfree.web.id##.kzl
 mangaku.live##.section_ad
 komikvip.com##.textwidget:not(:has(#a[href*="komikvip.com"])) > a > img
+mangaku.my.id##[id*="ads"]
 manhwaid.org##img[data-original-width="720"][data-original-height="120"]
 !
 ! ANTI-ADBLOCK
@@ -55,7 +56,7 @@ bacakomik.co,komik18.com,komikcast.com,komikindo.id,mangakita.net,mangaku.live,m
 komikindo.id,komikuindo.id,mangadewasa.com,mangaku.live,manhwaid.org,sekaikomik.site##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
-mangaku.live##+js(aeld, contextmenu)
+mangaku.live,mangaku.my.id##+js(aeld, contextmenu)
 otakudesu.info##+js(aeld, keydown)
 manhwaid.org##+js(aopr, disableSelection)
 komiktap.in,komikuindo.id,manhwaid.org,otakudesu.info##+js(aopr, document.oncontextmenu)
