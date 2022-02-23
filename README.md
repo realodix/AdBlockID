@@ -23,7 +23,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 | ------------------ | --------- | -------- |
 | AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | Filter utama |
 | AdBlockID Plus     | [Subscribe][ABID-Plus_Subs] \| [Raw link][ABID-Plus_Raw] | Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID. |
-| AdBlockID+ (Adult) | [Subscribe][ABID-ADULT_Subs] \| [Raw link][ABID-ADULT_Raw] | Ekstensi filter untuk situs berkonten dewasa (adult) |
+| AdBlockID+ (Adult) | - | Gunakan AdBlockID+, akan dihapus 1/03/22 |
 
 #### Desktop
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
