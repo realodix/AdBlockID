@@ -43,6 +43,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 #### Tutorial spesifik cara memasang AdBlockID:
 - [uBlock Origin](/docs/uBlock.md)
 - [AdGuard](/docs/Adguard.md)
+- **TIDAK DIREKOMENDASIKAN** [Adblock Plus](https://github.com/O7zSO31IVg/AdBlockID/blob/master/docs/abp.md)
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
 [ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
