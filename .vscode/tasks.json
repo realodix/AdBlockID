@@ -20,6 +20,12 @@
             }
         },
         {
+            "label": "Build: AdBlockID+",
+            "type": "shell",
+            "command": "python tools/fop/fop.py && flcombine -i abid=. src/packages/adblockid_plus.template.txt output/adblockid_plus.txt",
+            "problemMatcher": [],
+        },
+        {
             "label": "Build: Package/Personal",
             "type": "shell",
             "command": "python tools/fop/fop.py && flcombine -i abid=. src/packages/personal/personal.template.txt output/personal.txt",

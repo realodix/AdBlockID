@@ -22,6 +22,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 | Name               | Subscribe | Deskrpsi |
 | ------------------ | --------- | -------- |
 | AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | Filter utama |
+| AdBlockID Plus     | [Subscribe][ABID-Plus_Subs] \| [Raw link][ABID-Plus_Raw] | Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID. |
 | AdBlockID+ (Adult) | [Subscribe][ABID-ADULT_Subs] \| [Raw link][ABID-ADULT_Raw] | Ekstensi filter untuk situs berkonten dewasa (adult) |
 
 #### Desktop
@@ -42,6 +43,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
 [ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
+[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt&title=AdBlockID
+[ABID-Plus_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt
 [ABID-ADULT_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus_adult.txt&title=AdBlockID%20Plus%20%28Adult%29
 [ABID-ADULT_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus_adult.txt
 [uBoImport]: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
