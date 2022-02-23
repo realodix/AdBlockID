@@ -24,6 +24,8 @@ Lihat [table perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlo
 5. **Disable Automated Link Attribution**: Copy paste artikel malah muncul link sumbernya? Lupain deh!
 6. **Clean:** Halaman web jadi bersih dan nyaman. No `extra` abracadabra!
 
+<sup>* Perlu diperhatikan, walaupun manfaatnya terlihat sangat menggiurkan, tetapi walau bagaimanapun tidak ada produk yang sempurna.</sup>
+
 
 ## Cara Menggunakan
 
