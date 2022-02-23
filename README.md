@@ -8,6 +8,12 @@
 AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia, sebagai tambahan untuk melengkapi filter internasional seperti [EasyList](https://github.com/easylist/easylist), [uBlock filters](https://github.com/uBlockOrigin/uAssets) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters). Dirancang khusus untuk membuat Anda lebih nyaman dalam berselancar di internet.
 
 
+| Name               | Subscribe | Deskrpsi |
+| ------------------ | --------- | -------- |
+| AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | Filter utama |
+| AdBlockID Plus     | [Subscribe][ABID-Plus_Subs] \| [Raw link][ABID-Plus_Raw] | Perluas cakupan pemfilteran hingga ke situs internasional. |
+| AdBlockID+ (Adult) | - | Gunakan AdBlockID+, akan dihapus 1/03/22. |
+
 ## Manfaat Yang Anda Dapatkan
 1. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
 2. **Bypass AdBlock Detection**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
@@ -19,12 +25,6 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 
 ## Cara Menggunakan
 
-| Name               | Subscribe | Deskrpsi |
-| ------------------ | --------- | -------- |
-| AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | Filter utama |
-| AdBlockID Plus     | [Subscribe][ABID-Plus_Subs] \| [Raw link][ABID-Plus_Raw] | Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID. |
-| AdBlockID+ (Adult) | - | Gunakan AdBlockID+, akan dihapus 1/03/22 |
-
 #### Desktop
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
 2. *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
@@ -33,7 +33,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
    - **AdGuard**: Cukup aktifkan AdBlockID.
 
 #### Mobile
-- **Android**: [Kiwi Browser](https://kiwibrowser.com) atau [Mozilla Firefox](https://mozilla.org/firefox) + [uBlock Origin](https://ublockorigin.com) atau [AdGuard](https://adguard.com/id/adguard-browser-extension/overview.html), ikuti caranya seperti install AdBlockID di desktop.
+- **Android**: Anda dapat gunakan [uBlock Origin](https://github.com/gorhill/uBlock) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) di [Kiwi Browser](https://kiwibrowser.com) atau [Firefox](https://www.mozilla.org/en-US/firefox/browsers/mobile/android/). Cara isntall AdBlockID mirip seperti di desktop.
 - **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), aktifkan AdBlockID.
 - **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
 
@@ -43,7 +43,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
 [ABID_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt
-[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt&title=AdBlockID
+[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt&title=AdBlockID%20Plus
 [ABID-Plus_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt
 [ABID-ADULT_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus_adult.txt&title=AdBlockID%20Plus%20%28Adult%29
 [ABID-ADULT_Raw]: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid-plus_adult.txt
