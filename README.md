@@ -24,17 +24,21 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 | AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | Filter utama AdblockID yang memblokir iklan,adblock detection,safelink,key limitation dan automated link attribution |
 | AdBlockID+ (Adult) | [Subscribe][ABID-ADULT_Subs] \| [Raw link][ABID-ADULT_Raw] | Ekstensi filter dewasa (adult) |
 
-#### Desktop
-1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
+#### Browser Desktop
+1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/),[Safari](https://www.apple.com/safari/) ...)
 2. *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
 3. Install AdBlockID
    - **uBlock Origin**: Pada table di atas, klik `Subscribe` atau tambahkan `Raw link` di kotak import. Lebih lanjut lihat [`Import external filter lists`][uBoImport].
-   - **AdGuard**: Cukup aktifkan AdBlockID.
+   - **AdGuard**: Cukup aktifkan AdBlockID pada bagian bahasa-tertentu atau language-specific.
+
+#### Aplikasi Desktop
+1. Unduh [AdGuard Windows](https://adguard.com/id/adguard-windows/overview.html)
+2. Hidupkan AdblockID pada bagian bahasa-tertentu atau language-specific.
 
 #### Mobile
 - **Android**: [Kiwi Browser](https://kiwibrowser.com) atau [Mozilla Firefox](https://mozilla.org/firefox) + [uBlock Origin](https://ublockorigin.com) atau [AdGuard](https://adguard.com/id/adguard-browser-extension/overview.html), ikuti caranya seperti install AdBlockID di desktop.
-- **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), aktifkan AdBlockID.
-- **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
+- **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), aktifkan AdBlockID pada bagian bahasa-tertentu atau language-specific.
+- **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID pada bagian bahasa-tertentu atau language-specific.
 
 #### Tutorial spesifik cara memasang AdBlockID:
 - [uBlock Origin](/docs/uBlock.md)
