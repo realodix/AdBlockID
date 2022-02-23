@@ -32,7 +32,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
    - **AdGuard**: Cukup aktifkan AdBlockID.
 
 #### Mobile
-- **Android**: [Kiwi Browser](https://kiwibrowser.com) + [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), ikuti caranya seperti install AdBlockID di desktop.
+- **Android**: [Kiwi Browser](https://kiwibrowser.com) atau [Mozilla Firefox](https://mozilla.org/firefox) + [uBlock Origin](https://ublockorigin.com) atau [AdGuard](https://adguard.com/id/adguard-browser-extension/overview.html), ikuti caranya seperti install AdBlockID di desktop.
 - **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), aktifkan AdBlockID.
 - **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
 
