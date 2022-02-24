@@ -6,4 +6,4 @@
 | Situs porno | :x: | :heavy_check_mark: |
 | Situs internasional | :x: | Sebagian |
 
-Perlu diperhatikan, karena AdBlockID Plus mengandung filter iklan dewasa yang cukup agresif, ini dapat dengan mudah merusak situs judi.
+<sub>`*`Perlu diperhatikan, karena AdBlockID Plus mengandung filter iklan dewasa yang cukup agresif, ini dapat dengan mudah merusak situs berkonten dewasa seperti judi.</sub>
