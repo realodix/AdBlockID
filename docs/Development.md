@@ -27,6 +27,8 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  │   ├─ international.adfl        [All] Situs internasional.
  │   ├─ movie.adfl                [All] Situs nonton ilegal.
  │   └─ safelink.adfl             [All] Situs berjenis safelink/shortlink.
+ ├─ /packages               AdBlockID+
+ │   └─ ...
  ├─ adservers.adfl          [G] Daftar domain/IP penyedia layanan iklan pihak ketiga.
  ├─ anti-adblock.adfl       [G/S] Melumpuhkan ad block detection.
  ├─ extended.adfl           [S] Perbaiki tampilan situs setelah iklannya dihilangkan.
