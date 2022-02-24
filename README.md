@@ -19,10 +19,10 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 
 ## Cara Menggunakan
 
-| Name               | Subscribe | Deskrpsi |
-| ------------------ | --------- | -------- |
-| AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | Filter utama |
-| AdBlockID+ (Adult) | [Subscribe][ABID-ADULT_Subs] \| [Raw link][ABID-ADULT_Raw] | Ekstensi filter untuk situs berkonten dewasa (adult) |
+| Name               | Subscribe | Raw file | Deskrpsi |
+| ------------------ | --------- | -------- | -------- |
+| AdBlockID          | [Subscribe][ABID_Subs] | [Raw link][ABID_Raw] | Filter utama |
+| AdBlockID+ (Adult) | [Subscribe][ABID-ADULT_Subs] | [Raw link][ABID-ADULT_Raw] | Ekstensi filter untuk situs berkonten dewasa (adult) |
 
 #### Desktop
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
