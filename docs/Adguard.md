@@ -8,15 +8,15 @@
 1. Buka halaman *dashboard*.
 2. Klik tab *Filters*. <br>
 
-   ![](https://i.imgur.com/W1RiKSr.jpg) <br>
+   ![](https://i.imgur.com/85YEOKJ.png) <br>
 
 3. *Scroll* ke bawah, lalu klik *Language-specific*. <br>
 
-   ![](https://i.imgur.com/57mYvTR.png) <br>
+   ![](https://i.imgur.com/6dPOtOu.png) <br>
 
 4. Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span> <br>
 
-   ![](https://i.imgur.com/ohqpQh9.png) <br>
+   ![](https://i.imgur.com/ZQB0DN0.png) <br>
 
 <br><br>
 
