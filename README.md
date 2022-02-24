@@ -8,11 +8,11 @@
 AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia, sebagai tambahan untuk melengkapi filter internasional seperti [EasyList](https://github.com/easylist/easylist), [uBlock filters](https://github.com/uBlockOrigin/uAssets) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters). Dirancang khusus untuk membuat Anda lebih nyaman dalam berselancar di internet.
 
 
-| Name               | Subscribe | Deskrpsi |
-| ------------------ | --------- | -------- |
-| AdBlockID          | [Subscribe][ABID_Subs] \| [Raw link][ABID_Raw] | Filter utama |
-| AdBlockID Plus     | [Subscribe][ABID-Plus_Subs] \| [Raw link][ABID-Plus_Raw] | Patahkan berbagai batasan cakupan yang ada di AdBlockID. |
-| AdBlockID+ (Adult) | - | Gunakan AdBlockID+, akan dihapus 1/03/22. |
+| Name               | Subscribe | Raw file | Description |
+| ------------------ | --------- | -------- | ----------- |
+| AdBlockID          | [Subscribe][ABID_Subs] | [adblockid.txt][ABID_Raw] | Filter utama |
+| AdBlockID Plus     | [Subscribe][ABID-Plus_Subs] | [adblockid_plus.txt][ABID-Plus_Raw] | Patahkan berbagai batasan cakupan yang ada di AdBlockID. |
+| AdBlockID+ (Adult) | - | - | Gunakan AdBlockID+, akan dihapus 1/03/22. |
 
 Lihat [table perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlockID Plus.
 
