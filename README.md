@@ -42,7 +42,7 @@ Lihat [table perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlo
 - **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
 
 #### Tutorial spesifik cara memasang AdBlockID:
-- [uBlock Origin](/docs/uBlock.md)
+- [uBlock Origin](/docs/uBlock_Origin.md)
 - [AdGuard](/docs/Adguard.md)
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt&title=AdBlockID
