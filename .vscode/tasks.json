@@ -12,7 +12,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "./build.sh",
+            "command": "python tools/fop/fop.py && flcombine -i abid=. template/adblockid.template.txt output/adblockid.txt",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
