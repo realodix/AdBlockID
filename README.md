@@ -7,6 +7,7 @@
 
 AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia, sebagai tambahan untuk melengkapi filter internasional seperti [EasyList](https://github.com/easylist/easylist), [uBlock filters](https://github.com/uBlockOrigin/uAssets) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters). Dirancang khusus untuk membuat Anda lebih nyaman dalam berselancar di internet.
 
+<br>
 
 | Name               | Subscribe | Raw file | Description |
 | ------------------ | --------- | -------- | ----------- |
@@ -15,6 +16,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 | AdBlockID+ (Adult) | - | - | **Discontinued**, akan dihapus pada 1/03/22. Gunakan AdBlockID+ sebagai gantinya. |
 
 Lihat [tabel perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlockID Plus.
+
+<br>
 
 ## Manfaat Yang Anda Dapatkan
 1. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
