@@ -9,7 +9,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia,
 
 <br>
 
-| Name               | Subscribe | Raw file | Description |
+| Name               | Subscribe | Raw File | Description |
 | ------------------ | --------- | -------- | ----------- |
 | AdBlockID          | [Subscribe][ABID_Subs] | [adblockid.txt][ABID_Raw] | Filter utama |
 | AdBlockID Plus     | [Subscribe][ABID-Plus_Subs] | [adblockid_plus.txt][ABID-Plus_Raw] | Patahkan berbagai batasan cakupan yang ada di AdBlockID. |
@@ -27,7 +27,7 @@ Lihat [tabel perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlo
 5. **Disable Automated Link Attribution**: Copy paste artikel malah muncul link sumbernya? Lupain deh!
 6. **Clean:** Halaman web jadi bersih dan nyaman. No `extra` abracadabra!
 
-<sup>* Perlu diperhatikan, walaupun manfaatnya terlihat sangat menggiurkan, tetapi walau bagaimanapun tidak ada produk yang sempurna.</sup>
+**Perlu diperhatikan, walaupun manfaatnya terlihat sangat menggiurkan, tetapi walau bagaimanapun tidak ada produk yang sempurna.**
 
 
 ## Cara Menggunakan
