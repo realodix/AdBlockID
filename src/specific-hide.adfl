@@ -355,6 +355,7 @@ radarlampung.co.id##img[width="980"][height="1280"]
 ! ---
 ! Procedural Cosmetic Filters
 ! https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
+orami.co.id##.article-post section:has-text(/adv/i)
 dailyspin.id##.code-block:not(:has(a[href*="dailyspin.id"])) > a > img
 fanicat.com##.code-block:not(:has(a[href*="fanicat.com"])) > a > img
 pertamax7.com##a[target="_blank"] div:matches-css(position: fixed)
@@ -369,4 +370,5 @@ kotakgame.com##html:style(background-image: none!important;)
 kompas.com##+js(rc, bapps-show, body.bapps-show)
 !
 priceza.co.id###mobilePopupBtm
+www-orami-co-id.cdn.ampproject.org##.article-post section:has-text(/adv/i)
 m.kaskus.co.id##.threadDetail a[target="_blank"] img[src^="https://s.kaskus.id/images/"]
