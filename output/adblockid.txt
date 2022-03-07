@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.3.10
+! Version: 22.3.11
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Mar 2022 14:41 UTC
+! Last modified: 07 Mar 2022 14:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1150,10 +1150,8 @@ _GIF1200x120-
 ###floating_banner_top1 img[src$=".gif"]
 ~fjb.kaskus.co.id##.ads__banner
 ~serbada.com##.banner-header
-##a[target="_blank"][rel^="nofollow"] > img[src$=".gif"]
+##a[target="_blank"][rel*="nofollow"] > img[src*=".gif"]
 ##a[target="_blank"][rel^="nofollow"] > img[width="100%"]
-##a[target="_blank"][rel^="noopener nofollow"] > img[src$=".gif"]
-##a[target="_blank"][rel^="noopener noreferrer"] > img[src$=".gif"]
 ###Ad300B
 ###Box-Banner-ads
 ###Gadget-AdSense
