@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.3.23
+! Version: 22.3.24
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Mar 2022 20:57 UTC
+! Last modified: 26 Mar 2022 20:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1257,6 +1257,7 @@ _GIF1200x120-
 ###iklan-tengah2
 ###iklanACT
 ###iklan_anchor
+###iklanbawah
 ###iklanpopup
 ###iklap
 ###iklhead
@@ -4476,11 +4477,12 @@ bacakomik.co###teaser3
 mangaku.live,mangaku.my.id##.adv
 manganime.in##.asd
 mangaku.live,mangaku.my.id##.ewbnr
-kiryuu.id,komikindo.co,komiktap.in,komikvip.com,mangadewasa.com,mangakita.net,manhwaindo.id,manhwaland.icu,manhwalist.com,ngomik.net,sektekomik.com##.kln
+kiryuu.id,komikindo.co,komiktap.in,komikvip.com,mangadewasa.com,mangakita.net,manhwaindo.id,manhwaland.icu,manhwalist.com,ngomik.net,otakudesu.live,sektekomik.com##.kln
 kumpulmanga.org,overlordfree.web.id##.kzl
 mangaku.live##.section_ad
 komikvip.com##.textwidget:not(:has(#a[href*="komikvip.com"])) > a > img
 mangaku.my.id,manganime.in##[id*="ads"]
+otakudesu.live##a[target="_blank"] img
 manhwaid.org##img[data-original-width="720"][data-original-height="120"]
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
 komiknesia.com##+js(aopr, quadsOptions)
@@ -4497,9 +4499,9 @@ komikindo.id,komikuindo.id,mangadewasa.com,mangaku.live,manhwaid.org,sekaikomik.
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 mangaku.live,mangaku.my.id##+js(aeld, contextmenu)
-otakudesu.info##+js(aeld, keydown)
+otakudesu.live##+js(aeld, keydown)
 manhwaid.org##+js(aopr, disableSelection)
-komiktap.in,komikuindo.id,manhwaid.org,otakudesu.info##+js(aopr, document.oncontextmenu)
+komiktap.in,komikuindo.id,manhwaid.org,otakudesu.live##+js(aopr, document.oncontextmenu)
 mangadewasa.com##+js(aopr, nocontextmenu)
 sekaikomik.site##+js(aopw, document.oncontextmenu)
 $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net|googleapis.com,domain=nanimein.xyz|nonton08.com
