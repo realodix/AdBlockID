@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.4.66
+! Version: 22.4.67
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 23 Apr 2022 20:36 UTC
+! Last modified: 24 Apr 2022 20:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1154,6 +1154,7 @@ _GIF1200x120-
 ###floating_banner_top1 img[src$=".gif"]
 ~fjb.kaskus.co.id##.ads__banner
 ~serbada.com##.banner-header
+##a[href*="ref="] > img[src*=".gif"]
 ##a[target="_blank"][rel*="nofollow"] > img[src*=".gif"]
 ##a[target="_blank"][rel*="noreferrer"] > img[src*=".gif"]
 ##a[target="_blank"][rel^="nofollow"] > img[width="100%"]
@@ -1196,8 +1197,11 @@ _GIF1200x120-
 ###ads_widget_kecil
 ###adsbesar
 ###adsframe
+###adsic300
 ###adsic435
 ###adsic728
+###adsic7281
+###adsic728crita1
 ###adsimgatas
 ###adsimgbawah
 ###adsimgkanan
@@ -1928,6 +1932,7 @@ _GIF1200x120-
 ##img[data-srcset*="-1536x322."]
 ##img[data-srcset*="-2048x429."]
 ##img[data-srcset*="-768x161."]
+##img[height="70"][width="1100"]
 ##img[srcset*="-1024x215."]
 ##img[srcset*="-1536x322."]
 ##img[srcset*="-2048x429."]
@@ -2015,6 +2020,7 @@ _GIF1200x120-
 ##img[width="920"][height="126"]
 ##img[width="970"][height="90"]
 ##img[width="980"][height="120"]
+##img[width="980"][height="150"]
 ##img[width^="1080px"][height^="100px"]
 ##img[width^="393px"][height^="90px"]
 ##img[width^="397px"][height^="80px"]
@@ -4259,6 +4265,9 @@ _topbandar_$image
 ##[href="https://rebrand.ly/paragonslot77"]
 ##[href="https://rebrand.ly/regdora"]
 ##[href="https://rebrand.ly/siap4d"]
+##[href="https://tinyurl.com/36u3jrad"]
+##[href="https://tinyurl.com/lapakslot"]
+##[href="https:/bit.ly/idxtajir365"]
 ##a[title*="judi slot online" i]
 ##a[title*="slot online terpercaya" i]
 ##a[title^="situs judi online"]
