@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.5.25
+! Version: 22.5.26
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 May 2022 19:57 UTC
+! Last modified: 09 May 2022 20:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2353,6 +2353,7 @@ _iklan_$image,domain=ntt-news.com
 ||digitalnews.co.id^*/iklan-$image
 ||dumetschool.com/assets/img/banner-pop-up/
 ||duta.co^*/iklan-$image
+||dutaserviceac.com^*/ads_$image
 ||ebrita.com^*_iklan$image
 ||elshinta.com/banner/
 ||eramuslim.com^*/banners/
@@ -3046,6 +3047,7 @@ pewarta-indonesia.com##aside img[width="500"][height="401"]
 duta.co##aside img[width="696"][height="491"]
 mistar.id##aside img[width="696"][height="696"]
 bantenkita.com##aside img[width="819"][height="1024"]
+dutaserviceac.com##.a-wrap:has-text(/ads/i)
 momsmoney.id##.liftdownclass:has(img[alt="ads"])
 haibunda.com##.pic_artikel_sisip_table:has-text(/banner/i)
 kompiajaib.com##.widget-wrapper .link-btn:has-text(/iklan/i)
