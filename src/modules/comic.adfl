@@ -25,13 +25,12 @@ kiryuu.id,komikdewasa.my.id,komikindo.co,komikindo.me,komiklokal.xyz,komiktap.in
 kumpulmanga.org,overlordfree.web.id##.kzl
 mangaku.my.id,manganime.in##[id*="ads"]
 otakudesu.tube##a[target="_blank"] > img
-manhwaid.org##img[data-original-width="720"][data-original-height="120"]
 !
 ! ANTI-ADBLOCK
 ! -----------------------------------------------
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
 komiknesia.com##+js(aopr, quadsOptions)
-komik18.com,komikmoe.my.id,komiku.id,mangadisk.web.id,manhwaid.org,mgkomik.com,mihentai.com,novelgo.id,sektedoujin.club,sheamanga.my.id##+js(nobab)
+komik18.com,komikmoe.my.id,komiku.id,mangadisk.web.id,manhwaid.fun,mgkomik.com,mihentai.com,novelgo.id,sektedoujin.club,sheamanga.my.id##+js(nobab)
 ! https://github.com/realodix/AdBlockID/issues/53
 ! https://github.com/realodix/AdBlockID/issues/1044
 @@||mangalist.org/url/lib/$1p,script
@@ -42,20 +41,19 @@ mangalist.org#@#.adsbygoogle
 ! ANNOYANCE
 ! -----------------------------------------------
 ! Overlay
-manhwaid.org###ouibounce-modal
 klikmanga.com##body > .mtsnb-shown
 ! ---
 ! Pop-Up
 mangaindo.web.id##+js(acis, Math, zfgloaded)
 klikmanga.com,komikstation.co,sheamanga.my.id##+js(acis, document.querySelectorAll, popMagic)
+manhwaid.fun##+js(aopr, popup_custom_data)
 bacakomik.co,komik18.com,komikav.com,komikcast.com,komikcastid.com,komikindo.id,mangakita.net,mangaku.site,manhwaindo.id,masterkomik.com,ngomik.net,westmanga.info##+js(window.open-defuser)
 ! ---
 ! Unblock Context Menu And Other Mouse Limitations
-komikindo.id,komikuindo.id,mangadewasa.com,mangaku.site,manhwaid.org##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+komikindo.id,komikuindo.id,mangadewasa.com,mangaku.site##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 mangaku.my.id,mangaku.site##+js(aeld, contextmenu)
 otakudesu.site##+js(aeld, keydown)
-manhwaid.org##+js(aopr, disableSelection)
-komiktap.in,komikuindo.id,manhwaid.org,otakudesu.site##+js(aopr, document.oncontextmenu)
+komiktap.in,komikuindo.id,otakudesu.site##+js(aopr, document.oncontextmenu)
 mangadewasa.com##+js(aopr, nocontextmenu)
