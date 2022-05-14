@@ -18,7 +18,4 @@ labels: 'C: Native'
 https://example.com/
 
 **Penjelasan Lebih Lanjut**
-<!--
-- Mohon berikan penjelasan sedetail mungkin, dan jika memungkinkan berikan screenshot.
-- Terkadang hal yang Anda laporkan muncul ketika [...]. Mohon jelaskan hal yang memicunya. Agar lebih mempermudah, berikan detail tentang ad blocker dan filter yang digunakan.
--->
+- Terdapat iklan di halaman ... 
