@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.5.111
+! Version: 22.5.112
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 May 2022 21:41 UTC
+! Last modified: 20 May 2022 09:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4767,7 +4767,6 @@ mangaku.my.id##.ewbnr
 kiryuu.id,komikdewasa.my.id,komikindo.co,komikindo.me,komiklokal.com,komiktap.in,mangadewasa.com,mangakita.net,manhwaindo.id,manhwalist.com,ngomik.net,sektekomik.com##.kln
 overlordfree.web.id##.kzl
 mangaku.my.id,manganime.in##[id*="ads"]
-otakudesu.tube##a[target="_blank"] > img
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
 komiknesia.com##+js(aopr, quadsOptions)
 komik18.com,komikmoe.my.id,komiku.id,mangadisk.web.id,manhwaid.fun,mgkomik.com,mihentai.com,novelgo.id,sektedoujin.club,sheamanga.my.id##+js(nobab)
@@ -4785,8 +4784,7 @@ komikindo.id,komikuindo.id,mangadewasa.com,mangaku.site##*:style(user-select: te
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 mangaku.my.id,mangaku.site##+js(aeld, contextmenu)
-otakudesu.site##+js(aeld, keydown)
-komiktap.in,komikuindo.id,otakudesu.site##+js(aopr, document.oncontextmenu)
+komiktap.in,komikuindo.id##+js(aopr, document.oncontextmenu)
 mangadewasa.com##+js(aopr, nocontextmenu)
 $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net|googleapis.com,domain=nanimein.xyz|nonton08.com
 .gif$image,domain=144.91.105.32|176.119.30.88|199.231.164.17|animebatchs.net|anoboy.online|conan.id|layarfilm21.website|moflix.my.id
@@ -4851,7 +4849,7 @@ anoboy.online##[id$="_bnr"]
 185.217.95.238##a[href*="_medium=banners"] video
 176.119.30.88##a[href^="http://bit.ly/"] > img
 otakudere.net##a[rel^="nofollow"] > img
-104.161.33.116,104.161.33.126,109.234.34.246,112mov.xyz,139.99.33.192,149.56.198.206,154.53.35.209,174.138.29.185,185.231.223.76,199.231.164.17,213.136.91.132,38.242.237.91,45.148.122.192,62.171.145.31,75.119.147.15,bioskop-nonton.art,bioskop47.net,ganooll.xyz,indoxx1.space,inidramaku.us,kebioskop21.xyz,koenime.com,layarcinema21.live,layardrama21.asia,layarfilm21.website,oploverz.fan,otakudere.net,topfilm21.com##a[target*="blank"] > img
+104.161.33.116,104.161.33.126,109.234.34.246,112mov.xyz,139.99.33.192,149.56.198.206,154.53.35.209,174.138.29.185,185.231.223.76,199.231.164.17,213.136.91.132,38.242.237.91,45.148.122.192,62.171.145.31,75.119.147.15,bioskop-nonton.art,bioskop47.net,ganooll.xyz,indoxx1.space,inidramaku.us,kebioskop21.xyz,koenime.com,layarcinema21.live,layardrama21.asia,layarfilm21.website,oploverz.fan,otakudere.net,otakudesu.tube,topfilm21.com##a[target*="blank"] > img
 185.224.83.128##a[target*="blank"] > video
 139.99.120.222##a[target="_blank"][rel*="nofollow"] > video
 62.182.83.93##a[target="_blank"][rel^="nofollow"] > amp-img
