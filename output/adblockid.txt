@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.5.165
+! Version: 22.5.166
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 May 2022 18:46 UTC
+! Last modified: 30 May 2022 18:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3141,6 +3141,7 @@ annews.co.id,tampilcantik.com##.widget:has-text(/sponsor/i)
 bikersindonesia.net##.widget:not(:has(a[href*="bikersindonesia.net"])) > a > img
 trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
 gardapapua.com##aside:has-text(/adv/i)
+sindonews.com##+js(rc, t480, .parallax-non)
 today.line.me##.midAdModule-root:has-text(/iklan/i)
 viva.co.id###_popIn_recommend
 viva.co.id###_popIn_recommend_middle
@@ -3254,7 +3255,6 @@ dutaislam.com##.outer-wrapper:style(margin-top:60px!important;)
 gridoto.com##.read_content:style(padding-top: 0!important;)
 uzone.id##.section-top:style(margin: 100px auto 0 auto!important;)
 m.akurat.co##body:style(padding-top: 0!important;)
-sindonews.com##+js(rc, t480)
 #@#.adsBox
 dropshipin.id##+js(acis, $, ads)
 teksnologi.com##+js(acis, String.fromCharCode, decodeURIComponent)
