@@ -17,13 +17,13 @@
 ! -----------------------------------------------
 mangakita.net###btm_banner
 mangaid.click###catfish
-209.126.6.6,kiryuu.id,komikindo.me,komiklokal.com,mangayaro.com,manhwaland.mom,manhwalist.com,masterkomik.com,mihentai.com,sektekomik.com,sheamanga.my.id,tukangkomik.com,westmanga.info###close-teaser
+209.126.6.6,kiryuu.id,komikindo.me,komiklokal.com,mangacanblog.com,mangakyo.me,mangayaro.com,manhwaland.mom,manhwalist.com,masterkomik.com,mihentai.com,sektekomik.com,sheamanga.my.id,tukangkomik.com,westmanga.info###close-teaser
 bacakomik.co###teaser3
 209.126.6.6###tutupen
 angaku.my.id,mangaku.site##.adv
 manganime.in##.asd
 mangaku.my.id##.ewbnr
-kiryuu.id,komikdewasa.my.id,komikindo.co,komikindo.me,komiklokal.com,komiktap.in,mangadewasa.com,mangakita.net,manhwaindo.id,manhwalist.com,ngomik.net,sektekomik.com##.kln
+kiryuu.id,komikdewasa.my.id,komikindo.co,komikindo.me,komiklokal.com,komiktap.in,mangacanblog.com,mangadewasa.com,mangakita.net,manhwaindo.id,manhwalist.com,ngomik.net,sektekomik.com##.kln
 overlordfree.web.id##.kzl
 mangaku.my.id,manganime.in##[id*="ads"]
 !
@@ -54,11 +54,13 @@ bacakomik.co,komik18.com,komikav.com,komikcast.me,komikcastid.com,komikindo.id,m
 ! 205.251.192.122|205.251.196.232|205.251.198.102|205.251.195.47
 ! 205.251.196.195|205.251.192.17|205.251.199.226|205.251.195.59
 bacamanga.id,komikcastid.com,komikindo.id,komikstation.co,ngomik.net##+js(acis, JSON.parse, break;case $.)
+kiryuu.id##+js(acis, parseInt, break;case $.)
 ! ---
 ! Unblock Context Menu And Other Mouse Limitations
 komikindo.id,komikuindo.id,mangadewasa.com,mangaku.site##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
-mangaku.my.id,mangaku.site##+js(aeld, contextmenu)
+bacakomikid.co,bacamanga.id,bacamanga.org,boosei.net,kiryuu.id,komikav.com,mangaku.my.id,mangaku.site,mangakyo.me,masterkomik.com,nekomik.com,rawkuma.com,sektekomik.com,softkomik.com,westmanga.info##+js(aeld, contextmenu)
 komiktap.in,komikuindo.id##+js(aopr, document.oncontextmenu)
+mangacanblog.com##+js(aopr, document.onkeydown)
 mangadewasa.com##+js(aopr, nocontextmenu)

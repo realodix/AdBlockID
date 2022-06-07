@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.6.22
+! Version: 22.6.23
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Jun 2022 08:07 UTC
+! Last modified: 07 Jun 2022 16:11 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -554,7 +554,7 @@ _promosi.
 -1000-x-90.
 -1000-x124.
 -1000x100-$image
--1000x120-
+-1000x120-$image
 -1000x124-$image
 -1000X180.
 -1000x60.
@@ -669,6 +669,7 @@ _promosi.
 -530X70-
 -530x70.
 -530x90.$image
+-540-60-$image
 -540x100-
 -540x60-
 -540x60.
@@ -936,8 +937,11 @@ _promosi.
 /vg728x90.
 =w440-h90-
 _1000-X-120.
+_1000-x-120.$image
 _1000x100.$image
+_1000x120.$image
 _1000x20.
+_1000x20.$image
 _1000x250.gif$image
 _1000x50.$image
 _1000x60.$image
@@ -1153,6 +1157,7 @@ _980x90.
 _981x100.gif$image
 _996x50.$image
 _ads_733x.$image
+_gif1000x120.$image
 _GIF1200x120-
 ###floating_banner_top1 img[src$=".gif"]
 ~fjb.kaskus.co.id##.ads__banner
@@ -2035,6 +2040,7 @@ _GIF1200x120-
 ##img[width="533"][height="909"]
 ##img[width="535"][height="70"]
 ##img[width="537"][height="80"]
+##img[width="540"][height="80px"]
 ##img[width="550"][height="70"]
 ##img[width="571"][height="1024"]
 ##img[width="587"][height="1024"]
@@ -2191,10 +2197,14 @@ _GIF1200x120-
 ||welcome.indihome.co.id^$3p
 ||darts-ads.telkom.co.id^$3p
 ||dcwkgvoeufhnm.com^$3p
+||esoeoanl.com^$3p
 ||hlofnpbentcv.com^$3p
 ||joapsiro.com^$3p
+||lfjaqwwsgyu.com^$3p
 ||nnlczheczlq.com^$3p
 ||onohgmfhtavjef.com^$3p
+||ptistyvymi.com^$3p
+||stithujogle.pro^$3p
 ||tlprxzujk.com^$3p
 ||update48451.xyz^$3p
 ||wonsegax.net^$3p
@@ -4406,7 +4416,6 @@ _topbandar_$image
 ##[href="https://bit.ly/tradisibetslot"]
 ##[href="https://cutt.ly/fIOWDIO"]
 ##[href="https://cutt.ly/playnet88"]
-##[href="https://cutt.ly/rYxp3PC"]
 ##[href="https://klik.fun/anoboymcd"]
 ##[href="https://klik.fun/boomxxiidk"]
 ##[href="https://klik.fun/ngebo180"]
@@ -4426,7 +4435,6 @@ _topbandar_$image
 ##[href="https://rebrand.ly/regdora"]
 ##[href="https://rebrand.ly/siap4d"]
 ##[href="https://rebrand.ly/us188mangaku"]
-##[href="https://tinyurl.com/36u3jrad"]
 ##[href="https://tinyurl.com/kointoto"]
 ##[href="https://tinyurl.com/lapakslot"]
 ##[href="https:/bit.ly/idxtajir365"]
@@ -4449,6 +4457,17 @@ _topbandar_$image
 ##img[alt^="situs judi online" i]
 ##img[alt^="situs togel online" i]
 ##img[alt^="slot online termurah" i]
+##[href="https://cutt.ly/rYxp3PC"]
+##[href="https://rebrand.ly/20jkr18"]
+##[href="https://rebrand.ly/20jkr99"]
+##[href="https://rebrand.ly/20mcu18"]
+##[href="https://rebrand.ly/20mpo11"]
+##[href="https://rebrand.ly/20mpo66"]
+##[href="https://rebrand.ly/20mpslt8"]
+##[href="https://rebrand.ly/20mslt8"]
+##[href="https://rebrand.ly/20mslt9"]
+##[href="https://rebrand.ly/20qq82"]
+##[href="https://tinyurl.com/36u3jrad"]
 ##[href="https://bit.ly/3LO6U6E"]
 ##[href="https://bit.ly/3xhHaM7"]
 ##[href="https://bit.ly/2GuMxzt"]
@@ -4857,6 +4876,7 @@ $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net|googleapis.com,do
 /banner-$image,domain=maxnime.com
 ||imgbox.com/*.gif$image,domain=195.2.81.61
 ||jwplayer21.com/images/*.gif$image
+||161.97.125.184/wp-content/uploads/*/$mp4
 ||80.209.252.146/images/*.mp4$media
 ||api.nontongo.win/promomenubola.xml$xhr
 ||bebasdownloadfilm.com/iframe/content.php$frame
@@ -4914,7 +4934,7 @@ anoboy.online##[id$="_bnr"]
 185.217.95.238##a[href*="_medium=banners"] video
 176.119.30.88##a[href^="http://bit.ly/"] > img
 otakudere.net##a[rel^="nofollow"] > img
-104.161.33.116,104.161.33.126,109.234.34.246,112mov.xyz,139.99.33.192,148.163.72.79,149.56.198.206,154.53.35.209,154.53.44.57,185.231.223.76,199.231.164.17,213.136.91.132,23.29.126.0,38.242.237.91,45.148.122.192,62.171.145.31,75.119.147.15,beenime.com,bioskop-nonton.art,bioskop47.net,drachindo.us,ganooll.xyz,indoxx1.space,inidramaku.us,kebioskop21.xyz,koenime.com,layardrama21.asia,layarfilm21.website,oploverz.asia,otakudere.net,otakudesu.tube,topfilm21.com##a[target*="blank"] > img
+104.161.33.116,104.161.33.126,109.234.34.246,112mov.xyz,139.99.33.192,148.163.72.79,149.56.198.206,154.53.35.209,154.53.44.57,185.231.223.76,199.231.164.17,213.136.91.132,23.29.126.0,38.242.237.91,45.148.122.192,54.39.39.151,62.171.145.31,75.119.147.15,beenime.com,bioskop-nonton.art,bioskop47.net,drachindo.us,ganooll.xyz,indoxx1.space,inidramaku.us,kebioskop21.xyz,koenime.com,layardrama21.asia,layarfilm21.website,oploverz.asia,otakudere.net,otakudesu.tube,topfilm21.com##a[target*="blank"] > img
 185.224.83.128##a[target*="blank"] > video
 139.99.120.222##a[target="_blank"][rel*="nofollow"] > video
 62.182.83.93##a[target="_blank"][rel^="nofollow"] > amp-img
@@ -4929,7 +4949,6 @@ downloadbatch.me##.widget:has-text(/adv/i)
 melongfilm.org##.ipprtcnt
 185.231.223.254,shinobijawi.id,tohaboy.web.id,zonachina21.blogspot.com##+js(acis, addEventListener, DOMNodeRemoved)
 nanidrama.com,nezunime.com##+js(acis, ai_run_scripts)
-38.242.199.52##+js(aeld, DOMContentLoaded, adsBlocked)
 subindo.one##+js(aopr, absda)
 blackavelic.com,kudonime.xyz,mikanime.com,onbatch.my.id##+js(aopr, adBlockDetected)
 filmboxoffice.web.id,neosubs.net,tohaboy.web.id##+js(aopr, anOptions)
@@ -4938,7 +4957,7 @@ animesaku.com##+js(aopr, tie.ad_blocker_detector)
 anidraw.net##+js(set, config.adblock, null)
 dramaencode.co##div[style*="position: fixed;"]:has-text(ADBLOCK)
 5.182.210.145,akashinime.com##+js(acis, eval, replace)
-38.242.198.170,5.182.211.129##+js(aeld, DOMContentLoaded, adsBlocked)
+38.242.198.170,38.242.199.52,5.182.211.129,91.208.197.24##+js(aeld, DOMContentLoaded, adsBlocked)
 animecracks.com##+js(aopr, mdpDeBlocker)
 dhaniproduction.com##+js(aopr, wcadbwp)
 /ads-$image,domain=nekopoi.web.id
@@ -5030,13 +5049,13 @@ wibudesu.co##+js(aopw, nocontext)
 ||nanime.biz^*/banner-$image
 mangakita.net###btm_banner
 mangaid.click###catfish
-209.126.6.6,kiryuu.id,komikindo.me,komiklokal.com,mangayaro.com,manhwaland.mom,manhwalist.com,masterkomik.com,mihentai.com,sektekomik.com,sheamanga.my.id,tukangkomik.com,westmanga.info###close-teaser
+209.126.6.6,kiryuu.id,komikindo.me,komiklokal.com,mangacanblog.com,mangakyo.me,mangayaro.com,manhwaland.mom,manhwalist.com,masterkomik.com,mihentai.com,sektekomik.com,sheamanga.my.id,tukangkomik.com,westmanga.info###close-teaser
 bacakomik.co###teaser3
 209.126.6.6###tutupen
 angaku.my.id,mangaku.site##.adv
 manganime.in##.asd
 mangaku.my.id##.ewbnr
-kiryuu.id,komikdewasa.my.id,komikindo.co,komikindo.me,komiklokal.com,komiktap.in,mangadewasa.com,mangakita.net,manhwaindo.id,manhwalist.com,ngomik.net,sektekomik.com##.kln
+kiryuu.id,komikdewasa.my.id,komikindo.co,komikindo.me,komiklokal.com,komiktap.in,mangacanblog.com,mangadewasa.com,mangakita.net,manhwaindo.id,manhwalist.com,ngomik.net,sektekomik.com##.kln
 overlordfree.web.id##.kzl
 mangaku.my.id,manganime.in##[id*="ads"]
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
@@ -5052,11 +5071,13 @@ manhwaland.mom##+js(aopr, generateURL1)
 manhwaid.fun##+js(aopr, popup_custom_data)
 bacakomik.co,komik18.com,komikav.com,komikcast.me,komikcastid.com,komikindo.id,mangakita.net,mangaku.site,manhwaindo.id,masterkomik.com,ngomik.net,westmanga.info##+js(window.open-defuser)
 bacamanga.id,komikcastid.com,komikindo.id,komikstation.co,ngomik.net##+js(acis, JSON.parse, break;case $.)
+kiryuu.id##+js(acis, parseInt, break;case $.)
 komikindo.id,komikuindo.id,mangadewasa.com,mangaku.site##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 komikuindo.id##+js(acis, disableSelection, reEnable)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
-mangaku.my.id,mangaku.site##+js(aeld, contextmenu)
+bacakomikid.co,bacamanga.id,bacamanga.org,boosei.net,kiryuu.id,komikav.com,mangaku.my.id,mangaku.site,mangakyo.me,masterkomik.com,nekomik.com,rawkuma.com,sektekomik.com,softkomik.com,westmanga.info##+js(aeld, contextmenu)
 komiktap.in,komikuindo.id##+js(aopr, document.oncontextmenu)
+mangacanblog.com##+js(aopr, document.onkeydown)
 mangadewasa.com##+js(aopr, nocontextmenu)
 .gif|$image,domain=128.199.176.163|138.201.95.38|144.91.116.224|149.248.60.75|149.28.142.38|185.225.232.26|188.119.113.239|188.166.243.245|192.243.98.23|198.199.74.44|199.38.245.239|213.202.222.16|45.32.113.5|89.163.210.242|93.115.31.157|94.237.74.112|agen-dewasa.blogspot.com|artikeljandamuda.blogspot.com|beejav.cam|bokepxxi.biz|khalidcompany.com|linkbokep.bar|linkbokep.icu|linkbokep.pro|lonteku.bond|nekopoi.care|nontonlayarxxx.blogspot.com|putri77.org|rajacoli.click|streamingbokep80.blogspot.com|sukabokep.us|videowikwikk.blogspot.com
 /banner-$image,domain=94.237.74.112|bokep8.icu|pepek.bar
@@ -5197,8 +5218,8 @@ ceritaseq.com##.wpb_overlay
 /wp-content/plugins/uji-popup-pro/*$domain=198.54.121.217
 128.199.176.163,indoviral18.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 indoviral.vip##+js(acis, document.oncontextmenu)
-indoviral18.com##+js(aopr, disableSelection)
-128.199.176.163,indoviral18.com##+js(aopr, document.oncontextmenu)
+51.195.89.106,indoviral11.com,indoviral18.com##+js(aopr, disableSelection)
+128.199.176.163,51.195.89.106,indoviral11.com,indoviral18.com##+js(aopr, document.oncontextmenu)
 ||livechatinc.com^$image,domain=artikeljandamuda.blogspot.com|dalamhati.com
 46.166.167.16,93.115.24.210,semprot.com,semprotgo.com,semprotlah.com##+js(acis, String.fromCharCode, ahli)
 46.166.167.16,93.115.24.210,semprot.com,semprotgo.com,semprotlah.com##.js-post:has-text(Banned)
