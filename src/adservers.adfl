@@ -2,21 +2,22 @@
 !!
 !! --------------------------------------------------------
 !!
-! https://github.com/uBlockOrigin/uAssets/blob/dcbc568c07/filters/filters.txt#L20309
+! https://github.com/uBlockOrigin/uAssets/blob/dd9c617a16/filters/filters.txt#L20302
 /[0-9a-f]{32}\/invoke\.js/$3p,script
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$3p,script,xhr
-! https://github.com/uBlockOrigin/uAssets/blob/dcbc568c07/filters/filters.txt#L20312
+! https://github.com/uBlockOrigin/uAssets/blob/dd9c617a16/filters/filters.txt#L20304
 ! https://github.com/easylist/easylist/issues/6476
-/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})(?:\?_=\d+)?$/$3p,frame,match-case,popup,script,xhr
-/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})(?:\?_=\d+)?$/$3p,frame,match-case,popup,script,xhr
-! https://github.com/uBlockOrigin/uAssets/blob/dcbc568c07/filters/filters.txt#L20318
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$3p,frame,match-case,popup,script,xhr
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-5]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$3p,frame,match-case,popup,script,xhr
+! https://github.com/easylist/easylist/issues/6471
 ! https://github.com/easylist/easylist/pull/9330
+! https://github.com/uBlockOrigin/uAssets/blob/dd9c617a16/filters/filters.txt#L20311
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$3p,script
-! https://github.com/uBlockOrigin/uAssets/blob/dcbc568c07/filters/filters.txt#L3481
+! https://github.com/uBlockOrigin/uAssets/blob/dd9c617a16/filters/filters.txt#L3488
 /get/*?zoneid=$script
-! https://github.com/uBlockOrigin/uAssets/blob/dcbc568c07/filters/filters.txt#L11281
+! https://github.com/uBlockOrigin/uAssets/blob/dd9c617a16/filters/filters.txt#L15091
 /1clkn/*$script
-! https://github.com/uBlockOrigin/uAssets/blob/dcbc568c07/filters/filters.txt#L20345
+! https://github.com/uBlockOrigin/uAssets/blob/dd9c617a16/filters/filters.txt#L20334
 /pfe/current/*$3p,script
 !
 ||accesstrade.co.id^$3p
