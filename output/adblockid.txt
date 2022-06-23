@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.6.83
+! Version: 22.6.84
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 Jun 2022 05:04 UTC
+! Last modified: 23 Jun 2022 17:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2321,6 +2321,7 @@ _GIF1200x120-
 ||iframe.ly^$domain=tampilcantik.com
 ||odpldz.com^$script,domain=idxchannel.com
 ||anon.wapsite.info^$3p
+||beritabaru.news/sc/detect-click.js
 ||binpartner.com^$3p
 ||bitball.b-cdn.net/banner/$3p
 ||booking.com^$frame,domain=venuemagz.com
@@ -2431,7 +2432,6 @@ _promohariini.$image,domain=ruparupa.com
 ||ajnn.net/files/sewaan/$image
 ||akurasinews.com^*/iklan$image
 ||akurat.co/images/banner/
-||alumni-atwsolo.com/images/banner/
 ||ambae.co.id^*/iklan-$image
 ||analisadaily.com/imagesads/$image
 ||anjingkita.com/sponsor/$image
@@ -3238,6 +3238,7 @@ laborblog.my.id##.PojokKananBawah
 balipost.com##._align_center:has(.adsbygoogle)
 balipost.com##._ning_parallax_container
 wajahindonesia.co.id##.article > .text-center > img
+orami.co.id##.article-post section:has(> div > p:matches-css(text-align: center):has-text(/adv/i))
 kosngosan.com##.bellow-header-widget:has(.adsbygoogle)
 id.theasianparent.com##.bottom-sticky.only-mobile.layer-bsa-bn:style(min-height: 0 !important;)
 pojoksatu.id##.btn-sticky-bottom
@@ -3246,10 +3247,9 @@ suarajatimpost.com##.card:has-text(/adv/i)
 okezone.com##.center-paralax:has([id^="div-gpt-ad"])
 kontan.co.id##.center:has([id^="div-billboard" i])
 bacalagers.com##.code-block:has(.adsbyadop)
-berakal.com,bukugue.com,dinaspendapatan.com,downloadsoftwaregratisan.com,duwitmu.com,ecaraku.com,inwepo.co,juguran.com,localstartupfest.id,mogamugi.com,narmadi.com,onlinemetro.id,pemerintahkota.com,penablog.com,saintif.com,sulistio.xyz,thelastsurvivors.org,winpreso.com##.code-block:has(.adsbygoogle)
+berakal.com,bukugue.com,dinaspendapatan.com,downloadsoftwaregratisan.com,duwitmu.com,ecaraku.com,inwepo.co,juguran.com,localstartupfest.id,mogamugi.com,narmadi.com,onlinemetro.id,pemerintahkota.com,penablog.com,saintif.com,selerasa.com,sulistio.xyz,thelastsurvivors.org,winpreso.com##.code-block:has(.adsbygoogle)
 buatatm.com,myjourney.id,pakaiatm.com,prosesbayar.com##.code-block:matches-css(text-align: center):has-text(/adv/i)
 arenabola.id##.col-lg-3:has-text(/adv/i)
-orami.co.id##.content div:has-text(/adv/i)
 mediaindonesia.com##.content-block #paralax_div
 mediaindonesia.com##.content-block .paralax_div
 sabiru.com##.ct-div-block:matches-css(align-items: center):has(.adsbygoogle)
@@ -3292,6 +3292,7 @@ momsmoney.id##[id^="div-Middle-Momsmoney"]
 momsmoney.id##[id^="div-insidearticletop-Momsmoney"]
 pojoksatu.id##[id^="gpt-"]
 koranseruya.com##[id^=local-]:has-text(/adv/i)
+beritabaru.co##aside .widget:has(p > .adsbygoogle)
 itstime.id##aside p:has(> .adsbygoogle)
 oppotutorial.com,pertamax7.com##center:has(> .adsbygoogle)
 klubpria.com##center:has([id^="div-gpt-ad"])
@@ -3309,7 +3310,6 @@ pikiran-rakyat.com###cont-megabillboard
 mediaindonesia.com###content [class^="parallax_"]:has([id*="div-gpt-ad-"])
 mediaindonesia.com##.article #parallax_wrap
 kontan.co.id##.center:has(.heightads50)
-parenting.orami.co.id##.container:has-text(/adv/i)
 dream.co.id,kapanlagi.com##.dfp-bframe-cont:has([id*="div-gpt-ad-"])
 kompas.com##.kcm-track:matches-css(position: relative):has(.kcm-track-sticky:has([id*="div-gpt-ad-"]))
 sindonews.com##.parallax-non.t600:style(top: 0 !important;)
@@ -4717,7 +4717,6 @@ _topbandar_$image
 ##[href="https://bit.ly/3zX3euo"]
 ~54.254.2.67##[href$="/54.254.2.67"]
 ~54.254.2.67##[href*="/54.254.2.67/"]
-~103.5.47.212##a[href="https://103.5.47.212/"]
 download.id##.entry div[style="clear:both; margin-top:0em; margin-bottom:1em;"] > a[rel="nofollow"][target="_self"]
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
 kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
@@ -5001,7 +5000,7 @@ _usafelink.$3p,script
 /VoreCorporation/Customer-Host/*$3p,script
 /xmithzyl/safelink/*$3p,script
 $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net|googleapis.com,domain=nanimein.xyz|nonton08.com
-.gif$image,domain=104.161.33.116|139.99.33.193|144.126.148.112|144.91.105.32|144.91.91.20|148.163.72.88|148.163.72.92|149.3.170.35|149.56.24.226|161.97.125.184|161.97.86.165|173.212.200.71|173.212.216.207|173.212.244.21|174.138.17.52|176.119.30.88|185.194.217.81|185.218.126.74|185.224.83.54|185.53.88.162|193.164.131.42|193.178.172.113|194.135.33.63|194.163.139.52|194.163.150.84|194.29.53.46|198.96.92.123|199.231.164.17|199.231.164.29|207.244.250.114|213.136.91.132|216.250.252.24|23.29.126.0|23.92.69.100|23.92.79.80|37.49.229.132|62.141.43.154|62.182.82.224|65.108.132.145|80.209.252.67|91.209.70.70|animebatchs.net|anoboy.online|conan.id|indofilm.wtf|layarfilm21.website|layarlebar24.digital|lengket.com|lk21.art|moflix.my.id|nobar24.bond|oploverz.asia|oploverz.cyou|oploverz.web.id
+.gif$image,domain=104.161.33.116|139.99.33.193|144.126.148.112|144.91.105.32|144.91.91.20|148.163.72.88|148.163.72.92|149.3.170.35|149.56.24.226|161.97.125.184|161.97.86.165|173.212.200.71|173.212.216.207|173.212.244.21|176.119.30.88|185.194.217.81|185.218.126.74|185.224.83.54|185.53.88.162|193.164.131.42|193.178.172.113|194.135.33.63|194.163.139.52|194.163.150.84|194.29.53.46|198.96.92.123|199.231.164.17|199.231.164.29|207.244.250.114|213.136.91.132|216.250.252.24|23.29.126.0|23.92.69.100|23.92.79.80|37.49.229.132|62.141.43.154|62.182.82.224|65.108.132.145|80.209.252.67|91.209.70.70|animebatchs.net|anoboy.online|conan.id|indofilm.wtf|layarfilm21.website|layarlebar24.digital|lengket.com|lk21.art|moflix.my.id|nobar24.bond|oploverz.asia|oploverz.cyou|oploverz.web.id
 /banner-$image,domain=maxnime.com
 ||imgbox.com/*.gif$image,domain=195.2.81.61
 ||jwplayer21.com/images/*.gif$image
@@ -5017,7 +5016,7 @@ $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net|googleapis.com,do
 103.194.171.75,idtube.me##.overlay
 103.194.171.75##.top-banner
 107.152.46.155,107.152.46.48,idxxi.cyou###adf_tera
-112.140.185.111,nuflix.space###btm_banner
+nuflix.space###btm_banner
 148.163.72.92,167.99.31.48,185.231.223.254,51.79.146.226,65.108.132.145,anichin.my.id,animebloom.xyz,animelinked.web.id,animexin.xyz,anixlife.xyz,beenime.com,dramaindo.cn,gatsunime.in,isekaisubs.web.id,jouganime.id,lendrive.web.id,oploverz.asia###close-teaser
 akashinime.com###close-teaser-bottom
 akashinime.com###close-teaser-top
@@ -5038,7 +5037,7 @@ dramafilm21.com###topbar
 animekompi.web.id,mmsubs.com##.addads
 95.216.153.180##.advertising-box
 139.99.120.222##.ban_empat
-178.128.82.236,193.164.131.42##.banner
+193.164.131.42##.banner
 139.99.33.192##.banner-float-bottom
 188.166.39.172##.bannerdua
 93.104.211.22##.bannerplayer:remove()
@@ -5065,7 +5064,7 @@ anoboy.online##[id$="_bnr"]
 185.217.95.238##a[href*="_medium=banners"] video
 176.119.30.88##a[href^="http://bit.ly/"] > img
 otakudere.net##a[rel^="nofollow"] > img
-104.161.21.25,104.161.33.116,104.161.33.126,109.234.34.246,112mov.xyz,139.99.33.192,139.99.33.193,144.126.148.112,144.91.91.20,148.163.67.238,148.163.72.79,148.163.72.92,149.3.170.35,149.56.198.206,149.56.24.226,154.53.35.209,154.53.44.57,161.97.125.184,161.97.86.165,173.212.200.71,173.212.216.207,174.138.17.52,185.224.83.54,185.231.223.76,185.53.88.162,193.178.172.113,194.135.33.63,194.163.139.52,194.163.150.84,194.29.53.46,198.96.92.123,199.231.164.17,199.231.164.29,207.244.250.114,213.136.91.132,23.29.126.0,37.49.229.132,38.242.237.91,45.148.122.192,54.39.39.151,62.141.43.154,62.171.145.31,62.182.82.224,65.108.132.145,75.119.147.15,80.209.252.67,91.209.70.70,beenime.com,bioskop-nonton.art,bioskop47.net,drachindo.us,ganooll.xyz,indoxx1.space,inidramaku.us,kebioskop21.xyz,koenime.com,layardrama21.asia,layarfilm21.website,layarlebar24.digital,lengket.com,nobar24.bond,oploverz.asia,otakudere.net,otakudesu.tube,topfilm21.com##a[target*="blank"] > img
+104.161.21.25,104.161.33.116,104.161.33.126,109.234.34.246,112mov.xyz,139.99.33.192,139.99.33.193,144.126.148.112,144.91.91.20,148.163.67.238,148.163.72.79,148.163.72.92,149.3.170.35,149.56.198.206,149.56.24.226,154.53.35.209,154.53.44.57,161.97.125.184,161.97.86.165,173.212.200.71,173.212.216.207,185.224.83.54,185.231.223.76,185.53.88.162,193.178.172.113,194.135.33.63,194.163.139.52,194.163.150.84,194.29.53.46,198.96.92.123,199.231.164.17,199.231.164.29,207.244.250.114,213.136.91.132,23.29.126.0,37.49.229.132,38.242.237.91,45.148.122.192,54.39.39.151,62.141.43.154,62.171.145.31,62.182.82.224,65.108.132.145,75.119.147.15,80.209.252.67,91.209.70.70,beenime.com,bioskop-nonton.art,bioskop47.net,drachindo.us,ganooll.xyz,indoxx1.space,inidramaku.us,kebioskop21.xyz,koenime.com,layardrama21.asia,layarfilm21.website,layarlebar24.digital,lengket.com,nobar24.bond,oploverz.asia,otakudere.net,otakudesu.tube,topfilm21.com##a[target*="blank"] > img
 185.224.83.128##a[target*="blank"] > video
 139.99.120.222##a[target="_blank"][rel*="nofollow"] > video
 62.182.83.93##a[target="_blank"][rel^="nofollow"] > amp-img
@@ -5130,7 +5129,7 @@ topfilm21.com###pop-tengah
 62.182.83.93###popup_box
 kordramass.com##.blocker
 188.166.39.172##.popup
-103.194.171.75,103.9.100.20,111.90.150.31,159.65.7.78,174.138.17.52,178.128.82.236,185.231.223.71,193.164.131.42,193.178.172.113,195.2.81.61,dutafilm.observer,hakamovie.vip,moviesrc.link##.swal-overlay
+103.194.171.75,103.9.100.20,111.90.150.31,159.65.7.78,185.231.223.71,193.164.131.42,193.178.172.113,195.2.81.61,dutafilm.observer,hakamovie.vip,moviesrc.link##.swal-overlay
 103.194.171.205,149.3.170.35,185.224.83.128,194.135.33.63,45.141.56.23##[id^="netkevin-"]
 185.224.129.209##iframe[style^="width: 100% !important; height: 190px !important;"]
 /wp-content/plugins/cm-pop-up-banners/*$domain=161.97.86.165|23.92.79.80|drachindo.us|drakorindo.quest|oujanime.me
@@ -5148,7 +5147,7 @@ nekopoi.web.id##+js(aopr, showurl)
 kuramanime.com##+js(aopr, sora_base_url)
 niihen.com##+js(aopr, auto_safelink)
 niihen.com##.entry-content div:matches-css(text-align: center) > a:style(display: inline !important;)
-167.88.14.149,aibou.xyz,nekopoi.web.id##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
+167.88.14.149,nekopoi.web.id##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 144.126.136.208,144.91.105.32,wibudesu.co##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 144.91.105.32##+js(acis, disableEnterKey)
 wibudesu.co##+js(acis, disableSelection, reEnable)
@@ -5334,9 +5333,7 @@ ceritaseq.com###wpb_overlay
 199.38.245.239##.elementor-popup-modal
 videobokep17.top##.gmr-bannerpopup
 66.29.129.161##.jquery-modal
-warungcoli.blogspot.com##.pop-overlay
 66.42.54.200,96.43.139.235,96.43.139.236,96.43.139.237##.popUpBannerBox
-warungcoli.blogspot.com,warungcoli2.blogspot.com##.popbox
 bokepbarat.net##.simple_overlay
 ceritaseq.com##.wpb-outer-wrap
 111.90.150.188,128.199.102.136,139.180.219.176,149.28.156.65,188.166.243.245,193.38.54.77,207.148.70.66,45.76.156.98,45.77.246.31,45.77.37.28,kisahmalam.wtf,vetv.info##[id^="netkevin-"]
@@ -5405,7 +5402,7 @@ cararegistrasi.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com##+js(na
 urbharat.xyz##+js(nano-sib, timePassed, 1300)
 adikinfo.my.id,inafut.com##+js(nano-stb)
 ceesty.com##+js(set, app.options.timerPageVisibilityChecking, false)
-123link.biz,2ota.com,7r6.com,abdeo8.com,abre.click,adbl.live,adcorto.me,adcorto.xyz,adcripto.com,adfloz.co,adinsurance.xyz,adlinkfly.wartakilat.com,adly.fun,adnit.xyz,adomainscan.com,adpop.me,adsafelink.com,adsh.cc,adshort.*,adslink.programasfulltaf16.com,adslink.pw,adslinkfly.online,adsrt.click,adsrt.live,adsrt.net,adsrt.org,adsy.pw,adurly.cc,adwork.us,afly.pro,afly.us,aii.sh,akashort.com,allcryptoz.net,androidnougatapk.com,apkshrt.com,apksvip.com,arab-chat.club,articlix.com,artipedia.id,arurio.club,ashort1a.xyz,asiashort.link,asupload.com,automotur.club,aylink.info,baominh.tech,bblink.com,bdnewsx.com,beautyram.info,beingtek.com,bestcash2020.com,bestearnonline.com,bevru.club,bigb0ss.net,birdurls.com,biroads.com,bit-url.com,bitcoinly.in,bitconews.net,bitfly.io,bitlinks.pw,bitmos.co.in,bloggingguidance.com,bolssc.com,btcads24.com,btcdot.xyz,btcwalk.com,c-ut.com,cashearn.cc,cashurl.in,cekip.xyz,charexempire.com,cheappath.com,claimcrypto.cc,claimfreebits.com,clicksbee.com,clickscoin.com,clikern.com,clk.asia,clk.ink,coin.mg,coinadfly.com,coinlyhub.com,coinsparty.mcrypto.club,cookdov.com,coredp.com,cpm10.org,crazyblog.in,crt.im,cryptoads.space,cryptoon.xyz,csd.xmod.in,cslink.in,cut-fly.com,cut-y.net,cut.my.id,cut4fun.com,cutdl.xyz,cutlink.link,cutp.in,cuts-url.com,cuturl.in,dash-free.com,defaultfreeshort.in,dl.tech-story.net,doctor-groups.com,dogecoin.click,download.freestudyweb.com,download.sharenulled.net,droplink.co,du-link.in,dutchycorp.ovh,dutchycorp.space,dz-linkk.com,dz4win.com,earnfasts.com,earnforclick.online,earnguap.com,earnme.club,earnwithshortlink.com,easysky.in,eio.io,enagato.com,encurta.eu,enrt.eu,eririo.club,exe.app,exee.io,exey.*,express-cut.ovh,exy.ai,fameen.xyz,fc.lc,fcc.lc,fcdot.lc,fclcc.com,filezipa.com,filmyzilla-in.xyz,fir3.net,fire-link.net,foxseotools.com,freshi.site,fwarycash.moviestar.fun,fx4vip.com,gainbtc.click,galaxy-link.space,gameen.xyz,gamesrs.com,genpassword.top,get4link.xyz,getlink.tienichmaytinh.net,gibit.xyz,gir.ist,giscr.ac.th,go.gets4link.com,go.netfile.cc,go.zolomix.in,go2.surf,gonety.com,gplinks.co,gtlink.co,haonguyen.top,hoastie.com,holaurl.com,iir.ai,ilinks.in,illink.net,imagenesderopaparaperros.com,insurance-space.xyz,insuranceblog.xyz,insurglobal.xyz,internewstv.com,intothelink.com,ivn3.com,jameeltips.us,joska.xyz,jp88.xyz,kadal.club,kangapip.com,katflys.com,kiiw.icu,kingurls.com,kolotoken.site,kutt.io,link-yz.com,link.ltc24.com,link.tokenoto.com,link.turkdown.com,link1s.com,link1s.net,linkad.in,linkadshield.xyz,linkbr.xyz,linkebr.com,linkerhub.tk,linkfly.io,linkjust.com,linkres.in,linkrex.net,links.spidermods.in,linksfire.co,linkshorten.xyz,linkshortify.site,linkshorts.*,linkshorts.me,linkshrnk.com,linksly.co,linkszia.co,linkviet.xyz,lite-link.com,lite-link.xyz,liveshootv.com,loptelink.vip,luangusaha.com,lucidcam.com,manikusa.com,mcmcryptos.xyz,mealip.com,mediumarticles.com,metroupdate.biz,meulynk.com,mfk-shorter.com,miklpro.com,minilinks.in,mitly.us,miuiku.com,mixfaucet.com,modapk.link,mondainai.moe,mozlink.net,mshort.top,musicc.xyz,myad.biz,mynewshub.in,myshrinker.com,nerdy.vn,news.techrfour.com,newsalret.com,newshour.pw,newstomat.com,nini08.com,oceantech.xyz,oncehelp.com,onlinecorp.me,onroid.com,ouofly.com,owllink.net,p4link.com,paid4.link,paidthe.site,paidtomoney.com,pandaznetwork.com,payskip.org,pcprogramasymas.com,pewgame.com,pingit.link,pix4link.com,pkr.pw,pngit.live,popimed.com,powerclicks.xyz,pozvi.icu,profitlink.info,projecto2.xyz,proshort.gq,pslfive.com,ptc.wtf,pureshort.link,rajsayt.xyz,rancah.com,real-sky.com,recipestutorials.com,rocklink.in,rozfly.com,rubtech.xyz,sakastau.com,samaa-pro.com,samapro.me,sanos.xyz,sanoybonito.club,saungfirmware.id,savelink.site,seg-ashort1a-ma.tk,sekilastekno.com,semawur.com,seulink.online,short-cash2.xyz,short.food-royal.com,short2.cash,short2fly.xyz,short88.com,shortbled.com,shorte.anxcinema.com,shortenbuddy.com,shortenmm.cf,shorter.fun,shorterall.com,shorthero.site,shorthitz.com,shortie.link,shortlink.prz.pw,shorttey.link,shorttey.org,shortx.net,shortz.one,shortzzy.in,shotly.io,shrink.icu,shrinkbtc.cc,shrinke.me,shrinkme.in,shrinkme.io,shrinkurl.org,shrinkzzy.link,shrlink.top,shrtvip.com,shrx.in,sk-ip.tech,skincarie.com,skiped.me,slink.bid,smoner.com,softairbay.com,sohexo.org,srek.net,srt.leechpremium.link,srts.me,stfly.io,stfly.me,swzz.xyz,tawiia.com,techgeek.digital,techupme.com,tecnologiapp.site,tei.ai,theblissempire.com,theconomy.me,tii.ai,tlin.me,tmearn.*,tmearn.com,todaynewspk.win,toptap.website,toroox.com,trinddz.com,try2link.com,try2link.net,tui.click,ultraten.net,upfiles.com,upfiles.io,uplinks.in,upshrink.com,url4cut.xyz,usanewstoday.club,usdshort.com,vhorizads.com,viraloc.com,vrlinks.xyz,vshort.link,wealthystyle.online,webshort.in,win10.vn,womenhaircolors.review,wplink.*,xfiles.io,yameen.xyz,yxoshort.com,za.uy,zipurls.com,zirof.com,zlink.tk,zshort.cc,zshort.io##+js(set, blurred, false)
+123link.biz,2ota.com,7r6.com,abdeo8.com,abre.click,adcorto.me,adcorto.xyz,adcripto.com,adfloz.co,adinsurance.xyz,adlinkfly.wartakilat.com,adly.fun,adnit.xyz,adomainscan.com,adpop.me,adsafelink.com,adsh.cc,adshort.*,adslink.programasfulltaf16.com,adslink.pw,adslinkfly.online,adsrt.click,adsrt.live,adsrt.net,adsrt.org,adsy.pw,adurly.cc,adwork.us,afly.pro,afly.us,aii.sh,akashort.com,allcryptoz.net,androidnougatapk.com,apkshrt.com,apksvip.com,arab-chat.club,articlix.com,artipedia.id,arurio.club,ashort1a.xyz,asiashort.link,asupload.com,automotur.club,aylink.info,baominh.tech,bblink.com,bdnewsx.com,beautyram.info,beingtek.com,bestcash2020.com,bestearnonline.com,bevru.club,bigb0ss.net,birdurls.com,biroads.com,bit-url.com,bitcoinly.in,bitconews.net,bitfly.io,bitlinks.pw,bitmos.co.in,bloggingguidance.com,bolssc.com,btcads24.com,btcdot.xyz,btcwalk.com,c-ut.com,cashearn.cc,cashurl.in,cekip.xyz,charexempire.com,cheappath.com,claimcrypto.cc,claimfreebits.com,clicksbee.com,clickscoin.com,clikern.com,clk.asia,clk.ink,coin.mg,coinadfly.com,coinlyhub.com,coinsparty.mcrypto.club,cookdov.com,coredp.com,cpm10.org,crazyblog.in,crt.im,cryptoads.space,cryptoon.xyz,csd.xmod.in,cslink.in,cut-fly.com,cut-y.net,cut.my.id,cut4fun.com,cutdl.xyz,cutlink.link,cutp.in,cuts-url.com,cuturl.in,dash-free.com,defaultfreeshort.in,dl.tech-story.net,doctor-groups.com,dogecoin.click,download.freestudyweb.com,download.sharenulled.net,droplink.co,du-link.in,dutchycorp.ovh,dutchycorp.space,dz-linkk.com,dz4win.com,earnfasts.com,earnforclick.online,earnguap.com,earnme.club,earnwithshortlink.com,easysky.in,eio.io,enagato.com,encurta.eu,enrt.eu,eririo.club,exe.app,exee.io,exey.*,express-cut.ovh,exy.ai,fameen.xyz,fc.lc,fcc.lc,fcdot.lc,fclcc.com,filezipa.com,filmyzilla-in.xyz,fir3.net,fire-link.net,foxseotools.com,freshi.site,fwarycash.moviestar.fun,fx4vip.com,gainbtc.click,galaxy-link.space,gameen.xyz,gamesrs.com,genpassword.top,get4link.xyz,getlink.tienichmaytinh.net,gibit.xyz,gir.ist,giscr.ac.th,go.gets4link.com,go.netfile.cc,go.zolomix.in,go2.surf,gonety.com,gplinks.co,gtlink.co,haonguyen.top,hoastie.com,holaurl.com,iir.ai,ilinks.in,illink.net,imagenesderopaparaperros.com,insurance-space.xyz,insuranceblog.xyz,insurglobal.xyz,internewstv.com,intothelink.com,ivn3.com,jameeltips.us,joska.xyz,jp88.xyz,kadal.club,kangapip.com,katflys.com,kiiw.icu,kingurls.com,kolotoken.site,kutt.io,link-yz.com,link.ltc24.com,link.tokenoto.com,link.turkdown.com,link1s.com,link1s.net,linkad.in,linkadshield.xyz,linkbr.xyz,linkebr.com,linkerhub.tk,linkfly.io,linkjust.com,linkres.in,linkrex.net,links.spidermods.in,linksfire.co,linkshorten.xyz,linkshortify.site,linkshorts.*,linkshorts.me,linkshrnk.com,linksly.co,linkszia.co,linkviet.xyz,lite-link.com,lite-link.xyz,liveshootv.com,loptelink.vip,luangusaha.com,lucidcam.com,manikusa.com,mcmcryptos.xyz,mealip.com,mediumarticles.com,metroupdate.biz,meulynk.com,mfk-shorter.com,miklpro.com,minilinks.in,mitly.us,miuiku.com,mixfaucet.com,modapk.link,mondainai.moe,mozlink.net,mshort.top,musicc.xyz,myad.biz,mynewshub.in,myshrinker.com,nerdy.vn,news.techrfour.com,newsalret.com,newshour.pw,newstomat.com,oceantech.xyz,oncehelp.com,onlinecorp.me,onroid.com,ouofly.com,owllink.net,p4link.com,paid4.link,paidthe.site,paidtomoney.com,pandaznetwork.com,payskip.org,pcprogramasymas.com,pewgame.com,pingit.link,pix4link.com,pkr.pw,pngit.live,popimed.com,powerclicks.xyz,pozvi.icu,profitlink.info,projecto2.xyz,proshort.gq,pslfive.com,ptc.wtf,pureshort.link,rajsayt.xyz,rancah.com,real-sky.com,recipestutorials.com,rocklink.in,rozfly.com,rubtech.xyz,sakastau.com,samaa-pro.com,samapro.me,sanos.xyz,sanoybonito.club,saungfirmware.id,savelink.site,sekilastekno.com,semawur.com,seulink.online,short-cash2.xyz,short.food-royal.com,short2.cash,short2fly.xyz,short88.com,shortbled.com,shorte.anxcinema.com,shortenbuddy.com,shortenmm.cf,shorter.fun,shorterall.com,shorthero.site,shorthitz.com,shortie.link,shortlink.prz.pw,shorttey.link,shorttey.org,shortx.net,shortz.one,shortzzy.in,shotly.io,shrink.icu,shrinkbtc.cc,shrinke.me,shrinkme.in,shrinkme.io,shrinkurl.org,shrinkzzy.link,shrlink.top,shrtvip.com,shrx.in,skincarie.com,skiped.me,slink.bid,smoner.com,softairbay.com,sohexo.org,srek.net,srt.leechpremium.link,srts.me,stfly.io,stfly.me,swzz.xyz,tawiia.com,techgeek.digital,techupme.com,tecnologiapp.site,tei.ai,theblissempire.com,theconomy.me,tii.ai,tlin.me,tmearn.*,tmearn.com,todaynewspk.win,toptap.website,toroox.com,trinddz.com,try2link.com,try2link.net,tui.click,ultraten.net,upfiles.com,upfiles.io,uplinks.in,upshrink.com,url4cut.xyz,usanewstoday.club,usdshort.com,vhorizads.com,viraloc.com,vrlinks.xyz,vshort.link,wealthystyle.online,webshort.in,win10.vn,womenhaircolors.review,wplink.*,xfiles.io,yameen.xyz,yxoshort.com,za.uy,zipurls.com,zirof.com,zlink.tk,zshort.cc,zshort.io##+js(set, blurred, false)
 shrinke.me###imgAddDirectLink
 fotodovana.com,get4link.xyz,luangusaha.com,oceantech.xyz,p4link.com##.blog-item
 uiz.io##.btn-front:has-text(Download)
