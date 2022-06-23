@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.6.88
+! Version: 22.6.89
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 23 Jun 2022 19:11 UTC
+! Last modified: 23 Jun 2022 19:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2918,6 +2918,7 @@ suara.com##.banner-ads--parallax
 industry.co.id##.banner-box
 kompasiana.com##.banner-center
 lampost.co,riaukarya.com##.banner-content
+tempo.co##.banner-fix-bottom
 goodnewsfromindonesia.id##.banner-img
 merdeka.com##.banner-lb
 kabarlahat.com##.banner-promotions-wrapper
@@ -2932,6 +2933,7 @@ insertlive.com##.banner__top
 medcom.id##.banner_content
 detik.com##.banner_reg
 harianbhirawa.co.id##.bannerbefore_titlesingle
+tempo.co##.bannerhead
 jawapos.com##.bannerhover
 kabarnusa.com##.bannerx
 cosmogirl.co.id##.bnr
@@ -3218,6 +3220,7 @@ bikersindonesia.net##.widget:not(:has(a[href*="bikersindonesia.net"])) > a > img
 trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
 bangkitmedia.com##aside p:matches-css(text-align: center):has(> a > img)
 gardapapua.com##aside:has-text(/adv/i)
+tempo.co##+js(rc, pad-apps, body)
 sindonews.com##+js(rc, t480, .parallax-non)
 today.line.me##.midAdModule-root:has-text(/iklan/i)
 viva.co.id###_popIn_recommend
@@ -3266,6 +3269,7 @@ maxmanroe.com##.footer_sticky:has([id^="div-gpt-ad"])
 lokerjakarta.id##.footer_sticky_desktop
 detik.com##.mr2:matches-css(height: 350px):has([id^="div-gpt-ad"])
 disway.id##.nkt__stick
+tempo.co##.parallax-box:has([id^="div-gpt-"])
 suara.com##.placeholder_center
 suara.com##.placeholder_expose
 suara.com##.placeholder_leaderboard
