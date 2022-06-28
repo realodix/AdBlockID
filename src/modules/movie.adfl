@@ -185,6 +185,7 @@ kordramass.com##.blocker
 ! Auto Safelink
 drakorku.co##+js(acis, auto_safelink)
 animebatch.web.id,wibudesu.co##+js(aopr, app_url)
+mikanime.com##+js(aopr, encodeURIComponent)
 animebatch.id,awsubs.xyz,keinime.web.id,maxnime.com,meownime.moe,nimegami.com,nimegami.id,yukinime.com##+js(aopr, go_url)
 batchkun.com##+js(aopr, protected_links)
 nekopoi.web.id##+js(aopr, showurl)
@@ -196,9 +197,9 @@ niihen.com##.entry-content div:matches-css(text-align: center) > a:style(display
 ! Unblock context menu and other mouse limitations
 167.88.14.149,nekopoi.web.id##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 !
-144.126.136.208,144.91.105.32,wibudesu.co##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+144.126.136.208,144.91.105.32,mikanime.com,wibudesu.co##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 144.91.105.32##+js(acis, disableEnterKey)
-wibudesu.co##+js(acis, disableSelection, reEnable)
+mikanime.com,wibudesu.co##+js(acis, disableSelection, reEnable)
 144.91.105.32,otakudesu.tube##+js(acis, document.oncontextmenu)
 akashinime.com##+js(acis, nocontextmenu)
 194.163.142.218##+js(aeld, /^(?:contextmenu|selectstart)$/)
@@ -209,6 +210,7 @@ kusonime.com##+js(aeld, keydown)
 nekopoi.web.id##+js(aopr, document.oncopy)
 144.126.136.208##+js(aopr, document.onkeydown)
 serguruku.com##+js(aopr, document.onselectstart)
+mikanime.com##+js(aopr, nocontext)
 188.119.113.246##+js(aopw, document.onselectstart)
 wibudesu.co##+js(aopw, nocontext)
 104.219.250.236,144.91.105.32##+js(ra, oncontextmenu|onselectstart, body)

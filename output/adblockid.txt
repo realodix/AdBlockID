@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.6.97
+! Version: 22.6.98
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Jun 2022 16:17 UTC
+! Last modified: 28 Jun 2022 16:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -5149,6 +5149,7 @@ kordramass.com##.blocker
 167.99.31.48##img[width="300"][height="84"]
 drakorku.co##+js(acis, auto_safelink)
 animebatch.web.id,wibudesu.co##+js(aopr, app_url)
+mikanime.com##+js(aopr, encodeURIComponent)
 animebatch.id,awsubs.xyz,keinime.web.id,maxnime.com,meownime.moe,nimegami.com,nimegami.id,yukinime.com##+js(aopr, go_url)
 batchkun.com##+js(aopr, protected_links)
 nekopoi.web.id##+js(aopr, showurl)
@@ -5156,9 +5157,9 @@ kuramanime.com##+js(aopr, sora_base_url)
 niihen.com##+js(aopr, auto_safelink)
 niihen.com##.entry-content div:matches-css(text-align: center) > a:style(display: inline !important;)
 167.88.14.149,nekopoi.web.id##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
-144.126.136.208,144.91.105.32,wibudesu.co##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+144.126.136.208,144.91.105.32,mikanime.com,wibudesu.co##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 144.91.105.32##+js(acis, disableEnterKey)
-wibudesu.co##+js(acis, disableSelection, reEnable)
+mikanime.com,wibudesu.co##+js(acis, disableSelection, reEnable)
 144.91.105.32,otakudesu.tube##+js(acis, document.oncontextmenu)
 akashinime.com##+js(acis, nocontextmenu)
 194.163.142.218##+js(aeld, /^(?:contextmenu|selectstart)$/)
@@ -5169,6 +5170,7 @@ kusonime.com##+js(aeld, keydown)
 nekopoi.web.id##+js(aopr, document.oncopy)
 144.126.136.208##+js(aopr, document.onkeydown)
 serguruku.com##+js(aopr, document.onselectstart)
+mikanime.com##+js(aopr, nocontext)
 188.119.113.246##+js(aopw, document.onselectstart)
 wibudesu.co##+js(aopw, nocontext)
 104.219.250.236,144.91.105.32##+js(ra, oncontextmenu|onselectstart, body)
