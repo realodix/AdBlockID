@@ -85,7 +85,7 @@ Thanks goes to these wonderful people.
 | # | User | Contribs | Picture |
 | - | ---- | -------- | ------- |
 | 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [700+ issues][createdByRecehanSlayer] | <img width="30" height="30" src="https://avatars0.githubusercontent.com/u/9379770?s=30&v=4"> |
-| 2 | [3xploiton3](https://github.com/3xploiton3) | [50+ issues][createdBy3xploiton3] | <img width="30" height="30" src="https://avatars3.githubusercontent.com/u/19517680?s=30&v=4"> |
+| 2 | [3xploiton3](https://github.com/3xploiton3) | [100+ issues][createdBy3xploiton3] | <img width="30" height="30" src="https://avatars3.githubusercontent.com/u/19517680?s=30&v=4"> |
 
 [createdByRecehanSlayer]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer
 [createdBy3xploiton3]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3
