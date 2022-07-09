@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.7.118
+! Version: 22.7.119
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Jul 2022 19:06 UTC
+! Last modified: 09 Jul 2022 07:34 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1314,6 +1314,7 @@ _GIF1200x120-
 ###le_header_ads
 ###left_ads_float_phonedevelop
 ###lmd-iklan
+###me-div-gpt-ad-stickyad
 ###myadsmodal
 ###obi_random_banners_posts
 ###popup_bawah
@@ -1394,6 +1395,7 @@ _GIF1200x120-
 ##.ads-middle-list-news
 ##.ads-mr
 ##.ads-nontonfilm
+##.ads-paralax
 ##.ads-pop
 ##.ads-position-here
 ##.ads-sidebar-1
@@ -1845,6 +1847,7 @@ _GIF1200x120-
 ##.videoOverAdBig
 ##.vlog-banner
 ##.vlog-bnr
+##.warp-ads-paralax
 ##.widget-ads-top
 ##.widget-ads3
 ##.widget-ads4
@@ -3258,7 +3261,7 @@ trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
 bangkitmedia.com##aside p:matches-css(text-align: center):has(> a > img)
 gardapapua.com##aside:has-text(/adv/i)
 tempo.co##+js(rc, pad-apps, body)
-sindonews.com##+js(rc, t480, .parallax-non)
+sindonews.com##+js(rc, t480, .content-paralax)
 today.line.me##.midAdModule-root:has-text(/iklan/i)
 viva.co.id###_popIn_recommend
 viva.co.id###_popIn_recommend_middle
