@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.7.121
+! Version: 22.7.122
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Jul 2022 07:37 UTC
+! Last modified: 09 Jul 2022 07:38 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1990,6 +1990,7 @@ _GIF1200x120-
 ##[id^="div-adx-ad-"]
 ##[id^="rn_ad_native_"]
 ##[id^="utp_ads_"]
+##a[title="iklan" i]
 ##banner-besar--top
 ##div[id^="dfp-gpt-ad"]
 ##gmn-companion-ad-renderer
@@ -2892,7 +2893,7 @@ sumselnian.com##.add-inner
 dialeksis.com##.add-space
 nonton.com##.adds
 matamata.com,suara.com##.adds-top
-ayocirebon.com,duwitmu.com,gridoto.com,harianjogja.com,koran-jakarta.com,minangsatu.com,motorplus-online.com,pikiran-rakyat.com,rmol.id,tempo.co##.ads
+ayocirebon.com,duwitmu.com,gridoto.com,harianjogja.com,koran-jakarta.com,minangsatu.com,motorplus-online.com,pikiran-rakyat.com,rmol.id,tempo.co,wowbabel.com##.ads
 harpersbazaar.co.id,motherandbeyond.id##.ads-belt
 kompas.tv##.ads-big
 kontan.co.id##.ads-billboard
@@ -3402,6 +3403,7 @@ dutaislam.com##.outer-wrapper:style(margin-top:60px!important;)
 gridoto.com##.read_content:style(padding-top: 0!important;)
 uzone.id##.section-top:style(margin: 100px auto 0 auto!important;)
 m.akurat.co##body:style(padding-top: 0!important;)
+wowbabel.com##script + .container:style(padding-top: 160px!important;)
 #@#.adsBox
 dropshipin.id##+js(acis, $, ads)
 teksnologi.com##+js(acis, String.fromCharCode, decodeURIComponent)
