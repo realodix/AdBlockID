@@ -403,14 +403,19 @@ def _ElementTidy(domains, separator, selector):
 
         # added check for case when tree selector were used in :-abp-has() and similar
         # constructions at first position. Basically for cases like PARENT:-abp-has(> CHILD)
-        replaceBy = ("{sp}{g2} ".format(
-            sp = ("" if tree.group(1) == "(" else " "), g2 = tree.group(2)))
+        replaceBy = (
+            "{sp}{g2} ".format(
+                sp = ("" if tree.group(1) == "(" else " "),
+                g2 = tree.group(2)
+            )
+        )
         if replaceBy == "   ":
             replaceBy = " "
         selector = selector.replace(
             tree.group(0),
             "{g1}{replaceBy}{g3}".format(
-                g1 = tree.group(1), replaceBy = replaceBy, g3 = tree.group(3)),
+                g1 = tree.group(1), replaceBy = replaceBy, g3 = tree.group(3)
+            ),
             1
         )
 
