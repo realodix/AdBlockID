@@ -19,7 +19,7 @@ Lihat [tabel perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlo
 <br>
 
 ## Manfaat Yang Anda Dapatkan
-1. **Lebih dari 2.000 situs web telah tercover**.
+1. **Lebih dari 3.000 situs web telah tercover**.
 2. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
 3. **Bypass AdBlock Detection**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
 4. **Bypass Mouse/Key Limitations**: Melumpuhkan beberapa batasan di halaman web, seperti tidak bisa klik kanan, tidak bisa copy artikel, dll.
