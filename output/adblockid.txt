@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.8.19
+! Version: 22.8.20
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Aug 2022 10:10 UTC
+! Last modified: 07 Aug 2022 06:58 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1798,6 +1798,7 @@ _GIF1200x120-
 ##.np-header-ads-area
 ##.obi_random_banners_posts
 ##.panel_ads
+##.para_ads
 ##.penci-ad_box
 ##.player-ads-left
 ##.player-ads-left-2
@@ -3325,6 +3326,7 @@ klubpria.com##center:has([id^="div-gpt-ad"])
 sukabumiupdate.com##center:has-text(/adv/i)
 kompas.id##div.justify-center:has([src^="https://ads.kompas.id"])
 cerdika.com,desdelinux.net,jurnalisindonesia.id,mojok.co,saintif.com,sinergianews.com##div:has(> .adsbygoogle)
+haibunda.com##div:has(> .static_banner1)
 pricebook.co.id##div:has(> [id*="div-gpt-ad-"])
 cnnindonesia.com##div:has(> [id^="adv-"])
 marketeers.com##div:has(> iframe[src^="https://ads.marketeers.com"])
@@ -3371,6 +3373,7 @@ kabarfajar.com##.footer_stickyexp
 cnbcindonesia.com##.megabillboard
 disway.id,jurnalisindonesia.id##.nkt__stick
 bisikan.com##.page-masthead
+haibunda.com##.paradetail
 suara.com##.placeholder_center
 suara.com##.placeholder_expose
 suara.com##.placeholder_leaderboard
