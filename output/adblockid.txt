@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.8.22
+! Version: 22.8.23
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Aug 2022 19:06 UTC
+! Last modified: 08 Aug 2022 19:09 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4084,6 +4084,7 @@ kiryuu.id,komikdewasa.my.id,komikindo.co,komikindo.me,komiklokal.com,komiktap.in
 overlordfree.web.id##.kzl
 mangaku.my.id,manganime.in##[id*="ads"]
 gudangkomik.com##a[target*="blank"] > img
+komiku.id##div:matches-css(text-align:center):has(> span:has-text(/iklan/i))
 mangaindo.web.id,meganebuk.net##+js(aopr, anOptions)
 komiknesia.com##+js(aopr, quadsOptions)
 komik18.com,komikmoe.web.id,komiku.id,mangadisk.web.id,manhwaid.fun,mgkomik.com,mihentai.com,novelgo.id,sektedoujin.club,sheamanga.my.id##+js(nobab)
