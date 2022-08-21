@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.8.45
+! Version: 22.8.46
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 Aug 2022 18:09 UTC
+! Last modified: 21 Aug 2022 18:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3681,9 +3681,10 @@ katadata.co.id##article .dm-player:remove()
 okezone.com###rekomendasi_video:remove()
 okezone.com##.video-wrap:has(#rekomendasi_video):remove()
 gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://player.ivideosmart.com"]):remove()
+greenscene.co.id##.gliaplayer-container
 gridoto.com##.ivs-box:remove()
 theasianparent.com##.player-ivideosmart-wrap:remove()
-beritasatu.com,grid.id,japanesestation.com,katadata.co.id,magdalene.co,momsmoney.id,motorplus-online.com,parapuan.co,tempo.co,wartaekonomi.co.id##[class^=ivs-]:remove()
+beritasatu.com,greenscene.co.id,grid.id,japanesestation.com,katadata.co.id,magdalene.co,momsmoney.id,motorplus-online.com,parapuan.co,tempo.co,wartaekonomi.co.id##[class^=ivs-]:remove()
 ||player.ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|grid.id|gridoto.com|herstory.co.id|id.theasianparent.com|indosport.com|momsmoney.id|motorplus-online.com|parapuan.co|populis.id|sonora.id|tempo.co
 alex71.com##.content .aligncenter[alt="download" i][src*=".gif"]
 abbaspc.net##.entry-content > center > button:has-text(/download/i)
