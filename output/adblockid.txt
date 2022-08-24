@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.8.62
+! Version: 22.8.63
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Aug 2022 07:24 UTC
+! Last modified: 24 Aug 2022 07:31 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2447,7 +2447,7 @@ _GIF1200x120-
 -ads.$image,domain=cakrawala.co|mfikri.com|respublika.id
 -adv-$image,domain=realitasonline.id
 -banner$image,domain=fajar.co.id
--banner-$image,domain=bekasipedia.com|beritasulteng.com|bisablog.com|blockchainmedia.id|bogoronline.com|dailypost.id|gatra.com|indoaviation.asia|islampos.com|iwanbanaran.com|manadoline.com|pewarta-indonesia.com|presmedia.id|speednews-manado.com|totabuan.news|trotoar.id
+-banner-$image,domain=bekasipedia.com|beritasulteng.com|bisablog.com|blockchainmedia.id|bogoronline.com|dailypost.id|gatra.com|indoaviation.asia|islampos.com|iwanbanaran.com|manadoline.com|pewarta-indonesia.com|presmedia.id|speednews-manado.com|superapp.id|totabuan.news|trotoar.id
 -banner.$image,domain=balapmotor.net|jurnalotaku.com|makassartoday.com|marketing.co.id|musbikhin.com|presmedia.id|suarantb.com
 -ikl.$image,domain=bogornetwork.com
 -iklan-$image,domain=banuatv.com|beritabalionline.com|doktersehat.com|halamansembilan.com|komentaren.net|nusadaily.com|protapriau.com
@@ -2801,6 +2801,8 @@ _promohariini.$image,domain=ruparupa.com
 ||sumselindependen.com^*-iklan-$image
 ||sumselnian.com/media/banner/
 ||sumselupdate.com^*-banner-$image
+||superapp.id^*/sidebanner-$image
+||superapp.id^*_pop-up-$image
 ||surabayapost.id^*-ad-$image
 ||swarakaltim.com^*/banner_$image
 ||tangerang7.com^*/banner-$image
@@ -3168,7 +3170,7 @@ tmcblog.com##a[href*="banner"] > img
 bantenkini.com,citrust.id,kabarsumbawa.com,listingberita.com,metrosulawesi.id,realitasonline.id,redkal.com,sakanews.com,sidakpost.id,suarasikka.com,suaratangsel.com,sumeks.co##a[href="#"] > img
 andreasagung.com,centerklik.com,kostjakarta.com,tempat-kost.com##a[rel="nofollow"] > img
 ceklist.id##a[rel="sponsored"] img
-aftermarketplus.id,armaila.com,bagas31.info,bakata.net,beedrive.link,beritacrypto.com,beritajatim.com,beritasatu.com,blockchainmedia.id,campusnesia.co.id,caratekno.com,coinvestasi.com,detikglobalnews.com,duta.co,gaikindo.or.id,gigapurbalingga.cc,idblanter.com,infoaktualnews.com,infojambi.com,jambipers.com,jambiseru.com,kabarsiger.com,kabarterkini.co.id,klikmania.net,kompaslima.com,korsum.id,kostjakarta.net,kuncitts.com,laptophia.com,lintaslampung.com,malangtimes.com,maniakmotor.com,medianews.co.id,murianews.com,musbikhin.com,nusadaily.com,penaberlian.com,pickybest.id,polisiinternet.com,posbali.co.id,potret24.com,radarbanten.co.id,radarlampung.co.id,radartuba.com,rakyatbengkulu.com,riauterkini.com,samawarea.com,sebelas12.com,suarakristen.com,sulselsatu.com,sumateranews.co.id,sumeks.co,swarakaltim.com,tutorial89.com,venuemagz.com,yangcanggih.com,zonabikers.com,zonalampung.co##a[target="_blank"] > img
+aftermarketplus.id,armaila.com,bagas31.info,bakata.net,beedrive.link,beritacrypto.com,beritajatim.com,beritasatu.com,blockchainmedia.id,campusnesia.co.id,caratekno.com,coinvestasi.com,detikglobalnews.com,duta.co,gaikindo.or.id,gigapurbalingga.cc,idblanter.com,infoaktualnews.com,infojambi.com,jambipers.com,jambiseru.com,kabarsiger.com,kabarterkini.co.id,klikmania.net,kompaslima.com,korsum.id,kostjakarta.net,kuncitts.com,laptophia.com,lintaslampung.com,malangtimes.com,maniakmotor.com,medianews.co.id,murianews.com,musbikhin.com,nusadaily.com,penaberlian.com,pickybest.id,polisiinternet.com,posbali.co.id,potret24.com,radarbanten.co.id,radarlampung.co.id,radartuba.com,rakyatbengkulu.com,riauterkini.com,samawarea.com,sebelas12.com,suarakristen.com,sulselsatu.com,sumateranews.co.id,sumeks.co,superapp.id,swarakaltim.com,tutorial89.com,venuemagz.com,yangcanggih.com,zonabikers.com,zonalampung.co##a[target="_blank"] > img
 iwanbanaran.com##a[target="_blank"] div[style*="position: fixed;"]
 sumselindependen.com##a[title*="iklan" i] img
 beritabalap.com##article .code-block img
@@ -3643,6 +3645,7 @@ suckittrees.com##.popup
 bagas31.info##.popup-rl-custom3
 indotimur.com##.popup-transparent
 seputarforex.com##.show.modal-backdrop
+superapp.id##.wppopups-whole
 paired.my.id##div:matches-css(position:fixed) > #hide:has(center > img)
 ||embed.dugout.com^$3p,domain=bolasport.com|indosport.com|skor.id
 ||tv.kaskus.co.id/api/embed/widget/?autoplayInViewPort=true$frame,redirect=click2load.html,domain=kaskus.co.id
