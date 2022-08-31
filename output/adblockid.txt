@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.8.90
+! Version: 22.8.1
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Aug 2022 06:48 UTC
+! Last modified: 31 Aug 2022 19:30 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -6182,6 +6182,17 @@ mekanika.com.my##[data-advadsredirect=""]
 utusantv.com###uts-billboard
 webbrowsertools.com##.card:has-text(/advertisement/i)
 wacana.my##.banner-img
+mediahiburan.my##+js(acis, disableSelection, reEnable)
+mediahiburan.my##+js(acis, document.oncontextmenu)
+iluminasi.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
+11st.co.kr#@#a[target="_blank"][rel*="noreferrer"] > img[src*=".gif"]
+autokronika.pl#@#img[width="800"][height="200"]
+crackshash.com##.ad-boxxx
+crackshash.com##.wp-ad
+crackshash.com##.wp-ad-top
+dilbert.com#@#img[width="900"][height="280"]
+@@||sadeempc.com^$generichide
 dood.*##+js(acis, adcashMacros)
 dood.*##+js(acis, parseInt, break;case $.)
 dood.*##+js(aopw, _pop)
@@ -6193,12 +6204,4 @@ streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 streamtape.*##+js(acis, JSON.parse, Promise)
 streamtape.*##+js(window.open-defuser)
 vanfem.com##+js(aopr, __Y)
-
-mediahiburan.my##+js(acis, disableSelection, reEnable)
-mediahiburan.my##+js(acis, document.oncontextmenu)
-iluminasi.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
-ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
-autokronika.pl#@#img[width="800"][height="200"]
-dilbert.com#@#img[width="900"][height="280"]
-11st.co.kr#@#a[target="_blank"][rel*="noreferrer"] > img[src*=".gif"]
 ! :: AdBlockID Filter Combiner v1.1.0

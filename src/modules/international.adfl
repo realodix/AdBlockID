@@ -16,6 +16,24 @@ utusantv.com###uts-billboard
 webbrowsertools.com##.card:has-text(/advertisement/i)
 wacana.my##.banner-img
 ! ---
+! Annoyances - Unblock Mouse limitations
+mediahiburan.my##+js(acis, disableSelection, reEnable)
+mediahiburan.my##+js(acis, document.oncontextmenu)
+iluminasi.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+! ---
+! Style Fixer
+ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
+!
+! INTERNATIONAL
+! -----------------------------------------------
+11st.co.kr#@#a[target="_blank"][rel*="noreferrer"] > img[src*=".gif"]
+autokronika.pl#@#img[width="800"][height="200"]
+crackshash.com##.ad-boxxx
+crackshash.com##.wp-ad
+crackshash.com##.wp-ad-top
+dilbert.com#@#img[width="900"][height="280"]
+@@||sadeempc.com^$generichide
+! ---
 ! Annoyances - Popup
 dood.*##+js(acis, adcashMacros)
 dood.*##+js(acis, parseInt, break;case $.)
@@ -28,18 +46,3 @@ streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 streamtape.*##+js(acis, JSON.parse, Promise)
 streamtape.*##+js(window.open-defuser)
 vanfem.com##+js(aopr, __Y)
-
-! ---
-! Annoyances - Unblock Mouse limitations
-mediahiburan.my##+js(acis, disableSelection, reEnable)
-mediahiburan.my##+js(acis, document.oncontextmenu)
-iluminasi.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
-! ---
-! Style Fixer
-ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
-!
-! INTERNATIONAL
-! -----------------------------------------------
-autokronika.pl#@#img[width="800"][height="200"]
-dilbert.com#@#img[width="900"][height="280"]
-11st.co.kr#@#a[target="_blank"][rel*="noreferrer"] > img[src*=".gif"]
