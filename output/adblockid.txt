@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.9.11
+! Version: 22.9.12
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Sep 2022 19:29 UTC
+! Last modified: 04 Sep 2022 09:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3151,6 +3151,7 @@ solopos.com##.swipe-up-ad
 tmcblog.com##.td-container a[target="_blank"] div[style*="position: fixed;"]
 timesindonesia.co.id##.text-center a[target="_blank"] > img
 tempo.co##.top-banner
+orami.co.id##.top-banner-parallax
 juragancipir.com##.topad
 artikel.rumah123.com##.topleaderboard-banner
 indonesiadaily.co.id##.tpm-ads-unit
@@ -3315,7 +3316,6 @@ detik.com###adv-caption-lead + #leaderboard:has([id^="div-gpt-ad"])
 bola.net###content-news .w100p:has([id^="div-gpt-ad"])
 tempo.co###inarticle_2:has-text(/adv/i)
 balipost.com##._align_center:has([id^="div-gpt-ad"])
-orami.co.id##.article-post section:has(> div > p:matches-css(text-align: center):has-text(/adv/i))
 id.theasianparent.com##.bottom-sticky.only-mobile.layer-bsa-bn:style(min-height: 0 !important;)
 suarajatimpost.com##.card:has-text(/adv/i)
 okezone.com##.center-paralax:has([id^="div-gpt-ad"])
@@ -3361,6 +3361,7 @@ haibunda.com##div:has(> .static_banner1)
 pricebook.co.id##div:has(> [id*="div-gpt-ad-"])
 cnnindonesia.com##div:has(> [id^="adv-"])
 marketeers.com##div:has(> iframe[src^="https://ads.marketeers.com"])
+orami.co.id##div:has(> p:matches-css(text-align: center):has-text(/adv/i))
 kumparan.com##div:matches-css(text-align: center):has(> .adunitContainer)
 bola.net,kapanlagi.com,sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
 merdeka.com##div:matches-css(text-align: center):has([id*="div-gpt-ad-"])
