@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.9.18
+! Version: 22.9.19
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Sep 2022 19:30 UTC
+! Last modified: 05 Sep 2022 09:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1179,8 +1179,8 @@ _GIF1200x120-
 ~fjb.kaskus.co.id##.ads__banner
 ~serbada.com##.banner-header
 ##[href="https://invol.co/clazkwc"]
-~hardware.fr##a[href*="ref="] > img[src*=".gif"]
-~disqus.com##a[target="_blank"][rel*="nofollow"] > img[src*=".gif"]
+##a[href*="ref="] > img[src*=".gif"]
+##a[target="_blank"][rel*="nofollow"] > img[src*=".gif"]
 ##a[target="_blank"][rel*="noreferrer"] > img[src*=".gif"]
 ##a[target="_blank"][rel^="nofollow"] > img[width="100%"]
 ##a[target="_blank"][rel^="nofollow"] > video[src*=".mp4"]
@@ -6218,4 +6218,6 @@ streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 streamtape.*##+js(acis, JSON.parse, Promise)
 streamtape.*##+js(window.open-defuser)
 vanfem.com##+js(aopr, __Y)
+disqus.com#@#a[target="_blank"][rel*="nofollow"] > img[src*=".gif"]
+hardware.fr#@#a[href*="ref="] > img[src*=".gif"]
 ! :: AdBlockID Filter Combiner v1.1.0

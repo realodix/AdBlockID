@@ -46,3 +46,10 @@ streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 streamtape.*##+js(acis, JSON.parse, Promise)
 streamtape.*##+js(window.open-defuser)
 vanfem.com##+js(aopr, __Y)
+!
+! UNBREAK
+! -----------------------------------------------
+! https://github.com/realodix/AdBlockID/issues/1172
+disqus.com#@#a[target="_blank"][rel*="nofollow"] > img[src*=".gif"]
+! https://github.com/realodix/AdBlockID/issues/1175
+hardware.fr#@#a[href*="ref="] > img[src*=".gif"]
