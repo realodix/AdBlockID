@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.9.23
+! Version: 22.9.24
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Sep 2022 18:39 UTC
+! Last modified: 08 Sep 2022 18:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3501,6 +3501,9 @@ berga-tech.com,rival-face.com#@#.adspost1
 ##ins.adsbygoogle
 @@||monitorteknologi.com^$ghide
 monitorteknologi.com##.penci-google-adsense-2
+##.demo-wrapper[style="display:none;"] + div.fadeInDown[id]
+##body > div.demo-wrapper[style="display:none;"] + div[id][class]
+##div.fadeInDown[id$="____equal"][class$="____equal"]
 /images/ads.$image,redirect-rule=1x1.gif
 @@/\.(gif|jpe?g|png|webp)#(\/?.+)?(\/(ad)s?\/|\/ad-)/
 @@/dh-anti-adblocker/assets/js/ads-prebid.js
@@ -3938,6 +3941,7 @@ $3p,script,xhr,denyallow=disqus.com|disquscdn.com|fastlylb.net|googleapis.com,do
 ||bebasdownloadfilm.com/iframe/content.php$frame
 ||dewanonton.cc/static/img/banner/$image,media
 ||gm21.download/*.webp$image
+||koenime.web.id^*/banner-$image
 ||konveti.onicdn.xyz/adam/*.mp4$mp4
 103.194.171.75##.bnner
 103.194.171.75,idtube.me##.overlay
@@ -3979,6 +3983,8 @@ nontonfilms24.com##.banner_cen
 93.104.211.22##.bannerplayer:remove()
 159.65.11.63,indoxx1film.me##.bannerx
 koenime.com##.close-fixedSd
+koenime.web.id##.fixed-leftSd
+koenime.web.id##.fixed-rightSd
 188.166.39.172##.float-bottom-banner
 188.166.39.172##.float-top-banner
 manganime.in##.float_tengah
@@ -4048,6 +4054,7 @@ otakudere.net##+js(aopr, Light.Popup)
 185.231.223.76##+js(aopr, PBlib)
 144.91.117.175,65.108.132.145,oploverz.asia##+js(aopr, SGPB_POPUP_PARAMS)
 lengket.com,sangkut.com##+js(aopr, SmartPopunder)
+koenime.web.id##+js(aopr, popup_custom_data)
 159.65.11.63,indoxx1film.me##+js(aopr, showPopUpBanner)
 bioskopkere.club,kawanfilm.info,layarkaca.online##+js(aopr, ujiPopups)
 95.111.231.122##+js(aopr, window.pum_popups)
@@ -5901,6 +5908,7 @@ _topbandar_$image
 ##[href="https://klik.gg/film21ku1"]
 ##[href="https://klik.gg/hxfiidk"]
 ##[href="https://klik.gg/koenimehjp88"]
+##[href="https://klik.gg/koenimepop"]
 ##[href="https://klik.gg/kusagaridp"]
 ##[href="https://klik.gg/layarkaca21ap"]
 ##[href="https://klik.gg/lk21indoxxi"]
