@@ -4,9 +4,7 @@
 >   *= being a wildcard filter, it is an inherit slow filter. And should limited as much as possible. Would drag down performance of the browser.
 >    Has a few english filters already covered in Easylist (which we use)
 
-Sayangnya, filter [AdBlockID Plus](https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt) adalah filter yang tidak stabil dan bisa memberatkan browser. Ini cocok digunakan hanya di situs2 tertentu saja, lalu kembali dimatikan ketika membuka situs2 umum.
-
-Setiap filter yang sudah teruji stabil, akan dimasukkan ke dalam [AdBlockID](https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt).
+Seperti yang di deskripsikan di [halaman depan](https://github.com/realodix/AdBlockID#readme) *"Patahkan berbagai batasan cakupan yang ada di AdBlockID"* dan deskripsi di [file filternya](https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt) *"Ekstensi untuk menambah cakupan situs yang tidak dapat"*. Jadi sangat jelas AdBlockID Plus mengandung filter yang tidak bisa dimasukkan ke dalam AdBlocKID, seperti personal filter (yang isinya sebagian situs luar) dan filter2 berat.
 
 
 > Reviewing: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt (not sure why they can’t be combined with both lists)
