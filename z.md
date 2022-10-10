@@ -1,4 +1,4 @@
-Waduh pembahasan di [community.brave.com/t/reque...28329](https://community.brave.com/t/request-add-new-regional-list-filter/428329) cukup teknis ya
+Waduh pembahasan di [community.brave.com/t/reque...28329](https://community.brave.com/t/request-add-new-regional-list-filter/428329) cukup teknis ya. Saya akan menjelaskannya secara singkat di sini, tetapi jika membutuhkan jawaban panjang, Sayang bersedia menjelaskannya.
 
 > Reviewing:
 > https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt
