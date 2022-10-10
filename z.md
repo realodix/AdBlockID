@@ -1,12 +1,14 @@
 Waduh pembahasan di [community.brave.com/t/reque...28329](https://community.brave.com/t/request-add-new-regional-list-filter/428329) cukup teknis ya. Saya akan menjelaskannya secara singkat di sini, tetapi jika membutuhkan jawaban panjang, Sayang bersedia menjelaskannya.
 
+----
+
 > Reviewing:
 > https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt
 >
 >   *= being a wildcard filter, it is an inherit slow filter. And should limited as much as possible. Would drag down performance of the browser.
 >    Has a few english filters already covered in Easylist (which we use)
 
-Seperti yang di deskripsikan di [halaman depan](https://github.com/realodix/AdBlockID#readme) *"Patahkan berbagai batasan cakupan yang ada di AdBlockID"* dan deskripsi di [file filternya](https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt) *"Ekstensi untuk menambah cakupan situs yang tidak dapat"*. Jadi memang filter yang tidak dapat dimasukkan ke dalam AdBlockID akan dimasukkan ke dalam AdBlockID Plus, seperti personal filter (yang isinya sebagian situs luar) dan filter2 yang secara teori dapat memberatkan browser, walaupun dalam prakteknya hanya sebagian kecil situs saja (situs berbahasa Indonesia).
+Seperti yang di deskripsikan di [halaman depan](https://github.com/realodix/AdBlockID#readme) *"Patahkan berbagai batasan cakupan yang ada di AdBlockID"* dan deskripsi di [file filternya](https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid_plus.txt) *"Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID"*. Jadi memang filter yang tidak dapat dimasukkan ke dalam AdBlockID akan dimasukkan ke dalam AdBlockID Plus, seperti personal filter (yang isinya sebagian situs luar) dan filter2 yang secara teori dapat memberatkan browser, walaupun dalam prakteknya hanya sebagian kecil situs saja (situs berbahasa Indonesia).
 
 
 > Reviewing: https://raw.githubusercontent.com/realodix/AdBlockID/master/output/adblockid.txt (not sure why they can’t be combined with both lists)
