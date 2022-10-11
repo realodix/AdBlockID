@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 22.10.35
+! Version: 22.10.36
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Oct 2022 11:13 UTC
+! Last modified: 11 Oct 2022 11:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3302,6 +3302,7 @@ haibunda.com##div:has(> .static_banner1)
 pricebook.co.id##div:has(> [id*="div-gpt-ad-"])
 cnnindonesia.com##div:has(> [id^="adv-"])
 marketeers.com##div:has(> iframe[src^="https://ads.marketeers.com"])
+bospajak.com##div:has(> p > .adsbygoogle)
 orami.co.id##div:has(> p:matches-css(text-align: center):has-text(/adv/i))
 kumparan.com##div:matches-css(text-align: center):has(> .adunitContainer)
 bola.net,kapanlagi.com,sehatq.com##div:matches-css(text-align: center):has(> [id^="div-gpt-ad"])
