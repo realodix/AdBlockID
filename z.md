@@ -2,7 +2,7 @@ Waduh pembahasan di [community.brave.com/t/reque...28329](https://community.brav
 
 ----
 
-Saat ini AdBlockID sudah dioptimalkan dan dibersihkan, jumlah filter dari yang sebelumnya 9,215 sekarang menjadi 8,317.
+Saat ini AdBlockID sudah dioptimalkan dan dibersihkan, jumlah filter dari yang sebelumnya 9,223 sekarang menjadi 8,325.
 
 > - Remove as many generic filters as possible, and target just the regional sites. This would avoid redundancy with Easylist. Testing/ and using the list with Easylist/Easyprivacy. Remove any double ups/unneeded filters etc.
 
