@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.1.24
+! Version: 23.1.25
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Jan 2023 12:42 UTC
+! Last modified: 16 Jan 2023 12:47 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3480,6 +3480,7 @@ gamereactor.asia##.wrapper:has(.ad_interscroller)
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com,mobimoto.com,suara.com##[class^="placeholder_"]:has([id^="div-ad-"])
 katadata.co.id,tempo.co##amp-fx-flying-carpet
 brilio.net##amp-iframe:has([src*="advertnative.com"])
+fortuneidn.com##div:has(> .wrapper-ads)
 inews.id##div:matches-css(text-align: center):has([id*="-StickyAd" i])
 biggo.id##.search-ad-banner-re
 shopee.co.id##.shopee-search-item-result .shopee-search-item-result__item:has-text(Iklan)
