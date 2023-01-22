@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.1.51
+! Version: 23.1.52
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 22 Jan 2023 16:28 UTC
+! Last modified: 22 Jan 2023 16:38 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3401,6 +3401,8 @@ bantenraya.com,infoberita.id,infontt.com,jatimtimes.com,jurnalkepri.com,legalera
 swara-bengkulu.com##.widget:has-text(/space available/i)
 mariodevan.com,motorrio.com##.wpa:has-text(/adv/i)
 garudadaily.com##.wpb_wrapper:has-text(/adv/i)
+inibaru.id##[class*="bg-slate-"]:has(.adsbyadop)
+inibaru.id##[class*="bg-slate-"]:has(.adsbygoogle)
 kumparan.com##[data-qa-id*="mobile-article-page-"]:has-text(/adv/i)
 grid.id##[id^="_popIn_"]:has-text(/adv/i)
 koranseruya.com##[id^=local-]:has-text(/adv/i)
