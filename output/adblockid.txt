@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.1.50
+! Version: 23.1.51
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 22 Jan 2023 16:24 UTC
+! Last modified: 22 Jan 2023 16:28 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3381,9 +3381,11 @@ blockchainmedia.id##.code-block:matches-css(text-align: center):has-text(/iklan/
 arenabola.id##.col-lg-3:has-text(/adv/i)
 tirto.id##.d-sidebar:has([id^="gpt-"])
 bola.net##.dfp-bframe-cont:has([id^="div-gpt-ad"])
+hops.id##.flying_carpet_div
 alinea.id,bisnis.com,gadgetren.com,indozone.id,katadata.co.id,kompas.com,tek.id##.flying_carpet_div:has([id^="div-gpt-ad"])
 katadata.co.id##.flying_carpet_show:has(.flying_carpet_show_banner)
 maxmanroe.com##.footer_sticky:has([id^="div-gpt-ad"])
+hops.id##.footer_stickyexp
 today.line.me##.midAdModule-root:has-text(/iklan/i)
 cnbcindonesia.com,detik.com,haibunda.com##.mr1:has(> #adv-caption-mr1)
 cnbcindonesia.com,detik.com,haibunda.com##.mr2:has(> #adv-caption-mr2)
@@ -3478,7 +3480,7 @@ sabiru.com##aside .oxy-pricing-box
 grid.id,gridoto.com,kompas.com,kompas.tv,kontan.co.id,motorplus-online.com,parapuan.co,suara.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
 hidupdigital.id,pikiran-rakyat.com,resepkoki.id###cont-megabillboard
 mediaindonesia.com###content [class^="parallax_"]:has([id*="div-gpt-ad-"])
-ayobogor.com,ayoindonesia.com,ayojakarta.com,ayomalang.com,ayosolo.id,ayosurabaya.com,bekasikinian.com,cnbcindonesia.com,detik.com,haibunda.com,klikpendidikan.id,lensapurwakarta.com,mitranews.net,okenusra.com,ragamindonesia.com,resepkoki.id,sukabumiupdate.com###megabillboard
+ayobogor.com,ayoindonesia.com,ayojakarta.com,ayomalang.com,ayosolo.id,ayosurabaya.com,bekasikinian.com,cnbcindonesia.com,detik.com,haibunda.com,hops.id,klikpendidikan.id,lensapurwakarta.com,mitranews.net,okenusra.com,ragamindonesia.com,resepkoki.id,sukabumiupdate.com###megabillboard
 mediaindonesia.com##.article #parallax_wrap
 kontan.co.id##.center:has(.heightads50)
 dream.co.id,kapanlagi.com##.dfp-bframe-cont:has([id*="div-gpt-ad-"])
@@ -3487,6 +3489,7 @@ kompas.com##.kcm-track:matches-css(position: relative):has(.kcm-track-sticky:has
 momsmoney.id##.liftdownclass
 cnbcindonesia.com##.megabillboard
 sindonews.com##.parallax-non.t600:style(top: 0 !important;)
+hops.id##.parallax_abs
 suara.com##.parallax_swipe
 medcom.id##.sticky_bottom:has([id*="div-gpt-ad-"])
 gamereactor.asia##.wrapper:has(.ad_interscroller)
