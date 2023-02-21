@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.2.29
+! Version: 23.2.30
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 Feb 2023 07:45 UTC
+! Last modified: 21 Feb 2023 07:46 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3707,6 +3707,7 @@ katadata.co.id##article .dm-player:remove()
 okezone.com###rekomendasi_video:remove()
 okezone.com##.video-wrap:has(#rekomendasi_video):remove()
 okezone.com##.vplayer:has(iframe[src^="https://video.okezone.com/embedoutstream"]):remove()
+okezone.com##[id^=ivs-]:remove()
 gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://player.ivideosmart.com"]):remove()
 greenscene.co.id##.gliaplayer-container
 gridoto.com##.ivs-box:remove()
