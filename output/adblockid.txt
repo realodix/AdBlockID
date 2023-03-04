@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.3.15
+! Version: 23.3.16
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Mar 2023 15:07 UTC
+! Last modified: 04 Mar 2023 15:08 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4183,6 +4183,7 @@ khaddavi.net##div:has(> p:has-text(/adv/i))
 urbharat.xyz##iframe[width="300"]
 fc-lc.com,fc.lc##+js(acis, addEventListener, DOMNodeRemoved)
 belinfo.my.id,linkerload.com,metroupdate.biz,pf-electronicstt.com,skiped.me##+js(acis, addEventListener, google_ad_client)
+nyawang.com##+js(acis, chp_ads_blocker_detector)
 bevru.club,bolssc.com,cuts-url.com,eio.io,eririo.club,exe.app,exee.io,exey.io##+js(acis, disableItToContinue)
 toolss.net##+js(aeld, load, daadb_get_data)
 tmearn.*##+js(aopr, AaDetector)
