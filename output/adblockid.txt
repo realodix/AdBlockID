@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.3.42
+! Version: 23.3.43
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Mar 2023 12:58 UTC
+! Last modified: 07 Mar 2023 13:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3274,6 +3274,7 @@ tempo.co##+js(rc, pad-apps, body)
 sindonews.com##+js(rc, t480, .content-paralax)
 detik.com###adv-caption-lead + #leaderboard:has([id^="div-gpt-ad"])
 bola.net###content-news .w100p:has([id^="div-gpt-ad"])
+blogernas.com###in-article:has(.adsbygoogle)
 tempo.co###inarticle_2:has-text(/adv/i)
 suara.com###pariwara_dua
 suara.com###pariwara_satu
