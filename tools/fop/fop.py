@@ -123,7 +123,7 @@ def main(location):
         for direct in directories[:]:
             if direct.startswith(".") or direct in arg.ignore:
                 directories.remove(direct)
-        print(f'Current directory: {os.path.join(os.path.abspath(path), "")}')
+        print(f'Current directory - {os.path.join(os.path.abspath(path), "")}')
         directories.sort()
         for filename in sorted(files):
             address = os.path.join(path, filename)
@@ -224,7 +224,7 @@ def fopsort(filename):
                         if lineschecked <= CHECKLINES:
                             filterlines += 1
                             lineschecked += 1
-                        line = filtertidy(line)
+                        line = filtertidy(line, filename)
                     # Add the filter to the section
                     section.append(line)
         # At the end of the file, sort and save any remaining filters
@@ -240,7 +240,7 @@ def fopsort(filename):
         os.remove(temporaryfile)
 
 
-def filtertidy(filterin):
+def filtertidy(filterin, filename):
     """ Sort the options of blocking filters and make the filter text
     lower case if applicable."""
     optionsplit = re.match(OPTIONPATTERN, filterin)
@@ -257,6 +257,14 @@ def filtertidy(filterin):
     denyallowlist = []
     redirectlist = []
     removeentries = []
+    # Get line number of the filter in the file
+    linenumber = ""
+    with open(filename, "r") as file:
+        for i, line in enumerate(file):
+            if line.strip() == filterin:
+                linenumber = f"{i+1}"
+                break
+
     for option in optionlist:
         # Detect and separate domain options
         if option[0:7] == "domain=":
@@ -264,7 +272,11 @@ def filtertidy(filterin):
             removeentries.append(option)
         elif option[0:10] == "denyallow=":
             if "domain=" not in filterin:
-                print(f"Warning: \"denyallow=\" option requires the \"domain=\" option. \"{filterin}\"")
+                m = f'\n- \"denyallow=\" option requires the \"domain=\" option.\n'\
+                    f'  {filename}:{linenumber}\n\n'\
+                    f'  {filterin}'\
+                    f' \n'
+                print(m)
             denyallowlist.extend(option[10:].split("|"))
             removeentries.append(option)
         elif re.match(RE_OPTION_REDIRECT, option):
@@ -272,7 +284,11 @@ def filtertidy(filterin):
         elif option[0:4] == "app=" or option[0:9] == "protobuf=" or option[0:7] == "cookie=" or option[0:8] == "replace=" or option[0:12] == "removeparam=":
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
-            print(f"Warning: The option \"{option}\" used on the filter \"{filterin}\" is not recognised by FOP")
+            m = f'- The option \"{option}\" is not recognised by FOP\n'\
+                f'  {filename}:{linenumber}\n\n'\
+                f'  {filterin}'\
+                f' \n'
+            print(m)
 
     # Sort all options other than domain alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
