@@ -44,7 +44,19 @@ ELEMENTPATTERN = re.compile(
     r"^([^\/\*\|\@\"\!]*?)(\$\@?\$|##\@?\$|#[\@\?]?#\+?)(.*)$")
 OPTIONPATTERN = re.compile(
     r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
-RE_OPTION_REDIRECT = re.compile(r"^(redirect(-rule)?|rewrite)=")
+RE_OPTION_REDIRECT = re.compile(r"""
+    ^(.+)?
+    (redirect(-rule)?)=
+    (
+        1x1.gif|(2x2|3x2|32x32).png
+        |noop-0.1s.mp3|noop-1s.mp4
+        |noop.html|noop.js|noop.txt|noopcss
+        |ampproject_v0.js|nofab.js|fuckadblock.js-3.2.0
+        |google-analytics_(cx_api.js|analytics.js|ga.js)|googlesyndication_adsbygoogle.js|googletagmanager_gtm.js|googletagservices_gpt.js
+        |click2load.html
+    )
+    (,.+)?$
+""", re.X)
 # Compile regular expressions that match element tags and
 # pseudo classes and strings and tree selectors;
 # "@" indicates either the beginning or the end of a selector
@@ -69,26 +81,6 @@ KNOWNOPTIONS = (
 
     # uBlock Origin
     "1p", "first-party", "3p", "all", "badfilter", "cname", "csp", "css", "denyallow", "doc", "ehide", "empty", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr",
-    "redirect=1x1.gif", "redirect-rule=1x1.gif",
-    "redirect=2x2.png", "redirect-rule=2x2.png",
-    "redirect=3x2.png", "redirect-rule=3x2.png",
-    "redirect=32x32.png", "redirect-rule=32x32.png",
-    "redirect=noop-0.1s.mp3", "redirect-rule=noop-0.1s.mp3",
-    "redirect=noop-1s.mp4", "redirect-rule=noop-1s.mp4",
-    "redirect=noop.html", "redirect-rule=noop.html",
-    "redirect=noop.js", "redirect-rule=noop.js",
-    "redirect=noop.txt", "redirect-rule=noop.txt",
-    "redirect=noopcss", "redirect-rule=noopcss",
-    "redirect=ampproject_v0.js", "redirect-rule=ampproject_v0.js",
-    "redirect=nofab.js", "redirect-rule=nofab.js",
-    "redirect=fuckadblock.js-3.2.0", "redirect-rule=fuckadblock.js-3.2.0",
-    "redirect=google-analytics_cx_api.js", "redirect-rule=google-analytics_cx_api.js",
-    "redirect=google-analytics_analytics.js", "redirect-rule=google-analytics_analytics.js",
-    "redirect=google-analytics_ga.js", "redirect-rule=google-analytics_ga.js",
-    "redirect=googlesyndication_adsbygoogle.js", "redirect-rule=googlesyndication_adsbygoogle.js",
-    "redirect=googletagmanager_gtm.js", "redirect-rule=googletagmanager_gtm.js",
-    "redirect=googletagservices_gpt.js", "redirect-rule=googletagservices_gpt.js",
-    "redirect=click2load.html", "redirect-rule=click2load.html",
 
     # AdGuard
     "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock", "removeparam"
@@ -263,7 +255,7 @@ def filtertidy(filterin):
 
     domainlist = []
     denyallowlist = []
-    rediwritelist = []
+    redirectlist = []
     removeentries = []
     for option in optionlist:
         # Detect and separate domain options
@@ -276,7 +268,7 @@ def filtertidy(filterin):
             denyallowlist.extend(option[10:].split("|"))
             removeentries.append(option)
         elif re.match(RE_OPTION_REDIRECT, option):
-            rediwritelist.append(option)
+            redirectlist.append(option)
         elif option[0:4] == "app=" or option[0:9] == "protobuf=" or option[0:7] == "cookie=" or option[0:8] == "replace=" or option[0:12] == "removeparam=":
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
@@ -284,11 +276,11 @@ def filtertidy(filterin):
 
     # Sort all options other than domain alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
-    optionlist = sorted(set(filter(lambda option: (option not in removeentries) and (option not in rediwritelist), optionlist)),
+    optionlist = sorted(set(filter(lambda option: (option not in removeentries) and (option not in redirectlist), optionlist)),
                         key=lambda option: (option[1:] + "~") if option[0] == "~" else option)
     # If applicable, sort redirect and rewrite options and append them to the list of options
-    if rediwritelist:
-        optionlist.extend(rediwritelist)
+    if redirectlist:
+        optionlist.extend(redirectlist)
     # If applicable, sort domain restrictions and append them to the list of options
     if domainlist:
         optionlist.append(
