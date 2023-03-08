@@ -261,11 +261,17 @@ def filtertidy(filterin):
     optionlist = optionsplit.group(2).lower().split(",")
 
     domainlist = []
+    denyallowlist = []
     removeentries = []
     for option in optionlist:
         # Detect and separate domain options
         if option[0:7] == "domain=":
             domainlist.extend(option[7:].split("|"))
+            removeentries.append(option)
+        elif option[0:10] == "denyallow=":
+            if "domain=" not in filterin:
+                print(f"Warning: \"denyallow=\" option requires the \"domain=\" option. \"{filterin}\"")
+            denyallowlist.extend(option[10:].split("|"))
             removeentries.append(option)
         elif option[0:4] == "app=" or option[0:9] == "protobuf=" or option[0:7] == "cookie=" or option[0:8] == "replace=" or option[0:12] == "removeparam=":
             optionlist = optionsplit.group(2).split(",")
@@ -280,6 +286,11 @@ def filtertidy(filterin):
     if domainlist:
         optionlist.append(
             f'domain={"|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key=lambda domain: domain.strip("~")))}')
+    # If applicable, sort denyallow options and append them to the list of options
+    if denyallowlist:
+        optionlist.append(
+            f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
+
 
     # Return the full filter
     return f'{filtertext}${",".join(optionlist)}'
