@@ -4,7 +4,7 @@
 # pylint: disable=invalid-name
 # pylint: disable=missing-function-docstring
 """ FOP_FH
-    Filter Orderer and Preener (tweaked by Filters Heroes Team)
+    Filter Orderer and Preener (tweaked by Realodix)
     Copyright (C) 2011 Michael
 
     This program is free software: you can redistribute it and/or modify
