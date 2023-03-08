@@ -291,7 +291,6 @@ def filtertidy(filterin):
         optionlist.append(
             f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
 
-
     # Return the full filter
     return f'{filtertext}${",".join(optionlist)}'
 
