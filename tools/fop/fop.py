@@ -280,8 +280,8 @@ def filtertidy(filterin):
         elif option[0:4] == "app=" or option[0:9] == "protobuf=" or option[0:7] == "cookie=" or option[0:8] == "replace=" or option[0:12] == "removeparam=":
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
-            print(
-                f"Warning: The option \"{option}\" used on the filter \"{filterin}\" is not recognised by FOP")
+            print(f"Warning: The option \"{option}\" used on the filter \"{filterin}\" is not recognised by FOP")
+
     # Sort all options other than domain alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
     optionlist = sorted(set(filter(lambda option: (option not in removeentries) and (option not in rediwritelist), optionlist)),
