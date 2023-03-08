@@ -242,7 +242,8 @@ def fopsort(filename):
     # Replace the existing file with the new one only if alterations have been made
     if not filecmp.cmp(temporaryfile, filename):
         os.replace(temporaryfile, filename)
-        print(f"Sorted: {os.path.abspath(filename)}")
+        head, tail = os.path.split(filename)
+        print(f"- Sorted: {tail}")
     else:
         os.remove(temporaryfile)
 
