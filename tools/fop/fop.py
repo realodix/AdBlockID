@@ -258,7 +258,7 @@ def filtertidy(filterin):
 
     # If applicable, separate and sort the filter options in addition to the filter text
     filtertext = removeunnecessarywildcards(optionsplit.group(1))
-    optionlist = optionsplit.group(2).lower().replace("_", "-").split(",")
+    optionlist = optionsplit.group(2).lower().split(",")
 
     domainlist = []
     removeentries = []
