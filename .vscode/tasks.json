@@ -6,13 +6,13 @@
         {
             "label": "FOP",
             "type": "shell",
-            "command": "python tools/fop/fop.py -d src output -i adblockid.txt adblockid_plus.txt personal.txt",
+            "command": "./build.sh fop",
             "problemMatcher": []
         },
         {
-            "label": "Build",
+            "label": "Build: AdBlockID",
             "type": "shell",
-            "command": "python tools/fop/fop.py -d src output -i adblockid.txt adblockid_plus.txt personal.txt && flcombine -i abid=. template/adblockid.template.txt output/adblockid.txt",
+            "command": "./build.sh abid",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
@@ -20,9 +20,9 @@
             }
         },
         {
-            "label": "Build: AdBlockID+",
+            "label": "Build: AdBlockID Plus",
             "type": "shell",
-            "command": "python tools/fop/fop.py -d src output -i adblockid.txt adblockid_plus.txt personal.txt && flcombine -i abid=. src/packages/adblockid_plus.template.txt output/adblockid_plus.txt",
+            "command": "./build.sh abidplus",
             "problemMatcher": [],
         }
     ]
