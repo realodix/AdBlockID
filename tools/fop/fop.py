@@ -46,7 +46,7 @@ RE_OPTION_REDIRECT = re.compile(r"""
     (redirect(-rule)?)=
     (
         1x1.gif|(2x2|3x2|32x32).png
-        |noop-0.1s.mp3|noop-1s.mp4
+        |noop-0.1s.mp3|noop-0.5s.mp3|noop-1s.mp4
         |noop.html|noop.js|noop.txt|noopcss
         |ampproject_v0.js|nofab.js|fuckadblock.js-3.2.0
         |google-analytics_(cx_api.js|analytics.js|ga.js)
