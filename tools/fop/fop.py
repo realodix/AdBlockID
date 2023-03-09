@@ -36,7 +36,7 @@ FILE_EXTENSION = [".adfl", ".txt"]
 # Compile regular expressions to match important filter parts
 # (derived from Wladimir Palant's Adblock Plus source code)
 ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#|\$)\@?\??\@?(#|\$)")
-FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
+FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)(?:domain|from)\=([^\,\s]+)$")
 ELEMENTPATTERN = re.compile(
     r"^([^\/\*\|\@\"\!]*?)(\$\@?\$|##\@?\$|#[\@\?]?#\+?)(.*)$")
 OPTIONPATTERN = re.compile(
@@ -81,6 +81,7 @@ KNOWNOPTIONS = (
 
     # uBlock Origin
     "1p", "first-party", "3p", "all", "badfilter", "cname", "csp", "css", "denyallow", "doc", "ehide", "empty", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr",
+    "from", "to"
 
     # AdGuard
     "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock", "removeparam"
@@ -254,6 +255,8 @@ def filtertidy(filterin, filename):
     optionlist = optionsplit.group(2).lower().split(",")
 
     domainlist = []
+    fromlist = []
+    to_list = []
     denyallowlist = []
     redirectlist = []
     removeentries = []
@@ -270,6 +273,9 @@ def filtertidy(filterin, filename):
         if option[0:7] == "domain=":
             domainlist.extend(option[7:].split("|"))
             removeentries.append(option)
+        elif option[0:5] == "from=":
+            fromlist.extend(option[5:].split("|"))
+            removeentries.append(option)
         elif option[0:10] == "denyallow=":
             if "domain=" not in filterin:
                 m = f'\n- \"denyallow=\" option requires the \"domain=\" option.\n'\
@@ -278,6 +284,15 @@ def filtertidy(filterin, filename):
                     f' \n'
                 print(m)
             denyallowlist.extend(option[10:].split("|"))
+            removeentries.append(option)
+        elif option[0:3] == "to=":
+            if "from=" not in filterin:
+                m = f'\n- \"to=\" option requires the \"domain=\" option.\n'\
+                    f'  {filename}:{linenumber}\n\n'\
+                    f'  {filterin}'\
+                    f' \n'
+                print(m)
+            to_list.extend(option[3:].split("|"))
             removeentries.append(option)
         elif re.match(RE_OPTION_REDIRECT, option):
             redirectlist.append(option)
@@ -301,10 +316,16 @@ def filtertidy(filterin, filename):
     if domainlist:
         optionlist.append(
             f'domain={"|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key=lambda domain: domain.strip("~")))}')
+    if fromlist:
+        optionlist.append(
+            f'from={"|".join(sorted(set(filter(lambda domain: domain != "", fromlist)), key=lambda domain: domain.strip("~")))}')
     # If applicable, sort denyallow options and append them to the list of options
     if denyallowlist:
         optionlist.append(
             f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
+    if to_list:
+        optionlist.append(
+            f'to={"|".join(sorted(set(filter(lambda domain: domain != "", to_list)), key=lambda domain: domain.strip("~")))}')
 
     # Return the full filter
     return f'{filtertext}${",".join(optionlist)}'
