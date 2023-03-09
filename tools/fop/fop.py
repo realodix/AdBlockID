@@ -69,8 +69,8 @@ REMOVALPATTERN = re.compile(
     r"((?<=([>+~,]\s))|(?<=(@|\s|,)))()(?=(?:[#\.\[]|\:(?!-abp-)))")
 ATTRIBUTEVALUEPATTERN = re.compile(
     r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')|\*")
-TREESELECTOR = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
-UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
+TREESELECTORPATTERN = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
+# UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
@@ -334,7 +334,7 @@ def elementtidy(domains, separator, selector):
     # Make sure we don't match arguments of uBO scriptlets
     UBO_JS_PATTERN = re.compile(r"^@js\(")
     # Clean up tree selectors
-    for tree in each(TREESELECTOR, selector):
+    for tree in each(TREESELECTORPATTERN, selector):
         if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings:
             continue
         if tree.group(1) == "(":
