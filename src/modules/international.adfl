@@ -8,18 +8,18 @@
 ||mediapermata.com.bn^*/banners/$image
 ! ---
 ! Hides
-jobstreet.com.my##[data-automation$="-ads"]
-malaysiakini.com##.justify-center:has-text(/ads/i)
-mediahiburan.my##.adplaceholder-mrec
-mekanika.com.my##[data-advadsredirect=""]
 utusantv.com###uts-billboard
-webbrowsertools.com##.card:has-text(/advertisement/i)
+mediahiburan.my##.adplaceholder-mrec
 wacana.my##.banner-img
+webbrowsertools.com##.card:has-text(/advertisement/i)
+malaysiakini.com##.justify-center:has-text(/ads/i)
+mekanika.com.my##[data-advadsredirect=""]
+jobstreet.com.my##[data-automation$="-ads"]
 ! ---
 ! Annoyances - Unblock Mouse limitations
+iluminasi.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 mediahiburan.my##+js(acis, disableSelection, reEnable)
 mediahiburan.my##+js(acis, document.oncontextmenu)
-iluminasi.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 ! ---
 ! Style Fixer
 ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
@@ -41,5 +41,5 @@ conservation.forest.gov.tw#@#a[target="_blank"][rel*="nofollow"] > img[src*=".gi
 ! https://github.com/AdguardTeam/AdguardFilters/issues/133050
 dilbert.com#@#img[width="900"][height="280"]
 !
-dhzy.fun#@#a[target="_blank"][rel*="noreferrer"] > img[src*=".gif"]
 dhzy.fun#@#a[target="_blank"][rel*="nofollow"] > img[src*=".gif"]
+dhzy.fun#@#a[target="_blank"][rel*="noreferrer"] > img[src*=".gif"]

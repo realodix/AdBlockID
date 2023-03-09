@@ -1,33 +1,108 @@
 #!/usr/bin/env python3
-""" Filter Orderer and Preener
 
-Adjusted for AdBlockID
-Based on FOP (RU AdList) v3.921
+""" FOP_FH
+    Filter Orderer and Preener (tweaked by Realodix)
+    Copyright (C) 2011 Michael
 
-Copyright (C) 2011 Michael
-GNU General Public License
-"""
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-import collections, filecmp, os, re, subprocess, sys
-from config import *
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see <http://www.gnu.org/licenses/>."""
+# Import the key modules
+import re, os, sys, filecmp, argparse
+
+# FOP version number
+VERSION = "1.8"
+
+# Welcome message
+greeting = f"FOP (Filter Orderer and Preener) v{VERSION}"
+
+ap = argparse.ArgumentParser()
+ap.add_argument('--dir', '-d', nargs='+', help='Set directories', default=None)
+ap.add_argument('--ignore', '-i', nargs='+', help='List the files that should not be sorted, either because they have a special sorting system or because they are not filter files', default=("output", "requirements.txt", "templates", "node_modules"))
+ap.add_argument("--version", "-v",
+                action='store_true', help="Show script's version number and exit")
+
+FILE_EXTENSION = [".adfl", ".txt"]
+
+# Compile regular expressions to match important filter parts
+# (derived from Wladimir Palant's Adblock Plus source code)
+ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#|\$)\@?\??\@?(#|\$)")
+FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)domain\=([^\,\s]+)$")
+ELEMENTPATTERN = re.compile(
+    r"^([^\/\*\|\@\"\!]*?)(\$\@?\$|##\@?\$|#[\@\?]?#\+?)(.*)$")
+OPTIONPATTERN = re.compile(
+    r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
+RE_OPTION_REDIRECT = re.compile(r"""
+    ^(.+)?
+    (redirect(-rule)?)=
+    (
+        1x1.gif|(2x2|3x2|32x32).png
+        |noop-0.1s.mp3|noop-1s.mp4
+        |noop.html|noop.js|noop.txt|noopcss
+        |ampproject_v0.js|nofab.js|fuckadblock.js-3.2.0
+        |google-analytics_(cx_api.js|analytics.js|ga.js)
+        |googlesyndication_adsbygoogle.js|googletagmanager_gtm.js|googletagservices_gpt.js
+        |click2load.html
+    )
+    (,.+)?$
+""", re.X)
+# Compile regular expressions that match element tags and
+# pseudo classes and strings and tree selectors;
+# "@" indicates either the beginning or the end of a selector
+SELECTORPATTERN = re.compile(
+    r"(?<=[\s\[@])([a-zA-Z]*[A-Z][a-zA-Z0-9]*)((?=([\[\]\^\*\$=:@#\.]))|(?=(\s(?:[+>~]|\*|[a-zA-Z][a-zA-Z0-9]*[\[:@\s#\.]|[#\.][a-zA-Z][a-zA-Z0-9]*))))")
+PSEUDOPATTERN = re.compile(
+    r"(\:[:][a-zA-Z\-]*[A-Z][a-zA-Z\-]*)(?=([\(\:\@\s]))")
+REMOVALPATTERN = re.compile(
+    r"((?<=([>+~,]\s))|(?<=(@|\s|,)))()(?=(?:[#\.\[]|\:(?!-abp-)))")
+ATTRIBUTEVALUEPATTERN = re.compile(
+    r"^([^\'\"\\]|\\.)*(\"(?:[^\"\\]|\\.)*\"|\'(?:[^\'\\]|\\.)*\')|\*")
+TREESELECTORPATTERN = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)")
+# UNICODESELECTOR = re.compile(r"\\[0-9a-fA-F]{1,6}\s[a-zA-Z]*[A-Z]")
+
+# Compile a regular expression that describes a completely blank line
+BLANKPATTERN = re.compile(r"^\s*$")
+
+UBO_JS_PATTERN = re.compile(r"^@js\(")
+
+# List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, which is handled separately), as of version 1.3.9
+KNOWNOPTIONS = (
+    "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping", "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
+    "rewrite=abp-resource:blank-css", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-text", "rewrite=abp-resource:1x1-transparent-gif", "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png",
+
+    # uBlock Origin
+    "1p", "first-party", "3p", "all", "badfilter", "cname", "csp", "css", "denyallow", "doc", "ehide", "empty", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr",
+
+    # AdGuard
+    "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock", "removeparam"
+)
+
 
 def start():
-    """ Print a greeting message and run FOP in the directories specified via the command
-    line, or the current working directory if no arguments have been passed.
-    """
-
-    greeting = "FOP AdBlockID v{version}".format(version = VERSION)
+    """ Print a greeting message and run FOP in the directories
+    specified via the command line, or the current working directory if
+    no arguments have been passed."""
+    if arg.version:
+        print(greeting)
+        sys.exit(0)
     characters = len(str(greeting))
     print("=" * characters)
     print(greeting)
     print("=" * characters)
 
     # Convert the directory names to absolute references and visit each unique location
-    places = sys.argv[1:]
-
+    places = arg.dir
     if places:
         places = [os.path.abspath(place) for place in places]
-
         for place in sorted(set(places)):
             main(place)
             print()
@@ -36,524 +111,284 @@ def start():
 
 
 def main(location):
-    """ Find and sort all the files in a given directory, committing changes to a
-    repository if one exists.
-    """
+    """ Find and sort all the files in a given directory."""
     # Check that the directory exists, otherwise return
     if not os.path.isdir(location):
-        print("{location} does not exist or is not a folder.".format(location = location))
+        print(f"{location} does not exist or is not a folder.")
         return
 
     # Work through the directory and any subdirectories, ignoring hidden directories
-    print("\nPrimary location: {folder}".format(
-        folder = os.path.join(os.path.abspath(location), "")))
-
+    print(f'\nPrimary location: {os.path.join(os.path.abspath(location), "")}')
     for path, directories, files in os.walk(location):
         for direct in directories[:]:
-            if direct.startswith(".") or direct in IGNORE:
+            if direct.startswith(".") or direct in arg.ignore:
                 directories.remove(direct)
-
-        print("{folder}".format(folder = os.path.join(os.path.abspath(path), "")))
+        print(f'Current directory - {os.path.join(os.path.abspath(path), "")}')
         directories.sort()
-        for fileName in sorted(files):
-            address = os.path.join(path, fileName)
-            extension = os.path.splitext(fileName)[1]
-
+        for filename in sorted(files):
+            address = os.path.join(path, filename)
+            extension = os.path.splitext(filename)[1]
             # Sort all text files that are not blacklisted
-            if extension in FILE_EXTENSION and fileName not in IGNORE:
-                _FopSort(address)
-
+            if extension in FILE_EXTENSION and filename not in arg.ignore:
+                fopsort(address)
             # Delete unnecessary backups and temporary files
-            if extension == ".orig" or extension == ".temp":
+            if extension in (".orig", ".temp"):
                 try:
                     os.remove(address)
                 except(IOError, OSError):
-                    # Ignore errors resulting from deleting files, as they likely indicate
-                    # that the file has already been deleted
+                    # Ignore errors resulting from deleting files, as they likely indicate that the file has already been deleted
                     pass
 
 
-def _FopSort(fileName):
-    """Sort the sections of the file and save any modifications."""
-
-    temporaryFile = "{fileName}.temp".format(fileName = fileName)
-    checkLines = 10
+def fopsort(filename):
+    """ Sort the sections of the file and save any modifications."""
+    temporaryfile = f"{filename}.temp"
+    CHECKLINES = 10
     section = []
-    linesChecked = 1
-    filterLines = elementLines = 0
+    lineschecked = 1
+    filterlines = elementlines = 0
 
-    # Read in the input and output files concurrently to allow filters to be saved as soon
-    # as they are finished with
-    with (open(fileName, "r", encoding = "utf-8", newline = "\n") as inputFile,
-            open(temporaryFile, "w", encoding = "utf-8", newline = "\n") as outputFile):
+    # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
+    with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
 
-        def _CombineFilters(uncombinedFilters, domainPattern, domainSeparator):
-            """Combines domains for (further) identical rules."""
-
+        # Combines domains for (further) identical rules
+        def combinefilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
             combinedFilters = []
-
-            for i in range(len(uncombinedFilters)):
-                domains1 = re.search(domainPattern, uncombinedFilters[i])
-
+            for i, uncombinedFilter in enumerate(uncombinedFilters):
+                domains1 = re.search(DOMAINPATTERN, uncombinedFilter)
                 if i+1 < len(uncombinedFilters) and domains1:
-                    domains2 = re.search(domainPattern, uncombinedFilters[i+1])
+                    domains2 = re.search(DOMAINPATTERN, uncombinedFilters[i+1])
                     domain1str = domains1.group(1)
 
-                if (not domains1
-                    or i+1 == len(uncombinedFilters)
-                    or not domains2
-                    or len(domain1str) == 0
-                    or len(domains2.group(1)) == 0):
+                if not domains1 or i+1 == len(uncombinedFilters) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
                     # last filter or filter didn't match regex or no domains
-                    combinedFilters.append(uncombinedFilters[i])
+                    combinedFilters.append(uncombinedFilter)
                 else:
                     domain2str = domains2.group(1)
-
-                    if domains1.group(0).replace(
-                        domain1str, domain2str, 1) != domains2.group(0):
+                    if domains1.group(0).replace(domain1str, domain2str, 1) != domains2.group(0):
                         # non-identical filters shouldn't be combined
-                        combinedFilters.append(uncombinedFilters[i])
-
-                    elif (re.sub(domainPattern, "", uncombinedFilters[i])
-                        == re.sub(domainPattern, "", uncombinedFilters[i+1])):
-
+                        combinedFilters.append(uncombinedFilter)
+                    elif re.sub(DOMAINPATTERN, "", uncombinedFilter) == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1]):
                         # identical filters. Try to combine them...
-                        newDomains = "{d1}{sep}{d2}".format(
-                            d1=domain1str, sep=domainSeparator, d2=domain2str)
-                        newDomains = domainSeparator.join(
-                            sorted(set(newDomains.split(domainSeparator)),
-                                key = lambda domain: domain.strip("~"))
-                        )
-
-                        if ((domain1str.count("~") != domain1str.count(domainSeparator) + 1)
-                            != (domain2str.count("~") != domain2str.count(domainSeparator) + 1)):
-                            # do not combine rules containing included domains with rules
-                            # containing only excluded domains
-                            combinedFilters.append(uncombinedFilters[i])
+                        newDomains = f"{domain1str}{domainseparator}{domain2str}"
+                        newDomains = domainseparator.join(sorted(
+                            set(newDomains.split(domainseparator)), key=lambda domain: domain.strip("~")))
+                        if (domain1str.count("~") != domain1str.count(domainseparator) + 1) != (domain2str.count("~") != domain2str.count(domainseparator) + 1):
+                            # do not combine rules containing included domains with rules containing only excluded domains
+                            combinedFilters.append(uncombinedFilter)
                         else:
-                            # either both contain one or more included domains, or both
-                            # contain only excluded domains
-                            domainsSubstitute = domains1.group(0).replace(domain1str, newDomains, 1)
+                            # either both contain one or more included domains, or both contain only excluded domains
+                            domainssubstitute = domains1.group(
+                                0).replace(domain1str, newDomains, 1)
                             uncombinedFilters[i+1] = re.sub(
-                                domainPattern, domainsSubstitute, uncombinedFilters[i])
+                                DOMAINPATTERN, domainssubstitute, uncombinedFilter)
                     else:
                         # non-identical filters shouldn't be combined
-                        combinedFilters.append(uncombinedFilters[i])
-
+                        combinedFilters.append(uncombinedFilter)
             return combinedFilters
 
-        def _WriteFilters():
-            """Writes the filter lines to the file"""
-
-            if elementLines > filterLines:
+        # Writes the filter lines to the file
+        def writefilters():
+            if elementlines > filterlines:
                 uncombinedFilters = sorted(
-                    set(section),
-                    key = lambda rule: re.sub(RE_ELEMENTDOMAIN, "", rule)
-                )
-                outputFile.write(
-                    "{filters}\n".format(
-                        filters = "\n".join(
-                            _CombineFilters(uncombinedFilters, RE_ELEMENTDOMAIN, ","))
-                    )
-                )
+                    set(section), key=lambda rule: re.sub(ELEMENTDOMAINPATTERN, "", rule))
+                outputfile.write("{filters}\n".format(filters="\n".join(
+                    combinefilters(uncombinedFilters, ELEMENTDOMAINPATTERN, ","))))
             else:
-                uncombinedFilters = sorted(set(section), key = str.lower)
-                outputFile.write(
-                    "{filters}\n".format(
-                        filters = "\n".join(
-                            _CombineFilters(uncombinedFilters, RE_OPTION_DOMAIN, "|"))
-                    )
-                )
+                uncombinedFilters = sorted(set(section), key=str.lower)
+                outputfile.write("{filters}\n".format(filters="\n".join(
+                    combinefilters(uncombinedFilters, FILTERDOMAINPATTERN, "|"))))
 
-        for line in inputFile:
+        for line in inputfile:
             line = line.strip()
-
-            if re.match(RE_BLANKLINE, line):
-                continue
-
-            # Include comments verbatim and, if applicable, sort the preceding section of
-            # filters and save them in the new version of the file
-            if (line[0] == "!" or line[:8] == "%include"
-                    or line[0] == "[" and line[-1] == "]"):
-                if section:
-                    _WriteFilters()
-                    section = []
-                    linesChecked = 1
-                    filterLines = elementLines = 0
-                outputFile.write("{line}\n".format(line = line))
-            else:
-                # Neaten up filters and, if necessary, check their type for the sorting
-                # algorithm
-                elementParts = re.match(RE_ELEMENT, line)
-
-                if elementParts:
-                    domains = elementParts.group(1).lower()
-
-                    if linesChecked <= checkLines:
-                        elementLines += 1
-                        linesChecked += 1
-
-                    line = _ElementTidy(domains, elementParts.group(2), elementParts.group(3))
+            if not re.match(BLANKPATTERN, line):
+                # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
+                if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
+                    if section:
+                        writefilters()
+                        section = []
+                        lineschecked = 1
+                        filterlines = elementlines = 0
+                    outputfile.write(f"{line}\n")
                 else:
-                    if linesChecked <= checkLines:
-                        filterLines += 1
-                        linesChecked += 1
-
-                    line = _FilterTidy(line)
-
-                # Add the filter to the section
-                section.append(line)
-
+                    # Neaten up filters and, if necessary, check their type for the sorting algorithm
+                    elementparts = re.match(ELEMENTPATTERN, line)
+                    if elementparts:
+                        domains = elementparts.group(1).lower()
+                        if lineschecked <= CHECKLINES:
+                            elementlines += 1
+                            lineschecked += 1
+                        line = elementtidy(domains, elementparts.group(
+                            2), elementparts.group(3))
+                    else:
+                        if lineschecked <= CHECKLINES:
+                            filterlines += 1
+                            lineschecked += 1
+                        line = filtertidy(line, filename)
+                    # Add the filter to the section
+                    section.append(line)
         # At the end of the file, sort and save any remaining filters
         if section:
-            _WriteFilters()
+            writefilters()
 
     # Replace the existing file with the new one only if alterations have been made
-    if not filecmp.cmp(temporaryFile, fileName):
-        # Check the operating system and, if it is Windows, delete the old file to avoid
-        # an exception (it is not possible to rename files to names already in use on
-        # this operating system)
-        if os.name == "nt":
-            os.remove(fileName)
-
-        os.rename(temporaryFile, fileName)
-        print("Sorted: {fileName}".format(fileName = os.path.basename(fileName)))
+    if not filecmp.cmp(temporaryfile, filename):
+        os.replace(temporaryfile, filename)
+        head, tail = os.path.split(filename)
+        print(f"- Sorted: {tail}")
     else:
-        os.remove(temporaryFile)
+        os.remove(temporaryfile)
 
 
-def _SortFunc(option):
-    # For identical options, the inverse always follows the non-inverse option ($image,
-    # ~image instead of $~image,image) with exception for popup filter
-    if option[0] == "~":
-        return option[1:] + "{"
-    if option == "popup":
-        return option + "}"
+def filtertidy(filterin, filename):
+    """ Sort the options of blocking filters and make the filter text
+    lower case if applicable."""
+    optionsplit = re.match(OPTIONPATTERN, filterin)
 
-    # Also will always be first in the list
-    if (option.find("important") > -1 or option.find("first-party") > -1
-            or option.find("strict1p") > -1 or option.find("third-party") > -1
-            or option.find("strict3p") > -1):
-        return "0" + option
-
-    # And let badfilter and key=value parameters will always be last in the list
-    if option.find("badfilter") > -1:
-        return "|" + option
-    if option.split('=')[0] in KNOWNPARAMETERS:
-        return "}" + option
-
-    return option
-
-
-def _FilterTidy(filterin):
-    """ Sort the options of blocking filters and make the filter text lower case if
-    applicable.
-    """
-
-    optionSplit = re.match(RE_OPTION, filterin)
-
-    if not optionSplit:
+    if not optionsplit:
         # Remove unnecessary asterisks from filters without any options and return them
-        return _RemoveUnnecessaryWildcards(filterin, False)
-    else:
-        # If applicable, separate and sort the filter options in addition to the filter
-        # text
-        optionList = optionSplit.group(2).lower().split(",")
+        return removeunnecessarywildcards(filterin)
 
-        domainList = []
-        denyAllow = []
-        rediwriteList = []
-        removeParam = ""
-        removeEntries = []
-        keepAsterisk = False
+    # If applicable, separate and sort the filter options in addition to the filter text
+    filtertext = removeunnecessarywildcards(optionsplit.group(1))
+    optionlist = optionsplit.group(2).lower().split(",")
 
-        for option in optionList:
-            # Detect and separate domain options
-            if option[0:7] == "domain=":
-                domainList.extend(option[7:].split("|"))
-                removeEntries.append(option)
-            elif option[0:10] == "denyallow=":
-                if "domain=" not in filterin:
-                    print("Warning: \"denyallow=\" option requires the \"domain=\" option."
-                        "\n \"{}\"".format(filterin))
-                denyAllow.extend(option[10:].split("|"))
-                removeEntries.append(option)
-            elif option[0:12] == "removeparam=":
-                removeParam = option[12:]
-                removeEntries.append(option)
-            elif re.match(RE_OPTION_REDIRECT, option):
-                keepAsterisk = True
-                rediwriteList.append(option)
-            elif option == "popunder":
-                keepAsterisk = True
-            elif (option.strip("~") not in KNOWNOPTIONS
-                and option.split('=')[0] not in KNOWNPARAMETERS):
+    domainlist = []
+    denyallowlist = []
+    redirectlist = []
+    removeentries = []
+    # Get line number of the filter in the file
+    linenumber = ""
+    with open(filename, "r") as file:
+        for i, line in enumerate(file):
+            if line.strip() == filterin:
+                linenumber = f"{i+1}"
+                break
 
-                print("Warning: The option \"{option}\" used on the filter"
-                    "\"{problemfilter}\" is not recognised by FOP".format(
-                        option = option, problemfilter = filterin))
+    for option in optionlist:
+        # Detect and separate domain options
+        if option[0:7] == "domain=":
+            domainlist.extend(option[7:].split("|"))
+            removeentries.append(option)
+        elif option[0:10] == "denyallow=":
+            if "domain=" not in filterin:
+                m = f'\n- \"denyallow=\" option requires the \"domain=\" option.\n'\
+                    f'  {filename}:{linenumber}\n\n'\
+                    f'  {filterin}'\
+                    f' \n'
+                print(m)
+            denyallowlist.extend(option[10:].split("|"))
+            removeentries.append(option)
+        elif re.match(RE_OPTION_REDIRECT, option):
+            redirectlist.append(option)
+        elif option[0:4] == "app=" or option[0:9] == "protobuf=" or option[0:7] == "cookie=" or option[0:8] == "replace=" or option[0:12] == "removeparam=":
+            optionlist = optionsplit.group(2).split(",")
+        elif option.strip("~") not in KNOWNOPTIONS:
+            m = f'- The option \"{option}\" is not recognised by FOP\n'\
+                f'  {filename}:{linenumber}\n\n'\
+                f'  {filterin}'\
+                f' \n'
+            print(m)
 
-        # Sort all options other than domain alphabetically with a few exceptions
-        optionList = sorted(
-            set(filter(lambda option: (option not in removeEntries)
-                and (option not in rediwriteList),
-                optionList
-            )),
-            key = _SortFunc
-        )
+    # Sort all options other than domain alphabetically
+    # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
+    optionlist = sorted(set(filter(lambda option: (option not in removeentries) and (option not in redirectlist), optionlist)),
+                        key=lambda option: (option[1:] + "~") if option[0] == "~" else option)
+    # If applicable, sort redirect and rewrite options and append them to the list of options
+    if redirectlist:
+        optionlist.extend(redirectlist)
+    # If applicable, sort domain restrictions and append them to the list of options
+    if domainlist:
+        optionlist.append(
+            f'domain={"|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key=lambda domain: domain.strip("~")))}')
+    # If applicable, sort denyallow options and append them to the list of options
+    if denyallowlist:
+        optionlist.append(
+            f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
 
-        # Replace underscore typo with hyphen-minus in options like third_party
-        optionList = list(map(lambda option: option.replace("_", "-"), optionList))
-
-        # Append `removeparam` back at the end (both to keep it at the end and skip
-        # underscore typo fix)
-        if removeParam:
-            optionList.append("removeparam={}".format(removeParam))
-
-        # Append redirect rule back without underscore typo fix
-        if rediwriteList:
-            optionList.extend(rediwriteList)
-
-        # If applicable, sort domain restrictions and append them to the list of options
-        if denyAllow:
-            optionList.append(
-                "denyallow={denyAllow}".format(
-                    denyAllow = "|".join(sorted(set(denyAllow))).lstrip('|'))
-            )
-        if domainList:
-            optionList.append(
-                "domain={domainList}".format(
-                    domainList = "|".join(sorted(set(domainList),
-                    key = lambda domain: domain.strip("~"))).lstrip('|'))
-            )
-
-        # according to uBO documentation redirect options must start either with * or ||
-        # so, it is not unnecessary wildcard in such case
-        filterText = _RemoveUnnecessaryWildcards(optionSplit.group(1), keepAsterisk)
-        if (keepAsterisk
-                and (len(filterText) < 1
-                    or (len(filterText) > 0
-                        and filterText[0] != '*'
-                        and filterText[:2] != '||'
-            ))):
-
-            print("Warning: Incorrect filter \"{filterin}\". Such filters must start with"
-                "either '*' or '||'.".format(filterin = filterin))
-
-        # Return the full filter
-        return ("{filterText}${options}".format(
-            filterText = filterText, options = ",".join(optionList)))
+    # Return the full filter
+    return f'{filtertext}${",".join(optionlist)}'
 
 
-def _ElementTidy(domains, separator, selector):
-    """ Sort the domains of element hiding rules, remove unnecessary tags and make the
-    relevant sections of the rule lower case.
-    """
-
+def elementtidy(domains, separator, selector):
+    """ Sort the domains of element hiding rules, remove unnecessary
+    tags and make the relevant sections of the rule lower case."""
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
-        domains = (
-            ","
-            .join(sorted(set(domains.split(",")), key = lambda domain: domain.strip("~")))
-            .lstrip(',')
-        )
-
-    # Skip non-selectors (uBO's JS injections and other)
-    if re.match(RE_NONSELECTOR, selector) != None:
-        return ("{domain}{separator}{selector}".format(
-            domain = domains, separator = separator, selector = selector))
-
+        domains = ",".join(sorted(set(domains.split(",")),
+                           key=lambda domain: domain.strip("~")))
     # Mark the beginning and end of the selector with "@"
-    selectorAndTail = re.match(RE_SELECTORANDTAIL, selector) #selector.split(':style(')
-    splitterPart = ""
-    tailPart = ""
-
-    if selectorAndTail.group(2) != None:
-        splitterPart = selectorAndTail.group(3)
-        tailPart = selectorAndTail.group(4)
-
-    selector = "@{selector}@".format(selector = selectorAndTail.group(1))
+    selector = f"@{selector}@"
     each = re.finditer
-    # Make sure we don't match items in strings (e.g., don't touch Width in
-    # ##[style="height:1px; Width: 123px;"])
-    selectorWithoutStrings = selector
-    selectorOnlyStrings = ""
-
+    # Make sure we don't match items in strings (e.g., don't touch Width in ##[style="height:1px; Width: 123px;"])
+    selectorwithoutstrings = selector
+    selectoronlystrings = ""
     while True:
-        stringMatch = re.match(RE_ATTRIBUTEVALUE, selectorWithoutStrings)
-
-        if stringMatch == None:
+        stringmatch = re.match(ATTRIBUTEVALUEPATTERN, selectorwithoutstrings)
+        if stringmatch is None:
             break
-
-        selectorWithoutStrings = selectorWithoutStrings.replace(
-            "{before}{stringPart}".format(
-                before = stringMatch.group(1), stringPart = stringMatch.group(2)),
-            "{before}".format(before = stringMatch.group(1)),
-            1
-        )
-        selectorOnlyStrings = "{old}{new}".format(
-            old = selectorOnlyStrings, new = stringMatch.group(2))
+        selectorwithoutstrings = selectorwithoutstrings.replace(
+            f"{stringmatch.group(1)}{stringmatch.group(2)}", f"{stringmatch.group(1)}", 1)
+        selectoronlystrings = f"{selectoronlystrings}{stringmatch.group(2)}"
 
     # Clean up tree selectors
-    for tree in each(RE_TREESELECTOR, selector):
-
-        if (tree.group(0) in selectorOnlyStrings
-                or not tree.group(0) in selectorWithoutStrings):
+    for tree in each(TREESELECTORPATTERN, selector):
+        if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings:
             continue
-
-        # added check for case when tree selector were used in :-abp-has() and similar
-        # constructions at first position. Basically for cases like PARENT:-abp-has(> CHILD)
-        replaceBy = (
-            "{sp}{g2} ".format(
-                sp = ("" if tree.group(1) == "(" else " "),
-                g2 = tree.group(2)
-            )
-        )
-        if replaceBy == "   ":
-            replaceBy = " "
-        selector = selector.replace(
-            tree.group(0),
-            "{g1}{replaceBy}{g3}".format(
-                g1 = tree.group(1), replaceBy = replaceBy, g3 = tree.group(3)
-            ),
-            1
-        )
-
+        if tree.group(1) == "(":
+            replaceby = f"{tree.group(2)} "
+        else:
+            replaceby = f" {tree.group(2)} "
+        if replaceby == "   ":
+            replaceby = " "
+        # Make sure we don't match arguments of uBO scriptlets
+        if not UBO_JS_PATTERN.match(selector):
+            selector = selector.replace(tree.group(
+                0), f"{tree.group(1)}{replaceby}{tree.group(3)}", 1)
     # Remove unnecessary tags
-    for untag in each(RE_REMOVE_AST, selector):
-        untagName = untag.group(4)
-        if untagName in selectorOnlyStrings or not untagName in selectorWithoutStrings:
+    for untag in each(REMOVALPATTERN, selector):
+        untagname = untag.group(4)
+        if untagname in selectoronlystrings or not untagname in selectorwithoutstrings:
             continue
-
         bc = untag.group(2)
-        if bc == None:
+        if bc is None:
             bc = untag.group(3)
-
         ac = untag.group(5)
-
-        selector = selector.replace(
-            "{before}{untag}{after}".format(before = bc, untag = untagName, after = ac),
-            "{before}{after}".format(before = bc, after = ac),
-            1
-        )
-
-    # Make the remaining tags lower case wherever possible
-    for tag in each(RE_SELECTOR, selector):
-        tagName = tag.group(1)
-        if tagName in selectorOnlyStrings or not tagName in selectorWithoutStrings:
-            continue
-
-        if re.search(RE_UNICODESELECTOR, selectorWithoutStrings) != None: break
-
-        ac = tag.group(3)
-        if ac == None:
-            ac = tag.group(4)
-
-        selector = selector.replace(
-            "{tag}{after}".format(tag = tagName, after = ac),
-            "{tag}{after}".format(tag = tagName.lower(), after = ac),
-            1
-        )
-
+        selector = selector.replace(f"{bc}{untagname}{ac}", f"{bc}{ac}", 1)
     # Make pseudo classes lower case where possible
-    for pseudo in each(RE_PSEUDO, selector):
-        pseudoClass = pseudo.group(1)
-
-        if (pseudoClass in selectorOnlyStrings
-                or not pseudoClass in selectorWithoutStrings):
+    for pseudo in each(PSEUDOPATTERN, selector):
+        pseudoclass = pseudo.group(1)
+        if pseudoclass in selectoronlystrings or not pseudoclass in selectorwithoutstrings:
             continue
-
-        ac = pseudo.group(2)
+        ac = pseudo.group(3)
         selector = selector.replace(
-            "{pClass}{after}".format(pClass = pseudoClass, after = ac),
-            "{pClass}{after}".format(pClass = pseudoClass.lower(), after = ac),
-            1
-        )
-
-    # Remove unnecessary 'px' in '0px' and space in "! important"
-    if splitterPart == ":style" or splitterPart == ":matches-css" and tailPart != None:
-        for un0px in each(RE_REMOVE_0PX, tailPart):
-            bc = un0px.group(2)
-            ac = un0px.group(4)
-            tailPart = tailPart.replace(
-                "{before}{remove}{after}".format(
-                    before = bc, remove = un0px.group(3), after = ac),
-                "{before}{after}".format(before = bc, after = ac),
-                1
-            )
-
-        for bsi in each(RE_BANGSPACEIMPORTANT, tailPart):
-            bc = bsi.group(1)
-            space = "" if bc == " " else " "
-            ac = bsi.group(3)
-            tailPart = tailPart.replace(
-                "{before}{bang}{after}".format(
-                    before = bc, bang = bsi.group(2), after = ac),
-                "{before}{space}!{after}".format(before = bc, space = space, after = ac),
-                1
-            )
-
-    # Remove the markers from the beginning and end of the selector and return the
-    # complete rule
-    return ("{domain}{separator}{selector}{splitter}{tail}".format(
-        domain = domains,
-        separator = separator,
-        selector = selector[1:-1],
-        splitter = splitterPart,
-        tail = tailPart)
-    )
+            f"{pseudoclass}{ac}", f"{pseudoclass}{ac}", 1)
+    # Remove the markers from the beginning and end of the selector and return the complete rule
+    return f"{domains}{separator}{selector[1:-1]}"
 
 
-def _IsGlobalElement(domains):
-    """Check whether all domains are negations."""
-
-    for domain in domains.split(","):
-        if domain and not domain.startswith("~"):
-            return False
-
-    return True
-
-
-def _RemoveUnnecessaryWildcards(filterText, keepAsterisk):
-    """ Where possible, remove unnecessary wildcards from the beginnings and ends of
-    blocking filters.
-    """
-
-    allowList = False
+def removeunnecessarywildcards(filtertext):
+    # Where possible, remove unnecessary wildcards from the beginnings and ends of blocking filters.
+    allowlist = False
     hadStar = False
-
-    if filterText[0:2] == "@@":
-        allowList = True
-        filterText = filterText[2:]
-
-    while (len(filterText) > 1
-            and filterText[0] == "*"
-            and not filterText[1] == "|"
-            and not filterText[1] == "!"):
-        filterText = filterText[1:]
+    if filtertext[0:2] == "@@":
+        allowlist = True
+        filtertext = filtertext[2:]
+    while len(filtertext) > 1 and filtertext[0] == "" and not filtertext[1] == "|" and not filtertext[1] == "!":
+        filtertext = filtertext[1:]
         hadStar = True
-
-    while (len(filterText) > 1
-            and filterText[-1] == "*"
-            and not filterText[-2] == "|"
-            and not filterText[-2] == " "):
-        filterText = filterText[:-1]
+    while len(filtertext) > 1 and filtertext[-1] == "" and not filtertext[-2] == "|":
+        filtertext = filtertext[:-1]
         hadStar = True
-
-    if hadStar and filterText[0] == "/" and filterText[-1] == "/":
-        filterText = "{filterText}*".format(filterText = filterText)
-
-    if hadStar and keepAsterisk:
-        filterText = "*{filterText}".format(filterText = filterText)
-
-    if not keepAsterisk and filterText == "*":
-        filterText = ""
-
-    if allowList:
-        filterText = "@@{filterText}".format(filterText = filterText)
-
-    return filterText
+    if hadStar and filtertext[0] == "/" and filtertext[-1] == "/":
+        filtertext = f"{filtertext}*"
+    if filtertext == "":
+        filtertext = ""
+    if allowlist:
+        filtertext = f"@@{filtertext}"
+    return filtertext
 
 
 if __name__ == '__main__':
+    arg = ap.parse_args()
     start()
