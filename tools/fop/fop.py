@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-# coding=utf-8
-# pylint: disable=line-too-long
-# pylint: disable=invalid-name
-# pylint: disable=missing-function-docstring
+
 """ FOP_FH
     Filter Orderer and Preener (tweaked by Realodix)
     Copyright (C) 2011 Michael
