@@ -52,7 +52,8 @@ RE_OPTION_REDIRECT = re.compile(r"""
         |noop-0.1s.mp3|noop-1s.mp4
         |noop.html|noop.js|noop.txt|noopcss
         |ampproject_v0.js|nofab.js|fuckadblock.js-3.2.0
-        |google-analytics_(cx_api.js|analytics.js|ga.js)|googlesyndication_adsbygoogle.js|googletagmanager_gtm.js|googletagservices_gpt.js
+        |google-analytics_(cx_api.js|analytics.js|ga.js)
+        |googlesyndication_adsbygoogle.js|googletagmanager_gtm.js|googletagservices_gpt.js
         |click2load.html
     )
     (,.+)?$
