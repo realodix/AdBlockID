@@ -16,4 +16,4 @@ if [ "$1" == "abidplus" ]; then
     eval "flcombine -i abid=. src/packages/adblockid_plus.template.txt output/adblockid_plus.txt"
 fi
 
-read
+read -t 10
