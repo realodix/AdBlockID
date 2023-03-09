@@ -75,6 +75,8 @@ TREESELECTORPATTERN = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
 
+UBO_JS_PATTERN = re.compile(r"^@js\(")
+
 # List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, which is handled separately), as of version 1.3.9
 KNOWNOPTIONS = (
     "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping", "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
@@ -331,8 +333,7 @@ def elementtidy(domains, separator, selector):
         selectorwithoutstrings = selectorwithoutstrings.replace(
             f"{stringmatch.group(1)}{stringmatch.group(2)}", f"{stringmatch.group(1)}", 1)
         selectoronlystrings = f"{selectoronlystrings}{stringmatch.group(2)}"
-    # Make sure we don't match arguments of uBO scriptlets
-    UBO_JS_PATTERN = re.compile(r"^@js\(")
+
     # Clean up tree selectors
     for tree in each(TREESELECTORPATTERN, selector):
         if tree.group(0) in selectoronlystrings or not tree.group(0) in selectorwithoutstrings:
@@ -343,6 +344,7 @@ def elementtidy(domains, separator, selector):
             replaceby = f" {tree.group(2)} "
         if replaceby == "   ":
             replaceby = " "
+        # Make sure we don't match arguments of uBO scriptlets
         if not UBO_JS_PATTERN.match(selector):
             selector = selector.replace(tree.group(
                 0), f"{tree.group(1)}{replaceby}{tree.group(3)}", 1)
