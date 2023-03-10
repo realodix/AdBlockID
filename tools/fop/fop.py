@@ -20,7 +20,7 @@
 import re, os, sys, filecmp, argparse
 
 # FOP version number
-VERSION = "1.9"
+VERSION = "1.9.1"
 
 # Welcome message
 greeting = f"FOP (Filter Orderer and Preener) v{VERSION}"
@@ -308,8 +308,10 @@ def filtertidy(filterin, filename):
 
     # Sort all options other than domain alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
-    optionlist = sorted(set(filter(lambda option: (option not in removeentries) and (option not in redirectlist), optionlist)),
-                        key=lambda option: (option[1:] + "~") if option[0] == "~" else option)
+    optionlist = sorted(
+        set(filter(lambda option: (option not in removeentries) and (option not in redirectlist), optionlist)),
+        key=sortfunc
+    )
     # If applicable, sort redirect and rewrite options and append them to the list of options
     if redirectlist:
         optionlist.extend(redirectlist)
@@ -331,6 +333,13 @@ def filtertidy(filterin, filename):
     # Return the full filter
     return f'{filtertext}${",".join(optionlist)}'
 
+
+def sortfunc (option):
+    # For identical options, the inverse always follows the non-inverse option
+    # (e.g., $image,~image instead of $~image,image)
+    if option[0] == "~": return option[1:] + "~"
+
+    return option
 
 def elementtidy(domains, separator, selector):
     """ Sort the domains of element hiding rules, remove unnecessary
