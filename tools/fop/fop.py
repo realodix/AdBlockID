@@ -20,7 +20,7 @@
 import re, os, sys, filecmp, argparse
 
 # FOP version number
-VERSION = "1.10.1"
+VERSION = "1.11"
 
 # Welcome message
 greeting = f"FOP (Filter Orderer and Preener) v{VERSION}"
@@ -72,15 +72,13 @@ TREESELECTORPATTERN = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
 
-UBO_JS_PATTERN = re.compile(r"^@js\(")
-
-# List all uBlock Origin (excepting: domain, removeparam; which is handled separately)
+# List all uBlock Origin (excepting: domain, removeparam, denyallow, from, method; which is handled separately)
 KNOWNOPTIONS = (
     '_', 'all', 'badfilter', 'important', 'other', 'empty',
     '1p', 'first-party', 'strict1p', '3p', 'third-party', 'strict3p',
-    'cname', 'css', 'stylesheet', 'csp', 'denyallow', 'doc', 'domain', 'ehide', 'elemhide',
-    'font', 'frame', 'from', 'generichide','ghide', 'header', 'image', 'inline-font',
-    'inline-script', 'match-case', 'media', 'method', 'mp4', 'object', 'ping', 'popunder',
+    'cname', 'css', 'stylesheet', 'csp', 'doc', 'domain', 'ehide', 'elemhide',
+    'font', 'frame', 'generichide','ghide', 'header', 'image', 'inline-font',
+    'inline-script', 'match-case', 'media', 'mp4', 'object', 'ping', 'popunder',
     'popup', 'script', 'shide', 'specifichide', 'subdocument', 'to', 'websocket', 'xhr',
     'xmlhttprequest'
 )
@@ -142,7 +140,7 @@ def main(location):
 def fopsort(filename):
     """ Sort the sections of the file and save any modifications."""
     temporaryfile = f"{filename}.temp"
-    CHECKLINES = 10
+    check_lines = 10
     section = []
     lineschecked = 1
     filterlines = elementlines = 0
@@ -214,13 +212,13 @@ def fopsort(filename):
                     elementparts = re.match(ELEMENTPATTERN, line)
                     if elementparts:
                         domains = elementparts.group(1).lower()
-                        if lineschecked <= CHECKLINES:
+                        if lineschecked <= check_lines:
                             elementlines += 1
                             lineschecked += 1
                         line = elementtidy(domains, elementparts.group(
                             2), elementparts.group(3))
                     else:
-                        if lineschecked <= CHECKLINES:
+                        if lineschecked <= check_lines:
                             filterlines += 1
                             lineschecked += 1
                         line = filtertidy(line, filename)
@@ -294,7 +292,7 @@ def filtertidy(filterin, filename):
             removeentries.append(option)
         elif re.match(RE_OPTION_REDIRECT, option):
             redirectlist.append(option)
-        elif option[0:4] == "app=" or option[0:7] == "cookie=" or option[0:8] == "replace=" or option[0:12] == "removeparam=":
+        elif "removeparam=" == option[0:12] or "method" == option[0:6]:
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
             m = f'- The option \"{option}\" is not recognised by FOP\n'\
@@ -386,7 +384,7 @@ def elementtidy(domains, separator, selector):
         if replaceby == "   ":
             replaceby = " "
         # Make sure we don't match arguments of uBO scriptlets
-        if not UBO_JS_PATTERN.match(selector):
+        if not re.match("^@js\(", selector):
             selector = selector.replace(tree.group(
                 0), f"{tree.group(1)}{replaceby}{tree.group(3)}", 1)
     # Remove unnecessary tags
