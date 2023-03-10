@@ -20,7 +20,7 @@
 import re, os, sys, filecmp, argparse
 
 # FOP version number
-VERSION = "1.9.1"
+VERSION = "1.10"
 
 # Welcome message
 greeting = f"FOP (Filter Orderer and Preener) v{VERSION}"
