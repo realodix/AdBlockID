@@ -20,7 +20,7 @@
 import re, os, sys, filecmp, argparse
 
 # FOP version number
-VERSION = "1.9.1"
+VERSION = "1.10"
 
 # Welcome message
 greeting = f"FOP (Filter Orderer and Preener) v{VERSION}"
@@ -82,7 +82,7 @@ KNOWNOPTIONS = (
     # uBlock Origin
     "all", "badfilter", "cname", "csp", "css", "denyallow", "doc", "ehide", "empty", "frame", "ghide", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder", "shide", "specifichide", "xhr",
     "1p", "first-party", "3p", "strict1p", "strict3p",
-    "from", "to",
+    "from", "to", "_",
 
     # AdGuard
     "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock", "removeparam"
@@ -338,6 +338,22 @@ def sortfunc (option):
     # For identical options, the inverse always follows the non-inverse option
     # (e.g., $image,~image instead of $~image,image)
     if option[0] == "~": return option[1:] + "~"
+
+    # Also will always be first in the list
+    if (option.find("important") > -1
+       or option.find("first-party") > -1
+       or option.find("strict1p") > -1
+       or option.find("third-party") > -1
+       or option.find("strict3p") > -1):
+        return "0" + option
+
+    # let badfilter will always be last in the list
+    if option.find("badfilter") > -1: return "|" + option
+
+    # move the `_` option to the position after the `removeparam` option
+    if option.find("removeparam") > -1: return "1" + option
+    if option.find("_") > -1: return "2" + option
+
 
     return option
 
