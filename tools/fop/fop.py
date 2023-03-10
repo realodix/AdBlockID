@@ -294,7 +294,7 @@ def filtertidy(filterin, filename):
             removeentries.append(option)
         elif re.match(RE_OPTION_REDIRECT, option):
             redirectlist.append(option)
-        elif option[0:4] == "app=" or option[0:7] == "cookie=" or option[0:8] == "replace=" or option[0:12] == "removeparam=":
+        elif "removeparam=" == option[0:12]:
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
             m = f'- The option \"{option}\" is not recognised by FOP\n'\
