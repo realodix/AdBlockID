@@ -339,6 +339,14 @@ def sortfunc (option):
     # (e.g., $image,~image instead of $~image,image)
     if option[0] == "~": return option[1:] + "~"
 
+    # Also will always be first in the list
+    if (option.find("important") > -1
+       or option.find("first-party") > -1
+       or option.find("strict1p") > -1
+       or option.find("third-party") > -1
+       or option.find("strict3p") > -1):
+        return "0" + option
+
     return option
 
 def elementtidy(domains, separator, selector):
