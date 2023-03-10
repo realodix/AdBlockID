@@ -72,8 +72,6 @@ TREESELECTORPATTERN = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
 
-UBO_JS_PATTERN = re.compile(r"^@js\(")
-
 # List all uBlock Origin (excepting: domain, removeparam, denyallow, from, method; which is handled separately)
 KNOWNOPTIONS = (
     '_', 'all', 'badfilter', 'important', 'other', 'empty',
@@ -386,7 +384,7 @@ def elementtidy(domains, separator, selector):
         if replaceby == "   ":
             replaceby = " "
         # Make sure we don't match arguments of uBO scriptlets
-        if not UBO_JS_PATTERN.match(selector):
+        if not re.match("^@js\(", selector):
             selector = selector.replace(tree.group(
                 0), f"{tree.group(1)}{replaceby}{tree.group(3)}", 1)
     # Remove unnecessary tags
