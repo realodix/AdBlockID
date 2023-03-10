@@ -20,7 +20,7 @@
 import re, os, sys, filecmp, argparse
 
 # FOP version number
-VERSION = "1.10"
+VERSION = "1.10.1"
 
 # Welcome message
 greeting = f"FOP (Filter Orderer and Preener) v{VERSION}"
@@ -297,7 +297,7 @@ def filtertidy(filterin, filename):
             removeentries.append(option)
         elif re.match(RE_OPTION_REDIRECT, option):
             redirectlist.append(option)
-        elif option[0:4] == "app=" or option[0:9] == "protobuf=" or option[0:7] == "cookie=" or option[0:8] == "replace=" or option[0:12] == "removeparam=":
+        elif option[0:4] == "app=" or option[0:7] == "cookie=" or option[0:8] == "replace=" or option[0:12] == "removeparam=":
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
             m = f'- The option \"{option}\" is not recognised by FOP\n'\
