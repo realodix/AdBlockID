@@ -74,12 +74,12 @@ BLANKPATTERN = re.compile(r"^\s*$")
 
 UBO_JS_PATTERN = re.compile(r"^@js\(")
 
-# List all uBlock Origin (excepting: domain, removeparam, method; which is handled separately)
+# List all uBlock Origin (excepting: domain, removeparam, denyallow, from, method; which is handled separately)
 KNOWNOPTIONS = (
     '_', 'all', 'badfilter', 'important', 'other', 'empty',
     '1p', 'first-party', 'strict1p', '3p', 'third-party', 'strict3p',
-    'cname', 'css', 'stylesheet', 'csp', 'denyallow', 'doc', 'domain', 'ehide', 'elemhide',
-    'font', 'frame', 'from', 'generichide','ghide', 'header', 'image', 'inline-font',
+    'cname', 'css', 'stylesheet', 'csp', 'doc', 'domain', 'ehide', 'elemhide',
+    'font', 'frame', 'generichide','ghide', 'header', 'image', 'inline-font',
     'inline-script', 'match-case', 'media', 'mp4', 'object', 'ping', 'popunder',
     'popup', 'script', 'shide', 'specifichide', 'subdocument', 'to', 'websocket', 'xhr',
     'xmlhttprequest'
