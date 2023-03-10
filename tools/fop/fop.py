@@ -347,6 +347,9 @@ def sortfunc (option):
        or option.find("strict3p") > -1):
         return "0" + option
 
+    # let badfilter will always be last in the list
+    if option.find("badfilter") > -1: return "|" + option
+
     return option
 
 def elementtidy(domains, separator, selector):
