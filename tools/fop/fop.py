@@ -74,13 +74,13 @@ BLANKPATTERN = re.compile(r"^\s*$")
 
 UBO_JS_PATTERN = re.compile(r"^@js\(")
 
-# List all uBlock Origin (excepting: domain, removeparam; which is handled separately)
+# List all uBlock Origin (excepting: domain, removeparam, method; which is handled separately)
 KNOWNOPTIONS = (
     '_', 'all', 'badfilter', 'important', 'other', 'empty',
     '1p', 'first-party', 'strict1p', '3p', 'third-party', 'strict3p',
     'cname', 'css', 'stylesheet', 'csp', 'denyallow', 'doc', 'domain', 'ehide', 'elemhide',
     'font', 'frame', 'from', 'generichide','ghide', 'header', 'image', 'inline-font',
-    'inline-script', 'match-case', 'media', 'method', 'mp4', 'object', 'ping', 'popunder',
+    'inline-script', 'match-case', 'media', 'mp4', 'object', 'ping', 'popunder',
     'popup', 'script', 'shide', 'specifichide', 'subdocument', 'to', 'websocket', 'xhr',
     'xmlhttprequest'
 )
@@ -294,7 +294,7 @@ def filtertidy(filterin, filename):
             removeentries.append(option)
         elif re.match(RE_OPTION_REDIRECT, option):
             redirectlist.append(option)
-        elif "removeparam=" == option[0:12]:
+        elif "removeparam=" == option[0:12] or "method" == option[0:6]:
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
             m = f'- The option \"{option}\" is not recognised by FOP\n'\
