@@ -140,7 +140,7 @@ def main(location):
 def fopsort(filename):
     """ Sort the sections of the file and save any modifications."""
     temporaryfile = f"{filename}.temp"
-    CHECKLINES = 10
+    check_lines = 10
     section = []
     lineschecked = 1
     filterlines = elementlines = 0
@@ -212,13 +212,13 @@ def fopsort(filename):
                     elementparts = re.match(ELEMENTPATTERN, line)
                     if elementparts:
                         domains = elementparts.group(1).lower()
-                        if lineschecked <= CHECKLINES:
+                        if lineschecked <= check_lines:
                             elementlines += 1
                             lineschecked += 1
                         line = elementtidy(domains, elementparts.group(
                             2), elementparts.group(3))
                     else:
-                        if lineschecked <= CHECKLINES:
+                        if lineschecked <= check_lines:
                             filterlines += 1
                             lineschecked += 1
                         line = filtertidy(line, filename)
