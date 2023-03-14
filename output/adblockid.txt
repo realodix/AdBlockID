@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.3.125
+! Version: 23.3.126
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Mar 2023 15:45 UTC
+! Last modified: 14 Mar 2023 16:03 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3223,8 +3223,10 @@ vidio.com###leaderboard_container:has(> .ad-slot)
 jawaraspeed.com###openModal:has-text(/ads/i)
 dailyspin.id##.code-block:not(:has(a[href*="dailyspin.id"])) > a > img
 fanicat.com##.code-block:not(:has(a[href*="fanicat.com"])) > a > img
+candilkuya.com##.link-btn:has-text(/iklan/i)
 briliobeauty.net,briliofood.net,techno.id##.placeholder-container:has(> .ads-container)
 kerjaker.com##.post-body-artikel .separator:matches-css(text-align: center)
+candilkuya.com##.widget:has(> [id^="iklan"])
 nusabali.com##.widget:has(h2:has-text(/iklan/i))
 empatdio.com,gammafisblog.com,gurupenyemangat.com,hongkoong.com,kucingku.id##[href^="https://shope.ee/"]:has(> img)
 hongkoong.com##[href^="https://tokopedia.link/"]:has(> img)
