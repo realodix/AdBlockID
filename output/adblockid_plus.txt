@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.1.2
+! Version: 23.3.1
 ! Title: AdBlockID Plus
 ! Description: Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID.
-! Last modified: 08 Jan 2023 21:19 UTC
+! Last modified: 15 Mar 2023 17:06 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 apkmody.io###above-the-fold-ad
@@ -15,9 +15,12 @@ stitcher.io##.ad-container
 fandom.com##.ad-slot-wrapper
 apk.support##.advertisement
 yourdictionary.com##.advertising-container
+tutsplus.com##.avert
+tutsplus.com##.avert--in-article
 softfamous.com##.container_ads
 filehorse.com##.dx:has([id^="td-bottom-leaderboard-"])
 filehorse.com##.dx:has([id^="td-top-leaderboard-"])
+tutsplus.com##.fuse-ad
 androidapksfree.com##.header-ad-heading
 fandom.com##.ic-ad-slot-placeholder
 tutsplus.com##.post__inarticle-ad-template-mobile
@@ -41,15 +44,15 @@ idntimes.com##.smartbanner
 merdeka.com##header .assambleApp
 tokopedia.com##[data-testid="WTA-TopSticky"]
 tokopedia.com##body:style(margin-top: 0!important;)
-streamtape.*##+js(acis, JSON.parse, Promise)
-dood.*##+js(acis, adcashMacros)
 crackshash.com##+js(acis, document.getElementsByClassName, wp-ad)
+dood.*##+js(acis, adcashMacros)
 dood.*##+js(acis, parseInt, break;case $.)
-sbfull.com##+js(aopr, DoodPop)
-sbfull.com,vanfem.com##+js(aopr, __Y)
-sbfull.com##+js(aopr, mm)
-dood.*##+js(aopw, DoodPop)
 dood.*##+js(aopw, _pop)
+dood.*##+js(aopw, DoodPop)
+sbfull.com##+js(aopr, DoodPop)
+sbfull.com##+js(aopr, mm)
+sbfull.com,vanfem.com##+js(aopr, __Y)
+streamtape.*##+js(acis, JSON.parse, Promise)
 streamtape.*##+js(window.open-defuser)
 streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 piratepc.me##.code-block:matches-css(text-align: center) a[href^="javascript:"]
