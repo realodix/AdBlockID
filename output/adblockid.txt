@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.3.137
+! Version: 23.3.138
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Mar 2023 22:44 UTC
+! Last modified: 15 Mar 2023 11:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3734,7 +3734,7 @@ cnnindonesia.com,haibunda.com,insertlive.com##.sisip_embed_sosmed:remove()
 sindonews.com##.vidembed-box:remove()
 kompas.com,kompasiana.com##.video-box-wrap:has(.rVideo-player):remove()
 detik.com##.video20detik_1:remove()
-parapuan.co,sonora.id##[class^=rVideo-]:remove()
+parapuan.co,sonora.id##[class^="rVideo-"]:remove()
 jalantikus.com##[id^="gliaplayer-"]:remove()
 carisinyal.com##[id^="gliaplayer-props_"]:remove()
 suara.com##article #dailymotion-widget:remove()
@@ -3752,13 +3752,13 @@ katadata.co.id##article .dm-player:remove()
 okezone.com###rekomendasi_video:remove()
 okezone.com##.video-wrap:has(#rekomendasi_video):remove()
 okezone.com##.vplayer:has(iframe[src^="https://video.okezone.com/embedoutstream"]):remove()
-okezone.com##[id^=ivs-]:remove()
+okezone.com##[id^="ivs-"]:remove()
 gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://player.ivideosmart.com"]):remove()
 greenscene.co.id##.gliaplayer-container
 gridoto.com##.ivs-box:remove()
 theasianparent.com##.player-ivideosmart-wrap:remove()
-beritasatu.com,dailysia.com,greenscene.co.id,grid.id,japanesestation.com,katadata.co.id,magdalene.co,momsmoney.id,motorplus-online.com,parapuan.co,tempo.co,wartaekonomi.co.id,wowkeren.com##[class^=ivs-]:remove()
-dailysia.com,tempo.co##[id^=ivs-]:remove()
+beritasatu.com,dailysia.com,greenscene.co.id,grid.id,japanesestation.com,katadata.co.id,magdalene.co,momsmoney.id,motorplus-online.com,parapuan.co,tempo.co,wartaekonomi.co.id,wowkeren.com##[class^="ivs-"]:remove()
+dailysia.com,tempo.co##[id^="ivs-"]:remove()
 ||player.ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|grid.id|gridoto.com|herstory.co.id|id.theasianparent.com|indosport.com|momsmoney.id|motorplus-online.com|parapuan.co|populis.id|sonora.id|tempo.co
 alex71.com##.content .aligncenter[alt="download" i][src*=".gif"]
 abbaspc.net##.entry-content > center > button:has-text(/download/i)
