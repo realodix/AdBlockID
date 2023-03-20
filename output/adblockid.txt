@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.3.175
+! Version: 23.3.176
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Mar 2023 06:55 UTC
+! Last modified: 20 Mar 2023 07:13 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3334,7 +3334,7 @@ suarajatimpost.com##.card:has-text(/adv/i)
 okezone.com##.center-paralax:has([id^="div-gpt-ad"])
 kontan.co.id,momsmoney.id##.center:has([id^="div-billboard" i])
 bacalagers.com##.code-block:has(.adsbyadop)
-bacaterus.com,berakal.com,bersamatekno.com,dinaspendapatan.com,downloadsoftwaregratisan.com,duwitmu.com,ecaraku.com,inwepo.co,localstartupfest.id,mogamugi.com,narmadi.com,onlinemetro.id,oolean.id,pemerintahkota.com,penablog.com,saintif.com,selerasa.com,slabsoft.com,sulistio.xyz,teknoding.com,thelastsurvivors.org,winpreso.com##.code-block:has(.adsbygoogle)
+bacaterus.com,berakal.com,bersamatekno.com,carisinyal.com,dinaspendapatan.com,downloadsoftwaregratisan.com,duwitmu.com,ecaraku.com,inwepo.co,localstartupfest.id,mogamugi.com,narmadi.com,onlinemetro.id,oolean.id,pemerintahkota.com,penablog.com,saintif.com,selerasa.com,slabsoft.com,sulistio.xyz,teknoding.com,thelastsurvivors.org,winpreso.com##.code-block:has(.adsbygoogle)
 thelastsurvivors.org##.code-block:matches-css(text-align: center):has([class^="adsbyadop_"])
 buatatm.com,myjourney.id,pakaiatm.com,prosesbayar.com##.code-block:matches-css(text-align: center):has-text(/adv/i)
 blockchainmedia.id##.code-block:matches-css(text-align: center):has-text(/iklan/i)
@@ -3677,7 +3677,7 @@ m.kaskus.co.id##[id^="postdeleted"]
 /pum-site-scripts.js$script,domain=lintaslampung.com
 /sweetalert2.$script,domain=pusatiklan.my.id
 ?key=*&submetric=$3p,popup
-bacaterus.com##+js(aopr, $, showModal)
+bacaterus.com,carisinyal.com##+js(aopr, $, showModal)
 cilegonnews.com##+js(aopr, eplm_cooki_name)
 biayatarif.com##+js(aopr, generateStickyDebounce)
 idfl.info##+js(aopr, open)
@@ -3739,12 +3739,13 @@ suara.com##.detail-berita #player-video:remove()
 beautynesia.id##.detail__embed:remove()
 cnnindonesia.com##.detail_text #idvideocnn:remove()
 cnnindonesia.com##.detail_text .sisip_video_ds:remove()
-fajar.co.id,herworld.co.id,pramborsfm.com##.gliaplayer-container:remove()
+carisinyal.com,fajar.co.id,herworld.co.id,pramborsfm.com##.gliaplayer-container:remove()
 tribunnewswiki.com##.ivideo_box:remove()
 kompas.com##.js-read-article .rVideo-player:remove()
 kompas.com##.js-read-article .video-box-wrap:remove()
 bola.com,bola.net,dream.co.id,kapanlagi.com,liputan6.com,merdeka.com##.nativescrollingKLY:has(.nativescrollingKLY-sticky-inner-video):remove()
 kapanlagi.com##.nativevideosiframe-loader:remove()
+carisinyal.com##.plyr:remove()
 fimela.com##.read-page--boost-video:remove()
 briliofood.net##.section:has(.video__headline):remove()
 cnnindonesia.com,haibunda.com,insertlive.com##.sisip_embed_sosmed:remove()
