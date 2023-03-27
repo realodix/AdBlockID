@@ -76,6 +76,9 @@ abbaspc.net,haxpc.net##center button:has-text(/download/i)
 crackit.org,piratepc.me##div[class^="code-block code-block-"]
 ! ---
 ! Limitation
+crackit.org##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+crackit.org##+js(aopr, disableSelection)
+crackit.org##+js(aopr, document.oncontextmenu)
 ! ---
 ! Dev-Tools
 /devtools-detector.
