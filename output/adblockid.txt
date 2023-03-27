@@ -1,12 +1,12 @@
 [Adblock Plus 2.0]
-! Version: 23.3.300
+! Version: 23.3.301
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Mar 2023 09:17 UTC
+! Last modified: 27 Mar 2023 09:18 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
-/iklan/*$image,domain=~0.0.realodix|~1rajaiklan.com|~anjingk9.com|~bagusiklan.com|~duniaiklangratis.com|~iklanbogor.com|~iklangratis88.com|~iklansmart.com|~jualsewakios.com|~jualsewaruko.com|~pettoto.com|~pusatiklan.co.id|~sebariklanmassalpremium.com|~sewa-apartemen.net
+/iklan/*$image,domain=~0.0.realodix|~1rajaiklan.com|~anjingk9.com|~bagusiklan.com|~duniaiklangratis.com|~iklangratis88.com|~iklansmart.com|~jualsewakios.com|~jualsewaruko.com|~pettoto.com|~pusatiklan.co.id|~sebariklanmassalpremium.com|~sewa-apartemen.net
 /ngiklan/*$image,domain=~ngiklan.gratis
 /smartfren/ads.
 -ad123-
@@ -2334,6 +2334,7 @@ _GIF1200x120-
 /get/*?zoneid=$script
 /lv/esnk/*$3p,script
 /pfe/current/*$3p,script
+||0.0.realodix^$3p
 ||accesstrade.co.id^$3p
 ||ad-loupe.com^$3p
 ||addesigner.com^$3p
@@ -2351,7 +2352,6 @@ _GIF1200x120-
 ||geozo.com^$3p
 ||halal.ad^$3p
 ||hitadsmedia.com^$3p
-||iklanbogor.com^$3p
 ||iklanhemat.com^$3p
 ||iklanhoki.com^$3p
 ||indoadsnet.com^$3p
@@ -3679,7 +3679,7 @@ iklandb.com,iklanin.info#@#.banner-125
 @@/advertising.$domain=advertising.katadata.co.id|advertising.kontan.co.id
 @@/advertising/*$domain=client.okezone.com
 @@/bannerad.$image,domain=ad.co.id
-@@/bnrs/*$image,domain=0.0.realodix|bagusiklan.com|duniaiklangratis.com|iklanbogor.com|iklansmart.com
+@@/bnrs/*$image,domain=0.0.realodix|bagusiklan.com|duniaiklangratis.com|iklansmart.com
 @@/bplogo.$image,domain=beritapagi.co.id
 @@/files/Ads/*$image,domain=iklanrumah.com
 @@/images/banner/*$image,domain=balicars.info
