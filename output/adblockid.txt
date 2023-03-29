@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.3.363
+! Version: 23.3.364
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Mar 2023 14:22 UTC
+! Last modified: 29 Mar 2023 14:23 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1457,8 +1457,10 @@ _GIF1200x120-
 ##.ads-widget-kiri
 ##.ads-x-ngmenu
 ##.ads-x-pr3
+##.ads300x250
 ##.ads728-slot
 ##.ads750
+##.ads970x90
 ##.adsContainerWeb
 ##.adsFrame500
 ##.adsFrameSideLeft
@@ -2659,6 +2661,7 @@ _promohariini.$image,domain=ruparupa.com
 ||jurnalborneo.co.id^*/iklan-$image
 ||jurnalmetropol.com^*-adv-$image
 ||kabar.news/uploads/blocks/$image
+||kabarbumn.com/assets/banner/$image
 ||kabargames.id/banner/
 ||kabarmedan.com^*/iklan-$image
 ||kabarterkini.co.id^*/banner-$image
@@ -3821,6 +3824,7 @@ bola.com,bola.net,dream.co.id,kapanlagi.com,liputan6.com,merdeka.com##.nativescr
 kapanlagi.com##.nativevideosiframe-loader:remove()
 kapanlagi.com##.pages .box--video.box:remove()
 carisinyal.com##.plyr:remove()
+kabarbumn.com##.popup-video:remove()
 fimela.com##.read-page--boost-video:remove()
 briliofood.net##.section:has(.video__headline):remove()
 cnnindonesia.com,haibunda.com,insertlive.com##.sisip_embed_sosmed:remove()
