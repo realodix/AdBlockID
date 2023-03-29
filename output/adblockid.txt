@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.3.370
+! Version: 23.3.371
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Mar 2023 17:14 UTC
+! Last modified: 29 Mar 2023 17:21 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3810,6 +3810,7 @@ kompas.tv###jxOutstreamContainer + .rVideo-wrapper:remove()
 gamereactor.asia###livestreamBox:remove()
 ngopibareng.id###ngopitv-inline:remove()
 bangsaonline.com##.add-banner:has(.embed-responsive):remove()
+otosia.com##.boost-video:remove()
 kompas.com##.content_article .rVideo-middle:remove()
 kompas.com##.content_article .video-box-wrap:remove()
 suara.com##.detail-berita #player-video:remove()
@@ -3825,7 +3826,7 @@ kapanlagi.com##.nativevideosiframe-loader:remove()
 kapanlagi.com##.pages .box--video.box:remove()
 carisinyal.com##.plyr:remove()
 kabarbumn.com##.popup-video:remove()
-fimela.com##.read-page--boost-video:remove()
+fimela.com,otosia.com##.read-page--boost-video:remove()
 briliofood.net##.section:has(.video__headline):remove()
 cnnindonesia.com,haibunda.com,insertlive.com##.sisip_embed_sosmed:remove()
 sindonews.com##.vidembed-box:remove()
