@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.3.426
+! Version: 23.3.427
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Mar 2023 09:57 UTC
+! Last modified: 30 Mar 2023 10:04 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2286,6 +2286,7 @@ _GIF1200x120-
 ##img[width="928"][height="162"]
 ##img[width="951"][height="175"]
 ##img[width="960"][height="150"]
+##img[width="970"][height="250"]
 ##img[width="970"][height="90"]
 ##img[width="971"][height="91"]
 ##img[width="980"][height="120"]
@@ -2339,6 +2340,7 @@ _GIF1200x120-
 ~darhostmedia.com##a[href^="https://darhostmedia.com"] > img
 ~domainesia.com##a[href^="https://domainesia.com/ref.php"]
 ~tpro.co.id##a[href^="https://tpro.co.id/affiliate/"] > img
+~host-tracking.id##a[href^="https://www.host-tracking.id/aff_"] > img
 ~shutterstock.com##a[href^="https://submit.shutterstock.com/?ref="]
 ~uptobox.com##a[href^="https://uptobox.com/affiliate"]
 /[0-9a-f]{32}\/invoke\.js/$3p,script
@@ -3128,7 +3130,7 @@ viva.co.id##.giant-banner
 trenasia.com##.giias-banner
 qoala.app##.global-banner-left
 reformasiaktual.com##.gmr-banner-aftercontent
-beritaborneo.id,teraspapua.com##.gmr-banner-logo
+beritaborneo.id,dailypost.id,teraspapua.com##.gmr-banner-logo
 lagikepo.com##.gmr-banner-stickyright
 mikaylabinar.com##.gmr-bannerpopup
 safahad.my.id##.googlepublisherads
@@ -3267,6 +3269,7 @@ kompas.id##[style="min-width: 970px; min-height: 90px;"]
 jurnalborneo.co.id##[title*="iklan" i]
 tmcblog.com##a[href*="banner"] > img
 bantenkini.com,citrust.id,kabarsumbawa.com,listingberita.com,metrosulawesi.id,realitasonline.id,redkal.com,sakanews.com,sidakpost.id,suarasikka.com,sumeks.co##a[href="#"] > img
+dailypost.id##a[href^="https://vt.tiktok.com/"] > img
 andreasagung.com,centerklik.com,kostjakarta.com,tempat-kost.com##a[rel="nofollow"] > img
 ceklist.id##a[rel="sponsored"] img
 khabarberita.com##a[target*="blank"] > img
@@ -3332,7 +3335,6 @@ klikjatim.com##.widget figure img
 fokussumatera.com##.widget img[border="0"]
 idpost.co.id,matanusantara.com,nusantaratimur.com##.widget img[id$="_img"]
 kabarntt.co##.widget img[title*="iklan" i]
-dailypost.id##.widget_media_image
 penatimor.com##[class^="mvp-side-widget"] img.aligncenter
 penatimor.com##[class^="mvp-widget"] img.aligncenter
 nusadaily.com##aside .attachment-600x600
