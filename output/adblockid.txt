@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.43
+! Version: 23.4.44
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Apr 2023 22:02 UTC
+! Last modified: 03 Apr 2023 22:07 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3363,7 +3363,6 @@ bengkulupost.id##.widget > .has-nested-images > figure > img
 bengkulupost.id##.widget > .wp-block-image > figure > img
 bengkulupost.id,klikjatim.com##.widget > figure > img
 seputarpapua.com##.widget > img
-teboonline.id##.widget a[imageanchor="1"] img
 suarakuningan.com##.widget a[style="margin-left: 1em; margin-right: 1em;"] img
 suarakuningan.com##.widget a[target="_blank"] > img
 fokussumatera.com##.widget img[border="0"]
@@ -3409,6 +3408,7 @@ dutaserviceac.com##.a-wrap:has-text(/ads/i)
 tirto.id##.d-sidebar:has([id^="gpt-"])
 haibunda.com##.pic_artikel_sisip_table:has-text(/banner/i)
 kompiajaib.com##.widget-wrapper .link-btn:has-text(/iklan/i)
+teboonline.id##.widget:has(.widget-content a > img):has-text(/adv/i)
 bantenraya.com,infoberita.id,infontt.com,jatimtimes.com,jurnalkepri.com,legaleraindonesia.com,malangtimes.com,meduonline.co.id,metromanado.com,nusadaily.com,pilarjambi.com,prokepri.com,suara-ntt.com##.widget:has-text(/adv/i)
 detiksumsel.com,fokussumatera.com,headlinelampung.com,kailipost.com,klik-ntt.com,koranakselerasi.com,koransn.com,matangdream.com,mediawawasan.com,radarnews.id,suarakonsumenindonesia.com,tabikpun.com,timor-media.com,timorline.com,zonalinenews.com##.widget:has-text(/iklan/i)
 hendrasurya.com##.widget:has-text(/info diskon/i)
