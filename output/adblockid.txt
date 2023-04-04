@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.47
+! Version: 23.4.48
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Apr 2023 16:03 UTC
+! Last modified: 04 Apr 2023 17:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2702,6 +2702,7 @@ _promohariini.$image,domain=ruparupa.com
 ||kabarbumn.com/assets/banner/$image
 ||kabargames.id/banner/
 ||kabarmedan.com^*/iklan-$image
+||kabarnusa.com/assets/images/iklan-$image
 ||kabarterkini.co.id^*/banner-$image
 ||kanalinspirasi.com^*/iklan-$image
 ||katada.id^*/iklan.$image
@@ -3018,7 +3019,6 @@ berita.99.co##.ad-video-wrap
 iluminasi.com##.ad3
 terkini.id##.adLoading
 ads.id##.adManager
-kabarnusa.com##.ad_honda
 gamereactor.asia##.ad_interscroller
 gamereactor.asia##.ad_mobileLeader
 gamereactor.asia##.ad_smartphbig
@@ -3026,7 +3026,6 @@ gamereactor.asia##.ad_smartphbig2
 beritapagi.co.id,garudadaily.com##.adcontainer
 radioonline.co.id##.add-box-top
 lampungpro.co##.add-img
-sumselnian.com##.add-inner
 dialeksis.com##.add-space
 matamata.com,suara.com##.adds-top
 nesabamedia.com##.adfullwrap
@@ -3326,8 +3325,6 @@ fastwork.id##img[width="900"][height="524"]
 sirclo.com###banner-starter:matches-path(/blog)
 vidio.com###leaderboard_container:has(> .ad-slot)
 jawaraspeed.com###openModal:has-text(/ads/i)
-dailyspin.id##.code-block:not(:has(a[href*="dailyspin.id"])) > a > img
-fanicat.com##.code-block:not(:has(a[href*="fanicat.com"])) > a > img
 kompas.com##.gate-kgplus:has-text(/iklan/i)
 candilkuya.com##.link-btn:has-text(/iklan/i)
 briliobeauty.net,briliofood.net,techno.id##.placeholder-container:has(> .ads-container)
@@ -3417,6 +3414,7 @@ annews.co.id,tampilcantik.com##.widget:has-text(/sponsor/i)
 bikersindonesia.net##.widget:not(:has(a[href*="bikersindonesia.net"])) > a > img
 trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
 beritabaru.co##aside .widget:has(p > .adsbygoogle)
+kabarnusa.com##aside > .widget:has(> figure > img)
 speednews-manado.com##aside > .widget:has-text(/adv/i)
 bangkitmedia.com##aside p:matches-css(text-align: center):has(> a > img)
 desdelinux.net,ubunlog.com##aside:has(> .adsbygoogle)
@@ -3539,14 +3537,14 @@ suara.com##.placeholder_r2
 suara.com##.placeholder_r3
 suara.com##.placeholder_read_body
 kompas.com##.premium_div
-radarpekalongan.id##.site-gpt-sticky
+0.0.realodix##.site-gpt-sticky
 bisnis.com##.skyscrapper
 investor.id##.sticky
 populis.id,tvonenews.com##.sticky-bottom
 productnation.co##.sticky-close
 nusadaily.com,zigi.id##.sticky_bottom
 klubpria.com##.stickyunit
-dailyspin.id##.vc_single_image
+0.0.realodix##.vc_single_image
 pojoksatu.id##.verse-top
 ceklissatu.com##[class^="bn-"]
 momsmoney.id##[id^="div-Middle-Momsmoney"]
