@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.45
+! Version: 23.4.46
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Apr 2023 15:35 UTC
+! Last modified: 04 Apr 2023 15:37 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3329,7 +3329,6 @@ jawaraspeed.com###openModal:has-text(/ads/i)
 dailyspin.id##.code-block:not(:has(a[href*="dailyspin.id"])) > a > img
 fanicat.com##.code-block:not(:has(a[href*="fanicat.com"])) > a > img
 kompas.com##.gate-kgplus:has-text(/iklan/i)
-itemku.com##.grid > a:has(> .shadow-card:has(> div:has(> p:has-text(/ad/i))))
 candilkuya.com##.link-btn:has-text(/iklan/i)
 briliobeauty.net,briliofood.net,techno.id##.placeholder-container:has(> .ads-container)
 kerjaker.com##.post-body-artikel .separator:matches-css(text-align: center)
@@ -3351,7 +3350,6 @@ sindonews.com##.app-banner
 kapanlagi.com##.banner
 kapanlagi.com##.box--banner
 m.kaskus.co.id##.threadDetail a[target="_blank"] img[src^="https://s.kaskus.id/images/"]
-itemku.com###pl-product-list > a:has(.shadow-card:has(> div:has(> p:has-text(/ad/i))))
 visi.news##.custom-html-widget
 lintasbali.com,radarbanten.co.id##.elementor-widget-container > a > img
 metrotimur.com##.home-widget figure > img
@@ -3583,6 +3581,7 @@ brilio.net##amp-iframe:has([src*="advertnative.com"])
 genpi.co##article [class^="_popIn_"]:has-text(/adv/i)
 fortuneidn.com##div:has(> .wrapper-ads)
 inews.id##div:matches-css(text-align: center):has([id*="-StickyAd" i])
+itemku.com##.grid > a:has(> .shadow-card:has(> div:has(> p:has-text(/ad/i))))
 biggo.id##.search-ad-banner-re
 shopee.co.id##.shopee-search-item-result .shopee-search-item-result__item:has-text(Iklan)
 tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct"]:has(div[data-testid="master-product-card"] [data-testid="lblTopads"])
@@ -3590,6 +3589,7 @@ tokopedia.com##:matches-path(/p/) a[data-testid="lnkProductContainer"]:has([alt*
 tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
 biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
 biggo.id##img[onclick*="AD_SEARCHRESULT"]
+itemku.com###pl-product-list > a:has(.shadow-card:has(> div:has(> p:has-text(/ad/i))))
 shopee.co.id##.search-page .search-items-container .item-card-list__item-card-wrapper:has-text(Ad)
 tokopedia.com##:matches-path(/find/) div[data-testid="divLazyFindProduct"]:has([data-testid="lblTopads"])
 tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
