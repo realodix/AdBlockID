@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.55
+! Version: 23.4.56
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 04 Apr 2023 17:59 UTC
+! Last modified: 04 Apr 2023 18:50 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1501,6 +1501,7 @@ _GIF1200x120-
 ##.ads_area_go
 ##.ads_below_photo
 ##.ads_besar
+##.ads_billboard_2
 ##.ads_bottom_insGP
 ##.ads_box_1_1
 ##.ads_box_2_2
@@ -1637,6 +1638,9 @@ _GIF1200x120-
 ##.companion-ad-body
 ##.companion-ad-body-container
 ##.companion-ad-container
+##.container-ads-topmenu
+##.container-ads-topslider
+##.container-skin-ads
 ##.cp-advertisement
 ##.davwheat-ad
 ##.davwheat-ad-header
@@ -2561,6 +2565,7 @@ _promohariini.$image,domain=ruparupa.com
 ||drive.google.com/uc?export=$image,domain=kepri.info|lintaskepri.com|seputarkepri.co.id|suluhkepri.com
 ||ibb.co^$image,domain=bunaken.co.id
 ||image-korankaltim.sgp1.digitaloceanspaces.com^*/ads/$image
+||misteraladin.com^$frame,domain=okezone.com
 ||5news.co.id^*/banner$image
 ||abenetwork.com^*/banner-
 ||acehekspres.com/files/sewaan/$image
@@ -3035,7 +3040,7 @@ lampungpro.co##.add-img
 dialeksis.com##.add-space
 matamata.com,suara.com##.adds-top
 nesabamedia.com##.adfullwrap
-ayocirebon.com,batastimor.com,duwitmu.com,floreseditorial.com,gridoto.com,harianjogja.com,hops.id,ihwal.id,infoterkini24.com,inibengkulu.com,jatimnetwork.com,jawapos.com,kilat.com,koran-jakarta.com,minangsatu.com,motorplus-online.com,pikiran-rakyat.com,porosampera.com,pramborsfm.com,republika.co.id,rmol.id,sewaktu.com,strategi.id,suluhdesa.com,tempo.co,urbanjabar.com,wowbabel.com##.ads
+ayocirebon.com,batastimor.com,duwitmu.com,floreseditorial.com,gridoto.com,harianjogja.com,hops.id,idxchannel.com,ihwal.id,infoterkini24.com,inibengkulu.com,jatimnetwork.com,jawapos.com,kilat.com,koran-jakarta.com,minangsatu.com,motorplus-online.com,pikiran-rakyat.com,porosampera.com,pramborsfm.com,republika.co.id,rmol.id,sewaktu.com,strategi.id,suluhdesa.com,tempo.co,urbanjabar.com,wowbabel.com##.ads
 harpersbazaar.co.id,motherandbeyond.id##.ads-belt
 kompas.tv##.ads-big
 inews.id##.ads-close
@@ -3324,6 +3329,7 @@ kemajuanrakyat.id##img[title*="iklan" i]
 ujaran.co.id##img[title^="adv" i]
 liranews.com##img[title^="banner" i]
 kliksumatera.com##li[style*="position: absolute;"] .prettyphoto
+sindonews.com##.content-row .voutstream
 koranmonitor.com,medanmerdeka.com##img[style="max-width: 100%; height: auto;"]
 tmcblog.com##img[style^="width:460px;height:110px;"]
 tmcblog.com##img[style^="width:660px;height:110px;"]
@@ -3598,6 +3604,11 @@ itemku.com###pl-product-list > a:has(.shadow-card:has(> div:has(> p:has-text(/ad
 shopee.co.id##.search-page .search-items-container .item-card-list__item-card-wrapper:has-text(Ad)
 tokopedia.com##:matches-path(/find/) div[data-testid="divLazyFindProduct"]:has([data-testid="lblTopads"])
 tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
+celebrities.id###article .voucherWrap
+inews.id##.content-detail .voucherWrap
+sindonews.com##.content-row .voucher_at
+sportstars.id##.detail-article .voucherWrap
+okezone.com##.details .voucherWrap
 m.akurat.co###mainPage:style(margin-top: 0!important;)
 dutaislam.com###xmlthemes-feat1:style(margin-top:60px!important;)
 detik.com##.containerBB:style(margin-top: 0!important;)
