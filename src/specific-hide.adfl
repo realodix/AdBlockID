@@ -400,6 +400,7 @@ jawaraspeed.com###openModal:has-text(/ads/i)
 dailyspin.id##.code-block:not(:has(a[href*="dailyspin.id"])) > a > img
 fanicat.com##.code-block:not(:has(a[href*="fanicat.com"])) > a > img
 kompas.com##.gate-kgplus:has-text(/iklan/i)
+itemku.com##.grid > a:has(> .shadow-card:has(> div:has(> p:has-text(/ad/i))))
 candilkuya.com##.link-btn:has-text(/iklan/i)
 briliobeauty.net,briliofood.net,techno.id##.placeholder-container:has(> .ads-container)
 kerjaker.com##.post-body-artikel .separator:matches-css(text-align: center)
@@ -427,3 +428,5 @@ sindonews.com##.app-banner
 kapanlagi.com##.banner
 kapanlagi.com##.box--banner
 m.kaskus.co.id##.threadDetail a[target="_blank"] img[src^="https://s.kaskus.id/images/"]
+! Procedural
+itemku.com###pl-product-list > a:has(.shadow-card:has(> div:has(> p:has-text(/ad/i))))

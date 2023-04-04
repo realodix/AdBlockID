@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.44
+! Version: 23.4.45
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Apr 2023 22:07 UTC
+! Last modified: 04 Apr 2023 15:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3329,6 +3329,7 @@ jawaraspeed.com###openModal:has-text(/ads/i)
 dailyspin.id##.code-block:not(:has(a[href*="dailyspin.id"])) > a > img
 fanicat.com##.code-block:not(:has(a[href*="fanicat.com"])) > a > img
 kompas.com##.gate-kgplus:has-text(/iklan/i)
+itemku.com##.grid > a:has(> .shadow-card:has(> div:has(> p:has-text(/ad/i))))
 candilkuya.com##.link-btn:has-text(/iklan/i)
 briliobeauty.net,briliofood.net,techno.id##.placeholder-container:has(> .ads-container)
 kerjaker.com##.post-body-artikel .separator:matches-css(text-align: center)
@@ -3350,6 +3351,7 @@ sindonews.com##.app-banner
 kapanlagi.com##.banner
 kapanlagi.com##.box--banner
 m.kaskus.co.id##.threadDetail a[target="_blank"] img[src^="https://s.kaskus.id/images/"]
+itemku.com###pl-product-list > a:has(.shadow-card:has(> div:has(> p:has-text(/ad/i))))
 visi.news##.custom-html-widget
 lintasbali.com,radarbanten.co.id##.elementor-widget-container > a > img
 metrotimur.com##.home-widget figure > img
