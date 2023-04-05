@@ -64,7 +64,10 @@ stfly.me,tei.ai##+js(aopr, open)
 belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 0.0.realodix,besargaji.com,bevru.club,carapedi.id,cararegistrasi.com,ceesty.com,cuts-url.com,eio.io,eririo.club,exee.io,fc-lc.com,fc.lc,khaddavi.net,luangusaha.com,miuiku.com,oceantech.xyz,onlinecorp.me,paired.my.id,ponselharian.com,sekilastekno.com,semawur.com,shrinke.me,teknosimple.com##+js(window.open-defuser)
 pinloker.com,sekilastekno.com,vebma.com##+js(window.open-defuser, /\.(com|net)\/4\/|teraboxapp|momerybox/)
-pinloker.com,sekilastekno.com,vebma.com##div[x-data="adtival"] a[href][\@click="scroll"]:remove-attr(href)
+! https://github.com/AdguardTeam/FiltersCompiler/issues/164
+! https://github.com/AdguardTeam/FiltersRegistry/blob/edda9b8ce8a0282f9d0b9439d1a4002b27c91000/filters/ThirdParty/filter_120_AdBlockID/diff.txt#L1287
+! ##div[x-data="adtival"] a[href][\@click="scroll"]:remove-attr(href)
+pinloker.com,sekilastekno.com,vebma.com##+js(ra, href, div[x-data="adtival"] a[href][\@click="scroll"])
 ! ---
 ! Countdown Timer
 cararegistrasi.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com##+js(nano-sib)
