@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.61
+! Version: 23.4.62
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Apr 2023 08:20 UTC
+! Last modified: 05 Apr 2023 08:49 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3040,7 +3040,7 @@ lampungpro.co##.add-img
 dialeksis.com##.add-space
 matamata.com,suara.com##.adds-top
 nesabamedia.com##.adfullwrap
-ayocirebon.com,batastimor.com,duwitmu.com,floreseditorial.com,gridoto.com,harianjogja.com,hops.id,idxchannel.com,ihwal.id,infoterkini24.com,inibengkulu.com,jatimnetwork.com,jawapos.com,kilat.com,koran-jakarta.com,minangsatu.com,motorplus-online.com,pikiran-rakyat.com,porosampera.com,pramborsfm.com,radardepok.com,republika.co.id,rmol.id,sewaktu.com,strategi.id,suluhdesa.com,tempo.co,urbanjabar.com,wowbabel.com##.ads
+aboutmalang.com,axioma.id,ayocirebon.com,ayoindonesia.com,banyumasterkini.com,batastimor.com,duwitmu.com,floreseditorial.com,gridoto.com,harianhaluan.com,harianjogja.com,hops.id,idxchannel.com,ihwal.id,infoterkini24.com,inibengkulu.com,jatimnetwork.com,jawapos.com,kilasberita.id,kilat.com,kontenjateng.com,koran-jakarta.com,laros.id,minangsatu.com,motorplus-online.com,pikiran-rakyat.com,porosampera.com,pramborsfm.com,radardepok.com,republika.co.id,rmol.id,sewaktu.com,sinergijakarta.com,sinergimadura.com,strategi.id,suluhdesa.com,tempo.co,unews.id,urbanjabar.com,wowbabel.com##.ads
 harpersbazaar.co.id,motherandbeyond.id##.ads-belt
 kompas.tv##.ads-big
 inews.id##.ads-close
@@ -3451,6 +3451,9 @@ suarajatimpost.com##.card:has-text(/adv/i)
 kontan.co.id,momsmoney.id##.center:has([id^="div-billboard" i])
 blockchainmedia.id##.code-block:matches-css(text-align: center):has-text(/iklan/i)
 arenabola.id##.col-lg-3:has-text(/adv/i)
+sinergianews.com,sitnas.id##.entry-content .adsbyadop:upward(center)
+redaksi.co.id##.entry-content .adsbygoogle:upward(center)
+sitnas.id##.entry-content script[src^="https://jsc.mgid.com/"]:upward(center)
 katadata.co.id##.flying_carpet_show:has(.flying_carpet_show_banner)
 today.line.me##.midAdModule-root:has-text(/iklan/i)
 cnbcindonesia.com,detik.com,haibunda.com##.mr1:has(> #adv-caption-mr1)
