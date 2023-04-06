@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.76
+! Version: 23.4.77
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Apr 2023 01:01 UTC
+! Last modified: 06 Apr 2023 17:22 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3634,6 +3634,9 @@ uzone.id##.section-top:style(margin: 100px auto 0 auto!important;)
 m.akurat.co##body:style(padding-top: 0!important;)
 wowbabel.com##script + .container:style(padding-top: 160px!important;)
 anaktekno.com,aquatoyou.com,azislamayuda.com,belajaroffice.com,berkeluarga.id,bismillah-gratis.blogspot.com,bospajak.com,ceklist.id,daridesignstudio.com,dokterpajak.com,dokumen.tips,eplusgo.com,foldertips.com,fullversionsoftware.org,gubukpintar.com,hanupis.com,iqra.id,itkoding.com,kodingindonesia.com,kucingimut.my.id,kuyhaa-me.com,lebakcyber.net,lellyfitriana.com,mahirphotoshop.com,musbikhin.com,ndoware.com,nesabamedia.com,penaindigo.com,pergikuliner.com,petpintar.com,pickybest.id,posciety.com,qerdus.com,rasabunda.com,resepbundaida.com,rumahcoding.co.id,saidalfaruq.net,skillacademy.com,teknocrash.web.id,teknolagi.id,thegorbalsla.com,yamaha-motor.co.id##*::selection:style(color:#212121!important;background:#fde69a!important;)
+!#if adguard
+/^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,popup,subdocument,badfilter
+!#endif
 teksnologi.com##+js(acis, String.fromCharCode, decodeURIComponent)
 cydiaguide.app,eltelu.blogspot.com,redaksiid.blogspot.com,tohaboy.web.id##+js(acis, addEventListener, DOMNodeRemoved)
 dafideff.com##+js(acis, addEventListener, google_ad_client)
