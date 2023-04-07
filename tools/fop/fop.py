@@ -76,7 +76,7 @@ BLANKPATTERN = re.compile(r"^\s*$")
 KNOWNOPTIONS = (
     '_', 'all', 'badfilter', 'important', 'other', 'empty',
     '1p', 'first-party', 'strict1p', '3p', 'third-party', 'strict3p',
-    'cname', 'css', 'stylesheet', 'csp', 'doc', 'domain', 'ehide', 'elemhide',
+    'cname', 'css', 'stylesheet', 'csp', 'doc', 'document', 'domain', 'ehide', 'elemhide',
     'font', 'frame', 'generichide','ghide', 'header', 'image', 'inline-font',
     'inline-script', 'match-case', 'media', 'mp4', 'object', 'ping', 'popunder',
     'popup', 'script', 'shide', 'specifichide', 'subdocument', 'to', 'websocket', 'xhr',
