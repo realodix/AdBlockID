@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.231
+! Version: 23.4.232
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Apr 2023 21:34 UTC
+! Last modified: 17 Apr 2023 21:35 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3846,11 +3846,6 @@ anaktekno.com,aquatoyou.com,azislamayuda.com,belajaroffice.com,berkeluarga.id,bi
 !#if adguard
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,popup,subdocument,badfilter
 !#endif
-kontol.in#@#.ad-content:not(:empty)
-93.115.24.211#@#.adVertical
-158.220.97.73#@#.idmuvi-topbanner
-indonesiacoding.com#@#.share-simple
-segelasjeruk.blogspot.com#@#[href^="http://raboninco.com/"]
 bacol.cfd,bacol.ink,dutasex.site,dutasex.top###ads
 185.224.83.34###ads-pop
 downloadfilmbaru.com###close-ads-stack
@@ -3905,6 +3900,8 @@ terbit21.cafe###ptbanner.row
 172.96.189.133,172.96.189.146###tengah
 185.224.83.34,54.39.39.151,54.39.39.152,80.209.252.146###top-banner
 148.163.72.79,148.163.72.85###top_banner
+kontol.in#@#.ad-content:not(:empty)
+93.115.24.211#@#.adVertical
 139.99.33.192##.banner-float-bottom
 bestcash2020.com##.banner-inner
 93.104.211.22##.bannerplayer:remove()
@@ -3915,6 +3912,7 @@ xbokep.ink##.close-text
 188.166.39.172##.float-bottom-banner
 188.166.39.172##.float-top-banner
 nontonanimeid.cfd##.floating_footer
+158.220.97.73#@#.idmuvi-topbanner
 164.68.116.123##.imgbanner
 lewat.tautan.pro##.klikdisini
 148.163.72.92,65.108.132.145,91.208.197.71##.kln
@@ -3927,11 +3925,13 @@ beedrive.link##.popUpBannerBox
 indoxxi.top##.reklam-goster-sag
 indoxxi.top##.reklam-goster-sol
 93.115.24.211##.semprot_wizard:has-text(adblocker)
+indonesiacoding.com#@#.share-simple
 164.68.116.123##.swal-overlay
 jambiline.com##.td-a-rec-id-sidebar
 film21terbaru.org##.teaser3
 dewabioskop21.org,idxxx1.com,lapar.com,nontonitu.com##.top-banner
 gosipyuk.com##.ui_adblock
+segelasjeruk.blogspot.com#@#[href^="http://raboninco.com/"]
 164.68.116.123,188.166.39.172,212.118.54.70,bacol.cfd,bacol.ink,dutasex.site,dutasex.top,itubokep.tech,javxxi.com,segelasjeruk.blogspot.com##a[target*="blank"] > img
 beedrive.link##a[target="_blank"] > img
 93.115.24.211##div[class^="semprotnenenmontok_"]
