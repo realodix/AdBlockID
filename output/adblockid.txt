@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.225
+! Version: 23.4.226
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Apr 2023 19:52 UTC
+! Last modified: 17 Apr 2023 21:17 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1289,6 +1289,7 @@ _GIF1200x120-
 ###iklan-baris
 ###iklan-bawah
 ###iklan-giantbanner
+###iklan-kanan-postingan
 ###iklan-kontad1
 ###iklan-kontad3
 ###iklan-sidebar1
@@ -1311,6 +1312,8 @@ _GIF1200x120-
 ###iklanheader6
 ###iklanheader7
 ###iklanheader8
+###iklankirikanan
+###iklankirikanan1
 ###iklanpopup
 ###iklantengah1
 ###iklap
@@ -1743,6 +1746,7 @@ _GIF1200x120-
 ##.iklan-ataspost
 ##.iklan-baris
 ##.iklan-bawah
+##.iklan-bawah-artikel
 ##.iklan-bawah-postingan
 ##.iklan-bawahpost
 ##.iklan-footer
@@ -1752,6 +1756,7 @@ _GIF1200x120-
 ##.iklan-header-item
 ##.iklan-insertion
 ##.iklan-kanan
+##.iklan-kanan-postingan
 ##.iklan-kiri
 ##.iklan-kiri-postingan
 ##.iklan-leaderboard
@@ -3395,6 +3400,7 @@ suarakuningan.com##.widget a[target="_blank"] > img
 fokussumatera.com##.widget img[border="0"]
 idpost.co.id,matanusantara.com,nusantaratimur.com##.widget img[id$="_img"]
 kabarntt.co##.widget img[title*="iklan" i]
+fajarharapan.id##.widget-content > a > img
 penatimor.com##[class^="mvp-side-widget"] img.aligncenter
 penatimor.com##[class^="mvp-widget"] img.aligncenter
 ceklissatu.com##aside .spotlight
