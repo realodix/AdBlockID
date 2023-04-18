@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FOP="python tools/fop/fop.py -d src dist -i adblockid.txt adblockid_plus.txt personal.txt"
+FOP="python tools/fop/fop.py -d src dist -i adblockid.txt adblockid_plus.txt"
 
 if [ "$1" == "fop" ]; then
     eval $FOP
