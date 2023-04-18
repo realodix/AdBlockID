@@ -48,10 +48,10 @@ Lihat [tabel perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlo
 - [uBlock Origin](/docs/uBlock_Origin.md)
 - [AdGuard](/docs/Adguard.md)
 
-[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/output/adblockid.txt&title=AdBlockID
-[ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/output/adblockid.txt
-[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/output/adblockid_plus.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/output/adblockid_plus.txt
+[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/adblockid@master/output/adblockid.txt&title=AdBlockID
+[ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/adblockid@master/output/adblockid.txt
+[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/adblockid@master/output/adblockid_plus.txt&title=AdBlockID%20Plus
+[ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/adblockid@master/output/adblockid_plus.txt
 [uBoImport]: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
 
