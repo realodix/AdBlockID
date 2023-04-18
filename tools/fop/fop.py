@@ -27,7 +27,7 @@ greeting = f"FOP (Filter Orderer and Preener) v{VERSION}"
 
 ap = argparse.ArgumentParser()
 ap.add_argument('--dir', '-d', nargs='+', help='Set directories', default=None)
-ap.add_argument('--ignore', '-i', nargs='+', help='List the files that should not be sorted, either because they have a special sorting system or because they are not filter files', default=("output", "requirements.txt", "templates", "node_modules"))
+ap.add_argument('--ignore', '-i', nargs='+', help='List the files that should not be sorted, either because they have a special sorting system or because they are not filter files', default=("dist", "requirements.txt", "templates", "node_modules"))
 ap.add_argument("--version", "-v",
                 action='store_true', help="Show script's version number and exit")
 

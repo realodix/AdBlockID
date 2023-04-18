@@ -66,13 +66,13 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
 - `./build.sh`
 
-  Mengurutkan dan merapikan filter, serta menggabungkannya ke dalam 1 file (`adblockid.txt`) di folder `output`.
+  Mengurutkan dan merapikan filter, serta menggabungkannya ke dalam 1 file (`adblockid.txt`) di folder `dist`.
 
   VSCode Task: **`Build`**
 
-- `flrender -i abid=. template/adblockid.template.txt output/adblockid.txt`
+- `flrender -i abid=. template/adblockid.template.txt dist/adblockid.txt`
 
-  Menggabungkan semua filter ke dalam 1 file (`adblockid.txt`) di folder `output`.
+  Menggabungkan semua filter ke dalam 1 file (`adblockid.txt`) di folder `dist`.
 
   VSCode Task: **`FOP`**
 
