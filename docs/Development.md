@@ -70,7 +70,7 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
   VSCode Task: **`Build`**
 
-- `flrender -i abid=. template/adblockid.template.txt output/adblockid.txt`
+- `flcombine -i abid=. template/adblockid.template.txt output/adblockid.txt`
 
   Menggabungkan semua filter ke dalam 1 file (`adblockid.txt`) di folder `output`.
 
