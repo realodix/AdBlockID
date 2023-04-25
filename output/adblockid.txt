@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.301
+! Version: 23.4.304
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Apr 2023 20:30 UTC
+! Last modified: 25 Apr 2023 17:48 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2595,7 +2595,7 @@ _GIF1200x120-
 -iklan-$image,domain=banuatv.com|beritabalionline.com|doktersehat.com|komentaren.net|nusadaily.com|protapriau.com
 -iklan.$image,domain=dimensinews.co.id|samawarea.com
 -spanduk-$image,domain=radarbanten.co.id
-/ads-$image,domain=cakrawala.co|dutatv.com|instingjurnalis.com|qoala.app|terobosnews.com|wikikomponen.com
+/ads-$image,domain=cakrawala.co|dutatv.com|ggwp.id|instingjurnalis.com|qoala.app|terobosnews.com|wikikomponen.com
 /adv-$image,domain=halmaherapost.com
 /baner-$image,domain=hariankepri.com|memo.co.id|padangmedia.com|semarakpost.com|viralkaltim.com
 /banner%$image,domain=haibanjar.com|instingjurnalis.com
@@ -3574,6 +3574,7 @@ cnnindonesia.com##div:has(> [id^="adv-"])
 kompas.id,sehatq.com##div:has(> [id^="div-gpt-ad"])
 katadata.co.id##div:has(> [id^="div-gpt-ad-"][class^="paralax-"])
 marketeers.com##div:has(> iframe[src^="https://ads.marketeers.com"])
+yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,katadata.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
 bimbelbrilian.com##div[id^="oa-"]
@@ -3647,6 +3648,7 @@ bisnis.com##.skyscrapper
 investor.id##.sticky
 populis.id,tvonenews.com##.sticky-bottom
 productnation.co##.sticky-close
+ggwp.id##.sticky-footer
 nusadaily.com,zigi.id##.sticky_bottom
 klubpria.com##.stickyunit
 pojoksatu.id##.verse-top
@@ -3685,6 +3687,7 @@ katadata.co.id,tempo.co##amp-fx-flying-carpet
 brilio.net##amp-iframe:has([src*="advertnative.com"])
 genpi.co##article [class^="_popIn_"]:has-text(/adv/i)
 fortuneidn.com##div:has(> .wrapper-ads)
+yummy.co.id##div:matches-css(display: flex):has(> b:has-text(/scroll/i))
 inews.id##div:matches-css(text-align: center):has([id*="-StickyAd" i])
 republika.co.id##div:matches-css(text-align:center):has(> [id^="div-gpt-ad-"])
 itemku.com##.grid > a:has(> .shadow-card:has(> div:has(> p:has-text(/ad/i))))
@@ -4649,6 +4652,7 @@ beritamaju.com,forumitu.com,semprot.com#@#.adVertical
 fap18.net#@#.ad_mobile
 beritamaju.com,forumitu.com,semprot.com##.semprot_wizard:has-text(adblocker)
 178.18.244.225###banner-popup
+iyottube.co###playerOverlay
 agenbokep.club###popbox:remove()
 ceritamalam.club###popup
 178.18.244.225,drakorfilm.me##.gmr-bannerpopup
