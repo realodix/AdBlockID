@@ -11,8 +11,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 | Name            | Subscribe | Raw File | Description |
 | --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs] | [dist/adblockid.txt][ABID_Raw] | Filter utama |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs] | [dist/adblockid_plus.txt][ABID-Plus_Raw] | Patahkan berbagai batasan cakupan yang ada di AdBlockID. |
+| AdBlockID       | [Subscribe][ABID_Subs] | [dist/adblockid.adfl.txt][ABID_Raw] | Filter utama |
+| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs] | [dist/adblockid_plus.adfl.txt][ABID-Plus_Raw] | Patahkan berbagai batasan cakupan yang ada di AdBlockID. |
 
 Lihat [tabel perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlockID Plus.
 
@@ -48,10 +48,10 @@ Lihat [tabel perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlo
 - [uBlock Origin](/docs/uBlock_Origin.md)
 - [AdGuard](/docs/Adguard.md)
 
-[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/output/adblockid.txt&title=AdBlockID
-[ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/output/adblockid.txt
-[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/output/adblockid_plus.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/output/adblockid_plus.txt
+[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@main/dist/adblockid.adfl.txt&title=AdBlockID
+[ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@main/dist/adblockid.adfl.txt
+[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@main/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
+[ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@main/dist/adblockid_plus.adfl.txt
 [uBoImport]: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
 
