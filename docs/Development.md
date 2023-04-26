@@ -46,9 +46,9 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 
 <sup>
 * Penjelasan lengkap ada di masing-masing file. <br>
-*[All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance. Filter bersifat spesifi dan general. <br>
-*[G]: Filter bersifat general, tidak mengarah secara spesifik ke situs tertentu. <br>
-*[S]: Filter bersifat spesifik, mengarah secara spesifik ke situs tertentu.
+* [All]: Menangani berbagai hal seperti iklan, ad block detection, hingga annoyance. Filter bersifat spesifi dan general. <br>
+* [G]: Filter bersifat general, tidak mengarah secara spesifik ke situs tertentu. <br>
+* [S]: Filter bersifat spesifik, mengarah secara spesifik ke situs tertentu.
 </sup>
 
 
@@ -66,13 +66,13 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
 - `./build.sh`
 
-  Mengurutkan dan merapikan filter, serta menggabungkannya ke dalam 1 file (`adblockid.txt`) di folder `dist`.
+  Mengurutkan dan merapikan filter, serta menggabungkannya ke dalam 1 file (`adblockid.adfl.txt`) di folder `dist`.
 
   VSCode Task: **`Build`**
 
-- `flcombine -i abid=. template/adblockid.template.txt dist/adblockid.txt`
+- `flcombine -i abid=. template/adblockid.template.txt dist/adblockid.adfl.txt`
 
-  Menggabungkan semua filter ke dalam 1 file (`adblockid.txt`) di folder `dist`.
+  Menggabungkan semua filter ke dalam 1 file (`adblockid.adfl.txt`) di folder `dist`.
 
   VSCode Task: **`FOP`**
 
