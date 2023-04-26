@@ -2,11 +2,11 @@
 
 Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
-- **Adblock Plus**: [How to write filters](https://help.eyeo.com/en/adblockplus/how-to-write-filters).
-- **Adblock Plus**: [Adblock Plus filters explained](https://adblockplus.org/filter-cheatsheet).
-- **AdGuard**: [How to create your own ad filters](https://adguard.com/kb/general/ad-filtering/create-own-filters/).
-- **uBlock Origin**: [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax).
-- [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md).
+- **Adblock Plus**: [How to write filters](https://help.eyeo.com/en/adblockplus/how-to-write-filters)
+- **Adblock Plus**: [Adblock Plus filters explained](https://adblockplus.org/filter-cheatsheet)
+- **AdGuard**: [How to create your own ad filters](https://adguard.com/kb/general/ad-filtering/create-own-filters/)
+- **uBlock Origin**: [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax)
+- [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md)
 
 
 
@@ -55,8 +55,8 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ## Development Tools
 ### Requirements
 
-- [Python (2.7 atau 3.5+)](https://www.python.org/downloads/).
-- [pip](https://pypi.org/project/pip/).
+- [Python (2.7 atau 3.5+)](https://www.python.org/downloads/)
+- [pip](https://pypi.org/project/pip/)
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
