@@ -4,7 +4,7 @@ Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
 - **Adblock Plus**: [How to write filters](https://help.eyeo.com/en/adblockplus/how-to-write-filters).
 - **Adblock Plus**: [Adblock Plus filters explained](https://adblockplus.org/filter-cheatsheet).
-- **AdGuard**: [How to create your own ad filters](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters).
+- **AdGuard**: [How to create your own ad filters](https://adguard.com/kb/general/ad-filtering/create-own-filters/).
 - **uBlock Origin**: [Static filter syntax](https://github.com/gorhill/uBlock/wiki/Static-filter-syntax).
 - [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md).
 
