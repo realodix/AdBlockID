@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.4.12
+! Version: 23.4.13
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Apr 2023 12:58 UTC
+! Last modified: 27 Apr 2023 18:47 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -524,6 +524,7 @@
 /img_iklan_
 /imgiklan/*
 /imgiklan_
+/imgiklankolom/*
 /imgiklanz/*
 /indofreeads_
 /materi_iklan/*
@@ -1149,6 +1150,7 @@ _gif1000x120.$image
 _GIF1200x120-
 ~fjb.kaskus.co.id##.ads__banner
 ~serbada.com##.banner-header
+~iklanjitu.jawapos.com##.ikl-kolom
 ##[href="https://invol.co/clazkwc"]
 ##a[target="_blank"][rel*="nofollow"] > img[src*=".gif"]
 ##a[target="_blank"][rel^="nofollow"] > video[src*=".mp4"]
@@ -3909,6 +3911,8 @@ jualo.com#@#.ad-title
 @@||bpjs-kesehatan.go.id/bpjs/reklame/$1p,image
 @@||cleverads.co.id/public/uploadfrontend/files/$1p,image
 @@||iklandisini.com/banner_ads/$1p
+@@||iklanjitu.jawapos.com/app/media/$image,domain=iklanjitu.jawapos.com
+@@||iklanjitu.jawapos.com/media/$image,domain=iklanjitu.jawapos.com
 @@||iklanku.shopee.co.id/img/$1p,image
 @@||jualo.com/images/$1p,image
 @@||pasangiklan.com/pi_b/img/$1p,image
