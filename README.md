@@ -11,8 +11,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 | Name            | Subscribe | Raw File | Description |
 | --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs] | [dist/adblockid.adfl.txt][ABID_Raw] | Filter utama |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs] | [dist/adblockid_plus.adfl.txt][ABID-Plus_Raw] | Patahkan berbagai batasan cakupan yang ada di AdBlockID |
+| AdBlockID       | [subscribe][ABID_Subs] | [dist/adblockid.adfl.txt][ABID_Raw] | Filter utama |
+| AdBlockID Plus  | [subscribe][ABID-Plus_Subs] | [dist/adblockid_plus.adfl.txt][ABID-Plus_Raw] | Patahkan berbagai batasan cakupan yang ada di AdBlockID |
 
 Lihat [tabel perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlockID Plus.
 
