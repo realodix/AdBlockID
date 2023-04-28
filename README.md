@@ -32,6 +32,8 @@ Lihat [tabel perbandingan](/docs/comparison_table.md) antara AdBlockID dan AdBlo
 
 ## Cara Menggunakan
 
+> 💡 Pastikan Anda hanya memasang AdBlockID di AdGuard dan uBlock Origin ya guys. Alasannya cukup sepele, karena saat ini sebagian besar fitur ajaib yang ada di dalam AdBlockID, hanya dapat dikeluarkan oleh AdGuard dan uBlock Origin saja 😃
+
 #### Desktop
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), [Opera](http://www.opera.com/), ...)
 2. *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
