@@ -41,11 +41,11 @@
 - Buka halaman `Protection`.
 - Klik `Ad bloking` -> `Language-specific ad blocking` <br>
 
-   ![](https://i.imgur.com/rvgEaik.jpg) <br>
+   <img src="https://i.imgur.com/rvgEaik.jpg" width="600"/> <br>
 
 ### Tahap 2
 - Buka halaman `Settings`.
 - Klik `Filtering` -> `Filters` -> `Language-specific filters`
 - Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span> <br>
 
-   ![](https://i.imgur.com/R5rqIfj.jpg) <br>
+   <img src="https://i.imgur.com/R5rqIfj.jpg" width="600"/>
