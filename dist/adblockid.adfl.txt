@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.5.6
+! Version: 23.5.7
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 May 2023 11:36 UTC
+! Last modified: 01 May 2023 12:08 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2651,7 +2651,7 @@ _GIF1200x120-
 /banners/*$image,domain=jelajahcoin.com
 /flyer-$image,domain=metrum.co.id
 /iklan%$image,domain=haibanjar.com|inilahsultra.com|kliksulsel.com|koranakselerasi.com|mandalikapost.com|prodeteksi.com
-/iklan-$image,domain=balapmotor.net|beritapagi.co.id|faktualnews.co|jambiterkini.com|kabarmedan.com|metrokepri.com|obor-nusantara.com|papuabaratpos.com|pojok6.id|portaltebo.id|potret24.com|prosesnews.id|sekilasindonesia.id|swarakaltim.com
+/iklan-$image,domain=balapmotor.net|beritapagi.co.id|faktualnews.co|jambiterkini.com|kabarmedan.com|metrokepri.com|obor-nusantara.com|papuabaratpos.com|pojok6.id|portaltebo.id|potret24.com|prosesnews.id|sekilasindonesia.id|swarakaltim.com|wartajambi.com
 /iklan_$image,domain=potret24.com|sumselnian.com
 /img/banner/*$image,domain=mainbasket.com
 /sponsor/*$image,domain=nblindonesia.com
@@ -2872,11 +2872,13 @@ _promohariini.$image,domain=ruparupa.com
 ||lenterapendidikan.com/assets/img/loader.jpg$image
 ||lenterapendidikan.com^*/banner/
 ||lenterasultra.com^*/thumb-$image
+||lingkarjambi.id^*/iklan-$image
 ||lintasbali.com^*/iklan-$image
 ||lintascelebes.com^*/banner-$image
 ||lintaslampung.com^*/adv_$image
 ||lintasntt.com^*/iklan-$image
 ||lintastungkal.com^*/banner-$image
+||lintastungkal.com^*/iklan-$image
 ||liputan7upcash.com^*/banner-$image
 ||lokadata.id/images/banner_$image
 ||lomboktoday.co.id^*/iklan-$image
@@ -2964,10 +2966,9 @@ _promohariini.$image,domain=ruparupa.com
 ||radarmalang.id^*/banner-$image
 ||radarmalang.id^*/skin-ads-$image
 ||radarntt.co^*/iklan-$image
-||radarpekalongan.co.id^*/banner-$image
-||radarsorongnews.com^*/iklan-$image
 ||radartanggamus.co.id^*/iklan-$image
 ||radartegal.com^*/banner-$image
+||rakyatjambi.co^*/iklan-$image
 ||rakyatntt.com^*/iklan-$image
 ||realitasonline.id^*/iklan-$image
 ||redaksisulut.com^*/iklan-$image
@@ -2996,6 +2997,7 @@ _promohariini.$image,domain=ruparupa.com
 ||seputarntb.com^*/iklan$image
 ||seputarpapua.com^*/iklan-$image
 ||seputarriau.co/assets/banner/
+||serambijambi.id^*/iklan$image
 ||seuramoeaceh.com/files/sewaan/$image
 ||siantarupdate.com^*/iklan-$image
 ||sibersumsel.com^*/iklan-$image
@@ -3138,14 +3140,14 @@ grid.id###div-top-banner-transparent
 anievo.id,carasettingterbaru.blogspot.com,faktabanten.co.id,galerikitabkuning.com,ortax.org,pickybest.id,sahrilku.com,seruji.co.id###fixedban
 beritasatu.com###floatAds
 tanyamimpi.org###floatads3
-apahabar.com,beritanusa.id###header-banner
+apahabar.com,beritanusa.id,bidikindonesianews.co.id,inspirasijambi.com,jambivalen.com,kodimtanjab.com,liputantanjab.com,ultimatum.id###header-banner
 gadgetren.com###header-native-ad
 republika.co.id###inscroll-banner
 sindonews.com###me-div-gpt-ad-bottom-sticky
 sindonews.com###me-div-gpt-ad-parallax
 solopos.com###mega-billboard-container
 myjourney.id,oolean.id,pakaiatm.com###myAds
-lintastungkal.com###news-feed-banner
+bidikindonesianews.co.id,harianpewarta.com,inspirasijambi.com,jambivalen.com,lingkarjambi.id,lintastungkal.com,terasjambi.id###news-feed-banner
 lintastungkal.com###news-feed-banner-dua
 icloudice.com###notifAds
 pikiran-rakyat.com###prmn__megabillboard
@@ -3274,6 +3276,7 @@ cosmogirl.co.id##.bnr
 goinsan.com##.bottomBox
 cnbcindonesia.com##.box-ads
 uzone.id##.box-ads-billboard
+rakyatjambi.co##.box-banner
 brainly.co.id##.brn-ab-detection-screening
 brainly.co.id##.brn-ads-box
 brainly.co.id##.brn-ads-box--spaced-around
@@ -3332,6 +3335,7 @@ beritaminang.com##.inner-float-left
 beritaminang.com##.inner-float-right
 kontan.co.id##.inner-paralax-ad
 borneotrend.com##.is-ad
+halojambi.id##.ja-banner
 jelajahcoin.com##.jc-headad
 jelajahcoin.com##.jc-header-ad
 jelajahcoin.com##.jc-stickyads
@@ -3525,10 +3529,12 @@ visi.news##.custom-html-widget
 lintasbali.com,radarbanten.co.id##.elementor-widget-container > a > img
 metrotimur.com##.home-widget figure > img
 musiklib.org##.sidebar-sponsor
+halojambi.id##.t3-sidebar p > img
 zonasultra.id##.textwidget > p img
 kilastimor.com##.textwidget img.aligncenter[alt=""]
 sumeks.co##.textwidget img.alignnone[alt=""]
-lamanesia.com##.textwidget p > img
+lamanesia.com,radarsriwijaya.com##.textwidget p > img
+pilarjambi.com,sekato.co.id##.theiaStickySidebar p > img
 sultengterkini.id##.widget .gofollow > img
 bengkulupost.id##.widget > .has-nested-images > figure > img
 bengkulupost.id##.widget > .wp-block-image > figure > img
@@ -3555,21 +3561,22 @@ orbitdigitaldaily.com##aside a[target="_blank"] > img
 bayufitri.com,murianews.com##aside a[target="_blank"] img
 minangkabaunews.com##aside div > img
 marketeers.com##aside div:has(> iframe[src^="https://ads.marketeers.com"])
-kabarnusantaranews.com,pontren.com##aside figure > img
+jurnalbidas.com,kabarnusantaranews.com,pontren.com##aside figure > img
 panrita.news##aside img[alt^="adv" i]
 expossumbar.com##aside img[id$="_img"]
 sumselupdate.com##aside img[src*="ucapan" i]
 terasmaluku.com##aside p > a > img.aligncenter
 terasmaluku.com##aside p > img.aligncenter
 samuderakepri.co.id###sidebar-header img[style="max-width: 100%; height: auto;"]
-beritanusa.id###sidebar-left img[style="max-width: 100%; height: auto;"]
-beritanusa.id###sidebar-right img[style="max-width: 100%; height: auto;"]
+ajwinews.co.id,beritanusa.id,bulenonnews.com,e-tivinews.id,indojambi.id,inspirasijambi.com,jambinet.id,lingkarjambi.id,mandaunews.com,publishnews.id,suaralugas.com,terasjambi.id,ultimatum.id###sidebar-left img[style="max-width: 100%; height: auto;"]
+ajwinews.co.id,beritanusa.id,mandaunews.com###sidebar-right img[style="max-width: 100%; height: auto;"]
+bidikindonesianews.co.id,inspirasijambi.com###sidebar-single img[style="max-width: 100%; height: auto;"]
 mediaasuransinews.co.id##.box-widget img[style="max-width: 100%; height: auto;"]
 metrotimur.com##.relative > img[style="width: 100%; display: block;"]
 digtara.com##.sidebar img[style="max-width: 100%; height: auto;"]
 bertuahpos.com,jalurnews.com,kpfmpalangkaraya.com,potretnusantara.id,sinjai.info##.theiaStickySidebar img[style="max-width: 100%; height: auto;"]
 padangmedia.com##.theiaStickySidebar img[style="max-width: 100%;"]
-adanu.co.id,berandanusantara.com,bitnews.id,bogopapua.net,bogornetwork.com,cakrawalajabar.com,ceklissatu.com,citrahost.com,depokrayanews.com,expontt.com,fajar.co.id,infomurni.com,jambidaily.com,jubir.id,kabarntt.co,kabarpapua.co,kabarsinjai.com,kemajuanrakyat.id,klikjatim.com,ligo.id,lintasbali.com,matanews.net,mediasumutku.com,medinaslampungnews.co.id,portalntt.com,potret24.com,protapriau.com,purworejonews.com,radarbanten.co.id,rakyatbengkulu.com,sekilasindonesia.id,speednews-manado.com,srbnews.id,suaramuhammadiyah.id,suarasulut.com,sulutnewstv.com,wartaterkini.news##.widget img[style="max-width: 100%; height: auto;"]
+adanu.co.id,berandanusantara.com,bitnews.id,bogopapua.net,bogornetwork.com,cakrawalajabar.com,ceklissatu.com,citrahost.com,depokrayanews.com,detikbrita.com,expontt.com,fajar.co.id,infomurni.com,jambidaily.com,jubir.id,kabarntt.co,kabarpapua.co,kabarsinjai.com,kemajuanrakyat.id,klikjatim.com,ligo.id,lintasbali.com,matanews.net,mediasumutku.com,medinaslampungnews.co.id,portalntt.com,potret24.com,protapriau.com,purworejonews.com,radarbanten.co.id,rakyatbengkulu.com,sekilasindonesia.id,siberindo.co,speednews-manado.com,srbnews.id,suaramuhammadiyah.id,suarasulut.com,sulutnewstv.com,wartaterkini.news##.widget img[style="max-width: 100%; height: auto;"]
 lensametro.com##.widget img[width="250"][height=""]
 kabardesa.co.id##.widget-content a > img[data-original-height="1080"][width="320"]
 kabardesa.co.id##.widget-content a > img[data-original-width="1080"][height="320"]
