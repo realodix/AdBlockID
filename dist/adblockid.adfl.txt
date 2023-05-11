@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.5.150
+! Version: 23.5.151
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 May 2023 17:00 UTC
+! Last modified: 11 May 2023 17:01 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -779,6 +779,8 @@ _TimAds_$image
 ###side-ads-1
 ###side-ads-2
 ###sidebar-ads2
+###sidebar-banner-160x600-kanan
+###sidebar-banner-160x600-kiri
 ###sidebar-banner-mobile-bawah
 ###signaturebanner-ad
 ###skycrapper-left-ads
@@ -1377,6 +1379,8 @@ _TimAds_$image
 ##.sf-ad-header-below
 ##.sidebar-ads2
 ##.sidebar-ads3
+##.sidebar-banner-160x600-kanan-wrap
+##.sidebar-banner-160x600-kiri-wrap
 ##.sidebar-banner-mobile-bawah-wrap
 ##.sk_splash_ads
 ##.skidAds
@@ -1849,6 +1853,7 @@ _promohariini.$image,domain=ruparupa.com
 ||balitopnews.com^*/banner/
 ||banghasan.com/banner/
 ||bantenku.co.id^*/banner/
+||baranewsaceh.co^*/baner-$image
 ||baritaitah.co.id/foto_banner/
 ||baritopost.co.id^*-iklan.$image
 ||baritorayapost.com^*-banner-$image
@@ -2374,7 +2379,7 @@ wartaekonomi.co.id##.ad-container:remove()
 sekedus.com##.ad-custom
 jelajahcoin.com##.ad-desk
 terkini.id##.ad-layout-1
-1tulah.com##.ad-middle
+1tulah.com,baranewsaceh.co##.ad-middle
 jelajahcoin.com##.ad-mob
 thejakartapost.com##.ad-v-box
 berita.99.co##.ad-video-wrap
@@ -2792,7 +2797,7 @@ sukoharjonews.com,ulasan.co##.textwidget > a > img
 kabarwarta.id,lensaindonesia.com,republikjatim.com,suaraindonesia-news.com##.textwidget > div > a > img
 lensaindonesia.com,suaratimurnews.com##.textwidget > div > img
 gesahkita.com,jodanews.com,keizalinnews.com,listingberita.com,monopolisumselnews.com,radarsorong.id,rakyatkalteng.com,riliskalimantan.com,suarasumselnews.co.id##.textwidget > img
-faktaperistiwanews.co,gemalampung.com,indeksnews.com,kilaspapua.com,papuapos.com,pulausumbawanews.net##.textwidget > p > a > img
+baranewsaceh.co,faktaperistiwanews.co,gemalampung.com,indeksnews.com,kilaspapua.com,papuapos.com,pulausumbawanews.net##.textwidget > p > a > img
 antero.co,beritasore.co.id,faktahukumntt.com,inikalteng.com,lintaskepri.com,mediakeprinews.com,pilarjambi.com,radarbatam.id,radarreportasenews.co.id,rakyatjabarnews.com,realitarakyat.com,sekato.co.id,seputarkepri.co.id,sumselindependen.com,sumselterkini.co.id##.textwidget > p > img
 zonasultra.id##.textwidget > p img
 penjuru.id##.textwidget a > img
@@ -2844,7 +2849,7 @@ expossumbar.com##aside img[id$="_img"]
 sumselupdate.com##aside img[src*="ucapan" i]
 terasmaluku.com##aside p > a > img.aligncenter
 terasmaluku.com##aside p > img.aligncenter
-samuderakepri.co.id,suarababelnews.com###sidebar-header img[style="max-width: 100%; height: auto;"]
+baranewsaceh.co,samuderakepri.co.id,suarababelnews.com###sidebar-header img[style="max-width: 100%; height: auto;"]
 ajwinews.co.id,beritanusa.id,bulenonnews.com,e-tivinews.id,indojambi.id,inspirasijambi.com,jambinet.id,lingkarjambi.id,mandaunews.com,publishnews.id,suaralugas.com,terasjambi.id,ultimatum.id###sidebar-left img[style="max-width: 100%; height: auto;"]
 ajwinews.co.id,beritanusa.id,kabarmuba.com,mandaunews.com,tribratatv.com###sidebar-right img[style="max-width: 100%; height: auto;"]
 bidikindonesianews.co.id,inspirasijambi.com,mediaedukasi.id,samuderakepri.co.id###sidebar-single img[style="max-width: 100%; height: auto;"]
