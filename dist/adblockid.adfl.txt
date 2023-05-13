@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.5.163
+! Version: 23.5.164
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 May 2023 08:32 UTC
+! Last modified: 13 May 2023 08:39 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1580,6 +1580,7 @@ _TimAds_$image
 ##img[alt="iklan" i]
 ##img[data-permalink^="/apps/iklan-"]
 ~octaengine.com,~octamarkets.global##[href^="http://octaengine.com/c/?p="] img
+~adsterra.com,~adsterratech.com##[href^="https://publishers.adsterra.com/referral/"] > img
 ~1stserver.com##a[href*="1stserver.com/aff.php?aff="] > img
 ~ascertaincrescenthandbag.com##a[href*="ascertaincrescenthandbag.com"]
 ~baliorange.net,~boc.co.id##a[href*="baliorange.net/aff.php?aff="] > img
@@ -1662,6 +1663,7 @@ _TimAds_$image
 ||adplus.co.id^$3p
 ||adslop.com^$3p
 ||adstarsmedia.co.id^$3p
+||adsterratech.com/referralBanners/$image
 ||berangkasilmu.com^$3p
 ||c303.pw^$3p
 ||cdnasiaclub.com^$3p
