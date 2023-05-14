@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.5.174
+! Version: 23.5.175
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 May 2023 19:54 UTC
+! Last modified: 14 May 2023 20:28 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2103,6 +2103,7 @@ _promohariini.$image,domain=ruparupa.com
 ||malang-post.com/asset/foto_banner/
 ||malangpost.id^*-iklan_$image
 ||malangvoice.com^*/ads_$image
+||malukuterkini.com^*/banner-$image
 ||manadotempo.com^*/banner-$image
 ||manadoxpress.com/foto_banner/
 ||mandiripos.com^*/banner-$image
@@ -2798,6 +2799,7 @@ kabarsumbar.com##[href^="https://shopee.co.id/"] > img
 tempo.co##[id^="Affinity_BTF_"]
 dailypost.id##a[href^="https://vt.tiktok.com/"] > img
 infobekasi.co.id##article .code-block > a > img
+malukuterkini.com##article .funds
 sultengterkini.id##article a.gofollow > img
 kabarnusantaranews.com##article figure > img
 kliksumatera.com##li[style*="position: absolute;"] .prettyphoto
@@ -3028,7 +3030,6 @@ kompas.id##[id^="div-gpt-ad"]:upward(.justify-center)
 okezone.com##[id^="div-gpt-ad-"]:upward(.center-paralax)
 genpi.co##[id^="div-gpt-ad-"]:upward(.text-center)
 koranseruya.com##[id^=local-]:has-text(/adv/i)
-acehekspres.com,acehportal.com,acehstandar.com,acehtrend.com,akuratnews.com,kabartamiang.com,mimbaraceh.com,modusaceh.co##article #slpremium
 ciriciripohon.com##article .adsbygoogle:upward(center)
 bogordaily.net##article .code-block:matches-css(text-align: center):has(a[href] > img)
 cnnindonesia.com##article .paradetail:has-text(/adv/i)
@@ -3096,7 +3097,7 @@ drphone.id,indimanado.com,komentar.co,pewarta.co.id,tokojasaview.com##.fixed-rig
 khabarberita.com,ngemotor.com##.fixed-rside
 hops.id##.flying_carpet_div
 kelasexcel.id##.flyingcarpet
-beritasenator.com,ceritadepok.com,fajarbanten.com,gadgetren.com,geliatekonomi.com,gunem.id,harianmassa.id,infoterkini24.com,jawapos.com,kamini.id,katadata.co.id,kuyou.id,naratimes.com,panditfootball.com,pikiran-rakyat.com,portalrepublik.com,poskota.co.id,rakyatpriangan.com,teknologi.id,traxonsky.com,zonabandung.com##.footer_sticky
+beritasenator.com,ceritadepok.com,fajarbanten.com,gadgetren.com,geliatekonomi.com,gunem.id,harianmassa.id,infoterkini24.com,jawapos.com,kamini.id,katadata.co.id,kuyou.id,malukuterkini.com,naratimes.com,panditfootball.com,pikiran-rakyat.com,portalrepublik.com,poskota.co.id,rakyatpriangan.com,teknologi.id,traxonsky.com,zonabandung.com##.footer_sticky
 lokerjakarta.id##.footer_sticky_desktop
 ayobandung.com,harianhaluan.com,hops.id,kabarfajar.com,klikaktual.com,koranmemo.com,newsmedia.co.id,poros.id,portalsiber.id,smol.id##.footer_stickyexp
 evilicacell.com,tagarsatu.com##.ignielParallax
@@ -3133,6 +3134,7 @@ ayosemarang.com,jatimnetwork.com##[id^="div-gpt-ad-"]
 momsmoney.id##[id^="div-insidearticletop-Momsmoney"]
 radarbekasi.id##[id^="gpt-"]
 pojoksatu.id,sehatq.com##[id^="gpt-ad-"]
+acehekspres.com,acehportal.com,acehstandar.com,acehtrend.com,akuratnews.com,kabartamiang.com,kabartimurnews.com,malukuterkini.com,mimbaraceh.com,modusaceh.co##article #slpremium
 ceklist.id##article .affcoups
 beritabalap.com,jatengnews.id##article .code-block img
 sabiru.com##aside .oxy-pricing-box
@@ -3549,6 +3551,7 @@ kompas.com##.js-read-article .rVideo-player:remove()
 kompas.com##.js-read-article .video-box-wrap:remove()
 bola.com,bola.net,dream.co.id,kapanlagi.com,liputan6.com,merdeka.com##.nativescrollingKLY:has(.nativescrollingKLY-sticky-inner-video):remove()
 kapanlagi.com##.nativevideosiframe-loader:remove()
+kupastuntas.co##.news-content .embed-responsive:remove()
 kapanlagi.com##.pages .box--video.box:remove()
 carisinyal.com##.plyr:remove()
 kabarbumn.com##.popup-video:remove()
