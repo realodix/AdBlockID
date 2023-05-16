@@ -1,3 +1,7 @@
+> **INFO**: Subscription URL telah berubah, mohon untuk segera subscribe ulang 😊
+
+---
+
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
