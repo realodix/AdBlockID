@@ -1,4 +1,5 @@
-> 💡 **INFO**: Subscription URL telah berubah, mohon untuk segera subscribe ulang 😊
+<p align="center"><img src="https://github.com/realodix/AdBlockID/assets/1314456/32ec7a6e-0f18-4915-8946-f64c4aec3ee4" /></p>
+
 
 ---
 
