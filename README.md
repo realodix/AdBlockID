@@ -1,4 +1,4 @@
-> **INFO**: Subscription URL telah berubah, mohon untuk segera subscribe ulang 😊
+> 💡 **INFO**: Subscription URL telah berubah, mohon untuk segera subscribe ulang 😊
 
 ---
 
