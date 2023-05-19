@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.5.201
+! Version: 23.5.202
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 May 2023 10:17 UTC
+! Last modified: 19 May 2023 20:00 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1319,6 +1319,7 @@ _TimAds_$image
 ##.link_banner_iklan
 ##.magazine-block-medium-ad
 ##.mainads
+##.majalahpro-core-banner-aftercontent
 ##.majalahpro-core-center-ads
 ##.majalahpro-core-topbanner
 ##.majalahpro-core-topbanner-aftermenu
@@ -1365,6 +1366,7 @@ _TimAds_$image
 ##.props-ad-slot-footer-sticky__ad-content
 ##.props-ad-slot-footer-sticky__close-button
 ##.ray-ads-1-container
+##.ray-ads-billboard
 ##.ray-ads-container
 ##.ray-ads-in-content
 ##.ray-floating-ads
@@ -1809,7 +1811,7 @@ _TimAds_$image
 /adv-$image,domain=halmaherapost.com
 /baner-$image,domain=hariankepri.com|kritisnews.com|memo.co.id|padangmedia.com|semarakpost.com|viralkaltim.com
 /banner%$image,domain=haibanjar.com|instingjurnalis.com
-/banner-$image,domain=balapmotor.net|barometerjatim.com|bmspeed7.com|dailypost.id|djournalist.com|gaikindo.or.id|gemasulawesi.com|indonesiadaily.co.id|infosulsel.com|jagoankode.com|kabarbenggawi.com|kabarmedan.com|kanalkalimantan.com|kliksulsel.com|lintaskepri.com|manadoline.com|manadonews.co.id|mariodevan.com|mediaasuransinews.co.id|metrokepri.com|pedomanrakyat.com|pertamax7.com|poskomalut.com|potret24.com|presmedia.id|rakyatbengkulu.com|revolusinews.com|rodanesia.com|samuderakepri.co.id|sinjai.info|speednews-manado.com|suaracelebes.com|sukoharjonews.com|sumselupdate.com|swarakaltim.com|swarakawanua.com|theiconomics.com|trotoar.id|viralberita.net|wideazone.com
+/banner-$image,domain=balapmotor.net|barometerjatim.com|bmspeed7.com|dailypost.id|djournalist.com|figurnews.com|gaikindo.or.id|gemasulawesi.com|indonesiadaily.co.id|infosulsel.com|jagoankode.com|kabarbenggawi.com|kabarmedan.com|kanalkalimantan.com|kliksulsel.com|lintaskepri.com|manadoline.com|manadonews.co.id|mariodevan.com|mediaasuransinews.co.id|metrokepri.com|pedomanrakyat.com|pertamax7.com|poskomalut.com|potret24.com|presmedia.id|rakyatbengkulu.com|revolusinews.com|rodanesia.com|samuderakepri.co.id|sinjai.info|speednews-manado.com|suaracelebes.com|sukoharjonews.com|sumselupdate.com|swarakaltim.com|swarakawanua.com|theiconomics.com|trotoar.id|viralberita.net|wideazone.com
 /banner.$image,domain=prokepri.com
 /banner/*$image,domain=jagobengkel.com|kapanlagi.com|maenhp.com
 /banner_$image,domain=inijabar.com|radarbanten.co.id|ruparupa.com|seputarpapua.com|suarabaru.id
@@ -2008,6 +2010,7 @@ _promohariini.$image,domain=ruparupa.com
 ||inibengkulu.com^*/banner-$image
 ||inilahkoran.com^*/banners/
 ||inimedan.com^*/iklan-$image
+||insitekaltim.com/wp-content/uploads/2022/11/banner-$image
 ||inspira.tv/assets/banner/
 ||intipos.com^*/iklan-$image
 ||intutekno.com^*-banner$image
@@ -2063,6 +2066,7 @@ _promohariini.$image,domain=ruparupa.com
 ||kepritoday.com^*/banner-$image
 ||kilasbali.com^*/iklan-$image
 ||klik-ntt.com^*/iklan_$image
+||klikindonesia.co/assets/images/banner/$image
 ||klikjatim.com^*/ads_$image
 ||klikpositif.com^*/banner$image
 ||klikpositif.com^*/iklan-$image
@@ -2261,6 +2265,7 @@ _promohariini.$image,domain=ruparupa.com
 ||seputarriau.co/assets/banner/
 ||seputartuban.com^*/banner-$image
 ||serambijambi.id^*/iklan$image
+||sergaplampung.com^*/banner-$image
 ||seuramoeaceh.com/files/sewaan/$image
 ||siantarupdate.com^*/iklan-$image
 ||siberkota.com^*/iklan-$image
@@ -2324,6 +2329,7 @@ _promohariini.$image,domain=ruparupa.com
 ||tangerang7.com^*/banner-$image
 ||tangerangnews.com^*/banner/
 ||tanogaido.com^*/banner-$image
+||tebarberita.id^*/banner-$image
 ||techfor.id^*/banner-$image
 ||telisik.id/assets/img/ads/$image
 ||teraslampung.com^*iklan-$image
@@ -2365,6 +2371,7 @@ _promohariini.$image,domain=ruparupa.com
 ||warta-1.net^*/iklan-$image
 ||warta-pendidikan.com^*/iklan-$image
 ||wartaekonomi.co.id^*/online_banner/
+||wartaniaga.com^*/banner-$image
 ||wartapati.com^*_ads.$image
 ||waspada.co.id^*/banner-$image
 ||waspada.co.id^*/iklan-$image
@@ -2535,7 +2542,7 @@ techinasia.com##.artad-vid
 hellosehat.com##.article-desktop-ad
 goodnewsfromindonesia.id##.article-photos-ads
 aliansirakyatnews.com##.baner
-ashadin.com,beritamagelang.id,beritasatu.com,beritaterbit.com,bidiknasional.co.id,binews.id,bisnis.com,campusnesia.co.id,cnbcindonesia.com,dream.co.id,industry.co.id,instingjurnalis.com,kapanlagi.com,khabarberita.com,kompasiana.com,kuasakata.com,medcom.id,mediadinamikaglobal.id,mediaindonesia.com,news24.co.id,presisi.co,sonora.id,suarapemredkalbar.com,sulbarkita.com,telisik.id,terkininews.com,valoranews.com##.banner
+ashadin.com,beritamagelang.id,beritasatu.com,beritaterbit.com,bidiknasional.co.id,binews.id,bisnis.com,campusnesia.co.id,cnbcindonesia.com,dream.co.id,industry.co.id,instingjurnalis.com,kapanlagi.com,khabarberita.com,kompasiana.com,kuasakata.com,medcom.id,mediadinamikaglobal.id,mediaindonesia.com,news24.co.id,presisi.co,sonora.id,suarapemredkalbar.com,sulbarkita.com,telisik.id,terkininews.com,valoranews.com,wartasehat.id##.banner
 techinasia.com##.banner-ad-top-link
 suara.com##.banner-ads--parallax
 naikmotor.com##.banner-aop
@@ -2550,7 +2557,7 @@ jagadtani.com##.banner-item
 dream.co.id,merdeka.com##.banner-lb
 elshinta.com##.banner-mid
 orami.co.id##.banner-parallax
-bbsnews.co.id,intipos.com,jambidaily.com,kabarlahat.com,lampungmandiri.id,topkata.com##.banner-promotions-wrapper
+bbsnews.co.id,intipos.com,jambidaily.com,jurnallampung.com,kabarlahat.com,lampungmandiri.id,topkata.com,tuntaslampung.com##.banner-promotions-wrapper
 diadona.id##.banner-sc
 sonora.id##.banner-skin
 bola.net##.banner-slot
@@ -2558,6 +2565,7 @@ kapanlagi.com##.banner-small
 kompas.com##.banner-sticky-holder
 elshinta.com,kompasiana.com##.banner-top
 industry.co.id##.banner-top-header
+klikindonesia.co##.banner-wrap
 radarriaunet.com##.banner120
 jellykom.com,kompiajaib.com##.banner300sidebar
 radarriaunet.com##.banner625
@@ -2565,7 +2573,7 @@ medianotaris.com##.bannerTop
 insertlive.com##.banner__top
 medcom.id##.banner_content
 detik.com##.banner_reg
-garudadaily.com##.banner_wrapper
+garudadaily.com,lintaspenjuru.com##.banner_wrapper
 harianbhirawa.co.id##.bannerbefore_titlesingle
 tempo.co##.bannerhead
 jawapos.com##.bannerhover
@@ -2613,7 +2621,7 @@ tvonenews.com,viva.co.id##.giant-banner
 trenasia.com##.giias-banner
 qoala.app##.global-banner-left
 beritalima.com,beritamerdekaonline.com,herald.id,kebumenupdate.com,keizalinnews.com,megamanado.com,reformasiaktual.com,tribuntipikor.com,tugujatim.id##.gmr-banner-aftercontent
-akmazona.com,beritaborneo.id,dailypost.id,editor.id,ekspos.id,exposenews.id,herald.id,infakta.com,japos.co,koma.id,liputankawanua.com,odiyaiwuu.com,orbitdigitaldaily.com,suarakalbar.co.id,teraspapua.com##.gmr-banner-logo
+akmazona.com,beritaborneo.id,dailypost.id,editor.id,ekspos.id,exposenews.id,herald.id,infakta.com,japos.co,koma.id,liputankawanua.com,odiyaiwuu.com,orbitdigitaldaily.com,redaksitimur.com,reportasepapua.co.id,suarakalbar.co.id,teraspapua.com##.gmr-banner-logo
 headline.co.id,lagikepo.com##.gmr-banner-stickyright
 mikaylabinar.com,topikindonesia.id##.gmr-bannerpopup
 blogernas.com,kliksulsel.com,safahad.my.id##.googlepublisherads
@@ -2637,7 +2645,7 @@ suarajatimpost.com##.img-ads-portrait
 jatimnow.com##.imgAdv
 minangsatu.com##.imgads
 zooba.id##.infeedads
-beritajateng.tv,beritamerdekaonline.com,dailypost.id,lagikepo.com,livefaktanews.co.id,meteorsumatera.com,monopolisumselnews.com,onokae.com,radartegal.com,suarakahayannews.com,tapanulipost.com,wideazone.com##.inline-banner
+beritajateng.tv,beritamerdekaonline.com,dailypost.id,lagikepo.com,livefaktanews.co.id,meteorsumatera.com,monopolisumselnews.com,onokae.com,radartegal.com,reportasepapua.co.id,suarafaktual.com,suarakahayannews.com,tapanulipost.com,wideazone.com##.inline-banner
 beritaminang.com##.inner-float-left
 beritaminang.com##.inner-float-right
 kontan.co.id##.inner-paralax-ad
@@ -2766,7 +2774,7 @@ andreasagung.com,centerklik.com,kostjakarta.com,tanogaido.com,tempat-kost.com##a
 ceklist.id##a[rel="sponsored"] img
 lensaindonesia.com##a[rel^="sponsored"] > img
 khabarberita.com##a[target*="blank"] > img
-aftermarketplus.id,againcolor.com,alexanews.id,armaila.com,bagas31.info,bakata.net,beritabaik.id,beritacrypto.com,beritadaerah.co.id,beritajatim.com,beritasatu.com,beritaterkini.co.id,blockchainmedia.id,cakrawalantt.com,campusnesia.co.id,caratekno.com,chaidir.web.id,coinvestasi.com,deltakepri.co.id,detak.co,detikglobalnews.com,duta.co,ekagoblog.com,gaikindo.or.id,gentaonline.com,gigapurbalingga.cc,gilacoding.com,globalplanet.news,goparlement.com,gosulsel.com,hariansoloraya.com,helloborneo.com,hetanews.com,idblanter.com,indonesiabaik.id,indox21.xyz,infoacehtimur.com,infoaktualnews.com,infojambi.com,inikalteng.com,jagadtani.com,jambipers.com,jambiseru.com,jamilazzaini.com,jarrakposbali.com,kabarnusantaranews.com,kabarsiger.com,kabarterkini.co.id,klikmania.net,kompaslima.com,koransulindo.com,korsum.id,kostjakarta.net,kuncitts.com,laptophia.com,lasemgresik.id,lintaslampung.com,listrikindonesia.com,malangtimes.com,maniakmotor.com,mediaasuransinews.co.id,mediabumn.com,medianews.co.id,mediaterobos.com,miuiarena.com,mobnasesemka.com,modeldewasa.com,murianews.com,musbikhin.com,naikmotor.com,ninna.id,nusadaily.com,okemedan.com,omkicau.com,onlinekoe.com,onphpid.com,oppal.co.id,panturanews.com,parokicikarang.or.id,penaberlian.com,pengusahamuslim.com,pickybest.id,polisiinternet.com,posbali.co.id,poskomalut.com,potret24.com,radarbanten.co.id,radarindo.co.id,radarlampung.co.id,radartuba.com,rakyatbengkulu.com,rakyatnesia.com,riauterkini.com,samawarea.com,sebelas12.com,suarakristen.com,suaraserumpun.com,sukabumiupdate.com,sulselsatu.com,sumateranews.co.id,sumbawanews.com,sumeks.co,superapp.id,swarakaltim.com,tafsir-mimpi.com,triberita.com,tutorial89.com,venuemagz.com,wartabromo.com,waspada.co.id,webdev-id.com,yangcanggih.com,zonabikers.com##a[target="_blank"] > img
+aftermarketplus.id,againcolor.com,alexanews.id,armaila.com,bagas31.info,bakata.net,beritabaik.id,beritacrypto.com,beritadaerah.co.id,beritajatim.com,beritasatu.com,beritaterkini.co.id,blockchainmedia.id,cakrawalantt.com,campusnesia.co.id,caratekno.com,chaidir.web.id,coinvestasi.com,deltakepri.co.id,detak.co,detikglobalnews.com,duta.co,ekagoblog.com,gaikindo.or.id,gentaonline.com,gigapurbalingga.cc,gilacoding.com,globalplanet.news,goparlement.com,gosulsel.com,hariansoloraya.com,helloborneo.com,hetanews.com,idblanter.com,indonesiabaik.id,indox21.xyz,infoacehtimur.com,infoaktualnews.com,infojambi.com,inhupost.com,inikalteng.com,jagadtani.com,jambipers.com,jambiseru.com,jamilazzaini.com,jarrakposbali.com,kabarnusantaranews.com,kabarsiger.com,kabarterkini.co.id,klikmania.net,kompaslima.com,koransulindo.com,korsum.id,kostjakarta.net,kuncitts.com,laptophia.com,lasemgresik.id,lintaslampung.com,listrikindonesia.com,malangtimes.com,maniakmotor.com,mediaasuransinews.co.id,mediabumn.com,medianews.co.id,mediaterobos.com,miuiarena.com,mobnasesemka.com,modeldewasa.com,murianews.com,musbikhin.com,naikmotor.com,ninna.id,nusadaily.com,okemedan.com,omkicau.com,onlinekoe.com,onphpid.com,oppal.co.id,panturanews.com,parokicikarang.or.id,penaberlian.com,pengusahamuslim.com,pickybest.id,polisiinternet.com,posbali.co.id,poskomalut.com,potret24.com,radarbanten.co.id,radarindo.co.id,radarlampung.co.id,radartuba.com,rakyatbengkulu.com,rakyatnesia.com,riauterkini.com,samawarea.com,sebelas12.com,suarakristen.com,suaraserumpun.com,sukabumiupdate.com,sulselsatu.com,sumateranews.co.id,sumbawanews.com,sumeks.co,superapp.id,swarakaltim.com,tafsir-mimpi.com,triberita.com,tutorial89.com,venuemagz.com,wartabromo.com,waspada.co.id,webdev-id.com,yangcanggih.com,zonabikers.com##a[target="_blank"] > img
 iwanbanaran.com##a[target="_blank"] div[style*="position: fixed;"]
 radartegal.com,radartegal.id##a[title="promotion" i] > img
 radartegal.com,radartegal.id##a[title="promotion" i] > video:remove()
@@ -2774,7 +2782,7 @@ sijorikepri.com##a[title^="iklan" i]
 hometronik.web.id##article a[target="_blank"] > img
 acehasia.com,arsindonews.com,beritapagi.co.id,beritasumatera.co.id,cakrawala.co,cendananews.com,detikglobalnews.com,faktabanten.co.id,kepritoday.com,manadotoday.co.id,murianews.com,popularitas.com,presmedia.id,respublika.id,teksnologi.com##div[itemtype="https://schema.org/WPAdBlock"] > img
 ceklissatu.com,globalplanet.news,kaltimkita.com,penamerdeka.com,respublika.id,sakanews.com##img[alt*="ads" i]
-adanu.co.id,akhmadguntar.com,altinanews.com,atjehdaily.id,baliekbis.com,beritaplano.com,bungasbanten.id,cahyamedia.co.id,cakrawalanusantara.id,ceklissatu.com,cokronews.com,corongrakyat.co.id,detikglobalnews.com,djournalist.com,indotribun.id,inisumedang.com,integritasmedia.com,jalurnews.com,jambiseru.com,jurnalpatrolinews.co.id,kabar6.com,kalimantan-news.com,kemajuanrakyat.id,kongkrit.com,liputan68.com,majalahponsel.org,manadotoday.co.id,munadi.id,natmed.id,nutriflakes.id,odiyaiwuu.com,okeyboz.com,opsintb.com,portalntt.com,posciety.com,radarcom.id,realitapost.com,sahrilku.com,samuderakepri.co.id,sebelas12.com,smartcitymakassar.com,sukoharjonews.com,sumselindependen.com,sumselnian.com,terasjatim.com,teraspapua.com,teropongsulut.com,topmetro.news,utamanews.id,wartabanten.id,waspada.id,winpoin.com##img[alt*="banner" i]
+adanu.co.id,akhmadguntar.com,altinanews.com,atjehdaily.id,baliekbis.com,banjarbaruklik.com,beritaplano.com,bungasbanten.id,cahyamedia.co.id,cakrawalanusantara.id,ceklissatu.com,cokronews.com,corongrakyat.co.id,detikglobalnews.com,djournalist.com,indotribun.id,inisumedang.com,integritasmedia.com,jalurnews.com,jambiseru.com,jurnalpatrolinews.co.id,kabar6.com,kalimantan-news.com,kemajuanrakyat.id,kongkrit.com,liputan68.com,majalahponsel.org,manadotoday.co.id,munadi.id,natmed.id,nutriflakes.id,odiyaiwuu.com,okeyboz.com,opsintb.com,portalntt.com,posciety.com,radarcom.id,realitapost.com,sahrilku.com,samuderakepri.co.id,sebelas12.com,smartcitymakassar.com,sukoharjonews.com,sumselindependen.com,sumselnian.com,terasjatim.com,teraspapua.com,teropongsulut.com,topmetro.news,utamanews.id,wartabanten.id,waspada.id,winpoin.com##img[alt*="banner" i]
 acehekspres.com,acehportal.com,ads.id,bentengsumbar.com,bogornews.com,canalberita.com,detiksumsel.com,doktersehat.com,faktualnews.co,lintaskepri.com,mediakendari.com,mediaselektif.com,mediawawasan.com,metropublik.com,nasionalnews.id,panrita.news,posmetromedan.com,radarcianjur.com,rakyatntt.com,realitapost.com,sulselsatu.com,tribuanapos.net,zonasultra.com##img[alt*="iklan" i]
 swaragamafm.com##img[alt="ad" i]
 ads.id##img[alt="admaven"]
@@ -2795,7 +2803,7 @@ borobudurnews.com##.bs-sksitem
 kepogaul.com,posbagus.com##.content .box-height-100px-250px
 kepogaul.com,posbagus.com##.content .box-height-300px
 karimuntoday.com##.entry > p > img
-sumateranews.co.id##.entry-content .code-block > img
+sergaplampung.com,sumateranews.co.id##.entry-content .code-block > img
 sumselindependen.com##.entry-content > div:matches-css(text-align: center) > img
 kepribetter.com##.entry-summary > .code-block > a > img
 sepindonesia.com,suara-news.net##.fl-photo-align-center[itemtype="https://schema.org/ImageObject"] img
@@ -2848,6 +2856,8 @@ sbsinews.com##img[width="306"][height="606"]
 medanbicara.com##img[width="510"][height="130"]
 jogya.com##img[width="770"][height="200"]
 jogya.com##img[width="810"][height="227"]
+wartaniaga.com##img[width="970"][height="120"]
+wartaniaga.com##img[width="972"][height="120"]
 sirclo.com###banner-starter:matches-path(/blog)
 vidio.com###leaderboard_container:has(> .ad-slot)
 jawaraspeed.com###openModal:has-text(/ads/i)
@@ -2891,28 +2901,29 @@ halojambi.id##.t3-sidebar p > img
 exposenews.id,intipnews.com,lintassumut.com,papuatimes.co.id,penjuru.id,sukoharjonews.com,ulasan.co##.textwidget > a > img
 kabarwarta.id,lensaindonesia.com,newssatu.com,republikjatim.com,suaraindonesia-news.com##.textwidget > div > a > img
 lensaindonesia.com,suaratimurnews.com##.textwidget > div > img
-gesahkita.com,infomu.co,jodanews.com,keizalinnews.com,kilasjatim.com,lintassumut.com,listingberita.com,mimbarbangsa.co.id,monopolisumselnews.com,radarsorong.id,rakyatkalteng.com,riliskalimantan.com,rmnews.id,sindomanado.com,suarasumselnews.co.id,topikterkini.com##.textwidget > img
-baranewsaceh.co,bratapos.com,cahayasiang.id,faktaperistiwanews.co,gemalampung.com,indeksnews.com,kilaspapua.com,papuabangkit.com,papuapos.com,pulausumbawanews.net,teropongsulut.com,tobasatu.com##.textwidget > p > a > img
-antero.co,batamline.com,beritanusa.com,beritasore.co.id,faktahukumntt.com,harianwijaya.com,indosatunews.com,inikalteng.com,intipos.com,kalbaronline.com,lintaskepri.com,lomboksatu.com,mediakeprinews.com,metrokaltara.com,niaga.asia,ojenews.com,okebung.com,pilarjambi.com,radarbatam.id,radarreportasenews.co.id,rakyatjabarnews.com,realitarakyat.com,sekato.co.id,seputarkepri.co.id,sumselindependen.com,sumselterkini.co.id,swaranesia.com,zonasultra.id##.textwidget > p > img
+berita-kota.com,figurnews.com,gesahkita.com,infomu.co,jodanews.com,kanalkalimantan.com,keizalinnews.com,kilasjatim.com,lintassumut.com,listingberita.com,mimbarbangsa.co.id,monopolisumselnews.com,radarsorong.id,rakyatkalteng.com,riliskalimantan.com,rmnews.id,sentralsultra.id,sindomanado.com,suarasumselnews.co.id,topikterkini.com##.textwidget > img
+baranewsaceh.co,bratapos.com,cahayasiang.id,faktaperistiwanews.co,gemalampung.com,indeksnews.com,kilaspapua.com,papuabangkit.com,papuapos.com,pulausumbawanews.net,redaksipos.com,teropongsulut.com,tobasatu.com##.textwidget > p > a > img
+antero.co,batamline.com,beritanusa.com,beritasore.co.id,faktahukumntt.com,harianwijaya.com,indosatunews.com,inikalteng.com,intipos.com,kalbaronline.com,lintaskepri.com,lomboksatu.com,mediakeprinews.com,metrokaltara.com,niaga.asia,ojenews.com,okebung.com,pilarjambi.com,radarbatam.id,radarreportasenews.co.id,rakyatjabarnews.com,rakyatpos.id,realitarakyat.com,sekato.co.id,seputarkepri.co.id,sumselindependen.com,sumselterkini.co.id,swaranesia.com,zonasultra.id##.textwidget > p > img
 kilastimor.com##.textwidget img.aligncenter[alt=""]
 sumeks.co##.textwidget img.alignnone[alt=""]
 lamanesia.com,radarsriwijaya.com##.textwidget p > img
 sumselupdate.com##.textwidget picture > img
 parokicikarang.or.id##.theiaStickySidebar a[href="#"] > img
+inhupost.com##.widget .widget-content > a > img
 bengkulupost.id##.widget > .has-nested-images > figure > img
-annews.co.id,bicaranews.com,dailysatu.com,garda.id,harianfikiransumut.com,jurnalmediaindonesia.com,kabarmetro.co.id,limakoma.com,liputansbm.com,metro-online.co,metrokampung.com,mimbaronline.com,prodeteksi.com,radarsumatera.com,tanamonews.com,wartanasional.co##.widget > .widget-content > img
+annews.co.id,banuatoday.com,bicaranews.com,dailysatu.com,garda.id,grapena.com,haibanjar.com,harianfikiransumut.com,inilahmedianasional.com,jurnalmediaindonesia.com,kabarmetro.co.id,kalbarnews.co.id,limakoma.com,liputansbm.com,metro-online.co,metrokampung.com,mimbaronline.com,prodeteksi.com,radarsumatera.com,tanamonews.com,wartanasional.co##.widget > .widget-content > img
 metrokaltara.com##.widget > .wp-block-image > figure > a > img
 bengkulupost.id,mediatrapnews.id,topiksulut.com##.widget > .wp-block-image > figure > img
 inilahsultra.com,realita.co##.widget > a > img
 fajarbali.co.id,fajarbali.com,lampungvisual.com,medantalk.com,spiritsumbar.com##.widget > figure > a > img
-axialnews.id,bengkulupost.id,fajarbali.co.id,fajarbali.com,faktaperistiwanews.co.id,harianrakyataceh.com,independennews.com,inimedan.com,kepribetter.com,klikjatim.com,lampungvisual.com,media-abpedsi.com,mediafaktanews.com,mediatrapnews.id,mzknews.co,onlinekoe.com,putrabhayangkara.com,reportase.tv,sekindo.id,spiritsumbar.com,suarabangsa.co.id##.widget > figure > img
-kedannews.com,media-abpedsi.com,newsfaktahukumdanham.co.id,okeyboz.com,saudagar.news,seputarpapua.com,sulutexpress.com,sumseltoday.com,topsumbar.co.id##.widget > img
-asiabusinessinfo.com##.widget > p > a > img
-asiabusinessinfo.com##.widget > p > img
+axialnews.id,bengkulupost.id,fajarbali.co.id,fajarbali.com,faktaperistiwanews.co.id,harianrakyataceh.com,independennews.com,inimedan.com,kepribetter.com,klikjatim.com,lampungvisual.com,media-abpedsi.com,mediafaktanews.com,mediapromoter.id,mediatrapnews.id,mzknews.co,onlinekoe.com,potensinews.id,putrabhayangkara.com,reportase.tv,sekindo.id,spiritsumbar.com,suarabangsa.co.id##.widget > figure > img
+dejournalindonesia.com,kedannews.com,media-abpedsi.com,newsfaktahukumdanham.co.id,okeyboz.com,saudagar.news,seputarpapua.com,sulutexpress.com,sumseltoday.com,topsumbar.co.id##.widget > img
+asiabusinessinfo.com,mediainformasinetwork.com##.widget > p > a > img
+asiabusinessinfo.com,mediainformasinetwork.com##.widget > p > img
 sultengterkini.id##.widget a.gofollow > img
 suarakuningan.com##.widget a[style="margin-left: 1em; margin-right: 1em;"] img
 suarakuningan.com##.widget a[target="_blank"] > img
-hariansurabaya.com,kpfmpalangkaraya.com,newshanter.com,radarsorong.id##.widget figure > img
+hariansurabaya.com,kpfmpalangkaraya.com,newshanter.com,radarsorong.id,tuntaslampung.com##.widget figure > img
 idpost.co.id,matanusantara.com,nusantaratimur.com##.widget img[id$="_img"]
 kabarntt.co##.widget img[title*="iklan" i]
 habanusantara.net,sumsel.news##.widget p > img
@@ -2920,7 +2931,7 @@ kamikamu.co.id##.widget p:has(> a[target="_blank"] > img)
 indonesiaexpat.id##.widget-area a.gofollow > img
 baperanews.com##.widget-body > p > img
 abdumar.com,kabarmetro.co.id,kabartujuhsatu.news,keprinews.com,kliksulsel.com,lalulintaskriminalitas.com##.widget-content .separator > a > img
-fajarharapan.id,faktanews.id,fbinews.net,gustani.id,iluvtari.com,khabarberita.com,mandalikapost.com,samudranews.com,suarakuningan.com,tanamonews.com##.widget-content > a > img
+fajarharapan.id,faktanews.id,fbinews.net,gustani.id,iluvtari.com,inilahmedianasional.com,khabarberita.com,mandalikapost.com,samudranews.com,suarakuningan.com,tanamonews.com,wartasehat.id##.widget-content > a > img
 mandalikapost.com##.widget-content > center > a > img
 berita-cendana.com,realitakini.com##.widget-content > div > img
 fokussumatera.com,globalsumut.com,gustani.id,indimanado.com,inilahmedan.com,jejakfaktanews.com,khabarberita.com,kompastimur.com,mandalikapost.com,medanmerdeka.com,radarberitanasional.com,serikatnasional.id,snipers.news,suarakuningan.com##.widget-content > img
@@ -2946,22 +2957,22 @@ sumselupdate.com##aside img[src*="ucapan" i]
 terasmaluku.com##aside p > a > img.aligncenter
 terasmaluku.com##aside p > img.aligncenter
 axialnews.id##main .code-block > a > img
-baranewsaceh.co,informatikamesir.net,kroniktotabuan.com,samuderakepri.co.id,suarababelnews.com###sidebar-header img[style="max-width: 100%; height: auto;"]
+baranewsaceh.co,informatikamesir.net,kroniktotabuan.com,samuderakepri.co.id,siagasatu.co.id,suarababelnews.com###sidebar-header img[style="max-width: 100%; height: auto;"]
 ajwinews.co.id,beritanusa.id,bulenonnews.com,e-tivinews.id,indojambi.id,inspirasijambi.com,jambinet.id,lingkarjambi.id,mandaunews.com,publishnews.id,suaralugas.com,terasjambi.id,ultimatum.id###sidebar-left img[style="max-width: 100%; height: auto;"]
 ajwinews.co.id,beritanusa.id,kabarmuba.com,mandaunews.com,tribratatv.com###sidebar-right img[style="max-width: 100%; height: auto;"]
-bidikindonesianews.co.id,inspirasijambi.com,kabarpapua.co,ksinews.id,mediaedukasi.id,samuderakepri.co.id###sidebar-single img[style="max-width: 100%; height: auto;"]
+bidikindonesianews.co.id,inspirasijambi.com,kabarpapua.co,ksinews.id,mediaedukasi.id,medikita.com,samuderakepri.co.id###sidebar-single img[style="max-width: 100%; height: auto;"]
 mediaasuransinews.co.id##.box-widget img[style="max-width: 100%; height: auto;"]
 islamsantun.org##.et_pb_widget img[style="max-width: 100%; height: auto;"]
 aktualnews.co.id##.home-module .widget:has(img[style="max-width: 100%; height: auto;"])
+reportasepapua.co.id##.module-widget .widget:has(img[style="max-width: 100%; height: auto;"])
 metrotimur.com##.relative > img[style="width: 100%; display: block;"]
 digtara.com##.sidebar img[style="max-width: 100%; height: auto;"]
 radarnews.id##.td-footer-container .widget:has(aside img[style="max-width: 100%; height: auto;"])
 radarnews.id##.td-main-sidebar .widget:has(aside img[style="max-width: 100%; height: auto;"])
-berita-kota.com##.textwidget > img
 fajarcirebon.com,indoberita.id##.theiaStickySidebar .widget:has(img[style="max-width: 100%; height: auto;"])
 bertuahpos.com,bidiknewstoday.com,gowest.id,jalurnews.com,kpfmpalangkaraya.com,potretnusantara.id,sinjai.info##.theiaStickySidebar img[style="max-width: 100%; height: auto;"]
 padangmedia.com##.theiaStickySidebar img[style="max-width: 100%;"]
-adanu.co.id,alibi.id,altinanews.com,baritorayapost.com,berandanusantara.com,bitnews.id,bogopapua.net,bogornetwork.com,cakrawalajabar.com,ceklissatu.com,citrahost.com,depokrayanews.com,detak24.com,detikbrita.com,dinamikasultra.com,expontt.com,fajar.co.id,faktaberita.co.id,hboindo.com,indahsuaranews.co,infoaceh.net,infomurni.com,jambidaily.com,jubir.id,kabarntt.co,kabarpapua.co,kabarsinjai.com,kemajuanrakyat.id,kepribetter.com,kepridays.co.id,keprinews.co,klikjatim.com,klikpositif.com,ligo.id,lintasbali.com,matanews.net,medanbicara.com,mediasumutku.com,medinaslampungnews.co.id,memorandum.co.id,mitanews.co.id,newsanalisa.com,okuselatan.today,papuabaratpos.com,paradiso.co.id,portalntt.com,portalnusa.com,potret24.com,progresif.co,protapriau.com,purworejonews.com,radarbanten.co.id,radarbhayangkaraindonesia.com,radarkepri.com,rakyatbengkulu.com,satukanindonesia.com,sekilasindonesia.id,selasarnews.com,siberindo.co,srbnews.id,suarajember.com,suarakahayannews.com,suaramuhammadiyah.id,suarasulut.com,sulutnewstv.com,tatiye.id,tugumalang.id,wartaterkini.news##.widget img[style="max-width: 100%; height: auto;"]
+adanu.co.id,alibi.id,altinanews.com,baritorayapost.com,berandanusantara.com,bitnews.id,bogopapua.net,bogornetwork.com,cakrawalajabar.com,ceklissatu.com,citrahost.com,depokrayanews.com,detak24.com,detikbrita.com,dinamikasultra.com,expontt.com,fajar.co.id,faktaberita.co.id,hboindo.com,indahsuaranews.co,infoaceh.net,infomurni.com,jambidaily.com,jubir.id,kabarntt.co,kabarpapua.co,kabarsinjai.com,kemajuanrakyat.id,kepribetter.com,kepridays.co.id,keprinews.co,klikjatim.com,klikpositif.com,ligo.id,lintasbali.com,matanews.net,medanbicara.com,mediasumutku.com,medinaslampungnews.co.id,memorandum.co.id,mitanews.co.id,newsanalisa.com,okuselatan.today,papuabaratpos.com,paradiso.co.id,portalntt.com,portalnusa.com,potret24.com,progresif.co,protapriau.com,purworejonews.com,radarbanten.co.id,radarbhayangkaraindonesia.com,radarkepri.com,radarwaykanan.com,rakyatbengkulu.com,satukanindonesia.com,sekilasindonesia.id,selasarnews.com,siberindo.co,srbnews.id,suarajember.com,suarakahayannews.com,suaramuhammadiyah.id,suarasulut.com,sulutnewstv.com,tatiye.id,tugumalang.id,wartaterkini.news##.widget img[style="max-width: 100%; height: auto;"]
 lensametro.com##.widget img[width="250"][height=""]
 kabardesa.co.id##.widget-content a > img[data-original-height="1080"][width="320"]
 kabardesa.co.id##.widget-content a > img[data-original-width="1080"][height="320"]
@@ -2972,9 +2983,9 @@ radarnews.id##.wpb_widgetised_column .widget:has(aside img[style="max-width: 100
 apahabar.com,kumanika.com,lintastungkal.com##[id^="sidebar"] img[style="max-width: 100%; height: auto;"]
 beritajatim.com##aside #div-gpt-ad-rectangle ~ img
 borobudurnews.com##aside .widget:has(> .adsbygoogle)
-aktualnews.co.id,altinanews.com,altumnews.com,balifactualnews.com,baliinside.id,batamline.com,berita-kota.com,beritacikarang.com,beritainvestigasi.com,beritanasional.id,bolmong.news,borobudurnews.com,bratapos.com,buletinindonesianews.com,canalberita.com,dayaknews.com,eksisnews.com,elangpos.com,exposenews.id,faktaberita.co.id,faktajember.com,gemasulawesi.com,global-news.co.id,globaldrafnews.com,headlinesriwijaya.com,indcyber.com,intipos.com,jabarekspres.com,jabaronline.com,jejakkasus.co.id,jejakkeadilan.com,jppos.id,jurnalpatrolinews.co.id,jurnalterkini.id,kebumenupdate.com,kilasbali.com,kiprah.co.id,kitamudamedia.com,kongkrit.com,laporansumatera.com,lebaknews.com,lintasjatimnews.com,liputan68.com,livefaktanews.co.id,lomboksatu.com,mediafaktanews.com,megamanado.com,memorandum.co.id,metroluwuk.com,mitanews.co.id,mitrapost.com,obrolanbisnis.com,pilarsumsel.com,poncomas.com,portal-indonesia.com,revolusinews.com,seputartuban.com,sidakfaktanews.com,sindikatpost.com,speednews-manado.com,spiritnews.co.id,sulawesion.com,tambunpos.com,tapanulipost.com,topikindonesia.id,updatetodaynews.com,waktuindonesia.id,warta-pendidikan.com,warta9.com,wartaindo.news,wartamerdekanews.com,wartamu.id##aside .widget:has(img[style="max-width: 100%; height: auto;"])
+aktualnews.co.id,altinanews.com,altumnews.com,balifactualnews.com,baliinside.id,batamline.com,berita-kota.com,beritacikarang.com,beritainvestigasi.com,beritanasional.id,bolmong.news,borobudurnews.com,bratapos.com,buletinindonesianews.com,canalberita.com,dayaknews.com,eksisnews.com,elangpos.com,exposenews.id,faktaberita.co.id,faktajember.com,gemasulawesi.com,global-news.co.id,globaldrafnews.com,headlinesriwijaya.com,indcyber.com,insitekaltim.com,intipos.com,jabarekspres.com,jabaronline.com,jejakkasus.co.id,jejakkeadilan.com,jppos.id,jurnallampung.com,jurnalpatrolinews.co.id,jurnalterkini.id,kebumenupdate.com,kilasbali.com,kiprah.co.id,kitamudamedia.com,kongkrit.com,kupasonline.com,laporansumatera.com,lebaknews.com,lenterabanua.co,lintasjatimnews.com,liputan68.com,livefaktanews.co.id,lomboksatu.com,mediafaktanews.com,megamanado.com,memorandum.co.id,metroluwuk.com,mitanews.co.id,mitrapost.com,narasi.co,natmed.id,obrolanbisnis.com,pemukajaya.com,perkasanews.com,pilarsumsel.com,poncomas.com,portal-indonesia.com,radarwaykanan.com,redaksitimur.com,revolusinews.com,seputartuban.com,sergaplampung.com,sidakfaktanews.com,sindikatpost.com,speednews-manado.com,spiritnews.co.id,suarafaktual.com,sulawesion.com,tambunpos.com,tapanulipost.com,tebarberita.id,topikindonesia.id,transformasinews.com,tras.id,updatetodaynews.com,waktuindonesia.id,warta-pendidikan.com,warta9.com,wartaindo.news,wartamerdekanews.com,wartamu.id##aside .widget:has(img[style="max-width: 100%; height: auto;"])
 galerikitabkuning.com##aside a[target*="blank"] > img
-analisaaceh.com,andalasrayanews.com,apakabaronline.com,asarpua.com,baritorayapost.com,begawanindonesia.com,bekasipedia.com,bengkuluvoice.com,beritajateng.tv,beritamerdekaonline.com,beritaterkini.co.id,bogorchannel.id,bogoronline.com,bogorupdate.com,bonepos.com,bospajak.com,buser24.com,catatannewbie.com,cekberita.net,cekpremi.com,coganews.co.id,dailypost.id,dara.co.id,dejurnal.com,deltakepri.co.id,detikkeprinews.com,dutatv.com,editor.id,ekspos.id,expontt.com,fajarmanado.com,faktajabar.co.id,fanews.id,gaikindo.or.id,gardapapua.com,halaman7.com,harianexpose.com,hariankaltim.com,hariansoloraya.com,herald.id,hipakad63.news,infobanua.co.id,inisumedang.com,inisurabaya.com,investigasibhayangkara.com,jakposnews.com,jambiterkini.com,javanewsonline.co.id,jeratntb.com,kabarberitasatu.com,kabarlahat.com,kabarpublik.id,kabarsumsel.news,kailipost.com,kaldera.id,kalimantanlive.com,katakepri.com,kepridays.co.id,kepritoday.com,kilasjatim.com,kledo.com,klik-ntt.com,kliksumut.com,komunikasulut.com,koranbanjar.net,korankalimantan.com,koranmakassar.com,koranmemo.com,koranntt.com,kundurnews.co.id,lampung1.com,lampungcentral.com,lasemgresik.id,lensantb.com,lines.id,lintasgayo.co,lutim-news.com,malangnews.id,mattanews.co,mediaaceh.co.id,mediabanjarmasin.com,mediakalimantannews.com,mediakendari.com,mediakeprinews.com,mediamerdeka.co,mediapelangi.com,mediasembilan.co.id,metro7.co.id,metrobuananews.com,metropadang.com,metrorakyat.com,metrotimes.news,mettanews.id,monitornusantara.com,narasiterkini.com,neracanews.com,newskaltim.com,newsurban.id,niaga.asia,noteza.id,ntt-news.com,nttsatu.com,nuansarealitanews.com,obor-nusantara.com,okemedan.com,okuselatan.today,palembangindependen.com,papuabaratpos.com,pasundanekspres.co,patrolipost.com,pelita.co.id,pelitanusantara.co.id,pelitanusantara.com,pemukajaya.com,penaberlian.com,perkasanews.com,pewarta-indonesia.com,pojokberita.co.id,popularitas.com,porosnusantara.co.id,portalnusa.com,poskita.id,pratiwanggini.net,purworejonews.com,radarbandung.id,radarcikarang.com,radarjatim.co,radarlamteng.com,radarlombok.co.id,radarmalaka.com,radarsukabumi.com,radartvnews.com,realitalampung.com,redaksisulut.com,redkal.com,reportasepapua.co.id,rubrikkristen.com,sakanews.com,satset.id,sekindo.id,sekolahnews.com,semarakpost.com,sendapaleba.com,senentangnews.com,seputartuban.com,sindomanado.com,suara-ntt.com,suarakalbar.co.id,suaramandiri.co,suarapublik.id,suaraserumpun.com,suarasiber.com,sumateranews.co.id,sumselupdate.com,swarakaltim.com,tabloidmatahati.com,talikanews.com,terasntt.id,timur-online.com,tobasatu.com,topmetro.news,toriolo.com,travelmaker.id,tugujatim.id,ujaran.co.id,utamanews.id,valoranews.com,wajoterkini.com,wartaniaga.com,wideazone.com##aside img[style="max-width: 100%; height: auto;"]
+analisaaceh.com,andalasrayanews.com,apakabaronline.com,asarpua.com,baritorayapost.com,begawanindonesia.com,bekasipedia.com,bengkuluvoice.com,beritajateng.tv,beritamerdekaonline.com,beritaterkini.co.id,bogorchannel.id,bogoronline.com,bogorupdate.com,bonepos.com,bospajak.com,buser24.com,catatannewbie.com,cekberita.net,cekpremi.com,coganews.co.id,dailypost.id,dara.co.id,dejurnal.com,deltakepri.co.id,detikkeprinews.com,dutatv.com,editor.id,ekspos.id,expontt.com,fajarmanado.com,faktajabar.co.id,fanews.id,gaikindo.or.id,gardapapua.com,halaman7.com,harianexpose.com,hariankaltim.com,hariansoloraya.com,herald.id,hipakad63.news,infobanua.co.id,inisumedang.com,inisurabaya.com,investigasibhayangkara.com,jakposnews.com,jambiterkini.com,javanewsonline.co.id,jeratntb.com,kabarberitasatu.com,kabarlahat.com,kabarpublik.id,kabarsumsel.news,kailipost.com,kaldera.id,kalimantanlive.com,katakepri.com,kepridays.co.id,kepritoday.com,kilasjatim.com,kledo.com,klik-ntt.com,kliksumut.com,komunikasulut.com,koranbanjar.net,korankalimantan.com,koranmakassar.com,koranmemo.com,koranntt.com,kundurnews.co.id,lampung1.com,lampungcentral.com,lasemgresik.id,lensantb.com,lines.id,lintasgayo.co,lutim-news.com,malangnews.id,mattanews.co,mediaaceh.co.id,mediabanjarmasin.com,mediakalimantannews.com,mediakendari.com,mediakeprinews.com,mediamerdeka.co,mediapelangi.com,mediasembilan.co.id,metro7.co.id,metrobuananews.com,metropadang.com,metrorakyat.com,metrotimes.news,mettanews.id,monitornusantara.com,narasiterkini.com,neracanews.com,newskaltim.com,newsurban.id,niaga.asia,noteza.id,ntt-news.com,nttsatu.com,nuansarealitanews.com,obor-nusantara.com,okemedan.com,okuselatan.today,palembangindependen.com,papuabaratpos.com,pasundanekspres.co,patrolipost.com,pelita.co.id,pelitanusantara.co.id,pelitanusantara.com,penaberlian.com,pewarta-indonesia.com,pojokberita.co.id,popularitas.com,porosnusantara.co.id,portalnusa.com,poskita.id,pratiwanggini.net,purworejonews.com,radarbandung.id,radarcikarang.com,radarjatim.co,radarlamteng.com,radarlombok.co.id,radarmalaka.com,radarsukabumi.com,radartvnews.com,realitalampung.com,redaksisulut.com,redkal.com,reportasepapua.co.id,rubrikkristen.com,sakanews.com,satset.id,sekindo.id,sekolahnews.com,semarakpost.com,sendapaleba.com,senentangnews.com,seputartuban.com,sindomanado.com,suara-ntt.com,suarakalbar.co.id,suaramandiri.co,suarapublik.id,suaraserumpun.com,suarasiber.com,sumateranews.co.id,sumselupdate.com,swarakaltim.com,tabloidmatahati.com,talikanews.com,terasntt.id,timur-online.com,tobasatu.com,topmetro.news,toriolo.com,travelmaker.id,tugujatim.id,ujaran.co.id,utamanews.id,valoranews.com,wajoterkini.com,wartaniaga.com,wideazone.com##aside img[style="max-width: 100%; height: auto;"]
 joglosemarnews.com##aside img[style^="max-width: 100%; height: auto;"]
 halokakros.com##aside img[width="250"][height="250"]
 haidiva.com##aside img[width="257"][height="300"]
@@ -3557,6 +3568,7 @@ superapp.id##.wppopups-whole
 paired.my.id##div:matches-css(position:fixed) > #hide:has(center > img)
 ||embed.dugout.com^$3p,domain=bolasport.com|indosport.com|skor.id
 ||embed.rctiplus.com^$3p,domain=minangkabaunews.com
+||muses.org^$3p,domain=wartasehat.id
 ||tv.kaskus.co.id/api/embed/widget/?autoplayInViewPort=true$frame,redirect=click2load.html,domain=kaskus.co.id
 cakaplah.com###content-right .embed-responsive:remove()
 okezone.com###contentx .vicon:remove()
