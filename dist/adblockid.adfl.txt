@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.5.205
+! Version: 23.5.206
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 May 2023 22:02 UTC
+! Last modified: 20 May 2023 07:58 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2763,6 +2763,7 @@ balipost.com##[id*="ads-"]
 cosmopolitan.co.id##[id*="multi_banner"]
 herworld.co.id##[id*="multibanner"]
 farah.id##[id^="div-gpt-ad"]
+merdeka.com##[id^="gpt-ad-div-section-"]
 topcareer.id##[id^="newsmax_ruby_sidebar_widget_advertising-"]
 jurnalborneo.co.id##[title*="iklan" i]
 alkitabonline.org##a[data-ref="AD"]:remove()
@@ -3192,6 +3193,7 @@ mixberita.com##.footer1:has(a[target="_blank"] > img)
 sitnas.id##.hulahopsmobile
 kompas.com##.kcm-track:matches-css(position: relative):has(.kcm-track-sticky:has([id*="div-gpt-ad-"]))
 momsmoney.id##.liftdownclass
+merdeka.com##.masthead
 cnbcindonesia.com,detik.com##.megabillboard
 republika.co.id##.mobile-billboard
 grid.id,tribunnews.com##.ol_swipe
