@@ -351,7 +351,7 @@ republika.co.id##div:matches-css(text-align:center):has(> [id^="div-gpt-ad-"])
 !
 ! SEARCH ADS AND SELF PROMOTION
 ! -----------------------------------------------
-itemku.com##.grid > a:has(> .shadow-card:has(> div:has(> p:has-text(/ad/i))))
+itemku.com##.grid > a:has(div > div:has-text(Ad))
 biggo.id##.search-ad-banner-re
 shopee.co.id##.shopee-search-item-result .shopee-search-item-result__item:has-text(Iklan)
 bukalapak.com##.te-product-card:has(.bl-product-card-new__description:has(.bl-product-card-new__ads-badge))
@@ -362,7 +362,6 @@ biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
 biggo.id##img[onclick*="AD_SEARCHRESULT"]
 ! ---
 ! Mobile
-itemku.com###pl-product-list > a:has(.shadow-card:has(> div:has(> p:has-text(/ad/i))))
 shopee.co.id##.search-page .search-items-container .item-card-list__item-card-wrapper:has-text(Ad)
 tokopedia.com##:matches-path(/find/) div[data-testid="divLazyFindProduct"]:has([data-testid="lblTopads"])
 tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
