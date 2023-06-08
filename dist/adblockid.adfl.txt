@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.6.9
+! Version: 23.6.10
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Jun 2023 19:12 UTC
+! Last modified: 08 Jun 2023 19:08 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2895,6 +2895,7 @@ kerjaker.com##.post-body-artikel .separator:matches-css(text-align: center)
 jobskarir.id##.tutup-iklan:upward(1)
 candilkuya.com##.widget:has(> [id^="iklan"])
 nusabali.com##.widget:has(h2:has-text(/iklan/i))
+vidio.com##a[href*="&advertising_id="]:has(img[src*="/breaking_banner/"])
 pertamax7.com##a[target="_blank"] div:matches-css(position: fixed)
 rakyatpos.id##a[target="_blank"]:not(a[href^="https://blogger.googleusercontent.com/img/"]) > img
 beenews.id##article .beene-content:has(> .beene-adlabel)
