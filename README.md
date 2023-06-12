@@ -21,6 +21,10 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 | AdBlockID       | [subscribe][ABID_Subs] | [dist/adblockid.adfl.txt][ABID_Raw] | Filter utama |
 | AdBlockID Plus  | [subscribe][ABID-Plus_Subs] | [dist/adblockid_plus.adfl.txt][ABID-Plus_Raw] | Ekstensi |
 
+[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt&title=AdBlockID
+[ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt
+[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
+[ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt
 
 <br>
 
@@ -56,10 +60,6 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 - [uBlock Origin](/docs/uBlock_Origin.md)
 - [AdGuard](/docs/Adguard.md)
 
-[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt&title=AdBlockID
-[ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt
-[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt
 [uBoImport]: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
 
