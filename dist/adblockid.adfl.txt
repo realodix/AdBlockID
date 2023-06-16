@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.6.19
+! Version: 23.6.20
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Jun 2023 12:59 UTC
+! Last modified: 16 Jun 2023 13:09 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2891,6 +2891,7 @@ indonesiatimur.co##.entry-content > div:has-text(/adv/i)
 kompas.com##.gate-kgplus:has-text(/iklan/i)
 candilkuya.com##.link-btn:has-text(/iklan/i)
 hewanbinatang.com##.mabur:has(> .tutup-iklan)
+s.id##.main-dashboard .w-full:has(> .right-1:has-text(/ads/i))
 briliobeauty.net,briliofood.net,techno.id##.placeholder-container:has(> .ads-container)
 kerjaker.com##.post-body-artikel .separator:matches-css(text-align: center)
 jobskarir.id##.tutup-iklan:upward(1)
