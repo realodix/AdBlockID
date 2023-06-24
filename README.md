@@ -18,8 +18,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 | Name            | Subscribe | Raw File | Description |
 | --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [@master][ABID_Subs_master] / [@latest][ABID_Subs_latest] | [@master/dist/adblockid.adfl.txt][ABID_Raw_master], [@latest/dist/adblockid.adfl.txt][ABID_Raw_latest] | Filter utama |
-| AdBlockID Plus  | [@master][ABID-Plus_Subs_master] / [@latest][ABID-Plus_Subs_latest] | [@master/dist/adblockid_plus.adfl.txt][ABID-Plus_Raw_master], [@latest/dist/adblockid_plus.adfl.txt][ABID-Plus_Raw_latest] | Ekstensi |
+| AdBlockID       | [@master][ABID_Subs_master] \| [@latest][ABID_Subs_latest] | [@master/adblockid][ABID_Raw_master] \| [@latest/adblockid][ABID_Raw_latest] | Filter utama |
+| AdBlockID Plus  | [@master][ABID-Plus_Subs_master] \| [@latest][ABID-Plus_Subs_latest] | [@master/adblockid_plus][ABID-Plus_Raw_master] \| [@latest/adblockid_plus][ABID-Plus_Raw_latest] | Ekstensi |
 
 [ABID_Subs_latest]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt&title=AdBlockID
 [ABID_Raw_latest]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt
