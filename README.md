@@ -16,20 +16,15 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 <br>
 
-| Name            | Subscribe | Raw File | Description |
+| Name            | Subscription | Raw File | Description |
 | --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [@master][ABID_Subs_master] \| [@latest][ABID_Subs_latest] | [@master/adblockid][ABID_Raw_master] \| [@latest/adblockid][ABID_Raw_latest] | Filter utama |
-| AdBlockID Plus  | [@master][ABID-Plus_Subs_master] \| [@latest][ABID-Plus_Subs_latest] | [@master/adblockid_plus][ABID-Plus_Raw_master] \| [@latest/adblockid_plus][ABID-Plus_Raw_latest] | Ekstensi |
+| AdBlockID       | [Subscribe][ABID_Subs_latest] | [dist/adblockid.adfl.txt][ABID_Raw_latest] | Filter utama |
+| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_latest] | [dist/adblockid_plus.adfl.txt][ABID-Plus_Raw_latest] | Ekstensi |
 
 [ABID_Subs_latest]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt&title=AdBlockID
 [ABID_Raw_latest]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt
 [ABID-Plus_Subs_latest]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
 [ABID-Plus_Raw_latest]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt
-
-[ABID_Subs_master]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt&title=AdBlockID
-[ABID_Raw_master]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt
-[ABID-Plus_Subs_master]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw_master]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt
 
 <br>
 
