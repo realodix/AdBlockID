@@ -1,8 +1,3 @@
-<p align="center"><img src="https://github.com/realodix/AdBlockID/assets/1314456/32ec7a6e-0f18-4915-8946-f64c4aec3ee4" /></p>
-
-
----
-
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
