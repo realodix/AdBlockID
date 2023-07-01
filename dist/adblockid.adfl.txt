@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.7.2
+! Version: 23.7.3
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Jul 2023 19:58 UTC
+! Last modified: 01 Jul 2023 20:15 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -560,6 +560,7 @@ _TimAds_$image
 ~suara.com##.wrap-ads-leaderboard
 ##[href="https://invol.co/clazkwc"]
 ##a[target="_blank"][rel*="nofollow"] > img[src*=".gif"]
+~blibli.com##img[alt="iklan" i]
 ###Ad300B
 ###Ad728x90
 ###Area_Iklan_Atas
@@ -1591,7 +1592,6 @@ _TimAds_$image
 ##banner-besar--top
 ##div[id^="dfp-gpt-ad"]
 ##gmn-companion-ad-renderer
-##img[alt="iklan" i]
 ##img[data-permalink^="/apps/iklan-"]
 ~octaengine.com,~octamarkets.global##[href^="http://octaengine.com/c/?p="] img
 ~adsterra.com,~adsterratech.com##[href^="https://publishers.adsterra.com/referral/"] > img
@@ -3237,6 +3237,7 @@ fortuneidn.com##div:has(> .wrapper-ads)
 yummy.co.id##div:matches-css(display: flex):has(> b:has-text(/scroll/i))
 inews.id##div:matches-css(text-align: center):has([id*="-StickyAd" i])
 republika.co.id##div:matches-css(text-align:center):has(> [id^="div-gpt-ad-"])
+blibli.com###catalogProductListContentDiv > #productContentDiv .product__card:has(.product__tag__ads)
 itemku.com##.grid > a:has(div > div:has-text(Ad))
 shopee.co.id##.page-product .page-product__content div:has(> a[data-sqe="link"] div[data-sqe="ad"])
 biggo.id##.search-ad-banner-re
