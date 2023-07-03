@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.7.9
+! Version: 23.7.10
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Jul 2023 12:37 UTC
+! Last modified: 03 Jul 2023 20:46 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -635,6 +635,7 @@ _TimAds_$image
 ###aiklanatas1
 ###aiklanatas2
 ###aiklanatasd1
+###aiklanbawah1
 ###aiklanheader
 ###aiklanheader1
 ###aiklanheader2
@@ -724,11 +725,21 @@ _TimAds_$image
 ###iklanatas
 ###iklanatas1
 ###iklanatas2
+###iklanatas3
+###iklanatas4
 ###iklanatasd1
+###iklanatasd2
+###iklanatasd3
+###iklanatasd4
 ###iklanbawah
+###iklanbawah1
+###iklanbawah2
+###iklanbawah3
+###iklanbawah4
 ###iklanfoatingbawah
 ###iklanheader
 ###iklanheader1
+###iklanheader10
 ###iklanheader2
 ###iklanheader3
 ###iklanheader4
@@ -736,15 +747,19 @@ _TimAds_$image
 ###iklanheader6
 ###iklanheader7
 ###iklanheader8
+###iklanheader9
 ###iklankirikanan
 ###iklankirikanan1
 ###iklanpopup
+###iklanside1
+###iklanside2
 ###iklantengah1
 ###iklap
 ###iklhead
 ###ikln160left
 ###ikln160right
 ###imgiklanatas2
+###imgiklanbawah1
 ###imgiklanheader2
 ###imgiklantengah1
 ###islemag_content_ad-widget-2
@@ -1821,6 +1836,7 @@ _TimAds_$image
 /banner/*$image,domain=jagobengkel.com|kapanlagi.com|maenhp.com
 /banner_$image,domain=inijabar.com|radarbanten.co.id|ruparupa.com|seputarpapua.com|suarabaru.id
 /banners/*$image,domain=jelajahcoin.com
+/campaigns_banners/*$image,domain=pcplus.co.id
 /flyer-$image,domain=metrum.co.id
 /iklan%$image,domain=haibanjar.com|inilahsultra.com|kliksulsel.com|koranakselerasi.com|mandalikapost.com|prodeteksi.com
 /iklan-$image,domain=akmazona.com|balapmotor.net|beritapagi.co.id|beritapapua.co|fajarcirebon.com|faktualnews.co|inikalteng.com|jambiterkini.com|kabarmedan.com|metrokepri.com|obor-nusantara.com|papuabaratpos.com|pojok6.id|portaltebo.id|potret24.com|prosesnews.id|sekilasindonesia.id|swarakaltim.com|wartajambi.com
@@ -3855,14 +3871,16 @@ jfweb10.xyz,jfweb11.xyz,jfweb12.xyz,jfweb13.xyz,jfweb14.xyz,jfweb15.xyz,jfweb16.
 107.152.46.41,107.152.47.22,107.152.47.82,130.51.20.150###adf_tera
 putingfilm.com###btm_banner
 samehadaku.bio###close-button
-107.152.37.223,157.245.12.72,185.217.95.26,45.12.2.2,45.12.2.25,akashinime.pro,anikor.website,animasu.cc,anitoki.cyou,anixlife.xyz,isekaisubs.web.id,koredramaz.com,lendrive.web.id,mangakyo.org,oploverz.care,oploverz.zip,puanime.cyou,sokuja.com,wibudesu.co###close-teaser
+107.152.37.223,157.245.12.72,185.217.95.26,45.12.2.2,45.12.2.25,45.12.2.26,akashinime.pro,anikor.website,animasu.cc,anitoki.cyou,anixlife.xyz,isekaisubs.web.id,koredramaz.com,lendrive.web.id,mangakyo.org,oploverz.care,oploverz.zip,puanime.cyou,sokuja.com,wibudesu.co###close-teaser
 akashinime.pro###close-teaser-bottom
+kuramanime.art###close-teaser-footer
 akashinime.pro###close-teaser-top
 manganime.in###closeButton
 inonton.com###fadeinbox
 0.0.realodix,139.99.61.154,157.230.65.59,45.138.157.150,45.141.56.28,45.144.30.27,45.144.31.139,45.144.31.24,45.148.122.192,45.148.122.80,45.67.230.215,91.207.183.26,downloadbatch.me,filmblurayku.store,korenime.org###fixedban
 korenime.org###fixedban1
 45.141.56.28###fixedfoot
+anichin.art###fload-bottom
 ditonton.xyz,gudangmovies21.co.in###float-banner
 ditonton.xyz,gudangmovies21.co.in###float-bottom-banner
 164.68.113.249,193.233.161.221,layardrama21.xyz###floatbanner-bottom
@@ -3891,7 +3909,7 @@ manganime.in##.float_tengah
 nontonanimeid.fun##.floating_footer
 bioskopvirtual.com##.footer1
 animekompi.web.id##.headads
-45.12.2.2,anichin.top,anikor.website,isekaisubs.web.id,kazefuri.net,wibudesu.co##.kln
+45.12.2.2,anichin.art,anichin.top,anikor.website,isekaisubs.web.id,kazefuri.net,wibudesu.co##.kln
 45.12.2.25##.pd-ads
 45.12.2.25##.pda-ads
 185.99.135.228,38.242.147.83,drivenime.com##.stickywrap
@@ -3901,7 +3919,7 @@ manganime.in##[id*="ads"]
 144.91.116.224,192.99.246.145,51.222.170.221,51.79.157.90,51.79.160.87,51.79.160.95,51.79.226.152,51.79.244.17,bioskopkeren.dev,cinemaindo.info,d21.info,dunia21.green,filmapik.tips,ganool.page,movies21.cloud,nontonfilm.link,terbit21.bet##[id*="banner"]
 176.119.30.88##a[href^="http://bit.ly/"] > img
 anoboy.monster##a[target*="blank"] > amp-img
-107.152.37.223,109.205.181.78,139.99.33.217,139.99.61.225,144.126.141.214,144.126.148.112,144.91.112.206,144.91.116.224,157.230.65.59,161.97.86.165,164.68.113.249,167.86.113.184,173.212.216.207,176.119.30.88,178.18.242.20,178.20.41.250,185.224.83.54,185.53.88.162,192.99.246.145,193.233.161.221,194.163.139.52,194.195.90.101,194.29.53.46,198.96.92.123,207.244.250.114,213.136.91.132,31.220.90.8,37.49.229.132,38.242.147.83,38.242.157.255,38.242.194.224,38.242.195.41,38.242.237.91,45.12.2.2,45.12.2.25,45.141.56.22,45.141.58.152,45.144.30.55,45.148.122.192,45.67.230.215,45.89.66.142,46.149.73.114,5.189.165.125,63.250.47.47,65.109.129.110,66.29.134.2,75.119.147.15,77.105.142.75,89.117.58.216,91.207.183.26,97.74.82.112,anikor.website,beenieman.net,bioskop-nonton.ink,bioskopvirtual.com,doroni.me,downloadbatch.me,drachindo.info,dunia21.green,dutaxxi.com,geonime.com,gudangmovies21.skin,indoxxone.com,inonton.com,juraganmovie.club,kitanonton.net,koenime.com,kumpul21.xyz,layardrama21.xyz,layarkaca21.watch,layarlebar88.com,lengket.com,lk21-id.com,lk21tv.live,manganime.in,mataharimall.xyz,nanimex1.com,no-drak-or.site,nontonia.com,northgatevineyard.mobi,oploverz.care,oploverz.zip,otakudesu.lol,pintu21.xyz,rahyunime.com,samehadaku.bio,sinemaxxi.xyz,sohib21.vip,terbit21.bet##a[target*="blank"] > img
+107.152.37.223,109.205.181.78,139.99.33.217,139.99.61.225,144.126.141.214,144.126.148.112,144.91.112.206,144.91.116.224,157.230.65.59,161.97.86.165,164.68.113.249,167.86.113.184,173.212.216.207,176.119.30.88,178.18.242.20,178.20.41.250,185.224.83.54,185.53.88.162,192.99.246.145,193.233.161.221,194.163.139.52,194.195.90.101,194.29.53.46,198.96.92.123,207.244.250.114,213.136.91.132,31.220.90.8,37.49.229.132,38.242.147.83,38.242.157.255,38.242.194.224,38.242.195.41,38.242.237.91,45.12.2.2,45.12.2.25,45.141.56.22,45.141.58.152,45.144.30.55,45.148.122.192,45.67.230.215,45.89.66.142,46.149.73.114,5.189.165.125,63.250.47.47,65.109.129.110,66.29.134.2,75.119.147.15,77.105.142.75,89.117.58.216,91.207.183.26,97.74.82.112,anikor.website,beenieman.net,bioskop-nonton.ink,bioskopvirtual.com,doroni.me,downloadbatch.me,drachindo.info,dunia21.green,dutaxxi.com,geonime.com,gudangmovies21.skin,indoxxone.com,inonton.com,juraganmovie.club,kitanonton.net,koenime.com,kumpul21.xyz,kuramanime.art,layardrama21.xyz,layarkaca21.watch,layarlebar88.com,lengket.com,lk21-id.com,lk21tv.live,manganime.in,mataharimall.xyz,nanimex1.com,no-drak-or.site,nontonia.com,northgatevineyard.mobi,oploverz.care,oploverz.zip,otakudesu.lol,pintu21.xyz,rahyunime.com,samehadaku.bio,sinemaxxi.xyz,sohib21.vip,terbit21.bet##a[target*="blank"] > img
 doroni.me##a[target*="blank"] > picture
 144.91.112.206##a[target*="blank"] > video:remove()
 kawanfilm21.ink##a[target*="blank"][rel*="nofollow"]
@@ -3957,10 +3975,11 @@ putingfilm.com##+js(acis, parseInt, break;case $.)
 144.91.116.224,173.212.224.160,45.89.66.142###fadeinbox
 161.97.144.237###fb-fanbox
 jagoanime.com,meownime.my.id###hbfanback
-45.12.2.2,45.12.2.25,anikor.website,isekaisubs.web.id,minioppai.org,oploverz.care,oploverz.zip,samehadaku.bio,sokuja.com###overplay
+45.12.2.2,45.12.2.25,45.12.2.26,anichin.art,anikor.website,isekaisubs.web.id,minioppai.org,oploverz.care,oploverz.zip,samehadaku.bio,sokuja.com###overplay
 45.14.226.136###popbox:remove()
 manganime.in###tutupx
 63.250.47.47##.afc_popup
+kuramanime.art##.player-overplay
 45.141.56.22##.popUpBannerBox
 77.105.142.75##.swal-overlay
 manganime.in##.vd
@@ -3974,7 +3993,6 @@ lendrive.web.id,mikanime.com##+js(aopr, encodeURIComponent)
 animebatch.id,animebatchs.us,awsubs.xyz,maxnime.com,meownime.ai,nimegami.id##+js(aopr, go_url)
 batchkun.com,keinime.web.id##+js(aopr, protected_links)
 nekopoi.web.id##+js(aopr, showurl)
-kuramanime.com##+js(aopr, sora_base_url)
 niihen.com##+js(aopr, auto_safelink)
 niihen.com##.entry-content div:matches-css(text-align: center) > a:style(display: inline !important;)
 104.237.198.194,104.237.198.198,cgvindo.click,nekopoi.web.id##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
