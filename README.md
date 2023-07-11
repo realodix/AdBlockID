@@ -11,18 +11,6 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 <br>
 
-| Name            | Subscription | Raw File | Description |
-| --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs_latest] | [dist/adblockid.adfl.txt][ABID_Raw_latest] | Filter utama |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_latest] | [dist/adblockid_plus.adfl.txt][ABID-Plus_Raw_latest] | Ekstensi |
-
-[ABID_Subs_latest]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt&title=AdBlockID
-[ABID_Raw_latest]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt
-[ABID-Plus_Subs_latest]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw_latest]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt
-
-<br>
-
 ## Manfaat Yang Anda Dapatkan
 1. **Lebih dari 3.800 situs** web telah tercover secara spesifik, termasuk di dalamnya ratusan portal berita, situs nonton dan baca komik.
 2. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
@@ -33,6 +21,41 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 7. **Clean:** Halaman web jadi bersih dan nyaman. No `extra` abracadabra!
 
 <sup>* Perlu diperhatikan, walaupun manfaatnya terlihat sangat menggiurkan, tetapi walau bagaimanapun tidak ada produk yang sempurna.</sup>
+
+
+## Subscription
+
+Link di bawah ini hanya untuk pengguna [uBlock Origin](https://github.com/gorhill/uBlock). Untuk pengguna [AdGuard](https://adguard.com), AdBlockID sudah tersedia di sana.
+
+#### Santuy
+
+- Update interval: 12 - 48 hours
+- Cocok untuk penggunaan harian yang tidak butuh update terlalu cepat dan mengandalkan automatic update pada ad blocker.
+
+| Name            | Subscription | Raw File | Description |
+| --------------- | --------- | -------- | ----------- |
+| AdBlockID       | [Subscribe][ABID_Subs_latest] | [adblockid.adfl.txt][ABID_Raw_latest] | Filter utama |
+| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_latest] | [adblockid_plus.adfl.txt][ABID-Plus_Raw_latest] | Ekstensi |
+
+[ABID_Subs_latest]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt&title=AdBlockID
+[ABID_Raw_latest]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt
+[ABID-Plus_Subs_latest]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
+[ABID-Plus_Raw_latest]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt
+
+#### Kebelet
+
+- Update interval: live update
+- Cocok bagi yang suka force update (manual) setiap hari dan benar-benar butuh update secepat mungkin.
+
+| Name            | Subscription | Raw File | Description |
+| --------------- | --------- | -------- | ----------- |
+| AdBlockID       | [Subscribe][ABID_Subs_latest_cf] | [adblockid.adfl.txt][ABID_Raw_latest_cf] | Filter utama |
+| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_latest_cf] | [adblockid_plus.adfl.txt][ABID-Plus_Raw_latest_cf] | Ekstensi |
+
+[ABID_Subs_latest_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid.adfl.txt&title=AdBlockID
+[ABID_Raw_latest_cf]: https://adblockid.pages.dev/adblockid.adfl.txt
+[ABID-Plus_Subs_latest_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
+[ABID-Plus_Raw_latest_cf]: https://adblockid.pages.dev/adblockid_plus.adfl.txt
 
 
 ## Cara Menggunakan
