@@ -1,7 +1,11 @@
 <p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
 <br />
 
-<p align="right"><a href="https://www.jsdelivr.com/package/gh/realodix/AdBlockID"><img src="https://data.jsdelivr.com/v1/package/gh/realodix/AdBlockID/badge"></a></p>
+<p align="right">
+<a href="https://github.com/realodix/AdBlockID/commits/main"><img src="https://img.shields.io/github/commit-activity/m/realodix/AdBlockID?label=Commits&style=flat-square"></a>
+<a href="https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed/realodix/AdBlockID?label=Issues&style=flat-square"></a>
+<a href="https://www.jsdelivr.com/package/gh/realodix/AdBlockID"><img src="https://data.jsdelivr.com/v1/package/gh/realodix/AdBlockID/badge"></a>
+</p>
 
 > <sup>Tertarik jadi **contributor**? Jangan ragu untuk membuat issue / pull request!
 > <br>
