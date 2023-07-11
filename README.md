@@ -14,7 +14,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 ## Manfaat Yang Anda Dapatkan
 1. **Lebih dari 3.800 situs** web telah tercover secara spesifik, termasuk di dalamnya ratusan portal berita, situs nonton dan baca komik.
 2. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
-3. **Bypass AdBlock Detection**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
+3. **anti-blocker-defusing**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
 4. **Bypass Mouse/Key Limitations**: Melumpuhkan beberapa batasan di halaman web, seperti tidak bisa klik kanan, tidak bisa copy artikel, dll.
 5. **Disable Safelink**: Mau download, eh malah masuk ke halaman safelink? Lupain deh!
 6. **Disable Automated Link Attribution**: Copy paste artikel malah muncul link sumbernya? Lupain deh!
@@ -25,37 +25,29 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 ## Subscription
 
-Link di bawah ini hanya untuk pengguna [uBlock Origin](https://github.com/gorhill/uBlock). Untuk pengguna [AdGuard](https://adguard.com), AdBlockID sudah tersedia di sana.
-
-#### Santuy
-
-- Update interval: 12 - 48 hours
-- Cocok untuk penggunaan harian yang tidak butuh update terlalu cepat dan mengandalkan automatic update pada ad blocker.
+> 💡 Link di bawah ini hanya untuk pengguna [uBlock Origin](https://github.com/gorhill/uBlock). Untuk [AdGuard](https://adguard.com), AdBlockID sudah tersedia di sana.
 
 | Name            | Subscription | Raw File | Description |
 | --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs_latest] | [adblockid.adfl.txt][ABID_Raw_latest] | Filter utama |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_latest] | [adblockid_plus.adfl.txt][ABID-Plus_Raw_latest] | Ekstensi |
+| AdBlockID       | [Subscribe][ABID_Subs] | [jsdelivr.net/gh/realodix/.../adblockid.adfl.txt][ABID_Raw] | Main filter |
+| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs] | [jsdelivr.net/gh/realodix/.../adblockid_plus.adfl.txt][ABID-Plus_Raw] | Extension |
 
-[ABID_Subs_latest]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt&title=AdBlockID
-[ABID_Raw_latest]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid.adfl.txt
-[ABID-Plus_Subs_latest]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw_latest]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@latest/dist/adblockid_plus.adfl.txt
+[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt&title=AdBlockID
+[ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt
+[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
+[ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt
 
-#### Kebelet
-
-- Update interval: live update
-- Cocok bagi yang suka force update (manual) setiap hari dan benar-benar butuh update secepat mungkin.
+#### Mirror
 
 | Name            | Subscription | Raw File | Description |
 | --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs_latest_cf] | [adblockid.adfl.txt][ABID_Raw_latest_cf] | Filter utama |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_latest_cf] | [adblockid_plus.adfl.txt][ABID-Plus_Raw_latest_cf] | Ekstensi |
+| AdBlockID       | [Subscribe][ABID_Subs_cf] | [adblockid.pages.dev/adblockid.adfl.txt][ABID_Raw_cf] | Main filter |
+| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_cf] | [adblockid.pages.dev/adblockid_plus.adfl.txt][ABID-Plus_Raw_cf] | Extension |
 
-[ABID_Subs_latest_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid.adfl.txt&title=AdBlockID
-[ABID_Raw_latest_cf]: https://adblockid.pages.dev/adblockid.adfl.txt
-[ABID-Plus_Subs_latest_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw_latest_cf]: https://adblockid.pages.dev/adblockid_plus.adfl.txt
+[ABID_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid.adfl.txt&title=AdBlockID
+[ABID_Raw_cf]: https://adblockid.pages.dev/adblockid.adfl.txt
+[ABID-Plus_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
+[ABID-Plus_Raw_cf]: https://adblockid.pages.dev/adblockid_plus.adfl.txt
 
 
 ## Cara Menggunakan
@@ -64,19 +56,19 @@ Link di bawah ini hanya untuk pengguna [uBlock Origin](https://github.com/gorhil
 
 #### Desktop
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), etc)
-2. *Install* salah satu ekstensi dari berikut ini: [uBlock Origin](https://github.com/gorhill/uBlock#installation) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html).
+2. *Install* salah satu ekstensi dari berikut ini: [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock#installation).
 3. Install AdBlockID
-   - **uBlock Origin**: Pada table di atas, klik `Subscribe` atau tambahkan `Raw link` di kotak import. Lebih lanjut lihat [`Import external filter lists`][uBoImport].
    - **AdGuard**: Cukup aktifkan AdBlockID di bagian *language-specific*.
+   - **uBlock Origin**: Pada table di atas, klik `Subscribe` atau tambahkan `Raw link` di kotak import. Lebih lanjut lihat [`Import external filter lists`][uBoImport].
 
 #### Mobile
-- **Android**: Anda dapat menggunakan [uBlock Origin](https://github.com/gorhill/uBlock) atau [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) di [Kiwi Browser](https://kiwibrowser.com) atau [Firefox](https://www.mozilla.org/en-US/firefox/browsers/mobile/android/). Cara install AdBlockID mirip seperti di desktop.
+- **Android**: Anda dapat menggunakan [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock) di [Kiwi Browser](https://kiwibrowser.com) atau [Firefox](https://www.mozilla.org/en-US/firefox/browsers/mobile/android/). Cara install AdBlockID mirip seperti di desktop.
 - **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), aktifkan AdBlockID di bagian *language-specific*.
 - **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
 
 #### Tutorial spesifik cara memasang AdBlockID:
-- [uBlock Origin](/docs/uBlock_Origin.md)
 - [AdGuard](/docs/Adguard.md)
+- [uBlock Origin](/docs/uBlock_Origin.md)
 
 [uBoImport]: https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web
 
