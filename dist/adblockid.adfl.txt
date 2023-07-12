@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.7.39
+! Version: 23.7.40
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Jul 2023 04:23 UTC
+! Last modified: 12 Jul 2023 04:46 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -703,6 +703,8 @@ _TimAds_$image
 ###header-ad-mobile
 ###hide-fixed-ads
 ###idblog-adb-enabled
+###idiklan_kanan
+###idiklan_kiri
 ###idmuvi-adb-enabled
 ###idmuvi-popup
 ###iklan
@@ -1061,6 +1063,7 @@ _TimAds_$image
 ##.banner-widget
 ##.banner160kanan
 ##.banner160kiri
+##.banner_datar
 ##.bannerdua
 ##.bannermini
 ##.bannerpusat
@@ -2356,6 +2359,7 @@ _promohariini.$image,domain=ruparupa.com
 ||suryakepri.com^*/iklan-$image
 ||swarakaltim.com^*/banner_$image
 ||swarakaltim.com^*/top-banner-$image
+||tampang.com/tm_images/banner/$image
 ||tangerang7.com^*/banner-$image
 ||tangerangnews.com^*/banner/
 ||tanogaido.com^*/banner-$image
@@ -2977,10 +2981,10 @@ sumselupdate.com##.textwidget picture > img
 parokicikarang.or.id##.theiaStickySidebar a[href="#"] > img
 annews.co.id,banuatoday.com,bicaranews.com,dailysatu.com,garda.id,grapena.com,haibanjar.com,harianfikiransumut.com,inilahmedianasional.com,jurnalmediaindonesia.com,kabarmetro.co.id,kalbarnews.co.id,lelemuku.com,limakoma.com,liputansbm.com,metro-online.co,metrokampung.com,mimbaronline.com,nusantaranews.net,prodeteksi.com,radarsumatera.com,tanamonews.com,wartanasional.co##.widget > .widget-content > img
 bengkulupost.id,mediatrapnews.id,topiksulut.com##.widget > .wp-block-image > figure > img
-inilahsultra.com,realita.co##.widget > a > img
+inilahsultra.com,joglosemarnews.com,realita.co##.widget > a > img
 fajarbali.co.id,fajarbali.com,lampungvisual.com,medantalk.com,spiritsumbar.com##.widget > figure > a > img
 bengkulupost.id,fajarbali.co.id,fajarbali.com,faktaperistiwanews.co.id,harianrakyataceh.com,independennews.com,inimedan.com,kepribetter.com,klikjatim.com,lampungvisual.com,media-abpedsi.com,mediafaktanews.com,mediapromoter.id,mediatrapnews.id,mzknews.co,onlinekoe.com,potensinews.id,putrabhayangkara.com,reportase.tv,sekindo.id,spiritsumbar.com,suarabangsa.co.id,teropongnews.com,wartakini.co##.widget > figure > img
-dejournalindonesia.com,idntimes.id,kasatmata.co.id,kedannews.com,media-abpedsi.com,newsfaktahukumdanham.co.id,okeyboz.com,saudagar.news,seputarpapua.com,sulutexpress.com,sumseltoday.com,topsumbar.co.id##.widget > img
+dejournalindonesia.com,idntimes.id,joglosemarnews.com,kasatmata.co.id,kedannews.com,media-abpedsi.com,newsfaktahukumdanham.co.id,okeyboz.com,saudagar.news,seputarpapua.com,sulutexpress.com,sumseltoday.com,topsumbar.co.id##.widget > img
 asiabusinessinfo.com,mediainformasinetwork.com##.widget > p > a > img
 asiabusinessinfo.com,mediainformasinetwork.com##.widget > p > img
 suarakuningan.com##.widget a[style="margin-left: 1em; margin-right: 1em;"] img
@@ -3493,6 +3497,7 @@ celebrities.id###article .voucherWrap
 inews.id##.content-detail .voucherWrap
 sindonews.com##.content-row .voucher_at
 sportstars.id##.detail-article .voucherWrap
+diadona.id##.detail-body .voucherWrap
 okezone.com##.details .voucherWrap
 sportstars.id###article .voucherWrap
 okezone.com##.Post__Container .voucherWrap
