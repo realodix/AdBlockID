@@ -29,7 +29,17 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 ## Subscription
 
-> 💡 Link di bawah ini hanya untuk pengguna [uBlock Origin](https://github.com/gorhill/uBlock). Untuk [AdGuard](https://adguard.com), AdBlockID sudah tersedia di sana.
+| Name            | Subscription | Raw File | Description |
+| --------------- | --------- | -------- | ----------- |
+| AdBlockID       | [Subscribe][ABID_Subs_cf] | [adblockid.pages.dev/adblockid.adfl.txt][ABID_Raw_cf] | Main filter |
+| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_cf] | [adblockid.pages.dev/adblockid_plus.adfl.txt][ABID-Plus_Raw_cf] | Extension |
+
+[ABID_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid.adfl.txt&title=AdBlockID
+[ABID_Raw_cf]: https://adblockid.pages.dev/adblockid.adfl.txt
+[ABID-Plus_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
+[ABID-Plus_Raw_cf]: https://adblockid.pages.dev/adblockid_plus.adfl.txt
+
+#### Mirror
 
 | Name            | Subscription | Raw File | Description |
 | --------------- | --------- | -------- | ----------- |
@@ -40,18 +50,6 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 [ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt
 [ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
 [ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt
-
-#### Mirror
-
-| Name            | Subscription | Raw File | Description |
-| --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs_cf] | [adblockid.pages.dev/adblockid.adfl.txt][ABID_Raw_cf] | Main filter |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_cf] | [adblockid.pages.dev/adblockid_plus.adfl.txt][ABID-Plus_Raw_cf] | Extension |
-
-[ABID_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid.adfl.txt&title=AdBlockID
-[ABID_Raw_cf]: https://adblockid.pages.dev/adblockid.adfl.txt
-[ABID-Plus_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw_cf]: https://adblockid.pages.dev/adblockid_plus.adfl.txt
 
 
 ## Cara Menggunakan
