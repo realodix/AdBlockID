@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.7.50
+! Version: 23.7.51
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Jul 2023 18:32 UTC
+! Last modified: 14 Jul 2023 20:43 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2796,7 +2796,7 @@ cermati.com,ligaolahraga.com##.sticky-banner
 solopos.com##.swipe-up-ad
 winpoin.com##.td-header-ad-wrap
 timesindonesia.co.id##.text-center a[target="_blank"] > img
-honestdocs.id,tempo.co##.top-banner
+honestdocs.id,koranmandala.com,tempo.co##.top-banner
 orami.co.id##.top-banner-parallax
 kgnow.com##.topBanner
 juragancipir.com,kelanamakan.com##.topad
@@ -3142,6 +3142,7 @@ herstory.co.id##.article-post .container:has([id^="div-gpt-ad-"])
 kontenjatim.com##.article-post .text-center:has(.adsbygoogle)
 orami.co.id##.article-post div > :has-text(/adv/i)
 id.theasianparent.com##.bottom-sticky.only-mobile.layer-bsa-bn:style(min-height: 0 !important;)
+uzone.id##.box-content-news-description .geozo:has(> script)
 suarajatimpost.com##.card:has-text(/adv/i)
 kontan.co.id,momsmoney.id##.center:has([id^="div-billboard" i])
 hapusakun.com,iuwashplus.or.id,tapanulipost.com##.code-block:has-text(/adv/i)
@@ -3242,7 +3243,7 @@ mediaindonesia.com##.content-block .paralax_div
 republika.co.id##.content-read .container:has(> .content > .parallax__container)
 republika.co.id##.content-read .parallax__container
 republika.co.id##.content-read .scrollToRead
-gardaanimalia.com##.entry-content .idt-textinsidepost
+gardaanimalia.com,kalbarsatu.id##.entry-content .idt-textinsidepost
 drphone.id,indimanado.com,komentar.co,pasjabar.com,pewarta.co.id,tokojasaview.com##.fixed-leftSd
 khabarberita.com,ngemotor.com##.fixed-lside
 drphone.id,indimanado.com,komentar.co,pasjabar.com,pewarta.co.id,tokojasaview.com##.fixed-rightSd
@@ -3626,6 +3627,7 @@ kaskus.co.id###hotthread_visualita .jsThreadCardTvView:has(.jsHtTvIframe):remove
 kompas.tv###jxOutstreamContainer + .rVideo-wrapper:remove()
 gamereactor.asia###livestreamBox:remove()
 ngopibareng.id###ngopitv-inline:remove()
+uzone.id###play3-js-sdk:remove()
 katadata.co.id###video_in_article:remove()
 bangsaonline.com##.add-banner:has(.embed-responsive):remove()
 liputan6.com##.article-readpage--section .boost-video:remove()
