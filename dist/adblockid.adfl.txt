@@ -1,12 +1,13 @@
 [Adblock Plus 2.0]
-! Version: 23.7.59
+! Version: 23.7.60
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Jul 2023 18:05 UTC
+! Last modified: 15 Jul 2023 23:53 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
 .id^*/adv.$domain=~iklaninter.net|~ngiklan.gratis
+/banner-iklan-$domain=~ngiklan.gratis
 /iklan/*$image,domain=~1rajaiklan.com|~anjingk9.com|~bagusiklan.com|~iklanbaris.org|~iklanbarulive.com|~iklangratis88.com|~jualsewakios.com|~jualsewaruko.com|~mediaiklan.biz.id|~pettoto.com|~pusatiklan.co.id|~sebariklanmassalpremium.com|~sewa-apartemen.net
 /ngiklan/*$image,domain=~iklaninter.net|~ngiklan.gratis
 /smartfren/ads.
@@ -97,7 +98,6 @@
 /banner-baru-
 /banner-baru.$image
 /banner-besar-
-/banner-iklan-
 /banner-kanan/*
 /banner-kecil-
 /banner-kiri/*
@@ -592,6 +592,7 @@ _TimAds_$image
 ###ads-vert-300
 ###ads-widget-kanan
 ###ads-widget-kecil
+###ads300_600-widget-2
 ###ads300_600-widget-3
 ###ads300_600-widget-4
 ###ads300_600-widget-5
@@ -1756,7 +1757,6 @@ _TimAds_$image
 ||iframe.ly^$domain=tampilcantik.com
 ||odpldz.com^$script,domain=idxchannel.com
 ||ads-8d7.pages.dev/birds.js
-||anon.wapsite.info^$3p
 ||beritabaru.news/sc/detect-click.js
 ||binpartner.com^$3p
 ||bitball.b-cdn.net/banner/$3p
@@ -2391,6 +2391,7 @@ _promohariini.$image,domain=ruparupa.com
 ||tobasatu.com^*-iklan-$image
 ||tobasatu.com^*/iklan-$image
 ||tokcernews.com/images/banner_$image
+||topbusiness.id^*-banner-$image
 ||topikindonesia.id^*/iklan-$image
 ||totabuan.news^*/banner-$image
 ||transkepri.com/assets/banner/$image
@@ -2471,7 +2472,6 @@ komunita.id###banner_header_728
 urbanasia.com###bannerhome
 qsantri.eu.org###before-ad
 cnbcindonesia.com,haibunda.com###billboard_banner
-anjingk9.com###black-ads
 bolasport.com###bottom-banner-ads
 haibunda.com###bottom_banner
 batamnews.co.id,cakrawalantt.com,karawangnews.com,komentar.co,progresif.id,sukabuminews.net###btm_banner
@@ -2482,7 +2482,7 @@ motorplus-online.com###div-ad-latest-container
 suara.com###div-ad-mobile_bacajuga
 suara.com###div-ad-pariwara_satu
 grid.id###div-top-banner-transparent
-anievo.id,carasettingterbaru.blogspot.com,faktabanten.co.id,galerikitabkuning.com,laptopsiipat.com,media-dpr.com,ortax.org,pickybest.id,sahrilku.com,seruji.co.id###fixedban
+carasettingterbaru.blogspot.com,faktabanten.co.id,galerikitabkuning.com,laptopsiipat.com,media-dpr.com,ortax.org,pickybest.id,sahrilku.com,seruji.co.id###fixedban
 beritasatu.com,randi.id###floatAds
 tanyamimpi.org###floatads3
 poskota.co.id###get_ads_2
@@ -2591,6 +2591,7 @@ wiz.or.id##.advads-after-content
 ngodingdata.com##.advertise
 arenalte.com,krjogja.com,samudranews.com,telusur.co.id##.advertisement
 papuabaratnews.co##.advertisement_above_footer
+cerdasco.com##.adwrap2
 bisnisnews.com,erudisi.com,karesidenan.com##.adx-parallax
 bekesah.co##.alp-advert
 sindonews.com##.app-banner
@@ -2606,9 +2607,8 @@ suara.com##.banner-ads--parallax
 naikmotor.com##.banner-aop
 industry.co.id##.banner-box
 kompasiana.com##.banner-center
-lampost.co,riaukarya.com,transkepri.com##.banner-content
+inhilklik.com,lampost.co,riaukarya.com,transkepri.com##.banner-content
 tempo.co##.banner-fix-bottom
-indox21.xyz##.banner-float-bottom
 lamanqu.id##.banner-image
 goodnewsfromindonesia.id##.banner-img
 jagadtani.com##.banner-item
@@ -2664,7 +2664,7 @@ feedme.id##.d-ads
 bolasport.com##.dableclsbanner
 pricebook.co.id##.description-ads
 diadona.id##.drm-banner-x
-akurasi.id,beritakalteng.com,delegasi.com,detiksumsel.com,kabar6.com,kalimantantoday.com,lampung1.com,mediafaktanews.com,mediamerdeka.co,paei.or.id,rakyatbengkulu.com,suara-publik.com,suaramedannews.com,viralsumsel.com##.e3lan
+akurasi.id,beritakalteng.com,delegasi.com,detiksumsel.com,inibalikpapan.com,kabar6.com,kalimantantoday.com,lampung1.com,mediafaktanews.com,mediamerdeka.co,paei.or.id,rakyatbengkulu.com,stabilitasbisnis.com,suara-publik.com,suaramedannews.com,viralsumsel.com##.e3lan
 jabarpublisher.com##.e3lan-top
 petanikode.com##.empty-ads
 jatimtech.com,nutriflakes.id##.epcl-banner
@@ -2697,7 +2697,7 @@ pilarbanten.com##.header-ad-color
 pontianakpost.co.id##.header-advert-section
 asiabusinessinfo.com,bacasaja.id,depostjabar.com,paradiso.co.id,radarcikarang.com,riaudaily.com,uwrite.id##.header-banner
 landaknews.id##.header-banner-wrap
-gamefever.co.id,klik7tv.co.id,koranmedan.com,petisi.co##.header__banner
+gamefever.co.id,klik7tv.co.id,koranmedan.com,petisi.co,serpongupdate.com##.header__banner
 liputan6.com##.headline_ad__box
 momsmoney.id##.heightadsmr
 inbizia.com##.ibzikl
@@ -2782,6 +2782,7 @@ uzone.id##.section-ads-mid
 uzone.id##.section-ads-top
 duwitmu.com##.section-sticky-ads
 sepoin.com##.sepoin-ads
+buruhtinta.co.id,sinergianews.com,sitnas.id##.sibanner728x90
 inakoran.com##.sides-banner
 faktanews.com##.site-ads-overlay
 wahananews.co##.sitelogo-ads
@@ -2846,15 +2847,16 @@ andreasagung.com,centerklik.com,kostjakarta.com,tanogaido.com,tempat-kost.com##a
 ceklist.id##a[rel="sponsored"] img
 lensaindonesia.com##a[rel^="sponsored"] > img
 khabarberita.com##a[target*="blank"] > img
-45.141.56.28,aftermarketplus.id,againcolor.com,alexanews.id,armaila.com,bagas31.info,bakata.net,beritabaik.id,beritacrypto.com,beritadaerah.co.id,beritajatim.com,beritasatu.com,beritaterkini.co.id,blockchainmedia.id,cakrawalantt.com,campusnesia.co.id,caratekno.com,chaidir.web.id,coinvestasi.com,deltakepri.co.id,detak.co,detikglobalnews.com,duta.co,ekagoblog.com,gaikindo.or.id,gentaonline.com,gigapurbalingga.cc,gilacoding.com,globalplanet.news,goparlement.com,gosulsel.com,hariansoloraya.com,helloborneo.com,hetanews.com,idblanter.com,indonesiabaik.id,indox21.xyz,infoacehtimur.com,infoaktualnews.com,infojambi.com,inhupost.com,inikalteng.com,jagadtani.com,jambipers.com,jambiseru.com,jamilazzaini.com,jarrakposbali.com,kabarnusantaranews.com,kabarsiger.com,kabarterkini.co.id,klikmania.net,kompaslima.com,koransulindo.com,korsum.id,kostjakarta.net,kuncitts.com,laptophia.com,lasemgresik.id,lintaslampung.com,listrikindonesia.com,majalahintrust.com,malangtimes.com,maniakmotor.com,mediaasuransinews.co.id,mediabumn.com,medianews.co.id,mediaterobos.com,miuiarena.com,mobnasesemka.com,modeldewasa.com,murianews.com,musbikhin.com,naikmotor.com,ninna.id,nusadaily.com,okemedan.com,omkicau.com,onlinekoe.com,onphpid.com,oppal.co.id,panturanews.com,parokicikarang.or.id,penaberlian.com,pengusahamuslim.com,pickybest.id,polisiinternet.com,posbali.co.id,poskomalut.com,potret24.com,radarbanten.co.id,radarindo.co.id,radarlampung.co.id,radartuba.com,rakyatbengkulu.com,rakyatnesia.com,riauterkini.com,samawarea.com,sebelas12.com,suarakristen.com,suaraserumpun.com,sukabumiupdate.com,sulselsatu.com,sumateranews.co.id,sumbawanews.com,sumeks.co,superapp.id,swarakaltim.com,tafsir-mimpi.com,triberita.com,tutorial89.com,venuemagz.com,wartabromo.com,waspada.co.id,webdev-id.com,yangcanggih.com,zonabikers.com##a[target="_blank"] > img
+45.141.56.28,aftermarketplus.id,againcolor.com,alexanews.id,armaila.com,bagas31.info,bakata.net,beritabaik.id,beritacrypto.com,beritadaerah.co.id,beritajatim.com,beritasatu.com,beritaterkini.co.id,blockchainmedia.id,cakrawalantt.com,campusnesia.co.id,caratekno.com,chaidir.web.id,coinvestasi.com,deltakepri.co.id,detak.co,detikglobalnews.com,duta.co,ekagoblog.com,gaikindo.or.id,gentaonline.com,gigapurbalingga.cc,gilacoding.com,globalplanet.news,goparlement.com,gosulsel.com,hariansoloraya.com,helloborneo.com,hetanews.com,idblanter.com,indonesiabaik.id,infoacehtimur.com,infoaktualnews.com,infojambi.com,inhupost.com,inikalteng.com,jagadtani.com,jambipers.com,jambiseru.com,jamilazzaini.com,jarrakposbali.com,kabarnusantaranews.com,kabarsiger.com,kabarterkini.co.id,klikmania.net,kompaslima.com,koransulindo.com,korsum.id,kostjakarta.net,kuncitts.com,laptophia.com,lasemgresik.id,lintaslampung.com,listrikindonesia.com,majalahintrust.com,malangtimes.com,maniakmotor.com,mediaasuransinews.co.id,mediabumn.com,medianews.co.id,mediaterobos.com,miuiarena.com,mobnasesemka.com,modeldewasa.com,murianews.com,musbikhin.com,naikmotor.com,ninna.id,nusadaily.com,okemedan.com,omkicau.com,onlinekoe.com,onphpid.com,oppal.co.id,panturanews.com,parokicikarang.or.id,penaberlian.com,pengusahamuslim.com,pickybest.id,polisiinternet.com,posbali.co.id,poskomalut.com,potret24.com,radarbanten.co.id,radarindo.co.id,radarlampung.co.id,radartuba.com,rakyatbengkulu.com,rakyatnesia.com,riauterkini.com,samawarea.com,sebelas12.com,suarakristen.com,suaraserumpun.com,sukabumiupdate.com,sulselsatu.com,sumateranews.co.id,sumbawanews.com,sumeks.co,superapp.id,swarakaltim.com,tafsir-mimpi.com,triberita.com,tutorial89.com,venuemagz.com,wartabromo.com,waspada.co.id,webdev-id.com,yangcanggih.com,zonabikers.com##a[target="_blank"] > img
 iwanbanaran.com##a[target="_blank"] div[style*="position: fixed;"]
 radartegal.com,radartegal.id##a[title="promotion" i] > img
 radartegal.com,radartegal.id##a[title="promotion" i] > video:remove()
 sijorikepri.com##a[title^="iklan" i]
 hometronik.web.id##article a[target="_blank"] > img
 acehasia.com,arsindonews.com,beritapagi.co.id,beritasumatera.co.id,cakrawala.co,cendananews.com,detikglobalnews.com,faktabanten.co.id,kepritoday.com,majalahintrust.com,manadotoday.co.id,murianews.com,popularitas.com,presmedia.id,respublika.id,teksnologi.com##div[itemtype="https://schema.org/WPAdBlock"] > img
+borobudurnews.com##div[itemtype="https://schema.org/WPAdBlock"]:has(> script)
 ceklissatu.com,globalplanet.news,kaltimkita.com,penamerdeka.com,pusaranmedia.com,respublika.id,sakanews.com##img[alt*="ads" i]
-adanu.co.id,akhmadguntar.com,altinanews.com,atjehdaily.id,baliekbis.com,banjarbaruklik.com,beritaplano.com,bungasbanten.id,cahyamedia.co.id,cakrawalanusantara.id,ceklissatu.com,cokronews.com,corongrakyat.co.id,detikglobalnews.com,dewatanews.com,djournalist.com,indotribun.id,inisumedang.com,integritasmedia.com,jalurnews.com,jambiseru.com,jurnalpatrolinews.co.id,kabar6.com,kalimantan-news.com,kemajuanrakyat.id,kongkrit.com,liputan68.com,majalahponsel.org,makassarmetro.com,manadotoday.co.id,munadi.id,natmed.id,nutriflakes.id,odiyaiwuu.com,okeyboz.com,opsintb.com,portalntt.com,posciety.com,radarcom.id,realitapost.com,sahrilku.com,samuderakepri.co.id,sebelas12.com,smartcitymakassar.com,sukoharjonews.com,sumselindependen.com,sumselnian.com,terasjatim.com,teraspapua.com,teropongsulut.com,topmetro.news,utamanews.id,wartabanten.id,waspada.id,winpoin.com##img[alt*="banner" i]
+adanu.co.id,akhmadguntar.com,altinanews.com,atjehdaily.id,baliekbis.com,banjarbaruklik.com,beritaplano.com,bungasbanten.id,cahyamedia.co.id,cakrawalanusantara.id,ceklissatu.com,cokronews.com,corongrakyat.co.id,detikglobalnews.com,dewatanews.com,djournalist.com,indotribun.id,inisumedang.com,integritasmedia.com,jalurnews.com,jambiseru.com,jurnalpatrolinews.co.id,kabar6.com,kalimantan-news.com,kemajuanrakyat.id,kongkrit.com,liputan68.com,majalahponsel.org,makassarmetro.com,manadotoday.co.id,munadi.id,natmed.id,nutriflakes.id,odiyaiwuu.com,okeyboz.com,opsintb.com,portalntt.com,posciety.com,radarcom.id,realitapost.com,sahrilku.com,samuderakepri.co.id,sebelas12.com,smartcitymakassar.com,sukoharjonews.com,sumselindependen.com,sumselnian.com,terasjatim.com,teraspapua.com,teropongsulut.com,topmetro.news,trenasia.com,utamanews.id,wartabanten.id,waspada.id,winpoin.com##img[alt*="banner" i]
 acehekspres.com,acehportal.com,ads.id,bentengsumbar.com,bogornews.com,canalberita.com,detiksumsel.com,doktersehat.com,faktualnews.co,lintaskepri.com,mediakendari.com,mediaselektif.com,mediawawasan.com,metropublik.com,nasionalnews.id,panrita.news,posmetromedan.com,prolegalnews.id,radarcianjur.com,rakyatntt.com,realitapost.com,sulselsatu.com,tribuanapos.net,zonasultra.com##img[alt*="iklan" i]
 swaragamafm.com##img[alt="ad" i]
 ads.id##img[alt="admaven"]
@@ -2948,7 +2950,7 @@ infomu.co##img[width="600"][height="91"]
 mzknews.co##img[width="621"][height="77"]
 mzknews.co##img[width="625"][height="76"]
 karimuntoday.com,okemedan.com##img[width="728"][height="90"]
-forumterkininews.id,infosumut.id,mzknews.co,wartakotanews.id##img[width="728"][height="91"]
+forumterkininews.id,infosumut.id,konstruksimedia.com,mzknews.co,wartakotanews.id##img[width="728"][height="91"]
 jogya.com##img[width="770"][height="200"]
 dewatanews.com##img[width="795"][height="150"]
 jogya.com##img[width="810"][height="227"]
@@ -2985,8 +2987,8 @@ priceza.co.id###mobilePopupBtm
 m.kaskus.co.id##.threadDetail a[target="_blank"] img[src^="https://s.kaskus.id/images/"]
 solopos.com##.adsPushdown
 radarnusantara.com###content-section-wide-bottom .widget:has(.widget-content > img)
-dhean.news,iluvtari.com,sukabuminews.net###sidebar .widget:has(.widget-content > a > img)
-radarnusantara.com###sidebar .widget:has(.widget-content > img)
+bentengsumbar.com,dhean.news,iluvtari.com,sukabuminews.net###sidebar .widget:has(.widget-content > a > img)
+bentengsumbar.com,radarnusantara.com###sidebar .widget:has(.widget-content > img)
 visi.news##.custom-html-widget
 lintasbali.com##.elementor-widget :has(.elementor-widget-container > img)
 bolmongraya.co##.elementor-widget-container .elementor-image
@@ -3020,10 +3022,10 @@ dhean.news##.widget .widget-content a > img
 borneonusantaranews.com##.widget > .widget-content > a > img
 annews.co.id,banuatoday.com,bicaranews.com,borneonusantaranews.com,dailysatu.com,garda.id,grapena.com,haibanjar.com,harianfikiransumut.com,inilahmedianasional.com,jurnalmediaindonesia.com,kabarmetro.co.id,kalbarnews.co.id,lelemuku.com,limakoma.com,liputansbm.com,metro-online.co,metrokampung.com,mimbaronline.com,nusantaranews.net,prodeteksi.com,radarsumatera.com,tanamonews.com,wartanasional.co##.widget > .widget-content > img
 bengkulupost.id,mediatrapnews.id,topiksulut.com##.widget > .wp-block-image > figure > img
-inilahsultra.com,joglosemarnews.com,realita.co,wartaswara.com##.widget > a > img
+inilahsultra.com,joglosemarnews.com,realita.co,topbusiness.id,wartaswara.com##.widget > a > img
 fajarbali.co.id,fajarbali.com,lampungvisual.com,medantalk.com,spiritsumbar.com##.widget > figure > a > img
 bengkulupost.id,depostjabar.com,fajarbali.co.id,fajarbali.com,faktaperistiwanews.co.id,harianrakyataceh.com,independennews.com,inimedan.com,kepribetter.com,klikjatim.com,lampungvisual.com,media-abpedsi.com,mediafaktanews.com,mediapromoter.id,mediatrapnews.id,mzknews.co,onlinekoe.com,potensinews.id,putrabhayangkara.com,reportase.tv,sekindo.id,spiritsumbar.com,suarabangsa.co.id,teropongnews.com,wartakini.co##.widget > figure > img
-dejournalindonesia.com,detiknews.id,idntimes.id,indiespot.id,indonewsdaily.com,indopolitika.com,joglosemarnews.com,kalimantan-news.com,kasatmata.co.id,kedannews.com,media-abpedsi.com,mediakalbarnews.com,newsfaktahukumdanham.co.id,nusantara-news.co,okeyboz.com,saudagar.news,seputarpapua.com,sulutexpress.com,sumseltoday.com,topsumbar.co.id,wartaswara.com,wartaviral.id##.widget > img
+dejournalindonesia.com,detiknews.id,idntimes.id,indiespot.id,indonewsdaily.com,indopolitika.com,joglosemarnews.com,kalimantan-news.com,kasatmata.co.id,kedannews.com,media-abpedsi.com,mediakalbarnews.com,newsfaktahukumdanham.co.id,nusantara-news.co,okeyboz.com,saudagar.news,seputarpapua.com,sulutexpress.com,sumseltoday.com,topbusiness.id,topsumbar.co.id,wartaswara.com,wartaviral.id##.widget > img
 asiabusinessinfo.com,mediainformasinetwork.com##.widget > p > a > img
 asiabusinessinfo.com,mediainformasinetwork.com##.widget > p > img
 suarakuningan.com##.widget a[style="margin-left: 1em; margin-right: 1em;"] img
@@ -3038,6 +3040,7 @@ dhean.news,inhupost.com,mandalikapost.com,samudranews.com,suarakuningan.com##.wi
 dharapos.com,kompastimur.com,mandalikapost.com,radarberitanasional.com,snipers.news##.widget-content > img
 mandalikapost.com##.widget-content:has(> center > a > img)
 polisinews.com##.widget-footer .widget:has(> img)
+hotdanterbaru.com##.widget:has(.block-title:has-text(/promo/i))
 bogordaily.net,goosela.com,inionline.id,seputarsumut.com##.widget:has(> a > img)
 channel9.id##.widget:has(a > img)
 majalahintrust.com##.widget:has(div[itemtype="https://schema.org/WPAdBlock"] > img)
@@ -3049,8 +3052,9 @@ ceklissatu.com##aside .spotlight
 integritasmedia.com##aside .widget-content > div > img
 berita-cendana.com,realitakini.com##aside .widget-content:has(> div > img)
 jurnalandalas.com,kalimantana.id,lensamedan.co.id,mediaterobos.com,suarakuningan.com,sumatrazone.co.id##aside .widget:has(.widget-content > img)
-polisinews.com##aside .widget:has(> img)
+okemedan.com,polisinews.com##aside .widget:has(> img)
 mimbarsumbar.id,transnusantara.co.id##aside .widget:has(a > img)
+kabar65news.com##aside .widget_media_image > a > img
 moladin.com##aside [href^="https://bit.ly/"]:has(> img)
 sahamok.net##aside a[href*="sahamok.net/visit/"]
 beritajogja.id,mitrasatu.com,orbitdigitaldaily.com##aside a[target="_blank"] > img
@@ -3095,7 +3099,7 @@ apahabar.com,kumanika.com,lintastungkal.com##[id^="sidebar"] img[style="max-widt
 beritajatim.com##aside #div-gpt-ad-rectangle ~ img
 borobudurnews.com##aside .widget:has(> .adsbygoogle)
 aktualnews.co.id,altinanews.com,altumnews.com,balifactualnews.com,baliinside.id,batamline.com,berita-kota.com,beritacikarang.com,beritainvestigasi.com,beritanasional.id,bernas.id,bolmong.news,borobudurnews.com,bratapos.com,buletinindonesianews.com,canalberita.com,dayaknews.com,eksisnews.com,elangpos.com,exposenews.id,faktaberita.co.id,faktajember.com,gemasulawesi.com,global-news.co.id,globaldrafnews.com,headlinesriwijaya.com,indcyber.com,indonesiaparlemen.com,insitekaltim.com,intipos.com,jabarekspres.com,jabaronline.com,jejakkasus.co.id,jejakkeadilan.com,jppos.id,jubi.id,jurnallampung.com,jurnalpatrolinews.co.id,jurnalterkini.id,kabarntt.co,kebumenupdate.com,kilasbali.com,kiprah.co.id,kitamudamedia.com,kongkrit.com,kupasonline.com,laporansumatera.com,lebaknews.com,lenterabanua.co,lintasjatimnews.com,liputan68.com,livefaktanews.co.id,lomboksatu.com,mataradarindonesia.com,mediafaktanews.com,megamanado.com,memorandum.co.id,metroluwuk.com,mitanews.co.id,mitrapost.com,narasi.co,natmed.id,obrolanbisnis.com,papuaterkini.com,patrolipost.com,pemukajaya.com,perkasanews.com,pilarsumsel.com,poncomas.com,portal-indonesia.com,radarpaginews.com,radarwaykanan.com,redaksitimur.com,revolusinews.com,seputartuban.com,sergaplampung.com,sidakfaktanews.com,sindikatpost.com,speednews-manado.com,spiritnews.co.id,suarafaktual.com,sulawesion.com,tambunpos.com,tapanulipost.com,tebarberita.id,topikindonesia.id,transformasinews.com,tras.id,updatetodaynews.com,waktuindonesia.id,warta-pendidikan.com,warta9.com,wartaindo.news,wartamerdekanews.com,wartamu.id##aside .widget:has(img[style="max-width: 100%; height: auto;"])
-analisaaceh.com,andalasrayanews.com,apakabaronline.com,asarpua.com,baritorayapost.com,begawanindonesia.com,bekasipedia.com,bengkuluvoice.com,beritajateng.tv,beritamerdekaonline.com,beritaterkini.co.id,bogorchannel.id,bogoronline.com,bogorupdate.com,bonepos.com,bospajak.com,buser24.com,catatannewbie.com,cekberita.net,cekpremi.com,coganews.co.id,dailypost.id,dara.co.id,dejurnal.com,deltakepri.co.id,detikkeprinews.com,dutatv.com,editor.id,ekspos.id,expontt.com,fajarmanado.com,faktajabar.co.id,fanews.id,gaikindo.or.id,gardapapua.com,halaman7.com,hariankaltim.com,hariansoloraya.com,herald.id,hipakad63.news,infobanua.co.id,inisumedang.com,inisurabaya.com,investigasibhayangkara.com,jakposnews.com,jambiterkini.com,javanewsonline.co.id,jeratntb.com,kabarberitasatu.com,kabarlahat.com,kabarpublik.id,kabarsumsel.news,kailipost.com,kaldera.id,kalimantanlive.com,katakepri.com,kemazan.com,kepridays.co.id,kepritoday.com,kilasjatim.com,kledo.com,klik-ntt.com,kliksumut.com,komunikasulut.com,koranbanjar.net,korankalimantan.com,koranmakassar.com,koranmemo.com,koranntt.com,kundurnews.co.id,lampung1.com,lampungcentral.com,lasemgresik.id,lensantb.com,lines.id,lintasgayo.co,lutim-news.com,malangnews.id,mattanews.co,mediaaceh.co.id,mediabanjarmasin.com,mediakalimantannews.com,mediakendari.com,mediakeprinews.com,mediamerdeka.co,mediapelangi.com,metro7.co.id,metrobuananews.com,metropadang.com,metrorakyat.com,metrotimes.news,mettanews.id,monitornusantara.com,narasiterkini.com,neracanews.com,newskaltim.com,newsurban.id,niaga.asia,noteza.id,ntt-news.com,nttsatu.com,nuansarealitanews.com,obor-nusantara.com,okemedan.com,okuselatan.today,palembangindependen.com,papuabaratpos.com,pasundanekspres.co,pelita.co.id,pelitanusantara.co.id,pelitanusantara.com,penaberlian.com,pewarta-indonesia.com,pojokberita.co.id,popularitas.com,porosnusantara.co.id,portalnusa.com,poskita.id,pratiwanggini.net,purworejonews.com,radarbandung.id,radarcikarang.com,radarjatim.co,radarlamteng.com,radarlombok.co.id,radarmalaka.com,radarsukabumi.com,radartvnews.com,realitalampung.com,redaksisulut.com,redkal.com,reportasepapua.co.id,rubrikkristen.com,sakanews.com,satset.id,sekindo.id,sekolahnews.com,semarakpost.com,sendapaleba.com,senentangnews.com,seputartuban.com,sindomanado.com,suara-ntt.com,suarakalbar.co.id,suaramandiri.co,suarapublik.id,suaraserumpun.com,suarasiber.com,sumateranews.co.id,sumselupdate.com,swarakaltim.com,tabloidmatahati.com,talikanews.com,terasntt.id,timur-online.com,tobasatu.com,topmetro.news,toriolo.com,travelmaker.id,tugujatim.id,ujaran.co.id,utamanews.id,valoranews.com,wajoterkini.com,wartaniaga.com,wideazone.com##aside img[style="max-width: 100%; height: auto;"]
+analisaaceh.com,andalasrayanews.com,apakabaronline.com,asarpua.com,baritorayapost.com,begawanindonesia.com,bekasipedia.com,bengkuluvoice.com,beritajateng.tv,beritamerdekaonline.com,beritaterkini.co.id,bogorchannel.id,bogoronline.com,bogorupdate.com,bonepos.com,bospajak.com,buser24.com,catatannewbie.com,cekberita.net,cekpremi.com,coganews.co.id,dailypost.id,dara.co.id,dejurnal.com,deltakepri.co.id,detikkeprinews.com,dutatv.com,editor.id,ekspos.id,expontt.com,fajarmanado.com,faktajabar.co.id,fanews.id,gaikindo.or.id,gardapapua.com,halaman7.com,hariankaltim.com,hariansoloraya.com,herald.id,hipakad63.news,infobanua.co.id,inisumedang.com,inisurabaya.com,investigasibhayangkara.com,jakposnews.com,jambiterkini.com,javanewsonline.co.id,jeratntb.com,kabarberitasatu.com,kabarlahat.com,kabarpublik.id,kabarsumsel.news,kailipost.com,kaldera.id,kalimantanlive.com,katakepri.com,kemazan.com,kepridays.co.id,kepritoday.com,kilasjatim.com,kledo.com,klik-ntt.com,kliksumut.com,komunikasulut.com,koranbanjar.net,korankalimantan.com,koranmakassar.com,koranmemo.com,koranntt.com,kundurnews.co.id,lampung1.com,lampungcentral.com,lasemgresik.id,lensantb.com,lines.id,lintasgayo.co,lutim-news.com,malangnews.id,mattanews.co,mediaaceh.co.id,mediabanjarmasin.com,mediakalimantannews.com,mediakendari.com,mediakeprinews.com,mediamerdeka.co,mediapelangi.com,metro7.co.id,metrobuananews.com,metropadang.com,metrorakyat.com,metrotimes.news,mettanews.id,monitornusantara.com,narasiterkini.com,neracanews.com,newskaltim.com,newsurban.id,niaga.asia,noteza.id,ntt-news.com,nttsatu.com,nuansarealitanews.com,obor-nusantara.com,okuselatan.today,palembangindependen.com,papuabaratpos.com,pasundanekspres.co,pelita.co.id,pelitanusantara.co.id,pelitanusantara.com,penaberlian.com,pewarta-indonesia.com,pojokberita.co.id,popularitas.com,porosnusantara.co.id,portalnusa.com,poskita.id,pratiwanggini.net,purworejonews.com,radarbandung.id,radarcikarang.com,radarjatim.co,radarlamteng.com,radarlombok.co.id,radarmalaka.com,radarsukabumi.com,radartvnews.com,realitalampung.com,redaksisulut.com,redkal.com,reportasepapua.co.id,rubrikkristen.com,sakanews.com,satset.id,sekindo.id,sekolahnews.com,semarakpost.com,sendapaleba.com,senentangnews.com,seputartuban.com,sindomanado.com,suara-ntt.com,suarakalbar.co.id,suaramandiri.co,suarapublik.id,suaraserumpun.com,suarasiber.com,sumateranews.co.id,sumselupdate.com,swarakaltim.com,tabloidmatahati.com,talikanews.com,terasntt.id,timur-online.com,tobasatu.com,topmetro.news,toriolo.com,travelmaker.id,tugujatim.id,ujaran.co.id,utamanews.id,valoranews.com,wajoterkini.com,wartaniaga.com,wideazone.com##aside img[style="max-width: 100%; height: auto;"]
 joglosemarnews.com##aside img[style^="max-width: 100%; height: auto;"]
 halokakros.com##aside img[width="250"][height="250"]
 haidiva.com##aside img[width="257"][height="300"]
@@ -3132,7 +3136,7 @@ portalindonesianews.net##aside .widget:has-text(/iklan/i)
 axialnews.id,kabarnusa.com##aside > .widget:has(> figure > img)
 speednews-manado.com##aside > .widget:has-text(/adv/i)
 bangkitmedia.com##aside p:matches-css(text-align: center):has(> a > img)
-creativosonline.org,desdelinux.net,ubunlog.com##aside:has(> .adsbygoogle)
+creativosonline.org,ubunlog.com##aside:has(> .adsbygoogle)
 gardapapua.com##aside:has-text(/adv/i)
 tempo.co##+js(rc, pad-apps, body)
 sindonews.com##+js(rc, t480, .content-paralax)
@@ -3159,6 +3163,7 @@ suarajatimpost.com##.card:has-text(/adv/i)
 kontan.co.id,momsmoney.id##.center:has([id^="div-billboard" i])
 infosumbar.net##.code-block:has(> center > script)
 suarapapua.com##.code-block:has(> script)
+cerdasco.com##.code-block:has(noscript)
 hapusakun.com,iuwashplus.or.id,tapanulipost.com##.code-block:has-text(/adv/i)
 blockchainmedia.id,cerdasco.com,skdesu.com##.code-block:matches-css(text-align: center):has-text(/iklan/i)
 arenabola.id##.col-lg-3:has-text(/adv/i)
@@ -3170,7 +3175,6 @@ ayobelajarasuransi.id##.entry-content > .aligncenter:has-text(/iklan/i)
 pojoksatu.id##.entry-content center:has(> [id^="gpt-passback-"])
 otoproid.com##.entry-content div:has(> .adsbygoogle)
 adinyahya.com##.entry-content p:has(> .adsbygoogle)
-sitnas.id##.entry-content script[src^="https://jsc.mgid.com/"]:upward(center)
 katadata.co.id##.flying_carpet_show:has(.flying_carpet_show_banner)
 haibunda.com##.m-r1:has(#adv-caption-mr1)
 haibunda.com##.m-r2:has(#adv-caption-mr2)
@@ -3202,13 +3206,14 @@ temankreasi.com##a[href]:has(> center:has-text(/iklan/i))
 ciriciripohon.com##article .adsbygoogle:upward(center)
 bogordaily.net##article .code-block:matches-css(text-align: center):has(a[href] > img)
 cnnindonesia.com##article .paradetail:has-text(/adv/i)
+buruhtinta.co.id,sinergianews.com,sitnas.id##center:has(> div:has(script))
 klubpria.com##center:has([id^="div-gpt-ad"])
 sukabumiupdate.com##center:has-text(/adv/i)
 kompas.id##div.justify-center:has([src^="https://ads.kompas.id"])
 disway.id##div:has(> .adsbyadop)
-ascomaxx.com,buruhtinta.co.id,cerdika.com,desdelinux.net,inibaru.id,jagokata.com,jurnalisindonesia.id,mojok.co,saintif.com,semutaspal.com,sinergianews.com,trans89.com,utamanews.com##div:has(> .adsbygoogle)
+ascomaxx.com,buruhtinta.co.id,cerdika.com,inibaru.id,jagokata.com,jurnalisindonesia.id,mojok.co,saintif.com,semutaspal.com,sinergianews.com,trans89.com,utamanews.com##div:has(> .adsbygoogle)
 haibunda.com##div:has(> .static_banner1)
-dara.co.id,vcgamers.com##div:has(> [class^="adsbyadop_"])
+abadikini.com,dara.co.id,sinergianews.com,vcgamers.com##div:has(> [class^="adsbyadop_"])
 genpi.co,pricebook.co.id##div:has(> [id*="div-gpt-ad-"])
 cnnindonesia.com##div:has(> [id^="adv-"])
 kompas.id,sehatq.com##div:has(> [id^="div-gpt-ad"])
@@ -3272,7 +3277,7 @@ wisatarakyat.com##.main-single-content > .code-block
 disway.id,fin.co.id,grid.id,jurnalisindonesia.id,motorplus-online.com,postingnews.id,tajukflores.com##.nkt__stick
 bisikan.com##.page-masthead
 haibunda.com##.paradetail
-abadikini.com##.paralax_div
+abadikini.com,konteks.co.id##.paralax_div
 faktahukumntt.com,katasulsel.com##.parallax
 cantika.com,indonesiana.id,teras.id##.parallax-box
 sindonews.com##.parallax-close
@@ -3397,6 +3402,7 @@ filecheck.web.id#@##contentAd
 gadgetplus.my.id#@#.Adsense
 berga-tech.com,rival-face.com#@#.adspost1
 sharer.my.id#@#.showads
+faktanews.com#@#.site-ads
 beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
 @@||arlinacode.com^$ghide
 @@||monitorteknologi.com^$ghide
@@ -3586,7 +3592,7 @@ bankir.id,biayatarif.com,gadgetized.net,myjourney.id,oolean.id,pakaiatm.com,paka
 idfl.info##+js(aopr, open)
 suki48.web.id##+js(aopw, _pop)
 kotakgame.com##+js(set, $.magnificPopup.open, noopFunc)
-gammafisblog.com,gigapurbalingga.cc,helmiau.com,jalanku.my.id,jandaqu.xyz,jejakmufassir.my.id,kicausejati.com,kpfmpalangkaraya.com,kurazone.net,kuyhaa-me.com,mistertekno.com,newsparodiquote.blogspot.com,playsobat.xyz,tafsirmimpi.co,topwisata.info,visual-effects-motion.blogspot.com##+js(window.open-defuser)
+berga-tech.com,gammafisblog.com,gigapurbalingga.cc,helmiau.com,jalanku.my.id,jandaqu.xyz,jejakmufassir.my.id,kicausejati.com,kpfmpalangkaraya.com,kurazone.net,kuyhaa-me.com,mistertekno.com,newsparodiquote.blogspot.com,playsobat.xyz,tafsirmimpi.co,topwisata.info,visual-effects-motion.blogspot.com##+js(window.open-defuser)
 /wp-content/plugins/cm-pop-up-banners/*$domain=klikpapua.com|radarsriwijaya.com|rajawarta.com|suaramandiri.co
 213.136.91.132,klikpapua.com,papuabaratpos.com,radarsriwijaya.com,rajawarta.com,suaramandiri.co,suarapubliknews.net##+js(aopr, popup_custom_data)
 /wp-content/plugins/master-popups/*$domain=mediamerdeka.co
@@ -3753,11 +3759,11 @@ hienzo.com##+js(ra, oncontextmenu, div)
 ainamulyana.blogspot.com,banjirembun.com,kenangananggora.com,kucingmania.net,kuskuspintar.com,nomor.net,overlordfree.web.id,rakyatpos.id,redaksipos.com,rumahmaterial.com,tajukflores.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 alexanews.id,cocofleet.com,suararakyatborneo.com##+js(acis, document.oncontextmenu)
 belajarbro.id,bisnisukm.com,dikemas.com,gadgetidn.id,hotelier.id,kucingpersia.co.id,laciusang.com,mahirngoding.blogspot.com,mediadayak.id,mercon.id,modoomarblecodex.site,my24hours.net,newsroom.id,nusantararom.org,pcnusumenep.or.id,pramuka.id,rakyatbengkulu.com,rakyatpos.id,redaksipos.com,reportasepapua.co.id,ridertua.com,rotasi.co,rumahweb.com,seputarkuliah.com,sip-exim.co.id,tepat.id,thebabelianchannel.site,valoranews.com,wartasehat.id,websiteedukasi.com##+js(aeld, contextmenu)
-0.0.realodix,1001tutorial.com,agussuratna.net,ahzaa.net,akupakarblog.blogspot.com,alternatifmu.com,amskyindonesia.com,apabedanya.com,ardra.biz,asiacon.co.id,bacamalang.com,bachtiarmath.com,balimediakomputer.com,banjirembun.com,beritakalteng.com,beritasampit.co.id,besoksore.com,binarayaberkahutama.com,bisniz.id,blog-dnz.com,blogernas.com,bloggermuntilan.com,blogsecond.com,bospajak.com,burungnya.com,caracepat.net,carbonexpo.com,cikimm.com,cilegonnews.com,ciriseo.net,codeflare.net,comportcomputers.com,cyber88.co.id,daftarhewan.com,danirachmat.com,debgameku.com,dedyakas.com,defriansyah.net,destiku.net,detikbanten.com,dinaspajak.com,dosenonline.id,edumor.com,egsean.com,ekor9.com,fakta7.com,fendydjael.blogspot.com,gamefinity.id,garudacitizen.com,guru-id.com,hargacampur.com,hargalift.com,hazamusik.com,headlinekaltim.co,ilmumemikatwanita.com,ilmuveteriner.com,infoastronomy.org,inikepri.com,invesnesia.com,isrul.com,jeripurba.com,kabarrakyat.id,kaltaraaktual.com,kampusexcel.com,kanzalia.com,keluargahamsa.com,kennedybrothers.id,kepuhkencanaarum.com,kherysuryawan.id,ksbajaringan.co.id,kucingmu.com,lesiaso.com,majalahponsel.org,malangnews.id,mandiribisnis.com,masayip.com,mditack.co.id,mengapa.net,miuiarena.com,murianews.com,nandatrio.com,nokenlive.com,nusramedia.com,oliswel.com,overlordfree.web.id,paketsoundsystem.com,panduanteknisi.com,papuabaratnews.co,papuadalamberita.com,papuatimes.co.id,pelitanusantara.com,psikologicinta.com,publikasimedia.com,radarbabel.com,radiokucing.com,rajasanews.com,redaksipos.com,renovrainbow.com,rgamesstore.com,rubrikkristen.com,rukim.id,sairerinews.com,samleinad.com,selatsunda.com,senangrekreasi.com,siantarupdate.com,simomotaro.com,smppgrisatubdl.com,solusipro.com,sorodot.com,sorongraya.co,strukturkata.my.id,suarabekasi.id,suaraindonesianews.com,sukasukaamel.com,sumselupdate.com,tanyadigital.com,tentik.com,teraa.net,tipspetani.com,tipssehatcantik.com,tobasatu.com,tourketurki.com,triharyono.com,upahminimum.com,vromedia.com,wartasehat.id,wartaterkini.news,worldwideartla.com,yongganas.com##+js(aopr, document.oncontextmenu)
+0.0.realodix,1001tutorial.com,agussuratna.net,ahzaa.net,akupakarblog.blogspot.com,alternatifmu.com,amskyindonesia.com,apabedanya.com,ardra.biz,asiacon.co.id,bacamalang.com,bachtiarmath.com,balimediakomputer.com,banjirembun.com,beritakalteng.com,beritasampit.co.id,besoksore.com,binarayaberkahutama.com,bisniz.id,blog-dnz.com,blogernas.com,bloggermuntilan.com,blogsecond.com,bospajak.com,burungnya.com,caracepat.net,carbonexpo.com,cikimm.com,cilegonnews.com,ciriseo.net,codeflare.net,comportcomputers.com,cyber88.co.id,daftarhewan.com,danirachmat.com,debgameku.com,dedyakas.com,defriansyah.net,destiku.net,detikbanten.com,dinaspajak.com,dosenonline.id,edumor.com,egsean.com,ekor9.com,fakta7.com,fendydjael.blogspot.com,gamefinity.id,garudacitizen.com,guru-id.com,hargacampur.com,hargalift.com,hazamusik.com,headlinekaltim.co,ilmumemikatwanita.com,ilmuveteriner.com,infoastronomy.org,inikepri.com,invesnesia.com,isrul.com,jeripurba.com,kabarrakyat.id,kaltaraaktual.com,kampusexcel.com,kanzalia.com,keluargahamsa.com,kennedybrothers.id,kepuhkencanaarum.com,kherysuryawan.id,ksbajaringan.co.id,kucingmu.com,lesiaso.com,majalahponsel.org,malangnews.id,mandiribisnis.com,masayip.com,mditack.co.id,mengapa.net,miuiarena.com,murianews.com,nandatrio.com,ngurusduit.com,nokenlive.com,nusramedia.com,oliswel.com,overlordfree.web.id,paketsoundsystem.com,panduanteknisi.com,papuabaratnews.co,papuadalamberita.com,papuatimes.co.id,pelitanusantara.com,psikologicinta.com,publikasimedia.com,radarbabel.com,radiokucing.com,rajasanews.com,redaksipos.com,renovrainbow.com,rgamesstore.com,rubrikkristen.com,rukim.id,sairerinews.com,samleinad.com,selatsunda.com,senangrekreasi.com,siantarupdate.com,simomotaro.com,smppgrisatubdl.com,solusipro.com,sorodot.com,sorongraya.co,strukturkata.my.id,suarabekasi.id,suaraindonesianews.com,sukasukaamel.com,sumselupdate.com,tanyadigital.com,tentik.com,teraa.net,tipspetani.com,tipssehatcantik.com,tobasatu.com,tourketurki.com,triharyono.com,upahminimum.com,vromedia.com,wartasehat.id,wartaterkini.news,worldwideartla.com,yongganas.com##+js(aopr, document.oncontextmenu)
 1tulah.com,asianami.com,cinemags.co.id,goozir.com,heikamu.com,jayaherlambang.com,malukuterkini.com,redaksipos.com,wartasehat.id##+js(aopw, document.oncontextmenu)
 newsroom.id,radiokucing.com,rakyatpos.id,redaksipos.com,wartasehat.id##+js(aopw, document.onmousedown)
 fokusborneo.com,greeners.co,gudangilmuku.com,hotelier.id,logisklik.com,logosconsulting.co.id,menukuliner.net,pramuka.id,ridertua.com,sip-exim.co.id,tepat.id,yesdok.com##*::selection:style(color:white!important;background:#0078d7!important;)
-0.0.realodix,aditema.blogspot.com,agussuratna.net,ahzaa.net,alexanews.id,alimumedia.blogspot.com,amskyindonesia.com,andalpost.com,andrie.id,andronezia.com,anhar.my.id,antero.co,apabedanya.com,ardra.biz,arlinacode.com,arlinadzgn.com,asianami.com,baca.co.id,bacamalang.com,bachtiarmath.com,bahasagaul.id,bahasaindonesia.web.id,balimediakomputer.com,balipost.com,bangkitmedia.com,bangsiagian.id,banjirembun.com,barungeblog.com,beri.web.id,beritakalteng.com,beritasampit.co.id,besoksore.com,biodata-artis.com,bisablog.com,bisniz.id,blikomang.com,blogcozone.com,bloggermuntilan.com,blogrumahan.com,blogsecond.com,blogsetyaaji.com,bosinformasi.web.id,boss-ant.blogspot.com,bungasbanten.id,bungfrangki.com,candilkfb.blogspot.com,candilkuya.com,cara1001.com,caraono.blogspot.com,carasettingterbaru.blogspot.com,carasyarif.blogspot.com,carbonexpo.com,carigaji.com,champions.my.id,cilegonnews.com,cinemags.co.id,cocofleet.com,codeflare.net,comportcomputers.com,contohpantunpuisicerpen.blogspot.com,cop4sberita.blogspot.com,cyber88.co.id,daftarhewan.com,dailysocial.id,danirachmat.com,datadikdasmen.com,dedyakas.com,dewainside.blogspot.com,dewaplokis.com,dezige-in.blogspot.com,dinaspajak.com,dualipa.id,duniamu38.com,elmu-blog.blogspot.com,ewafebri.com,fabelia.com,fajrinfo.com,fakta7.com,ferisp.com,fitinline.com,fokusborneo.com,gamefinity.id,garudacitizen.com,geograpik.blogspot.com,goozir.com,gubukpintar.com,guntur.eu.org,gweone.com,hargacampur.com,heikamu.com,heru.my.id,hetanews.com,heyriad.com,hienzo.com,historia.id,hobbytekno.xyz,hotelier.id,hukum-hukum.com,huzenify.blogspot.com,id.theasianparent.com,idekevin.blogspot.com,igniel.com,ilmumemikatwanita.com,inblogspot.com,indosuara.com,iniesa.com,inikepri.com,invesnesia.com,irnanto.com,ismynr.xyz,isrul.com,jagoandzgn.com,jakartastudio.com,jatimtimes.com,jayaherlambang.com,jeripurba.com,jpspeeds.com,kaltaraaktual.com,kangghani.com,kanzalia.com,kartikaryani.com,keluargahamsa.com,kennedybrothers.id,kepuhkencanaarum.com,kherysuryawan.id,kiyandra.com,kodesjabar.com,komputermedia.com,koropak.co.id,ksbajaringan.co.id,kucingganteng.com,kucingmania.net,kucingpersia.co.id,kulcis.blogspot.com,kumpulanremaja.com,kurazone.net,kyndaerim.com,lesiaso.com,limone.id,linovhr.com,magelang1337.com,mahirngoding.blogspot.com,mahiroffice.com,malangnews.id,malangtimes.com,malasngeblog.com,malasngoding.com,malukuterkini.com,maribelajarcoding.com,masayip.com,maskoding.com,masmalven.com,masrana.com,massiswo.com,mastamvan.blogspot.com,mayuf.info,mditack.co.id,media-unu.com,mediachmad.blogspot.com,mediadayak.id,mediafima.com,memontum.com,mengapa.net,misterikisah.com,mistertekno.com,miuiarena.com,miuipedia.com,modoomarblecodex.site,mrmung.com,multimedialy.com,multimediatama.com,murianews.com,naminakiky.com,nandatrio.com,nganggurajah.blogspot.com,ngulikode.com,ninoartikel.com,normalestari.blogspot.com,nusramedia.com,onoini.com,oom.web.id,overlordfree.web.id,paketsoundsystem.com,papuadalamberita.com,papuatimes.co.id,pondok-belajar.com,ponselsoak.com,porosilmu.com,psikologicinta.com,publikasimedia.com,rahmancyber.net,rajatips.com,rancax.blogspot.com,ratutips.com,reedpax.blogspot.com,regamedianews.com,rencanamu.id,renovrainbow.com,reviewaz.id,reviewsteknologiku.tech,rgamesstore.com,ridergalau.com,rotasi.co,rubrikkristen.com,rukim.id,rumahmaterial.com,rzkbdlhsn.blogspot.com,sairerinews.com,samleinad.com,santriema.blogspot.com,sasihsaum.com,satupiston.com,sayurbox.com,sedotcode.blogspot.com,senangrekreasi.com,seniartaja.blogspot.com,serba-serbi-bisa.blogspot.com,serieswans.com,seuntaipuisi.blogspot.com,simomotaro.com,sip-exim.co.id,siwalimanews.com,smsucapan.com,solusipro.com,sorodot.com,struckturcode.blogspot.com,strukturkode.blogspot.com,suarabekasi.id,suaraindonesianews.com,suarapapua.com,suararakyatborneo.com,suatekno.id,suckittrees.com,suhux.com,sukasukaamel.com,sumselupdate.com,suryadhi.web.id,susahtidur.my.id,suyachan.my.id,tajukflores.com,tamboenman.xyz,tanyadigital.com,tapanulipost.com,techno-ct2.eu.org,teknojempol.com,teknolalat.com,tentik.com,teropongnews.com,thebabelianchannel.site,tigaribu.net,tipspetani.com,topolelonocomputer.blogspot.com,travelingmedan.com,travpackerindonesia.com,umahdroid.com,upahkerja.com,upahminimum.com,vromedia.com,waktubaca.com,wartaterkini.news,warunginter.net,wawang.id,webbudi.com,webkeren.net,websiteedukasi.com,wendycode.com,winmahdi.com,worldwideartla.com,yesdok.com,yongganas.com,zotutorial.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+0.0.realodix,aditema.blogspot.com,agussuratna.net,ahzaa.net,alexanews.id,alimumedia.blogspot.com,amskyindonesia.com,andalpost.com,andrie.id,andronezia.com,anhar.my.id,antero.co,apabedanya.com,ardra.biz,arlinacode.com,arlinadzgn.com,asianami.com,baca.co.id,bacamalang.com,bachtiarmath.com,bahasagaul.id,bahasaindonesia.web.id,balimediakomputer.com,balipost.com,bangkitmedia.com,bangsiagian.id,banjirembun.com,barungeblog.com,beri.web.id,beritakalteng.com,beritasampit.co.id,besoksore.com,biodata-artis.com,bisablog.com,bisniz.id,blikomang.com,blogcozone.com,bloggermuntilan.com,blogrumahan.com,blogsecond.com,blogsetyaaji.com,bosinformasi.web.id,boss-ant.blogspot.com,bungasbanten.id,bungfrangki.com,candilkfb.blogspot.com,candilkuya.com,cara1001.com,caraono.blogspot.com,carasettingterbaru.blogspot.com,carasyarif.blogspot.com,carbonexpo.com,carigaji.com,champions.my.id,cilegonnews.com,cinemags.co.id,cocofleet.com,codeflare.net,comportcomputers.com,contohpantunpuisicerpen.blogspot.com,cop4sberita.blogspot.com,cyber88.co.id,daftarhewan.com,dailysocial.id,danirachmat.com,datadikdasmen.com,dedyakas.com,dewainside.blogspot.com,dewaplokis.com,dezige-in.blogspot.com,dinaspajak.com,dualipa.id,duniamu38.com,elmu-blog.blogspot.com,ewafebri.com,fabelia.com,fajrinfo.com,fakta7.com,ferisp.com,fitinline.com,fokusborneo.com,gamefinity.id,garudacitizen.com,geograpik.blogspot.com,goozir.com,gubukpintar.com,guntur.eu.org,gweone.com,hargacampur.com,heikamu.com,heru.my.id,hetanews.com,heyriad.com,hienzo.com,historia.id,hobbytekno.xyz,hotelier.id,hukum-hukum.com,huzenify.blogspot.com,id.theasianparent.com,idekevin.blogspot.com,igniel.com,ilmumemikatwanita.com,inblogspot.com,indosuara.com,iniesa.com,inikepri.com,invesnesia.com,irnanto.com,ismynr.xyz,isrul.com,jagoandzgn.com,jakartastudio.com,jatimtimes.com,jayaherlambang.com,jeripurba.com,jpspeeds.com,kaltaraaktual.com,kangghani.com,kanzalia.com,kartikaryani.com,keluargahamsa.com,kennedybrothers.id,kepuhkencanaarum.com,kherysuryawan.id,kiyandra.com,kodesjabar.com,komputermedia.com,koropak.co.id,ksbajaringan.co.id,kucingganteng.com,kucingmania.net,kucingpersia.co.id,kulcis.blogspot.com,kumpulanremaja.com,kurazone.net,kyndaerim.com,lesiaso.com,limone.id,linovhr.com,magelang1337.com,mahirngoding.blogspot.com,mahiroffice.com,malangnews.id,malangtimes.com,malasngeblog.com,malasngoding.com,malukuterkini.com,maribelajarcoding.com,masayip.com,maskoding.com,masmalven.com,masrana.com,massiswo.com,mastamvan.blogspot.com,mayuf.info,mditack.co.id,media-unu.com,mediachmad.blogspot.com,mediadayak.id,mediafima.com,memontum.com,mengapa.net,misterikisah.com,mistertekno.com,miuiarena.com,miuipedia.com,modoomarblecodex.site,mrmung.com,multimedialy.com,multimediatama.com,murianews.com,naminakiky.com,nandatrio.com,nganggurajah.blogspot.com,ngulikode.com,ngurusduit.com,ninoartikel.com,normalestari.blogspot.com,nusramedia.com,onoini.com,oom.web.id,overlordfree.web.id,paketsoundsystem.com,papuadalamberita.com,papuatimes.co.id,pondok-belajar.com,ponselsoak.com,porosilmu.com,psikologicinta.com,publikasimedia.com,rahmancyber.net,rajatips.com,rancax.blogspot.com,ratutips.com,reedpax.blogspot.com,regamedianews.com,rencanamu.id,renovrainbow.com,reviewaz.id,reviewsteknologiku.tech,rgamesstore.com,ridergalau.com,rotasi.co,rubrikkristen.com,rukim.id,rumahmaterial.com,rzkbdlhsn.blogspot.com,sairerinews.com,samleinad.com,santriema.blogspot.com,sasihsaum.com,satupiston.com,sayurbox.com,sedotcode.blogspot.com,senangrekreasi.com,seniartaja.blogspot.com,serba-serbi-bisa.blogspot.com,serieswans.com,seuntaipuisi.blogspot.com,simomotaro.com,sip-exim.co.id,siwalimanews.com,smsucapan.com,solusipro.com,sorodot.com,struckturcode.blogspot.com,strukturkode.blogspot.com,suarabekasi.id,suaraindonesianews.com,suarapapua.com,suararakyatborneo.com,suatekno.id,suckittrees.com,suhux.com,sukasukaamel.com,sumselupdate.com,suryadhi.web.id,susahtidur.my.id,suyachan.my.id,tajukflores.com,tamboenman.xyz,tanyadigital.com,tapanulipost.com,techno-ct2.eu.org,teknojempol.com,teknolalat.com,tentik.com,teropongnews.com,thebabelianchannel.site,tigaribu.net,tipspetani.com,topolelonocomputer.blogspot.com,travelingmedan.com,travpackerindonesia.com,umahdroid.com,upahkerja.com,upahminimum.com,vromedia.com,waktubaca.com,wartaterkini.news,warunginter.net,wawang.id,webbudi.com,webkeren.net,websiteedukasi.com,wendycode.com,winmahdi.com,worldwideartla.com,yesdok.com,yongganas.com,zotutorial.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
 0.0.realodix,agussuratna.net,alexanews.id,beritakalteng.com,beritasampit.co.id,bisniz.id,carbonexpo.com,champions.my.id,edumor.com,fokushidup.com,hargalift.com,ilmuveteriner.com,inikepri.com,keluargahamsa.com,kennedybrothers.id,kepuhkencanaarum.com,ksbajaringan.co.id,masayip.com,nokenlive.com,papuadalamberita.com,papuatimes.co.id,pelitanusantara.com,rubrikkristen.com,sairerinews.com,samleinad.com,senangrekreasi.com,siwalimanews.com,solusipro.com,suarabekasi.id,suararakyatborneo.com,sukasukaamel.com,sumselupdate.com,vromedia.com,worldwideartla.com,yongganas.com##+js(acis, disableSelection, reEnable)
 blogernas.com,unja.ac.id##+js(acis, disableselect, reEnable)
 gadgetidn.id,seputarkuliah.com##+js(aeld, /dragstart|selectstart/)
@@ -3965,7 +3971,7 @@ jfweb10.xyz,jfweb11.xyz,jfweb12.xyz,jfweb13.xyz,jfweb14.xyz,jfweb15.xyz,jfweb16.
 lk21.bio###Advertiser
 107.152.46.41,107.152.47.22,107.152.47.82,130.51.20.150###adf_tera
 putingfilm.com###btm_banner
-107.152.37.223,157.245.12.72,185.217.95.26,45.12.2.2,45.12.2.25,45.12.2.26,akashinime.pro,anikor.us,animasu.cc,anitoki.cyou,anixverse.com,isekaisubs.web.id,koredramaz.com,lendrive.web.id,mangakyo.org,oploverz.care,puanime.cyou,samehadaku.tech,sokuja.co,sokuja.org,wibudesu.co###close-teaser
+107.152.37.223,157.245.12.72,185.217.95.26,45.12.2.2,45.12.2.26,akashinime.pro,anikor.us,animasu.cc,anitoki.cyou,anixverse.com,isekaisubs.web.id,koredramaz.com,lendrive.web.id,mangakyo.org,oploverz.care,puanime.cyou,samehadaku.tech,sokuja.co,sokuja.org,wibudesu.co###close-teaser
 akashinime.pro###close-teaser-bottom
 kuramanime.xyz###close-teaser-footer
 akashinime.pro###close-teaser-top
@@ -4011,8 +4017,6 @@ bioskopvirtual.com##.footer1
 animekompi.web.id##.headads
 savefilm21.skin##.idmuvi-topplayer
 45.12.2.2,akashinime.pro,anichin.art,anichin.top,anikor.us,isekaisubs.web.id,kazefuri.net,nezunime.com,wibudesu.co##.kln
-45.12.2.25##.pd-ads
-45.12.2.25##.pda-ads
 45.141.56.22,45.141.56.28,beedrive.link##.popUpBannerBox
 185.99.135.228,38.242.147.83,drivenime.com##.stickywrap
 178.20.41.250##.vidads
@@ -4022,7 +4026,7 @@ manganime.in##[id*="ads"]
 144.91.116.224,192.99.246.145,51.222.170.221,51.79.157.90,51.79.160.87,51.79.160.95,51.79.226.152,51.79.244.17,bioskopkeren.bet,cinemaindo.me,d21.info,dunia21.green,filmapik.tips,ganool.page,movies21.cloud,nontonfilm.link,terbit21.green##[id*="banner"]
 176.119.30.88##a[href^="http://bit.ly/"] > img
 anoboy.monster##a[target*="blank"] > amp-img
-101.99.91.16,101.99.94.67,107.152.37.223,109.123.246.216,109.123.250.93,109.205.181.78,139.59.246.170,139.99.23.209,139.99.33.217,139.99.61.225,144.126.141.214,144.126.144.40,144.126.148.112,144.91.102.1,144.91.108.39,144.91.112.206,144.91.116.224,144.91.119.9,144.91.64.15,146.19.253.64,157.230.65.59,157.245.149.249,158.220.102.195,158.220.109.162,158.220.99.97,161.97.128.73,161.97.130.47,161.97.140.234,161.97.152.47,161.97.168.81,161.97.78.212,161.97.86.165,161.97.90.70,164.68.113.249,164.68.97.253,167.86.105.91,167.86.113.184,167.86.125.4,167.86.77.145,167.86.83.145,167.86.84.116,173.212.216.207,173.212.231.17,173.212.236.10,173.212.241.178,173.249.55.123,173.249.6.196,176.119.30.88,178.128.29.110,178.18.242.20,178.18.251.216,178.20.41.250,178.20.45.89,185.137.122.108,185.182.186.24,185.202.223.8,185.215.164.244,185.224.83.54,185.249.227.67,185.53.88.162,185.99.135.221,185.99.135.234,185.99.135.235,185.99.135.244,192.99.246.145,193.233.161.221,193.57.137.12,194.163.130.159,194.163.135.207,194.163.139.52,194.163.140.172,194.163.189.67,194.163.190.250,194.195.90.101,194.29.53.46,194.60.87.85,195.242.110.120,195.242.110.178,198.96.92.123,207.180.197.143,207.244.250.114,212.118.40.84,213.136.91.132,217.76.59.156,217.76.60.98,31.172.83.181,31.220.90.8,37.221.65.12,37.252.6.233,37.49.229.132,38.242.129.126,38.242.147.169,38.242.147.83,38.242.149.36,38.242.157.255,38.242.194.224,38.242.195.41,38.242.202.181,38.242.207.110,38.242.231.209,38.242.237.91,38.242.238.249,38.242.252.139,38.242.253.51,38.242.254.195,38.242.255.95,45.12.2.2,45.12.2.25,45.129.230.108,45.129.230.117,45.136.197.123,45.140.185.2,45.141.56.22,45.141.58.152,45.144.30.55,45.148.122.192,45.148.122.71,45.148.122.80,45.67.230.215,45.86.86.208,45.89.66.142,46.149.73.114,46.149.76.81,5.182.17.175,5.189.165.125,5.189.177.115,5.61.59.170,62.171.130.44,62.171.134.233,62.171.182.78,63.250.47.47,65.109.129.110,66.29.134.2,75.119.146.113,75.119.147.15,75.119.147.226,86.48.2.84,89.117.55.108,89.117.58.216,89.117.58.249,89.117.58.93,91.207.183.26,91.208.162.33,91.229.239.27,95.111.251.123,97.74.82.112,akashinime.pro,anikor.us,bioskop-nonton.ink,bioskopvirtual.com,boscinema21.com,bosku21.xyz,capitalnews360.com,cinemagaul.com,doroni.me,downloadbatch.me,drachindo.info,dunia21.green,dutamovie21.media,dutaxxi.com,geonime.com,gudangmovie21.pw,gudangmovies21.skin,idlixprime.com,indofilm.buzz,indofilm.icu,indoxxone.com,inonton.com,juraganmovie.club,kitanonton.net,koenime.com,kumpul21.xyz,kuramanime.xyz,layardrama21.rest,layarkaca21.cloud,layarkaca21.pictures,layarlebar88.com,layartancap21.org,lengket.com,lk21-id.com,lk21.bio,lk21.uno,lk21tv.lol,manganime.in,mataharimall.xyz,nanimex1.com,no-drak-or.site,nontonia.com,northgatevineyard.mobi,oploverz.care,oploverz.link,otakudesu.lol,pintu21.xyz,rahyunime.com,rebahin.tv,sinemaxxi.xyz,sohib21.vip,sokuja.co,sokuja.org,terbit21.green##a[target*="blank"] > img
+101.99.91.16,101.99.94.67,107.152.37.223,109.123.246.216,109.123.250.93,109.205.181.78,139.59.246.170,139.99.23.209,139.99.33.217,139.99.61.225,144.126.141.214,144.126.144.40,144.126.148.112,144.91.102.1,144.91.108.39,144.91.112.206,144.91.116.224,144.91.119.9,144.91.64.15,146.19.253.64,157.230.65.59,157.245.149.249,158.220.102.195,158.220.109.162,158.220.99.97,161.97.128.73,161.97.130.47,161.97.140.234,161.97.152.47,161.97.168.81,161.97.78.212,161.97.86.165,161.97.90.70,164.68.113.249,164.68.97.253,167.86.105.91,167.86.113.184,167.86.125.4,167.86.77.145,167.86.83.145,167.86.84.116,173.212.216.207,173.212.231.17,173.212.236.10,173.212.241.178,173.249.55.123,173.249.6.196,176.119.30.88,178.128.29.110,178.18.242.20,178.18.251.216,178.20.41.250,178.20.45.89,185.137.122.108,185.182.186.24,185.202.223.8,185.215.164.244,185.224.83.54,185.249.227.67,185.53.88.162,185.99.135.221,185.99.135.234,185.99.135.235,185.99.135.244,192.99.246.145,193.233.161.221,193.57.137.12,194.163.130.159,194.163.135.207,194.163.139.52,194.163.140.172,194.163.189.67,194.163.190.250,194.195.90.101,194.242.57.110,194.29.53.46,194.60.87.85,195.242.110.120,195.242.110.178,198.96.92.123,207.180.197.143,207.244.250.114,212.118.40.84,213.136.91.132,217.76.59.156,217.76.60.98,31.172.83.181,31.220.90.8,37.221.65.12,37.252.6.233,37.49.229.132,38.242.129.126,38.242.147.169,38.242.147.83,38.242.149.36,38.242.157.255,38.242.194.224,38.242.195.41,38.242.202.181,38.242.207.110,38.242.231.209,38.242.237.91,38.242.238.249,38.242.252.139,38.242.253.51,38.242.254.195,38.242.255.95,45.12.2.2,45.12.2.26,45.129.230.108,45.129.230.117,45.136.197.123,45.140.185.2,45.141.56.22,45.141.58.152,45.144.30.55,45.148.122.192,45.148.122.71,45.148.122.80,45.67.230.215,45.86.86.208,45.89.66.142,46.149.73.114,46.149.76.81,5.182.17.175,5.189.165.125,5.189.177.115,5.61.59.170,62.171.130.44,62.171.134.233,62.171.182.78,63.250.47.47,65.109.129.110,66.29.134.2,75.119.146.113,75.119.147.15,75.119.147.226,77.91.103.81,86.48.2.84,89.117.55.108,89.117.58.216,89.117.58.249,89.117.58.93,91.207.183.26,91.208.162.33,91.229.239.27,95.111.251.123,97.74.82.112,akashinime.pro,anikor.us,bioskop-nonton.ink,bioskopvirtual.com,boscinema21.com,bosku21.xyz,capitalnews360.com,cinemagaul.com,doroni.me,downloadbatch.me,drachindo.info,dunia21.green,dutamovie21.media,dutaxxi.com,geonime.com,gudangmovie21.pw,gudangmovies21.skin,idlixprime.com,indofilm.buzz,indofilm.icu,indoxxone.com,inonton.com,juraganmovie.club,kitanonton.site,koenime.com,kumpul21.xyz,kuramanime.xyz,layardrama21.rest,layarkaca21.cloud,layarkaca21.pictures,layarlebar88.com,layartancap21.org,lengket.com,lk21-id.com,lk21.bio,lk21.uno,lk21tv.lol,manganime.in,mataharimall.xyz,nanimex1.com,no-drak-or.site,nontonia.com,oploverz.care,oploverz.link,otakudesu.lol,pintu21.xyz,rahyunime.com,rebahin.tv,sinemaxxi.xyz,sohib21.vip,sokuja.co,sokuja.org,terbit21.green##a[target*="blank"] > img
 doroni.me##a[target*="blank"] > picture
 144.91.112.206,167.86.113.184,kebioskop21.top##a[target*="blank"] > video:remove()
 kawanfilm21.ink##a[target*="blank"][rel*="nofollow"]
@@ -4077,13 +4081,13 @@ lengket.com##+js(aopr, SmartPopunder)
 0.0.realodix##+js(aopr, showPopUpBanner)
 212.52.1.251,juraganmovie.club,sinemaxxi.xyz##+js(aopr, ujiPopups)
 0.0.realodix##+js(aopr, window.pum_popups)
-0.0.realodix,109.123.246.216,109.123.250.93,109.205.181.78,139.59.246.170,139.99.61.225,144.126.144.40,144.126.148.112,144.91.102.1,144.91.108.39,144.91.112.206,144.91.116.224,144.91.119.9,144.91.64.15,144.91.76.123,149.102.143.155,149.102.143.158,154.53.40.97,158.220.100.198,158.220.101.165,158.220.102.195,158.220.104.79,158.220.109.162,158.220.99.97,161.97.140.234,161.97.152.47,161.97.153.15,161.97.156.155,161.97.166.251,161.97.167.120,161.97.167.3,161.97.168.81,161.97.78.212,161.97.86.165,164.68.103.109,167.86.105.91,167.86.106.101,167.86.125.4,167.86.77.145,167.86.83.145,167.86.84.116,173.212.199.27,173.212.216.207,173.212.236.10,173.212.241.178,173.249.55.123,176.119.30.88,176.123.2.122,176.57.150.203,178.18.251.216,178.18.254.0,185.137.122.108,185.137.122.226,185.192.96.125,185.202.223.8,185.215.164.231,185.217.126.58,185.217.127.170,185.218.126.74,185.234.69.69,185.239.208.85,185.249.225.39,185.249.227.67,185.252.232.246,185.252.232.250,185.99.135.234,185.99.135.242,194.110.247.179,194.147.58.162,194.163.130.159,194.163.139.52,194.163.140.125,194.163.140.172,194.163.180.104,194.163.189.67,194.163.190.120,194.242.56.158,194.242.56.199,194.60.87.85,207.180.197.143,207.244.250.114,209.126.1.119,212.118.40.84,212.224.88.206,212.224.88.51,212.90.120.62,217.76.48.32,217.76.52.46,217.76.53.174,217.76.57.125,217.76.57.139,217.76.59.156,217.76.60.98,31.172.80.187,31.172.83.150,31.172.83.181,31.172.83.245,37.252.6.233,38.242.143.98,38.242.148.83,38.242.149.210,38.242.149.36,38.242.153.229,38.242.157.255,38.242.158.11,38.242.195.41,38.242.202.148,38.242.202.181,38.242.231.209,38.242.236.202,38.242.236.223,38.242.237.91,38.242.238.249,38.242.244.42,38.242.252.139,38.242.253.51,38.242.254.67,38.242.255.224,38.242.255.95,45.129.230.108,45.129.230.110,45.129.230.117,45.136.197.123,45.138.157.56,45.144.31.240,45.148.122.71,45.153.231.78,45.67.230.75,45.8.132.117,5.182.17.175,5.189.159.103,5.189.165.125,5.189.177.115,62.171.130.44,62.171.134.233,62.171.182.78,75.119.130.231,75.119.138.252,75.119.147.15,75.119.147.226,75.119.159.194,75.119.159.38,79.133.56.236,86.48.2.84,89.117.53.0,89.117.53.104,89.117.53.55,89.117.54.20,89.117.55.108,89.117.58.216,89.117.58.222,89.117.58.249,89.117.62.102,91.207.183.26,91.208.162.33,91.208.184.23,91.208.197.116,91.208.197.28,91.208.206.233,91.229.239.100,91.229.239.170,91.229.239.246,91.229.239.27,91.229.239.55,bioskopvirtual.com,clampschoolholic.web.id,huntersekai.download,layartancap21.org,manganime.in,negumo.com,nimegami.id,putingfilm.com,rebahan21.com,rebahin.tv,samehada.care,samehadaku.tech,sobatgo2.xyz,subindo.sbs##+js(window.open-defuser)
+0.0.realodix,109.123.246.216,109.123.250.93,109.205.181.78,139.59.246.170,139.99.61.225,144.126.144.40,144.126.148.112,144.91.102.1,144.91.108.39,144.91.112.206,144.91.116.224,144.91.119.9,144.91.64.15,144.91.76.123,149.102.143.155,149.102.143.158,154.53.40.97,158.220.100.198,158.220.101.165,158.220.102.195,158.220.104.79,158.220.109.162,158.220.99.97,161.97.140.234,161.97.152.47,161.97.153.15,161.97.156.155,161.97.166.251,161.97.167.120,161.97.167.3,161.97.168.81,161.97.78.212,161.97.86.165,164.68.103.109,167.86.105.91,167.86.106.101,167.86.125.4,167.86.77.145,167.86.83.145,167.86.84.116,173.212.199.27,173.212.216.207,173.212.236.10,173.212.241.178,173.249.55.123,176.119.30.88,176.123.2.122,176.57.150.203,178.18.251.216,178.18.254.0,185.137.122.108,185.137.122.226,185.192.96.125,185.202.223.8,185.215.164.231,185.217.126.58,185.217.127.170,185.218.126.74,185.234.69.69,185.239.208.85,185.249.225.39,185.249.227.67,185.252.232.246,185.252.232.250,185.99.135.234,185.99.135.242,194.110.247.179,194.147.58.162,194.163.130.159,194.163.139.52,194.163.140.125,194.163.140.172,194.163.180.104,194.163.189.67,194.163.190.120,194.242.56.158,194.242.56.199,194.60.87.85,207.180.197.143,207.244.250.114,209.126.1.119,212.118.40.84,212.224.88.206,212.224.88.51,212.90.120.62,217.76.48.32,217.76.52.46,217.76.53.174,217.76.57.125,217.76.57.139,217.76.59.156,217.76.60.98,31.172.80.187,31.172.83.150,31.172.83.181,31.172.83.245,37.252.6.233,38.242.143.98,38.242.148.83,38.242.149.210,38.242.149.36,38.242.153.229,38.242.157.255,38.242.158.11,38.242.195.41,38.242.202.148,38.242.202.181,38.242.231.209,38.242.236.202,38.242.236.223,38.242.237.91,38.242.238.249,38.242.244.42,38.242.252.139,38.242.253.51,38.242.254.67,38.242.255.224,38.242.255.95,45.129.230.108,45.129.230.110,45.129.230.117,45.136.197.123,45.138.157.56,45.144.31.240,45.148.122.71,45.153.231.78,45.67.230.75,45.8.132.117,5.182.17.175,5.189.159.103,5.189.165.125,5.189.177.115,62.171.130.44,62.171.134.233,62.171.182.78,75.119.130.231,75.119.138.252,75.119.147.15,75.119.147.226,75.119.159.194,75.119.159.38,79.133.56.236,86.48.2.84,89.117.53.0,89.117.53.104,89.117.53.55,89.117.54.20,89.117.55.108,89.117.58.216,89.117.58.222,89.117.58.249,89.117.62.102,91.207.183.26,91.208.162.33,91.208.184.23,91.208.197.116,91.208.197.28,91.208.206.233,91.229.239.100,91.229.239.170,91.229.239.246,91.229.239.27,91.229.239.55,animebatch.id,bioskopvirtual.com,clampschoolholic.web.id,huntersekai.download,layartancap21.org,manganime.in,negumo.com,nimegami.id,putingfilm.com,rebahan21.com,rebahin.tv,samehada.care,samehadaku.tech,sobatgo2.xyz,subindo.sbs##+js(window.open-defuser)
 putingfilm.com##+js(acis, parseInt, break;case $.)
 /wp-content/plugins/angwp/*$domain=dramabarat.com
 144.91.116.224,173.212.224.160,45.89.66.142###fadeinbox
 161.97.144.237###fb-fanbox
 meownime.my.id###hbfanback
-185.217.95.34,45.12.2.2,45.12.2.25,45.12.2.26,anichin.art,anikor.us,isekaisubs.web.id,minioppai.org,oploverz.care,sokuja.co,sokuja.org###overplay
+185.217.95.34,45.12.2.2,45.12.2.26,anichin.art,anikor.us,isekaisubs.web.id,minioppai.org,oploverz.care,sokuja.co,sokuja.org###overplay
 45.14.226.136###popbox:remove()
 manganime.in###tutupx
 63.250.47.47##.afc_popup
@@ -4098,7 +4102,7 @@ lk21official.pro,makimbo.xyz###ahmad
 samehada.care##+js(aopr, app_get_url)
 koenime.net,wibudesu.co##+js(aopr, app_url)
 lendrive.web.id,mikanime.com##+js(aopr, encodeURIComponent)
-animebatch.id,animebatchs.us,awsubs.xyz,maxnime.com,meownime.ai,nimegami.id##+js(aopr, go_url)
+animebatch.id,awsubs.xyz,maxnime.com,meownime.ai,nimegami.id##+js(aopr, go_url)
 batchkun.com,keinime.web.id##+js(aopr, protected_links)
 nekopoi.web.id##+js(aopr, showurl)
 niihen.com##+js(aopr, auto_safelink)
@@ -4127,6 +4131,7 @@ mangakita.net###btm_banner
 mangaid.click###catfish
 185.254.196.163,92.87.6.124,kanzenin.xyz,kiryuu.id,komik18.art,komikindo.cc,komiklokal.com,komikmanhwa.me,kumapoi.me,mangacanblog.com,mangakita.net,mangayaro.com,manhwaindo.icu,manhwalist.com,masterkomik.com,mihentai.com,realmscans.com,sektedoujin.cc,sheamanga.my.id,tukangkomik.com,westmanga.info###close-teaser
 sektekomik.xyz###fixedban
+kiryuu.id###sidebar > .widget_text:has-text(/ads/i):has(img[src*=".gif"])
 bacakomik.co###teaser3
 mangaku.fun,mangaku.my.id##.adv
 mangacanblog.com##.entry-content > center:has(> a > img)
@@ -4137,6 +4142,7 @@ overlordfree.web.id##.kzl
 komikindo.co##[href^="https://shope.ee/"]:has(> img)
 mangaku.my.id##[id*="ads"]
 mangatale.co##a > img[src$=".gif"]
+kiryuu.id##a[href*="?ref=kiryuu"] > img
 comicmoi.com,gudangkomik.com,komikhentai.space,komikxxx.hexat.com,manhwaindo.icu,sektedoujin.cc##a[target*="blank"] > img
 komiku.id##div:matches-css(text-align:center):has(> span:has-text(/iklan/i))
 mangaku.fun##img[data-original-width="905"][data-original-height="1300"]
@@ -4150,7 +4156,7 @@ komikindo.one##iframe[style*="width: 100% !important; height: 100% !important; o
 mangaindo.web.id##+js(acis, Math, zfgloaded)
 klikmanga.com,komikstation.co,sheamanga.my.id##+js(acis, document.querySelectorAll, popMagic)
 185.254.196.163##+js(aopr, generateURL1)
-animebatch.id,bacakomik.co,komik18.art,komikav.com,komikcast.io,komikcastid.com,komikindo.one,mangakita.net,mangaku.fun,mangaku.my.id,manhwaindo.icu,manhwaindo.id,masterkomik.com,ngomik.net,sektedoujin.cc,westmanga.info##+js(window.open-defuser)
+bacakomik.co,komik18.art,komikav.com,komikcast.io,komikcastid.com,komikindo.one,mangakita.net,mangaku.fun,mangaku.my.id,manhwaindo.icu,manhwaindo.id,masterkomik.com,ngomik.net,sektedoujin.cc,westmanga.info##+js(window.open-defuser)
 bacamanga.id,komikcastid.com,komikindo.one,komikstation.co,ngomik.net##+js(acis, JSON.parse, break;case $.)
 kiryuu.id##+js(acis, parseInt, break;case $.)
 212.32.226.234,komikindo.one,mangadewasa.com,mangahentai.me,mangaku.fun,mangaku.my.id##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
@@ -4265,7 +4271,7 @@ layarkc21.club,minioppai.org,pemersatu.link,site2853.live###close-teaser
 185.150.117.129,69.197.132.190###divbwh
 185.150.117.129,69.197.132.190###divkanan
 45.63.23.4,bokep8.icu,bokephub.store,bokepid.homes,bokeptub.store,bokepviral.store,bookep.store,simontok.bond###fixedban
-duduk123.com,forumitu.com,semprot.com###fixedbox
+duduk123.com,semprot.com###fixedbox
 minioppai.org###floatcenter
 gocrot.org###gocrot_i_b_3
 gocrot.org###gocrot_i_b_4
@@ -4276,10 +4282,10 @@ dunia121.blogspot.com###teaser3
 192.53.117.22###topbar
 site2853.live###tutupen
 ceritaseru.sextgem.com,potobugill.sextgem.com##._xt_ad_close_internal
-139.99.33.199,139.99.33.205,enak69.com,putritetangga.com##.banner-float-bottom
+139.99.33.199,139.99.33.205,139.99.33.223,enak69.com,putritetangga.com##.banner-float-bottom
 45.76.33.4##.bannersinglefot
 45.76.33.4##.box-banner
-128.199.158.141,128.199.187.59,bokepcrot.skin,bokepkita.me,bokepsex.sbs,bokepviral.website,inibokep.top,kamarbokep.xyz,kebokepanku.online,ruangbokep.co,ruangbokep.monster,ruangbokep.skin,ruangbokep.ws,sibokep.skin,streamingbokeponline.top##.btm_ban
+128.199.158.141,128.199.187.59,bokepcrot.skin,bokepkita.me,bokepsex.sbs,bokepviral.website,inibokep.top,kamarbokep.top,kebokepanku.online,ruangbokep.co,ruangbokep.monster,ruangbokep.skin,ruangbokep.ws,sibokep.skin,streamingbokeponline.sbs##.btm_ban
 66.29.129.121,66.29.129.161##.close-text
 178.128.114.78##.close_insGP
 nesaporn.com##.container p:has-text(Advertising)
@@ -4294,21 +4300,21 @@ stampin-de-va.blogspot.com##.seoquake-nofollow
 nekopoi.care##.smartbanner
 167.99.31.83##.under-player-ad
 ceritaseru.sextgem.com,potobugill.sextgem.com##[href*="_ad_"]
-0.0.realodix,134.209.131.45,139.99.119.236,139.99.33.195,139.99.33.199,139.99.33.205,139.99.33.207,139.99.33.210,139.99.33.213,139.99.33.214,139.99.33.221,139.99.33.222,139.99.51.105,144.126.154.75,149.248.60.75,155.138.155.177,159.89.198.98,159.89.214.26,159.89.221.2,162.0.210.6,162.213.249.120,164.68.127.15,167.99.31.83,178.128.114.78,178.128.220.28,178.128.62.5,192.53.117.22,206.189.88.35,216.155.135.144,28.199.174.22,45.63.23.4,45.76.33.4,45.89.67.165,51.81.115.212,66.29.129.121,66.29.129.161,66.29.144.178,69.197.132.190,75.119.147.12,alatestnews.com,avtub.click,bandarsub.com,bokep8.icu,bokepcrot.skin,bokephub.store,bokepid.homes,bokepindo.ink,bokepkita.me,bokepla.com,bokeponlinestreaming.wiki,bokepsex.sbs,bokepsin.club,bokepsub.com,bokeptub.store,bokepviral.space,bokepviral.store,bokepviral.website,bokepxxi.ink,bookep.store,boshedewasa.blogspot.com,c3ritam4l4m.live,cctvbokep.help,ceritabokepindonesia.com,ceritakiss.com,ceritapengenhot.blogspot.com,ceritaseru.sextgem.com,ceritasexindonesia.com,dalamhati.com,dunia121.blogspot.com,dutasex.icu,enak69.com,gocrot.org,herodex.org,indo-bioskop.blogspot.com,indojav.org,inibokep.help,inibokep.top,itubokep.mom,javsubindo.com,kamarbokep.xyz,kebokepanku.online,kumpulan-film-bokep.blogspot.com,layarkc21.club,malayporntube.net,malayxxx.net,melayuboleh.me,memekviral.mom,minioppai.org,moviemantap21.blogspot.com,mybokep.tv,myhdjav.me,nekopoi.care,nesaporn.com,omekin.tv,onbatch.my.id,paptt.com,photomemek.com,playbokep.lat,potobugill.sextgem.com,putri77.org,putritetangga.com,rajacoli.org,ruangbokep.monster,ruangbokep.skin,sangetube.art,sebokep.com,sibokep.skin,simanis77.com,simontok.bond,site2853.live,stampin-de-va.blogspot.com,streamingbokeponline.top,subindojav.cc,subindojav.com,terbaruxex.blogspot.com,videoviral.today,xn--bokeponline-zl9z.xyz,yabaisub.com##a[target*="blank"] > img
-duduk123.com,forumitu.com,semprot.com##div[class*="banner"]
+0.0.realodix,134.209.131.45,139.99.119.236,139.99.119.237,139.99.33.195,139.99.33.199,139.99.33.205,139.99.33.207,139.99.33.210,139.99.33.212,139.99.33.213,139.99.33.214,139.99.33.221,139.99.33.222,139.99.51.105,144.126.154.75,149.248.60.75,155.138.155.177,159.89.198.98,159.89.214.26,159.89.221.2,162.0.210.6,162.213.249.120,164.68.127.15,167.99.31.83,178.128.114.78,178.128.220.28,178.128.62.5,192.53.117.22,206.189.88.35,216.155.135.144,28.199.174.22,45.63.23.4,45.76.33.4,45.89.67.165,51.81.115.212,66.29.129.121,66.29.129.161,66.29.144.178,69.197.132.190,75.119.147.12,alatestnews.com,avtub.click,bandarsub.com,bokep8.icu,bokepcrot.skin,bokephub.store,bokepid.homes,bokepindo.ink,bokepkita.me,bokepla.com,bokeponlinestreaming.wiki,bokepsex.sbs,bokepsin.club,bokeptub.store,bokepviral.space,bokepviral.store,bokepviral.today,bokepviral.website,bokepxxi.mom,bookep.store,boshedewasa.blogspot.com,c3ritam4l4m.live,cctvbokep.help,ceritabokepindonesia.com,ceritakiss.com,ceritapengenhot.blogspot.com,ceritaseru.sextgem.com,ceritasexindonesia.com,dalamhati.com,dunia121.blogspot.com,dutasex.icu,enak69.com,gocrot.org,herodex.org,indo-bioskop.blogspot.com,indojav.org,inibokep.help,inibokep.top,itubokep.mom,javsubindo.com,kamarbokep.top,kebokepanku.online,kumpulan-film-bokep.blogspot.com,layarkc21.club,malayporntube.net,malayxxx.net,melayuboleh.me,memekviral.mom,minioppai.org,moviemantap21.blogspot.com,mybokep.tv,myhdjav.me,nekopoi.care,nesaporn.com,omekin.tv,onbatch.my.id,paptt.com,photomemek.com,playbokep.lat,potobugill.sextgem.com,putri77.org,putri78.com,putritetangga.com,rajacoli.org,ruangbokep.monster,ruangbokep.skin,sangetube.art,sebokep.com,sibokep.skin,simontok.bond,site2853.live,stampin-de-va.blogspot.com,streamingbokeponline.sbs,subindojav.cc,subindojav.com,terbaruxex.blogspot.com,vidio.fun,yabaisub.com##a[target*="blank"] > img
+duduk123.com,semprot.com##div[class*="banner"]
 nekopoi.care##div[class^="ads"]
-duduk123.com,forumitu.com,forumnya.com,semprot.com##div[class^="semprotnenenmontok_"]
-duduk123.com,forumitu.com,semprot.com##div[class^="semprotpokemon_"]
+duduk123.com,semprot.com##div[class^="semprotnenenmontok_"]
+duduk123.com,semprot.com##div[class^="semprotpokemon_"]
 149.248.60.75,45.76.33.4,75.119.147.12##div[id*="banner"]
 139.99.33.195,139.99.33.199,139.99.33.210,139.99.33.213,139.99.33.214,139.99.51.105,51.81.115.212,ceritabokepindonesia.com,photomemek.com##div[id^="adsic"]
-duduk123.com,forumitu.com,semprot.com##div[id^="semprotnenenmontok_"]
+duduk123.com,semprot.com##div[id^="semprotnenenmontok_"]
 bokepindoplay.net##div[style*="position: fixed;"]:has-text(ADBLOCK)
 nekopoi.care##img[alt*="iklan"]
 ceritaseru.sextgem.com,togefoto.com##.content a:style(display: inline !important;)
-duduk123.com,forumitu.com,semprot.com#@#img[width="500"][height="70"]
-duduk123.com,forumitu.com,semprot.com#@#img[width="550"][height="70"]
+duduk123.com,semprot.com#@#img[width="500"][height="70"]
+duduk123.com,semprot.com#@#img[width="550"][height="70"]
 kpopdeepfakes.*#@##banner_ad
-duduk123.com,forumitu.com,semprot.com##+js(acis, String.fromCharCode, ahli)
+duduk123.com,semprot.com##+js(acis, String.fromCharCode, ahli)
 0.0.realodix##+js(acis, addEventListener, DOMNodeRemoved)
 144.126.138.140##+js(acis, eval, replace)
 38.242.194.12##+js(aopr, adsBlocked)
@@ -4320,9 +4326,9 @@ minioppai.org##+js(acis, chp_ads_blocker_detector)
 173.249.8.3##+js(nostif, /showModal\(\)|chooseAction\(\)/)
 pemersatu.top#@##adright
 colmeklink.icu,pemersatu.top#@#.ad-content:not(:empty)
-duduk123.com,forumitu.com,semprot.com#@#.adVertical
+duduk123.com,semprot.com#@#.adVertical
 fap18.net#@#.ad_mobile
-duduk123.com,forumitu.com,semprot.com##.semprot_wizard:has-text(adblocker)
+duduk123.com,semprot.com##.semprot_wizard:has-text(adblocker)
 178.18.244.225###banner-popup
 iyottube.co###playerOverlay
 c3ritam4l4m.live###popup
@@ -4335,7 +4341,7 @@ dalamhati.com##+js(aopr, $, SPU_master)
 sebokep.com##+js(aopr, SGPB_POPUP_PARAMS)
 162.0.210.6,66.29.129.121,66.29.144.178,avtub.click,bokepsin.club,playbokep.lat##+js(aopr, ujiPopups)
 memekviral.mom##+js(aopr, window.pum_popups)
-0.0.realodix,128.199.141.12,128.199.158.141,128.199.174.22,128.199.175.251,128.199.187.59,139.99.33.195,139.99.33.199,139.99.33.205,139.99.33.207,139.99.33.210,139.99.33.213,139.99.33.214,139.99.51.105,144.126.138.140,144.126.154.75,149.248.60.75,154.12.229.9,154.53.44.57,155.138.155.177,157.230.193.154,157.230.41.236,159.89.198.98,159.89.214.26,159.89.221.2,161.97.125.183,162.0.210.6,162.213.249.120,164.68.127.15,167.172.7.30,167.99.31.83,173.249.8.3,178.128.114.78,178.128.220.28,178.128.25.172,178.128.62.5,185.193.67.184,194.163.129.165,194.163.153.227,194.61.28.84,206.189.33.151,206.189.88.35,207.244.225.48,207.244.250.35,212.90.120.57,38.242.140.59,45.133.203.220,45.133.203.223,45.63.23.4,45.76.33.4,51.81.115.212,62.171.164.179,63.141.243.30,66.29.129.121,66.29.129.161,66.29.144.178,69.197.132.190,75.119.147.12,75.119.155.196,alatestnews.com,autoinsurancenim.xyz,avtub.click,bandarsub.com,bokep8.icu,bokepcrot.skin,bokepindo.ink,bokepindonesiaviral.bio,bokepindoviral.link,bokepkita.me,bokepla.com,bokeponlinestreaming.wiki,bokepsex.sbs,bokepsin.club,bokepsub.com,bokepviral.space,bokepviral.website,cambaby.live,cctvbokep.help,ceritabokepindonesia.com,ceritaseru.sextgem.com,ceritasex16.com,dalamhati.com,dood.homes,dunia121.blogspot.com,dutasex.icu,erocafe.net,gocrot.org,herodex.org,indo-bioskop.blogspot.com,indoviral.xyz,indoxxibokep.com,inibokep.top,javsubindo.com,javxxi.sbs,jilboob.top,kamarbokep.xyz,kebokepanku.online,kumpulan-film-bokep.blogspot.com,layarkc21.club,malayporntube.net,malayxxx.net,melayuboleh.me,memekviral.mom,minioppai.org,moviemantap21.blogspot.com,mybokep.tv,myhdjav.me,nekopoi.care,nesaporn.com,onbatch.my.id,paptt.com,photomemek.com,playbokep.cam,playbokep.lat,playbokep.sbs,pornogrim.click,potobugill.sextgem.com,putri77.org,rajacoli.org,ruangbokep.monster,ruangbokep.skin,sangetube.art,sibokep.skin,simontok.bond,site2853.live,stampin-de-va.blogspot.com,streamingbokeponline.top,subindojav.cc,subindojav.com,videoviral.today,xbokepfb.net,xn--bokeponline-zl9z.xyz,xvideobokepgratis.info,yabaisub.com##+js(window.open-defuser)
+0.0.realodix,128.199.141.12,128.199.158.141,128.199.174.22,128.199.175.251,128.199.187.59,139.99.33.195,139.99.33.199,139.99.33.205,139.99.33.207,139.99.33.210,139.99.33.213,139.99.33.214,139.99.51.105,144.126.138.140,144.126.154.75,149.248.60.75,154.12.229.9,154.53.44.57,155.138.155.177,157.230.193.154,157.230.41.236,159.89.198.98,159.89.214.26,159.89.221.2,161.97.125.183,162.0.210.6,162.213.249.120,164.68.127.15,167.172.7.30,167.99.31.83,173.249.8.3,178.128.114.78,178.128.220.28,178.128.25.172,178.128.62.5,185.193.67.184,194.163.129.165,194.163.153.227,194.61.28.84,206.189.33.151,206.189.88.35,207.244.225.48,207.244.250.35,212.90.120.57,38.242.140.59,45.133.203.220,45.133.203.223,45.63.23.4,45.76.33.4,51.81.115.212,62.171.164.179,63.141.243.30,66.29.129.121,66.29.129.161,66.29.144.178,69.197.132.190,75.119.147.12,75.119.155.196,alatestnews.com,autoinsurancenim.xyz,avtub.click,bandarsub.com,bokep8.icu,bokepcrot.skin,bokepindo.ink,bokepindonesiaviral.bio,bokepindoviral.link,bokepkita.me,bokepla.com,bokeponlinestreaming.wiki,bokepsex.sbs,bokepsin.club,bokepviral.space,bokepviral.today,bokepviral.website,cambaby.live,cctvbokep.help,ceritabokepindonesia.com,ceritaseru.sextgem.com,ceritasex16.com,dalamhati.com,dood.homes,dunia121.blogspot.com,dutasex.icu,erocafe.net,gocrot.org,herodex.org,indo-bioskop.blogspot.com,indo-javxxi.com,indoviral.xyz,indoxxibokep.com,inibokep.top,javsubindo.com,jilboob.top,kamarbokep.top,kebokepanku.online,kumpulan-film-bokep.blogspot.com,layarkc21.club,malayporntube.net,malayxxx.net,melayuboleh.me,memekviral.mom,minioppai.org,moviemantap21.blogspot.com,mybokep.tv,myhdjav.me,nekopoi.care,nesaporn.com,onbatch.my.id,paptt.com,photomemek.com,playbokep.cam,playbokep.lat,playbokep.sbs,pornogrim.click,potobugill.sextgem.com,putri77.org,rajacoli.org,ruangbokep.monster,ruangbokep.skin,sangetube.art,sibokep.skin,simontok.bond,site2853.live,stampin-de-va.blogspot.com,streamingbokeponline.sbs,subindojav.cc,subindojav.com,vidio.fun,xbokepfb.net,xvideobokepgratis.info,yabaisub.com##+js(window.open-defuser)
 embedmanager.xyz##+js(window.open-defuser)
 kumpulan-film-bokep.blogspot.com###trickstoo-box
 194.163.153.227,207.244.225.48,207.244.250.35,75.119.147.12,herodex.org##+js(aopr, popup_custom_data)
@@ -4344,7 +4350,7 @@ bokepindoplay.net,ratihbugil.com##+js(aeld, contextmenu)
 erocafe.net##+js(aopr, document.onselectstart)
 erocafe.net##+js(aopr, protected_links)
 ||livechatinc.com^$image,domain=artikeljandamuda.blogspot.com|dalamhati.com
-duduk123.com,forumitu.com,semprot.com##.js-post:has-text(Banned)
+duduk123.com,semprot.com##.js-post:has-text(Banned)
 /luxury_hd_dvd_hd.mp4$media
 ||imgur.com/PptFxqt.$image
 /*capsa*.gif$image
@@ -4585,6 +4591,11 @@ _sbobet.$image
 _sbobet_$image
 _topbandar_$image
 ||bokep8.icu^$3p,css,image,script
+###adsic364x90-bokep1
+###adsic3bokep
+###adsic728VPN
+###adsic728crita
+###adsic970bokep
 ##.ads-1xbet
 ##[href*="luxury111" i]
 ##[href*="luxury138" i]
