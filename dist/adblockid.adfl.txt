@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.7.52
+! Version: 23.7.53
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Jul 2023 03:09 UTC
+! Last modified: 15 Jul 2023 03:31 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4037,7 +4037,8 @@ animesaku.com##+js(aopr, tie.ad_blocker_detector)
 doramaflix.com,dramazon.id,driverays.com,koenime.com##+js(nobab)
 shinobijawi.id##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
 anidraw.net##+js(set, config.adblock, null)
-doroni.me##+js(set-constant, window.showAdss, true)
+yurasu.xyz##+js(set, showAds, true)
+doroni.me##+js(set, window.showAdss, true)
 162.212.152.160,164.68.113.249,193.233.161.221,downloadbatch.me,layardrama21.rest##+js(acis, chp_ads_blocker_detector)
 layardrama21.rest##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
 0.0.realodix##div[style*="position: fixed;"]:has-text(ADBLOCK)
@@ -4056,6 +4057,7 @@ no-drak-or.site#@#.idmuvi-topbanner-aftermenu
 139.99.33.218#@#.jw-ad
 139.99.33.218#@#.jw-ad-media-container
 @@-cpm-ads.$domain=doroni.me
+yurasu.xyz#@#[class^="div-gpt-ad"]
 @@||ryuukoi.web.id^$ghide,badfilter
 0.0.realodix##+js(acis, Math, break)
 dramaluv.com##+js(acis, decodeURI, decodeURIComponent)
