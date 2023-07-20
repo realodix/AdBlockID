@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
-! Version: 23.7.77
+! Version: 23.7.78
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Jul 2023 15:38 UTC
+! Last modified: 20 Jul 2023 18:26 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
 .id^*/adv-$domain=~adv.kompas.id
 .id^*/adv.$domain=~iklaninter.net|~ngiklan.gratis
 /banner-iklan-$domain=~ngiklan.gratis
-/iklan/*$image,domain=~1rajaiklan.com|~anjingk9.com|~bagusiklan.com|~iklanbaris.org|~iklanbarulive.com|~iklangratis88.com|~jualsewakios.com|~jualsewaruko.com|~mediaiklan.biz.id|~pettoto.com|~pusatiklan.co.id|~sebariklanmassalpremium.com|~sewa-apartemen.net
+/iklan/*$image,domain=~1rajaiklan.com|~anjingk9.com|~bagusiklan.com|~iklanbaris.org|~iklanbarulive.com|~iklangratis88.com|~jualsewakios.com|~jualsewaruko.com|~mediaiklan.biz.id|~pettoto.com|~pusatiklan.co.id|~sebar.onokae.com|~sebariklanmassalpremium.com|~sewa-apartemen.net
 /ngiklan/*$image,domain=~iklaninter.net|~ngiklan.gratis
 /smartfren/ads.
 -ad123-
@@ -1843,7 +1843,7 @@ _TimAds_$image
 /banner-$image,domain=balapmotor.net|barometerjatim.com|bmspeed7.com|dailypost.id|djournalist.com|figurnews.com|gaikindo.or.id|gemasulawesi.com|indonesiadaily.co.id|infosulsel.com|jagoankode.com|kabarbenggawi.com|kabarmedan.com|kanalkalimantan.com|kliksulsel.com|lintaskepri.com|manadoline.com|manadonews.co.id|mariodevan.com|mediaasuransinews.co.id|metrokepri.com|pedomanrakyat.com|pertamax7.com|poskomalut.com|potret24.com|presmedia.id|rakyatbengkulu.com|revolusinews.com|rodanesia.com|samuderakepri.co.id|sinjai.info|speednews-manado.com|suaracelebes.com|sukoharjonews.com|sumselupdate.com|swarakaltim.com|swarakawanua.com|theiconomics.com|trotoar.id|viralberita.net|wideazone.com
 /banner.$image,domain=prokepri.com
 /banner/*$image,domain=jagobengkel.com|kapanlagi.com|maenhp.com
-/banner_$image,domain=inijabar.com|radarbanten.co.id|ruparupa.com|seputarpapua.com|suarabaru.id
+/banner_$image,domain=inijabar.com|malikush.blogspot.com|radarbanten.co.id|ruparupa.com|seputarpapua.com|suarabaru.id
 /banners/*$image,domain=jelajahcoin.com
 /campaigns_banners/*$image,domain=pcplus.co.id
 /flyer-$image,domain=metrum.co.id
@@ -3015,7 +3015,7 @@ priceza.co.id###mobilePopupBtm
 m.kaskus.co.id##.threadDetail a[target="_blank"] img[src^="https://s.kaskus.id/images/"]
 solopos.com##.adsPushdown
 radarnusantara.com###content-section-wide-bottom .widget:has(.widget-content > img)
-bentengsumbar.com,dhean.news,harianmerdeka.id,iluvtari.com,kabarviral79.com,sukabuminews.net###sidebar .widget:has(.widget-content > a > img)
+bentengsumbar.com,dhean.news,harianmerdeka.id,iluvtari.com,kabarviral79.com,malikush.blogspot.com,sukabuminews.net###sidebar .widget:has(.widget-content > a > img)
 bentengsumbar.com,kabarviral79.com,radarnusantara.com###sidebar .widget:has(.widget-content > img)
 visi.news##.custom-html-widget
 lintasbali.com##.elementor-widget :has(.elementor-widget-container > img)
@@ -3064,8 +3064,8 @@ idpost.co.id,matanusantara.com,nusantaratimur.com##.widget img[id$="_img"]
 habanusantara.net,sumsel.news##.widget p > img
 kamikamu.co.id##.widget p:has(> a[target="_blank"] > img)
 baperanews.com##.widget-body > p > img
-abdumar.com,galerikitabkuning.com,kabarmetro.co.id,kabartujuhsatu.news,keprinews.com,kliksulsel.com,lalulintaskriminalitas.com##.widget-content .separator > a > img
-dhean.news,inhupost.com,mandalikapost.com,samudranews.com,suarakuningan.com##.widget-content > a > img
+abdumar.com,galerikitabkuning.com,kabarmetro.co.id,kabartujuhsatu.news,keprinews.com,kliksulsel.com,lalulintaskriminalitas.com,onlinepantura.com##.widget-content .separator > a > img
+dhean.news,inhupost.com,mandalikapost.com,onlinepantura.com,samudranews.com,suarakuningan.com##.widget-content > a > img
 dharapos.com,kompastimur.com,mandalikapost.com,radarberitanasional.com,snipers.news##.widget-content > img
 mandalikapost.com##.widget-content:has(> center > a > img)
 polisinews.com##.widget-footer .widget:has(> img)
@@ -3241,7 +3241,7 @@ ciriciripohon.com##article .adsbygoogle:upward(center)
 bogordaily.net##article .code-block:matches-css(text-align: center):has(a[href] > img)
 cnnindonesia.com##article .paradetail:has-text(/adv/i)
 buruhtinta.co.id,sinergianews.com,sitnas.id##center:has(> div:has(script))
-klubpria.com##center:has([id^="div-gpt-ad"])
+bkppkutim.com##center:has(div > .adsbygoogle)
 sukabumiupdate.com##center:has-text(/adv/i)
 kompas.id##div.justify-center:has([src^="https://ads.kompas.id"])
 disway.id##div:has(> .adsbyadop)
@@ -3408,6 +3408,7 @@ saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 labkom.co.id##+js(aopr, tdBlock)
 netq.me##+js(no-fetch-if, clarity.ms)
 anakteknik.co.id,howdy.id,obengplus.com##+js(no-fetch-if, pagead2.googlesyndication.com)
+wendycode.com##+js(no-setTimeout-if, _0x, 2000)
 heyapakabar.com,jagoanssh.com,komikmoe.web.id,linkconfig.com,nafaskuda.com,submitclimb.com##+js(nobab)
 kopetnews.id##+js(noeval-if, adsBlocked)
 idlegionoob.com,surgatekno.com##+js(nofab)
@@ -3423,15 +3424,15 @@ bardimin.com,teknoding.com##+js(aost, String.prototype.charCodeAt, ai_)
 inwepo.co,stokcoding.com##+js(set, ai_adb_detected, noopFunc)
 kemendikbud.co.id,rukim.id##+js(set, tie.ad_blocker_detector, '')
 beritanasional.id,builder.id,deras.id,surgatekno.com,teknotimes.id##+js(set, tie.ad_blocker_detector, null)
-wendycode.com##+js(aopr, wcadbwp)
 /antiblockersjoss.$image
 @@-cpm-ads.$domain=moenesia.com
 ||ads.maskoding.com/ads.js$script,redirect=noop.js
 ||bloggerku.com/antiadblock/$script
+||mikbotam.net/detector/$script
 ||mycoding.id/assets/seosecret/seosecretidnblockads.js
 ||ninura.com/main/js/antiadblock.js
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,from=blogcozone.com|kang-ismet.com
 ||tts.voiceoftext.com/javascript/ad-info-message/main.js$3p,script
-/px.gif?$image,redirect-rule=1x1.gif
 ||fundingchoicesmessages.google.com^$3p
 filecheck.web.id#@##contentAd
 gadgetplus.my.id#@#.Adsense
@@ -3444,6 +3445,7 @@ beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[clas
 monitorteknologi.com##.penci-google-adsense-2
 ##.demo-wrapper[style="display:none;"] + div.fadeInDown[id]
 ##body > div.demo-wrapper[style="display:none;"] + div[id][class]
+/px.gif?$image,redirect-rule=1x1.gif
 /images/ads.$image,redirect-rule=1x1.gif
 @@/\.(gif|jpe?g|png|webp)#(\/?.+)?(\/(ad)s?\/|\/ad-)/
 @@/dh-anti-adblocker/assets/js/ads-prebid.js
@@ -3527,6 +3529,7 @@ _adblock_killer.
 @@||iklankita.id^$ghide
 @@||iklanmania.com^$ghide
 @@||iklanug.id^$ghide
+@@||karyaiklan.co.id^$ghide
 @@||lawu88iklan.id^$ghide
 @@||mediaiklan.biz.id^$ghide
 @@||mediaiklan.indonesianetworks.com^$ghide
@@ -3573,6 +3576,7 @@ jualo.com#@#.ad-title
 @@||iklanjitu.jawapos.com/media/$image,domain=iklanjitu.jawapos.com
 @@||iklanku.shopee.co.id/img/$1p,image
 @@||jualo.com/images/$1p,image
+@@||karir-production.nos.jkt-1.neo.id/assets/*$image,domain=karir.com
 @@||pasangiklan.com/pi_b/img/$1p,image
 @@||resolusiweb.com/images/$1p,image
 @@||resolusiweb.com/img/$1p,image
@@ -3705,6 +3709,7 @@ soloabadi.com##.elementor-column:has-text(/video terkini/i):remove()
 carisinyal.com,dailysia.com,fajar.co.id,herworld.co.id,islampos.com,jalantikus.com,jawapos.com,pramborsfm.com##.gliaplayer-container:remove()
 baliportalnews.com##.home .td_block_video_playlist:remove()
 tribunnewswiki.com##.ivideo_box:remove()
+kompas.tv##.kgnowGate:remove()
 sindonews.com##.left-section .vidwrap:remove()
 bola.com,bola.net,dream.co.id,kapanlagi.com,liputan6.com,merdeka.com##.nativescrollingKLY:has(.nativescrollingKLY-sticky-inner-video):remove()
 kapanlagi.com##.nativevideosiframe-loader:remove()
