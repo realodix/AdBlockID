@@ -1,13 +1,14 @@
 [Adblock Plus 2.0]
-! Version: 23.7.103
+! Version: 23.7.104
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Jul 2023 19:08 UTC
+! Last modified: 25 Jul 2023 19:15 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
 .id^*/adv-$domain=~adv.kompas.id
 .id^*/adv.$domain=~iklaninter.net|~ngiklan.gratis
+.id^*/bnr/$domain=~kalbarprov.go.id
 /banner-iklan-$domain=~ngiklan.gratis
 /iklan/*$image,domain=~1rajaiklan.com|~anjingk9.com|~bagusiklan.com|~iklanbaris.org|~iklanbarulive.com|~iklangratis88.com|~jualsewakios.com|~jualsewaruko.com|~mediaiklan.biz.id|~pettoto.com|~pusatiklan.co.id|~sebar.onokae.com|~sebariklanmassalpremium.com|~sewa-apartemen.net
 /ngiklan/*$image,domain=~iklaninter.net|~ngiklan.gratis
@@ -57,7 +58,6 @@
 .id^*/affil/
 .id^*/bads/
 .id^*/bannery/
-.id^*/bnr/
 .id^*/doubleclick/
 .id^*/exad/
 .id^*/gads/
@@ -3593,6 +3593,7 @@ jualo.com#@#.ad-title
 @@||iklanjitu.jawapos.com/media/$image,domain=iklanjitu.jawapos.com
 @@||iklanku.shopee.co.id/img/$1p,image
 @@||jualo.com/images/$1p,image
+@@||kalbarprov.go.id/public/assets/images/bnr/$1p,image
 @@||karir-production.nos.jkt-1.neo.id/assets/*$image,domain=karir.com
 @@||pasangiklan.com/pi_b/img/$1p,image
 @@||resolusiweb.com/images/$1p,image
