@@ -55,7 +55,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 > 💡 Pastikan Anda hanya memasang AdBlockID di AdGuard dan uBlock Origin ya guys. Alasannya cukup sepele, karena saat ini sebagian besar fitur ajaib yang ada di dalam AdBlockID, hanya dapat dikeluarkan oleh AdGuard dan uBlock Origin saja 😃
 
 #### Desktop
-1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/en-us/edge), etc)
+1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/edge), etc)
 2. *Install* salah satu ekstensi dari berikut ini: [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock#installation).
 3. Install AdBlockID
    - **AdGuard**: Cukup aktifkan AdBlockID di bagian *language-specific*.
