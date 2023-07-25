@@ -16,7 +16,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 ## Manfaat Yang Anda Dapatkan
 1. **Lebih dari 4.000 situs** web telah tercover secara spesifik, termasuk di dalamnya ratusan portal berita, situs nonton dan baca komik.
 2. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
-3. **anti-blocker-defusing**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
+3. **Anti-blocker-defusing**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
 4. **Bypass Mouse/Key Limitations**: Melumpuhkan beberapa batasan di halaman web, seperti tidak bisa klik kanan, tidak bisa copy artikel, dll.
 5. **Disable Safelink**: Mau download, eh malah masuk ke halaman safelink? Lupain deh!
 6. **Disable Automated Link Attribution**: Copy paste artikel malah muncul link sumbernya? Lupain deh!
