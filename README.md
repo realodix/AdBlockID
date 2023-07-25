@@ -14,7 +14,7 @@
 AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia dan Malaysia, sebagai pelengkap filter Internasional seperti [EasyList](https://github.com/easylist/easylist), [uBlock filters](https://github.com/uBlockOrigin/uAssets) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters). Dirancang khusus untuk membuat Anda lebih nyaman dalam berselancar di internet.
 
 ## Manfaat Yang Anda Dapatkan
-1. **Lebih dari 3.800 situs** web telah tercover secara spesifik, termasuk di dalamnya ratusan portal berita, situs nonton dan baca komik.
+1. **Lebih dari 4.000 situs** web telah tercover secara spesifik, termasuk di dalamnya ratusan portal berita, situs nonton dan baca komik.
 2. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
 3. **anti-blocker-defusing**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
 4. **Bypass Mouse/Key Limitations**: Melumpuhkan beberapa batasan di halaman web, seperti tidak bisa klik kanan, tidak bisa copy artikel, dll.
