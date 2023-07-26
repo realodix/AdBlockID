@@ -4,9 +4,12 @@
 !!
 ||p.jwpcdn.com/*/vast.js$script
 !
-/^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}$/$3p,match-case,script,xhr
 !
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$doc,frame,popup
+!
+/\/assets\/jquery\/jquery-\d\.\d\.(?:\d\.)?min\.js\?(?:v=2)?&?type=(?:adult|mainstream)$/$1p,script
+!
+/^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}$/$3p,match-case,script,xhr
 ! regex
 /[0-9a-f]{32}\/invoke\.js/$3p,script
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$3p,script,xhr
