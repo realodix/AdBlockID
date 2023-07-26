@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.7.109
+! Version: 23.7.110
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Jul 2023 06:44 UTC
+! Last modified: 26 Jul 2023 06:57 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2980,6 +2980,7 @@ forumterkininews.id,infosumut.id,konstruksimedia.com,mzknews.co,rumaysho.com,war
 masherul.com##img[width="728px"][height="90px"]
 fokusatu.com##img[width="730"][height="90"]
 jogya.com##img[width="770"][height="200"]
+formasnews.com##img[width="780"][height="96"]
 dewatanews.com##img[width="795"][height="150"]
 jogya.com##img[width="810"][height="227"]
 wartaniaga.com##img[width="970"][height="120"]
@@ -3705,6 +3706,7 @@ hops.id,uzone.id###play3-js-sdk:remove()
 revivaltv.id###play3-sdk-iframe:remove()
 katadata.co.id###video_in_article:remove()
 bangsaonline.com##.add-banner:has(.embed-responsive):remove()
+republika.co.id##.article-news .dailymotion-player-root:remove()
 liputan6.com##.article-readpage--section .boost-video:remove()
 metrum.co.id##.audio5_html5_sticky:remove()
 investor.id##.body-content .embed-responsive:remove()
@@ -3740,7 +3742,7 @@ indopos.co.id##.wpb_wrapper > p > video[autoplay="autoplay"]:remove()
 parapuan.co,sonora.id##[class^="rVideo-"]:remove()
 suara.com##article #dailymotion-widget:remove()
 cnbcindonesia.com##article .autovideocnbc:remove()
-instingjurnalis.com##article .dailymotion-player-root:remove()
+instingjurnalis.com,republika.co.id##article .dailymotion-player-root:remove()
 riauonline.co.id##article .embed-responsive:remove()
 bola.com##article .js-full-iframe-vidio:remove()
 detik.com##article .sisip_video_ds:remove()
