@@ -41,20 +41,7 @@ ELEMENTPATTERN = re.compile(
     r"^([^\/\*\|\@\"\!]*?)(\$\@?\$|##\@?\$|#[\@\?]?#\+?)(.*)$")
 OPTIONPATTERN = re.compile(
     r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
-RE_OPTION_REDIRECT = re.compile(r"""
-    ^(.+)?
-    (redirect(-rule)?)=
-    (
-        1x1.gif|(2x2|3x2|32x32).png
-        |noop-0.1s.mp3|noop-0.5s.mp3|noop-1s.mp4
-        |noop.html|noop.js|noop.txt|noopcss
-        |ampproject_v0.js|nofab.js|fuckadblock.js-3.2.0
-        |google-analytics_(cx_api.js|analytics.js|ga.js)
-        |googlesyndication_adsbygoogle.js|googletagmanager_gtm.js|googletagservices_gpt.js
-        |click2load.html
-    )
-    (,.+)?$
-""", re.X)
+
 # Compile regular expressions that match element tags and
 # pseudo classes and strings and tree selectors;
 # "@" indicates either the beginning or the end of a selector
@@ -75,16 +62,46 @@ BLANKPATTERN = re.compile(r"^\s*$")
 # Compile a regular expression that describes uBO's scriptlets pattern
 UBO_JS_PATTERN = re.compile(r"^@js\(")
 
-# List all uBlock Origin (excepting: domain, removeparam, denyallow, from, method; which is handled separately)
+# List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, denyallow, from, method and to, which is handled separately)
 KNOWNOPTIONS = (
-    '_', 'all', 'badfilter', 'important', 'other', 'empty',
-    '1p', 'first-party', 'strict1p', '3p', 'third-party', 'strict3p',
-    'cname', 'css', 'stylesheet', 'csp', 'doc', 'document', 'domain', 'ehide', 'elemhide',
-    'font', 'frame', 'generichide','ghide', 'header', 'image', 'inline-font',
-    'inline-script', 'match-case', 'media', 'mp4', 'object', 'ping', 'popunder',
-    'popup', 'script', 'shide', 'specifichide', 'subdocument', 'to', 'websocket', 'xhr',
-    'xmlhttprequest'
+    "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping", "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
+    "rewrite=abp-resource:blank-css", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-text", "rewrite=abp-resource:1x1-transparent-gif", "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png",
+
+    # uBlock Origin
+    "_", "1p", "3p", "all", "badfilter", "cname", "csp", "css", "doc", "ehide", "empty", "first-party", "frame",
+    "ghide", "header", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder",
+    "shide", "specifichide", "xhr", "redirect", "redirect-rule", "strict1p", "strict3p",
+
+    # AdGuard
+    "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock", "removeparam"
 )
+
+# Compile regex with all valid redirect resources
+# (https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources,
+# https://github.com/gorhill/uBlock/wiki/Resources-Library#available-url-specific-sanitized-redirect-resources-surrogates
+# and aliases from https://github.com/gorhill/uBlock/blob/master/src/js/redirect-resources.js)
+RE_OPTION_REDIRECT = re.compile(r"""
+    (
+    1x1(-transparent)?\.gif|(2x2|3x2|32x32)(-transparent)?.png|
+    empty|noopframe|noopjs|abp-resource:blank-js|nooptext|
+    noop\.(css|html|js|txt)|
+    noop-(0\.1|0\.5)s\.mp3|noopmp3-0.1s|
+    noop-1s\.mp4|noopmp4-1s|
+    none|click2load\.html|
+    (addthis_widget|addthis\.com\/addthis_widget|amazon_ads|amazon-adsystem\.com\/aax2\/amzn_ads|amazon_apstag|
+    doubleclick_instream_ad_status|doubleclick\.net\/instream\/ad_status|
+    google-analytics_analytics|google-analytics\.com\/analytics|googletagmanager_gtm|googletagmanager\.com\/gtm|
+    google-analytics_cx_api|google-analytics\.com\/cx\/api|
+    google-analytics_ga|google-analytics\.com\/ga|
+    google-analytics_inpage_linkid|google-analytics\.com\/inpage_linkid|
+    google-ima|google-ima3|
+    googlesyndication_adsbygoogle|googlesyndication\.com\/adsbygoogle|googlesyndication-adsbygoogle|
+    googletagservices_gpt|googletagservices\.com\/gpt|googletagservices-gpt|
+    hd-main|monkeybroker|d3pkae9owd2lcf\.cloudfront\.net\/mb105|
+    outbrain-widget|widgets\.outbrain.com\/outbrain|
+    scorecardresearch_beacon|scorecardresearch\.com\/beacon.)(\.js)?
+    )(:\d+)?$
+""", re.X)
 
 
 def start():
@@ -268,6 +285,8 @@ def filtertidy(filterin, filename):
                 break
 
     for option in optionlist:
+        optionName = option.split("=", 1)[0].strip("~")
+        optionLength = len(optionName) + 1
         # Detect and separate domain options
         if option[0:7] == "domain=":
             domainlist.extend(option[7:].split("|"))
@@ -293,8 +312,15 @@ def filtertidy(filterin, filename):
                 print(m)
             to_list.extend(option[3:].split("|"))
             removeentries.append(option)
-        elif re.match(RE_OPTION_REDIRECT, option):
+        elif optionName in ("redirect", "redirect-rule"):
             redirectlist.append(option)
+            redirectResource = option[optionLength:].split(":")[0]
+            if not re.match(RE_OPTION_REDIRECT, redirectResource):
+                m = f'- Redirect resource \"{redirectResource}\" used on the filter \"{filterin}\" is not recognised by FOP [{filename}].\n'\
+                    f'  {filename}:{linenumber}\n\n'\
+                    f'  {filterin}'\
+                    f' \n'
+                print(m)
         elif "removeparam=" == option[0:12] or "method" == option[0:6]:
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
@@ -354,6 +380,7 @@ def sortfunc (option):
 
 
     return option
+
 
 def elementtidy(domains, separator, selector):
     """ Sort the domains of element hiding rules, remove unnecessary
