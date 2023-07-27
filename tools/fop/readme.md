@@ -1,6 +1,6 @@
 # Filter Orderer and Preener
 
-Adjusted for [AdBlockID](https://github.com/realodix/AdBlockID) by [Budi Hermawan](https://github.com/realodix) in 2021.
+Adjusted for [AdBlockID](https://github.com/realodix/AdBlockID) by [Kei Realodix](https://github.com/realodix) in 2021.
 
 A Python program for the automatic sorting of subscription files and parts of subscription files. It is also able to automatically commit the changes to Mercurial repositories and validate comments to ensure that they match the form used in the EasyList repository messages.
 
