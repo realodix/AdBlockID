@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.7.122
+! Version: 23.7.123
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Jul 2023 09:28 UTC
+! Last modified: 27 Jul 2023 09:34 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4272,7 +4272,8 @@ game-kentang.blogspot.com,hargawebsite.com,keisekaikuy.blogspot.com,newhealthblo
 my-code4you.blogspot.com##+js(nostif, offsetLeft)
 my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 teknorizen.blogspot.com##+js(set, safelink.adblock, false)
-lifesurance.info##+js(set, showAds, true)
+@@-ads-banner.js$domain=lifesurance.info
+lifesurance.info##+js(set, showada, true)
 !#if adguard
 tonanmedia.my.id##+js(set-constant, showAds, true)
 tonanmedia.my.id##.smokeddlrh > .adsbygoogle:style(display: block !important)
