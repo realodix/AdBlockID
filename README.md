@@ -104,7 +104,7 @@ Thanks goes to these wonderful people.
 | 2 | [3xploiton3](https://github.com/3xploiton3) | [175+ issues][createdBy3xploiton3] | <img height="30" src="https://avatars3.githubusercontent.com/u/19517680"> |
 | 3 | [Jokopentil](https://github.com/Jokopentil) | [25+ issues][createdByJokopentil] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
 | 4 | [GrennKren](https://github.com/GrennKren) | [15 issues][createdByGrennKren] | <img height="30" src="https://avatars.githubusercontent.com/u/34759917"> |
-| 5 | [ChowMein47](https://github.com/ChowMein47) | [11 issues][createdByChowMein47] | <img height="30" src="https://avatars.githubusercontent.com/u/98148960"> |
+| 5 | [ChowMein47](https://github.com/ChowMein47) | [14 issues][createdByChowMein47] | <img height="30" src="https://avatars.githubusercontent.com/u/98148960"> |
 
 [createdByRecehanSlayer]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer
 [createdBy3xploiton3]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3
