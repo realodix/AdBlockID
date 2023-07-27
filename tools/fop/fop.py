@@ -20,7 +20,7 @@
 import re, os, sys, filecmp, argparse
 
 # FOP version number
-VERSION = "1.11"
+VERSION = "1.11.1"
 
 # Welcome message
 greeting = f"FOP (Filter Orderer and Preener) v{VERSION}"
@@ -71,6 +71,9 @@ TREESELECTORPATTERN = re.compile(r"(\\.|[^\+\>\~\\\ \t])\s*([\+\>\~\ \t])\s*(\D)
 
 # Compile a regular expression that describes a completely blank line
 BLANKPATTERN = re.compile(r"^\s*$")
+
+# Compile a regular expression that describes uBO's scriptlets pattern
+UBO_JS_PATTERN = re.compile(r"^@js\(")
 
 # List all uBlock Origin (excepting: domain, removeparam, denyallow, from, method; which is handled separately)
 KNOWNOPTIONS = (
@@ -384,7 +387,7 @@ def elementtidy(domains, separator, selector):
         if replaceby == "   ":
             replaceby = " "
         # Make sure we don't match arguments of uBO scriptlets
-        if not re.match("^@js\(", selector):
+        if not UBO_JS_PATTERN.match(selector):
             selector = selector.replace(tree.group(
                 0), f"{tree.group(1)}{replaceby}{tree.group(3)}", 1)
     # Remove unnecessary tags
