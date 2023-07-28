@@ -290,25 +290,23 @@ def filtertidy(filterin, filename):
         optionLength = len(optionName) + 1
 
         # Detect and separate domain options
-        if optionName in ("domain", "denyallow", "from", "method", "to"):
+        if optionName in ("domain", "denyallow", "from", "to"):
             if optionName == "domain":
-                domainlist.extend(option[7:].split("|"))
-                removeentries.append(option)
+                argList = domainlist
             elif optionName == "from":
-                fromlist.extend(option[5:].split("|"))
-                removeentries.append(option)
+                argList = fromlist
+            elif optionName == "to":
+                argList = tolist
             elif optionName == "denyallow":
+                argList = denyallowlist
                 if "domain=" not in filterin and "from=" not in filterin:
                     m = f'\n- \"denyallow=\" option requires the \"domain=\" or \"from=\" option.\n'\
                         f'  {filename}:{linenumber}\n\n'\
                         f'  {filterin}'\
                         f' \n'
                     print(m)
-                denyallowlist.extend(option[10:].split("|"))
-                removeentries.append(option)
-            elif optionName == "to":
-                tolist.extend(option[3:].split("|"))
-                removeentries.append(option)
+            argList.extend(option[optionLength:].split("|"))
+            removeentries.append(option)
         elif optionName in ("redirect", "redirect-rule"):
             redirectlist.append(option)
             redirectResource = option[optionLength:].split(":")[0]
