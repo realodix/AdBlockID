@@ -339,11 +339,11 @@ def filtertidy(filterin, filename):
     # If applicable, sort redirect and rewrite options and append them to the list of options
     if redirectlist:
         optionlist.extend(redirectlist)
+    if denyallowlist:
+        optionlist.append(f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
     # If applicable, sort domain restrictions and append them to the list of options
     if domainlist:
         optionlist.append(f'domain={"|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key=lambda domain: domain.strip("~")))}')
-    if denyallowlist:
-        optionlist.append(f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
     if fromlist:
         optionlist.append(f'from={"|".join(sorted(set(filter(lambda domain: domain != "", fromlist)), key=lambda domain: domain.strip("~")))}')
     if tolist:
