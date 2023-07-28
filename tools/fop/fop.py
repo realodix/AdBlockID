@@ -280,14 +280,21 @@ def filtertidy(filterin, filename):
     tolist = []
     redirectlist = []
     removeentries = []
-    # Get line number of the filter in the file
-    linenumber = ""
 
-    with open(filename, "r") as file:
-        for i, line in enumerate(file):
-            if line.strip() == filterin:
-                linenumber = f"{i+1}"
-                break
+    def msg_warning(message):
+        """
+        Print a warning message with the filename and line number of the filter that caused the warning.
+        """
+        # Get line number of the filter in the file
+        linenumber = ""
+        with open(filename, "r") as file:
+            for i, line in enumerate(file):
+                if line.strip() == filterin:
+                    linenumber = f"{i+1}"
+                    break
+        print(f'\n- Warning: {message} \n'
+              f'  {filename}:{linenumber}\n\n'
+              f'  {filterin}')
 
     for option in optionlist:
         optionName = option.split("=", 1)[0].strip("~")
@@ -304,40 +311,24 @@ def filtertidy(filterin, filename):
             elif optionName == "denyallow":
                 argList = denyallowlist
                 if "domain=" not in filterin and "from=" not in filterin:
-                    m = f'\n- \"denyallow=\" option requires the \"domain=\" or \"from=\" option.\n'\
-                        f'  {filename}:{linenumber}\n\n'\
-                        f'  {filterin}'\
-                        f' \n'
-                    print(m)
+                    msg_warning(f'\"denyallow=\" option requires the \"domain=\" or \"from=\" option.')
             elif optionName == "method":
                 argList = methodlist
                 methods = option[optionLength:].split("|")
                 for method in methods:
                     if method not in KNOWN_METHODS:
-                        m = f'\n- \"Warning: The method \"{method}\" used on the filter \"{filterin}\" is not recognised by FOP [{filename}].\n'\
-                            f'  {filename}:{linenumber}\n\n'\
-                            f'  {filterin}'\
-                            f' \n'
-                        print(m)
+                        msg_warning(f'The method \"{method}\" used on the filter \"{filterin}\" is not recognised by FOP.')
             argList.extend(option[optionLength:].split("|"))
             removeentries.append(option)
         elif optionName in ("redirect", "redirect-rule"):
             redirectlist.append(option)
             redirectResource = option[optionLength:].split(":")[0]
             if not re.match(RE_OPTION_REDIRECT, redirectResource):
-                m = f'- Redirect resource \"{redirectResource}\" used on the filter \"{filterin}\" is not recognised by FOP [{filename}].\n'\
-                    f'  {filename}:{linenumber}\n\n'\
-                    f'  {filterin}'\
-                    f' \n'
-                print(m)
+                msg_warning(f'Redirect resource \"{redirectResource}\" used on the filter \"{filterin}\" is not recognised by FOP.')
         elif "removeparam=" == option[0:12]:
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
-            m = f'- The option \"{option}\" is not recognised by FOP\n'\
-                f'  {filename}:{linenumber}\n\n'\
-                f'  {filterin}'\
-                f' \n'
-            print(m)
+            msg_warning(f'The option \"{option}\" is not recognised by FOP')
 
     # Sort all options other than domain, from, to, denyallow and method alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
