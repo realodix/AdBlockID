@@ -359,7 +359,6 @@ def sortfunc (option):
     # For identical options, the inverse always follows the non-inverse option
     # (e.g., $image,~image instead of $~image,image)
     if option[0] == "~": return option[1:] + "~"
-
     # Also will always be first in the list
     if (option.find("important") > -1
        or option.find("first-party") > -1
@@ -367,14 +366,11 @@ def sortfunc (option):
        or option.find("third-party") > -1
        or option.find("strict3p") > -1):
         return "0" + option
-
     # let badfilter will always be last in the list
     if option.find("badfilter") > -1: return "|" + option
-
     # move the `_` option to the position after the `removeparam` option
     if option.find("removeparam") > -1: return "1" + option
     if option.find("_") > -1: return "2" + option
-
 
     return option
 
