@@ -70,7 +70,7 @@ KNOWNOPTIONS = (
     # uBlock Origin
     "_", "1p", "3p", "all", "badfilter", "cname", "csp", "css", "doc", "ehide", "empty", "first-party", "frame",
     "ghide", "header", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder",
-    "shide", "specifichide", "xhr", "redirect", "redirect-rule", "strict1p", "strict3p",
+    "shide", "specifichide", "xhr", "redirect", "redirect-rule", "strict1p", "strict3p", "permissions",
 
     # AdGuard
     "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock", "removeparam"
@@ -325,7 +325,7 @@ def filtertidy(filterin, filename):
             redirectResource = option[optionLength:].split(":")[0]
             if not re.match(RE_OPTION_REDIRECT, redirectResource):
                 msg_warning(f'Redirect resource \"{redirectResource}\" used on the filter \"{filterin}\" is not recognised by FOP.')
-        elif "removeparam=" == option[0:12]:
+        elif optionName in ("removeparam", "permissions"):
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
             msg_warning(f'The option \"{option}\" is not recognised by FOP')
