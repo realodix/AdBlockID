@@ -306,15 +306,7 @@ def filtertidy(filterin, filename):
                     print(m)
                 denyallowlist.extend(option[10:].split("|"))
                 removeentries.append(option)
-            # Tidak butuh `from=` atau `domain=`
-            # https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#to
             elif optionName == "to":
-                if "from=" not in filterin:
-                    m = f'\n- \"to=\" option requires the \"domain=\" option.\n'\
-                        f'  {filename}:{linenumber}\n\n'\
-                        f'  {filterin}'\
-                        f' \n'
-                    print(m)
                 tolist.extend(option[3:].split("|"))
                 removeentries.append(option)
         elif optionName in ("redirect", "redirect-rule"):
