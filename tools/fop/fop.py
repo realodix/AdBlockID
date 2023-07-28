@@ -76,6 +76,9 @@ KNOWNOPTIONS = (
     "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock", "removeparam"
 )
 
+# List all methods which should be used together with uBO's method option
+KNOWN_METHODS = ("connect", "delete", "get", "head", "options", "patch", "post", "put")
+
 # Compile regex with all valid redirect resources
 # (https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources,
 # https://github.com/gorhill/uBlock/wiki/Resources-Library#available-url-specific-sanitized-redirect-resources-surrogates
@@ -273,6 +276,7 @@ def filtertidy(filterin, filename):
     domainlist = []
     denyallowlist = []
     fromlist = []
+    methodlist = []
     tolist = []
     redirectlist = []
     removeentries = []
@@ -290,7 +294,7 @@ def filtertidy(filterin, filename):
         optionLength = len(optionName) + 1
 
         # Detect and separate domain options
-        if optionName in ("domain", "denyallow", "from", "to"):
+        if optionName in ("domain", "denyallow", "from", "method", "to"):
             if optionName == "domain":
                 argList = domainlist
             elif optionName == "from":
@@ -305,6 +309,16 @@ def filtertidy(filterin, filename):
                         f'  {filterin}'\
                         f' \n'
                     print(m)
+            elif optionName == "method":
+                argList = methodlist
+                methods = option[optionLength:].split("|")
+                for method in methods:
+                    if method not in KNOWN_METHODS:
+                        m = f'\n- \"Warning: The method \"{method}\" used on the filter \"{filterin}\" is not recognised by FOP [{filename}].\n'\
+                            f'  {filename}:{linenumber}\n\n'\
+                            f'  {filterin}'\
+                            f' \n'
+                        print(m)
             argList.extend(option[optionLength:].split("|"))
             removeentries.append(option)
         elif optionName in ("redirect", "redirect-rule"):
@@ -316,7 +330,7 @@ def filtertidy(filterin, filename):
                     f'  {filterin}'\
                     f' \n'
                 print(m)
-        elif "removeparam=" == option[0:12] or "method" == option[0:6]:
+        elif "removeparam=" == option[0:12]:
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
             m = f'- The option \"{option}\" is not recognised by FOP\n'\
@@ -348,6 +362,9 @@ def filtertidy(filterin, filename):
     if tolist:
         optionlist.append(
             f'to={"|".join(sorted(set(filter(lambda domain: domain != "", tolist)), key=lambda domain: domain.strip("~")))}')
+    if methodlist:
+        optionlist.append(
+            f'method={"|".join(sorted(set(filter(lambda domain: domain != "", methodlist)), key=lambda domain: domain.strip("~")))}')
 
     # Return the full filter
     return f'{filtertext}${",".join(optionlist)}'
