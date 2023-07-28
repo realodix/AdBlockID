@@ -82,24 +82,24 @@ KNOWNOPTIONS = (
 # and aliases from https://github.com/gorhill/uBlock/blob/master/src/js/redirect-resources.js)
 RE_OPTION_REDIRECT = re.compile(r"""
     (
-    1x1(-transparent)?\.gif|(2x2|3x2|32x32)(-transparent)?.png|
-    empty|noopframe|noopjs|abp-resource:blank-js|nooptext|
-    noop\.(css|html|js|txt)|
-    noop-(0\.1|0\.5)s\.mp3|noopmp3-0.1s|
-    noop-1s\.mp4|noopmp4-1s|
-    none|click2load\.html|
-    (addthis_widget|addthis\.com\/addthis_widget|amazon_ads|amazon-adsystem\.com\/aax2\/amzn_ads|amazon_apstag|
-    doubleclick_instream_ad_status|doubleclick\.net\/instream\/ad_status|
-    google-analytics_analytics|google-analytics\.com\/analytics|googletagmanager_gtm|googletagmanager\.com\/gtm|
-    google-analytics_cx_api|google-analytics\.com\/cx\/api|
-    google-analytics_ga|google-analytics\.com\/ga|
-    google-analytics_inpage_linkid|google-analytics\.com\/inpage_linkid|
-    google-ima|google-ima3|
-    googlesyndication_adsbygoogle|googlesyndication\.com\/adsbygoogle|googlesyndication-adsbygoogle|
-    googletagservices_gpt|googletagservices\.com\/gpt|googletagservices-gpt|
-    hd-main|monkeybroker|d3pkae9owd2lcf\.cloudfront\.net\/mb105|
-    outbrain-widget|widgets\.outbrain.com\/outbrain|
-    scorecardresearch_beacon|scorecardresearch\.com\/beacon.)(\.js)?
+        1x1(-transparent)?\.gif|(2x2|3x2|32x32)(-transparent)?.png|
+        empty|noopframe|noopjs|abp-resource:blank-js|nooptext|
+        noop\.(css|html|js|txt)|
+        noop-(0\.1|0\.5)s\.mp3|noopmp3-0.1s|
+        noop-1s\.mp4|noopmp4-1s|
+        none|click2load\.html|
+        (addthis_widget|addthis\.com\/addthis_widget|amazon_ads|amazon-adsystem\.com\/aax2\/amzn_ads|amazon_apstag|
+        doubleclick_instream_ad_status|doubleclick\.net\/instream\/ad_status|
+        google-analytics_analytics|google-analytics\.com\/analytics|googletagmanager_gtm|googletagmanager\.com\/gtm|
+        google-analytics_cx_api|google-analytics\.com\/cx\/api|
+        google-analytics_ga|google-analytics\.com\/ga|
+        google-analytics_inpage_linkid|google-analytics\.com\/inpage_linkid|
+        google-ima|google-ima3|
+        googlesyndication_adsbygoogle|googlesyndication\.com\/adsbygoogle|googlesyndication-adsbygoogle|
+        googletagservices_gpt|googletagservices\.com\/gpt|googletagservices-gpt|
+        hd-main|monkeybroker|d3pkae9owd2lcf\.cloudfront\.net\/mb105|
+        outbrain-widget|widgets\.outbrain.com\/outbrain|
+        scorecardresearch_beacon|scorecardresearch\.com\/beacon.)(\.js)?
     )(:\d+)?$
 """, re.X)
 
@@ -271,13 +271,14 @@ def filtertidy(filterin, filename):
     optionlist = optionsplit.group(2).lower().split(",")
 
     domainlist = []
-    fromlist = []
-    to_list = []
     denyallowlist = []
+    fromlist = []
+    tolist = []
     redirectlist = []
     removeentries = []
     # Get line number of the filter in the file
     linenumber = ""
+
     with open(filename, "r") as file:
         for i, line in enumerate(file):
             if line.strip() == filterin:
@@ -287,31 +288,35 @@ def filtertidy(filterin, filename):
     for option in optionlist:
         optionName = option.split("=", 1)[0].strip("~")
         optionLength = len(optionName) + 1
+
         # Detect and separate domain options
-        if option[0:7] == "domain=":
-            domainlist.extend(option[7:].split("|"))
-            removeentries.append(option)
-        elif option[0:5] == "from=":
-            fromlist.extend(option[5:].split("|"))
-            removeentries.append(option)
-        elif option[0:10] == "denyallow=":
-            if "domain=" not in filterin:
-                m = f'\n- \"denyallow=\" option requires the \"domain=\" option.\n'\
-                    f'  {filename}:{linenumber}\n\n'\
-                    f'  {filterin}'\
-                    f' \n'
-                print(m)
-            denyallowlist.extend(option[10:].split("|"))
-            removeentries.append(option)
-        elif option[0:3] == "to=":
-            if "from=" not in filterin:
-                m = f'\n- \"to=\" option requires the \"domain=\" option.\n'\
-                    f'  {filename}:{linenumber}\n\n'\
-                    f'  {filterin}'\
-                    f' \n'
-                print(m)
-            to_list.extend(option[3:].split("|"))
-            removeentries.append(option)
+        if optionName in ("domain", "denyallow", "from", "method", "to"):
+            if optionName == "domain":
+                domainlist.extend(option[7:].split("|"))
+                removeentries.append(option)
+            elif optionName == "from":
+                fromlist.extend(option[5:].split("|"))
+                removeentries.append(option)
+            elif optionName == "denyallow":
+                if "domain=" not in filterin and "from=" not in filterin:
+                    m = f'\n- \"denyallow=\" option requires the \"domain=\" or \"from=\" option.\n'\
+                        f'  {filename}:{linenumber}\n\n'\
+                        f'  {filterin}'\
+                        f' \n'
+                    print(m)
+                denyallowlist.extend(option[10:].split("|"))
+                removeentries.append(option)
+            # Tidak butuh `from=` atau `domain=`
+            # https://github.com/gorhill/uBlock/wiki/Static-filter-syntax#to
+            elif optionName == "to":
+                if "from=" not in filterin:
+                    m = f'\n- \"to=\" option requires the \"domain=\" option.\n'\
+                        f'  {filename}:{linenumber}\n\n'\
+                        f'  {filterin}'\
+                        f' \n'
+                    print(m)
+                tolist.extend(option[3:].split("|"))
+                removeentries.append(option)
         elif optionName in ("redirect", "redirect-rule"):
             redirectlist.append(option)
             redirectResource = option[optionLength:].split(":")[0]
@@ -350,9 +355,9 @@ def filtertidy(filterin, filename):
     if denyallowlist:
         optionlist.append(
             f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
-    if to_list:
+    if tolist:
         optionlist.append(
-            f'to={"|".join(sorted(set(filter(lambda domain: domain != "", to_list)), key=lambda domain: domain.strip("~")))}')
+            f'to={"|".join(sorted(set(filter(lambda domain: domain != "", tolist)), key=lambda domain: domain.strip("~")))}')
 
     # Return the full filter
     return f'{filtertext}${",".join(optionlist)}'
