@@ -80,30 +80,29 @@ KNOWNOPTIONS = (
 KNOWN_METHODS = ("connect", "delete", "get", "head", "options", "patch", "post", "put")
 
 # Compile regex with all valid redirect resources
-# (https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources,
-# https://github.com/gorhill/uBlock/wiki/Resources-Library#available-url-specific-sanitized-redirect-resources-surrogates
-# and aliases from https://github.com/gorhill/uBlock/blob/master/src/js/redirect-resources.js)
+# - https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources
+# - https://github.com/gorhill/uBlock/blob/master/src/js/redirect-resources.js
 RE_OPTION_REDIRECT = re.compile(r"""
-    (
-        1x1(-transparent)?\.gif|(2x2|3x2|32x32)(-transparent)?.png|
-        empty|noopframe|noopjs|abp-resource:blank-js|nooptext|
-        noop\.(css|html|js|txt)|
-        noop-(0\.1|0\.5)s\.mp3|noopmp3-0.1s|
-        noop-1s\.mp4|noopmp4-1s|
-        none|click2load\.html|
-        (addthis_widget|addthis\.com\/addthis_widget|amazon_ads|amazon-adsystem\.com\/aax2\/amzn_ads|amazon_apstag|
-        doubleclick_instream_ad_status|doubleclick\.net\/instream\/ad_status|
-        google-analytics_analytics|google-analytics\.com\/analytics|googletagmanager_gtm|googletagmanager\.com\/gtm|
-        google-analytics_cx_api|google-analytics\.com\/cx\/api|
-        google-analytics_ga|google-analytics\.com\/ga|
-        google-analytics_inpage_linkid|google-analytics\.com\/inpage_linkid|
-        google-ima|google-ima3|
-        googlesyndication_adsbygoogle|googlesyndication\.com\/adsbygoogle|googlesyndication-adsbygoogle|
-        googletagservices_gpt|googletagservices\.com\/gpt|googletagservices-gpt|
-        hd-main|monkeybroker|d3pkae9owd2lcf\.cloudfront\.net\/mb105|
-        outbrain-widget|widgets\.outbrain.com\/outbrain|
-        scorecardresearch_beacon|scorecardresearch\.com\/beacon.)(\.js)?
-    )(:\d+)?$
+(
+    1x1(-transparent)?\.gif|(2x2|3x2|32x32)(-transparent)?.png|
+    empty|noopframe|noopjs|abp-resource:blank-js|nooptext|
+    noop\.(css|html|js|txt)|
+    noop-(0\.1|0\.5)s\.mp3|noopmp3-0.1s|
+    noop-1s\.mp4|noopmp4-1s|
+    none|click2load\.html|
+    (addthis_widget|addthis\.com\/addthis_widget|amazon_ads|amazon-adsystem\.com\/aax2\/amzn_ads|amazon_apstag|
+    doubleclick_instream_ad_status|doubleclick\.net\/instream\/ad_status|
+    google-analytics_analytics|google-analytics\.com\/analytics|googletagmanager_gtm|googletagmanager\.com\/gtm|
+    google-analytics_cx_api|google-analytics\.com\/cx\/api|
+    google-analytics_ga|google-analytics\.com\/ga|
+    google-analytics_inpage_linkid|google-analytics\.com\/inpage_linkid|
+    google-ima|google-ima3|
+    googlesyndication_adsbygoogle|googlesyndication\.com\/adsbygoogle|googlesyndication-adsbygoogle|
+    googletagservices_gpt|googletagservices\.com\/gpt|googletagservices-gpt|
+    hd-main|monkeybroker|d3pkae9owd2lcf\.cloudfront\.net\/mb105|
+    outbrain-widget|widgets\.outbrain.com\/outbrain|
+    scorecardresearch_beacon|scorecardresearch\.com\/beacon.)(\.js)?
+)(:\d+)?$
 """, re.X)
 
 
@@ -292,9 +291,9 @@ def filtertidy(filterin, filename):
                 if line.strip() == filterin:
                     linenumber = f"{i+1}"
                     break
-        print(f'\n- Warning: {message} \n'
-              f'  {filename}:{linenumber}\n\n'
-              f'  {filterin}')
+        print(f'\n- Warning: {message} \n\n'
+              f'  {filterin} \n'
+              f'  {filename}:{linenumber}\n')
 
     for option in optionlist:
         optionName = option.split("=", 1)[0].strip("~")
@@ -317,18 +316,18 @@ def filtertidy(filterin, filename):
                 methods = option[optionLength:].split("|")
                 for method in methods:
                     if method not in KNOWN_METHODS:
-                        msg_warning(f'The method \"{method}\" used on the filter \"{filterin}\" is not recognised by FOP.')
+                        msg_warning(f'The \"{method}\" method is not recognised.')
             argList.extend(option[optionLength:].split("|"))
             removeentries.append(option)
         elif optionName in ("redirect", "redirect-rule"):
             redirectlist.append(option)
             redirectResource = option[optionLength:].split(":")[0]
             if not re.match(RE_OPTION_REDIRECT, redirectResource):
-                msg_warning(f'Redirect resource \"{redirectResource}\" used on the filter \"{filterin}\" is not recognised by FOP.')
+                msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
         elif optionName in ("removeparam", "permissions"):
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
-            msg_warning(f'The option \"{option}\" is not recognised by FOP')
+            msg_warning(f'The option \"{option}\" is not recognised.')
 
     # Sort all options other than domain, from, to, denyallow and method alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
