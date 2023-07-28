@@ -339,7 +339,7 @@ def filtertidy(filterin, filename):
                 f' \n'
             print(m)
 
-    # Sort all options other than domain alphabetically
+    # Sort all options other than domain, from, to, denyallow and method alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
     optionlist = sorted(
         set(filter(lambda option: (option not in removeentries) and (option not in redirectlist), optionlist)),
@@ -350,21 +350,15 @@ def filtertidy(filterin, filename):
         optionlist.extend(redirectlist)
     # If applicable, sort domain restrictions and append them to the list of options
     if domainlist:
-        optionlist.append(
-            f'domain={"|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key=lambda domain: domain.strip("~")))}')
-    if fromlist:
-        optionlist.append(
-            f'from={"|".join(sorted(set(filter(lambda domain: domain != "", fromlist)), key=lambda domain: domain.strip("~")))}')
-    # If applicable, sort denyallow options and append them to the list of options
+        optionlist.append(f'domain={"|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key=lambda domain: domain.strip("~")))}')
     if denyallowlist:
-        optionlist.append(
-            f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
+        optionlist.append(f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
+    if fromlist:
+        optionlist.append(f'from={"|".join(sorted(set(filter(lambda domain: domain != "", fromlist)), key=lambda domain: domain.strip("~")))}')
     if tolist:
-        optionlist.append(
-            f'to={"|".join(sorted(set(filter(lambda domain: domain != "", tolist)), key=lambda domain: domain.strip("~")))}')
+        optionlist.append(f'to={"|".join(sorted(set(filter(lambda domain: domain != "", tolist)), key=lambda domain: domain.strip("~")))}')
     if methodlist:
-        optionlist.append(
-            f'method={"|".join(sorted(set(filter(lambda domain: domain != "", methodlist)), key=lambda domain: domain.strip("~")))}')
+        optionlist.append(f'method={"|".join(sorted(set(filter(lambda domain: domain != "", methodlist)), key=lambda domain: domain.strip("~")))}')
 
     # Return the full filter
     return f'{filtertext}${",".join(optionlist)}'
