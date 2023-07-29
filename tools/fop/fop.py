@@ -286,7 +286,7 @@ def filtertidy(filterin, filename):
         """
         # Get line number of the filter in the file
         linenumber = ""
-        with open(filename, "r") as file:
+        with open(filename, "r", encoding="utf-8", newline="\n") as file:
             for i, line in enumerate(file):
                 if line.strip() == filterin:
                     linenumber = f"{i+1}"
