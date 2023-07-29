@@ -322,7 +322,11 @@ def filtertidy(filterin, filename):
         elif optionName in ("redirect", "redirect-rule"):
             redirectlist.append(option)
             redirectResource = option[optionLength:].split(":")[0]
-            if not re.match(RE_OPTION_REDIRECT, redirectResource):
+            if (not re.match(RE_OPTION_REDIRECT, redirectResource)
+                # Jika hanya $redirect seperti di @@||x.com^$redirect, maka akan ikut dikenali
+                # Solusinya maka harus ad = untuk dapat dikenali
+                and re.match(r"redirect(-rule)?=", option[:optionLength])
+            ):
                 msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
         elif optionName in ("removeparam", "permissions", "csp"):
             optionlist = optionsplit.group(2).split(",")
