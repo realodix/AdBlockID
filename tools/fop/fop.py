@@ -324,7 +324,7 @@ def filtertidy(filterin, filename):
             redirectResource = option[optionLength:].split(":")[0]
             if not re.match(RE_OPTION_REDIRECT, redirectResource):
                 msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
-        elif optionName in ("removeparam", "permissions"):
+        elif optionName in ("removeparam", "permissions", "csp"):
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
             msg_warning(f'The option \"{option}\" is not recognised.')
