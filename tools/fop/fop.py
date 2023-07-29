@@ -79,29 +79,21 @@ KNOWNOPTIONS = (
 # List all methods which should be used together with uBO's method option
 KNOWN_METHODS = ("connect", "delete", "get", "head", "options", "patch", "post", "put")
 
-# Compile regex with all valid redirect resources
+# Compile regex with all valid redirect resources. Not complete, only as needed.
 # - https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources
 # - https://github.com/gorhill/uBlock/blob/master/src/js/redirect-resources.js
 RE_OPTION_REDIRECT = re.compile(r"""
 (
-    1x1(-transparent)?\.gif|(2x2|3x2|32x32)(-transparent)?.png|
-    empty|noopframe|noopjs|abp-resource:blank-js|nooptext|
-    noop\.(css|html|js|txt)|
-    noop-(0\.1|0\.5)s\.mp3|noopmp3-0.1s|
-    noop-1s\.mp4|noopmp4-1s|
-    none|click2load\.html|
-    (addthis_widget|addthis\.com\/addthis_widget|amazon_ads|amazon-adsystem\.com\/aax2\/amzn_ads|amazon_apstag|
-    doubleclick_instream_ad_status|doubleclick\.net\/instream\/ad_status|
-    google-analytics_analytics|google-analytics\.com\/analytics|googletagmanager_gtm|googletagmanager\.com\/gtm|
-    google-analytics_cx_api|google-analytics\.com\/cx\/api|
-    google-analytics_ga|google-analytics\.com\/ga|
-    google-analytics_inpage_linkid|google-analytics\.com\/inpage_linkid|
-    google-ima|google-ima3|
-    googlesyndication_adsbygoogle|googlesyndication\.com\/adsbygoogle|googlesyndication-adsbygoogle|
-    googletagservices_gpt|googletagservices\.com\/gpt|googletagservices-gpt|
-    hd-main|monkeybroker|d3pkae9owd2lcf\.cloudfront\.net\/mb105|
-    outbrain-widget|widgets\.outbrain.com\/outbrain|
-    scorecardresearch_beacon|scorecardresearch\.com\/beacon.)(\.js)?
+    1x1(-transparent)?\.gif|(2x2|3x2|32x32)(-transparent)?.png
+    |empty|noopframe|noopjs|abp-resource:blank-js|nooptext|noop\.(css|html|js|txt)|noop-(0\.1|0\.5)s\.mp3|noopmp3-0.1s
+    |noop-1s\.mp4|noopmp4-1s|none|click2load\.html|noopvmap-1.0|noop-vmap1.0.xml
+    |(
+        nobab(2)?|nofab|fuckadblock.js-3.2.0
+        |google-analytics_analytics|google-analytics.com\/analytics|googletagmanager_gtm|googletagmanager.com\/gtm
+        |googlesyndication_adsbygoogle|googlesyndication.com\/adsbygoogle
+        |googletagservices_gpt|google-ima|amazon_apstag|doubleclick_instream_ad_status|hd-main|prebid-ads
+        |popads|popads.net|prevent-popads-net
+    )(\.js)?
 )(:\d+)?$
 """, re.X)
 
