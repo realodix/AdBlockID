@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.7.128
+! Version: 23.7.129
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Jul 2023 04:24 UTC
+! Last modified: 30 Jul 2023 15:52 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4267,7 +4267,6 @@ khaddavi.net##div:has(> p:has-text(/adv/i))
 urbharat.xyz##iframe[width="300"]
 fc-lc.com,fc.lc##+js(acis, addEventListener, DOMNodeRemoved)
 belinfo.my.id,linkerload.com,pf-electronicstt.com,skiped.me##+js(acis, addEventListener, google_ad_client)
-nyawang.com##+js(acis, chp_ads_blocker_detector)
 bevru.club,cuts-url.com,eio.io,eririo.club,exee.io##+js(acis, disableItToContinue)
 toolss.net##+js(aeld, load, daadb_get_data)
 pinloker.com,sekilastekno.com,vebma.com##+js(aopr, AaDetector)
@@ -4285,6 +4284,8 @@ game-kentang.blogspot.com,hargawebsite.com,keisekaikuy.blogspot.com,newhealthblo
 my-code4you.blogspot.com##+js(nostif, offsetLeft)
 my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 teknorizen.blogspot.com##+js(set, safelink.adblock, false)
+nyawang.com##+js(acis, chp_ads_blocker_detector)
+jenismac.com##+js(aost, document.createElement, adsBlocked)
 @@-ads-banner.js$domain=lifesurance.info
 lifesurance.info##+js(set, showada, true)
 !#if adguard
@@ -4303,13 +4304,14 @@ belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 besargaji.com,bevru.club,carapedi.id,cararegistrasi.com,ceesty.com,cuts-url.com,eio.io,eririo.club,exee.io,fc-lc.com,fc.lc,khaddavi.net,luangusaha.com,miuiku.com,oceantech.xyz,onlinecorp.me,paired.my.id,ponselharian.com,sekilastekno.com,semawur.com,shrinke.me,teknosimple.com##+js(window.open-defuser)
 pinloker.com,sekilastekno.com,vebma.com##+js(window.open-defuser, /\.(com|net)\/4\/|teraboxapp|momerybox/)
 pinloker.com,sekilastekno.com,vebma.com##+js(ra, href, div[x-data="adtival"] a[href][\@click="scroll"])
-cararegistrasi.com,gambar.pro,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com##+js(nano-sib)
+cararegistrasi.com,gambar.pro,jenismac.com,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com##+js(nano-sib)
 urbharat.xyz##+js(nano-sib, timePassed, 1300)
 adikinfo.my.id,inafut.com##+js(nano-stb)
 ceesty.com##+js(set, app.options.timerPageVisibilityChecking, false)
 7r6.com,adsafelink.com,aii.sh,allcryptoz.net,artipedia.id,asupload.com,bevru.club,clk.asia,cut4fun.com,cuts-url.com,eio.io,eririo.club,exee.io,fc.lc,jameeltips.us,kadal.club,kutt.io,luangusaha.com,miuiku.com,oceantech.xyz,onlinecorp.me,rancah.com,saungfirmware.id,sekilastekno.com,semawur.com,semruwet.com,short2fly.xyz,shrinke.me,shrinkme.in,skiped.me,stfly.io,stfly.me,tei.ai##+js(set, blurred, false)
 slurr.my.id###content #wpsafegenerate div:has(a > img):not(#wpsafe-link)
 slurr.my.id###content .wpsafe-top div:has(> a > img):not(#wpsafe-generate)
+jenismac.com###hello
 shrinke.me###imgAddDirectLink
 luangusaha.com,oceantech.xyz##.blog-item
 uiz.io##.btn-front:has-text(Download)
