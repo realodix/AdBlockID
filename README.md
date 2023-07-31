@@ -27,10 +27,10 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 ## Subscription
 
-| Name            | Subscription | Raw File | Description |
-| --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs] | [jsdelivr.net/gh/realodix/.../adblockid.adfl.txt][ABID_Raw] | Main filter |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs] | [jsdelivr.net/gh/realodix/.../adblockid_plus.adfl.txt][ABID-Plus_Raw] | Extension |
+| Name           | Subscription | Raw File | Description |
+| -------------- | --------- | -------- | ----------- |
+| AdBlockID      | [Subscribe][ABID_Subs] | [jsdelivr.net/gh/realodix/.../adblockid.adfl.txt][ABID_Raw] | Main filter |
+| AdBlockID Plus | [Subscribe][ABID-Plus_Subs] | [jsdelivr.net/gh/realodix/.../adblockid_plus.adfl.txt][ABID-Plus_Raw] | Extension |
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt&title=AdBlockID
 [ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt
@@ -39,10 +39,10 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 #### Mirror
 
-| Name            | Subscription | Raw File | Description |
-| --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs_cf] | [adblockid.pages.dev/adblockid.adfl.txt][ABID_Raw_cf] | Main filter |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_cf] | [adblockid.pages.dev/adblockid_plus.adfl.txt][ABID-Plus_Raw_cf] | Extension |
+| Name           | Subscription | Raw File | Description |
+| -------------- | --------- | -------- | ----------- |
+| AdBlockID      | [Subscribe][ABID_Subs_cf] | [adblockid.pages.dev/adblockid.adfl.txt][ABID_Raw_cf] | Main filter |
+| AdBlockID Plus | [Subscribe][ABID-Plus_Subs_cf] | [adblockid.pages.dev/adblockid_plus.adfl.txt][ABID-Plus_Raw_cf] | Extension |
 
 [ABID_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid.adfl.txt&title=AdBlockID
 [ABID_Raw_cf]: https://adblockid.pages.dev/adblockid.adfl.txt
