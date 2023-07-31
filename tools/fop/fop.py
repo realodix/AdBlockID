@@ -62,7 +62,8 @@ BLANKPATTERN = re.compile(r"^\s*$")
 # Compile a regular expression that describes uBO's scriptlets pattern
 UBO_JS_PATTERN = re.compile(r"^@js\(")
 
-# List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, denyallow, from, method and to, which is handled separately)
+# List all Adblock Plus, uBlock Origin and AdGuard options
+# (excepting domain, denyallow, from, method, permissions, redirect, redirect-rule, rewrite and to, which is handled separately)
 KNOWNOPTIONS = (
     "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping",
     "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
@@ -266,12 +267,8 @@ def filtertidy(filterin, filename):
     filtertext = removeunnecessarywildcards(optionsplit.group(1))
     optionlist = optionsplit.group(2).lower().split(",")
 
-    domainlist = []
-    denyallowlist = []
-    fromlist = []
-    methodlist = []
-    permissionslist = []
-    tolist = []
+    domainlist, fromlist, tolist, denyallowlist = [], [], [], []
+    methodlist, permissionslist = [], []
     redirectlist = []
     removeentries = []
 
@@ -319,11 +316,7 @@ def filtertidy(filterin, filename):
         elif optionName in ("redirect", "redirect-rule"):
             redirectlist.append(option)
             redirectResource = option[optionLength:].split(":")[0]
-            if (not re.match(RE_OPTION_REDIRECT, redirectResource)
-                # Jika hanya $redirect seperti di @@||x.com^$redirect, maka akan ikut dikenali
-                # Solusinya maka harus ad = untuk dapat dikenali
-                and re.match(r"redirect(-rule)?=", option[:optionLength])
-            ):
+            if redirectResource and not re.match(RE_OPTION_REDIRECT, redirectResource):
                 msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
         elif optionName in ("removeparam", "permissions", "csp"):
             optionlist = optionsplit.group(2).split(",")
