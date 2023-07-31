@@ -20,7 +20,7 @@
 import re, os, sys, filecmp, argparse
 
 # FOP version number
-VERSION = "1.11.1"
+VERSION = "1.12"
 
 # Welcome message
 greeting = f"FOP (Filter Orderer and Preener) v{VERSION}"
@@ -36,25 +36,12 @@ FILE_EXTENSION = [".adfl", ".txt"]
 # Compile regular expressions to match important filter parts
 # (derived from Wladimir Palant's Adblock Plus source code)
 ELEMENTDOMAINPATTERN = re.compile(r"^([^\/\*\|\@\"\!]*?)(#|\$)\@?\??\@?(#|\$)")
-FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)(?:domain|from)\=([^\,\s]+)$")
+FILTERDOMAINPATTERN = re.compile(r"(?:\$|\,)(denyallow|domain|from|method|to)\=([^\,\s]+)$")
 ELEMENTPATTERN = re.compile(
     r"^([^\/\*\|\@\"\!]*?)(\$\@?\$|##\@?\$|#[\@\?]?#\+?)(.*)$")
 OPTIONPATTERN = re.compile(
     r"^(.*)\$(~?[\w\-]+(?:=[^,\s]+)?(?:,~?[\w\-]+(?:=[^,\s]+)?)*)$")
-RE_OPTION_REDIRECT = re.compile(r"""
-    ^(.+)?
-    (redirect(-rule)?)=
-    (
-        1x1.gif|(2x2|3x2|32x32).png
-        |noop-0.1s.mp3|noop-0.5s.mp3|noop-1s.mp4
-        |noop.html|noop.js|noop.txt|noopcss
-        |ampproject_v0.js|nofab.js|fuckadblock.js-3.2.0
-        |google-analytics_(cx_api.js|analytics.js|ga.js)
-        |googlesyndication_adsbygoogle.js|googletagmanager_gtm.js|googletagservices_gpt.js
-        |click2load.html
-    )
-    (,.+)?$
-""", re.X)
+
 # Compile regular expressions that match element tags and
 # pseudo classes and strings and tree selectors;
 # "@" indicates either the beginning or the end of a selector
@@ -75,16 +62,43 @@ BLANKPATTERN = re.compile(r"^\s*$")
 # Compile a regular expression that describes uBO's scriptlets pattern
 UBO_JS_PATTERN = re.compile(r"^@js\(")
 
-# List all uBlock Origin (excepting: domain, removeparam, denyallow, from, method; which is handled separately)
+# List all Adblock Plus, uBlock Origin and AdGuard options
+# (excepting domain, denyallow, from, method, permissions, redirect, redirect-rule, rewrite and to, which is handled separately)
 KNOWNOPTIONS = (
-    '_', 'all', 'badfilter', 'important', 'other', 'empty',
-    '1p', 'first-party', 'strict1p', '3p', 'third-party', 'strict3p',
-    'cname', 'css', 'stylesheet', 'csp', 'doc', 'document', 'domain', 'ehide', 'elemhide',
-    'font', 'frame', 'generichide','ghide', 'header', 'image', 'inline-font',
-    'inline-script', 'match-case', 'media', 'mp4', 'object', 'ping', 'popunder',
-    'popup', 'script', 'shide', 'specifichide', 'subdocument', 'to', 'websocket', 'xhr',
-    'xmlhttprequest'
+    "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping",
+    "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
+
+    # uBlock Origin
+    "_", "1p", "3p", "all", "badfilter", "cname", "csp", "css", "doc", "ehide", "empty", "first-party", "frame",
+    "ghide", "header", "important", "inline-font", "inline-script", "mp4", "object-subrequest",
+    "popunder", "shide", "specifichide", "xhr", "strict1p", "strict3p",
+
+    # AdGuard
+    "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock", "removeparam"
 )
+
+# List all methods which should be used together with uBO's method option
+KNOWN_METHODS = ("connect", "delete", "get", "head", "options", "patch", "post", "put")
+
+# Compile regex with all valid redirect resources. Not complete, only as needed.
+# - https://github.com/gorhill/uBlock/wiki/Resources-Library#available-empty-redirect-resources
+# - https://github.com/gorhill/uBlock/blob/master/src/js/redirect-resources.js
+RE_OPTION_REDIRECT = re.compile(r"""
+(
+    1x1(-transparent)?\.gif|(2x2|3x2|32x32)(-transparent)?.png
+    |empty|noopframe|noopjs|abp-resource:blank-js|nooptext|noop\.(css|html|js|txt)|noop-(0\.1|0\.5)s\.mp3|noopmp3-0.1s
+    |noop-1s\.mp4|noopmp4-1s|none|click2load\.html|noopvmap-1.0|noop-vmap1.0.xml
+    |(
+        # https://github.com/gorhill/uBlock/wiki/Resources-Library#defuser-scriptlets
+        ampproject_v0|fingerprint(?:2|3)|nobab(?:2)?|nofab|popads(?:-dummy)?|prebid-ads|adfly-defuser
+        # https://github.com/gorhill/uBlock/wiki/Resources-Library#available-url-specific-sanitized-redirect-resources-surrogates
+        |google-analytics_(?:ga|analytics|inpage_linkid|cx_api)|google-ima|googletagservices_gpt|googletagmanager_gtm|googlesyndication_adsbygoogle
+        |addthis_widget|amazon_ads|amazon_apstag|doubleclick_instream_ad_status|hd-main|monkeybroker|outbrain-widget|scorecardresearch_beacon
+    )\.js
+    # Deprecated
+    |fuckadblock\.js-3.2\.0|(google-analytics\.com\/analytics|googlesyndication\.com\/adsbygoogle|googletagmanager\.com\/gtm|popads\.net)\.js
+)(:\d+)?$
+""", re.X)
 
 
 def start():
@@ -253,58 +267,63 @@ def filtertidy(filterin, filename):
     filtertext = removeunnecessarywildcards(optionsplit.group(1))
     optionlist = optionsplit.group(2).lower().split(",")
 
-    domainlist = []
-    fromlist = []
-    to_list = []
-    denyallowlist = []
+    domainlist, fromlist, tolist, denyallowlist = [], [], [], []
+    methodlist, permissionslist = [], []
     redirectlist = []
     removeentries = []
-    # Get line number of the filter in the file
-    linenumber = ""
-    with open(filename, "r") as file:
-        for i, line in enumerate(file):
-            if line.strip() == filterin:
-                linenumber = f"{i+1}"
-                break
+
+    def msg_warning(message):
+        """
+        Print a warning message with the filename and line number of the filter that caused the warning.
+        """
+        # Get line number of the filter in the file
+        linenumber = ""
+        with open(filename, "r", encoding="utf-8", newline="\n") as file:
+            for i, line in enumerate(file):
+                if line.strip() == filterin:
+                    linenumber = f"{i+1}"
+                    break
+        print(f'\n- Warning: {message} \n\n'
+              f'  {filterin} \n'
+              f'  {filename}:{linenumber}\n')
 
     for option in optionlist:
+        optionName = option.split("=", 1)[0].strip("~")
+        optionLength = len(optionName) + 1
+
         # Detect and separate domain options
-        if option[0:7] == "domain=":
-            domainlist.extend(option[7:].split("|"))
+        if optionName in ("domain", "denyallow", "from", "method", "to", "permissions"):
+            if optionName == "domain":
+                argList = domainlist
+            elif optionName == "from":
+                argList = fromlist
+            elif optionName == "to":
+                argList = tolist
+            elif optionName == "denyallow":
+                argList = denyallowlist
+                if "domain=" not in filterin and "from=" not in filterin:
+                    msg_warning(f'\"denyallow=\" option requires the \"domain=\" or \"from=\" option.')
+            elif optionName == "method":
+                argList = methodlist
+                methods = option[optionLength:].split("|")
+                for method in methods:
+                    if method not in KNOWN_METHODS:
+                        msg_warning(f'The \"{method}\" method is not recognised.')
+            elif optionName == "permissions":
+                argList = permissionslist
+            argList.extend(option[optionLength:].split("|"))
             removeentries.append(option)
-        elif option[0:5] == "from=":
-            fromlist.extend(option[5:].split("|"))
-            removeentries.append(option)
-        elif option[0:10] == "denyallow=":
-            if "domain=" not in filterin:
-                m = f'\n- \"denyallow=\" option requires the \"domain=\" option.\n'\
-                    f'  {filename}:{linenumber}\n\n'\
-                    f'  {filterin}'\
-                    f' \n'
-                print(m)
-            denyallowlist.extend(option[10:].split("|"))
-            removeentries.append(option)
-        elif option[0:3] == "to=":
-            if "from=" not in filterin:
-                m = f'\n- \"to=\" option requires the \"domain=\" option.\n'\
-                    f'  {filename}:{linenumber}\n\n'\
-                    f'  {filterin}'\
-                    f' \n'
-                print(m)
-            to_list.extend(option[3:].split("|"))
-            removeentries.append(option)
-        elif re.match(RE_OPTION_REDIRECT, option):
+        elif optionName in ("redirect", "redirect-rule"):
             redirectlist.append(option)
-        elif "removeparam=" == option[0:12] or "method" == option[0:6]:
+            redirectResource = option[optionLength:].split(":")[0]
+            if redirectResource and not re.match(RE_OPTION_REDIRECT, redirectResource):
+                msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
+        elif optionName in ("removeparam", "permissions", "csp"):
             optionlist = optionsplit.group(2).split(",")
         elif option.strip("~") not in KNOWNOPTIONS:
-            m = f'- The option \"{option}\" is not recognised by FOP\n'\
-                f'  {filename}:{linenumber}\n\n'\
-                f'  {filterin}'\
-                f' \n'
-            print(m)
+            msg_warning(f'The option \"{option}\" is not recognised.')
 
-    # Sort all options other than domain alphabetically
+    # Sort all options other than domain, from, to, denyallow, method and permissions alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
     optionlist = sorted(
         set(filter(lambda option: (option not in removeentries) and (option not in redirectlist), optionlist)),
@@ -315,18 +334,17 @@ def filtertidy(filterin, filename):
         optionlist.extend(redirectlist)
     # If applicable, sort domain restrictions and append them to the list of options
     if domainlist:
-        optionlist.append(
-            f'domain={"|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key=lambda domain: domain.strip("~")))}')
+        optionlist.append(f'domain={"|".join(sorted(set(filter(lambda domain: domain != "", domainlist)), key=lambda domain: domain.strip("~")))}')
     if fromlist:
-        optionlist.append(
-            f'from={"|".join(sorted(set(filter(lambda domain: domain != "", fromlist)), key=lambda domain: domain.strip("~")))}')
-    # If applicable, sort denyallow options and append them to the list of options
+        optionlist.append(f'from={"|".join(sorted(set(filter(lambda domain: domain != "", fromlist)), key=lambda domain: domain.strip("~")))}')
     if denyallowlist:
-        optionlist.append(
-            f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
-    if to_list:
-        optionlist.append(
-            f'to={"|".join(sorted(set(filter(lambda domain: domain != "", to_list)), key=lambda domain: domain.strip("~")))}')
+        optionlist.append(f'denyallow={"|".join(sorted(set(filter(lambda domain: domain != "", denyallowlist)), key=lambda domain: domain.strip("~")))}')
+    if tolist:
+        optionlist.append(f'to={"|".join(sorted(set(filter(lambda domain: domain != "", tolist)), key=lambda domain: domain.strip("~")))}')
+    if methodlist:
+        optionlist.append(f'method={"|".join(sorted(set(filter(lambda domain: domain != "", methodlist)), key=lambda domain: domain.strip("~")))}')
+    if permissionslist:
+        optionlist.append(f'permissions={"|".join(sorted(set(filter(lambda domain: domain != "", permissionslist)), key=lambda domain: domain.strip("~")))}')
 
     # Return the full filter
     return f'{filtertext}${",".join(optionlist)}'
@@ -336,7 +354,6 @@ def sortfunc (option):
     # For identical options, the inverse always follows the non-inverse option
     # (e.g., $image,~image instead of $~image,image)
     if option[0] == "~": return option[1:] + "~"
-
     # Also will always be first in the list
     if (option.find("important") > -1
        or option.find("first-party") > -1
@@ -344,16 +361,14 @@ def sortfunc (option):
        or option.find("third-party") > -1
        or option.find("strict3p") > -1):
         return "0" + option
-
     # let badfilter will always be last in the list
     if option.find("badfilter") > -1: return "|" + option
-
     # move the `_` option to the position after the `removeparam` option
     if option.find("removeparam") > -1: return "1" + option
     if option.find("_") > -1: return "2" + option
 
-
     return option
+
 
 def elementtidy(domains, separator, selector):
     """ Sort the domains of element hiding rules, remove unnecessary
