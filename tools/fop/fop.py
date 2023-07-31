@@ -64,13 +64,13 @@ UBO_JS_PATTERN = re.compile(r"^@js\(")
 
 # List all Adblock Plus, uBlock Origin and AdGuard options (excepting domain, denyallow, from, method and to, which is handled separately)
 KNOWNOPTIONS = (
-    "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping", "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
-    "rewrite=abp-resource:blank-css", "rewrite=abp-resource:blank-js", "rewrite=abp-resource:blank-html", "rewrite=abp-resource:blank-mp3", "rewrite=abp-resource:blank-text", "rewrite=abp-resource:1x1-transparent-gif", "rewrite=abp-resource:2x2-transparent-png", "rewrite=abp-resource:3x2-transparent-png", "rewrite=abp-resource:32x32-transparent-png",
+    "document", "elemhide", "font", "genericblock", "generichide", "image", "match-case", "media", "object", "other", "ping",
+    "popup", "script", "stylesheet", "subdocument", "third-party", "webrtc", "websocket", "xmlhttprequest",
 
     # uBlock Origin
     "_", "1p", "3p", "all", "badfilter", "cname", "csp", "css", "doc", "ehide", "empty", "first-party", "frame",
-    "ghide", "header", "important", "inline-font", "inline-script", "mp4", "object-subrequest", "popunder",
-    "shide", "specifichide", "xhr", "redirect", "redirect-rule", "strict1p", "strict3p", "permissions",
+    "ghide", "header", "important", "inline-font", "inline-script", "mp4", "object-subrequest",
+    "popunder", "shide", "specifichide", "xhr", "strict1p", "strict3p",
 
     # AdGuard
     "app", "content", "cookie", "extension", "jsinject", "network", "replace", "stealth", "urlblock", "removeparam"
@@ -88,12 +88,14 @@ RE_OPTION_REDIRECT = re.compile(r"""
     |empty|noopframe|noopjs|abp-resource:blank-js|nooptext|noop\.(css|html|js|txt)|noop-(0\.1|0\.5)s\.mp3|noopmp3-0.1s
     |noop-1s\.mp4|noopmp4-1s|none|click2load\.html|noopvmap-1.0|noop-vmap1.0.xml
     |(
-        nobab(2)?|nofab|fuckadblock.js-3.2.0
-        |google-analytics_analytics|google-analytics.com\/analytics|googletagmanager_gtm|googletagmanager.com\/gtm
-        |googlesyndication_adsbygoogle|googlesyndication.com\/adsbygoogle
-        |googletagservices_gpt|google-ima|amazon_apstag|doubleclick_instream_ad_status|hd-main|prebid-ads
-        |popads|popads.net|prevent-popads-net
-    )(\.js)?
+        # https://github.com/gorhill/uBlock/wiki/Resources-Library#defuser-scriptlets
+        ampproject_v0|fingerprint(?:2|3)|nobab(?:2)?|nofab|popads(?:-dummy)?|prebid-ads|adfly-defuser
+        # https://github.com/gorhill/uBlock/wiki/Resources-Library#available-url-specific-sanitized-redirect-resources-surrogates
+        |google-analytics_(?:ga|analytics|inpage_linkid|cx_api)|google-ima|googletagservices_gpt|googletagmanager_gtm|googlesyndication_adsbygoogle
+        |addthis_widget|amazon_ads|amazon_apstag|doubleclick_instream_ad_status|hd-main|monkeybroker|outbrain-widget|scorecardresearch_beacon
+    )\.js
+    # Deprecated
+    |fuckadblock\.js-3.2\.0|(google-analytics\.com\/analytics|googlesyndication\.com\/adsbygoogle|googletagmanager\.com\/gtm|popads\.net)\.js
 )(:\d+)?$
 """, re.X)
 
