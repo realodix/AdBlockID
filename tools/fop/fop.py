@@ -316,8 +316,8 @@ def filtertidy(filterin, filename):
                 msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
         elif optionName in ("removeparam", "permissions", "csp"):
             optionlist = optionsplit.group(2).split(",")
-        elif option.strip("~") not in KNOWNOPTIONS:
-            msg_warning(f'The option \"{option}\" is not recognised.')
+        elif optionName not in KNOWNOPTIONS:
+            msg_warning(f'The option \"{optionName}\" is not recognised.')
 
     # Sort all options other than domain, from, to, denyallow, method and permissions alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
