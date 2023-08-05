@@ -42,9 +42,9 @@ newsbalikpapan.com,papuakita.com##+js(aopr, window.pum_popups)
 /wp-content/plugins/popups/public/*$domain=indonesiaexpat.id|jurnalweb.com
 jurnalweb.com##+js(aopr, $, SPU_master)
 !
-pesantrenterbaik.com###myCont
+paylaterin.com,pesantrenterbaik.com###myCont
 bankir.id,biayatarif.com,gadgetized.net,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,pilihprofesi.com,prosesbayar.com,rkonline.id,rsuddepatihamzah.id,sekolahpesantren.id##+js(aopr, generateStickyDebounce)
-pesantrenterbaik.com##body:style(overflow: auto !important;)
+paylaterin.com,pesantrenterbaik.com##body:style(overflow: auto !important;)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/97439
 jeniusplay.com##+js(window.open-defuser)
 !
@@ -108,6 +108,7 @@ metrum.co.id##.audio5_html5_sticky:remove()
 investor.id##.body-content .embed-responsive:remove()
 otosia.com##.boost-video:remove()
 sulselsatu.com##.content-article .wrapper:has-text(/youtube sulselsatu/i):remove()
+okezone.com##.content-wrap .video-wrap:remove()
 kompas.com##.content_article .rVideo-middle:remove()
 kompas.com##.content_article .video-box-wrap:remove()
 suara.com##.detail-berita #player-video:remove()
@@ -140,8 +141,8 @@ suara.com##article #dailymotion-widget:remove()
 cnbcindonesia.com##article .autovideocnbc:remove()
 instingjurnalis.com,republika.co.id##article .dailymotion-player-root:remove()
 riauonline.co.id##article .embed-responsive:remove()
+detik.com##article .itp_gambas_video:remove()
 bola.com##article .js-full-iframe-vidio:remove()
-detik.com##article .sisip_video_ds:remove()
 cnbcindonesia.com##article .videocnbc:remove()
 jurnas.com##article .youtube-player[allow="autoplay"]:upward(1):remove()
 metrorakyat.com##article div:has(> iframe[src^="https://www.youtube.com/embed/"]):remove()
@@ -202,6 +203,11 @@ kapanlagi.com##.liputan6-mobileapp-widget
 idntimes.com##.smartbanner
 id.theasianparent.com##.top-app-download-banner
 merdeka.com##header .assambleApp
+!
+! BROWSER BACK BUTTON
+! -----------------------------------------------
+paylaterin.com##+js(aopr, $, js_zerobounce_get_url)
+ngelag.com##+js(set, window.onpopstate, noopFunc)
 !
 ! COOKIES
 ! -----------------------------------------------

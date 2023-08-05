@@ -6,9 +6,11 @@ labels: 'C: Bug'
 ---
 
 **Sample URL**
+
 https://example.com/
 
 **Penjelasan Lebih Lanjut**
+
 <!--
 - Mohon jelaskan ke Kami sedetail dan sejelas mungkin apa yang sebenarnya terjadi.
 - Jika memungkinkan berikan gambar screenshot.

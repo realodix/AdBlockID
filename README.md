@@ -96,20 +96,20 @@ Terima kasih telah mempertimbangkan untuk berkontribusi, Saya sangat menghargai 
 Lihat [/docs/Development.md](/docs/Development.md)
 
 
-## Contributors ✨
+## Volunteers ✨
 
 Thanks goes to these wonderful people.
 
 | # | User | Contribs | Picture |
 | - | ---- | -------- | ------- |
-| 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [825+ issues][createdByRecehanSlayer] | <img height="30" src="https://avatars0.githubusercontent.com/u/9379770"> |
-| 2 | [3xploiton3](https://github.com/3xploiton3) | [175+ issues][createdBy3xploiton3] | <img height="30" src="https://avatars3.githubusercontent.com/u/19517680"> |
-| 3 | [Jokopentil](https://github.com/Jokopentil) | [25+ issues][createdByJokopentil] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
-| 4 | [GrennKren](https://github.com/GrennKren) | [14+ issues][createdByGrennKren] | <img height="30" src="https://avatars.githubusercontent.com/u/34759917"> |
-| 5 | [ChowMein47](https://github.com/ChowMein47) | [13+ issues][createdByChowMein47] | <img height="30" src="https://avatars.githubusercontent.com/u/98148960"> |
+| 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [830+ issues][volunteer_r1] | <img height="30" src="https://avatars0.githubusercontent.com/u/9379770"> |
+| 2 | [3xploiton3](https://github.com/3xploiton3) | [185+ issues][volunteer_r2] | <img height="30" src="https://avatars3.githubusercontent.com/u/19517680"> |
+| 3 | [Jokopentil](https://github.com/Jokopentil) | [40+ issues][volunteer_r3] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
+| 4 | [Taufik-Rahman](https://github.com/Taufik-Rahman) | [20+ issues][volunteer_r4] | <img height="30" src="https://avatars.githubusercontent.com/u/58507846"> |
+| 5 | [GrennKren](https://github.com/GrennKren) | [15+ issues][volunteer_r5] | <img height="30" src="https://avatars.githubusercontent.com/u/34759917"> |
 
-[createdByRecehanSlayer]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer
-[createdBy3xploiton3]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3
-[createdByJokopentil]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AJokopentil
-[createdByGrennKren]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AGrennKren
-[createdByChowMein47]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AChowMein47
+[volunteer_r1]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer
+[volunteer_r2]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3
+[volunteer_r3]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AJokopentil
+[volunteer_r4]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ATaufik-Rahman
+[volunteer_r5]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AGrennKren
