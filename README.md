@@ -39,6 +39,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 #### Mirror
 
+Cocok untuk para developer, kontributor dan volunteer.
+
 | Name           | Subscription | Raw File | Description |
 | -------------- | --------- | -------- | ----------- |
 | AdBlockID      | [Subscribe][ABID_Subs_cf] | [adblockid.pages.dev/adblockid.adfl.txt][ABID_Raw_cf] | Main filter |
