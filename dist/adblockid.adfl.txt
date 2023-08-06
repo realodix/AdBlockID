@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.8.32
+! Version: 23.8.33
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Aug 2023 11:13 UTC
+! Last modified: 06 Aug 2023 11:41 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4129,7 +4129,11 @@ akashinime.my.id,akashinime.pro##+js(acis, eval, replace)
 animecracks.com##+js(aopr, mdpDeBlocker)
 broflix.club,idlixprime.com##+js(aost, document.createElement, adsBlocked)
 0.0.realodix##+js(aopr, wcadbwp)
+!#if (adguard)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=doroni.me|doronime.id
+!#else
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js:6,domain=doroni.me|doronime.id
+!#endif
 @@-cpm-ads.$domain=doroni.me|doronime.id|kusonime.com
 @@||doroni.me^$generichide
 @@||doronime.id^$generichide
