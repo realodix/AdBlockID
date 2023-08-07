@@ -20,7 +20,6 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  │   ├─ adult.adfl                [S] ...
  │   ├─ adult-block.adfl          [G] Blokir iklan berkonten dewasa.
  │   ├─ adult-hide.adfl           [G] Sembunyikan iklan berkonten dewasa.
- │   ├─ adult-thirdparty.adfl     [G] ...
  │   ├─ annoyance.adfl            [G/S] Menghilangkan elemen yang mengganggu.
  │   ├─ annoyance_limitation.adfl [G/S] Menangani beberapa limitasi.
  │   ├─ annoyance_safelink.adfl   [G/S] Menampilkan link asli yang ditutupi oleh safelink.
@@ -74,11 +73,11 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
   Menggabungkan semua filter ke dalam 1 file (`adblockid.adfl.txt`) di folder `dist`.
 
-  VSCode Task: **`FOP`**
-
 - `python tools/fop/fop.py`
 
   Mengurutkan dan merapikan filter.
+
+  VSCode Task: **`FOP`**
 
 #### Web Service
 - [ABP Redundancy check](https://adblockplus.org/redundancy_check)

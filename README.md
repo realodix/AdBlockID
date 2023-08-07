@@ -71,7 +71,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
    - **uBlock Origin**: Pada table di atas, klik `Subscribe` atau tambahkan `Raw link` di kotak import. Lebih lanjut lihat [`Import external filter lists`][uBoImport].
 
 #### Mobile
-- **Android**: Anda dapat menggunakan [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock) di [Kiwi Browser](https://kiwibrowser.com) atau [Firefox](https://www.mozilla.org/firefox/browsers/). Cara install AdBlockID mirip seperti di desktop.
+- **Android**: Anda dapat menggunakan [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock) di [Kiwi Browser](https://kiwibrowser.com) atau [Firefox](https://www.mozilla.org/firefox/browsers/mobile/). Cara install AdBlockID mirip seperti di desktop.
 - **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), aktifkan AdBlockID di bagian *language-specific*.
 - **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
 
