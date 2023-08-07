@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.8.40
+! Version: 23.8.41
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Aug 2023 17:51 UTC
+! Last modified: 07 Aug 2023 19:37 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3285,6 +3285,7 @@ kontan.co.id,momsmoney.id##div:has(> [id^="div-billboard" i])
 kompas.id,sehatq.com##div:has(> [id^="div-gpt-ad"])
 katadata.co.id##div:has(> [id^="div-gpt-ad-"][class^="paralax-"])
 samsungstarters.com##div:has(> small:has-text(/adv/i))
+starringheavenlyrics.blogspot.com##div:has(> span > script[data-ad-client])
 yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,katadata.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
@@ -4275,6 +4276,7 @@ sekaikomik.bio##+js(rmnt, script, nocontextmenu)
 ##[href^="https://safelinkblogger.com/ref/"]
 ##[href^="https://safelinku.com/ref/"] > img
 miuiku.com,onlinecorp.me,sekilastekno.com,semawur.com###fixedban
+isekaipalace.com###floatads
 miuiku.com,sekilastekno.com###teaser2
 casafelink2.blogspot.com##.ads
 aii.sh,oceantech.xyz,short2fly.xyz,stfly.me##.banner
@@ -4308,11 +4310,15 @@ my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 teknorizen.blogspot.com##+js(set, safelink.adblock, false)
 nyawang.com##+js(acis, chp_ads_blocker_detector)
 jenismac.com##+js(aost, document.createElement, adsBlocked)
+@@||isekaipalace.com^$ghide
+isekaipalace.com##+js(set, showAds, true)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
 @@-ads-banner.js$domain=lifesurance.info
 lifesurance.info##+js(set, showada, true)
 tonanmedia.my.id##+js(set-constant, showAds, true)
+tonanmedia.my.id##.post-body center:has-text(/matikan adblok/i)
 tonanmedia.my.id##.smokeddlrh > .adsbygoogle:style(display: block !important)
-@@||tonanmedia.my.id^$generichide
+@@||tonanmedia.my.id^$ghide
 intercelestial.com,linegee.net,sweetlantern.com###externalinject-gpt-passback-container
 intercelestial.com,linegee.net,sweetlantern.com###externalinject-gpt-passback-iframe
 ta2deem7arbya.com###makingdifferenttimer:style(display: block!important)
@@ -4325,7 +4331,7 @@ belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 besargaji.com,bevru.club,carapedi.id,cararegistrasi.com,ceesty.com,cuts-url.com,eio.io,eririo.club,exee.io,fc-lc.com,fc.lc,khaddavi.net,luangusaha.com,miuiku.com,oceantech.xyz,onlinecorp.me,paired.my.id,ponselharian.com,sekilastekno.com,semawur.com,shrinke.me,teknosimple.com##+js(window.open-defuser)
 pinloker.com,sekilastekno.com,vebma.com##+js(window.open-defuser, /\.(com|net)\/4\/|teraboxapp|momerybox/)
 pinloker.com,sekilastekno.com,vebma.com##+js(ra, href, div[x-data="adtival"] a[href][\@click="scroll"])
-cararegistrasi.com,gambar.pro,jenismac.com,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com,tonanmedia.my.id##+js(nano-sib)
+cararegistrasi.com,gambar.pro,isekaipalace.com,jenismac.com,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com,tonanmedia.my.id##+js(nano-sib)
 urbharat.xyz##+js(nano-sib, timePassed, 1300)
 adikinfo.my.id,inafut.com##+js(nano-stb)
 ceesty.com##+js(set, app.options.timerPageVisibilityChecking, false)
@@ -4355,6 +4361,8 @@ semruwet.com##img[width="320"][height="90"]
 /dwndbnr1.$image,domain=aii.sh|tei.ai
 /skips.png$image,domain=semawur.com
 ||semawur.com/o.png$image
+isekaipalace.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+isekaipalace.com##+js(aopr, document.oncontextmenu)
 safelkmeong.blogspot.com,usesafelink.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart, body)
 @@/abdiusu/project-safelink-viomagz/*/safelink-ViomagzV3.2-2tombol$3p,script
 .gif$image,domain=0.0.realodix|138.201.95.38|139.99.119.236|139.99.33.205|139.99.33.221|139.99.33.222|149.248.60.75|185.225.232.26|198.199.74.44|216.155.135.144|45.32.113.5|51.81.115.212|94.237.74.112|alatestnews.com|artikeljandamuda.blogspot.com|beejav.cam|bokeponlinestreaming.skin|boshedewasa.blogspot.com|c3ritam4l4m.live|cctvbokep.help|ceritakiss.com|ceritapengenhot.blogspot.com|ceritasexindonesia.com|dutasex.icu|khalidcompany.com|layarkc21.club|memekviral.fun|nekopoi.care|nontonlayarxxx.blogspot.com|omahbokep.com|omekin.tv|putri77.org|terbaruxex.blogspot.com
