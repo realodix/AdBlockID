@@ -13,6 +13,7 @@
 ##[href^="https://safelinku.com/ref/"] > img
 !
 miuiku.com,onlinecorp.me,sekilastekno.com,semawur.com###fixedban
+isekaipalace.com###floatads
 miuiku.com,sekilastekno.com###teaser2
 casafelink2.blogspot.com##.ads
 aii.sh,oceantech.xyz,short2fly.xyz,stfly.me##.banner
@@ -51,6 +52,10 @@ teknorizen.blogspot.com##+js(set, safelink.adblock, false)
 nyawang.com##+js(acis, chp_ads_blocker_detector)
 jenismac.com##+js(aost, document.createElement, adsBlocked)
 !
+@@||isekaipalace.com^$ghide
+isekaipalace.com##+js(set, showAds, true)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
+!
 @@-ads-banner.js$domain=lifesurance.info
 lifesurance.info##+js(set, showada, true)
 ! https://extonan.id/bleach-sennen-kessen-hen-14/
@@ -81,7 +86,7 @@ pinloker.com,sekilastekno.com,vebma.com##+js(window.open-defuser, /\.(com|net)\/
 pinloker.com,sekilastekno.com,vebma.com##+js(ra, href, div[x-data="adtival"] a[href][\@click="scroll"])
 ! ---
 ! Countdown Timer
-cararegistrasi.com,gambar.pro,jenismac.com,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com,tonanmedia.my.id##+js(nano-sib)
+cararegistrasi.com,gambar.pro,isekaipalace.com,jenismac.com,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com,tonanmedia.my.id##+js(nano-sib)
 urbharat.xyz##+js(nano-sib, timePassed, 1300)
 adikinfo.my.id,inafut.com##+js(nano-stb)
 ceesty.com##+js(set, app.options.timerPageVisibilityChecking, false)
@@ -116,6 +121,8 @@ semruwet.com##img[width="320"][height="90"]
 ||semawur.com/o.png$image
 ! ---
 ! Mouse & Key Limitation
+isekaipalace.com##*:style(user-select: text !important; -webkit-user-select: text !important; -webkit-touch-callout: default !important;)
+isekaipalace.com##+js(aopr, document.oncontextmenu)
 safelkmeong.blogspot.com,usesafelink.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart, body)
 !
 ! WHITELIST
