@@ -73,11 +73,11 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
   Menggabungkan semua filter ke dalam 1 file (`adblockid.adfl.txt`) di folder `dist`.
 
-  VSCode Task: **`FOP`**
-
 - `python tools/fop/fop.py`
 
   Mengurutkan dan merapikan filter.
+
+  VSCode Task: **`FOP`**
 
 #### Web Service
 - [ABP Redundancy check](https://adblockplus.org/redundancy_check)
