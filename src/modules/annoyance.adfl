@@ -2,17 +2,6 @@
 !!
 !! --------------------------------------------------------
 !!
-! GENERAL
-! -----------------------------------------------
-download.id##.entry div[style="clear:both; margin-top:0em; margin-bottom:1em;"] > a[rel="nofollow"][target="_self"]
-indonesiana.id##.fc-paywall-container
-!
-bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
-!
-kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
-m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
-m.kaskus.co.id##[id^="postdeleted"]
-!
 ! POPUP & OVERLAY
 ! -----------------------------------------------
 .fancybox.$script,domain=seuramoeaceh.com
@@ -197,8 +186,9 @@ freesoft.id##button[onclick^="window.open("][rel]
 masterkreatif.net##center .button:has-text(/download crack/i)
 hienzo.com##center > button:has-text(/download/i)
 !
-! DOWNLOAD APP
+! GENERAL
 ! -----------------------------------------------
+! Download App
 brainly.co.id##.brn-web-to-app-banner
 seniberpikir.com##.downloadappbox
 liputan6.com##.gateway__mobile-app
@@ -206,25 +196,30 @@ kapanlagi.com##.liputan6-mobileapp-widget
 idntimes.com##.smartbanner
 id.theasianparent.com##.top-app-download-banner
 merdeka.com##header .assambleApp
-!
-! BROWSER BACK BUTTON
-! -----------------------------------------------
+! Berita Terkait (dari luar situs)
+bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
+! ---
+! Browser Back (history manipulation)
 paylaterin.com##+js(aopr, $, js_zerobounce_get_url)
 ngelag.com##+js(set, window.onpopstate, noopFunc)
-!
-! COOKIES
-! -----------------------------------------------
+! ---
+! Cookies
 yellowpagesid.com###cc-bar
 makewebeasy.com##.policy-container:has(> div > span:has-text(/cookie/i))
-!
-! TEXT SELECTION COLOR NORMALIZATION
-! -----------------------------------------------
-grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
-!
-! REFRESH
+! ---
 ! Defuse reloading of a document through a meta "refresh" tag.
-! -----------------------------------------------
 tipsgaptek.com,tipskerja.com##+js(refresh-defuser)
+! ---
+! Text Selection Color Normalization
+grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
+! ---
+! Paywall
+indonesiana.id##.fc-paywall-container
+! ---
+! Khusus Kaskus
+kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
+m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
+m.kaskus.co.id##[id^="postdeleted"]
 !
 ! UNBREAK (Fanboy’s Annoyance)
 ! -----------------------------------------------
