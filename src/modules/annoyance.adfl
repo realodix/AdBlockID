@@ -2,17 +2,6 @@
 !!
 !! --------------------------------------------------------
 !!
-! GENERAL
-! -----------------------------------------------
-download.id##.entry div[style="clear:both; margin-top:0em; margin-bottom:1em;"] > a[rel="nofollow"][target="_self"]
-indonesiana.id##.fc-paywall-container
-!
-bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
-!
-kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
-m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
-m.kaskus.co.id##[id^="postdeleted"]
-!
 ! POPUP & OVERLAY
 ! -----------------------------------------------
 .fancybox.$script,domain=seuramoeaceh.com
@@ -95,10 +84,9 @@ fandom.com###fandom-mobile-wrapper .article-featured-video:remove()
 majalahpengusaha.com###floatrightsidebar .widget-content:has(> iframe):remove()
 dailysia.com###globalsun-div-player:remove()
 kaskus.co.id###hotthread_visualita .jsThreadCardTvView:has(.jsHtTvIframe):remove()
-kompas.tv###jxOutstreamContainer + .rVideo-wrapper:remove()
 gamereactor.asia###livestreamBox:remove()
 ngopibareng.id###ngopitv-inline:remove()
-hops.id,uzone.id###play3-js-sdk:remove()
+hops.id,pantau.com,uzone.id###play3-js-sdk:remove()
 revivaltv.id###play3-sdk-iframe:remove()
 katadata.co.id###video_in_article:remove()
 bangsaonline.com##.add-banner:has(.embed-responsive):remove()
@@ -109,8 +97,6 @@ investor.id##.body-content .embed-responsive:remove()
 otosia.com##.boost-video:remove()
 sulselsatu.com##.content-article .wrapper:has-text(/youtube sulselsatu/i):remove()
 okezone.com##.content-wrap .video-wrap:remove()
-kompas.com##.content_article .rVideo-middle:remove()
-kompas.com##.content_article .video-box-wrap:remove()
 suara.com##.detail-berita #player-video:remove()
 beautynesia.id##.detail__embed:remove()
 cnnindonesia.com##.detail_text #idvideocnn:remove()
@@ -119,7 +105,6 @@ soloabadi.com##.elementor-column:has-text(/video terkini/i):remove()
 carisinyal.com,dailysia.com,fajar.co.id,herworld.co.id,islampos.com,jalantikus.com,jawapos.com,pramborsfm.com##.gliaplayer-container:remove()
 baliportalnews.com##.home .td_block_video_playlist:remove()
 tribunnewswiki.com##.ivideo_box:remove()
-kompas.tv##.kgnowGate:remove()
 bola.com,bola.net,dream.co.id,kapanlagi.com,liputan6.com,merdeka.com##.nativescrollingKLY:has(.nativescrollingKLY-sticky-inner-video):remove()
 kapanlagi.com##.nativevideosiframe-loader:remove()
 republika.co.id##.news-content .dailymotion-player-root:remove()
@@ -147,7 +132,6 @@ cnbcindonesia.com##article .videocnbc:remove()
 jurnas.com##article .youtube-player[allow="autoplay"]:upward(1):remove()
 metrorakyat.com##article div:has(> iframe[src^="https://www.youtube.com/embed/"]):remove()
 liputan6.com##article iframe.vidio-embed:remove()
-kompas.tv##script + .rVideo-wrapper:remove()
 !
 intipseleb.com###dmRelatedPlayer:remove()
 m.riau24.com##.content_article .dm-player:remove()
@@ -160,12 +144,17 @@ okezone.com##.video-wrap:has(#rekomendasi_video):remove()
 okezone.com##.vplayer:has(iframe[src^="https://video.okezone.com/embedoutstream"]):remove()
 okezone.com##[id^="ivs-"]:remove()
 !
+kompas.tv###jxOutstreamContainer + .rVideo-wrapper:remove()
 bolasport.com##.clsivs:remove()
+kompas.com##.content_article .rVideo-middle:remove()
+kompas.com##.content_article .video-box-wrap:remove()
 gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://player.ivideosmart.com"]):remove()
 greenscene.co.id##.gliaplayer-container:remove()
 gridoto.com##.ivs-box:remove()
 kompas.com,~video.kompas.com##.js-read-article .rVideo-player:remove()
 kompas.com,~video.kompas.com##.js-read-article .video-box-wrap:remove()
+kompas.tv##.kgnowGate:remove()
+kompas.tv##.paragraph > .rVideo-middle:remove()
 theasianparent.com##.player-ivideosmart-wrap:remove()
 grid.id##.rVideo-wrapper:remove()
 kompas.com,~video.kompas.com##.read__article .kgnowGate:remove()
@@ -174,7 +163,10 @@ grid.id##.videoKG-widget:remove()
 beritasatu.com,dailysia.com,greenscene.co.id,grid.id,guesehat.com,japanesestation.com,katadata.co.id,magdalene.co,momsmoney.id,motorplus-online.com,parapuan.co,tempo.co,wartaekonomi.co.id,wowkeren.com##[class^="ivs-"]:remove()
 dailysia.com,seputarpapua.com,tempo.co##[id^="ivs-"]:remove()
 jubi.id,jubitv.id##ivs-player:remove()
+kompas.tv##script + .rVideo-wrapper:remove()
 ||player.ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|grid.id|gridoto.com|herstory.co.id|id.theasianparent.com|indosport.com|momsmoney.id|motorplus-online.com|parapuan.co|populis.id|sonora.id|tempo.co
+! Mobile
+kompas.tv##.content > section > .embedVid:remove()
 !
 ! FAKE BUTTON
 ! -----------------------------------------------
@@ -194,8 +186,10 @@ freesoft.id##button[onclick^="window.open("][rel]
 masterkreatif.net##center .button:has-text(/download crack/i)
 hienzo.com##center > button:has-text(/download/i)
 !
-! DOWNLOAD APP
+! GENERAL
 ! -----------------------------------------------
+! Download App
+matain.id##.app_layer
 brainly.co.id##.brn-web-to-app-banner
 seniberpikir.com##.downloadappbox
 liputan6.com##.gateway__mobile-app
@@ -203,19 +197,30 @@ kapanlagi.com##.liputan6-mobileapp-widget
 idntimes.com##.smartbanner
 id.theasianparent.com##.top-app-download-banner
 merdeka.com##header .assambleApp
-!
-! BROWSER BACK BUTTON
-! -----------------------------------------------
+! Berita Terkait (dari luar situs)
+bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
+! ---
+! Browser Back (history manipulation)
 paylaterin.com##+js(aopr, $, js_zerobounce_get_url)
 ngelag.com##+js(set, window.onpopstate, noopFunc)
-!
-! COOKIES
-! -----------------------------------------------
+! ---
+! Cookies
 yellowpagesid.com###cc-bar
-!
-! TEXT SELECTION COLOR NORMALIZATION
-! -----------------------------------------------
+makewebeasy.com##.policy-container:has(> div > span:has-text(/cookie/i))
+! ---
+! Defuse reloading of a document through a meta "refresh" tag.
+tipsgaptek.com,tipskerja.com##+js(refresh-defuser)
+! ---
+! Text Selection Color Normalization
 grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
+! ---
+! Paywall
+indonesiana.id##.fc-paywall-container
+! ---
+! Khusus Kaskus
+kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
+m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
+m.kaskus.co.id##[id^="postdeleted"]
 !
 ! UNBREAK (Fanboy’s Annoyance)
 ! -----------------------------------------------
