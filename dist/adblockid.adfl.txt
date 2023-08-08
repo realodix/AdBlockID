@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.8.44
+! Version: 23.8.45
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Aug 2023 14:15 UTC
+! Last modified: 08 Aug 2023 16:19 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3276,7 +3276,8 @@ bkppkutim.com,viv.co.id##center:has(div > .adsbygoogle)
 sukabumiupdate.com##center:has-text(/adv/i)
 kompas.id##div.justify-center:has([src^="https://ads.kompas.id"])
 disway.id##div:has(> .adsbyadop)
-ascomaxx.com,buruhtinta.co.id,cerdika.com,disway.id,etindonesia.com,inibaru.id,inilahkoran.id,jagokata.com,jurnalisindonesia.id,mojok.co,saintif.com,semutaspal.com,sinergianews.com,trans89.com,utamanews.com##div:has(> .adsbygoogle)
+ascomaxx.com,buruhtinta.co.id,cerdika.com,disway.id,inibaru.id,inilahkoran.id,jagokata.com,jurnalisindonesia.id,mojok.co,saintif.com,semutaspal.com,sinergianews.com,trans89.com,utamanews.com##div:has(> .adsbygoogle)
+etindonesia.com##div:has(> .adsbygoogle):not(.td-fix-index)
 haibunda.com##div:has(> .static_banner1)
 abadikini.com,dara.co.id,nawalakarsa.id,sinergianews.com,timesindonesia.co.id,vcgamers.com##div:has(> [class^="adsbyadop_"])
 genpi.co,pricebook.co.id##div:has(> [id*="div-gpt-ad-"])
@@ -3650,12 +3651,6 @@ anaktekno.com,aquatoyou.com,azislamayuda.com,belajaroffice.com,berkeluarga.id,bi
 !#if adguard
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,popup,subdocument,badfilter
 !#endif
-download.id##.entry div[style="clear:both; margin-top:0em; margin-bottom:1em;"] > a[rel="nofollow"][target="_self"]
-indonesiana.id##.fc-paywall-container
-bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
-kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
-m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
-m.kaskus.co.id##[id^="postdeleted"]
 .fancybox.$script,domain=seuramoeaceh.com
 /pum-site-scripts.js$script,domain=lintaslampung.com
 /sweetalert2.$script,domain=pusatiklan.my.id
@@ -3823,12 +3818,17 @@ kapanlagi.com##.liputan6-mobileapp-widget
 idntimes.com##.smartbanner
 id.theasianparent.com##.top-app-download-banner
 merdeka.com##header .assambleApp
+bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
 paylaterin.com##+js(aopr, $, js_zerobounce_get_url)
 ngelag.com##+js(set, window.onpopstate, noopFunc)
 yellowpagesid.com###cc-bar
 makewebeasy.com##.policy-container:has(> div > span:has-text(/cookie/i))
-grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
 tipsgaptek.com,tipskerja.com##+js(refresh-defuser)
+grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
+indonesiana.id##.fc-paywall-container
+kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
+m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
+m.kaskus.co.id##[id^="postdeleted"]
 mizanstore.com#@#.push-wrapper:not(body):not(html)
 berkeluarga.id,gdm.id#@#.share-simple
 ifra-indonesia.com#@##social-float
