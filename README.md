@@ -59,7 +59,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
   **A**:
   - jsdelivr.net
     - Cocok untuk pengguna biasa; atau digunakan pada HP.
-    - Update tersedia  dalam 3 - 24 jam sekali untuk mengimbangi auto update pada ad blocker.
+    - Ketersediaan update mengimbangi auto update pada ad blocker, kurang lebih 3 - 24 jam.
   - adblockid.pages.dev
     - Cocok untuk para [kontributor](https://github.com/realodix/AdBlockID/graphs/contributors) dan [volunteer](https://github.com/realodix/AdBlockID/tree/Subscription#volunteers-) untuk dapat langsung memeriksa hasilnya.
     - Update langsung tersedia untuk mengimbangi force update.
