@@ -27,27 +27,43 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 ## Subscription
 
-| Name            | Subscription | Raw File | Description |
-| --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs_cf] | [adblockid.pages.dev/adblockid.adfl.txt][ABID_Raw_cf] | Main filter |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs_cf] | [adblockid.pages.dev/adblockid_plus.adfl.txt][ABID-Plus_Raw_cf] | Extension |
+> 💡 AdBlockID sudah tersedia di AdGuard, Anda tidak perlu melakukan subscribe manual.
+
+| Name           | Subscription | Raw File | Description |
+| -------------- | --------- | -------- | ----------- |
+| AdBlockID      | [Subscribe][ABID_Subs] | [jsdelivr.net/gh/realodix/.../adblockid.adfl.txt][ABID_Raw] | Main filter |
+| AdBlockID Plus | [Subscribe][ABID-Plus_Subs] | [jsdelivr.net/gh/realodix/.../adblockid_plus.adfl.txt][ABID-Plus_Raw] | Extension |
+
+[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt&title=AdBlockID
+[ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt
+[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
+[ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt
+
+#### Mirror
+
+| Name           | Subscription | Raw File | Description |
+| -------------- | --------- | -------- | ----------- |
+| AdBlockID      | [Subscribe][ABID_Subs_cf] | [adblockid.pages.dev/adblockid.adfl.txt][ABID_Raw_cf] | Main filter |
+| AdBlockID Plus | [Subscribe][ABID-Plus_Subs_cf] | [adblockid.pages.dev/adblockid_plus.adfl.txt][ABID-Plus_Raw_cf] | Extension |
 
 [ABID_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid.adfl.txt&title=AdBlockID
 [ABID_Raw_cf]: https://adblockid.pages.dev/adblockid.adfl.txt
 [ABID-Plus_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
 [ABID-Plus_Raw_cf]: https://adblockid.pages.dev/adblockid_plus.adfl.txt
 
-#### Mirror
 
-| Name            | Subscription | Raw File | Description |
-| --------------- | --------- | -------- | ----------- |
-| AdBlockID       | [Subscribe][ABID_Subs] | [jsdelivr.net/gh/realodix/.../adblockid.adfl.txt][ABID_Raw] | Main filter |
-| AdBlockID Plus  | [Subscribe][ABID-Plus_Subs] | [jsdelivr.net/gh/realodix/.../adblockid_plus.adfl.txt][ABID-Plus_Raw] | Extension |
-
-[ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt&title=AdBlockID
-[ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt
-[ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt
+#### FAQ
+- **Q**: Apa bedanya antara AdBlockID dan AdBlockID Plus? <br>
+  **A**: AdBlockID berfokus hanya pada website Indonesia; dan AdBlockID Plus pada dasarnya adalah personal filter yang Saya bagikan untuk melengkapi dan menutup keterbatasan pada AdBlockID, jadi tidak ada batasan untuk AdBlockID Plus.
+- **Q**: Pilih subscribe dari jsdelivr.net atau adblockid.pages.dev? <br>
+  **A**:
+  - jsdelivr.net
+    - Cocok untuk pengguna biasa; atau digunakan pada HP.
+    - Update tersedia  dalam 3 - 24 jam sekali untuk mengimbangi auto update pada ad blocker.
+  - adblockid.pages.dev
+    - Cocok untuk para [kontributor](https://github.com/realodix/AdBlockID/graphs/contributors) dan [volunteer](https://github.com/realodix/AdBlockID/tree/Subscription#volunteers-) untuk dapat langsung memeriksa hasilnya.
+    - Update langsung tersedia untuk mengimbangi force update.
+  - Untuk pengguna AdGuard, ketersediaan update untuk AdBlockID mengikuti kebijakan AdGuard.
 
 
 ## Cara Menggunakan
