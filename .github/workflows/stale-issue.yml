@@ -3,13 +3,17 @@ on:
   schedule:
     - cron: '30 1 * * *'
 
+permissions:
+  issues: write
+
 jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@v8
         with:
-          stale-issue-message: 'This issue is stale because it has been open 2 days with no activity. Remove stale label or comment or this will be closed in 1 days.'
-          close-issue-message: 'This issue was closed because it has been stalled for 1 days with no activity.'
+          only-labels: 'needs-more-info'
           days-before-issue-stale: 2
+          stale-issue-message: 'This issue is stale because it has been open 2 days with no activity. Remove stale label or comment or this will be closed in 1 days.'
           days-before-issue-close: 1
+          close-issue-message: 'This issue was closed because it has been stalled for 1 days with no activity.'
