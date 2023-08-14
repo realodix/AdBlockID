@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.8.65
+! Version: 23.8.66
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Aug 2023 18:00 UTC
+! Last modified: 14 Aug 2023 11:11 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4449,7 +4449,7 @@ duduk123.com,semprot.com##+js(acis, String.fromCharCode, ahli)
 144.126.138.140##+js(acis, eval, replace)
 38.242.194.12,pasarbokep.com##+js(aopr, adsBlocked)
 nbtub.sbs##+js(aost, String.prototype.charCodeAt, ai_)
-pasarbokep.com##+js(no-fetch-if, pagead2.googlesyndication.com)
+159.65.134.129,pasarbokep.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 herodex.org,minioppai.org##+js(nobab)
 minioppai.org##+js(acis, chp_ads_blocker_detector)
 173.249.8.3##+js(acis, eval, split)
@@ -4494,6 +4494,8 @@ bokepindoplay.net,ratihbugil.com##+js(aeld, contextmenu)
 crothot.com,erocafe.net##+js(aopr, document.onselectstart)
 erocafe.net##+js(aopr, protected_links)
 pusatporn18.com##.content-post center:has(> a > img)
+159.65.134.129###wpsafe-link a:remove-attr(target)
+159.65.134.129##+js(nano-sib)
 ||livechatinc.com^$image,domain=artikeljandamuda.blogspot.com|dalamhati.com
 duduk123.com,semprot.com##.js-post:has-text(Banned)
 /luxury_hd_dvd_hd.mp4$media
