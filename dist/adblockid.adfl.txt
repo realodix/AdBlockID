@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.8.77
+! Version: 23.8.78
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Aug 2023 20:00 UTC
+! Last modified: 16 Aug 2023 06:43 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4296,7 +4296,7 @@ ljutkeunvpn.blogspot.com,safelkmeong.blogspot.com,usesafelink.blogspot.com##+js(
 menjelajahi.com,pintunow.com,rancah.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 mangindo.xyz##+js(aopr, window.adikAds)
 sekilastekno.com##+js(no-fetch-if, ads)
-gambar.pro,pinloker.com,sekilastekno.com,tutorial.siberuang.com,vebma.com##+js(no-fetch-if, adsbygoogle.js)
+info.gambar.pro,info.mapsaddress.com,pinloker.com,sekilastekno.com,tutorial.siberuang.com,vebma.com##+js(no-fetch-if, adsbygoogle.js)
 agansultan.co,informatikamu.id,linkpoi.me,sopasti.com##+js(nobab)
 game-kentang.blogspot.com,hargawebsite.com,keisekaikuy.blogspot.com,newhealthblog.com,oploverznews.blogspot.com,safelink-jozz.blogspot.com##+js(nofab)
 my-code4you.blogspot.com##+js(nostif, offsetLeft)
@@ -4325,7 +4325,7 @@ belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 0.0.realodix,besargaji.com,carapedi.id,cararegistrasi.com,ceesty.com,cuts-url.com,eio.io,eririo.club,exee.io,fc-lc.com,fc.lc,khaddavi.net,luangusaha.com,miuiku.com,oceantech.xyz,onlinecorp.me,ponselharian.com,sekilastekno.com,semawur.com,shrinke.me,teknosimple.com##+js(window.open-defuser)
 pinloker.com,sekilastekno.com,vebma.com##+js(window.open-defuser, /\.(com|net)\/4\/|teraboxapp|momerybox/)
 pinloker.com,sekilastekno.com,vebma.com##+js(ra, href, div[x-data="adtival"] a[href][\@click="scroll"])
-cararegistrasi.com,gambar.pro,isekaipalace.com,jenismac.com,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com,tonanmedia.my.id##+js(nano-sib)
+cararegistrasi.com,info.gambar.pro,info.mapsaddress.com,isekaipalace.com,jenismac.com,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com,tonanmedia.my.id##+js(nano-sib)
 urbharat.xyz##+js(nano-sib, timePassed, 1300)
 adikinfo.my.id##+js(nano-stb)
 ceesty.com##+js(set, app.options.timerPageVisibilityChecking, false)
@@ -4343,11 +4343,15 @@ besargaji.com,teknosimple.com##.slu-download
 semawur.com##.text-center > [href] > [src^="/img/download_"]
 karyawan.co.id##article .slu-download
 vebma.com##article center > a[rel="nofollow"] > img
+info.gambar.pro,info.mapsaddress.com##center:has(> img)
+info.gambar.pro,info.mapsaddress.com##center:has(> p > a)
 modebaca.com##img[data-original-width="920"][data-original-height="304"]
 bagi.site##img[width="120"][height="24"]
 onlinecorp.me,sekilastekno.com,sportif.id##img[width="200"][height="60"]
-gambar.pro,sekilastekno.com##img[width="320"][height="105"]
+info.gambar.pro##img[width="240"][height="240"]
+info.gambar.pro,sekilastekno.com##img[width="320"][height="105"]
 semruwet.com##img[width="320"][height="90"]
+info.mapsaddress.com##p:has(a[href="#downloadnow"] > span)
 /download-$image,domain=sekilastekno.com
 /download.$image,domain=belinfo.my.id|egao.in
 /download3.$image,domain=semawur.com
