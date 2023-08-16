@@ -16,7 +16,7 @@ jobs:
             var repo = context.repo.repo;
             var issue_number = context.issue.number;
 
-            var needsMoreInfo = 'Needs more info';
+            var needsMoreInfo = 'needs-more-info';
 
             var issueLabelsRaw = await github.issues.listLabelsOnIssue({
               owner,
