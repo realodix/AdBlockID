@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.8.100
+! Version: 23.8.101
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 22 Aug 2023 12:20 UTC
+! Last modified: 22 Aug 2023 14:45 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3506,7 +3506,6 @@ monitorteknologi.com##.penci-google-adsense-2
 @@/noadblock-nice-message/assets/js/ads.js?$1p,script
 /anticurang/*$script
 -adblock-notice/
-/abb-msg.js
 /adb_script/*
 /adbclk2.
 /adbDetect.
@@ -4349,13 +4348,20 @@ game-kentang.blogspot.com,hargawebsite.com,keisekaikuy.blogspot.com,newhealthblo
 my-code4you.blogspot.com##+js(nostif, offsetLeft)
 my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 teknorizen.blogspot.com##+js(set, safelink.adblock, false)
+isekaipalace.com##+js(set, showAds, true)
+lifesurance.info##+js(set, showada, true)
 nyawang.com##+js(acis, chp_ads_blocker_detector)
 jenismac.com##+js(aost, document.createElement, adsBlocked)
-@@||isekaipalace.com^$ghide
-isekaipalace.com##+js(set, showAds, true)
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
 @@-ads-banner.js$domain=lifesurance.info|teknoku.me
-lifesurance.info##+js(set, showada, true)
+@@||duniata.com^$ghide
+@@||isekaipalace.com^$ghide
+@@||mangalist.org^$ghide
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
+!#if (ext_ublock)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js:6,domain=duniata.com|mangalist.org
+!#else
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=duniata.com|mangalist.org
+!#endif
 tonanmedia.my.id##+js(set-constant, showAds, true)
 tonanmedia.my.id##.post-body center:has-text(/matikan adblok/i)
 tonanmedia.my.id##.smokeddlrh > .adsbygoogle:style(display: block !important)
