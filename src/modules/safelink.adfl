@@ -52,9 +52,17 @@ teknorizen.blogspot.com##+js(set, safelink.adblock, false)
 nyawang.com##+js(acis, chp_ads_blocker_detector)
 jenismac.com##+js(aost, document.createElement, adsBlocked)
 !
+@@||duniata.com^$ghide
 @@||isekaipalace.com^$ghide
+@@||mangalist.org^$ghide
 isekaipalace.com##+js(set, showAds, true)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
+! Karena uBlock filters – Ads /adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js:5
+!#if (ext_ublock)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js:6,domain=duniata.com|mangalist.org
+!#else
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=duniata.com|mangalist.org
+!#endif
 !
 @@-ads-banner.js$domain=lifesurance.info|teknoku.me
 lifesurance.info##+js(set, showada, true)
