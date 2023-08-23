@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.8.104
+! Version: 23.8.105
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 22 Aug 2023 18:39 UTC
+! Last modified: 23 Aug 2023 15:05 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3442,6 +3442,7 @@ shopee.co.id##.search-page .search-items-container .item-card-list__item-card-wr
 tokopedia.com##:matches-path(/find/) div[data-testid="divLazyFindProduct"]:has([data-testid="lblTopads"])
 tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
 teksnologi.com##+js(acis, String.fromCharCode, decodeURIComponent)
+tokoasrimotedanpayet.blogspot.com##+js(acis, ad.src, redirectionDone)
 cydiaguide.app,eltelu.blogspot.com,redaksiid.blogspot.com,tohaboy.web.id##+js(acis, addEventListener, DOMNodeRemoved)
 dafideff.com##+js(acis, addEventListener, google_ad_client)
 ad4msan.com##+js(aopr, DHAntiAdBlocker)
