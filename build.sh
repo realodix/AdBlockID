@@ -16,4 +16,10 @@ if [ "$1" == "abidplus" ]; then
     eval "flcombine -i abid=. template/adblockid_plus.template.txt dist/adblockid_plus.adfl.txt"
 fi
 
+if [ $# -eq 0 ]; then
+    eval $FOP
+    eval "flcombine -i abid=. template/adblockid.template.txt dist/adblockid.adfl.txt"
+    eval "flcombine -i abid=. template/adblockid_plus.template.txt dist/adblockid_plus.adfl.txt"
+fi
+
 read -t 7 -p "Press any key to continue... " -n 1
