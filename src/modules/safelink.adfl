@@ -13,13 +13,10 @@
 ##[href^="https://safelinku.com/ref/"] > img
 !
 miuiku.com,onlinecorp.me,sekilastekno.com,semawur.com###fixedban
-isekaipalace.com###floatads
 miuiku.com,sekilastekno.com###teaser2
 casafelink2.blogspot.com##.ads
 aii.sh,oceantech.xyz,short2fly.xyz,stfly.me##.banner
 short2fly.xyz##.banner-inner
-isekaipalace.com##.fixed-lside
-isekaipalace.com##.fixed-rside
 intercelestial.com,sweetlantern.com##.idblog-floatbanner
 pinloker.com##.text-center:has-text(/adv/i)
 semawur.com##[href*="semawur.com/links/share/"]
@@ -48,7 +45,6 @@ game-kentang.blogspot.com,hargawebsite.com,keisekaikuy.blogspot.com,newhealthblo
 my-code4you.blogspot.com##+js(nostif, offsetLeft)
 my-code4you.blogspot.com##+js(set, config.pauseInspect, false)
 teknorizen.blogspot.com##+js(set, safelink.adblock, false)
-isekaipalace.com##+js(set, showAds, true)
 lifesurance.info##+js(set, showada, true)
 ! chp_ads_blocker
 nyawang.com##+js(acis, chp_ads_blocker_detector)
@@ -56,10 +52,8 @@ jenismac.com##+js(aost, document.createElement, adsBlocked)
 !
 @@-ads-banner.js$domain=lifesurance.info|teknoku.me
 @@||duniata.com^$ghide
-@@||isekaipalace.com^$ghide
 @@||mangalist.org^$ghide
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=skiplink.me
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
 ! Karena uBlock filters – Ads /adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js:5
 !#if (ext_ublock)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js:6,domain=duniata.com|mangalist.org
@@ -96,7 +90,7 @@ pinloker.com,sekilastekno.com,vebma.com##+js(window.open-defuser, /\.(com|net)\/
 pinloker.com,sekilastekno.com,vebma.com##+js(ra, href, div[x-data="adtival"] a[href][\@click="scroll"])
 ! ---
 ! Countdown Timer
-ayobelajarbareng.com,besargaji.com,cararegistrasi.com,info.gambar.pro,info.mapsaddress.com,isekaipalace.com,jenismac.com,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com,tonanmedia.my.id,tutwuri.id,vebma.com##+js(nano-sib)
+ayobelajarbareng.com,besargaji.com,cararegistrasi.com,info.gambar.pro,info.mapsaddress.com,jenismac.com,miteblog.com,modebaca.com,saungfirmware.id,teknorizen.blogspot.com,teknosimple.com,tonanmedia.my.id,tutwuri.id,vebma.com##+js(nano-sib)
 urbharat.xyz##+js(nano-sib, timePassed, 1300)
 adikinfo.my.id##+js(nano-stb)
 ceesty.com##+js(set, app.options.timerPageVisibilityChecking, false)
@@ -139,8 +133,6 @@ info.mapsaddress.com##p:has(a[href="#downloadnow"] > span)
 ||semawur.com/o.png$image
 ! ---
 ! Mouse & Key Limitation
-isekaipalace.com##*:style(user-select:text!important;)
-isekaipalace.com##+js(aopr, document.oncontextmenu)
 safelkmeong.blogspot.com,usesafelink.blogspot.com##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart, body)
 !
 ! WHITELIST
@@ -149,3 +141,21 @@ safelkmeong.blogspot.com,usesafelink.blogspot.com##+js(ra, oncontextmenu|ondrags
 !
 ! COMMON
 ! -----------------------------------------------
+!---
+! isekaipalace.com
+!---
+isekaipalace.com##.fixed-lside
+isekaipalace.com##.fixed-rside
+! Annoyance
+isekaipalace.com##*:style(user-select:text!important;)
+isekaipalace.com##+js(aopr, document.oncontextmenu)
+isekaipalace.com##+js(nano-sib)
+!
+isekaipalace.com###timer
+isekaipalace.com##+js(ra, disabled, button)
+isekaipalace.com##+js(rc, hidden, button)
+! Anti-adblock
+@@||isekaipalace.com^$ghide
+isekaipalace.com###floatads
+isekaipalace.com##+js(set, showAds, true)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
