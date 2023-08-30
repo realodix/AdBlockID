@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.8.137
+! Version: 23.8.138
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Aug 2023 20:11 UTC
+! Last modified: 30 Aug 2023 20:21 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1777,6 +1777,8 @@ _promohariini.$image,domain=ruparupa.com
 ||ibb.co^$image,domain=bunaken.co.id
 ||image-korankaltim.sgp1.digitaloceanspaces.com^*/ads/$image
 ||misteraladin.com^$frame,domain=okezone.com
+||107.152.47.83/banner$subdocument
+||107.152.47.83/images/bannerr-$image
 ||5news.co.id^*/banner$image
 ||abhihi.xyz/banner/$3p
 ||acehbisnis.com/files/sewaan/$image
@@ -2831,6 +2833,7 @@ ceklist.id##a[rel="sponsored"] img
 lensaindonesia.com##a[rel^="sponsored"] > img
 khabarberita.com##a[target*="blank"] > img
 animenyus.com##a[target="_blank"] > img
+107.152.47.83##a[target="_blank"] > img[src$=".gif"]
 iwanbanaran.com##a[target="_blank"] div[style*="position: fixed;"]
 radartegal.com,radartegal.id##a[title="promotion" i] > img
 radartegal.com,radartegal.id##a[title="promotion" i] > video:remove()
@@ -4801,11 +4804,13 @@ _topbandar_$image
 ##[href$="page.link/fifa855"]
 ##[href$="page.link/ft95"]
 ##[href$="page.link/gacor855"]
+##[href$="page.link/klik855"]
 ##[href$="page.link/maxbet855"]
 ##[href$="page.link/parlay855"]
 ##[href$="page.link/pialaqq"]
 ##[href$="page.link/ruangqq"]
 ##[href$="page.link/rutinqq"]
+##[href$="page.link/spin855"]
 ##[href$="page.link/sport168"]
 ##[href$="page.link/sport388"]
 ##[href$="page.link/sport805"]
