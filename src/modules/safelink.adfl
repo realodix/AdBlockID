@@ -16,7 +16,7 @@ miuiku.com,onlinecorp.me,sekilastekno.com,semawur.com###fixedban
 miuiku.com,sekilastekno.com###teaser2
 casafelink2.blogspot.com##.ads
 aii.sh,oceantech.xyz,short2fly.xyz,stfly.me##.banner
-short2fly.xyz##.banner-inner
+adpayl.ink,short2fly.xyz##.banner-inner
 pinloker.com##.text-center:has-text(/adv/i)
 semawur.com##[href*="semawur.com/links/share/"]
 hxfile.co,short2fly.xyz##a[target="_blank"] > img
@@ -161,3 +161,18 @@ isekaipalace.com,yurasu.xyz##.adsbygoogle[data-ad-client]
 !
 isekaipalace.com,yurasu.xyz##+js(set, showAds, true)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com|yurasu.xyz
+!# ---
+!# alpinecorporate.com
+!
+! https://github.com/realodix/AdBlockID/issues/1533
+! https://github.com/AdguardTeam/AdguardFilters/issues/160439
+alpinecorporate.com##.admania-entrycontent > center > button
+alpinecorporate.com##form center a
+! Annoyance
+alpinecorporate.com##+js(nano-sib, counter, *, 0.001)
+alpinecorporate.com##+js(set, blurred, false)
+! Anti-adblock
+! Butuh filter uBlock, karena filter AdGuard hanya berfungsi di AdGuard.
+! ||sovrn.com/|$xhr,3p,redirect-rule=noop.txt
+alpinecorporate.com###abDetectorModal
+alpinecorporate.com##.adsbox.doubleclick.ad-placement:style(display: block !important;)
