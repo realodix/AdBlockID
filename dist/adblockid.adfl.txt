@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.9.8
+! Version: 23.9.9
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Sep 2023 17:15 UTC
+! Last modified: 02 Sep 2023 19:19 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3807,15 +3807,16 @@ kompas.tv##.content > section > .embedVid:remove()
 ||downloadtanku.org/wp-content/uploads/*-download-now-button-$image
 alex71.com##.content .aligncenter[alt="download" i][src*=".gif"]
 abbaspc.net##.entry-content > center > button:has-text(/download/i)
-gigapurbalingga.cc,mugedcrack.com,yasir-252.com##.entry-content center > a[href^="javascript:"]
-gigapurbalingga.cc##.entry-content center button.user
+mugedcrack.com,yasir-252.com##.entry-content center > a[href^="javascript:"]
+gigapurbalingga.cc,kuyhaa-me.pw##.entry-content center:has(button#linkIButton)
 softwaremaniapc.blogspot.com##.post-content img[width="243"][height="53"]
+kuyhaa.cc##.post-wrapper .code-block:has(> center > a > button)
 kuyhaa-me.com##[type="image"][src*="/sd.png"]
 kuyhaa.net##a[href*="xshared.link"][target="blank"]
 rgames31.com##article .code-block > center:has(a[target*="blank"]) input[type="button"]
 darmediatama.com##article button:has-text(/download crack/i)
 bagas3-1.co,bagas3-1.com,bagas31.one##article center > [href] > button
-bagas31.pw,kuyhaa-me.pw##article center > a[href="javascript:void(0);"]
+bagas31.pw##article center > a[href="javascript:void(0);"]
 bagas31.pw##button:has-text(/download/i)
 freesoft.id##button[onclick^="window.open("][rel]
 masterkreatif.net##center .button:has-text(/download crack/i)
