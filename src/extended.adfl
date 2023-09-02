@@ -11,6 +11,7 @@ sportstars.id###article .voucherWrap
 okezone.com##.Post__Container .voucherWrap
 inews.id##.detail-artikel .voucherWrap
 sindonews.com##.detail-desc .voutstream
+!
 ! STYLE FIXER
 ! -----------------------------------------------
 dutaislam.com###xmlthemes-feat1:style(margin-top:60px!important;)
@@ -25,13 +26,18 @@ dutaislam.com##.outer-wrapper:style(margin-top:60px!important;)
 gridoto.com##.read_content:style(padding-top: 0!important;)
 uzone.id##.section-top:style(margin: 100px auto 0 auto!important;)
 wowbabel.com##script + .container:style(padding-top: 160px!important;)
+!
 ! TEXT SELECTION COLOR NORMALIZATION
 ! -----------------------------------------------
 anaktekno.com,aquatoyou.com,azislamayuda.com,belajaroffice.com,berkeluarga.id,bismillah-gratis.blogspot.com,bospajak.com,ceklist.id,daridesignstudio.com,dokterpajak.com,dokumen.tips,eplusgo.com,foldertips.com,fullversionsoftware.org,gubukpintar.com,hanupis.com,ilovelife.co.id,iqra.id,itkoding.com,kodingindonesia.com,kucingimut.my.id,kuyhaa-me.com,lebakcyber.net,lellyfitriana.com,mahirphotoshop.com,musbikhin.com,ndoware.com,nesabamedia.com,penaindigo.com,pergikuliner.com,petpintar.com,pickybest.id,posciety.com,qerdus.com,rasabunda.com,resepbundaida.com,rumahcoding.co.id,saidalfaruq.net,skillacademy.com,teknocrash.web.id,teknolagi.id,thegorbalsla.com,yamaha-motor.co.id##*::selection:style(color:#212121!important;background:#fde69a!important;)
-! Quick Fix
+!
+! QUICK FIX
 ! -----------------------------------------------
 ! https://github.com/AdguardTeam/AdguardFilters/issues/147108#issuecomment-1499379187
 ! https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2322
 !#if adguard
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,popup,subdocument,badfilter
 !#endif
+!
+! COMMON RULES
+! -----------------------------------------------
