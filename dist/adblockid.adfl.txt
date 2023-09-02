@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.9.5
+! Version: 23.9.6
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Sep 2023 08:31 UTC
+! Last modified: 02 Sep 2023 08:47 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3645,6 +3645,13 @@ anaktekno.com,aquatoyou.com,azislamayuda.com,belajaroffice.com,berkeluarga.id,bi
 !#if adguard
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,popup,subdocument,badfilter
 !#endif
+!# ---
+!# apabeda.com
+!# - https://github.com/realodix/AdBlockID/issues/1536
+!# - https://apabeda.com/perbedaan-lenovo-ideapad-slim-1-dan-3/
+!# - https://membedakan.com/perbedaan-lenovo-ideapad-slim-1-dan-3/
+apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
+apabeda.com,membedakan.com##+js(window.open-defuser)
 .fancybox.$script,domain=seuramoeaceh.com
 /pum-site-scripts.js$script,domain=lintaslampung.com
 /sweetalert2.$script,domain=pusatiklan.my.id
@@ -3653,12 +3660,12 @@ bacaterus.com,carisinyal.com##+js(aopr, $, showModal)
 cilegonnews.com##+js(aopr, eplm_cooki_name)
 suki48.web.id##+js(aopw, _pop)
 kotakgame.com##+js(set, $.magnificPopup.open, noopFunc)
-0.0.realodix,apabeda.com,berga-tech.com,gammafisblog.com,gigapurbalingga.cc,helmiau.com,jalanku.my.id,jandaqu.xyz,jejakmufassir.my.id,kpfmpalangkaraya.com,kurazone.net,kuyhaa-me.com,mistertekno.com,newsparodiquote.blogspot.com,ometlit.com,playsobat.xyz,tafsirmimpi.co,topwisata.info,visual-effects-motion.blogspot.com##+js(window.open-defuser)
+0.0.realodix,berga-tech.com,gammafisblog.com,gigapurbalingga.cc,helmiau.com,jalanku.my.id,jandaqu.xyz,jejakmufassir.my.id,kpfmpalangkaraya.com,kurazone.net,kuyhaa-me.com,mistertekno.com,newsparodiquote.blogspot.com,ometlit.com,playsobat.xyz,tafsirmimpi.co,topwisata.info,visual-effects-motion.blogspot.com##+js(window.open-defuser)
 /wp-content/plugins/cm-pop-up-banners/*$domain=downloadtanku.org|klikpapua.com|radarsriwijaya.com|rajawarta.com|suaramandiri.co
 213.136.91.132,klikpapua.com,papuabaratpos.com,radarsriwijaya.com,rajawarta.com,situswanita.com,suaramandiri.co,suarapubliknews.net##+js(aopr, popup_custom_data)
 /wp-content/plugins/master-popups/*$domain=mediamerdeka.co
 faktabanten.co.id,papuaterkini.com,papuatoday.com,radarbanten.co.id,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
-apabeda.com,suarakumandang.com,topwisata.info##+js(aopr, SGPB_POPUP_PARAMS)
+0.0.realodix,suarakumandang.com,topwisata.info##+js(aopr, SGPB_POPUP_PARAMS)
 /wp-content/plugins/popup-builder/*$domain=klikjatim.com|papuatimes.co.id|papuatoday.com|sindomanado.com|suluttimes.com
 newsbalikpapan.com,papuakita.com##+js(aopr, window.pum_popups)
 /wp-content/plugins/popups/public/*$domain=indonesiaexpat.id|jurnalweb.com
