@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.9.10
+! Version: 23.9.11
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Sep 2023 12:42 UTC
+! Last modified: 03 Sep 2023 13:37 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4349,6 +4349,13 @@ mangacanblog.com##+js(aopr, document.onkeydown)
 komik18.art##+js(aopr, document.onselectstart)
 sekaikomik.bio,warungkomik.com##+js(aopr, nocontextmenu)
 sektekomik.xyz##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
+!# onepieceberwarna.com
+onepieceberwarna.com##a[target*="blank"]:has(> img):not(a[href*="onepieceberwarna.com"])
+onepieceberwarna.com##*:style(user-select:text!important;)
+onepieceberwarna.com##+js(acis, disableSelection, reEnable)
+onepieceberwarna.com##+js(aeld, contextmenu)
+onepieceberwarna.com##+js(aopr, document.oncontextmenu)
+/wp-content/plugins/photection/*$script,domain=onepieceberwarna.com
 ||followlike.net/promo/$image
 ##[href*="ouo.io/ref/"]
 ##[href^="https://safelinkblogger.com/ref/"]
