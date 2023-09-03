@@ -84,3 +84,11 @@ sektekomik.xyz##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselect
 !
 ! GROUPED BY NAME / TYPE
 ! -----------------------------------------------
+!# onepieceberwarna.com
+onepieceberwarna.com##a[target*="blank"]:has(> img):not(a[href*="onepieceberwarna.com"])
+! Annoyance
+onepieceberwarna.com##*:style(user-select:text!important;)
+onepieceberwarna.com##+js(acis, disableSelection, reEnable)
+onepieceberwarna.com##+js(aeld, contextmenu)
+onepieceberwarna.com##+js(aopr, document.oncontextmenu)
+/wp-content/plugins/photection/*$script,domain=onepieceberwarna.com
