@@ -143,7 +143,7 @@ def parse_line(line, position='body'):
             return Header(match.group(1))
 
     # Comment syntax (rules starting with #)
-    if re.search('^!$|^![^#+]'                 # Standart comment
+    if re.search('^!$|^![^#]+|!#(\s.+)?$'      # Standart comment
                  '|^#$|^#[^#@$?%]|^##(\s|##)', # uBO special comment
                  stripped):
         match = RE_METADATA.match(line)
