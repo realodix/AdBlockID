@@ -17,6 +17,50 @@ ads.id##img[alt="admaven"]
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
 !# ---
+!# Detik Network
+||detik.com^*/bannerinternal/
+!
+detik.com###adv-caption-lead
+detik.com###adv-caption-lead + #leaderboard:has([id^="div-gpt-ad"])
+haibunda.com###balloonads
+cnbcindonesia.com,haibunda.com###billboard_banner
+haibunda.com###bottom_banner
+detik.com###leaderboard:has(> center > [id^="div-gpt-ad-"])
+cnbcindonesia.com,detik.com,haibunda.com###megabillboard
+detik.com###megabillboard-desktop
+haibunda.com###parallaxdetail
+insertlive.com###parallaxindetail_blank
+beautynesia.id,cnbcindonesia.com,detik.com##.ads-slot
+detik.com##.adv
+cnbcindonesia.com##.banner
+insertlive.com##.banner__top
+detik.com##.banner_reg
+haibunda.com##.billboard__banner
+cnbcindonesia.com##.box-ads
+cnnindonesia.com,detik.com,insertlive.com##.footer_banner
+haibunda.com##.m-r1:has(#adv-caption-mr1)
+haibunda.com##.m-r2:has(#adv-caption-mr2)
+cnbcindonesia.com,detik.com##.megabillboard
+cnbcindonesia.com##.mr1-scrollpage-banner
+cnbcindonesia.com,detik.com,haibunda.com##.mr1:has(> #adv-caption-mr1)
+cnbcindonesia.com##.mr2-scrollpage-banner
+cnbcindonesia.com,detik.com,haibunda.com##.mr2:has(> #adv-caption-mr2)
+detik.com##.mr[style*="background-color:#F8F8F8"]:has(> .mr1-scrollpage-container .mr1-scrollpage-banner)
+detik.com##.mr[style*="background-color:#F8F8F8"]:has(> .mr2-scrollpage-container .mr2-scrollpage-banner)
+detik.com##.new_banner_reg_100
+haibunda.com##.paradetail
+haibunda.com##.pic_artikel_sisip_table:has-text(/banner/i)
+cnbcindonesia.com,cnnindonesia.com,haibunda.com##.smartbanner_new
+cnnindonesia.com##[class*="_banner_"]
+cnnindonesia.com##article .paradetail:has-text(/adv/i)
+haibunda.com##div:has(> .static_banner1)
+cnnindonesia.com##div:has(> [id^="adv-"])
+! Unbreak
+@@/ads/*$domain=adsmart.detik.com
+@@/videojs.ads.$domain=20.detik.com
+@@||adsmart.detik.com^$ghide
+beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
+!# ---
 !# BolasiarMkt@gmail.com
 bolasiar8.xyz###floatcenter
 bolasiar8.xyz###floating_banner_top
