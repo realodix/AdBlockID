@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.9.52
+! Version: 23.9.53
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Sep 2023 13:28 UTC
+! Last modified: 12 Sep 2023 09:28 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3196,6 +3196,7 @@ sindonews.com##+js(rc, t480, .content-paralax)
 bola.net###content-news .w100p:has([id^="div-gpt-ad"])
 trackpacking.com###fix-footer
 tempo.co###inarticle_2:has-text(/adv/i)
+detik.com###leaderboard:has(> center > [id^="div-gpt-ad-"])
 timesindonesia.co.id###news_content > p:has-text(/adv/i)
 eventsolo.com###post-content .content:has(> .adsbygoogle)
 tirto.id###sticky-bottom
@@ -3246,6 +3247,8 @@ travelingyuk.com##.main-article > div:has-text(/adv/i)
 today.line.me##.midAdModule-root:has-text(/iklan/i)
 cnbcindonesia.com,detik.com,haibunda.com##.mr1:has(> #adv-caption-mr1)
 cnbcindonesia.com,detik.com,haibunda.com##.mr2:has(> #adv-caption-mr2)
+detik.com##.mr[style*="background-color:#F8F8F8"]:has(> .mr1-scrollpage-container .mr1-scrollpage-banner)
+detik.com##.mr[style*="background-color:#F8F8F8"]:has(> .mr2-scrollpage-container .mr2-scrollpage-banner)
 tempo.co##.parallax-box:has([id^="div-gpt-"])
 ayosemarang.com,metropolitan.id,okenarasi.com##.parallax_ads:upward(.flying_carpet_div)
 jatimnetwork.com##.photo__img #in_image:has(> .adsbygoogle)
@@ -3298,7 +3301,6 @@ yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,katadata.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
 bimbelbrilian.com##div[id^="oa-"]
-detik.com##div[style*="background-color:#F8F8F8"]:has(> [id^="adv-"])
 djafa.org,malang-guidance.com,mbaheza.com,tandakoma.com##p:has(> .adsbygoogle)
 emka.web.id##p:has-text(/adv/i)
 detik.com###adv-caption-lead + #leaderboard:has([id^="div-gpt-ad"])
@@ -3649,7 +3651,6 @@ okezone.com##.Post__Container .voucherWrap
 inews.id##.detail-artikel .voucherWrap
 sindonews.com##.detail-desc .voutstream
 dutaislam.com###xmlthemes-feat1:style(margin-top:60px!important;)
-detik.com##.containerBB:style(margin-top: 0!important;)
 celebrities.id,okezone.com##.content-wrap:style(margin-top: 0!important;)
 inews.id##.content-wrap:style(margin-top:0!important;)
 tempo.co##.header.whead-banner:style(top: 0!important;)
