@@ -119,6 +119,50 @@ inibaru.id##div:has(> .adsbygoogle)
 ! Style Fixer
 medcom.id##.mid_content div.box_7_ct:nth-of-type(4):style(margin-bottom:0!important;)
 !# ---
+!# MNC
+!# ---
+||widget-am.misteraladin.com^$frame,domain=idxchannel.com|inews.id|okezone.com|sindonews.com
+!
+inews.id###Div-MOBILE-Detail-StickyAd
+sindonews.com###ads
+inews.id###ads_top_center
+sindonews.com###advertnativeDiv
+sindonews.com###me-div-gpt-ad-bottom-sticky
+sindonews.com###me-div-gpt-ad-parallax
+sindonews.com###tpads7
+idxchannel.com##.ads
+inews.id##.ads-close
+inews.id##.ads_mobile_wrap
+inews.id##.ads_sticky_footer
+sindonews.com##.adtp
+sindonews.com##.app-banner
+okezone.com##.bannertopcenter
+okezone.com##.flying_ads
+inews.id,sindonews.com##.parallax-ad
+okezone.com##[id^="div-gpt-ad-"]:upward(.center-paralax)
+inews.id##div:matches-css(text-align: center):has([id*="-StickyAd" i])
+! uBO ||vdo.ai^$3p
+sindonews.com##.content-row .voutstream
+! Empty Ads Placeholders
+sindonews.com##+js(rc, t480, .content-paralax)
+sindonews.com##.parallax-close
+sindonews.com##.parallax-non.t600:style(top: 0 !important;)
+! Style Fixer
+inews.id##.content-wrap:style(margin-top:0!important;)
+! Annoyance
+okezone.com###contentx .vicon:remove()
+okezone.com###rekomendasi_video:remove()
+inews.id,okezone.com##+js(aopr, document.oncopy)
+okezone.com##.content-wrap .video-wrap:remove()
+sindonews.com##.vidembed-box:remove()
+okezone.com##.video-wrap:has(#rekomendasi_video):remove()
+sindonews.com##.vidwrap:remove()
+okezone.com##.vplayer:has(iframe[src^="https://video.okezone.com/embedoutstream"]):remove()
+okezone.com##[id^="ivs-"]:remove()
+! Unbreak
+@@/advertising/*$domain=client.okezone.com
+sindonews.com#@##header-ads
+!# ---
 !# droidlime.com
 !# ---
 droidlime.com###mvp-leader-wrap a[target="_blank"][rel="external"]:has(> img)
