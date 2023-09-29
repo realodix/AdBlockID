@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.9.112
+! Version: 23.9.113
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Sep 2023 19:17 UTC
+! Last modified: 29 Sep 2023 21:30 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2782,6 +2782,7 @@ lifepal.co.id##[class^="BannerLeads_" i]
 lifepal.co.id##[class^="EndBanner_" i]
 cantika.com##[class^="ads-"]
 popbela.com##[class^="ads_"]
+tedas.id##[class^="adsbyadop_"]
 kaskus.co.id##[class^="skyscrapperAds"]
 jobstreet.co.id##[data-automation$="-ads"]
 merahputih.com##[data-placement="banner-special-report"]
@@ -2872,6 +2873,7 @@ gamebrott.com##.gameb-floating-right
 metrokalteng.com##.gmb-kln
 advertising-indonesia.id##.lded
 infobaik.id##.logo-banner .right
+snaptekno.com##.mabur
 sumateranews.co.id##.mag-box-container p > img
 sumselindependen.com##.main-content > .stream-item-above-post
 sumateranews.co.id##.main-content-row .container-wrapper > img.aligncenter
@@ -3176,7 +3178,7 @@ bisnis.com##.billboard:has([id^="div-gpt-ad"])
 id.theasianparent.com##.bottom-sticky.only-mobile.layer-bsa-bn:style(min-height: 0 !important;)
 uzone.id##.box-content-news-description .geozo:has(> script)
 suarajatimpost.com##.card:has-text(/adv/i)
-indorsie.com,kamiwebdevelopment.com,polarumah.com,syfaganjarstory.com##.code-block:has(> .adsbygoogle)
+indorsie.com,kamiwebdevelopment.com,polarumah.com,ridpir.com,syfaganjarstory.com##.code-block:has(> .adsbygoogle)
 joglosemarnews.com##.code-block:has(> amp-ad)
 infosumbar.net##.code-block:has(> center > script)
 suarapapua.com##.code-block:has(> script)
@@ -3233,7 +3235,6 @@ bkppkutim.com,viv.co.id##center:has(div > .adsbygoogle)
 sukabumiupdate.com##center:has-text(/adv/i)
 kompas.id##div.justify-center:has([src^="https://ads.kompas.id"])
 digitalmarketingschool.id##div:has(> ._ning_inner > .adsbygoogle)
-disway.id##div:has(> .adsbyadop)
 ascomaxx.com,buruhtinta.co.id,cerdika.com,disway.id,inilahkoran.id,jagokata.com,jurnalisindonesia.id,kanalnews.co,mojok.co,postingnews.id,saintif.com,semutaspal.com,sinergianews.com,trans89.com,utamanews.com##div:has(> .adsbygoogle)
 etindonesia.com##div:has(> .adsbygoogle):not(.td-fix-index)
 abadikini.com,dara.co.id,nawalakarsa.id,sinergianews.com,timesindonesia.co.id,vcgamers.com##div:has(> [class^="adsbyadop_"])
@@ -3246,7 +3247,7 @@ starringheavenlyrics.blogspot.com##div:has(> span > script[data-ad-client])
 yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,katadata.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
-konteks.co.id##div[id^="oa-"][data-dest="placeholder"]:has(> .placeholderPlug:has-text(/ad/i))
+konteks.co.id,tedas.id##div[id^="oa-"][data-dest="placeholder"]:has(> .placeholderPlug:has-text(/ad/i))
 djafa.org,malang-guidance.com,mbaheza.com,tandakoma.com##p:has(> .adsbygoogle)
 emka.web.id##p:has-text(/adv/i)
 matafakta.com##aside a[href] > img:not(a[href*="matafakta.com"] > img)
@@ -3329,7 +3330,6 @@ acehekspres.com,acehportal.com,acehstandar.com,acehtrend.com,akuratnews.com,kaba
 ceklist.id##article .affcoups
 bulat.co.id##article .melayang
 sabiru.com##aside .oxy-pricing-box
-bimbelbrilian.com##div[id^="oa-"]
 beritasatu.com##div[style^="font-family: helvetica, arial;font-size: 10px;"]
 suarakutim.com##figure img
 grid.id,gridoto.com,kompas.com,kompas.tv,kontan.co.id,motorplus-online.com,parapuan.co,suara.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
@@ -3859,7 +3859,7 @@ beautynesia.id##.detail__embed:remove()
 cnnindonesia.com##.detail_text #idvideocnn:remove()
 cnnindonesia.com##.detail_text .sisip_video_ds:remove()
 soloabadi.com##.elementor-column:has-text(/video terkini/i):remove()
-carisinyal.com,dailysia.com,fajar.co.id,herworld.co.id,islampos.com,jalantikus.com,jawapos.com,pramborsfm.com##.gliaplayer-container:remove()
+carisinyal.com,dailysia.com,fajar.co.id,herworld.co.id,islampos.com,jalantikus.com,jawapos.com,pramborsfm.com,tedas.id##.gliaplayer-container:remove()
 baliportalnews.com##.home .td_block_video_playlist:remove()
 tribunnewswiki.com##.ivideo_box:remove()
 bola.com,bola.net,dream.co.id,kapanlagi.com,liputan6.com,merdeka.com##.nativescrollingKLY:has(.nativescrollingKLY-sticky-inner-video):remove()
