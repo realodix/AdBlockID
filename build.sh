@@ -24,4 +24,4 @@ if [ $# -eq 0 ]; then
     eval $ADBLOCKID_PLUS
 fi
 
-read -t 7 -p "Press any key to continue... " -n 1
+# read -t 7 -p "Press any key to continue... " -n 1
