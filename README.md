@@ -55,15 +55,6 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 #### FAQ
 - **Q**: Apa bedanya antara AdBlockID dan AdBlockID Plus? <br>
   **A**: AdBlockID berfokus hanya pada website Indonesia; dan AdBlockID Plus pada dasarnya adalah personal filter yang Saya bagikan untuk melengkapi dan menutup keterbatasan pada AdBlockID, jadi tidak ada batasan untuk AdBlockID Plus.
-- **Q**: Pilih subscribe dari jsdelivr.net atau adblockid.pages.dev? <br>
-  **A**:
-  - jsdelivr.net
-    - Cocok untuk pengguna biasa; atau digunakan pada HP.
-    - Ketersediaan update mengimbangi auto update pada ad blocker, kurang lebih 3 - 24 jam.
-  - adblockid.pages.dev
-    - Cocok untuk para [kontributor](https://github.com/realodix/AdBlockID/graphs/contributors) dan [volunteer](https://github.com/realodix/AdBlockID/tree/Subscription#volunteers-) untuk dapat langsung memeriksa hasilnya.
-    - Update langsung tersedia untuk mengimbangi force update.
-  - Untuk pengguna AdGuard, ketersediaan update untuk AdBlockID mengikuti kebijakan AdGuard.
 
 
 ## Cara Menggunakan
