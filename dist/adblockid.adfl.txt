@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.10.18
+! Version: 23.10.19
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Oct 2023 08:46 UTC
+! Last modified: 11 Oct 2023 18:02 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4296,6 +4296,7 @@ anichin.top##+js(json-prune, *, pop_type)
 0.0.realodix##+js(acis, parseInt, break;case $.)
 /wp-content/plugins/angwp/*$domain=dramabarat.com
 173.212.224.160,45.89.66.142###fadeinbox
+194.233.77.161###fb-fanbox
 meownime.my.id###hbfanback
 185.217.95.34,anichin.art,isekaisubs.web.id,minioppai.org,oploverz.fit,oploverz.red,sokuja.bar,sokuja.co###overplay
 manganime.in###tutupx
@@ -4319,11 +4320,11 @@ nekopoi.web.id##+js(aopr, showurl)
 niihen.com##+js(aopr, auto_safelink)
 niihen.com##.entry-content div:matches-css(text-align: center) > a:style(display: inline !important;)
 179.43.163.50,cgvindo.click,kitanonton.site,nekopoi.web.id##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
-mikanime.com,wibudesu.co##*:style(user-select:text!important;)
+anichin.top,mikanime.com,wibudesu.co##*:style(user-select:text!important;)
 mikanime.com,wibudesu.co##+js(acis, disableSelection, reEnable)
 otakudesu.wiki##+js(acis, document.oncontextmenu)
 akashinime.site##+js(acis, nocontextmenu)
-anichin.art,idlixplus.net,navypilotsecrets.com,swimhereford.co.uk##+js(aeld, contextmenu)
+anichin.art,anichin.top,idlixplus.net,navypilotsecrets.com,swimhereford.co.uk##+js(aeld, contextmenu)
 kusonime.com##+js(aeld, keydown)
 kusonime.com##+js(aopr, document.oncontextmenu)
 nekopoi.web.id##+js(aopr, document.oncopy)
@@ -4373,10 +4374,10 @@ nontonanimeid.*##.floating_footer
 nontonanimeid.*##a[target*="blank"]:has(> img)
 ||kotakanimeid.com/ads/$image
 ||kotakanimeid.com/ads/*.mp4$mp4
-anikor.skin,anikun.sbs###fixedban
-anikor.skin,anikun.sbs##.kln
-anikor.skin,anikun.sbs##a[target*="blank"]:has(> img)
-anikor.skin,anikun.sbs##div[id^="teaser"]
+anikor.cyou,anikor.skin,anikun.sbs###fixedban
+anikor.cyou,anikor.skin,anikun.sbs##.kln
+anikor.cyou,anikor.skin,anikun.sbs##a[target*="blank"]:has(> img)
+anikor.cyou,anikor.skin,anikun.sbs##div[id^="teaser"]
 .gif|$image,domain=komikcast.net|komikcast.vip|komikindo.tv|mangakita.net|mangatale.co|manhwaindo.cfd
 ||komikindo.co^*/banner-$image
 komikindo.co##[href^="https://shope.ee/"]:has(> img)
@@ -5022,6 +5023,7 @@ _topbandar_$image
 ##[href="https://adstub.net/totobet"]
 ##[href="https://adstub.net/totobet/"]
 ##[href="https://adstub.net/yoi4d/"]
+##[href="https://akses.games/Anikor"]
 ##[href="https://akses.games/anichin"]
 ##[href="https://akses.games/animasuofc"]
 ##[href="https://akses.games/daftarbm"]
@@ -5902,12 +5904,14 @@ _topbandar_$image
 ##[href*="://vegs88.xyz/"]
 ##[href*="://vsabet.me/"]
 ##[href*="://winslt8.us/"]
+##[href="https://nawalavpn.site/rphslt99"]
 ##[href="https://nawalavpn.site/rupiahslot99"]
 ##[href="https://vpn89.site/jd89"]
 ##[href="https://vpn89.site/ratu"]
 ##[href="https://vpnnawala.site/kaiko"]
 ##[href="https://vpnnawala.site/penta"]
 ##[href="https://vpnnawala.site/rusia"]
+##[href="https://zeus.fun/xxiads"]
 -1160x250-$image,domain=pandulaju.com.my
 -OnlineAd-$image,domain=funtasticko.net|pandulaju.com.my
 /1020x350_$image,domain=funtasticko.net
