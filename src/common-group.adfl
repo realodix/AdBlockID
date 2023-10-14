@@ -19,6 +19,16 @@ ads.id##img[alt="admaven"]
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
 !# ---
+!# Kompas Gramedia
+!# ---
+juara.net##.ads
+! Empty ads placeholders
+! https://github.com/AdguardTeam/ExtendedCss/issues/138
+juara.net##div:matches-css-before(content: /Adv/)
+! Annoyance
+juara.net##.content_footer #video_pilihan:remove()
+juara.net##.video-box-wrap:has(.rVideo-player):remove()
+!# ---
 !# Trans Media - Detik Network
 !# ---
 ||detik.com^*/bannerinternal/
