@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.10.29
+! Version: 23.10.30
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Oct 2023 08:25 UTC
+! Last modified: 14 Oct 2023 15:43 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3574,6 +3574,10 @@ ads.id##img[alt="admaven"]
 @@://ads.$domain=ads.id
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
+juara.net##.ads
+juara.net##div:matches-css-before(content: /Adv/)
+juara.net##.content_footer #video_pilihan:remove()
+juara.net##.video-box-wrap:has(.rVideo-player):remove()
 ||detik.com^*/bannerinternal/
 detik.com###adv-caption-lead
 detik.com###adv-caption-lead + #leaderboard:has([id^="div-gpt-ad"])
