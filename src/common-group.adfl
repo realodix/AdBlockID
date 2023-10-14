@@ -22,18 +22,21 @@ apabeda.com,membedakan.com##+js(window.open-defuser)
 !# Kompas Gramedia
 !# ---
 grid.id###div-top-banner-transparent
-juara.net##.ads
+gridoto.com,juara.net##.ads
+gridoto.com##.ads-liftdown
 grid.id##.bottom_banner
-grid.id##.pushdown-banner
+grid.id,gridoto.com##.pushdown-banner
 ! Empty ads placeholders
+gridoto.com##.cls-mgid:has(> script[src^="https://jsc.mgid.com/"])
+gridoto.com##.geniee-box:has(> script[src^="https://js.genieessp.com/"])
 grid.id##.nkt__stick
 ! https://github.com/AdguardTeam/ExtendedCss/issues/138
-grid.id,juara.net##div:matches-css-before(content: /Adv/)
+grid.id,gridoto.com,juara.net##div:matches-css-before(content: /Adv/)
 ! Annoyance
 grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
 juara.net##.content_footer #video_pilihan:remove()
-grid.id,juara.net##.video-box-wrap:has(.rVideo-player):remove()
-grid.id##.videoKG-widget:remove()
+grid.id,gridoto.com,juara.net##.video-box-wrap:has(> .rVideo-player):remove()
+grid.id,gridoto.com##.videoKG-widget:remove()
 !# ---
 !# Trans Media - Detik Network
 !# ---
