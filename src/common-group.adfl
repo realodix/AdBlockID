@@ -21,13 +21,19 @@ apabeda.com,membedakan.com##+js(window.open-defuser)
 !# ---
 !# Kompas Gramedia
 !# ---
+grid.id###div-top-banner-transparent
 juara.net##.ads
+grid.id##.bottom_banner
+grid.id##.pushdown-banner
 ! Empty ads placeholders
+grid.id##.nkt__stick
 ! https://github.com/AdguardTeam/ExtendedCss/issues/138
-juara.net##div:matches-css-before(content: /Adv/)
+grid.id,juara.net##div:matches-css-before(content: /Adv/)
 ! Annoyance
+grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
 juara.net##.content_footer #video_pilihan:remove()
-juara.net##.video-box-wrap:has(.rVideo-player):remove()
+grid.id,juara.net##.video-box-wrap:has(.rVideo-player):remove()
+grid.id##.videoKG-widget:remove()
 !# ---
 !# Trans Media - Detik Network
 !# ---
