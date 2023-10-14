@@ -21,20 +21,25 @@ apabeda.com,membedakan.com##+js(window.open-defuser)
 !# ---
 !# Kompas Gramedia
 !# ---
+tribunnewswiki.com###adsoutofpage-premiumTopframe
+tribunnews.com,tribunnewswiki.com###anchorads
 grid.id###div-top-banner-transparent
 gridoto.com,juara.net##.ads
 gridoto.com##.ads-liftdown
+tribunnewswiki.com##.ads_box_2
 grid.id##.bottom_banner
+tribunnewswiki.com##.nativeads
 grid.id,gridoto.com##.pushdown-banner
 ! Empty ads placeholders
 gridoto.com##.cls-mgid:has(> script[src^="https://jsc.mgid.com/"])
 gridoto.com##.geniee-box:has(> script[src^="https://js.genieessp.com/"])
 grid.id##.nkt__stick
 ! https://github.com/AdguardTeam/ExtendedCss/issues/138
-grid.id,gridoto.com,juara.net##div:matches-css-before(content: /Adv/)
+grid.id,gridoto.com,juara.net,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
 ! Annoyance
 grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
 juara.net##.content_footer #video_pilihan:remove()
+tribunnewswiki.com##.ivideo_box:remove()
 grid.id,gridoto.com,juara.net##.video-box-wrap:has(> .rVideo-player):remove()
 grid.id,gridoto.com##.videoKG-widget:remove()
 !# ---
