@@ -73,6 +73,7 @@ tribunnewswiki.com##.nativeads
 kontan.co.id##.paralax-ad
 bolasport.com,grid.id,gridoto.com,kompas.com,kompas.tv,kompasiana.com,motorplus-online.com,sonora.id,tribunnews.com##.pushdown-banner
 motorplus-online.com##.pushdown-banner + .ol_swipe
+kompas.id##.relative:has(> [id^="div-gpt-ad-"])
 kontan.co.id##.thebanner
 kgnow.com##.topBanner
 ! Empty ads placeholders
@@ -83,11 +84,14 @@ kgnow.com,kompas.com,sonora.id##.kcm
 kompas.com##.kcm__articleList
 kontan.co.id##.kus:has(> #tutup_box)
 grid.id##.nkt__stick
+kompas.id##[style="min-height: 250px; min-width: 300px;"]
+kompas.id##[style="min-height: 50px; min-width: 320px;"]
 ! https://github.com/AdguardTeam/ExtendedCss/issues/138
 bolasport.com,grid.id,gridoto.com,juara.net,kgnow.com,kompas.com,kompas.tv,motorplus-online.com,parapuan.co,tribunnews.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
 ! Whitelist
 @@/advertising.$domain=advertising.kontan.co.id
 @@/api/ads/*$xhr,domain=klasika.kompas.com
+@@/wp-content/uploads/*$1p,image,domain=korporasi.kompas.id
 @@://ads.$domain=ads.kontan.co.id|klasika.kompas.com
 @@://adv.$domain=adv.kontan.co.id
 ! Annoyance
