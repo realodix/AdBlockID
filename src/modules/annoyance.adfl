@@ -139,14 +139,8 @@ m.riau24.com##.content_article .dm-player:remove()
 bisnis.com##.readVideo:remove()
 idntimes.com,katadata.co.id,riauonline.co.id,sukabumiupdate.com##article .dm-player:remove()
 !
-kompas.com##.content_article .rVideo-middle:remove()
-kompas.com##.content_article .video-box-wrap:remove()
 greenscene.co.id##.gliaplayer-container:remove()
-kompas.com,~video.kompas.com##.js-read-article .rVideo-player:remove()
-kompas.com,~video.kompas.com##.js-read-article .video-box-wrap:remove()
 theasianparent.com##.player-ivideosmart-wrap:remove()
-kompas.com,~video.kompas.com##.read__article .kgnowGate:remove()
-kompas.com,~video.kompas.com##.video-box-wrap:has(.rVideo-player):remove()
 beritasatu.com,dailysia.com,greenscene.co.id,guesehat.com,japanesestation.com,katadata.co.id,magdalene.co,momsmoney.id,tempo.co,wartaekonomi.co.id,wowkeren.com##[class^="ivs-"]:remove()
 dailysia.com,seputarpapua.com,tempo.co##[id^="ivs-"]:remove()
 jubi.id,jubitv.id##ivs-player:remove()
@@ -176,10 +170,9 @@ hienzo.com##center > button:has-text(/download/i)
 ! GENERAL
 ! -----------------------------------------------
 ! Automated Link Attribution
-/copy_credit.$script,domain=kompas.com
-/copylink/copylink-urlonly.$script
 katadata.co.id##+js(aopr, addLink)
 tirto.id##+js(rc, container900, div)
+/copylink/copylink-urlonly.$script
 ! ---
 ! Download App
 matain.id##.app_layer

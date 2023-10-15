@@ -236,14 +236,13 @@ nusadaily.com##.post-content [id^="div-gpt-ad"]:upward(section)
 investor.id##.show-desktop:has(script[src*=".com/ads/"])
 danielnugroho.com##.single-content > div:has(> .adsbygoogle)
 suara.com##.skin:has(> [data-ad-type])
-kompas.com##.trending--sidebar .article__grid:has(> .color--sponsored)
 mariodevan.com,motorrio.com##.wpa:has-text(/adv/i)
 garudadaily.com##.wpb_wrapper:has-text(/adv/i)
 ruangguru.com##[class^="css-"]:has(> [id^="div-gpt-ad-"])
 ruangguru.com##[class^="css-"]:has(> p:has-text(/iklan/i) )
 hellosehat.com##[class^="mantine-"]:has(> [class^="sc-"][data-header-bottom="false"] > [class^="sc-"]:has-text(/iklan/i))
 kumparan.com##[data-qa-id*="mobile-article-page-"]:has-text(/adv/i)
-alinea.id,bisnis.com,gadgetren.com,indozone.id,katadata.co.id,kompas.com,tek.id##[id^="div-gpt-ad"]:upward(.flying_carpet_div)
+alinea.id,bisnis.com,gadgetren.com,indozone.id,katadata.co.id,tek.id##[id^="div-gpt-ad"]:upward(.flying_carpet_div)
 genpi.co##[id^="div-gpt-ad-"]:upward(.text-center)
 tirto.id##[id^="gpt-"]:has(> script)
 koranseruya.com##[id^=local-]:has-text(/adv/i)
@@ -329,7 +328,6 @@ guideku.com,suara.com##.placeholder_r1
 suara.com##.placeholder_r2
 suara.com##.placeholder_r3
 suara.com##.placeholder_read_body
-kompas.com##.premium_div
 radarcirebon.id##.site-gpt-in-image
 bengkulupost.id##.site-header > .wp-custom-header
 bisnis.com##.skyscrapper
@@ -357,7 +355,7 @@ suarakutim.com##figure img
 ladiestory.id##img + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 ! AG tidak mengkonversi regex flags
 ! https://github.com/AdguardTeam/ExtendedCss/issues/138
-kompas.com,suara.com##div:matches-css-before(content: /Adv/)
+suara.com##div:matches-css-before(content: /Adv/)
 ! ---
 ! Mobile
 ! Hanya ditemukan pada mobile
@@ -366,7 +364,6 @@ beritasatu.com,investor.id,jatimaktual.com,resepkoki.id,sukabumiupdate.com###meg
 thejakartapost.com##.expandable-bottom-sticky
 mixberita.com##.footer1:has(a[target="_blank"] > img)
 sitnas.id##.hulahopsmobile
-kompas.com##.kcm-track:matches-css(position: relative):has(.kcm-track-sticky:has([id*="div-gpt-ad-"]))
 momsmoney.id##.liftdownclass
 republika.co.id##.mobile-billboard
 suara.com##.parallax_swipe
