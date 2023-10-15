@@ -76,7 +76,7 @@ superapp.id##.wppopups-whole
 !
 ! CONTENT EMBED
 ! -----------------------------------------------
-||embed.dugout.com^$3p,domain=bolasport.com|indosport.com|skor.id
+||embed.dugout.com^$3p,domain=indosport.com|skor.id
 ||embed.rctiplus.com^$3p,domain=minangkabaunews.com
 ||karirpad.com/mediapartner/widget/$3p,frame
 ||muses.org^$3p,domain=wartasehat.id
@@ -108,7 +108,6 @@ cnnindonesia.com##.detail_text .sisip_video_ds:remove()
 soloabadi.com##.elementor-column:has-text(/video terkini/i):remove()
 carisinyal.com,dailysia.com,fajar.co.id,herworld.co.id,islampos.com,jalantikus.com,pramborsfm.com,tedas.id##.gliaplayer-container:remove()
 baliportalnews.com##.home .td_block_video_playlist:remove()
-tribunnewswiki.com##.ivideo_box:remove()
 bola.com,bola.net,dream.co.id,kapanlagi.com,liputan6.com,merdeka.com##.nativescrollingKLY:has(.nativescrollingKLY-sticky-inner-video):remove()
 kapanlagi.com##.nativevideosiframe-loader:remove()
 republika.co.id##.news-content .dailymotion-player-root:remove()
@@ -121,10 +120,8 @@ briliofood.net##.section:has(.video__headline):remove()
 kuyou.id##.sidebar-newsfeed .card:has(#rcti-plus):remove()
 likein.id##.single-article .plyr:remove()
 cnnindonesia.com,haibunda.com,insertlive.com##.sisip_embed_sosmed:remove()
-gridoto.com##.video-box-wrap:has(> .rVideo-player):remove()
 detik.com##.video20detik_1:remove()
 indopos.co.id##.wpb_wrapper > p > video[autoplay="autoplay"]:remove()
-parapuan.co,sonora.id##[class^="rVideo-"]:remove()
 suara.com##article #dailymotion-widget:remove()
 cnbcindonesia.com##article .autovideocnbc:remove()
 instingjurnalis.com,republika.co.id##article .dailymotion-player-root:remove()
@@ -142,29 +139,12 @@ m.riau24.com##.content_article .dm-player:remove()
 bisnis.com##.readVideo:remove()
 idntimes.com,katadata.co.id,riauonline.co.id,sukabumiupdate.com##article .dm-player:remove()
 !
-kompas.tv###jxOutstreamContainer + .rVideo-wrapper:remove()
-bolasport.com##.clsivs:remove()
-kompas.com##.content_article .rVideo-middle:remove()
-kompas.com##.content_article .video-box-wrap:remove()
-gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://player.ivideosmart.com"]):remove()
 greenscene.co.id##.gliaplayer-container:remove()
-gridoto.com##.ivs-box:remove()
-kompas.com,~video.kompas.com##.js-read-article .rVideo-player:remove()
-kompas.com,~video.kompas.com##.js-read-article .video-box-wrap:remove()
-kompas.tv##.kgnowGate:remove()
-kompas.tv##.paragraph > .rVideo-middle:remove()
 theasianparent.com##.player-ivideosmart-wrap:remove()
-grid.id##.rVideo-wrapper:remove()
-kompas.com,~video.kompas.com##.read__article .kgnowGate:remove()
-grid.id,kompas.com,kompasiana.com,~video.kompas.com##.video-box-wrap:has(.rVideo-player):remove()
-grid.id##.videoKG-widget:remove()
-beritasatu.com,dailysia.com,greenscene.co.id,grid.id,guesehat.com,japanesestation.com,katadata.co.id,magdalene.co,momsmoney.id,motorplus-online.com,parapuan.co,tempo.co,wartaekonomi.co.id,wowkeren.com##[class^="ivs-"]:remove()
+beritasatu.com,dailysia.com,greenscene.co.id,guesehat.com,japanesestation.com,katadata.co.id,magdalene.co,momsmoney.id,tempo.co,wartaekonomi.co.id,wowkeren.com##[class^="ivs-"]:remove()
 dailysia.com,seputarpapua.com,tempo.co##[id^="ivs-"]:remove()
 jubi.id,jubitv.id##ivs-player:remove()
-kompas.tv##script + .rVideo-wrapper:remove()
-||player.ivideosmart.com/ivsplayer/$script,domain=bolasport.com|brilio.net|grid.id|gridoto.com|herstory.co.id|id.theasianparent.com|indosport.com|momsmoney.id|motorplus-online.com|parapuan.co|populis.id|sonora.id|tempo.co
-! Mobile
-kompas.tv##.content > section > .embedVid:remove()
+||player.ivideosmart.com/ivsplayer/$script,domain=brilio.net|herstory.co.id|id.theasianparent.com|indosport.com|momsmoney.id|populis.id|tempo.co
 !
 ! FAKE BUTTON
 ! -----------------------------------------------
@@ -190,10 +170,9 @@ hienzo.com##center > button:has-text(/download/i)
 ! GENERAL
 ! -----------------------------------------------
 ! Automated Link Attribution
-/copy_credit.$script,domain=kompas.com
-/copylink/copylink-urlonly.$script
 katadata.co.id##+js(aopr, addLink)
 tirto.id##+js(rc, container900, div)
+/copylink/copylink-urlonly.$script
 ! ---
 ! Download App
 matain.id##.app_layer
@@ -214,9 +193,6 @@ ngelag.com##+js(set, window.onpopstate, noopFunc)
 ! ---
 ! Defuse reloading of a document through a meta "refresh" tag.
 tipsgaptek.com,tipskerja.com##+js(refresh-defuser)
-! ---
-! Text Selection Color Normalization
-grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
 ! ---
 ! Paywall
 indonesiana.id##.fc-paywall-container
