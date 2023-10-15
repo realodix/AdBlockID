@@ -21,12 +21,17 @@ apabeda.com,membedakan.com##+js(window.open-defuser)
 !# ---
 !# Kompas Gramedia
 !# ---
+motorplus-online.com###ad-below-photo-container
+motorplus-online.com###ad-genie-container
 tribunnewswiki.com###adsoutofpage-premiumTopframe
 tribunnews.com,tribunnewswiki.com###anchorads
 bolasport.com###bottom-banner-ads
+motorplus-online.com###div-ad-below-comment-container
+motorplus-online.com###div-ad-bottom-container
+motorplus-online.com###div-ad-latest-container
 grid.id###div-top-banner-transparent
 bolasport.com###top-banner-ads
-bolasport.com,gridoto.com,juara.net##.ads
+bolasport.com,gridoto.com,juara.net,motorplus-online.com##.ads
 kompas.tv##.ads-big
 kompas.tv##.ads-flycarpet
 kompas.tv##.ads-foot
@@ -47,13 +52,15 @@ kompas.tv##.exads
 bolasport.com,kompas.tv##.mgidclsbanner
 bolasport.com##.mid-banner
 tribunnewswiki.com##.nativeads
-bolasport.com,grid.id,gridoto.com,kompas.tv,tribunnews.com##.pushdown-banner
+bolasport.com,grid.id,gridoto.com,kompas.tv,motorplus-online.com,tribunnews.com##.pushdown-banner
+motorplus-online.com##.pushdown-banner + .ol_swipe
 ! Empty ads placeholders
+motorplus-online.com###div-paralax-container
 gridoto.com##.cls-mgid:has(> script[src^="https://jsc.mgid.com/"])
 gridoto.com##.geniee-box:has(> script[src^="https://js.genieessp.com/"])
 grid.id##.nkt__stick
 ! https://github.com/AdguardTeam/ExtendedCss/issues/138
-bolasport.com,grid.id,gridoto.com,juara.net,kompas.tv,parapuan.co,tribunnews.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
+bolasport.com,grid.id,gridoto.com,juara.net,kompas.tv,motorplus-online.com,parapuan.co,tribunnews.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
 ! Annoyance
 grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
 tribunnews.com##+js(aeld, /copy|keydown/)
