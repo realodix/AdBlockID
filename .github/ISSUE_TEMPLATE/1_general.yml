@@ -1,0 +1,32 @@
+name: General
+description: Laporkan hal apa yang Anda temukan
+labels: 'C: Native'
+body:
+  - type: input
+    attributes:
+      label: Sample URL
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Ad Blocker
+      description: Produk ad blocker apa yang Anda gunakan?
+      options:
+        - uBlock Origin
+        - AdGuard
+        - Lainnya
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Keterangan
+      description: Berikan penjelasan rinci dan sertakan screenshot.
+      placeholder: |
+        - Ada iklan di bagian ...
+        - Terdapat iklan / popup ketika ...
+        - Tidak bisa klik kanan
+        - Teks tidak bisa di-copy atau begitu di-paste muncul link attribution
+        ...
+    validations:
+      required: true
