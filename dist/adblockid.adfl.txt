@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.10.42
+! Version: 23.10.43
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Oct 2023 11:28 UTC
+! Last modified: 18 Oct 2023 12:06 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3552,6 +3552,7 @@ kontan.co.id##.heightads100
 kontan.co.id##.heightads250
 kontan.co.id##.heightads50
 kontan.co.id##.inner-paralax-ad
+kompas.com##.kcm-track:has(> #AdTrackHbInterscrollerMobile)
 kontan.co.id##.liftdownclass
 bolasport.com,kompas.tv##.mgidclsbanner
 bolasport.com##.mid-banner
@@ -3563,6 +3564,7 @@ kompas.id##.relative:has(> [id^="div-gpt-ad-"])
 kontan.co.id##.thebanner
 kgnow.com##.topBanner
 motorplus-online.com###div-paralax-container
+kontan.co.id##.center[style^="min-height: 250px"]:has(> [id^="div-Billboard_"])
 gridoto.com##.cls-mgid:has(> script[src^="https://jsc.mgid.com/"])
 gridoto.com##.geniee-box:has(> script[src^="https://js.genieessp.com/"])
 kgnow.com,kompas.com,sonora.id##.kcm
@@ -3616,8 +3618,8 @@ haibunda.com##.m-r1:has(#adv-caption-mr1)
 haibunda.com##.m-r2:has(#adv-caption-mr2)
 detik.com##.mr1:has(> #adv-caption-mr1)
 detik.com##.mr2:has(> #adv-caption-mr2)
-cnnindonesia.com,detik.com##.mr:has(> .mr1-scrollpage-container .mr1-scrollpage-banner)
-cnnindonesia.com,detik.com##.mr:has(> .mr2-scrollpage-container .mr2-scrollpage-banner)
+cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr1-scrollpage-container .mr1-scrollpage-banner)
+cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr2-scrollpage-container .mr2-scrollpage-banner)
 haibunda.com###parallaxdetail
 insertlive.com###parallaxindetail_blank
 detik.com##.list-content > .para1
@@ -3746,7 +3748,8 @@ koranmemo.com##aside img[style="max-width: 100%; height: auto;"]
 detiksumsel.com,radarcianjur.com##img[alt*="iklan" i]
 jawapos.com##img[width="1200"][height="149"]
 wowbabel.com##script + .container:style(padding-top: 160px!important;)
-aboutmalang.com,alonesia.com,auroranews.id,ayobandung.com,ayojakarta.com,babad.id,bangbara.com,bicaraberita.com,bogorinsider.com,cirebonnetwork.com,detiksumsel.com,enampagi.id,gorajuara.com,hallyuvibe.com,harianhaluan.com,harianterbit.com,hops.id,indozone.id,infoindonesia.id,infosumsel.id,innalar.com,insiden24.com,jatimnetwork.com,jawapos.com,jurnalflores.co.id,kaltenglima.com,kilat.com,klikaktual.com,kobaran.com,koran-gala.id,kpopchart.net,kvibes.id,liputanbekasi.com,lombokinsider.com,melansir.com,mengerti.id,metrojambi.com,metropolitan.id,newsmedia.co.id,nongkrong.co,pepo.id,pitutur.id,radarcianjur.com,radardepok.com,radiowebindo.com,rbg.id,relung.id,risinggeeks.com,sewaktu.com,sinergijatim.com,sulselnetwork.com,tajuk24.com,terasinfo.id,tinewss.com,tredmedia.com##img + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
+##img[src^="https://assets.ayobandung.com/"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
+##img[src^="https://static.promediateknologi.id"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 hops.id###play3-js-sdk:remove()
 kabarrakyat.id##+js(aopr, document.oncontextmenu)
 jawapos.com##.gliaplayer-container:remove()
