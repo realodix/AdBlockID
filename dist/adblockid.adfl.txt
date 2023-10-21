@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.10.50
+! Version: 23.10.51
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Oct 2023 16:37 UTC
+! Last modified: 21 Oct 2023 10:19 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4378,12 +4378,13 @@ nontonanimeid.*##.floating_footer
 nontonanimeid.*##a[target*="blank"]:has(> img)
 ||kotakanimeid.com/ads/$image
 ||kotakanimeid.com/ads/*.mp4$mp4
-anikor.cyou,anikor.skin,anikun.sbs###fixedban
-anikor.cyou,anikor.skin,anikun.sbs##.kln
-anikor.cyou,anikor.skin,anikun.sbs##a[target*="blank"]:has(> img)
-anikor.cyou,anikor.skin,anikun.sbs##div[id^="teaser"]
-.gif|$image,domain=komikcast.net|komikcast.vip|komikindo.tv|mangakita.net|mangatale.co|manhwaindo.cfd
+193.27.90.67,anikor.cyou,anikor.skin,anikun.sbs###fixedban
+193.27.90.67,anikor.cyou,anikor.skin,anikun.sbs##.kln
+193.27.90.67,anikor.cyou,anikor.skin,anikun.sbs##a[target*="blank"]:has(> img)
+193.27.90.67,anikor.cyou,anikor.skin,anikun.sbs##div[id^="teaser"]
+.gif|$image,domain=komikcast.ch|komikcast.net|komikindo.tv|mangakita.net|mangatale.co|manhwaindo.cfd
 ||komikindo.co^*/banner-$image
+##[href^="https://pintuisekai.com/ads/"] > img
 komikindo.co##[href^="https://shope.ee/"]:has(> img)
 mirrorkomik.net###aplikasi
 mangakita.net###btm_banner
@@ -4395,11 +4396,11 @@ kiryuu.id###sidebar > .widget_text:has-text(/ads/i):has(img[src*=".gif"])
 doujindesu.tv##.adv-wrapper
 mangacanblog.com##.entry-content > center:has(> a > img)
 komikcast.net,mirrorkomik.org##.gambar_pemanis
-185.254.196.163,kanzenin.info,kiryuu.id,komikcast.vip,komikgo.org,komikindo.cfd,komikindo.co,komikjos.art,komikmanhwa.me,komikmirror.fun,komikremaja.club,mangacanblog.com,mangaindo.me,mangakita.net,mangakyo.org,mangayaro.net,manhwadesu.one,manhwaindo.cfd,manhwaindo.id,manhwalist.com,mihentai.com,mirrorkomik.net,sektedoujin.cc,sheakomik.com,tukangkomik.id##.kln
+185.254.196.163,kanzenin.info,kiryuu.id,komikcast.ch,komikgo.org,komikindo.cfd,komikindo.co,komikjos.art,komikmanhwa.me,komikmirror.fun,komikremaja.club,mangacanblog.com,mangaindo.me,mangakita.net,mangakyo.org,mangayaro.net,manhwadesu.one,manhwaindo.cfd,manhwaindo.id,manhwalist.com,mihentai.com,mirrorkomik.net,sektedoujin.cc,sheakomik.com,tukangkomik.id##.kln
 pojokmanga.net##.main-sidebar .textwidget:has(> a > img)
 mangatale.co,mirrorkomik.org##a:has(> img[src$=".gif"])
 kiryuu.id##a[href*="?ref=kiryuu"] > img
-185.254.196.163,bacakomik.co,comicmoi.com,gudangkomik.com,kanzenin.info,kiryuu.id,komikav.com,komikcast.vip,komikcastid.com,komikgo.org,komikhentai.space,komikindo.cfd,komikindo.co,komikindo.tv,komikjos.art,komiklokal.sbs,komikmanhwa.me,komikmirror.fun,komikstation.co,komikxxx.hexat.com,mangacanblog.com,mangakita.net,manhwadesu.one,manhwaindo.cfd,manhwaindo.id,manhwalist.com,mihentai.com,mirrorkomik.net,mirrorkomik.org,ngomik.net,sektedoujin.cc,sheakomik.com,shinigami.ae,shinigami.sh,tenshi.id,tukangkomik.id##a[target*="blank"]:has(> img)
+185.254.196.163,bacakomik.co,comicmoi.com,gudangkomik.com,kanzenin.info,kiryuu.id,komikav.com,komikcast.ch,komikcastid.com,komikgo.org,komikhentai.space,komikindo.cfd,komikindo.co,komikindo.tv,komikjos.art,komiklokal.sbs,komikmanhwa.me,komikmirror.fun,komikstation.co,komikxxx.hexat.com,mangacanblog.com,mangakita.net,manhwadesu.one,manhwaindo.cfd,manhwaindo.id,manhwalist.com,mihentai.com,mirrorkomik.net,mirrorkomik.org,ngomik.net,sektedoujin.cc,sheakomik.com,shinigami.ae,shinigami.sh,tenshi.id,tukangkomik.id##a[target*="blank"]:has(> img)
 mangakyo.org##article #readerarea > img[src$=".gif"]
 komiku.id##div:matches-css(text-align:center):has(> span:has-text(/iklan/i))
 komikmoe.web.id,komiku.id,mgkomik.com,mihentai.com,novelgo.id,sektedoujin.cc##+js(nobab)
@@ -4414,7 +4415,7 @@ klikmanga.com##body > .mtsnb-shown
 komikindo.tv##iframe[style*="width: 100% !important; height: 100% !important; opacity: 1 !important; max-width: 100% !important; border: 0px none !important; position: fixed !important;"]
 185.254.196.163,klikmanga.com,komikgo.org,komikstation.co,sekaikomik.bio##+js(aeld, /^(?:load|click)$/, popMagic)
 185.254.196.163##+js(aopr, generateURL1)
-bacakomik.co,kiryuu.id,komikav.com,komikcast.vip,komikcastid.com,komikindo.tv,komikmoe.web.id,mangakita.net,manhwaindo.cfd,manhwaindo.id,ngomik.net,sekaikomik.bio,sektedoujin.cc,sheakomik.com##+js(window.open-defuser)
+bacakomik.co,kiryuu.id,komikav.com,komikcast.ch,komikcastid.com,komikindo.tv,komikmoe.web.id,mangakita.net,manhwaindo.cfd,manhwaindo.id,ngomik.net,sekaikomik.bio,sektedoujin.cc,sheakomik.com##+js(nowoif)
 /wp-content/plugins/halfdata-green-popups/*$domain=shinigami.ae|shinigami.sh
 shinigami.ae,shinigami.sh##+js(aopr, lepopup_vars)
 mangakita.net##+js(aopr, popup_custom_data)
@@ -5122,6 +5123,7 @@ _topbandar_$image
 ##[href="https://bit.ly/joker99menangterus"]
 ##[href="https://bit.ly/juDi89"]
 ##[href="https://bit.ly/kdslotsfreechip"]
+##[href="https://bit.ly/komikcastt"]
 ##[href="https://bit.ly/lego33jp"]
 ##[href="https://bit.ly/ligadunia365"]
 ##[href="https://bit.ly/link-idncash"]
@@ -5332,6 +5334,7 @@ _topbandar_$image
 ##[href="https://rebrand.ly/88mpreg"]
 ##[href="https://rebrand.ly/ADSkantorbola"]
 ##[href="https://rebrand.ly/CikaMangaku"]
+##[href="https://rebrand.ly/DAVO88GG"]
 ##[href="https://rebrand.ly/Daftarjelas138"]
 ##[href="https://rebrand.ly/GasMain"]
 ##[href="https://rebrand.ly/Gc88-Okestream1"]
