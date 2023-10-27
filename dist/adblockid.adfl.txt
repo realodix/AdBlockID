@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.10.74
+! Version: 23.10.75
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Oct 2023 11:37 UTC
+! Last modified: 27 Oct 2023 13:28 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3784,7 +3784,6 @@ venuemagz.com###popUpModal
 indonesiatoday.co.id###popup-ads-holder
 wandercom.id###popuplayout
 tirto.id##.backgroundOverlay
-duniagames.co.id##.cdk-overlay-container
 lister.co.id,penerbitbukudeepublish.com##.elementor-popup-modal
 bagas31.info##.frame-banner-places-popup
 blogpenemu.blogspot.com##.gbcontent
@@ -3806,6 +3805,8 @@ bagas31.info##.popup-rl-custom3
 indotimur.com##.popup-transparent
 nesabamedia.com##.wow-modal-overlay
 superapp.id##.wppopups-whole
+duniagames.co.id##+js(rc, cdk-global-scrollblock, html)
+duniagames.co.id##.cdk-overlay-container
 ||embed.dugout.com^$3p,domain=indosport.com|skor.id
 ||embed.rctiplus.com^$3p,domain=minangkabaunews.com
 ||karirpad.com/mediapartner/widget/$3p,frame
