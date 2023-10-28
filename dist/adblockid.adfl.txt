@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.10.84
+! Version: 23.10.85
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Oct 2023 10:57 UTC
+! Last modified: 28 Oct 2023 11:23 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4197,11 +4197,6 @@ idlixplus.net##+js(aost, document.getElementsByTagName, adsBlocked)
 0.0.realodix##+js(aopr, wcadbwp)
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=auratail.com
-!#if (ext_ublock)
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js:6,domain=doroni.me|doronime.id
-!#else
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=doroni.me|doronime.id
-!#endif
 @@-cpm-ads.$domain=doroni.me|doronime.id|kusonime.com
 @@||doroni.me^$ghide
 @@||doronime.id^$ghide
@@ -4225,6 +4220,7 @@ anichin.top##+js(json-prune, *, pop_type)
 anichin.art,isekaisubs.web.id,minioppai.org,oploverz.fit,oploverz.red,sokuja.co,sokuja.xyz###overplay
 manganime.vip###tutupx
 drakorfilm.pro##.gmr-bannerpopup
+oploverz.biz.id##.modal2
 kuramanime.pro##.player-overplay
 idlixplus.net##.swal-overlay
 manganime.vip##.vd
@@ -4386,11 +4382,6 @@ pernahsukses.com##+js(noeval-if, /chp_?ad/)
 @@||duniata.com^$ghide
 @@||mangalist.org^$ghide
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=skiplink.me
-!#if (ext_ublock)
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js:6,domain=duniata.com|mangalist.org
-!#else
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=duniata.com|mangalist.org
-!#endif
 tonanmedia.my.id##+js(set-constant, showAds, true)
 tonanmedia.my.id##.post-body center:has-text(/matikan adblok/i)
 tonanmedia.my.id##.smokeddlrh > .adsbygoogle:style(display: block !important)
