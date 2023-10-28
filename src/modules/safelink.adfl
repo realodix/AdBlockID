@@ -10,10 +10,9 @@
 ##[href^="https://safelinkblogger.com/ref/"]
 ##[href^="https://safelinku.com/ref/"] > img
 !
-miuiku.com,sekilastekno.com,semawur.com###fixedban
+miuiku.com,sekilastekno.com###fixedban
 miuiku.com,sekilastekno.com###teaser2
 pinloker.com##.text-center:has-text(/adv/i)
-semawur.com##[href*="semawur.com/links/share/"]
 !
 ! ANTI-ADBLOCK
 ! -----------------------------------------------
@@ -49,7 +48,7 @@ tonanmedia.my.id##.smokeddlrh > .adsbygoogle:style(display: block !important)
 ! ANNOYANCE
 ! -----------------------------------------------
 ! Block Pop-Up
-besargaji.com,carapedi.id,cararegistrasi.com,lokerwfh.net,luangusaha.com,miuiku.com,ponselharian.com,sekilastekno.com,semawur.com,teknosimple.com,tutwuri.id##+js(nowoif)
+besargaji.com,carapedi.id,cararegistrasi.com,luangusaha.com,miuiku.com,ponselharian.com,sekilastekno.com,teknosimple.com,tutwuri.id##+js(nowoif)
 pinloker.com,sekilastekno.com##+js(nowoif, /\.(com|net)\/4\/|teraboxapp|momerybox/)
 belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 ! https://github.com/AdguardTeam/FiltersCompiler/issues/164
@@ -58,24 +57,22 @@ belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 pinloker.com,sekilastekno.com##+js(ra, href, div[x-data="adtival"] a[href][\@click="scroll"])
 ! ---
 ! Countdown Timer
-adsafelink.com,artipedia.id,asupload.com,kadal.club,kutt.io,luangusaha.com,miuiku.com,pernahsukses.com,rancah.com,saungfirmware.id,sekilastekno.com,semawur.com,semruwet.com##+js(set, blurred, false)
+adsafelink.com,artipedia.id,asupload.com,kadal.club,kutt.io,luangusaha.com,miuiku.com,pernahsukses.com,rancah.com,saungfirmware.id,sekilastekno.com,semruwet.com##+js(set, blurred, false)
 ! ---
 ! Fake Button
 slurr.my.id###content #wpsafegenerate div:has(a > img):not(#wpsafe-link)
 slurr.my.id###content .wpsafe-top div:has(> a > img):not(#wpsafe-generate)
 jenismac.com###hello
 luangusaha.com##.blog-item
-uiz.io##.btn-front:has-text(Download)
 ayobelajarbareng.com##.entry-content .code-block
 miuiku.com##.klikdisini
 ayobelajarbareng.com##.single-content a[target="_blank"]:has(> img[alt="download"])
 teknosimple.com##.slu-download
-semawur.com##.text-center > [href] > [src^="/img/download_"]
 karyawan.co.id##article .slu-download
 besargaji.com##article a:has(> img[src$="/download.png"])
 info.gambar.pro##center:has(> img)
 info.gambar.pro##center:has(> p > a)
-lokerwfh.net,tutwuri.id##div[style="text-align: center;"]:has(> a[target="_blank"] > img[alt="download"])
+tutwuri.id##div[style="text-align: center;"]:has(> a[target="_blank"] > img[alt="download"])
 bagi.site##img[width="120"][height="24"]
 sekilastekno.com,sportif.id##img[width="200"][height="60"]
 info.gambar.pro##img[width="240"][height="240"]
@@ -84,10 +81,7 @@ semruwet.com##img[width="320"][height="90"]
 !
 /download-$image,domain=sekilastekno.com
 /download.$image,domain=belinfo.my.id|egao.in
-/download3.$image,domain=semawur.com
 /download_$image,domain=carapedi.id|cararegistrasi.com|ponselharian.com
-/skips.png$image,domain=semawur.com
-||semawur.com/o.png$image
 !
 ! WHITELIST
 ! -----------------------------------------------
