@@ -39,7 +39,9 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 [ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
 [ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt
 
-#### Mirror
+#### Developer
+
+> ⚠️ Link `adblockid.pages.dev` dapat berisi filter yang masih dalam tahap uji coba dan mungkin dapat merusak di sebagian situs. Pastikan Anda sadar dengan peringatan ini saat menggunakannya.
 
 | Name           | Subscription | Raw File | Description |
 | -------------- | --------- | -------- | ----------- |
