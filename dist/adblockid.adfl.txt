@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.11.21
+! Version: 23.11.22
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Nov 2023 19:06 UTC
+! Last modified: 10 Nov 2023 19:26 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -4408,8 +4408,8 @@ pinloker.com,sekilastekno.com##+js(nowoif, /\.(com|net)\/4\/|teraboxapp|momerybo
 belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 pernahsukses.com##+js(ra, target, form#alf_continue_form)
 pinloker.com,sekilastekno.com##+js(ra, href, div[x-data="adtival"] a[href][\@click="scroll"])
+pernahsukses.com##+js(adjust-setInterval)
 tutwuri.id##+js(adjust-setInterval, innerHTML=`Wait)
-pernahsukses.com##+js(nano-sib)
 adpayl.ink,adsafelink.com,artipedia.id,asupload.com,kadal.club,kutt.io,luangusaha.com,miuiku.com,pernahsukses.com,rancah.com,saungfirmware.id,savetub.com,sekilastekno.com,semruwet.com##+js(set, blurred, false)
 slurr.my.id###content #wpsafegenerate div:has(a > img):not(#wpsafe-link)
 slurr.my.id###content .wpsafe-top div:has(> a > img):not(#wpsafe-generate)
@@ -4439,8 +4439,8 @@ isekaipalace.com##.fixed-lside
 isekaipalace.com##.fixed-rside
 .gif|$image,domain=yurasu.xyz
 isekaipalace.com##*:style(user-select:text!important;)
+isekaipalace.com,yurasu.xyz##+js(adjust-setInterval)
 isekaipalace.com##+js(aopr, document.oncontextmenu)
-isekaipalace.com,yurasu.xyz##+js(nano-sib)
 isekaipalace.com,yurasu.xyz###timer
 isekaipalace.com,yurasu.xyz##+js(ra, disabled, button)
 isekaipalace.com,yurasu.xyz##+js(rc, hidden, button)
@@ -4452,7 +4452,7 @@ isekaipalace.com,yurasu.xyz##+js(set, showAds, true)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com|yurasu.xyz
 alpinecorporate.com##.admania-entrycontent > center > button
 alpinecorporate.com##form center a
-alpinecorporate.com##+js(nano-sib, counter, *, 0.001)
+alpinecorporate.com##+js(adjust-setInterval, counter, *, 0.001)
 alpinecorporate.com##+js(set, blurred, false)
 alpinecorporate.com###abDetectorModal
 alpinecorporate.com##.adsbox.doubleclick.ad-placement:style(display: block !important;)
@@ -4532,7 +4532,7 @@ bokepcolmek.bio,indoxbokep.com,ratihbugil.com##+js(aeld, contextmenu)
 crothot.com,erocafe.net##+js(aopr, document.onselectstart)
 erocafe.net##+js(aopr, protected_links)
 pusatporn18.com##.content-post center:has(> a > img)
-159.65.134.129##+js(nano-sib)
+159.65.134.129##+js(adjust-setInterval)
 159.65.134.129##+js(ra, target, #wpsafe-link a)
 duduk123.com,masuk123.com,semprot.com###fixedbox
 duduk123.com,masuk123.com,semprot.com##.js-post:has-text(Banned)
