@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.11.26
+! Version: 23.11.27
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Nov 2023 16:55 UTC
+! Last modified: 15 Nov 2023 08:22 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3070,6 +3070,7 @@ bangkitmedia.com##aside p:matches-css(text-align: center):has(> a > img)
 creativosonline.org,ubunlog.com##aside:has(> .adsbygoogle)
 gardapapua.com##aside:has-text(/adv/i)
 tempo.co##+js(rc, pad-apps, body)
+inwepo.co###content-main .code-block
 tempo.co###inarticle_2:has-text(/adv/i)
 timesindonesia.co.id###news_content > p:has-text(/adv/i)
 eventsolo.com###post-content .content:has(> .adsbygoogle)
@@ -3077,7 +3078,7 @@ narasi.tv##.ads-props:upward(.container)
 balipost.com##.adsbygoogle:upward(._ning_zone_inner)
 pilar.id##.adsbygoogle:upward(.a-wrap)
 kosngosan.com##.adsbygoogle:upward(.bellow-header-widget)
-ampenannews.com,bacaterus.com,beritalima.com,buatatm.com,carisinyal.com,dinaspajak.com,dinaspendapatan.com,dutaimigrasi.com,gimana.net,greenscene.co.id,inwepo.co,itnesia.com,kamini.id,keluyuran.com,kendariinfo.com,localstartupfest.id,mimbar-rakyat.com,mogamugi.com,narmadi.com,nooblasto.com,onlinemetro.id,oolean.id,pemerintahkota.com,penablog.com,saintif.com,selerasa.com,slabsoft.com,sulistio.xyz,teknoding.com,thelastsurvivors.org,tipkerja.com,utekno.com,winpreso.com##.adsbygoogle:upward(.code-block)
+ampenannews.com,bacaterus.com,beritalima.com,buatatm.com,carisinyal.com,dinaspajak.com,dinaspendapatan.com,dutaimigrasi.com,gimana.net,greenscene.co.id,itnesia.com,kamini.id,keluyuran.com,kendariinfo.com,localstartupfest.id,mimbar-rakyat.com,mogamugi.com,narmadi.com,nooblasto.com,onlinemetro.id,oolean.id,pemerintahkota.com,penablog.com,saintif.com,selerasa.com,slabsoft.com,sulistio.xyz,teknoding.com,thelastsurvivors.org,tipkerja.com,utekno.com,winpreso.com##.adsbygoogle:upward(.code-block)
 narasi.tv##.adsbygoogle:upward(.container)
 narmadi.com##.adsbygoogle:upward(.gb-container)
 teknologital.com##.adsbygoogle:upward(.header_media_inner)
@@ -3152,6 +3153,7 @@ samsungstarters.com##div:has(> small:has-text(/adv/i))
 yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 casaindonesia.com,cosmopolitan.co.id,herworld.co.id,katadata.co.id,qoala.app##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
+inwepo.co##div[id^="oa-"]
 konteks.co.id,tedas.id##div[id^="oa-"][data-dest="placeholder"]:has(> .placeholderPlug:has-text(/ad/i))
 djafa.org,malang-guidance.com,mbaheza.com,tandakoma.com##p:has(> .adsbygoogle)
 emka.web.id##p:has-text(/adv/i)
