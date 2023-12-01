@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.12.2
+! Version: 23.12.3
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Nov 2023 20:04 UTC
+! Last modified: 01 Dec 2023 10:50 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2505,8 +2505,8 @@ tempo.co##.bannerfull
 cantika.com,tempo.co##.bannerhead
 sleekr.co##.banners
 kabarnusa.com##.bannerx
-suara.com##.bg-ads-sticky-side
-suara.com##.bg-ads-sticky-top
+dewiku.com,suara.com##.bg-ads-sticky-side
+dewiku.com,suara.com##.bg-ads-sticky-top
 majoo.id##.blog__ads
 inilahkoran.id,marjinal.id##.bn-lg-sidebar
 tirto.id##.bnnr-prmm
@@ -3099,7 +3099,7 @@ infosumbar.net##.code-block:has(> center > script)
 suarapapua.com##.code-block:has(> script)
 cerdasco.com##.code-block:has(noscript)
 hapusakun.com,iuwashplus.or.id,tapanulipost.com##.code-block:has-text(/adv/i)
-blockchainmedia.id,cerdasco.com,skdesu.com##.code-block:matches-css(text-align: center):has-text(/iklan/i)
+blockchainmedia.id,cerdasco.com##.code-block:matches-css(text-align: center):has-text(/iklan/i)
 arenabola.id##.col-lg-3:has-text(/adv/i)
 oneesports.id##.container:has(> .ad-container)
 orami.co.id##.content-wrapper #category-top:has-text(/adv/i)
@@ -4037,7 +4037,6 @@ _usafelink.$3p,script
 ||adsafelink.com/js/webscript.$3p,script
 ||akashiro.co.id/safelink.$3p,script
 ||duit.cc/safelink.$3p,script
-||kadal.club/js/getlinkz.$3p,script
 ||pastebin.com/raw/Rw38SyHy$3p,script
 ||safelinkblog.com/js/v2.$3p,script
 ||safelinku.com/fullpage/script.$3p,script
@@ -4390,16 +4389,15 @@ westmanga.info##+js(nowoif)
 ##[href^="https://safelinku.com/ref/"] > img
 miuiku.com,sekilastekno.com###teaser2
 pinloker.com##.text-center:has-text(/adv/i)
-belinfo.my.id,linkerload.com##+js(acis, addEventListener, google_ad_client)
+linkerload.com##+js(acis, addEventListener, google_ad_client)
 pinloker.com,sekilastekno.com##+js(aopr, AaDetector)
 adikinfo.my.id,mangindo.xyz,nurhamka.com##+js(aopr, adBlockDetected)
-skiplink.me##+js(aopr, adsBlocked)
 adsafelink.com,dz4link.com,linkpoi.me,rancah.com,sekilastekno.com##+js(aopr, app_vars.force_disable_adblock)
 linkpoi.me##+js(aopr, disableItToContinue)
 menjelajahi.com,pintunow.com,rancah.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 mangindo.xyz##+js(aopr, window.adikAds)
 downloadfilm.website,sekilastekno.com##+js(no-fetch-if, ads)
-info.gambar.pro,pinloker.com,sekilastekno.com,tutorial.siberuang.com##+js(no-fetch-if, adsbygoogle.js)
+info.gambar.pro,pinloker.com,sekilastekno.com##+js(no-fetch-if, adsbygoogle.js)
 vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 lifesurance.info##+js(set, showada, true)
 nyawang.com##+js(acis, chp_ads_blocker_detector)
@@ -4408,23 +4406,20 @@ pernahsukses.com##+js(noeval-if, /chp_?ad/)
 @@-ads-banner.js$domain=lifesurance.info|teknoku.me
 @@||duniata.com^$ghide
 @@||mangalist.org^$ghide
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=skiplink.me
 tonanmedia.my.id##+js(set-constant, showAds, true)
 tonanmedia.my.id##.post-body center:has-text(/matikan adblok/i)
 tonanmedia.my.id##.smokeddlrh > .adsbygoogle:style(display: block !important)
 @@||tonanmedia.my.id^$ghide
-besargaji.com,carapedi.id,cararegistrasi.com,luangusaha.com,miuiku.com,ponselharian.com,sekilastekno.com,shrinke.me,shrinkme.info,teknosimple.com,tutwuri.id##+js(nowoif)
+besargaji.com,cararegistrasi.com,miuiku.com,ponselharian.com,sekilastekno.com,shrinke.me,shrinkme.info,teknosimple.com,tutwuri.id##+js(nowoif)
 pinloker.com,sekilastekno.com##+js(nowoif, /\.(com|net)\/4\/|teraboxapp|momerybox/)
-belinfo.my.id##+js(ra, onclick, [onclick*="window.open"])
 pernahsukses.com##+js(ra, target, form#alf_continue_form)
 pinloker.com,sekilastekno.com##+js(ra, href, div[x-data="adtival"] a[href][\@click="scroll"])
 pernahsukses.com##+js(adjust-setInterval)
 tutwuri.id##+js(adjust-setInterval, innerHTML=`Wait)
-adpayl.ink,adsafelink.com,artipedia.id,asupload.com,kadal.club,kutt.io,luangusaha.com,miuiku.com,pernahsukses.com,rancah.com,saungfirmware.id,savetub.com,sekilastekno.com,semruwet.com##+js(set, blurred, false)
+adpayl.ink,adsafelink.com,asupload.com,miuiku.com,pernahsukses.com,rancah.com,saungfirmware.id,savetub.com,sekilastekno.com,semruwet.com##+js(set, blurred, false)
 slurr.my.id###content #wpsafegenerate div:has(a > img):not(#wpsafe-link)
 slurr.my.id###content .wpsafe-top div:has(> a > img):not(#wpsafe-generate)
 jenismac.com###hello
-luangusaha.com##.blog-item
 ayobelajarbareng.com##.entry-content .code-block
 shrinke.me,shrinkme.info##.expop
 miuiku.com##.klikdisini
@@ -4441,8 +4436,8 @@ info.gambar.pro##img[width="240"][height="240"]
 info.gambar.pro,sekilastekno.com##img[width="320"][height="105"]
 semruwet.com##img[width="320"][height="90"]
 /download-$image,domain=sekilastekno.com
-/download.$image,domain=belinfo.my.id|egao.in
-/download_$image,domain=carapedi.id|cararegistrasi.com|ponselharian.com
+/download.$image,domain=egao.in
+/download_$image,domain=cararegistrasi.com|ponselharian.com
 @@/abdiusu/project-safelink-viomagz/*/safelink-ViomagzV3.2-2tombol$3p,script
 isekaipalace.com###anchor-ad
 isekaipalace.com##.fixed-lside
