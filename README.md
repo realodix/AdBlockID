@@ -113,10 +113,10 @@ Thanks goes to these wonderful people.
 | 2 | [3xploiton3](https://github.com/3xploiton3) | [200+ issues][volunteer_r2] | <img height="30" src="https://avatars3.githubusercontent.com/u/19517680"> |
 | 3 | [Jokopentil](https://github.com/Jokopentil) | [60+ issues][volunteer_r3] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
 | 4 | [T-Baniza ](https://github.com/T-Baniza ) | [30+ issues][volunteer_r4] | <img height="30" src="https://avatars.githubusercontent.com/u/79722529"> |
-| 5 | [Taufik-Rahman](https://github.com/Taufik-Rahman) | [15+ issues][volunteer_r5] | <img height="30" src="https://avatars.githubusercontent.com/u/58507846"> |
+| 5 | [Abidjauhar17](https://github.com/abidjauhar17) | [20+ issues][volunteer_r5] | <img height="30" src="https://avatars.githubusercontent.com/u/37255346"> |
 
 [volunteer_r1]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer
 [volunteer_r2]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3
 [volunteer_r3]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AJokopentil
 [volunteer_r4]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AT-Baniza
-[volunteer_r5]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ATaufik-Rahman
+[volunteer_r5]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3Aabidjauhar17
