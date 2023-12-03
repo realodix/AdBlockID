@@ -110,8 +110,8 @@ Thanks goes to these wonderful people.
 | # | User | Contribs | Picture |
 | - | ---- | -------- | ------- |
 | 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [840+ issues][volunteer_r1] | <img height="30" src="https://avatars0.githubusercontent.com/u/9379770"> |
-| 2 | [3xploiton3](https://github.com/3xploiton3) | [190+ issues][volunteer_r2] | <img height="30" src="https://avatars3.githubusercontent.com/u/19517680"> |
-| 3 | [Jokopentil](https://github.com/Jokopentil) | [50+ issues][volunteer_r3] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
+| 2 | [3xploiton3](https://github.com/3xploiton3) | [200+ issues][volunteer_r2] | <img height="30" src="https://avatars3.githubusercontent.com/u/19517680"> |
+| 3 | [Jokopentil](https://github.com/Jokopentil) | [60+ issues][volunteer_r3] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
 | 4 | [T-Baniza ](https://github.com/T-Baniza ) | [30+ issues][volunteer_r4] | <img height="30" src="https://avatars.githubusercontent.com/u/79722529"> |
 | 5 | [Taufik-Rahman](https://github.com/Taufik-Rahman) | [15+ issues][volunteer_r5] | <img height="30" src="https://avatars.githubusercontent.com/u/58507846"> |
 
