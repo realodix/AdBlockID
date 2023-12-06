@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.12.22
+! Version: 23.12.23
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 06 Dec 2023 14:53 UTC
+! Last modified: 06 Dec 2023 15:42 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -2662,6 +2662,7 @@ genpi.co##.sky_banner
 infokyai.com,jejakfaktanews.com##.slotbanner
 intipseleb.com,sahijab.com##.small-mobile-banner
 thejakartapost.com##.smart-banner-wrapper
+idntimes.com##.smartbanner
 malukuterkini.com##.spanduk
 malukuterkini.com,poskomalut.com##.special-banner
 terkininews.com##.sponsor
@@ -3534,6 +3535,7 @@ motorplus-online.com###div-paralax-container
 grid.id###show-pushdown
 kontan.co.id##.center[style^="min-height: 250px"]:has(> [id^="div-Billboard_"])
 gridoto.com##.cls-mgid:has(> script[src^="https://jsc.mgid.com/"])
+kontan.co.id##.entry-content > div[style="width: 300px; margin: 0px auto 5px auto;min-height: 280px;"]
 gridoto.com##.geniee-box:has(> script[src^="https://js.genieessp.com/"])
 kgnow.com,kompas.com,sonora.id##.kcm
 kompas.com##.kcm__articleList
@@ -3922,15 +3924,6 @@ katadata.co.id##+js(aopr, addLink)
 headlinekaltim.co##+js(aopr, wp_copy)
 tirto.id##+js(rc, container900, div)
 /copylink/copylink-urlonly.$script
-matain.id##.app_layer
-brainly.co.id##.brn-web-to-app-banner
-seniberpikir.com##.downloadappbox
-liputan6.com##.gateway__mobile-app
-kapanlagi.com##.liputan6-mobileapp-widget
-idntimes.com##.smartbanner
-id.theasianparent.com##.top-app-download-banner
-merdeka.com##header .assambleApp
-bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
 gramedia.com,helokepo.com##+js(acis, history.replaceState, location.replace)
 paylaterin.com##+js(aopr, $, js_zerobounce_get_url)
 ngelag.com##+js(set, window.onpopstate, noopFunc)
@@ -4187,7 +4180,7 @@ anoboy.show##a[target*="blank"]:has(> amp-img)
 cinemakeren6.id##aside img[style="max-width: 100%; height: auto;"]
 layarkaca21official.wiki##body > center
 akashinime.lol##div[id^="close-teaser-"]
-animasu.info,anitoki.cyou,anixverse.com,lendrive.web.id,mangakyo.org,melongmovie.site,oploverz.fit,oploverz.red,sokuja.co,sokuja.xyz##div[id^="teaser"]
+animasu.info,anitoki.cyou,anixverse.com,lendrive.web.id,melongmovie.site,oploverz.fit,oploverz.red,sokuja.co,sokuja.xyz##div[id^="teaser"]
 bioskopkeren.ink,kebioskop21.bond,lk21official.watch,lk21officials.wiki##a[target*="blank"] > video:remove()
 rahyunime.com###sidebar img[style="max-width: 100%; height: auto;"]
 manganime.live##img[data-original-width="905"][data-original-height="1300"]
@@ -4313,14 +4306,13 @@ kiryuu.id###sidebar > .widget_text:has-text(/ads/i):has(img[src*=".gif"])
 doujindesu.tv##.adv-wrapper
 mangacanblog.com##.entry-content > center:has(> a > img)
 komikcast.net,mirrorkomik.org##.gambar_pemanis
-kanzenin.info,kiryuu.id,komikcast.lol,komikgo.org,komikindo.cfd,komikindo.co,komikjos.art,komikmirror.sbs,komikremaja.cfd,mangacanblog.com,mangakita.id,mangakyo.org,mangayaro.id,manhwadesu.one,manhwaindo.id,manhwaindo.sbs,manhwalist.com,mihentai.com,mirrorkomik.net,sektedoujin.cc,sheakomik.com,tukangkomik.id##.kln
+kanzenin.info,kiryuu.id,komikcast.lol,komikgo.org,komikindo.cfd,komikindo.co,komikjos.art,komikmirror.sbs,komikremaja.cfd,mangacanblog.com,mangakita.id,mangakyo.vip,mangayaro.id,manhwadesu.one,manhwaindo.id,manhwaindo.sbs,manhwalist.com,mihentai.com,mirrorkomik.net,sektedoujin.cc,sheakomik.com,tukangkomik.id##.kln
 pojokmanga.net##.main-sidebar .textwidget:has(> a > img)
 doujindesu.tv,komikcast.lol,komikcast.net,komikindo.tv,mangatale.co,mirrorkomik.org,tooncubus.top##a:has(> img[src$=".gif"])
 kiryuu.id##a[href*="?ref=kiryuu"] > img
 comicmoi.com,gudangkomik.com,kanzenin.info,kiryuu.id,komikav.com,komikcast.lol,komikgo.org,komikindo.cfd,komikindo.co,komikindo.tv,komikjos.art,komiklokal.sbs,komikmirror.sbs,komikstation.co,mangacanblog.com,mangakita.id,manhwadesu.one,manhwaindo.id,manhwaindo.sbs,manhwalist.com,mihentai.com,mirrorkomik.net,mirrorkomik.org,ngomik.net,sektedoujin.cc,sheakomik.com,shinigami.sh,tenshi.id,tukangkomik.id##a[target*="blank"]:has(> img)
-mangakyo.org##article #readerarea > img[src$=".gif"]
 komiku.id##div:matches-css(text-align:center):has(> span:has-text(/iklan/i))
-dojing.net,kiryuu.id,komikgo.org,komikindo.cfd,komikjos.art,komiklokal.sbs,komikmirror.sbs,komikremaja.cfd,komikstation.co,mangacanblog.com,mangakyo.org,manhwadesu.one,manhwaindo.sbs,manhwalist.com,mihentai.com,noromax.my.id,sektedoujin.cc,sheakomik.com,tenshi.id,tukangkomik.id,warungkomik.com##div[id^="teaser"]
+dojing.net,kiryuu.id,komikgo.org,komikindo.cfd,komikjos.art,komiklokal.sbs,komikmirror.sbs,komikremaja.cfd,komikstation.co,mangacanblog.com,mangakyo.vip,manhwadesu.one,manhwaindo.sbs,manhwalist.com,mihentai.com,noromax.my.id,sektedoujin.cc,sheakomik.com,tenshi.id,tukangkomik.id,warungkomik.com##div[id^="teaser"]
 komikmoe.web.id,komiku.id,mihentai.com,novelgo.id,sektedoujin.cc##+js(nobab)
 warungkomik.com##+js(noeval-if, /chp_?ad/)
 crotpedia.net##+js(noeval-if, ads)
@@ -4340,7 +4332,7 @@ bacamanga.id,komikindo.tv,komikstation.co,ngomik.net##+js(acis, JSON.parse, brea
 kiryuu.id##+js(acis, parseInt, break;case $.)
 komikindo.tv,mangahentai.me,sekaikomik.bio,warungkomik.com##*:style(user-select:text!important;)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
-ainzscans.site,bacakomikid.co,bacamanga.id,boosei.net,dojing.net,kiryuu.id,komikav.com,komikgo.org,komikindo.cfd,komikjos.art,komiklokal.sbs,komikmirror.sbs,komikmoe.web.id,komikremaja.cfd,komikstation.co,mangakita.id,mangakyo.org,mangatale.co,mangayaro.id,manhwadesu.one,manhwaindo.sbs,manhwalist.com,mihentai.com,mirrorkomik.net,nekomik.me,ngomik.net,noromax.my.id,rawkuma.com,sekaikomik.bio,sektedoujin.cc,sheakomik.com,softkomik.com,tenshi.id,tukangkomik.id##+js(aeld, contextmenu)
+ainzscans.site,bacakomikid.co,bacamanga.id,boosei.net,dojing.net,kiryuu.id,komikav.com,komikgo.org,komikindo.cfd,komikjos.art,komiklokal.sbs,komikmirror.sbs,komikmoe.web.id,komikremaja.cfd,komikstation.co,mangakita.id,mangakyo.vip,mangatale.co,mangayaro.id,manhwadesu.one,manhwaindo.sbs,manhwalist.com,mihentai.com,mirrorkomik.net,nekomik.me,ngomik.net,noromax.my.id,rawkuma.com,sekaikomik.bio,sektedoujin.cc,sheakomik.com,softkomik.com,tenshi.id,tukangkomik.id##+js(aeld, contextmenu)
 doujindesu.tv,mangahentai.me,mangaid.click,tooncubus.top##+js(aopr, document.oncontextmenu)
 mangacanblog.com##+js(aopr, document.onkeydown)
 sekaikomik.bio,warungkomik.com##+js(aopr, nocontextmenu)
@@ -4817,7 +4809,9 @@ _topbandar_$image
 ##[href="http://bit.ly/movie-idn"]
 ##[href="http://bit.ly/mtphoki"]
 ##[href="http://bit.ly/okekiuhoki"]
+##[href="http://bit.ly/sobatkeren21"]
 ##[href="http://click2go.me/aksesklik4a"]
+##[href="http://rebrand.ly/bannerpop"]
 ##[href="http://tinyurl.com/VVIPnonton138"]
 ##[href="http://vlt.me/bioskopin21180nexus"]
 ##[href="http://vlt.me/cgvindo36"]
@@ -4962,6 +4956,7 @@ _topbandar_$image
 ##[href="https://bit.ly/pandawin-bio"]
 ##[href="https://bit.ly/pangeran88jp"]
 ##[href="https://bit.ly/pastigacorku"]
+##[href="https://bit.ly/planet-pg-header"]
 ##[href="https://bit.ly/playidnpp"]
 ##[href="https://bit.ly/pokerslotgacor"]
 ##[href="https://bit.ly/qq101li"]
@@ -5012,6 +5007,7 @@ _topbandar_$image
 ##[href="https://cek.to/sobatkerenfa1802"]
 ##[href="https://cek.to/sobatkerenfa180nex"]
 ##[href="https://cepat.ink/okestreamqqslot"]
+##[href="https://cepat.io/mposport303"]
 ##[href="https://cepat.io/qqslotkaya"]
 ##[href="https://cepat.io/situsnobarmposport"]
 ##[href="https://cepat.io/situsnobarxlode"]
@@ -5020,6 +5016,7 @@ _topbandar_$image
 ##[href="https://cinta.mu/mcdkocast"]
 ##[href="https://cinta.mu/pbkocast"]
 ##[href="https://cinta.mu/westmapb"]
+##[href="https://cli.re/IDN96-movie2"]
 ##[href="https://cli.re/Idnbolabgi"]
 ##[href="https://cli.re/Macaobonus"]
 ##[href="https://cli.re/Royalads2"]
@@ -5045,6 +5042,7 @@ _topbandar_$image
 ##[href="https://go.pf21.net/enakslot"]
 ##[href="https://go.pf21.net/maincuan"]
 ##[href="https://goodlink.click/layartancap"]
+##[href="https://heylink.me/LINK_ITCBET"]
 ##[href="https://heylink.me/UG808/"]
 ##[href="https://heylink.me/aceh4dpoker"]
 ##[href="https://heylink.me/dewakoin"]
@@ -5124,6 +5122,7 @@ _topbandar_$image
 ##[href="https://klik.gg/samepoin"]
 ##[href="https://klik.gg/sokuja"]
 ##[href="https://klik.gg/sokujapb"]
+##[href="https://kuy.me/kacalayar77asia"]
 ##[href="https://likelynk.com/b312uang-h0k1e"]
 ##[href="https://linkr.bio/sultankimbet77"]
 ##[href="https://linkr.it/SpinAds2"]
@@ -5232,6 +5231,7 @@ _topbandar_$image
 ##[href="https://rebrand.ly/daftarobctop"]
 ##[href="https://rebrand.ly/daftarsbopoker"]
 ##[href="https://rebrand.ly/ddseo"]
+##[href="https://rebrand.ly/detektiftoto188"]
 ##[href="https://rebrand.ly/dewa777"]
 ##[href="https://rebrand.ly/dewacasino-gacor303"]
 ##[href="https://rebrand.ly/dewagg-phkgaming"]
@@ -5466,6 +5466,7 @@ _topbandar_$image
 ##[href="https://rebrand.ly/lemacau-gacor303"]
 ##[href="https://rebrand.ly/lexusmpo"]
 ##[href="https://rebrand.ly/ligaplay88"]
+##[href="https://rebrand.ly/lpo88referral"]
 ##[href="https://rebrand.ly/m188-layarindo"]
 ##[href="https://rebrand.ly/m188-movie"]
 ##[href="https://rebrand.ly/m303s21"]
@@ -5479,6 +5480,7 @@ _topbandar_$image
 ##[href="https://rebrand.ly/mega-dunia"]
 ##[href="https://rebrand.ly/mega-gudang21"]
 ##[href="https://rebrand.ly/mega-layarindo"]
+##[href="https://rebrand.ly/mega-mkref"]
 ##[href="https://rebrand.ly/mega-movie"]
 ##[href="https://rebrand.ly/megah32"]
 ##[href="https://rebrand.ly/megahoki88"]
@@ -5533,6 +5535,7 @@ _topbandar_$image
 ##[href="https://rebrand.ly/regms"]
 ##[href="https://rebrand.ly/rp1m2"]
 ##[href="https://rebrand.ly/rtp-perawantoto/"]
+##[href="https://rebrand.ly/rtpbolaslot21"]
 ##[href="https://rebrand.ly/semprot-desktop-floating"]
 ##[href="https://rebrand.ly/senangmovie"]
 ##[href="https://rebrand.ly/senyum4d"]
@@ -5621,6 +5624,7 @@ _topbandar_$image
 ##[href="https://tinyurl.com/mangafoot101"]
 ##[href="https://tinyurl.com/mangafoot288"]
 ##[href="https://tinyurl.com/mangakuhoki"]
+##[href="https://tinyurl.com/mangakyohoki"]
 ##[href="https://tinyurl.com/maniaslot88"]
 ##[href="https://tinyurl.com/menaraSaiko"]
 ##[href="https://tinyurl.com/naid288pop"]
@@ -5774,6 +5778,8 @@ _topbandar_$image
 ##[href*="://vsabet.me/"]
 ##[href*="://winslt8.us/"]
 ##[href*="jagungbaru.com/banner/"] > img
+##[href="https://gasdulu.vip/ads-bannerHB"]
+##[href="https://gasdulu.vip/ads-bannerHB2"]
 ##[href="https://jayaabadi.art/asiaforbetgacor"]
 ##[href="https://jayaabadi.art/probet24"]
 ##[href="https://jayaabadi.art/unibet99"]
