@@ -56,7 +56,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 #### FAQ
 - **Q**: Apa bedanya antara AdBlockID dan AdBlockID Plus? <br>
-  **A**: AdBlockID berfokus hanya pada website Indonesia; dan AdBlockID Plus pada dasarnya adalah personal filter yang Saya bagikan untuk melengkapi dan menutup keterbatasan pada AdBlockID, jadi tidak ada batasan untuk AdBlockID Plus.
+  **A**: AdBlockID berfokus hanya pada website Indonesia; dan AdBlockID Plus pada dasarnya adalah personal filter yang Saya bagikan untuk melengkapi AdBlockID.
 
 
 ## Cara Menggunakan
