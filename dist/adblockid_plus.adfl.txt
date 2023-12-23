@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 23.12.3
+! Version: 23.12.4
 ! Title: AdBlockID Plus
 ! Description: Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID.
-! Last modified: 16 Dec 2023 22:10 UTC
+! Last modified: 23 Dec 2023 18:57 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 apkmody.io###above-the-fold-ad
@@ -40,6 +40,20 @@ itsfoss.com##amp-fx-flying-carpet
 tribunnews.com###article #_popIn_recommend_word
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
 gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://jsc.mgid.com"])
+blibli.com###catalogProductListContentDiv > #productContentDiv .product__card:has(.product__tag__ads)
+itemku.com##.grid > a:has(div > div:has-text(Ad))
+shopee.co.id##.page-product .page-product__content div:has(> a[data-sqe="link"] div[data-sqe="ad"])
+biggo.id##.search-ad-banner-re
+shopee.co.id##.shopee-search-item-result .shopee-search-item-result__item:has-text(Iklan)
+bukalapak.com##.te-product-card:has(.bl-product-card-new__description:has(.bl-product-card-new__ads-badge))
+tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct"]:has(div[data-testid="master-product-card"] [data-testid="lblTopads"])
+tokopedia.com##:matches-path(/p/) a[data-testid="lnkProductContainer"]:has([alt*="topads"])
+tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
+biggo.id##div[style^="overflow-x: auto;"]:has([id^="ads"])
+biggo.id##img[onclick*="AD_SEARCHRESULT"]
+shopee.co.id##.search-page .search-items-container .item-card-list__item-card-wrapper:has-text(Ad)
+tokopedia.com##:matches-path(/find/) div[data-testid="divLazyFindProduct"]:has([data-testid="lblTopads"])
+tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="linkProductTopads"])
 apkmirror.com##+js(aost, document.getElementById, /stackDepth:2\s/)
 sadeempc.com##+js(nobab)
 ||embed.dugout.com^$3p,domain=indosport.com|skor.id
