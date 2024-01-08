@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.1.7
+! Version: 24.1.8
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Jan 2024 17:20 UTC
+! Last modified: 08 Jan 2024 17:56 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -653,6 +653,7 @@ _TimAds_$image
 ###iklan-kontad1
 ###iklan-kontad3
 ###iklan-newsfeed
+###iklan-paralax
 ###iklan-rekanan
 ###iklan-rekanan1
 ###iklan-rekanan2
@@ -3745,14 +3746,14 @@ kabarrakyat.id##+js(aopr, document.oncontextmenu)
 jawapos.com##.gliaplayer-container:remove()
 @@||iklanjitu.jawapos.com/app/media/$image,domain=iklanjitu.jawapos.com
 @@||iklanjitu.jawapos.com/media/$image,domain=iklanjitu.jawapos.com
-bolasiar8.lol,bolasiar8.pro,bolasiar8.sbs,bolasiar8.website###floatcenter
-bolasiar8.lol,bolasiar8.pro,bolasiar8.sbs,bolasiar8.website###floating_banner_top
-bolasiar8.lol,bolasiar8.pro,bolasiar8.sbs,bolasiar8.website##a[target="_blank"]:has(> img)
-okestream4.lol##.bottom-player-banner
-okestream4.lol##.header-banner
-okestream4.lol##.player-button-ad
-okestream4.lol###popbox
-okestream4.lol##+js(rc, flowbox, body)
+bolasiar.homes###floatcenter
+bolasiar.homes###floating_banner_top
+bolasiar.homes##a[target="_blank"]:has(> img)
+okestream.cfd##.bottom-player-banner
+okestream.cfd##.header-banner
+okestream.cfd##.player-button-ad
+okestream.cfd###popbox
+okestream.cfd##+js(rc, flowbox, body)
 bgibola.monster,bgibola77.*,bgibola8.*,bgibola88.*###floatcenter
 bgibola.monster,bgibola77.*,bgibola8.*,bgibola88.*###floating_banner_top
 bgibola.monster,bgibola77.*,bgibola8.*,bgibola88.*##.inline-banner
@@ -4138,13 +4139,14 @@ animesaku.com##+js(aopr, tie.ad_blocker_detector)
 downloadbatch.me##+js(acis, chp_ads_blocker_detector)
 animexin.vip##+js(noeval-if, /chp_?ad/)
 193.142.147.230,shinobijawi.id##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
+idlixofficials.com##+js(aost, document.querySelector, /(?!\bjquery\b)/)
 0.0.realodix##div[style*="position: fixed;"]:has-text(ADBLOCK)
 akashinime.lol##+js(acis, eval, replace)
 45.86.86.235##+js(acis, eval, split)
 0.0.realodix##+js(aeld, DOMContentLoaded, adsBlocked)
 0.0.realodix##+js(aopr, mdpDeBlocker)
-idlixofficials.com##+js(aost, document.createElement, adsBlocked)
-idlixofficials.com##+js(aost, document.getElementsByTagName, adsBlocked)
+0.0.realodix##+js(aost, document.createElement, adsBlocked)
+0.0.realodix##+js(aost, document.getElementsByTagName, adsBlocked)
 0.0.realodix##+js(aopr, wcadbwp)
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=auratail.com|kazepoi.my.id
@@ -5164,6 +5166,7 @@ _topbandar_$image
 ##[href="https://rebrand.ly/bethoki77"]
 ##[href="https://rebrand.ly/bethoki77-gacor303"]
 ##[href="https://rebrand.ly/betslot88"]
+##[href="https://rebrand.ly/bgimasbet888"]
 ##[href="https://rebrand.ly/bioskop777"]
 ##[href="https://rebrand.ly/bola001"]
 ##[href="https://rebrand.ly/bolagg-gacor303"]
