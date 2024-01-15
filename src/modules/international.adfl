@@ -5,6 +5,7 @@
 -OnlineAd-$image,domain=funtasticko.net|pandulaju.com.my
 /1020x350_$image,domain=funtasticko.net
 ||gohedgostan.com^*-Banner_$image
+||kisahdunia.com/wp-content/plugins/khairulzul-shopee-affiliate-for-kayz-asia/$image
 ||mediapermata.com.bn^*/banners/$image
 ! ---
 ! Hides
@@ -16,6 +17,9 @@ malaysiakini.com##.justify-center:has-text(/ads/i)
 mekanika.com.my##[data-advadsredirect=""]
 jobstreet.com.my##[data-automation$="-ads"]
 boom-malaysia.com##a.notrack > img
+! ---
+! Anti Adblock
+kisahdunia.com##+js(aost, document.getElementsByTagName, adsBlocked)
 ! ---
 ! Annoyances - Unblock Mouse limitations
 iluminasi.com##*:style(user-select:text!important;)
