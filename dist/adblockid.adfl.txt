@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.1.27
+! Version: 24.1.28
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Jan 2024 20:39 UTC
+! Last modified: 16 Jan 2024 17:36 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3335,6 +3335,7 @@ detik.com##.billboard-top
 haibunda.com##.billboard__banner
 cnbcindonesia.com##.box-ads
 cnnindonesia.com##.detail_ads
+cnbcindonesia.com##.detikads
 cnnindonesia.com,detik.com,insertlive.com##.footer_banner
 cnbcindonesia.com,detik.com##.megabillboard
 detik.com##.new_banner_reg_100
@@ -3349,11 +3350,11 @@ haibunda.com##.m-r2:has(#adv-caption-mr2)
 detik.com##.mr1:has(> #adv-caption-mr1)
 detik.com##.mr2:has(> #adv-caption-mr2)
 cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr1-scrollpage-container .mr1-scrollpage-banner)
-cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr2-scrollpage-container .mr2-scrollpage-banner)
+cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr2-scrollpage-container .mr2-scrollpage-banner)
 haibunda.com###parallaxdetail
 insertlive.com###parallaxindetail_blank
 detik.com##.list-content > .para1
-cnnindonesia.com,haibunda.com,insertlive.com##.paradetail
+cnnindonesia.com,detik.com,haibunda.com,insertlive.com##.paradetail
 cnnindonesia.com,detik.com##.parallaxindetail
 insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-height:250px;margin:0px auto 0px;"] > div[id^="div-gpt-ad-"])
 @@/ads/*$domain=adsmart.detik.com
@@ -3361,6 +3362,7 @@ insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-hei
 @@||adsmart.detik.com^$ghide
 beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
 transtv.co.id##+js(ra, oncontextmenu, html)
+detik.com##body:style(overflow: auto !important;)
 /banner/*$image,domain=kapanlagi.com
 bola.net###content-news .w100p:has([id^="div-gpt-ad"])
 bola.net###top_leaderboard:has(> [id^="div-gpt-ad"])
@@ -3505,10 +3507,10 @@ bgibola.lat,bgibola.monster,bgibola.shop,bgibola77.*,bgibola8.*,bgibola88.*##.to
 nobartv8.xyz,tvbersama9.lol###floatcenter
 nobartv8.xyz,tvbersama9.lol###floating_banner_top
 nobartv8.xyz,tvbersama9.lol##.top-player-banner
-368stream5.xyz,asiktv7.xyz,cebantv5.site,elangstream7.xyz,goalootv.club,golstream5.website,hdbola7.xyz,hepistream6.site,hokitv6.site,idnstream6.site,juaratv4.lol,lapaktv4.website,manggatv5.site,nowgoaltv.info,tvbagus5.lol,tvdewa7.sbs###floatcenter
-368stream5.xyz,asiktv7.xyz,cebantv5.site,elangstream7.xyz,goalootv.club,golstream5.website,hdbola7.xyz,hepistream6.site,hokitv6.site,idnstream6.site,juaratv4.lol,lapaktv4.website,manggatv5.site,nowgoaltv.info,tvbagus5.lol,tvdewa7.sbs###floating_banner_top
-368stream5.xyz,asiktv7.xyz,cebantv5.site,elangstream7.xyz,goalootv.club,golstream5.website,hdbola7.xyz,hepistream6.site,hokitv6.site,idnstream6.site,juaratv4.lol,lapaktv4.website,manggatv5.site,nowgoaltv.info,tvbagus5.lol,tvdewa7.sbs##.sidebar-content
-368stream5.xyz,asiktv7.xyz,cebantv5.site,elangstream7.xyz,goalootv.club,golstream5.website,hdbola7.xyz,hepistream6.site,hokitv6.site,idnstream6.site,juaratv4.lol,lapaktv4.website,manggatv5.site,nowgoaltv.info,tvbagus5.lol,tvdewa7.sbs##.top-player-banner
+368stream5.xyz,asiktv7.sbs,cebantv5.site,elangstream7.xyz,goalootv.club,golstream5.website,hdbola7.xyz,hepistream6.site,hokitv6.site,idnstream6.site,juaratv4.lol,lapaktv4.website,manggatv5.site,nowgoaltv.store,tvbagus5.lol,tvdewa7.sbs###floatcenter
+368stream5.xyz,asiktv7.sbs,cebantv5.site,elangstream7.xyz,goalootv.club,golstream5.website,hdbola7.xyz,hepistream6.site,hokitv6.site,idnstream6.site,juaratv4.lol,lapaktv4.website,manggatv5.site,nowgoaltv.store,tvbagus5.lol,tvdewa7.sbs###floating_banner_top
+368stream5.xyz,asiktv7.sbs,cebantv5.site,elangstream7.xyz,goalootv.club,golstream5.website,hdbola7.xyz,hepistream6.site,hokitv6.site,idnstream6.site,juaratv4.lol,lapaktv4.website,manggatv5.site,nowgoaltv.store,tvbagus5.lol,tvdewa7.sbs##.sidebar-content
+368stream5.xyz,asiktv7.sbs,cebantv5.site,elangstream7.xyz,goalootv.club,golstream5.website,hdbola7.xyz,hepistream6.site,hokitv6.site,idnstream6.site,juaratv4.lol,lapaktv4.website,manggatv5.site,nowgoaltv.store,tvbagus5.lol,tvdewa7.sbs##.top-player-banner
 celebrities.id###article .voucherWrap
 bogordaily.net,mojok.co##.code-block > .voucher_at
 inews.id##.content-detail .voucherWrap
@@ -5515,6 +5517,63 @@ _topbandar_$image
 ##[href*="://vsabet.me/"]
 ##[href*="://winslt8.us/"]
 ##[href*="jagungbaru.com/banner/"] > img
+##[href="https://gacorbgt.com/8080salt/"]
+##[href="https://gacorbgt.com/8080sport/"]
+##[href="https://gacorbgt.com/8table/"]
+##[href="https://gacorbgt.com/8togelcom/"]
+##[href="https://gacorbgt.com/afapkitty/"]
+##[href="https://gacorbgt.com/afapoker/"]
+##[href="https://gacorbgt.com/afatgreat/"]
+##[href="https://gacorbgt.com/afatogel/"]
+##[href="https://gacorbgt.com/ahabetcom/"]
+##[href="https://gacorbgt.com/ahart/"]
+##[href="https://gacorbgt.com/batikpoker/"]
+##[href="https://gacorbgt.com/brotogel/"]
+##[href="https://gacorbgt.com/brovegas/"]
+##[href="https://gacorbgt.com/brovgsalt/"]
+##[href="https://gacorbgt.com/btgrass/"]
+##[href="https://gacorbgt.com/btpage/"]
+##[href="https://gacorbgt.com/etgrade/"]
+##[href="https://gacorbgt.com/eyangpoker/"]
+##[href="https://gacorbgt.com/eyangtogel/"]
+##[href="https://gacorbgt.com/eyperfect/"]
+##[href="https://gacorbgt.com/gitarpoker/"]
+##[href="https://gacorbgt.com/gitartogel/"]
+##[href="https://gacorbgt.com/gtgold/"]
+##[href="https://gacorbgt.com/gtpath/"]
+##[href="https://gacorbgt.com/horaspoker/"]
+##[href="https://gacorbgt.com/hrpass/"]
+##[href="https://gacorbgt.com/idticket/"]
+##[href="https://gacorbgt.com/indotogel/"]
+##[href="https://gacorbgt.com/jayabet/"]
+##[href="https://gacorbgt.com/jayapoker/"]
+##[href="https://gacorbgt.com/jbethunder/"]
+##[href="https://gacorbgt.com/jkbrain/"]
+##[href="https://gacorbgt.com/jokerbet888/"]
+##[href="https://gacorbgt.com/jpkind/"]
+##[href="https://gacorbgt.com/klikttb/"]
+##[href="https://gacorbgt.com/messi2024/"]
+##[href="https://gacorbgt.com/pkboss/"]
+##[href="https://gacorbgt.com/pokerboya/"]
+##[href="https://gacorbgt.com/refban/"]
+##[href="https://gacorbgt.com/rgbasic/"]
+##[href="https://gacorbgt.com/rgclock/"]
+##[href="https://gacorbgt.com/rgobet/"]
+##[href="https://gacorbgt.com/rgocasino/"]
+##[href="https://gacorbgt.com/rgopoker/"]
+##[href="https://gacorbgt.com/rgotogel/"]
+##[href="https://gacorbgt.com/rgparty/"]
+##[href="https://gacorbgt.com/rtgrey/"]
+##[href="https://gacorbgt.com/sbccandy/"]
+##[href="https://gacorbgt.com/sepakbolacc/"]
+##[href="https://gacorbgt.com/texaspoker/"]
+##[href="https://gacorbgt.com/tgmark/"]
+##[href="https://gacorbgt.com/togelmandiri/"]
+##[href="https://gacorbgt.com/totobet/"]
+##[href="https://gacorbgt.com/tpking/"]
+##[href="https://gacorbgt.com/ttbright/"]
+##[href="https://gacorbgt.com/wigobet/"]
+##[href="https://gacorbgt.com/wigold/"]
 ##[href="https://gasdulu.vip/ads-bannerHB"]
 ##[href="https://gasdulu.vip/ads-bannerHB2"]
 ##[href="https://jayaabadi.art/asiaforbetgacor"]
