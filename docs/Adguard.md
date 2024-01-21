@@ -8,7 +8,7 @@
 1. Buka halaman *dashboard*.
 2. Klik tab *Filters*. <br>
 
-   ![](https://i.imgur.com/85YEOKJ.png) <br>
+   ![](https://i.imgur.com/RiY7Uet.png) <br>
 
 3. *Scroll* ke bawah, lalu klik *Language-specific*. <br>
 
@@ -16,7 +16,7 @@
 
 4. Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span> <br>
 
-   ![](https://i.imgur.com/ZQB0DN0.png) <br>
+   ![](https://i.imgur.com/PPqeman.png) <br>
 
 <br><br>
 
@@ -48,4 +48,4 @@
 - Klik `Filtering` -> `Filters` -> `Language-specific filters`
 - Aktifkan <span style="color:#67B279"><b>AdBlockID</b></span> <br>
 
-   <img src="https://i.imgur.com/R5rqIfj.jpg" width="600"/>
+   ![](https://i.imgur.com/T2zbEQi.png)

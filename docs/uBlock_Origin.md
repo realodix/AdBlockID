@@ -15,7 +15,7 @@ Anda dapat langsung menekan link `Subscribe` langsung dari table yang telah dise
 3. *Scroll* ke bawah, centang *Import* di bagian *Custom*.
 4. Copy link raw file yang dapat Anda temukan di [halaman depan][ABID_Subscription], lalu paste URL AdBlockID di kotak *Import*. <br>
 
-   ![img](https://i.imgur.com/iG2KGD5.png) <br>
+   ![img](https://i.imgur.com/rguw5WO.png) <br>
 
 5. Klik ***Apply changes*** di pojok kanan atas.
 
