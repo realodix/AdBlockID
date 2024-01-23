@@ -12,6 +12,7 @@
 !
 miuiku.com,sekilastekno.com###teaser2
 pinloker.com##.text-center:has-text(/adv/i)
+majalahhewan.com##span:has-text(/adv/i)
 !
 ! ANTI-ADBLOCK
 ! -----------------------------------------------
@@ -23,7 +24,7 @@ linkpoi.me##+js(aopr, disableItToContinue)
 menjelajahi.com,pintunow.com,rancah.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 mangindo.xyz##+js(aopr, window.adikAds)
 downloadfilm.website,sekilastekno.com##+js(no-fetch-if, ads)
-info.gambar.pro,pinloker.com,sekilastekno.com##+js(no-fetch-if, adsbygoogle.js)
+info.gambar.pro,majalahhewan.com,pinloker.com,sekilastekno.com##+js(no-fetch-if, adsbygoogle.js)
 vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 lifesurance.info##+js(set, showada, true)
 ! chp_ads_blocker | adblock_title
@@ -56,7 +57,9 @@ pinloker.com,sekilastekno.com##+js(ra, href, div[x-data="adtival"] a[href][\@cli
 ! ---
 ! Countdown Timer
 pernahsukses.com##+js(adjust-setInterval)
+majalahhewan.com##+js(adjust-setInterval, /counter|wait/, *, 0.02)
 tutwuri.id##+js(adjust-setInterval, innerHTML=`Wait)
+majalahhewan.com##+js(aeld, blur, counter)
 adpayl.ink,adsafelink.com,asupload.com,miuiku.com,pernahsukses.com,rancah.com,saungfirmware.id,savetub.com,sekilastekno.com,semruwet.com##+js(set, blurred, false)
 ! ---
 ! Fake Button
@@ -69,6 +72,7 @@ shrinke.me,shrinkme.info##.expop
 miuiku.com##.klikdisini
 ayobelajarbareng.com##.single-content a[target="_blank"]:has(> img[alt="download"])
 teknosimple.com##.slu-download
+majalahhewan.com##:has(> a[href="#downloadnow"])
 karyawan.co.id##article .slu-download
 besargaji.com##article a:has(> img[src$="/download.png"])
 info.gambar.pro##center:has(> img)
