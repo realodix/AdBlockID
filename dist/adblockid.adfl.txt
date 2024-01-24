@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.1.63
+! Version: 24.1.64
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Jan 2024 11:37 UTC
+! Last modified: 24 Jan 2024 20:11 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1303,13 +1303,13 @@ _TimAds_$image
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$doc,frame,popup
 /\/assets\/jquery\/jquery-\d\.\d\.(?:\d\.)?min\.js\?(?:v=2)?&?type=(?:adult|mainstream)$/$1p,script
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$3p,match-case,script,xhr
-/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$3p,script,xhr,redirect=noop.js
+/\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$script
+/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$3p,script
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,5}(?:\?[_v]=\d+)?$/$3p,match-case,script,redirect=noop.js
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$3p,frame,match-case,popup,xhr
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$3p,frame,match-case,popup,xhr
-/\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$script
-/^https?:\/\/[0-9a-z]{13,14}\.cloudfront\.net\/\?[a-z]{3,5}=\d{6}$/$3p,script,xhr
-/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$3p,script
+/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$3p,script,xhr,redirect=noop.js
+/^https?:\/\/[0-9a-z]{13,14}\.cloudfront\.net\/\?[a-z]{3,5}=\d{6,7}$/$3p,script,xhr
 /^https?:\/\/[0-9a-f]{50,}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$3p,xhr
 /^https?:\/\/s3\.us-east-1\.amazonaws\.com\/[0-9a-f]{50,}\/[0-9a-f]{10}$/$3p,xhr
 .top/event|$3p,xhr
@@ -1998,6 +1998,7 @@ _promohariini.$image,domain=ruparupa.com
 ||thejakartapost.com^*/banner-$image
 ||timur-online.com^*/iklan-$image
 ||tintahijau.com/images/banners/$image
+||tintahijau.com^*/banner-$image
 ||tiradar.id^*/banner-$image
 ||titiknol.co.id^*/banner/$image
 ||tmcblog.com^*/ad-$image
@@ -4176,7 +4177,7 @@ indojavstream.com##.box_item_ads_popup
 gocrot.org##.gocrot_i_b_2
 omahbokep.co##.happy-header
 seks69.com##.idblog-floatbanner
-nontonhentai.top,pascol.fun,skandalpedia.mom##.kln
+nontonhentai.top,pascol.fun,skandalpedia.mom,starjepang.com##.kln
 nekopoi.care##.leftarea
 nekopoi.care##.mobileadsbottom
 nekopoi.care##.smartbanner
