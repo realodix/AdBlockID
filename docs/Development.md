@@ -73,6 +73,10 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
   Menggabungkan semua filter ke dalam 1 file (`adblockid.adfl.txt`) di folder `dist`.
 
+- `flcombine -i abid=. template/adblockid_plus.template.txt dist/adblockid_plus.adfl.txt`
+
+  Menggabungkan semua filter AdBlockID Plus pada folder `src` ke dalam 1 file (`dist/adblockid_plus.adfl.txt`).
+
 - `python tools/fop/fop.py -d src`
 
   Mengurutkan dan merapikan filter.
