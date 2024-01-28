@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FOP="python tools/fop/fop.py -d src dist -i adblockid.adfl.txt adblockid_plus.adfl.txt"
+FOP="python tools/fop/fop.py -d src tests"
 ADBLOCKID="flcombine -i abid=. template/adblockid.template.txt dist/adblockid.adfl.txt"
 ADBLOCKID_PLUS="flcombine -i abid=. template/adblockid_plus.template.txt dist/adblockid_plus.adfl.txt"
 
