@@ -73,7 +73,7 @@ Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
   Menggabungkan semua filter ke dalam 1 file (`adblockid.adfl.txt`) di folder `dist`.
 
-- `python tools/fop/fop.py`
+- `python tools/fop/fop.py -d src`
 
   Mengurutkan dan merapikan filter.
 
