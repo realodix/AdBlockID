@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.1.85
+! Version: 24.1.86
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 31 Jan 2024 18:01 UTC
+! Last modified: 31 Jan 2024 19:28 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -1037,6 +1037,9 @@ _TimAds_$image
 ##.newkarma-core-banner-beforecontent
 ##.newkarma-core-banner-insidecontent
 ##.newkarma-core-center-ads
+##.newkarma-core-floatbanner
+##.newkarma-core-floatbanner-left
+##.newkarma-core-floatbanner-right
 ##.newkarma-core-topbanner
 ##.newkarma-core-topbanner-aftermenu
 ##.news__ads
@@ -1206,9 +1209,6 @@ _TimAds_$image
 ##[class*="bnr_kiri"]
 ##[class*="bnrkanan"]
 ##[class*="bnrkiri"]
-##[class*="core-floatbanner"]
-##[class*="gambar-sponsor"]
-##[class*="gambar_sponsor"]
 ##[class*="ikln-" i]
 ##[class*="ikln_" i]
 ##[class*="sponsor-besar"]
@@ -2158,7 +2158,7 @@ dialeksis.com##.add-space
 bolatimes.com,matamata.com,suara.com##.adds-top
 nesabamedia.com##.adfullwrap
 fajar.co.id##.adp_interactive_ad
-aktaduma.com,apahabar.com,bantentrust.com,beritabulukumba.com,beritakarya.id,beritaria.com,cakrawala.co,ciremainews.com,dailypangandaran.com,duwitmu.com,genyo.id,indozone.id,kanalone.co.id,koran-jakarta.com,minangsatu.com,otostar.id,pikiran-rakyat.com,pramborsfm.com,republika.co.id,rmol.id,sepakbolasemarang.com,tempo.co##.ads
+aktaduma.com,apahabar.com,bantentrust.com,beritabulukumba.com,beritakarya.id,beritaria.com,cakrawala.co,ciremainews.com,dailypangandaran.com,downloadtanku.org,duwitmu.com,genyo.id,indozone.id,kanalone.co.id,koran-jakarta.com,minangsatu.com,otostar.id,pikiran-rakyat.com,pramborsfm.com,republika.co.id,rmol.id,sepakbolasemarang.com,tempo.co##.ads
 harianjogja.com##.ads-after-image
 harpersbazaar.co.id,motherandbeyond.id##.ads-belt
 showbiz.co.id##.ads-container
@@ -2290,6 +2290,7 @@ tempo.co##.cls-side-banner
 diadona.id##.col-banner
 suarajatimpost.com##.container-bn
 dailysocial.id##.cover-ads-article
+yasir-252.net##.custom_ads_class
 pricebook.co.id##.description-ads
 hybrid.co.id##.detail__right-ads
 sukabumiupdate.com##.display__banner
@@ -2443,7 +2444,6 @@ solopos.com##.swipe-up-ad
 asarpua.com##.td-banner-wrap-full
 winpoin.com##.td-header-ad-wrap
 timesindonesia.co.id##.text-center a[target="_blank"] > img
-iglobalnews.co.id##.theme-header-ads
 honestdocs.id,koranmandala.com,tempo.co##.top-banner
 orami.co.id##.top-banner-parallax
 juragancipir.com,kelanamakan.com##.topad
@@ -2546,9 +2546,8 @@ atlanticride.com,beritabalap.com##.entry-content > .code-block
 lenterajateng.com##.entry-content > .code-block:has(> noscript)
 kalteng.co##.entry-content > .stream-item-below-post-content
 sumselindependen.com##.entry-content > div:matches-css(text-align: center) > img
+pyfahealth.com##.entry-content a[href*="bit.ly/"]:has(> img)
 vcgamers.com##.entry-content a[target="_blank"]:has(video.videobanner):remove()
-iglobalnews.co.id##.entry-content img[width="720"][height="380"]
-iglobalnews.co.id##.entry-content img[width="720"][height="400"]
 kepribetter.com##.entry-summary > .code-block > a > img
 sepindonesia.com##.fl-photo-align-center[itemtype="https://schema.org/ImageObject"] img
 infopublik.id##.float-info
@@ -2695,6 +2694,7 @@ jawaraspeed.com###openModal:has-text(/ads/i)
 medanbisnisdaily.com###readnews [align="center"]:has(a[title*="ads"] > img)
 kompinesia.com##.a-wrap > .label:has-text(/iklan/i)
 indonesiatimur.co##.entry-content > div:has-text(/adv/i)
+iglobalnews.co.id##.entry-content > div[class^="iglob-"]:has(> div[class^="iglob-"]:has-text(/adv/i))
 acehonline.co,kabartamiang.com,mimbaraceh.com,senentangnews.com,tandaseru.com##.funds:has(> a[rel="nofollow"])
 candilkuya.com##.link-btn:has-text(/iklan/i)
 hewanbinatang.com##.mabur:has(> .tutup-iklan)
@@ -2948,7 +2948,7 @@ investor.id##.show-desktop:has(script[src*=".com/ads/"])
 danielnugroho.com##.single-content > div:has(> .adsbygoogle)
 suara.com##.skin:has(> [data-ad-type])
 mariodevan.com,motorrio.com##.wpa:has-text(/adv/i)
-garudadaily.com##.wpb_wrapper:has-text(/adv/i)
+garudadaily.com##.wpb_row .wpb_column > .wpb_wrapper:has(.terbaru:has-text(/adv/i))
 ruangguru.com##[class^="css-"]:has(> p:has-text(/iklan/i) )
 kumparan.com##[data-qa-id*="mobile-article-page-"]:has-text(/adv/i)
 alinea.id,bisnis.com,gadgetren.com,indozone.id,katadata.co.id,tek.id##[id^="div-gpt-ad"]:upward(.flying_carpet_div)
@@ -3222,7 +3222,7 @@ hercodigital.id#@##googleads1
 jabarprov.go.id#@#.ad-loader
 jualo.com#@#.ad-title
 beritajatim.com#@#.advertorial
-busam.id,helloborneo.com,jurnalborneo.com,ketapangnews.com,klausa.co,prudensi.com,siginjai.id,tebarberita.id#@#.category-advertorial
+busam.id,helloborneo.com,iglobalnews.co.id,jurnalborneo.com,ketapangnews.com,klausa.co,prudensi.com,siginjai.id,tebarberita.id#@#.category-advertorial
 @@/ad4.png$image,domain=palingseru.com
 @@/ads/*$domain=phd.co.id|promozia.com
 @@/adsense.$domain=herosoftmedia.co.id
@@ -3583,7 +3583,7 @@ zuperdrive.my.id##+js(nowoif, !zuperdrive)
 kotakgame.com##+js(set, $.magnificPopup.open, noopFunc)
 pesantrenterbaik.com##+js(set, myAds, undefined)
 berga-tech.com,gammafisblog.com,gigapurbalingga.cc,helmiau.com,jalanku.my.id,jandaqu.xyz,jejakmufassir.my.id,kpfmpalangkaraya.com,kurazone.net,kuyhaa-me.com,mistertekno.com,playsobat.xyz,tafsirmimpi.co,topwisata.info##+js(window.open-defuser)
-/wp-content/plugins/cm-pop-up-banners/*$domain=downloadtanku.org|klikpapua.com|radarsriwijaya.com|rajawarta.com|suaramandiri.co
+/wp-content/plugins/cm-pop-up-banners/*$domain=klikpapua.com|radarsriwijaya.com|rajawarta.com|suaramandiri.co
 klikpapua.com,papuabaratpos.com,radarsriwijaya.com,rajawarta.com,situswanita.com,suaramandiri.co,suarapubliknews.net,topbnews.com##+js(aopr, popup_custom_data)
 /wp-content/plugins/master-popups/*$domain=mediamerdeka.co
 faktabanten.co.id,papuaterkini.com,papuatoday.com,radarbanten.co.id,sindomanado.com,suluttimes.com##+js(acis, SGPopup)
@@ -3638,11 +3638,14 @@ duniagames.co.id##+js(rc, cdk-global-scrollblock, html)
 !#else
 duniagames.co.id##html:remove-class(cdk-global-scrollblock)
 !#endif
-||downloadtanku.org/wp-content/uploads/*-download-now-button-$image
+darmediatama.com##.entry-content > .code-block > button:has-text(/download/i)
+kuyhaa-me.com##.entry-content > center > input[src]
+rgames31.com##.entry-content > center a[target="_blank"] input
 freesoft.id##.entry-content button:has(> a[href="javascript:void(0);"][onclick^="window.open("])
-gigapurbalingga.cc,kuyhaa-me.pw##.entry-content center:has(button#linkIButton)
+abbaspc.net,bagas3-1.co,bagas31.pw##.entry-content center > a:has(> button)
+bagas3-1.com,bagas31.one,gigapurbalingga.cc,kuyhaa-me.pw,yasir-252.com##.entry-content center:has(button#linkIButton)
 kuyhaa.cc##.post-wrapper .code-block:has(> center > a > button)
-rgames31.com##article .code-block > center:has(a[target*="blank"]) input[type="button"]
+gigapurbalinggaa.com##article .code-block > center:has(> button:has-text(/download/i))
 katadata.co.id##+js(aopr, addLink)
 headlinekaltim.co##+js(aopr, wp_copy)
 tirto.id##+js(rc, container900, div)
