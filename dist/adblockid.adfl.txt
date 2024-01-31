@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.1.84
+! Version: 24.1.85
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Jan 2024 20:42 UTC
+! Last modified: 31 Jan 2024 18:01 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -179,7 +179,6 @@ _iklantengah_
 _pasangiklan/
 _promosi.
 _TimAds_$image
-~fjb.kaskus.co.id##.ads__banner
 ~serbada.com##.banner-header
 ~intipseleb.com##.footer-iklanbottomdesktop
 ~iklanjitu.jawapos.com##.ikl-kolom
@@ -2720,7 +2719,6 @@ humaniora.id##figure:has(> a):has-text(/adv/i)
 kotakgame.com##html:style(background-image: none!important;)
 priceza.co.id###mobilePopupBtm
 bisnis.com##.billboardPushdown
-m.kaskus.co.id##.threadDetail a[target="_blank"] img[src^="https://s.kaskus.id/images/"]
 radioonline.co.id##.add-box-top
 grid.id##.ads-partner-wrap
 tribunnews.com##.ads-placeholder
@@ -3641,22 +3639,10 @@ duniagames.co.id##+js(rc, cdk-global-scrollblock, html)
 duniagames.co.id##html:remove-class(cdk-global-scrollblock)
 !#endif
 ||downloadtanku.org/wp-content/uploads/*-download-now-button-$image
-darmediatama.com##.code-block > button:has-text(/download/i)
-gigapurbalinggaa.com##.code-block > center:has(> button:has-text(/download/i))
-alex71.com##.content .aligncenter[alt="download" i][src*=".gif"]
-abbaspc.net##.entry-content > center > button:has-text(/download/i)
 freesoft.id##.entry-content button:has(> a[href="javascript:void(0);"][onclick^="window.open("])
-mugedcrack.com##.entry-content center > a[href^="javascript:"]
 gigapurbalingga.cc,kuyhaa-me.pw##.entry-content center:has(button#linkIButton)
 kuyhaa.cc##.post-wrapper .code-block:has(> center > a > button)
-kuyhaa-me.com##[type="image"][src*="/sd.png"]
-kuyhaa.net##a[href*="xshared.link"][target="blank"]
 rgames31.com##article .code-block > center:has(a[target*="blank"]) input[type="button"]
-bagas3-1.co,bagas3-1.com,bagas31.one##article center > [href] > button
-bagas31.pw##article center > a[href="javascript:void(0);"]
-bagas31.pw##button:has-text(/download/i)
-masterkreatif.net##center .button:has-text(/download crack/i)
-yasir-252.com,yasir-252.net##center:has(a[target="_blank"] > button:has-text(/download/i))
 katadata.co.id##+js(aopr, addLink)
 headlinekaltim.co##+js(aopr, wp_copy)
 tirto.id##+js(rc, container900, div)
@@ -3665,9 +3651,6 @@ gramedia.com##+js(acis, history.replaceState, location.replace)
 paylaterin.com##+js(aopr, $, js_zerobounce_get_url)
 ngelag.com##+js(set, window.onpopstate, noopFunc)
 tipsgaptek.com,tipskerja.com##+js(refresh-defuser)
-kaskus.co.id###thread_post_list > [id^="moderated-"]:has-text(Post ini telah dihapus oleh)
-m.kaskus.co.id##.threadDetail .kaskus-tv-iframe
-m.kaskus.co.id##[id^="postdeleted"]
 mizanstore.com#@#.push-wrapper:not(body):not(html)
 berkeluarga.id,gdm.id#@#.share-simple
 ifra-indonesia.com#@##social-float
@@ -5677,4 +5660,4 @@ azhan.co,mediahiburan.my##+js(acis, disableSelection, reEnable)
 mediahiburan.my##+js(acis, document.oncontextmenu)
 mediaonemarketing.com.sg##+js(aopr, window.pum_popups)
 ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
-! :: AdBlockID Filter Combiner v1.1.0
+! :: AdBlockID Filter Combiner v1.2.0
