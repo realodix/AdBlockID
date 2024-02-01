@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-import subprocess
+import datetime, subprocess
 import argparse, io, itertools, logging, sys, time
 from .config import *
 from .parser import parse_filterlist, Metadata
@@ -170,10 +170,12 @@ def _insert_version(lines):
     # version = Metadata('Version', time.strftime('%y.%j.{}'.format(v_build), time.gmtime()))
     # year.month.number_of_commits_in_month
 
+    date = datetime.datetime.now()
+
     gitCommand = (
         'git', 'rev-list', 'HEAD',
         '--count',
-        '--after="{} days+%Y-%m-%dT23:59"'.format(time.strftime("%d", time.gmtime())),
+        '--after="{} days+%Y-%m-%dT23:59"'.format(date.day),
         '--',
         args.outfile # Panggil dari main(), otomatis menghitung output file.
     )

@@ -3,7 +3,7 @@
 
 config = {
     'libName'      : 'AdBlockID Filter Combiner',
-    'libVersion'   : '1.2.0',
+    'libVersion'   : '1.3.0',
 }
 
 
