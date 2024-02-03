@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.2.14
+! Version: 24.2.15
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 03 Feb 2024 16:27 UTC
+! Last modified: 03 Feb 2024 17:07 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/ads_$domain=~cartalog.id
@@ -3913,7 +3913,8 @@ idlixofficials.com##+js(aost, document.querySelector, /(?!\bjquery\b)/)
 0.0.realodix##+js(aopr, wcadbwp)
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=auratail.com|kazepoi.my.id
-@@-cpm-ads.$domain=doroni.me|doronime.id|kusonime.com
+@@-ads-banner.$domain=kusonime.com
+@@-cpm-ads.$domain=doroni.me|doronime.id
 @@||doroni.me^$ghide
 @@||doronime.id^$ghide
 /ads-$image,domain=nekopoi.web.id
@@ -3935,7 +3936,7 @@ nontondrama.click###admad
 kopajasubs.info###fb-fanbox
 anichin.fans,animeindo.monster,anoboy2.one,isekaisubs.web.id,punknime.com,riie.stream,sokuja.co,sokuja.live###overplay
 manganime.live###tutupx
-doroni.me##.Popup
+doroni.me,doronime.id##.Popup
 animeku.cam##.modal2
 kuramanime.pro##.player-overplay
 idlixofficials.com##.swal-overlay
