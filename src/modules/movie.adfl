@@ -102,8 +102,11 @@ animesaku.com##+js(aopr, tie.ad_blocker_detector)
 downloadbatch.me##+js(acis, chp_ads_blocker_detector)
 5.253.86.213,animexin.vip##+js(noeval-if, /chp_?ad/)
 193.142.147.230,shinobijawi.id##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
-! wpfcgl() | wgh= | wgha=
-idlixofficial.co##+js(aost, document.querySelector, /(?!\bjquery\b)/)
+! class="*-blackout active"
+! class="*-wrapper"
+! -- class="*-modal *-the-modal active"
+@@||static.doubleclick.net/instream/ad_status.js$domain=idlixofficial.co
+idlixofficial.co##+js(aost, DOMTokenList.prototype.contains, manageBodyClasses)
 ! gothamBatAdblock
 0.0.realodix##div[style*="position: fixed;"]:has-text(ADBLOCK)
 ! wcadbwp|.wc-adblock-wrap
