@@ -95,7 +95,6 @@ downloadbatch.me##.widget:has-text(/adv/i)
 ! ANTI-ADBLOCK
 ! -----------------------------------------------
 kopajasubs.info##+js(aopr, adAdbLoad)
-mikanime.com##+js(aopr, adBlockDetected)
 filmboxoffice.web.id,neosubs.net##+js(aopr, anOptions)
 animesaku.com##+js(aopr, tie.ad_blocker_detector)
 ! chp_ads_blocker | adblock_title | /wp-content/plugins/chp-ads-block-detector/
@@ -167,7 +166,7 @@ sokuja.pw##div:matches-css(position: fixed):has(> div > #countdown)
 ! ---
 ! Auto Safelink
 kusonime.com,melongmovie.site,wibudesu.co##+js(aopr, app_url)
-lendrive.web.id,mikanime.com##+js(aopr, encodeURIComponent)
+lendrive.web.id##+js(aopr, encodeURIComponent)
 animebatch.id,nimegami.id##+js(aopr, go_url)
 batchkun.com,keinime.web.id##+js(aopr, protected_links)
 nekopoi.web.id##+js(aopr, showurl)
@@ -178,14 +177,13 @@ niihen.com##.entry-content div:matches-css(text-align: center) > a:style(display
 ! Unblock context menu and other mouse limitations
 179.43.163.54,cgvindo.lol,kitanonton.ink,nekopoi.web.id##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 !
-anichin.top,mikanime.com,samehadaku.gold,wibudesu.co##*:style(user-select:text!important;)
-mikanime.com,samehadaku.gold,wibudesu.co##+js(acis, disableSelection, reEnable)
+anichin.top,samehadaku.gold,wibudesu.co##*:style(user-select:text!important;)
+samehadaku.gold,wibudesu.co##+js(acis, disableSelection, reEnable)
 154.26.134.91,otakudesu.media##+js(acis, document.oncontextmenu)
 111.90.140.159,akashinime.lol,anichin.fans,anichin.top,idlixofficial.co##+js(aeld, contextmenu)
 kusonime.com##+js(aeld, keydown)
 kusonime.com,samehadaku.gold##+js(aopr, document.oncontextmenu)
 nekopoi.web.id##+js(aopr, document.oncopy)
-mikanime.com##+js(aopr, nocontext)
 wibudesu.co##+js(aopw, nocontext)
 !
 ! REFERRAL
