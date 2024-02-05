@@ -18,7 +18,11 @@ jobstreet.com.my##[data-automation$="-ads"]
 boom-malaysia.com##a.notrack > img
 ! ---
 ! Anti Adblock
-kisahdunia.com##+js(aost, document.getElementsByTagName, adsBlocked)
+! class="*-blackout active"
+! class="*-wrapper"
+! -- class="*-modal *-the-modal active"
+@@||static.doubleclick.net/instream/ad_status.js$domain=kisahdunia.com
+kisahdunia.com##+js(aost, DOMTokenList.prototype.contains, manageBodyClasses)
 ! ---
 ! Annoyances - Unblock Mouse limitations
 iluminasi.com##*:style(user-select:text!important;)
