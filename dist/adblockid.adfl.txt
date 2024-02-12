@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.2.56
+! Version: 24.2.57
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Feb 2024 13:24 UTC
+! Last modified: 12 Feb 2024 14:51 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2390,7 +2390,7 @@ katadata.co.id##.skinads
 katadata.co.id##.skinads-left
 katadata.co.id##.skinads-right
 genpi.co##.sky_banner
-infokyai.com,jejakfaktanews.com##.slotbanner
+infokyai.com,jejakfaktanews.com,suarakonsumenindonesia.com##.slotbanner
 intipseleb.com,sahijab.com##.small-mobile-banner
 thejakartapost.com##.smart-banner-wrapper
 idntimes.com##.smartbanner
@@ -2462,7 +2462,7 @@ balanganews.com##img[alt^="ikl" i]
 dairi24jam.id,feritekno.com,kanalaspirasi.com,zonasultra.id##img[alt^="iklan" i]
 gosulsel.com##img[title*="-ads-" i]
 kemajuanrakyat.id##img[title*="iklan" i]
-ujaran.co.id##img[title^="adv" i]
+suarakonsumenindonesia.com,ujaran.co.id##img[title^="adv" i]
 batakpost.com,bumimaluku.com,detak.co,liranews.com,mediaaceh.co.id,okebung.com,radarkukar.com,suarabaru.id##img[title^="banner" i]
 rencanamu.id##.old_left a[target="_blank"] img
 dutaislam.com,maxmanroe.com##.post a[target="_blank"] > img
@@ -2711,8 +2711,8 @@ dafunda.com##.adsense-header
 jurnalweb.com##.adspace
 m.bisnis.com##.fix_ads
 radarnusantara.com###content-section-wide-bottom .widget:has(.widget-content > img)
-bentengsumbar.com,dhean.news,harianmerdeka.id,iluvtari.com,kabarviral79.com,kebumenekspres.com###sidebar .widget:has(.widget-content > a > img)
-bentengsumbar.com,instingjurnalis.com,kabarviral79.com,kebumenekspres.com,radarnusantara.com###sidebar .widget:has(.widget-content > img)
+bentengsumbar.com,dhean.news,harianmerdeka.id,iluvtari.com,kabarviral79.com,kebumenekspres.com,suarakonsumenindonesia.com###sidebar .widget:has(.widget-content > a > img)
+bentengsumbar.com,instingjurnalis.com,kabarviral79.com,kebumenekspres.com,radarnusantara.com,suarakonsumenindonesia.com###sidebar .widget:has(.widget-content > img)
 karawangnews.com###sticky-sidebar .widget:has(.widget-content > img)
 visi.news##.custom-html-widget
 lintasbali.com##.elementor-widget :has(.elementor-widget-container > img)
@@ -2856,7 +2856,6 @@ trikinet.com##.widget:not(:has(a[href*="trikinet.com"])) > a > img
 flashlombok.com##.widget_block:has(figure.aligncenter img)
 nawacita.co##aside .adsbygoogle:upward(.textwidget)
 beritabaru.co##aside .widget:has(p > .adsbygoogle)
-portalindonesianews.net##aside .widget:has-text(/iklan/i)
 axialnews.id,kabarnusa.com##aside > .widget:has(> figure > img)
 speednews-manado.com##aside > .widget:has-text(/adv/i)
 bangkitmedia.com##aside p:matches-css(text-align: center):has(> a > img)
