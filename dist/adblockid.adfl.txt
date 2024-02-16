@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.2.69
+! Version: 24.2.70
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Feb 2024 19:16 UTC
+! Last modified: 16 Feb 2024 12:37 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1341,6 +1341,7 @@ _TimAds_$image
 /get/*?zoneid=$script
 /lv/esnk/*$3p,script
 /pfe/current/*$3p,script
+/[0-9a-f]{32}\/invoke\.js/$3p,script,redirect-rule=noop.js
 ||amazonaws.com^*/banner/$3p,domain=bogornews.com
 ||beritabaru.news/sc/detect-click.js
 ||cloudhost.id^*_ads_$3p,image
