@@ -109,14 +109,14 @@ Thanks goes to these wonderful people.
 
 | # | User | Contribs | Picture |
 | - | ---- | -------- | ------- |
-| 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [840+ issues][volunteer_r1] | <img height="30" src="https://avatars0.githubusercontent.com/u/9379770"> |
+| 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [850+ issues][volunteer_r1] | <img height="30" src="https://avatars0.githubusercontent.com/u/9379770"> |
 | 2 | [3xploiton3](https://github.com/3xploiton3) | [200+ issues][volunteer_r2] | <img height="30" src="https://avatars3.githubusercontent.com/u/19517680"> |
-| 3 | [Jokopentil](https://github.com/Jokopentil) | [60+ issues][volunteer_r3] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
-| 4 | [T-Baniza ](https://github.com/T-Baniza ) | [30+ issues][volunteer_r4] | <img height="30" src="https://avatars.githubusercontent.com/u/79722529"> |
-| 5 | [Abidjauhar17](https://github.com/abidjauhar17) | [20+ issues][volunteer_r5] | <img height="30" src="https://avatars.githubusercontent.com/u/37255346"> |
+| 3 | [Jokopentil](https://github.com/Jokopentil) | [70+ issues][volunteer_r3] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
+| 4 | [Abidjauhar17](https://github.com/abidjauhar17) | [40+ issues][volunteer_r4] | <img height="30" src="https://avatars.githubusercontent.com/u/37255346"> |
+| 5 | [T-Baniza ](https://github.com/T-Baniza ) | [30+ issues][volunteer_r5] | <img height="30" src="https://avatars.githubusercontent.com/u/79722529"> |
 
 [volunteer_r1]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer
 [volunteer_r2]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3A3xploiton3
 [volunteer_r3]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AJokopentil
-[volunteer_r4]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AT-Baniza
-[volunteer_r5]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3Aabidjauhar17
+[volunteer_r4]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3Aabidjauhar17
+[volunteer_r5]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3AT-Baniza
