@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.2.125
+! Version: 24.2.126
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 Feb 2024 09:50 UTC
+! Last modified: 21 Feb 2024 10:00 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1801,6 +1801,8 @@ _iklan_$image,domain=ntt-news.com
 ||odiyaiwuu.com^*/ikalan-$image
 ||ojenews.com^*/iklan-$image
 ||okemedan.com^*/banner-$image
+||otoinfo.id^*-banner-$image
+||otoinfo.id^*/banner-$image
 ||otostar.id/images/banners/$image
 ||pab-indonesia.co.id/assets/banner/$image
 ||panditfootball.com/web/images/gif-banner-$image
@@ -2451,6 +2453,7 @@ kemajuanrakyat.id##img[title*="iklan" i]
 suarakonsumenindonesia.com,ujaran.co.id##img[title^="adv" i]
 batakpost.com,bumimaluku.com,detak.co,liranews.com,mediaaceh.co.id,okebung.com,suarabaru.id##img[title^="banner" i]
 bogordaily.net##img[width="729"][height="91"]
+bardimin.com,otoinfo.id##.code-block
 rencanamu.id##.old_left a[target="_blank"] img
 dutaislam.com,maxmanroe.com##.post a[target="_blank"] > img
 timesindonesia.co.id##.text-center a[target="_blank"] > img
@@ -2555,6 +2558,7 @@ jurnal9.tv##img[width="1024"][height="164"]
 gonews.id,infosatu.co,insitekaltim.com##img[width="1024"][height="173"]
 inilah.com##img[width="1024"][height="200"]
 penaberlian.com##img[width="1024"][height="205"]
+epiclopedia.id##img[width="1024"][height="250"]
 mediaetam.com##img[width="1024"][height="282"]
 newskaltim.com##img[width="1024"][height="306"]
 newskaltim.com##img[width="1024"][height="338"]
@@ -2870,7 +2874,6 @@ investor.id##.body-content div:has(> [id^="div-gpt-ad-"])
 id.theasianparent.com##.bottom-sticky.only-mobile.layer-bsa-bn:style(min-height: 0 !important;)
 uzone.id##.box-content-news-description .geozo:has(> script)
 suarajatimpost.com##.card:has-text(/adv/i)
-bardimin.com##.code-block
 indorsie.com,kamiwebdevelopment.com,polarumah.com,ridpir.com,syfaganjarstory.com##.code-block:has(> .adsbygoogle)
 joglosemarnews.com##.code-block:has(> amp-ad)
 infosumbar.net##.code-block:has(> center > script)
