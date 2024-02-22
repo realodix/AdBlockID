@@ -98,6 +98,64 @@ grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
 kompasiana.com,tribunnews.com##+js(aeld, /copy|keydown/)
 /copy_credit.$script,domain=kompas.com
 !# ---
+!# Trans Media - Detik Network
+!# ---
+||detik.com^*/bannerinternal/
+!
+detik.com###adv-caption-lead
+detik.com###adv-caption-lead + #leaderboard:has([id^="div-gpt-ad"])
+haibunda.com###balloonads
+transtv.co.id###bannerpop
+cnbcindonesia.com,haibunda.com###billboard_banner
+haibunda.com###bottom_banner
+detik.com###leaderboard:has(> center > [id^="div-gpt-ad-"])
+cnbcindonesia.com,detik.com,haibunda.com###megabillboard
+detik.com###megabillboard-desktop
+cnnindonesia.com##.ad_billboard
+beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.ads-slot
+detik.com##.adv
+cnbcindonesia.com,insertlive.com##.banner
+transtv.co.id##.banner__MGID
+transtv.co.id##.banner__MGID--title
+insertlive.com##.banner__top
+detik.com##.banner_reg
+detik.com##.billboard-top
+haibunda.com##.billboard__banner
+cnbcindonesia.com##.box-ads
+cnnindonesia.com##.detail_ads
+cnbcindonesia.com##.detikads
+cnnindonesia.com,detik.com,insertlive.com##.footer_banner
+cnbcindonesia.com,detik.com##.megabillboard
+detik.com##.new_banner_reg_100
+haibunda.com##.parallaxindetail
+haibunda.com##.pic_artikel_sisip_table:has-text(/banner/i)
+cnbcindonesia.com,cnnindonesia.com,haibunda.com,insertlive.com##.smartbanner_new
+cnnindonesia.com##[class*="_banner_"]
+haibunda.com##div:has(> .static_banner1)
+cnnindonesia.com##div:has(> [id^="adv-"])
+! Hide - Widget
+haibunda.com##.m-r1:has(#adv-caption-mr1)
+haibunda.com##.m-r2:has(#adv-caption-mr2)
+detik.com##.mr1:has(> #adv-caption-mr1)
+detik.com##.mr2:has(> #adv-caption-mr2)
+cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr1-scrollpage-container .mr1-scrollpage-banner)
+cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr2-scrollpage-container .mr2-scrollpage-banner)
+! Hide - Parallax
+haibunda.com###parallaxdetail
+insertlive.com###parallaxindetail_blank
+detik.com##.list-content > .para1
+cnnindonesia.com,detik.com,haibunda.com,insertlive.com##.paradetail
+cnnindonesia.com,detik.com##.parallaxindetail
+insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-height:250px;margin:0px auto 0px;"] > div[id^="div-gpt-ad-"])
+! Unbreak
+@@/ads/*$domain=adsmart.detik.com
+@@/videojs.ads.$domain=20.detik.com
+@@||adsmart.detik.com^$ghide
+beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
+! Annoyance
+transtv.co.id##+js(ra, oncontextmenu, html)
+detik.com##body:style(overflow: auto !important;)
+!# ---
 !# ProMedia Teknologi
 !# ---
 -adv-$image,domain=realitasonline.id
