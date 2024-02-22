@@ -156,6 +156,36 @@ beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[clas
 transtv.co.id##+js(ra, oncontextmenu, html)
 detik.com##body:style(overflow: auto !important;)
 !# ---
+!# KapanLagi Youniverse
+!# ---
+/banner/*$image,domain=kapanlagi.com
+!
+bola.net###content-news .w100p:has([id^="div-gpt-ad"])
+bola.net###top_leaderboard:has(> [id^="div-gpt-ad"])
+briliobeauty.net,briliofood.net,techno.id##.ads-container
+dream.co.id,kapanlagi.com,merdeka.com##.banner
+dream.co.id,merdeka.com##.banner-lb
+bola.net##.banner-slot
+kapanlagi.com##.banner-small
+kapanlagi.com##.box--banner
+dream.co.id##.col-banner
+dream.co.id,kapanlagi.com##.dfp-bframe-cont:has([id*="div-gpt-ad-"])
+liputan6.com##.headline_ad__box
+dream.co.id,merdeka.com##.masthead
+brilio.net,briliobeauty.net,briliofood.net,techno.id##.placeholder-container:has(> .ads-container)
+merdeka.com##[id^="div-gpt-ad"]
+bola.net,kapanlagi.com##[id^="div-gpt-ad"]:upward(.dfp-bframe-cont)
+merdeka.com##[id^="gpt-ad-div-section-"]
+brilio.net##amp-iframe:has([src*="advertnative.com"])
+! Voucher Promo
+brilio.net,briliobeauty.net,techno.id##.voucher_at
+! Whitelist
+bola.com#@##middle-ad
+bola.com#@#.channel-ad
+@@/advertise/*$domain=brilio.net
+! Style Fixer
+bola.com##.layout__content:style(margin-top: 0!important;)
+!# ---
 !# ProMedia Teknologi
 !# ---
 -adv-$image,domain=realitasonline.id
