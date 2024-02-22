@@ -11,6 +11,93 @@ ads.id##img[alt="admaven"]
 ! Whitelist
 @@://ads.$domain=ads.id
 !# ---
+!# Kompas Gramedia
+!# ---
+||adsimg.kompas.com^
+||kompasiana.com^*/banner-
+!
+motorplus-online.com###ad-below-photo-container
+motorplus-online.com###ad-genie-container
+tribunnewswiki.com###adsoutofpage-premiumTopframe
+kontan.co.id###adsoutsream
+tribunnews.com,tribunnewswiki.com###anchorads
+bolasport.com###bottom-banner-ads
+kompas.com###contentArticle > .kcm-track
+motorplus-online.com###div-ad-below-comment-container
+motorplus-online.com###div-ad-bottom-container
+motorplus-online.com###div-ad-latest-container
+grid.id###div-top-banner-transparent
+kontan.co.id###halfpage-ads
+bolasport.com###top-banner-ads
+kontan.co.id##.OUTBRAIN
+bolasport.com,gridoto.com,juara.net,motorplus-online.com##.ads
+kompas.tv##.ads-big
+kompas.tv##.ads-flycarpet
+kompas.tv##.ads-foot
+kompas.tv##.ads-jxstream
+kompas.com##.ads-latest-wrap
+gridoto.com##.ads-liftdown
+bolasport.com,kompas.tv##.ads-mgid-pag
+kompas.tv##.ads-mgid-read
+kompas.com##.ads-on-body
+kompas.tv##.ads-right2
+kompas.tv##.ads-undifined-live
+kompas.tv##.ads-zone-2
+bolasport.com##.ads__imr
+bolasport.com##.ads_below_comment
+tribunnewswiki.com##.ads_box_2
+kompasiana.com,sonora.id##.banner
+kompasiana.com##.banner-center
+sonora.id##.banner-skin
+kompas.com##.banner-sticky-holder
+grid.id##.bottom_banner
+kontan.co.id##.center:has(> .heightads250)
+kontan.co.id##.clear_ads
+kompas.tv##.container_skinad
+bolasport.com##.dableclsbanner
+kontan.co.id##.entry-content > #div-insidearticletop-
+kompas.tv##.exads
+kontan.co.id##.heightads100
+kontan.co.id##.heightads250
+kontan.co.id##.heightads50
+kontan.co.id##.inner-paralax-ad
+kompas.com##.kcm-track:has(> #AdTrackHbInterscrollerMobile)
+kontan.co.id##.liftdownclass
+bolasport.com,kompas.tv##.mgidclsbanner
+bolasport.com##.mid-banner
+tribunnewswiki.com##.nativeads
+kontan.co.id##.paralax-ad
+bolasport.com,grid.id,gridoto.com,kompas.com,kompas.tv,kompasiana.com,motorplus-online.com,sonora.id,tribunnews.com##.pushdown-banner
+motorplus-online.com##.pushdown-banner + .ol_swipe
+kompas.id##.relative:has(> [id^="div-gpt-ad-"])
+kontan.co.id##.thebanner
+kgnow.com##.topBanner
+! Empty ads placeholders
+motorplus-online.com###div-paralax-container
+grid.id###show-pushdown
+kontan.co.id##.center[style^="min-height: 250px"]:has(> [id^="div-Billboard_"])
+gridoto.com##.cls-mgid:has(> script[src^="https://jsc.mgid.com/"])
+kontan.co.id##.entry-content > div[style="width: 300px; margin: 0px auto 5px auto;min-height: 280px;"]
+gridoto.com##.geniee-box:has(> script[src^="https://js.genieessp.com/"])
+kgnow.com,kompas.com,sonora.id##.kcm
+kompas.com##.kcm__articleList
+kontan.co.id##.kus:has(> #tutup_box)
+grid.id##.nkt__stick
+kompas.id##[style="min-height: 250px; min-width: 300px;"]
+kompas.id##[style="min-height: 50px; min-width: 320px;"]
+! https://github.com/AdguardTeam/ExtendedCss/issues/138
+bolasport.com,grid.id,gridoto.com,juara.net,kgnow.com,kompas.com,kompas.tv,motorplus-online.com,parapuan.co,tribunnews.com,tribunnewswiki.com##div:matches-css-before(content: /Adv/)
+! Whitelist
+@@/advertising.$domain=advertising.kontan.co.id
+@@/api/ads/*$xhr,domain=klasika.kompas.com
+@@/wp-content/uploads/*$1p,image,domain=korporasi.kompas.id
+@@://ads.$domain=ads.kontan.co.id|klasika.kompas.com
+@@://adv.$domain=adv.kontan.co.id
+! Annoyance
+grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
+kompasiana.com,tribunnews.com##+js(aeld, /copy|keydown/)
+/copy_credit.$script,domain=kompas.com
+!# ---
 !# Trans Media - Detik Network
 !# ---
 ||detik.com^*/bannerinternal/
