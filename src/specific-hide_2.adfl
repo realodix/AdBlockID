@@ -162,6 +162,8 @@ gardapapua.com##aside:has-text(/adv/i)
 !
 ! EMPTY ADS PLACEHOLDERS
 ! -----------------------------------------------
+tempo.co##+js(rc, pad-apps, body)
+!
 inwepo.co###content-main .code-block
 timesindonesia.co.id###news_content > p:has-text(/adv/i)
 eventsolo.com###post-content .content:has(> .adsbygoogle)
@@ -207,6 +209,7 @@ travelingyuk.com##.main-article > div:has-text(/adv/i)
 digitalmarketingschool.id##.mdl_container
 today.line.me##.midAdModule-root:has-text(/iklan/i)
 showbiz.co.id##.oxy-alert-box:has(.ct-code-block > .adsbygoogle)
+tempo.co##.parallax-box:has([id^="div-gpt-"])
 suporter.co.id##.post > center:has(> div[style="background-color: #eee;"])
 inilahkoran.id##.post-content .adsbygoogle:upward(section)
 kanool.com##.post-content > div:has(> .adsbygoogle)
@@ -289,7 +292,7 @@ fxstreet-id.com##.fxs_leaderboard
 wartasawit.com,wartatambang.com##.ids__stick__fluid
 wartasawit.com,wartatambang.com##.ids__tower--sticky:has(#div-gpt-ad-Skyscraper)
 evilicacell.com##.ignielParallax
-cantika.com,teras.id##.lanjutkan
+cantika.com,tempo.co,teras.id##.lanjutkan
 medanbisnisdaily.com##.mainheadline_container[style="height:470px; height:200px"]
 fin.co.id,postingnews.id##.nkt__stick
 halilintarnews.id##.para_inside
@@ -324,6 +327,9 @@ bulat.co.id##article .melayang
 hukumonline.com##article .text-center > div[style="width:300px;height:250px"]
 beritasatu.com##div[style^="font-family: helvetica, arial;font-size: 10px;"]
 suarakutim.com##figure img
+!
+tempo.co##.main-full > .detail-in:has(amp-iframe)
+tempo.co##article .detail-in .inside300
 ! Only available on Chromium-based browsers
 ladiestory.id##img + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 ! AG tidak mengkonversi regex flags
