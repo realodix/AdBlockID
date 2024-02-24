@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.2.175
+! Version: 24.2.176
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Feb 2024 20:42 UTC
+! Last modified: 24 Feb 2024 20:51 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1351,7 +1351,6 @@ _TimAds_$image
 ||beritabaru.news/sc/detect-click.js
 ||cloudhost.id^*_ads_$3p,image
 ||iklancpm.files.wordpress.com^$3p
-||klikmbc.co.id/promo/promo-agen.php?$3p,frame
 ||optinku.com/assets/banners/$3p,image
 ||optinku.com/assets/js/popupBQ.js$3p
 ||popunderstar.com^$3p
@@ -1696,6 +1695,7 @@ _banner.$image,domain=bantennews.co.id|herald.id|kitalulus.com
 ||lenterapendidikan.com/assets/img/loader.jpg$image
 ||lenterapendidikan.com^*/banner/
 ||lenterasultra.com^*/thumb-$image
+||lineperistiwa.com/assets/banner/
 ||lintasbali.com^*/iklan-$image
 ||lintascelebes.com^*/banner-$image
 ||lintaslampung.com^*/adv_$image
@@ -2148,7 +2148,7 @@ naikmotor.com##.banner-aop
 nicelocal.id##.banner-bordered
 industry.co.id##.banner-box
 trenasia.com##.banner-center
-inhilklik.com,riaukarya.com,transkepri.com##.banner-content
+inhilklik.com,lineperistiwa.com,riaukarya.com,transkepri.com##.banner-content
 cantika.com,tempo.co##.banner-fix-bottom
 lamanqu.id##.banner-image
 jagadtani.com##.banner-item
@@ -2181,6 +2181,7 @@ sleekr.co##.banners
 pelitamaluku.com##.bannerside
 kabarnusa.com##.bannerx
 genmedia.co.id##.bg-gray-ads
+karogaul.com##.blog-banner
 majoo.id##.blog__ads
 inilahkoran.id,marjinal.id##.bn-lg-sidebar
 tirto.id##.bnnr-prmm
@@ -2235,7 +2236,7 @@ paragram.id##.head-space
 beritatotabuan.com##.headbanner
 pilarbanten.com##.header-ad-color
 pontianakpost.co.id##.header-advert-section
-asiabusinessinfo.com,bacasaja.id,depostjabar.com,idenews.id,paradiso.co.id,riaudaily.com,uwrite.id##.header-banner
+asiabusinessinfo.com,bacasaja.id,depostjabar.com,idenews.id,lineperistiwa.com,paradiso.co.id,riaudaily.com,uwrite.id##.header-banner
 landaknews.id##.header-banner-wrap
 gamefever.co.id,klik7tv.co.id,koranmedan.com,petisi.co,serpongupdate.com##.header__banner
 inbizia.com##.ibziklmax
@@ -2645,7 +2646,7 @@ radarnusantara.com##.footer-col .widget:has(.widget-content > img)
 kotaku.co.id##.home-widget .code-block > img
 metrotimur.com##.home-widget figure > img
 bijaknews.com,faktanews.id,gustani.id,lintashukum-indonesia.com,tanamonews.com,teknoreview.net,wartasehat.id##.sidebar .widget:has(.widget-content > a > img)
-expossumbar.com,fokussumatera.com,gustani.id,indimanado.com,inilahmedan.com,jejakfaktanews.com,lintashukum-indonesia.com,medanmerdeka.com,mediasembilan.co.id,metrokalimantan.com,ninemedia.id,realitakini.com,serikatnasional.id##.sidebar .widget:has(.widget-content > img)
+expossumbar.com,fokussumatera.com,gustani.id,indimanado.com,inilahmedan.com,jejakfaktanews.com,klikmetro.com,lintashukum-indonesia.com,medanmerdeka.com,mediasembilan.co.id,metrokalimantan.com,ninemedia.id,realitakini.com,serikatnasional.id##.sidebar .widget:has(.widget-content > img)
 lintasbali.com##.sidebar .widget:has(> img)
 reaksimedia.com##.sidebar > .widget_media_image > img
 halojambi.id##.t3-sidebar p > img
@@ -2963,6 +2964,8 @@ kareel.com##+js(set, config.adblock.selector, true)
 abadikini.com,beritanasional.id,builder.id,deras.id,rukim.id,surgatekno.com,teknoob.id##+js(set, tie.ad_blocker_detector, null)
 blog-dnz.com##+js(aopr, adAdbLoad)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=blog-dnz.com
+proberita.com##body > .detect-modal
+proberita.com##body:style(overflow: auto !important;)
 codeflare.net###adBlockInfo
 ||bloggerku.com/antiadblock/$script
 ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager_gtm.js,domain=harianmerdeka.id
@@ -4392,6 +4395,7 @@ _topbandar_$image
 ##[href="https://alturl.link/ugslot188"]
 ##[href="https://angk.at/BolasiarMPO369"]
 ##[href="https://angk.at/OKESTREAM88PULSA"]
+##[href="https://angk.at/betgratisvipmposport"]
 ##[href="https://angk.at/bgibolamacan"]
 ##[href="https://angk.at/bgibolamposport"]
 ##[href="https://angk.at/bolasiarmposport"]
@@ -5317,6 +5321,7 @@ _topbandar_$image
 ##img[alt*="slot online terpercaya" i]
 ##img[alt="388baik"]
 ##img[alt="388hero"]
+##img[alt="Meda88slot" i]
 ##img[alt="agentoto88" i]
 ##img[alt="baik777"]
 ##img[alt="bandar855" i]
