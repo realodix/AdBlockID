@@ -287,6 +287,15 @@ okezone.com##[id^="ivs-"]:remove()
 @@/advertising/*$domain=client.okezone.com
 sindonews.com#@##header-ads
 !# ---
+!# B-UNIVERSE
+!# ---
+beritasatu.com##.gam-ads
+! Empty Ads Placeholders
+beritasatu.com###billboard
+beritasatu.com##.body-content > div:matches-css(text-align: center):has-text(/adv/i)
+beritasatu.com##.d-flex:has(> div > [id^="div-gpt-"])
+beritasatu.com##div[style^="font-family: helvetica, arial;font-size: 10px;"]
+!# ---
 !# droidlime.com
 !# ---
 droidlime.com###mvp-leader-wrap a[target="_blank"][rel="external"]:has(> img)
