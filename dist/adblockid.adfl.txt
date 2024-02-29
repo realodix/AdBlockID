@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.3.1
+! Version: 24.3.2
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Feb 2024 22:13 UTC
+! Last modified: 29 Feb 2024 23:24 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2134,6 +2134,7 @@ karogaul.com##.blog-banner
 majoo.id##.blog__ads
 inilahkoran.id,marjinal.id##.bn-lg-sidebar
 tirto.id##.bnnr-prmm
+narasi.tv##.bottom-sticky-ads
 goinsan.com##.bottomBox
 uzone.id##.box-ads-billboard
 astronauts.id##.brave_popup
@@ -2257,6 +2258,7 @@ ulamanusantaracenter.com##.site-ads-width
 wahananews.co##.sitelogo-ads
 katadata.co.id##.skinads
 industry.co.id##.skins-banner
+narasi.tv##.sky-scraper-ads
 genpi.co##.sky_banner
 infokyai.com,jejakfaktanews.com,suarakonsumenindonesia.com##.slotbanner
 sahijab.com##.small-mobile-banner
@@ -2752,6 +2754,7 @@ infosumbar.net##.code-block:has(> center > script)
 suarapapua.com,teknoding.com##.code-block:has(> script)
 terasmalut.id##.code-block:has(noscript)
 hapusakun.com,iuwashplus.or.id,tapanulipost.com##.code-block:has-text(/adv/i)
+narasi.tv##.container:has(> #props_placement_before_populer > .ads-props)
 oneesports.id##.container:has(> .ad-container)
 democrazy.id##.entry-content #div-ub-democrazy
 blogernas.com##.entry-content #in-article:has(> .adsbygoogle)
@@ -2834,7 +2837,7 @@ drphone.id,halilintarnews.id,harianmerdeka.id,indimanado.com,komentar.co,pasjaba
 kabarkarawang.com,ngemotor.com##.fixed-rside
 rakcer.id##.flying-carpet
 kelasexcel.id##.flyingcarpet
-carisinyal.com,hardrockfm.com,kamini.id,panditfootball.com,poskota.co.id,suarasurabaya.net,traxonsky.com##.footer_sticky
+bacaterus.com,carisinyal.com,hardrockfm.com,kamini.id,panditfootball.com,poskota.co.id,suarasurabaya.net,traxonsky.com##.footer_sticky
 lokerjakarta.id##.footer_sticky_desktop
 greenscene.co.id##.footer_stickyexp
 fxstreet-id.com##.fxs_leaderboard
@@ -3327,7 +3330,6 @@ bospajak.com,ceklist.id,dokterpajak.com,dokumen.tips,gubukpintar.com,kuyhaa-me.c
 !#endif
 /pum-site-scripts.js$script,domain=lintaslampung.com
 ?key=*&submetric=$3p,popup
-carisinyal.com##+js(aopr, $, showModal)
 kotakgame.com##+js(aopr, $.magnificPopup.open)
 gammafisblog.com,gigapurbalingga.cc,helmiau.com,jalanku.my.id,jandaqu.xyz,jejakmufassir.my.id,kurazone.net,kuyhaa-me.com,mistertekno.com,playsobat.xyz,tafsirmimpi.co,topwisata.info##+js(nowoif)
 zuperdrive.my.id##+js(nowoif, !zuperdrive)
@@ -3343,6 +3345,8 @@ papuakita.com##+js(aopr, window.pum_popups)
 0.0.realodix##+js(aopr, $, SPU_master)
 bankiir.id,biayatarif.com,carabelanja.id,gadgetized.net,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pesantrenterbaik.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.com###myCont
 bankiir.id,biayatarif.com,carabelanja.id,gadgetized.net,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pesantrenterbaik.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.com##body:style(overflow: auto!important;)
+bacaterus.com,carisinyal.com##+js(rc, oxy-modal-active, body, stay)
+bacaterus.com,carisinyal.com##.oxy-modal-backdrop
 hellosehat.com###hhg-comp-popup-wrapper
 ladiestory.id###modalBanner
 rilis.id##.fade#staticBackdropModal
@@ -3372,7 +3376,6 @@ subsc.my.id##.modal
 popmama.com##.modal-backdrop
 tafsirq.com##.optin-monster-saas-overlay
 pramborsfm.com##.overlay
-carisinyal.com##.oxy-modal-backdrop
 kitalulus.com##.pop-up-overlay
 bagas31.info##.popup-rl-custom3
 indotimur.com##.popup-transparent
