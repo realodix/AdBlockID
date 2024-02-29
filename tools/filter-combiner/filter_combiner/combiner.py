@@ -192,7 +192,7 @@ def _insert_version(lines):
 
     version = Metadata(
         'Version',
-        time.strftime('%y.X%m.{}'.format(numberOfCommitsInMonth), time.gmtime())
+        time.strftime('%y.X%m.{}'.format(numberOfCommitsInMonth))
         # https://stackoverflow.com/a/5900593
         .replace('X0', 'X').replace('X', '')
     )
