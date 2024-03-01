@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.3.6
+! Version: 24.3.7
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Mar 2024 10:51 UTC
+! Last modified: 01 Mar 2024 11:09 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1559,7 +1559,6 @@ _banner.$image,domain=bantennews.co.id|herald.id|kitalulus.com
 ||indeksnews.com^*/banner-$image
 ||independennews.com^*/banner-$image
 ||indonesiadaily.net^*-banner-$image
-||indonesiaexpat.id^*-ads-$image
 ||indonesiaexpat.id^*-banner-$image
 ||indonesiasatu.co/userfiles/advert/
 ||indoposco.id^*/iklan-$image
@@ -2007,6 +2006,7 @@ seputarmusikindo.com###main-ads1
 solopos.com###mega-billboard-container
 indonesiasatu.co###mobile-top-advert
 kaskus.co.id###my-ad-slot
+bankiir.id,biayatarif.com,carabelanja.id,gadgetized.net,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.id###myAds
 bidikindonesianews.co.id,inspirasijambi.com,jambivalen.com,lingkarjambi.id,terasjambi.id,tribratatv.com###news-feed-banner
 suararepubliknews.com###news-feed-banner img
 icloudice.com###notifAds
@@ -2178,7 +2178,7 @@ pilarbanten.com##.header-ad-color
 pontianakpost.co.id##.header-advert-section
 asiabusinessinfo.com,bacasaja.id,depostjabar.com,idenews.id,lineperistiwa.com,paradiso.co.id,riaudaily.com,uwrite.id##.header-banner
 landaknews.id##.header-banner-wrap
-gamefever.co.id,klik7tv.co.id,koranmedan.com,petisi.co,serpongupdate.com##.header__banner
+gamefever.co.id,indonesiaexpat.id,klik7tv.co.id,koranmedan.com,petisi.co,serpongupdate.com##.header__banner
 inbizia.com##.ibziklmax
 idenesia.co,politikal.id##.ikl-block
 nawacita.co##.iklannawacita
@@ -3333,21 +3333,22 @@ papuaterkini.com,papuatoday.com,sindomanado.com,suluttimes.com##+js(acis, SGPopu
 jagatpapua.com,prokaltim.com,suarakumandang.com,topwisata.info##+js(aopr, SGPB_POPUP_PARAMS)
 /wp-content/plugins/popup-builder/*$domain=klikjatim.com|papuatoday.com|sindomanado.com|suluttimes.com
 papuakita.com##+js(aopr, window.pum_popups)
-/wp-content/plugins/popups/public/*$domain=indonesiaexpat.id
-0.0.realodix##+js(aopr, $, SPU_master)
+popmama.com###mainBannerPopup
 ladiestory.id###modalBanner
-bankiir.id,carabelanja.id,gadgetized.net,myjourney.id,oolean.id,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id###myCont
+bankiir.id,biayatarif.com,carabelanja.id,gadgetized.net,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.id###myCont
 rilis.id##.fade#staticBackdropModal
 rilis.id##.fade.modal-backdrop
 maenhp.com,versusbeda.com##.jquery-modal
-ladiestory.id##.modal-backdrop
+brainly.co.id##.js-react-registration-toplayer
+ladiestory.id,popmama.com##.modal-backdrop
 bacaterus.com,carisinyal.com##.oxy-modal-backdrop
-bacaterus.com,bankiir.id,carabelanja.id,carisinyal.com,gadgetized.net,ladiestory.id,maenhp.com,myjourney.id,oolean.id,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id,versusbeda.com##body:style(overflow: auto!important; position: unset!important;)
+bacaterus.com,bankiir.id,biayatarif.com,brainly.co.id,carabelanja.id,carisinyal.com,gadgetized.net,ladiestory.id,maenhp.com,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.id,versusbeda.com##body:style(overflow: auto!important; position: unset!important;)
+popmama.com##body:style(overflow: visible!important; padding-right: 0!important;)
+brainly.co.id##div[data-testid="satisfaction_survey_facade"]
 paketinternet.net###bukafpop
 situsnobar.top###floatcenter
 hellosehat.com###hhg-comp-popup-wrapper
 borneonews.co.id###lipsus-popup
-popmama.com###mainBannerPopup
 dailysocial.id###modal-popup
 ketik.co.id###modalPopup
 serbacara.com###mtc-popup
@@ -3361,18 +3362,13 @@ lister.co.id##.elementor-popup-modal
 bagas31.info##.frame-banner-places-popup
 wibufile.com##.ik-overlay
 kompaslampung.com##.jqbox_innerhtml
-brainly.co.id##.js-react-registration-toplayer
 subsc.my.id##.modal
-popmama.com##.modal-backdrop
 tafsirq.com##.optin-monster-saas-overlay
 pramborsfm.com##.overlay
 kitalulus.com##.pop-up-overlay
 bagas31.info##.popup-rl-custom3
 indotimur.com##.popup-transparent
 superapp.id##.wppopups-whole
-brainly.co.id##body:style(overflow: auto !important; position: unset !important;)
-popmama.com##body:style(overflow: visible!important; padding-right: 0!important;)
-brainly.co.id##div[data-testid="satisfaction_survey_facade"]
 duniagames.co.id##.cdk-overlay-container
 !#if (adguard)
 duniagames.co.id##+js(rc, cdk-global-scrollblock, html)
