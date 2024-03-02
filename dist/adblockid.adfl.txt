@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.3.8
+! Version: 24.3.9
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Mar 2024 11:38 UTC
+! Last modified: 02 Mar 2024 05:12 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -583,6 +583,8 @@ _TimAds_$image
 ##.ads-x-pr3
 ##.ads300x250
 ##.ads300x250-thumb
+##.ads5
+##.ads6
 ##.ads728-slot
 ##.ads728x90-thumb
 ##.ads750
@@ -3190,16 +3192,18 @@ sindonews.com###advertnativeDiv
 sindonews.com###me-div-gpt-ad-bottom-sticky
 sindonews.com###me-div-gpt-ad-parallax
 sindonews.com###tpads7
-idxchannel.com##.ads
+idxchannel.com,okezone.com##.ads
 inews.id##.ads-close
 inews.id##.ads_mobile_wrap
 inews.id##.ads_sticky_footer
 sindonews.com##.adtp
 sindonews.com##.app-banner
 okezone.com##.bannertopcenter
+okezone.com##.box-ads-konten
 okezone.com##.flying_ads
 okezone.com##.iframe-banner:remove()
 inews.id,sindonews.com##.parallax-ad
+okezone.com##.title-ads-mega
 okezone.com##[id^="div-gpt-ad-"]:upward(.center-paralax)
 inews.id##div:matches-css(text-align: center):has([id*="-StickyAd" i])
 sindonews.com##.content-row .voutstream
@@ -3221,6 +3225,7 @@ okezone.com##.vplayer:has(iframe[src^="https://video.okezone.com/embedoutstream"
 okezone.com##[id^="ivs-"]:remove()
 @@/advertising/*$domain=client.okezone.com
 sindonews.com#@##header-ads
+techno.okezone.com#@#.container-ads-topmenu
 investor.id##.ad-box-wrappr
 investor.id##.body-content div:has(> [id^="div-gpt-ad-"])
 beritasatu.com##.gam-ads
