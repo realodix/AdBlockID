@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.3.9
+! Version: 24.3.10
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Mar 2024 05:12 UTC
+! Last modified: 02 Mar 2024 05:31 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2220,7 +2220,6 @@ cantika.com##.pd-ads-bg
 beritabersatu.com##.penci-list-banner
 kontenkalteng.com##.pesan-sponsor
 adinyahya.com##.pfy-ad
-pramborsfm.com##.popup-ads
 koransulindo.com##.post-banner
 lazone.id##.post-header-banner
 prokaltim.com##.premium-adv-carousel__container
@@ -3278,19 +3277,25 @@ wowbabel.com##script + .container:style(padding-top: 160px!important;)
 kabarrakyat.id##+js(aopr, document.oncontextmenu)
 @@||iklanjitu.jawapos.com/app/media/$image,domain=iklanjitu.jawapos.com
 @@||iklanjitu.jawapos.com/media/$image,domain=iklanjitu.jawapos.com
-bolasiar.baby,bolasiar.beauty,bolasiar.cc###floatcenter
-bolasiar.baby,bolasiar.beauty,bolasiar.cc###floating_banner_top
-bolasiar.baby,bolasiar.beauty,bolasiar.cc##a[target="_blank"]:has(> img)
+pramborsfm.com##.ads
+pramborsfm.com##.popup-ads
+pramborsfm.com##.overlay
+@@://ads.$domain=ads.pramborsfm.com
+@@||pramborsfm.com^$ghide
+pramborsfm.com##.master.has-top-ads .header:style(top: 0!important;)
+bolasiar.baby,bolasiar.beauty,bolasiar.bond,bolasiar.cc###floatcenter
+bolasiar.baby,bolasiar.beauty,bolasiar.bond,bolasiar.cc###floating_banner_top
+bolasiar.baby,bolasiar.beauty,bolasiar.bond,bolasiar.cc##a[target="_blank"]:has(> img)
 okestream.art##.bottom-player-banner
 okestream.art##.header-banner
 okestream.art##.player-button-ad
 okestream.art###popbox
 okestream.art##+js(rc, flowbox, body)
-bgibola.autos,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*###floatcenter
-bgibola.autos,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*###floating_banner_top
-bgibola.autos,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*##.inline-banner
-bgibola.autos,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*##.sidebar-content
-bgibola.autos,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*##.top-player-banner
+bgibola.autos,bgibola.boats,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*###floatcenter
+bgibola.autos,bgibola.boats,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*###floating_banner_top
+bgibola.autos,bgibola.boats,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*##.inline-banner
+bgibola.autos,bgibola.boats,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*##.sidebar-content
+bgibola.autos,bgibola.boats,bgibola.com,bgibola77.*,bgibola8.*,bgibola88.*##.top-player-banner
 nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc##.inline-banner
@@ -3358,7 +3363,6 @@ wibufile.com##.ik-overlay
 kompaslampung.com##.jqbox_innerhtml
 subsc.my.id##.modal
 tafsirq.com##.optin-monster-saas-overlay
-pramborsfm.com##.overlay
 kitalulus.com##.pop-up-overlay
 bagas31.info##.popup-rl-custom3
 indotimur.com##.popup-transparent
