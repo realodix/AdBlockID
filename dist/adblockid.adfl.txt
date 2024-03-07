@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.3.36
+! Version: 24.3.37
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Mar 2024 19:12 UTC
+! Last modified: 07 Mar 2024 19:41 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2904,6 +2904,7 @@ busam.id,explorenews.net,helloborneo.com,iglobalnews.co.id,indotribun.id,jodanew
 @@/advertiser/*$image,domain=job.id
 @@/advertising.$domain=advertising.katadata.co.id
 @@/files/Ads/*$image,domain=iklanrumah.com
+@@/media/*$image,domain=iklanjitu.id|iklanjitu.jawapos.com
 @@/scripts/ads.$domain=ads.kaskus.co.id
 @@/uploads/page/banner/*$image,domain=astra-honda.com
 @@/wp-content/uploads/*$1p,image,domain=adstarsmedia.co.id|agency-iklan.com|banyumedia.co.id|bertravel.com|bluecreative.co.id|dhadigital.com|doxadigital.com|hercodigital.id|jetcommerce.co.id|karyaiklan.co.id|mandreel.com|masterweb.com|matari-ad.com|merchant.id|polbisdigital.com|suranegara.com|winstarlink.com
@@ -3260,8 +3261,6 @@ wowbabel.com##script + .container:style(padding-top: 160px!important;)
 ##img[src^="https://assets.ayobandung.com/"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 ##img[src^="https://static.promediateknologi.id"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 kabarrakyat.id##+js(aopr, document.oncontextmenu)
-@@||iklanjitu.jawapos.com/app/media/$image,domain=iklanjitu.jawapos.com
-@@||iklanjitu.jawapos.com/media/$image,domain=iklanjitu.jawapos.com
 bolasiar.baby,bolasiar.beauty,bolasiar.bond,bolasiar.cc###floatcenter
 bolasiar.baby,bolasiar.beauty,bolasiar.bond,bolasiar.cc###floating_banner_top
 bolasiar.baby,bolasiar.beauty,bolasiar.bond,bolasiar.cc##a[target="_blank"]:has(> img)
