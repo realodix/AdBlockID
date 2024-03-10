@@ -131,15 +131,10 @@ gridoto.com,kompasiana.com,sonora.id,tribunnews.com##+js(aeld, /copy|keydown/)
 !# ---
 ||detik.com^*/bannerinternal/
 !
-detik.com###adv-caption-lead
-detik.com###adv-caption-lead + #leaderboard:has([id^="div-gpt-ad"])
 haibunda.com###balloonads
 transtv.co.id###bannerpop
 cnbcindonesia.com,haibunda.com###billboard_banner
 haibunda.com###bottom_banner
-detik.com###leaderboard:has(> center > [id^="div-gpt-ad-"])
-cnbcindonesia.com,detik.com,haibunda.com###megabillboard
-detik.com###megabillboard-desktop
 cnnindonesia.com##.ad_billboard
 beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.ads-slot
 detik.com##.adv
@@ -148,16 +143,12 @@ transtv.co.id##.banner__MGID
 transtv.co.id##.banner__MGID--title
 insertlive.com##.banner__top
 detik.com##.banner_reg
-detik.com##.billboard-top
 haibunda.com##.billboard__banner
 cnbcindonesia.com##.box-ads
 cnnindonesia.com##.detail_ads
 cnbcindonesia.com##.detikads
 cnnindonesia.com,detik.com,insertlive.com##.footer_banner
-cnbcindonesia.com,detik.com##.megabillboard
 detik.com##.new_banner_reg_100
-haibunda.com##.parallaxindetail
-haibunda.com##.pic_artikel_sisip_table:has-text(/banner/i)
 cnbcindonesia.com,cnnindonesia.com,haibunda.com,insertlive.com##.smartbanner_new
 cnnindonesia.com##[class*="_banner_"]
 haibunda.com##div:has(> .static_banner1)
@@ -170,12 +161,20 @@ detik.com##.mr2:has(> #adv-caption-mr2)
 cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr1-scrollpage-container .mr1-scrollpage-banner)
 cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr2-scrollpage-container .mr2-scrollpage-banner)
 ! Empty ads placeholders
+detik.com###adv-caption-lead
+detik.com###adv-caption-lead + #leaderboard:has([id^="div-gpt-ad"])
+detik.com###leaderboard:has(> center > [id^="div-gpt-ad-"])
+cnbcindonesia.com,detik.com,haibunda.com###megabillboard
+detik.com###megabillboard-desktop
 haibunda.com###parallaxdetail
 insertlive.com###parallaxindetail_blank
+detik.com##.billboard-top
 detik.com##.detail__body-text > div[style^="width:100%;"]:has(> span)
 detik.com##.list-content > .para1
+cnbcindonesia.com,detik.com##.megabillboard
 cnnindonesia.com,detik.com,haibunda.com,insertlive.com##.paradetail
-cnnindonesia.com,detik.com##.parallaxindetail
+cnnindonesia.com,detik.com,haibunda.com##.parallaxindetail
+haibunda.com##.pic_artikel_sisip_table:has-text(/banner/i)
 insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-height:250px;margin:0px auto 0px;"] > div[id^="div-gpt-ad-"])
 ! Unbreak
 @@/ads/*$domain=adsmart.detik.com
