@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.3.42
+! Version: 24.3.43
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Mar 2024 20:04 UTC
+! Last modified: 10 Mar 2024 12:28 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3079,6 +3079,7 @@ cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr1-scroll
 cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com##.mr:has(> .mr2-scrollpage-container .mr2-scrollpage-banner)
 haibunda.com###parallaxdetail
 insertlive.com###parallaxindetail_blank
+detik.com##.detail__body-text > div[style^="width:100%;"]:has(> span)
 detik.com##.list-content > .para1
 cnnindonesia.com,detik.com,haibunda.com,insertlive.com##.paradetail
 cnnindonesia.com,detik.com##.parallaxindetail
