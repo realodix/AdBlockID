@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.3.49
+! Version: 24.3.50
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Mar 2024 19:43 UTC
+! Last modified: 12 Mar 2024 07:38 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3077,7 +3077,7 @@ detik.com###megabillboard-desktop
 haibunda.com###parallaxdetail
 insertlive.com###parallaxindetail_blank
 detik.com##.billboard-top
-detik.com##.detail__body-text > div[style^="width:100%;"]:has(> span)
+detik.com##.detail__body-text > div[style^="width:100%;"]:has(> .para_caption)
 detik.com##.list-content > .para1
 cnbcindonesia.com,detik.com##.megabillboard
 cnnindonesia.com,detik.com,haibunda.com,insertlive.com##.paradetail
@@ -3551,8 +3551,6 @@ _usafelink.$3p,script
 ||sokuja.site/tmp/$image
 ||wibudesu.co^*_kiri-kanan.$image
 /agrihajrian/hs/*/adv$3p,redirect=noop-1s.mp4
-||161.35.12.87/wp-content/uploads/$mp4
-||174.138.19.151/wp-content/uploads/$mp4
 ||185.250.151.3/wp-content/uploads/$mp4
 ||84.247.147.120/wp-content/uploads/$mp4
 ||blurayku.sbs/wp-content/uploads/$mp4
@@ -3561,7 +3559,7 @@ _usafelink.$3p,script
 ||lk21static.xyz/iframe/content2.php$frame
 filmbioskop21.info##.inner-wrap > .ban_empat ~ hr + .table-hover
 checast.com##[href^="https://shope.ee/"]:has(> img)
-130.51.20.150,gamingweb.xyz,loneguardian.xyz,nessandbeauty.xyz,tindershots.xyz###adf_tera
+130.51.20.150###adf_tera
 anichin.show,samehadaku.quest###bannerhomefooter
 sokuja.my.id###close-teaser
 kuramanime.lol###close-teaser-footer
@@ -3577,7 +3575,6 @@ akashinime.online,anixverse.com,hepinime.id,isekaisubs.web.id###floatcenter
 15.235.146.202,drakorid.cyou###floating-banner
 inonton.com###floating_banner_top
 kebioskop21.cam###top-banner
-207.180.225.144###top_banner
 doroni.me,doronime.id##.Content__banner
 doroni.me,doronime.id##.Fixed
 samehadaku.show##.ads
@@ -3605,10 +3602,10 @@ anichin.show##[id^="fload-"]
 anichin.top,miyanime.site,sinemaxxi.art##a:has(> img[src$=".gif"])
 doroni.me,doronime.id##a[target*="blank"] > picture
 anoboy.baby##a[target*="blank"]:has(> amp-img)
-109.123.251.95,109.199.104.151,111.90.141.115,130.51.20.245,139.59.246.170,144.91.120.45,144.91.80.105,149.102.136.90,149.102.143.159,15.235.146.202,158.220.102.12,158.220.94.103,161.35.12.87,161.97.104.222,161.97.110.226,161.97.167.184,161.97.69.162,165.232.85.56,167.172.168.136,167.86.109.229,173.212.204.40,173.212.212.70,173.212.218.245,173.212.228.21,173.212.239.96,173.212.244.2,173.212.248.78,173.249.15.217,173.249.21.103,173.249.37.78,173.249.42.8,173.249.50.59,173.249.51.235,173.249.59.185,173.249.60.3,173.249.63.241,174.138.19.151,176.123.2.15,178.18.254.34,178.20.45.89,184.174.35.250,185.193.17.191,185.207.250.62,185.213.25.32,185.215.164.57,185.250.151.3,185.99.135.217,193.142.147.230,194.163.134.230,194.163.181.84,194.163.185.100,194.233.75.135,207.180.215.191,207.180.221.178,207.180.222.163,207.180.225.144,209.145.52.78,213.136.73.203,213.136.77.246,213.136.83.146,213.136.84.110,213.136.86.188,31.220.73.179,31.220.82.227,31.220.90.134,31.220.90.156,31.220.90.162,31.220.90.234,37.221.67.131,37.60.243.31,38.242.146.178,38.242.152.25,38.242.199.48,38.242.200.89,38.242.203.108,38.242.233.188,38.242.234.78,38.242.236.223,38.242.245.213,45.136.198.240,45.148.122.87,45.84.138.167,46.250.234.188,46.250.235.140,46.250.235.18,5.189.132.92,5.189.140.112,5.189.157.70,5.189.163.22,5.189.170.137,5.189.173.193,5.189.181.249,5.253.86.213,62.171.172.108,75.119.139.180,84.247.133.148,84.247.141.254,84.247.147.120,86.48.2.51,89.117.52.31,91.201.113.77,agenfilm21.com,akashinime.online,animebatch.id,animeku.cam,anixverse.com,anoboy.baby,anoboy.ch,anoboy.su,bioskopkeren.pw,bioskopkerenaja.com,bioskopvirtual.com,boscinema21.cfd,cinemagaul.com,clampschoolholic.web.id,cnnxxi.info,doroni.me,doronime.id,downloadbatch.me,drachindo.site,drama21.monster,dramaqu.wtf,dramaserial.id,gudangmovies21.support,hanik.my.id,idlixofficial.co,indofilm.space,indoxxone.com,inonton.com,kaisar21.cam,kazesub.com,kebioskop21.cam,kitanonton.skin,koenime.top,kuramanime.lol,layarkacafilm21.com,layarkeren.blog,lk21-id.com,lk21.eu.org,lk21official.cam,lk21official.mom,lk21official.watch,manganime.live,melongmovie.site,nf21.asia,nimegami.id,nonton168.online,nontonfilm.top,nontonsbo.com,otakudesu.cloud,rahyunime.com,rebahan21.com,rebahin.pro,samehadaku.show,sobatgo.site,wibudesu.co,winchestergallery.com##a[target*="blank"]:has(> img)
+109.123.251.95,109.199.104.151,111.90.141.115,130.51.20.245,139.59.246.170,149.102.143.159,15.235.146.202,161.97.69.162,165.232.85.56,167.172.168.136,173.212.204.40,173.212.228.21,173.212.248.78,173.249.59.185,178.20.45.89,184.174.35.250,185.215.164.57,185.250.151.3,185.99.135.245,193.142.147.230,207.180.221.178,31.220.73.179,31.220.90.134,37.221.67.131,37.60.243.31,38.242.146.178,38.242.152.25,38.242.233.188,38.242.234.78,45.136.198.240,45.148.122.87,45.84.138.167,5.189.157.70,5.189.163.22,5.189.170.137,5.189.173.193,5.253.86.213,84.247.141.254,84.247.147.120,86.48.2.51,agenfilm21.com,akashinime.online,animebatch.id,animeku.cam,anixverse.com,anoboy.baby,anoboy.ch,anoboy.su,bioskopkeren.pw,bioskopkerenaja.com,bioskopvirtual.com,boscinema21.cfd,cinemagaul.com,clampschoolholic.web.id,cnnxxi.info,doroni.me,doronime.id,downloadbatch.me,drachindo.site,drama21.monster,dramaqu.wtf,dramaserial.id,gudangmovies21.support,hanik.my.id,idlixofficial.co,indoxxone.com,inonton.com,kazesub.com,kebioskop21.cam,kitanonton.skin,koenime.top,kuramanime.lol,layarkacafilm21.com,layarkeren.blog,lk21-id.com,lk21.eu.org,lk21official.mom,manganime.live,melongmovie.site,nf21.asia,nimegami.id,nonton168.online,nontonfilm.top,nontonsbo.com,otakudesu.cloud,rahyunime.com,rebahan21.com,rebahin.pro,samehadaku.show,sobatgo.site,wibudesu.co,winchestergallery.com##a[target*="blank"]:has(> img)
 niihen.com##amp-iframe[width="728"][height="90"]
 anixverse.com,lendrive.web.id,melongmovie.site,sokuja.my.id##div[id^="teaser"]
-bioskopkeren.pw,kebioskop21.cam,lk21official.watch##a[target*="blank"] > video:remove()
+bioskopkeren.pw,kebioskop21.cam##a[target*="blank"] > video:remove()
 rahyunime.com###sidebar img[style="max-width: 100%; height: auto;"]
 manganime.live##img[data-original-width="905"][data-original-height="1300"]
 downloadbatch.me##.widget:has-text(/adv/i)
@@ -3638,7 +3635,7 @@ adikanime.com##.adik-warning
 dramaserial.id##+js(aopr, $.magnificPopup.open)
 checast.com,gudangmovies21.support,sattorrent.com##+js(aopr, SGPB_POPUP_PARAMS)
 anichin.top##+js(json-prune, *, pop_type)
-109.123.251.95,109.199.104.151,139.59.246.170,144.91.120.45,144.91.80.105,149.102.136.90,149.102.143.159,158.220.102.12,161.97.104.222,161.97.110.226,161.97.167.184,161.97.69.162,165.232.85.56,167.172.168.136,167.86.109.229,173.212.204.40,173.212.212.70,173.212.218.245,173.212.228.21,173.212.239.96,173.212.244.2,173.212.248.78,173.249.15.217,173.249.21.103,173.249.37.78,173.249.42.8,173.249.50.59,173.249.51.235,173.249.59.185,173.249.60.3,173.249.63.241,176.123.2.15,178.18.254.34,178.20.45.89,184.174.35.250,185.193.17.191,185.207.250.62,185.213.25.32,185.215.164.57,185.250.151.3,185.99.135.217,194.163.134.230,194.163.181.84,194.163.185.100,194.233.75.135,207.180.215.191,207.180.221.178,207.180.222.163,207.180.225.144,209.145.52.78,213.136.73.203,213.136.77.246,213.136.83.146,213.136.84.110,213.136.86.188,31.220.73.179,31.220.90.134,31.220.90.156,31.220.90.162,31.220.90.234,37.60.243.31,38.242.146.178,38.242.152.25,38.242.199.48,38.242.200.89,38.242.203.108,38.242.233.188,38.242.234.78,38.242.236.223,38.242.245.213,45.148.122.87,45.84.138.167,46.250.234.188,46.250.235.18,5.189.132.92,5.189.140.112,5.189.157.70,5.189.163.22,5.189.170.137,5.189.173.193,5.189.181.249,62.171.172.108,75.119.139.180,84.247.133.148,84.247.141.254,86.48.2.51,89.117.52.31,anichin.top,animebatch.id,animesave.web.id,bioskopvirtual.com,clampschoolholic.web.id,cnnxxi.info,downloadbatch.me,drachindo.site,drama21.monster,dramaqu.wtf,indofilm.space,kaisar21.cam,kazesub.com,layarkacafilm21.com,layarkeren.blog,lk21.eu.org,lk21official.cam,lk21official.watch,manganime.live,nimegami.id,nontonfilm.top,otakudesu.cloud,rebahan21.com,rebahin.pro,sobatgo.site,sokuja.my.id,wibudesu.co##+js(nowoif)
+109.123.251.95,109.199.104.151,139.59.246.170,149.102.143.159,161.97.69.162,165.232.85.56,167.172.168.136,173.212.204.40,173.212.228.21,173.212.248.78,173.249.59.185,178.20.45.89,184.174.35.250,185.215.164.57,185.250.151.3,185.99.135.245,207.180.221.178,31.220.73.179,31.220.90.134,37.60.243.31,38.242.146.178,38.242.152.25,38.242.233.188,38.242.234.78,45.148.122.87,45.84.138.167,5.189.157.70,5.189.163.22,5.189.170.137,5.189.173.193,84.247.141.254,86.48.2.51,anichin.top,animebatch.id,animesave.web.id,bioskopvirtual.com,clampschoolholic.web.id,cnnxxi.info,downloadbatch.me,drachindo.site,drama21.monster,dramaqu.wtf,kazesub.com,layarkacafilm21.com,layarkeren.blog,lk21.eu.org,manganime.live,nimegami.id,nontonfilm.top,otakudesu.cloud,rebahan21.com,rebahin.pro,sobatgo.site,sokuja.my.id,wibudesu.co##+js(nowoif)
 0.0.realodix##+js(acis, parseInt, break;case $.)
 nontondrama.click###admad
 45.136.198.240###fadeinbox
@@ -3652,7 +3649,7 @@ idlixofficial.co##.swal-overlay
 manganime.live##.vd
 sokuja.my.id##.video-content > div:has(> div[align="center"] > a[id="close-teaser"])
 sokuja.my.id##div:matches-css(position: fixed):has(> div > #countdown)
-109.123.251.95,144.91.80.105,161.97.69.162,167.172.168.136,173.212.204.40,173.212.218.245,173.249.37.78,173.249.50.59,173.249.59.185,194.163.181.84,207.180.225.144,37.60.243.31,38.242.200.89,38.242.234.78,45.148.122.87,46.250.235.140,5.189.140.112,5.189.181.249,86.48.2.51,animesave.web.id,cnnxxi.info,downloadbatch.me,drachindo.site,layarkeren.blog,lk21official.watch,sokuja.my.id,wibudesu.co##+js(aopr, popup_custom_data)
+109.123.251.95,161.97.69.162,167.172.168.136,173.212.204.40,173.249.59.185,185.99.135.245,37.60.243.31,38.242.234.78,45.148.122.87,86.48.2.51,animesave.web.id,cnnxxi.info,downloadbatch.me,drachindo.site,layarkeren.blog,sokuja.my.id,wibudesu.co##+js(aopr, popup_custom_data)
 /wp-content/plugins/wp-popup-banners/*$domain=0.0.realodix
 0.0.realodix###wpb_overlay
 /wp-content/plugins/itro-popup/*$domain=0.0.realodix
@@ -3663,7 +3660,7 @@ batchkun.com,keinime.web.id##+js(aopr, protected_links)
 nekopoi.web.id##+js(aopr, showurl)
 niihen.com##+js(aopr, auto_safelink)
 niihen.com##.entry-content div:matches-css(text-align: center) > a:style(display: inline !important;)
-179.43.163.54,cgvindo.lol,kitanonton.skin,nekopoi.web.id##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
+cgvindo.link,kitanonton.skin,nekopoi.web.id,rebahin.skin##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
 anichin.top,samehadaku.show,wibudesu.co##*:style(user-select:text!important;)
 samehadaku.show,wibudesu.co##+js(acis, disableSelection, reEnable)
 84.247.147.120,otakudesu.cloud##+js(acis, document.oncontextmenu)
@@ -3701,9 +3698,9 @@ anikor.icu###overplay
 anikor.icu##.kln
 anikor.icu##a[target*="blank"]:has(> img)
 anikor.icu##div[id^="teaser"]
-185.217.95.43,185.217.95.49,oppadrama.site##+js(aopr, popup_custom_data)
-185.217.95.43,185.217.95.49,oppadrama.site##.kln
-185.217.95.43,185.217.95.49,oppadrama.site##a[target*="blank"]:has(> img)
+185.217.95.28,oppadrama.cc,oppadrama.site##+js(aopr, popup_custom_data)
+185.217.95.28,oppadrama.cc,oppadrama.site##.kln
+185.217.95.28,oppadrama.cc,oppadrama.site##a[target*="blank"]:has(> img)
 -630x90.$image,domain=oploverz.*
 -banner-$image,domain=oploverz.*
 .gif|$image,domain=oploverz.*
@@ -3863,14 +3860,13 @@ alpinecorporate.com##.adsbox.doubleclick.ad-placement:style(display: block !impo
 putri77.com,putri78.com##[href*="/rebrand.ly/"]:has(> img)
 bokepmama.monster###banner
 javsubindo.online,minioppai.org###btm_banner
-konflix21.vip###btm_banner-foot
+konflix21.ink###btm_banner-foot
 hencop.lol,minioppai.org,nontonhentai.top###floatcenter
 rumahperjaka.live###floating_banner_top
 gocrot.org###gocrot_i_b_3
 gocrot.org###gocrot_i_b_4
 206.189.88.35###top_banner
 doooood.co##.ad-container
-nontonbokepterbaru.com##.banner-nav
 indojavstream.com##.box_item_ads_popup
 178.128.114.78##.close_insGP
 gocrot.org##.gocrot_i_b_2
@@ -3880,8 +3876,7 @@ nekopoi.care##.leftarea
 nekopoi.care##.mobileadsbottom
 nekopoi.care##.smartbanner
 erocafe.net##.td-a-rec
-nontonbokepterbaru.com##a:matches-css(position: absolute):has(> #miesSPLASH)
-128.199.175.251,134.209.129.84,139.180.129.47,149.102.130.200,149.102.138.111,149.102.142.236,154.12.229.9,158.220.116.255,161.97.116.33,161.97.125.183,164.68.112.41,173.212.245.75,173.249.17.152,173.249.53.237,178.128.114.78,185.182.187.38,185.219.142.99,185.250.37.239,194.163.145.21,194.163.153.227,194.163.176.118,194.233.73.15,194.61.28.84,195.88.87.100,206.189.33.151,206.189.88.35,207.180.224.220,207.244.225.48,207.244.231.92,207.244.251.54,212.90.120.57,31.187.74.197,37.60.243.69,38.242.133.111,46.250.235.15,46.250.240.234,62.171.164.179,66.228.43.73,66.94.116.107,75.119.155.196,81.0.220.98,84.21.171.204,84.247.128.126,84.247.129.162,95.111.224.11,agenbokep.vip,bandarsub.com,bokepindo.ink,bokepjilbab.cc,bokeponlinestreaming.ink,doodstream.top,drbokep.cc,erocafe.net,gocrot.org,hencop.lol,indobokepin.com,javindo.eu.org,javsubindo.com,javsubindo.online,javxxi-a.site,jilbabviral.online,kimcilonlyofc.site,konflix21.vip,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,nontonbokepterbaru.com,omahbokep.co,omekin.tv,pornogrim.click,putri77.com,putri78.com,ruanglendir.xyz,rumahperjaka.live,sangetube.club,sebokep.com,sibokepjepang.com,skandalpedia.pics,yabaisub.com##a[target*="blank"]:has(> img)
+128.199.175.251,134.209.129.84,139.180.129.47,154.12.229.9,161.97.125.183,178.128.114.78,194.233.73.15,194.61.28.84,206.189.33.151,206.189.88.35,207.244.225.48,207.244.251.54,212.90.120.57,31.187.74.197,62.171.164.179,66.228.43.73,75.119.155.196,95.111.224.11,agenbokep.vip,bandarsub.com,bokepindo.ink,bokepjilbab.cc,bokeponlinestreaming.ink,doodstream.top,drbokep.cc,erocafe.net,gocrot.org,hencop.lol,indobokepin.com,javindo.eu.org,javsubindo.com,javsubindo.online,javxxi-a.site,jilbabviral.online,kimcilonlyofc.site,konflix21.ink,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,omahbokep.co,omekin.tv,pornogrim.click,putri77.com,putri78.com,ruanglendir.xyz,rumahperjaka.live,sangetube.club,sebokep.com,sibokepjepang.com,skandalpedia.pics,yabaisub.com##a[target*="blank"]:has(> img)
 134.209.129.84,66.228.43.73##a[target="_blank"]:has(> video):remove()
 bokep360.xyz##a[title="banner" i]:has(> img)
 hencop.lol,javsubindo.online,minioppai.org,nontonhentai.top,pemersatu.link,skandalpedia.pics##body > div[id^="teaser"]
@@ -3901,7 +3896,6 @@ chindohot.site##+js(rmnt, script, deblocker)
 @@||erocafe.net^$ghide
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js^$domain=erocafe.net
 fap18.net#@#.ad_mobile
-207.180.224.220#@#.idmuvi-topbanner
 erocafe.net##body > div#td-outer-wrap + div[id][class]:has(.adblock_title)
 doooood.co###overlay
 iyottube.co###playerOverlay
@@ -3911,8 +3905,8 @@ gocrot.org##.popup-cr7
 kawai.vip,pusatporn18.com##+js(aeld, /^(?:load|click)$/, popMagic)
 sebokep.com##+js(aopr, SGPB_POPUP_PARAMS)
 skandalpedia.pics##+js(aopr, window.pum_popups)
-128.199.175.251,139.180.129.47,149.102.130.200,149.102.138.111,149.102.142.236,154.12.229.9,158.220.116.255,161.97.116.33,161.97.125.183,164.68.112.41,173.212.245.75,173.249.17.152,173.249.53.237,178.128.114.78,185.182.187.38,185.219.142.99,185.250.37.239,194.163.145.21,194.163.153.227,194.163.176.118,194.61.28.84,206.189.33.151,206.189.88.35,207.180.224.220,207.244.225.48,207.244.231.92,207.244.251.54,212.90.120.57,31.187.74.197,37.60.243.69,46.250.235.15,46.250.240.234,62.171.164.179,66.94.116.107,75.119.155.196,81.0.220.98,84.21.171.204,84.247.128.126,84.247.129.162,95.111.224.11,bandarsub.com,bokepindo.ink,bokeponlinestreaming.ink,doodstream.top,doooood.co,erocafe.net,gocrot.org,hencop.lol,indobokepin.com,javindo.eu.org,javsubindo.com,javxxi-a.site,jilbabviral.online,kimcilonlyofc.site,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,pornogrim.click,sangetube.club,sibokepjepang.com,yabaisub.com##+js(nowoif)
-149.102.130.200,154.12.229.9,161.97.116.33,173.212.245.75,185.219.142.99,194.163.145.21,194.163.153.227,194.163.176.118,207.244.225.48,207.244.231.92,207.244.251.54,46.250.235.15,66.94.116.107,81.0.220.98##+js(aopr, popup_custom_data)
+128.199.175.251,139.180.129.47,154.12.229.9,161.97.125.183,178.128.114.78,194.61.28.84,206.189.33.151,206.189.88.35,207.244.225.48,207.244.251.54,212.90.120.57,31.187.74.197,62.171.164.179,75.119.155.196,95.111.224.11,bandarsub.com,bokepindo.ink,bokeponlinestreaming.ink,doodstream.top,doooood.co,erocafe.net,gocrot.org,hencop.lol,indobokepin.com,javindo.eu.org,javsubindo.com,javxxi-a.site,jilbabviral.online,kimcilonlyofc.site,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,pornogrim.click,sangetube.club,sibokepjepang.com,skandalpedia.pics,yabaisub.com##+js(nowoif)
+154.12.229.9,207.244.225.48,207.244.251.54##+js(aopr, popup_custom_data)
 66.228.43.73##*:style(user-select:text!important;)
 ratihbugil.com##+js(aeld, contextmenu)
 66.228.43.73##+js(aopr, $, document.oncontextmenu)
@@ -3952,10 +3946,10 @@ rumahbokep.guru,videocrotindo.online,websitebokep-id.com##iframe.padPreload[styl
 58898cj.com,bokepcrot.bond,bokepkita.fun,bokepsex.art,earthandskyproductions.com,inibokep.rest,italyholidayinfo.com,kamarbokep.mom,kebokepanku.one,ruangbokep.one,shamanic-cybernetics.com,sibokep.click,thegeorgeshow.com##.btm_ban
 58898cj.com,bokepcrot.bond,bokepkita.fun,bokepsex.art,earthandskyproductions.com,inibokep.rest,italyholidayinfo.com,kamarbokep.mom,kebokepanku.one,ruangbokep.one,shamanic-cybernetics.com,sibokep.click,thegeorgeshow.com##a[target*="blank"]:has(> img)
 58898cj.com,bokepcrot.bond,bokepkita.fun,bokepsex.art,earthandskyproductions.com,inibokep.rest,italyholidayinfo.com,kamarbokep.mom,kebokepanku.one,ruangbokep.one,shamanic-cybernetics.com,sibokep.click,thegeorgeshow.com##+js(nowoif)
-bocilviral.autos,bokepbaru.homes,bokepid.autos,bokepkeren.autos,bookep.fun,ngentotin.ink,simontok.autos,viralhub.autos###fixedban
-bocilviral.autos,bokepbaru.homes,bokepid.autos,bokepkeren.autos,bookep.fun,ngentotin.ink,simontok.autos,viralhub.autos##a[target*="blank"]:has(> img)
-bocilviral.autos,bokepbaru.homes,bokepid.autos,bokepkeren.autos,bookep.fun,ngentotin.ink,simontok.autos,viralhub.autos##+js(aeld, /^(?:load|click)$/, popMagic)
-bocilviral.autos,bokepbaru.homes,bokepid.autos,bokepkeren.autos,bookep.fun,ngentotin.ink,simontok.autos,viralhub.autos##+js(acis, history.replaceState, location.replace)
+bocilviral.autos,bokepbaru.homes,bokepid.autos,bokepkeren.autos,bookep.fun,simontok.autos,viralhub.autos,viralin.wiki###fixedban
+bocilviral.autos,bokepbaru.homes,bokepid.autos,bokepkeren.autos,bookep.fun,simontok.autos,viralhub.autos,viralin.wiki##a[target*="blank"]:has(> img)
+bocilviral.autos,bokepbaru.homes,bokepid.autos,bokepkeren.autos,bookep.fun,simontok.autos,viralhub.autos,viralin.wiki##+js(aeld, /^(?:load|click)$/, popMagic)
+bocilviral.autos,bokepbaru.homes,bokepid.autos,bokepkeren.autos,bookep.fun,simontok.autos,viralhub.autos,viralin.wiki##+js(acis, history.replaceState, location.replace)
 /luxury_hd_dvd_hd.mp4$media
 ||imgur.com/PptFxqt.$image
 /*capsa*.gif$image
@@ -5176,8 +5170,6 @@ _topbandar_$image
 ##[href="https://woi.gg/8080sportlogin"]
 ##[href="https://www.bior.fun/ceknawala"]
 ##[href="https://www.bior.fun/jago8et"]
-##[href="https://www.flylink.bio/bioskopkrn"]
-##[href="https://www.flylink.bio/rebahinfilm"]
 ##[href="https://yok.la/gentong99"]
 ##[href^="https://jurangikan.com/adsmovie"]
 ##[href^="https://klik4.me/bioskopkeren"]
@@ -5392,6 +5384,8 @@ _topbandar_$image
 ##[href="https://vpnnawala.site/penta"]
 ##[href="https://vpnnawala.site/rusia"]
 ##[href="https://zeus.fun/Bioskop21"]
+##[href="https://zeus.fun/Floatingkonflix21"]
+##[href="https://zeus.fun/Headerkonflix21"]
 ##[href="https://zeus.fun/idxxiads1"]
 ##[href="https://zeus.fun/xxiads"]
 ##img[alt="agb99"]
