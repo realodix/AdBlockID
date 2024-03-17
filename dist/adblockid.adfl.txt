@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.3.60
+! Version: 24.3.61
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Mar 2024 11:03 UTC
+! Last modified: 17 Mar 2024 11:32 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2318,6 +2318,10 @@ kaltimfaktual.co###mvp-home-widget-wrap .master-slider-parent
 bekesah.co,sumselnews.co.id###mvp-leader-wrap
 kepripedia.com##.Floatdekstop
 inilah.com##.MuiStack-root:has(> span:has-text(/adv/i))
+orami.co.id##.article-post #post-bottom:has(> p.text-center:has-text(/adv/i))
+orami.co.id##.article-post #post-section2:has(> p.text-center:has-text(/adv/i))
+orami.co.id##.article-post #post-top:has(> p.text-center:has-text(/adv/i))
+orami.co.id##.article-post img + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 goinsan.com##.bottomBox
 borobudurnews.com##.bs-sksitem
 bardimin.com,carisinyal.com,cerah.id,fanicat.com,inwepo.co,kamini.id,kepripedia.com,konteks.co.id,otoinfo.id,selidikinews.com##.code-block
