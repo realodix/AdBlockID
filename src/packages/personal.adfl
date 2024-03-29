@@ -45,7 +45,12 @@ blibli.com###catalogProductListContentDiv > #productContentDiv .product__card:ha
 tribunnews.com###jualbeli2022
 gramedia.com##.entry-content > .grame-promo
 itemku.com##.grid > a:has(div > div:has-text(Ad))
+tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct"]:has(div[data-testid="master-product-card"] [data-testid="lblTopads"])
 tokopedia.com##:matches-path(/p/) a[data-testid="lnkProductContainer"]:has([alt*="topads"])
+tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
+! ---
+! Mobile
+tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct#"]:has(div[data-testid="master-product-card"] [data-testid="linkProductTopads"])
 !
 ! ANTI-ADBLOCK
 ! -----------------------------------------------
