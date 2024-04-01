@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.1
+! Version: 24.4.2
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Apr 2024 01:34 UTC
+! Last modified: 01 Apr 2024 01:41 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1743,6 +1743,7 @@ _banner.$image,domain=bantennews.co.id|herald.id|kitalulus.com
 ||radarbanten.co.id^*-iklan-$image
 ||radarbanten.co.id^*/iklan-$image
 ||radarbanten.co.id^*/slidepromo_$image
+||radarindo.co.id^*/iklan-$image
 ||radarpaginews.com^*-iklan.jpg$image
 ||radarpaginews.com^*/iklan-$image
 ||radarpos.com^*/banner-$image
@@ -2576,6 +2577,7 @@ dutaserviceac.com##aside .widget:has(.label:has-text(/adv/i))
 bangkitmedia.com##aside p:matches-css(text-align: center):has(> a > img)
 creativosonline.org,ubunlog.com##aside:has(> .adsbygoogle)
 gardapapua.com##aside:has-text(/adv/i)
+nu.or.id###carouselHeader:has(a[class="print:hidden"] > img[src^="https://storage.nu.or.id/storage/banners/"])
 timesindonesia.co.id###news_content > p:has-text(/adv/i)
 travelingyuk.com##.a-wrapper:has(> .adsbygoogle)
 dutaimigrasi.com,gimana.net,greenscene.co.id,itnesia.com,slabsoft.com,thelastsurvivors.org,tipkerja.com,utekno.com##.adsbygoogle:upward(.code-block)
