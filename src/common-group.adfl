@@ -11,6 +11,13 @@ ads.id##img[alt="admaven"]
 ! Whitelist
 @@://ads.$domain=ads.id
 !# ---
+!# Cermati
+!# ---
+cermati.com##:matches-path(/artikel) .ads-container
+cermati.com##:matches-path(/artikel) .sticky-banner-wrapper
+cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
+cermati.com##:matches-path(/artikel) a[href^="http://promo.cermati.com/"]:has(> picture)
+!# ---
 !# Arkadia Digital Media
 !# ---
 suara.com###div-ad-mobile_bacajuga
