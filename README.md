@@ -106,8 +106,8 @@ Thanks goes to these wonderful people.
 | - | ---- | -------- | ------- |
 | 1 | [Recehan-Slayer](https://github.com/Recehan-Slayer) | [850+ issues][volunteer_r1] | <img height="30" src="https://avatars0.githubusercontent.com/u/9379770"> |
 | 2 | [3xploiton3](https://github.com/3xploiton3) | [200+ issues][volunteer_r2] | <img height="30" src="https://avatars3.githubusercontent.com/u/19517680"> |
-| 3 | [Jokopentil](https://github.com/Jokopentil) | [70+ issues][volunteer_r3] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
-| 4 | [Abidjauhar17](https://github.com/abidjauhar17) | [40+ issues][volunteer_r4] | <img height="30" src="https://avatars.githubusercontent.com/u/37255346"> |
+| 3 | [Jokopentil](https://github.com/Jokopentil) | [80+ issues][volunteer_r3] | <img height="30" src="https://avatars.githubusercontent.com/u/114223791"> |
+| 4 | [Abidjauhar17](https://github.com/abidjauhar17) | [50+ issues][volunteer_r4] | <img height="30" src="https://avatars.githubusercontent.com/u/37255346"> |
 | 5 | [T-Baniza ](https://github.com/T-Baniza ) | [30+ issues][volunteer_r5] | <img height="30" src="https://avatars.githubusercontent.com/u/79722529"> |
 
 [volunteer_r1]: https://github.com/realodix/AdBlockID/issues?q=is%3Aissue+author%3ARecehan-Slayer
