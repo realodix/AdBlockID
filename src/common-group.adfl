@@ -340,6 +340,16 @@ pramborsfm.com##.overlay
 ! Style Fixer
 pramborsfm.com##.master.has-top-ads .header:style(top: 0!important;)
 !# -----------------------------------------------------------------------------
+!# ruangguru
+!# ---
+ruangguru.com##.bantuan
+ruangguru.com##.bantuan-promo
+roboguru.ruangguru.com##[class^="css-"]:has(> p:has-text(/iklan/i) )
+! Annoyance
+ruangguru.com##+js(aeld, DOMContentLoaded, popupPromo)
+roboguru.ruangguru.com##.chakra-container > div[class^="css-"]:has(> div[class^="css-"] > div[id^="div-gpt-ad-"])
+roboguru.ruangguru.com##.chakra-stack > div[class^="css-"]:has(> div[class^="css-"] > div[id^="div-gpt-ad-"])
+!# -----------------------------------------------------------------------------
 !# TEMPO.CO (Info Media Digital)
 !# ---
 cantika.com##.adsbottom-new
