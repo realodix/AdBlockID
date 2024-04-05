@@ -47,10 +47,12 @@ gramedia.com##.entry-content > .grame-promo
 itemku.com##.grid > a:has(div > div:has-text(Ad))
 tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct"]:has(div[data-testid="master-product-card"] [data-testid="lblTopads"])
 tokopedia.com##:matches-path(/p/) a[data-testid="lnkProductContainer"]:has([alt*="topads"])
+shopee.co.id##:matches-path(/search?) .shopee-search-item-result .shopee-search-item-result__item:has(a div[aria-hidden="true"] > .bg-shopee-black26:has-text(/Ad/))
 tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
 ! ---
 ! Mobile
 tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct#"]:has(div[data-testid="master-product-card"] [data-testid="linkProductTopads"])
+shopee.co.id##:matches-path(/search?) .search-items-container__tab-panel .item-card-list__item-card-wrapper:has(a div[aria-hidden="true"] > .bg-shopee-black26:has-text(/Ad/))
 !
 ! ANTI-ADBLOCK
 ! -----------------------------------------------
