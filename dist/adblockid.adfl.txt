@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.19
+! Version: 24.4.20
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Apr 2024 21:09 UTC
+! Last modified: 05 Apr 2024 23:26 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2264,6 +2264,7 @@ sulselnet.com##img[width="1280"][height="300"]
 pijarnews.com##img[width="1280"][height="328"]
 astronauts.id##img[width="1280px"][height="300px"]
 akurasi.id##img[width="1417"][height="300"]
+infomu.co##img[width="1433"][height="151"]
 sulselnet.com##img[width="1500"][height="250"]
 suarabinjai.co.id##img[width="1500"][height="300"]
 potretnusantara.id##img[width="1500"][height="563"]
@@ -2300,6 +2301,7 @@ bidik.news,calonpengangguran.com,portibi.id##img[width="576"][height="1024"]
 koranpagionline.com##img[width="600"][height="757"]
 mediasuarapublik.com##img[width="608"][height="1024"]
 harianrakyat.id##img[width="694"][height="86"]
+infomu.co##img[width="698"][height="878"]
 lensajatim.id##img[width="719"][height="99"]
 fokusmedan.com##img[width="720"][height="120"]
 sinjai.info##img[width="720"][height="182"]
@@ -2349,6 +2351,7 @@ jobskarir.id##.tutup-iklan:upward(1)
 candilkuya.com##.widget:has(> [id^="iklan"])
 siberkota.com##.wpb_single_image:has(> h3:has-text(Advertising))
 vidio.com##[class^="banner-module_"]:has(> a[target="_blank"][rel="noopener"])
+koranseruya.com##[id^=local-]:has(> .local-adlabel)
 vidio.com##a[href*="&advertising_id="]:has(img[src*="/breaking_banner/"])
 rakyatpos.id##a[target="_blank"]:not(a[href^="https://blogger.googleusercontent.com/img/"]) > img
 beenews.id##article .beene-content:has(> .beene-adlabel)
@@ -2417,6 +2420,7 @@ lemaripojok.com##.widget:has(.widget-content > iframe)
 bogordaily.net,goosela.com,inionline.id,seputarsumut.com,spionase-news.com,vasadnews.com##.widget:has(> a > img)
 channel9.id##.widget:has(a > img)
 nusabali.com##.widget:has(h2:has-text(/iklan/i))
+matanusantara.com##.widget:has(img[id$="_img"])
 infoberita.id,meduonline.co.id##.widget:has-text(/adv/i)
 annews.co.id##.widget:has-text(/sponsor/i)
 liputan4.com##.widget_block > img
@@ -3057,7 +3061,7 @@ glints.com##body:style(margin-top: 0!important;)
 0.0.realodix##:matches-path(/^/home/) [data-testid="primaryColumn"]:others()
 ?key=*&submetric=$3p,popup
 kotakgame.com##+js(aopr, $.magnificPopup.open)
-ecology.my.id,gammafisblog.com,gigapurbalingga.cc,jejakmufassir.my.id,kurazone.net,tafsirmimpi.co##+js(nowoif)
+ecology.my.id,gammafisblog.com,gigapurbalingga.cc,jejakmufassir.my.id,kurazone.net,kuyhaa-me.com,tafsirmimpi.co##+js(nowoif)
 zuperdrive.my.id##+js(nowoif, !zuperdrive)
 jurnal9.tv,suarapubliknews.net,topbnews.com##+js(aopr, popup_custom_data)
 /wp-content/plugins/master-popups/*$domain=mediamerdeka.co
@@ -3093,6 +3097,7 @@ wandercom.id###popuplayout
 lacako.com##.chat-popup
 bagas31.info##.frame-banner-places-popup
 wibufile.com##.ik-overlay
+kompaslampung.com##.jqbox_innerhtml
 subsc.my.id##.modal
 tafsirq.com##.optin-monster-saas-overlay
 kitalulus.com##.pop-up-overlay
@@ -3106,9 +3111,10 @@ duniagames.co.id##html:remove-class(cdk-global-scrollblock)
 !#endif
 freesoft.id,zcteam.id##.entry-content #btn-keren:has(> a[href^="javascript:void("][onclick^="window.open("])
 darmediatama.com##.entry-content > .code-block > button:has-text(/download/i)
+kuyhaa-me.com##.entry-content > center > input[src]
 rgames31.com##.entry-content > center a[target="_blank"] input
 abbaspc.net,bagas3-1.co,bagas31.pw##.entry-content center > a:has(> button)
-bagas3-1.com,bagas31.one,gigapurbalingga.cc,yasir-252.com##.entry-content center:has(button#linkIButton)
+bagas3-1.com,bagas31.one,gigapurbalingga.cc,kuyhaa-me.pw,yasir-252.com##.entry-content center:has(button#linkIButton)
 freesoft.id,zcteam.id##.entry-content p:has(> a[href^="javascript:void("][onclick^="window.open("])
 kuyhaa.cc##.post-wrapper .code-block:has(> center > a > button)
 gigapurbalinggaa.com##article .code-block > center:has(> button:has-text(/download/i))
@@ -3150,15 +3156,17 @@ broexcel.com,dailysocial.id,id.theasianparent.com,infoastronomy.org,noveltoon.mo
 bospajak.com##+js(aopw, document.onselectstart)
 mercon.id##style:has-text(::selection):remove()
 ||webpraktis.com/librari/anticopas.$3p,css,script
-gadgetidn.id,idntimes.com,kelasexcel.id,mercon.id,radiokucing.com,ridertua.com,tepat.id##+js(aeld, /copy|keydown/)
+gadgetidn.id,idntimes.com,keepo.me,kelasexcel.id,mercon.id,radiokucing.com,ridertua.com,tepat.id##+js(aeld, /copy|keydown/)
 malukuterkini.com##+js(aopr, disable_copy)
 cindenian.com,cnnindonesia.com,detik.com,jpnn.com,navigasi.eu.org,ngaji.id,nu.or.id,thejakartapost.com,tvonenews.com,viva.co.id##+js(aopr, document.oncopy)
 kucingpersia.co.id##+js(aopr, document.onkeydown)
 ngulikode.com##+js(aopr, nocopas)
 tirto.id##+js(aopr, window.$nuxt._route.query.copy)
 20.detik.com,cnbcindonesia.com,cnnindonesia.com,transtv.co.id##+js(ra, oncontextmenu|disablepictureinpicture, video, stay)
+||kuyhaa-me.com/jamuok.$script
 ipeenk.com##+js(aopr, app_advert)
-bahyudinnor.com,candilkuya.com##+js(aopr, protected_links)
+kuyhaa-me.com##+js(aopr, apphost)
+bahyudinnor.com,candilkuya.com,kuyhaa-me.com##+js(aopr, protected_links)
 -safelink/$3p,script
 /ABSafelink.$3p,script
 /auto_ngewe_$3p,script
