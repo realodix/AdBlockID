@@ -10,6 +10,8 @@
 ##[href^="https://safelinkblogger.com/ref/"]
 ##[href^="https://safelinku.com/ref/"] > img
 !
+tempatwisata.pro##span:has-text(/adv/i)
+!
 ! ANTI-ADBLOCK
 ! -----------------------------------------------
 linkerload.com##+js(acis, addEventListener, google_ad_client)
@@ -18,6 +20,7 @@ dz4link.com,linkpoi.me,rancah.com##+js(aopr, app_vars.force_disable_adblock)
 linkpoi.me##+js(aopr, disableItToContinue)
 menjelajahi.com,rancah.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 mangindo.xyz##+js(aopr, window.adikAds)
+tempatwisata.pro##+js(no-fetch-if, adsbygoogle.js)
 vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 lifesurance.info##+js(set, showada, true)
 ! chp_ads_blocker | adblock_title
@@ -35,11 +38,13 @@ lifesurance.info##+js(set, showada, true)
 cararegistrasi.com,ponselharian.com##+js(nowoif)
 ! ---
 ! Countdown Timer
+tempatwisata.pro##+js(aeld, blur, counter)
 rancah.com,saungfirmware.id,semruwet.com##+js(set, blurred, false)
 ! ---
 ! Fake Button
 slurr.my.id###content #wpsafegenerate div:has(a > img):not(#wpsafe-link)
 slurr.my.id###content .wpsafe-top div:has(> a > img):not(#wpsafe-generate)
+tempatwisata.pro##:has(> a[href="#downloadnow"])
 !
 /download_$image,domain=cararegistrasi.com|ponselharian.com
 !
