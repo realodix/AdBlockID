@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.41
+! Version: 24.4.42
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Apr 2024 11:26 UTC
+! Last modified: 11 Apr 2024 15:19 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3491,13 +3491,11 @@ komikindo.co##[href^="https://shope.ee/"]:has(> img)
 mirrorkomik.net###aplikasi
 mangaid.click###catfish
 kiryuu.id###sidebar > .widget_text:has-text(/ads/i):has(img[src*=".gif"])
-doujindesu.tv##.adv-wrapper
 mangacanblog.com##.entry-content > center:has(> a > img)
 komikcast.net##.gambar_pemanis
 kanzenin.info,kiryuu.id,komikcast.lol,komikindo.co,komikindo.link,komikmirror.lol,komikremaja.lol,mangacanblog.com,mangakita.id,mangakyo.vip,mangayaro.id,manhwadesu.bio,manhwadesu.cc,manhwaindo.net,manhwaindo.sbs,manhwaland.to,manhwalist.com,mihentai.com,mirrorkomik.net,sektedoujin.cc,sheakomik.com,tukangkomik.id##.kln
 pojokmanga.net##.main-sidebar .textwidget:has(> a > img)
-doujindesu.tv,komikcast.lol,komikcast.net,komikindo.tv,mangakita.id,mangatale.co,tooncubus.top##a:has(> img[src$=".gif"])
-doujindesu.tv##a:has(> img[src$=".webp"])
+komikcast.lol,komikcast.net,komikindo.tv,mangakita.id,mangatale.co,tooncubus.top##a:has(> img[src$=".gif"])
 kiryuu.id##a[href*="?ref=kiryuu"] > img
 comicmoi.com,gudangkomik.com,kanzenin.info,kiryuu.id,komikcast.lol,komikindo.co,komikindo.link,komikindo.tv,komiklokal.cyou,komikmirror.lol,komikstation.co,komikzoid.id,mangacanblog.com,mangaid.click,manhwadesu.bio,manhwadesu.cc,manhwaindo.net,manhwaindo.sbs,manhwaland.to,manhwalist.com,mihentai.com,mirrorkomik.net,ngomik.net,sekaikomik.guru,sektedoujin.cc,sheakomik.com,shinigamitoon.com,tenshi.id,tukangkomik.id##a[target*="blank"]:has(> img)
 komiku.com##a[target*="blank"][rel*="nofollow"]:has(> img)
@@ -3510,7 +3508,6 @@ crotpedia.net##+js(noeval-if, ads)
 @@||mangalist.org/url/lib/$1p,script
 mangalist.org#@#.adsbygoogle
 mirrorkomik.net###adrandpop
-doujindesu.tv###floatcenter
 klikmanga.com##body > .mtsnb-shown
 komikindo.tv##iframe[style*="width: 100% !important; height: 100% !important; opacity: 1 !important; max-width: 100% !important; border: 0px none !important; position: fixed !important;"]
 klikmanga.com,komikstation.co,manhwaland.to,sekaikomik.guru##+js(aeld, /^(?:load|click)$/, popMagic)
@@ -3522,8 +3519,8 @@ bacamanga.id,komikindo.tv,komikstation.co,ngomik.net##+js(acis, JSON.parse, brea
 kiryuu.id##+js(acis, parseInt, break;case $.)
 komikindo.tv,mangahentai.me,sekaikomik.guru,warungkomik.com##*:style(user-select:text!important;)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
-ainzscans.net,bacamanga.id,boosei.net,dojing.net,kiryuu.id,komikindo.link,komiklokal.cyou,komikmirror.lol,komikremaja.lol,komikstation.co,mangakita.id,mangakyo.vip,mangatale.co,mangayaro.id,manhwadesu.bio,manhwadesu.cc,manhwaindo.sbs,manhwaland.to,manhwalist.com,mihentai.com,mirrorkomik.net,nekomik.me,ngomik.net,noromax.my.id,rawkuma.com,sekaikomik.guru,sektedoujin.cc,sheakomik.com,softkomik.com,tenshi.id,tukangkomik.id##+js(aeld, contextmenu)
-doujindesu.tv,mangahentai.me,mangaid.click,tooncubus.top##+js(aopr, document.oncontextmenu)
+ainzscans.net,bacamanga.id,boosei.net,dojing.net,kiryuu.id,komikgo.xyz,komikindo.link,komiklokal.cyou,komikmirror.lol,komikremaja.lol,komikstation.co,mangakita.id,mangakyo.vip,mangatale.co,mangayaro.id,manhwadesu.bio,manhwadesu.cc,manhwaindo.sbs,manhwaland.to,manhwalist.com,mihentai.com,mirrorkomik.net,nekomik.me,ngomik.net,noromax.my.id,rawkuma.com,sekaikomik.guru,sektedoujin.cc,sheakomik.com,softkomik.com,tenshi.id,tukangkomik.id##+js(aeld, contextmenu)
+mangahentai.me,mangaid.click,tooncubus.top##+js(aopr, document.oncontextmenu)
 mangacanblog.com##+js(aopr, document.onkeydown)
 sekaikomik.guru,warungkomik.com##+js(aopr, nocontextmenu)
 komikzoid.id,sektekomik.xyz##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
@@ -3656,6 +3653,9 @@ erocafe.net##+js(aopr, protected_links)
 pusatporn18.com##.content-post center:has(> a > img)
 ibutiri.pro##+js(acis, history.pushState, window.location.href)
 bocilov.top##+js(acis, history.replaceState, location.replace)
+doujindesu.tv,igodesu.tv,javdesu.tv##a[target*="blank"]:has(> img)
+doujindesu.tv##+js(aopr, document.oncontextmenu)
+doujindesu.tv##+js(nowoif)
 194.233.73.15,drbokep.xyz##a[target*="blank"]:has(> img)
 pemersatu.fun,pemersatu.org,pemersatudotfun.com##.ad
 pemersatudotfun.com###player #myDiv:has(button[onclick^="window.open('https://id.wikihow.com/Menonaktifkan-Adblock'"])
