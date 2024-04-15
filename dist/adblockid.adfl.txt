@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.46
+! Version: 24.4.47
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Apr 2024 19:23 UTC
+! Last modified: 15 Apr 2024 19:58 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1689,7 +1689,6 @@ _banner.$image,domain=herald.id|kitalulus.com
 ||redaksi86.com^*/iklan-$image
 ||redaksi86.com^*_banner_$image
 ||redaksisatu.id^*/banner-DPD-RI.jpg$image
-||republika.co.id/files/ads/
 ||republikbobotoh.com/assets/img/banner-$image
 ||riaubisnis.id/assets/banner/
 ||riauin.com/assets/banner/
@@ -1843,8 +1842,6 @@ acehpost.id,bidikindonesianews.co.id,inspirasijambi.com,jambivalen.com,kilasgaru
 gadgetren.com###header-native-ad
 seputarmusikindo.com###home-ads
 zuperdrive.my.id###iframeAds
-republika.co.id###inscroll-banner
-republika.co.id###inscroll-banner-home
 seputarmusikindo.com###main-ads1
 reaksimedia.com###main-ads:remove()
 indonesiasatu.co###mobile-top-advert
@@ -1892,7 +1889,7 @@ bangsaonline.com##.add-banner
 dialeksis.com##.add-space
 nesabamedia.com##.adfullwrap
 fajar.co.id##.adp_interactive_ad
-cosmopolitan.co.id,downloadtanku.org,genyo.id,indonesiatoday.co.id,industry.co.id,katadata.co.id,minangsatu.com,pikiran-rakyat.com,republika.co.id,rmol.id##.ads
+cosmopolitan.co.id,downloadtanku.org,genyo.id,indonesiatoday.co.id,industry.co.id,katadata.co.id,minangsatu.com,pikiran-rakyat.com,rmol.id##.ads
 harianjogja.com##.ads-after-image
 harpersbazaar.co.id,motherandbeyond.id##.ads-belt
 duniagames.co.id,showbiz.co.id##.ads-container
@@ -2077,7 +2074,7 @@ cosmopolitan.co.id##.section-ad-banner
 cosmopolitan.co.id##.section-ad-fixed-bottom
 uzone.id##.section-ads-mid
 uzone.id##.section-ads-top
-buruhtinta.co.id,sinergianews.com,sitnas.id,suporter.co.id##.sibanner728x90
+buruhtinta.co.id,sinergianews.com,sitnas.id,suporter.co.id,viv.co.id##.sibanner728x90
 greeners.co##.side-banner
 karawangnews.com##.sidebar-ads
 pelopor9.com##.sidebar-image-ads
@@ -2159,6 +2156,7 @@ dairi24jam.id,kanalaspirasi.com,zonasultra.id##img[alt^="iklan" i]
 kemajuanrakyat.id##img[title*="iklan" i]
 suarakonsumenindonesia.com##img[title^="adv" i]
 batakpost.com,bumimaluku.com,detak.co,liranews.com,penasulsel.com,suarabaru.id##img[title^="banner" i]
+bardimin.com,beritausaha.com,blockchainmedia.id,carisinyal.com,cerah.id,edunews.id,fanicat.com,infobekasi.co.id,inwepo.co,kabarbenggawi.com,kamini.id,kantamedia.com,keluyuran.com,kepripedia.com,kliksumatera.com,konteks.co.id,koranntt.com,otoinfo.id,selidikinews.com,terasmaluku.com,wisatarakyat.com##.code-block
 nu.or.id##.post-read > div.text-center:has(> a[target="_blank"] > img)
 tmcblog.com##.td-container a[target="_blank"] div[style*="position: fixed;"]
 bisnistoday.co.id,ekbisbanten.com,sultengterkini.id,yangcanggih.com##a.gofollow:has(> img)
@@ -2191,7 +2189,6 @@ orami.co.id##.article-post #post-top:has(> p.text-center:has-text(/adv/i))
 orami.co.id##.article-post img + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 goinsan.com##.bottomBox
 borobudurnews.com##.bs-sksitem
-bardimin.com,beritausaha.com,blockchainmedia.id,carisinyal.com,cerah.id,edunews.id,fanicat.com,infobekasi.co.id,inwepo.co,kabarbenggawi.com,kamini.id,keluyuran.com,kepripedia.com,kliksumatera.com,konteks.co.id,koranntt.com,otoinfo.id,selidikinews.com,terasmaluku.com,wisatarakyat.com##.code-block
 indonesiadaily.net##.code-block:has(> p > a > img)
 warta-pendidikan.com##.content-area .code-block > img
 sergaplampung.com,sumateranews.co.id,warta-1.net,warta-pendidikan.com##.entry-content .code-block > img
@@ -2561,8 +2558,6 @@ genpi.co##[id^="div-gpt-ad-"]:upward(.text-center)
 tirto.id##[id^="gpt-"]:has(> script)
 temankreasi.com##a[href]:has(> center:has-text(/iklan/i))
 bogordaily.net##article .code-block:matches-css(text-align: center):has(a[href] > img)
-republika.co.id##article .wrapper-replay:has(> a > img[data-original^="https://static.republika.co.id/files/ads/"])
-republika.co.id##article > div:matches-css(text-align:center):has-text(/sponsored/i)
 berbagiteknologi.com##article center:has(> .adsbygoogle)
 klubpria.com,materiipa.com##article center:has(> [id^="div-gpt-ad"])
 klubpria.com,materiipa.com##article div:has(> [id^="div-gpt-ad"])
@@ -3008,6 +3003,13 @@ pramborsfm.com##.overlay
 @@://ads.$domain=ads.pramborsfm.com
 @@||pramborsfm.com^$ghide
 pramborsfm.com##.master.has-top-ads .header:style(top: 0!important;)
+||republika.co.id/files/ads/
+republika.co.id###inscroll-banner
+ameeralife.com,dialogjumat.co.id,ekbis.co,esgnow.id,hikmah.co,ihram.co.id,isen.id,islamdigest.co.id,janna.co.id,rejabar.co.id,rejakarta.com,rejateng.com,rejatim.com,rejogja.co.id,rekalimantan.com,republika.co.id,resulawesi.com,resumatra.com,teraju.co.id###inscroll-banner-home
+ameeralife.com,dialogjumat.co.id,ekbis.co,esgnow.id,hikmah.co,ihram.co.id,isen.id,islamdigest.co.id,janna.co.id,rejabar.co.id,rejakarta.com,rejateng.com,rejatim.com,rejogja.co.id,rekalimantan.com,republika.co.id,resulawesi.com,resumatra.com,teraju.co.id##.ads
+republika.co.id##.mobile-billboard
+republika.co.id##article .wrapper-replay:has(> a > img[data-original^="https://static.republika.co.id/files/ads/"])
+republika.co.id##article > div:matches-css(text-align:center):has-text(/sponsored/i)
 ruangguru.com##.bantuan
 ruangguru.com##.bantuan-promo
 roboguru.ruangguru.com##[class^="css-"]:has(> p:has-text(/iklan/i) )
