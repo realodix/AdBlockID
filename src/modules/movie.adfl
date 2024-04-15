@@ -235,6 +235,24 @@ nontonanimeid.*##.banner_player
 nontonanimeid.*##.floating_footer
 nontonanimeid.*##a[target*="blank"]:has(> img)
 !# ---
+!# Oploverz
+!# ---
+.gif|$image,domain=oploverz.*
+!
+oploverz.*###oploverz
+oploverz.*###oploverz2
+oploverz.*##.kln
+oploverz.*##.widget:has(> div.textwidget > p > a[target="_blank"])
+oploverz.*##.widget:has(> div.textwidget:empty)
+oploverz.*##a[target*="blank"]:has(> img)
+oploverz.*##div[id^="teaser"]
+! Annoyance
+oploverz.*###floatcenter
+oploverz.*###overplay
+oploverz.*##+js(abort-current-script, Promise, delete window)
+oploverz.*##+js(aopr, SGPB_POPUP_PARAMS)
+oploverz.*##+js(nowoif)
+!# ---
 !# OppaDrama
 !# oppadramaiklan@gmail.com
 ! https://github.com/AdguardTeam/AdguardFilters/commit/a1aaff7bcb66dcc4ce4da742666afe8603fa0e33
@@ -267,23 +285,3 @@ anikor.mom,anikor.my.id##a[target*="blank"]:has(> img)
 anikor.mom,anikor.my.id##div[id^="teaser"]
 !
 anikor.mom,anikor.my.id##+js(aopr, app_url)
-!# ---
-!# Oploverz
-!
--630x90.$image,domain=oploverz.*
--banner-$image,domain=oploverz.*
-.gif|$image,domain=oploverz.*
-!
-oploverz.*###oploverz
-oploverz.*###oploverz2
-oploverz.*##.kln
-oploverz.*##.widget:has(> div.textwidget > p > a[target="_blank"])
-oploverz.*##.widget:has(> div.textwidget:empty)
-oploverz.*##a[target*="blank"]:has(> img)
-oploverz.*##div[id^="teaser"]
-oploverz.*##img[width="630"][height="79"]
-! Annoyance
-oploverz.biz.id##.modal2
-oploverz.*###overplay
-oploverz.*##+js(aopr, SGPB_POPUP_PARAMS)
-oploverz.*##+js(nowoif)
