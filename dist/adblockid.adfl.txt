@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.48
+! Version: 24.4.49
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Apr 2024 20:15 UTC
+! Last modified: 16 Apr 2024 13:23 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1894,8 +1894,6 @@ harianjogja.com##.ads-after-image
 harpersbazaar.co.id,motherandbeyond.id##.ads-belt
 duniagames.co.id,showbiz.co.id##.ads-container
 inakoran.com##.ads-mid-lg
-idntimes.com##.ads-placement-left
-idntimes.com##.ads-placement-right
 rmol.id##.ads-responsive
 pantau.com##.ads-skyscrapper
 palembangindependen.com##.ads-slider
@@ -2053,7 +2051,6 @@ dailysocial.id##.news__detail-ads
 dailysocial.id##.news__detail-ads-subs
 tobapos.co##.news_portal_ads_banner
 id.theasianparent.com##.outstream-ad-slot
-idntimes.com,popmama.com##.parallax-ad
 katasulsel.com##.parallaxads
 faktahukumntt.com,jabaronline.com,tapanulipost.com##.parallxads
 beritabersatu.com##.penci-list-banner
@@ -2089,7 +2086,7 @@ genpi.co##.sky_banner
 infokyai.com,jejakfaktanews.com,suarakonsumenindonesia.com##.slotbanner
 sahijab.com##.small-mobile-banner
 thejakartapost.com##.smart-banner-wrapper
-idntimes.com,thejakartapost.com##.smartbanner
+thejakartapost.com##.smartbanner
 solopos.com##.sp-widget-adbox-style1
 medianotaris.com##.spaceBanner
 halmaherapost.com,malukuterkini.com,tandaseru.com##.spanduk
@@ -2117,7 +2114,6 @@ poskota.co.id##.wt-bg-ads
 korankaltim.com##[alt="sponsor"]
 gosulsel.com##[alt^="go-ads-"]
 avesiar.com,menit.co.id,radarsumatera.com##[alt^="iklan" i]
-popbela.com##[class^="ads_"]
 tedas.id##[class^="adsbyadop_"]
 poskota.co.id##[class^="get_ads_"]
 beasiswaindo.com##[class^="sponsor-"]
@@ -2126,7 +2122,6 @@ kumparan.com##[data-qa-id*="sticky-bottom-ads"]
 kumparan.com##[data-qa-id="left-skyscrapper-ads"]
 kumparan.com##[data-qa-id="right-skyscrapper-ads"]
 telisik.id##[data-src*="/ads/"]
-popbela.com##[data-testid="ads-megabillboard"]
 timesindonesia.co.id##[href*="ads-"]
 inakoran.com##[href*="inakoran.com/track_ad/"]:has(> img)
 beritabersatu.com,beritakotamakassar.com##[id^="_ad_"]
@@ -2571,7 +2566,6 @@ nawalakarsa.id##div:has(> [class^="adsbyadop_"])
 dailysocial.id,genpi.co##div:has(> [id*="div-gpt-ad-"])
 katadata.co.id##div:has(> [id^="div-gpt-ad-"][class^="paralax-"])
 samsungstarters.com##div:has(> small:has-text(/adv/i))
-yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 cosmopolitan.co.id,herworld.co.id,katadata.co.id##div:matches-css(text-align: center):has-text(/adv/i)
 doktersehat.com##div:matches-css(text-align: center):has-text(/iklan/i)
 djafa.org,mbaheza.com,tandakoma.com##p:has(> .adsbygoogle)
@@ -2579,7 +2573,6 @@ emka.web.id##p:has-text(/adv/i)
 inilahkoran.id##section[class*="bn-"]:has(> .row > .adsbygoogle)
 sehatq.com##div:has([id^="div-gpt-ad"]) + p:has-text(/scroll untuk/i)
 sehatq.com##div:matches-css(position:absolute):matches-css(top:0px):has([id^="div-gpt-ad"]):upward(1)
-idntimes.com,yummy.co.id###IDN_PS_MegaBillboard
 berita.99.co,kelasexcel.id,suarapemredkalbar.com###adop_flyingcarpet
 trackpacking.com###fix-footer
 petalokasi.org###optad_atf
@@ -2709,7 +2702,7 @@ bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id,gemalam
 @@/media/*$image,domain=iklanjitu.id|iklanjitu.jawapos.com
 @@/scripts/ads.$domain=ads.kaskus.co.id
 @@/wp-content/uploads/*$1p,image,domain=adstarsmedia.co.id|agency-iklan.com|bertravel.com|bluecreative.co.id|karyaiklan.co.id|masterweb.com|matari-ad.com|merchant.id|winstarlink.com
-@@://ads.$domain=ads.dewarangga.com|ads.gadgetsquad.id|ads.idntimes.com|ads.kaskus.co.id|ads.kgmedia.id|ads.marketeers.com|ads.wartaekonomi.co.id
+@@://ads.$domain=ads.dewarangga.com|ads.gadgetsquad.id|ads.kaskus.co.id|ads.kgmedia.id|ads.marketeers.com|ads.wartaekonomi.co.id
 @@://ads2.$domain=meetkcm.com
 @@_advertising/$domain=advertising.katadata.co.id
 @@||gosocial.co.id/assets/img/service/$1p,image
@@ -2737,6 +2730,21 @@ cermati.com##:matches-path(/artikel) .ads-container
 cermati.com##:matches-path(/artikel) .sticky-banner-wrapper
 cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
 cermati.com##:matches-path(/artikel) a[href^="http://promo.cermati.com/"]:has(> picture)
+-banner-$image,domain=popmama.com
+idntimes.com,yummy.co.id###IDN_PS_MegaBillboard
+yummy.co.id###js-banner-sticky
+popmama.com##.ads
+yummy.co.id##.boxBanner
+popmama.com##.parallax-ad
+popbela.com##[class^="ads_"]
+idntimes.com,popmama.com,yummy.co.id##[id^="IDN_MegaBillboard"]
+yummy.co.id##[id^="idnads_header_"]
+yummy.co.id##div:has(> button:has-text(/tutup/i)):has-text(/SCROLL UNTUK MELANJUTKAN MEMBACA/i)
+yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
+popmama.com###mainBannerPopup
+popmama.com##body:style(overflow: auto!important; position: unset!important;)
+idntimes.com##+js(aeld, /copy|keydown/)
+@@://ads.$domain=ads.idntimes.com
 suara.com###div-ad-mobile_bacajuga
 suara.com###div-ad-pariwara_satu
 suara.com###pariwara_dua
@@ -3094,7 +3102,6 @@ papuaterkini.com,papuatoday.com,suluttimes.com##+js(acis, SGPopup)
 prokaltim.com,suarakumandang.com##+js(aopr, SGPB_POPUP_PARAMS)
 /wp-content/plugins/popup-builder/*$domain=suluttimes.com
 kucinglucu.net###desktopcontainer:has(> #desktopbox > #desktopadvertisements)
-popmama.com###mainBannerPopup
 kucinglucu.net###mobilecontainer:has(> #mobileadsense)
 ladiestory.id###modalBanner
 bankiir.id,biayatarif.com,bursabajaringan.com,carabelanja.id,empatdio.com,gadgetized.net,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.id,tuliskan.id###myCont
@@ -3106,11 +3113,10 @@ korankaltim.com##.fade.modal
 korankaltim.com,rilis.id##.fade.modal-backdrop
 jagobengkel.com,maenhp.com,versusbeda.com##.jquery-modal
 brainly.co.id##.js-react-registration-toplayer
-ladiestory.id,popmama.com##.modal-backdrop
+ladiestory.id##.modal-backdrop
 bacaterus.com,carisinyal.com##.oxy-modal-backdrop
 gammafisblog.com##.popbox
 alkitabonline.org,bacaterus.com,bankiir.id,biayatarif.com,brainly.co.id,bursabajaringan.com,carabelanja.id,carisinyal.com,empatdio.com,gadgetized.net,gammafisblog.com,gen987fm.com,iuwashplus.or.id,jagobengkel.com,korankaltim.com,kucinglucu.net,ladiestory.id,maenhp.com,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.id,tuliskan.id,versusbeda.com##body:style(overflow: auto!important; position: unset!important;)
-popmama.com##body:style(overflow: visible!important; padding-right: 0!important;)
 brainly.co.id##div[data-testid="satisfaction_survey_facade"]
 paketinternet.net###bukafpop
 situsnobar.top###floatcenter
@@ -3180,7 +3186,7 @@ dailysocial.id,id.theasianparent.com,infoastronomy.org,noveltoon.mobi,portal-isl
 bospajak.com##+js(aopw, document.onselectstart)
 mercon.id##style:has-text(::selection):remove()
 ||webpraktis.com/librari/anticopas.$3p,css,script
-idntimes.com,keepo.me,kelasexcel.id,mercon.id,radiokucing.com,ridertua.com,tepat.id##+js(aeld, /copy|keydown/)
+keepo.me,kelasexcel.id,mercon.id,radiokucing.com,ridertua.com,tepat.id##+js(aeld, /copy|keydown/)
 malukuterkini.com##+js(aopr, disable_copy)
 cindenian.com,cnnindonesia.com,detik.com,jpnn.com,navigasi.eu.org,ngaji.id,nu.or.id,thejakartapost.com,tvonenews.com,viva.co.id##+js(aopr, document.oncopy)
 kucingpersia.co.id##+js(aopr, document.onkeydown)
