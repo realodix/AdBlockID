@@ -18,6 +18,19 @@ cermati.com##:matches-path(/artikel) .sticky-banner-wrapper
 cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
 cermati.com##:matches-path(/artikel) a[href^="http://promo.cermati.com/"]:has(> picture)
 !# -----------------------------------------------------------------------------
+!# IDN Media
+!# ---
+idntimes.com###IDN_MegaBillboard
+idntimes.com###IDN_MegaBillboard2
+idntimes.com###IDN_MegaBillboard3
+idntimes.com###IDN_MegaBillboard4
+idntimes.com###IDN_MegaBillboard5
+idntimes.com###IDN_PS_MegaBillboard
+! Annoyance
+idntimes.com##+js(aeld, /copy|keydown/)
+! Whitelist
+@@://ads.$domain=ads.idntimes.com
+!# -----------------------------------------------------------------------------
 !# Arkadia Digital Media
 !# ---
 suara.com###div-ad-mobile_bacajuga
