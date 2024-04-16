@@ -10,14 +10,14 @@ ads.id##img[alt*="iklan" i]
 ads.id##img[alt="admaven"]
 ! Whitelist
 @@://ads.$domain=ads.id
-!# ---
+!# -----------------------------------------------------------------------------
 !# Cermati
 !# ---
 cermati.com##:matches-path(/artikel) .ads-container
 cermati.com##:matches-path(/artikel) .sticky-banner-wrapper
 cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
 cermati.com##:matches-path(/artikel) a[href^="http://promo.cermati.com/"]:has(> picture)
-!# ---
+!# -----------------------------------------------------------------------------
 !# Arkadia Digital Media
 !# ---
 suara.com###div-ad-mobile_bacajuga
@@ -40,7 +40,7 @@ suara.com##.placeholder_r3
 suara.com##.placeholder_read_body
 suara.com##.skin:has(> [data-ad-type])
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com,mobimoto.com,suara.com##[class^="placeholder_"]:has([id^="div-ad-"])
-!# ---
+!# -----------------------------------------------------------------------------
 !# Kompas Gramedia
 !# ---
 ||adsimg.kompas.com^
@@ -133,7 +133,7 @@ bolasport.com,grid.id,gridoto.com,juara.net,kgnow.com,kompas.com,kompas.tv,motor
 grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
 gridoto.com,kompasiana.com,sonora.id,tribunnews.com##+js(aeld, /copy|keydown/)
 /copy_credit.$script,domain=kompas.com
-!# ---
+!# -----------------------------------------------------------------------------
 !# Trans Media - Detik Network
 !# ---
 ||detik.com^*/bannerinternal/
@@ -193,7 +193,7 @@ beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[clas
 ! Annoyance
 transtv.co.id##+js(ra, oncontextmenu, html)
 detik.com##body:style(overflow: auto !important;)
-!# ---
+!# -----------------------------------------------------------------------------
 !# KapanLagi Youniverse
 !# ---
 /banner/*$image,domain=kapanlagi.com
@@ -224,7 +224,7 @@ bola.com#@#.channel-ad
 @@/advertise/*$domain=brilio.net
 ! Style Fixer
 bola.com##.layout__content:style(margin-top: 0!important;)
-!# ---
+!# -----------------------------------------------------------------------------
 !# Media Group
 !# ---
 ||mediaindonesia.com^*/banners/
@@ -255,7 +255,7 @@ mediaindonesia.com###cont-megabillboard
 mediaindonesia.com##+js(aopr, document.oncopy)
 ! Style Fixer
 medcom.id##.mid_content div.box_7_ct:nth-of-type(4):style(margin-bottom:0!important;)
-!# ---
+!# -----------------------------------------------------------------------------
 !# MNC Portal
 !# ---
 ||widget-am.misteraladin.com^$frame,domain=idxchannel.com|inews.id|okezone.com|sindonews.com
@@ -308,7 +308,7 @@ okezone.com##[id^="ivs-"]:remove()
 !
 sindonews.com#@##header-ads
 techno.okezone.com#@#.container-ads-topmenu
-!# ---
+!# -----------------------------------------------------------------------------
 !# B-UNIVERSE
 !# ---
 investor.id##.ad-box-wrappr
@@ -323,7 +323,7 @@ beritasatu.com##.body-content > div:matches-css(text-align: center):has-text(/ad
 beritasatu.com##.d-flex:has(> div > [id^="div-gpt-"])
 investor.id##.sticky
 beritasatu.com##div[style^="font-family: helvetica, arial;font-size: 10px;"]
-!# ---
+!# -----------------------------------------------------------------------------
 !# droidlime.com
 !# ---
 droidlime.com###mvp-leader-wrap a[target="_blank"][rel="external"]:has(> img)
@@ -392,7 +392,7 @@ tempo.co##article .detail-in .inside300
 ! Style Fixer
 tempo.co##.header.whead-banner:style(top: 0!important;)
 tempo.co##body.pad-apps:style(padding-top: 0!important;)
-!# ---
+!# -----------------------------------------------------------------------------
 !# ProMedia Teknologi
 !# ---
 ##body > #cont-megabillboard.t600
@@ -407,14 +407,13 @@ indozone.id##.flying_carpet_div
 ##img[src^="https://assets.ayobandung.com/"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 ##img[src^="https://static.promediateknologi.id"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 !# -----------------------------------------------------------------------------
-!# ---
 !# BolasiarMkt@gmail.com
 !# https://s.id/bolasiar
 !# ---
 bolasiar.baby,bolasiar.beauty,bolasiar.bond,bolasiar.cc###floatcenter
 bolasiar.baby,bolasiar.beauty,bolasiar.bond,bolasiar.cc###floating_banner_top
 bolasiar.baby,bolasiar.beauty,bolasiar.bond,bolasiar.cc##a[target="_blank"]:has(> img)
-!# ---
+!# -----------------------------------------------------------------------------
 !# OKEStream
 !# ---
 okestream.bio,okestream168.xyz,okestream99.xyz##.bottom-player-banner
@@ -424,7 +423,7 @@ okestream.bio,okestream168.xyz,okestream99.xyz##.stickyfooter
 ! Annoyance
 okestream.bio,okestream168.xyz,okestream99.xyz###popbox
 okestream.bio,okestream168.xyz,okestream99.xyz##+js(rc, flowbox, body)
-!# ---
+!# -----------------------------------------------------------------------------
 !# Stream.BGiBola@Gmail.com
 !# https://s.id/bgibola
 !# https://github.com/AdguardTeam/AdguardFilters/issues/161086
@@ -435,14 +434,14 @@ bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,b
 bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,bgibola77.*,bgibola8.*,bgibola88.*,bgibola99.*##.inline-banner
 bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,bgibola77.*,bgibola8.*,bgibola88.*,bgibola99.*##.sidebar-content
 bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,bgibola77.*,bgibola8.*,bgibola88.*,bgibola99.*##.top-player-banner
-!# ------
+!# -----------------------------------------------------------------------------
 !# Stream.nobartv@Gmail.com
 !# TVBersama.stream@Gmail.com
 !# ---
 nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc##.inline-banner
-!# ---
+!# -----------------------------------------------------------------------------
 !# apabeda.com
 !# - https://github.com/realodix/AdBlockID/issues/1536
 !# - https://apabeda.com/perbedaan-lenovo-ideapad-slim-1-dan-3/
