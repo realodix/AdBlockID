@@ -20,13 +20,15 @@ cermati.com##:matches-path(/artikel) a[href^="http://promo.cermati.com/"]:has(> 
 !# -----------------------------------------------------------------------------
 !# IDN Media
 !# ---
-idntimes.com###IDN_MegaBillboard
-idntimes.com###IDN_MegaBillboard2
-idntimes.com###IDN_MegaBillboard3
-idntimes.com###IDN_MegaBillboard4
-idntimes.com###IDN_MegaBillboard5
-idntimes.com###IDN_PS_MegaBillboard
+idntimes.com,yummy.co.id###IDN_PS_MegaBillboard
+yummy.co.id###js-banner-sticky
+yummy.co.id##.boxBanner
 popbela.com##[class^="ads_"]
+##[id^="IDN_MegaBillboard"]
+idntimes.com,yummy.co.id##[id^="IDN_MegaBillboard"]
+yummy.co.id##[id^="idnads_header_"]
+yummy.co.id##div:has(> button:has-text(/tutup/i)):has-text(/SCROLL UNTUK MELANJUTKAN MEMBACA/i)
+yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 ! Annoyance
 idntimes.com##+js(aeld, /copy|keydown/)
 ! Whitelist
