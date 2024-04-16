@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.49
+! Version: 24.4.50
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Apr 2024 13:23 UTC
+! Last modified: 16 Apr 2024 13:28 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2726,25 +2726,6 @@ ads.id##aside .sidebar a[target="_blank"]:has(> img)
 ads.id##img[alt*="iklan" i]
 ads.id##img[alt="admaven"]
 @@://ads.$domain=ads.id
-cermati.com##:matches-path(/artikel) .ads-container
-cermati.com##:matches-path(/artikel) .sticky-banner-wrapper
-cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
-cermati.com##:matches-path(/artikel) a[href^="http://promo.cermati.com/"]:has(> picture)
--banner-$image,domain=popmama.com
-idntimes.com,yummy.co.id###IDN_PS_MegaBillboard
-yummy.co.id###js-banner-sticky
-popmama.com##.ads
-yummy.co.id##.boxBanner
-popmama.com##.parallax-ad
-popbela.com##[class^="ads_"]
-idntimes.com,popmama.com,yummy.co.id##[id^="IDN_MegaBillboard"]
-yummy.co.id##[id^="idnads_header_"]
-yummy.co.id##div:has(> button:has-text(/tutup/i)):has-text(/SCROLL UNTUK MELANJUTKAN MEMBACA/i)
-yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
-popmama.com###mainBannerPopup
-popmama.com##body:style(overflow: auto!important; position: unset!important;)
-idntimes.com##+js(aeld, /copy|keydown/)
-@@://ads.$domain=ads.idntimes.com
 suara.com###div-ad-mobile_bacajuga
 suara.com###div-ad-pariwara_satu
 suara.com###pariwara_dua
@@ -2764,6 +2745,25 @@ suara.com##.placeholder_r3
 suara.com##.placeholder_read_body
 suara.com##.skin:has(> [data-ad-type])
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com,mobimoto.com,suara.com##[class^="placeholder_"]:has([id^="div-ad-"])
+cermati.com##:matches-path(/artikel) .ads-container
+cermati.com##:matches-path(/artikel) .sticky-banner-wrapper
+cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
+cermati.com##:matches-path(/artikel) a[href^="http://promo.cermati.com/"]:has(> picture)
+-banner-$image,domain=popmama.com
+idntimes.com,yummy.co.id###IDN_PS_MegaBillboard
+yummy.co.id###js-banner-sticky
+popmama.com##.ads
+yummy.co.id##.boxBanner
+popmama.com##.parallax-ad
+popbela.com##[class^="ads_"]
+idntimes.com,popmama.com,yummy.co.id##[id^="IDN_MegaBillboard"]
+yummy.co.id##[id^="idnads_header_"]
+yummy.co.id##div:has(> button:has-text(/tutup/i)):has-text(/SCROLL UNTUK MELANJUTKAN MEMBACA/i)
+yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
+popmama.com###mainBannerPopup
+popmama.com##body:style(overflow: auto!important; position: unset!important;)
+idntimes.com##+js(aeld, /copy|keydown/)
+@@://ads.$domain=ads.idntimes.com
 ||adsimg.kompas.com^
 ||kompasiana.com^*/banner-
 motorplus-online.com###ad-below-photo-container
