@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.53
+! Version: 24.4.54
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Apr 2024 18:49 UTC
+! Last modified: 18 Apr 2024 05:11 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3074,6 +3074,12 @@ bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,b
 nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc##.inline-banner
+||/img/da/*.gif$image,domain=rbtv77.com|rbtv77.makeup
+rbtv77.com,rbtv77.makeup##div:has(> div:has-text(AD) + img[src^="/img/da/"])
+rbtv77.com,rbtv77.makeup##html:style(scrollbar-width: auto!important;)
+||/img/da/*.gif$image,domain=ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has-text(AD) + img[src^="/img/da/"])
+ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##html:style(scrollbar-width: auto!important;)
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
 bogordaily.net,mojok.co##.code-block > .voucher_at
