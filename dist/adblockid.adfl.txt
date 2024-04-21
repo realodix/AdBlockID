@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.58
+! Version: 24.4.59
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 Apr 2024 11:02 UTC
+! Last modified: 21 Apr 2024 20:37 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1318,11 +1318,11 @@ passatworld.ru#@##ad_global_below_navbar
 /\/assets\/jquery\/jquery-\d\.\d\.(?:\d\.)?min\.js\?(?:v=2)?&?type=(?:adult|mainstream)$/$1p,script
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$3p,match-case,script,xhr
 /\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$script
-/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$3p,script
+/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$3p,script,to=com
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,5}(?:\?[_v]=\d+)?$/$3p,match-case,script,redirect=noop.js
-/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$3p,frame,match-case,popup,xhr
-/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$/$3p,frame,match-case,popup,xhr
-/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$3p,script,xhr,redirect=noop.js
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,5}\??(?:_=\d+|v=\d)?$/$3p,frame,match-case,popup,xhr,to=com
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,5}\??(?:_=\d+|v=\d)?$/$3p,frame,match-case,popup,xhr
+/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-f]{2}\/){2,3}[0-9a-f]{32}\.js/$3p,script,xhr,redirect=noop.js,to=com
 /^https?:\/\/[0-9a-z]{13,14}\.cloudfront\.net\/\?[a-z]{3,5}=\d{6,7}$/$3p,script,xhr
 /^https?:\/\/[0-9a-f]{50,}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$3p,xhr
 /^https?:\/\/s3\.us-east-1\.amazonaws\.com\/[0-9a-f]{50,}\/[0-9a-f]{10}$/$3p,xhr
@@ -1340,11 +1340,12 @@ passatworld.ru#@##ad_global_below_navbar
 /^https?:\/\/[-a-z]{6,}\.info\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$3p,match-case,script,xhr,to=info
 /^https?:\/\/[-a-z]{6,}\.pro\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$3p,match-case,script,xhr,to=pro
 /^https?:\/\/[-a-z]{6,}\.xyz\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$3p,match-case,script,xhr,to=xyz
-/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}$/$3p,script
-/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}$/$3p,script
-/^https:\/\/[-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?/$3p,xhr
+/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}$/$3p,script
+/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}$/$3p,script
+/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?/$3p,xhr
 /^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$3p,script
 /^https?:\/\/[a-z]{8,15}\.[a-z]{2,3}\/5\/\d{6,7}(?:\?_=\d+)?$/$3p,script
+/^https?:\/\/[a-z]{8,15}\.[a-z]{3}\/5\/\d{7}\/\?/$3p,xhr
 /get/*?zoneid=$script
 /lv/esnk/*$3p,script
 /pfe/current/*$3p,script
@@ -3644,7 +3645,7 @@ nekopoi.care##.leftarea
 nekopoi.care##.mobileadsbottom
 nekopoi.care##.smartbanner
 erocafe.net##.td-a-rec
-139.180.129.47,146.190.186.4,178.128.114.78,194.61.28.84,206.189.88.35,212.90.120.57,31.187.74.197,45.136.198.240,45.77.172.252,96.126.111.189,agenbokep.vip,bandarsub.com,bokepindo.ink,bokepjilbab.cc,cctvbokep.bar,doodstream.top,erocafe.net,gocrot.org,hencop.site,indobokepin.com,javindo.eu.org,javsubindo.com,javsubindo.online,javxxi-a.site,kimcilonlyofc.site,konflix21.ink,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,omahbokep.org,omekin.tv,putri77.com,putri78.com,ruanglendir.xyz,rumahperjaka.site,sangetube.shop,sibokepjepang.com,skandalpedia.cyou,viral.skin,xbokepfb.mom,yabaisub.com##a[target*="blank"]:has(> img)
+139.180.129.47,146.190.186.4,178.128.114.78,194.61.28.84,206.189.88.35,212.90.120.57,31.187.74.197,45.136.198.240,45.77.172.252,96.126.111.189,agenbokep.vip,bandarsub.com,bokepindo.ink,bokepjilbab.cc,cctvbokep.bar,doodstream.top,dosensesat.pw,erocafe.net,gocrot.org,hencop.site,indobokepin.com,javindo.eu.org,javsubindo.com,javsubindo.online,javxxi-a.site,kimcilonlyofc.site,konflix21.ink,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,ngentub.cc,omahbokep.org,omekin.tv,putri77.com,putri78.com,ruanglendir.xyz,rumahperjaka.site,sangetube.shop,sibokepjepang.com,skandalpedia.cyou,viral.skin,xbokepfb.mom,yabaisub.com##a[target*="blank"]:has(> img)
 146.190.186.4,96.126.111.189##a[target="_blank"]:has(> video):remove()
 bokep360.xyz##a[title="banner" i]:has(> img)
 hencop.site,javsubindo.online,minioppai.org,nontonhentai.top,pemersatu.link,skandalpedia.cyou##body > div[id^="teaser"]
@@ -3666,12 +3667,13 @@ erocafe.net##body > div#td-outer-wrap + div[id][class]:has(.adblock_title)
 45.136.198.240###fadeinbox
 doooood.co###overlay
 iyottube.co###playerOverlay
+dosensesat.pw##.adde_modal-overlay
 rumahperjaka.site##.elementor-popup-modal
 agenbokep.vip,nontonjavid.xyz##.popbox
 gocrot.org##.popup-cr7
 kawai.vip,pusatporn18.com##+js(aeld, /^(?:load|click)$/, popMagic)
 skandalpedia.cyou##+js(aopr, window.pum_popups)
-139.180.129.47,178.128.114.78,194.61.28.84,206.189.88.35,212.90.120.57,31.187.74.197,96.126.111.189,bandarsub.com,bokepindo.ink,doodstream.top,doooood.co,erocafe.net,gocrot.org,hencop.site,indobokepin.com,javindo.eu.org,javsubindo.com,javxxi-a.site,kimcilonlyofc.site,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,sangetube.shop,sibokepjepang.com,skandalpedia.cyou,viral.skin,xbokepfb.mom,yabaisub.com##+js(nowoif)
+139.180.129.47,178.128.114.78,194.61.28.84,206.189.88.35,212.90.120.57,31.187.74.197,96.126.111.189,bandarsub.com,bokepindo.ink,doodstream.top,doooood.co,erocafe.net,gocrot.org,hencop.site,indobokepin.com,javindo.eu.org,javsubindo.com,javxxi-a.site,kimcilonlyofc.site,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,ngentub.cc,sangetube.shop,sibokepjepang.com,skandalpedia.cyou,viral.skin,xbokepfb.mom,yabaisub.com##+js(nowoif)
 96.126.111.189##*:style(user-select:text!important;)
 96.126.111.189,ratihbugil.com##+js(aeld, contextmenu)
 crothot.com,indobokepxxi.vip##+js(aopr, document.oncontextmenu)
