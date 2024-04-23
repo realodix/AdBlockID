@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.61
+! Version: 24.4.62
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 23 Apr 2024 06:16 UTC
+! Last modified: 23 Apr 2024 16:16 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2189,6 +2189,7 @@ goinsan.com##.bottomBox
 borobudurnews.com##.bs-sksitem
 indonesiadaily.net##.code-block:has(> p > a > img)
 warta-pendidikan.com##.content-area .code-block > img
+koransn.com##.entry > div[style*="text-align:center;"]:has(> img)
 sergaplampung.com,sumateranews.co.id,warta-1.net,warta-pendidikan.com##.entry-content .code-block > img
 infosumbar.net##.entry-content .code-block:has(center > a > img)
 atlanticride.com,kuotareguler.com##.entry-content > .code-block
@@ -3587,12 +3588,13 @@ vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 lifesurance.info##+js(set, showada, true)
 jenismac.com##+js(aost, document.createElement, adsBlocked)
 @@-ads-banner.js$domain=lifesurance.info|teknoku.me
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=dapat.link
 @@||duniata.com^$ghide
 @@||mangalist.org^$ghide
-besargaji.com,cararegistrasi.com,lokerwfh.net,ponselharian.com,tutwuri.id##+js(nowoif)
+besargaji.com,cararegistrasi.com,dapat.link,lokerwfh.net,ponselharian.com,tutwuri.id##+js(nowoif)
 besargaji.com,lokerwfh.net,tutwuri.id##+js(adjust-setInterval)
 tempatwisata.pro##+js(aeld, blur, counter)
-rancah.com,saungfirmware.id,semruwet.com##+js(set, blurred, false)
+dapat.link,rancah.com,saungfirmware.id,semruwet.com##+js(set, blurred, false)
 slurr.my.id###content #wpsafegenerate div:has(a > img):not(#wpsafe-link)
 slurr.my.id###content .wpsafe-top div:has(> a > img):not(#wpsafe-generate)
 jenismac.com##.content .advertisement > #hello:has(> a[target="_blank"])
@@ -3639,6 +3641,7 @@ gocrot.org###gocrot_i_b_4
 doooood.co##.ad-container
 indojavstream.com##.box_item_ads_popup
 178.128.114.78##.close_insGP
+asupan.me##.code-block
 gocrot.org##.gocrot_i_b_2
 omahbokep.org##.happy-header
 javsubid.com,javsubindo.sx,nontonhentai.top,skandalpedia.cyou,starjepang.com##.kln
@@ -3656,6 +3659,7 @@ nekopoi.care##img[alt*="iklan"]
 kpopdeepfakes.*#@##banner_ad
 pasarbokep.com##+js(aopr, adsBlocked)
 pasarbokep.com,sangetods.net##+js(no-fetch-if, pagead2.googlesyndication.com)
+asupan.me##[style*="cursor:"][style*="user-select: none;"][style*="z-index:"]
 minioppai.org##+js(acis, chp_ads_blocker_detector)
 igobokep.cam,kawai.vip##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
 javindo.eu.org##+js(aost, document.getElementsByTagName, adsBlocked)
