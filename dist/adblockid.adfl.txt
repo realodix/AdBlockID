@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.4.68
+! Version: 24.4.69
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Apr 2024 01:12 UTC
+! Last modified: 26 Apr 2024 18:58 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2757,9 +2757,14 @@ cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
 cermati.com##:matches-path(/artikel) a[href^="http://promo.cermati.com/"]:has(> picture)
 -banner-$image,domain=popmama.com
 idntimes.com,yummy.co.id###IDN_PS_MegaBillboard
+idntimes.com###idnads_header_IA
+idntimes.com###idnads_header_IA2
 yummy.co.id###js-banner-sticky
 popmama.com##.ads
-yummy.co.id##.boxBanner
+idntimes.com##.article__content #IDN_InArticle1
+idntimes.com##.article__content #IDN_InArticle2
+idntimes.com##.article__content > #IDN_InArticle3
+idntimes.com,yummy.co.id##.boxBanner
 popmama.com##.parallax-ad
 popbela.com##[class^="ads_"]
 idntimes.com,popmama.com,yummy.co.id##[id^="IDN_MegaBillboard"]
@@ -2877,6 +2882,7 @@ detik.com##.new_banner_reg_100
 detik.com##.skybanner
 cnbcindonesia.com,cnnindonesia.com,haibunda.com,insertlive.com##.smartbanner_new
 cnnindonesia.com##[class*="_banner_"]
+cnnindonesia.com##[data-target="block/banner"]
 haibunda.com##div:has(> .static_banner1)
 cnnindonesia.com##div:has(> [id^="adv-"])
 haibunda.com##.m-r1:has(#adv-caption-mr1)
