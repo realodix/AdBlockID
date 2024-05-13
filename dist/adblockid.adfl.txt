@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.7
+! Version: 24.5.8
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 May 2024 07:00 UTC
+! Last modified: 13 May 2024 16:10 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3096,9 +3096,13 @@ nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc##.inline-banner
 /img/*.gif$image,domain=rbtv77.com|rbtv77.makeup
 /imgg/*.gif$image,domain=rbtv77.com|rbtv77.makeup
+/mgg/*.gif$image,domain=rbtv77.com|rbtv77.makeup
+rbtv77.com,rbtv77.makeup##div[class*="-reseller"] > img[src$=".gif"]
 rbtv77.com,rbtv77.makeup##html:style(scrollbar-width: auto!important;)
 /img/*.gif$image,domain=ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
 /imgg/*.gif$image,domain=ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+/mgg/*.gif$image,domain=ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div[class*="-reseller"] > img[src$=".gif"]
 ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##html:style(scrollbar-width: auto!important;)
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
@@ -4424,6 +4428,7 @@ _topbandar_$image
 ##[href="https://magic.ly/lagunatoto"]
 ##[href="https://maingbo.com/floatbawahbgibola-gbo5000"]
 ##[href="https://my3777.app/dewansiar"]
+##[href="https://nawalaanti.lol/seo3277"]
 ##[href="https://ngelink.me/ADS-BGI"]
 ##[href="https://ngelink.me/ADS-OKE"]
 ##[href="https://ngelink.me/Reff-AYOPOKER"]
@@ -5004,6 +5009,10 @@ _topbandar_$image
 ##[href^="https://rebrand.ly/Rutinqq"]
 ##[href^="https://rebrand.ly/Sport168_"]
 ##[href^="https://rebrand.ly/Sport388_"]
+##[href^="https://t.ly/kota188-"]
+##[href^="https://t.ly/menara188-"]
+##[href^="https://t.ly/saldo188-"]
+##[href^="https://t.ly/saldobet-"]
 ##[href^="https://yukclick.me/bioskopkeren"]
 ##[href^="https://yukclick.me/dramaserial"]
 ##[href^="https://yukclick.me/dunia21"]
