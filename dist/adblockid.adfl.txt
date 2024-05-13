@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.5
+! Version: 24.5.6
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 May 2024 14:48 UTC
+! Last modified: 13 May 2024 05:54 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3094,9 +3094,11 @@ bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,b
 nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc##.inline-banner
-||/img/*.gif$image,domain=rbtv77.com|rbtv77.makeup
+/img/*.gif$image,domain=rbtv77.com|rbtv77.makeup
+/imgg/*.gif$image,domain=rbtv77.com|rbtv77.makeup
 rbtv77.com,rbtv77.makeup##html:style(scrollbar-width: auto!important;)
-||/img/*.gif$image,domain=ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+/img/*.gif$image,domain=ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+/imgg/*.gif$image,domain=ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
 ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##html:style(scrollbar-width: auto!important;)
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
@@ -3345,7 +3347,7 @@ _usafelink.$3p,script
 /VoreCorporation/Customer-Host/*$3p,script
 /wp-content/plugins/tianglistrik/*$script
 /xmithzyl/safelink/*$3p,script
-.gif|$image,domain=bioskopgratis21.ink|bioskopvirtual.com|indoxxone.com|inonton.com|manganime.live
+.gif|$image,domain=bioskopgratis21.ink|bioskopvirtual.com|indoxxone.com|inonton.com|manganime.live|oppadrama.art
 ||77.238.245.181/wp-content/uploads/banner/$image
 ||bebasdownloadfilm.com/iframe/content.php$frame
 ||filmapikofficial.com/banner/$image
@@ -3391,7 +3393,7 @@ kuramanime.cam##.floating__footer
 bioskopvirtual.com##.footer1
 hanik.my.id,v62xxi.org##.idmuvi-afterplayer
 v62xxi.org##.idmuvi-topplayer
-akashinime.wiki,anichin.red,anichin.site,anoboy.ch,anoboy.su,isekaisubs.web.id,kazesub.com,melongmovie.site,samehada.care,sokuja.my.id##.kln
+akashinime.wiki,anichin.red,anichin.site,anoboy.ch,anoboy.su,isekaisubs.web.id,kazesub.com,melongmovie.site,oppadrama.art,samehada.care,sokuja.my.id##.kln
 beedrive.link##.popUpBannerBox
 91.229.239.185,drivenime.com##.stickywrap
 hanik.my.id##.yazads
@@ -3515,9 +3517,9 @@ oploverz.*###overplay
 oploverz.*##+js(abort-current-script, Promise, delete window)
 oploverz.*##+js(aopr, SGPB_POPUP_PARAMS)
 oploverz.*##+js(nowoif)
-185.217.95.46,80.209.252.122,oppadrama.cc,oppadrama.site##.kln
-185.217.95.46,80.209.252.122,oppadrama.cc,oppadrama.site##a[target*="blank"]:has(> img)
-185.217.95.46,80.209.252.122,oppadrama.cc,oppadrama.site##+js(aopr, popup_custom_data)
+185.217.95.46,80.209.252.122,80.209.252.129,oppa.biz,oppadrama.biz,oppadrama.cc,oppadrama.site##.kln
+185.217.95.46,80.209.252.122,80.209.252.129,oppa.biz,oppadrama.biz,oppadrama.cc,oppadrama.site##a[target*="blank"]:has(> img)
+185.217.95.46,80.209.252.122,80.209.252.129,oppa.biz,oppadrama.biz,oppadrama.cc,oppadrama.site##+js(aopr, popup_custom_data)
 .gif|$image,domain=pf21.net|pf21.vip|pusatfilm21.info
 pf21.net,pf21.vip,pusatfilm21.info##a > img[src$=".gif"]
 pf21.net,pf21.vip,pusatfilm21.info##a[target*="blank"]:has(> img)
