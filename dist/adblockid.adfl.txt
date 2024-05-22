@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.18
+! Version: 24.5.19
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 21 May 2024 19:36 UTC
+! Last modified: 22 May 2024 17:31 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3093,16 +3093,22 @@ bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,b
 nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc,tvbersama.cc##.inline-banner
-*.gif|$image,domain=rbtv77.com|rbtv77.makeup
-*.webp|$image,domain=rbtv77.com|rbtv77.makeup
-rbtv77.com,rbtv77.makeup##html:style(scrollbar-width: auto!important;)
-rbtv77.com,rbtv77.makeup##img[src$=".gif"]
-rbtv77.com,rbtv77.makeup##img[src$=".webp"]
+*.gif|$image,domain=rbtv77.com|rbtv77.makeup|rbtv77.pics
+*.webp|$image,domain=rbtv77.com|rbtv77.makeup|rbtv77.pics
+@@/icon_$image,domain=rbtv77.com|rbtv77.makeup|rbtv77.pics
+rbtv77.com,rbtv77.makeup,rbtv77.pics##html:style(scrollbar-width: auto!important;)
+rbtv77.com,rbtv77.makeup,rbtv77.pics##.van-overlay
+rbtv77.com,rbtv77.makeup,rbtv77.pics##.van-popup
+rbtv77.com,rbtv77.makeup,rbtv77.pics##body:style(overflow: auto!important;)
+rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> .van-overlay):style(position: unset!important;)
 *.gif|$image,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
 *.webp|$image,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+@@/icon_$image,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##html:style(scrollbar-width: auto!important;)
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img[src$=".gif"]
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img[src$=".webp"]
+determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##.van-overlay
+determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##.van-popup
+determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##body:style(overflow: auto!important;)
+determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> .van-overlay):style(position: unset!important;)
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
 bogordaily.net,mojok.co##.code-block > .voucher_at
