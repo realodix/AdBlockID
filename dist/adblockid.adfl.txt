@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.28
+! Version: 24.5.29
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 23 May 2024 15:18 UTC
+! Last modified: 24 May 2024 04:20 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1890,6 +1890,8 @@ kutipan.co##.ad-wrap
 beritapagi.co.id,garudadaily.com##.adcontainer
 otodriver.com##.add
 bangsaonline.com##.add-banner
+radioonline.co.id##.add-box-side
+radioonline.co.id##.add-box-top
 dialeksis.com##.add-space
 nesabamedia.com##.adfullwrap
 fajar.co.id##.adp_interactive_ad
@@ -2139,6 +2141,7 @@ seide.id##[id^="awaken_pro_leaderboard_ad-"]
 poskota.co.id##[id^="get_ads_"]
 topcareer.id##[id^="newsmax_ruby_sidebar_widget_advertising-"]
 beritabersatu.com##[id^="penci_list_bannner_"]
+tinjau.id##[title="TinjauAds"]
 gosulsel.com##[title^="go-ads-"]
 lampungpro.co##a[aria-label^="banner" i]:has(> img)
 alkitabonline.org##a[data-ref="AD"]:remove()
@@ -2359,7 +2362,8 @@ indoberita.id,selasarnews.com,wartaswara.com##img[width="905"][height="1280"]
 jatengtoday.com##img[width="964"][height="295"]
 wartaniaga.com##img[width="970"][height="120"]
 mediasulsel.com##img[width="970"][height="249"]
-aboutsemarang.id,indoposco.id##img[width="970"][height="90"]
+timur-online.com##img[width="970"][height="250"]
+aboutsemarang.id,indoposco.id,timur-online.com##img[width="970"][height="90"]
 wartaniaga.com##img[width="972"][height="120"]
 vidio.com###leaderboard_container:has(> .ad-slot)
 jawaraspeed.com###openModal:has-text(/ads/i)
@@ -3094,14 +3098,18 @@ nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc,tvbersama.cc##.inline-banner
 *.gif|$image,redirect=1x1.gif,domain=rbtv77.com|rbtv77.makeup|rbtv77.pics
+/webp/icon_*.jpg|$image,domain=rbtv77.com|rbtv77.makeup|rbtv77.pics
 rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> div:has(> img[src$=".png"]) + img[src$=".gif"])
+rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> div:has(> img[src$=".png"]) + img[src$=".jpg"])
 rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> div:has(> img[src$=".png"]) + img[src$=".webp"])
 rbtv77.com,rbtv77.makeup,rbtv77.pics##div:matches-css(max-width: 750px):matches-css(max-height: 90px)
 rbtv77.com,rbtv77.makeup,rbtv77.pics##*:style(scrollbar-width: auto!important;)
 rbtv77.com,rbtv77.makeup,rbtv77.pics##body:style(overflow: auto!important;)
 rbtv77.com,rbtv77.makeup,rbtv77.pics##html:style(overflow: auto!important;)
 *.gif|$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+/webp/icon_*.jpg|$image,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has(> img[src$=".png"]) + img[src$=".gif"])
+determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has(> img[src$=".png"]) + img[src$=".jpg"])
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has(> img[src$=".png"]) + img[src$=".webp"])
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(max-width: 750px):matches-css(max-height: 90px)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##*:style(scrollbar-width: auto!important;)
