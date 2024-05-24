@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.34
+! Version: 24.5.35
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 May 2024 16:00 UTC
+! Last modified: 24 May 2024 17:24 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3098,24 +3098,14 @@ nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc,tvbersama.cc##.inline-banner
 /\/icon_(.+)(L|P)[0-9]{1}\./$image,redirect=1x1.gif,domain=rbtv77.com|rbtv77.makeup|rbtv77.pics
-rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> div:has(> img[src$=".jpeg"]) + img[src$=".jpg"])
-rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> div:has(> img[src$=".png"]) + img[src$=".gif"])
-rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> div:has(> img[src$=".png"]) + img[src$=".jpg"])
-rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> div:has(> img[src$=".png"]) + img[src$=".webp"])
-rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> div:has(> img[src$=".svg"]) + img[src$=".svg"])
-rbtv77.com,rbtv77.makeup,rbtv77.pics##div:has(> div:has(> img[src$=".webp"]) + img[src$=".webp"])
-rbtv77.com,rbtv77.makeup,rbtv77.pics##div:matches-css(max-width: 750px):matches-css(max-height: 90px)
-rbtv77.com,rbtv77.makeup,rbtv77.pics##img:matches-css(object-fit: cover):style(width: auto!important;)
-rbtv77.com,rbtv77.makeup,rbtv77.pics##*:style(scrollbar-width: auto!important;)
-rbtv77.com,rbtv77.makeup,rbtv77.pics##body:style(overflow: auto!important;)
-rbtv77.com,rbtv77.makeup,rbtv77.pics##html:style(overflow: auto!important;)
+rbtv77.com,rbtv77.makeup,rbtv77.pics,rbtv77.sbs##div:matches-css(max-width: 750px):has(> div:matches-css(position: absolute):has(> img) + img)
+rbtv77.com,rbtv77.makeup,rbtv77.pics,rbtv77.sbs##div:matches-css(max-width: 750px):matches-css(max-height: 90px)
+rbtv77.com,rbtv77.makeup,rbtv77.pics,rbtv77.sbs##img:matches-css(object-fit: cover):style(width: auto!important;)
+rbtv77.com,rbtv77.makeup,rbtv77.pics,rbtv77.sbs##*:style(scrollbar-width: auto!important;)
+rbtv77.com,rbtv77.makeup,rbtv77.pics,rbtv77.sbs##body:style(overflow: auto!important;)
+rbtv77.com,rbtv77.makeup,rbtv77.pics,rbtv77.sbs##html:style(overflow: auto!important;)
 /\/icon_(.+)(L|P)[0-9]{1}\./$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has(> img[src$=".jpeg"]) + img[src$=".jpg"])
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has(> img[src$=".png"]) + img[src$=".gif"])
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has(> img[src$=".png"]) + img[src$=".jpg"])
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has(> img[src$=".png"]) + img[src$=".webp"])
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has(> img[src$=".svg"]) + img[src$=".svg"])
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:has(> div:has(> img[src$=".webp"]) + img[src$=".webp"])
+determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(max-width: 750px):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(max-width: 750px):matches-css(max-height: 90px)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img:matches-css(object-fit: cover):style(width: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##*:style(scrollbar-width: auto!important;)
@@ -3493,6 +3483,8 @@ kusonime.com##+js(aopr, document.oncontextmenu)
 nekopoi.web.id##+js(aopr, document.oncopy)
 ||d21.media/img/*.gif$image
 ||d21.media/vid/$mp4
+||lk21static.buzz/assets/$mp4
+||lk21static.buzz/assets/*.gif$image
 ||lk21static.xyz/assets/$mp4
 ||lk21static.xyz/assets/*.gif$image
 84.247.151.57###player-below-b
@@ -3502,7 +3494,9 @@ layarkaca21.*###player-below-b
 layarkaca21.*###player-lux
 lk21official.*###player > a[id][target="_blank"]
 lk21official.*###player-lux
+||lk21static.buzz/iframe/content2.php$frame
 ||lk21static.xyz/iframe/content2.php$frame
+||tolonglah.pages.dev$frame
 84.247.151.57##:matches-path(/links/?url=) body > .container-iframe
 198.54.124.245,cgvindo.link,cgvindo.pics##a[target*="blank"]:has(> img)
 198.54.124.245,cgvindo.link,cgvindo.pics##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
