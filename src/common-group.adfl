@@ -479,10 +479,11 @@ nobartv.cc,tvbersama.cc##.inline-banner
 !# https://github.com/AdguardTeam/AdguardFilters/issues/165420
 !# https://github.com/AdguardTeam/AdguardFilters/issues/171649
 !# ---
-!/\/ico_(.+)(L|P)[0-9]{1}\./$image,redirect=1x1.gif,domain=rbtv77.*
-/webp/*$image,redirect=1x1.gif,domain=rbtv77.*
+/\/[a-z]{1,3}\/[a-z]{1,4}\/.+\.[a-z]{3}/$image,redirect=1x1.gif,domain=rbtv77.*
 @@/icon_$image,domain=rbtv77.*
 !
+rbtv77.*##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
+rbtv77.*##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 rbtv77.*##img:style(width: auto!important;)
 ! Annoyance
 rbtv77.*##*:style(scrollbar-width: auto!important;)
@@ -491,9 +492,11 @@ rbtv77.*##html:style(overflow: auto!important;)
 ! ---
 ! Superabbit77 - https://sites.google.com/view/superabbit77
 !/\/icon_(.+)(L|P)[0-9]{1}\./$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
-/webp/*$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+/\/[a-z]{1,3}\/[a-z]{1,4}\/.+\.[a-z]{3}/$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
 @@/icon_$image,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
 !
+determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
+determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img:style(width: auto!important;)
 ! Annoyance
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##*:style(scrollbar-width: auto!important;)
