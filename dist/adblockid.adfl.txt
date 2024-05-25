@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.43
+! Version: 24.5.44
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 May 2024 17:44 UTC
+! Last modified: 25 May 2024 18:07 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3096,7 +3096,9 @@ bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,b
 nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc,tvbersama.cc##.inline-banner
+!#if ext_ublock
 /\/[lp0-9]+\.[a-z]/$image,redirect=1x1.gif,domain=rbtv77.*
+!#endif
 rbtv77.*##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
 rbtv77.*##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 rbtv77.*##img:style(width: auto!important;)
@@ -3106,7 +3108,9 @@ rbtv77.*##html:style(overflow: auto!important;)
 rbtv77.*##div:matches-css(position: absolute):has(> div:matches-css(position: relative))
 rbtv77.*##div:matches-css(position: relative):has(> p:has-text(/ads/i))
 rbtv77.*##span:has-text(/tolong dukung/i)
+!#if ext_ublock
 /\/[lp0-9]+\.[a-z]/$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+!#endif
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img:style(width: auto!important;)
@@ -3420,7 +3424,7 @@ manganime.live##[id*="ads"]
 anichin.red##[id^="fload-"]
 anichin.site,dfwbestroofing.com,miyanime.site,npcnc.org,sinemaxxi.best,wibudesu.co##a:has(> img[src$=".gif"])
 anoboy.baby##a[target*="blank"]:has(> amp-img)
-107.152.32.195,109.199.104.151,111.90.141.115,128.199.86.226,130.51.20.184,152.42.213.55,181.214.58.24,185.209.15.252,193.142.146.103,194.233.77.161,194.233.90.34,195.26.255.238,37.221.67.131,38.180.0.143,38.242.231.58,5.253.86.213,77.238.245.181,89.117.151.110,akashinime.wiki,animebatch.id,animekompi.cam,animeku.cam,anixverse.com,anoboy.baby,anoboy.ch,anoboy.su,bioskopkerenaja.com,bioskopvirtual.com,boscinema21.cfd,cinemagaul.com,cinemakeren6.id,clampschoolholic.web.id,dfwbestroofing.com,downloadbatch.me,drachindo.site,drama21.monster,dramaqu.pics,dramaserial.id,filmblurayku.mom,gudangmovies21.gives,hanik.my.id,idlixofficial.net,indoxxone.com,inonton.com,kazesub.com,kebioskop21.info,kitanonton.blog,kuramanime.boo,kusonime.com,layarkacafilm21.com,layarkeren.blog,lk21-id.com,lk21.acop.edu.in,lk21.eu.org,manganime.live,melongmovie.site,nimegami.id,nonton.tube,nonton168.ink,nontonfilm.top,nontonsbo.com,npcnc.org,otakudesu.cloud,rahyunime.com,rebahan21.com,rebahin.fit,rebahinxxi.info,rockfreeday.com,ruangmoviez.my.id,samehadaku.email,sarangfilm21.blog,sobatgo.site,tukangnonton.online,winchestergallery.com##a[target*="blank"]:has(> img)
+107.152.32.195,109.199.104.151,111.90.141.115,128.199.86.226,130.51.20.184,152.42.213.55,181.214.58.24,185.209.15.252,193.142.146.103,194.233.77.161,194.233.90.34,195.26.255.238,37.221.67.131,38.180.0.143,38.242.231.58,5.253.86.213,77.238.245.181,89.117.151.110,akashinime.wiki,animebatch.id,animekompi.cam,animeku.cam,anixverse.com,anoboy.baby,anoboy.ch,anoboy.su,bioskopkerenaja.com,bioskopvirtual.com,boscinema21.cfd,cinemagaul.com,cinemakeren6.id,clampschoolholic.web.id,dfwbestroofing.com,downloadbatch.me,drachindo.site,drama21.monster,dramaqu.pics,dramaserial.id,filmblurayku.mom,gudangmovies21.gives,hanik.my.id,idlixofficial.net,indoxxone.com,inonton.com,kazesub.com,kebioskop21.info,kitanonton.blog,kuramanime.boo,kusonime.com,layarkacafilm21.com,layarkeren.blog,lk21-id.com,lk21.acop.edu.in,lk21.eu.org,manganime.live,melongmovie.site,nimegami.id,nonton.tube,nonton168.ink,nontonfilm.top,nontonsbo.com,npcnc.org,otakudesu.cloud,rahyunime.com,rebahan21.com,rebahin.fit,rebahinxxi.info,rockfreeday.com,samehadaku.email,sarangfilm21.blog,sobatgo.site,tukangnonton.online,winchestergallery.com##a[target*="blank"]:has(> img)
 niihen.com##amp-iframe[width="728"][height="90"]
 anoboy.baby##amp-img[width="900"][height="90"]
 anixverse.com,lendrive.web.id,melongmovie.site,sokuja.my.id##div[id^="teaser"]
@@ -3471,7 +3475,7 @@ sokuja.my.id##div:matches-css(position: fixed):has(> div > #countdown)
 /wp-content/plugins/wp-popup-banners/*$domain=0.0.realodix
 0.0.realodix###wpb_overlay
 /wp-content/plugins/itro-popup/*$domain=0.0.realodix
-kusonime.com,melongmovie.site,ruangmoviez.my.id##+js(aopr, app_url)
+kusonime.com,melongmovie.site##+js(aopr, app_url)
 lendrive.web.id##+js(aopr, encodeURIComponent)
 animebatch.id,nimegami.id##+js(aopr, go_url)
 alqanime.net##+js(aopr, ouo_token)
