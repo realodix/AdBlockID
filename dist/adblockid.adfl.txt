@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.37
+! Version: 24.5.38
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 May 2024 19:17 UTC
+! Last modified: 25 May 2024 05:12 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3097,17 +3097,15 @@ bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,b
 nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc,tvbersama.cc##.inline-banner
-/\/icon_(.+)(L|P)[0-9]{1}\./$image,redirect=1x1.gif,domain=rbtv77.*
-rbtv77.*##.iframe-wrapper > #iframe-id + div[class*=" "]:has(> img)
-rbtv77.*##div[class*=" "]:has(> div[class]:first-child + img[src]:last-child)
-rbtv77.*##img:matches-css(object-fit: cover):style(width: auto!important;)
+/webp/*$image,redirect=1x1.gif,domain=rbtv77.*
+@@/webp/icon_$image,domain=rbtv77.*
+rbtv77.*##img:style(width: auto!important;)
 rbtv77.*##*:style(scrollbar-width: auto!important;)
 rbtv77.*##body:style(overflow: auto!important;)
 rbtv77.*##html:style(overflow: auto!important;)
-/\/icon_(.+)(L|P)[0-9]{1}\./$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##.iframe-wrapper > #iframe-id + div[class*=" "]:has(> img)
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div[class*=" "]:has(> div[class]:first-child + img[src]:last-child)
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img:matches-css(object-fit: cover):style(width: auto!important;)
+/webp/*$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+@@/webp/icon_$image,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
+determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img:style(width: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##*:style(scrollbar-width: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##body:style(overflow: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##html:style(overflow: auto!important;)
