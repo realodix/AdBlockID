@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.45
+! Version: 24.5.46
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 May 2024 15:32 UTC
+! Last modified: 26 May 2024 15:46 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3555,6 +3555,10 @@ oploverz.*##+js(nowoif)
 .gif|$image,domain=164.215.103.147|pf21.net|pf21.vip|pusatfilm21.info
 164.215.103.147,pf21.net,pf21.vip,pusatfilm21.info##a > img[src$=".gif"]
 164.215.103.147,pf21.net,pf21.vip,pusatfilm21.info##a[target*="blank"]:has(> img)
+193.203.161.218,77.37.44.37,77.37.44.55,77.37.44.91,rebahin21.id,rebahintv.net###floating_banner_top
+193.203.161.218,77.37.44.37,77.37.44.55,77.37.44.91,rebahin21.id,rebahintv.net##a:has(> img[src$=".gif"])
+193.203.161.218,77.37.44.37,77.37.44.55,77.37.44.91,rebahin21.id,rebahintv.net##a[target*="blank"]:has(> img)
+193.203.161.218,77.37.44.37,77.37.44.55,77.37.44.91,rebahin21.id,rebahintv.net##+js(aopr, document.oncontextmenu)
 192.99.246.145,51.79.226.152,ayononton.app,bioskopkeren.movie,cinemaindo.dev,d21.bet,ditonton.dev,dunia21.ceo,filmapik.mov,ganool.app,gudangmovies21.info,movieon21.bet,movies21.ing,nontonfilm.link,terbit21.movie###float-banner
 192.99.246.145,51.79.226.152,ayononton.app,bioskopkeren.movie,cinemaindo.dev,d21.bet,ditonton.dev,dunia21.ceo,filmapik.mov,ganool.app,gudangmovies21.info,movieon21.bet,movies21.ing,nontonfilm.link,terbit21.movie###float-bottom-banner
 192.99.246.145,51.79.226.152,ayononton.app,bioskopkeren.movie,cinemaindo.dev,d21.bet,ditonton.dev,dunia21.ceo,filmapik.mov,ganool.app,gudangmovies21.info,movieon21.bet,movies21.ing,nontonfilm.link,terbit21.movie###top-banner
