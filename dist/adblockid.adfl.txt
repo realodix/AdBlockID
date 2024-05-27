@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.50
+! Version: 24.5.51
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 May 2024 08:49 UTC
+! Last modified: 27 May 2024 15:15 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3117,9 +3117,6 @@ bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,b
 nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc,tvbersama.cc##.inline-banner
-!#if ext_ublock
-/\/[lp0-9]+\.[a-z]/$image,redirect=1x1.gif,domain=rbtv77.*
-!#endif
 rbtv77.*##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
 rbtv77.*##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 rbtv77.*##img:style(width: auto!important;)
@@ -3129,18 +3126,12 @@ rbtv77.*##html:style(overflow: auto!important;)
 rbtv77.*##div:matches-css(position: absolute):has(> div:matches-css(position: relative))
 rbtv77.*##div:matches-css(position: relative):has(> p:has-text(/ads/i))
 rbtv77.*##span:has-text(/tolong dukung/i)
-!#if ext_ublock
-/\/[lp0-9]+\.[a-z]/$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
-!#endif
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img:style(width: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##*:style(scrollbar-width: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##body:style(overflow: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##html:style(overflow: auto!important;)
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: absolute):has(> div:matches-css(position: relative))
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: relative):has(> p:has-text(/ads/i))
-determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##span:has-text(/tolong dukung/i)
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
 bogordaily.net,mojok.co##.code-block > .voucher_at
