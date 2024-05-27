@@ -487,24 +487,32 @@ nobartv.cc,tvbersama.cc##.inline-banner
 !# ---
 ! /\/[lp0-9]+\.[a-z]/$image,redirect=1x1.gif,domain=rbtv77.*
 !
+!#if (ext_ublock)
 rbtv77.*##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
 rbtv77.*##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 rbtv77.*##img:style(width: auto!important;)
+!#endif
 ! Annoyance
+!#if (ext_ublock)
 rbtv77.*##*:style(scrollbar-width: auto!important;)
 rbtv77.*##body:style(overflow: auto!important;)
 rbtv77.*##html:style(overflow: auto!important;)
+!#endif
 ! ---
 ! Superabbit77 - https://sites.google.com/view/superabbit77
 ! /\/[lp0-9]+\.[a-z]/$image,redirect=1x1.gif,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
 !
+!#if (ext_ublock)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img:style(width: auto!important;)
+!#endif
 ! Annoyance
+!#if (ext_ublock)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##*:style(scrollbar-width: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##body:style(overflow: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##html:style(overflow: auto!important;)
+!#endif
 !# -----------------------------------------------------------------------------
 !# apabeda.com
 !# - https://github.com/realodix/AdBlockID/issues/1536
