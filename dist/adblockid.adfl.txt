@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.59
+! Version: 24.5.60
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 May 2024 19:38 UTC
+! Last modified: 29 May 2024 17:05 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -50,6 +50,7 @@
 /banner_iklan2.
 /banner_iklan_
 /banneriklan/*
+/bannerindoxxi/*
 /bannerkep-$image
 /bb17-iklan.
 /blank_spnsr.
@@ -173,6 +174,7 @@ _iklantengah_
 _pasangiklan/
 _promosi.
 _TimAds_$image
+-1080x90-$image
 .1080.x.90.
 ~suara.com##.wrap-ads-leaderboard
 ~smartfren.com##[href^="https://www.smartfren.com/connect-with-us/whats-new/promotion/"] > img
@@ -3439,6 +3441,7 @@ nonton.tube###float-banner
 akashinime.wiki,anixverse.com,hepinime.id,isekaisubs.web.id###floatcenter
 107.152.32.195,drakorid.cyou###floating-banner
 dfwbestroofing.com,npcnc.org,tipsyturtlegalveston.com###floating_banner_bot2
+159.89.210.144###floating_banner_bottom1
 inonton.com###floating_banner_top
 kebioskop21.info###top-banner
 manganime.live##.asd
@@ -3464,7 +3467,7 @@ manganime.live##[id*="ads"]
 anichin.red##[id^="fload-"]
 anichin.site,dfwbestroofing.com,miyanime.site,npcnc.org,sinemaxxi.best,wibudesu.co##a:has(> img[src$=".gif"])
 anoboy.baby##a[target*="blank"]:has(> amp-img)
-107.152.32.195,109.199.104.151,111.90.141.115,128.199.86.226,130.51.20.184,152.42.213.55,167.86.118.161,181.214.58.24,185.209.15.252,193.142.146.103,194.233.77.161,194.233.90.34,195.26.255.238,37.221.67.131,38.180.0.143,38.242.231.58,5.253.86.213,77.238.245.181,89.117.151.110,akashinime.wiki,animebatch.id,animekompi.cam,animeku.cam,anixverse.com,anoboy.baby,anoboy.ch,anoboy.su,bioskopkerenaja.com,bioskopvirtual.com,boscinema21.online,cinemagaul.com,cinemakeren6.id,clampschoolholic.web.id,dfwbestroofing.com,downloadbatch.me,drachindo.site,drama21.monster,dramaqu.pics,dramaserial.id,filmblurayku.mom,gudangmovies21.gives,hanik.my.id,idlixofficial.net,indoxxone.com,inonton.com,kazesub.com,kebioskop21.info,kitanonton.blog,kuramanime.boo,kusonime.com,layarkacafilm21.com,layarkeren.blog,lk21-id.com,lk21.acop.edu.in,lk21.eu.org,manganime.live,melongmovie.site,nimegami.id,nonton.tube,nonton168.ink,nontonfilm.top,nontonsbo.com,npcnc.org,otakudesu.cloud,rahyunime.com,rebahan21.com,rebahin.fit,rebahinxxi.info,rockfreeday.com,samehadaku.email,sarangfilm21.blog,sobatgo.site,tipsyturtlegalveston.com,tukangnonton.online##a[target*="blank"]:has(> img)
+107.152.32.195,109.123.239.86,109.199.104.151,111.90.141.115,128.199.86.226,130.51.20.184,152.42.213.55,154.26.129.195,159.89.210.144,167.86.118.161,181.214.58.24,185.209.15.252,193.142.146.103,194.233.77.161,194.233.90.34,195.26.255.238,37.221.67.131,38.180.0.143,38.242.231.58,5.253.86.213,77.238.245.181,77.238.247.78,89.117.151.110,akashinime.wiki,animebatch.id,animekompi.cam,animeku.cam,anixverse.com,anoboy.baby,anoboy.ch,anoboy.su,bioskopkerenaja.com,bioskopvirtual.com,boscinema21.online,cinemagaul.com,cinemakeren6.id,clampschoolholic.web.id,dfwbestroofing.com,downloadbatch.me,drachindo.site,drama21.monster,dramaqu.pics,dramaserial.id,filmblurayku.mom,gudangmovies21.gives,hanik.my.id,idlixofficial.net,indoxxi-film.ca,indoxxone.com,inonton.com,kazesub.com,kebioskop21.info,kitanonton.blog,kuramanime.boo,kusonime.com,layarkacafilm21.com,layarkeren.blog,lk21-id.com,lk21.acop.edu.in,lk21.eu.org,manganime.live,melongmovie.site,nimegami.id,nonton.tube,nonton168.ink,nontonfilm.top,nontonsbo.com,npcnc.org,otakudesu.cloud,rahyunime.com,rebahan21.com,rebahin.fit,rebahinxxi.info,rockfreeday.com,samehadaku.email,sarangfilm21.blog,sobatgo.site,tipsyturtlegalveston.com,tukangnonton.online##a[target*="blank"]:has(> img)
 niihen.com##amp-iframe[width="728"][height="90"]
 anoboy.baby##amp-img[width="900"][height="90"]
 anixverse.com,lendrive.web.id,melongmovie.site,sokuja.my.id##div[id^="teaser"]
@@ -3559,6 +3562,7 @@ doroni.me,doronime.id##a[target*="blank"]:has(> img)
 doroni.me,doronime.id##+js(set, showAds, true)
 doroni.me,doronime.id##.Popup
 ||juragan.film/asset/*.mp4$mp4
+juragan.film###banner
 juragan.film##+js(aopr, $.magnificPopup.open)
 juragan.film##.idmuvi-afterplayer
 juragan.film##.idmuvi-topplayer
@@ -3607,9 +3611,9 @@ anikor.mom,anikor.my.id,anikor.pics##.kln
 anikor.mom,anikor.my.id,anikor.pics##a[target*="blank"]:has(> img)
 anikor.mom,anikor.my.id,anikor.pics##div[id^="teaser"]
 anikor.mom,anikor.my.id,anikor.pics##+js(aopr, app_url)
-109.123.251.95,109.199.101.38,109.199.125.163,109.199.126.237,128.199.147.197,161.97.112.113,161.97.69.162,173.212.204.20,185.229.119.216,185.99.135.245,207.180.221.178,31.220.73.179,31.220.79.98,37.60.243.31,38.242.157.146,38.242.219.42,45.84.138.167,5.189.133.18,5.189.140.112,5.189.173.193,75.119.139.93,77.238.252.91,lk21semi.click##a[target*="blank"]:has(> img)
-109.123.251.95,109.199.101.38,109.199.125.163,109.199.126.237,128.199.147.197,161.97.112.113,161.97.69.162,173.212.204.20,185.229.119.216,185.99.135.245,207.180.221.178,31.220.73.179,31.220.79.98,37.60.243.31,38.242.157.146,38.242.219.42,45.84.138.167,5.189.133.18,5.189.140.112,5.189.173.193,75.119.139.93,77.238.252.91,lk21semi.click##+js(aopr, popup_custom_data)
-109.123.251.95,109.199.101.38,109.199.125.163,109.199.126.237,128.199.147.197,161.97.112.113,161.97.69.162,173.212.204.20,185.229.119.216,185.99.135.245,207.180.221.178,31.220.73.179,31.220.79.98,37.60.243.31,38.242.157.146,38.242.219.42,45.84.138.167,5.189.133.18,5.189.140.112,5.189.173.193,75.119.139.93,77.238.252.91,lk21semi.click##+js(nowoif)
+109.123.251.95,109.199.101.38,109.199.125.163,109.199.126.237,128.199.147.197,146.190.94.101,161.97.112.113,161.97.69.162,173.212.204.20,173.212.204.40,185.229.119.216,185.99.135.245,207.180.221.178,31.220.73.179,31.220.79.98,37.60.243.31,38.242.157.146,38.242.219.42,45.84.138.167,5.189.133.18,5.189.140.112,5.189.173.193,75.119.139.93,77.238.252.91,84.247.185.69,layarkaca21semi.pro,lk21semi.click##a[target*="blank"]:has(> img)
+109.123.251.95,109.199.101.38,109.199.125.163,109.199.126.237,128.199.147.197,146.190.94.101,161.97.112.113,161.97.69.162,173.212.204.20,173.212.204.40,185.229.119.216,185.99.135.245,207.180.221.178,31.220.73.179,31.220.79.98,37.60.243.31,38.242.157.146,38.242.219.42,45.84.138.167,5.189.133.18,5.189.140.112,5.189.173.193,75.119.139.93,77.238.252.91,84.247.185.69,layarkaca21semi.pro,lk21semi.click##+js(aopr, popup_custom_data)
+109.123.251.95,109.199.101.38,109.199.125.163,109.199.126.237,128.199.147.197,146.190.94.101,161.97.112.113,161.97.69.162,173.212.204.20,173.212.204.40,185.229.119.216,185.99.135.245,207.180.221.178,31.220.73.179,31.220.79.98,37.60.243.31,38.242.157.146,38.242.219.42,45.84.138.167,5.189.133.18,5.189.140.112,5.189.173.193,75.119.139.93,77.238.252.91,84.247.185.69,layarkaca21semi.pro,lk21semi.click##+js(nowoif)
 ||komikindo.co^*/banner-$image
 ##[href^="https://pintuisekai.com/ads/"] > img
 komikindo.co##[href^="https://shope.ee/"]:has(> img)
