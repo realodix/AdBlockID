@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.5.62
+! Version: 24.5.63
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 May 2024 18:42 UTC
+! Last modified: 31 May 2024 05:05 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2748,7 +2748,7 @@ sekedus.com##body > div:matches-css(position: fixed):has-text(/adblock/i)
 @@||iklangratistanpadaftar.com^$ghide
 beritajatim.com#@#.advertorial
 a-news.id,bakata.net,beritaanda.net,betara.id,bhayangkaraglobalnews.com,bolmong.news,detikbrita.com,dutatv.com,explorenews.net,fajarmanado.com,faktualnews.co,fokusaktual.co.id,gotvnews.co.id,haliyora.id,helloborneo.com,heraldmakassar.com,iglobalnews.co.id,indotribun.id,intipnews.com,jabarnews.com,jambidaily.com,jodanews.com,kabarntt.co,katakepri.com,kliksumatera.com,korankalimantan.com,koranmedan.com,lintasjatimnews.com,manadotoday.co.id,medinaslampungnews.co.id,metrorakyat.com,nusantarapos.co.id,pilarjambi.com,prudensi.com,publiknews.com,pustakalewi.com,putrabhayangkara.com,rakyatjabarnews.com,realitapost.com,serambijambi.id,sidakpost.id,sindosumsel.com,suarakalbar.co.id,sumateranews.co.id,sumselnews.co.id,tebarberita.id,wartaniaga.com,waspada.id,wideazone.com#@#.category-advertorial
-aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id,gemalampung.com,jambiseru.com,jurnalborneo.com,kabarmedan.com,kaldera.id,katada.id,katanda.id,ketapangnews.com,klausa.co,komunikasulut.com,papeling.org,sriwijayamedia.com,swarakawanua.com,tabikpun.com#@#.category-advertorial
+aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id,gemalampung.com,indomedia.news,jambiseru.com,jurnalborneo.com,kabarmedan.com,kaldera.id,katada.id,katanda.id,ketapangnews.com,klausa.co,komunikasulut.com,papeling.org,sriwijayamedia.com,swarakawanua.com,tabikpun.com#@#.category-advertorial
 @@/advertisement.$domain=advertisement.keepo.me
 @@/advertising.$domain=advertising.katadata.co.id
 @@/files/Ads/*$image,domain=iklanrumah.com
@@ -3141,32 +3141,24 @@ bgibola.autos,bgibola.boats,bgibola.bond,bgibola.com,bgibola168.*,bgibola365.*,b
 nobartv.cc,tvbersama.cc###floatcenter
 nobartv.cc,tvbersama.cc###floating_banner_top
 nobartv.cc,tvbersama.cc##.inline-banner
-!#if (ext_ublock)
 rbtv77.*##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
 rbtv77.*##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 rbtv77.*##div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
 rbtv77.*##img:style(width: auto!important;)
-!#endif
-!#if (ext_ublock)
 rbtv77.*##*:style(scrollbar-width: auto!important;)
 rbtv77.*##body:style(overflow: auto!important;)
 rbtv77.*##html:style(overflow: auto!important;)
-!#endif
 !#if (ext_ublock)
 @@.shop/*.$script,xhr,domain=rbtv77.*
 !#endif
-!#if (ext_ublock)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##.iframe-wrapper > iframe + div:matches-css(position: absolute):has(> img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: absolute):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: relative):has(> div:matches-css(position: absolute):has(> img) + img)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##img:style(width: auto!important;)
-!#endif
-!#if (ext_ublock)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##*:style(scrollbar-width: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##body:style(overflow: auto!important;)
 determinemousecshe.shop,ironwinter6m.shop,leadmorning4ivn.shop,nervousdoctor9bx.shop,publicspeed5c.shop,showsummer20b.shop,somehowrockyng.shop,strangernervousql.shop##html:style(overflow: auto!important;)
-!#endif
 !#if (ext_ublock)
 @@.shop/*.$script,xhr,domain=determinemousecshe.shop|ironwinter6m.shop|leadmorning4ivn.shop|nervousdoctor9bx.shop|publicspeed5c.shop|showsummer20b.shop|somehowrockyng.shop|strangernervousql.shop
 !#endif
