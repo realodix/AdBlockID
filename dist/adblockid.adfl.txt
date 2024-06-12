@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.6.24
+! Version: 24.6.25
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jun 2024 06:52 UTC
+! Last modified: 12 Jun 2024 17:46 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2251,6 +2251,7 @@ jnnews.co.id,sumbawanews.com,triberita.com##aside a[target="_blank"]:has(> img)
 bernas.id,bloggerborneo.com,detakkaltim.com,detikglobalnews.com,dinamikasultra.com,trenzindonesia.com##div[itemtype="https://schema.org/WPAdBlock"] > a:has(> img)
 beritapagi.co.id,detikglobalnews.com,faktabanten.co.id,kalesang.id,kepritoday.com,lintaswarta.net,manadotoday.co.id,pilarcakrawala.news##div[itemtype="https://schema.org/WPAdBlock"] > img
 borobudurnews.com##div[itemtype="https://schema.org/WPAdBlock"]:has(> script)
+dardura.com###bellow-header-widget
 kotaku.co.id###content-area .code-block > img
 balipost.com,humaniora.id,indeksnews.com,lintaslampung.com,redaksisatu.id###divFLRALeft
 balipost.com,humaniora.id,indeksnews.com,lintaslampung.com,redaksisatu.id###divFLRARight
@@ -2292,6 +2293,8 @@ infobaik.id##.post-content > section:has(a > img)
 fokusborneo.com##.single-article center > img
 beritabalap.com##.site-header a[target="_blank"]:has(> img)
 detakbanten.com##.sunfw_section_content-top
+blog.arizman.com##.toko-kanan
+blog.arizman.com##.toko-kiri
 infoastronomy.org##.widget .link-btn
 beritabalap.com##.widget-bawah-menu
 zonasultra.id##.wpb_wrapper .td-fix-index > p > img
@@ -2306,6 +2309,7 @@ deweezz.com,naikmotor.com,nusabali.com##a[href*="bit.ly/"]:has(> img)
 inilah.com##a[href^="https://kitabisa.com/campaign/"]:has(> img)
 artikel.rumah123.com,infogeh.co##a[href^="https://shopee.co.id/"]:has(> img)
 mitanews.co.id##a[href^="https://www.tokopedia.com/"]:has(> video):remove()
+dardura.com##article #body-post-it > center:has-text(/adv/i)
 papuatimes.co.id##article .newkarma-core-before-dontmiss
 kabarnusantaranews.com##article figure > img
 marketeers.com##div:has(> iframe[src^="https://ads.marketeers.com"])
@@ -2753,7 +2757,7 @@ codeflare.net###adBlockInfo
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima.js,domain=visionplus.id
 ||mikbotam.net/detector/$script
 ||mycoding.id/assets/seosecret/seosecretidnblockads.js
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=duniakode.com|harianmerdeka.id|indokontraktor.com|kang-ismet.com|kersabaca.com|masfadli.com|shinryu2.blogspot.com|yukinoshita.web.id
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=duniakode.com|harianmerdeka.id|indokontraktor.com|kang-ismet.com|kersabaca.com|masdhika.com|masfadli.com|shinryu2.blogspot.com|yukinoshita.web.id
 @@/fuckadblock.js$script,domain=pewarta-indonesia.com
 @@||ecology.my.id/js/adv/fuckadblock.js$script
 @@||hetanews.com/js/googleafs.js
