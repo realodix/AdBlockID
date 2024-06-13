@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.6.27
+! Version: 24.6.28
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 12 Jun 2024 20:17 UTC
+! Last modified: 13 Jun 2024 08:32 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2313,6 +2313,7 @@ dardura.com##article #body-post-it > center:has-text(/adv/i)
 papuatimes.co.id##article .newkarma-core-before-dontmiss
 kabarnusantaranews.com##article figure > img
 marketeers.com##div:has(> iframe[src^="https://ads.marketeers.com"])
+orami.co.id##header > #footer_stickyexp:has(> #div-gpt-ad-stickyexp)
 trenasia.com##.w-\[728px\].h-\[90px\]
 chatnews.id##.w-full.h-\[50px\]
 chatnews.id##.w-full.h-\[600px\]
@@ -3582,12 +3583,11 @@ nekopoi.web.id##+js(aopr, document.oncopy)
 ||lk21static.buzz/assets/*.gif$image
 ||lk21static.xyz/assets/$mp4
 ||lk21static.xyz/assets/*.gif$image
-layarkaca21.autos,lk21official.mom,nontondrama.click,playeriframe.shop###admad
-layarkaca21.autos,lk21official.mom,nontondrama.click###player > a[id][target="_blank"]
-layarkaca21.autos,lk21official.mom,nontondrama.click###player-below-b
-layarkaca21.autos,lk21official.mom,nontondrama.click###player-lux
-layarkaca21.autos,lk21official.mom,nontondrama.click###top-b
-layarkaca21.autos,lk21official.mom,nontondrama.click##a[target*="blank"]:has(> img)
+layarkaca21.autos,lk21official.life,lk21official.mom,nontondrama.click,playeriframe.shop###admad
+layarkaca21.autos,lk21official.life,lk21official.mom,nontondrama.click###player > #player-lux
+layarkaca21.autos,lk21official.life,lk21official.mom,nontondrama.click###player > a[id][target="_blank"]
+layarkaca21.autos,lk21official.life,lk21official.mom,nontondrama.click###player-below-b
+layarkaca21.autos,lk21official.life,lk21official.mom,nontondrama.click##a[target*="blank"]:has(> img)
 ||lk21static.buzz/iframe/content2.php$frame
 ||lk21static.xyz/iframe/content2.php$frame
 ||d21.media/img/*.gif$image
