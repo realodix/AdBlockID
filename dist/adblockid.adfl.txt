@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.6.35
+! Version: 24.6.36
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Jun 2024 17:17 UTC
+! Last modified: 17 Jun 2024 18:50 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3670,6 +3670,7 @@ komikindo.co##[href^="https://shope.ee/"]:has(> img)
 mirrorkomik.net###aplikasi
 mangaid.click###catfish
 kiryuu.id###sidebar > .widget_text:has-text(/ads/i):has(img[src*=".gif"])
+103.74.5.104##.ads
 mangacanblog.com##.entry-content > center:has(> a > img)
 komikcast.net##.gambar_pemanis
 doujinku.fun,kanzenin.info,kiryuu.id,komikcast.lol,komikdewasa.art,komikindo.co,komikindo.link,komikmirror.shop,mangacanblog.com,mangakita.id,mangakyo.vip,mangayaro.id,manhwadesu.bio,manhwadesu.cc,manhwaindo.net,manhwaland.to,manhwalist.com,mihentai.com,mirrorkomik.net,sektedoujin.cc,sheakomik.com,tukangkomik.id##.kln
@@ -3681,7 +3682,7 @@ komiku.com##a[target*="blank"][rel*="nofollow"]:has(> img)
 komiku.id##div:matches-css(text-align:center):has(> span:has-text(/iklan/i))
 dojing.net,kiryuu.id,komikindo.link,komiklokal.shop,komikmirror.shop,komikremaja.icu,komikstation.co,mangacanblog.com,mangakyo.vip,manhwadesu.bio,manhwadesu.cc,manhwaland.to,manhwalist.com,mihentai.com,noromax.my.id,sektedoujin.cc,sheakomik.com,tenshi.id,tukangkomik.id,warungkomik.com##div[id^="teaser"]
 komiku.id,mihentai.com,novelgo.id,sektedoujin.cc##+js(nobab)
-ainzscans.net,kumapoi.info,siimanga.cyou,warungkomik.com##+js(noeval-if, /chp_?ad/)
+103.74.5.104,ainzscans.net,kumapoi.info,siimanga.cyou,warungkomik.com##+js(noeval-if, /chp_?ad/)
 yuramanga.my.id##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
 crotpedia.net##+js(noeval-if, ads)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=warungkomik.com
