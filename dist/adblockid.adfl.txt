@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.6.36
+! Version: 24.6.37
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Jun 2024 18:50 UTC
+! Last modified: 21 Jun 2024 09:30 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3239,12 +3239,14 @@ papuaterkini.com,papuatoday.com,suluttimes.com##+js(acis, SGPopup)
 prokaltim.com,suarakumandang.com##+js(aopr, SGPB_POPUP_PARAMS)
 /wp-content/plugins/popup-builder/*$domain=suluttimes.com
 kucinglucu.net###desktopcontainer:has(> #desktopbox > #desktopadvertisements)
+hellosehat.com###hhg-comp-popup-wrapper
 kucinglucu.net###mobilecontainer:has(> #mobileadsense)
 ladiestory.id###modalBanner
 bankiir.id,biayatarif.com,bursabajaringan.com,carabelanja.id,empatdio.com,gadgetized.net,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.id,tuliskan.id###myCont
 gen987fm.com###popup_banner
 alkitabonline.org##.campaign-modal
 alkitabonline.org##.campaign-modal-overlay
+duniagames.co.id##.cdk-overlay-container
 rilis.id##.fade#staticBackdropModal
 korankaltim.com##.fade.modal
 korankaltim.com,rilis.id##.fade.modal-backdrop
@@ -3253,12 +3255,10 @@ brainly.co.id##.js-react-registration-toplayer
 ladiestory.id##.modal-backdrop
 bacaterus.com,carisinyal.com##.oxy-modal-backdrop
 gammafisblog.com##.popbox
-alkitabonline.org,bacaterus.com,bankiir.id,biayatarif.com,brainly.co.id,bursabajaringan.com,carabelanja.id,carisinyal.com,empatdio.com,gadgetized.net,gammafisblog.com,gen987fm.com,iuwashplus.or.id,jagobengkel.com,korankaltim.com,kucinglucu.net,ladiestory.id,maenhp.com,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.id,tuliskan.id,versusbeda.com##body:style(overflow: auto!important; position: unset!important;)
 brainly.co.id##div[data-testid="satisfaction_survey_facade"]
 jamudigital.com###boxes
 paketinternet.net###bukafpop
 situsnobar.top###floatcenter
-hellosehat.com###hhg-comp-popup-wrapper
 dailysocial.id###modal-popup
 ketik.co.id###modalPopup
 pintermekanik.com###myModal
@@ -3273,8 +3273,8 @@ tafsirq.com##.optin-monster-saas-overlay
 kitalulus.com##.pop-up-overlay
 bagas31.info##.popup-rl-custom3
 pasjabar.com##.wp-popup
-duniagames.co.id##.cdk-overlay-container
-!#if adguard
+alkitabonline.org,bacaterus.com,bankiir.id,biayatarif.com,brainly.co.id,bursabajaringan.com,carabelanja.id,carisinyal.com,empatdio.com,gadgetized.net,gammafisblog.com,gen987fm.com,hellosehat.com,iuwashplus.or.id,jagobengkel.com,korankaltim.com,kucinglucu.net,ladiestory.id,maenhp.com,myjourney.id,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,rkonline.id,sekolahpesantren.id,teknisitv.id,tuliskan.id,versusbeda.com##body:style(overflow: auto!important; position: unset!important;)
+!#if (adguard)
 duniagames.co.id##+js(rc, cdk-global-scrollblock, html)
 !#else
 duniagames.co.id##html:remove-class(cdk-global-scrollblock)
