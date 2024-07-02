@@ -27,7 +27,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  │   ├─ international.adfl        [All] Situs internasional.
  │   ├─ movie.adfl                [All] Situs nonton ilegal.
  │   └─ safelink.adfl             [All] Situs berjenis safelink/shortlink.
- ├─ /packages               AdBlockID+
+ ├─ /packages               AdBlockID Plus
  │   └─ ...
  ├─ adservers.adfl          [G] Daftar domain/IP penyedia layanan iklan pihak ketiga.
  ├─ anti-adblock.adfl       [G/S] Melumpuhkan ad block detection.
@@ -59,7 +59,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
 
-`$ pip install -e tools/filter-combiner`
+`pip install -e tools/filter-combiner`
 
 #### Terminal Command
 
