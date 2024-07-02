@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.6.48
+! Version: 24.7.1
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Jun 2024 16:15 UTC
+! Last modified: 02 Jul 2024 00:25 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3019,8 +3019,8 @@ haibunda.com##.pic_artikel_sisip_table:has-text(/banner/i)
 detik.com##.staticdetail_container:has(> .staticdetail_ads)
 cnbcindonesia.com##.stickystatic
 cnbcindonesia.com##[style^="background:#F0F3F4;margin-top:24px;margin-bottom: 24px; margin-left:-18px;margin-right: -18px; padding-bottom: 12px;"]
-cnbcindonesia.com##[style^="width: 100%; height:400px;background:#F0F3F4"]:has(> [style^="position:sticky"])
 insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-height:250px;margin:0px auto 0px;"] > div[id^="div-gpt-ad-"])
+cnbcindonesia.com##div[style^="width: 100%;"]:matches-css(height: 400px):has(> [style^="position:sticky"])
 @@/ads/*$domain=adsmart.detik.com
 @@/videojs.ads.$domain=20.detik.com
 @@||adsmart.detik.com^$ghide
@@ -3803,7 +3803,7 @@ nekopoi.care##.leftarea
 nekopoi.care##.mobileadsbottom
 nekopoi.care##.smartbanner
 erocafe.net##.td-a-rec
-104.248.145.149,139.180.129.47,173.255.233.106,178.128.114.78,194.61.28.84,206.189.88.35,212.90.120.57,31.187.74.197,45.136.198.240,45.77.172.252,96.126.111.189,agenbokep.vip,bacol.shop,bandarsub.com,bokepindo.ink,bokepjilbab.cc,cctvbokep.bar,doodstream.top,dosensesat.pw,dutamovie21.cloud,erocafe.net,gocrot.org,hencop.com,igobokep.cam,indobokepin.com,javindo.eu.org,javsubindo.com,javsubindo.online,javxxi-a.site,kimcilonlyofc.site,konflix21.ink,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,ngentub.cc,omahbokep.org,omekin.tv,putri77.com,putri78.com,ruanglendir.xyz,rumahperjaka.site,sangetube.shop,selebgrams.world,sibokepjepang.com,skandalpedia.cyou,viral.skin,yabaisub.com##a[target*="blank"]:has(> img)
+104.248.145.149,139.180.129.47,173.255.233.106,178.128.114.78,194.61.28.84,206.189.88.35,212.90.120.57,31.187.74.197,45.136.198.240,45.77.172.252,96.126.111.189,agenbokep.vip,bacol.shop,bandarsub.com,bokepindo.ink,bokepjilbab.cc,cctvbokep.bar,doodstream.top,dosensesat.pw,dutamovie21.cloud,erocafe.net,gocrot.org,hencop.com,igobokep.cam,indobokepin.com,javindo.eu.org,javsubindo.com,javsubindo.online,javxxi-a.site,kimcilonlyofc.site,konflix21.ink,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,ngentub.cc,omahbokep.org,omekin.tv,putri77.com,putri78.com,ruanglendir.xyz,rumahperjaka.site,sangetube.shop,selebgrams.world,sibokepjepang.com,skandalpedia.cyou,viral.skin,xxibokep.org,yabaisub.com##a[target*="blank"]:has(> img)
 173.255.233.106,23.239.8.106,96.126.111.189##a[target="_blank"]:has(> video):remove()
 bokep360.xyz##a[title="banner" i]:has(> img)
 hencop.com,javsubindo.online,minioppai.org,nontonhentai.top,pemersatu.link,skandalpedia.cyou##body > div[id^="teaser"]
@@ -3837,7 +3837,7 @@ skandalpedia.cyou##+js(aopr, window.pum_popups)
 139.180.129.47,178.128.114.78,194.61.28.84,206.189.88.35,212.90.120.57,31.187.74.197,96.126.111.189,bandarsub.com,bokepindo.ink,doodstream.top,doooood.co,erocafe.net,gocrot.org,hencop.com,indobokepin.com,javindo.eu.org,javsubindo.com,javxxi-a.site,kimcilonlyofc.site,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,ngentub.cc,sangetube.shop,sibokepjepang.com,skandalpedia.cyou,viral.skin,yabaisub.com##+js(nowoif)
 96.126.111.189##*:style(user-select:text!important;)
 96.126.111.189,ratihbugil.com##+js(aeld, contextmenu)
-crothot.com,indobokepxxi.vip##+js(aopr, document.oncontextmenu)
+crothot.com,xxibokep.org##+js(aopr, document.oncontextmenu)
 crothot.com,erocafe.net##+js(aopr, document.onselectstart)
 erocafe.net##+js(aopr, protected_links)
 pusatporn18.com##.content-post center:has(> a > img)
@@ -3876,9 +3876,9 @@ rumahbokep.*,videocrot.*,websitebokep-id.*##+js(aeld, contextmenu)
 rumahbokep.*,videocrot.*,websitebokep-id.*##+js(nowoif)
 rumahbokep.*,videocrot.*,websitebokep-id.*##body > div[style^="position: fixed; display: block; width: 100%; height: 100%;"]
 rumahbokep.*,videocrot.*,websitebokep-id.*##iframe.padPreload[style^="width: 0px; height: 0px; position: absolute;"]
-bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.rest,italyholidayinfo.com,kamarbokep.*,kebokepanku.*,ruangbokep.*,sibokep.*##.btm_ban
-bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.rest,italyholidayinfo.com,kamarbokep.*,kebokepanku.*,ruangbokep.*,sibokep.*##a[target*="blank"]:has(> img)
-bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.rest,italyholidayinfo.com,kamarbokep.*,kebokepanku.*,ruangbokep.*,sibokep.*##+js(nowoif)
+bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.*,italyholidayinfo.com,kamarbokep.*,kebokepanku.*,ruangbokep.*,sibokep.*##.btm_ban
+bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.*,italyholidayinfo.com,kamarbokep.*,kebokepanku.*,ruangbokep.*,sibokep.*##a[target*="blank"]:has(> img)
+bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.*,italyholidayinfo.com,kamarbokep.*,kebokepanku.*,ruangbokep.*,sibokep.*##+js(nowoif)
 bocilviral.autos,bookep.fun,viralaja.wiki,viralhd.wiki,viralhub.autos,viralid.wiki,viralin.wiki###fixedban
 bocilviral.autos,bookep.fun,viralaja.wiki,viralhd.wiki,viralhub.autos,viralid.wiki,viralin.wiki##a[target*="blank"]:has(> img)
 bocilviral.autos,bookep.fun,viralaja.wiki,viralhd.wiki,viralhub.autos,viralid.wiki,viralin.wiki##+js(aeld, /^(?:load|click)$/, popMagic)
@@ -5042,6 +5042,7 @@ _topbandar_$image
 ##[href="https://t.ly/evo303"]
 ##[href="https://t.ly/goCuan717"]
 ##[href="https://t.ly/goToclicK168"]
+##[href="https://t.ly/inibokep"]
 ##[href="https://t.ly/m717ads"]
 ##[href="https://t.ly/superceme"]
 ##[href="https://tanpanawala.link/cimax21"]
@@ -5238,7 +5239,6 @@ _topbandar_$image
 ##img[title="slot gacor" i]
 ##[href*="://7mter.pw/"]
 ##[href*="://asialv88.vip/"]
-##[href*="://bl88.xyz/"]
 ##[href*="://bolatks.club/"]
 ##[href*="://dewatks.biz/"]
 ##[href*="://dmbt.cc/"]
@@ -5254,7 +5254,6 @@ _topbandar_$image
 ##[href*="://glbs.xyz/"]
 ##[href*="://i247.cc/"]
 ##[href*="://ibtwin.xyz/"]
-##[href*="://ig24.me/"]
 ##[href*="://kartupk.me/"]
 ##[href*="://koinslts.com/"]
 ##[href*="://krtpkr.me/"]
@@ -5274,7 +5273,6 @@ _topbandar_$image
 ##[href*="://tgl88.xyz/"]
 ##[href*="://tgl88asia.club/"]
 ##[href*="://tktslt.xyz/"]
-##[href*="://unvg.me/"]
 ##[href*="://vegs88.biz/"]
 ##[href*="://vsabet.me/"]
 ##[href*="//vn.adnetworks.top/go/"] > img
