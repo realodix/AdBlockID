@@ -20,12 +20,11 @@ mangaid.click###catfish
 kiryuu.id###sidebar > .widget_text:has-text(/ads/i):has(img[src*=".gif"])
 103.74.5.104##.ads
 mangacanblog.com##.entry-content > center:has(> a > img)
-komikcast.cafe##.gambar_pemanis
-doujinku.fun,kanzenin.info,kiryuu.id,komikcast.cz,komikdewasa.art,komikindo.co,komikindo.link,komikmu.fun,mangacanblog.com,mangakita.id,mangakyo.vip,mangayaro.id,manhwadesu.cc,manhwadesu.eu,manhwaindo.net,manhwalist.com,manhwalist.xyz,mihentai.com,mirrorkomik.net,sektedoujin.cc,sheakomik.com,tukangkomik.id##.kln
+doujinku.fun,kanzenin.info,kiryuu.id,komikdewasa.art,komikindo.co,komikindo.link,komikmu.fun,mangacanblog.com,mangakita.id,mangakyo.vip,mangayaro.id,manhwadesu.cc,manhwadesu.eu,manhwaindo.net,manhwalist.com,manhwalist.xyz,mihentai.com,mirrorkomik.net,sektedoujin.cc,sheakomik.com,tukangkomik.id##.kln
 pojokmanga.net##.main-sidebar .textwidget:has(> a > img)
-komikcast.cafe,komikindo.tv,mangakita.id,mangatale.co,tooncubus.top##a:has(> img[src$=".gif"])
+komikindo.tv,mangakita.id,mangatale.co,tooncubus.top##a:has(> img[src$=".gif"])
 kiryuu.id##a[href*="?ref=kiryuu"] > img
-comicmoi.com,gudangkomik.com,kanzenin.info,kiryuu.id,komik-cast.com,komikcast.cz,komikindo.co,komikindo.link,komikindo.tv,komiklokal.shop,komikmu.fun,komikstation.co,komikzoid.id,mangacanblog.com,mangaid.click,manhwadesu.cc,manhwadesu.eu,manhwaindo.net,manhwalist.com,manhwalist.xyz,mihentai.com,mirrorkomik.net,ngomik.net,sekaikomik.guru,sektedoujin.cc,sheakomik.com,shinigamitoon.app,tenshi.id,tukangkomik.id,yuramanga.my.id##a[target*="blank"]:has(> img)
+comicmoi.com,gudangkomik.com,kanzenin.info,kiryuu.id,komik-cast.com,komikindo.co,komikindo.link,komikindo.tv,komiklokal.shop,komikmu.fun,komikstation.co,komikzoid.id,mangacanblog.com,mangaid.click,manhwadesu.cc,manhwadesu.eu,manhwaindo.net,manhwalist.com,manhwalist.xyz,mihentai.com,mirrorkomik.net,ngomik.net,sekaikomik.guru,sektedoujin.cc,sheakomik.com,shinigamitoon.app,tenshi.id,tukangkomik.id,yuramanga.my.id##a[target*="blank"]:has(> img)
 komiku.com##a[target*="blank"][rel*="nofollow"]:has(> img)
 komiku.id##div:matches-css(text-align:center):has(> span:has-text(/iklan/i))
 dojing.net,kiryuu.id,komikindo.link,komiklokal.shop,komikmu.fun,komikremaja.icu,komikstation.co,mangacanblog.com,mangakyo.vip,manhwadesu.cc,manhwadesu.eu,manhwalist.com,mihentai.com,noromax.my.id,sektedoujin.cc,sheakomik.com,tenshi.id,tukangkomik.id,warungkomik.com##div[id^="teaser"]
@@ -55,7 +54,7 @@ komikindo.tv##iframe[style*="width: 100% !important; height: 100% !important; op
 ! ---
 ! Pop-Up
 klikmanga.com,komikstation.co,sekaikomik.guru##+js(aeld, /^(?:load|click)$/, popMagic)
-doujinku.fun,kiryuu.id,komikcast.cz,komikindo.tv,komiklokal.shop,komikmu.fun,mangakita.id,manhwaindo.net,ngomik.net,sekaikomik.guru,sektedoujin.cc,sheakomik.com##+js(nowoif)
+doujinku.fun,kiryuu.id,komikindo.tv,komiklokal.shop,komikmu.fun,mangakita.id,manhwaindo.net,ngomik.net,sekaikomik.guru,sektedoujin.cc,sheakomik.com##+js(nowoif)
 ! Green Popups
 /wp-content/plugins/halfdata-green-popups/*$domain=shinigamitoon.app
 shinigamitoon.app##+js(aopr, lepopup_vars)
@@ -116,3 +115,11 @@ westmanga.fun##div[id^="teaser"]
 ! Annoyance
 westmanga.fun##+js(aeld, contextmenu)
 westmanga.fun##+js(nowoif)
+!# ---
+!# komikcast (https://komikcast.cz/ / https://komikcast.cafe/)
+!# ---
+komikcast.*##.kln
+komikcast.*##a:has(> img[src$=".gif"])
+komikcast.*##a[target*="blank"]:has(> img)
+! Annoyance
+komikcast.*##+js(nowoif)
