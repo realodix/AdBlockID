@@ -1,7 +1,7 @@
 Tutorial ini dapat membantu Anda untuk menggunakan AdBlockID di:
-- [uBlock Origin](https://github.com/gorhill/uBlock).
-- [AdNauseam](https://adnauseam.io/).
-- dan beberapa ad blocker lainnya yang dibuat dari source code uBlock Origin.
+- uBlock Origin, https://github.com/gorhill/uBlock.
+- AdNauseam, https://adnauseam.io/.
+- dan ad blocker lainnya yang dibuat berdasarkan uBlock Origin.
 
 ## Cara Memasang AdBlockID
 
