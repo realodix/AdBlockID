@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.7.19
+! Version: 24.7.20
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 08 Jul 2024 23:49 UTC
+! Last modified: 09 Jul 2024 11:08 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3700,7 +3700,7 @@ doujinku.fun,kanzenin.info,kiryuu.id,komikdewasa.art,komikindo.co,komikindo.link
 pojokmanga.net##.main-sidebar .textwidget:has(> a > img)
 komikindo.tv,mangakita.id,mangatale.co,tooncubus.top##a:has(> img[src$=".gif"])
 kiryuu.id##a[href*="?ref=kiryuu"] > img
-comicmoi.com,gudangkomik.com,kanzenin.info,kiryuu.id,komik-cast.com,komikindo.co,komikindo.link,komikindo.tv,komiklokal.shop,komikmu.fun,komikstation.co,komikzoid.id,mangacanblog.com,mangaid.click,manhwadesu.cc,manhwadesu.eu,manhwadesu.guru,manhwalist.com,manhwalist.xyz,mihentai.com,mirrorkomik.net,ngomik.net,sekaikomik.guru,sektedoujin.cc,sheakomik.com,shinigamitoon.xyz,tenshi.id,tukangkomik.id,yuramanga.my.id##a[target*="blank"]:has(> img)
+comicmoi.com,gudangkomik.com,kanzenin.info,kiryuu.id,komik-cast.com,komikindo.co,komikindo.link,komikindo.tv,komiklokal.shop,komikmu.fun,komikstation.co,komikzoid.id,mangacanblog.com,mangaid.click,manhwadesu.cc,manhwadesu.eu,manhwadesu.guru,manhwalist.com,manhwalist.xyz,mihentai.com,mirrorkomik.net,ngomik.net,sekaikomik.guru,sektedoujin.cc,sheakomik.com,tenshi.id,tukangkomik.id,yuramanga.my.id##a[target*="blank"]:has(> img)
 komiku.com##a[target*="blank"][rel*="nofollow"]:has(> img)
 komiku.id##div:matches-css(text-align:center):has(> span:has-text(/iklan/i))
 dojing.net,kiryuu.id,komikindo.link,komiklokal.shop,komikmu.fun,komikremaja.icu,komikstation.co,mangacanblog.com,mangakyo.vip,manhwadesu.cc,manhwadesu.eu,manhwadesu.guru,manhwalist.com,mihentai.com,noromax.my.id,sektedoujin.cc,sheakomik.com,tenshi.id,tukangkomik.id,warungkomik.com##div[id^="teaser"]
@@ -3716,8 +3716,6 @@ klikmanga.com##body > .mtsnb-shown
 komikindo.tv##iframe[style*="width: 100% !important; height: 100% !important; opacity: 1 !important; max-width: 100% !important; border: 0px none !important; position: fixed !important;"]
 klikmanga.com,komikstation.co,sekaikomik.guru##+js(aeld, /^(?:load|click)$/, popMagic)
 doujinku.fun,kiryuu.id,komikindo.tv,komiklokal.shop,komikmu.fun,mangakita.id,ngomik.net,sekaikomik.guru,sektedoujin.cc,sheakomik.com##+js(nowoif)
-/wp-content/plugins/halfdata-green-popups/*$domain=shinigamitoon.xyz
-shinigamitoon.xyz##+js(aopr, lepopup_vars)
 mangakita.id##+js(aopr, popup_custom_data)
 bacamanga.id,komikindo.tv,komikstation.co,ngomik.net##+js(acis, JSON.parse, break;case $.)
 kiryuu.id##+js(acis, parseInt, break;case $.)
@@ -3756,6 +3754,9 @@ komikcast.*##.kln
 komikcast.*##a:has(> img[src$=".gif"])
 komikcast.*##a[target*="blank"]:has(> img)
 komikcast.*##+js(nowoif)
+shinigami01.*,shinigamitoon.*##a[target*="blank"]:has(> img)
+/wp-content/plugins/halfdata-green-popups/*$domain=shinigami01.*|shinigamitoon.*
+shinigami01.*,shinigamitoon.*##+js(aopr, lepopup_vars)
 ##[href*="ouo.io/ref/"]
 ##[href^="https://safelinkblogger.com/ref/"]
 ##[href^="https://safelinku.com/ref/"] > img
@@ -4481,6 +4482,7 @@ _topbandar_$image
 ##[href="https://gacor.vin/Movie21"]
 ##[href="https://gacor.vin/movie21"]
 ##[href="https://gacor.vin/samehada"]
+##[href="https://go-give.net/LinkGacor"]
 ##[href="https://go.gadgetku.co/gebyar123"]
 ##[href="https://go.gadgetku.co/totomart"]
 ##[href="https://go.pf21.net/388hero"]
