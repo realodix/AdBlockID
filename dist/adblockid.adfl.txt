@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.7.26
+! Version: 24.7.27
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jul 2024 10:55 UTC
+! Last modified: 11 Jul 2024 17:08 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3494,6 +3494,7 @@ _usafelink.$3p,script
 /xmithzyl/safelink/*$3p,script
 .gif|$image,domain=bioskopvirtual.com|indoxxone.com|inonton.com|manganime.live|oppadrama.art
 ||bebasdownloadfilm.com/iframe/content.php$frame
+||bioskop21.pw/banner/
 ||cenglila.com/banner/
 ||filmapikofficial.com/banner/$image
 ||filmdewasa.org/pictures/Banner2/
@@ -3510,7 +3511,6 @@ _usafelink.$3p,script
 ||dramakor.icu/wp-content/uploads/$mp4
 ||filmblurayku.mom/wp-content/uploads/$mp4
 ||sobatkeren21.live/wp-content/uploads/$mp4
-filmbioskop21.info##.inner-wrap > .ban_empat ~ hr + .table-hover
 checast.com##[href^="https://shope.ee/"]:has(> img)
 130.51.20.150###adf_tera
 anichin.red###bannerhomefooter
@@ -3524,6 +3524,7 @@ nonton.tube###float-banner
 akashinime.wiki,anixverse.com,isekaisubs.web.id###floatcenter
 drakorid.cyou###floating-banner
 buckeyelakearmory.com,npcnc.org###floating_banner_bot2
+bioskop21.mom,bk21.pw###floating_banner_bottom
 inonton.com###floating_banner_top
 kebioskop21.digital###top-banner
 manganime.live##.asd
@@ -3541,7 +3542,7 @@ manganime.live##[id*="ads"]
 anichin.red##[id^="fload-"]
 176.119.30.88,anichin.site,buckeyelakearmory.com,miyanime.site,npcnc.org,wibudesu.co##a:has(> img[src$=".gif"])
 anoboy.baby##a[target*="blank"]:has(> amp-img)
-109.123.239.86,157.173.202.64,161.97.170.241,176.119.30.88,181.214.58.34,185.209.15.252,194.35.12.30,37.221.67.131,38.242.218.184,89.110.84.48,adikfilm.click,akashinime.wiki,animebatch.id,animekompi.vip,anixverse.com,anoboy.baby,anoboy.ch,anoboy.su,bioskop.icu,bioskopkerenaja.com,bioskopvirtual.com,boscinema21.site,bosku21.site,buckeyelakearmory.com,cinemaemas6.com,cinemagaul.com,cinemakeren6.id,clampschoolholic.web.id,downloadbatch.me,drachindo.site,dramakor.icu,dramaqu.pics,dramaserial.id,filmblurayku.mom,gm21.mobi,gudangmovies21.gives,hepinime.id,idlixofficialx.com,indoxxone.com,inonton.com,kazesub.com,kebioskop21.digital,kitanonton.pics,kuramanime.boo,kusonime.com,layarkacafilm21.com,layarkeren.blog,lk21.acop.edu.in,lk21.eu.org,manganime.live,melongmovie.site,nimegami.id,nonton.tube,nonton168.ink,nontonfilm.top,nontonsbo.com,npcnc.org,omanga.net,otakudesu.cloud,rahyunime.com,rebahan21.com,rebahin.fit,rebahinxxi.art,sarangfilm.com,sobatgo.site,sobatkeren21.live,tukangnonton.online##a[target*="blank"]:has(> img)
+109.123.239.86,157.173.202.64,161.97.170.241,176.119.30.88,181.214.58.34,185.209.15.252,194.35.12.30,37.221.67.131,38.242.218.184,89.110.84.48,adikfilm.click,akashinime.wiki,animebatch.id,animekompi.vip,anixverse.com,anoboy.baby,anoboy.ch,anoboy.su,bioskop.icu,bioskop21.mom,bioskopkerenaja.com,bioskopvirtual.com,bk21.pw,boscinema21.site,bosku21.site,buckeyelakearmory.com,cinemaemas6.com,cinemagaul.com,cinemakeren6.id,clampschoolholic.web.id,downloadbatch.me,drachindo.site,dramakor.icu,dramaqu.pics,dramaserial.id,filmblurayku.mom,gm21.mobi,gudangmovies21.gives,hepinime.id,idlixofficialx.com,indoxxone.com,inonton.com,kazesub.com,kebioskop21.digital,kitanonton.pics,kuramanime.boo,kusonime.com,layarkacafilm21.com,layarkeren.blog,lk21.acop.edu.in,lk21.eu.org,manganime.live,melongmovie.site,nimegami.id,nonton.tube,nonton168.ink,nontonfilm.top,nontonsbo.com,npcnc.org,omanga.net,otakudesu.cloud,rahyunime.com,rebahan21.com,rebahin.fit,rebahinxxi.art,sarangfilm.com,sobatgo.site,sobatkeren21.live,tukangnonton.online##a[target*="blank"]:has(> img)
 niihen.com##amp-iframe[width="728"][height="90"]
 anoboy.baby##amp-img[width="900"][height="90"]
 anixverse.com,hepinime.id,lendrive.web.id,melongmovie.site,sokuja.my.id##div[id^="teaser"]
@@ -4485,6 +4486,8 @@ _topbandar_$image
 ##[href="https://cutt.ly/zsfilm108"]
 ##[href="https://fuyuh.com/okestream"]
 ##[href="https://gacor.vin/Movie21"]
+##[href="https://gacor.vin/bioskopbm"]
+##[href="https://gacor.vin/bioskopjp"]
 ##[href="https://gacor.vin/movie21"]
 ##[href="https://gacor.vin/samehada"]
 ##[href="https://go-give.net/LinkGacor"]
