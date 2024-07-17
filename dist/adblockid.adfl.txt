@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.7.36
+! Version: 24.7.37
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Jul 2024 17:37 UTC
+! Last modified: 17 Jul 2024 20:11 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2356,10 +2356,11 @@ kabarnusantaranews.com##article figure > img
 rajakomen.com##body > [id^="idxhallo_"].no_css_here
 marketeers.com##div:has(> iframe[src^="https://ads.marketeers.com"])
 orami.co.id##header > #footer_stickyexp:has(> #div-gpt-ad-stickyexp)
+chatnews.id##.w-\[120px\].h-\[600px\]
 trenasia.com##.w-\[728px\].h-\[90px\]
 chatnews.id##.w-full.h-\[50px\]
 chatnews.id##.w-full.h-\[600px\]
-trenasia.com##.w-full.h-\[90px\]
+chatnews.id,trenasia.com##.w-full.h-\[90px\]
 ntvnews.id##[style="min-width: 728px; height: 90px;"]
 ntvnews.id##[style="min-width: 728px; min-height: 90px;"]
 indoposco.id##div[style="max-width:940px; min-height:105px;"]
@@ -2442,6 +2443,7 @@ dekade.id##img[width="336"][height="280"]
 arrahmah.id##img[width="350"][height="49"]
 mediasuarapublik.com##img[width="368"][height="720"]
 acehherald.com##img[width="387"][height="1024"]
+wartagarut.com##img[width="450"][height="720"]
 diskusiwebhosting.com##img[width="450"][height="87"]
 mediasuarapublik.com##img[width="461"][height="720"]
 mediasulsel.com##img[width="480"][height="720"]
@@ -2458,6 +2460,8 @@ ciremaitoday.com##img[width="680"][height="85"]
 harianrakyat.id##img[width="694"][height="86"]
 infomu.co##img[width="698"][height="878"]
 lensajatim.id##img[width="719"][height="99"]
+wartagarut.com##img[width="720"][height="1012"]
+wartagarut.com##img[width="720"][height="1024"]
 fokusmedan.com##img[width="720"][height="120"]
 sinjai.info##img[width="720"][height="182"]
 akurasi.id##img[width="725"][height="1024"]
@@ -2763,6 +2767,7 @@ lintastungkal.com,radarnesia.com,zabak.id##.single-article-text .scroll-to-resum
 pasundanekspres.co,radarcirebon.id,rakcer.id##.site-parallax
 pasundanekspres.co,radarcirebon.id,rakcer.id,realitakita.com##.site-sticky-bottom
 bisnis.com##.skyscrapper
+chatnews.id##.sticky
 100kpj.com,tvonenews.com##.sticky-bottom
 ggwp.id##.sticky-footer
 kontenjatim.com,law-justice.co,suaraindonesia.co.id##.sticky_bottom
