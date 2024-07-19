@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.7.38
+! Version: 24.7.39
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Jul 2024 00:49 UTC
+! Last modified: 19 Jul 2024 16:52 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3790,9 +3790,9 @@ komikcast.*##.kln
 komikcast.*##a:has(> img[src$=".gif"])
 komikcast.*##a[target*="blank"]:has(> img)
 komikcast.*##+js(nowoif)
-shinigami.*,shinigami01.*,shinigamitoon.*##a[target*="blank"]:has(> img)
-/wp-content/plugins/halfdata-green-popups/*$domain=shinigami.*|shinigami01.*|shinigamitoon.*
-shinigami.*,shinigami01.*,shinigamitoon.*##+js(aopr, lepopup_vars)
+shinigami.*,shinigami01.*,shinigami02.*,shinigamitoon.*##a[target*="blank"]:has(> img)
+/wp-content/plugins/halfdata-green-popups/*$domain=shinigami.*|shinigami01.*|shinigami02.*|shinigamitoon.*
+shinigami.*,shinigami01.*,shinigami02.*,shinigamitoon.*##+js(aopr, lepopup_vars)
 ##[href*="ouo.io/ref/"]
 ##[href^="https://safelinkblogger.com/ref/"]
 ##[href^="https://safelinku.com/ref/"] > img
