@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.7.46
+! Version: 24.7.47
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 24 Jul 2024 17:32 UTC
+! Last modified: 24 Jul 2024 20:44 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2208,6 +2208,7 @@ halmaherapost.com,malukuterkini.com,tandaseru.com##.spanduk
 halmaherapost.com,harianbatakpos.com,malukuterkini.com,poskomalut.com,rubis.id,tandaseru.com##.special-banner
 vivaborneo.com##.sponsor a:has(> img)
 kitamudamedia.com##.sponsor-1 > img
+orami.co.id##.sticky-ads-banner
 ligaolahraga.com##.sticky-banner
 arenalte.com##.super_leaderboard_ads
 lomboktoday.co.id##.taxx_float_ads
@@ -2303,7 +2304,6 @@ kepripedia.com##.Floatdekstop
 inilah.com##.MuiStack-root:has(> span:has-text(/adv/i))
 orami.co.id##.article-post #post-bottom:has(> p.text-center:has-text(/adv/i))
 orami.co.id##.article-post #post-section2:has(> p.text-center:has-text(/adv/i))
-orami.co.id##.article-post #post-top:has(> p.text-center:has-text(/adv/i))
 goinsan.com##.bottomBox
 borobudurnews.com##.bs-sksitem
 indonesiadaily.net##.code-block:has(> p > a > img)
@@ -2735,7 +2735,6 @@ jurnalnusa.com###sticky-bottom2
 21cineplex.com###top-bar
 safahad.my.id##.PojokKanan
 laborblog.my.id##.PojokKananBawah
-orami.co.id##.article-post img + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 mamikos.com##.banner-image + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 bonepos.com,ceklissatu.com,divianews.com,faktahukumntt.com,idebisnis.id,kabarkibar.id,katasulsel.com,koma.id,lenterabanua.com,marosnews.com,seputarpapua.com,sulawesitoday.com,tangselife.com,tapanulipost.com,trennews.id##.billboard
 bisnis.com##.billboard:has([id^="div-gpt-ad"])
@@ -2887,7 +2886,7 @@ suara.com###div-ad-mobile_bacajuga
 suara.com###div-ad-pariwara_satu
 suara.com###pariwara_dua
 suara.com###pariwara_satu
-bolatimes.com,matamata.com,suara.com##.adds-top
+bolatimes.com,hitekno.com,matamata.com,suara.com##.adds-top
 suara.com##.banner-ads--parallax
 dewiku.com,suara.com##.bg-ads-sticky-side
 dewiku.com,suara.com##.bg-ads-sticky-top
@@ -3082,6 +3081,7 @@ cnbcindonesia.com##div:matches-css(background-size: 728px 90px)
 cnbcindonesia.com##div:matches-css(background-size: 970px 250px)
 cnbcindonesia.com##div:matches-css(background-size: 970px 50px)
 cnbcindonesia.com##div:matches-css(position: sticky):has(div:matches-css(background-size: 300px 250px):has(> [id^="div-gpt-ad-"]))
+cnbcindonesia.com##div:matches-css(position: sticky):has(div:matches-css(background-size: 300px 250px):has(> [id^="div-gpt-ad-"])):upward(div[style="width: 100%; height:600px;"])
 insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-height:250px;margin:0px auto 0px;"] > div[id^="div-gpt-ad-"])
 cnbcindonesia.com##div[style^="width: 100%;"]:matches-css(height: 400px):has(> [style^="position:sticky"])
 @@/ads/*$domain=adsmart.detik.com
