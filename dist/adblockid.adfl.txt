@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.8.2
+! Version: 24.8.3
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 31 Jul 2024 17:08 UTC
+! Last modified: 01 Aug 2024 00:40 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -901,8 +901,11 @@ _TimAds_$image
 ##.header-adds
 ##.header-menu-bottom-ads
 ##.header_kabar_ads
+##.height_sonoraads_600
 ##.heightads600
 ##.heightads90
+##.heightadsmin100
+##.heightadsmin250
 ##.hero-ads
 ##.hero_adslot
 ##.home-ads-bar
@@ -2959,6 +2962,8 @@ bolasport.com,gridoto.com,juara.net,motorplus-online.com##.ads
 kompas.tv##.ads-big
 kompas.tv##.ads-flycarpet
 kompas.tv##.ads-foot
+bolasport.com,gridoto.com,motorplus-online.com,parapuan.co##.ads-inf-box
+bolasport.com,gridoto.com,motorplus-online.com,parapuan.co##.ads-inf-sticky
 kompas.tv##.ads-jxstream
 kompas.com##.ads-latest-wrap
 gridoto.com##.ads-liftdown
@@ -2978,6 +2983,7 @@ sonora.id##.banner-skin
 kompas.com##.banner-sticky-holder
 kompasiana.com##.banner-top
 grid.id##.bottom_banner
+tribunnewswiki.com##.box__reserved
 kontan.co.id##.center:has(> .heightads250)
 kontan.co.id##.clear_ads
 kompas.tv##.container_skinad
@@ -2997,6 +3003,7 @@ tribunnewswiki.com##.nativeads
 kontan.co.id##.paralax-ad
 bolasport.com,grid.id,gridoto.com,kompas.com,kompas.tv,kompasiana.com,motorplus-online.com,sonora.id,tribunnews.com##.pushdown-banner
 motorplus-online.com##.pushdown-banner + .ol_swipe
+kompas.com##.read__content > .kcm-track
 sonora.id##.read__textarea > .kgnw-middle:remove()
 kompas.id##.relative:has(> [id^="div-gpt-ad-"])
 tribunnews.com##.reserved_box_ads
@@ -3005,7 +3012,7 @@ kgnow.com##.topBanner
 motorplus-online.com###div-paralax-container
 grid.id###show-pushdown
 parapuan.co##.btnclose
-kontan.co.id##.center[style^="min-height: 250px"]:has(> [id^="div-Billboard_"])
+kontan.co.id##.center[style^="min-height: 260px;"]:has(> [id^="div-Billboard_"])
 gridoto.com##.cls-mgid:has(> script[src^="https://jsc.mgid.com/"])
 kontan.co.id##.entry-content > div[style="width: 300px; margin: 0px auto 5px auto;min-height: 280px;"]
 gridoto.com##.geniee-box:has(> script[src^="https://js.genieessp.com/"])
