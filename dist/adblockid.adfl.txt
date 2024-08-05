@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.8.8
+! Version: 24.8.9
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Aug 2024 16:00 UTC
+! Last modified: 05 Aug 2024 18:42 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3224,6 +3224,7 @@ ameeralife.com,dialogjumat.co.id,ekbis.co,esgnow.id,hikmah.co,ihram.co.id,isen.i
 republika.co.id##.mobile-billboard
 republika.co.id##article .wrapper-replay:has(> a > img[data-original^="https://static.republika.co.id/files/ads/"])
 republika.co.id##article > div:matches-css(text-align:center):has-text(/sponsored/i)
+republika.co.id##header:style(position: inherit !important)
 ruangguru.com##.bantuan
 ruangguru.com##.bantuan-promo
 roboguru.ruangguru.com##[class^="css-"]:has(> p:has-text(/iklan/i) )
@@ -3883,6 +3884,7 @@ nekopoi.care##.mobileadsbottom
 nekopoi.care##.smartbanner
 erocafe.net##.td-a-rec
 pascol.cyou##a:has(> img[src$=".gif"])
+pejuanglendir.com##a:not([href="https://www.pejuanglendir.com/"]):has(> img)
 104.248.145.149,139.180.129.47,173.255.233.106,194.61.28.84,206.189.88.35,212.90.120.57,31.187.74.197,45.136.198.240,45.77.172.252,96.126.111.189,agenbokep.vip,bacol.shop,bandarsub.com,bokepindo.ink,bokepjilbab.cc,cctvbokep.bar,cekin.wiki,dosensesat.pw,dutamovie21.cloud,erocafe.net,filmnikmat.online,gocrot.org,hencop.com,igobokep.cam,indobokepin.com,javindo.eu.org,javsubindo.com,javsubindo.online,javxxi-a.site,kimcilonlyofc.site,malayporntube.net,melayuboleh.me,minioppai.org,mybokep.tv,myhdjav.me,nekopoi.care,ngentub.cc,nontonhentai.org,omahbokep.org,omekin.tv,pascol.cyou,putri77.com,putri78.com,ruanglendir.xyz,rumahperjaka.online,rumahperjaka.store,sangetube.shop,semikeren.online,sibokepjepang.com,sintube.icu,xxibokep.org,yabaisub.com##a[target*="blank"]:has(> img)
 173.255.233.106,23.239.8.106,96.126.111.189##a[target="_blank"]:has(> video):remove()
 bokep360.xyz##a[title="banner" i]:has(> img)
@@ -3944,11 +3946,11 @@ duduk123.com,forumsemut.com,masuk123.com,semprot.com##.semprot_wizard:has-text(a
 duduk123.com,forumsemut.com,masuk123.com,semprot.com#@#.adVertical
 duduk123.com,forumsemut.com,masuk123.com,semprot.com#@#img[width="500"][height="70"]
 duduk123.com,forumsemut.com,masuk123.com,semprot.com#@#img[width="550"][height="70"]
-/px.gif|$image,redirect-rule=1x1.gif,domain=198.54.113.245|198.54.113.246|198.54.113.251|66.29.129.104|66.29.129.111|66.29.129.121|66.29.129.126|66.29.129.161|avtub.cc|avtub.com.de|avtub.diy|avtub.net|bokepid.*|omekin.casa|pasarbokep.tax|playbokep.*|rajabokep.*|sangelink.com.se|sdiratrust.com|simontok.casa|vibokep.*
-198.54.113.245,198.54.113.246,198.54.113.251,66.29.129.104,66.29.129.111,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.com.de,avtub.diy,avtub.net,bokepid.*,omekin.casa,pasarbokep.tax,playbokep.*,rajabokep.*,sangelink.com.se,sdiratrust.com,simontok.casa,vibokep.*##.close-text
-198.54.113.245,198.54.113.246,198.54.113.251,66.29.129.104,66.29.129.111,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.com.de,avtub.diy,avtub.net,bokepid.*,omekin.casa,pasarbokep.tax,playbokep.*,rajabokep.*,sangelink.com.se,sdiratrust.com,simontok.casa,vibokep.*##a[target*="blank"]:has(> img)
-198.54.113.245,198.54.113.246,198.54.113.251,66.29.129.104,66.29.129.111,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.com.de,avtub.diy,avtub.net,bokepid.*,omekin.casa,pasarbokep.tax,playbokep.*,rajabokep.*,sangelink.com.se,sdiratrust.com,simontok.casa,vibokep.*##+js(aopr, ujiPopups)
-198.54.113.245,198.54.113.246,198.54.113.251,66.29.129.104,66.29.129.111,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.com.de,avtub.diy,avtub.net,bokepid.*,omekin.casa,pasarbokep.tax,playbokep.*,rajabokep.*,sangelink.com.se,sdiratrust.com,simontok.casa,vibokep.*##+js(nowoif)
+/px.gif|$image,redirect-rule=1x1.gif,domain=198.54.113.245|198.54.113.246|198.54.113.251|66.29.129.104|66.29.129.111|66.29.129.121|66.29.129.126|66.29.129.161|avtub.cc|avtub.com.de|avtub.diy|avtub.net|bokepid.*|omekin.casa|pasarbokep.id|pasarbokep.tax|playbokep.*|rajabokep.*|sangelink.com.se|sdiratrust.com|simontok.casa|vibokep.*
+198.54.113.245,198.54.113.246,198.54.113.251,66.29.129.104,66.29.129.111,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.com.de,avtub.diy,avtub.net,bokepid.*,omekin.casa,pasarbokep.id,pasarbokep.tax,playbokep.*,rajabokep.*,sangelink.com.se,sdiratrust.com,simontok.casa,vibokep.*##.close-text
+198.54.113.245,198.54.113.246,198.54.113.251,66.29.129.104,66.29.129.111,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.com.de,avtub.diy,avtub.net,bokepid.*,omekin.casa,pasarbokep.id,pasarbokep.tax,playbokep.*,rajabokep.*,sangelink.com.se,sdiratrust.com,simontok.casa,vibokep.*##a[target*="blank"]:has(> img)
+198.54.113.245,198.54.113.246,198.54.113.251,66.29.129.104,66.29.129.111,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.com.de,avtub.diy,avtub.net,bokepid.*,omekin.casa,pasarbokep.id,pasarbokep.tax,playbokep.*,rajabokep.*,sangelink.com.se,sdiratrust.com,simontok.casa,vibokep.*##+js(aopr, ujiPopups)
+198.54.113.245,198.54.113.246,198.54.113.251,66.29.129.104,66.29.129.111,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.com.de,avtub.diy,avtub.net,bokepid.*,omekin.casa,pasarbokep.id,pasarbokep.tax,playbokep.*,rajabokep.*,sangelink.com.se,sdiratrust.com,simontok.casa,vibokep.*##+js(nowoif)
 rumahbokep.*,videocrot.*,websitebokep-id.*##.inside-player-ad
 rumahbokep.*,videocrot.*,websitebokep-id.*##a[target*="blank"]:has(> img)
 rumahbokep.*,videocrot.*,websitebokep-id.*##+js(aeld, contextmenu)
