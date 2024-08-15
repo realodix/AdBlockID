@@ -24,7 +24,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 ## Subscription
 
-> 💡 AdBlockID sudah tersedia di AdGuard, Anda tidak perlu melakukan subscribe manual.
+> [!TIP]
+> AdBlockID sudah tersedia di AdGuard, Anda tidak perlu melakukan subscribe manual.
 
 | Name           | Subscription | Raw File | Description |
 | -------------- | --------- | -------- | ----------- |
@@ -58,7 +59,8 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 ## Cara Menggunakan
 
-> 💡 Pastikan Anda hanya memasang AdBlockID di AdGuard dan uBlock Origin ya guys. Alasannya cukup sepele, karena saat ini sebagian besar fitur ajaib yang ada di dalam AdBlockID, hanya dapat dikeluarkan oleh AdGuard dan uBlock Origin saja 😃
+> [!IMPORTANT]
+> Pastikan Anda hanya menggunakan AdBlockID di AdGuard dan uBlock Origin ya guys. Alasannya cukup sepele, karena saat ini sebagian besar fitur ajaib yang ada di dalam AdBlockID, hanya dapat dijalankan oleh AdGuard dan uBlock Origin saja 😃
 
 #### Desktop
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/edge), etc)
