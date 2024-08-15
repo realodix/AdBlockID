@@ -54,7 +54,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 ## Development Tools
 ### Requirements
 
-- [Python (2.7 atau 3.5+)](https://www.python.org/downloads/)
+- [Python v3.5+](https://www.python.org/downloads/)
 - [pip](https://pypi.org/project/pip/)
 
 Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
