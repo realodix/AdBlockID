@@ -311,9 +311,9 @@ def filtertidy(filterin, filename):
             removeentries.append(option)
         elif opt_name in ("redirect", "redirect-rule"):
             redirectlist.append(option)
-            redirectResource = option[opt_length:].split(":")[0]
-            if redirectResource and not re.match(RE_OPTION_REDIRECT, redirectResource):
-                msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
+            opt_redirect_resource = option[opt_length:].split(":")[0]
+            if opt_redirect_resource and not re.match(RE_OPTION_REDIRECT, opt_redirect_resource):
+                msg_warning(f'Redirect resource \"{opt_redirect_resource}\" is not recognised.')
         elif opt_name in ("removeparam", "permissions", "csp"):
             optionlist = optionsplit.group(2).split(",")
         elif opt_name not in KNOWNOPTIONS:
