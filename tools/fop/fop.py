@@ -99,8 +99,9 @@ RE_OPTION_REDIRECT = re.compile(r"""
 
 def start():
     """ Print a greeting message and run FOP in the directories
-    specified via the command line, or the current working directory if
-    no arguments have been passed."""
+        specified via the command line, or the current working directory if
+        no arguments have been passed.
+    """
     if arg.version:
         print(greeting)
         sys.exit(0)
@@ -121,7 +122,8 @@ def start():
 
 
 def main(location):
-    """ Find and sort all the files in a given directory."""
+    """ Find and sort all the files in a given directory.
+    """
     # Check that the directory exists, otherwise return
     if not os.path.isdir(location):
         print(f"{location} does not exist or is not a folder.")
@@ -146,73 +148,79 @@ def main(location):
                 try:
                     os.remove(address)
                 except(IOError, OSError):
-                    # Ignore errors resulting from deleting files, as they likely indicate that the file has already been deleted
+                    # Ignore errors resulting from deleting files, as they likely indicate that the
+                    # file has already been deleted
                     pass
 
 
 def fopsort(filename):
-    """ Sort the sections of the file and save any modifications."""
+    """ Sort the sections of the file and save any modifications.
+    """
     temporaryfile = f"{filename}.temp"
     check_lines = 10
     section = []
     lineschecked = 1
     filterlines = elementlines = 0
 
-    # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
+    # Read in the input and output files concurrently to allow filters to be
+    # saved as soon as they are finished with
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
 
         # Combines domains for (further) identical rules
-        def combinefilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
-            combinedFilters = []
-            for i, uncombinedFilter in enumerate(uncombinedFilters):
-                domains1 = re.search(DOMAINPATTERN, uncombinedFilter)
-                if i+1 < len(uncombinedFilters) and domains1:
-                    domains2 = re.search(DOMAINPATTERN, uncombinedFilters[i+1])
+        def combinefilters(uncombined_filters, domain_pattern, domainseparator):
+            combined_filters = []
+            for i, uncombined_filter in enumerate(uncombined_filters):
+                domains1 = re.search(domain_pattern, uncombined_filter)
+                if i+1 < len(uncombined_filters) and domains1:
+                    domains2 = re.search(domain_pattern, uncombined_filters[i+1])
                     domain1str = domains1.group(1)
 
-                if not domains1 or i+1 == len(uncombinedFilters) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
+                if not domains1 or i+1 == len(uncombined_filters) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
                     # last filter or filter didn't match regex or no domains
-                    combinedFilters.append(uncombinedFilter)
+                    combined_filters.append(uncombined_filter)
                 else:
                     domain2str = domains2.group(1)
                     if domains1.group(0).replace(domain1str, domain2str, 1) != domains2.group(0):
                         # non-identical filters shouldn't be combined
-                        combinedFilters.append(uncombinedFilter)
-                    elif re.sub(DOMAINPATTERN, "", uncombinedFilter) == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1]):
+                        combined_filters.append(uncombined_filter)
+                    elif re.sub(domain_pattern, "", uncombined_filter) == re.sub(domain_pattern, "", uncombined_filters[i+1]):
                         # identical filters. Try to combine them...
-                        newDomains = f"{domain1str}{domainseparator}{domain2str}"
-                        newDomains = domainseparator.join(sorted(
-                            set(newDomains.split(domainseparator)), key=lambda domain: domain.strip("~")))
+                        new_domain = f"{domain1str}{domainseparator}{domain2str}"
+                        new_domain = domainseparator.join(sorted(
+                            set(new_domain.split(domainseparator)), key=lambda domain: domain.strip("~")))
                         if (domain1str.count("~") != domain1str.count(domainseparator) + 1) != (domain2str.count("~") != domain2str.count(domainseparator) + 1):
-                            # do not combine rules containing included domains with rules containing only excluded domains
-                            combinedFilters.append(uncombinedFilter)
+                            # do not combine rules containing included domains with rules containing
+                            # only excluded domains
+                            combined_filters.append(uncombined_filter)
                         else:
-                            # either both contain one or more included domains, or both contain only excluded domains
+                            # either both contain one or more included domains, or both contain only
+                            # excluded domains
                             domainssubstitute = domains1.group(
-                                0).replace(domain1str, newDomains, 1)
-                            uncombinedFilters[i+1] = re.sub(
-                                DOMAINPATTERN, domainssubstitute, uncombinedFilter)
+                                0).replace(domain1str, new_domain, 1)
+                            uncombined_filters[i+1] = re.sub(
+                                domain_pattern, domainssubstitute, uncombined_filter)
                     else:
                         # non-identical filters shouldn't be combined
-                        combinedFilters.append(uncombinedFilter)
-            return combinedFilters
+                        combined_filters.append(uncombined_filter)
+            return combined_filters
 
         # Writes the filter lines to the file
         def writefilters():
             if elementlines > filterlines:
-                uncombinedFilters = sorted(
+                uncombined_filters = sorted(
                     set(section), key=lambda rule: re.sub(ELEMENTDOMAINPATTERN, "", rule))
                 outputfile.write("{filters}\n".format(filters="\n".join(
-                    combinefilters(uncombinedFilters, ELEMENTDOMAINPATTERN, ","))))
+                    combinefilters(uncombined_filters, ELEMENTDOMAINPATTERN, ","))))
             else:
-                uncombinedFilters = sorted(set(section), key=str.lower)
+                uncombined_filters = sorted(set(section), key=str.lower)
                 outputfile.write("{filters}\n".format(filters="\n".join(
-                    combinefilters(uncombinedFilters, FILTERDOMAINPATTERN, "|"))))
+                    combinefilters(uncombined_filters, FILTERDOMAINPATTERN, "|"))))
 
         for line in inputfile:
             line = line.strip()
             if not re.match(BLANKPATTERN, line):
-                # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
+                # Include comments verbatim and, if applicable, sort the preceding section of filters
+                # and save them in the new version of the file
                 if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                     if section:
                         writefilters()
@@ -252,7 +260,8 @@ def fopsort(filename):
 
 def filtertidy(filterin, filename):
     """ Sort the options of blocking filters and make the filter text
-    lower case if applicable."""
+        lower case if applicable.
+    """
     optionsplit = re.match(OPTIONPATTERN, filterin)
 
     if not optionsplit:
@@ -269,8 +278,8 @@ def filtertidy(filterin, filename):
     removeentries = []
 
     def msg_warning(message):
-        """
-        Print a warning message with the filename and line number of the filter that caused the warning.
+        """ Print a warning message with the filename and line number of the filter that
+            caused the warning.
         """
         # Get line number of the filter in the file
         linenumber = ""
@@ -284,43 +293,44 @@ def filtertidy(filterin, filename):
               f'  {filename}:{linenumber}\n')
 
     for option in optionlist:
-        optionName = option.split("=", 1)[0].strip("~")
-        optionLength = len(optionName) + 1
+        opt_name = option.split("=", 1)[0].strip("~")
+        opt_length = len(opt_name) + 1
 
         # Detect and separate domain options
-        if optionName in ("domain", "denyallow", "from", "method", "to", "permissions"):
-            if optionName == "domain":
-                argList = domainlist
-            elif optionName == "from":
-                argList = fromlist
-            elif optionName == "to":
-                argList = tolist
-            elif optionName == "denyallow":
-                argList = denyallowlist
+        if opt_name in ("domain", "denyallow", "from", "method", "to", "permissions"):
+            if opt_name == "domain":
+                arg_list = domainlist
+            elif opt_name == "from":
+                arg_list = fromlist
+            elif opt_name == "to":
+                arg_list = tolist
+            elif opt_name == "denyallow":
+                arg_list = denyallowlist
                 if "domain=" not in filterin and "from=" not in filterin:
-                    msg_warning(f'\"denyallow=\" option requires the \"domain=\" or \"from=\" option.')
-            elif optionName == "method":
-                argList = methodlist
-                methods = option[optionLength:].split("|")
+                    msg_warning('\"denyallow=\" option requires the \"domain=\" or \"from=\" option.')
+            elif opt_name == "method":
+                arg_list = methodlist
+                methods = option[opt_length:].split("|")
                 for method in methods:
                     if method not in KNOWN_METHODS:
                         msg_warning(f'The \"{method}\" method is not recognised.')
-            elif optionName == "permissions":
-                argList = permissionslist
-            argList.extend(option[optionLength:].split("|"))
+            elif opt_name == "permissions":
+                arg_list = permissionslist
+            arg_list.extend(option[opt_length:].split("|"))
             removeentries.append(option)
-        elif optionName in ("redirect", "redirect-rule"):
+        elif opt_name in ("redirect", "redirect-rule"):
             redirectlist.append(option)
-            redirectResource = option[optionLength:].split(":")[0]
-            if redirectResource and not re.match(RE_OPTION_REDIRECT, redirectResource):
-                msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
-        elif optionName in ("removeparam", "permissions", "csp"):
+            opt_redirect_resource = option[opt_length:].split(":")[0]
+            if opt_redirect_resource and not re.match(RE_OPTION_REDIRECT, opt_redirect_resource):
+                msg_warning(f'Redirect resource \"{opt_redirect_resource}\" is not recognised.')
+        elif opt_name in ("removeparam", "permissions", "csp"):
             optionlist = optionsplit.group(2).split(",")
-        elif optionName not in KNOWNOPTIONS:
-            msg_warning(f'The option \"{optionName}\" is not recognised.')
+        elif opt_name not in KNOWNOPTIONS:
+            msg_warning(f'The option \"{opt_name}\" is not recognised.')
 
     # Sort all options other than domain, from, to, denyallow, method and permissions alphabetically
-    # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
+    # For identical options, the inverse always follows the non-inverse option
+    # ($image,~image instead of $~image,image)
     optionlist = sorted(
         set(filter(lambda option: (option not in removeentries) and (option not in redirectlist), optionlist)),
         key=sortfunc
@@ -347,8 +357,9 @@ def filtertidy(filterin, filename):
 
 
 def sortfunc (option):
-    # For identical options, the inverse always follows the non-inverse option
-    # (e.g., $image,~image instead of $~image,image)
+    """ For identical options, the inverse always follows the non-inverse option
+        (e.g., $image,~image instead of $~image,image)
+    """
     if option[0] == "~": return option[1:] + "~"
     # Also will always be first in the list
     if (option.find("important") > -1
@@ -368,7 +379,8 @@ def sortfunc (option):
 
 def elementtidy(domains, separator, selector):
     """ Sort the domains of element hiding rules, remove unnecessary
-    tags and make the relevant sections of the rule lower case."""
+        tags and make the relevant sections of the rule lower case.
+    """
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
         domains = ",".join(sorted(set(domains.split(",")),
@@ -424,19 +436,21 @@ def elementtidy(domains, separator, selector):
 
 
 def removeunnecessarywildcards(filtertext):
-    # Where possible, remove unnecessary wildcards from the beginnings and ends of blocking filters.
+    """ Where possible, remove unnecessary wildcards from the beginnings
+        and ends of blocking filters.
+    """
     allowlist = False
-    hadStar = False
+    had_star = False
     if filtertext[0:2] == "@@":
         allowlist = True
         filtertext = filtertext[2:]
     while len(filtertext) > 1 and filtertext[0] == "" and not filtertext[1] == "|" and not filtertext[1] == "!":
         filtertext = filtertext[1:]
-        hadStar = True
+        had_star = True
     while len(filtertext) > 1 and filtertext[-1] == "" and not filtertext[-2] == "|":
         filtertext = filtertext[:-1]
-        hadStar = True
-    if hadStar and filtertext[0] == "/" and filtertext[-1] == "/":
+        had_star = True
+    if had_star and filtertext[0] == "/" and filtertext[-1] == "/":
         filtertext = f"{filtertext}*"
     if filtertext == "":
         filtertext = ""
