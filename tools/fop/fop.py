@@ -162,15 +162,15 @@ def fopsort(filename):
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
 
         # Combines domains for (further) identical rules
-        def combinefilters(uncombined_filter, domain_pattern, domainseparator):
+        def combinefilters(uncombined_filters, domain_pattern, domainseparator):
             combinedFilters = []
-            for i, uncombinedFilter in enumerate(uncombined_filter):
+            for i, uncombinedFilter in enumerate(uncombined_filters):
                 domains1 = re.search(domain_pattern, uncombinedFilter)
-                if i+1 < len(uncombined_filter) and domains1:
-                    domains2 = re.search(domain_pattern, uncombined_filter[i+1])
+                if i+1 < len(uncombined_filters) and domains1:
+                    domains2 = re.search(domain_pattern, uncombined_filters[i+1])
                     domain1str = domains1.group(1)
 
-                if not domains1 or i+1 == len(uncombined_filter) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
+                if not domains1 or i+1 == len(uncombined_filters) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
                     # last filter or filter didn't match regex or no domains
                     combinedFilters.append(uncombinedFilter)
                 else:
@@ -178,7 +178,7 @@ def fopsort(filename):
                     if domains1.group(0).replace(domain1str, domain2str, 1) != domains2.group(0):
                         # non-identical filters shouldn't be combined
                         combinedFilters.append(uncombinedFilter)
-                    elif re.sub(domain_pattern, "", uncombinedFilter) == re.sub(domain_pattern, "", uncombined_filter[i+1]):
+                    elif re.sub(domain_pattern, "", uncombinedFilter) == re.sub(domain_pattern, "", uncombined_filters[i+1]):
                         # identical filters. Try to combine them...
                         new_domain = f"{domain1str}{domainseparator}{domain2str}"
                         new_domain = domainseparator.join(sorted(
@@ -190,7 +190,7 @@ def fopsort(filename):
                             # either both contain one or more included domains, or both contain only excluded domains
                             domainssubstitute = domains1.group(
                                 0).replace(domain1str, new_domain, 1)
-                            uncombined_filter[i+1] = re.sub(
+                            uncombined_filters[i+1] = re.sub(
                                 domain_pattern, domainssubstitute, uncombinedFilter)
                     else:
                         # non-identical filters shouldn't be combined
@@ -200,14 +200,14 @@ def fopsort(filename):
         # Writes the filter lines to the file
         def writefilters():
             if elementlines > filterlines:
-                uncombined_filter = sorted(
+                uncombined_filters = sorted(
                     set(section), key=lambda rule: re.sub(ELEMENTDOMAINPATTERN, "", rule))
                 outputfile.write("{filters}\n".format(filters="\n".join(
-                    combinefilters(uncombined_filter, ELEMENTDOMAINPATTERN, ","))))
+                    combinefilters(uncombined_filters, ELEMENTDOMAINPATTERN, ","))))
             else:
-                uncombined_filter = sorted(set(section), key=str.lower)
+                uncombined_filters = sorted(set(section), key=str.lower)
                 outputfile.write("{filters}\n".format(filters="\n".join(
-                    combinefilters(uncombined_filter, FILTERDOMAINPATTERN, "|"))))
+                    combinefilters(uncombined_filters, FILTERDOMAINPATTERN, "|"))))
 
         for line in inputfile:
             line = line.strip()
