@@ -284,40 +284,40 @@ def filtertidy(filterin, filename):
               f'  {filename}:{linenumber}\n')
 
     for option in optionlist:
-        optionName = option.split("=", 1)[0].strip("~")
-        optionLength = len(optionName) + 1
+        opt_name = option.split("=", 1)[0].strip("~")
+        optionLength = len(opt_name) + 1
 
         # Detect and separate domain options
-        if optionName in ("domain", "denyallow", "from", "method", "to", "permissions"):
-            if optionName == "domain":
+        if opt_name in ("domain", "denyallow", "from", "method", "to", "permissions"):
+            if opt_name == "domain":
                 argList = domainlist
-            elif optionName == "from":
+            elif opt_name == "from":
                 argList = fromlist
-            elif optionName == "to":
+            elif opt_name == "to":
                 argList = tolist
-            elif optionName == "denyallow":
+            elif opt_name == "denyallow":
                 argList = denyallowlist
                 if "domain=" not in filterin and "from=" not in filterin:
                     msg_warning(f'\"denyallow=\" option requires the \"domain=\" or \"from=\" option.')
-            elif optionName == "method":
+            elif opt_name == "method":
                 argList = methodlist
                 methods = option[optionLength:].split("|")
                 for method in methods:
                     if method not in KNOWN_METHODS:
                         msg_warning(f'The \"{method}\" method is not recognised.')
-            elif optionName == "permissions":
+            elif opt_name == "permissions":
                 argList = permissionslist
             argList.extend(option[optionLength:].split("|"))
             removeentries.append(option)
-        elif optionName in ("redirect", "redirect-rule"):
+        elif opt_name in ("redirect", "redirect-rule"):
             redirectlist.append(option)
             redirectResource = option[optionLength:].split(":")[0]
             if redirectResource and not re.match(RE_OPTION_REDIRECT, redirectResource):
                 msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
-        elif optionName in ("removeparam", "permissions", "csp"):
+        elif opt_name in ("removeparam", "permissions", "csp"):
             optionlist = optionsplit.group(2).split(",")
-        elif optionName not in KNOWNOPTIONS:
-            msg_warning(f'The option \"{optionName}\" is not recognised.')
+        elif opt_name not in KNOWNOPTIONS:
+            msg_warning(f'The option \"{opt_name}\" is not recognised.')
 
     # Sort all options other than domain, from, to, denyallow, method and permissions alphabetically
     # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
