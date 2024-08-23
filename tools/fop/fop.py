@@ -290,24 +290,24 @@ def filtertidy(filterin, filename):
         # Detect and separate domain options
         if opt_name in ("domain", "denyallow", "from", "method", "to", "permissions"):
             if opt_name == "domain":
-                argList = domainlist
+                arg_list = domainlist
             elif opt_name == "from":
-                argList = fromlist
+                arg_list = fromlist
             elif opt_name == "to":
-                argList = tolist
+                arg_list = tolist
             elif opt_name == "denyallow":
-                argList = denyallowlist
+                arg_list = denyallowlist
                 if "domain=" not in filterin and "from=" not in filterin:
                     msg_warning(f'\"denyallow=\" option requires the \"domain=\" or \"from=\" option.')
             elif opt_name == "method":
-                argList = methodlist
+                arg_list = methodlist
                 methods = option[opt_length:].split("|")
                 for method in methods:
                     if method not in KNOWN_METHODS:
                         msg_warning(f'The \"{method}\" method is not recognised.')
             elif opt_name == "permissions":
-                argList = permissionslist
-            argList.extend(option[opt_length:].split("|"))
+                arg_list = permissionslist
+            arg_list.extend(option[opt_length:].split("|"))
             removeentries.append(option)
         elif opt_name in ("redirect", "redirect-rule"):
             redirectlist.append(option)
