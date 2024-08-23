@@ -285,7 +285,7 @@ def filtertidy(filterin, filename):
 
     for option in optionlist:
         opt_name = option.split("=", 1)[0].strip("~")
-        optionLength = len(opt_name) + 1
+        opt_length = len(opt_name) + 1
 
         # Detect and separate domain options
         if opt_name in ("domain", "denyallow", "from", "method", "to", "permissions"):
@@ -301,17 +301,17 @@ def filtertidy(filterin, filename):
                     msg_warning(f'\"denyallow=\" option requires the \"domain=\" or \"from=\" option.')
             elif opt_name == "method":
                 argList = methodlist
-                methods = option[optionLength:].split("|")
+                methods = option[opt_length:].split("|")
                 for method in methods:
                     if method not in KNOWN_METHODS:
                         msg_warning(f'The \"{method}\" method is not recognised.')
             elif opt_name == "permissions":
                 argList = permissionslist
-            argList.extend(option[optionLength:].split("|"))
+            argList.extend(option[opt_length:].split("|"))
             removeentries.append(option)
         elif opt_name in ("redirect", "redirect-rule"):
             redirectlist.append(option)
-            redirectResource = option[optionLength:].split(":")[0]
+            redirectResource = option[opt_length:].split(":")[0]
             if redirectResource and not re.match(RE_OPTION_REDIRECT, redirectResource):
                 msg_warning(f'Redirect resource \"{redirectResource}\" is not recognised.')
         elif opt_name in ("removeparam", "permissions", "csp"):
