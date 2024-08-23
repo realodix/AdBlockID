@@ -426,17 +426,17 @@ def elementtidy(domains, separator, selector):
 def removeunnecessarywildcards(filtertext):
     # Where possible, remove unnecessary wildcards from the beginnings and ends of blocking filters.
     allowlist = False
-    hadStar = False
+    had_star = False
     if filtertext[0:2] == "@@":
         allowlist = True
         filtertext = filtertext[2:]
     while len(filtertext) > 1 and filtertext[0] == "" and not filtertext[1] == "|" and not filtertext[1] == "!":
         filtertext = filtertext[1:]
-        hadStar = True
+        had_star = True
     while len(filtertext) > 1 and filtertext[-1] == "" and not filtertext[-2] == "|":
         filtertext = filtertext[:-1]
-        hadStar = True
-    if hadStar and filtertext[0] == "/" and filtertext[-1] == "/":
+        had_star = True
+    if had_star and filtertext[0] == "/" and filtertext[-1] == "/":
         filtertext = f"{filtertext}*"
     if filtertext == "":
         filtertext = ""
