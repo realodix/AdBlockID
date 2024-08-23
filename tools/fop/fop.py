@@ -162,12 +162,12 @@ def fopsort(filename):
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
 
         # Combines domains for (further) identical rules
-        def combinefilters(uncombinedFilters, DOMAINPATTERN, domainseparator):
+        def combinefilters(uncombinedFilters, domain_pattern, domainseparator):
             combinedFilters = []
             for i, uncombinedFilter in enumerate(uncombinedFilters):
-                domains1 = re.search(DOMAINPATTERN, uncombinedFilter)
+                domains1 = re.search(domain_pattern, uncombinedFilter)
                 if i+1 < len(uncombinedFilters) and domains1:
-                    domains2 = re.search(DOMAINPATTERN, uncombinedFilters[i+1])
+                    domains2 = re.search(domain_pattern, uncombinedFilters[i+1])
                     domain1str = domains1.group(1)
 
                 if not domains1 or i+1 == len(uncombinedFilters) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
@@ -178,7 +178,7 @@ def fopsort(filename):
                     if domains1.group(0).replace(domain1str, domain2str, 1) != domains2.group(0):
                         # non-identical filters shouldn't be combined
                         combinedFilters.append(uncombinedFilter)
-                    elif re.sub(DOMAINPATTERN, "", uncombinedFilter) == re.sub(DOMAINPATTERN, "", uncombinedFilters[i+1]):
+                    elif re.sub(domain_pattern, "", uncombinedFilter) == re.sub(domain_pattern, "", uncombinedFilters[i+1]):
                         # identical filters. Try to combine them...
                         newDomains = f"{domain1str}{domainseparator}{domain2str}"
                         newDomains = domainseparator.join(sorted(
@@ -191,7 +191,7 @@ def fopsort(filename):
                             domainssubstitute = domains1.group(
                                 0).replace(domain1str, newDomains, 1)
                             uncombinedFilters[i+1] = re.sub(
-                                DOMAINPATTERN, domainssubstitute, uncombinedFilter)
+                                domain_pattern, domainssubstitute, uncombinedFilter)
                     else:
                         # non-identical filters shouldn't be combined
                         combinedFilters.append(uncombinedFilter)
