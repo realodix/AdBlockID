@@ -180,16 +180,16 @@ def fopsort(filename):
                         combinedFilters.append(uncombinedFilter)
                     elif re.sub(domain_pattern, "", uncombinedFilter) == re.sub(domain_pattern, "", uncombined_filter[i+1]):
                         # identical filters. Try to combine them...
-                        newDomains = f"{domain1str}{domainseparator}{domain2str}"
-                        newDomains = domainseparator.join(sorted(
-                            set(newDomains.split(domainseparator)), key=lambda domain: domain.strip("~")))
+                        new_domain = f"{domain1str}{domainseparator}{domain2str}"
+                        new_domain = domainseparator.join(sorted(
+                            set(new_domain.split(domainseparator)), key=lambda domain: domain.strip("~")))
                         if (domain1str.count("~") != domain1str.count(domainseparator) + 1) != (domain2str.count("~") != domain2str.count(domainseparator) + 1):
                             # do not combine rules containing included domains with rules containing only excluded domains
                             combinedFilters.append(uncombinedFilter)
                         else:
                             # either both contain one or more included domains, or both contain only excluded domains
                             domainssubstitute = domains1.group(
-                                0).replace(domain1str, newDomains, 1)
+                                0).replace(domain1str, new_domain, 1)
                             uncombined_filter[i+1] = re.sub(
                                 domain_pattern, domainssubstitute, uncombinedFilter)
                     else:
