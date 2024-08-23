@@ -148,7 +148,8 @@ def main(location):
                 try:
                     os.remove(address)
                 except(IOError, OSError):
-                    # Ignore errors resulting from deleting files, as they likely indicate that the file has already been deleted
+                    # Ignore errors resulting from deleting files, as they likely indicate that the
+                    # file has already been deleted
                     pass
 
 
@@ -161,7 +162,8 @@ def fopsort(filename):
     lineschecked = 1
     filterlines = elementlines = 0
 
-    # Read in the input and output files concurrently to allow filters to be saved as soon as they are finished with
+    # Read in the input and output files concurrently to allow filters to be
+    # saved as soon as they are finished with
     with open(filename, "r", encoding="utf-8", newline="\n") as inputfile, open(temporaryfile, "w", encoding="utf-8", newline="\n") as outputfile:
 
         # Combines domains for (further) identical rules
@@ -187,10 +189,12 @@ def fopsort(filename):
                         new_domain = domainseparator.join(sorted(
                             set(new_domain.split(domainseparator)), key=lambda domain: domain.strip("~")))
                         if (domain1str.count("~") != domain1str.count(domainseparator) + 1) != (domain2str.count("~") != domain2str.count(domainseparator) + 1):
-                            # do not combine rules containing included domains with rules containing only excluded domains
+                            # do not combine rules containing included domains with rules containing
+                            # only excluded domains
                             combined_filters.append(uncombined_filter)
                         else:
-                            # either both contain one or more included domains, or both contain only excluded domains
+                            # either both contain one or more included domains, or both contain only
+                            # excluded domains
                             domainssubstitute = domains1.group(
                                 0).replace(domain1str, new_domain, 1)
                             uncombined_filters[i+1] = re.sub(
@@ -215,7 +219,8 @@ def fopsort(filename):
         for line in inputfile:
             line = line.strip()
             if not re.match(BLANKPATTERN, line):
-                # Include comments verbatim and, if applicable, sort the preceding section of filters and save them in the new version of the file
+                # Include comments verbatim and, if applicable, sort the preceding section of filters
+                # and save them in the new version of the file
                 if line[0] == "!" or line[:8] == "%include" or line[0] == "[" and line[-1] == "]":
                     if section:
                         writefilters()
@@ -324,7 +329,8 @@ def filtertidy(filterin, filename):
             msg_warning(f'The option \"{opt_name}\" is not recognised.')
 
     # Sort all options other than domain, from, to, denyallow, method and permissions alphabetically
-    # For identical options, the inverse always follows the non-inverse option ($image,~image instead of $~image,image)
+    # For identical options, the inverse always follows the non-inverse option
+    # ($image,~image instead of $~image,image)
     optionlist = sorted(
         set(filter(lambda option: (option not in removeentries) and (option not in redirectlist), optionlist)),
         key=sortfunc
