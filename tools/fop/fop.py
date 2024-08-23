@@ -164,37 +164,37 @@ def fopsort(filename):
         # Combines domains for (further) identical rules
         def combinefilters(uncombined_filters, domain_pattern, domainseparator):
             combinedFilters = []
-            for i, uncombinedFilter in enumerate(uncombined_filters):
-                domains1 = re.search(domain_pattern, uncombinedFilter)
+            for i, uncombined_filter in enumerate(uncombined_filters):
+                domains1 = re.search(domain_pattern, uncombined_filter)
                 if i+1 < len(uncombined_filters) and domains1:
                     domains2 = re.search(domain_pattern, uncombined_filters[i+1])
                     domain1str = domains1.group(1)
 
                 if not domains1 or i+1 == len(uncombined_filters) or not domains2 or len(domain1str) == 0 or len(domains2.group(1)) == 0:
                     # last filter or filter didn't match regex or no domains
-                    combinedFilters.append(uncombinedFilter)
+                    combinedFilters.append(uncombined_filter)
                 else:
                     domain2str = domains2.group(1)
                     if domains1.group(0).replace(domain1str, domain2str, 1) != domains2.group(0):
                         # non-identical filters shouldn't be combined
-                        combinedFilters.append(uncombinedFilter)
-                    elif re.sub(domain_pattern, "", uncombinedFilter) == re.sub(domain_pattern, "", uncombined_filters[i+1]):
+                        combinedFilters.append(uncombined_filter)
+                    elif re.sub(domain_pattern, "", uncombined_filter) == re.sub(domain_pattern, "", uncombined_filters[i+1]):
                         # identical filters. Try to combine them...
                         new_domain = f"{domain1str}{domainseparator}{domain2str}"
                         new_domain = domainseparator.join(sorted(
                             set(new_domain.split(domainseparator)), key=lambda domain: domain.strip("~")))
                         if (domain1str.count("~") != domain1str.count(domainseparator) + 1) != (domain2str.count("~") != domain2str.count(domainseparator) + 1):
                             # do not combine rules containing included domains with rules containing only excluded domains
-                            combinedFilters.append(uncombinedFilter)
+                            combinedFilters.append(uncombined_filter)
                         else:
                             # either both contain one or more included domains, or both contain only excluded domains
                             domainssubstitute = domains1.group(
                                 0).replace(domain1str, new_domain, 1)
                             uncombined_filters[i+1] = re.sub(
-                                domain_pattern, domainssubstitute, uncombinedFilter)
+                                domain_pattern, domainssubstitute, uncombined_filter)
                     else:
                         # non-identical filters shouldn't be combined
-                        combinedFilters.append(uncombinedFilter)
+                        combinedFilters.append(uncombined_filter)
             return combinedFilters
 
         # Writes the filter lines to the file
