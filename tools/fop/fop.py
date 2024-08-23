@@ -307,7 +307,7 @@ def filtertidy(filterin, filename):
             elif opt_name == "denyallow":
                 arg_list = denyallowlist
                 if "domain=" not in filterin and "from=" not in filterin:
-                    msg_warning(f'\"denyallow=\" option requires the \"domain=\" or \"from=\" option.')
+                    msg_warning('\"denyallow=\" option requires the \"domain=\" or \"from=\" option.')
             elif opt_name == "method":
                 arg_list = methodlist
                 methods = option[opt_length:].split("|")
