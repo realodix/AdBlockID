@@ -99,8 +99,9 @@ RE_OPTION_REDIRECT = re.compile(r"""
 
 def start():
     """ Print a greeting message and run FOP in the directories
-    specified via the command line, or the current working directory if
-    no arguments have been passed."""
+        specified via the command line, or the current working directory if
+        no arguments have been passed.
+    """
     if arg.version:
         print(greeting)
         sys.exit(0)
@@ -121,7 +122,8 @@ def start():
 
 
 def main(location):
-    """ Find and sort all the files in a given directory."""
+    """ Find and sort all the files in a given directory.
+    """
     # Check that the directory exists, otherwise return
     if not os.path.isdir(location):
         print(f"{location} does not exist or is not a folder.")
@@ -151,7 +153,8 @@ def main(location):
 
 
 def fopsort(filename):
-    """ Sort the sections of the file and save any modifications."""
+    """ Sort the sections of the file and save any modifications.
+    """
     temporaryfile = f"{filename}.temp"
     check_lines = 10
     section = []
@@ -252,7 +255,8 @@ def fopsort(filename):
 
 def filtertidy(filterin, filename):
     """ Sort the options of blocking filters and make the filter text
-    lower case if applicable."""
+        lower case if applicable.
+    """
     optionsplit = re.match(OPTIONPATTERN, filterin)
 
     if not optionsplit:
@@ -269,8 +273,8 @@ def filtertidy(filterin, filename):
     removeentries = []
 
     def msg_warning(message):
-        """
-        Print a warning message with the filename and line number of the filter that caused the warning.
+        """ Print a warning message with the filename and line number of the filter that
+            caused the warning.
         """
         # Get line number of the filter in the file
         linenumber = ""
@@ -347,8 +351,9 @@ def filtertidy(filterin, filename):
 
 
 def sortfunc (option):
-    # For identical options, the inverse always follows the non-inverse option
-    # (e.g., $image,~image instead of $~image,image)
+    """ For identical options, the inverse always follows the non-inverse option
+        (e.g., $image,~image instead of $~image,image)
+    """
     if option[0] == "~": return option[1:] + "~"
     # Also will always be first in the list
     if (option.find("important") > -1
@@ -368,7 +373,8 @@ def sortfunc (option):
 
 def elementtidy(domains, separator, selector):
     """ Sort the domains of element hiding rules, remove unnecessary
-    tags and make the relevant sections of the rule lower case."""
+        tags and make the relevant sections of the rule lower case.
+    """
     # Order domain names alphabetically, ignoring exceptions
     if "," in domains:
         domains = ",".join(sorted(set(domains.split(",")),
@@ -424,7 +430,9 @@ def elementtidy(domains, separator, selector):
 
 
 def removeunnecessarywildcards(filtertext):
-    # Where possible, remove unnecessary wildcards from the beginnings and ends of blocking filters.
+    """ Where possible, remove unnecessary wildcards from the beginnings
+        and ends of blocking filters.
+    """
     allowlist = False
     had_star = False
     if filtertext[0:2] == "@@":
