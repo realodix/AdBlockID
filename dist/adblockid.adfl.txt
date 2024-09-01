@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.9.1
+! Version: 24.9.3
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 01 Sep 2024 02:06 UTC
+! Last modified: 01 Sep 2024 20:40 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1562,6 +1562,7 @@ _970-x-90-$image,domain=teropongmedia.id
 ||gaikindo.or.id^*/banner-$image
 ||gatra.com/foldershared/images/banners/
 ||gemasulawesi.com/storage/ads/
+||gemasuryafm.com^*/banner-$image
 ||gentaonline.com/assets/banner/
 ||gesuri.id/images/banner/$image
 ||global-news.co.id^*/iklan-$image
@@ -1793,6 +1794,7 @@ _970-x-90-$image,domain=teropongmedia.id
 ||riaumandiri.co/assets/banner/
 ||riauonline.co.id^*/ads/
 ||riaupower.com/assets/banner/
+||rm.id/images/microsite/banner/
 ||rmol.id^*/banner/
 ||sabili.id/assets/img/ads/
 ||safelinku.com/728x20.$3p,image
@@ -2071,6 +2073,7 @@ inhilklik.com,lineperistiwa.com,merahputihterkini.com,pantauriau.com,riauaktual.
 jagadtani.com##.banner-item
 industry.co.id##.banner-lb-bottom
 honestdocs.id##.banner-left
+rm.id##.banner-microsite
 orami.co.id##.banner-parallax
 intipos.com,jambidaily.com,jurnallampung.com,kabarkata.com,kalpostonline.com,lampungmandiri.id,metrokaltim.com,pustakalewi.com,sriwijaya-hariini.com,sumbernusantara.co.id,teropongnews.com,tintahitam.id,topkata.com,tuntaslampung.com##.banner-promotions-wrapper
 diadona.id##.banner-sc
@@ -2429,7 +2432,7 @@ inijabar.com##img[data-original-width="1900"][data-original-height="200"]
 ciremaitoday.com##img[width="1000"][height="313"]
 sentralberita.com##img[width="1000"][height="361"]
 ciremainews.com##img[width="1008"][height="162"]
-indoposco.id##img[width="1024"][height="127"]
+gemasuryafm.com,indoposco.id##img[width="1024"][height="127"]
 mariodevan.com##img[width="1024"][height="170"]
 gonews.id,infosatu.co,insitekaltim.com##img[width="1024"][height="173"]
 inilah.com##img[width="1024"][height="200"]
@@ -2445,6 +2448,7 @@ newskaltim.com##img[width="1024"][height="338"]
 mediatrapnews.id,vasadnews.com##img[width="1024"][height="341"]
 sumateranews.co.id##img[width="1024"][height="365"]
 makassartoday.com##img[width="1024"][height="383"]
+trotoar.id##img[width="1030"][height="264"]
 filesulawesi.com##img[width="1066"][height="1600"]
 balanganews.com##img[width="1067"][height="1600"]
 trennews.id##img[width="1080"][height="1920"]
@@ -2615,10 +2619,10 @@ legacynews.id##.mh-widget > .wp-block-image > img
 bijaknews.com,faktanews.id,gustani.id,lintashukum-indonesia.com,tanamonews.com,teknoreview.net,wartasehat.id##.sidebar .widget:has(.widget-content > a > img)
 expossumbar.com,fokussumatera.com,gustani.id,indimanado.com,inilahmedan.com,jejakfaktanews.com,klikmetro.com,lintashukum-indonesia.com,medanmerdeka.com,mediasembilan.co.id,metrokalimantan.com,ninemedia.id,realitakini.com,serikatnasional.id##.sidebar .widget:has(.widget-content > img)
 halojambi.id##.t3-sidebar p > img
-beritatrends.co.id,exposenews.id,id.rayhaber.com,intipnews.com,joglojateng.com,komparatif.id,lintassumut.com,minanews.net,papuatimes.co.id,penjuru.id,suaraklaten.id,suarapubliknews.net,sukoharjonews.com##.textwidget > a > img
+beritatrends.co.id,exposenews.id,id.rayhaber.com,intipnews.com,joglojateng.com,komparatif.id,lintassumut.com,minanews.net,papuatimes.co.id,penjuru.id,suaraklaten.id,suarapubliknews.net,sukoharjonews.com,trotoar.id##.textwidget > a > img
 bake.co.id,kabarwarta.id,minangkabaunews.com,newssatu.com,republikjatim.com##.textwidget > div > a > img
 koreri.com,minangkabaunews.com,suaratimurnews.com##.textwidget > div > img
-berita-kota.com,gesahkita.com,indepthnews.id,jejakkasus.info,jodanews.com,kanalkalimantan.com,lintassumut.com,monopolisumselnews.com,ojenews.com,papuatimes.co.id,radioazam.id,realita.co,seru.co.id,simpulrakyat.co.id,suarasumselnews.co.id,topikterkini.com##.textwidget > img
+berita-kota.com,gesahkita.com,indepthnews.id,jejakkasus.info,jodanews.com,kanalkalimantan.com,lintassumut.com,monopolisumselnews.com,ojenews.com,papuatimes.co.id,radioazam.id,realita.co,seru.co.id,simpulrakyat.co.id,suarasumselnews.co.id,topikterkini.com,trotoar.id##.textwidget > img
 bataminfo.co.id,cahayasiang.id,faktaperistiwanews.co,hisbah.net,kalderanews.com,kbanews.com,kilaspapua.com,kilastimor.com,klikkalsel.com,mandiripos.com,papuabangkit.com,papuapos.com,sekato.id,seputarsultra.com,tobasatu.com##.textwidget > p > a > img
 bantenekspres.co.id,beritaanda.net,beritanusa.com,faktahukumntt.com,fokusaktual.co.id,habanusantara.net,harianwijaya.com,indosatunews.com,inikalteng.com,intailampung.com,japos.co,jurnalnews.co,katoe.id,kbanews.com,kilasjatim.com,klewangnews.com,klikkalsel.com,lokadewata.com,lomboksatu.com,mediakeprinews.com,metrokaltara.com,metrokepri.com,newslampungterkini.com,nusantarapos.co.id,odiyaiwuu.com,ojenews.com,patunas.co.id,pilarjambi.com,portibi.id,radarbatam.id,rakyatjabarnews.com,rakyatkalteng.com,rakyatpapua.id,realitarakyat.com,redaksipos.com,rmnews.id,sekato.id,seputarsultra.com,sidakpost.id,sorotjakarta.com,sumsel.news,sumselindependen.com##.textwidget > p > img
 kalbaronline.com##.textwidget > p > picture
@@ -3623,6 +3627,7 @@ _usafelink.$3p,script
 ||goodpics.xyz/uploads/bannerindoxxi/$image
 ||image.bannermovie.online/*.gif$image
 ||jwplayer21.com/images/*.gif$image
+||nomat.top/img/banner-ad-$image
 ||nontonfilm88.co^*/ads/
 ||sokuja.site/tmp/$image
 /agrihajrian/hs/*/adv$3p,redirect=noop-1s.mp4
@@ -3662,7 +3667,7 @@ manganime.live##[id*="ads"]
 anichin.mom##[id^="fload-"]
 176.119.30.88,anichin.site,delenofincorp.com,npcnc.org,ragihospitalkukatpally.com,wibudesu.co##a:has(> img[src$=".gif"])
 anoboy.baby##a[target*="blank"]:has(> amp-img)
-109.123.239.86,146.190.96.17,157.230.44.16,157.245.193.162,161.97.170.241,176.119.30.88,181.214.58.34,194.233.74.98,38.242.218.184,5.182.37.18,adikfilm.click,akashinime.wiki,animebatch.id,animekompi.vip,anixverse.com,anoboy.baby,anoboy.li,anoboy.su,bioskop.icu,bioskop21.skin,bioskopvirtual.com,bk21.pw,boscinema21.site,bosku21.site,cinemaemas6.com,cinemagaul.com,cinemakeren6.id,clampschoolholic.web.id,delenofincorp.com,drachindo.site,dramakor.icu,dramaserial.id,filmblurayku.mom,gm21.mobi,gudangmovies21.zip,hepinime.id,idlixofficialx.net,idxxi.buzz,kazesub.com,kebioskop21.digital,kitanonton.autos,kuramanime.boo,kusonime.com,layarkacafilm21.com,layarkeren.pro,manganime.live,melongmovie.site,nimegami.id,nonton168.mom,nontonsbo.com,npcnc.org,nunadrama.online,omanga.net,otakudesu.cloud,paris-hostel.biz,ragihospitalkukatpally.com,rebahan21.com,rebahin.lol,rebahinxxi.cfd,sarangfilm.com,senatorpeters.com,sk21.pro,sobatgo.site,sobatkeren21.live,tukangnonton.shop##a[target*="blank"]:has(> img)
+109.123.239.86,146.190.96.17,157.230.44.16,157.245.193.162,161.97.170.241,176.119.30.88,181.214.58.34,194.233.74.98,38.242.218.184,5.182.37.18,adikfilm.click,akashinime.wiki,animebatch.id,animekompi.vip,anixverse.com,anoboy.baby,anoboy.li,anoboy.su,bioskop.icu,bioskop21.skin,bioskopvirtual.com,bk21.pw,boscinema21.site,bosku21.site,cinemaemas6.com,cinemagaul.com,cinemakeren6.id,clampschoolholic.web.id,delenofincorp.com,drachindo.site,dramakor.icu,dramaserial.id,filmblurayku.mom,gm21.mobi,gudangmovies21.zip,hepinime.id,idlixofficialx.net,idxxi.buzz,kazesub.com,kebioskop21.digital,kitanonton.autos,kuramanime.boo,kusonime.com,layarkacafilm21.com,layarkeren.pro,manganime.live,melongmovie.site,nimegami.id,nomat.top,nonton168.mom,nontonsbo.com,npcnc.org,nunadrama.online,omanga.net,otakudesu.cloud,paris-hostel.biz,ragihospitalkukatpally.com,rebahan21.com,rebahin.lol,rebahinxxi.cfd,sarangfilm.com,senatorpeters.com,sk21.pro,sobatgo.site,sobatkeren21.live,tukangnonton.shop##a[target*="blank"]:has(> img)
 niihen.com##amp-iframe[width="728"][height="90"]
 anoboy.baby##amp-img[width="900"][height="90"]
 anixverse.com,hepinime.id,lendrive.web.id,melongmovie.site,sokuja.uk##div[id^="teaser"]
