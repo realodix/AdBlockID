@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.8.2
+! Version: 24.9.1
 ! Title: AdBlockID Plus
 ! Description: Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID.
-! Last modified: 11 Aug 2024 02:11 UTC
+! Last modified: 10 Sep 2024 18:59 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 apkmody.io###above-the-fold-ad
@@ -52,6 +52,8 @@ tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct#"]:has(div
 shopee.co.id##:matches-path(/search?) .search-items-container__tab-panel .item-card-list__item-card-wrapper:has(a div[aria-hidden="true"] > .bg-shopee-black26:has-text(/Ad/))
 apkmirror.com##+js(aost, document.getElementById, /stackDepth:2\s/)
 sadeempc.com##+js(nobab)
+@@/ad300.js$domain=rubystm.com|rubyvid.com|streamruby.com
+@@/ad_common.js$domain=rubystm.com|rubyvid.com|streamruby.com
 ||embed.dugout.com^$3p,domain=indosport.com|skor.id
 ||karirpad.com/mediapartner/widget/$3p,frame
 cnnindonesia.com###breaking_newsa:has(> #breaking-news > #breaking-wrap:has(> #breaking-closes)):remove()
