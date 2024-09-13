@@ -38,8 +38,9 @@ bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com,mobimoto.com,suara
 !# ---
 cermati.com##:matches-path(/artikel) .ads-container
 cermati.com##:matches-path(/artikel) .sticky-banner-wrapper
+cermati.com##:matches-path(/artikel) [data-banner]:has(> a)
+cermati.com##:matches-path(/artikel) a:matches-attr(href="/^https?:\/\/promo\./"):has(> picture)
 cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
-cermati.com##:matches-path(/artikel) a[href^="http://promo.cermati.com/"]:has(> picture)
 !# -----------------------------------------------------------------------------
 !# IDN Media
 !# ---
