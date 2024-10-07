@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.10.10
+! Version: 24.10.11
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Oct 2024 12:16 UTC
+! Last modified: 07 Oct 2024 14:45 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -2396,6 +2396,7 @@ korankaltim.com##[alt="sponsor"]
 gosulsel.com##[alt^="go-ads-"]
 avesiar.com,menit.co.id,radarsumatera.com##[alt^="iklan" i]
 publica-news.com##[aria-label="advertisement" i]
+s.id##[class^="AdUnit_"]
 emitennews.com##[class^="ads-space-"]
 tedas.id##[class^="adsbyadop_"]
 poskota.co.id##[class^="get_ads_"]
@@ -2418,6 +2419,7 @@ beritabersatu.com##[id^="penci_list_bannner_"]
 radar96.com##[id^="radar-"]:has(> .radar-adlabel)
 gosulsel.com##[title^="go-ads-"]
 sabili.id##a.sponsor:has(> picture)
+s.id##a:has(> img + [class^="AdUnit_"])
 lampungpro.co##a[aria-label^="banner" i]:has(> img)
 alkitabonline.org##a[data-ref="AD"]:remove()
 alkitabonline.org##a[data-ref="YUEDUYE-AD"]:remove()
@@ -3891,7 +3893,7 @@ drivenime.com##.stickywrap
 anichin.mom##[id^="fload-"]
 176.119.30.88,anichin.site,anichin.skin,matchsticksbbq.com,montereymasonry.com,nontonfilmgratis.club,npcnc.org,ragihospitalkukatpally.com,wibudesu.co##a:has(> img[src$=".gif"])
 anoboy.foundation##a[target*="blank"]:has(> amp-img)
-107.152.47.246,109.123.239.86,123moviesmy.site,154.26.133.218,157.230.44.16,157.245.193.162,161.97.170.241,176.119.30.88,185.255.131.63,194.233.68.230,38.242.218.184,66.70.227.173,adikfilm.click,akashinime.wiki,anibatch.moe,anichin.cam,anikun.sbs,animebatch.id,animekompi.vip,animered.com,anixverse.com,anoboy.foundation,anoboy.li,anoboy.su,axials.xyz,bioskop.icu,bioskop21.asia,bioskop21.life,bk21.pw,boscinema21.site,brunswickgameon.com,byrdavenue.org,byronlimo.com,chinajerseysfootball.com,cimax21.vip,cinemaemas6.com,cinemakeren6.id,cwru-newmed.com,drachindo.site,dramaserial.id,filmblurayku.mom,freethemes.pw,gudangmovies21.chat,hepinime.id,idlixofficialx.net,idxxi.buzz,indodb21.blog,indodrama21.net,jasaepoxylantai.xyz,kawanfilm21.cc,kazefuri.asia,kazefuri.blog,kazesub.com,kebioskop21.digital,kupkaspiano.com,kuramanime.dad,kusonime.com,layardramaxxi.net,layarkacafilm21.com,layarkeren.pro,lk21live.com,lk21official.club,manganime.live,matchsticksbbq.com,melongmovie.site,mind-stimulation.com,montereymasonry.com,n-168.cfd,n168.mom,ngefilm21.guru,ngefilm21.yachts,nigeldunnett.info,nimegami.id,nomat.top,nonton-gudangfilm.com,nontonfilmgratis.club,nontonsbo.com,npcnc.org,nunadrama.online,omanga.net,otakudesu.cloud,ragihospitalkukatpally.com,rebahan21.com,rebahin.lol,rebahin21.pro,sarangfilm.com,senatorpeters.com,sk21.pro,sobatgo.site,sobatkeren21.live,sweetmoment.nyc,theasi.co,tukangnonton.shop,tv-gudangfilm.fun##a[target*="blank"]:has(> img)
+107.152.47.246,109.123.239.86,123moviesmy.site,154.26.133.218,157.230.44.16,157.245.193.162,161.97.170.241,176.119.30.88,185.255.131.63,194.233.68.230,38.242.218.184,66.70.227.173,adikfilm.click,akashinime.wiki,anibatch.moe,anichin.cam,anikun.sbs,animebatch.id,animekompi.vip,animered.com,anixverse.com,anoboy.foundation,anoboy.li,anoboy.su,axials.xyz,bioskop.icu,bioskop21.asia,bioskop21.life,bk21.pw,boscinema21.site,byronlimo.com,chinajerseysfootball.com,cimax21.vip,cinemaemas6.com,cinemakeren6.id,designhara.com,drachindo.site,dramaserial.id,filmblurayku.mom,freethemes.pw,gudangmovies21.chat,hepinime.id,idlixofficialx.net,idxxi.buzz,indodb21.blog,indodrama21.net,jasaepoxylantai.xyz,kawanfilm21.cc,kazefuri.asia,kazefuri.blog,kazesub.com,kebioskop21.digital,kupkaspiano.com,kuramanime.dad,kusonime.com,layardramaxxi.net,layarkacafilm21.com,layarkeren.pro,lk21live.com,lk21official.club,manganime.live,matchsticksbbq.com,melongmovie.site,mind-stimulation.com,montereymasonry.com,n168.mom,ngefilm21.guru,ngefilm21.yachts,nimegami.id,nomat.top,nonton-gudangfilm.com,nontonfilmgratis.club,nontonsbo.com,npcnc.org,nunadrama.online,omanga.net,otakudesu.cloud,projet-crevette.org,ragihospitalkukatpally.com,rebahan21.com,rebahin.lol,rebahin21.pro,sarangfilm.com,senatorpeters.com,sk21.pro,sobatgo.site,sobatkeren21.live,sweetmoment.nyc,theasi.co,tukangnonton.shop,tv-gudangfilm.fun,yellow-sunshine.com##a[target*="blank"]:has(> img)
 niihen.com##amp-iframe[width="728"][height="90"]
 anixverse.com,hepinime.id,lendrive.web.id,melongmovie.site,sokuja.uk##body > div[id^="teaser"]
 kebioskop21.digital##a[target*="blank"] > video:remove()
@@ -3921,11 +3923,11 @@ checast.com,gudangmovies21.chat,sattorrent.com##+js(aopr, SGPB_POPUP_PARAMS)
 anichin.site##+js(json-prune, *, pop_type)
 154.26.133.218,161.97.170.241,38.242.218.184,5.189.142.212,anibatch.moe,anichin.site,animebatch.id,drachindo.site,kawanfilm21.cc,kazefuri.asia,kazefuri.blog,kazesub.com,layarkacafilm21.com,layarkeren.pro,manganime.live,nimegami.id,otakudesu.cloud,rebahan21.com,rebahin.lol,sk21.pro,sobatgo.site,sobatkeren21.live,sokuja.uk,theasi.co,tukangnonton.shop##+js(nowoif)
 0.0.realodix##+js(acis, parseInt, break;case $.)
-animered.com,byrdavenue.org,byronlimo.com,cwru-newmed.com,sweetmoment.nyc,theasi.co###custom-popup
+animered.com,byronlimo.com,designhara.com,projet-crevette.org,sweetmoment.nyc,theasi.co,yellow-sunshine.com###custom-popup
 boscinema21.site###fadeinbox
 154.26.133.218,194.233.68.230,kopajasubs.info###fb-fanbox
 anichin.mom,anikun.sbs,animeindo.info,anoboy.li,hepinime.id,isekaisubs.web.id,kazefuri.asia,kazefuri.blog###overplay
-animered.com,brunswickgameon.com,byrdavenue.org,byronlimo.com,cwru-newmed.com,kupkaspiano.com,nigeldunnett.info,sweetmoment.nyc###popup-banner
+animered.com,byronlimo.com,kupkaspiano.com,projet-crevette.org,sweetmoment.nyc,yellow-sunshine.com###popup-banner
 176.119.30.88###tv-play
 theasi.co##.overlay
 kuramanime.dad##.player-overplay
@@ -4215,6 +4217,7 @@ erocafe.net##body > div#td-outer-wrap + div[id][class]:has(.adblock_title)
 45.136.198.240,semikeren.online###fadeinbox
 doooood.co###overlay
 iyottube.co###playerOverlay
+etnapromotour.com###popupOverlay
 dosensesat.pw##.adde_modal-overlay
 nontonjavid.net##.popbox
 gocrot.org##.popup-cr7
@@ -4783,6 +4786,7 @@ _topbandar_$image
 ##[href="https://cek.to/lk21xxi180h"]
 ##[href="https://ceklink.vip/bioskop21"]
 ##[href="https://ceklink.vip/indo88"]
+##[href="https://ceklink.vip/javdmsakti"]
 ##[href="https://ceklink.vip/ngefilm21"]
 ##[href="https://ceklink.vip/starjepang"]
 ##[href="https://cepat.ink/okestreamqqslot"]
@@ -5411,6 +5415,7 @@ _topbandar_$image
 ##[href="https://cuanbgt.id/tpking/"]
 ##[href="https://cuanbgt.id/ttbright/"]
 ##[href="https://cuanbgt.id/wigold/"]
+##[href="https://cutt.ly/FilmTeluk2"]
 ##[href="https://linkbbn.xyz/ksindoxxib"]
 ##[href="https://linkmbsw.xyz/indositusxxi"]
 ##[href="https://linkusn.xyz/indoxxi"]
