@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.10.39
+! Version: 24.10.40
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Oct 2024 12:19 UTC
+! Last modified: 26 Oct 2024 15:53 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -4091,6 +4091,7 @@ mirrorkomik.net###adrandpop
 klikmanga.com##body > .mtsnb-shown
 klikmanga.com,komikstation.co,sekaikomik.guru##+js(aeld, /^(?:load|click)$/, popMagic)
 gudangkomik.com,kiryuu.org,komiklokal.shop,komikmu.fun,kyumik.com,mangakita.id,ngomik.net,sekaikomik.guru,sektedoujin.cc##+js(nowoif)
+soulscans.my.id##+js(aopr, SGPB_POPUP_PARAMS)
 mangakita.id##+js(aopr, popup_custom_data)
 bacamanga.id,komikstation.co,ngomik.net##+js(acis, JSON.parse, break;case $.)
 mangahentai.me,sekaikomik.guru,warungkomik.com##*:style(user-select:text!important;)
