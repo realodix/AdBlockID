@@ -1,0 +1,80 @@
+---
+name: AdBlockID Plus (Badware risks) v24.10.24
+---
+# example.com/path-2/
+# https://regex101.com/r/m9B31Z/4
+/(\.[a-z]{2,3}\/)([a-z0-9-]+)(-[0-9]{1,2}\/)$/
+# Percobaan
+# https://regex101.com/r/rr7MHE/11
+# id sudah dihapus, karena minimal 3 huruf, jadi bisa mempengaruhi regex yang ada id juga
+/(\/\?(?!api|page|halaman|view|search)[a-zA-Z0-9_]{3,}=)([a-zA-Z0-9%+-]{5,})$/
+# https://regex101.com/r/I3hYSd/2
+# https://stackoverflow.com/questions/6744587/simple-regex-match-any-string-with-at-least-one-hyphen
+/(\.(?:id|nl))(.+)?(\/\?id=)([a-zA-Z0-9]*(?:\+|-)[a-zA-Z0-9]*)+$/
+# /?coin= | Melengkapi di atasnya, karena keterbatasan harus minimal 2 kata
+# https://regex101.com/r/g88LAj/3
+/\/\?(?:id|panel|coin|xlost|403_id|srsltid)=/
+# .php?done=IDLIX+21
+# https://regex101.com/r/FKNSfw/3
+/\.php\?([a-z]+)=([a-zA-Z0-9]*(?:\+)[a-zA-Z0-9]*)+$/
+# .id/?anything=aB-123
+# https://regex101.com/r/ZqYqmt/6
+#/\.id\/.+(\/\?[a-zA-Z0-9]+=)/
+# .co.id/?anything=
+# https://regex101.com/r/IBPJ3t/4
+#/\.(?:co|ac|go|or)\.id(\/.+)?(\/\?(?:[0-9a-z_]{4,10})=)/
+# .id/id/tag/ben-can-you-hear-me4ccba682-3f7c-4dc1-9e31-9cd80eec6db7.html
+# https://regex101.com/r/s1ioqo/1
+/\.id\/.+([a-z0-9]{8})-([a-z0-9]{4})-([a-z0-9]{4})-([a-z0-9]{4})-([a-z0-9]{12})\.html/
+# domain.go.id/image/*
+# https://regex101.com/r/2w7Pqc/4
+/(?:ac|go|sch)(\.id\/(?:image|assets|wp-admin|wp-content|wp-includes|wp-data)\/)/
+# https://example.com/skctpj-24231.txt
+# https://regex101.com/r/cMsooA/2
+/\.(de|pl)\/([a-z]{4,6})-([0-9]{5})\.(fb2|[a-z]{3,4})/
+# Coin, sering ada
+*://debarka.com/*
+*://rumusstatistik.com/*
+*://thaists.org/*
+*://youth19.com/*
+# Coin
+/\.com\/film-semi-/
+# example.com/nonton-
+# https://regex101.com/r/iZC5nE/latest
+/\.(ar|bar|ca|fr|in|nl|za)\/(nonton|drama)-/
+# example.com/lk21-, example.com/www-lk21, example.com/lk-21-
+# https://regex101.com/r/5rJX5l/latest
+/\.(ar|bar|ca|fr|in|iq|nl|za)\/(www-)?(lk|drama|duniafilm|dutamovie|gudangmovies|juraganfilm|kawanfilm|rebah(?:a|i)n|rutin|terbit)-?21-/
+# example.com/indoxxi-
+# https://regex101.com/r/1Ozd6G/latest
+/\.(co|ar|bar|ca|fr|in|nl|za)\/(indoxxi|bioskopkeren|dutafilm|drakorindo|kawanfilm|oppadrama)-/
+# example.com/kebioskop21/
+# https://regex101.com/r/2D6r3j/latest
+/\.(ar|bar|ca|fr|in|nl|za)\/(juraganfilm21|kawanmovie|kebioskop21|layarkeren|oppadrama|rebahin|rutin21)\/$/
+#
+*://consiliumba.com/*
+*://michalzdun-taniec.com/*
+*://optimalfc.com/*
+*://runningviaverde.com/*
+*://saintpeesurnivelle-paysbasque.com/*
+*://selenaypeyzaj.com/*
+*://stigmawines.com/*
+*://unnepacteamunth.com/*
+*://wathentic.com/*
+#
+*://gillfarm.ca/*
+*://healthymen.co.za/*
+*://pfbenoit.ca/*
+*://projetrepro.fr/*
+#
+*://*.polri.go.id/slot-*
+*://anoboy.tjp.tabalongkab.go.id/*
+*://gonzagaelearning.com/enrol/guest/pix/*
+*://utepia.ac.id/aztec-slot/*
+# --------------------------------------------------------
+# Diblokir oleh easylist / uBlock filters – Badware risks
+# https://regex101.com/r/uJXO4W/1
+#/^https?:\/\/(?:www\.)?([a-z0-9-]{11,25})\.(fr|ca|co\.za)/
+#
+*://calanae.fr/*
+*://cdbandco.fr/*
