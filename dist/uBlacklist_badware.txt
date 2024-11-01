@@ -1,5 +1,5 @@
 ---
-name: AdBlockID Plus (Badware risks) v24.11.1
+name: AdBlockID Plus (Badware risks) v24.11.1-15
 ---
 # example.com/path-2/
 # https://regex101.com/r/m9B31Z/4
@@ -20,6 +20,9 @@ name: AdBlockID Plus (Badware risks) v24.11.1
 # .id/id/tag/ben-can-you-hear-me4ccba682-3f7c-4dc1-9e31-9cd80eec6db7.html
 # https://regex101.com/r/s1ioqo/1
 /\.id\/.+([a-z0-9]{8})-([a-z0-9]{4})-([a-z0-9]{4})-([a-z0-9]{4})-([a-z0-9]{12})\.html/
+# https://rpsyche.de/jclpackt-32631.html
+# https://regex101.com/r/UPZzPE/1
+/\.(de|fr)\/([a-z]{6,9})-([0-9]{5})\.html/
 # domain.go.id/image/*
 # https://regex101.com/r/2w7Pqc/latest
 /(\.id\/(?:image|assets|wp-admin|wp-content|wp-includes|wp-data)\/)/
@@ -34,12 +37,13 @@ name: AdBlockID Plus (Badware risks) v24.11.1
 /\.com\/film-semi-/
 # example.com/nonton-
 # https://regex101.com/r/iZC5nE/latest
-/\.(ar|bar|ca|cl|fr|in|iq|nl|za)\/(nonton|drama|film-semi)-/
+/\.(ar|bar|ca|cl|fr|in|iq|nl|za)\/(link-)?(nonton|drama|bokep|film-semi|foto)-/
 #
 # https://regex101.com/r/iYXKub/latest
-/\.(ar|bar|ca|cl|fr|in|iq|nl|za)\/(film-|link-(?:situs-)?|www-)?(01nonton|bioskop-?keren|dewanonton|drakorindo|dramaindo|duniafilm|dutafilm|dutamovie|ganool|gudangmovies|indoxxi|juraganfilm|(?:vip-)?idlix|kawanfilm|kawanmovie|kebioskop|kios-film|layarkeren|oppadrama|rebahin)(21)?(-|\/)/
+/\.(ar|bar|ca|com\.co|cl|fr|in|iq|nl|za)\/(film-|link-(?:situs-)?|web(?:site)?-|www-)?(01nonton|bioskop(?:-)?keren|dewa(?:-)?nonton|drakorindo|dramaindo|dunia(?:-)?film|dutafilm|dutamovie|filmapik|ganool|gudangfilm|gudang(?:-)?movies|indoxxi|juraganfilm|(?:vip-)?idlix|kawanfilm|kawanmovie|kebioskop|kios-film|layarindo|layarkeren|ngefilm|nontonfilm88|oppadrama|rebahin|sobatkeren)(21)?(-|\/)/
 # https://regex101.com/r/RrwtHY/latest
-/\.(ar|bar|ca|cl|fr|in|iq|nl|za)\/(film-|link-(?:situs-)?|www-)?(lk|layar-?kaca|drama|hermes|gm|midas|movieon|rebahan|rutin|terbit)(-?21|-xxi)(-|\/)/
+/\.(ar|bar|ca|cl|fr|in|iq|nl|za)\/(film-|link-(?:situs-)?|www-)?(i?lk|layar-?kaca|drama|hermes|gm|midas|movieon|rebahan|rutin|terbit)(-?21|-xxi)(-|\/)/
+/\.(ar|bar|ca|cl|fr|in|iq|nl|za)\/(situs-|aplikasi-|web-)?(komik|(cara-)?baca|manhwa)-/
 #
 *://*.desa.id/css/*
 *://*.polri.go.id/slot-*
@@ -51,12 +55,26 @@ name: AdBlockID Plus (Badware risks) v24.11.1
 *://wartakaltim.com/video/media/*
 #
 # Diblokir oleh easylist / uBlock filters – Badware risks
+# --------------------------------------------------------
+*://a-p-identity.de/*
+*://arcturus-re.de/*
+*://atd-transport.de/*
+*://bcs-powershop.de/*
 *://blau-zu-gruen.de/*
 *://boireoumanger.fr/*
+*://bw-sholo.de/*
 *://calanae.fr/*
+*://cannabis-raucherzonen.de/*
 *://cdbandco.fr/*
+*://charlotteerichsen.de/*
+*://cubimmo.fr/*
 *://damcapture.fr/*
+*://die-lernfabrik.de/*
+*://dp-fashion-store.de/*
+*://ecosocial.fr/*
+*://ess-enziell.de/*
 *://ghispix.fr/*
+*://grcare.de/*
 *://hey-life.fr/*
 *://immortal-events.de/*
 *://jerome-fournier.fr/*
@@ -64,36 +82,112 @@ name: AdBlockID Plus (Badware risks) v24.11.1
 *://lainespirit.fr/*
 *://landtag4diversity.de/*
 *://ldklinik.de/*
+*://lescavesdoucefrance.fr/*
+*://liwa-reinigung.de/*
 *://meshea.fr/*
 *://myhomewell.de/*
+*://rsfweb.de/*
 *://serclean.de/*
+*://serqua.de/*
+*://slimline-aesthetics.de/*
 *://thebubbles.fr/*
+*://ulrikebaumertdesign.de/*
 *://valhalla-baits.de/*
 *://vimey-photography.de/*
 #
 # Umum
+# --------------------------------------------------------
+*://*.aceventsnormandie.fr/*
+*://*.ateliersvidal.fr/*
+*://*.babybouille-shop.fr/*
+*://*.collegejulesferryjoinvillelepont.fr/*
+*://*.elaineford.ca/*
+*://*.greydemo.co.za/*
+*://*.hellasfinancialservices.co.za/*
+*://*.labeanocle.fr/*
+*://*.soho.edu.pl/*
+*://accruelife.ca/*
+*://afripers.co.za/*
+*://akesobotanicals.ca/*
+*://alleyworks.co.za/*
+*://almasingapore.co/*
 *://amandasillsphotography.com/*
+*://amerc.co/*
+*://artmeetssoul.ca/*
 *://axis-bikes.com/*
+*://behaviourstrats.ca/*
+*://blackoculars.ca/*
+*://blinkerboom.co.za/*
 *://boreholeinstallerskzn.co.za/*
+*://bsn1.org/*
+*://butterandsugar.co/*
 *://collegejulesferryjoinvillelepont.fr/*
+*://cortezelks.com/*
 *://dohajuicefactory.com/*
+*://ecsinternational.in/*
 *://educateu.co.za/*
+*://enana.co.za/*
+*://farmacosmetica.co/*
 *://flamencodelmar.com/*
 *://guitarlong.com/*
+*://hangerssandiego.com/*
 *://homeofdreams.co.za/*
+*://inofinitytech.ca/*
+*://instant-chauffage-climatisation.fr/*
+*://ivorybluecafe.com/*
 *://jhseleccion.com/*
+*://joelcaricoarchitect.com/*
 *://knjetservices.com/*
+*://labourbloc.co.za/*
 *://lamodule.fr/*
+*://lechemindumilieu.fr/*
 *://legendspathacademy.co.za/*
+*://lepetitchateaudecelestine.fr/*
+*://liftandload.co.za/*
+*://magnategates.ca/*
 *://masdeagencia.com.ar/*
+*://masterworkslocksmith.co.za/*
+*://menisadaycare.ca/*
 *://mindovermatterconsulting.ca/*
+*://molenda-bedandbreakfast.com/*
 *://muilwijk.ca/*
+*://mundiu.ca/*
 *://myvisioneyewear.ca/*
+*://naturaladhdcure.com/*
 *://newankitplastic.com/*
+*://novedadesmagno.co/*
 *://omegarealm.com/*
 *://outfit360clothing.co.za/*
 *://parsisclinic.com/*
+*://peachesandcreambox.ca/*
 *://powerflowng.com/*
+*://puertasdecoradasdenavidad.com.co/*
+*://realogilesecondary.co.za/*
+*://recusa.org/*
+*://resinboundsurfaces.co.za/*
+*://rosemoorprimary.co.za/*
+*://roseofsharonzimbabwe.com/*
+*://sacssavirtual.co.za/*
+*://salonmeli.ca/*
+*://sasog2024.co.za/*
 *://savemerescue.org/*
+*://semanoproperties.co.za/*
+*://shannanews.co.za/*
+*://singhshardware.co.za/*
+*://sinyangaholdings.co.za/*
+*://smilespowder.com/*
+*://solucioneseducativas.me/*
+*://stellanovamedia.ca/*
+*://stgeorgeshastings.ca/*
+*://stonelinegroup.co.za/*
+*://strungmusic.com/*
+*://supersunflower-oil.co.za/*
+*://themidnightraven.ca/*
+*://therealworldhum.ca/*
+*://tintimportintim.com/*
 *://tvbarbershop.com/*
+*://ultrafino.net/*
+*://unpulmonmas.org/*
+*://vhembewest.co.za/*
 *://volpibiduletruck.com/*
+*://yesdil.com/*
