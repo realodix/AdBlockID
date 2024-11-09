@@ -1,19 +1,19 @@
 ---
-name: AdBlockID Plus (Badware risks) v24.11.2-17
+name: AdBlockID Plus (Badware risks) v24.11.2-27
 ---
 # example.com/path-2/
 # https://regex101.com/r/m9B31Z/4
 /(\.[a-z]{2,3}\/)([a-z0-9-]+)(-[0-9]{1,2}\/)$/
-# example.com/?menyala=KAWANFILM21
-# https://regex101.com/r/rr7MHE/12
-/(\/\?(?!api|page|halaman|view|search)[a-zA-Z0-9_]{3,}=)([a-zA-Z0-9%+-]{5,})$/
+# .id/foobar/?menyala=KAWANFILM21
+# https://regex101.com/r/rr7MHE/15
+/\.id(\/.+)?(\/\?(?!api|page|halaman|view|search|filter)[a-zA-Z0-9_]{3,}=)([a-zA-Z0-9%+-]{5,})$/
 # example.com/?id=togel+4d
 # https://regex101.com/r/I3hYSd/2
 # https://stackoverflow.com/questions/6744587/simple-regex-match-any-string-with-at-least-one-hyphen
 /(\.(?:id|nl))(.+)?(\/\?id=)([a-zA-Z0-9]*(?:\+|-)[a-zA-Z0-9]*)+$/
 # /?coin= | Melengkapi di atasnya, karena keterbatasan harus minimal 2 kata
 # https://regex101.com/r/g88LAj/3
-/\/\?(?:id|panel|coin|xlost|403_id|srsltid)=/
+#/\/\?(?:id|panel|coin|xlost|403_id|srsltid)=/
 # .php?done=IDLIX+21
 # https://regex101.com/r/FKNSfw/3
 /\.php\?([a-z]+)=([a-zA-Z0-9]*(?:\+)[a-zA-Z0-9]*)+$/
@@ -21,14 +21,14 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 # https://regex101.com/r/s1ioqo/1
 /\.id\/.+([a-z0-9]{8})-([a-z0-9]{4})-([a-z0-9]{4})-([a-z0-9]{4})-([a-z0-9]{12})\.html/
 # mashumana.es/13893084-xvideo.html
-# https://regex101.com/r/0BAV5I/1
-/\.(es|fr)\/([0-9]{8})-.+\.html/
+# https://regex101.com/r/0BAV5I/2
+/\.(es|fr|za)\/([0-9]{8})-.+\.html/
 # rpsyche.de/jclpackt-32631.html
 # https://regex101.com/r/UPZzPE/4
 /\.(de|fr|za)\/([a-z]{6,11})-([0-9]{5})\.html/
 # domain.go.id/image/*
 # https://regex101.com/r/2w7Pqc/latest
-/(\.id\/(?:image|assets|wp-admin|wp-content|wp-includes|wp-data)\/)/
+/\.id\/(assets|data|img|image|css|jss?|public|repository|wp-admin|wp-content|wp-includes|wp-data)\//
 # https://example.com/skctpj-24231.txt
 # https://regex101.com/r/cMsooA/2
 /\.(de|pl)\/([a-z]{4,6})-([0-9]{5})\.(fb2|[a-z]{3,4})/
@@ -47,18 +47,12 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 # https://regex101.com/r/RrwtHY/latest
 /\.(ar|bar|ca|cl|fr|in|iq|nl|za)\/(aplikasi-|film-|link-(?:situs-)?|www-)?(i?lk|layar-?kaca|bioskop|drama|hermes|gm|midas|movieon|movindo|pusatfilm|rebahan|rutin|savefilm|terbit)(-?21|-xxi)(-|\/)/
 #
-*://*.desa.id/css/*
-*://*.desa.id/data/*
-*://*.man1wonosobo.sch.id/img/assets/*
 *://*.penabur.sch.id/bray/*
 *://*.polri.go.id/akun/*
 *://*.polri.go.id/slot-*
-*://*.stanford.edu/*.html
-*://*.ugj.ac.id/css/*
 *://anoboy.tjp.tabalongkab.go.id/*
 *://epintar.elearning-pintar.com/sure/*
 *://gonzagaelearning.com/enrol/guest/pix/*
-*://kalbar.id/js/*
 *://utepia.ac.id/aztec-slot/*
 *://wartakaltim.com/video/media/*
 #
@@ -91,6 +85,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://boireoumanger.fr/*
 *://bonndorf-mobil.de/*
 *://brasiliane.fr/*
+*://brenov.fr/*
 *://burris-krakow.pl/*
 *://bw-sholo.de/*
 *://calanae.fr/*
@@ -112,6 +107,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://delgartraining.es/*
 *://die-lernfabrik.de/*
 *://dp-fashion-store.de/*
+*://dreamlifestyle.fr/*
 *://drione.fr/*
 *://ecosocial.fr/*
 *://elmagopam.es/*
@@ -122,6 +118,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://gruposvq.es/*
 *://habitaeko.fr/*
 *://happyselflove.de/*
+*://hatchmusic.fr/*
 *://hey-life.fr/*
 *://immortal-events.de/*
 *://integradz.es/*
@@ -140,6 +137,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://manaclean.fr/*
 *://mashumana.es/*
 *://mathyslyor.fr/*
+*://mavcoaching.fr/*
 *://mconsultoria.es/*
 *://meshea.fr/*
 *://mfgweb.es/*
@@ -149,14 +147,18 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://perenoelnapasvieilli.fr/*
 *://peter-naekel.de/*
 *://petrolromantics.de/*
+*://riskanalyzer.pl/*
 *://rochaservices.fr/*
 *://rsfweb.de/*
 *://ruralboost.es/*
 *://samuelrabbertz.de/*
+*://seelentexte-bilder.de/*
 *://serclean.de/*
 *://serqua.de/*
+*://siegfried-liebscher.de/*
 *://sitexpres.de/*
 *://slimline-aesthetics.de/*
+*://stimmklang-usner.de/*
 *://thebubbles.fr/*
 *://ulrikebaumertdesign.de/*
 *://urgencesdebouchage.fr/*
@@ -173,23 +175,33 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 # https://regex101.com/r/aKmT29/5
 /^https?:\/\/(?:www\.)?([a-z]{6})\.([a-z0-9-]+)\.(ca|co\.za|fr)/
 #
+*://*.cb-silesia.edu.pl/*
 *://*.soho.edu.pl/*
 *://100picsbbw.com/*
+*://2radsport.com/*
 *://3birdsinsulation.com/*
+*://a1enterprise.co.za/*
 *://accruelife.ca/*
 *://achavil.com.ar/*
 *://acsplumbing.co.za/*
 *://activeblue.ca/*
+*://admiralpc.com/*
 *://ae-zen.fr/*
 *://aerobeautystudio.ca/*
 *://afripers.co.za/*
+*://ahkmt.org/*
+*://aimeeonyourside.ca/*
 *://aiqsacademy.com/*
 *://ajulianalvarez.com.ar/*
 *://akesobotanicals.ca/*
 *://alaingrosajt.com/*
 *://albertfranksfinejewelry.com/*
+*://alexlaughs.com/*
 *://all4youauctioneers.co.za/*
+*://allbluevr.com/*
 *://alleyworks.co.za/*
+*://allsportplr.com/*
+*://allstarsband.co.za/*
 *://allzie.co.za/*
 *://almasingapore.co/*
 *://alohamauiweddings.com/*
@@ -202,6 +214,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://arboexpress.ca/*
 *://aresniagara.ca/*
 *://arielwallsystemsinc.ca/*
+*://artisanandmonkey.com/*
 *://artmeetssoul.ca/*
 *://aseparklaw.com/*
 *://asianzootube.com/*
@@ -218,7 +231,9 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://barrykerrguitars.com/*
 *://baudin-automobiles.fr/*
 *://behaviourstrats.ca/*
+*://belecran.org/*
 *://bestchoicewindowsdirect.ca/*
+*://bgcconsolidated.com/*
 *://bienvivrechezsoi31.fr/*
 *://bigbiteburrito.ca/*
 *://blackhillpress.com/*
@@ -240,6 +255,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://canoewater.ca/*
 *://capassistante.fr/*
 *://carlyroland.co/*
+*://carsharingchecker.com/*
 *://cauveryauto.in/*
 *://ce-plast.com/*
 *://cedargatephotography.ca/*
@@ -251,9 +267,14 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://chekit.co.za/*
 *://chemainuscohousing.ca/*
 *://chickswithsticks.co.za/*
+*://chokilala.com/*
+*://choralecantabile.org/*
+*://chrislaychak.com/*
 *://clarkeblog.com/*
 *://classiccrackers.in/*
 *://clothingculture.in/*
+*://coastvocal.com/*
+*://cocteleriazaragoza.com/*
 *://codeeltd.com/*
 *://coeur-de-soi.fr/*
 *://collegejulesferryjoinvillelepont.fr/*
@@ -268,36 +289,49 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://cultivatingpocketsofsilence.ca/*
 *://customneonlights.in/*
 *://cvl38.fr/*
+*://dailyfaridpurkantho.com/*
 *://daleserranodance.com/*
 *://dalis.co.in/*
 *://dandjstudio.net/*
+*://danilandi.com/*
+*://daretodrawdigitally.com/*
 *://data-srv.in/*
+*://dave4spotsy.com/*
 *://davidjanssen.net/*
 *://davidyeagerband.com/*
 *://decapital.co.za/*
 *://definingsmart.com/*
 *://demooistemangomeubelen.nl/*
+*://depannageproauto.fr/*
 *://depotonwheels.co.za/*
 *://dffine.com/*
 *://discoveryinterschools.co.za/*
 *://diversitynews360.com/*
 *://dohajuicefactory.com/*
+*://dontwasteprogress.com/*
+*://double-exposures.com/*
+*://drmorgancrowley.com/*
+*://dufric.fr/*
 *://dwtruss.co.za/*
 *://dynamiquecollective.fr/*
 *://eatlocalcumberland.ca/*
 *://ecmtech.ca/*
 *://ecopipoclothnappies.com/*
 *://ecsinternational.in/*
+*://editionspalacios.com/*
+*://editorialdigitaltecdemonterrey.com/*
 *://edshs.co.za/*
 *://educateu.co.za/*
 *://egitimyonetimi.org/*
 *://ekasieducate.co.za/*
 *://ekozds-guadeloupe.fr/*
 *://elegancewindshieldrepair.ca/*
+*://elev8financial.ca/*
 *://elevatetheedge.com/*
 *://elizabethstjohn.co/*
 *://elodietheron-psychologue.fr/*
 *://elolivoretreat.com/*
+*://emilythompsonviolin.com/*
 *://enana.co.za/*
 *://epiphanyoviedo.org/*
 *://europecouverture.com/*
@@ -306,23 +340,29 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://fadua.co/*
 *://farmacosmetica.co/*
 *://farmyardflowers.ca/*
+*://feevivianecouture.fr/*
 *://filmgard.com/*
 *://flamencodelmar.com/*
 *://flystuff.in/*
 *://fmentrerios.com.ar/*
 *://focusmind.net/*
+*://foodonrecord.com/*
 *://fortunelogistics.ca/*
 *://foto-model.com/*
 *://freemanheatingandcooling.com/*
 *://fultonyouthorchestra.org/*
+*://gabiadamsphoto.com/*
 *://ganganagar.org/*
+*://gclassy.com/*
 *://gdsrepairmasonoh.com/*
 *://gearworksmfg.com/*
 *://geosafety.co.za/*
 *://gillfarm.ca/*
 *://gites-spa-cotedopale.fr/*
 *://givingcirclesfund.org/*
+*://glacies.in/*
 *://glassguardfilms.ca/*
+*://glencity.co.za/*
 *://gobigbang.com/*
 *://gokitchens.ca/*
 *://graffitins.com/*
@@ -331,11 +371,16 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://grivarellonutricion.com/*
 *://guitarlong.com/*
 *://h4hmcgill.ca/*
+*://halimiconsulting.fr/*
 *://hangerssandiego.com/*
 *://hangoversamui.com/*
+*://harmony-analyser.org/*
 *://hawescreative.ca/*
+*://homely-app.co.za/*
 *://homeofdreams.co.za/*
+*://homeprod.in/*
 *://hometeamconstruction.ca/*
+*://hondamauritius.com/*
 *://hooveryetkiliservisi.com/*
 *://horinghout.co.za/*
 *://hotmilfpic.com/*
@@ -356,38 +401,50 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://instant-chauffage-climatisation.fr/*
 *://insulmech.ca/*
 *://intarcdesigns.com/*
+*://intence.co/*
 *://intlalum.com/*
 *://intuitiontextile.fr/*
+*://invictaresidentialsales.co.za/*
 *://iparglass.fr/*
+*://isabellafmodra.com/*
 *://itsholetsengmiddle.co.za/*
 *://ivorybluecafe.com/*
 *://izelenn-naturo.fr/*
 *://izomaxconstruction.ca/*
 *://jacketsforjasper.com/*
 *://jaidemedia.com/*
+*://jeanhorihata.com/*
 *://jessicabraxtondesigns.com/*
 *://jhseleccion.com/*
+*://jlux-toiture.fr/*
 *://joelcaricoarchitect.com/*
 *://joie-animale.fr/*
+*://josinclairart.com/*
 *://jpschauffage.fr/*
 *://judoclubdelognes.fr/*
 *://justincoombes.com/*
 *://kasavumaalika.in/*
 *://kbeautyholic.com/*
 *://kgosithebecombined.co.za/*
+*://kidssensetribe.co.za/*
 *://kimballvet.com/*
 *://knjetservices.com/*
 *://krisandbrake.com/*
 *://kurtismantronik.com/*
 *://kymbearing.in/*
+*://lablarts.com/*
+*://labookgeek.ca/*
 *://labourbloc.co.za/*
 *://labourlawpractitioners.co.za/*
 *://lacaraa.com/*
+*://laignoranciamata.net/*
 *://lamodule.fr/*
 *://laorquideaonline.com/*
 *://laserenade.com/*
+*://laviejacaldera.com/*
 *://lazur-construction.fr/*
 *://leblancshomeinspection.com/*
+*://lecadeau.in/*
 *://lechatlangedeleveildemessens.fr/*
 *://lechemindumilieu.fr/*
 *://ledcribbage.com/*
@@ -406,6 +463,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://lodemining.co.za/*
 *://logichainafrika.co.za/*
 *://lostualdos.com.ar/*
+*://lovecrafted.nl/*
 *://lpgasbenoni.co.za/*
 *://lpstore.co.za/*
 *://luciebaud-kinesiologie.fr/*
@@ -413,14 +471,19 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://luxurysa.co.za/*
 *://lvseamstress.com/*
 *://lynnrwolfe.com/*
+*://macfitcoaching.ca/*
 *://madeespeciallyforyou.org/*
 *://magnategates.ca/*
+*://makeonemove.com/*
+*://managedgateways.com/*
+*://marycorum.com/*
 *://masdeagencia.com.ar/*
 *://masimocrops.co.za/*
 *://masterrepaircapetown.co.za/*
 *://masterworkslocksmith.co.za/*
 *://materielson.fr/*
 *://matthewjure.net/*
+*://mecchayabai.com/*
 *://menisadaycare.ca/*
 *://merrycourt.ca/*
 *://mgidiherbs.co.za/*
@@ -429,6 +492,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://milenamonforte.com/*
 *://millionday.in/*
 *://milto-art.com/*
+*://mimizik.com/*
 *://mindgame.co.in/*
 *://mindovermatterconsulting.ca/*
 *://mindsettinginstitute.ca/*
@@ -436,7 +500,9 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://molenda-bedandbreakfast.com/*
 *://moncabinetdinventaire.ca/*
 *://moneyfarmclub.co.za/*
+*://monstudiocrea.fr/*
 *://monychhim.com/*
+*://moonroadfilms.com/*
 *://morerisecondary.co.za/*
 *://mosaracp.co.za/*
 *://moswaneintermediate.co.za/*
@@ -446,6 +512,8 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://msarchitectureinterieur.com/*
 *://muilwijk.ca/*
 *://mundiu.ca/*
+*://musicflashclass.com/*
+*://myksante.ca/*
 *://myvisioneyewear.ca/*
 *://nafaccommodation.co.za/*
 *://namelessbike.com/*
@@ -456,6 +524,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://networkagainstmalaria.org/*
 *://newankitplastic.com/*
 *://nextgenerationapps.ca/*
+*://nicethings.co.za/*
 *://niosac.in/*
 *://novedadesmagno.co/*
 *://oakmeadowscwc.com/*
@@ -464,22 +533,30 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://oscarelnes.com/*
 *://outfit360clothing.co.za/*
 *://ozgurcicek.net/*
+*://palmierinet.com/*
 *://panorama-rest.com/*
+*://papihai.com/*
 *://paradisecoffeelaveta.com/*
 *://paraguaylife.com/*
 *://parsisclinic.com/*
 *://pcslibrary.ca/*
 *://peachesandcreambox.ca/*
+*://penataruna.com/*
 *://penniman-records.com/*
 *://perfect-design.co.za/*
+*://pharmadeporto.fr/*
 *://picapaucombined.co.za/*
+*://pinkads.in/*
+*://playlistmutator.com/*
 *://pontuscarle.com/*
 *://powerflowng.com/*
 *://pretermalin.fr/*
 *://pretoriatreefelling.co.za/*
 *://primesecuritystore.co.za/*
+*://primopiano.ca/*
 *://productoslicenciados.com/*
 *://promenadedespyrenees.fr/*
+*://prosolarinstallers.co.za/*
 *://puertasdecoradasdenavidad.com.co/*
 *://pulsar-electric.com/*
 *://purplebeautyshop.in/*
@@ -487,16 +564,21 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://radiansoundlab.com/*
 *://re-ed.org/*
 *://realogilesecondary.co.za/*
+*://recordbreakersband.com/*
 *://recusa.org/*
+*://regiisrecruiting.com/*
 *://reib.org/*
 *://residencefirstpropertyservices.co.za/*
 *://residualsecret.com/*
 *://resinboundsurfaces.co.za/*
+*://revolead.ca/*
 *://ronclearfield.com/*
 *://rosemoorprimary.co.za/*
 *://roseofsharonzimbabwe.com/*
+*://roserbundo.com/*
 *://rp-reinigung-von-privathaushalten.com/*
 *://rtfrieghtservices.ca/*
+*://rubenmeliksetian.com/*
 *://rusnomad.com/*
 *://sacredwaves.me/*
 *://sacssavirtual.co.za/*
@@ -505,6 +587,7 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://salonmeli.ca/*
 *://samilee-moody.me/*
 *://sanchez-peintre-decorateur.fr/*
+*://sarahexpertecommunication.fr/*
 *://sartcreation.com/*
 *://sasog2024.co.za/*
 *://satoricomms.co.za/*
@@ -515,27 +598,37 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://serenitydecor.in/*
 *://shannanews.co.za/*
 *://showparadembo.com/*
+*://shresta.co.in/*
 *://shresthaholdings.com/*
 *://singhshardware.co.za/*
 *://sinyangaholdings.co.za/*
+*://site-web-florence-wemaere.fr/*
+*://smartchoicebusinessassistance.ca/*
 *://smarthubtvrepair.co.za/*
 *://smilespowder.com/*
+*://smilingeyespress.ca/*
 *://snapclean.in/*
+*://sociallyace.com/*
 *://solucioneseducativas.me/*
+*://spicebytarah.ca/*
 *://spkmerch.ca/*
 *://sport-cruseilles.com/*
 *://ssenterprises.ca/*
 *://stellanovamedia.ca/*
 *://stelmashenko.com/*
+*://stevencdelacruz.com/*
 *://stgeorgeshastings.ca/*
 *://stonelinegroup.co.za/*
 *://stringerillusionaryart.ca/*
 *://strungmusic.com/*
 *://suite3801studio.ca/*
 *://supersunflower-oil.co.za/*
+*://swazilandcarpetcleaners.co.za/*
+*://swivbox.com/*
 *://tailblazerspetcare.co.za/*
 *://talyuna.com/*
 *://tamsinbearsley.org/*
+*://tanis-engineering.nl/*
 *://taralakeshow.com/*
 *://tasmanmiddle.co.za/*
 *://tasteofpersia.org/*
@@ -552,8 +645,12 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://therealworldhum.ca/*
 *://thewellyou.ca/*
 *://thomasnupen.com/*
+*://tierbedarfoase.de/*
 *://tintimportintim.com/*
+*://tomxwork.com/*
 *://torcyenvalois.com/*
+*://touchofglamour.co.za/*
+*://toughmanbootcamp.com/*
 *://truckslutsmag.com/*
 *://tuncsuerdas.net/*
 *://tutorhour.ca/*
@@ -561,9 +658,11 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://ulib.chiarabismor.de/*
 *://ultrafino.net/*
 *://unioncinemas.com/*
+*://unmistify.com/*
 *://unpulmonmas.org/*
 *://upallnightpresents.com/*
 *://upcharaurprayog.com/*
+*://urbaninjun.com/*
 *://utkarshacademy.in/*
 *://uwc-logistics.co.za/*
 *://vacacionesfamilia.com/*
@@ -573,9 +672,11 @@ name: AdBlockID Plus (Badware risks) v24.11.2-17
 *://vijayschildcare.ca/*
 *://volpibiduletruck.com/*
 *://vrtbga.com/*
+*://vtltyblog.com/*
 *://waphelaumdakalova.co.za/*
 *://warung-corner.fr/*
 *://watchempire.ca/*
+*://wildpawz.co.za/*
 *://woofwebshop.com/*
 *://worldtopselect.com/*
 *://www.lumen-learning.com/*
