@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.11.24
+! Version: 24.11.25
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Nov 2024 18:00 UTC
+! Last modified: 18 Nov 2024 18:11 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3934,8 +3934,9 @@ anixverse.com,hepinime.id,lendrive.web.id,melongmovie.site,sokuja.uk##body > div
 kebioskop21.digital##a[target*="blank"] > video:remove()
 manganime.live##img[data-original-width="905"][data-original-height="1300"]
 drakorid.icu###arlinablock
+idlix.asia##body > div:matches-css(position: fixed)
+idlix.asia##body > div:style(filter: unset!important;)
 drakorid.icu##body:style(overflow: auto!important; position: unset!important;)
-idlix.asia##body[class*="-blur"] > div:style(filter: none !important;)
 kopajasubs.info##+js(aopr, adAdbLoad)
 filmboxoffice.web.id,neosubs.net##+js(aopr, anOptions)
 blurayufr.cam##+js(acis, chp_ads_blocker_detector)
