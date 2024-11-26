@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 24.11.40
+! Version: 24.11.41
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Nov 2024 17:43 UTC
+! Last modified: 26 Nov 2024 04:59 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3935,16 +3935,16 @@ anixverse.com,hepinime.id,lendrive.web.id,melongmovie.site,sokuja.uk##body > div
 kebioskop21.digital##a[target*="blank"] > video:remove()
 manganime.live##img[data-original-width="905"][data-original-height="1300"]
 drakorid.icu###arlinablock
-idlix.asia##body > div:matches-css(position: fixed)
-idlix.asia##body > div:style(filter: unset!important;)
 drakorid.icu##body:style(overflow: auto!important; position: unset!important;)
+idlix.asia##body[class*="-style-"] > *:style(filter: none !important;)
+idlix.asia##body[class*="-style-"] > div[class$=" active"][style]
+idlix.asia##body[class*="-style-"] > div[class$=" active"][style] + div[class*="-"]:has(> div[class$=" active"][style])
 kopajasubs.info##+js(aopr, adAdbLoad)
 filmboxoffice.web.id,neosubs.net##+js(aopr, anOptions)
+idlix.asia##+js(prevent-xhr, method:GET url:!/idlix|jwpcdn/)
 blurayufr.cam##+js(acis, chp_ads_blocker_detector)
 dramakore21.net,layardrama21.my##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
 123moviesmy.site##body > div:matches-css(position: fixed):has(> div:matches-css(position: relative))
-@@||static.doubleclick.net/instream/ad_status.js$domain=idlix.asia
-idlix.asia##+js(aost, DOMTokenList.prototype.contains, manageBodyClasses)
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=auratail.com
 /ads-$image,domain=nekopoi.web.id
