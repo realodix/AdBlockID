@@ -66,25 +66,22 @@ manganime.live##img[data-original-width="905"][data-original-height="1300"]
 ! ANTI-ADBLOCK
 ! -----------------------------------------------
 drakorid.icu###arlinablock
-idlix.asia##body > div:matches-css(position: fixed)
-idlix.asia##body > div:style(filter: unset!important;)
 drakorid.icu##body:style(overflow: auto!important; position: unset!important;)
+idlix.asia##body[class*="-style-"] > *:style(filter: none !important;)
+idlix.asia##body[class*="-style-"] > div[class$=" active"][style]
+idlix.asia##body[class*="-style-"] > div[class$=" active"][style] + div[class*="-"]:has(> div[class$=" active"][style])
 !
 kopajasubs.info##+js(aopr, adAdbLoad)
 filmboxoffice.web.id,neosubs.net##+js(aopr, anOptions)
+idlix.asia##+js(prevent-xhr, method:GET url:!/idlix|jwpcdn/)
 ! chp_ads_blocker | adblock_title | /wp-content/plugins/chp-ads-block-detector/
 blurayufr.cam##+js(acis, chp_ads_blocker_detector)
 dramakore21.net,layardrama21.my##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
 123moviesmy.site##body > div:matches-css(position: fixed):has(> div:matches-css(position: relative))
-! class="*-blackout active"
-! class="*-wrapper"
-! -- class="*-modal *-the-modal active"
-@@||static.doubleclick.net/instream/ad_status.js$domain=idlix.asia
-idlix.asia##+js(aost, DOMTokenList.prototype.contains, manageBodyClasses)
 ! gothamBatAdblock
-! 0.0.realodix##div[style*="position: fixed;"]:has-text(ADBLOCK)
+!0.0.realodix##div[style*="position: fixed;"]:has-text(ADBLOCK)
 ! wcadbwp|.wc-adblock-wrap
-! 0.0.realodix##+js(aopr, wcadbwp)
+!0.0.realodix##+js(aopr, wcadbwp)
 !
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=auratail.com
