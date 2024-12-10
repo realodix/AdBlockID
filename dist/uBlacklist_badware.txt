@@ -1,5 +1,5 @@
 ---
-name: AdBlockID Plus (Badware risks) v24.12.1
+name: AdBlockID Plus (Badware risks) v24.12.2
 ---
 # example.com/path-2/
 # https://regex101.com/r/m9B31Z/4
@@ -28,7 +28,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 /\.(de|fr|za)\/([a-z]{6,11})-([0-9]{5})\.html/
 # domain.go.id/image/*
 # https://regex101.com/r/2w7Pqc/latest
-/\.(com|id|bg|br|ca|ma|uk|uz)\/(assets|data|img|image|css|jss?|public|httdoc|auth|files?|system|kcfinder|lib|log|repository|vendor|wp-admin|wp-content|wp-includes|wp-data)\//
+/\.(com|id|bg|br|ca|cz|ma|uk|uz)\/(assets|data|img|image|css|jss?|public|httdoc|auth|files?|system|kcfinder|lib|log|repository|storage|vendor|wp-admin|wp-content|wp-includes|wp-data)\//
 # https://example.com/skctpj-24231.txt
 # https://regex101.com/r/cMsooA/2
 /\.(de|pl)\/([a-z]{4,6})-([0-9]{5})\.(fb2|[a-z]{3,4})/
@@ -49,19 +49,25 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 # Mungkin nanti berguna
 # https://regex101.com/r/Y4dNYR/latest
 #
+*://*.akbiduk.ac.id/*.php?*
 *://*.bakrie.ac.id/images/*
 *://*.baritoutarakab.go.id/*/index.php*
+*://*.blorakab.go.id/*/?id=*
 *://*.gramedia.com/*.html
 *://*.iaiqh.ac.id/?id=*
 *://*.kemdikbud.go.id/*/index.php?*
 *://*.kemkes.go.id/*/index.php?*
 *://*.lubuklinggaukota.go.id/*/index.php?*
+*://*.pekalongankota.go.id/*/index.php*
 *://*.penabur.sch.id/bray/*
+*://*.pmimedan.or.id/?id=*
 *://*.polri.go.id/akun/*
 *://*.polri.go.id/slot-*
 *://*.stiepemuda.ac.id/?id=*
 *://*.stikesmedistra-indonesia.ac.id/*/?id=*
+*://*.ubl.ac.id/administrasi/index.php?*
 *://*.umb.ac.id/?id=*
+*://*.unika.ac.id/*/index.html*
 *://anoboy.publikasi.bpkad.tabalongkab.go.id/*
 *://anoboy.tjp.tabalongkab.go.id/*
 *://cnot.averin.co.id/?page=*
@@ -78,7 +84,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 # --------------------------------------------------------
 # https://regex101.com/r/vrsfWx/latest
 /\.(com|net|pl|tr)\/(mawarhitam|nuhun|whitemoon)\/\?id=/
-/\.(de|jp|uz)\/(galak|snow|winter)\/\?id=/
+/\.(de|il|jp|uz)\/(galak|snow|winter|keris)\/\?id(_ID)?=/
 # Ada 1 yang 7 digit
 *://*.sonnenberg-friseure.de/*
 # https://regex101.com/r/aKmT29/8
@@ -124,6 +130,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://aahbwa.org/*
 *://aangepastchalet.nl/*
 *://aatreesurgeonsgloucester.co.uk/*
+*://abbeynaidoo.co.za/*
 *://abcmadaj.pl/*
 *://abcremodelingtn.com/*
 *://abformateur.fr/*
@@ -145,12 +152,15 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://acfoto.es/*
 *://achavil.com.ar/*
 *://acmfenetres-pergolas.fr/*
+*://acram.fr/*
 *://acsplumbing.co.za/*
 *://activeblue.ca/*
 *://actusfootball.fr/*
 *://ad2-31.fr/*
 *://adeleherbreteau.fr/*
 *://adelesbeautyandslimmingclinic.co.za/*
+*://adhhome.co/*
+*://adirondacksflyfishing.com/*
 *://adjelec.fr/*
 *://adm-vtc.fr/*
 *://admiralpc.com/*
@@ -176,6 +186,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://ah-diag.fr/*
 *://ahkmt.org/*
 *://aidesdelhabitat.fr/*
+*://aildestrousse.fr/*
 *://aimeeonyourside.ca/*
 *://aimtechnologies.co.in/*
 *://aiqsacademy.com/*
@@ -183,11 +194,14 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://ajulianalvarez.com.ar/*
 *://akbuilderschennai.in/*
 *://akesobotanicals.ca/*
+*://akiasilihaircare.co.za/*
 *://alaindesmet.be/*
 *://alaingrosajt.com/*
 *://albatraoz.co.za/*
 *://albertfranksfinejewelry.com/*
+*://albonbeck.fr/*
 *://alderatama.com/*
+*://alexlatino-danse.fr/*
 *://alexlaughs.com/*
 *://algotek.fr/*
 *://alisondorfman.com/*
@@ -247,6 +261,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://aofinances.co.za/*
 *://aovevidaperra.es/*
 *://apartments-usedom.de/*
+*://apel-saintemarie-gujan.fr/*
 *://apexedgefinance.ca/*
 *://apkabazar.in/*
 *://aplrigsindia.in/*
@@ -281,6 +296,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://asadormuga.com/*
 *://asatc.in/*
 *://asbaisieux.fr/*
+*://ascarouen.com/*
 *://aseparklaw.com/*
 *://asesoriagestglobal.es/*
 *://asgroupltd.co.uk/*
@@ -315,6 +331,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://aubepine-ateliers.fr/*
 *://aubonheurdesmam.fr/*
 *://aucunelimite.fr/*
+*://audesud.fr/*
 *://aufdenpunkt-korrektorat.de/*
 *://auralyz.fr/*
 *://aureliesadler.fr/*
@@ -331,10 +348,12 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://autranconsultoria.com.br/*
 *://av-voyages.fr/*
 *://ava-conciergerie.fr/*
+*://avadcanada.ca/*
 *://avadinightmarathon.in/*
 *://avianworld.in/*
 *://avination.in/*
 *://avospiedsmanonmorasse.ca/*
+*://awakenednutrition.ca/*
 *://axis-bikes.com/*
 *://aziemartmaju.com/*
 *://aziznawadi.net/*
@@ -345,6 +364,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://bakingwithbecca.co.uk/*
 *://baladfilm.bar/*
 *://balancedmouth.fr/*
+*://bambamkids.com.mx/*
 *://bambi-and-bear.co.za/*
 *://bamtechniek.co.za/*
 *://banditcuisine.com/*
@@ -358,16 +378,20 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://bbmart.in/*
 *://bbpg.fr/*
 *://bcg-food.ca/*
+*://bcgoynews.ca/*
+*://bcpbitche.fr/*
 *://bcs-powershop.de/*
 *://be-ei.in/*
 *://bealtainemag.com/*
 *://bearyhuggables.com/*
 *://beautylara.fr/*
 *://beautypulse.pl/*
+*://beautysuppliescapetown.co.za/*
 *://bebingtonbugle.co.uk/*
 *://bedivine.fr/*
 *://bedsheetmanufacturer.in/*
 *://bee-mp3.nl/*
+*://beesis-event.fr/*
 *://beewelcom.fr/*
 *://behaviourstrats.ca/*
 *://bel3d.be/*
@@ -380,6 +404,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://bencoaching.fr/*
 *://benesseremassages.fr/*
 *://benevolatlyceen.fr/*
+*://bespokeprint.in/*
 *://bestchoicewindowsdirect.ca/*
 *://bestgift4u.ca/*
 *://bethanychurchpec.ca/*
@@ -396,8 +421,10 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://bigbellydeli.in/*
 *://bigbiteburrito.ca/*
 *://biladalsham.co/*
+*://billyboatlocation.fr/*
 *://biomeditech.fr/*
 *://bitcoingratisonline.de/*
+*://bitscan.ca/*
 *://blackhillpress.com/*
 *://blackoculars.ca/*
 *://blau-zu-gruen.de/*
@@ -415,6 +442,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://blueskynails.ca/*
 *://blushandlove.ca/*
 *://bmxclubredon.fr/*
+*://bodegapotxolo.fr/*
 *://bodybasics.co/*
 *://bogiesdeli.com/*
 *://boireoumanger.fr/*
@@ -484,6 +512,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://calderassociate.co.uk/*
 *://calibermetalbuildings.net/*
 *://calicurryhouse.co/*
+*://calmescapemobilespa.co.za/*
 *://calypsoaccommodation.co.za/*
 *://camp-overland.com/*
 *://campfort-bouw.nl/*
@@ -546,6 +575,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://chamereau.fr/*
 *://chamonixserum.co.za/*
 *://changez-de-cap.fr/*
+*://charityfarm.co.za/*
 *://charlesdemarcomd.com/*
 *://charlotteerichsen.de/*
 *://charltonweddings.co.uk/*
@@ -559,6 +589,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://chemainuscohousing.ca/*
 *://chemicalboys.co.za/*
 *://chems-eddine.fr/*
+*://chetanraj.in/*
 *://cheval-rhpaie.fr/*
 *://chez-mell.fr/*
 *://chezclochettesuivicommande.fr/*
@@ -584,6 +615,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://ciudadvivafuenlabrada.es/*
 *://clarkeblog.com/*
 *://classiccrackers.in/*
+*://classicreifenmoers.de/*
 *://classylanguage.pl/*
 *://cleangrouppoznan.pl/*
 *://cleanmood.fr/*
@@ -593,6 +625,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://cliffe-kent.org.uk/*
 *://clothingculture.in/*
 *://cls.com.mx/*
+*://clubdestoques.fr/*
 *://clublobobike.es/*
 *://cnetsolutions.co.in/*
 *://coastalcarrentals.ca/*
@@ -611,6 +644,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://coltanrepairs.co.za/*
 *://comercialpenta.com/*
 *://comicosdebarcelona.com/*
+*://companioncorgis.com/*
 *://company4building.com/*
 *://compteoffshore.fr/*
 *://computerrepaircentral.com/*
@@ -630,6 +664,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://cosmoscholar.in/*
 *://cosycornerholidayaccommodation.co.uk/*
 *://cotoneorganico.com/*
+*://countryflorist.net/*
 *://countrymusicontheroad.com/*
 *://couvreur-achard.fr/*
 *://couvreur-stephane-93.fr/*
@@ -646,6 +681,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://crownline.in/*
 *://cruseptiles.ca/*
 *://crusspair.co.za/*
+*://cryptique.fr/*
 *://crystalgem.fr/*
 *://cspmitra.com/*
 *://cten.co.za/*
@@ -683,6 +719,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://daxxah.fr/*
 *://dazy.co.za/*
 *://deborahwalsh.ca/*
+*://debtsurvival.co.za/*
 *://decapital.co.za/*
 *://deccanedu.org/*
 *://deccanexpress.co/*
@@ -705,10 +742,12 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://demooistemangomeubelen.nl/*
 *://denisacarpacademy.es/*
 *://deniserout.com/*
+*://denixreplicaguns.ca/*
 *://dennisreloaded.co/*
 *://dentabox.fr/*
 *://dentairehygienesolutions.fr/*
 *://depannageproauto.fr/*
+*://departemen.us/*
 *://depotonwheels.co.za/*
 *://dermatology2024.co.za/*
 *://dermoholic.co.za/*
@@ -747,6 +786,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://dmcapply.com/*
 *://dmomhealthcare.in/*
 *://dogincabin.org/*
+*://dogio.fr/*
 *://dohajuicefactory.com/*
 *://dolcevita-incubateur.fr/*
 *://domainedemarcilly.fr/*
@@ -764,6 +804,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://doverskiphire.co.uk/*
 *://dp-fashion-store.de/*
 *://dpslagma.in/*
+*://dqxstudio.fr/*
 *://dreamlifestyle.fr/*
 *://dreamondanceclub.co.uk/*
 *://dreampainters.ca/*
@@ -806,6 +847,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://editorialdigitaltecdemonterrey.com/*
 *://edshs.co.za/*
 *://educateu.co.za/*
+*://eduvate.co.za/*
 *://edzaniphotography.co.za/*
 *://ee-projektbau.de/*
 *://effervescenceclub.fr/*
@@ -818,6 +860,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://elansoapery.in/*
 *://eldito.de/*
 *://electricalengineeringnewcastle.co.za/*
+*://electriccarsconseil.fr/*
 *://electriciansbronkhorstspruit.co.za/*
 *://elegancewindshieldrepair.ca/*
 *://elegant4780.co.za/*
@@ -846,6 +889,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://ensavoirplusia.fr/*
 *://ensemblelesprecieuses.fr/*
 *://envirocoatingsaustralia.com/*
+*://ep-peintre.fr/*
 *://epicsummoners.co/*
 *://epiphanyoviedo.org/*
 *://eppglasspack.co.za/*
@@ -870,7 +914,9 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://essonnetaxi91.fr/*
 *://essor-optimal.ca/*
 *://estoesache.com.ar/*
+*://etis-france.fr/*
 *://etiyadesign.fr/*
+*://eurekamail.co/*
 *://europecouverture.com/*
 *://evachem.ca/*
 *://evacirefice.fr/*
@@ -920,6 +966,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://finelycut.fr/*
 *://finety.co.za/*
 *://firmin-jobert.fr/*
+*://firrr.co.za/*
 *://fishnbread.co.za/*
 *://fitfamkenosha.com/*
 *://fiyacademy.ca/*
@@ -930,6 +977,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://flocknpawsfarm.com/*
 *://florcoronas.es/*
 *://floreshine.fr/*
+*://florian-serre.fr/*
 *://flowany.com/*
 *://flowersshop.fr/*
 *://flowpaddle.co/*
@@ -944,6 +992,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://fonpok.fr/*
 *://foodandevent.com/*
 *://foodonrecord.com/*
+*://foodsocksknysna.co.za/*
 *://foreverfourtwenty.co.za/*
 *://forgetechindia.in/*
 *://formation-hygiene-haccp.com/*
@@ -967,6 +1016,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://gabiadamsphoto.com/*
 *://gaelkaromba.com/*
 *://gaelkitan.fr/*
+*://gaelle-mydecopro.fr/*
 *://gakushinac.com/*
 *://gallerianderslundmark.net/*
 *://gallery11.co.za/*
@@ -1027,11 +1077,13 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://graffitins.com/*
 *://grainofthought.com/*
 *://gramoday.org/*
+*://grandepharmaciedescastors.fr/*
 *://grandmaraboutmediumfrance.fr/*
 *://grandmascountrygoodies.com/*
 *://gravesendskiphire.co.uk/*
 *://grcare.de/*
 *://greaterislam.in/*
+*://greatertorontomasonryroofing.ca/*
 *://greatpakistan.org/*
 *://greenarmyfoundation.in/*
 *://greenfig.co.za/*
@@ -1042,9 +1094,11 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://groupe-nds.fr/*
 *://groupe-sver.fr/*
 *://groupehardy.com/*
+*://grupoincemet.es/*
 *://grupomar.co/*
 *://gruposvq.es/*
 *://gspahealthcarerecruit.co.za/*
+*://gtameats.ca/*
 *://guanamorteatrostudio.co/*
 *://guider.in/*
 *://guitareserian.fr/*
@@ -1075,11 +1129,13 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://happyselflove.de/*
 *://happystitches.ca/*
 *://happyweddings.co.in/*
+*://harisharora.in/*
 *://harlandpress.ca/*
 *://harmonika-emiliamlynarczyk.pl/*
 *://harmony-analyser.org/*
 *://hashemaa.ca/*
 *://hatchmusic.fr/*
+*://hatikpeinture.fr/*
 *://haussiebenpfeiffer.de/*
 *://hausweissbacher.com/*
 *://hawescreative.ca/*
@@ -1163,6 +1219,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://imai-guitars.com/*
 *://imak-engineering.com/*
 *://imamusicbusinessacademy.com/*
+*://immo-token.fr/*
 *://immortal-events.de/*
 *://implicitaudio.ca/*
 *://impressionphotography.in/*
@@ -1173,8 +1230,10 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://indiauniforms.in/*
 *://indiodesign.ca/*
 *://indonesianshops.com/*
+*://indxco.co.za/*
 *://inec.cl/*
 *://infiniteweddingplanner.in/*
+*://initiateurs-opas-somfy.fr/*
 *://inmybackyard.co.za/*
 *://inofinitytech.ca/*
 *://inoutspace.com/*
@@ -1197,6 +1256,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://intuitiontextile.fr/*
 *://invictaresidentialsales.co.za/*
 *://iparglass.fr/*
+*://irisaesthetics.ca/*
 *://ironandink.ca/*
 *://iryshephoto.com/*
 *://isabellafmodra.com/*
@@ -1214,11 +1274,13 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://izelenn-naturo.fr/*
 *://izibizup.fr/*
 *://izomaxconstruction.ca/*
+*://j-braun-steuer.de/*
 *://j-moneyclothing.com.co/*
 *://jababyboutique.ca/*
 *://jacketsforjasper.com/*
 *://jackyyanghome.ca/*
 *://jacobmejilla.ca/*
+*://jacsproducts.co.uk/*
 *://jaidemedia.com/*
 *://jamesmcalonan.co.uk/*
 *://janiemoge.pl/*
@@ -1227,6 +1289,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://jdbserwis.pl/*
 *://jdezign.in/*
 *://jdmdistribution.fr/*
+*://jdpaysage.fr/*
 *://jeanhorihata.com/*
 *://jecomoda.cl/*
 *://jedeviensconducteur.fr/*
@@ -1245,6 +1308,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://jlux-toiture.fr/*
 *://jocelynreevescounselling.ca/*
 *://joelcaricoarchitect.com/*
+*://joelwood.ca/*
 *://joie-animale.fr/*
 *://jolietbluesband.co.uk/*
 *://jon-may.co.uk/*
@@ -1322,6 +1386,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://kurtismantronik.com/*
 *://kuswlosami.pl/*
 *://kvkburhanpur.in/*
+*://kyleehanson.ca/*
 *://kymbearing.in/*
 *://l-agencecommerciale.fr/*
 *://labastide-talespues.com/*
@@ -1380,6 +1445,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://leangreen.co.in/*
 *://learnmorepro.in/*
 *://leblancshomeinspection.com/*
+*://leblog-groupe-dems.fr/*
 *://leca-coaching.de/*
 *://lecabinetdesarah.fr/*
 *://lecadeau.in/*
@@ -1396,6 +1462,8 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://legendspathacademy.co.za/*
 *://legrenierdesasha.fr/*
 *://lekode.fr/*
+*://lenest.fr/*
+*://leomarchal.fr/*
 *://lepanierdemarius.fr/*
 *://lepervierlemag.fr/*
 *://lepetitchateaudecelestine.fr/*
@@ -1434,6 +1502,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://linenmadame.com/*
 *://lintfabriek.com/*
 *://lionheartcricket.co.uk/*
+*://listedonline.uk/*
 *://littleroomlabs.ca/*
 *://livetheword.co.za/*
 *://liwa-reinigung.de/*
@@ -1449,6 +1518,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://lopticien-metz.fr/*
 *://lostualdos.com.ar/*
 *://lotrabucador.com/*
+*://lovais.co.za/*
 *://loveandwar.in/*
 *://lovecrafted.nl/*
 *://lp-photographe-immobilier.fr/*
@@ -1457,6 +1527,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://lubricationequipmentonline.co.za/*
 *://lucie-gomez.fr/*
 *://luciebaud-kinesiologie.fr/*
+*://luckimedia.in/*
 *://lukaszklimowicz.com/*
 *://lulezimcallaku.de/*
 *://luli-autospares.co.za/*
@@ -1583,9 +1654,11 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://mjholdingsandassociates.co.za/*
 *://mjussiteofficiel.fr/*
 *://mkfootwear.co.in/*
+*://mknd.in/*
 *://mmejoliebox.fr/*
 *://mmjknowledge.com/*
 *://mobicompact.de/*
+*://mobiya.co.in/*
 *://mobsswindshield.co.in/*
 *://modeliaconcept.fr/*
 *://modernplush.co/*
@@ -1626,8 +1699,10 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://musiktherapy.co/*
 *://myhomelifeinteriors.in/*
 *://myhomewell.de/*
+*://myhuronproducts.ca/*
 *://myksante.ca/*
 *://mylingeriebox.fr/*
+*://mymahimescapital.com/*
 *://mymeva.ca/*
 *://mysosagent.ca/*
 *://myvisioneyewear.ca/*
@@ -1655,6 +1730,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://neveragain.fr/*
 *://nevori.de/*
 *://newankitplastic.com/*
+*://nexagroup.co.za/*
 *://nextgenerationapps.ca/*
 *://nhathuoctuelamso8.com/*
 *://nicethings.co.za/*
@@ -1691,6 +1767,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://oblaksteakhouse59.fr/*
 *://occupy-occupy.de/*
 *://oceane-cheknoun.fr/*
+*://ocpconsulting.fr/*
 *://octomtech.com/*
 *://oczywistacodziennosc.pl/*
 *://odeuxladharestaurant.fr/*
@@ -1715,6 +1792,8 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://opssec.in/*
 *://optim-eau72.fr/*
 *://optimiaconsulting.fr/*
+*://optoutsideco.ca/*
+*://opus-origin.co.za/*
 *://orangeflamingoevents.co.uk/*
 *://organicsoapbarn.co.za/*
 *://orienstechnology.com/*
@@ -1755,7 +1834,9 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://patentregistrationbangalore.in/*
 *://patientcritical.com/*
 *://patrimonium-conseil.fr/*
+*://pattedevelours07.fr/*
 *://pausephoto24.fr/*
+*://pay2.co.in/*
 *://pcslibrary.ca/*
 *://peachesandcreambox.ca/*
 *://peakmasonryltd.ca/*
@@ -1776,12 +1857,15 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://petrakoo.com/*
 *://petrolromantics.de/*
 *://pewindia.co.in/*
+*://pharmacie-cristol-louin.fr/*
 *://pharmaciecentrale-noel.fr/*
 *://pharmaciecombeuil.fr/*
 *://pharmaciedegrignols.fr/*
 *://pharmaciedeguentrange.fr/*
 *://pharmaciedelacite-narbonne.fr/*
+*://pharmaciedeschamps-maubeuge.fr/*
 *://pharmaciedesmazades.fr/*
+*://pharmaciedubecdallier.fr/*
 *://pharmaciedutheatre-rouen.fr/*
 *://pharmacieduvalinco-propriano.fr/*
 *://pharmaciejacques-dompaire.fr/*
@@ -1790,6 +1874,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://pharmacievauban-saintvaast.fr/*
 *://pharmaciexufre-flers.fr/*
 *://pharmadeporto.fr/*
+*://pharmadesthermes-biarritz.fr/*
 *://phoebelloyd.co.uk/*
 *://phyllishouseman.com/*
 *://picapaucombined.co.za/*
@@ -1840,6 +1925,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://priyankaconstruction.in/*
 *://pro-g-batiment.fr/*
 *://procarrelages.fr/*
+*://prodoorsolution.ca/*
 *://productoslicenciados.com/*
 *://profencingandwholesale.co.za/*
 *://professionailspaca.us/*
@@ -1876,6 +1962,8 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://racosta.com.br/*
 *://radiansoundlab.com/*
 *://radiologie-trets.fr/*
+*://radiosonho.com/*
+*://radotex-tkani.com/*
 *://rafaelcastrofotografia.es/*
 *://ralucalalescuchanteauavocat.fr/*
 *://ramadahotelatakoy.com/*
@@ -1891,6 +1979,8 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://re-medien.org/*
 *://realogilesecondary.co.za/*
 *://rebecheamenagement.fr/*
+*://rebuiltexteriors.ca/*
+*://rechtsrat-corona.de/*
 *://recordbreakersband.com/*
 *://recreationalartstudio.com/*
 *://recusa.org/*
@@ -1980,6 +2070,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://salonmeli.ca/*
 *://samaei.co/*
 *://samaramedeiros.com/*
+*://samarket.co.za/*
 *://samilee-moody.me/*
 *://samouczki.pl/*
 *://samsparkscreative.ca/*
@@ -2016,6 +2107,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://sdfi.in/*
 *://searckey.in/*
 *://seasideortholegal.co.za/*
+*://seasonalcleaning.fr/*
 *://secondmortgagepros.ca/*
 *://secretleaves.in/*
 *://seelentexte-bilder.de/*
@@ -2068,6 +2160,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://siemensplc.in/*
 *://signexperts.co.za/*
 *://sikkimnursingcouncil.in/*
+*://silversugarandspice.co.za/*
 *://simpi-api.com/*
 *://simplifier-la-vie.com/*
 *://singhshardware.co.za/*
@@ -2083,6 +2176,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://skiskillspro.be/*
 *://slawomirchojnowski.pl/*
 *://slechtziendenzorg.be/*
+*://slicepayments.co/*
 *://slimline-aesthetics.de/*
 *://smart-heat.ca/*
 *://smart-stem.ca/*
@@ -2115,11 +2209,13 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://solutionnm.org/*
 *://sonnenberg-friseure.de/*
 *://sophie-brunner.de/*
+*://sophiehassine.fr/*
 *://sophrologie-asp2e.fr/*
 *://sophrologie-paris14.fr/*
 *://sortridgemanor.co.uk/*
 *://soryapps.es/*
 *://sos-micro-services.fr/*
+*://sosloungeandcakesbyjus.ca/*
 *://souadnatech.fr/*
 *://soubeyrandtoiture.fr/*
 *://souldancefitness.com/*
@@ -2143,6 +2239,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://stallionmotorsport.co.in/*
 *://stanleycycles.in/*
 *://stanleytvrepairs.co.za/*
+*://stanthonykofc11726.ca/*
 *://stefan-weidner-fotografie.de/*
 *://stellanovamedia.ca/*
 *://stelmashenko.com/*
@@ -2183,6 +2280,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://supersunflower-oil.co.za/*
 *://supremepropertysa.co.za/*
 *://supremetoys.ca/*
+*://sureshsarees.in/*
 *://suresuccessias.in/*
 *://surfacegripp.com/*
 *://survivalfreakz.de/*
@@ -2221,6 +2319,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://technologyresourcese.com/*
 *://technomining.co.za/*
 *://techwisey.ca/*
+*://teesthrift4kiddies.co.za/*
 *://teewolf.in/*
 *://telecotelephone.com/*
 *://tembisasos.co.za/*
@@ -2231,6 +2330,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://tfox.org/*
 *://thatblonde.co.uk/*
 *://the-local.co.za/*
+*://theabra.co/*
 *://theamericanproject.us/*
 *://theartchildllc.org/*
 *://theatrenovo.ca/*
@@ -2242,6 +2342,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://thecarrotstail.com/*
 *://thecerve.co.uk/*
 *://theclaytrade.ca/*
+*://thecraftroot.in/*
 *://thedollhousecompany.co.za/*
 *://thedudes.ca/*
 *://thefatchefcateringagency.co.uk/*
@@ -2265,12 +2366,14 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://theotherfootball.ca/*
 *://thepiershop.co.uk/*
 *://therealworldhum.ca/*
+*://thescooponbaby.com/*
 *://thesevenworlds.com/*
 *://thesolarandwindexpo.com/*
 *://thesolarguy.co.za/*
 *://thesuturemanual.com/*
 *://thesweetspotbakery.in/*
 *://thetrunk.co.in/*
+*://theveganpregnancyguide.com/*
 *://thewealthkart.com/*
 *://thewebwise.de/*
 *://thewellyou.ca/*
@@ -2281,6 +2384,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://tibanindah.com/*
 *://tiendacailun.com.ar/*
 *://tierbedarfoase.de/*
+*://tikkabistro.com/*
 *://tiktaks.co.za/*
 *://tinbro.in/*
 *://tintimportintim.com/*
@@ -2340,6 +2444,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://ugandatourismassociation.org/*
 *://ukrholzinvest.de/*
 *://ulrikebaumertdesign.de/*
+*://ultimatemountainliving.com/*
 *://ultrafino.net/*
 *://ultroncommerce.in/*
 *://umlozicontainerrestaurant.co.za/*
@@ -2380,11 +2485,13 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://vcaretravelnurse.ca/*
 *://vectologo.fr/*
 *://vedicoriginofmusic.in/*
+*://veerable.com/*
 *://veliecomenage.fr/*
 *://venkyssafetynets.co.in/*
 *://vertillas-kharadi.in/*
 *://vetsenergyproject.org/*
 *://vhembewest.co.za/*
+*://viapositive.fr/*
 *://viaprofumi.com.ar/*
 *://victoriacheribennett.com/*
 *://victoriafloors.ca/*
@@ -2393,6 +2500,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://villabiscaplage.fr/*
 *://vimey-photography.de/*
 *://vimtec.fr/*
+*://vinitgupta.in/*
 *://vintage-evasion.fr/*
 *://virtualed.in/*
 *://viscleague.ca/*
@@ -2412,6 +2520,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://wagyufrance.fr/*
 *://waiclothing.co.uk/*
 *://walift.ca/*
+*://walkact-bielefeld.de/*
 *://walor.in/*
 *://wanderingmind-meditationundcoaching.de/*
 *://waphelaumdakalova.co.za/*
@@ -2423,6 +2532,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://waterberginfo.co.za/*
 *://waterberryguestlodge.co.za/*
 *://wcsem.co.in/*
+*://wcup-fitness.fr/*
 *://wdbyvfwpost9024.org/*
 *://weandourventures.in/*
 *://webcreol.com/*
@@ -2442,6 +2552,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://whendotheyservethewine.com/*
 *://whitelotus-healthbeauty.co.uk/*
 *://whittleandpartners.com/*
+*://wholelifeconsultants.com/*
 *://wijnhandeldejong.nl/*
 *://wildpawz.co.za/*
 *://wildrosestudio.co/*
@@ -2463,10 +2574,12 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://writesite.co/*
 *://wusthofknifesharpener.com/*
 *://wytworniasmaq.pl/*
+*://xclusivelady.co.za/*
 *://xoneclub.pl/*
 *://yallabouf.ca/*
 *://yaparadysa.com/*
 *://yarmouthsplashpark.ca/*
+*://yasminrozmee.co/*
 *://yesdil.com/*
 *://yipkinbon.com/*
 *://yogasso.fr/*
@@ -2479,6 +2592,7 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://zahnarzt-schwaikheim.de/*
 *://zakscouch.co.za/*
 *://zapodor.ca/*
+*://zarzadmowy.pl/*
 *://zazidesigns.co.za/*
 *://zealmedical.in/*
 *://zeisconsultingservices.com/*
@@ -2489,5 +2603,6 @@ name: AdBlockID Plus (Badware risks) v24.12.1
 *://zumbaosdelviento.com/*
 *://zuuk.me/*
 *://zwergenschlaf.de/*
+*://zycieciechocinka.pl/*
 /debt-collection-agency-in-([a-z]+)\.co\.uk/
 /hire-man-with-a-van-in-([a-z]+)\.co\.uk/
