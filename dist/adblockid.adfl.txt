@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.3.12
+! Version: 25.3.13
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Mar 2025 09:12 UTC
+! Last modified: 13 Mar 2025 09:24 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3280,8 +3280,6 @@ idntimes.com###idnads_header_IA
 idntimes.com###idnads_header_IA2
 yummy.co.id###js-banner-sticky
 popbela.com###wrapper-IDN_Leaderboard
-popbela.com###wrapper-IDN_MegaBillboard
-popmama.com###wrapper-IDN_Megabillboard
 popmama.com##.ads
 idntimes.com,yummy.co.id##.boxBanner
 idntimes.com,popmama.com##.parallax-ad
@@ -3294,6 +3292,7 @@ idntimes.com##.wrapper-mr
 popbela.com##[class^="ads_"]
 idntimes.com,popmama.com##[id^="IDN_MegaBillboard"]
 yummy.co.id##[id^="idnads_header_"]
+popbela.com,popmama.com##[id^="wrapper-IDN_MegaBillboard" i]
 yummy.co.id##div:has(> button:has-text(/tutup/i)):has-text(/SCROLL UNTUK MELANJUTKAN MEMBACA/i)
 yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 popmama.com###mainBannerPopup
