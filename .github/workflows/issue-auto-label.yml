@@ -1,22 +1,16 @@
 name: Labeling new issue
 on:
   issues:
-      types: ['opened', 'edited']
+    types: ['opened']
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: Renato66/auto-label@v2 # or v2.1.5
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/workflows/auto-label.json5
+          sparse-checkout-cone-mode: false
+      - uses: Renato66/auto-label@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          labels-synonyms: '{
-              "C: Annoyance":["annoyance","copy paste","copy-paste","embed","klik kanan","klik-kanan","overlay","right click","right-click"],
-              "C: NSFW":["bercinta","binor","bokep","bugil","cewek-bening","colmek","dewasa","hentai","kontol","memek","mesum","ngewe","otong-bangun","perawan","sange","sex","threesome","vulgar"],
-              "C: Pop-up ads":["Popup","pop-up"],
-              "C: safelink":["safelink"],
-              "C: International":["international"],
-              "C: Anti-Adblock":["anti adblock","anti-adblock"],
-              "C: Tracker":["privacy","tracker"],
-              "R: Duplicate":["duplicate"]
-            }'
-          labels-not-allowed: '["potential-duplicate"]'
