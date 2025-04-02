@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.4.2
+! Version: 25.4.3
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 02 Apr 2025 05:29 UTC
+! Last modified: 02 Apr 2025 11:59 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3697,20 +3697,20 @@ nobartv.cc,nobartv99.*##.inline-banner
 ||cfcdn.apcqwd.com/prod/svimg/*.gif|$image
 /tigoals\d+\.com/##.banner
 rbtv77.icu###divFLRAbottom
-fctv77.*,rbsports77.*,rbtv77.*,y8x7spine2pjzrun.cfd##:matches-path(/id) .__layout-inside div:matches-css(position: fixed):has(> img)
-fctv77.*,rbsports77.*,rbtv77.*,y8x7spine2pjzrun.cfd##:matches-path(/id) .iframe-wrapper > iframe + div:matches-css(position: absolute):has(> img)
+fctv77.*,rbsports77.*,rbtv77.*,y8x7spine2pjzrun.cfd##:matches-path(/id) div:matches-css(position: fixed):has(> img)
 fctv77.*,rbsports77.*,rbtv77.*,y8x7spine2pjzrun.cfd##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
+fctv77.*,rbsports77.*,rbtv77.*,y8x7spine2pjzrun.cfd##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
 fctv77.*,rbsports77.*,rbtv77.*,y8x7spine2pjzrun.cfd##:matches-path(/id) img:style(width: auto!important;)
 fctv77.*,rbsports77.*,rbtv77.*,y8x7spine2pjzrun.cfd##*:style(scrollbar-width: thin!important;)
 /(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##*:style(scrollbar-width: thin!important;)
-/(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##:matches-path(/id) .__layout-inside div:matches-css(position: fixed):has(> img)
-/(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##:matches-path(/id) .iframe-wrapper > iframe + div:matches-css(position: absolute):has(> img)
+/(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##:matches-path(/id) div:matches-css(position: fixed):has(> img)
 /(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
+/(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
 /(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##:matches-path(/id) img:style(width: auto!important;)
 /([a-z]{7,})(?=.*[a-z])(?=.*[0-9])[a-z0-9]{3,6}\.(cfd|sbs)$/##*:style(scrollbar-width: thin!important;)
-/([a-z]{7,})(?=.*[a-z])(?=.*[0-9])[a-z0-9]{3,6}\.(cfd|sbs)$/##:matches-path(/id) .__layout-inside div:matches-css(position: fixed):has(> img)
-/([a-z]{7,})(?=.*[a-z])(?=.*[0-9])[a-z0-9]{3,6}\.(cfd|sbs)$/##:matches-path(/id) .iframe-wrapper > iframe + div:matches-css(position: absolute):has(> img)
+/([a-z]{7,})(?=.*[a-z])(?=.*[0-9])[a-z0-9]{3,6}\.(cfd|sbs)$/##:matches-path(/id) div:matches-css(position: fixed):has(> img)
 /([a-z]{7,})(?=.*[a-z])(?=.*[0-9])[a-z0-9]{3,6}\.(cfd|sbs)$/##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
+/([a-z]{7,})(?=.*[a-z])(?=.*[0-9])[a-z0-9]{3,6}\.(cfd|sbs)$/##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
 /([a-z]{7,})(?=.*[a-z])(?=.*[0-9])[a-z0-9]{3,6}\.(cfd|sbs)$/##:matches-path(/id) img:style(width: auto!important;)
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
