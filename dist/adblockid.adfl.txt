@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.4.8
+! Version: 25.4.9
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Apr 2025 12:49 UTC
+! Last modified: 11 Apr 2025 19:15 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1429,7 +1429,7 @@ _TimAds_$image
 passatworld.ru#@##ad_global_below_navbar
 ||aedi.ai/common/js/v1/aedi-$domain=okezone.com
 ||p.jwpcdn.com/*/vast.js$script
-/^https?:\/\/(?:ak\.)?[a-z]{6,15}\.(?:com|net)\/4\/\d{7}/$doc,frame,popup
+/^https?:\/\/(?:ak\.)?[a-z]{6,15}\.(?:com|net)\/(?:1|4)\/\d{7}/$doc,frame,popup
 /\/assets\/jquery\/jquery-\d\.\d\.(?:\d\.)?min\.js\?(?:v=2)?&?type=(?:adult|mainstream)$/$1p,script
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$3p,match-case,script,xhr,to=top
 /\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$script
@@ -1437,7 +1437,7 @@ passatworld.ru#@##ad_global_below_navbar
 /^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\/\d{6}\b/$3p,match-case,xhr,to=com
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,6}(?:\?[_a-z]=[-0-9a-z]+)?$/$3p,match-case,script,redirect=noop.js
 /^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,6}(?:\?[_a-z]=[-0-9a-z]+)?$/$3p,frame,match-case,popup,xhr,to=com
-/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,6}(?:\?[_a-z]=[-0-9a-z]+)?$/$3p,frame,match-case,popup,xhr
+/^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9A-Z])[0-9a-zA-Z]{3,26}\/\d{4,6}(?:\?[_a-z]=[-0-9a-z]+)?$/$3p,frame,match-case,popup,xhr,to=website
 /^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-z]{2}\/){2,3}[0-9a-f]{32}\.js/$3p,script,xhr,redirect=noop.js,to=com
 /^https?:\/\/[0-9a-z]{13,14}\.cloudfront\.net\/\?[a-z]{3,5}=\d{6,7}$/$3p,script,xhr
 /^https?:\/\/[0-9a-f]{50,}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$3p,xhr
@@ -1452,15 +1452,11 @@ passatworld.ru#@##ad_global_below_navbar
 /^https?:\/\/[a-z]{8,15}\.xyz\/(?!api|available|team)[a-z]{4,}\.json$/$3p,match-case,xhr
 /^https?:\/\/[a-z]{8,15}\.xyz\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$3p,css,match-case
 /^https?:\/\/[a-z]{8,15}\.xyz\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$3p,image,match-case
-/^https?:\/\/[-a-z]{6,}\.com?\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$3p,match-case,script,xhr,to=co|com
-/^https?:\/\/[-a-z]{6,}\.info\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$3p,match-case,script,xhr,to=info
-/^https?:\/\/[-a-z]{6,}\.pro\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$3p,match-case,script,xhr,to=pro
-/^https?:\/\/[-a-z]{6,}\.xyz\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$3p,match-case,script,xhr,to=xyz
-/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}(?:\?v=\d+)?$/$3p,script
-/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}(?:\?v=\d+)?$/$3p,script
-/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?/$3p,xhr
+/^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$3p,match-case,script,xhr,to=co|com|info|pro|xyz
+/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}(?:\?v=\d+)?$/$3p,script,to=com|net
+/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}(?:\?v=\d+)?$/$3p,script,to=com|net
+/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?/$3p,xhr,to=com|net
 /^https?:\/\/[a-z]{6,15}\.[a-z]{2,3}\/5\/\d{6,7}(?:\?_=\d+|\/\??)?$/$3p,script,xhr
-/^https?:\/\/[a-z]{8,15}\.(?:com|net)\/tag\.min\.js$/$3p,script
 /^https?:\/\/[a-z]{8,15}\.com\/$/$3p,header=access-control-expose-headers:/x-directionpartner-id/,xhr,to=com,method=head
 /^https?:\/\/[a-z]{8,15}\.xyz\/$/$3p,header=access-control-expose-headers:/x-directionpartner-id/,xhr,to=xyz,method=head
 /get/*?zoneid=$script
@@ -3708,11 +3704,11 @@ nobartv.cc,nobartv99.*##.inline-banner
 ||cfcdn.apcqwd.com/prod/svimg/*.gif|$image
 /tigoals\d+\.com/##.banner
 rbtv77.icu###divFLRAbottom
-fctv77.*,painsalt9gdle6k.cfd,rbsports77.*,rbtv77.*,zt11or04emunion.shop##:matches-path(/id) div:matches-css(position: fixed):has(> img)
-fctv77.*,painsalt9gdle6k.cfd,rbsports77.*,rbtv77.*,zt11or04emunion.shop##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
-fctv77.*,painsalt9gdle6k.cfd,rbsports77.*,rbtv77.*,zt11or04emunion.shop##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
-fctv77.*,painsalt9gdle6k.cfd,rbsports77.*,rbtv77.*,zt11or04emunion.shop##:matches-path(/id) img:style(width: auto!important;)
-fctv77.*,painsalt9gdle6k.cfd,rbsports77.*,rbtv77.*,zt11or04emunion.shop##*:style(scrollbar-width: thin!important;)
+7sj83broughth5implanet.shop,fctv77.*,rbsports77.*,rbtv77.*,warj2tfastdurbo6goes.shop##:matches-path(/id) div:matches-css(position: fixed):has(> img)
+7sj83broughth5implanet.shop,fctv77.*,rbsports77.*,rbtv77.*,warj2tfastdurbo6goes.shop##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
+7sj83broughth5implanet.shop,fctv77.*,rbsports77.*,rbtv77.*,warj2tfastdurbo6goes.shop##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
+7sj83broughth5implanet.shop,fctv77.*,rbsports77.*,rbtv77.*,warj2tfastdurbo6goes.shop##:matches-path(/id) img:style(width: auto!important;)
+7sj83broughth5implanet.shop,fctv77.*,rbsports77.*,rbtv77.*,warj2tfastdurbo6goes.shop##*:style(scrollbar-width: thin!important;)
 /(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##*:style(scrollbar-width: thin!important;)
 /(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##:matches-path(/id) div:matches-css(position: fixed):has(> img)
 /(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs)$/##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
