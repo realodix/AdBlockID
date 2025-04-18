@@ -46,34 +46,40 @@ cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
 !# ---
 -banner-$image,domain=popmama.com
 !
-idntimes.com,popmama.com###IDN_InArticle1
-idntimes.com,popmama.com###IDN_InArticle1-2
-idntimes.com,popmama.com###IDN_InArticle1-3
-idntimes.com,popmama.com###IDN_InArticle1-4
-idntimes.com,popmama.com###IDN_InArticle1-5
+idntimes.com###IDN_Billboard:upward(1)
+popmama.com###IDN_InArticle1
+popmama.com###IDN_InArticle1-2
+popmama.com###IDN_InArticle1-3
+popmama.com###IDN_InArticle1-4
+popmama.com###IDN_InArticle1-5
 popmama.com###IDN_InArticle12
 popmama.com###IDN_InArticle13
 popmama.com###IDN_InArticle14
 popmama.com###IDN_InArticle15
-idntimes.com,popmama.com###IDN_InArticle2
-idntimes.com,popmama.com###IDN_InArticle2-2
-idntimes.com,popmama.com###IDN_InArticle2-3
-idntimes.com,popmama.com###IDN_InArticle2-4
-idntimes.com,popmama.com###IDN_InArticle2-5
+popmama.com###IDN_InArticle2
+popmama.com###IDN_InArticle2-2
+popmama.com###IDN_InArticle2-3
+popmama.com###IDN_InArticle2-4
+popmama.com###IDN_InArticle2-5
 popmama.com###IDN_InArticle22
-idntimes.com,popmama.com###IDN_InArticle3
-idntimes.com,popmama.com###IDN_Leaderboard
+popmama.com###IDN_InArticle3
+popmama.com###IDN_Leaderboard
 popmama.com###IDN_Leaderboard2
 popmama.com###IDN_Leaderboard3
 popmama.com###IDN_Leaderboard4
 popmama.com###IDN_Leaderboard5
+idntimes.com###IDN_MR1-wrapper
+idntimes.com###IDN_MR2-wrapper
+idntimes.com###IDN_MR3-wrapper
 idntimes.com###IDN_PS_MegaBillboard
-yummy.co.id###IDN_SkinLeft:upward(1)
-yummy.co.id###IDN_SkinRight:upward(1)
+idntimes.com,yummy.co.id###IDN_SkinLeft:upward(1)
+idntimes.com,yummy.co.id###IDN_SkinRight:upward(1)
+idntimes.com###ads-infeed
 idntimes.com###idnads_header_IA
 idntimes.com###idnads_header_IA2
 yummy.co.id###js-banner-sticky
 popbela.com###wrapper-IDN_Leaderboard
+idntimes.com###wrapper-IDN_MegaBillboard
 popmama.com##.ads
 idntimes.com,yummy.co.id##.boxBanner
 idntimes.com,popmama.com##.parallax-ad
@@ -84,9 +90,12 @@ idntimes.com##.wrapper-leaderboard
 idntimes.com##.wrapper-megabillboard
 idntimes.com##.wrapper-mr
 popbela.com##[class^="ads_"]
+idntimes.com##[id^="IDN_InArticle"]:upward(2)
+idntimes.com##[id^="IDN_Leaderboard"]:upward(2)
 idntimes.com,popmama.com##[id^="IDN_MegaBillboard"]
 yummy.co.id##[id^="idnads_header_"]
 popbela.com,popmama.com##[id^="wrapper-IDN_MegaBillboard" i]
+idntimes.com##[id^="wrapper-IDN_MegaBillboard"]
 yummy.co.id##div:has(> button:has-text(/tutup/i)):has-text(/SCROLL UNTUK MELANJUTKAN MEMBACA/i)
 yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 ! Annoyance Popup
