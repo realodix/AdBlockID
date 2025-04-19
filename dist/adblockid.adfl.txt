@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.4.16
+! Version: 25.4.17
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 Apr 2025 12:01 UTC
+! Last modified: 19 Apr 2025 12:07 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3243,12 +3243,16 @@ cermati.com##:matches-path(/artikel) [data-banner]:has(> a)
 cermati.com##:matches-path(/artikel) a:matches-attr(href="/^https?:\/\/promo\./"):has(> picture)
 cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
 -banner-$image,domain=popmama.com
+yummy.co.id###IDN_Billboard:upward(1)
+yummy.co.id###IDN_InFeed1:upward(1)
 fortuneidn.com,ggwp.id,idntimes.com###IDN_MR1-wrapper
 fortuneidn.com,ggwp.id,idntimes.com###IDN_MR2-wrapper
 fortuneidn.com,ggwp.id,idntimes.com###IDN_MR3-wrapper
 idntimes.com###IDN_PS_MegaBillboard
 idntimes.com###IDN_SkinLeft
+yummy.co.id###IDN_SkinLeft:upward(1)
 idntimes.com###IDN_SkinRight
+yummy.co.id###IDN_SkinRight:upward(1)
 fortuneidn.com,ggwp.id,idntimes.com###ads-infeed
 idntimes.com###idnads_header_IA
 idntimes.com###idnads_header_IA2
