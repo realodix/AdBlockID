@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.4.21
+! Version: 25.4.22
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 23 Apr 2025 15:33 UTC
+! Last modified: 24 Apr 2025 06:51 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -4231,6 +4231,8 @@ menjelajahi.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adb
 mangindo.xyz##+js(aopr, window.adikAds)
 tempatwisata.pro,vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 lifesurance.info##+js(set, showada, true)
+||adligature.com^$redirect=noop.js,domain=tempatwisata.pro
+||srvtrck.com^$redirect=noop.js,domain=tempatwisata.pro
 @@-ads-banner.js$domain=lifesurance.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arahtekno.com|baristakesehatan.com|dapat.link|gnaija.net|jurnalistekno.id|khaddavi.net|lokerwfh.net|tutorialsaya.com|tutwuri.id
 @@||duniata.com^$ghide
