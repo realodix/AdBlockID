@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.4.25
+! Version: 25.4.26
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 25 Apr 2025 17:05 UTC
+! Last modified: 27 Apr 2025 15:40 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -998,6 +998,7 @@ _TimAds_$image
 ##.iklan-giantbanner-content
 ##.iklan-header
 ##.iklan-header-item
+##.iklan-homepage
 ##.iklan-iklan-header
 ##.iklan-insertion
 ##.iklan-item
@@ -1471,6 +1472,7 @@ passatworld.ru#@##ad_global_below_navbar
 /[0-9a-f]{32}\/invoke\.js/$third-party,script,redirect-rule=noopjs
 ||fnasmpygwa.com^
 ||ads.sorot.co^$1p
+||cloudhost.id/pro/privat-ads/$3p,image
 ||cloudhost.id^*_ads_$3p,image
 ||iklancpm.files.wordpress.com^$3p
 ||rajabacklink.com^$3p
@@ -1648,6 +1650,7 @@ _970-x-90-$image,domain=teropongmedia.id
 ||gesuri.id/images/banner/$image
 ||gilangnews.com/assets/banner/
 ||global-news.co.id^*/iklan-$image
+||globalbusiness.id^*/banner-$image
 ||globalriau.com/photo/banner-$image
 ||gonews.id/ads/
 ||goriau.com/assets/imgbank/*/ads-$image
@@ -1787,6 +1790,7 @@ _970-x-90-$image,domain=teropongmedia.id
 ||lintaskepri.com^*/banner-$image
 ||lintasntt.com^*/iklan-$image
 ||lintasraya.com^*/banner-
+||listrikindonesia.com/assets/banner/
 ||lokerjakarta.id^*/banner-$image
 ||mainbasket.com/img/banner/
 ||mainsepeda.com/img/banner/
@@ -2041,6 +2045,8 @@ _970-x-90-$image,domain=teropongmedia.id
 ||wideazone.com^*/baner-$image
 ||wikikomponen.com^*/ads-$image
 ||wiwidstory.com^*/banner-$image
+||zonaebt.com^*/900-%C3%97-110-$image
+||zonaebt.com^*/banner-$image
 ||yourjavascript.com^*/itu-domino-popup-script.js$script
 ||yourjavascript.com^*/lompatin.js$script
 akhwatmuslimah.net###AT__popup-Ads
@@ -2227,7 +2233,7 @@ dailysocial.id##.banner-ads__validation
 naikmotor.com##.banner-aop
 nicelocal.id##.banner-bordered
 rajabalapotomotif.com##.banner-box
-beritaone.id,berulah.com,cemerlangnews.com,gardapos.com,gilangnews.com,inhilklik.com,khazanahriau.com,lineperistiwa.com,medialokal.co,monitorriau.com,pantauriau.com,pelalawanpos.co,populisnews.com,riau86.com,riauaktual.com,riaukarya.com,riaupower.com,riautribune.com,suarapelalawan.com,sunting.co.id,tengokberita.com,transkepri.com##.banner-content
+beritaone.id,berulah.com,cemerlangnews.com,gardapos.com,gilangnews.com,inhilklik.com,khazanahriau.com,lineperistiwa.com,listrikindonesia.com,medialokal.co,monitorriau.com,pantauriau.com,pelalawanpos.co,populisnews.com,riau86.com,riauaktual.com,riaukarya.com,riaupower.com,riautribune.com,suarapelalawan.com,sunting.co.id,tengokberita.com,transkepri.com##.banner-content
 jagadtani.com##.banner-item
 industry.co.id##.banner-lb-bottom
 honestdocs.id##.banner-left
@@ -2771,6 +2777,7 @@ balipolitika.com,barometerbali.com,beritanasional.id,bisnisbanten.com,bogornetwo
 kilasnusantara.id,seputarforex.com##img[width="729"][height="90"]
 bogordaily.net,konstruksimedia.co.id,newsurban.id##img[width="729"][height="91"]
 bogornetwork.com##img[width="730"][height="91"]
+globalbusiness.id##img[width="731"][height="92"]
 legacynews.id##img[width="750"][height="150"]
 humaniora.id##img[width="750"][height="160"]
 tabloidmatahati.com##img[width="761"][height="212"]
