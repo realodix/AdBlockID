@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.4.31
+! Version: 25.4.32
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 28 Apr 2025 16:06 UTC
+! Last modified: 28 Apr 2025 16:33 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -182,6 +182,8 @@ _TimAds_$image
 ~blibli.com##img[alt="iklan" i]
 ###Ad300B
 ###Ad728x90
+###AdsFixedLeft
+###AdsFixedRight
 ###Area_Iklan_Atas
 ###Area_Iklan_Bawah
 ###Area_Iklan_Tengah
@@ -567,6 +569,10 @@ _TimAds_$image
 ##.ads-billboard
 ##.ads-bock-1
 ##.ads-bottom-fixed
+##.ads-floating-content
+##.ads-floating-left
+##.ads-floating-lr
+##.ads-floating-right
 ##.ads-header-bottom
 ##.ads-header-wrap
 ##.ads-hor
@@ -2428,7 +2434,7 @@ katadata.co.id##.skinads
 industry.co.id##.skins-banner
 narasi.tv##.sky-scraper-ads
 genpi.co##.sky_banner
-baliberkabar.id,infokyai.com,suarakonsumenindonesia.com##.slotbanner
+baliberkabar.id,infokyai.com,jadiprofesional.com,suarakonsumenindonesia.com##.slotbanner
 sahijab.com##.small-mobile-banner
 smartizen.my.id##.smart-ads
 smartizen.my.id##.smart-ads-bottom
@@ -3146,7 +3152,6 @@ genpi.co##article [class^="_popIn_"]:has-text(/adv/i)
 marketeers.com##article [class^="bg-gray-"]:has-text(/adv/i)
 idntimes.com###hidden-parallax
 #@#[id^="google_ads_iframe"]
-offenseproject.com,tonanmedia.my.id##+js(acis, document.createElement, ignielAdBlock)
 semuanyabola.com##+js(acis, document.getElementById, adsanityAdBlock)
 kuyhaa.me##+js(aeld, load, daadb_get_data)
 adikcloud.my.id,adikdrive.my.id##+js(aopr, adBlockDetected)
@@ -3159,6 +3164,9 @@ gurusiana.id##+js(set, detectAdBlock, noopFunc)
 downloadtanku.org##+js(noeval-if, adbEnableForPage)
 otakdewasa.id##+js(aopw, ai_front)
 lumpiastudio.com,otakdewasa.id##[style*="cursor:"][style*="user-select: none;"][style*="z-index:"]
+pakarinfo.co.id###ignielAdBlock
+offenseproject.com,tonanmedia.my.id##+js(acis, document.createElement, ignielAdBlock)
+pakarinfo.co.id##body:style(overflow: auto !important;)
 /wp-content/plugins/foxtool/link/blocker/*$domain=beritapopuler.co.id
 kareel.com##+js(set, config.adblock.selector, true)
 abadikini.com,deras.id,hasanah.id,mykmu.net,partaiku.id,rukim.id,teknoob.id##+js(set, tie.ad_blocker_detector, null)
@@ -3594,10 +3602,13 @@ techno.okezone.com#@#.container-ads-topmenu
 bandungterkini.id,banyuwangiterkini.id,batuterkini.id,idnhits.com,indonesiaterkini.id,jatengterkini.id,jatimterkini.id,jemberterkini.id,jogjaterkini.id,kediriterkini.id,lamonganterkini.id,madiunterkini.id,malangterkini.id,nganjukterkini.id,pacitanterkini.id,pewarta.co.id,republikindonesia.net,suaranasional.id,surabayaterkini.id,tajam.net###slotbanner
 swarawarta.co.id##.ad-middle
 bandungterkini.id,banyuwangiterkini.id,batuterkini.id,idnhits.com,indonesiaterkini.id,jatengterkini.id,jatimterkini.id,jemberterkini.id,jogjaterkini.id,kediriterkini.id,lamonganterkini.id,madiunterkini.id,malangterkini.id,nganjukterkini.id,pacitanterkini.id,pewarta.co.id,republikindonesia.net,suaranasional.id,surabayaterkini.id,tajam.net##.banner
+pewarta.co.id##.billboard_pushdown
 wisatarakyat.com##.code-block
 bandungterkini.id,banyuwangiterkini.id,batuterkini.id,indonesiaterkini.id,jatengterkini.id,jatimterkini.id,jemberterkini.id,jogjaterkini.id,kediriterkini.id,lamonganterkini.id,madiunterkini.id,malangterkini.id,nganjukterkini.id,pacitanterkini.id,pewarta.co.id,republikindonesia.net,suaranasional.id,surabayaterkini.id,tajam.net##.fixed-leftSd
 bandungterkini.id,banyuwangiterkini.id,batuterkini.id,indonesiaterkini.id,jatengterkini.id,jatimterkini.id,jemberterkini.id,jogjaterkini.id,kediriterkini.id,lamonganterkini.id,madiunterkini.id,malangterkini.id,nganjukterkini.id,pacitanterkini.id,pewarta.co.id,republikindonesia.net,suaranasional.id,surabayaterkini.id,tajam.net##.fixed-rightSd
-pelitadigital.com,samudrapikiran.com##.float-ads-left
+swarawarta.co.id##.newsfeed-dua-container
+swarawarta.co.id##.newsfeed-satu-container
+swarawarta.co.id##.newsfeed-tiga-container
 jemberterkini.id##.widget:has(> .normalwidget-title:has-text(/adv/i))
 bandungterkini.id,banyuwangiterkini.id,batuterkini.id,idnhits.com,indonesiaterkini.id,jatengterkini.id,jatimterkini.id,jemberterkini.id,jogjaterkini.id,kediriterkini.id,lamonganterkini.id,madiunterkini.id,malangterkini.id,nganjukterkini.id,pacitanterkini.id,pewarta.co.id,republikindonesia.net,suaranasional.id,surabayaterkini.id,tajam.net##img[alt*="banner" i]
 bandungterkini.id,banyuwangiterkini.id,batuterkini.id,idnhits.com,indonesiaterkini.id,jatengterkini.id,jatimterkini.id,jemberterkini.id,jogjaterkini.id,kediriterkini.id,lamonganterkini.id,madiunterkini.id,malangterkini.id,nganjukterkini.id,pacitanterkini.id,pewarta.co.id,republikindonesia.net,suaranasional.id,surabayaterkini.id,tajam.net##center:has(font:has-text(/adv/i))
