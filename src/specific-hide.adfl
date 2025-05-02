@@ -428,6 +428,8 @@ emitennews.com##[class^="ads-space-"]
 tedas.id##[class^="adsbyadop_"]
 poskota.co.id##[class^="get_ads_"]
 hipwee.com##[class^="hipwee-banner-"]
+vidio.com##[class^="shopping-banner-module_"]
+vidio.com##[class^="smart-banner-module_"]
 beasiswaindo.com##[class^="sponsor-"]
 kumparan.com##[data-qa-id*="banner"]
 kumparan.com##[data-qa-id*="sticky-bottom-ads"]
@@ -784,7 +786,6 @@ awall.id##img[width="994"][height="149"]
 ! ---
 ! Procedural Cosmetic Filters
 ! https://github.com/gorhill/uBlock/wiki/Procedural-cosmetic-filters
-vidio.com###leaderboard_container:has(> .ad-slot)
 jawaraspeed.com###openModal:has-text(/ads/i)
 medanbisnisdaily.com###readnews [align="center"]:has(a[title*="ads"] > img)
 belajarmandiriyuk.com##.entry-content > div:matches-css(text-align: center):has(> p:has-text(/adv/i))
@@ -796,11 +797,7 @@ s.id##.main-dashboard .w-full:has(> .right-1:has-text(/ads/i))
 id.quora.com##.q-box:has(> .q-flex > .dom_annotate_google_ad)
 candilkuya.com##.widget:has(> [id^="iklan"])
 siberkota.com##.wpb_single_image:has(> h3:has-text(Advertising))
-vidio.com##[class^="banner-module_"]:has(> a[target="_blank"][rel="noopener"])
-vidio.com##[class^="shopping-banner-module_"]
-vidio.com##[class^="smart-banner-module_"]
 koranseruya.com##[id^=local-]:has(> .local-adlabel)
-vidio.com##a[href*="&advertising_id="]:has(img[src*="/breaking_banner/"])
 beenews.id##article .beene-content:has(> .beene-adlabel)
 intip24news.com##body.sticky-header:style(padding: unset!important;)
 iwanbanaran.com,tmcblog.com##body:style(background-image: none!important;)
