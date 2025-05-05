@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.5.19
+! Version: 25.5.20
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 May 2025 17:36 UTC
+! Last modified: 05 May 2025 17:52 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -564,6 +564,7 @@ _TimAds_$image
 ##.ads-970x90
 ##.ads-atas
 ##.ads-atas-player
+##.ads-banner-container
 ##.ads-bawah
 ##.ads-bawah-player
 ##.ads-below-single
@@ -2138,6 +2139,7 @@ narasi.tv###placement_before_video_detail_academy_advertorial
 narasi.tv###placement_sidebase_article_detail_advertorial
 narasi.tv###placement_top_article_detail_advertorial
 telset.id###popup-ad
+99updates.id###popup-ads-modal
 beritabali.com###popupBanner
 narasi.tv###props_placement_before_populer_advertorial
 kamusbahasaindonesia.org###rdbanner
@@ -2188,7 +2190,7 @@ fajar.co.id##.adp_interactive_ad
 ayobacanews.com,bukukord.com,cosmopolitan.co.id,disway.id,downloadtanku.org,genyo.id,indonesiatoday.co.id,indopop.id,industry.co.id,jurnalnusa.com,katadata.co.id,koran-jakarta.com,lambeturah.co.id,minangsatu.com,modalrakyat.id,ntvnews.id,pikiran-rakyat.com,realestat.id,riau24.com,rmol.id,sumbarsatu.com##.ads
 harianjogja.com##.ads-after-image
 harpersbazaar.co.id,herworld.co.id,motherandbeyond.id##.ads-belt
-berita.99.co##.ads-body-container
+99updates.id,berita.99.co##.ads-body-container
 duniagames.co.id,netralnews.com,showbiz.co.id##.ads-container
 soulofjakarta.id##.ads-count
 manaberita.com##.ads-fix
@@ -3783,7 +3785,7 @@ duniagames.co.id##.cdk-overlay-container
 lacako.com##.chat-popup
 rilis.id##.fade#staticBackdropModal
 korankaltim.com,satunusa.co##.fade.modal
-beritabali.com,korankaltim.com,rilis.id,satunusa.co##.fade.modal-backdrop
+99updates.id,beritabali.com,korankaltim.com,rilis.id,satunusa.co##.fade.modal-backdrop
 affmotor.com,jagobengkel.com,maenhp.org,versusbeda.com##.jquery-modal
 ladiestory.id##.modal-backdrop
 tafsirq.com##.optin-monster-saas-overlay
@@ -3796,6 +3798,7 @@ bagas3-1.com##body > div[style^="position: fixed; top: 0px; left: 0px; width: 10
 jamudigital.com###boxes
 situsnobar.top###floatcenter
 kompaslampung.com##.jqbox_innerhtml
+99updates.id##.modal-open:style(overflow: auto!important; position: unset!important;)
 affmotor.com,alkitabonline.org,bacaterus.com,bagas3-1.com,bankiir.id,beritabali.com,biayatarif.com,brainacademy.id,brainly.co.id,bursabajaringan.com,carabelanja.id,carisinyal.com,emitennews.com,empatdio.com,gadgetized.net,gammafisblog.com,gen987fm.com,hellosehat.com,iuwashplus.or.id,jagobengkel.com,korankaltim.com,kucinglucu.net,ladiestory.id,maenhp.org,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pilihprofesi.com,prosesbayar.com,satunusa.co,teknisitv.id,tuliskan.id,versusbeda.com##body:style(overflow: auto!important; position: unset!important;)
 ketik.co.id##html:style(scrollbar-width: unset!important;)
 !#if (adguard)
