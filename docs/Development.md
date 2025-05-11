@@ -37,8 +37,6 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  ├─ specific_block.adfl     [S] Blokir iklan.
  ├─ specific_hide.adfl      [S] Sembunyikan iklan.
  ├─ specific-hide_2.adfl    [S] ...
- ├─ thirdparty.adfl         [G] Mirip seperti filter di adservers.adfl, namun layanan utama
- │                          dari domain/IP situs tersebut bukan untuk menyediakan iklan.
  └─ whitelist.adfl          [G/S] Mengembalikan sesuatu yang seharusnya ada, namun hilang
                             karena tidak sengaja terblokir/disembunyikan.
 ```
