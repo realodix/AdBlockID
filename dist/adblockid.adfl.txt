@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.5.70
+! Version: 25.5.71
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 May 2025 06:01 UTC
+! Last modified: 14 May 2025 15:47 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1021,13 +1021,16 @@ _728-x-90.$image
 ##.iklan-billboard-header
 ##.iklan-billboard-news
 ##.iklan-box
+##.iklan-container
 ##.iklan-dalam-post
 ##.iklan-depan
 ##.iklan-desc
 ##.iklan-footer
 ##.iklan-ft-mobile
+##.iklan-full
 ##.iklan-giantbanner
 ##.iklan-giantbanner-content
+##.iklan-half
 ##.iklan-header
 ##.iklan-header-item
 ##.iklan-homepage
@@ -2893,6 +2896,7 @@ newskaltim.com##img[width="1024"][height="338"]
 mediatrapnews.id##img[width="1024"][height="341"]
 sumateranews.co.id##img[width="1024"][height="365"]
 makassartoday.com##img[width="1024"][height="383"]
+bolmongraya.co##img[width="1040"][height="174"]
 beritaazam.com##img[width="1066"][height="1600"]
 balanganews.com##img[width="1067"][height="1600"]
 sukabumisatu.com##img[width="1080"][height="1350"]
@@ -3072,7 +3076,6 @@ banuatoday.com,bentengsumbar.com,dhean.news,harianmerdeka.id,kabarviral79.com,ke
 bentengsumbar.com,canangnews.com,instingjurnalis.com,kabarviral79.com,kebumenekspres.com,radarnusantara.com,suarakonsumenindonesia.com,toprilis.com###sidebar .widget:has(.widget-content > img)
 kepripedia.com###sidebar-header
 tirto.id##.d-sidebar:has([id^="gpt-"])
-bolmongraya.co##.elementor-widget-container .elementor-image
 radarbandung.id##.elementor-widget-container > .jet-listing-dynamic-image > a > img
 humaniora.id,kaltarastories.com,kediritangguh.co,letternews.net,masakini.co,narasiterkini.com,radarbanten.co.id##.elementor-widget-container > a:has(> img)
 agresifnews.co,balikonten.com,kabaracehonline.com,kediritangguh.co,lintasbali.com,majalahlintas.com,potretnusantara.id,radarbanten.co.id,redaksipotret.co,zonamu.com##.elementor-widget-container > img
@@ -4267,6 +4270,7 @@ doroni.me,doronime.id##a[target*="blank"] > picture
 doroni.me,doronime.id##a[target*="blank"]:has(> img)
 doroni.me,doronime.id##+js(set, showAds, true)
 doroni.me,doronime.id##.Popup
+||bk21.net/*.mp4$mp4
 ||juragan.film/asset/*.mp4$mp4
 juragan.film###banner
 juragan.film##.idmuvi-afterplayer
@@ -4274,6 +4278,8 @@ juragan.film##.idmuvi-topplayer
 juragan.film##a[target*="blank"]:has(> img)
 juragan.film##.popbox
 juragan.film##body:style(overflow: auto!important; position: unset!important;)
+@@||p.jwpcdn.com/player/plugins/vast/$domain=juragan.film|juraganfilm.info
+juragan.film#@#.idmuvi-topbanner
 kuronime.biz###overplay
 kuronime.biz##.kln
 kuronime.biz##a[target*="blank"]:has(> img)
