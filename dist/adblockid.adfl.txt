@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.5.74
+! Version: 25.5.75
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 May 2025 05:35 UTC
+! Last modified: 15 May 2025 06:59 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -824,6 +824,7 @@ _728-x-90.$image
 ##.banner-text728
 ##.banner160kanan
 ##.banner160kiri
+##.banner975x90
 ##.banner_datar
 ##.bannerbawahheader
 ##.bannerdua
@@ -3372,6 +3373,7 @@ sekedus.com##body > div:matches-css(position: fixed):has-text(/adblock/i)
 @@||iklandisini.com^$ghide
 @@||iklangratis.id^$ghide
 @@||iklangratistanpadaftar.com^$ghide
+@@||pusatpemasanganiklan.com^$ghide
 indomerdeka.com#@#.ads-single-top
 beritajatim.com#@#.advertorial
 a-news.id,bakata.net,beritaanda.net,beritakaltim.co,betara.id,bhayangkaraglobalnews.com,bolmong.news,dutatv.com,fajarmanado.com,faktualnews.co,fokusaktual.co.id,gotvnews.co.id,haliyora.id,helloborneo.com,heraldmakassar.com,iglobalnews.co.id,indotribun.id,intipnews.com,jabarnews.com,jambidaily.com,jodanews.com,kabarntt.co,katakepri.com,kliksumatera.com,komunikasulut.com,kontrolnews.co,koranmedan.com,lintasjatimnews.com,manadotoday.co.id,medinaslampungnews.co.id,metrorakyat.com,nusantarapos.co.id,petisi.co,pilarjambi.com,prudensi.com,publiknews.com,pustakalewi.com,rakyatjabarnews.com,realitapost.com,serambijambi.id,sidakpost.id,suarakalbar.co.id,sumateranews.co.id,sumselnews.co.id,tebarberita.id,wartaniaga.com,waspada.id,wideazone.com#@#.category-advertorial
@@ -3385,7 +3387,9 @@ aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id
 @@/wp-content/uploads/*$1p,image,domain=adstarsmedia.co.id|agency-iklan.com|bertravel.com|bluecreative.co.id|matari-ad.com|merchant.id|winstarlink.com
 @@://ads.$domain=ads.dewarangga.com|ads.gadgetsquad.id|ads.idn.media|ads.kaskus.co.id|ads.kgmedia.id|ads.marketeers.com|ads.panindai-ichilife.co.id|ads.wartaekonomi.co.id
 @@://ads2.$domain=meetkcm.com
+@@://adv.$domain=adv.co.id
 @@_advertising/$domain=advertising.katadata.co.id
+@@||adsmart.detik.com/assets/images/$domain=adsmart.detik.com
 @@||gosocial.co.id/assets/img/service/$1p,image
 @@||iklandisini.com/banner_ads/$1p
 @@||iklanku.shopee.co.id/img/$1p,image
