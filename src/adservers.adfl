@@ -24,8 +24,6 @@
 /^https?:\/\/[0-9a-f]{50,}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$3p,xhr
 /^https?:\/\/s3\.us-east-1\.amazonaws\.com\/[0-9a-f]{50,}\/[0-9a-f]{10}$/$3p,xhr
 ! propeller new variants
-.top/event|$3p,xhr
-.xyz/event|$3p,xhr
 /^https?:\/\/[a-z]{8,15}\.top(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$3p,frame,match-case
 /^https?:\/\/[a-z]{8,15}\.top\/(?!api|available|team)[a-z]{4,}\.json$/$3p,match-case,xhr
 /^https?:\/\/[a-z]{8,15}\.top\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$3p,css,match-case
