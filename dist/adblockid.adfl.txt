@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.5.100
+! Version: 25.5.101
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 20 May 2025 18:46 UTC
+! Last modified: 20 May 2025 19:32 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1997,7 +1997,7 @@ _728x90px.$image,domain=bogordaily.net
 ||reaksimedia.com^*/banner-$image
 ||realita.co/content/uploads/advetorial/
 ||realitapost.com^*/banner-$image
-||redaksi8.com^*/iklan-$image
+||redaksi8.com^*/iklan-
 ||redaksi86.com^*/iklan-$image
 ||redaksi86.com^*_banner_$image
 ||redaksipotret.co^*/iklan-$image
@@ -2746,6 +2746,7 @@ harianaceh.co.id##.entry-content > [id^="haria-"]:has(> [id^="haria-"] > .haria-
 belajarmandiriyuk.com##.entry-content > div:matches-css(text-align: center):has(> p:has-text(/adv/i))
 iglobalnews.co.id##.entry-content > div[class^="iglob-"]:has(> div[class^="iglob-"]:has-text(/adv/i))
 atasaspal.com##.entry-content > p > a[rel*="noreferrer"]:has(> img)
+redaksi8.com##.entry-content [class^="redak-after-content-"]
 pyfahealth.com##.entry-content a[href*="bit.ly/"]:has(> img)
 jurnalfaktual.id##.f-slideup
 drphone.id,halilintarnews.id,harianmerdeka.id,indimanado.com,komentar.co,pasjabar.com,teraskabar.id##.fixed-leftSd
