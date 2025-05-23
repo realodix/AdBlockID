@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.5.113
+! Version: 25.5.114
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 23 May 2025 07:14 UTC
+! Last modified: 23 May 2025 08:23 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1468,12 +1468,10 @@ _728-x-90.$image
 ##img[title="banner 728x90"]
 ##img[width="468"][height="60"]
 ##img[width="728"][height="90"]
-~adsterra.com##[href^="https://beta.publishers.adsterra.com/referral/"] > img
 ~komunitasbos.com##[href^="https://id.komunitasbos.com/aff/"] > img
 ~idwebhost.com##[href^="https://idwebhost.com/aff/"] > img
 ~jagoanhosting.com##[href^="https://member.jagoanhosting.com/aff.php"] > img
 ~seedbacklink.com##[href^="https://panel.seedbacklink.com/aff/"] > img
-~qwords.com##[href^="https://promosi.qwords.com/"] > img
 ~adsterra.com##[href^="https://publishers.adsterra.com/referral/"] > img
 ~ajaib.co.id##[href^="https://referral.ajaib.co.id/"] > img
 ~watzap.id##[href^="https://watzap.id/ref/"] > img
@@ -1481,11 +1479,12 @@ _728-x-90.$image
 ~oketheme.com##[href^="https://www.oketheme.com/members/aff/go/"] > img
 ~idcloudhost.com##a[href*="idcloudhost.com/aff.php"] > img
 ~domainesia.com##a[href^="https://my.domainesia.com/ref.php?"]
-~blibli.com##a[href^="https://www.blibli.com/promosi/"] > img
 ~seedbacklink.com##[href="https://id.seedbacklink.com/"] > img
 ~glints.com##[href="https://loker.glints.com/openkerja"] > img
+~qwords.com##[href^="https://promosi.qwords.com/"] > img
 ~toffee.id##[href^="https://toffee.id/growth?"] > img
 ~bankbjb.co.id##[href^="https://www.bankbjb.co.id/promo/"] > img
+~blibli.com##a[href^="https://www.blibli.com/promosi/"] > img
 passatworld.ru#@##ad_global_below_navbar
 ||aedi.ai/common/js/v1/aedi-$domain=okezone.com
 /^https?:\/\/(?:ak\.)?[a-z]{6,15}\.(?:com|net)\/(?:1|4)\/\d{7}/$doc,frame,popup
@@ -2366,7 +2365,7 @@ aliansinews.id##.adv
 bisnismuda.id##.adv-home-super-leaderboard
 epaper.mediaindonesia.com##.adv:not(.related-reads)
 ngodingdata.com##.advertise
-arenalte.com,kuatbaca.com,lentera24.com,telusur.co.id##.advertisement
+arenalte.com,kuatbaca.com,laduni.id,lentera24.com,telusur.co.id##.advertisement
 terassulbar.com##.advertisement-area
 beritasiber.com,serambiislam.com,topikpost.com##.adx-parallax
 betang.tv##.allinone_bannerRotator
@@ -2382,7 +2381,7 @@ blibagus.com##.article-promo-bottom
 blibagus.com##.article-promo-top
 autonetmagz.com##.autonetmagz__meta--ads-elements
 aliansirakyatnews.com##.baner
-bengkulunews.co.id,beritaterbit.com,bidiknasional.co.id,binews.id,bisnis.com,bonepos.com,campusnesia.co.id,ceklissatu.com,deliknews.com,growmedia-indo.com,industry.co.id,infonegeri.id,kaganga.com,kuasakata.com,lenterapendidikan.com,medcom.id,mediadinamikaglobal.id,medianotaris.com,news24.co.id,presisi.co,proinbar.com,radarbandung.id,rekamjejaknews.com,rumpikota.com,sidikjari.co.id,sinarfakta.com,sindomanado.com,solotrust.com,suaraburuhnews.com,suarapemredkalbar.com,sukabuminews.id,telisik.id,terkininews.com,ujaran.co.id##.banner
+arifsae.com,bengkulunews.co.id,beritaterbit.com,bidiknasional.co.id,binews.id,bisnis.com,bonepos.com,campusnesia.co.id,ceklissatu.com,deliknews.com,growmedia-indo.com,industry.co.id,infonegeri.id,kaganga.com,kuasakata.com,lenterapendidikan.com,medcom.id,mediadinamikaglobal.id,medianotaris.com,news24.co.id,presisi.co,proinbar.com,radarbandung.id,rekamjejaknews.com,rumpikota.com,sidikjari.co.id,sinarfakta.com,sindomanado.com,solotrust.com,suaraburuhnews.com,suarapemredkalbar.com,sukabuminews.id,telisik.id,terkininews.com,ujaran.co.id##.banner
 urbanasia.com##.banner-1
 urbanasia.com##.banner-300px
 dailysocial.id##.banner-ads__validation
@@ -2405,6 +2404,7 @@ elshinta.com,thephrase.id##.banner-top
 klikindonesia.co##.banner-wrap
 kuatbaca.com##.banner1
 radarriaunet.com##.banner120
+arifsae.com##.banner2
 kompiajaib.com##.banner300sidebar
 radarriaunet.com##.banner625
 hariansuara.com##.bannerContainer
@@ -3970,7 +3970,6 @@ inews.id##.content-detail .voucherWrap
 sindonews.com##.content-row .voucher_at
 diadona.id##.detail-body .voucherWrap
 okezone.com##.details .voucherWrap
-kurazone.net##.voucher_at
 okezone.com##.Post__Container .voucherWrap
 inews.id##.detail-artikel .voucherWrap
 sindonews.com##.detail-desc .voutstream
@@ -3986,7 +3985,7 @@ glints.com##body:style(margin-top: 0!important;)
 ?key=*&submetric=$3p,popup
 jurnalfaktual.id,kotakgame.com##+js(aopr, $.magnificPopup.open)
 taxacademy.id##+js(aopr, window.pum_popups)
-beritasore.co.id,jejakmufassir.my.id,kurazone.net,mistertekno.com##+js(nowoif)
+beritasore.co.id,jejakmufassir.my.id,mistertekno.com##+js(nowoif)
 editorial9.com,jarrakpos.com,nabire.net,sandeq.co.id,suarapubliknews.net,terassulbar.com,upeks.co.id##+js(aopr, popup_custom_data)
 teropongmedia.id##.elementor-popup-modal
 teropongmedia.id##body:style(overflow: auto!important; position: unset!important;)
