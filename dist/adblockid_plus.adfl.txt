@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.5.5
+! Version: 25.5.6
 ! Title: AdBlockID Plus
 ! Description: Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID.
-! Last modified: 22 May 2025 19:28 UTC
+! Last modified: 24 May 2025 17:37 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 apkmody.io###above-the-fold-ad
@@ -56,6 +56,7 @@ detik.com##.dugout-video:remove()
 detik.com##.ratio-dugout-detail
 ||embed.dugout.com^$3p,domain=indosport.com|skor.id
 kompas.com###contentArticle > .kgnw-middle:has(> .kgnw-middle-player):remove()
+cnnindonesia.com###livetv-float:remove()
 detik.com###notif-20d .float-vid__content:remove()
 katadata.co.id###video_in_article:remove()
 investor.id##.body-content .embed-responsive:remove()
@@ -79,6 +80,7 @@ cnnindonesia.com,haibunda.com,insertlive.com##.sisip_embed_sosmed:remove()
 bolasport.com,grid.id,gridoto.com,juara.net,kompas.com,kompas.tv,parapuan.co,sonora.id,~video.kompas.com##.video-box-wrap:has(> .rVideo-player):remove()
 detik.com##.video20detik_1:remove()
 dailysia.com,greenscene.co.id,guesehat.com,katadata.co.id,tempo.co,wartaekonomi.co.id,wowkeren.com##[class^="ivs-"]:remove()
+haibunda.com##[data-name="detik-vertical"][data-target="detail/aevp"]:has(.video-sisip):remove()
 dailysia.com,tempo.co##[id^="ivs-"]:remove()
 parapuan.co##article + #defaultVideoContainer:remove()
 idntimes.com,katadata.co.id##article .dm-player:remove()
