@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.5.149
+! Version: 25.5.150
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 31 May 2025 11:16 UTC
+! Last modified: 31 May 2025 12:03 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -968,6 +968,7 @@ _728-x-90.$image
 ##.gmr-floatbanner-left
 ##.gmr-floatbanner-right
 ##.gmr-footerbanner
+##.gmr-masonry-banner
 ##.gmr-topbanner
 ##.gmr-verytopbanner
 ##.gridlove-ad-below-header
@@ -989,6 +990,10 @@ _728-x-90.$image
 ##.idblog-center-ads
 ##.idblog-center-banner
 ##.idblog-center-sponsor
+##.idblog-floatbanner
+##.idblog-floatbanner-left
+##.idblog-floatbanner-right
+##.idblog-footerbanner
 ##.idblog-topbanner
 ##.idblog-topbanner-aftermenu
 ##.idmuvi-banner-aftercontent
@@ -1593,6 +1598,7 @@ _banner.$image,domain=tribratanewspoldakaltim.com
 ||avinews.com^*/banner-$image
 ||axialnews.id^*/iklan-
 ||bacakoran.co/banner/
+||bacasaja.id/assets/img/ad_
 ||bakabar.com/image/banner/
 ||balanganews.com^*/banner-$image
 ||balanganews.com^*/ikl-$image
@@ -2987,6 +2993,7 @@ medikomonline.com##div:matches-css(position: fixed):has(> .adsbygoogle)
 humaniora.id##figure:has(> a):has-text(/adv/i)
 koranpagionline.com##figure:has(> figcaption:has-text(/adv/i))
 orami.co.id##header > #footer_stickyexp:has(> #div-gpt-ad-stickyexp)
+bacasaja.id##img[src^="data:image/png;base64"]
 beritahukum.com##table:has(> tbody > tr > td.styleisikanan:has-text(/ads/i))
 kbrprime.id##.max-w-\[970px\].h-\[50px\]
 investortrust.id##.w-36.h-\[400px\]
