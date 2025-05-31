@@ -71,7 +71,6 @@ link2unlock.com##header > div:matches-css(text-align: center):has(> center > ifr
 ! Beberapa rule yurasu.xyz digunakan untuk blog.yurasu.xyz (safelink), tetapi ini juga efektif
 ! untuk yurasu.xyz itu sendiri
 !---
-isekaipalace.com###anchor-ad
 isekaipalace.com##.fixed-lside
 isekaipalace.com##.fixed-rside
 .gif|$image,domain=yurasu.xyz
@@ -84,10 +83,11 @@ isekaipalace.com,yurasu.xyz###timer
 isekaipalace.com,yurasu.xyz##+js(ra, disabled, button)
 isekaipalace.com,yurasu.xyz##+js(rc, hidden, button)
 ! Anti-adblock
-@@||isekaipalace.com^$ghide
-@@||yurasu.xyz^$ghide
+isekaipalace.com###anchor-ad
 isekaipalace.com###floatads
 isekaipalace.com,yurasu.xyz##.adsbygoogle[data-ad-client]
+@@||isekaipalace.com^$ghide
+@@||yurasu.xyz^$ghide
 !
 isekaipalace.com,yurasu.xyz##+js(set, showAds, true)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com|yurasu.xyz
