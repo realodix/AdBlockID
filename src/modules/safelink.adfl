@@ -13,7 +13,7 @@
 tempatwisata.pro##span:has-text(/adv/i)
 !
 ! ANTI-ADBLOCK
-! -----------------------------------------------
+! ------------------------------------------------------------------------------
 linkerload.com##+js(acis, addEventListener, google_ad_client)
 mangindo.xyz##+js(aopr, adBlockDetected)
 dz4link.com,linkpoi.me##+js(aopr, app_vars.force_disable_adblock)
@@ -39,7 +39,7 @@ jurnalistekno.id##body:style(overflow: auto !important;)
 ! Empty Ads Placeholders
 !
 ! ANNOYANCE
-! -----------------------------------------------
+! ------------------------------------------------------------------------------
 ! Pop-Up
 besargaji.com,dapat.link,khaddavi.net,link2unlock.com,lokerwfh.net,techbloogs.com,tutwuri.id##+js(nowoif)
 ! ---
@@ -60,17 +60,16 @@ link2unlock.com##header > div:matches-css(text-align: center):has(> center > ifr
 !
 !
 ! WHITELIST
-! -----------------------------------------------
+! ------------------------------------------------------------------------------
 @@/abdiusu/project-safelink-viomagz/*/safelink-ViomagzV3.2-2tombol$3p,script
 !
-! GROUPED BY NAME / TYPE
-! -----------------------------------------------
-!---
+! GROUPED BY OWNER / TYPE
+! ------------------------------------------------------------------------------
 ! yurasu.xyz
 !
 ! Beberapa rule yurasu.xyz digunakan untuk blog.yurasu.xyz (safelink), tetapi ini juga efektif
 ! untuk yurasu.xyz itu sendiri
-!---
+! -----------------------------------------------
 isekaipalace.com##.fixed-lside
 isekaipalace.com##.fixed-rside
 .gif|$image,domain=yurasu.xyz
@@ -91,11 +90,11 @@ isekaipalace.com,yurasu.xyz##.adsbygoogle[data-ad-client]
 !
 isekaipalace.com,yurasu.xyz##+js(set, showAds, true)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com|yurasu.xyz
-!# ---
-!# alpinecorporate.com
-!
+! -----------------------------------------------
+! alpinecorporate.com
 ! https://github.com/realodix/AdBlockID/issues/1533
 ! https://github.com/AdguardTeam/AdguardFilters/issues/160439
+! -----------------------------------------------
 alpinecorporate.com##.admania-entrycontent > center > button
 alpinecorporate.com##form center a
 ! Annoyance
