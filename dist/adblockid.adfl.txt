@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.21
+! Version: 25.6.22
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Jun 2025 08:55 UTC
+! Last modified: 05 Jun 2025 11:01 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3350,9 +3350,10 @@ kaltengterkini.co.id##.elementor-widget-container .elementor-image
 radarbandung.id##.elementor-widget-container > .jet-listing-dynamic-image > a > img
 humaniora.id,kaltarastories.com,kediritangguh.co,letternews.net,masakini.co,narasiterkini.com,pojokbatam.id,radarbanten.co.id##.elementor-widget-container > a:has(> img)
 delitimes.id##.elementor-widget-container > a:has(> img):not(a[href="https://delitimes.id"])
+barometerbali.com##.elementor-widget-container > a:has(> img):not(a[href^="https://barometerbali.com"])
 smsilampung.com,surabayaonline.co##.elementor-widget-container > div > a:has(> img)
 smsilampung.com##.elementor-widget-container > div > img
-agresifnews.co,balikonten.com,beritacmm.com,jubi.id,kabaracehonline.com,kediritangguh.co,lintasbali.com,majalahlintas.com,pojokbatam.id,popularitas.com,potretnusantara.id,qayyumnews.id,radarbanten.co.id,rakyatnews.co.id,redaksipotret.co,rotetvnews.com,sibersumsel.com,swaranesia.com,zonamu.com##.elementor-widget-container > img
+agresifnews.co,balikonten.com,barometerbali.com,beritacmm.com,jubi.id,kabaracehonline.com,kediritangguh.co,lintasbali.com,majalahlintas.com,pojokbatam.id,popularitas.com,potretnusantara.id,qayyumnews.id,radarbanten.co.id,rakyatnews.co.id,redaksipotret.co,rotetvnews.com,sibersumsel.com,swaranesia.com,zonamu.com##.elementor-widget-container > img
 bumntrack.co.id##.elementor-widget-container [class^="cls-"]:has(> style)
 visi.news##.elementor-widget-container:has(> noscript) > img
 kotaku.co.id##.home-widget .code-block > img
@@ -3406,7 +3407,8 @@ analisakini.id,annews.co.id,ayomedan.com,banuatoday.com,bentengsumbar.com,bicara
 okenews.net,suarakuningan.com##.widget:has(> .widget-content > p > a:has(> img))
 bogordaily.net,goosela.com,inionline.id,seputarsumut.com,spionase-news.com,terkamnews.com##.widget:has(> a > img)
 channel9.id##.widget:has(a > img)
-beritakitanews.com,cahayaselatan.com,ciremainews.com,gatanews.id,hariankota.com,hariansiber.com,intermedianews.co.id,keuanganonline.id,lantainewstv.com,lintasmedan.com,majalahmataborneonews.com,metro-onenews.id,saiilampung.com,sumbernusantara.co.id,time7newss.com,tirtanews.co.id,vipnews.co.id,wartakitanews.com##.widget:has(figure > img)
+kabardenpasar.com,kabarnusa.com,keuanganonline.id,nangunsatkerthilokabali.com##.widget:has(figure > a > img)
+beritakitanews.com,cahayaselatan.com,ciremainews.com,gatanews.id,hariankota.com,hariansiber.com,intermedianews.co.id,kabarnusa.com,keuanganonline.id,lantainewstv.com,lintasmedan.com,majalahmataborneonews.com,metro-onenews.id,saiilampung.com,sumbernusantara.co.id,time7newss.com,tirtanews.co.id,vipnews.co.id,wartakitanews.com##.widget:has(figure > img)
 nusabali.com##.widget:has(h2:has-text(/iklan/i))
 matanusantara.com##.widget:has(img[id$="_img"])
 infoberita.id,jurnalkepri.com,meduonline.co.id,prokepri.com##.widget:has-text(/adv/i)
@@ -3424,8 +3426,6 @@ infokyai.com,inilampung.com,jurnalandalas.com,kalimantana.id,lensamedan.co.id,si
 borobudurnews.com##aside .widget:has(> .adsbygoogle)
 koreksinews.co.id,mimbarsumbar.id,tabloidlintaspena.com,transnusantara.co.id##aside .widget:has(> a > img)
 dialektika.id,harianindonesia.id,koreksinews.co.id,polisinews.com,tabloidlintaspena.com##aside .widget:has(> img)
-kabardenpasar.com,kabarnusa.com,keuanganonline.id##aside > .widget:has(> figure > a > img)
-kabarnusa.com##aside > .widget:has(> figure > img)
 sahamok.net##aside a[href*="sahamok.net/visit/"]
 beritajogja.id,kepri.co.id##aside a[target="_blank"]:has(> img)
 cluetoday.com,kabarnusantaranews.com,koranpelita.co,radarnasional.net,rakyatbicara.id##aside figure > img
@@ -3560,7 +3560,7 @@ wendycode.com##+js(no-setTimeout-if, _0x, 2000)
 gurusiana.id##+js(set, detectAdBlock, noopFunc)
 downloadtanku.org##+js(noeval-if, adbEnableForPage)
 otakdewasa.id##+js(aopw, ai_front)
-lumpiastudio.com,otakdewasa.id##[style*="cursor:"][style*="user-select: none;"][style*="z-index:"]
+baliwakenews.com,lumpiastudio.com,otakdewasa.id##[style*="cursor:"][style*="user-select: none;"][style*="z-index:"]
 pakarinfo.co.id###ignielAdBlock
 offenseproject.com,tonanmedia.my.id##+js(acis, document.createElement, ignielAdBlock)
 pakarinfo.co.id##body:style(overflow: auto !important;)
