@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.30
+! Version: 25.6.31
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 07 Jun 2025 12:04 UTC
+! Last modified: 07 Jun 2025 12:12 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -4202,6 +4202,7 @@ rebahinxxi1.xyz###floating-banner
 maroonbellsmorris.org###floating_banner_bot1
 maroonbellsmorris.org###floating_banner_bot2
 bk21.top###floating_banner_bottom
+mangahentai.me###r-ad-banner:has(video):remove()
 komiku.in###teaserbottom
 kebioskop21.one###top-banner
 45.14.224.51###topban
@@ -4268,7 +4269,7 @@ sokuja.uk##div:matches-css(position: fixed):has(> div > #countdown)
 gudangmovies21.chat,sattorrent.com,soulscans.my.id##+js(aopr, SGPB_POPUP_PARAMS)
 bacamanga.id,komikstation.co,ngomik.net##+js(acis, JSON.parse, break;case $.)
 komikzoid.id,nekopoi.web.id,sektekomik.xyz##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
-mangahentai.me##*:style(user-select:text!important;)
+aworkoutlog.com,mangahentai.me##*:style(user-select:text!important;)
 otakudesu.cloud##+js(acis, document.oncontextmenu)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 anichin.wang##+js(aeld, /copy|keydown/)
