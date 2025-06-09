@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.47
+! Version: 25.6.48
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Jun 2025 17:40 UTC
+! Last modified: 09 Jun 2025 17:47 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1525,7 +1525,7 @@ _728-x-90.$image
 ~domainesia.com##a[href^="https://my.domainesia.com/ref.php?"]
 ~seedbacklink.com##[href="https://id.seedbacklink.com/"]
 ~glints.com##[href="https://loker.glints.com/openkerja"] > img
-##[href^="https://adv.co.id"]:has(> img[onerror*="/indonesiasatu/img/no-image.png'"])
+~adv.co.id##[href^="https://adv.co.id"]
 ~backlink.co.id,~blogpartner.id##[href^="https://blogpartner.id"]
 ~qwords.com##[href^="https://promosi.qwords.com/"] > img
 ~toffee.id##[href^="https://toffee.id/growth?"] > img
