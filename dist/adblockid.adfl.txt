@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.55
+! Version: 25.6.56
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 10 Jun 2025 00:53 UTC
+! Last modified: 10 Jun 2025 01:02 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -1523,7 +1523,7 @@ _728-x-90.$image
 ~monetag.com##[href^="https://monetag.com/?ref_id="]:has(img)
 ~niagahoster.co.id##[href^="https://panel.niagahoster.co.id/ref/"]:has(img)
 ~seedbacklink.com##[href^="https://panel.seedbacklink.com/aff/"] > img
-~adsterra.com##[href^="https://publishers.adsterra.com/referral/"] > img
+~adsterra.com##[href^="https://publishers.adsterra.com/referral/"]:has(img)
 ~rajabacklink.com##[href^="https://rajabacklink.com/refferal.php?q="]:has(img)
 ~ajaib.co.id##[href^="https://referral.ajaib.co.id/"]:has(img)
 ~sugeng.id##[href^="https://sugeng.id/?ref="]:has(img)
@@ -1539,10 +1539,10 @@ _728-x-90.$image
 ~glints.com##[href="https://loker.glints.com/openkerja"] > img
 ~adv.co.id##[href^="https://adv.co.id"]:has(img)
 ~backlink.co.id,~blogpartner.id##[href^="https://blogpartner.id"]:has(img)
-~qwords.com##[href^="https://promosi.qwords.com/"] > img
-~toffee.id##[href^="https://toffee.id/growth?"] > img
+~qwords.com##[href^="https://promosi.qwords.com/"]:has(img)
+~toffee.id##[href^="https://toffee.id/growth?"]:has(img)
 ~bankbjb.co.id##[href^="https://www.bankbjb.co.id/promo/"] > img
-~blibli.com##[href^="https://www.blibli.com/promosi/"] > img
+~blibli.com##[href^="https://www.blibli.com/promosi/"]:has(img)
 passatworld.ru#@##ad_global_below_navbar
 ||aedi.ai/common/js/v1/aedi-$domain=okezone.com
 /^https?:\/\/(?:ak\.)?[a-z]{6,15}\.(?:com|net)\/(?:1|4)\/\d{7}/$doc,frame,popup
