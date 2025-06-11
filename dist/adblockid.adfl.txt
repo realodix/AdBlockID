@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.66
+! Version: 25.6.67
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 11 Jun 2025 00:02 UTC
+! Last modified: 11 Jun 2025 01:26 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3692,9 +3692,11 @@ aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id
 @@/media/*$image,domain=iklanjitu.id|iklanjitu.jawapos.co.id|iklanjitu.jawapos.com
 @@/scripts/ads.$domain=ads.kaskus.co.id
 @@/wp-content/uploads/*$1p,image,domain=adstarsmedia.co.id|agency-iklan.com|ageniklanjawapos.com|bertravel.com|bluecreative.co.id|id.seedbacklink.com|matari-ad.com|merchant.id|winstarlink.com
-@@://ads.$domain=ads.antaranews.com|ads.dewarangga.com|ads.gadgetsquad.id|ads.idn.media|ads.kaskus.co.id|ads.kgmedia.id|ads.marketeers.com|ads.panindai-ichilife.co.id|ads.wartaekonomi.co.id
+@@://ads.$domain=ads.antaranews.com|ads.dewarangga.com|ads.gadgetsquad.id|ads.idn.media|ads.idntimes.com|ads.kaskus.co.id|ads.kgmedia.id|ads.kontan.co.id|ads.marketeers.com|ads.panindai-ichilife.co.id|ads.wartaekonomi.co.id|klasika.kompas.com
+@@://ads.$popup,to=ads.idn.media|ads.idntimes.com|ads.kgmedia.id|ads.kontan.co.id|ads.panindai-ichilife.co.id
 @@://ads2.$domain=meetkcm.com
-@@://adv.$domain=adv.co.id
+@@://adv.$domain=adv.co.id|adv.kontan.co.id
+@@://adv.$popup,to=adv.co.id|adv.kompas.id|adv.kontan.co.id
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com/assets/images/$domain=adsmart.detik.com
 @@||gosocial.co.id/assets/img/service/$1p,image
@@ -3715,6 +3717,7 @@ ads.id##aside .sidebar a[target="_blank"]:has(> img)
 ads.id##img[alt*="iklan" i]
 ads.id##img[alt="admaven"]
 @@://ads.$domain=ads.id
+@@://ads.$popup,to=ads.id
 suara.com###div-ad-mobile_bacajuga
 suara.com###div-ad-pariwara_satu
 suara.com###pariwara_dua
@@ -3781,7 +3784,6 @@ idntimes.com###floatingbanner:matches-css(position: fixed):remove()
 popmama.com###mainBannerPopup
 popmama.com##body:style(overflow: auto!important; position: unset!important;)
 idntimes.com,popmama.com##+js(aeld, /copy|keydown/)
-@@://ads.$domain=ads.idntimes.com
 ||adsimg.kompas.com^
 ||kompasiana.com^*/banner-
 motorplus-online.com###ad-below-photo-container
@@ -3874,8 +3876,6 @@ bolasport.com,grid.id,gridoto.com,juara.net,kgnow.com,kompas.com,kompas.tv,motor
 @@/advertising.$domain=advertising.kontan.co.id
 @@/api/ads/*$xhr,domain=klasika.kompas.com
 @@/wp-content/uploads/*$1p,image,domain=korporasi.kompas.id
-@@://ads.$domain=ads.kontan.co.id|klasika.kompas.com
-@@://adv.$domain=adv.kontan.co.id
 grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
 gridoto.com,kompasiana.com,sonora.id,tribunnews.com##+js(aeld, /copy|keydown/)
 /copy_credit.$script,domain=kompas.com
@@ -4103,7 +4103,6 @@ droidlime.com###mvp-site-main:style(margin-top: 0px!important;)
 pramborsfm.com##.ads
 pramborsfm.com##.popup-ads
 pramborsfm.com##.overlay
-@@://ads.$domain=ads.pramborsfm.com
 @@||pramborsfm.com^$ghide
 pramborsfm.com##.master.has-top-ads .header:style(top: 0!important;)
 ||republika.co.id/files/ads/
