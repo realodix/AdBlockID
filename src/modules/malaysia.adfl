@@ -1,14 +1,14 @@
-! MALAYSIA
+! BLOCK
 ! ------------------------------------------------------------------------------
-! Block
 -1160x250-$image,domain=pandulaju.com.my
 -OnlineAd-$image,domain=funtasticko.net|pandulaju.com.my
 /1020x350_$image,domain=funtasticko.net
 ||gohedgostan.com^*-Banner_$image
 ||kisahdunia.com/wp-content/plugins/khairulzul-shopee-affiliate-for-kayz-asia/$image
 ||mediapermata.com.bn^*/banners/$image
-! ---
-! Hides
+!
+! HIDES
+! ------------------------------------------------------------------------------
 utusantv.com###uts-billboard
 mediahiburan.my##.adplaceholder-mrec
 webbrowsertools.com##.card:has-text(/advertisement/i)
@@ -20,21 +20,23 @@ mudah.my##[class^="banner_" i]
 mekanika.com.my##[data-advadsredirect=""]
 jobstreet.com.my##[data-automation$="-ads"]
 boom-malaysia.com##a.notrack > img
-! ---
-! Anti Adblock
+!
+! ANTI-ADBLOCK
+! ------------------------------------------------------------------------------
 ! class="*-blackout active"
 ! class="*-wrapper"
 ! -- class="*-modal *-the-modal active"
 @@||static.doubleclick.net/instream/ad_status.js$domain=kisahdunia.com
+!
 kisahdunia.com##+js(aost, DOMTokenList.prototype.contains, manageBodyClasses)
-! ---
-! Annoyances - Unblock Mouse limitations
+!
+! ANNOYANCE
+! Unblock Mouse limitations
+! ------------------------------------------------------------------------------
 azhan.co,mediahiburan.my##+js(acis, disableSelection, reEnable)
 mediahiburan.my##+js(acis, document.oncontextmenu)
 mediaonemarketing.com.sg##+js(aopr, window.pum_popups)
-! ---
-! Style Fixer
-ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
 !
-! INTERNATIONAL
+! STYLE FIXER
 ! ------------------------------------------------------------------------------
+ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)

@@ -24,7 +24,7 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
  │   ├─ annoyance_limitation.adfl [G/S] Menangani beberapa limitasi.
  │   ├─ annoyance_safelink.adfl   [G/S] Menampilkan link asli yang ditutupi oleh safelink.
  │   ├─ fandom.adfl               [All] Situs streaming, baca komik, dan lainnya.
- │   ├─ international.adfl        [All] Situs internasional.
+ │   ├─ malaysia.adfl             [All] Situs berbahasa Melayu.
  │   └─ safelink.adfl             [All] Situs berjenis safelink/shortlink.
  ├─ /packages               AdBlockID Plus
  │   └─ ...
