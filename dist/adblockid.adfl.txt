@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.86
+! Version: 25.6.87
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Jun 2025 08:30 UTC
+! Last modified: 13 Jun 2025 08:47 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -4376,10 +4376,10 @@ lk21.am.in,lk21.film,lk21official.cc,lk21online.mom,nontondrama.click##a[target*
 ||d21.media/img/*.gif$image
 ||d21.media/vid/$mp4
 ||d21.media^*/iklan-
-nontondrama.wiki,schoolenquiry.com,walstor.com###player-below-b
-walstor.com###top-b
-nontondrama.wiki,schoolenquiry.com,walstor.com##a[target*="blank"]:has(> img)
-nontondrama.wiki,schoolenquiry.com,walstor.com##:matches-path(/links/?url=) body > .container-iframe
+nontondrama.wiki,thegmannews.com###player-below-b
+thegmannews.com###top-b
+nontondrama.wiki,thegmannews.com##a[target*="blank"]:has(> img)
+nontondrama.wiki,thegmannews.com##:matches-path(/links/?url=) body > .container-iframe
 ||tolonglah.pages.dev$frame
 ||doroni.me/images/promo/$image
 ||doronime.id/images/promo/$image
@@ -6402,9 +6402,12 @@ _topbandar_$image
 /1020x350_$image,domain=funtasticko.net
 ||gohedgostan.com^*-Banner_$image
 ||kisahdunia.com/wp-content/plugins/khairulzul-shopee-affiliate-for-kayz-asia/$image
+||malaysiagazette.com^*-banner-
 ||mediapermata.com.bn^*/banners/$image
 utusantv.com###uts-billboard
+bharian.com.my,hmetro.com.my##.ad
 mediahiburan.my##.adplaceholder-mrec
+kinitv.com##.bg-gray-100:has(> .adunitContainer)
 webbrowsertools.com##.card:has-text(/advertisement/i)
 malaysiakini.com##.justify-center:has-text(/ads/i)
 hmetro.com.my##.pcto-banner
@@ -6414,6 +6417,7 @@ mudah.my##[class^="banner_" i]
 mekanika.com.my##[data-advadsredirect=""]
 jobstreet.com.my##[data-automation$="-ads"]
 boom-malaysia.com##a.notrack > img
+malaysiagazette.com##img[alt*="banner" i]
 @@||static.doubleclick.net/instream/ad_status.js$domain=kisahdunia.com
 kisahdunia.com##+js(aost, DOMTokenList.prototype.contains, manageBodyClasses)
 azhan.co,mediahiburan.my##+js(acis, disableSelection, reEnable)
