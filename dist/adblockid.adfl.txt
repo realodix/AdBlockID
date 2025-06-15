@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.95
+! Version: 25.6.96
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 15 Jun 2025 15:55 UTC
+! Last modified: 15 Jun 2025 16:24 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -4342,11 +4342,11 @@ sokuja.uk##div:matches-css(position: fixed):has(> div > #countdown)
 gudangmovies21.chat,sattorrent.com,soulscans.my.id##+js(aopr, SGPB_POPUP_PARAMS)
 komikstation.co,ngomik.net##+js(acis, JSON.parse, break;case $.)
 komikzoid.id,sektekomik.xyz##+js(ra, oncontextmenu|ondragstart|onkeydown|onmousedown|onselectstart|style, body)
-bensever.com,mangahentai.me##*:style(user-select:text!important;)
+mangahentai.me,running-advice.com##*:style(user-select:text!important;)
 otakudesu.cloud##+js(acis, document.oncontextmenu)
 mangacanblog.com##+js(aeld, /^(?:contextmenu|selectstart)$/)
 anichin.mov##+js(aeld, /copy|keydown/)
-ainzscans.net,anichin.mov,bensever.com,dojing.net,ikiru.wtf,komik18.xyz,komikdewasa.art,komikindo2.link,komiksin.id,komikstation.co,kumapoi.info,kuroshireader.com,kyumik.com,mangakita.id,mangasusuku.com,mangatale.co,mangayaro.id,manhwadesu.host,mihentai.com,mirrorkomik.net,ngomik.net,noromax.my.id,rawkuma.com,sektedoujin.cc,siikomik.com,softkomik.com,soulscans.my.id,tenshi.id,yuramanga.my.id##+js(aeld, contextmenu)
+ainzscans.net,anichin.mov,dojing.net,ikiru.wtf,komik18.xyz,komikdewasa.art,komikindo2.link,komiksin.id,komikstation.co,kumapoi.info,kuroshireader.com,kyumik.com,mangakita.id,mangasusuku.com,mangatale.co,mangayaro.id,manhwadesu.host,mihentai.com,mirrorkomik.net,ngomik.net,noromax.my.id,rawkuma.com,running-advice.com,sektedoujin.cc,siikomik.com,softkomik.com,soulscans.my.id,tenshi.id,yuramanga.my.id##+js(aeld, contextmenu)
 kusonime.com##+js(aeld, keydown)
 kusonime.com,mangahentai.me,tooncubus-read.my.id,tooncubus.top##+js(aopr, document.oncontextmenu)
 mangacanblog.com##+js(aopr, document.onkeydown)
@@ -4416,10 +4416,10 @@ oploverz.*###overplay
 oploverz.*##+js(abort-current-script, Promise, delete window)
 oploverz.*##+js(aopr, SGPB_POPUP_PARAMS)
 oploverz.*##+js(nowoif)
-.gif|$image,domain=45.11.57.126|45.11.57.235|45.11.57.236|45.11.57.250|oppa.biz|oppadrama.biz
-45.11.57.126,45.11.57.235,45.11.57.236,45.11.57.250,oppa.biz,oppadrama.biz##.kln
-45.11.57.126,45.11.57.235,45.11.57.236,45.11.57.250,oppa.biz,oppadrama.biz##a[target*="blank"]:has(> img)
-45.11.57.126,45.11.57.235,45.11.57.236,45.11.57.250,oppa.biz,oppadrama.biz##+js(aopr, popup_custom_data)
+.gif|$image,domain=45.11.57.249|oppa.biz|oppadrama.biz
+45.11.57.249,oppa.biz,oppadrama.biz##.kln
+45.11.57.249,oppa.biz,oppadrama.biz##a[target*="blank"]:has(> img)
+45.11.57.249,oppa.biz,oppadrama.biz##+js(aopr, popup_custom_data)
 .gif|$image,domain=85.203.26.50|pf21.net|pf21.vip|pusatfilm21.tv
 85.203.26.50,pf21.net,pf21.vip,pusatfilm21.tv##a > img[src$=".gif"]
 85.203.26.50,pf21.net,pf21.vip,pusatfilm21.tv##a[target*="blank"]:has(> img)
