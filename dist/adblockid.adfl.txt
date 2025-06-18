@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.108
+! Version: 25.6.109
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 18 Jun 2025 02:21 UTC
+! Last modified: 18 Jun 2025 02:29 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3139,9 +3139,8 @@ indoposco.id##div:matches-css(max-width: 970px):matches-css(min-height: 115px)
 otorider.com##div:matches-css(min-height: 250px)
 otorider.com##div:matches-css(min-height: 255px)
 hukumonline.com##div:matches-css(width: 300px):matches-css(height: 250px)
+hukumonline.com##div:matches-css(width: 320px):matches-css(height: 50px)
 citizen.co.id,hukumonline.com##div:matches-css(width: 728px):matches-css(height: 90px)
-indoposco.id##div[style="max-width:940px; min-height:105px;"]
-hukumonline.com##div[style="width:320px;height:50px"]
 balipost.com##div[style^="width: 970px; height: 90px;"]
 sambar.id##img[data-original-width="1000"][data-original-height="250"]
 jejakhukumindonesia.com##img[data-original-width="1280"][data-original-height="194"]
@@ -3625,7 +3624,6 @@ suara.com##div:matches-css-before(content: /Adv/)
 pikiran-rakyat.com###prmn__megabillboard
 ntvnews.id##.body_read [id^="INARTICLE_" i]
 uzone.id##.text-scroll
-hukumonline.com##article .text-center > div[style="width:300px;height:250px"]
 genpi.co##article [class^="_popIn_"]:has-text(/adv/i)
 marketeers.com##article [class^="bg-gray-"]:has-text(/adv/i)
 idntimes.com###hidden-parallax
