@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.129
+! Version: 25.6.130
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 23 Jun 2025 02:17 UTC
+! Last modified: 23 Jun 2025 02:42 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 .id^*/bnr/$domain=~kalbarprov.go.id
@@ -3687,6 +3687,7 @@ nontonx.com,sekedus.com##body > div:matches-css(position: fixed):has-text(/adblo
 /images/ads.$image,redirect-rule=1x1.gif
 /kurazoneAdblock.$script
 @@/\.(gif|jpe?g|png|webp)#(\/?.+)?(\/(ad)s?\/|\/ad-)/
+/wp-content/plugins/lnw-ad-blocker-detector/public/*
 /wp-content/uploads/gudyoab.$script
 /abdiusu/AntiAdblockJkoding/*$script
 @@-jasa-google-$image
@@ -4335,6 +4336,7 @@ idlixvip.asia##body[class*="-style-"] > div[class$=" active"][style]
 idlixvip.asia##body[class*="-style-"] > div[class$=" active"][style] + div[class*="-"]:has(> div[class$=" active"][style])
 adikanime.com#@#.idmuvi-banner-aftercontent
 indodrama21.site,layardramaxxi.store#@#.idmuvi-topbanner-aftermenu
+cinemakeren6.id###adblock-message
 adikanime.com##.adik-warning
 klikmanga.com,komikstation.co##+js(aeld, /^(?:load|click)$/, popMagic)
 anibatch.moe,animebatch.id,animekompi.run,gudangkomik.com,kawanfilm21.lat,kazefuri.cloud,kazefuri.info,kazesub.com,kyumik.com,layarkeren.pro,mangakita.id,manganime.live,ngomik.net,nimegami.id,otakudesu.cloud,rebahan21.com,rebahin.lol,sektedoujin.cc,so.batkren.xyz,sob.atkren.xyz,sokuja.uk##+js(nowoif)
