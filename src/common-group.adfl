@@ -219,7 +219,6 @@ detik.com##.new_banner_reg_100
 cnbcindonesia.com##.parallax-ads
 detik.com##.skybanner
 cnbcindonesia.com,cnnindonesia.com,haibunda.com,insertlive.com##.smartbanner_new
-detik.com##[data-ads="billboard"]
 cnnindonesia.com##[data-target="block/banner"]
 haibunda.com##div:has(> .static_banner1)
 cnnindonesia.com##div:has(> [id^="adv-"])
@@ -263,7 +262,7 @@ cnbcindonesia.com##div:matches-css(background-size: 970px 250px)
 cnbcindonesia.com##div:matches-css(background-size: 970px 50px)
 cnbcindonesia.com##div:matches-css(position: sticky):has(div:matches-css(background-size: 300px 250px):has(> [id^="div-gpt-ad-"]))
 cnbcindonesia.com##div:matches-css(position: sticky):has(div:matches-css(background-size: 300px 250px):has(> [id^="div-gpt-ad-"])):upward(div[style="width: 100%; height:600px;"])
-detik.com##div:matches-css(width: 300px):has(> [id^="div-gpt-ad-"])
+detik.com##div:matches-css(width: 300px):matches-css(min-height:250px):has(script)
 detik.com##div:matches-css(width: 970px):matches-css(height: 250px):has(center > [id^="div-gpt-ad-"])
 insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-height:250px;margin:0px auto 0px;"] > div[id^="div-gpt-ad-"])
 cnbcindonesia.com##div[style^="width: 100%; height:400px;"]:has(> [style^="position:sticky"])
