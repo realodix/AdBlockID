@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.152
+! Version: 25.6.153
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 26 Jun 2025 18:57 UTC
+! Last modified: 26 Jun 2025 23:09 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /iklan/*$image,domain=~iklanug.id|~jualrumahjakarta.com|~jualsewakios.com|~jualsewaruko.com|~kostjakarta.com|~pusatiklan.co.id|~sewa-apartemen.net|~sewa-rumah.net|~sewa-villa.com|~situsproperti.com|~tempat-usaha.com
@@ -2908,7 +2908,6 @@ kumparan.com##[data-qa-id*="sticky-bottom-ads"]
 kumparan.com##[data-qa-id="left-skyscrapper-ads"]
 kumparan.com##[data-qa-id="right-skyscrapper-ads"]
 telisik.id##[data-src*="/ads/"]
-beritaharian.sg##[data-testid="advertisement-element"]
 beritabersatu.com,beritakotamakassar.com,kabarika.id,ujungjari.com##[id^="_ad_"]
 a-news.id##[id^="advads-"]
 proinbar.com##[id^="bn_"]
@@ -2943,7 +2942,6 @@ fin.co.id##div:matches-css(height: 250px):matches-css(justify-content: center):h
 brainly.co.id##div[data-testid="brainly_ads_placeholder"]
 inwepo.co,tedas.id##div[id^="oa-"]
 1cak.com##div[style="color:#aaa;"]:has-text(/adv/i)
-beritaharian.sg##div[style^="background-image: linear-gradient"]:has([data-testid="advertisement-element"])
 halodoc.com##hd-base-display-ads
 hitamputih.site,mcnnews.online##img[alt*="Header AD Image" i]
 ayobacanews.com,beritapopuler.co.id,coinvestasi.com,fakta.com,harianindonesia.net,infoterkini.id,jabaronline.com,jurnalcakrawala.com,kabarindoraya.com,kalesang.id,kaltimkita.com,lahatsatu.com,lensametro.com,liputan12.id,liriknews.com,mahatva.id,mediawarta.com,mistar.id,nuntium.id,pilarparlemen.id,portal7.co.id,portalbanten.net,portalberita.co.id,pusaranmedia.com,revivaltv.id,sakanews.com,suarabantennews.com,sulselpasti.com##img[alt*="ads" i]
@@ -4279,6 +4277,9 @@ glints.com##body:style(margin-top: 0!important;)
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,popup,subdocument,badfilter
 !#endif
 0.0.realodix##+js(prevent-fetch, pagead2.googlesyndication.com)
+beritaharian.sg##.max-w-full.min-h-\[80px\].lg\:min-h-\[120px\]:has(> [data-testid="advertisement-element"])
+tnp.sg##.w-full.min-h-\[50px\].lg\:min-h-\[120px\]
+beritaharian.sg##[data-testid="advertisement-element"]
 ||01nonton.pages.dev/*.gif$image
 ||bioskop21.pw/banner/
 ||cdnfgo.xyz/wp-content/uploads/*.gif|$domain=komiktap.info
@@ -6469,6 +6470,5 @@ vanakkammalaysia.com.my##img[width="728"][height="91"]
 kisahdunia.com##+js(aost, DOMTokenList.prototype.contains, manageBodyClasses)
 azhan.co,mediahiburan.my##+js(acis, disableSelection, reEnable)
 mediahiburan.my##+js(acis, document.oncontextmenu)
-mediaonemarketing.com.sg##+js(aopr, window.pum_popups)
 ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
 ! :: AdBlockID Filter Combiner v1.4.0
