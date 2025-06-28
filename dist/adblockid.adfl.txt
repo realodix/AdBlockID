@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.6.164
+! Version: 25.6.165
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Jun 2025 23:59 UTC
+! Last modified: 28 Jun 2025 00:36 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /iklan/*$image,domain=~iklanug.id|~jualrumahjakarta.com|~jualsewakios.com|~jualsewaruko.com|~kostjakarta.com|~pusatiklan.co.id|~sewa-apartemen.net|~sewa-rumah.net|~sewa-villa.com|~situsproperti.com|~tempat-usaha.com
@@ -1114,6 +1114,8 @@ _728-x-90.$image
 ##.iklan-mobile
 ##.iklan-newsfeed
 ##.iklan-paralax-wrapper
+##.iklan-player-container
+##.iklan-player-full
 ##.iklan-pop-kanan
 ##.iklan-pop-kiri
 ##.iklan-related-post
@@ -1897,7 +1899,7 @@ _banner.$image,domain=tribratanewspoldakaltim.com
 ||indotelko.com/inc/c_banner.js
 ||indotribun.id^*/banner-$image
 ||indovizka.com/assets/banner/
-||industry.co.id^*ads/
+||industry.co.id^*/ads/
 ||infobanknews.com^*-banner-$image
 ||infobrand.id^*/banners/
 ||infoekonomi.id^*/banner-$image
@@ -4430,6 +4432,7 @@ doroni.me,doronime.id##a[target*="blank"] > picture
 doroni.me,doronime.id##a[target*="blank"]:has(> img)
 doroni.me,doronime.id##+js(set, showAds, true)
 doroni.me,doronime.id##.Popup
+*.gif$image,to=bk21.net
 ||bk21.net/*.mp4$mp4
 ||juragan.film/asset/*.mp4$mp4
 juragan.film###banner
@@ -5236,6 +5239,7 @@ _topbandar_$image
 ##[href="http://bit.ly/KaikoSLOT"]
 ##[href="http://bit.ly/MENANG123"]
 ##[href="http://bit.ly/PentaSLOT"]
+##[href="http://bit.ly/VCSdewasa"]
 ##[href="http://bit.ly/bolatogel_landing"]
 ##[href="http://bit.ly/iklan_7winbet"]
 ##[href="http://bit.ly/ligadunia365"]
@@ -5355,6 +5359,7 @@ _topbandar_$image
 ##[href="https://bit.ly/Agen111Register1"]
 ##[href="https://bit.ly/BK8xBioskop21"]
 ##[href="https://bit.ly/BonaRegister1"]
+##[href="https://bit.ly/DiamondFreeToday"]
 ##[href="https://bit.ly/Iklanpb24"]
 ##[href="https://bit.ly/JACKPOT4d"]
 ##[href="https://bit.ly/Jouganime"]
@@ -5731,6 +5736,7 @@ _topbandar_$image
 ##[href="https://klik.zeus.fun/Mindo"]
 ##[href="https://klikasd.com/7mtrxdramse"]
 ##[href="https://klikasd.com/Aslv8xRP4"]
+##[href="https://klikasd.com/Dmn88xMvm21"]
 ##[href="https://klikasd.com/Dmn88xRP4"]
 ##[href="https://klikasd.com/DmnbtxRP4"]
 ##[href="https://klikasd.com/DtgksxRP4"]
@@ -6056,10 +6062,18 @@ _topbandar_$image
 ##[href="https://rebrand.ly/yangenakenaksaja"]
 ##[href="https://rebrand.ly/z8m-benz"]
 ##[href="https://s.id/IDLIX88"]
+##[href="https://sbobet.host/arenaspin"]
+##[href="https://sbobet.host/china77"]
+##[href="https://sbobet.host/dewakdslot"]
 ##[href="https://sbobet.host/dewakdslots"]
+##[href="https://sbobet.host/gaza88"]
+##[href="https://sbobet.host/indo666"]
 ##[href="https://sbobet.host/judi89"]
 ##[href="https://sbobet.host/kaikoslot"]
+##[href="https://sbobet.host/kobel4d"]
 ##[href="https://sbobet.host/macaubet"]
+##[href="https://sbobet.host/mostdomain"]
+##[href="https://sbobet.host/mso303"]
 ##[href="https://sbobet.host/pentaslot"]
 ##[href="https://sbobet.host/ratu89"]
 ##[href="https://sbobet.host/rp888ads"]
