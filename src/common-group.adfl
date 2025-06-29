@@ -486,15 +486,22 @@ republika.co.id##.popup
 ! Style Fixer
 republika.co.id##header:style(position: inherit !important)
 ! ------------------------------------------------------------------------------
-! ruangguru
+! ruangguru - PT. Ruang Raya Indonesia
+! https://github.com/AdguardTeam/AdguardFilters/issues/163604
 ! -----
-ruangguru.com##.bantuan
-ruangguru.com##.bantuan-promo
+schoters.com##.banner-header
+brainacademy.id,english-academy.id,ruangguru.com,schoters.com##.banner-product-wrapper
+brainacademy.id,english-academy.id,ruangguru.com,schoters.com##.bantuan
+brainacademy.id,english-academy.id,ruangguru.com,schoters.com##.bantuan-promo
+brainacademy.id##:matches-path(/blog) .side-banner-desktop
+brainacademy.id##:matches-path(/blog) .side-banner-mobile
 roboguru.ruangguru.com##[class^="css-"]:has(> p:has-text(/iklan/i) )
 ! Annoyance
-ruangguru.com##+js(aeld, DOMContentLoaded, popupPromo)
+brainacademy.id,english-academy.id,ruangguru.com,ruangkerja.id,schoters.com##+js(aeld, DOMContentLoaded, popupPromo)
 roboguru.ruangguru.com##.chakra-container > div[class^="css-"]:has(> div[class^="css-"] > div[id^="div-gpt-ad-"])
 roboguru.ruangguru.com##.chakra-stack > div[class^="css-"]:has(> div[class^="css-"] > div[id^="div-gpt-ad-"])
+kalananti.id##:matches-path(/blog) .fade.show
+kalananti.id##:matches-path(/blog) body:style(overflow: auto!important; position: unset!important;)
 ! ------------------------------------------------------------------------------
 ! TEMPO.CO (Info Media Digital)
 ! -----
