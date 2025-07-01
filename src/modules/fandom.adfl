@@ -346,12 +346,17 @@ cosmicscans.asia##a[target*="blank"]:has(> img)
 ! -----------------------------------------------
 ! Kiryuu - https://kiryuu.co/
 ! -----
-kiryuu01.com##.kln
-kiryuu.cc,kiryuu01.com##a[target*="blank"]:has(> img)
-kiryuu.cc,kiryuu01.com##div[id^="teaser"]
+/kiryuu0\d+\.com/##.kln
+/kiryuu0\d+\.com/##a[target*="blank"]:has(> img)
+/kiryuu0\d+\.com/##div[id^="teaser"]
+kiryuu.cc##.kln
+kiryuu.cc##a[target*="blank"]:has(> img)
+kiryuu.cc##div[id^="teaser"]
 ! Annoyance
-kiryuu.cc,kiryuu01.com##+js(aeld, contextmenu)
-kiryuu.cc,kiryuu01.com##+js(nowoif)
+/kiryuu0\d+\.com/##+js(aeld, contextmenu)
+/kiryuu0\d+\.com/##+js(nowoif)
+kiryuu.cc##+js(aeld, contextmenu)
+kiryuu.cc##+js(nowoif)
 ! -----------------------------------------------
 ! MangaKu
 ! -----
