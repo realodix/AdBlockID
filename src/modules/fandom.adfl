@@ -217,24 +217,23 @@ doroni.me,doronime.id##+js(set, showAds, true)
 ! Annoyance
 doroni.me,doronime.id##.Popup
 ! -----------------------------------------------
-! JuraganFilm https://linktr.ee/jflink
+! JuraganFilm https://linktr.ee/jflink, https://juragan.info/
 ! juraganfilm.com (at) gmail [dot] com
 ! -----
 *.gif$image,to=bk21.net
-||bk21.net/*.mp4$mp4
-||juragan.film/asset/*.mp4$mp4
+||bk21.net/*.mp4$media,redirect=noopmp4-1s
 !
-juragan.film###banner
-dramaserial.id,juragan.film##.idmuvi-afterplayer
-dramaserial.id,juragan.film##.idmuvi-topplayer
-dramaserial.id,juragan.film##a[target*="blank"]:has(> img)
+juragan.*###banner
+dramaserial.id,juragan.*##.idmuvi-afterplayer
+dramaserial.id,juragan.*##.idmuvi-topplayer
+dramaserial.id,juragan.*##a[target*="blank"]:has(> img)
 ! Annoyance
 dramaserial.id##+js(aopr, $.magnificPopup.open)
-juragan.film##.popbox
-juragan.film##body:style(overflow: auto!important; position: unset!important;)
+juragan.*##.popbox
+juragan.*##body:style(overflow: auto!important; position: unset!important;)
 ! Unbreak
-@@||p.jwpcdn.com/player/plugins/vast/$domain=dramaserial.id|juragan.film|juraganfilm.info
-dramaserial.id,juragan.film#@#.idmuvi-topbanner
+@@||p.jwpcdn.com/player/plugins/vast/$domain=dramaserial.id|juragan.*|juraganfilm.info
+dramaserial.id,juragan.*#@#.idmuvi-topbanner
 ! -----------------------------------------------
 ! Kuronime
 ! kuronimenet.tv@gmail.com
