@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.7.23
+! Version: 25.7.24
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Jul 2025 19:32 UTC
+! Last modified: 06 Jul 2025 13:15 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /iklan/*$image,domain=~iklanug.id|~jualrumahjakarta.com|~jualsewakios.com|~jualsewaruko.com|~kostjakarta.com|~pusatiklan.co.id|~sewa-apartemen.net|~sewa-rumah.net|~sewa-villa.com|~situsproperti.com|~tempat-usaha.com
@@ -4843,14 +4843,14 @@ _usafelink.$3p,script
 ##[href*="ouo.io/ref/"]
 ##[href^="https://safelinkblogger.com/ref/"]
 ##[href^="https://safelinku.com/ref/"] > img
-tempatwisata.pro##span:has-text(/adv/i)
+cekresi.me,tempatwisata.pro##span:has-text(/adv/i)
 linkerload.com##+js(acis, addEventListener, google_ad_client)
 mangindo.xyz##+js(aopr, adBlockDetected)
 dz4link.com,linkpoi.me##+js(aopr, app_vars.force_disable_adblock)
 linkpoi.me##+js(aopr, disableItToContinue)
 menjelajahi.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 mangindo.xyz##+js(aopr, window.adikAds)
-tempatwisata.pro,vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
+cekresi.me,tempatwisata.pro,vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 lifesurance.info##+js(set, showada, true)
 ||adligature.com^$redirect=noop.js,domain=tempatwisata.pro
 ||srvtrck.com^$redirect=noop.js,domain=tempatwisata.pro
@@ -4862,13 +4862,13 @@ jurnalistekno.id##body > .fc-ab-root
 jurnalistekno.id##body:style(overflow: auto !important;)
 besargaji.com,dapat.link,khaddavi.net,link2unlock.com,lokerwfh.net,meong.club,techbloogs.com,tutwuri.id##+js(nowoif)
 besargaji.com,khaddavi.net,lokerwfh.net,techbloogs.com,tutwuri.id##+js(adjust-setInterval)
-tempatwisata.pro##+js(adjust-setInterval, /counter|Wait/, *, 0.001)
-tempatwisata.pro##+js(aeld, blur, counter)
+cekresi.me,tempatwisata.pro##+js(adjust-setInterval, /counter|Wait/, *, 0.001)
+cekresi.me,tempatwisata.pro##+js(aeld, blur, counter)
 dapat.link,saungfirmware.id,savetub.com,semruwet.com##+js(set, blurred, false)
 slurr.my.id###content #wpsafegenerate div:has(a > img):not(#wpsafe-link)
 slurr.my.id###content .wpsafe-top div:has(> a > img):not(#wpsafe-generate)
 tempatwisata.pro##:has(> a[href="#downloadnow"])
-tempatwisata.pro##center:has(> p[style^="text-align: center;position: relative;"] > button)
+cekresi.me,tempatwisata.pro##center:has(> p[style^="text-align: center;position: relative;"] > button)
 jurnalistekno.id##div:matches-css(text-align: center):has(> a > img)
 besargaji.com,khaddavi.net,lokerwfh.net,techbloogs.com,tutwuri.id##div[style="text-align: center;"]:has(> a[target="_blank"] > img[alt="download"])
 link2unlock.com##header > div:matches-css(text-align: center):has(> center > iframe)
