@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.7.35
+! Version: 25.7.36
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 09 Jul 2025 03:39 UTC
+! Last modified: 09 Jul 2025 03:56 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /iklan/*$image,domain=~iklanug.id|~jualrumahjakarta.com|~jualsewakios.com|~jualsewaruko.com|~kostjakarta.com|~pusatiklan.co.id|~sewa-apartemen.net|~sewa-rumah.net|~sewa-villa.com|~situsproperti.com|~tempat-usaha.com
@@ -4896,10 +4896,9 @@ alpinecorporate.com##+js(adjust-setInterval, counter, *, 0.001)
 alpinecorporate.com##+js(set, blurred, false)
 alpinecorporate.com###abDetectorModal
 alpinecorporate.com##.adsbox.doubleclick.ad-placement:style(display: block !important;)
-/\.(gif|webp)/$image,domain=kingbokep.*|rumahparaperjaka.*|rumahperjaka.*
+/\.(gif|webp)/$image,domain=rumahparaperjaka.*|rumahperjaka.*
 ||postimg.cc/*/GIFBANNER*-
 ||nokephub.com/wp-content/uploads/$media,redirect=noopmp4-1s
-@@||kingbokep.pro/thumbs/
 ###adsic364x90-bokep
 javsubindo.*,minioppai.org###btm_banner
 playvid.cam###center-banner
@@ -4928,6 +4927,7 @@ bokep360.*##a[title="banner" i]:has(> img)
 bluevid.cam,filmjepangku.com,hencop.com,javsubindo.*,lendirpedia.*,minioppai.org,pascol.*,pemersatu.link,starjepang.wiki,terviral.cam##body > div[id^="teaser"]
 indoporn.*##div:has(> .adsbyexoclick)
 filmnikmat.*##img[alt*="iklan"]
+kingbokep.*##img[src*=".webp"]:not(div.video-card-wrap > img)
 indoporntv.*##video:style(cursor: auto!important;)
 kpopdeepfakes.*#@##banner_ad
 pasarbokep.com##+js(aopr, adsBlocked)
