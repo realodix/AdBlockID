@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.7.46
+! Version: 25.7.47
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 13 Jul 2025 04:46 UTC
+! Last modified: 13 Jul 2025 10:40 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /iklan/*$image,domain=~iklanug.id|~jualrumahjakarta.com|~jualsewakios.com|~jualsewaruko.com|~kostjakarta.com|~pusatiklan.co.id|~sewa-apartemen.net|~sewa-rumah.net|~sewa-villa.com|~situsproperti.com|~tempat-usaha.com
@@ -4017,7 +4017,7 @@ haibunda.com##.pic_artikel_sisip_table:has-text(/banner/i)
 detik.com##.sbparallax
 detik.com##.staticdetail_container:has(> .staticdetail_ads)
 cnbcindonesia.com##.stickystatic
-cnbcindonesia.com##[style^="background:#F0F3F4;margin-top:24px;margin-bottom: 24px; margin-left:-18px;margin-right: -18px; padding-bottom: 12px;"]
+cnbcindonesia.com##[style*="margin-top:24px;margin-bottom: 24px; margin-left:-18px;margin-right: -18px; padding-bottom: 12px;"]
 cnnindonesia.com##article .picdetail > .inbetween:has(> amp-ad)
 detik.com##body > div:matches-css(min-height: 150px):has(> center > [id^="div-gpt-ad-"])
 cnbcindonesia.com##div:matches-css(background-size: 728px 90px)
@@ -4035,6 +4035,7 @@ cnbcindonesia.com##div[style^="width: 100%; height:400px;"]:has(> [style^="posit
 beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
 transtv.co.id##+js(ra, oncontextmenu, html)
 detik.com##body:style(overflow: auto !important;)
+||cnbcindonesia.com/cnbc/js/clipboard.js
 /banner/*$image,domain=kapanlagi.com
 bola.net###content-news .w100p:has([id^="div-gpt-ad"])
 bola.net###top_leaderboard:has(> [id^="div-gpt-ad"])
