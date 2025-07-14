@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.7.55
+! Version: 25.7.56
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 14 Jul 2025 07:49 UTC
+! Last modified: 14 Jul 2025 13:13 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /iklan/*$image,domain=~iklanug.id|~jualrumahjakarta.com|~jualsewakios.com|~jualsewaruko.com|~kostjakarta.com|~pusatiklan.co.id|~sewa-apartemen.net|~sewa-rumah.net|~sewa-villa.com|~situsproperti.com|~tempat-usaha.com
@@ -1539,7 +1539,7 @@ _728_x_90/
 ##iframe[width="728"][height="90"]
 ##img[width="468"][height="60"]
 ##img[width="728"][height="90"]
-~niagahoster.co.id##[href^="//niagahoster.co.id/?REFERRALCODE" i]:has(img)
+~niagahoster.co.id##[href*="//niagahoster.co.id" i][href*="?REFERRALCODE" i]:has(img)
 ~gramedia.com##[href^="https://aff.gramedia.com/"]:has(img)
 ~atid.me##[href^="https://atid.me/go/"]:has(img)
 ~collaborator.pro##[href^="https://collaborator.pro?ref="]:has(img)
@@ -1550,7 +1550,7 @@ _728_x_90/
 ~jagoanhosting.com##[href^="https://member.jagoanhosting.com/aff.php"]:has(img)
 ~thebrandmasterclass.id##[href^="https://member.thebrandmasterclass.id/aff/"]:has(img)
 ~monetag.com##[href^="https://monetag.com/?ref_id="]:has(img)
-~niagahoster.co.id##[href^="https://niagahoster.co.id?REFERRALCODE" i]:has(img)
+~hawkhost.com##[href^="https://my.hawkhost.com/aff.php"]:has(img)
 ~niagahoster.co.id##[href^="https://panel.niagahoster.co.id/ref/"]:has(img)
 ~seedbacklink.com##[href^="https://panel.seedbacklink.com/aff/"] > img
 ~adsterra.com##[href^="https://publishers.adsterra.com/referral/"]:has(img)
@@ -2458,8 +2458,6 @@ _banner.$image,domain=tribratanewspoldakaltim.com
 ||collaborator.pro/images/referral/$3p
 ||fbs.partners/banner/$3p,domain=~indofbs-invest.com
 ||gnfi.net/gnfi/uploads/banners/$3p
-||i0.wp.com/bloggerhub.id/wp-content/uploads/$image,domain=~bloggerhub.id
-||i0.wp.com/www.backlink.co.id/wp-content^*/blogpartner$image,domain=~backlink.co.id|~blogpartner.id
 ||ib.pictures/img/ibbanner/$3p
 ||idtheme.com/img/banner-$3p
 ||idtheme.com/img/old/idt-size-$3p,image
@@ -2468,6 +2466,7 @@ _banner.$image,domain=tribratanewspoldakaltim.com
 ||seedbacklink.com^*/badge-$3p,image
 ||sugeng.id^*/banner-$3p
 ||triv.co.id^*/banner/$3p
+||wp.com/www.backlink.co.id/wp-content/uploads/$image,domain=~backlink.co.id|~blogpartner.id
 ||zaferinadigital.com^*/ads-
 ||niagaspace.sgp1.cdn.digitaloceanspaces.com/assets/images/affiliasi/$domain=~niagahoster.co.id
 ||oketheme.com/members/file/get/path/.banners.$3p,image
@@ -2917,7 +2916,7 @@ pinhome.id##:matches-path(/blog) [class^="style_stickyBannerMobile_"]
 qwords.com##:matches-path(/blog) [href^="https://www.qwords.com/promotion/"]
 megavision.net.id##:matches-path(/blog) a[href*="megavision.net.id/pricing"]:has(> img)
 megavision.net.id##:matches-path(/blog) a[href*="megavision.net.id/subscribe-internet/"]:has(> img)
-zalora.co.id,zenius.net##:matches-path(/blog) a[href*="utm_campaign="]:has(> img)
+utas.co,zalora.co.id,zenius.net##:matches-path(/blog) a[href*="utm_campaign="]:has(> img)
 caroline.id,danacita.co.id##:matches-path(/blog) img[alt*="banner" i]
 favo.id##:matches-path(/blogs) .banners
 auksi.co.id##:matches-path(/detail-artikel) .ads-link
@@ -3059,6 +3058,7 @@ wartapos.id##.container-wrapper > img
 jelajahcoin.com##.content > center:has(> .adsbygoogle)
 madrasahdigital.co##.content-inner > .madra-penerbitan-buku
 tirto.id##.content-text-editor ins:has(> a[href*="_bnnid="])
+bloggerperempuan.com##.ct-slider
 bidiknewstoday.com##.elementor-element > .elementor-widget-container:has(> .elementor-heading-title:has-text(/adv/i))
 versa.news##.elementor-element > figure:has(> figcaption:has-text(/adv/i))
 koransn.com##.entry > div[style*="text-align:center;"]:has(> img)
@@ -4303,16 +4303,21 @@ nobartvgratis.com##body:style(overflow: auto!important; position: unset!importan
 ||cfcdn.apcqwd.com/prod/svimg/*.gif|$image
 /tigoals\d+\.com/##.banner
 rbtv77.icu###divFLRAbottom
-fctv77.*,nwiwsgreaterrfakifood.shop,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*,u8a8eemptyn9j44parent.shop##:matches-path(/id) div:matches-css(position: fixed):has(> img)
-fctv77.*,nwiwsgreaterrfakifood.shop,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*,u8a8eemptyn9j44parent.shop##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
-fctv77.*,nwiwsgreaterrfakifood.shop,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*,u8a8eemptyn9j44parent.shop##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
-fctv77.*,nwiwsgreaterrfakifood.shop,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*,u8a8eemptyn9j44parent.shop##:matches-path(/id) img:style(width: auto!important;)
-fctv77.*,nwiwsgreaterrfakifood.shop,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*,u8a8eemptyn9j44parent.shop##*:style(scrollbar-width: thin!important;)
+fctv77.*,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*##*:style(scrollbar-width: thin!important;)
+fctv77.*,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*##:matches-path(/id) div:matches-css(position: fixed):has(> img)
+fctv77.*,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
+fctv77.*,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
+fctv77.*,rbsports77.*,rbtv33.*,rbtv77.*,rbtvplus01.*##:matches-path(/id) img:style(width: auto!important;)
 /^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##*:has-text(/rbtv77/i):style(scrollbar-width: thin!important;)
 /^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/rbtv77/i) div:matches-css(position: fixed):has(> img)
 /^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/rbtv77/i) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
 /^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/rbtv77/i) iframe + div:matches-css(position: absolute):has(> img)
 /^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/rbtv77/i) img:style(width: auto!important;)
+nwiwsgreaterrfakifood.shop,u8a8eemptyn9j44parent.shop##*:style(scrollbar-width: thin!important;)
+nwiwsgreaterrfakifood.shop,u8a8eemptyn9j44parent.shop##:matches-path(/id) div:matches-css(position: fixed):has(> img)
+nwiwsgreaterrfakifood.shop,u8a8eemptyn9j44parent.shop##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
+nwiwsgreaterrfakifood.shop,u8a8eemptyn9j44parent.shop##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
+nwiwsgreaterrfakifood.shop,u8a8eemptyn9j44parent.shop##:matches-path(/id) img:style(width: auto!important;)
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
 bogordaily.net,mojok.co##.code-block > .voucher_at
@@ -4330,6 +4335,16 @@ theiconomics.com##.home .bkmodule:style(margin-top: 100px!important;)
 kendarimerdeka.com##.mvp-main-box:style(height: initial!important;)
 theiconomics.com##.single-post .code-block + .single-page:style(margin-top: 100px!important;)
 glints.com##body:style(margin-top: 0!important;)
+||bloggerhub.id/wp-content/uploads/$3p
+||brtnetwork.id/wp-content/uploads/$3p
+||casakreatif.com/wp-content/uploads/$3p
+||photobucket.com/*/Blogger%20Perempuan/banner-$domain=~bloggerperempuan.com
+||wp.com/*.photobucket.com/*/Blogger%20Perempuan/banner-$domain=~bloggerperempuan.com
+||wp.com/bloggerhub.id/wp-content/uploads/$image,domain=~bloggerhub.id
+~bloggercrony.com##[href*="//bloggercrony.com"]:has(img)
+~bloggerperempuan.com##[href*="//bloggerperempuan.com"]:has(img)
+~emak2blogger.com##[href*="//emak2blogger.com"]:has(img)
+~emak2blogger.com##[href*="//s.id/EmakBlogger"]:has(img)
 !#if adguard
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,popup,subdocument,badfilter
 !#endif
