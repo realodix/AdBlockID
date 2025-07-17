@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.7.69
+! Version: 25.7.70
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Jul 2025 16:53 UTC
+! Last modified: 17 Jul 2025 17:07 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /iklan/*$image,domain=~iklanug.id|~jualrumahjakarta.com|~jualsewakios.com|~jualsewaruko.com|~kostjakarta.com|~pusatiklan.co.id|~sewa-apartemen.net|~sewa-rumah.net|~sewa-villa.com|~situsproperti.com|~tempat-usaha.com
@@ -4609,11 +4609,11 @@ mangaku.bio,mangaku.co,mangaku.in,mangaku.lat,mangaku.my.id##+js(aopr, document.
 mangaku.bio,mangaku.co,mangaku.in,mangaku.lat,mangaku.my.id##+js(nowoif)
 /ads/*$to=gmbr.pro
 ||ads.gmbr.pro^
-manhwaindo.cx,manhwaland.asia,manhwaland.baby##.kln
-manhwaindo.cx,manhwaland.asia,manhwaland.baby##a[target*="blank"]
-manhwaindo.cx,manhwaland.asia,manhwaland.baby##div[id^="teaser"]
-manhwaindo.cx,manhwaland.asia,manhwaland.baby##+js(aeld, contextmenu)
-manhwaindo.cx,manhwaland.baby##+js(nowoif)
+manhwaindo.com,manhwaland.asia,manhwaland.baby##.kln
+manhwaindo.com,manhwaland.asia,manhwaland.baby##a[target*="blank"]
+manhwaindo.com,manhwaland.asia,manhwaland.baby##div[id^="teaser"]
+manhwaindo.com,manhwaland.asia,manhwaland.baby##+js(aeld, contextmenu)
+manhwaindo.com,manhwaland.baby##+js(nowoif)
 onepieceberwarna.com##a[target*="blank"]:has(> img):not(a[href*="onepieceberwarna.com"])
 onepieceberwarna.com##*:style(user-select:text!important;)
 onepieceberwarna.com##+js(acis, disableSelection, reEnable)
@@ -4883,12 +4883,10 @@ _usafelink.$3p,script
 ##[href^="https://safelinku.com/ref/"] > img
 cekresi.me,tempatwisata.pro##span:has-text(/adv/i)
 linkerload.com##+js(acis, addEventListener, google_ad_client)
-mangindo.xyz##+js(aopr, adBlockDetected)
 dz4link.com,linkpoi.me##+js(aopr, app_vars.force_disable_adblock)
 linkpoi.me##+js(aopr, disableItToContinue)
 menjelajahi.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
-mangindo.xyz##+js(aopr, window.adikAds)
-cekresi.me,tempatwisata.pro,vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
+bukutafsirmimpi.xyz,cekresi.me,tempatwisata.pro,vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 lifesurance.info##+js(set, showada, true)
 ||adligature.com^$redirect=noop.js,domain=tempatwisata.pro
 ||srvtrck.com^$redirect=noop.js,domain=tempatwisata.pro
