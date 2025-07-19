@@ -1,52 +1,14 @@
 !# Server iklan
 !#
-!# --------------------------------------------------------
-!#
+! ------------------------------------------------------------------------------
 ||aedi.ai/common/js/v1/aedi-$domain=bloombergtechnoz.com|inews.id|katadata.co.id|okezone.com|sindonews.com
 ||services.7searchppc.com/api/adscript$domain=tintainformasi.com
-!
-/^https?:\/\/(?:ak\.)?[a-z]{6,15}\.(?:com|net)\/(?:1|4)\/\d{7}/$doc,frame,popup
-!
-/\/assets\/jquery\/jquery-\d\.\d\.(?:\d\.)?min\.js\?(?:v=2)?&?type=(?:adult|mainstream)$/$1p,script
-!# regex
-! Adsterra
-/^https?:\/\/(?:www\.|[0-9a-z]{7,10}\.)?[-0-9a-z]{5,}\.com\/\/?(?:[0-9a-z]{2}\/){2,3}[0-9a-f]{32}\.js/$3p,script,xhr,redirect=noop.js,to=com
-! vidguard
-/\.\d{1,2}\.[0-9a-f]{32}\.js$/$3p,script,from=txxx.com,to=js.txxx.tube
-/\/[0-9a-f]{32}\.js\b/$3p,script,from=bembed.net|embedv.net|fslinks.org|listeamed.net|moflix-stream.*|v6embed.xyz|vgplayer.xyz|vid-guard.com,to=com
-! MV3 wildcard issue
-/\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$script
-/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$/$3p,script,to=com
-/^https:\/\/[0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\/\d{6}\b/$3p,match-case,xhr,to=com
-/^https?:\/\/[0-9a-z]{13,14}\.cloudfront\.net\/\?[a-z]{3,5}=\d{6,7}$/$3p,script,xhr
-! globalThis
-/^https?:\/\/[0-9a-f]{50,}\.s3\.amazonaws\.com\/[0-9a-f]{10}$/$3p,xhr
-/^https?:\/\/s3\.us-east-1\.amazonaws\.com\/[0-9a-f]{50,}\/[0-9a-f]{10}$/$3p,match-case,xhr
-! propeller new variants
-/^https?:\/\/[a-z]{8,15}\.top(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$3p,frame,match-case
-/^https?:\/\/[a-z]{8,15}\.top\/(?!api|available|team)[a-z]{4,}\.json$/$3p,match-case,xhr
-/^https?:\/\/[a-z]{8,15}\.top\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$3p,css,match-case
-/^https?:\/\/[a-z]{8,15}\.top\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$3p,image,match-case
-/^https?:\/\/[a-z]{8,15}\.xyz(\/(?:\d{1,5}|0NaN|articles?|browse|index|movie|news|pages?|static|view|web|wiki)){1,4}(?:\.html|\/)$/$3p,frame,match-case
-/^https?:\/\/[a-z]{8,15}\.xyz\/(?!api|available|team)[a-z]{4,}\.json$/$3p,match-case,xhr
-/^https?:\/\/[a-z]{8,15}\.xyz\/[-a-z]{4,}\.css\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$3p,css,match-case
-/^https?:\/\/[a-z]{8,15}\.xyz\/[a-z]{4,}\.png\?aHR0c[\/0-9a-zA-Z]{33,}=?=?$/$3p,image,match-case
-! hilltopads
-/^https?:\/\/[-a-z]{6,}\.(?:com?|info|pro|xyz)\/[a-d][-\.\/_A-Za-z][DHWXm][-\.\/_A-Za-z][59FVZ][-\.\/_A-Za-z][6swyz][-\.\/_A-Za-z][-\/_0-9a-zA-Z][-\.\/_A-Za-z][-\/_0-9a-zA-Z]{22,162}$/$3p,match-case,script,xhr,to=co|com|info|pro|xyz
-!# pp server
-/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}(?:\?v=\d+)?$/$3p,script,to=com|net
-/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}(?:\?v=\d+)?$/$3p,script,to=com|net
-/^https?:\/\/[-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?/$3p,xhr,to=com|net
-/^https?:\/\/[a-z0-9]{5,15}\.(?:com|net)\/tag\.min\.js$/$3p,script,redirect=noopjs,to=com|net
-/^https?:\/\/[a-z0-9]{5,15}\.[a-z]{2,3}\/5\/\d{6,7}(?:\?_=\d+|\/\??)?$/$3p,script,xhr
-/^https?:\/\/[a-z]{8,15}\.com\/$/$3p,header=access-control-expose-headers:/x-directionpartner-id/,xhr,to=com,method=head
-/^https?:\/\/[a-z]{8,15}\.xyz\/$/$3p,header=access-control-expose-headers:/x-directionpartner-id/,xhr,to=xyz,method=head
 ! -----------------------------------------------
 ! AdGuard
-! -----------------------------------------------
+! -----
 ! https://github.com/AdguardTeam/AdguardFilters/blob/e515a3787d/BaseFilter/sections/general_url.txt#L354
 /\/[0-9a-f]{32}\/invoke\.js/$third-party,script,redirect-rule=noopjs
-! ---
+! -----------------------------------------------
 ! Dihapus dalam beberapa bulan
 ! 205.251.197.235, 205.251.198.251, 205.251.193.177, 205.251.195.134
 ||vakawi.xyz^$3p,script
