@@ -1,11 +1,10 @@
 [Adblock Plus 2.0]
-! Version: 25.7.77
+! Version: 25.7.78
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 19 Jul 2025 15:55 UTC
+! Last modified: 21 Jul 2025 06:59 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
-/iklan/*$image,domain=~iklanug.id|~jualrumahjakarta.com|~jualsewakios.com|~jualsewaruko.com|~kostjakarta.com|~pusatiklan.co.id|~sewa-apartemen.net|~sewa-rumah.net|~sewa-villa.com|~situsproperti.com|~tempat-usaha.com
 /smartfren/ads.
 -ad123-
 -banner-ads.
@@ -68,6 +67,7 @@
 /iklan-scroll.
 /iklan-skin-
 /iklan-topbanner-
+/iklan/*
 /iklan1-
 /iklan1.
 /iklan1_
@@ -2887,13 +2887,15 @@ mekari.com##:matches-path(/blog) #banner_flex_ewa_v2_hr_before_h2_2
 linktown.co.id##:matches-path(/blog) .brus-banners
 mitra10.com##:matches-path(/blog) .gtm_mitra10_cta_banner_header
 sapx.id##:matches-path(/blog) .header-before-ad
+qwords.com##:matches-path(/blog) .promo-ad-article
+qwords.com##:matches-path(/blog) .promo-image
 pinhome.id##:matches-path(/blog) [class^="analytics-right-side-banner-"]
 pinhome.id##:matches-path(/blog) [class^="style_stickyBannerDesktop_"]
 pinhome.id##:matches-path(/blog) [class^="style_stickyBannerMobile_"]
-qwords.com##:matches-path(/blog) [href^="https://www.qwords.com/promotion/"]
 megavision.net.id##:matches-path(/blog) a[href*="megavision.net.id/pricing"]:has(> img)
 megavision.net.id##:matches-path(/blog) a[href*="megavision.net.id/subscribe-internet/"]:has(> img)
 utas.co,zalora.co.id,zenius.net##:matches-path(/blog) a[href*="utm_campaign="]:has(> img)
+toffeedev.com##:matches-path(/blog) a[href^="https://marketing.toffeedev.com/"]:has(img)
 caroline.id,danacita.co.id##:matches-path(/blog) img[alt*="banner" i]
 favo.id##:matches-path(/blogs) .banners
 auksi.co.id##:matches-path(/detail-artikel) .ads-link
@@ -3742,14 +3744,6 @@ nontonx.com,sekedus.com##body > div:matches-css(position: fixed):has-text(/adblo
 @@/pasang-iklan-$image
 @@/pasang_iklan$image
 @@_pasangiklan/$image
-@@||gratis-iklan.com^$ghide
-@@||iklan-kolom.com^$ghide
-@@||iklanbaris.gratis^$ghide
-@@||iklandisini.com^$ghide
-@@||iklangratis.id^$ghide
-@@||iklangratistanpadaftar.com^$ghide
-@@||iklanug.id^$ghide
-@@||pusatpemasanganiklan.com^$ghide
 beritajatim.com#@#.advertorial
 a-news.id,bakata.net,beritaanda.net,beritakaltim.co,betara.id,bhayangkaraglobalnews.com,bolmong.news,dutatv.com,fajarmanado.com,faktualnews.co,fokusaktual.co.id,gotvnews.co.id,haliyora.id,helloborneo.com,heraldmakassar.com,iglobalnews.co.id,indotribun.id,intipnews.com,jabarnews.com,jambidaily.com,jodanews.com,kabarntt.co,katakepri.com,kliksumatera.com,komunikasulut.com,kontrolnews.co,koranmedan.com,lintasjatimnews.com,manadotoday.co.id,medinaslampungnews.co.id,metrorakyat.com,nusantarapos.co.id,petisi.co,pilarjambi.com,prudensi.com,publiknews.com,pustakalewi.com,rakyatjabarnews.com,realitapost.com,serambijambi.id,sidakpost.id,suarakalbar.co.id,sumateranews.co.id,sumselnews.co.id,tebarberita.id,wartaniaga.com,waspada.id,wideazone.com#@#.category-advertorial
 beritaazam.com,portalbengkulu.com#@#.gmr-topbanner
@@ -3769,13 +3763,38 @@ aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id
 @@_advertising/$domain=advertising.katadata.co.id
 @@||adsmart.detik.com/assets/images/$domain=adsmart.detik.com
 @@||gosocial.co.id/assets/img/service/$1p,image
-@@||iklandisini.com/banner_ads/$1p
 @@||iklanku.shopee.co.id/img/$1p,image
-@@||pasangiklan.com/pi_b/img/$1p,image
+@@||kreatifmedia.co/kreatifmedia/assets/images/banner-iklan/$1p
 @@||tokopedia.net/img/topads/$1p,image
 !#if env_chromium
 @@||doubleclick.net^$xhr,redirect-rule=noop.txt,domain=kumparan.com
 !#endif
+@@/iklan/*$domain=jualrumahjakarta.com|kostjakarta.com|sewa-rumah.net|sewa-villa.com|situsproperti.com
+@@/iklan/*$to=tempat-usaha.com
+@@||bintangiklan.org/images/$1p
+@@||bintangiklan.org^$ghide
+@@||gratis-iklan.com^$ghide
+@@||iklan-kolom.com^$ghide
+@@||iklanbaris.gratis^$ghide
+@@||iklangratis.id^$ghide
+@@||iklangratistanpadaftar.com^$ghide
+@@||iklankompas.com/images/$1p
+@@||iklankompas.com^$ghide
+@@||iklanmania.com/images/$1p
+@@||iklanmania.com^$ghide
+@@||iklanug.id/images/$1p
+@@||iklanug.id^$ghide
+@@||iklanvip.org/images/$1p
+@@||iklanvip.org^$ghide
+@@||pasangiklanmurah.info/images/$1p
+@@||pasangiklanmurah.info^$ghide
+@@||portaliklan.info/images/$1p
+@@||portaliklan.info^$ghide
+@@||pusatiklan.info/images/$1p
+@@||pusatiklan.info^$ghide
+@@||pusatpemasanganiklan.com^$ghide
+@@||rajaiklan.org/images/$1p
+@@||rajaiklan.org^$ghide
 ||wpfc.ml/b.gif$image,redirect=1x1.gif,domain=pinterpolitik.com
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js,domain=orami.co.id
 @@||inwepo.co^$ghide,badfilter
@@ -4659,7 +4678,7 @@ affmotor.com,jagobengkel.com,maenhp.org,versusbeda.com##.jquery-modal
 ladiestory.id##.modal-backdrop
 tafsirq.com##.optin-monster-saas-overlay
 bacaterus.com,carisinyal.com##.oxy-modal-backdrop
-gammafisblog.com##.popbox
+beritaja.com,gammafisblog.com##.popbox
 emitennews.com##.popup-ads
 beritaup2date.com##.w3-modal
 pasjabar.com##.wp-popup
@@ -4667,7 +4686,7 @@ jamudigital.com###boxes
 situsnobar.top###floatcenter
 kompaslampung.com##.jqbox_innerhtml
 99updates.id##.modal-open:style(overflow: auto!important; position: unset!important;)
-affmotor.com,alkitabonline.org,bacaterus.com,bankiir.id,biayatarif.com,brainly.co.id,carisinyal.com,emitennews.com,empatdio.com,gadgetized.net,gamefinity.id,gammafisblog.com,gen987fm.com,hellosehat.com,iuwashplus.or.id,jagobengkel.com,kucinglucu.net,ladiestory.id,lenteratoday.com,maenhp.org,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pelindo.co.id,persis.or.id,pilihprofesi.com,prosesbayar.com,teknisitv.id,tuliskan.id,versusbeda.com##body:style(overflow: auto!important; position: unset!important;)
+affmotor.com,alkitabonline.org,bacaterus.com,bankiir.id,beritaja.com,biayatarif.com,brainly.co.id,carisinyal.com,emitennews.com,empatdio.com,gadgetized.net,gamefinity.id,gammafisblog.com,gen987fm.com,hellosehat.com,iuwashplus.or.id,jagobengkel.com,kucinglucu.net,ladiestory.id,lenteratoday.com,maenhp.org,oolean.id,pakaiatm.com,pakaibanking.com,paylaterin.com,pelindo.co.id,persis.or.id,pilihprofesi.com,prosesbayar.com,teknisitv.id,tuliskan.id,versusbeda.com##body:style(overflow: auto!important; position: unset!important;)
 ketik.co.id##html:style(scrollbar-width: unset!important;)
 !#if (adguard)
 duniagames.co.id##+js(rc, cdk-global-scrollblock, html)
