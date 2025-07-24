@@ -404,20 +404,20 @@ komikcast.*,komikcast01.*,komikcast02.*,komikindo.rip,komikindo1.*,komikindo3.*,
 ! Annoyance
 komikcast.*,komikcast01.*,komikcast02.*,komikindo.rip,komikindo1.*,komikindo3.*,komikindo4.*##+js(nowoif)
 ! -----------------------------------------------
-! Shinigami / https://shinigami.ae/
+! Shinigami / https://shinigami.bio/
 ! https://github.com/realodix/AdBlockID/issues/1768
 ! https://github.com/realodix/AdBlockID/issues/1808
 ! https://github.com/realodix/AdBlockID/issues/1810
 ! -----
-||img.shinigami.ae/*.gif
+||shngm.id/*.gif
 !
-! shinigami.*,shinigami01.*,shinigami02.*,shinigami03.*,shinigami04.*,shinigami05.*,shinigami06.*,shinigami07.*,shinigamitoon.*##a[target*="blank"]:has(> img)
+shinigami.*##.bg-base-card:has(> .flex > .inline > a:has-text(/ads@shinigami./i))
+shinigami.*##.bg-base-card:has(> a > img[alt*="-ad-"])
 /shinigami0\d+\.com/##a[target*="blank"]:has(> img)
 shinigami.*,shinigamitoon.*##a[target*="blank"]:has(> img)
 !
 ! /wp-content/plugins/halfdata-green-popups/*$domain=shinigami.*|shinigami01.*|shinigami02.*|shinigami03.*|shinigami04.*|shinigami05.*|shinigami06.*|shinigami07.*|shinigamitoon.*
 ! /wp-content/plugins/halfdata-green-popups/*$domain=/shinigami0\d+\.com/
-! shinigami.*,shinigami01.*,shinigami02.*,shinigami03.*,shinigami04.*,shinigami05.*,shinigami06.*,shinigami07.*,shinigamitoon.*##+js(aopr, lepopup_vars)
 shinigami.*,shinigamitoon.*##+js(aeld, contextmenu)
 shinigami.*,shinigamitoon.*##+js(aopr, lepopup_vars)
 /shinigami0\d+\.com/##+js(aopr, lepopup_vars)
