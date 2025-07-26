@@ -64,27 +64,25 @@ link2unlock.com##header > div:matches-css(text-align: center):has(> center > ifr
 !
 ! Beberapa rule yurasu.xyz digunakan untuk blog.yurasu.xyz (safelink), tetapi ini juga efektif
 ! untuk yurasu.xyz itu sendiri
+! - https://github.com/realodix/AdBlockID/issues?q=isekaipalace.com
 ! -----------------------------------------------
 isekaipalace.com##.fixed-lside
 isekaipalace.com##.fixed-rside
-.gif|$image,domain=yurasu.xyz
 ! Annoyance
 isekaipalace.com##*:style(user-select:text!important;)
-isekaipalace.com,yurasu.xyz##+js(adjust-setInterval)
 isekaipalace.com##+js(aopr, document.oncontextmenu)
 !
-isekaipalace.com,yurasu.xyz###timer
-isekaipalace.com,yurasu.xyz##+js(ra, disabled, button)
-isekaipalace.com,yurasu.xyz##+js(rc, hidden, button)
+isekaipalace.com###timer
+isekaipalace.com##+js(ra, disabled, button)
+isekaipalace.com##+js(rc, hidden, button)
 ! Anti-adblock
 isekaipalace.com###anchor-ad
 isekaipalace.com###floatads
-isekaipalace.com,yurasu.xyz##.adsbygoogle[data-ad-client]
+isekaipalace.com##.adsbygoogle[data-ad-client]
 @@||isekaipalace.com^$ghide
-@@||yurasu.xyz^$ghide
 !
-isekaipalace.com,yurasu.xyz##+js(set, showAds, true)
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com|yurasu.xyz
+isekaipalace.com##+js(set, showAds, true)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
 ! -----------------------------------------------
 ! alpinecorporate.com
 ! https://github.com/realodix/AdBlockID/issues/1533
