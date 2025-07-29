@@ -56,3 +56,29 @@ link2unlock.com##header > div:matches-css(text-align: center):has(> center > ifr
 ! WHITELIST
 ! ------------------------------------------------------------------------------
 @@/abdiusu/project-safelink-viomagz/*/safelink-ViomagzV3.2-2tombol$3p,script
+!
+! GROUPED BY OWNER / TYPE
+! ------------------------------------------------------------------------------
+! yurasu.xyz
+!
+! Beberapa rule yurasu.xyz digunakan untuk blog.yurasu.xyz (safelink), tetapi ini juga efektif
+! untuk yurasu.xyz itu sendiri
+! - https://github.com/realodix/AdBlockID/issues?q=isekaipalace.com
+! -----------------------------------------------
+isekaipalace.com##.fixed-lside
+isekaipalace.com##.fixed-rside
+! Annoyance
+isekaipalace.com##*:style(user-select:text!important;)
+isekaipalace.com##+js(aopr, document.oncontextmenu)
+!
+isekaipalace.com###timer
+isekaipalace.com##+js(ra, disabled, button)
+isekaipalace.com##+js(rc, hidden, button)
+! Anti-adblock
+isekaipalace.com###anchor-ad
+isekaipalace.com###floatads
+isekaipalace.com##.adsbygoogle[data-ad-client]
+@@||isekaipalace.com^$ghide
+!
+isekaipalace.com##+js(set, showAds, true)
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
