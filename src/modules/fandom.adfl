@@ -373,6 +373,16 @@ manhwaindo.com,manhwaland.asia,manhwaland.baby##div[id^="teaser"]
 manhwaindo.com,manhwaland.asia,manhwaland.baby##+js(aeld, contextmenu)
 manhwaindo.com,manhwaland.baby##+js(nowoif)
 ! -----------------------------------------------
+! onepieceberwarna.com
+! -----
+onepieceberwarna.com##a[target*="blank"]:has(> img):not(a[href*="onepieceberwarna.com"])
+! Annoyance
+onepieceberwarna.com##*:style(user-select:text!important;)
+onepieceberwarna.com##+js(acis, disableSelection, reEnable)
+onepieceberwarna.com##+js(aeld, contextmenu)
+onepieceberwarna.com##+js(aopr, document.oncontextmenu)
+/wp-content/plugins/photection/*$script,domain=onepieceberwarna.com
+! -----------------------------------------------
 ! komikcast (https://komikcast.cz/ / https://komikcast.cafe/)
 ! https://github.com/realodix/AdBlockID/issues/1804#issuecomment-2208142333
 ! https://github.com/realodix/AdBlockID/issues/1806#issuecomment-2210671249
