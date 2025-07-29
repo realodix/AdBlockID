@@ -15,7 +15,7 @@ cekresi.me,tempatwisata.pro##span:has-text(/adv/i)
 ! ANTI-ADBLOCK
 ! ------------------------------------------------------------------------------
 linkerload.com##+js(acis, addEventListener, google_ad_client)
-dz4link.com,linkpoi.me##+js(aopr, app_vars.force_disable_adblock)
+linkpoi.me##+js(aopr, app_vars.force_disable_adblock)
 linkpoi.me##+js(aopr, disableItToContinue)
 menjelajahi.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 bukutafsirmimpi.xyz,cekresi.me,tempatwisata.pro,vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
@@ -27,7 +27,6 @@ lifesurance.info##+js(set, showada, true)
 @@-ads-banner.js$domain=lifesurance.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arahtekno.com|baristakesehatan.com|dapat.link|gnaija.net|jurnalistekno.id|khaddavi.net|lokerwfh.net|tutorialsaya.com|tutwuri.id
 !
-@@||duniata.com^$ghide
 @@||mangalist.org^$ghide
 !
 jurnalistekno.id##body > .fc-ab-root
@@ -57,29 +56,3 @@ link2unlock.com##header > div:matches-css(text-align: center):has(> center > ifr
 ! WHITELIST
 ! ------------------------------------------------------------------------------
 @@/abdiusu/project-safelink-viomagz/*/safelink-ViomagzV3.2-2tombol$3p,script
-!
-! GROUPED BY OWNER / TYPE
-! ------------------------------------------------------------------------------
-! yurasu.xyz
-!
-! Beberapa rule yurasu.xyz digunakan untuk blog.yurasu.xyz (safelink), tetapi ini juga efektif
-! untuk yurasu.xyz itu sendiri
-! - https://github.com/realodix/AdBlockID/issues?q=isekaipalace.com
-! -----------------------------------------------
-isekaipalace.com##.fixed-lside
-isekaipalace.com##.fixed-rside
-! Annoyance
-isekaipalace.com##*:style(user-select:text!important;)
-isekaipalace.com##+js(aopr, document.oncontextmenu)
-!
-isekaipalace.com###timer
-isekaipalace.com##+js(ra, disabled, button)
-isekaipalace.com##+js(rc, hidden, button)
-! Anti-adblock
-isekaipalace.com###anchor-ad
-isekaipalace.com###floatads
-isekaipalace.com##.adsbygoogle[data-ad-client]
-@@||isekaipalace.com^$ghide
-!
-isekaipalace.com##+js(set, showAds, true)
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=googlesyndication_adsbygoogle.js,domain=isekaipalace.com
