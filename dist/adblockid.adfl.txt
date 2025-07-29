@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.7.131
+! Version: 25.7.132
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 29 Jul 2025 16:49 UTC
+! Last modified: 29 Jul 2025 17:17 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -4408,6 +4408,7 @@ stomp.sg##.w-full.min-h-\[120px\]:has(> .w-\[320px\].lg\:w-\[970px\])
 tnp.sg##.w-full.min-h-\[50px\].lg\:min-h-\[120px\]
 beritaharian.sg##[data-testid="advertisement-element"]
 0.0.realodix##+js(prevent-fetch, pagead2.googlesyndication.com)
+0.0.realodix##+js(prevent-window-open)
 ||01nonton.pages.dev/*.gif$image
 ||01ntn.cc/wp-content/uploads/banner/
 ||193.233.202.206/wp-content/uploads/banner/
@@ -4487,8 +4488,7 @@ adikanime.com#@#.idmuvi-banner-aftercontent
 cinemakeren6.id###adblock-message
 adikanime.com##.adik-warning
 komikstation.org##+js(aeld, /^(?:load|click)$/, popMagic)
-anibatch.moe,animekompi.run,gudangkomik.com,kawanfilm21.co,kazefuri.cloud,kazefuri.info,layarkeren.pro,mangakita.id,ngomik.net,nimegami.id,otakudesu.cloud,rebahan21.com,rebahin.lol,sektedoujin.cc,so.batkren.xyz,sob.atkren.xyz,sob4t.xyz,sokuja.uk,westmanga.me##+js(prevent-window-open)
-godriveplayer.com##+js(prevent-window-open)
+anibatch.moe,animekompi.run,gudangkomik.com,kawanfilm21.co,kazefuri.cloud,kazefuri.info,layarkeren.pro,mangakita.id,ngomik.net,nimegami.id,otakudesu.cloud,rebahan21.com,rebahin.lol,sektedoujin.cc,so.batkren.xyz,sob.atkren.xyz,sob4t.xyz,sokuja.uk,westmanga.me##+js(nowoif)
 boscinematv1.space,dramaserial21.cam###fadeinbox
 194.233.69.123,194.233.84.95,194.233.86.65,46.250.225.131,indositusxxi.id,kopajasubs.info###fb-fanbox
 anichin.cafe,anichin.social,animekhor.org,animekompi.run,animexin.dev,anoboy.be,isekaisubs.web.id,kazefuri.cloud,kazefuri.info###overplay
@@ -4584,7 +4584,7 @@ oploverz.*###floatcenter
 oploverz.*###overplay
 oploverz.*##+js(abort-current-script, Promise, delete window)
 oploverz.*##+js(aopr, SGPB_POPUP_PARAMS)
-oploverz.*##+js(prevent-window-open)
+oploverz.*##+js(nowoif)
 .gif|$image,domain=45.11.57.223|oppa.biz|oppadrama.biz
 45.11.57.223,oppa.biz,oppadrama.biz##.kln
 45.11.57.223,oppa.biz,oppadrama.biz##a[target*="blank"]:has(> img)
@@ -4627,16 +4627,16 @@ kiryuu.cc##.kln
 kiryuu.cc##a[target*="blank"]:has(> img)
 kiryuu.cc##div[id^="teaser"]
 /kiryuu0\d+\.com/##+js(aeld, contextmenu)
-/kiryuu0\d+\.com/##+js(prevent-window-open)
+/kiryuu0\d+\.com/##+js(nowoif)
 kiryuu.cc##+js(aeld, contextmenu)
-kiryuu.cc##+js(prevent-window-open)
+kiryuu.cc##+js(nowoif)
 /ads/*$to=gmbr.pro
 ||ads.gmbr.pro^
 manhwaindo.com,manhwaland.baby##.kln
 manhwaindo.com,manhwaland.baby##a[target*="blank"]
 manhwaindo.com,manhwaland.baby##div[id^="teaser"]
 manhwaindo.com,manhwaland.baby##+js(aeld, contextmenu)
-manhwaindo.com,manhwaland.baby##+js(prevent-window-open)
+manhwaindo.com,manhwaland.baby##+js(nowoif)
 onepieceberwarna.com##a[target*="blank"]:has(> img):not(a[href*="onepieceberwarna.com"])
 onepieceberwarna.com##*:style(user-select:text!important;)
 onepieceberwarna.com##+js(acis, disableSelection, reEnable)
@@ -4647,7 +4647,7 @@ komikcast.*,komikcast01.*,komikcast02.*,komikindo.rip,komikindo1.*,komikindo3.*,
 komikcast.*,komikcast01.*,komikcast02.*,komikindo.rip,komikindo1.*,komikindo3.*,komikindo4.*##.gulai_asam_manis
 komikcast.*,komikcast01.*,komikcast02.*,komikindo.rip,komikindo1.*,komikindo3.*,komikindo4.*##.kln
 komikcast.*,komikcast01.*,komikcast02.*,komikindo.rip,komikindo1.*,komikindo3.*,komikindo4.*##div[id^="teaser"]
-komikcast.*,komikcast01.*,komikcast02.*,komikindo.rip,komikindo1.*,komikindo3.*,komikindo4.*##+js(prevent-window-open)
+komikcast.*,komikcast01.*,komikcast02.*,komikindo.rip,komikindo1.*,komikindo3.*,komikindo4.*##+js(nowoif)
 ||shngm.id/*.gif
 shinigami.*##.bg-base-card:has(> .flex > .inline > a:has-text(/ads@shinigami./i))
 shinigami.*##.bg-base-card:has(> a > img[alt*="-ad-"])
@@ -4658,7 +4658,7 @@ shinigami.*,shinigamitoon.*##+js(aopr, lepopup_vars)
 /shinigami0\d+\.com/##+js(aopr, lepopup_vars)
 ?key=*&submetric=$3p,popup
 jurnalfaktual.id,kotakgame.com##+js(aopr, $.magnificPopup.open)
-beritasore.co.id,jejakmufassir.my.id,mistertekno.com##+js(prevent-window-open)
+beritasore.co.id,jejakmufassir.my.id,mistertekno.com##+js(nowoif)
 batamclick.com,editorial9.com,jarrakpos.com,mediakaltim.com,nabire.net,sandeq.co.id,suarapubliknews.net,terassulbar.com,upeks.co.id##+js(aopr, popup_custom_data)
 teropongmedia.id##.elementor-popup-modal
 teropongmedia.id##body:style(overflow: auto!important; position: unset!important;)
@@ -4910,7 +4910,7 @@ lifesurance.info##+js(set, showada, true)
 @@||mangalist.org^$ghide
 jurnalistekno.id##body > .fc-ab-root
 jurnalistekno.id##body:style(overflow: auto !important;)
-besargaji.com,dapat.link,khaddavi.net,link2unlock.com,lokerwfh.net,meong.club,techbloogs.com,tutwuri.id##+js(prevent-window-open)
+besargaji.com,dapat.link,khaddavi.net,link2unlock.com,lokerwfh.net,meong.club,techbloogs.com,tutwuri.id##+js(nowoif)
 besargaji.com,khaddavi.net,lokerwfh.net,techbloogs.com,tutwuri.id##+js(adjust-setInterval)
 cekresi.me,tempatwisata.pro##+js(adjust-setInterval, /counter|Wait/, *, 0.001)
 cekresi.me,tempatwisata.pro##+js(aeld, blur, counter)
@@ -4988,12 +4988,12 @@ gocrot.me,gocrot.org##.popup-cr7
 pusatporn18.com##+js(aeld, /^(?:load|click)$/, popMagic)
 dicrotin.*,nokephub.*##+js(aopr, SGPB_POPUP_PARAMS)
 bokepvir.*,javsubindo.*##+js(aopr, window.pum_popups)
-agenbokep.*,bandarbokep.*,bokepindo.*,doooood.co,duniabokep.*,hencop.com,indobokepin.*,javindo.*,javsubindo.*,malayporntube.net,minioppai.org,myhdjav.me,ngentub.cc,nontonbokep.*,sibokepjepang.*##+js(prevent-window-open)
+agenbokep.*,bandarbokep.*,bokepindo.*,doooood.co,duniabokep.*,hencop.com,indobokepin.*,javindo.*,javsubindo.*,malayporntube.net,minioppai.org,myhdjav.me,ngentub.cc,nontonbokep.*,sibokepjepang.*##+js(nowoif)
 kingbokep.*##*:style(user-select:text!important;)
 pusatporn18.com##.content-post center:has(> a > img)
 doujindesu.tv,igodesu.tv,javdesu.tv##a[target*="blank"]:has(> img)
 doujindesu.tv##+js(aopr, document.oncontextmenu)
-doujindesu.tv,igodesu.tv##+js(prevent-window-open)
+doujindesu.tv,igodesu.tv##+js(nowoif)
 drbokep.*##a[target*="blank"]:has(> img)
 pemersatufun.com###advertisement
 pemersatu.top##.ad-container
@@ -5026,7 +5026,7 @@ buahmangga.com,dibalik.com,digoreng.com,dimakan.com,forumsemut.com,masuk123.com,
 66.29.129.107,66.29.129.111,66.29.129.114,66.29.129.115,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.net,avtub.pet,avtubflix.com,bokepid.*,bokepsin.*,omekin.id,pasarbokep.id,playbokep.*,rajabokep.*,sangelink.com.de,sangetube.*,simontokreal.com,vibokep.*##.close-text
 66.29.129.107,66.29.129.111,66.29.129.114,66.29.129.115,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.net,avtub.pet,avtubflix.com,bokepid.*,bokepsin.*,omekin.id,pasarbokep.id,playbokep.*,rajabokep.*,sangelink.com.de,sangetube.*,simontokreal.com,vibokep.*##a[target*="blank"]:has(> img)
 66.29.129.107,66.29.129.111,66.29.129.114,66.29.129.115,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.net,avtub.pet,avtubflix.com,bokepid.*,bokepsin.*,omekin.id,pasarbokep.id,playbokep.*,rajabokep.*,sangelink.com.de,sangetube.*,simontokreal.com,vibokep.*##+js(aopr, ujiPopups)
-66.29.129.107,66.29.129.111,66.29.129.114,66.29.129.115,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.net,avtub.pet,avtubflix.com,bokepid.*,bokepsin.*,omekin.id,pasarbokep.id,playbokep.*,rajabokep.*,sangelink.com.de,sangetube.*,simontokreal.com,vibokep.*##+js(prevent-window-open)
+66.29.129.107,66.29.129.111,66.29.129.114,66.29.129.115,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.net,avtub.pet,avtubflix.com,bokepid.*,bokepsin.*,omekin.id,pasarbokep.id,playbokep.*,rajabokep.*,sangelink.com.de,sangetube.*,simontokreal.com,vibokep.*##+js(nowoif)
 bacol.*,herbplaster.world##.ads
 bacol.*,herbplaster.world##.code-block
 bacol.*,herbplaster.world##a:has(> img[src$=".gif"])
@@ -5039,12 +5039,12 @@ nekopoi.*##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; p
 rumahbokep.*,videocrot.*,websitebokep-id.*##.inside-player-ad
 rumahbokep.*,videocrot.*,websitebokep-id.*##a[target*="blank"]:has(> img)
 rumahbokep.*,videocrot.*,websitebokep-id.*##+js(aeld, contextmenu)
-rumahbokep.*,videocrot.*,websitebokep-id.*##+js(prevent-window-open)
+rumahbokep.*,videocrot.*,websitebokep-id.*##+js(nowoif)
 rumahbokep.*,videocrot.*,websitebokep-id.*##body > div[style^="position: fixed; display: block; width: 100%; height: 100%;"]
 rumahbokep.*,videocrot.*,websitebokep-id.*##iframe.padPreload[style^="width: 0px; height: 0px; position: absolute;"]
 bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.*,kamarbokep.*,kebokepanku.*,ruangbokep.*,ruangbokep99.*,sibokep.*##.btm_ban
 bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.*,kamarbokep.*,kebokepanku.*,ruangbokep.*,ruangbokep99.*,sibokep.*##a[target*="blank"]:has(> img)
-bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.*,kamarbokep.*,kebokepanku.*,ruangbokep.*,ruangbokep99.*,sibokep.*##+js(prevent-window-open)
+bokepcrot.*,bokepcrot69.*,bokepkita.*,bokepsex.*,inibokep.*,kamarbokep.*,kebokepanku.*,ruangbokep.*,ruangbokep99.*,sibokep.*##+js(nowoif)
 /luxury_hd_dvd_hd.mp4$media
 ||imgur.com/PptFxqt.$image
 /*capsa*.gif$image
