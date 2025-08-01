@@ -71,7 +71,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
    - **uBlock Origin**: Pada table di atas, klik `Subscribe` atau tambahkan `Raw link` di kotak import. Lebih lanjut lihat [`Import 3rd-party filter lists`](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web#import-3rd-party-filter-lists).
 
 #### Mobile
-- **Browser (Android)**: Anda dapat menggunakan [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock) pada browser yang mendukung extensi, seperti [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox), [Mises](https://play.google.com/store/apps/details?id=site.mises.browser), [Lemur](https://play.google.com/store/apps/details?id=com.lemurbrowser.exts) dan [Waterfox](https://play.google.com/store/apps/details?id=net.waterfox.android.release). Cara install AdBlockID mirip seperti di desktop.
+- **Browser (Android)**: Anda dapat menggunakan [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock) pada browser yang mendukung extensi, seperti [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox) dan [Microsoft Edge](https://play.google.com/store/apps/details?id=com.microsoft.emmx). Cara install AdBlockID mirip seperti di desktop.
 - **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), aktifkan AdBlockID di bagian *language-specific*.
 - **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
 
