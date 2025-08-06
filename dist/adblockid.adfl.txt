@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.8.9
+! Version: 25.8.10
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 05 Aug 2025 16:45 UTC
+! Last modified: 06 Aug 2025 11:24 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -3208,6 +3208,7 @@ caritau.com##a:not(a[href^="https://caritau.com"]):has(> img[src^="https://carit
 deweezz.com,naikmotor.com,nusabali.com,pyfahealth.com##a[href*="bit.ly/"]:has(> img)
 newsbandaaceh.com,sidakpost.id,timur-online.com##a[href="#"]:has(> img)
 pilihanpro.id##a[href^="https://accesstrade.co.id/sl.php"].tcb-button-link
+diskursusnetwork.com##a[href^="https://maps.app.goo.gl/"]:has(> img)
 prudensi.com##a[href^="https://prudensi.com/category/advertorial/"]:has(> img)
 suarakuningan.com##a[href^="https://s.shopee.co.id/"]
 1cak.com,informasilomba.com,pojokreview.com##a[href^="https://shope.ee/"]:has(> img)
@@ -4010,9 +4011,7 @@ blog.tribunjualbeli.com,bolanas.com,bolasport.com,grid.id,gridoto.com,juara.net,
 @@/api/ads/*$xhr,domain=klasika.kompas.com
 @@/wp-content/uploads/*$1p,image,domain=korporasi.kompas.id
 grid.id##*::selection:style(color:white!important;background:#0078d7!important;)
-gridoto.com,kompasiana.com,sonora.id,tribunnews.com##+js(aeld, /copy|keydown/)
 kontan.co.id##.popup
-/copy_credit.$script,domain=kompas.com
 ||akcdn.detik.net.id/community/media/*/gif-banner-
 ||detik.com^*/bannerinternal/
 haibunda.com###balloonads
@@ -4733,9 +4732,12 @@ kuyhaacracks.com##article .code-block:has(center > button:has-text(/unduh/i))
 darmediatama.com##article > .code-block > button:has-text(/download/i)
 kuyhaa.id##article center:has(.button-container > button:has-text(/download/i))
 bagas3-1.com,bagas31.org,bagas31.pw##button[onclick^="handleDownload" i]
+/copy_credit.$script,domain=kompas.com
+||sindonews.com/sc-v1.js
+||tribunnews.com/js/copy.js
+gridoto.com,kompasiana.com,sonora.id,tribunnews.com##+js(aeld, /copy|keydown/)
 katadata.co.id##+js(aopr, addLink)
 tirto.id##+js(rc, container900, div)
-/copylink/copylink-urlonly.$script
 paylaterin.com##+js(aopr, $, js_zerobounce_get_url)
 ngelag.com##+js(set, window.onpopstate, noopFunc)
 tipskerja.com##+js(refresh-defuser)
