@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.8.26
+! Version: 25.8.27
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 17 Aug 2025 09:39 UTC
+! Last modified: 17 Aug 2025 18:25 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -4093,8 +4093,9 @@ beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[clas
 transtv.co.id##+js(ra, oncontextmenu, html)
 detik.com##body:style(overflow: auto !important;)
 ||cnbcindonesia.com/cnbc/js/clipboard.js
-/banner/*$image,domain=kapanlagi.com
+||klimg.com/d.kapanlaginetwork.com/banner/
 bola.net###content-news .w100p:has([id^="div-gpt-ad"])
+bola.com,bola.net,merdeka.com,otosia.com###in-image-ads
 bola.net###top_leaderboard:has(> [id^="div-gpt-ad"])
 briliobeauty.net,briliofood.net,techno.id##.ads-container
 dream.co.id,kapanlagi.com,merdeka.com,otosia.com##.banner
@@ -4104,7 +4105,7 @@ kapanlagi.com##.banner-small
 otosia.com##.bottomframe:has(> [id^="gpt-ad-"])
 kapanlagi.com##.box--banner
 dream.co.id##.col-banner
-dream.co.id,kapanlagi.com##.dfp-bframe-cont:has([id*="div-gpt-ad-"])
+dream.co.id,kapanlagi.com,techno.id##.dfp-bframe-cont:has([id*="div-gpt-ad-"])
 liputan6.com##.headline_ad__box
 dream.co.id,merdeka.com##.masthead
 brilio.net,briliobeauty.net,briliofood.net,techno.id##.placeholder-container:has(> .ads-container)
@@ -4360,10 +4361,10 @@ livesports044.com,marza11.shop##.banner
 livesports044.com,marza11.shop##*:style(scrollbar-width: thin!important;)
 livesports044.com,marza11.shop##+js(aopr, document.oncontextmenu)
 rbtv77.im###divFLRAbottom
-fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*##*:style(scrollbar-width: thin!important;)
-fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*##:matches-path(/id) div:matches-css(position: fixed):has(> img)
-fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
-fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
+fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*,rbtvplus04.*##*:style(scrollbar-width: thin!important;)
+fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*,rbtvplus04.*##:matches-path(/id) div:matches-css(position: fixed):has(> img)
+fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*,rbtvplus04.*##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
+fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*,rbtvplus04.*##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
 /^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##*:has-text(/(rbtv|superabbit)77/i):style(scrollbar-width: thin!important;)
 /^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: fixed):has(> img)
 /^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
