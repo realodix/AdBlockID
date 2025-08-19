@@ -682,3 +682,15 @@ enfoladyzjklcright.shop,nwiwsgreaterrfakifood.shop##:matches-path(/id) iframe + 
 ! -----
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
+! ------------------------------------------------------------------------------
+! lihatgambar.my.id
+! - https://github.com/realodix/AdBlockID/issues/1933
+! - https://github.com/AdguardTeam/AdguardFilters/issues/211064
+! -----
+@@||a-ads.com^$domain=lihatgambar.my.id
+@@||cloudflareinsights.com/beacon.min.js/$domain=lihatgambar.my.id
+@@||lihatgambar.my.id/js/adanalytics.js$1p,script
+@@||lihatgambar.my.id^$ghide
+!
+lihatgambar.my.id##.fc-ab-root
+lihatgambar.my.id##body:style(overflow: auto!important; position: unset!important;)
