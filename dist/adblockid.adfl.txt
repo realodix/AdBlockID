@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.9.6
+! Version: 25.9.7
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 16 Sep 2025 09:36 UTC
+! Last modified: 16 Sep 2025 09:55 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -5075,6 +5075,8 @@ bacol.*,herbplaster.world##.code-block
 bacol.*,herbplaster.world##a:has(> img[src$=".gif"])
 bacol.*,herbplaster.world##a:has(> img[src$=".webp"])
 bacol.*,herbplaster.world##[style*="cursor:"][style*="user-select: none;"][style*="z-index:"]
+bacol.*##+js(aeld, contextmenu)
+bacol.*##+js(prevent-window-open)
 nekopoi.*###popup
 drakorwovel.my.id,nekopoi.*##a[target*="blank"]:has(> img)
 nekopoi.*##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
