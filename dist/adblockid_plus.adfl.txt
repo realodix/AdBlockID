@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.7.3
+! Version: 25.9.1
 ! Title: AdBlockID Plus
 ! Description: Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID.
-! Last modified: 29 Jul 2025 07:54 UTC
+! Last modified: 25 Sep 2025 12:20 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/realodix/AdBlockID
 apkmody.io###above-the-fold-ad
@@ -111,9 +111,9 @@ dood.*##+js(acis, adcashMacros)
 dood.*##+js(acis, parseInt, break;case $.)
 dood.*##+js(aopw, DoodPop)
 dood.*##+js(aopw, _pop)
-dodz.pro,ds2play.com##+js(prevent-window-open)
+dodz.pro,ds2play.com##+js(nowoif)
 streamtape.*##+js(acis, JSON.parse, Promise)
-streamtape.*##+js(prevent-window-open)
+streamtape.*##+js(nowoif)
 streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 haxnode.net##[id^="haxno-"] .dl-btn
 crackedhome.com,crackwin.net,filesmama.com,ziapc.org##center > a[href^="javascript:"]
@@ -124,6 +124,8 @@ crackit.org,oceancrack.com,procrackerz.org##*:style(user-select:text!important;)
 crackit.org,oceancrack.com,procrackerz.org##+js(aopr, disableSelection)
 crackit.org,oceancrack.com,procrackerz.org##+js(aopr, document.oncontextmenu)
 ||cdn.jsdelivr.net/npm/disable-devtool@$3p,script
+kompas.id##.non-paywall:style(display: block !important;)
+kompas.id##.paywall
 /^https?:\/\/(?:www\.)?1wsxz([a-z])\.top/$all
 /^https?:\/\/(?:www\.)?11tbet([1-9]{1,2}[a-z])\.top/$all
 /^https?:\/\/(?:www\.)?22rbet([a-z]|[1-9][a-z])\.top/$all
