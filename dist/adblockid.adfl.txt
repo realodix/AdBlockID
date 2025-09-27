@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.9.18
+! Version: 25.9.19
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 27 Sep 2025 18:17 UTC
+! Last modified: 27 Sep 2025 18:28 UTC
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -4541,8 +4541,10 @@ jeniusplay.com##.pppppup
 godriveplayer.net,jeniusplay.com##.pppx
 idlixku.com##.swal-overlay
 sokuja.uk##.video-content > div:has(> div[align="center"] > a[onclick*="none"])
+idlixku.com##[id^="modal_"]:matches-css(position: fixed)
 sokuja.uk##body > div:matches-css(position: fixed)
 sokuja.uk##div:matches-css(position: fixed):has(> div > #countdown)
+idlixku.com##html:style(overflow: auto !important;)
 layarkeren.pro,mangakita.id,russsmithlaw.com,skren21.xyz,so.batkren.xyz,sob.atkren.xyz,sokuja.uk,wibudesu.co##+js(aopr, popup_custom_data)
 gudangmovies21.chat,sattorrent.com,soulscans.my.id##+js(aopr, SGPB_POPUP_PARAMS)
 komikstation.org##+js(acis, JSON.parse, break;case $.)
