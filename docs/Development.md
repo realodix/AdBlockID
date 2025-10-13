@@ -1,4 +1,4 @@
-## Panduan Menulis Filter
+## 📃 Panduan Menulis Filter
 
 Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 
@@ -9,8 +9,7 @@ Panduan ini dirancang untuk membantu Anda menulis dan mengelola filter.
 - [Syntax meanings that are actually human readable](https://github.com/DandelionSprout/adfilt/blob/master/Wiki/SyntaxMeaningsThatAreActuallyHumanReadable.md)
 
 
-
-## Struktur Direktori
+## 📁 Struktur Direktori
 
 Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberapa file.
 
@@ -48,38 +47,38 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 </sup>
 
 
-## Development Tools
-### Requirements
+## 🛠️ Pengelolaan
 
-- [Python v3.5+](https://www.python.org/downloads/)
-- [pip](https://pypi.org/project/pip/)
+AdBlockID menggunakan [Hippo](https://github.com/realodix/hippo) sebagai *tooling* untuk mengelola dan memelihara daftar filter. Hippo membantu dalam proses sortir, membersihkan, dan menggabungkan filter di folder `src` menjadi file tunggal di `dist`, sehingga pemeliharaan menjadi mudah dan efisien tanpa editing manual.
 
-Setelah semua sudah terinstall di komputer Anda, lalu jalankan perintah ini:
+### Kebutuhan
 
-`pip install -e tools/filter-combiner`
+Pastikan lingkungan pengembangan Anda sudah memiliki:
 
-#### Terminal Command
+- [PHP](https://www.php.net/) 8.3.26 atau versi terbaru
+- [Composer](https://getcomposer.org/)
 
-- `./build.sh`
+### Instalasi
 
-  Mengurutkan dan merapikan filter pada folder `src`, serta menggabungkannya ke dalam 1 file di folder `dist`.
+Setelah _kebutuhan_ di atas terpasang, jalankan command `composer install` di direktori root AdBlockID. Ini akan mengunduh dan menyiapkan Hippo. Jika ada error (misalnya PHP version mismatch), periksa _kebutuhan_ di atas.
 
-  VSCode Task: **`Build`**
+### Penggunaan
 
-- `flcombine -i abid=. template/adblockid.template.txt dist/adblockid.adfl.txt`
+Hippo menyediakan beberapa command utama untuk memelihara daftar filter AdBlockID:
 
-  Menggabungkan semua filter AdBlockID pada folder `src` ke dalam 1 file (`dist/adblockid.adfl.txt`).
+- `./vendor/bin/hippo fix`
 
-- `flcombine -i abid=. template/adblockid_plus.template.txt dist/adblockid_plus.adfl.txt`
+  Mengurutkan dan merapikan daftar filter.
 
-  Menggabungkan semua filter AdBlockID Plus pada folder `src` ke dalam 1 file (`dist/adblockid_plus.adfl.txt`).
+  VSCode Task: `Fix`
 
-- `python tools/fop/fop.py -d src`
+- `./vendor/bin/hippo build`
 
-  Mengurutkan dan merapikan filter.
+  Menggabungkan semua filter dari folder `src/` menjadi satu file di folder `dist/`.
 
-  VSCode Task: **`FOP`**
+  VSCode Task: `Build`
 
-#### Web Service
+
+## 🔗 Layanan Web
 - [ABP Redundancy check](https://adblockplus.org/redundancy_check)
 - [ABPVN Redundancy check](https://abpvn.com/ruleChecker/redundantRuleChecker.html)
