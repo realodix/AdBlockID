@@ -1,0 +1,20 @@
+{
+    "require": {
+        "realodix/hippo": "dev-main"
+    },
+    "repositories": [{"type": "vcs", "url": "https://github.com/realodix/hippo"}],
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "cs": "./vendor/bin/hippo filter:process src --cache .tmp/ -i _reference.txt",
+        "abid": [
+            "@cs",
+            "flcombine -i abid=. template/adblockid.template.txt dist/adblockid.adfl.txt"
+        ],
+        "abidplus": [
+            "@cs",
+            "flcombine -i abid=. template/adblockid_plus.template.txt dist/adblockid_plus.adfl.txt"
+        ]
+    }
+}

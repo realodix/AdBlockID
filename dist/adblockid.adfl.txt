@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 25.9.23
+! Version: 25.10.1
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: 30 Sep 2025 16:31 UTC
+! Last modified: Mon, 13 Oct 2025 04:10:25 +0000
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -3766,11 +3766,11 @@ codeflare.net###adBlockInfo
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=kbm.id
 padangbulan.co.id#@#.ad-center
 sharer.my.id#@#.showads
+jurnalfaktual.id##.ad-wrap
+surgatekno.com##ins[data-ad-client]
 @@||deras.id^$ghide
 @@||jurnalfaktual.id^$ghide
 @@||surgatekno.com^$ghide
-jurnalfaktual.id##.ad-wrap
-surgatekno.com##ins[data-ad-client]
 ##.demo-wrapper[style="display:none;"] + div.fadeInDown[id]
 ##body > div.demo-wrapper[style="display:none;"] + div[id][class]
 ###idmuvi-adb-enabled
@@ -3852,7 +3852,7 @@ aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id
 @@||rajaiklan.org^$ghide
 ||wpfc.ml/b.gif$image,redirect=1x1.gif,domain=pinterpolitik.com
 ||googletagmanager.com/gtm.js$script,redirect=googletagmanager_gtm.js,domain=orami.co.id
-@@||inwepo.co^$ghide,badfilter
+@@||inwepo.co^$badfilter,ghide
 @@||apis.google.com/js/platform.js$domain=tiket.com
 ads.id###header a[target="_blank"]:has(> img)
 ads.id##.adManager
@@ -4092,10 +4092,10 @@ detik.com##div:matches-css(width: 300px):matches-css(min-height:250px):has(scrip
 detik.com##div:matches-css(width: 970px):matches-css(height: 250px):has(center > [id^="div-gpt-ad-"])
 insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-height:250px;margin:0px auto 0px;"] > div[id^="div-gpt-ad-"])
 cnbcindonesia.com##div[style^="width: 100%; height:400px;"]:has(> [style^="position:sticky"])
+beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
 @@/ads/*$domain=adsmart.detik.com
 @@/videojs.ads.$domain=20.detik.com
 @@||adsmart.detik.com^$ghide
-beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
 transtv.co.id##+js(ra, oncontextmenu, html)
 detik.com##body:style(overflow: auto !important;)
 ||cnbcindonesia.com/cnbc/js/clipboard.js
@@ -4321,8 +4321,8 @@ gooto.com#@#.sticky-ad
 tempo.co##body.pad-apps:style(padding-top: 0!important;)
 ##body > #cont-megabillboard.t600
 ##body > [id="megabillboard"][style="position: relative;width: 100% !important;"]
-/^((?!-)[a-z0-9-]{1,63}\.)*?((?!-)[a-z0-9-]{1,63})\.(id|co\.id|com|co|info|net|news)$/##body:has-text(/(ProMedia Teknologi|Ayo Media Network)/i) .ads
 kabarbumn.com##.ads
+/^((?!-)[a-z0-9-]{1,63}\.)*?((?!-)[a-z0-9-]{1,63})\.(id|co\.id|com|co|info|net|news)$/##body:has-text(/(ProMedia Teknologi|Ayo Media Network)/i) .ads
 muslimterkini.id###AdAAnchor
 hops.id##.footer_stickyexp
 hops.id,unews.id###sliderDiv:has(> [id^="ats-insert_ads-"])
@@ -4361,26 +4361,26 @@ nobartvgratis.com##a:has(> img[src$=".gif"])
 nobartvgratis.com##body:style(overflow: auto!important; position: unset!important;)
 ||cfcdn.apcqwd.com/prod/svimg/*.gif|$image
 ||cfcdn.xdapiym5297.com/prod/svimg/*.gif|$image
+livesports044.com,marza11.shop##.banner
 /tigoals\d+\.com/##.banner
 /tigoals\d+\.com/##.gg-list:has(:is(.gg-txt-discount, .gg-txt-bonus))
-livesports044.com,marza11.shop##.banner
-/tigoals\d+\.com/##*:style(scrollbar-width: thin!important;)
-/tigoals\d+\.com/##+js(aopr, document.oncontextmenu)
 livesports044.com,marza11.shop##*:style(scrollbar-width: thin!important;)
 livesports044.com,marza11.shop##+js(aopr, document.oncontextmenu)
+/tigoals\d+\.com/##*:style(scrollbar-width: thin!important;)
+/tigoals\d+\.com/##+js(aopr, document.oncontextmenu)
 rbtv77.im###divFLRAbottom
 fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*,rbtvplus04.*,rbtvplus05.*,rbtvplus06.*##*:style(scrollbar-width: thin!important;)
 fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*,rbtvplus04.*,rbtvplus05.*,rbtvplus06.*##:matches-path(/id) div:matches-css(position: fixed):has(> img)
 fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*,rbtvplus04.*,rbtvplus05.*,rbtvplus06.*##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
 fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*,rbtvplus04.*,rbtvplus05.*,rbtvplus06.*##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
-/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##*:has-text(/(rbtv|superabbit)77/i):style(scrollbar-width: thin!important;)
-/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: fixed):has(> img)
-/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
-/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) iframe + div:matches-css(position: absolute):has(> img)
 enfoladyzjklcright.shop,nwiwsgreaterrfakifood.shop##*:style(scrollbar-width: thin!important;)
 enfoladyzjklcright.shop,nwiwsgreaterrfakifood.shop##:matches-path(/id) div:matches-css(position: fixed):has(> img)
 enfoladyzjklcright.shop,nwiwsgreaterrfakifood.shop##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
 enfoladyzjklcright.shop,nwiwsgreaterrfakifood.shop##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
+/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##*:has-text(/(rbtv|superabbit)77/i):style(scrollbar-width: thin!important;)
+/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: fixed):has(> img)
+/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
+/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) iframe + div:matches-css(position: absolute):has(> img)
 apabeda.com,membedakan.com##+js(aopr, SGPB_POPUP_PARAMS)
 apabeda.com,membedakan.com##+js(window.open-defuser)
 @@||a-ads.com^$domain=lihatgambar.my.id
@@ -4418,7 +4418,7 @@ detik.com##header:style(margin: 0!important; padding: 0!important;)
 ~emak2blogger.com##[href*="//emak2blogger.com"]:has(img)
 ~emak2blogger.com##[href*="//s.id/EmakBlogger"]:has(img)
 !#if adguard
-/^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$document,popup,subdocument,badfilter
+/^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$badfilter,document,popup,subdocument
 !#endif
 id.alongwalker.co##.ads_fullbox
 id.theasianparent.com##.bottom-sticky.only-mobile.layer-bsa-bn:style(min-height: 0 !important;)
@@ -4514,8 +4514,8 @@ blurayufr.cam##+js(acis, chp_ads_blocker_detector)
 ainzscans.net,kumapoi.info##+js(noeval-if, /chp_?ad/)
 layardrama21.*,yuramanga.my.id##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
 crotpedia.net##+js(noeval-if, ads)
-@@||mangalist.org/url/lib/$1p,script
 mangalist.org#@#.adsbygoogle
+@@||mangalist.org/url/lib/$1p,script
 @@||mangaindo.*^$ghide
 @@||worldnovel.my.id^$ghide
 adikanime.com#@#.idmuvi-banner-aftercontent
@@ -4605,8 +4605,8 @@ dramaserial.id,juragan.*##a[target*="blank"]:has(> img)
 dramaserial.id##+js(aopr, $.magnificPopup.open)
 juragan.*##.popbox
 juragan.*##body:style(overflow: auto!important; position: unset!important;)
-@@||p.jwpcdn.com/player/plugins/vast/$domain=dramaserial.id|juragan.*|juraganfilm.info
 dramaserial.id,juragan.*#@#.idmuvi-topbanner
+@@||p.jwpcdn.com/player/plugins/vast/$domain=dramaserial.id|juragan.*|juraganfilm.info
 kuronime.fun###overplay
 kuronime.fun##.kln
 kuronime.fun##div[id^="teaser"]
@@ -4659,26 +4659,26 @@ ayononton.app,bioskopkeren.gg,cinemaindo.dev,d21.im,ditonton.dev,dunia21.ceo,fil
 ayononton.app,bioskopkeren.gg,cinemaindo.dev,d21.im,ditonton.dev,dunia21.ceo,filmapik.my,ganool.app,gudangmovies21.host,movieon21.mov,movies21.ing,nonton.app,nontonfilm.app,teman21.app,terbit21.ws,terbit21official.site###top-banner
 ayononton.app,bioskopkeren.gg,cinemaindo.dev,d21.im,ditonton.dev,dunia21.ceo,filmapik.my,ganool.app,gudangmovies21.host,movieon21.mov,movies21.ing,nonton.app,nontonfilm.app,t21.press,teman21.app,terbit21.ws,terbit21official.site##a[target*="blank"]:has(> img)
 ayononton.app,bioskopkeren.gg,cinemaindo.dev,d21.im,ditonton.dev,dunia21.ceo,filmapik.my,ganool.app,gudangmovies21.host,movieon21.mov,movies21.ing,nonton.app,nontonfilm.app,t21.press,teman21.app,terbit21.ws,terbit21official.site##+js(nowoif)
+cosmicscans.asia,novascans.id###floatcenter
+cosmicscans.asia,novascans.id##.kln
+cosmicscans.asia,novascans.id##a[target*="blank"]:has(> img)
 /cosmic\d+\.co/###floatcenter
 /cosmic\d+\.co/##.kln
 /cosmic\d+\.co/##a[target*="blank"]:has(> img)
 /kmvs\d+\.com/###floatcenter
 /kmvs\d+\.com/##.kln
 /kmvs\d+\.com/##a[target*="blank"]:has(> img)
-cosmicscans.asia,novascans.id###floatcenter
-cosmicscans.asia,novascans.id##.kln
-cosmicscans.asia,novascans.id##a[target*="blank"]:has(> img)
+kiryuu.cc##.kln
+kiryuu.cc##a[target*="blank"]:has(> img)
+kiryuu.cc##div[id^="teaser"]
 /kiryuu0\d+\.com/###floatcenter
 /kiryuu0\d+\.com/##.kln
 /kiryuu0\d+\.com/##a[target*="blank"]:has(> img)
 /kiryuu0\d+\.com/##div[id^="teaser"]
-kiryuu.cc##.kln
-kiryuu.cc##a[target*="blank"]:has(> img)
-kiryuu.cc##div[id^="teaser"]
-/kiryuu0\d+\.com/##+js(aeld, contextmenu)
-/kiryuu0\d+\.com/##+js(nowoif)
 kiryuu.cc##+js(aeld, contextmenu)
 kiryuu.cc##+js(nowoif)
+/kiryuu0\d+\.com/##+js(aeld, contextmenu)
+/kiryuu0\d+\.com/##+js(nowoif)
 /ads/*$to=gmbr.pro
 ||ads.gmbr.pro^
 manhwaindo.com,manhwaland.baby##.kln
@@ -4703,8 +4703,8 @@ komikdewasa.mom,komikindo1.*,komikindo2.*,komikindo3.*,komikindo4.*,mangatoon.cc
 ||shngm.id/*.gif
 shinigami.*##.bg-base-card:has(> .flex > .inline > a:has-text(/ads@shinigami./i))
 shinigami.*##.bg-base-card:has(> a > img[alt*="-ad-"])
-/shinigami0\d+\.com/##a[target*="blank"]:has(> img)
 shinigami.*,shinigamitoon.*##a[target*="blank"]:has(> img)
+/shinigami0\d+\.com/##a[target*="blank"]:has(> img)
 shinigami.*,shinigamitoon.*##+js(aeld, contextmenu)
 shinigami.*,shinigamitoon.*##+js(aopr, lepopup_vars)
 /shinigami0\d+\.com/##+js(aopr, lepopup_vars)
@@ -5017,7 +5017,7 @@ lendirqu.*##.popup-banner
 indoporntv.*##.vertbars-300
 agenbokep.*,bandarbokep.*,ceritanakal.com,duniabokep.*,indobokepin.*,javsubindo.*,nontonbokep.*,pascol.*##a:has(> img[src$=".gif"])
 pejuanglendir.com##a:not([href="https://www.pejuanglendir.com/"]):has(> img)
-agenbokep.*,bandarbokep.*,bokepindo.*,bokepindo21.*,bokepjilbab.*,bokepvir.*,cctvbokep.*,dosensesat.pw,duniabokep.*,filmnikmat.*,filmnikmattv1.cam,gocrot.me,gocrot.org,hencop.com,igo-bokep.*,igobokep.*,javindo.*,javsubindo.*,kesiangan.com,lendirpedia.*,malayporntube.net,minioppai.org,myhdjav.me,ngentub.cc,ngocoks.com,nntnbkptv2.space,nokephub.*,nontonbokep.*,nontonhentai.net,nontonhentai.org,omahbokep.*,pascol.*,rumahperjaka.*,seponghub.*,sibokepjepang.*,terviral.cam##a[target*="blank"]:has(> img)
+18subindo.com,agenbokep.*,bandarbokep.*,bokepindo.*,bokepindo21.*,bokepjilbab.*,bokepvir.*,cctvbokep.*,dosensesat.pw,duniabokep.*,filmnikmat.*,filmnikmattv1.cam,gocrot.me,gocrot.org,hencop.com,igo-bokep.*,igobokep.*,javindo.*,javsubindo.*,kesiangan.com,lendirpedia.*,malayporntube.net,minioppai.org,myhdjav.me,ngentub.cc,ngocoks.com,nntnbkptv2.space,nokephub.*,nontonbokep.*,nontonhentai.net,nontonhentai.org,omahbokep.*,pascol.*,rumahperjaka.*,seponghub.*,sibokepjepang.*,terviral.cam##a[target*="blank"]:has(> img)
 bokep360.*##a[title="banner" i]:has(> img)
 bluevid.cam,filmjepangku.com,hencop.com,javsubindo.*,lendirpedia.*,minioppai.org,pascol.*,pemersatu.link,starjepang.wiki,terviral.cam##body > div[id^="teaser"]
 indoporn.*##div:has(> .adsbyexoclick)
@@ -6349,6 +6349,9 @@ _topbandar_$image
 ##[href="https://tembak.pro/film"]
 ##[href="https://tembak.pro/gf"]
 ##[href="https://tiny.one/lgoindoanimasu"]
+##[href="https://tinyurl.com/18subindo"]
+##[href="https://tinyurl.com/18subindo1"]
+##[href="https://tinyurl.com/18subindo2"]
 ##[href="https://tinyurl.com/AnimasuStream"]
 ##[href="https://tinyurl.com/Animasuu"]
 ##[href="https://tinyurl.com/GACORBD"]
@@ -6627,4 +6630,4 @@ kisahdunia.com##+js(aost, DOMTokenList.prototype.contains, manageBodyClasses)
 azhan.co,mediahiburan.my##+js(acis, disableSelection, reEnable)
 mediahiburan.my##+js(acis, document.oncontextmenu)
 ohmymedia.cc###mvp-site-main:style(margin-top: 0!important;)
-! :: AdBlockID Filter Combiner v1.4.0
+
