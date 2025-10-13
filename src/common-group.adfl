@@ -270,10 +270,10 @@ detik.com##div:matches-css(width: 970px):matches-css(height: 250px):has(center >
 insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-height:250px;margin:0px auto 0px;"] > div[id^="div-gpt-ad-"])
 cnbcindonesia.com##div[style^="width: 100%; height:400px;"]:has(> [style^="position:sticky"])
 ! Unbreak
+beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
 @@/ads/*$domain=adsmart.detik.com
 @@/videojs.ads.$domain=20.detik.com
 @@||adsmart.detik.com^$ghide
-beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
 ! Annoyance
 transtv.co.id##+js(ra, oncontextmenu, html)
 detik.com##body:style(overflow: auto !important;)
@@ -568,8 +568,8 @@ tempo.co##body.pad-apps:style(padding-top: 0!important;)
 ##body > #cont-megabillboard.t600
 ##body > [id="megabillboard"][style="position: relative;width: 100% !important;"]
 !
-/^((?!-)[a-z0-9-]{1,63}\.)*?((?!-)[a-z0-9-]{1,63})\.(id|co\.id|com|co|info|net|news)$/##body:has-text(/(ProMedia Teknologi|Ayo Media Network)/i) .ads
 kabarbumn.com##.ads
+/^((?!-)[a-z0-9-]{1,63}\.)*?((?!-)[a-z0-9-]{1,63})\.(id|co\.id|com|co|info|net|news)$/##body:has-text(/(ProMedia Teknologi|Ayo Media Network)/i) .ads
 !
 muslimterkini.id###AdAAnchor
 hops.id##.footer_stickyexp
@@ -643,14 +643,14 @@ nobartvgratis.com##body:style(overflow: auto!important; position: unset!importan
 ||cfcdn.apcqwd.com/prod/svimg/*.gif|$image
 ||cfcdn.xdapiym5297.com/prod/svimg/*.gif|$image
 !
+livesports044.com,marza11.shop##.banner
 /tigoals\d+\.com/##.banner
 /tigoals\d+\.com/##.gg-list:has(:is(.gg-txt-discount, .gg-txt-bonus))
-livesports044.com,marza11.shop##.banner
 ! Annoyance
-/tigoals\d+\.com/##*:style(scrollbar-width: thin!important;)
-/tigoals\d+\.com/##+js(aopr, document.oncontextmenu)
 livesports044.com,marza11.shop##*:style(scrollbar-width: thin!important;)
 livesports044.com,marza11.shop##+js(aopr, document.oncontextmenu)
+/tigoals\d+\.com/##*:style(scrollbar-width: thin!important;)
+/tigoals\d+\.com/##+js(aopr, document.oncontextmenu)
 ! ------------------------------------------------------------------------------
 ! RBTV77 - https://sites.google.com/view/rbtvpluslink6
 ! https://github.com/realodix/AdBlockID/issues/1752
@@ -666,14 +666,14 @@ fctv33.*,fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*,rbtvplus02.*,rbtvplus03.*,r
 ! fctv77.*,rbsports77.*,rbtv77.*,rbtvplus01.*##:matches-path(/id) img:style(width: auto!important;)
 ! @@/ban300.html$script,xhr,domain=rbtv77.*
 ! https://regex101.com/r/3YcjDV/1
-/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##*:has-text(/(rbtv|superabbit)77/i):style(scrollbar-width: thin!important;)
-/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: fixed):has(> img)
-/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
-/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) iframe + div:matches-css(position: absolute):has(> img)
 enfoladyzjklcright.shop,nwiwsgreaterrfakifood.shop##*:style(scrollbar-width: thin!important;)
 enfoladyzjklcright.shop,nwiwsgreaterrfakifood.shop##:matches-path(/id) div:matches-css(position: fixed):has(> img)
 enfoladyzjklcright.shop,nwiwsgreaterrfakifood.shop##:matches-path(/id) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
 enfoladyzjklcright.shop,nwiwsgreaterrfakifood.shop##:matches-path(/id) iframe + div:matches-css(position: absolute):has(> img)
+/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##*:has-text(/(rbtv|superabbit)77/i):style(scrollbar-width: thin!important;)
+/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: fixed):has(> img)
+/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) div:matches-css(position: relative):has(> img + div:matches-css(position: absolute))
+/^[a-z0-9]{5,}\.(?=.*[a-z])(?=.*[0-9])[a-z0-9]{17,}\.(cfd|sbs|shop)$/##:matches-path(/id) body:has-text(/(rbtv|superabbit)77/i) iframe + div:matches-css(position: absolute):has(> img)
 ! ------------------------------------------------------------------------------
 ! apabeda.com
 ! - https://github.com/realodix/AdBlockID/issues/1536

@@ -96,8 +96,8 @@ layardrama21.*,yuramanga.my.id##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygo
 crotpedia.net##+js(noeval-if, ads)
 ! https://github.com/realodix/AdBlockID/issues/53
 ! https://github.com/realodix/AdBlockID/issues/1044
-@@||mangalist.org/url/lib/$1p,script
 mangalist.org#@#.adsbygoogle
+@@||mangalist.org/url/lib/$1p,script
 ! gothamBatAdblock
 !0.0.realodix##div[style*="position: fixed;"]:has-text(ADBLOCK)
 ! wcadbwp|.wc-adblock-wrap
@@ -247,8 +247,8 @@ dramaserial.id##+js(aopr, $.magnificPopup.open)
 juragan.*##.popbox
 juragan.*##body:style(overflow: auto!important; position: unset!important;)
 ! Unbreak
-@@||p.jwpcdn.com/player/plugins/vast/$domain=dramaserial.id|juragan.*|juraganfilm.info
 dramaserial.id,juragan.*#@#.idmuvi-topbanner
+@@||p.jwpcdn.com/player/plugins/vast/$domain=dramaserial.id|juragan.*|juraganfilm.info
 ! -----------------------------------------------
 ! Kuronime
 ! kuronimenet.tv@gmail.com
@@ -347,30 +347,30 @@ ayononton.app,bioskopkeren.gg,cinemaindo.dev,d21.im,ditonton.dev,dunia21.ceo,fil
 ! https://github.com/AdguardTeam/AdguardFilters/issues/192859
 ! https://github.com/keiyoushi/extensions-source/issues/9041
 ! -----
+cosmicscans.asia,novascans.id###floatcenter
+cosmicscans.asia,novascans.id##.kln
+cosmicscans.asia,novascans.id##a[target*="blank"]:has(> img)
 /cosmic\d+\.co/###floatcenter
 /cosmic\d+\.co/##.kln
 /cosmic\d+\.co/##a[target*="blank"]:has(> img)
 /kmvs\d+\.com/###floatcenter
 /kmvs\d+\.com/##.kln
 /kmvs\d+\.com/##a[target*="blank"]:has(> img)
-cosmicscans.asia,novascans.id###floatcenter
-cosmicscans.asia,novascans.id##.kln
-cosmicscans.asia,novascans.id##a[target*="blank"]:has(> img)
 ! -----------------------------------------------
 ! Kiryuu - https://kiryuu.co/
 ! -----
+kiryuu.cc##.kln
+kiryuu.cc##a[target*="blank"]:has(> img)
+kiryuu.cc##div[id^="teaser"]
 /kiryuu0\d+\.com/###floatcenter
 /kiryuu0\d+\.com/##.kln
 /kiryuu0\d+\.com/##a[target*="blank"]:has(> img)
 /kiryuu0\d+\.com/##div[id^="teaser"]
-kiryuu.cc##.kln
-kiryuu.cc##a[target*="blank"]:has(> img)
-kiryuu.cc##div[id^="teaser"]
 ! Annoyance
-/kiryuu0\d+\.com/##+js(aeld, contextmenu)
-/kiryuu0\d+\.com/##+js(nowoif)
 kiryuu.cc##+js(aeld, contextmenu)
 kiryuu.cc##+js(nowoif)
+/kiryuu0\d+\.com/##+js(aeld, contextmenu)
+/kiryuu0\d+\.com/##+js(nowoif)
 ! -----------------------------------------------
 ! Manhwaland - https://manhwaland.in/ / https://manhwaindo.io/ / https://manhwaland.email/
 ! -----
@@ -422,8 +422,8 @@ komikdewasa.mom,komikindo1.*,komikindo2.*,komikindo3.*,komikindo4.*,mangatoon.cc
 !
 shinigami.*##.bg-base-card:has(> .flex > .inline > a:has-text(/ads@shinigami./i))
 shinigami.*##.bg-base-card:has(> a > img[alt*="-ad-"])
-/shinigami0\d+\.com/##a[target*="blank"]:has(> img)
 shinigami.*,shinigamitoon.*##a[target*="blank"]:has(> img)
+/shinigami0\d+\.com/##a[target*="blank"]:has(> img)
 !
 ! /wp-content/plugins/halfdata-green-popups/*$domain=shinigami.*|shinigami01.*|shinigami02.*|shinigami03.*|shinigami04.*|shinigami05.*|shinigami06.*|shinigami07.*|shinigamitoon.*
 ! /wp-content/plugins/halfdata-green-popups/*$domain=/shinigami0\d+\.com/
