@@ -13,6 +13,12 @@
             "label": "Build",
             "type": "shell",
             "command": "./vendor/bin/hippo build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Soft Build",
+            "type": "shell",
+            "command": "./vendor/bin/hippo fix && ./vendor/bin/hippo build --skip-version",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

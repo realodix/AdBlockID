@@ -7,14 +7,13 @@
         "sort-packages": true
     },
     "scripts": {
-        "cs": "./vendor/bin/hippo filter:process src --cache .tmp/ -i _reference.txt",
-        "abid": [
-            "@cs",
-            "flcombine -i abid=. template/adblockid.template.txt dist/adblockid.adfl.txt"
+        "fix": "./vendor/bin/hippo fix",
+        "build": [
+            "./vendor/bin/hippo build"
         ],
-        "abidplus": [
-            "@cs",
-            "flcombine -i abid=. template/adblockid_plus.template.txt dist/adblockid_plus.adfl.txt"
+        "soft-build": [
+            "@fix",
+            "./vendor/bin/hippo build --skip-version"
         ]
     }
 }
