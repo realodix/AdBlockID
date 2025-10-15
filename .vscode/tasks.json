@@ -16,9 +16,9 @@
             "problemMatcher": []
         },
         {
-            "label": "Soft Build",
-            "type": "shell",
-            "command": "./vendor/bin/hippo fix && ./vendor/bin/hippo build --skip-version",
+            "label": "Fix & Build",
+            "dependsOn": ["Fix", "Build"],
+            "dependsOrder": "sequence",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
