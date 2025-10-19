@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sun, 19 Oct 2025 16:21:54 +0000
+! Last modified: Sun, 19 Oct 2025 16:26:54 +0000
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 /smartfren/ads.
@@ -2961,7 +2961,6 @@ tedas.id##[class^="adsbyadop_"]
 poskota.co.id##[class^="get_ads_"]
 hipwee.com##[class^="hipwee-banner-"]
 prokaltim.com##[class^="premium-banner-"]
-vidio.com##[class^="shopping-banner-module_"]
 vidio.com##[class^="smart-banner-module_"]
 beasiswaindo.com##[class^="sponsor-"]
 goodnewsfromindonesia.id##[data-cptid*=".id_728x90"]
@@ -4384,6 +4383,9 @@ apabeda.com,membedakan.com##+js(window.open-defuser)
 @@||lihatgambar.my.id^$ghide
 lihatgambar.my.id##.fc-ab-root
 lihatgambar.my.id##body:style(overflow: auto!important; position: unset!important;)
+m.vidio.com###fluid-watch-livestreaming .fixed:has(div > button[aria-label*="close" i])
+vidio.com##[class^="shopping-banner-module_"]
+m.vidio.com##body:style(overflow: auto!important; position: unset!important;)
 bogordaily.net,mojok.co##.code-block > .voucher_at
 inews.id##.content-detail .voucherWrap
 sindonews.com##.content-row .voucher_at
