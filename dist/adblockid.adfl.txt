@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
-! Last modified: Tue, 11 Nov 2025 13:31:42 GMT
+! Last modified: Tue, 11 Nov 2025 14:11:46 GMT
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
@@ -4411,6 +4411,9 @@ detik.com##header:style(margin: 0!important; padding: 0!important;)
 ~bloggerperempuan.com##[href*="//bloggerperempuan.com"]:has(img)
 ~emak2blogger.com##[href*="//emak2blogger.com"]:has(img)
 ~emak2blogger.com##[href*="//s.id/EmakBlogger"]:has(img)
+!#if adguard
+##[id^="div-gpt-ad"]
+!#endif
 !#if adguard
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$badfilter,document,popup,subdocument
 !#endif
