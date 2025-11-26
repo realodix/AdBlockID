@@ -75,6 +75,7 @@ kebioskop21.one##a[target*="blank"] > video:remove()
 moutogami.com##+js(aeld, load, /adblock/i)
 kopajasubs.info##+js(aopr, adAdbLoad)
 komiku.org,sektedoujin.cc##+js(nobab)
+moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 !
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
 !
@@ -103,7 +104,6 @@ adikanime.com#@#.idmuvi-banner-aftercontent
 91.208.184.249,layardrama21.*#@#.idmuvi-topbanner-aftermenu
 !
 cinemakeren6.id###adblock-message
-moenime.com###mn-notice-wrapper
 worldnovel.my.id##.adblock-notice
 adikanime.com##.adik-warning
 !
@@ -122,14 +122,11 @@ filem21.org###overlay
 anichin.cafe,anichin.social,anichin.watch,animekhor.org,animekompi.fun,animexin.dev,anoboy.be,isekaisubs.web.id,kazefuri.cloud,kazefuri.info###overplay
 clubfarah.com###popup-container
 animekompi.fun##.ays-pb-modals
-moenime.com##.overlay
 kuramanime.*##.player-overplay
 jeniusplay.com##.pppppup
 godriveplayer.net,jeniusplay.com##.pppx
-moenime.com##.rw_footer_sticky
 sokuja.uk##.video-content > div:has(> div[align="center"] > a[onclick*="none"])
-sokuja.uk##body > div:matches-css(position: fixed)
-moenime.com##div:matches-css(position: fixed)
+moenime.com,sokuja.uk##body > div:matches-css(position: fixed)
 sokuja.uk##div:matches-css(position: fixed):has(> div > #countdown)
 !
 ! ---
