@@ -264,11 +264,14 @@ mirrorkomik.info##div[id^="teaser"]
 ! -----------------------------------------------
 ! Moenime
 ! -----
+.gif|$domain=moenime.com
+!
 moenime.com##.alert
 moenime.com##.copyright
-moenime.com##[class]:matches-css(position: fixed):has([class]:matches-css(position: absolute))
 moenime.com##a[target*="blank"]:has(> img)
+moenime.com##aside:matches-css(position: fixed)
 !
+moenime.com##[class]:matches-css(position: fixed):has([class]:matches-css(position: absolute))
 moenime.com##[id]:matches-css(position: fixed):has([id]:matches-css(position: absolute))
 moenime.com##[style]:matches-css(position: fixed):has([style]:matches-css(position: relative) [onclick])
 moenime.com##div:matches-css(position: fixed)
