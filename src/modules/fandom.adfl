@@ -266,10 +266,13 @@ mirrorkomik.info##div[id^="teaser"]
 ! -----
 moenime.com##[style]:matches-css(position: fixed):has([style]:matches-css(position: relative) [onclick])
 moenime.com##a[target*="blank"]:has(> img)
+moenime.com##div:matches-css(position: fixed)
 ! Anti Adblock
 moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
+moenime.com##.show
 ! Annoyance
 moenime.com##+js(href-sanitizer, [href*="?s="], ?s)
+moenime.com##+js(nowoif)
 ! -----------------------------------------------
 ! Oploverz
 ! -----
