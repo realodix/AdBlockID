@@ -126,7 +126,7 @@ godriveplayer.net,jeniusplay.com##.pppx
 sokuja.uk##.video-content > div:has(> div[align="center"] > a[onclick*="none"])
 sokuja.uk##body > div:matches-css(position: fixed)
 sokuja.uk##div:matches-css(position: fixed):has(> div > #countdown)
-moenime.com##div:matches-css(position: fixed):has(div[onclick])
+moenime.com##div:matches-css(position: fixed):has([onclick*="window.open("] img)
 !
 ! ---
 ! CM Pop-Up banners / cm-popup-modal / ouibounce-modal
@@ -156,6 +156,7 @@ animebatch.id##+js(aopr, SAFELINK_CONFIG)
 kusonime.com,melongmovies.com##+js(aopr, app_url)
 nimegami.id##+js(aopr, go_url)
 alqanime.net##+js(aopr, ouo_token)
+moenime.com##+js(href-sanitizer, [href*="?s="], ?s)
 !
 ! GROUPED BY OWNER / TYPE
 ! ------------------------------------------------------------------------------
