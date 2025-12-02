@@ -59,7 +59,7 @@ cinemaemas6.com,mangaindo.*,sattorrent.com##.widget:has(img[style="max-width: 10
 anichin.watch,ikiru.wtf,layarkaca21ok.site,mangakita.id,mangatale.co,movieku.*,tooncubus-read.my.id,tooncubus.top,wibudesu.co##a:has(> img[src$=".gif"])
 sokuja.uk##a[rel*="nofollow"]:has(> img)
 sokuja.uk##a[rel*="sponsored"]:has(> img)
-01ntn.cc,198.105.112.102,37.221.67.88,91.208.184.249,anibatch.moe,anichin.social,animekompi.fun,animexin.dev,anoboy.be,bioskop21.*,boscinematv1.space,cinemaemas6.com,cinemakeren6.id,docksidechandlery.com,dramaserial21.cam,filem21.org,gudangkomik.com,gudangmoovies21.com,gudangmovies21.chat,idxmovie21.com,indositusxxi.id,kawanfilm21.co,kazefuri.cloud,kazefuri.info,kebioskop21.one,komik-cast.com,komik18.xyz,komikdewasa.art,komiksin.net,komikstation.org,komiku.asia,komikzoid.id,kopajasubs.info,kuramanime.*,kuroshireader.com,kusonime.com,layardrama21.*,mangasusuku.com,melongmovies.com,moenime.com,movieku.*,nimegami.id,nntonfilm.my.id,nomat.site,omanga.net,otakudesu.best,otakudesu.id,rebahin.lol,rebahinxxi1.xyz,sbministries.org,sobatku21.xyz,westmanga.me,winbu.tv##a[target*="blank"]:has(> img)
+01ntn.cc,198.105.112.102,37.221.67.88,91.208.184.249,anibatch.moe,anichin.social,animekompi.fun,animexin.dev,anoboy.be,bioskop21.*,boscinematv1.space,cinemaemas6.com,cinemakeren6.id,docksidechandlery.com,dramaserial21.cam,filem21.org,gudangkomik.com,gudangmoovies21.com,gudangmovies21.chat,idxmovie21.com,indositusxxi.id,kawanfilm21.co,kazefuri.cloud,kazefuri.info,kebioskop21.one,komik-cast.com,komik18.xyz,komikdewasa.art,komiksin.net,komikstation.org,komiku.asia,komikzoid.id,kopajasubs.info,kuramanime.*,kuroshireader.com,kusonime.com,layardrama21.*,mangasusuku.com,melongmovies.com,movieku.*,nimegami.id,nntonfilm.my.id,nomat.site,omanga.net,otakudesu.best,otakudesu.id,rebahin.lol,rebahinxxi1.xyz,sbministries.org,sobatku21.xyz,westmanga.me,winbu.tv##a[target*="blank"]:has(> img)
 animotvslash.org,soulscans.my.id##body > div[style^="width: 100%;text-align: center;display: scroll;position:fixed;"]
 komikdewasa.art##body:style(padding-top: 0 !important; padding-bottom: 0 !important;)
 awsubs.co##div:matches-css(position: fixed):has(> .kln)
@@ -75,7 +75,6 @@ kebioskop21.one##a[target*="blank"] > video:remove()
 moutogami.com##+js(aeld, load, /adblock/i)
 kopajasubs.info##+js(aopr, adAdbLoad)
 komiku.org,sektedoujin.cc##+js(nobab)
-moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 !
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
 !
@@ -126,8 +125,6 @@ godriveplayer.net,jeniusplay.com##.pppx
 sokuja.uk##.video-content > div:has(> div[align="center"] > a[onclick*="none"])
 sokuja.uk##body > div:matches-css(position: fixed)
 sokuja.uk##div:matches-css(position: fixed):has(> div > #countdown)
-moenime.com##div:matches-css(position: fixed):has([onclick] > img)
-moenime.com##div:matches-css(position: fixed):has(div:matches-css(position: relative) [onclick])
 !
 ! ---
 ! CM Pop-Up banners / cm-popup-modal / ouibounce-modal
@@ -157,7 +154,6 @@ animebatch.id##+js(aopr, SAFELINK_CONFIG)
 kusonime.com,melongmovies.com##+js(aopr, app_url)
 nimegami.id##+js(aopr, go_url)
 alqanime.net##+js(aopr, ouo_token)
-moenime.com##+js(href-sanitizer, [href*="?s="], ?s)
 !
 ! GROUPED BY OWNER / TYPE
 ! ------------------------------------------------------------------------------
@@ -263,6 +259,15 @@ mirrorkomik.site##.ad-banner
 mirrorkomik.info,mirrorkomik.site##.bebaskan
 mirrorkomik.info,mirrorkomik.site##.kln
 mirrorkomik.info##div[id^="teaser"]
+! -----------------------------------------------
+! Moenime
+! -----
+moenime.com##[style]:matches-css(position: fixed):has([style]:matches-css(position: relative) [onclick])
+moenime.com##a[target*="blank"]:has(> img)
+! Anti Adblock
+moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
+! Annoyance
+moenime.com##+js(href-sanitizer, [href*="?s="], ?s)
 ! -----------------------------------------------
 ! Oploverz
 ! -----
