@@ -57,9 +57,9 @@ shopee.co.id##:matches-path(/search?) .search-items-container__tab-panel .item-c
 ||vidio.com/embed/$frame,domain=merdeka.com
 ||viu.com/ott/misc/widget/index.php$frame,domain=viva.co.id
 !
+||embed.dugout.com^$3p,domain=indosport.com|skor.id
 detik.com##.dugout-video:remove()
 detik.com##.ratio-dugout-detail
-||embed.dugout.com^$3p,domain=indosport.com|skor.id
 !
 kompas.com###contentArticle > .kgnw-middle:has(> .kgnw-middle-player):remove()
 cnnindonesia.com###livetv-float:remove()
@@ -136,9 +136,9 @@ dood.*##+js(aopw, DoodPop)
 dood.*##+js(aopw, _pop)
 dodz.pro,ds2play.com##+js(nowoif)
 ! streamtape.com
+streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 streamtape.*##+js(acis, JSON.parse, Promise)
 streamtape.*##+js(nowoif)
-streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 ! ---
 ! Fake Button
 haxnode.net##[id^="haxno-"] .dl-btn

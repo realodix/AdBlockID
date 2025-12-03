@@ -49,30 +49,23 @@ Agar mudah di-maintain, daftar filter dipecah dan dikelompokkan ke dalam beberap
 
 ## 🛠️ Pengelolaan
 
-AdBlockID menggunakan [Hippo](https://github.com/realodix/hippo) sebagai *tooling* untuk mengelola dan memelihara daftar filter. Hippo membantu dalam proses sortir, membersihkan, dan menggabungkan filter di folder `src` menjadi file tunggal di `dist`, sehingga pemeliharaan menjadi mudah dan efisien tanpa editing manual.
-
-### Kebutuhan
-
-Pastikan lingkungan pengembangan Anda sudah memiliki:
-
-- [PHP](https://www.php.net/) 8.3.26 atau versi terbaru
-- [Composer](https://getcomposer.org/)
+AdBlockID menggunakan [Haiku](https://github.com/realodix/haiku) sebagai *tools* untuk mengelola dan memelihara daftar filter. Haiku membantu dalam proses sortir, membersihkan, dan menggabungkan filter di folder `src` menjadi file tunggal di `dist`, sehingga pemeliharaan menjadi mudah dan efisien tanpa editing manual.
 
 ### Instalasi
 
-Setelah _kebutuhan_ di atas terpasang, jalankan command `composer install` di direktori root AdBlockID. Ini akan mengunduh dan menyiapkan Hippo. Jika ada error (misalnya PHP version mismatch), periksa _kebutuhan_ di atas.
+Jalankan command `composer install` di direktori root AdBlockID.
 
 ### Penggunaan
 
-Hippo menyediakan beberapa command utama untuk memelihara daftar filter AdBlockID:
+Haiku menyediakan beberapa command utama untuk memelihara daftar filter AdBlockID:
 
-- `./vendor/bin/hippo fix`
+- `./vendor/bin/haiku fix`
 
   Mengurutkan dan merapikan daftar filter.
 
   VSCode Task: `Fix`
 
-- `./vendor/bin/hippo build`
+- `./vendor/bin/haiku build`
 
   Menggabungkan semua filter dari folder `src/` menjadi satu file di folder `dist/`.
 
@@ -80,5 +73,6 @@ Hippo menyediakan beberapa command utama untuk memelihara daftar filter AdBlockI
 
 
 ## 🔗 Layanan Web
+
 - [ABP Redundancy check](https://adblockplus.org/redundancy_check)
 - [ABPVN Redundancy check](https://abpvn.com/ruleChecker/redundantRuleChecker.html)

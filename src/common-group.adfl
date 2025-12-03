@@ -270,13 +270,13 @@ detik.com##div:matches-css(width: 970px):matches-css(height: 250px):has(center >
 insertlive.com##div[style^="padding-top:"]:has(> div[style^="width:300px;min-height:250px;margin:0px auto 0px;"] > div[id^="div-gpt-ad-"])
 cnbcindonesia.com##div[style^="width: 100%; height:400px;"]:has(> [style^="position:sticky"])
 ! Unbreak
-beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
 @@/ads/*$domain=adsmart.detik.com
 @@/videojs.ads.$domain=20.detik.com
 @@||adsmart.detik.com^$ghide
+beautynesia.id,cnbcindonesia.com,cnnindonesia.com,detik.com,haibunda.com#@#[class^="div-gpt-ad"]
 ! Annoyance
-transtv.co.id##+js(ra, oncontextmenu, html)
 detik.com##body:style(overflow: auto !important;)
+transtv.co.id##+js(ra, oncontextmenu, html)
 ! Automated Link Attribution
 ||cnbcindonesia.com/cnbc/js/clipboard.js
 ! ------------------------------------------------------------------------------
@@ -307,9 +307,9 @@ brilio.net##amp-iframe:has([src*="advertnative.com"])
 ! Voucher Promo
 brilio.net,briliobeauty.net,techno.id##.voucher_at
 ! Whitelist
+@@/advertise/*$domain=brilio.net
 bola.com#@##middle-ad
 bola.com#@#.channel-ad
-@@/advertise/*$domain=brilio.net
 ! Style Fixer
 bola.com##.layout__content:style(margin-top: 0!important;)
 ! ------------------------------------------------------------------------------
@@ -391,7 +391,6 @@ inews.id##div:matches-css(text-align: center):has([id*="-StickyAd" i])
 sindonews.com##.content-row .voutstream
 ! Empty Ads Placeholders
 inews.id###fragmentx:has(> .smartbanner-close)
-sindonews.com##+js(rc, t480, .content-paralax)
 okezone.com##.ads-mega-box + #app:style(margin-top: 0!important)
 inews.id##.ads-paralax.app:style(top: 0 !important;)
 sindonews.com##.content-paralax:style(top: 0!important;)
@@ -399,19 +398,20 @@ sindonews.com##.parallax-close
 sindonews.com##.parallax-non.t600:style(top: 0 !important;)
 inews.id##div:matches-css(justify-content: center):matches-css(height: 298px):has(> div[id^="div-gpt-ad-"])
 inews.id##div:matches-css(justify-content: center):matches-css(height: 90px):has(> div[id^="div-gpt-ad-"])
+sindonews.com##+js(rc, t480, .content-paralax)
 ! Style Fixer
 inews.id,okezone.com##.content-wrap:style(margin-top:0!important;)
 inews.id##body > .wrap-all:style(top: 0 !important;)
 ! Annoyance
 okezone.com###contentx .vicon:remove()
 okezone.com###rekomendasi_video:remove()
-inews.id,okezone.com##+js(aopr, document.oncopy)
 okezone.com##.content-wrap .video-wrap:remove()
 sindonews.com##.vidembed-box:remove()
 okezone.com##.video-wrap:has(#rekomendasi_video):remove()
 sindonews.com##.vidwrap:remove()
 okezone.com##.vplayer:has(iframe[src^="https://video.okezone.com/embedoutstream"]):remove()
 okezone.com##[id^="ivs-"]:remove()
+inews.id,okezone.com##+js(aopr, document.oncopy)
 ! Unbreak
 @@/advertising/*$domain=client.okezone.com
 !
@@ -513,11 +513,11 @@ brainacademy.id##:matches-path(/blog) .side-banner-desktop
 brainacademy.id##:matches-path(/blog) .side-banner-mobile
 roboguru.ruangguru.com##[class^="css-"]:has(> p:has-text(/iklan/i))
 ! Annoyance
-brainacademy.id,english-academy.id,ruangguru.com,ruangkerja.id,schoters.com##+js(aeld, DOMContentLoaded, popupPromo)
 roboguru.ruangguru.com##.chakra-container > div[class^="css-"]:has(> div[class^="css-"] > div[id^="div-gpt-ad-"])
 roboguru.ruangguru.com##.chakra-stack > div[class^="css-"]:has(> div[class^="css-"] > div[id^="div-gpt-ad-"])
 kalananti.id##:matches-path(/blog) .fade.show
 kalananti.id##:matches-path(/blog) body:style(overflow: auto!important; position: unset!important;)
+brainacademy.id,english-academy.id,ruangguru.com,ruangkerja.id,schoters.com##+js(aeld, DOMContentLoaded, popupPromo)
 ! ------------------------------------------------------------------------------
 ! TEMPO.CO (Info Media Digital)
 ! -----
@@ -545,13 +545,13 @@ cantika.com##[class^="ads-"]
 ! General
 tempo.co##.kaikai-container a.kaikai-article:not(a[href*="tempo.co"])
 ! Empty Ads Placeholders
-tempo.co##+js(rc, pad-apps, body)
 tempo.co##.relative:has(> .fixed > img[src$="/close.png"])
 tempo.co##article .w-\[300px\].overflow-hidden
 tempo.co##article .w-full.h-\[250px\].max-w-\[470px\].relative
 tempo.co##article div[ad-unit-path]
 indonesiana.id##main + .fix-bottom
 indonesiana.id##nav#startnads.starttop:style(margin-top: unset!important;)
+tempo.co##+js(rc, pad-apps, body)
 !
 cantika.com##.card:has(> .card-header:has-text(/iklan/i))
 cantika.com,gooto.com,indonesiana.id,tempo.co,teras.id##.lanjutkan
