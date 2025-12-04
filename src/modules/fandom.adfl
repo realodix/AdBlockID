@@ -90,8 +90,8 @@ layardrama21.*##+js(noeval-if, /fairAdblock|chp_?adblock|adsbygoogle\.js/)
 crotpedia.net##+js(noeval-if, ads)
 ! https://github.com/realodix/AdBlockID/issues/53
 ! https://github.com/realodix/AdBlockID/issues/1044
-mangalist.org#@#.adsbygoogle
 @@||mangalist.org/url/lib/$1p,script
+mangalist.org#@#.adsbygoogle
 ! gothamBatAdblock
 !0.0.realodix##div[style*="position: fixed;"]:has-text(ADBLOCK)
 ! wcadbwp|.wc-adblock-wrap
@@ -202,8 +202,8 @@ nontondrama.wiki,skeeterbyte.com,tagkia.com###player-below-b
 nontondrama.wiki,skeeterbyte.com,tagkia.com##a[target*="blank"]:has(> img)
 skeeterbyte.com,tagkia.com##div:matches-css(font-size: 10px):has-text(/promoted/i)
 ! Iframe
-nontondrama.wiki,skeeterbyte.com,tagkia.com##:matches-path(/links/?url=) body > .container-iframe
 ||tolonglah.pages.dev$frame
+nontondrama.wiki,skeeterbyte.com,tagkia.com##:matches-path(/links/?url=) body > .container-iframe
 ! -----------------------------------------------
 ! Doronime
 ! -----
@@ -230,12 +230,12 @@ dramaserial.id,juragan.*##.idmuvi-afterplayer
 dramaserial.id,juragan.*##.idmuvi-topplayer
 dramaserial.id,juragan.*##a[target*="blank"]:has(> img)
 ! Annoyance
-dramaserial.id##+js(aopr, $.magnificPopup.open)
 juragan.*##.popbox
 juragan.*##body:style(overflow: auto!important; position: unset!important;)
+dramaserial.id##+js(aopr, $.magnificPopup.open)
 ! Unbreak
-dramaserial.id,juragan.*#@#.idmuvi-topbanner
 @@||p.jwpcdn.com/player/plugins/vast/$domain=dramaserial.id|juragan.*|juraganfilm.info
+dramaserial.id,juragan.*#@#.idmuvi-topbanner
 ! -----------------------------------------------
 ! Kuronime
 ! kuronimenet.tv@gmail.com
@@ -271,18 +271,13 @@ moenime.com##*:matches-css(position: fixed):has(*:matches-css(position: relative
 moenime.com##.alert
 moenime.com##.copyright
 moenime.com##a[target*="blank"]:has(> img)
-!
-moenime.com##[class]:matches-css(position: fixed):has([class]:matches-css(position: absolute))
-moenime.com##[id]:matches-css(position: fixed):has([id]:matches-css(position: absolute))
-moenime.com##[style]:matches-css(position: fixed):has([style]:matches-css(position: relative) [onclick])
 ! Anti Adblock
-moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 moenime.com##.show
+moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 ! Annoyance
 moenime.com##+js(aeld, click, /\.php\?/)
 moenime.com##+js(href-sanitizer, [href*="?s="], ?s)
 moenime.com##+js(nowoif)
-||facebook.com/plugins/page.php?$frame,domain=moenime.com
 ! -----------------------------------------------
 ! Oploverz
 ! -----
@@ -298,11 +293,11 @@ oploverz.*##div[id^="teaser"]
 ! Annoyance
 oploverz.*###floatcenter
 oploverz.*###overplay
+oploverz.*##.absolute:has(> .justify-center > button > svg)
+oploverz.*##main > .fixed:has(> .relative > button > svg)
 oploverz.*##+js(abort-current-script, Promise, delete window)
 oploverz.*##+js(aopr, SGPB_POPUP_PARAMS)
 oploverz.*##+js(nowoif)
-oploverz.*##.absolute:has(> .justify-center > button > svg)
-oploverz.*##main > .fixed:has(> .relative > button > svg)
 ! -----------------------------------------------
 ! OppaDrama
 ! oppadramaiklan@gmail.com / https://t.me/oppabiz / https://oppadrama.biz/
@@ -403,11 +398,11 @@ kiryuu.cc##+js(nowoif)
 ! -----
 onepieceberwarna.com##a[target*="blank"]:has(> img):not(a[href*="onepieceberwarna.com"])
 ! Annoyance
+/wp-content/plugins/photection/*$script,domain=onepieceberwarna.com
 onepieceberwarna.com##*:style(user-select:text!important;)
 onepieceberwarna.com##+js(acis, disableSelection, reEnable)
 onepieceberwarna.com##+js(aeld, contextmenu)
 onepieceberwarna.com##+js(aopr, document.oncontextmenu)
-/wp-content/plugins/photection/*$script,domain=onepieceberwarna.com
 ! -----------------------------------------------
 ! komikcast (https://komikcast.li/)
 ! https://github.com/realodix/AdBlockID/issues/1804#issuecomment-2208142333
