@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID Plus
-! Last modified: Sat, 25 Oct 2025 17:06:34 GMT
+! Last modified: Thu, 04 Dec 2025 19:50:53 GMT
 ! Description: Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID.
 ! Expires: 6 days
 ! Homepage: https://github.com/realodix/AdBlockID
@@ -46,9 +46,9 @@ shopee.co.id##:matches-path(/search?) .search-items-container__tab-panel .item-c
 ||player.ivideosmart.com/ivsplayer/$script,domain=brilio.net|id.theasianparent.com|indosport.com|tempo.co
 ||vidio.com/embed/$frame,domain=merdeka.com
 ||viu.com/ott/misc/widget/index.php$frame,domain=viva.co.id
+||embed.dugout.com^$3p,domain=indosport.com|skor.id
 detik.com##.dugout-video:remove()
 detik.com##.ratio-dugout-detail
-||embed.dugout.com^$3p,domain=indosport.com|skor.id
 kompas.com###contentArticle > .kgnw-middle:has(> .kgnw-middle-player):remove()
 cnnindonesia.com###livetv-float:remove()
 detik.com###notif-20d .float-vid__content:remove()
@@ -111,9 +111,9 @@ dood.*##+js(acis, parseInt, break;case $.)
 dood.*##+js(aopw, DoodPop)
 dood.*##+js(aopw, _pop)
 dodz.pro,ds2play.com##+js(nowoif)
+streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 streamtape.*##+js(acis, JSON.parse, Promise)
 streamtape.*##+js(nowoif)
-streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 haxnode.net##[id^="haxno-"] .dl-btn
 crackedhome.com,crackwin.net,filesmama.com,ziapc.org##center > a[href^="javascript:"]
 bettercrack.com##center a[onclick^="window.open("]
