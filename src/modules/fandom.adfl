@@ -74,14 +74,11 @@ kebioskop21.one##a[target*="blank"] > video:remove()
 !
 ! ANTI-ADBLOCK
 ! ------------------------------------------------------------------------------
+||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
+@@-ads-banner.$script,domain=kusonime.com
 moutogami.com##+js(aeld, load, /adblock/i)
 kopajasubs.info##+js(aopr, adAdbLoad)
 komiku.org,sektedoujin.cc##+js(nobab)
-!
-||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
-!
-!
-@@-ads-banner.$script,domain=kusonime.com
 ! ---
 ! chp_ads_blocker | adblock_title | /wp-content/plugins/chp-ads-block-detector/
 blurayufr.cam##+js(acis, chp_ads_blocker_detector)
@@ -160,7 +157,6 @@ alqanime.net##+js(aopr, ouo_token)
 ! GROUPED BY OWNER / TYPE
 ! ------------------------------------------------------------------------------
 ||blogger.googleusercontent.com/img/*.gif^$image,domain=idlixku.com
-!
 idlixku.com##.asgdc
 idlixku.com##.module_home_ads
 idlixku.com##a[target*="blank"]:has(> img)
@@ -182,7 +178,6 @@ idlixku.com##body[class*="-style-"] > div[class$=" active"][style] + div[class*=
 ||donasi.lk21.de^
 ||lk21static.buzz/assets/$media,redirect=noopmp4-1s
 ||lk21static.buzz/assets/*.gif$image
-!
 playeriframe.sbs###ad-link
 lk21.am.in,lk21.de,lk21.film,lk21official.cc,lk21official.love,lk21online.mom,nontondrama.click,nontondrama.my###nativeAds
 lk21.am.in,lk21.de,lk21.film,lk21official.cc,lk21official.love,lk21online.mom,nontondrama.click,nontondrama.my##a[target*="blank"]:has(> img)
@@ -197,7 +192,6 @@ lk21.party###hihi
 ||d21.media/img/*.gif$image
 ||d21.media/vid/$media,redirect=noopmp4-1s
 ||d21.media^*/iklan-
-!
 nontondrama.wiki,skeeterbyte.com,tagkia.com###player-below-b
 nontondrama.wiki,skeeterbyte.com,tagkia.com##a[target*="blank"]:has(> img)
 skeeterbyte.com,tagkia.com##div:matches-css(font-size: 10px):has-text(/promoted/i)
@@ -209,7 +203,6 @@ nontondrama.wiki,skeeterbyte.com,tagkia.com##:matches-path(/links/?url=) body > 
 ! -----
 ||doroni.me/images/promo/$image
 ||doronime.id/images/promo/$image
-!
 doroni.me,doronime.id##.Content__banner
 doroni.me,doronime.id##.Fixed
 doroni.me,doronime.id##a[target*="blank"] > picture
@@ -224,7 +217,6 @@ doroni.me,doronime.id##.Popup
 ! -----
 *.gif$image,to=bk21.net
 ||bk21.net/*.mp4$media,redirect=noopmp4-1s
-!
 juragan.*###banner
 dramaserial.id,juragan.*##.idmuvi-afterplayer
 dramaserial.id,juragan.*##.idmuvi-topplayer
@@ -255,7 +247,6 @@ nontonanimeid.*##a[target*="blank"]:has(> img)
 ! -----
 /Uangjajan/*$to=mirrorkomik.site
 ||i3.wp.com/mirrorkomik.site/public/img/Uangjajan/
-!
 mirrorkomik.site###aplikasi
 mirrorkomik.site##.ad-banner
 mirrorkomik.info,mirrorkomik.site##.bebaskan
@@ -265,7 +256,6 @@ mirrorkomik.info##div[id^="teaser"]
 ! Moenime
 ! -----
 .gif|$domain=moenime.com
-!
 moenime.com##*:matches-css(position: fixed):has(*:matches-css(position: absolute))
 moenime.com##*:matches-css(position: fixed):has(*:matches-css(position: relative))
 moenime.com##.alert
@@ -282,7 +272,6 @@ moenime.com##+js(nowoif)
 ! Oploverz
 ! -----
 .gif|$image,domain=oploverz.*
-!
 oploverz.*###oploverz
 oploverz.*###oploverz2
 oploverz.*##.kln
@@ -304,7 +293,6 @@ oploverz.*##+js(nowoif)
 ! https://github.com/AdguardTeam/AdguardFilters/commit/a1aaff7bcb66dcc4ce4da742666afe8603fa0e33
 ! -----
 .gif|$image,domain=45.11.57.125|oppa.biz|oppadrama.biz
-!
 45.11.57.125,oppa.biz,oppadrama.biz##.kln
 45.11.57.125,oppa.biz,oppadrama.biz##a[target*="blank"]:has(> img)
 ! Annoyance
@@ -342,7 +330,6 @@ samehadaku.*##+js(aeld, contextmenu)
 ! terbit21.com@gmail.com / https://tv1.terbit21.store/
 ! -----
 ||terbit21.gdn/ads/
-!
 ayononton.app,bioskopkeren.shop,cinemaindo.dev,d21.im,ditonton.dev,dunia21official.biz,filmapik.my,ganool.app,gudangmovies21.host,movieon21.mov,movies21.ing,nontonfilm.app,teman21.app,terbit21.store,terbit21official.online###float-banner
 ayononton.app,bioskopkeren.shop,cinemaindo.dev,d21.im,ditonton.dev,dunia21official.biz,filmapik.my,ganool.app,gudangmovies21.host,movieon21.mov,movies21.ing,nontonfilm.app,teman21.app,terbit21.store,terbit21official.online###float-bottom-banner
 ayononton.app,bioskopkeren.shop,cinemaindo.dev,d21.im,ditonton.dev,dunia21official.biz,filmapik.my,ganool.app,gudangmovies21.host,movieon21.mov,movies21.ing,nontonfilm.app,teman21.app,terbit21.store,terbit21official.online###top-banner
@@ -367,7 +354,6 @@ cosmicscans.asia,novascans.id##a[target*="blank"]:has(> img)
 ! Kiryuu - https://kiryuu.co/
 ! -----
 .gif$image,domain=/kiryuu0\d+\.com/
-!
 kiryuu.cc##.kln
 kiryuu.cc##a[target*="blank"]:has(> img)
 kiryuu.cc##div[id^="teaser"]
@@ -385,7 +371,6 @@ kiryuu.cc##+js(nowoif)
 ! -----
 /ads/*$to=gmbr.pro
 ||ads.gmbr.pro^
-!
 ! manhwadesu.io,manhwaindo.app,manhwaland.baby,manhwaland.land##.kln
 ! manhwadesu.io,manhwaindo.app,manhwaland.baby,manhwaland.land##a[target*="blank"]
 ! manhwadesu.io,manhwaindo.app,manhwaland.baby,manhwaland.land##div[id^="teaser"]
@@ -429,7 +414,6 @@ komikdewasa.mom,komikindo.vip,komikindo1.*,komikindo2.*,komikindo3.*,komikindo4.
 ! https://github.com/realodix/AdBlockID/issues/1810
 ! -----
 ||shngm.id/*.gif
-!
 shinigami.*##.bg-base-card:has(> .flex > .inline > a:has-text(/ads@shinigami./i))
 shinigami.*##.bg-base-card:has(> a > img[alt*="-ad-"])
 shinigami.*,shinigamitoon.*##a[target*="blank"]:has(> img)
@@ -444,5 +428,4 @@ shinigami.*,shinigamitoon.*##+js(aopr, lepopup_vars)
 ! WG Film21
 ! -----
 ||digitaloceanspaces.com/sponsor-slot-$3p,media,redirect=noopmp4-1s
-!
 attendnyc.com,bishopattorney.com,carolinescomedyschool.com,chairdex.com,codingcertification.org,laporpakfans.com,wgfilm21.com##a[target*="blank"]:has(> img)
