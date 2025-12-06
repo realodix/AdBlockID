@@ -90,7 +90,7 @@ Terima kasih telah mempertimbangkan untuk berkontribusi, Saya sangat menghargai 
 - 📢 Beritahu orang terdekat Anda, agar makin banyak yang bisa merasakan manfaat dari AdBlockID.
 - 🍔 Mari kita kopdar jika Anda sedang berada di sekitar Jakarta!
 
-[GHIssuesNew]: https://github.com/realodix/AdBlockID/issues/new/choose
+[GHIssuesNew]: https://github.com/realodix/AdBlockIDgsrc/issues/new/choose
 [GHIssuesPage]: https://github.com/realodix/AdBlockID/issues
 [GHDiscussionsPage]: https://github.com/realodix/AdBlockID/discussions
 [GHContributorsPage]: https://github.com/realodix/AdBlockID/graphs/contributors
