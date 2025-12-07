@@ -93,9 +93,7 @@ Terima kasih telah mempertimbangkan untuk berkontribusi, Saya sangat menghargai 
 [GHIssuesNew]: https://github.com/realodix/AdBlockID/issues/new/choose
 [GHIssuesPage]: https://github.com/realodix/AdBlockID/issues
 [GHDiscussionsPage]: https://github.com/realodix/AdBlockID/discussions
-[GHContributorsPage]: https://github.com/realodix/AdBlockID/graphs/contributors
+[GHContributorsPage]: https://github.com/realodix/AdBlockID-src/graphs/contributors
 [GHGlossaryPullReq]: https://docs.github.com/en/get-started/quickstart/github-glossary#pull-request
 
-
-## Development
-Lihat [/docs/Development.md](/docs/Development.md)
+Kode sumber untuk membuat pull requests tersedia di [`realodix/AdBlockID-src`](https://github.com/realodix/AdBlockID-src).
