@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
-! Last modified: Mon, 08 Dec 2025 01:10:51 GMT
+! Last modified: Mon, 08 Dec 2025 01:24:44 GMT
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
@@ -5082,9 +5082,11 @@ buahmangga.com,digoreng.com,semprot.com##[class^="popup-"]
 buahmangga.com,digoreng.com,semprot.com##[class^="semprotnenenmontok_"]
 buahmangga.com,digoreng.com,semprot.com##[class^="semprotpokemon_"]
 buahmangga.com,digoreng.com,semprot.com##[id^="semprotnenenmontok_"]
-buahmangga.com,digoreng.com,semprot.com##a[href^="/ads.php"]
+buahmangga.com,digoreng.com,semprot.com##a[href*="/ads.php"]:has(img)
 @@||gambar123.com^$image,domain=buahmangga.com|digoreng.com|semprot.com
 buahmangga.com,digoreng.com,semprot.com##.semprot_wizard:has-text(adblocker)
+buahmangga.com,digoreng.com,semprot.com#@#.adunit
+buahmangga.com,digoreng.com,semprot.com#@#.adunit:not(.text-ad)
 buahmangga.com,digoreng.com,semprot.com##+js(acis, String.fromCharCode, ahli)
 buahmangga.com,digoreng.com,semprot.com#@#.adVertical
 buahmangga.com,digoreng.com,semprot.com#@#img[width="500"][height="70"]
