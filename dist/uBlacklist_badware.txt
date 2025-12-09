@@ -1,5 +1,5 @@
 ---
-name: AdBlockID Plus (Badware risks) v25.12.0
+name: AdBlockID Plus (Badware risks) v25.12.1
 ---
 # example.com/path-2/
 # https://regex101.com/r/m9B31Z/4
@@ -30,14 +30,14 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 /\.(de)\/([a-z]{6,11})-([0-9]{5})\.html/
 # jjdq.febipa.de/html/161c470107.html|sideoelektro.de/news/223b076023.html
 # https://regex101.com/r/GhYi93/3
-/\.(de|pl|)\/.+\/[a-z0-9]{4}[0-9]{6}\.html/
+/\.(pl|)\/.+\/[a-z0-9]{4}[0-9]{6}\.html/
 # domain.go.id/image/*
 # https://regex101.com/r/2w7Pqc/30
 /\.([0-9]{1,3}|id|bg|br|cz|ma|uk|uz)\/(assets|data|img|image|css|jss?|public|httdocs?|auth|files?|system|kcfinder|lib|log|vendor|po-includes|wp-admin|wp-content|wp-includes|wp-data)\//
 /\.(com)\/(assets|data|img|image|httdoc|auth|files?|kcfinder|lib|log|vendor|wp-admin|wp-includes|wp-data)\//
 # https://example.com/skctpj-24231.txt
 # https://regex101.com/r/cMsooA/2
-/\.(de|pl)\/([a-z]{4,6})-([0-9]{5})\.(fb2|[a-z]{3,4})/
+/\.(pl)\/([a-z]{4,6})-([0-9]{5})\.(fb2|[a-z]{3,4})/
 # Coin, sering ada
 *://jamkerja.com/*
 *://rumusstatistik.com/*
@@ -49,7 +49,7 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 /\.(ar|bar|cl|in|iq|nl)\/(situs-|aplikasi-|web-)?(komik|cara|baca|manhwa)-/
 /\.(ar|bar|cl|in|iq|nl|uk)\/(aplikasi-|download-|link-|streaming-)?(nonton|drama|drakor|bokep|bandar|film-semi|foto)-/
 # https://regex101.com/r/iYXKub/latest
-/\.(ar|be|bar|com\.(?:co|mx)|cl|in|iq|lv|nl|ug|uk|us)\/(aplikasi-|film-|(?:(?:alamat-|link-)(?:situs-)?)|web(?:site)?-|www-)?(01nonton|bioskop(?:-)?88|bioskop(?:-)?keren|cgvindo|dewa(?:-)?nonton|drakorindo|dramaindo|dramaqu|dunia(?:-)?film|dutafilm|dutamovie|filmapik|ganool|gomov|gudangfilm|gudang(?:-)?movies|indoxxi|juraganfilm|(?:vip-)?idlix|kawanfilm|kawanmovie|kebioskop|kios-film|layar(?:-)?(?:indo|keren|lebar)|ngefilm|nontonfilm(?:168|88)|oppadrama|rebahin|sobatkeren)(21)?(-|\/)/
+/\.(ar|bar|com\.(?:co|mx)|cl|in|iq|lv|nl|ug|uk|us)\/(aplikasi-|film-|(?:(?:alamat-|link-)(?:situs-)?)|web(?:site)?-|www-)?(01nonton|bioskop(?:-)?88|bioskop(?:-)?keren|cgvindo|dewa(?:-)?nonton|drakorindo|dramaindo|dramaqu|dunia(?:-)?film|dutafilm|dutamovie|filmapik|ganool|gomov|gudangfilm|gudang(?:-)?movies|indoxxi|juraganfilm|(?:vip-)?idlix|kawanfilm|kawanmovie|kebioskop|kios-film|layar(?:-)?(?:indo|keren|lebar)|ngefilm|nontonfilm(?:168|88)|oppadrama|rebahin|sobatkeren)(21)?(-|\/)/
 # https://regex101.com/r/RrwtHY/21
 /\.(ar|bar|cl|in|iq|com\.mx|nl|ug|uk)\/(aplikasi-|film-|ip-|link-(?:situs-)?|www-)?(i?lk|layar-?kaca|bioskop|drama|hermes|gm|midas|movieon|movindo|nontonfilm|pusatfilm|rebahan|rutin|savefilm|terbit)(-?21|-xxi)(-|\/)/
 #
@@ -62,52 +62,35 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 # atau uBlock filters – Badware risks
 # --------------------------------------------------------
 # https://regex101.com/r/NugGdl/1
-/\.(de|pl)\/.+\/index$/
+/\.(pl)\/.+\/index$/
 # Ada 1 yang 7 digit
 *://*.sonnenberg-friseure.de/*
 # https://regex101.com/r/aKmT29/8
-/^https?:\/\/(?:www\.)?([a-z]{6})\.([a-z0-9-]+)\.(ca|co\.za|de|pl|edu\.pl|eu)/
+/^https?:\/\/(?:www\.)?([a-z]{6})\.([a-z0-9-]+)\.(ca|co\.za|pl|edu\.pl|eu)/
 # https://regex101.com/r/tKZH0z/1
-/^https?:\/\/(?:www\.)?([a-z]{3,5}|[a-z]{7,8})\.([a-z0-9-]+)\.(eu|de|pl)\/([a-z]{7})\//
+/^https?:\/\/(?:www\.)?([a-z]{3,5}|[a-z]{7,8})\.([a-z0-9-]+)\.(eu|pl)\/([a-z]{7})\//
+# 31 domains
+*://*.be/*
 # 434 domains
 *://*.ca/*
 # 325 domains
 *://*.co.za/*
+# 179 domains
+*://*.de/*
 # 842 domains
 *://*.fr/*
 #
 #
-*://*.alfaonderdelen.be/*
-*://*.antje-scheffel.de/*
 *://*.budmall.pl/*
 *://*.cb-silesia.edu.pl/*
-*://*.chemnitz-immobilienmarkt.de/*
-*://*.chiarabismor.de/*
 *://*.cichedisco.pl/*
-*://*.containertk.de/*
-*://*.engel-voelkers-hagen.de/*
 *://*.ezogrodzisk.pl/*
 *://*.gdansklizbona.pl/*
-*://*.gemaelde-kaufen-online.de/*
 *://*.gioco.edu.pl/*
-*://*.gloanaigl.de/*
-*://*.gourmetadventurehub.de/*
-*://*.havanna-tests.de/*
 *://*.jamieson.bg/?id=*
-*://*.jolinevanopstal.be/*
 *://*.kancelaria-kula.pl/*
-*://*.kropp-zeug.de/*
 *://*.marbudbiecz.pl/*
 *://*.mehrfaneh.com/*
-*://*.mytimecosmetic.de/*
-*://*.netramanage.de/*
-*://*.nk-mg-agentur.de/*
-*://*.opinio24.de/*
-*://*.passione-liebezumdetail.de/*
-*://*.professionaldreamhub.de/*
-*://*.rlst-sim.de/*
-*://*.ruyam-organisation.de/*
-*://*.schwaigermedia.de/*
 *://*.slodyczezzabawkami-pomorskie.pl/*
 *://*.soho.edu.pl/*
 *://1000femmes1000vies.com/*
@@ -118,7 +101,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://3birdsinsulation.com/*
 *://5thdimension.co.in/*
 *://9kwadrat.pl/*
-*://a-p-identity.de/*
 *://aahbwa.org/*
 *://aangepastchalet.nl/*
 *://aatreesurgeonsgloucester.co.uk/*
@@ -127,7 +109,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://abcremodelingtn.com/*
 *://abingtondentalarts.com/*
 *://abisam.org/*
-*://abnehmenimliegengoeppingen.de/*
 *://abrahamsanchis.es/*
 *://academialosandesfc.com.co/*
 *://academyofdance.co/*
@@ -146,14 +127,12 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://ageetey.com/*
 *://agnieszkakubicka.pl/*
 *://agoodfoot.com/*
-*://agrarservice-fehl.de/*
 *://ahkmt.org/*
 *://aimtechnologies.co.in/*
 *://aiqsacademy.com/*
 *://ajulianalvarez.com.ar/*
 *://akbuilderschennai.in/*
 *://aktuexam.in/*
-*://alaindesmet.be/*
 *://alaingrosajt.com/*
 *://albertfranksfinejewelry.com/*
 *://alderatama.com/*
@@ -171,7 +150,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://alsautopartsus.net/*
 *://altadgpt.es/*
 *://altai-balance.us/*
-*://am-markt-18.de/*
 *://amandasillsphotography.com/*
 *://amerc.co/*
 *://americanmembrane.us/*
@@ -188,22 +166,16 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://angrycakes.com/*
 *://animalclinicofmonett.co.in/*
 *://anketelltraining.com/*
-*://annenjoost.be/*
 *://aovevidaperra.es/*
-*://apartments-usedom.de/*
 *://apkabazar.in/*
 *://aplrigsindia.in/*
-*://apm-aufdenpunkt.de/*
 *://arbroathfcctacademy.co.uk/*
-*://arcturus-re.de/*
-*://arlinterieur.be/*
 *://arproductionpromotion.in/*
 *://arquidri.es/*
 *://arquitecturaypaisajismo.com/*
 *://arquiteturaa2.com/*
 *://artbymarksehl.com/*
 *://artecindustrial.es/*
-*://artenova2800.be/*
 *://artfolkofnorfolk.co.uk/*
 *://artisanandmonkey.com/*
 *://asadormuga.com/*
@@ -221,12 +193,10 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://astroboricua.co/*
 *://asyet.co.uk/*
 *://ataasii.com/*
-*://atd-transport.de/*
 *://atlaspmc.in/*
 *://atlasvpn.in/*
 *://atriz.org/*
 *://ats-ayudantes-iipp.es/*
-*://aufdenpunkt-korrektorat.de/*
 *://autospaczyscioch.pl/*
 *://autospaofwyo.com/*
 *://autranconsultoria.com.br/*
@@ -238,16 +208,13 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://aziznawadi.net/*
 *://azyga.pl/*
 *://babelalchemy.com/*
-*://babybadewanne24.de/*
 *://bakingwithbecca.co.uk/*
 *://baladfilm.bar/*
 *://bambamkids.com.mx/*
 *://banditcuisine.com/*
 *://banjaran.co.uk/*
 *://barrykerrguitars.com/*
-*://baudekoration-schmitt.de/*
 *://bbmart.in/*
-*://bcs-powershop.de/*
 *://be-ei.in/*
 *://bealtainemag.com/*
 *://bearyhuggables.com/*
@@ -255,11 +222,8 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://bebingtonbugle.co.uk/*
 *://bedsheetmanufacturer.in/*
 *://bee-mp3.nl/*
-*://bel3d.be/*
-*://belaisa.de/*
 *://belecran.org/*
 *://bellsandwhistles.co.in/*
-*://bemarking.de/*
 *://bencil.co/*
 *://berlataki.com/*
 *://besafeco.com.co/*
@@ -272,13 +236,10 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://bicyclesonmain.com/*
 *://bigbellydeli.in/*
 *://biladalsham.co/*
-*://bitcoingratisonline.de/*
 *://bkengineeringco.in/*
 *://blackhillpress.com/*
 *://blackitacademy.pl/*
 *://blackvelvet.com.mx/*
-*://blau-zu-gruen.de/*
-*://blauwvlaanderen.be/*
 *://blendedbeauty.me/*
 *://bleufield.co/*
 *://blogkempingowy.pl/*
@@ -292,7 +253,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://bonappetito.es/*
 *://boneymtour.com/*
 *://bonitravel.com.mx/*
-*://bonndorf-mobil.de/*
 *://bookofmind.pl/*
 *://borninboston.com/*
 *://borntobebeautiful.org/*
@@ -306,9 +266,7 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://bridalnbridal.com/*
 *://briseida.es/*
 *://britishlegion-derbyshire.org.uk/*
-*://bsbau-bayern.de/*
 *://bsn1.org/*
-*://bsod-motorsport.de/*
 *://buddyfinder.us/*
 *://budmatauto-fiat.pl/*
 *://bulbsize.co.uk/*
@@ -319,7 +277,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://butterandsugar.co/*
 *://buysellhouse.in/*
 *://buyuneekshop.in/*
-*://bw-sholo.de/*
 *://byannabeauty.co.uk/*
 *://bypolly.pl/*
 *://bystander.uk/*
@@ -336,7 +293,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://canarywine-malvasiacanario.com/*
 *://canelabakes.com/*
 *://canidou.com/*
-*://cannabis-raucherzonen.de/*
 *://canterburyskiphire.co.uk/*
 *://cantonwestside.com/*
 *://capishe.in/*
@@ -366,13 +322,10 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://centrorecreacionallusitania.com.co/*
 *://centrumterapiikomir.pl/*
 *://centuryartizan.co.in/*
-*://cepa-seniorenbetreuung.de/*
 *://cfgmeble.pl/*
 *://cgrojgar.in/*
 *://charlesdemarcomd.com/*
-*://charlotteerichsen.de/*
 *://charltonweddings.co.uk/*
-*://chb-bau.de/*
 *://chcsportsclub.co.uk/*
 *://checkiepy.com/*
 *://chetanraj.in/*
@@ -380,14 +333,11 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://chiliwallet.com/*
 *://chirurgkania.pl/*
 *://chokilala.com/*
-*://chopin-day.de/*
 *://choralecantabile.org/*
 *://chordslyrics.in/*
 *://chrisharvey.es/*
 *://chrislaychak.com/*
 *://chrislester.me/*
-*://christian-mentzel-400.de/*
-*://christianesnagelpflegestudio.de/*
 *://cichespojrzenie.pl/*
 *://ciindian.in/*
 *://circlebynikkiprasad.us/*
@@ -395,11 +345,9 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://ciudadvivafuenlabrada.es/*
 *://clarkeblog.com/*
 *://classiccrackers.in/*
-*://classicreifenmoers.de/*
 *://classylanguage.pl/*
 *://cleanerbolton.com/*
 *://cleangrouppoznan.pl/*
-*://clevermax-kuechen.de/*
 *://cliffe-kent.org.uk/*
 *://clothingculture.in/*
 *://cls.com.mx/*
@@ -420,11 +368,9 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://consuelobarbosa.com/*
 *://contechcorp.co/*
 *://contigocruzroja.org/*
-*://contrastcommunicatie.be/*
 *://cookmaster.es/*
 *://copetsit.com/*
 *://cornellinstrumentrepairs.co.uk/*
-*://corona-liess-gruessen.de/*
 *://cortezelks.com/*
 *://cosmolaserdental.in/*
 *://cosmoscholar.in/*
@@ -441,7 +387,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://cspmitra.com/*
 *://cuadrostripticos.com/*
 *://cubawanderer.com/*
-*://customchatbots.de/*
 *://customneonlights.in/*
 *://customwindowsrichmond.com/*
 *://d-restricted.co.uk/*
@@ -471,12 +416,8 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://decover.com.co/*
 *://decryptyourfuture.co.uk/*
 *://deda.es/*
-*://deenva-designs.de/*
 *://definingsmart.com/*
-*://dein-dental-jobs.de/*
-*://dekotshop.be/*
 *://delgartraining.es/*
-*://dem2006.de/*
 *://demooistemangomeubelen.nl/*
 *://denisacarpacademy.es/*
 *://deniserout.com/*
@@ -487,16 +428,11 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://devehicles.in/*
 *://devoiler.in/*
 *://dffine.com/*
-*://dg-generalbau.de/*
 *://diac.es/*
 *://diamondtailoring.co.uk/*
-*://dibond-royal.de/*
-*://die-korrektur.de/*
-*://die-lernfabrik.de/*
 *://dikodingin.com/*
 *://dineroyal.co.in/*
 *://dinvales.co/*
-*://diphaus.de/*
 *://diskonhemat.com/*
 *://dispatchd.co/*
 *://distrimix.com.co/*
@@ -515,13 +451,10 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://doseofvhi.co/*
 *://double-exposures.com/*
 *://doubtgo.in/*
-*://doulajuno.de/*
 *://dounamou.com/*
 *://doverskiphire.co.uk/*
-*://dp-fashion-store.de/*
 *://dpslagma.in/*
 *://dreamondanceclub.co.uk/*
-*://dreumesendreams.be/*
 *://drharishraheja.in/*
 *://drmorgancrowley.com/*
 *://drsareh.com/*
@@ -529,25 +462,20 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://drzemkapoobiedzie.pl/*
 *://dslmarketing.in/*
 *://dubaitourism.co.in/*
-*://duhastpauseteens.de/*
 *://dunhamlane.com/*
 *://dynatek.co.in/*
 *://eastbourneskiphire.co.uk/*
 *://easydoesitdiaperservice.com/*
 *://eatraw.co/*
 *://ebanodesign.com.br/*
-*://ec-lengefeld.de/*
 *://ecopipoclothnappies.com/*
 *://ecosmartsupply.co/*
 *://ecsinternational.in/*
 *://editionspalacios.com/*
 *://editorialdigitaltecdemonterrey.com/*
-*://ee-projektbau.de/*
-*://egenrealty.be/*
 *://egitimyonetimi.org/*
 *://eksmorfoza.pl/*
 *://elansoapery.in/*
-*://eldito.de/*
 *://electlink.net/*
 *://elevatetheedge.com/*
 *://elfestivalaco.com/*
@@ -563,7 +491,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://envirocoatingsaustralia.com/*
 *://epicsummoners.co/*
 *://epiphanyoviedo.org/*
-*://ergotopia.be/*
 *://ergtech.pl/*
 *://ericaprocunier.com/*
 *://ericmiles.co/*
@@ -575,7 +502,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://esec-benin.net/*
 *://esencjalistki.pl/*
 *://esewa.co.in/*
-*://ess-enziell.de/*
 *://essexradiatorstudio.com/*
 *://estoesache.com.ar/*
 *://ethompsonstudio.com/*
@@ -585,15 +511,11 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://evomarketing.es/*
 *://exagro.in/*
 *://explosiveequipment.com/*
-*://externer-hinweisgeberschutz.de/*
-*://extra50koffies.be/*
 *://eyehub.co.in/*
-*://ezcontact.de/*
 *://fablife.co.in/*
 *://fablite.in/*
 *://fadua.co/*
 *://falownikabb.pl/*
-*://fancysplanet.de/*
 *://fansherportfolio.com/*
 *://farmacosmetica.co/*
 *://fastracktechnologies.in/*
@@ -601,7 +523,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://fenixfarma.com.br/*
 *://feriacamicon.com/*
 *://fernandocalixto.com/*
-*://fernseh-werkstatt.de/*
 *://fhsconsulting.co.uk/*
 *://fightershop.co/*
 *://filmgard.com/*
@@ -610,7 +531,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://fitfamkenosha.com/*
 *://flamencodelmar.com/*
 *://flarrowfilms.com/*
-*://fleischerei-hoelck.de/*
 *://flocknpawsfarm.com/*
 *://florcoronas.es/*
 *://flowany.com/*
@@ -618,7 +538,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://flumevineyard.com/*
 *://flymoretravel.in/*
 *://flystuff.in/*
-*://fm-saarpfalz.de/*
 *://fmentrerios.com.ar/*
 *://fnarquitectura.com.ar/*
 *://fneducacional.com.br/*
@@ -640,10 +559,8 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://francoisculiere.com/*
 *://franklinhouse.org/*
 *://freemanheatingandcooling.com/*
-*://freie-kuenstlergruppe-ulmneu-ulm.de/*
 *://fultonyouthorchestra.org/*
 *://furnimax.in/*
-*://futureticket.de/*
 *://gabiadamsphoto.com/*
 *://gaelkaromba.com/*
 *://gakushinac.com/*
@@ -654,7 +571,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://ganganagar.org/*
 *://ganjafarms.us/*
 *://gclassy.com/*
-*://gdrg-definitionshandbuch.de/*
 *://gdsrepairmasonoh.com/*
 *://gearworksmfg.com/*
 *://gemsofrwanda.co/*
@@ -663,20 +579,15 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://get-vm.com/*
 *://getfishingguide.com/*
 *://gforcegear.co.uk/*
-*://gigi-spo.de/*
 *://girovant.com/*
-*://gitarrenunterrichtmichels.de/*
 *://givingcirclesfund.org/*
 *://glacies.in/*
 *://gleneaglescountryapartments.co.uk/*
 *://glichur.com/*
 *://globalexicon.com/*
 *://gloriousevangelicalministries.in/*
-*://gluecklich-und-schlank.de/*
 *://gmwalkfest.co.uk/*
-*://gobd-waechter.de/*
 *://gobigbang.com/*
-*://goerlitz-info.de/*
 *://gofindloans.com/*
 *://goitibera.org/*
 *://goldenroseflorist.com/*
@@ -692,12 +603,10 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://gramoday.org/*
 *://grandmascountrygoodies.com/*
 *://gravesendskiphire.co.uk/*
-*://grcare.de/*
 *://greaterislam.in/*
 *://greatpakistan.org/*
 *://greenarmyfoundation.in/*
 *://greentreepestsolution.co.in/*
-*://grillsaloniki.de/*
 *://grivarellonutricion.com/*
 *://grocer4u.in/*
 *://groupehardy.com/*
@@ -715,7 +624,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://gvntheglobalschool.com/*
 *://habiton.in/*
 *://hackerbro.in/*
-*://haircare-beauty-aktiva.de/*
 *://haircutmenedgewatermd.com/*
 *://hairsmoothening.co.in/*
 *://hamsasilver.in/*
@@ -725,14 +633,11 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://hangoversamui.com/*
 *://hanniganpodiatry.co.uk/*
 *://hanruiwang.me/*
-*://hanssens-hundewelt.de/*
 *://happygnomad.com/*
-*://happyselflove.de/*
 *://happyweddings.co.in/*
 *://harisharora.in/*
 *://harmonika-emiliamlynarczyk.pl/*
 *://harmony-analyser.org/*
-*://haussiebenpfeiffer.de/*
 *://hausweissbacher.com/*
 *://haut-nodin.com/*
 *://headrowacademy.com/*
@@ -741,14 +646,11 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://healingsoultransformation.com/*
 *://hearmo.in/*
 *://hegoaldeikastola.com/*
-*://heimolen114.be/*
-*://helena-bese.de/*
 *://hhcreation.in/*
 *://hiitthehoop.com/*
 *://histnyc.com/*
 *://historiadelacomunicacion.com/*
 *://hmplace.co/*
-*://hof-drage.de/*
 *://holidayhillhotel.in/*
 *://homefuneraldirectory.com/*
 *://homeprod.in/*
@@ -780,14 +682,12 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://ianmcneny.com/*
 *://ibizgraphics.com/*
 *://ifabsummit.in/*
-*://igsuedtangente.de/*
 *://iidmlucknow.co.in/*
 *://iivrvf.in/*
 *://ikervera.es/*
 *://imai-guitars.com/*
 *://imak-engineering.com/*
 *://imamusicbusinessacademy.com/*
-*://immortal-events.de/*
 *://impressionphotography.in/*
 *://impressiveprints.us/*
 *://indiauniforms.in/*
@@ -815,7 +715,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://ivorybluecafe.com/*
 *://iworldstore.in/*
 *://izocel.pl/*
-*://j-braun-steuer.de/*
 *://j-moneyclothing.com.co/*
 *://jacketsforjasper.com/*
 *://jacobik.pl/*
@@ -826,7 +725,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://jakin-et-boaz.com/*
 *://jamesmcalonan.co.uk/*
 *://janiemoge.pl/*
-*://jannamobel.de/*
 *://jastiprth.com/*
 *://jdbserwis.pl/*
 *://jdezign.in/*
@@ -836,7 +734,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://jennaturner.co/*
 *://jerryshang.me/*
 *://jessicabraxtondesigns.com/*
-*://jeugdraadlommel.be/*
 *://jfdeducation.com/*
 *://jhseleccion.com/*
 *://jimrogerstraining.co.uk/*
@@ -853,23 +750,17 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://jpgfilecompress.com/*
 *://jrsguitars.co.uk/*
 *://juanitaheart.com/*
-*://juleicafachtag.de/*
 *://junipercertified.com/*
-*://jurawissen2go.de/*
 *://jurtatrip.pl/*
-*://justalittlecabin.be/*
 *://justincoombes.com/*
 *://juventudeslamatanza.com.ar/*
 *://jyotielectronics.co.in/*
-*://kajaktrends.de/*
 *://kakzmuzik.com/*
-*://kanker-suites.de/*
 *://karacha-music.co.uk/*
 *://karlhalby.com/*
 *://karlmarking.com/*
 *://karyakinasih.com/*
 *://kasavumaalika.in/*
-*://kathrinyoga.de/*
 *://kayempea.net/*
 *://kaysfurniture.net/*
 *://kbeautyholic.com/*
@@ -884,21 +775,13 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://khaltamarplus.com/*
 *://khorus.com.ar/*
 *://kideconventinternationalschool.in/*
-*://kiliandecraemer.be/*
 *://kimballvet.com/*
 *://kimiakesht.co/*
 *://kingpathletics.com/*
-*://kinvex.de/*
-*://kleines-sandhookhaus.de/*
 *://knjetservices.com/*
 *://kokalaboratorija.lv/*
-*://kolot-reparatur.de/*
-*://kontinentgoldenearbeit.de/*
-*://kontrabass-kaleidoskop.de/*
 *://kookilsafe.com/*
-*://kork-on.de/*
 *://koukoupuffs.net/*
-*://kreativaw.de/*
 *://krisandbrake.com/*
 *://kriti-jain.com/*
 *://ksrtechinstitute.com/*
@@ -917,7 +800,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://lamisticainvicta.com.ar/*
 *://lamptonguesthouse.com/*
 *://landmarkstudios.co/*
-*://landtag4diversity.de/*
 *://laorquideaonline.com/*
 *://larouesalonaise.org/*
 *://laserenade.com/*
@@ -928,11 +810,9 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://lavieofficial.com/*
 *://lavivamexico.co.uk/*
 *://lcandkel.com/*
-*://ldklinik.de/*
 *://leangreen.co.in/*
 *://learnmorepro.in/*
 *://leblancshomeinspection.com/*
-*://leca-coaching.de/*
 *://lecadeau.in/*
 *://ledcribbage.com/*
 *://leedsplumbers.uk/*
@@ -941,7 +821,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://lestwins.co/*
 *://lestylovert.com/*
 *://letsgocolombia.com.co/*
-*://lewundosa.de/*
 *://lexotique.in/*
 *://libres-en-quete.com/*
 *://lifemakers.co/*
@@ -954,7 +833,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://lionheartcricket.co.uk/*
 *://listedonline.uk/*
 *://littletreelandscapes.co.uk/*
-*://liwa-reinigung.de/*
 *://lizaslifeincolour.co.uk/*
 *://localescomerciales.com.co/*
 *://logobucket.co/*
@@ -967,7 +845,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://lovecrafted.nl/*
 *://luckimedia.in/*
 *://lukaszklimowicz.com/*
-*://lulezimcallaku.de/*
 *://lumoshome.co/*
 *://luxurysleep.uk/*
 *://lvseamstress.com/*
@@ -982,15 +859,12 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://maisonetp.com/*
 *://makanandshine.org/*
 *://makeonemove.com/*
-*://makerslake.de/*
 *://makina-isotta.com/*
 *://makingjiggy.com/*
-*://mama-ratgeber.de/*
 *://managedgateways.com/*
 *://mangumdesign.co/*
 *://mansfield5starsmallpetboarding.co.uk/*
 *://mariosmediterranean.co.uk/*
-*://markyscreations.be/*
 *://marrons-aveyron.com/*
 *://martinsantekphotography.com/*
 *://marycorum.com/*
@@ -1000,7 +874,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://massinor.es/*
 *://mastersandservers.org/*
 *://mathematicsanalysis.in/*
-*://matt-crabbe.de/*
 *://matthewjure.net/*
 *://mconsultoria.es/*
 *://mdusolutions.pl/*
@@ -1020,7 +893,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://microfinancedirectory.com/*
 *://micuerpo.co/*
 *://mikewbarr.com/*
-*://milee-shop.de/*
 *://milemm.com.mx/*
 *://milenamonforte.com/*
 *://millenniumtattoo.net/*
@@ -1040,7 +912,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://mkfootwear.co.in/*
 *://mknd.in/*
 *://mmjknowledge.com/*
-*://mobicompact.de/*
 *://mobiya.co.in/*
 *://mobsswindshield.co.in/*
 *://modernplush.co/*
@@ -1051,7 +922,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://morningstarcorp.in/*
 *://mostalania.com/*
 *://moto-ogloszenia.com/*
-*://mounacosmetics.de/*
 *://moxium.co/*
 *://mpracademy.com.co/*
 *://mpym.org/*
@@ -1064,13 +934,11 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://musicflashclass.com/*
 *://musiktherapy.co/*
 *://myhomelifeinteriors.in/*
-*://myhomewell.de/*
 *://mymahimescapital.com/*
 *://myraa.co.in/*
 *://namelessbike.com/*
 *://nancysmilerlevinson.com/*
 *://nanoaparatysluchowe.pl/*
-*://naschbasis.de/*
 *://nashvilleseo.us/*
 *://nationalsaveenergycoalition.org/*
 *://natrajignou.in/*
@@ -1080,7 +948,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://ndnnews.in/*
 *://nectarshiksha.org/*
 *://networkagainstmalaria.org/*
-*://nevori.de/*
 *://newankitplastic.com/*
 *://nhathuoctuelamso8.com/*
 *://nieruchomosciowyagent.pl/*
@@ -1098,11 +965,9 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://o-chems.nl/*
 *://oakmeadowscwc.com/*
 *://oakridgemun.in/*
-*://occupy-occupy.de/*
 *://octomtech.com/*
 *://oczywistacodziennosc.pl/*
 *://odipure.com/*
-*://of-faithful-labs.de/*
 *://ol-service.com/*
 *://oldhamskiphire.co.uk/*
 *://oldjerusalemchicago.com/*
@@ -1112,7 +977,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://omhandloomindustries.in/*
 *://omiyagefromjapan.com/*
 *://omshreeayurved.co.in/*
-*://one4products.de/*
 *://oneless.co.in/*
 *://onixbajio.com.mx/*
 *://opssec.in/*
@@ -1140,12 +1004,10 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://parafiestas.es/*
 *://paraguaylife.com/*
 *://paredesyasociados.com.mx/*
-*://parkautobahn.de/*
 *://parknova.co/*
 *://parsisclinic.com/*
 *://partybang.co/*
 *://pasarklik.com/*
-*://pasingby.de/*
 *://patentregistrationbangalore.in/*
 *://patientcritical.com/*
 *://pay2.co.in/*
@@ -1156,17 +1018,13 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://perfect-artificial-lawns.co.uk/*
 *://persianas-herrero.es/*
 *://personaltouchcleaners.net/*
-*://peter-naekel.de/*
 *://petrakoo.com/*
-*://petrolromantics.de/*
 *://pewindia.co.in/*
 *://phoebelloyd.co.uk/*
 *://phyllishouseman.com/*
 *://piebags.in/*
 *://pinestopalms.co/*
 *://pinkads.in/*
-*://pixelzentrum.de/*
-*://pizzadreamkitchen.de/*
 *://plaine-sud-de-caen.com/*
 *://planetsudoku.com/*
 *://playlistmutator.com/*
@@ -1180,7 +1038,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://ponkes.com.co/*
 *://pontiac.com.mx/*
 *://pontuscarle.com/*
-*://poppemieken.be/*
 *://poppybooth.co.uk/*
 *://poppygirl.co/*
 *://portraitadoption.com/*
@@ -1189,7 +1046,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://powerflowng.com/*
 *://pozitude.co.uk/*
 *://prakashbrothers.in/*
-*://praxis-schoettler-bocholt.de/*
 *://prempanicker.in/*
 *://prestigegardenestateresort.in/*
 *://priyankaconstruction.in/*
@@ -1197,7 +1053,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://professionailspaca.us/*
 *://profitseptember.pl/*
 *://promotionalconceptsinc.com/*
-*://prostatazentrum-kiel.de/*
 *://protectparkofkeir.com/*
 *://proyectolinder.com.ar/*
 *://pscylelondon.com/*
@@ -1210,9 +1065,7 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://pupcentral.in/*
 *://purelifefoundation.us/*
 *://purplebeautyshop.in/*
-*://quictrack.de/*
 *://quintadopaco.co.uk/*
-*://r-fahrzeugaufbereitung.de/*
 *://raanee.in/*
 *://racosta.com.br/*
 *://radiansoundlab.com/*
@@ -1228,11 +1081,9 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://re-ed.org/*
 *://re-medien.org/*
 *://rebiooil.com/*
-*://rechtsrat-corona.de/*
 *://recordbreakersband.com/*
 *://recreationalartstudio.com/*
 *://recusa.org/*
-*://reden-singen-begleiten.de/*
 *://redgotrip.in/*
 *://redhookgrill.com/*
 *://rednosehacker.com/*
@@ -1241,8 +1092,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://regiisrecruiting.com/*
 *://reginakert.org/*
 *://reib.org/*
-*://reipa.be/*
-*://reizenrondeuropa.be/*
 *://rejuved.co/*
 *://reliablestudy.in/*
 *://reliure-martine-grive.com/*
@@ -1265,7 +1114,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://ronclearfield.com/*
 *://roseofsharonzimbabwe.com/*
 *://roserbundo.com/*
-*://routelux2023.be/*
 *://rowee.in/*
 *://royalpneumatics.co.in/*
 *://royaltajoh.us/*
@@ -1274,25 +1122,20 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://rrdigitalmarketing.in/*
 *://rrw.co.in/*
 *://rsba1.com/*
-*://rsfweb.de/*
 *://rubenmeliksetian.com/*
 *://rubensaldana.es/*
-*://rudnick-uwe.de/*
 *://ruralboost.es/*
 *://rusnomad.com/*
-*://sab-engineers.de/*
 *://sacredwaves.me/*
 *://sadiesea.com/*
 *://sadityhair.co/*
 *://sagar-engineeringworks.co.in/*
 *://saifee.in/*
-*://sainctelette17.be/*
 *://salixhealthandwellbeing.com/*
 *://samaei.co/*
 *://samaramedeiros.com/*
 *://samilee-moody.me/*
 *://samouczki.pl/*
-*://samuelrabbertz.de/*
 *://sanatandharam.co.in/*
 *://sanctuaryatmission.com/*
 *://sanikaarts.in/*
@@ -1314,15 +1157,10 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://scuzice.org/*
 *://sdfi.in/*
 *://searckey.in/*
-*://sebaclean.be/*
 *://secretleaves.in/*
-*://securedataworks.de/*
-*://seelentexte-bilder.de/*
 *://seoblueprint.in/*
 *://seolentop.co/*
-*://serclean.de/*
 *://serenitydecor.in/*
-*://serqua.de/*
 *://serviceport.com.mx/*
 *://serviciossanjuan.es/*
 *://sffinancialgroup.co/*
@@ -1347,10 +1185,8 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://shresthaholdings.com/*
 *://shriharipublicschool.in/*
 *://sicomunicacion.com/*
-*://sideoelektro.de/*
 *://sidpalmer.co.uk/*
 *://siegerprinzip.com/*
-*://siegfried-liebscher.de/*
 *://siemensplc.in/*
 *://sikkimnursingcouncil.in/*
 *://simpi-api.com/*
@@ -1361,13 +1197,9 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://sipuedes.es/*
 *://siran.in/*
 *://sitcobags.in/*
-*://sitexpres.de/*
 *://skdieselindia.co.in/*
-*://skiskillspro.be/*
 *://slawomirchojnowski.pl/*
-*://slechtziendenzorg.be/*
 *://slicepayments.co/*
-*://slimline-aesthetics.de/*
 *://smafely.com/*
 *://smartbloodsugar.us/*
 *://smartcapsules.in/*
@@ -1380,12 +1212,9 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://sociallyace.com/*
 *://socialy.id/*
 *://soilsolutions.co/*
-*://solaris-solutions.be/*
 *://solastasalon.in/*
 *://solucioneseducativas.me/*
 *://solutionnm.org/*
-*://sonnenberg-friseure.de/*
-*://sophie-brunner.de/*
 *://sortridgemanor.co.uk/*
 *://soryapps.es/*
 *://souldancefitness.com/*
@@ -1399,19 +1228,14 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://squarehook.co/*
 *://stallionmotorsport.co.in/*
 *://stanleycycles.in/*
-*://stefan-weidner-fotografie.de/*
 *://stelmashenko.com/*
-*://steuerkanzlei-hohenaecker.de/*
 *://stevencdelacruz.com/*
-*://stiftung-fuerstenbergscher-kulturbesitz.de/*
-*://stimmklang-usner.de/*
 *://straightoutofireland.com/*
 *://strangeonpurpose.co/*
 *://strategiccrossroads.com/*
 *://strungmusic.com/*
 *://studio-unicorn.pl/*
 *://studychesspro.com/*
-*://stulz-technik.de/*
 *://styleandmakeup.co.uk/*
 *://sugarbeebakeshop.co.uk/*
 *://sugarnspires.com/*
@@ -1426,11 +1250,9 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://sureshsarees.in/*
 *://suresuccessias.in/*
 *://surfacegripp.com/*
-*://survivalfreakz.de/*
 *://suryalife.com/*
 *://suziemahonydesigns.com/*
 *://svepc.in/*
-*://svetoslavaleksievgebaudereinigung.de/*
 *://svsnfoundation.com/*
 *://swisst.co/*
 *://swivbox.com/*
@@ -1441,7 +1263,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://taamchina.com/*
 *://tableforfive.co/*
 *://taikee.co/*
-*://takeoff2change.de/*
 *://talamo.com.co/*
 *://talyuna.com/*
 *://tamsinbearsley.org/*
@@ -1492,14 +1313,11 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://thetrunk.co.in/*
 *://theveganpregnancyguide.com/*
 *://thewealthkart.com/*
-*://thewebwise.de/*
 *://theyogafusion.com/*
 *://thomasnupen.com/*
 *://thunderground.me/*
 *://tibanindah.com/*
 *://tiendacailun.com.ar/*
-*://tierbedarfoase.de/*
-*://tierphysio-atkins.de/*
 *://tikkabistro.com/*
 *://timemadurai.in/*
 *://tinbro.in/*
@@ -1508,11 +1326,8 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://tkd-paysdeloire.com/*
 *://tlumacz-english.pl/*
 *://tmstore.com.ar/*
-*://tom-holthusen.de/*
 *://tomxwork.com/*
-*://toni-boden.de/*
 *://tooswater.com/*
-*://top50-motorrad.de/*
 *://topnotchbeauty.us/*
 *://torcyenvalois.com/*
 *://totallyhuman.co/*
@@ -1523,11 +1338,9 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://tracelinq.com/*
 *://tracezonline.in/*
 *://trackingclouds.com/*
-*://traeume-zu-zweit.de/*
 *://transcenddigital.co/*
 *://trendshala.co.in/*
 *://treningi-bepro.pl/*
-*://triamienergie.de/*
 *://triomotors.in/*
 *://trollbox.in/*
 *://truckslutsmag.com/*
@@ -1535,11 +1348,7 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://tutorialrevitybim.es/*
 *://tvbarbershop.com/*
 *://tvffootwear.com/*
-*://twulleminhof.be/*
-*://uemit-market.de/*
 *://ugandatourismassociation.org/*
-*://ukrholzinvest.de/*
-*://ulrikebaumertdesign.de/*
 *://ultimatemountainliving.com/*
 *://ultrafino.net/*
 *://ultroncommerce.in/*
@@ -1556,21 +1365,16 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://urbaninjun.com/*
 *://userockfella.com.br/*
 *://usncash.com/*
-*://ute-griepentrog.de/*
 *://utkarshacademy.in/*
-*://uufa.bet/*
 *://uvflatbed.in/*
 *://uvsengineers.co.in/*
 *://uvukeclub.com/*
 *://v-charge.co.in/*
 *://vacacionesfamilia.com/*
 *://vakiria.co.in/*
-*://valhalla-baits.de/*
-*://vanbeauty-viernheim.de/*
 *://varaprada.in/*
 *://varuntech.in/*
 *://vbptest.co.uk/*
-*://vdbcarcare.be/*
 *://vedicoriginofmusic.in/*
 *://veerable.com/*
 *://venkyssafetynets.co.in/*
@@ -1580,7 +1384,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://viaprofumi.com.ar/*
 *://victoriacheribennett.com/*
 *://victorialogistics.co.uk/*
-*://vimey-photography.de/*
 *://vinitgupta.in/*
 *://vinodroyal.in/*
 *://virtualed.in/*
@@ -1589,17 +1392,13 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://vitorgurgel.co/*
 *://vizzelvago.com/*
 *://volpibiduletruck.com/*
-*://vossenstreken-grime.be/*
 *://vrtbga.com/*
 *://vsenterprisesindia.co.in/*
 *://vsevkurse.com/*
 *://vtltyblog.com/*
 *://waiclothing.co.uk/*
-*://walkact-bielefeld.de/*
 *://walor.in/*
-*://wanderingmind-meditationundcoaching.de/*
 *://wardand.co/*
-*://wargrid.de/*
 *://warszawabordeaux.pl/*
 *://wavelandpark.in/*
 *://wcsem.co.in/*
@@ -1607,11 +1406,8 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://weandourventures.in/*
 *://webcreol.com/*
 *://webirds.in/*
-*://weddingparty-passau.de/*
 *://weknowdogs.co/*
 *://welteratelier.co/*
-*://wer-gibt-geld.de/*
-*://westerwaelderwachstuch.de/*
 *://wetestyourenglish.com/*
 *://wetostal.pl/*
 *://what-maisie-made.co.uk/*
@@ -1623,7 +1419,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://wijnhandeldejong.nl/*
 *://wildrosestudio.co/*
 *://wilshireconnection.com/*
-*://wirtschaftsinvest.de/*
 *://wkchessacademy.in/*
 *://wodatlenruch.pl/*
 *://wonderdiet.pl/*
@@ -1646,7 +1441,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://youmusthavethis.pl/*
 *://yourinnovativecreations.com/*
 *://ytconverter.me/*
-*://zahnarzt-schwaikheim.de/*
 *://zarzadmowy.pl/*
 *://zealmedical.in/*
 *://zeisconsultingservices.com/*
@@ -1655,7 +1449,6 @@ name: AdBlockID Plus (Badware risks) v25.12.0
 *://zombieroof.com/*
 *://zumbaosdelviento.com/*
 *://zuuk.me/*
-*://zwergenschlaf.de/*
 *://zycieciechocinka.pl/*
 /debt-collection-agency-in-([a-z]+)\.co\.uk/
 /hire-man-with-a-van-in-([a-z]+)\.co\.uk/
