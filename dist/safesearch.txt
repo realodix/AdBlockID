@@ -3,85 +3,31 @@ name: AdBlockID Addons (Safesearch)
 description: A filter that blocks spam, misleading, and malicious websites from appearing in search results!
 homepage: https://github.com/realodix/AdBlockID
 ---
-# example.com/path-2/
-# https://regex101.com/r/m9B31Z/4
-#/(\.[a-z]{2,3}\/)([a-z0-9-]+)(-[0-9]{1,2}\/)$/
-# .id/foobar/?menyala=KAWANFILM21
-# https://regex101.com/r/rr7MHE/15
 /\.id(\/.+)?(\/\?(?!api|page|halaman|view|search|filter)[a-zA-Z0-9_]{3,}=)([a-zA-Z0-9%+-]{5,})$/
-# example.com/?id=togel+4d
-# https://regex101.com/r/I3hYSd/2
-# https://stackoverflow.com/questions/6744587/simple-regex-match-any-string-with-at-least-one-hyphen
 /(\.(?:id|nl))(.+)?(\/\?id=)([a-zA-Z0-9]*(?:\+|-)[a-zA-Z0-9]*)+$/
-# example.com/?id=lk21
 /id=(lk21|pusatfilm|rebahin(?:21)?)/
-# /?coin= | Melengkapi di atasnya, karena keterbatasan harus minimal 2 kata
-# https://regex101.com/r/g88LAj/3
-#/\/\?(?:id|panel|coin|xlost|403_id|srsltid)=/
-# .php?done=IDLIX+21
-# https://regex101.com/r/FKNSfw/3
 /\.php\?([a-z]+)=([a-zA-Z0-9]*(?:\+)[a-zA-Z0-9]*)+$/
-# .id/id/tag/ben-can-you-hear-me4ccba682-3f7c-4dc1-9e31-9cd80eec6db7.html
-# https://regex101.com/r/s1ioqo/1
 /\.id\/.+([a-z0-9]{8})-([a-z0-9]{4})-([a-z0-9]{4})-([a-z0-9]{4})-([a-z0-9]{12})\.html/
-# mashumana.es/13893084-xvideo.html
-# https://regex101.com/r/0BAV5I/2
 /\.(es)\/([0-9]{8})-.+\.html/
-# rpsyche.de/jclpackt-32631.html
-# https://regex101.com/r/UPZzPE/4
-#/\.(de)\/([a-z]{6,11})-([0-9]{5})\.html/
-# domain.go.id/image/*
-# https://regex101.com/r/2w7Pqc/30
 /\.([0-9]{1,3}|id|bg|br|cz|ma|uk|uz)\/(assets|data|img|image|css|jss?|public|httdocs?|auth|files?|system|kcfinder|lib|log|vendor|po-includes|wp-admin|wp-content|wp-includes|wp-data)\//
 /\.(com)\/(assets|data|img|image|httdoc|auth|files?|kcfinder|lib|log|vendor|wp-admin|wp-includes|wp-data)\//
-# https://example.com/skctpj-24231.txt
-# https://regex101.com/r/cMsooA/2
-#/\.(pl)\/([a-z]{4,6})-([0-9]{5})\.(fb2|[a-z]{3,4})/
-# Coin, sering ada
 *://jamkerja.com/*
 *://rumusstatistik.com/*
 *://thaists.org/*
 *://youth19.com/*
-# Coin
-# example.com/nonton-
-# https://regex101.com/r/iZC5nE/11
 /\.(ar|bar|cl|in|iq|nl)\/(situs-|aplikasi-|web-)?(komik|cara|baca|manhwa)-/
 /\.(ar|bar|cl|in|iq|nl|uk)\/(aplikasi-|download-|link-|streaming-)?(nonton|drama|drakor|bokep|bandar|film-semi|foto)-/
-# https://regex101.com/r/iYXKub/latest
 /\.(ar|bar|com\.(?:co|mx)|cl|in|iq|lv|nl|ug|uk|us)\/(aplikasi-|film-|(?:(?:alamat-|link-)(?:situs-)?)|web(?:site)?-|www-)?(01nonton|bioskop(?:-)?88|bioskop(?:-)?keren|cgvindo|dewa(?:-)?nonton|drakorindo|dramaindo|dramaqu|dunia(?:-)?film|dutafilm|dutamovie|filmapik|ganool|gomov|gudangfilm|gudang(?:-)?movies|indoxxi|juraganfilm|(?:vip-)?idlix|kawanfilm|kawanmovie|kebioskop|kios-film|layar(?:-)?(?:indo|keren|lebar)|ngefilm|nontonfilm(?:168|88)|oppadrama|rebahin|sobatkeren)(21)?(-|\/)/
-# https://regex101.com/r/RrwtHY/21
 /\.(ar|bar|cl|in|iq|com\.mx|nl|ug|uk)\/(aplikasi-|film-|ip-|link-(?:situs-)?|www-)?(i?lk|layar-?kaca|bioskop|drama|hermes|gm|midas|movieon|movindo|nontonfilm|pusatfilm|rebahan|rutin|savefilm|terbit)(-?21|-xxi)(-|\/)/
-#
-# Mungkin nanti berguna
-# https://regex101.com/r/Y4dNYR/latest
-#
-# General
-#
-# Domain .es, .fr, .pl biasanya sudah diblokir oleh easylist
-# atau uBlock filters – Badware risks
-# --------------------------------------------------------
-# https://regex101.com/r/NugGdl/1
-#/\.(pl)\/.+\/index$/
-# https://regex101.com/r/aKmT29/8
 /^https?:\/\/(?:www\.)?([a-z]{6})\.([a-z0-9-]+)\.(eu)/
-# https://regex101.com/r/tKZH0z/1
 /^https?:\/\/(?:www\.)?([a-z]{3,5}|[a-z]{7,8})\.([a-z0-9-]+)\.(eu)\/([a-z]{7})\//
-# 31 domains
 *://*.be/*
-# 434 domains
 *://*.ca/*
-# 325 domains
 *://*.co.za/*
-# 179 domains
 *://*.de/*
-# 842 domains
 *://*.fr/*
-# 208 .in + 68 co.in
 *://*.in/*
-# 89 domains
 *://*.pl/*
-#
-#
 *://*.jamieson.bg/?id=*
 *://*.mehrfaneh.com/*
 *://1000femmes1000vies.com/*
@@ -656,6 +602,7 @@ homepage: https://github.com/realodix/AdBlockID
 *://lvseamstress.com/*
 *://lynmelvillejamesprint.co.uk/*
 *://lynnrwolfe.com/*
+*://mabriba.es/*
 *://madebymestudio.co/*
 *://madeespeciallyforyou.org/*
 *://madefrommelbourne.com.au/*
@@ -807,6 +754,7 @@ homepage: https://github.com/realodix/AdBlockID
 *://powerflowng.com/*
 *://pozitude.co.uk/*
 *://productoslicenciados.com/*
+*://profesordigital.es/*
 *://professionailspaca.us/*
 *://promotionalconceptsinc.com/*
 *://protectparkofkeir.com/*
