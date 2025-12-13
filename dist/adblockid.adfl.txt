@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sat, 13 Dec 2025 19:19:53 GMT
+! Last modified: Sat, 13 Dec 2025 23:48:23 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4607,9 +4607,10 @@ mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##img[alt*="banner" i]
 .gif|$domain=moenime.com
 moenime.com##*:matches-css(position: fixed):has(*:matches-css(position: absolute))
 moenime.com##*:matches-css(position: fixed):has(*:matches-css(position: relative))
-moenime.com##*:matches-css(position: fixed):matches-css(background-image: /base64/)
-moenime.com##a[target*="blank"]:has(> img)
 moenime.com##*:matches-css(position: fixed):has(:is(a, canvas, img, form, [onclick]))
+moenime.com##a[target*="blank"]:has(> img)
+moenime.com##*:matches-css(position: fixed):has(*:matches-css(background-image: /url\(/))
+moenime.com##*:matches-css(position: fixed):matches-css(background-image: /base64/)
 moenime.com##form:matches-css(position: fixed)
 moenime.com##.show
 moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
@@ -4619,6 +4620,8 @@ moenime.com##.copyright
 moenime.com##.entry-content div:matches-css(text-align: center)
 moenime.com##.widget-area
 moenime.com##[id*="donate-"]
+moenime.com##div[style*="background-color"]:has(> [onclick*="none"])
+moenime.com##span:has-text(/saweria/i):style(color: transparent!important;)
 moenime.com##+js(aeld, click, /\.php\?/)
 moenime.com##+js(nowoif)
 .gif|$image,domain=oploverz.*
