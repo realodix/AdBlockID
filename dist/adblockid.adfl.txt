@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sun, 14 Dec 2025 11:14:12 GMT
+! Last modified: Sun, 14 Dec 2025 16:43:55 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4604,7 +4604,7 @@ mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##+js(aeld, contextmenu)
 .gif|$domain=moenime.com
 moenime.com##*:matches-css(position: fixed):has(*:matches-css(position: absolute))
 moenime.com##*:matches-css(position: fixed):has(*:matches-css(position: relative))
-moenime.com##*:matches-css(position: fixed):has(:is(a, canvas, img, image,form, [onclick], [href*="base64"]))
+moenime.com##*:matches-css(position: fixed):has(:is(a, canvas, img, image, form, [onclick], [href*="base64"]))
 moenime.com##a[target*="blank"]:has(> img)
 moenime.com##*:matches-css(position: fixed):has(*:matches-css(background-image: /url\(/))
 moenime.com##*:matches-css(position: fixed):matches-css(background-image: /base64/)
@@ -4680,9 +4680,7 @@ kiryuu.cc##div[id^="teaser"]
 /kiryuu0\d+\.com/##.kln
 /kiryuu0\d+\.com/##a[target*="blank"]:has(> img)
 /kiryuu0\d+\.com/##div[id^="teaser"]
-kiryuu.cc##+js(aeld, contextmenu)
 kiryuu.cc##+js(nowoif)
-/kiryuu0\d+\.com/##+js(aeld, contextmenu)
 /kiryuu0\d+\.com/##+js(nowoif)
 /ads/*$to=gmbr.pro
 ||ads.gmbr.pro^
