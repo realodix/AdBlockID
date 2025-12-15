@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Mon, 15 Dec 2025 05:29:37 GMT
+! Last modified: Mon, 15 Dec 2025 06:09:52 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -1678,7 +1678,6 @@ _728x90px.$image,domain=bogordaily.net
 /promotion/*$image,domain=tuntasonline.id
 ||ads.sorot.co^$1p
 /\/[0-9]{19,20}\.(png|webp)/$image,domain=sugawa.id
-||1cak.com/shopee/$image
 ||8mediatech.com/banner/
 ||aboutsemarang.id^*/iklan-$image
 ||acehekspres.com/files/sewaan/
@@ -3023,10 +3022,7 @@ ntbsatu.com##a[title="iklan" i]
 radarmanadoonline.com##a[title^="adv" i]
 dardura.com##article #body-post-it > center:has-text(/adv/i)
 tafsirweb.com##article > #promo-box
-1cak.com##div:matches-css(border-bottom-style: solid):has(> div:matches-css(height: 270px):has(> .adsbygoogle))
-fin.co.id##div:matches-css(height: 250px):matches-css(justify-content: center):has(.adsbygoogle)
 brainly.co.id##div[data-testid="brainly_ads_placeholder"]
-1cak.com##div[style="color:#aaa;"]:has-text(/adv/i)
 halodoc.com##hd-base-display-ads
 hitamputih.site,mcnnews.online##img[alt*="Header AD Image" i]
 ayobacanews.com,beritajurnalis.net,beritapopuler.co.id,bisnismarket.com,bogorzonenews.com,coinvestasi.com,fakta.com,harianindonesia.net,infoterkini.id,infotren.id,jabaronline.com,jurnalcakrawala.com,kabarindoraya.com,kabarkala.com,kalesang.id,kaltimkita.com,lahatsatu.com,lensametro.com,line1.news,liputan12.id,liriknews.com,mahatva.id,mediawarta.com,mistar.id,nuntium.id,pilarparlemen.id,portal7.co.id,portalbanten.net,portalberita.co.id,pusaranmedia.com,revivaltv.id,sakanews.com,serayunews.com,suarabantennews.com,sulselpasti.com##img[alt*="ads" i]
@@ -3166,7 +3162,7 @@ mili.id##.minibox:has(> script)
 marketeers.com##.modal-login-container:has([src^="https://ads.marketeers.com"])
 mediarevolusi.co.id##.module .image-wrap.tf_rel > img
 tintainformasi.com##.module-widget > .widget:has(> script)
-disway.id,fin.co.id,motorexpertz.com,postingnews.id,semaraknews.co.id##.nkt__stick
+disway.id,motorexpertz.com,postingnews.id,semaraknews.co.id##.nkt__stick
 jabaronline.com##.oduu-widget-content:has(> center > a[target="_blank"] > img)
 minanews.net##.para_caption
 mcwnews.com##.paradetail
@@ -3241,7 +3237,7 @@ pilihanpro.id##a[href^="https://accesstrade.co.id/sl.php"].tcb-button-link
 diskursusnetwork.com##a[href^="https://maps.app.goo.gl/"]:has(> img)
 prudensi.com##a[href^="https://prudensi.com/category/advertorial/"]:has(> img)
 reviewsteknologiku.tech,suarakuningan.com##a[href^="https://s.shopee.co.id/"]
-1cak.com,informasilomba.com,pojokreview.com##a[href^="https://shope.ee/"]:has(> img)
+informasilomba.com,pojokreview.com##a[href^="https://shope.ee/"]:has(> img)
 artikel.rumah123.com,belajarmandiriyuk.com,liputanindonesia.co.id##a[href^="https://shopee.co.id/"]:has(> img)
 pcplus.co.id,utamanews.com##a[href^="https://tokopedia.link/"]:has(> img)
 centerklik.com,kabarterdepan.com,poindonews.com##a[rel="nofollow"] > img
