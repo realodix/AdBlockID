@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Mon, 15 Dec 2025 03:39:50 GMT
+! Last modified: Mon, 15 Dec 2025 03:41:54 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4580,14 +4580,13 @@ doroni.me,doronime.id##.Popup
 *.gif$image,to=bk21.net
 ||bk21.net/*.mp4$media,redirect=noopmp4-1s
 juragan.*###banner
-dramaserial.id,juragan.*##.idmuvi-afterplayer
-dramaserial.id,juragan.*##.idmuvi-topplayer
-dramaserial.id,juragan.*##a[target*="blank"]:has(> img)
+juragan.*##.idmuvi-afterplayer
+juragan.*##.idmuvi-topplayer
+juragan.*##a[target*="blank"]:has(> img)
 juragan.*##.popbox
 juragan.*##body:style(overflow: auto!important; position: unset!important;)
-dramaserial.id##+js(aopr, $.magnificPopup.open)
-@@||p.jwpcdn.com/player/plugins/vast/$domain=dramaserial.id|juragan.*|juraganfilm.info
-dramaserial.id,juragan.*#@#.idmuvi-topbanner
+@@||p.jwpcdn.com/player/plugins/vast/$domain=juragan.*|juraganfilm.info
+juragan.*#@#.idmuvi-topbanner
 kuronime.moe###overplay
 kuronime.moe##.kln
 kuronime.moe##div[id^="teaser"]
