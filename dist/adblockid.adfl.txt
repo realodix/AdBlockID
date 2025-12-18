@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Thu, 18 Dec 2025 12:00:39 GMT
+! Last modified: Thu, 18 Dec 2025 14:52:36 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4604,12 +4604,13 @@ moenime.com##.site-content:style(z-index: 10 !important; position: relative!impo
 moenime.com##a[target*="blank"]:has(> img)
 moenime.com##body > svg
 moenime.com##form:matches-css(position: fixed)
+moenime.com##+js(acis, document.getElementById, Blob()
 moenime.com##*:matches-css(position: fixed):has(*:matches-css(position: static):not([src*="WUSpzgC"]))
 moenime.com##*:matches-css(position: fixed):has(img):not(.scroll-to-top)
 moenime.com##.show
 moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 moenime.com##.entry-content div:matches-css(text-align: center):has(img + [onclick])
-moenime.com##:is(.copyright, .copyleft)
+moenime.com##:is(.copyright, .copyleft, .farmright)
 moenime.com##div:has(:has-text(/\/donate/))
 moenime.com##div[style*="background-color"]:has(> [onclick*="none"])
 moenime.com##+js(aeld, /mouseup|pointerup/, /window\.open|decodeURIComponent/)
