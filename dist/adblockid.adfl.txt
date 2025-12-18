@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Thu, 18 Dec 2025 00:44:36 GMT
+! Last modified: Thu, 18 Dec 2025 00:45:09 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4951,19 +4951,15 @@ linkpoi.me##+js(aopr, app_vars.force_disable_adblock)
 linkpoi.me##+js(aopr, disableItToContinue)
 menjelajahi.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adblock)
 cekresi.me,indobo.com,techaku.com,tempatwisata.pro,vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
-lifesurance.info##+js(set, showada, true)
-||adligature.com^$redirect=noop.js,domain=tempatwisata.pro
-||srvtrck.com^$redirect=noop.js,domain=tempatwisata.pro
-@@-ads-banner.js$domain=lifesurance.info
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arahtekno.com|dapat.link|gnaija.net|jurnalistekno.id|khaddavi.net|lokerwfh.net|smasnug.biz.id|tutwuri.id
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=jurnalistekno.id|khaddavi.net|lokerwfh.net|smasnug.biz.id|tutwuri.id
 @@||mangalist.org^$ghide
 jurnalistekno.id##body > .fc-ab-root
 jurnalistekno.id##body:style(overflow: auto !important;)
-besargaji.com,dapat.link,khaddavi.net,link2unlock.com,lokerwfh.net,meong.club,techbloogs.com,tutwuri.id##+js(nowoif)
+besargaji.com,khaddavi.net,link2unlock.com,lokerwfh.net,meong.club,techbloogs.com,tutwuri.id##+js(nowoif)
 besargaji.com,khaddavi.net,lokerwfh.net,techbloogs.com,tutwuri.id##+js(adjust-setInterval)
 cekresi.me,tempatwisata.pro##+js(adjust-setInterval, /counter|Wait/, *, 0.001)
 cekresi.me,tempatwisata.pro##+js(aeld, blur, counter)
-dapat.link,saungfirmware.id,savetub.com##+js(set, blurred, false)
+saungfirmware.id,savetub.com##+js(set, blurred, false)
 slurr.my.id###content #wpsafegenerate div:has(a > img):not(#wpsafe-link)
 slurr.my.id###content .wpsafe-top div:has(> a > img):not(#wpsafe-generate)
 tempatwisata.pro##:has(> a[href="#downloadnow"])
