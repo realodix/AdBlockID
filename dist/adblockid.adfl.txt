@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Wed, 17 Dec 2025 23:57:08 GMT
+! Last modified: Thu, 18 Dec 2025 00:44:36 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4945,6 +4945,7 @@ _usafelink.$3p,script
 ##[href^="https://safelinkblogger.com/ref/"]
 ##[href^="https://safelinku.com/ref/"] > img
 cekresi.me,tempatwisata.pro##span:has-text(/adv/i)
+||safelinku.com/ad_home.js$redirect=noop.js
 linkerload.com##+js(acis, addEventListener, google_ad_client)
 linkpoi.me##+js(aopr, app_vars.force_disable_adblock)
 linkpoi.me##+js(aopr, disableItToContinue)
@@ -4952,7 +4953,6 @@ menjelajahi.com,saungfirmware.id##+js(aopr, short_url_app_vars.force_disable_adb
 cekresi.me,indobo.com,techaku.com,tempatwisata.pro,vebma.com##+js(no-fetch-if, pagead2.googlesyndication.com)
 lifesurance.info##+js(set, showada, true)
 ||adligature.com^$redirect=noop.js,domain=tempatwisata.pro
-||safelinku.com/ad_home.js$redirect=noop.js
 ||srvtrck.com^$redirect=noop.js,domain=tempatwisata.pro
 @@-ads-banner.js$domain=lifesurance.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arahtekno.com|dapat.link|gnaija.net|jurnalistekno.id|khaddavi.net|lokerwfh.net|smasnug.biz.id|tutwuri.id
