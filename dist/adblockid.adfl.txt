@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Tue, 23 Dec 2025 16:19:44 GMT
+! Last modified: Tue, 23 Dec 2025 17:20:31 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4282,6 +4282,7 @@ genpi.co##article [class^="_popIn_"]:has-text(/adv/i)
 marketeers.com##article [class^="bg-gray-"]:has-text(/adv/i)
 idntimes.com###hidden-parallax
 #@#[id^="google_ads_iframe"]
+codeflare.net###adBlockInfo
 kuyhaa.me##+js(aeld, load, daadb_get_data)
 adikcloud.my.id,adikdrive.my.id##+js(aopr, adBlockDetected)
 blog-dnz.com##+js(aopr, isAdBlockedDOM)
@@ -4300,7 +4301,6 @@ offenseproject.com##+js(acis, document.createElement, ignielAdBlock)
 kareel.com##+js(set, config.adblock.selector, true)
 abadikini.com,badakpos.com,deras.id,hasanah.id,mykmu.net,partaiku.id,rukim.id,teknoob.id##+js(set, tie.ad_blocker_detector, null)
 mykmu.net##+js(set-constant, tie.ad_blocker_disallow_images_placeholder, '')
-codeflare.net###adBlockInfo
 ||bloggerku.com/antiadblock/$script
 ||googletagmanager.com/gtag/js$script,redirect-rule=googletagmanager_gtm.js,domain=harianmerdeka.id
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect-rule=google-ima.js,domain=visionplus.id
