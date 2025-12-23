@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Tue, 23 Dec 2025 17:30:30 GMT
+! Last modified: Tue, 23 Dec 2025 17:53:06 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -1680,8 +1680,10 @@ bolatimes.com,hitekno.com,matamata.com,suara.com##.adds-top
 suara.com##.banner-ads--parallax
 dewiku.com,suara.com##.bg-ads-sticky-side
 dewiku.com,suara.com##.bg-ads-sticky-top
+matamata.com##.content div:matches-css(position: relative):matches-css(min-height: 100px)
 suara.com##.parallax_swipe
-suara.com##.placeholder_center
+guideku.com##.placeholder_belt
+hitekno.com,suara.com##.placeholder_center
 suara.com##.placeholder_expose
 guideku.com,suara.com##.placeholder_leaderboard
 suara.com##.placeholder_medium
@@ -1691,6 +1693,8 @@ suara.com##.placeholder_r3
 suara.com##.placeholder_read_body
 suara.com##.skin:has(> [data-ad-type])
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com,mobimoto.com,suara.com##[class^="placeholder_"]:has([id^="div-ad-"])
+dewiku.com,himedik.com,hitekno.com,matamata.com,mobimoto.com,suara.com##.fc-ab-root
+dewiku.com,himedik.com,hitekno.com,matamata.com,mobimoto.com,suara.com##body:style(overflow: auto !important;)
 cermati.com##:matches-path(/artikel) .ads-container
 cermati.com##:matches-path(/artikel) .sticky-banner-wrapper
 cermati.com##:matches-path(/artikel) [data-banner]:has(> a)
