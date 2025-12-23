@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Tue, 23 Dec 2025 17:24:21 GMT
+! Last modified: Tue, 23 Dec 2025 17:25:32 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4285,6 +4285,7 @@ idntimes.com###hidden-parallax
 #@#[id^="google_ads_iframe"]
 codeflare.net###adBlockInfo
 asibuka.com##.antiadblock
+sekedus.com##body > .main-container > div:matches-css(position: fixed):has-text(/adblock/i)
 kuyhaa.me##+js(aeld, load, daadb_get_data)
 adikcloud.my.id,adikdrive.my.id##+js(aopr, adBlockDetected)
 blog-dnz.com##+js(aopr, isAdBlockedDOM)
@@ -4328,7 +4329,6 @@ qoo10.co.id,surgatekno.com##ins[data-ad-client]
 ##.demo-wrapper[style="display:none;"] + div.fadeInDown[id]
 ##body > div.demo-wrapper[style="display:none;"] + div[id][class]
 ###idmuvi-adb-enabled
-sekedus.com##body > .main-container > div:matches-css(position: fixed):has-text(/adblock/i)
 nontonx.com,sekedus.com##body > div:matches-css(position: fixed):has-text(/adblock/i)
 /px.gif?$image,redirect-rule=1x1.gif
 *#*/ad/$image,redirect-rule=1x1.gif
