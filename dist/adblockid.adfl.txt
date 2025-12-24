@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Wed, 24 Dec 2025 11:30:38 GMT
+! Last modified: Wed, 24 Dec 2025 18:30:35 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4631,18 +4631,12 @@ mirrorkomik.info##div[id^="teaser"]
 mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##img[alt*="banner" i]
 mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##+js(aeld, contextmenu)
 .gif|$domain=moenime.com
+moenime.com##+js(acis, Element.prototype.addEventListener, remove)
 moenime.com##+js(acis, Element.prototype.attachShadow)
 moenime.com##+js(acis, window.atob)
-moenime.com##.show
 moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
-moenime.com##*:has(> :matches-css(float: right)):has-text(/dukung/i)
-moenime.com##*:matches-css(float: right):has(a)
-moenime.com##*:matches-css(position: relative):has-text(/sociabuzz\.com/)
 moenime.com##.entry-content div:matches-css(text-align: center):has([onclick])
 moenime.com##:is(.widget, .widget-area)
-moenime.com##a:matches-css(text-decoration: underline)
-moenime.com##+js(aeld, /mouseup|pointerup|mousedown/)
-moenime.com##+js(aeld, click, /\.php|fromCharCode|open/)
 moenime.com##+js(nowoif)
 .gif|$image,domain=oploverz.*
 oploverz.*###oploverz
