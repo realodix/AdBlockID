@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sun, 28 Dec 2025 12:32:57 GMT
+! Last modified: Sun, 28 Dec 2025 12:37:41 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -3686,7 +3686,6 @@ borobudurnews.com##.bs-sksitem
 persis.or.id##.carousel:has(img[src*="/iklan/"])
 indonesiadaily.net##.code-block:has(> p > a > img)
 wartapos.id##.container-wrapper > img
-jelajahcoin.com##.content > center:has(> .adsbygoogle)
 madrasahdigital.co##.content-inner > .madra-penerbitan-buku
 tirto.id##.content-text-editor ins:has(> a[href*="_bnnid="])
 bloggerperempuan.com##.ct-slider
@@ -4227,6 +4226,7 @@ terkenal.co.id##.post-article img[srcset^="data:image/gif;base64,"]
 halodoc.com##[class*="bg-gray-"].min-h-\[250px\]:has(> div:has-text(/adv/i))
 wowkeren.com##article div:matches-css(display: inline-block):has(> script)
 uzone.id##body > .md\:hidden:has(> div:has-text(/iklan/i))
+jelajahcoin.com##center:has(> .adsbygoogle)
 klubpria.com##center:has(> [id^="div-gpt-ad"])
 sinergianews.com,sitnas.id##center:has(> div:has(script))
 bkppkutim.com,viv.co.id##center:has(div > .adsbygoogle)
