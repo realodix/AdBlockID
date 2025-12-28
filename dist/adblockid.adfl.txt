@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sun, 28 Dec 2025 16:00:25 GMT
+! Last modified: Sun, 28 Dec 2025 16:36:08 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4584,9 +4584,9 @@ mirrorkomik.info##div[id^="teaser"]
 mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##img[alt*="banner" i]
 mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##+js(aeld, contextmenu)
 .gif|$domain=moenime.com
-moenime.com##*:matches-css(position: /fixed|relative/):has(:is(iframe, [src*="data:image"]))
-moenime.com##iframe:matches-css(position: fixed)
-moenime.com##^script:has-text(/decodeURIComponent\(|%[0-9A-Fa-f]{2}/)
+moenime.com##*:matches-css(position: /fixed|absolute/):has(:is(iframe, [src*="data:image"]))
+moenime.com##iframe:matches-css(position: /fixed|absolute/)
+moenime.com##^script:has-text(/decodeURIComponent\(|(?:%|x)[0-9A-Fa-f]{2}/)
 moenime.com##+js(acis, Element.prototype.addEventListener, remove)
 moenime.com##+js(acis, Element.prototype.attachShadow)
 moenime.com##+js(acis, String.fromCharCode)
@@ -4594,6 +4594,7 @@ moenime.com##+js(acis, window.atob)
 moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
 moenime.com##.entry-content div:matches-css(text-align: center):has([onclick])
 moenime.com##:is(.widget, .widget-area)
+moenime.com##+js(acis, Array.prototype.join, #)
 moenime.com##+js(nowoif)
 .gif|$image,domain=oploverz.*
 oploverz.*###oploverz
