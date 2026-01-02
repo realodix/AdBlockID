@@ -22,13 +22,13 @@ homepage: https://github.com/realodix/AdBlockID
 /^https?:\/\/(?:www\.)?([a-z]{6})\.([a-z0-9-]+)\.(eu)/
 /^https?:\/\/(?:www\.)?([a-z]{3,5}|[a-z]{7,8})\.([a-z0-9-]+)\.(eu)\/([a-z]{7})\//
 *://*.be/*
-@*://spatie.be/*
+@/(?<=\/\/|\.)spatie\.be/
 *://*.ca/*
 *://*.co.za/*
 *://*.de/*
-@*://phpunit.de/*
-@/ccm19\.de/
-@/clickskeks\.de/
+@/(?<=\/\/|\.)ccm19\.de/
+@/(?<=\/\/|\.)clickskeks\.de/
+@/(?<=\/\/|\.)phpunit\.de/
 *://*.fr/*
 *://*.in/*
 *://*.pl/*
