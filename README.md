@@ -1,5 +1,6 @@
-<p align="center"><img src="https://i.imgur.com/iQB1Uti.jpg" /></p>
-<br />
+<p align="center"><img width="200" height="200" alt="Logo" src="https://raw.githubusercontent.com/realodix/AdBlockID-src/refs/heads/main/art/logo.png" /></p>
+
+<h1 align="center">AdBlockID Filters</h1>
 
 <p align="right">
 <a href="https://github.com/realodix/AdBlockID/commits/main"><img src="https://img.shields.io/github/commit-activity/m/realodix/AdBlockID?label=Commits&style=flat-square"></a>
