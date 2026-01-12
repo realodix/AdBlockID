@@ -3,8 +3,9 @@ name: AdBlockID Addons (Safesearch)
 description: A filter that blocks spam, misleading, and malicious websites from appearing in search results!
 homepage: https://github.com/realodix/AdBlockID
 ---
-/\.([0-9]{1,3}|id|bg|br|cz|ma|uk|uz)\/(assets|data|img|image|css|jss?|public|httdocs?|auth|files?|system|kcfinder|lib|log|vendor|po-includes|wp-admin|wp-content|wp-includes|wp-data)\//
-/\.(com)\/(assets|data|img|image|httdoc|auth|files?|kcfinder|lib|log|vendor|wp-admin|wp-includes|wp-data)\//
+/\.([0-9]{1,3}|id|bg|br|cz|ie|ma|rw|ug|uk|uz)\/(assets|data|img|image|css|jss?|public|httdocs?|auth|files?|system|kcfinder|lib|log|vendor|po-includes|wp-admin|wp-content|wp-includes|wp-data)\//
+/\.(com|org)\/(assets|data|httdoc|auth|files?|kcfinder|lib|log|vendor|wp-admin|wp-includes?|wp-data)\//
+/\.id\/bin\/(.+)\/\?/
 /\/lib\/vendor\//
 /\/vendor\/.+\/(bin|src)\//
 /\/vendor_verifi\/.+\/src\//
