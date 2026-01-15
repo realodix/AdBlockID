@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Thu, 15 Jan 2026 17:47:05 GMT
+! Last modified: Thu, 15 Jan 2026 17:47:51 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -2022,6 +2022,10 @@ sindonews.com##.parallax-non.t600:style(top: 0 !important;)
 inews.id##div:matches-css(justify-content: center):matches-css(height: 298px):has(> div[id^="div-gpt-ad-"])
 inews.id##div:matches-css(justify-content: center):matches-css(height: 90px):has(> div[id^="div-gpt-ad-"])
 sindonews.com##+js(rc, t480, .content-paralax)
+@@/advertising/*$domain=client.okezone.com
+sindonews.com#@##header-ads
+techno.okezone.com#@#.container-ads-topmenu
+||fundingchoicesmessages.google.com/i/pub-$script,redirect=noopjs,domain=okezone.com
 inews.id,okezone.com##.content-wrap:style(margin-top:0!important;)
 inews.id##body > .wrap-all:style(top: 0 !important;)
 okezone.com###contentx .vicon:remove()
@@ -2033,10 +2037,6 @@ sindonews.com##.vidwrap:remove()
 okezone.com##.vplayer:has(iframe[src^="https://video.okezone.com/embedoutstream"]):remove()
 okezone.com##[id^="ivs-"]:remove()
 inews.id,okezone.com##+js(aopr, document.oncopy)
-||fundingchoicesmessages.google.com/i/pub-$script,redirect=noopjs,domain=okezone.com
-@@/advertising/*$domain=client.okezone.com
-sindonews.com#@##header-ads
-techno.okezone.com#@#.container-ads-topmenu
 bandungterkini.id,banyuwangiterkini.id,batuterkini.id,idnhits.com,indonesiaterkini.id,jatengterkini.id,jatimterkini.id,jemberterkini.id,jogjaterkini.id,kediriterkini.id,lamonganterkini.id,madiunterkini.id,malangterkini.id,nganjukterkini.id,pacitanterkini.id,pewarta.co.id,republikindonesia.net,suaranasional.id,surabayaterkini.id,tajam.net###slotbanner
 swarawarta.co.id##.ad-middle
 bandungterkini.id,banyuwangiterkini.id,batuterkini.id,idnhits.com,indonesiaterkini.id,jatengterkini.id,jatimterkini.id,jemberterkini.id,jogjaterkini.id,kediriterkini.id,lamonganterkini.id,madiunterkini.id,malangterkini.id,nganjukterkini.id,pacitanterkini.id,pewarta.co.id,republikindonesia.net,suaranasional.id,surabayaterkini.id,tajam.net##.banner
