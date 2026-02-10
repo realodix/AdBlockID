@@ -5,10 +5,10 @@ Tutorial ini dapat membantu Anda untuk menggunakan AdBlockID di:
 
 ## Cara Memasang AdBlockID
 
-### Otomatis
+### # Otomatis
 
 Anda dapat langsung menekan link `Subscribe` langsung dari table yang telah disediakan. Table dapat Anda temukan di [halaman depan][ABID_Subscription].
-### Manual
+### # Manual
 
 1. Buka *dashboard*.
 2. Klik tab *Filter lists*.
