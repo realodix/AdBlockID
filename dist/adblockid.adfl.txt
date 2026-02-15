@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sun, 15 Feb 2026 17:46:02 GMT
+! Last modified: Sun, 15 Feb 2026 17:49:05 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4586,7 +4586,7 @@ mirrorkomik.info##div[id^="teaser"]
 mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##img[alt*="banner" i]
 mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##+js(aeld, contextmenu)
 .gif|$domain=moenime.com
-moenime.com##*:matches-css(position: absolute):has(:is(canvas, iframe, [href*="data:image"], [src*="data:image"], img[src*="blob:"]))
+moenime.com##*:matches-css(position: absolute):has(:is(canvas, iframe, [href*="data:image"], [src*="data:image"], img[src*="blob:"], input[src*="blob:"]))
 moenime.com##*:matches-css(position: absolute):matches-css(background-image: /base64|url\(/)
 moenime.com##*:matches-css(position: fixed)
 moenime.com##iframe:matches-css(position: absolute)
