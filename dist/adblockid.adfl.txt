@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Thu, 05 Mar 2026 12:57:20 GMT
+! Last modified: Thu, 05 Mar 2026 17:53:38 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4589,10 +4589,10 @@ mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##img[alt*="banner" i]
 mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##+js(aeld, contextmenu)
 .gif|$domain=moenime.com
 moenime.com##*:matches-css(background-image: /base64|url\(/)
+moenime.com##*:matches-css(position: /absolute|relative/):has(*:matches-css(content: /base64|url\(/))
 moenime.com##*:matches-css(position: /absolute|relative/):matches-css(background-image: /base64|url\(/)
 moenime.com##*:matches-css(position: absolute):has(*:matches-css(background-image: /base64|url\(/))
 moenime.com##*:matches-css(position: absolute):has(*:matches-css(border-image-source: /base64|url\(/))
-moenime.com##*:matches-css(position: absolute):has(*:matches-css(content: /base64|url\(/))
 moenime.com##*:matches-css(position: absolute):has(*:matches-css(list-style-image: /base64|url\(/))
 moenime.com##*:matches-css(position: absolute):has(*:matches-css-after(content: /base64|url\(/))
 moenime.com##*:matches-css(position: static):matches-css(display: /grid|flex/):has(> :matches-css(position: static)):remove()
