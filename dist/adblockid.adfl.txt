@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Thu, 05 Mar 2026 20:05:37 GMT
+! Last modified: Fri, 06 Mar 2026 05:55:54 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4596,12 +4596,13 @@ moenime.com##*:matches-css(position: absolute):has(*:matches-css(border-image-so
 moenime.com##*:matches-css(position: absolute):has(*:matches-css(list-style-image: /base64|url\(/))
 moenime.com##*:matches-css(position: absolute):has(*:matches-css-after(content: /base64|url\(/))
 moenime.com##*:matches-css(position: static):matches-css(display: /grid|flex/):has(> :matches-css(position: static)):remove()
-moenime.com##*:matches-css(position: /absolute|relative/):has(:is(canvas, embed, iframe, object, image, [type*="image"], [data*="data:image"], [href*="data:image"], [src*="data:image"], [src*="blob:"], [data*="blob:"]))
+moenime.com##*:matches-css(position: /absolute|relative/):has(:is(canvas, embed, iframe, object, [src*="blob:"], [data*="blob:"]))
+moenime.com##*:matches-css(position: /absolute|relative/):has(:is(image, [type*="image"], [data*="data:image"], [href*="data:image"], [src*="data:image"]))
 moenime.com##*:matches-css(position: /fixed|sticky/)
 moenime.com##*:matches-css(position: absolute):matches-css(content: /base64|url\(/)
 moenime.com##*:matches-css(position: absolute):matches-css(list-style-image: /base64|url\(/)
 moenime.com##*:matches-css(position: relative):has([src*="base64"])
-moenime.com##[style*="transform"]:matches-css(position: absolute)
+moenime.com##:is([srcset*="data:"], [style*="transform"]):matches-css(position: absolute)
 moenime.com##iframe:matches-css(position: absolute)
 moenime.com##^script:has-text(/decodeURIComponent\(|(?:%|x)[0-9A-Fa-f]{2}/)
 moenime.com##+js(acis, Blob)
