@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Mon, 09 Mar 2026 10:57:46 GMT
+! Last modified: Mon, 09 Mar 2026 17:08:16 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4597,7 +4597,7 @@ moenime.com##*:matches-css(position: absolute):has(*:matches-css(border-image-so
 moenime.com##*:matches-css(position: absolute):has(*:matches-css(list-style-image: /base64|url\(/))
 moenime.com##*:matches-css(position: absolute):has(*:matches-css-after(content: /base64|url\(/))
 moenime.com##*:matches-css(position: /absolute|relative/):has(:is(canvas, embed, iframe, object, [src*="blob:"], [data*="blob:"]))
-moenime.com##*:matches-css(position: /absolute|relative/):has(:is(image, [type*="image"], [data*="data:image"], [href*="data:image"], [src*="data:image"], img[src*="data:"]))
+moenime.com##*:matches-css(position: /absolute|relative/):has(:is(image, [type*="image"], [data*="data:image"], [href*="data:image"], [src*="data:image"], img[src*="data:" i]))
 moenime.com##*:matches-css(position: /fixed|sticky/)
 moenime.com##*:matches-css(position: absolute):matches-css(content: /base64|url\(/)
 moenime.com##*:matches-css(position: absolute):matches-css(list-style-image: /base64|url\(/)
@@ -4609,9 +4609,10 @@ moenime.com##+js(acis, Blob)
 moenime.com##+js(acis, CSSStyleDeclaration.prototype.setProperty)
 moenime.com##+js(acis, Element.prototype.addEventListener, remove)
 moenime.com##+js(acis, Element.prototype.attachShadow)
+moenime.com##+js(acis, HTMLDialogElement.prototype.showModal)
 moenime.com##+js(acis, String.fromCharCode)
-moenime.com##+js(acis, window.atob)
-moenime.com##+js(acis, window.requestAnimationFrame)
+moenime.com##+js(acis, Window.atob)
+moenime.com##+js(acis, Window.requestAnimationFrame)
 moenime.com##body > [style*="position"]:remove()
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,redirect-rule=googlesyndication_adsbygoogle.js,domain=moenime.com
 moenime.com##body:style(overflow: auto !important;)
