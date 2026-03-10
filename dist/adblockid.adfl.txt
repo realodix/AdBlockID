@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Tue, 10 Mar 2026 07:45:21 GMT
+! Last modified: Tue, 10 Mar 2026 08:03:31 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4589,45 +4589,6 @@ mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##.kln
 mirrorkomik.info##div[id^="teaser"]
 mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##img[alt*="banner" i]
 mirrorinkomik.my.id,mirrorkomik.info,mirrorkomik.site##+js(aeld, contextmenu)
-.gif|$domain=moenime.com
-moenime.com##*:matches-css(background-image: /base64|url\(/)
-moenime.com##*:matches-css(position: /absolute|relative/):has(*:matches-css(content: /base64|url\(/))
-moenime.com##*:matches-css(position: /absolute|relative/):matches-css(background-image: /base64|url\(/)
-moenime.com##*:matches-css(position: absolute):has(*:matches-css(background-image: /base64|url\(/))
-moenime.com##*:matches-css(position: absolute):has(*:matches-css(border-image-source: /base64|url\(/))
-moenime.com##*:matches-css(position: absolute):has(*:matches-css(list-style-image: /base64|url\(/))
-moenime.com##*:matches-css(position: absolute):has(*:matches-css-after(content: /base64|url\(/))
-moenime.com##*:matches-css(position: /absolute|relative/):has(:is(canvas, embed, iframe, object, [src*="blob:"], [data*="blob:"]))
-moenime.com##*:matches-css(position: /fixed|sticky/)
-moenime.com##*:matches-css(position: absolute):matches-css(content: /base64|url\(/)
-moenime.com##*:matches-css(position: absolute):matches-css(list-style-image: /base64|url\(/)
-moenime.com##:is([srcset*="data:"], [style*="transform"]):matches-css(position: absolute)
-moenime.com##[open]:remove()
-moenime.com##iframe:matches-css(position: absolute)
-moenime.com##^script:has-text(/decodeURIComponent\(|(?:%|x)[0-9A-Fa-f]{2}/)
-moenime.com##+js(acis, Blob)
-moenime.com##+js(acis, CSSStyleDeclaration.prototype.setProperty)
-moenime.com##+js(acis, Element.prototype.addEventListener, remove)
-moenime.com##+js(acis, Element.prototype.attachShadow)
-moenime.com##+js(acis, HTMLDialogElement.prototype.showModal)
-moenime.com##+js(acis, Node.prototype.appendChild)
-moenime.com##+js(acis, String.fromCharCode)
-moenime.com##+js(acis, window.atob)
-moenime.com##+js(acis, window.requestAnimationFrame)
-moenime.com##+js(prevent-innerHTML)
-moenime.com##body > [style*="position"]:remove()
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,redirect-rule=googlesyndication_adsbygoogle.js,domain=moenime.com
-moenime.com##body:style(overflow: auto !important;)
-moenime.com##html:style(overflow: auto !important;)
-moenime.com##+js(set, HTMLScriptElement.prototype.onerror, undefined)
-||trafficbass.com^$xhr,method=head,redirect-rule=nooptext,domain=moenime.com
-!#if adguard
-moenime.com##*:matches-css(position: absolute):has(> :matches-css(position: relative))
-!#endif
-moenime.com##.entry-content div:matches-css(text-align: center):has([onclick])
-moenime.com##.entry-content form[action*="/go.php"]
-moenime.com##:is(.widget, .widget-area)
-moenime.com##+js(nowoif)
 .gif|$image,domain=oploverz.*
 oploverz.*###oploverz
 oploverz.*###oploverz2
