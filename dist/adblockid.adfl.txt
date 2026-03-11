@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Wed, 11 Mar 2026 17:31:48 GMT
+! Last modified: Wed, 11 Mar 2026 18:25:59 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -342,6 +342,7 @@ _ads728x90-
 ###flowads
 ###footer-adcont
 ###footer-sticky-ads-container
+###ftBottomAd
 ###ftads
 ###ftadsth
 ###gap-iklan
@@ -4992,11 +4993,10 @@ dewaporn.*##.happy-sidebar > a:has(> img)
 filmjepangku.com,filmjepangku.net,heppinn.id,javsubid.*,javsubindo.*,nontonhentai.net,pascol.*,starjepang.wiki##.kln
 nekopoi.care##.leftarea
 lendirqu.*##.popup-banner
-artisbokep.*##.top-banner
 indoporntv.*##.vertbars-300
 agenbokep.*,bandarbokep.*,ceritanakal.com,duniabokep.*,indobokepin.*,javsubindo.*,nontonbokep.*,pascol.*,terviral.cam##a:has(> img[src$=".gif"])
 pejuanglendir.com##a:not([href="https://www.pejuanglendir.com/"]):has(> img)
-18subindo.com,agenbokep.*,artisbokep.*,bandarbokep.*,bokepindo.*,bokepindo21.*,bokepjilbab.*,bokepvir.*,bosku21.cam,cctvbokep.*,duniabokep.*,filmnikmat.*,filmnikmattv1.*,gocrot.me,gocrot.org,hencop.com,igo-bokep.*,igobokep.*,javindo.*,javsubindo.*,kesiangan.com,lendirpedia.*,malayporntube.net,minioppai.org,myhdjav.me,ngentub.cc,ngocoks.com,nntnbkptv2.space,nokephub.*,nontonbokep.*,nontonhentai.net,nontonhentai.org,omahbokep.*,pascol.*,pojokan69.com,rumahperjaka.*,seponghub.*,sibokepjepang.*,terviral.cam##a[target*="blank"]:has(> img)
+18subindo.com,agenbokep.*,bandarbokep.*,bokepindo.*,bokepindo21.*,bokepjilbab.*,bokepvir.*,bosku21.cam,cctvbokep.*,duniabokep.*,filmnikmat.*,filmnikmattv1.*,gocrot.me,gocrot.org,hencop.com,igo-bokep.*,igobokep.*,javindo.*,javsubindo.*,kesiangan.com,lendirpedia.*,malayporntube.net,minioppai.org,myhdjav.me,ngentub.cc,ngocoks.com,nntnbkptv2.space,nokephub.*,nontonbokep.*,nontonhentai.net,nontonhentai.org,omahbokep.*,pascol.*,pojokan69.com,rumahperjaka.*,seponghub.*,sibokepjepang.*,terviral.cam##a[target*="blank"]:has(> img)
 bokep360.*##a[title="banner" i]:has(> img)
 filmjepangku.com,hencop.com,javsubindo.*,lendirpedia.*,minioppai.org,pascol.*,pemersatu.link,starjepang.wiki,terviral.cam##body > div[id^="teaser"]
 indoporn.*##div:has(> .adsbyexoclick)
@@ -5033,6 +5033,9 @@ agenbokep.*,bandarbokep.*,bokepindo.*,doooood.co,duniabokep.*,hencop.com,indobok
 sukasex.*##+js(rmnt, script, popupUrl)
 kingbokep.*##*:style(user-select:text!important;)
 pusatporn18.com##.content-post center:has(> a > img)
+/wp-content/uploads/*.mp4$1p,media,redirect=noopmp4-1s,to=artisbokep.*|republikbokep.*|xbokepin.*
+artisbokep.*##.top-banner
+artisbokep.*,republikbokep.*,xbokepin.*##a[target*="blank"]:has(> img)
 doujindesu.tv,igodesu.tv,javdesu.tv##a[target*="blank"]:has(> img)
 doujindesu.tv##+js(aopr, document.oncontextmenu)
 doujindesu.tv,igodesu.tv##+js(nowoif)
