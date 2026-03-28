@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sat, 28 Mar 2026 09:48:25 GMT
+! Last modified: Sat, 28 Mar 2026 10:12:11 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -199,6 +199,7 @@ _ads728x90-
 ###ads-6
 ###ads-960-mid
 ###ads-besar
+###ads-body-top
 ###ads-content1
 ###ads-content2
 ###ads-kecil
@@ -384,20 +385,36 @@ _ads728x90-
 ###iklan-baris
 ###iklan-bawah
 ###iklan-close
+###iklan-desktop-half_page
+###iklan-desktop-rectangle1
+###iklan-desktop-rectangle2
+###iklan-desktop-skyscrapper
+###iklan-desktop-top_banner
+###iklan-desktop-under_image
 ###iklan-giantbanner
+###iklan-head
 ###iklan-infeed
 ###iklan-kanan-postingan
 ###iklan-kiri
 ###iklan-kontad1
 ###iklan-kontad3
+###iklan-mgid_under_article
+###iklan-mobile-rectangle1
+###iklan-mobile-rectangle2
+###iklan-mobile-skyscrapper
+###iklan-mobile-top_banner
+###iklan-mobile-under_image
 ###iklan-newsfeed
 ###iklan-non-homepage
 ###iklan-overlay
 ###iklan-paralax
+###iklan-recreative_under_article
 ###iklan-rekanan
 ###iklan-rekanan1
 ###iklan-rekanan2
 ###iklan-sidebar1
+###iklan-skin-left
+###iklan-skin-right
 ###iklan-sp-ready
 ###iklan-sticky
 ###iklan-tengah1
@@ -3876,6 +3893,7 @@ koranpagionline.com##figure:has(> figcaption:has-text(/adv/i))
 orami.co.id##header > #footer_stickyexp:has(> #div-gpt-ad-stickyexp)
 bacasaja.id##img[src^="data:image/png;base64"]
 beritahukum.com##table:has(> tbody > tr > td.styleisikanan:has-text(/ads/i))
+jawapos.com##.justify-center:has(> div:matches-css(width: 300px):matches-css(height: 250px))
 kbr.id,kbrprime.id##.max-w-\[970px\].h-\[50px\]
 narasi.tv##.min-w-\[160px\].min-h-\[600px\]
 investortrust.id##.w-36.h-\[400px\]
@@ -3895,12 +3913,19 @@ aspirasinews.id,munivmotoblog.com,qayyumnews.id##[width="1024"][height="170"]
 indoposco.id##div:matches-css(max-width: 970px):matches-css(min-height: 115px)
 otorider.com##div:matches-css(min-height: 250px)
 otorider.com##div:matches-css(min-height: 255px)
+jawapos.com##div:matches-css(width: 120px):matches-css(height: 600px)
+radarsurabaya.jawapos.com##div:matches-css(width: 160px):matches-css(min-height: 600px)
 bloombergtechnoz.com##div:matches-css(width: 300px):matches-css(height: 100px)
 hukumonline.com,inilah.com##div:matches-css(width: 300px):matches-css(height: 250px)
-beautyjournal.id##div:matches-css(width: 300px):matches-css(height: 600px)
+beautyjournal.id,jawapos.com##div:matches-css(width: 300px):matches-css(height: 600px)
+jawapos.com##div:matches-css(width: 300px):matches-css(min-height: 600px)
 hukumonline.com##div:matches-css(width: 320px):matches-css(height: 50px)
 citizen.co.id,gamebrott.com,hukumonline.com##div:matches-css(width: 728px):matches-css(height: 90px)
-balipost.com,gamebrott.com##div:matches-css(width: 970px):matches-css(height: 90px)
+jawapos.com##div:matches-css(width: 728px):matches-css(height: auto)
+jawapos.com##div:matches-css(width: 728px):matches-css(min-height: 90px)
+jawapos.com##div:matches-css(width: 970px):matches-css(height: 250px)
+balipost.com,gamebrott.com,jawapos.com##div:matches-css(width: 970px):matches-css(height: 90px)
+jawapos.com##div:matches-css(width: 970px):matches-css(min-height: 250px)
 sambar.id##img[data-original-width="1000"][data-original-height="250"]
 jejakhukumindonesia.com##img[data-original-width="1280"][data-original-height="194"]
 realitasnews.com##img[data-original-width="2112"][data-original-height="278"]
