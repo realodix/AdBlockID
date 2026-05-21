@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID Plus
 ! Description: Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID.
-! Last modified: Thu, 21 May 2026 04:17:41 GMT
+! Last modified: Thu, 21 May 2026 04:21:45 GMT
 ! Expires: 6 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -33,6 +33,9 @@ ocbc.id##+js(set-local-storage-item, cookieConsent, true)
 garuda-indonesia.com##+js(set-local-storage-item, cookies, true)
 asianet.co.id##+js(set-local-storage-item, cookiesAccepted, true)
 komdigi.go.id##+js(set-local-storage-item, localConsent, true)
+puratos.co.id##.modal
+puratos.co.id##.modal-backdrop
+puratos.co.id##body,html:style(overflow: auto !important; position: initial !important;)
 ||karirpad.com/mediapartner/widget/$3p,frame
 ||player.ivideosmart.com/ivsplayer/$script,domain=brilio.net|id.theasianparent.com|indosport.com|tempo.co
 ||vidio.com/embed/$frame,domain=merdeka.com
