@@ -13,7 +13,7 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 
 ## Manfaat Yang Anda Dapatkan
 1. Menghilangkan iklan di **ribuan** situs web portal berita online dari berbagai jaringan besar seperti detik Network, Kompas Gramedia Group, MNC Portal, Tempo, Jaringan Media Siber Indonesia, Asosiasi Media Siber Indonesia, ProMedia Teknologi dan hingga ke portal berita online daerah.
-2. Menghilangkan iklan di **ribuan** situs web nonton seperti LK21, situs web manga berbahasa indonesia, hingga situs dewasa.
+2. Menghilangkan iklan di **ribuan** situs web nonton seperti LK21, situs web manga berbahasa Indonesia, hingga situs dewasa.
 3. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
 4. **Anti-blocker-defusing**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
 5. **Clean:** Halaman web jadi bersih dan nyaman. No `extra` abracadabra!
