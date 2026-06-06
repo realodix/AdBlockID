@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sat, 06 Jun 2026 16:50:31 GMT
+! Last modified: Sat, 06 Jun 2026 16:57:41 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4519,6 +4519,9 @@ beritaharian.sg##.max-w-full.min-h-\[80px\].lg\:min-h-\[120px\]:has(> [data-test
 stomp.sg##.w-full.min-h-\[120px\]:has(> .w-\[320px\].lg\:w-\[970px\])
 tnp.sg##.w-full.min-h-\[50px\].lg\:min-h-\[120px\]
 beritaharian.sg##[data-testid="advertisement-element"]
+vietnam.vn##:matches-path(/id) #ad-post-above
+vietnam.vn##:matches-path(/id) #ad-post-between-sections
+vietnam.vn##:matches-path(/id) #ad-post-bottom
 0.0.realodix##.btn[onclick]:remove-attr(onclick)
 0.0.realodix##body:remove-class(cdk-global-scrollblock)
 ||ex-ample.org^$script,from=ex-ample.com
