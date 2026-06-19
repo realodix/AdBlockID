@@ -9,19 +9,22 @@
 </p>
 
 
-AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia dan Malaysia, sebagai pelengkap filter Internasional seperti [EasyList](https://github.com/easylist/easylist), [uBlock filters](https://github.com/uBlockOrigin/uAssets) dan [AdGuard Base Filter](https://github.com/AdguardTeam/AdguardFilters). Dirancang khusus untuk membuat Anda lebih nyaman dalam berselancar di internet.
+Filter pemblokir iklan untuk situs berbahasa Indonesia dan Malaysia.
 
-## Manfaat Yang Anda Dapatkan
-1. Menghilangkan iklan di **ribuan** situs web portal berita online dari berbagai jaringan besar seperti detik Network, Kompas Gramedia Group, MNC Portal, Tempo, Jaringan Media Siber Indonesia, Asosiasi Media Siber Indonesia, ProMedia Teknologi dan hingga ke portal berita online daerah.
-2. Menghilangkan iklan di **ribuan** situs web nonton seperti LK21, situs web manga berbahasa Indonesia, hingga situs dewasa.
-3. **Faster, More Enjoyable Browsing**: Ucapkan selamat tinggal kepada iklan (terutama iklan yang bermuatan konten dewasa), PopAds dan banyak lagi.
-4. **Anti-blocker-defusing**: Melumpuhkan detektor adblock untuk memungkinkan Anda terus menggunakan adblocker.
-5. **Clean:** Halaman web jadi bersih dan nyaman. No `extra` abracadabra!
+AdBlockID dibuat untuk pengguna yang menuntut pengalaman berselancar yang bersih dari iklan, cepat, dan tanpa interupsi. Melenyapkan gangguan, menembus dinding anti-adblock, dan mengembalikan fokus Anda pada konten.
 
-<sup>* Perlu diperhatikan, walaupun manfaatnya terlihat sangat menggiurkan, tetapi walau bagaimanapun tidak ada produk yang sempurna.</sup>
+<!-- ### Satu filter, banyak gangguan hilang
 
+#### 01/Block - Iklan
+Hilangkan iklan di ribuan situs berita, forum, streaming, manga, dan situs populer lainnya.
 
-## Subscription
+#### 02/Clean - Halaman web
+Singkirkan elemen pengganggu, placeholder kosong, dan sisa-sisa iklan yang membuat halaman terlihat berantakan.
+
+#### 03/Anti-Adblock Immunity
+Berhenti berdebat dengan peringatan "matikan adblock Anda". Filter ini menetralkan skrip deteksi secara otomatis, memastikan Anda tetap tidak terdeteksi dan konten tetap terbuka. -->
+
+<br>
 
 > [!TIP]
 > AdBlockID sudah tersedia di AdGuard, Anda tidak perlu melakukan subscribe manual.
@@ -43,17 +46,12 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 | Name           | Subscription | Raw File | Description |
 | -------------- | --------- | -------- | ----------- |
 | AdBlockID      | [Subscribe][ABID_Subs_cf] | [adblockid.pages.dev/adblockid.adfl.txt][ABID_Raw_cf] | Main filter |
-| AdBlockID Plus | [Subscribe][ABID-Plus_Subs_cf] | [adblockid.pages.dev/adblockid_plus.adfl.txt][ABID-Plus_Raw_cf] | Extension | -->
+| AdBlockID Plus | [Subscribe][ABID-Plus_Subs_cf] | [adblockid.pages.dev/adblockid_plus.adfl.txt][ABID-Plus_Raw_cf] | Extension |
 
 [ABID_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid.adfl.txt&title=AdBlockID
 [ABID_Raw_cf]: https://adblockid.pages.dev/adblockid.adfl.txt
 [ABID-Plus_Subs_cf]: https://subscribe.adblockplus.org/?location=https://adblockid.pages.dev/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
-[ABID-Plus_Raw_cf]: https://adblockid.pages.dev/adblockid_plus.adfl.txt
-
-
-#### FAQ
-- **Q**: Apa bedanya antara AdBlockID dan AdBlockID Plus? <br>
-  **A**: AdBlockID berfokus hanya pada website Indonesia; dan AdBlockID Plus pada dasarnya adalah personal filter yang Saya bagikan untuk melengkapi AdBlockID.
+[ABID-Plus_Raw_cf]: https://adblockid.pages.dev/adblockid_plus.adfl.txt -->
 
 
 ## Cara Menggunakan
@@ -65,33 +63,14 @@ AdblockID adalah filter pemblokir/penghilang iklan di situs berbahasa Indonesia 
 1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/edge), etc)
 2. *Install* salah satu ekstensi dari berikut ini: [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock#installation).
 3. Install AdBlockID
-   - **AdGuard**: Cukup aktifkan AdBlockID di bagian *language-specific*.
-   - **uBlock Origin**: Pada table di atas, klik `Subscribe` atau tambahkan `Raw link` di kotak import. Lebih lanjut lihat [`Import 3rd-party filter lists`](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web#import-3rd-party-filter-lists).
+   - **AdGuard**: Cukup aktifkan AdBlockID di bagian *language-specific*. Lebih lanjut lihat [/docs/Adguard.md](/docs/Adguard.md).
+   - **uBlock Origin**: Pada table di atas, klik `Subscribe` atau tambahkan `Raw link` di kotak import. Lebih lanjut lihat [/docs/uBlock_Origin.md](/docs/uBlock_Origin.md).
 
 #### Mobile
 - **Browser (Android)**: Anda dapat menggunakan [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock) pada browser yang mendukung extensi, seperti [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox) dan [Microsoft Edge](https://play.google.com/store/apps/details?id=com.microsoft.emmx). Cara install AdBlockID mirip seperti di desktop.
 - **Android**: [AdGuard for Android](https://adguard.com/en/adguard-android/overview.html), aktifkan AdBlockID di bagian *language-specific*.
 - **iOS**: [AdGuard for iOS](https://adguard.com/en/adguard-ios/overview.html), aktifkan AdBlockID.
 
-#### Tutorial spesifik cara memasang AdBlockID:
-- [AdGuard](/docs/Adguard.md)
-- [uBlock Origin](/docs/uBlock_Origin.md)
-
 
 ## Berkontribusi
-Terima kasih telah mempertimbangkan untuk berkontribusi, Saya sangat menghargai komitmen Anda. Menggunakan filter AdBlockID di ad blocker favorit Anda sudah merupakan dukungan besar, tetapi ada cara terbaik lainnya untuk berkontribusi:
-
-- ⭐ Berikan AdBlockID bintang/star di GitHub. Karena jika Anda tidak menggunakan AdBlockID tetapi menyukainya, Anda setidaknya bisa menjadi stargazer!
-- ✍️ [Membuat issue][GHIssuesNew]. Bantu Kami mengetahui jika ada iklan yang masih mengganggu Anda di luar sana.
-- 💬 Bantu Kami menjawab dan memecahkan masalah di halaman [issues][GHIssuesPage] dan [diskusi][GHDiscussionsPage]. Jawaban Anda sangat membantu.
-- ✍️ Buat [`pull requests`][GHGlossaryPullReq] di GitHub untuk memberikan perbaikan dan peningkatan. Otomatis terdaftar sebagai [kontributor][GHContributorsPage]!
-- 📢 Beritahu orang terdekat Anda, agar makin banyak yang bisa merasakan manfaat dari AdBlockID.
-- 🍔 Mari kita kopdar jika Anda sedang berada di sekitar Jakarta!
-
-[GHIssuesNew]: https://github.com/realodix/AdBlockID/issues/new/choose
-[GHIssuesPage]: https://github.com/realodix/AdBlockID/issues
-[GHDiscussionsPage]: https://github.com/realodix/AdBlockID/discussions
-[GHContributorsPage]: https://github.com/realodix/AdBlockID-src/graphs/contributors
-[GHGlossaryPullReq]: https://docs.github.com/en/get-started/quickstart/github-glossary#pull-request
-
-Kode sumber untuk membuat pull requests tersedia di [`realodix/AdBlockID-src`](https://github.com/realodix/AdBlockID-src).
+Kunjungi [`realodix/AdBlockID-src`](https://github.com/realodix/AdBlockID-src).
