@@ -26,18 +26,25 @@ Berhenti berdebat dengan peringatan "matikan adblock Anda". Filter ini menetralk
 
 <br>
 
-> [!TIP]
-> AdBlockID sudah tersedia di AdGuard, Anda tidak perlu melakukan subscribe manual.
+| Name           | Subscription | Raw File |
+| -------------- | --------- | -------- |
+| AdBlockID      | [Subscribe][ABID_Subs] | [jsdelivr.net/gh/realodix/.../adblockid.adfl.txt][ABID_Raw] |
+| AdBlockID Plus | [Subscribe][ABID-Plus_Subs] | [jsdelivr.net/gh/realodix/.../adblockid_plus.adfl.txt][ABID-Plus_Raw] |
+| Annoyances | [Subscribe][ABID-ANY_Subs] | [jsdelivr.net/gh/realodix/.../annoyance.txt][ABID-ANY_Raw] |
 
-| Name           | Subscription | Raw File | Description |
-| -------------- | --------- | -------- | ----------- |
-| AdBlockID      | [Subscribe][ABID_Subs] | [jsdelivr.net/gh/realodix/.../adblockid.adfl.txt][ABID_Raw] | Main filter |
-| AdBlockID Plus | [Subscribe][ABID-Plus_Subs] | [jsdelivr.net/gh/realodix/.../adblockid_plus.adfl.txt][ABID-Plus_Raw] | Extension |
+- **AdBlockID**: Filter dasar.
+- **AdBlockID Plus**: Self-promotion, search ads, dan beberapa peningkatan untuk AdBlockID.
+- **Annoyances**:
+  - Remove: Banner pop-up, autoplay video pop-up, cookie warning, download app banner, fake button.
+  - Defuse: Automated safelink, automated link attribution, right-click protection, copy-paste protection.
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt&title=AdBlockID
 [ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt
 [ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
 [ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt
+[ABID-ANY_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/annoyance.txt
+[ABID-ANY_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/annoyance.txt
+
 
 <!-- #### Developer
 
