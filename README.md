@@ -35,7 +35,7 @@ Berhenti berdebat dengan peringatan "matikan adblock Anda". Filter ini menetralk
 - **AdBlockID**: Filter dasar.
 - **AdBlockID Plus**: Self-promotion, search ads, dan beberapa peningkatan untuk AdBlockID.
 - **Annoyances**:
-  - Remove: Banner pop-up, autoplay video pop-up, cookie warning, download app banner, fake button.
+  - Remove: Cookie warning, pop-up banner, autoplay pop-up video, download app banner, fake button.
   - Defuse: Automated safelink, automated link attribution, right-click protection, copy-paste protection.
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt&title=AdBlockID
