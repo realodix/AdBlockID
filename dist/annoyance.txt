@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID - Annoyances
 ! Description: Remove Pop-Ups, cookie warnings and other annoyances.
-! Last modified: Sat, 27 Jun 2026 15:48:25 GMT
+! Last modified: Sat, 27 Jun 2026 16:04:08 GMT
 ! Expires: 6 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -42,25 +42,63 @@ komdigi.go.id##+js(set-local-storage-item, localConsent, true)
 puratos.co.id##.modal
 puratos.co.id##.modal-backdrop
 puratos.co.id##body,html:style(overflow: auto !important; position: initial !important;)
+||karirpad.com/mediapartner/widget/$3p,frame
+||player.ivideosmart.com/ivsplayer/$script,domain=brilio.net|id.theasianparent.com|indosport.com|tempo.co
+||vidio.com/embed/$frame,domain=merdeka.com
+||viu.com/ott/misc/widget/index.php$frame,domain=viva.co.id
+||embed.dugout.com^$3p,domain=indosport.com|skor.id
+detik.com##.dugout-video:remove()
+detik.com##.ratio-dugout-detail
+kompas.com###contentArticle > .kgnw-middle:has(> .kgnw-middle-player):remove()
+cnnindonesia.com###livetv-float:remove()
+detik.com###notif-20d .float-vid__content:remove()
+informasi.com###popup-video:remove()
+cnbcindonesia.com###streamBox.fixed:remove()
+katadata.co.id###video_in_article:remove()
+detik.com##.aevp:has(> .sisip_video_ds):remove()
+cnbcindonesia.com##.autovideocnbc:remove()
+investor.id##.body-content .embed-responsive:remove()
+detik.com##.breakingnews-float:remove()
+kompas.com##.content_article .rVideo-middle:remove()
+suara.com##.detail-berita #player-video:remove()
+100kpj.com,bisnis.com,intipseleb.com,tempo.co,viva.co.id##.dm-player:remove()
+kompas.tv##.ex .embedVid:remove()
+grid.id,motorplus-online.com##.floatingIframe:remove()
+dailysia.com,fajar.co.id,greenscene.co.id,herworld.co.id,jalantikus.com,pramborsfm.com##.gliaplayer-container:remove()
+bolanas.com,kompas.com##.kgnowGate:has(> .videoKGSlider):remove()
+kompas.com##.kgnw-main:has(> .kgnw-player):remove()
+bola.com,bola.net,dream.co.id,kapanlagi.com,liputan6.com,merdeka.com##.nativescrollingKLY:has(.nativescrollingKLY-sticky-inner-video):remove()
+kapanlagi.com##.nativevideosiframe-loader:remove()
+kompas.tv##.paragraph > .kgnw-middle:has(> .kgnw-middle-player):remove()
+inews.id##.pipLiveStream:remove()
+id.theasianparent.com##.player-ivideosmart-wrap.no-ad-zone:remove()
+fimela.com##.read-page--boost-video:remove()
+kompas.com##.read__article .aTerkait + .video-yt:remove()
+kompas.com##.read__article .video-box-thumb:has(> .rVideo-thumbnail):remove()
+briliofood.net##.section:has(.video__headline):remove()
+cnnindonesia.com,haibunda.com,insertlive.com##.sisip_embed_sosmed:remove()
+cnnindonesia.com,detik.com,insertlive.com##.sisip_video_ds:remove()
+~video.kompas.com,bolasport.com,grid.id,gridoto.com,juara.net,kompas.com,kompas.tv,parapuan.co,sonora.id##.video-box-wrap:has(> .rVideo-player):remove()
+inews.id##.widgetNewsTV__news24Jam:remove()
+dailysia.com,greenscene.co.id,guesehat.com,katadata.co.id,tempo.co,wartaekonomi.co.id,wowkeren.com##[class^="ivs-"]:remove()
+haibunda.com##[data-name="detik-vertical"][data-target="detail/aevp"]:has(.video-sisip):remove()
+dailysia.com,tempo.co##[id^="ivs-"]:remove()
+parapuan.co##article + #defaultVideoContainer:remove()
+idntimes.com,katadata.co.id##article .dm-player:remove()
+bola.com##article .js-full-iframe-vidio:remove()
+liputan6.com##article iframe.vidio-embed:remove()
+cnnindonesia.com##p:has(> .inview_ap_0.videocnn):remove()
+bolanas.com,bolasport.com,grid.id,gridoto.com,kompas.tv,kontan.co.id,motorplus-online.com,parapuan.co##.kgnw-root:has(> .kgnw-player):remove()
+fandom.com###fandom-mobile-wrapper .article-featured-video:remove()
+vpnjantit.com###globalsun:has(> #globalsun-div-player):remove()
+||live.solopos.com:2020/AudioPlayer/$frame
+bilibili.tv###bilibiliPlayer .ip-watermark
 /copy_credit.$script,domain=kompas.com
 ||sindonews.com/sc-v1.js
 ||tribunnews.com/js/copy.js
 gridoto.com,kompasiana.com,sonora.id,tribunnews.com##+js(aeld, /copy|keydown/)
 katadata.co.id##+js(aopr, addLink)
 tirto.id##+js(rc, container900, div)
-kuyhaa-me.id,yasir-252.net##.entry-content .code-block
-rgames31.com##.entry-content > center a[target="_blank"] input
-abbaspc.net,bagas3-1.co##.entry-content center > a:has(> button)
-gigapurbalingga.cc,kuyhaa-me.pw##.entry-content center:has(> .button-container > button)
-kuyhaa.cc##.post-wrapper .code-block:has(> center > a > button)
-kuyhaa.id##article #download-container button:has-text(/download/i)
-kuyhaacracks.com##article .code-block
-gigapurbalinggaa.com##article .code-block > center:has(> button:has-text(/download/i))
-kuyhaa.id##article center:has(.button-container > button:has-text(/download/i))
-alex71.com,bagas31.pro,kuyhaa-me.id,kuyhaa.team##article center:has(> a[href^="javascript:void("])
-bagas3-1.com,bagas31.org,bagas31.pw##button[onclick^="handleDownload" i]
-||live.solopos.com:2020/AudioPlayer/$frame
-bilibili.tv###bilibiliPlayer .ip-watermark
 mitra10.com###installAppWrapper
 matain.id##.app_layer
 kontan.co.id##.appbanner-wrapper
@@ -75,6 +113,17 @@ merdeka.com##header .assambleApp
 tokopedia.com##[data-testid="WTA-TopSticky"]
 tokopedia.com##body:style(margin-top: 0!important;)
 tokopedia.com##div:matches-css(position: fixed):has(> button[aria-label="close web to app pop up" i])
+kuyhaa-me.id,yasir-252.net##.entry-content .code-block
+rgames31.com##.entry-content > center a[target="_blank"] input
+abbaspc.net,bagas3-1.co##.entry-content center > a:has(> button)
+gigapurbalingga.cc,kuyhaa-me.pw##.entry-content center:has(> .button-container > button)
+kuyhaa.cc##.post-wrapper .code-block:has(> center > a > button)
+kuyhaa.id##article #download-container button:has-text(/download/i)
+kuyhaacracks.com##article .code-block
+gigapurbalinggaa.com##article .code-block > center:has(> button:has-text(/download/i))
+kuyhaa.id##article center:has(.button-container > button:has-text(/download/i))
+alex71.com,bagas31.pro,kuyhaa-me.id,kuyhaa.team##article center:has(> a[href^="javascript:void("])
+bagas3-1.com,bagas31.org,bagas31.pw##button[onclick^="handleDownload" i]
 kompas.id##.non-paywall:style(display: block !important;)
 kompas.id##.paywall
 tribunnews.com###article #_popIn_recommend_word
@@ -172,55 +221,6 @@ duniagames.co.id##+js(rc, cdk-global-scrollblock, html)
 !#else
 duniagames.co.id##html:remove-class(cdk-global-scrollblock)
 !#endif
-||karirpad.com/mediapartner/widget/$3p,frame
-||player.ivideosmart.com/ivsplayer/$script,domain=brilio.net|id.theasianparent.com|indosport.com|tempo.co
-||vidio.com/embed/$frame,domain=merdeka.com
-||viu.com/ott/misc/widget/index.php$frame,domain=viva.co.id
-||embed.dugout.com^$3p,domain=indosport.com|skor.id
-detik.com##.dugout-video:remove()
-detik.com##.ratio-dugout-detail
-kompas.com###contentArticle > .kgnw-middle:has(> .kgnw-middle-player):remove()
-cnnindonesia.com###livetv-float:remove()
-detik.com###notif-20d .float-vid__content:remove()
-informasi.com###popup-video:remove()
-cnbcindonesia.com###streamBox.fixed:remove()
-katadata.co.id###video_in_article:remove()
-detik.com##.aevp:has(> .sisip_video_ds):remove()
-cnbcindonesia.com##.autovideocnbc:remove()
-investor.id##.body-content .embed-responsive:remove()
-detik.com##.breakingnews-float:remove()
-kompas.com##.content_article .rVideo-middle:remove()
-suara.com##.detail-berita #player-video:remove()
-100kpj.com,bisnis.com,intipseleb.com,tempo.co,viva.co.id##.dm-player:remove()
-kompas.tv##.ex .embedVid:remove()
-grid.id,motorplus-online.com##.floatingIframe:remove()
-dailysia.com,fajar.co.id,greenscene.co.id,herworld.co.id,jalantikus.com,pramborsfm.com##.gliaplayer-container:remove()
-bolanas.com,kompas.com##.kgnowGate:has(> .videoKGSlider):remove()
-kompas.com##.kgnw-main:has(> .kgnw-player):remove()
-bola.com,bola.net,dream.co.id,kapanlagi.com,liputan6.com,merdeka.com##.nativescrollingKLY:has(.nativescrollingKLY-sticky-inner-video):remove()
-kapanlagi.com##.nativevideosiframe-loader:remove()
-kompas.tv##.paragraph > .kgnw-middle:has(> .kgnw-middle-player):remove()
-inews.id##.pipLiveStream:remove()
-id.theasianparent.com##.player-ivideosmart-wrap.no-ad-zone:remove()
-fimela.com##.read-page--boost-video:remove()
-kompas.com##.read__article .aTerkait + .video-yt:remove()
-kompas.com##.read__article .video-box-thumb:has(> .rVideo-thumbnail):remove()
-briliofood.net##.section:has(.video__headline):remove()
-cnnindonesia.com,haibunda.com,insertlive.com##.sisip_embed_sosmed:remove()
-cnnindonesia.com,detik.com,insertlive.com##.sisip_video_ds:remove()
-~video.kompas.com,bolasport.com,grid.id,gridoto.com,juara.net,kompas.com,kompas.tv,parapuan.co,sonora.id##.video-box-wrap:has(> .rVideo-player):remove()
-inews.id##.widgetNewsTV__news24Jam:remove()
-dailysia.com,greenscene.co.id,guesehat.com,katadata.co.id,tempo.co,wartaekonomi.co.id,wowkeren.com##[class^="ivs-"]:remove()
-haibunda.com##[data-name="detik-vertical"][data-target="detail/aevp"]:has(.video-sisip):remove()
-dailysia.com,tempo.co##[id^="ivs-"]:remove()
-parapuan.co##article + #defaultVideoContainer:remove()
-idntimes.com,katadata.co.id##article .dm-player:remove()
-bola.com##article .js-full-iframe-vidio:remove()
-liputan6.com##article iframe.vidio-embed:remove()
-cnnindonesia.com##p:has(> .inview_ap_0.videocnn):remove()
-bolanas.com,bolasport.com,grid.id,gridoto.com,kompas.tv,kontan.co.id,motorplus-online.com,parapuan.co##.kgnw-root:has(> .kgnw-player):remove()
-fandom.com###fandom-mobile-wrapper .article-featured-video:remove()
-vpnjantit.com###globalsun:has(> #globalsun-div-player):remove()
 ||meong.club/go/?aHR0c$doc,urlskip=/\/go\/\?(aHR0c.+)/ -base64
 ipeenk.com##+js(aopr, app_advert)
 bahyudinnor.com##+js(aopr, protected_links)
