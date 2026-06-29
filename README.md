@@ -42,7 +42,7 @@ Berhenti berdebat dengan peringatan "matikan adblock Anda". Filter ini menetralk
 [ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt
 [ABID-Plus_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt&title=AdBlockID%20Plus
 [ABID-Plus_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid_plus.adfl.txt
-[ABID-ANY_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/annoyance.txt
+[ABID-ANY_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/annoyance.txt&title=AdBlockID%20-%20Annoyances
 [ABID-ANY_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/annoyance.txt
 
 
