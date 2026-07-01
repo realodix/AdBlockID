@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Wed, 01 Jul 2026 04:44:53 GMT
+! Last modified: Wed, 01 Jul 2026 04:52:29 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4502,12 +4502,6 @@ aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id
 !#if adguard
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$badfilter,document,popup,subdocument
 !#endif
-||fintechnews.sg^*-banner-
-beritaharian.sg##.max-w-full.min-h-\[80px\].lg\:min-h-\[120px\]:has(> [data-testid="advertisement-element"])
-berita.mediacorp.sg##.programtic-ads
-stomp.sg##.w-full.min-h-\[120px\]:has(> .w-\[320px\].lg\:w-\[970px\])
-tnp.sg##.w-full.min-h-\[50px\].lg\:min-h-\[120px\]
-beritaharian.sg##[data-testid="advertisement-element"]
 0.0.realodix##.btn[onclick]:remove-attr(onclick)
 0.0.realodix##body:remove-class(cdk-global-scrollblock)
 ||ex-ample.org^$script,from=ex-ample.com
@@ -6554,6 +6548,7 @@ _topbandar_$image
 -1160x250-$image,domain=pandulaju.com.my
 -OnlineAd-$image,domain=funtasticko.net|pandulaju.com.my
 /1020x350_$image,domain=funtasticko.net
+||fintechnews.sg^*-banner-
 ||gohedgostan.com^*-Banner_$image
 ||kisahdunia.com/wp-content/plugins/khairulzul-shopee-affiliate-for-kayz-asia/$image
 ||malaysiagazette.com^*-banner-
@@ -6569,15 +6564,20 @@ thevocket.com##.billboard-wrap
 webbrowsertools.com##.card:has-text(/advertisement/i)
 malaysiakini.com##.h-\[250px\]:has(> div[style="max-height:250px"])
 malaysiakini.com##.justify-center:has-text(/ads/i)
+beritaharian.sg##.max-w-full.min-h-\[80px\].lg\:min-h-\[120px\]:has(> [data-testid="advertisement-element"])
 thevocket.com##.mid-megaboard
 malaysiakini.com##.min-h-\[90px\]:has(> div[style="max-height:90px"])
 hmetro.com.my##.pcto-banner
+berita.mediacorp.sg##.programtic-ads
+stomp.sg##.w-full.min-h-\[120px\]:has(> .w-\[320px\].lg\:w-\[970px\])
+tnp.sg##.w-full.min-h-\[50px\].lg\:min-h-\[120px\]
 astroawani.com##[class*="adsContainer" i]
 astroawani.com##[class*="advertisement" i]
 mudah.my##[class^="banner_" i]
 thevocket.com##[data-ad-label]
 mekanika.com.my##[data-advadsredirect=""]
 jobstreet.com.my##[data-automation$="-ads"]
+beritaharian.sg##[data-testid="advertisement-element"]
 boom-malaysia.com##a.notrack > img
 malaysiagazette.com##img[alt*="banner" i]
 vanakkammalaysia.com.my##img[width="728"][height="91"]
