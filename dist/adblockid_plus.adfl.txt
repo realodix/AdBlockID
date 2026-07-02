@@ -1,11 +1,16 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID Plus
 ! Description: Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID.
-! Last modified: Thu, 02 Jul 2026 11:46:55 GMT
+! Last modified: Thu, 02 Jul 2026 11:50:00 GMT
 ! Expires: 6 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
 /breaking_banner/*$image,domain=vidio.com
+cermati.com##:matches-path(/artikel) .ads-container
+cermati.com##:matches-path(/artikel) .sticky-banner-wrapper
+cermati.com##:matches-path(/artikel) [data-banner]:has(> a)
+cermati.com##:matches-path(/artikel) a:matches-attr(href="/^https?:\/\/promo\./"):has(> picture)
+cermati.com##:matches-path(/artikel) a[data-item^="promo-"]:has(> picture)
 mekari.com##:matches-path(/blog) #banner_businessgrowth_before_h2_3
 mekari.com##:matches-path(/blog) #banner_flex_ewa_v2_hr_after_content
 mekari.com##:matches-path(/blog) #banner_flex_ewa_v2_hr_before_h2_2
