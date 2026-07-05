@@ -33,7 +33,7 @@ Berhenti berdebat dengan peringatan "matikan adblock Anda". Filter ini menetralk
 | Annoyances | [Subscribe][ABID-ANY_Subs] | [jsdelivr.net/gh/realodix/.../annoyance.txt][ABID-ANY_Raw] |
 
 - **AdBlockID**: Filter dasar.
-- **AdBlockID Plus**: Self-promotion, search ads, style fixer, website inter yang memiliki pilihan bahasa Indonesia dan beberapa peningkatan untuk AdBlockID.
+- **AdBlockID Plus**: Self-promotion, search ads, campaign banner,style fixer, website inter yang memiliki pilihan bahasa Indonesia dan beberapa peningkatan untuk AdBlockID.
 - **Annoyances**:
   - Remove: Cookie warning, pop-up banner, autoplay pop-up video, download app banner, fake button.
   - Defuse: Automated safelink, automated link attribution, right-click protection, copy-paste protection.
