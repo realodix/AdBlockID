@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Fri, 03 Jul 2026 12:20:29 GMT
+! Last modified: Sun, 05 Jul 2026 04:22:36 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -3186,9 +3186,14 @@ _728x90px.$image,domain=bogordaily.net
 ||seedbacklink.com^*-banner.$3p,image
 ||wp.com/www.backlink.co.id/wp-content/uploads/$image,domain=~backlink.co.id|~blogpartner.id
 ||zaferinadigital.com^*/ads-
+||acquaintjokinglyscoring.com^
 ||aedi.ai/common/js/v1/aedi-$domain=bloombergtechnoz.com|inews.id|katadata.co.id|okezone.com|sindonews.com
 ||aurum.tirto.id^
+||farflung-permission.com^
+||hubapi.my.id^$3p
+||hungry-exit.com^
 ||services.7searchppc.com/api/adscript$domain=tintainformasi.com
+||wonderfulyesterday.com^
 ||colorfulculture.click^
 /\/[0-9a-f]{32}\/invoke\.js/$third-party,script,redirect-rule=noopjs
 akhwatmuslimah.net###AT__popup-Ads
@@ -4830,6 +4835,7 @@ javindo.*##+js(aost, document.getElementsByTagName, adsBlocked)
 pejuhin.*,pejuhinxxx.*###adblock-modal
 ngomek.com###adblock-overlay
 pejuhin.*,pejuhinxxx.*##body:style(overflow: auto!important; position: unset!important;)
+berbagi.app###_0xAbModal
 filmnikmat.*,filmnikmattv1.*###fadeinbox
 doooood.co###overlay
 bokepindo21.*###popup
@@ -4839,9 +4845,12 @@ dicrotin.*##.bx_wrap
 rumahparaperjaka.*,rumahperjaka.*##.elementor-popup-modal
 nontonjavid.net##.popbox
 gocrot.me,gocrot.org##.popup-cr7
+berbagi.app##div:matches-css(position: fixed)
+skripsitesisdisertasi.biz.id##div[style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 999999; opacity: 0; cursor: pointer; background: transparent; pointer-events: auto;"]
 pusatporn18.com,sibinor.fun##+js(aeld, /^(?:load|click)$/, popMagic)
 dicrotin.*,nokephub.*,pojokan69.com##+js(aopr, SGPB_POPUP_PARAMS)
 bokepvir.*,javsubindo.*##+js(aopr, window.pum_popups)
+4meplayer.com,ngicstream.site##+js(nowoif)
 sukasex.*##+js(rmnt, script, popupUrl)
 /wp-content/uploads/*.mp4$1p,media,redirect=noopmp4-1s,to=artisbokep.*|republikbokep.*|xbokepin.*
 artisbokep.*,republikbokep.*,xbokepin.*###floating-banner-wrap
