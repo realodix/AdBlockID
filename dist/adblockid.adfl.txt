@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Fri, 10 Jul 2026 12:35:15 GMT
+! Last modified: Fri, 10 Jul 2026 15:36:21 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4584,6 +4584,7 @@ adikanime.com#@#.idmuvi-banner-aftercontent
 layardrama.*,layardrama21.*#@#.idmuvi-topbanner-aftermenu
 cinemakeren6.id###adblock-message
 adikanime.com##.adik-warning
+kazefuri.id###fAP_fkAdPop
 indositusxxi.id,kopajasubs.info###fb-fanbox
 filem21.org###overlay
 anichin.co,anichin.name,anichin.watch,animekhor.org,animekompi.sbs,animexin.dev,hidoristream.online,isekaisubs.web.id,kazefuri.cloud,otakudesu.blog###overplay
@@ -4596,7 +4597,8 @@ sokuja.uk##body > div:matches-css(position: fixed)
 sokuja.uk##div:matches-css(position: fixed):has(> div > #countdown)
 komikstation.org##+js(aeld, /^(?:load|click)$/, popMagic)
 komikdewasa.art##+js(aeld, click, tampilkanUrl)
-anibatch.moe,dramaencode.net,kazefuri.cloud,rebahan21.com,sokuja.uk##+js(nowoif)
+anibatch.moe,dramaencode.net,kazefuri.cloud,kazefuri.id,rebahan21.com,sokuja.uk##+js(nowoif)
+kazefuri.id##html, body:style(overflow: auto!important; position: unset!important;)
 nontondrama.blog,sobatmov.xyz,sokuja.uk##+js(aopr, popup_custom_data)
 gudangmovies21.chat,sattorrent.com,soulscans.my.id##+js(aopr, SGPB_POPUP_PARAMS)
 komikstation.org##+js(acis, JSON.parse, break;case $.)
