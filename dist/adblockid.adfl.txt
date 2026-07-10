@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Fri, 10 Jul 2026 05:13:27 GMT
+! Last modified: Fri, 10 Jul 2026 05:37:03 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -1688,6 +1688,7 @@ _ads728x90-
 ##img[data-ai-hint="advertisement banner"]
 ##img[data-permalink^="/apps/iklan-"]
 ##body > div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01"][style*=";cursor:pointer"]:empty
+##body > div[style^="position: fixed; inset: 0px; z-index: 2147483647; background-color: transparent; pointer-events: auto; cursor: auto; margin: 0px; padding: 0px;"]
 ##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
 ##.happy-footer
 ##.happy-inside-player
@@ -4613,11 +4614,10 @@ playeriframe.sbs##body > a:has(> .message-box)
 ||d21.media/img/*.gif$image
 ||d21.media/vid/$media,redirect=noopmp4-1s
 ||d21.media^*/iklan-
-nontondrama.wiki,skeeterbyte.com,tagkia.com###player-below-b
-nontondrama.wiki,skeeterbyte.com,tagkia.com##a[target*="blank"]:has(> img)
-skeeterbyte.com,tagkia.com##div:matches-css(font-size: 10px):has-text(/promoted/i)
+sf21.space###overlay-iklan-internal
+lk21official.top,skeeterbyte.com,surgafilm21.website##a[target*="blank"]:has(> img)
 ||tolonglah.pages.dev$frame
-nontondrama.wiki,skeeterbyte.com,tagkia.com##:matches-path(/links/?url=) body > .container-iframe
+skeeterbyte.com##:matches-path(/links/?url=) body > .container-iframe
 ||doroni.me/images/promo/$image
 ||doronime.id/images/promo/$image
 doroni.me,doronime.id##.Content__banner
