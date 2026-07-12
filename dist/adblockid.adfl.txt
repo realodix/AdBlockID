@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sun, 12 Jul 2026 15:54:42 GMT
+! Last modified: Sun, 12 Jul 2026 16:47:32 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4528,6 +4528,7 @@ aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id
 ||ex-ample.org^$script,from=ex-ample.com
 0.0.realodix##div.banner:matches-css-before(content: /adv/i)
 0.0.realodix##:matches-path(/^/home/) [data-testid="primaryColumn"]:others()
+0.0.realodix##+js(prevent-setTimeout, getComputedStyle)
 0.0.realodix##+js(prevent-window-open)
 /banner/*$to=01ntn.cc|91.208.197.221|filmapikofficial.com
 ||4youscan.xyz/images/ads/
@@ -4625,7 +4626,7 @@ idlixku.com##.module_home_ads
 idlixku.com##a[target*="blank"]:has(> img)
 idlixku.com##html, body:style(overflow: visible !important;)
 idlixku.com##+js(nowoif)
-idlixku.com##+js(prevent-setTimeout, getComputedStyle)
+idlixku.com##+js(nostif, getComputedStyle)
 ||donasi.lk21.de^
 ||lk21static.buzz/assets/$media,redirect=noopmp4-1s
 ||lk21static.buzz/assets/*.gif$image
