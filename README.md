@@ -32,11 +32,27 @@ Berhenti berdebat dengan peringatan "matikan adblock Anda". Filter ini menetralk
 | AdBlockID Plus | [Subscribe][ABID-Plus_Subs] | [jsdelivr.net/gh/realodix/.../adblockid_plus.adfl.txt][ABID-Plus_Raw] |
 | Annoyances | [Subscribe][ABID-ANY_Subs] | [jsdelivr.net/gh/realodix/.../annoyance.txt][ABID-ANY_Raw] |
 
-- **AdBlockID**: Filter dasar.
-- **AdBlockID Plus**: Self-promotion, search ads, campaign banner,style fixer, website inter yang memiliki pilihan bahasa Indonesia dan beberapa peningkatan untuk AdBlockID.
-- **Annoyances**:
-  - Remove: Cookie warning, pop-up banner, autoplay pop-up video, download app banner, fake button.
-  - Defuse: Automated safelink, automated link attribution, right-click protection, copy-paste protection.
+#### # AdBlockID
+
+Filter utama AdBlockID untuk menghilangkan iklan di situs berbahasa Indonesia. Gunakan bersamaan dengan EasyList sebagai dasarnya.
+
+#### # AdBlockID Plus
+
+Menargetkan self-promotion banner, search ads, campaign banner.
+
+##### Tambahan:
+- Mendukung style fixer untuk menata ulang tata letak halaman yang berantakan setelah iklan dihilangkan.
+- Website Internasional yang memiliki pilihan bahasa Indonesia.
+
+Gunakan AdBlockID sebagai dasarnya.
+
+#### # Annoyances
+
+- Remove: Cookie warning, pop-up banner, autoplay pop-up video, download app banner, fake button.
+- Defuse: Automated safelink, automated link attribution, right-click protection, copy-paste protection.
+
+Gunakan filter annoyances dari AdGuard atau Easylist sebagai dasarnya.
+
 
 [ABID_Subs]: https://subscribe.adblockplus.org/?location=https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt&title=AdBlockID
 [ABID_Raw]: https://cdn.jsdelivr.net/gh/realodix/AdBlockID@master/dist/adblockid.adfl.txt
