@@ -38,9 +38,7 @@ Filter utama AdBlockID untuk menghilangkan iklan di situs berbahasa Indonesia. G
 
 #### # AdBlockID Plus
 
-Menargetkan self-promotion banner, search ads, campaign banner.
-
-##### Tambahan:
+- Self-promotion banner, search ads, campaign banner, fake button.
 - Mendukung style fixer untuk menata ulang tata letak halaman yang berantakan setelah iklan dihilangkan.
 - Website Internasional yang memiliki pilihan bahasa Indonesia.
 
@@ -48,7 +46,7 @@ Gunakan AdBlockID sebagai dasarnya.
 
 #### # Annoyances
 
-- Remove: Cookie warning, pop-up banner, autoplay pop-up video, download app banner, fake button.
+- Remove: Cookie warning, pop-up banner, autoplay pop-up video, download app banner.
 - Defuse: Automated safelink, automated link attribution, right-click protection, copy-paste protection.
 
 Gunakan filter annoyances dari AdGuard atau Easylist sebagai dasarnya.
