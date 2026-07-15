@@ -46,7 +46,7 @@ Gunakan AdBlockID sebagai dasarnya.
 
 #### # Annoyances
 
-- Remove: Cookie warning, pop-up banner, autoplay pop-up video, download app bar, newsletter subscription widget.
+- Remove: Cookie warning, pop-up banner, autoplay pop-up video, download app bar, subscription offers, AI suggestion.
 - Defuse: Automated safelink, automated link attribution, right-click protection, copy-paste protection.
 
 Gunakan filter annoyances dari AdGuard atau Easylist sebagai dasarnya.
