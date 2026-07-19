@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sun, 19 Jul 2026 15:22:28 GMT
+! Last modified: Sun, 19 Jul 2026 15:36:04 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4958,7 +4958,7 @@ indoporn.*##div:has(> .adsbyexoclick)
 minioppai.org##div:matches-css(position: fixed):has(> .kln)
 filmnikmat.*##img[alt*="iklan"]
 kingbokep.*##img[src*=".gif"]:not(div[class*="video"] > img)
-kingbokep.*##img[src*=".webp"]:not(div[class*="video"] > img)
+kingbokep.*##img[src*=".webp"]:not([class*="video"]):not(div[class*="video"] > img)
 indoporntv.*##video:style(cursor: auto!important;)
 kingbokep.*##video[src*=".webm"]:not(div[class*="video"] > img)
 kpopdeepfakes.*#@##banner_ad
