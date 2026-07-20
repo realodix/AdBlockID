@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Mon, 20 Jul 2026 09:16:12 GMT
+! Last modified: Mon, 20 Jul 2026 17:26:30 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -628,7 +628,6 @@ _ads728x90-
 ##.ad-300-container
 ##.ad-320-container
 ##.ad-728-container
-##.ad-banner
 ##.ad-bawah
 ##.ad-before
 ##.ad-between-sections
@@ -4575,7 +4574,6 @@ aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id
 ||4youscan.xyz/images/ads/
 ||88cdn.cloud/img/mvads/$3p
 ||animeinweb.com/api/proxy/data/ads/show$xhr
-||assetcsn.site/GIF/$3p
 ||cdnfgo.xyz/wp-content/uploads/*.gif|$domain=komiktap.info
 ||filmdewasa.org/pictures/*.gif
 ||gambarklikzeus.com/pic/*.gif
@@ -4606,7 +4604,6 @@ kuramanime.*###close-teaser-footer
 layardrama21.*###floatbanner-bottom
 anichin.blog,anichin.co,anichin.watch,hidoristream.online,kazefuri.cloud,komiksin.net,mangaindo.*,nekokun.my.id,soulscans.my.id###floatcenter
 bioskop21.*###floating_banner_bottom
-asiasizzle.com###popup-banner-overlay
 awsubs.co###popupAd
 01ntn.cc,91.208.197.221###topban
 crotpedia.net,shirodoujin.com##.ads
@@ -5020,6 +5017,9 @@ sebokep.com##+js(aopr, SGPB_POPUP_PARAMS)
 66.29.129.111,66.29.129.114,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.net,avtub.pet,avtubflix.com,bokepid.*,bokepsin.*,omekin.id,pasarbokep.id,playbokep.*,rajabokep.*,sangelink.com.de,sangetube.*,simontokreal.com,vibokep.*##a[target*="blank"]:has(> img)
 66.29.129.111,66.29.129.114,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.net,avtub.pet,avtubflix.com,bokepid.*,bokepsin.*,omekin.id,pasarbokep.id,playbokep.*,rajabokep.*,sangelink.com.de,sangetube.*,simontokreal.com,vibokep.*##+js(aopr, ujiPopups)
 66.29.129.111,66.29.129.114,66.29.129.121,66.29.129.126,66.29.129.161,avtub.cc,avtub.net,avtub.pet,avtubflix.com,bokepid.*,bokepsin.*,omekin.id,pasarbokep.id,playbokep.*,rajabokep.*,sangelink.com.de,sangetube.*,simontokreal.com,vibokep.*##+js(nowoif)
+||assetcsn.site/image/*.gif$3p
+asiasizzle.com,csnplayhd.com,flickerlust.com,indoxxihot.com,markasfilmhot.com###popup-banner-overlay
+asiasizzle.com,csnplayhd.com,flickerlust.com,indoxxihot.com,markasfilmhot.com##.ad-banner
 nekopoi.*###popup
 drakorwovel.my.id,nekopoi.*##a[target*="blank"]:has(> img)
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=drakorwovel.my.id|nekopoi.*
@@ -5987,15 +5987,25 @@ _topbandar_$image
 ##[href="https://linkasd.com/pza99xkazfuri"]
 ##[href="https://linkasd.com/unvgsxNgefil21"]
 ##[href="https://linkjalur.vip/ajaibslot-register"]
+##[href="https://linkjalur.vip/ajaibslots-register"]
+##[href="https://linkjalur.vip/alexavegas-register"]
 ##[href="https://linkjalur.vip/arunabet-register"]
 ##[href="https://linkjalur.vip/asialive88-register"]
 ##[href="https://linkjalur.vip/bolatangkas-register"]
+##[href="https://linkjalur.vip/capital303-register"]
+##[href="https://linkjalur.vip/dewacasino-register"]
+##[href="https://linkjalur.vip/dewatangkas-register"]
 ##[href="https://linkjalur.vip/dewataslot-register"]
 ##[href="https://linkjalur.vip/dewaterbang-register"]
 ##[href="https://linkjalur.vip/eraplay88-register"]
+##[href="https://linkjalur.vip/igamble247-register"]
 ##[href="https://linkjalur.vip/ilucky88-register"]
 ##[href="https://linkjalur.vip/megatangkas-register"]
 ##[href="https://linkjalur.vip/merpatislot88-register"]
+##[href="https://linkjalur.vip/mildcasino-register"]
+##[href="https://linkjalur.vip/nagaikan-register"]
+##[href="https://linkjalur.vip/paiza99-register"]
+##[href="https://linkjalur.vip/shiobet-register"]
 ##[href="https://linkjalur.vip/unogg-register"]
 ##[href="https://linkjalur.vip/unovegas-register"]
 ##[href="https://linkjalur.vip/vegas88-register"]
@@ -6600,6 +6610,8 @@ _topbandar_$image
 ##img[alt="Meda88slot" i]
 ##img[alt="agb99"]
 ##img[alt="agentoto88" i]
+##img[alt="ajaibslots" i]
+##img[alt="arunabet" i]
 ##img[alt="baik777" i]
 ##img[alt="bandar855" i]
 ##img[alt="bandarxl"]
@@ -6610,6 +6622,7 @@ _topbandar_$image
 ##img[alt="dewagg" i]
 ##img[alt="dewapoker" i]
 ##img[alt="dewascore" i]
+##img[alt="dewatangkas" i]
 ##img[alt="dewataslot" i]
 ##img[alt="dewaterbang" i]
 ##img[alt="dewavegas" i]
@@ -6617,6 +6630,7 @@ _topbandar_$image
 ##img[alt="enakslot" i]
 ##img[alt="eqn388"]
 ##img[alt="hokidewa" i]
+##img[alt="igamble247" i]
 ##img[alt="instantoto" i]
 ##img[alt="jokerbet888" i]
 ##img[alt="kaikoslot" i]
