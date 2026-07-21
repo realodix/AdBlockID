@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Tue, 21 Jul 2026 11:42:18 GMT
+! Last modified: Tue, 21 Jul 2026 14:47:50 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4571,7 +4571,6 @@ aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id
 0.0.realodix##:matches-path(/^/home/) [data-testid="primaryColumn"]:others()
 0.0.realodix##+js(prevent-setTimeout, getComputedStyle)
 0.0.realodix##+js(prevent-window-open)
-/banner/*$to=01ntn.cc|91.208.197.221|filmapikofficial.com
 ||4youscan.xyz/images/ads/
 ||88cdn.cloud/img/mvads/$3p
 ||animeinweb.com/api/proxy/data/ads/show$xhr
@@ -4606,7 +4605,6 @@ layardrama21.*###floatbanner-bottom
 anichin.blog,anichin.co,anichin.watch,hidoristream.online,kazefuri.cloud,komiksin.net,mangaindo.*,nekokun.my.id,soulscans.my.id###floatcenter
 bioskop21.*###floating_banner_bottom
 awsubs.co###popupAd
-01ntn.cc,91.208.197.221###topban
 crotpedia.net,shirodoujin.com##.ads
 movieku.*##.adsx
 xxiku.com##.auto-banner:remove()
@@ -4623,7 +4621,7 @@ mangaindo.*,sattorrent.com##.widget:has(img[style="max-width: 100%; height: auto
 anichin.watch,ikiru.wtf,mangatale.co,movieku.*,nomat.shop,tooncubus.top##a:has(img[src$=".gif"])
 sokuja.uk##a[rel*="nofollow"]:has(> img)
 sokuja.uk##a[rel*="sponsored"]:has(> img)
-01ntn.cc,91.208.197.221,anibatch.moe,anichin.co,animekompi.sbs,animexin.dev,bioskop21.*,cinemakeren6.id,desu.xxx,filem21.org,gudangmovies21.chat,idxmovie21.com,indositusxxi.id,kawanfilm21.co,kazefuri.cloud,komikaja.com,komikdewasa.art,komiksin.net,komikstation.org,komiku.asia,komikzoid.id,kopajasubs.info,kuramanime.*,kusonime.com,layardrama.*,layardrama21.*,mangasusuku.com,melongmovies.com,movieku.*,nimegami.id,nomat.store,nontoncinema.org,omanga.net,otakudesu.blog,otakudesu.id,sobatmov.xyz,winbu.tv##a[target*="blank"]:has(> img)
+anibatch.moe,anichin.co,animekompi.sbs,animexin.dev,bioskop21.*,cinemakeren6.id,desu.xxx,filem21.org,gudangmovies21.chat,idxmovie21.com,indositusxxi.id,kawanfilm21.co,kazefuri.cloud,komikaja.com,komikdewasa.art,komiksin.net,komikstation.org,komiku.asia,komikzoid.id,kopajasubs.info,kuramanime.*,kusonime.com,layardrama.*,layardrama21.*,mangasusuku.com,melongmovies.com,movieku.*,nimegami.id,nomat.store,nontoncinema.org,omanga.net,otakudesu.blog,otakudesu.id,sobatmov.xyz,winbu.tv##a[target*="blank"]:has(> img)
 animotvslash.org,soulscans.my.id##body > div[style^="width: 100%;text-align: center;display: scroll;position:fixed;"]
 komikdewasa.art##body:style(padding-top: 0 !important; padding-bottom: 0 !important;)
 awsubs.co##div:matches-css(position: fixed):has(> .kln)
@@ -4687,6 +4685,10 @@ sf21.space###overlay-iklan-internal
 lk21official.top,skeeterbyte.com,surgafilm21.website##a[target*="blank"]:has(> img)
 ||tolonglah.pages.dev$frame
 skeeterbyte.com##:matches-path(/links/?url=) body > .container-iframe
+||01ntn.cc/wp-content/uploads/banner/
+||176.125.243.211/wp-content/uploads/banner/
+01ntn.cc,176.125.243.211###topban
+01ntn.cc,176.125.243.211##a[target*="blank"]:has(> img)
 ||doroni.me/images/promo/$image
 ||doronime.id/images/promo/$image
 doroni.me,doronime.id##.Content__banner
