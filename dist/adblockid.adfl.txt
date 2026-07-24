@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Fri, 24 Jul 2026 08:17:33 GMT
+! Last modified: Fri, 24 Jul 2026 18:09:27 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -2286,6 +2286,7 @@ hops.id,unews.id##[id^="ats-insert_ads-"]
 hops.id,unews.id##[id^="gpt_unit_"]:has(> [id^="google_ads_"])
 ##img[src^="https://assets.ayobandung.com/"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 ##img[src^="https://static.promediateknologi.id"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
+||mediahub.polri.go.id/api/*/advertisements/
 ||tribratanews.polri.go.id^*/website.banner/
 ||tribratanews.polri.go.id^*/x_banner_
 tribratanews.lampung.polri.go.id###renderBanner
