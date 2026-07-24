@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Fri, 24 Jul 2026 08:04:57 GMT
+! Last modified: Fri, 24 Jul 2026 08:07:40 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -2286,6 +2286,8 @@ hops.id,unews.id##[id^="ats-insert_ads-"]
 hops.id,unews.id##[id^="gpt_unit_"]:has(> [id^="google_ads_"])
 ##img[src^="https://assets.ayobandung.com/"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
 ##img[src^="https://static.promediateknologi.id"] + div[style="position: relative;"]:has(> #in_image > a[onclick="closeinImage()"])
+||tribratanews.polri.go.id^*/website.banner/
+||tribratanews.polri.go.id^*/x_banner_
 tribrata.tv###sidebar-header img[style="max-width: 100%; height: auto;"]
 tribrata.tv##.ad-middle
 tribratanewsalor.com,tribratanewsbelu.com,tribratanewsende.com,tribratanewsflorestimur.com,tribratanewskupang.com,tribratanewskupangkota.com,tribratanewslembata.com,tribratanewsmanggarai.com,tribratanewsmanggaraibarat.com,tribratanewsntt.com,tribratanewsrotendao.com,tribratanewssikka.com,tribratanewssumbabarat.com,tribratanewssumbabaratdaya.com,tribratanewssumbatimur.com,tribratanewsttu.com##.logo-banner .pull-right
@@ -3180,8 +3182,6 @@ _728x90px.$image,domain=bogordaily.net
 ||transkepri.com/assets/banner/
 ||transmediariau.com/assets/banner/
 ||transportasimedia.com/storage/ads/
-||tribratanews.polri.go.id^*/website.banner/
-||tribratanews.polri.go.id^*/x_banner_
 ||tribuanapos.net^*/iklan-$image
 ||trotoar.id^*/banner-$image
 ||tubasmedia.com^*/iklan-$image
