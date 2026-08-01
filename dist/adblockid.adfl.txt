@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sat, 01 Aug 2026 09:27:05 GMT
+! Last modified: Sat, 01 Aug 2026 10:32:36 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -5084,6 +5084,12 @@ artisbokep.*,republikbokep.*,xbokepin.*##a[target*="blank"]:has(> img)
 doujindesu.tv,igodesu.tv,javdesu.tv##a[target*="blank"]:has(> img)
 desu.xxx##a[target*="blank"]:has(> img):not(.btn-link)
 doujindesu.tv,igodesu.tv##+js(nowoif)
+||sjav.net/storage/ads/
+indoporntube.com##.animate__animated .w-full .backdrop-blur-sm:has(> button)
+indoporntube.com##[id^="container-"].justify-center:has(> script)
+indoporntube.com##a[href="/page/contact?type=place-ads"]
+indoporntube.com,sjav.net##a[target*="blank"]:has(> img)
+@@||pagead2.googlesyndication.com/pagead/$domain=indoporntube.com
 pemersatufun.com###advertisement
 pemersatufun.site###deskadmiddle
 pemersatu.top,pemersatufun.site##.ad
