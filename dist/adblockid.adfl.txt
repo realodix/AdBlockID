@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Mon, 03 Aug 2026 10:49:23 GMT
+! Last modified: Mon, 03 Aug 2026 10:55:55 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4735,7 +4735,9 @@ playeriframe.sbs,videonode.de##body > a:has(> .message-box)
 ||d21.media/vid/$media,redirect=noopmp4-1s
 ||d21.media^*/iklan-
 sf21.space###overlay-iklan-internal
-lk21official.top,skeeterbyte.com,surgafilm21.website##a[target*="blank"]:has(> img)
+lk21official.asia##.inner-ads
+lk21official.asia,skeeterbyte.com,surgafilm21.website##a[target*="blank"]:has(> img)
+lk21official.asia##+js(nowoif)
 ||tolonglah.pages.dev$frame
 skeeterbyte.com##:matches-path(/links/?url=) body > .container-iframe
 ||1a-1791.com/video/$media,redirect=noopmp4-1s,domain=anichin.*
