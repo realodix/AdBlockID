@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Tue, 04 Aug 2026 17:52:16 GMT
+! Last modified: Tue, 04 Aug 2026 17:57:25 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4599,13 +4599,13 @@ aksi.co,bacakabar.id,bantennews.co.id,beritamanado.com,beritasampit.com,busam.id
 !#if adguard
 /^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$badfilter,document,popup,subdocument
 !#endif
-0.0.realodix##.btn[onclick]:remove-attr(onclick)
-0.0.realodix##body:remove-class(cdk-global-scrollblock)
+0.0.realodix.co##.btn[onclick]:remove-attr(onclick)
+0.0.realodix.co##body:remove-class(cdk-global-scrollblock)
 ||ex-ample.org^$script,from=ex-ample.com
-0.0.realodix##div.banner:matches-css-before(content: /adv/i)
-0.0.realodix##:matches-path(/^/home/) [data-testid="primaryColumn"]:others()
-0.0.realodix##+js(prevent-setTimeout, getComputedStyle)
-0.0.realodix##+js(prevent-window-open)
+0.0.realodix.co##div.banner:matches-css-before(content: /adv/i)
+0.0.realodix.co##:matches-path(/^/home/) [data-testid="primaryColumn"]:others()
+0.0.realodix.co##+js(prevent-setTimeout, getComputedStyle)
+0.0.realodix.co##+js(prevent-window-open)
 ||88cdn.cloud/img/mvads/$3p
 ||animeinweb.com/api/proxy/data/ads/show$xhr
 ||cdnfgo.xyz/wp-content/uploads/*.gif|$domain=komiktap.info
