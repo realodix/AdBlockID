@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID Plus
 ! Description: Ekstensi untuk menambah cakupan situs yang tidak dapat dijangkau oleh AdBlockID.
-! Last modified: Mon, 03 Aug 2026 23:12:44 GMT
+! Last modified: Tue, 04 Aug 2026 14:50:02 GMT
 ! Expires: 6 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -98,6 +98,12 @@ tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct"]:has(div[
 tokopedia.com##:matches-path(/p/) a[data-testid="lnkProductContainer"]:has([alt*="topads"])
 shopee.co.id##:matches-path(/search?) .shopee-search-item-result .shopee-search-item-result__item:has(a div[aria-hidden="true"] > .bg-shopee-black26:has-text(/Ad/))
 tokopedia.com##:matches-path(/search?) div[data-testid="master-product-card"]:has([data-testid="divSRPTopadsIcon"])
+olx.co.id##[data-aut-id="bannerBooking"]
+olx.co.id##[data-aut-id="baxter-ads-results-bottom"]
+olx.co.id##[data-aut-id="baxter-ads-results-right"]
+olx.co.id##[data-aut-id="staticBannerSrpList"]
+olx.co.id##[data-test-id="ad-results-banner"]
+olx.co.id##[data-test-id="native-ad-results-middle"]
 mitra.bukalapak.com##.banner-fixed
 tokopedia.com##:matches-path(/find/) div[data-testid^="divFindProduct#"]:has(div[data-testid="master-product-card"] [data-testid="linkProductTopads"])
 shopee.co.id##:matches-path(/search?) .search-items-container__tab-panel .item-card-list__item-card-wrapper:has(a div[aria-hidden="true"] > .bg-shopee-black26:has-text(/Ad/))
