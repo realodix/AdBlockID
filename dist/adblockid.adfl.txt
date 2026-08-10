@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Mon, 10 Aug 2026 11:59:00 GMT
+! Last modified: Mon, 10 Aug 2026 23:35:52 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -423,9 +423,11 @@ _ads728x90-
 ###iklan-8-8
 ###iklan-9-9
 ###iklan-atas
+###iklan-atas-1
 ###iklan-banner
 ###iklan-baris
 ###iklan-bawah
+###iklan-bawah-1
 ###iklan-close
 ###iklan-desktop-half_page
 ###iklan-desktop-rectangle1
@@ -1357,6 +1359,7 @@ _ads728x90-
 ##.iklan1
 ##.iklan160kanan
 ##.iklan160kiri
+##.iklan2
 ##.iklan300x250
 ##.iklan468x60
 ##.iklan728x90
@@ -3862,6 +3865,7 @@ titipjepang.com##a[href^="https://titipjepang.com/promo/"]:has(> img)
 transportasimedia.com##a[href^="https://transportasimedia.com/ads/"]
 inilahbandung.com,monitorindonesia.com##a[rel*="sponsored"]
 bentengsumbar.com,sijorikepri.com,wawainews.id##a[title*="iklan" i]:has(> img)
+otojatim.com##a[title*="promo" i]:has(img)
 ntbsatu.com##a[title="iklan" i]
 radarmanadoonline.com##a[title^="adv" i]
 dardura.com##article #body-post-it > center:has-text(/adv/i)
@@ -4400,7 +4404,7 @@ postkotantb.com##.widget-content:has(> .separator > img)
 mandalikapost.com##.widget-content:has(> center > a > img)
 polisinews.com##.widget-footer .widget:has(> img)
 kompiajaib.com##.widget-wrapper .link-btn:has-text(/iklan/i)
-kejoranews.com,mataperistiwa.net,otojatim.com##.widget:has(.widget-content > div > a:has(img))
+kejoranews.com,mataperistiwa.net##.widget:has(.widget-content > div > a:has(img))
 bantenesia.id,banuatoday.com,berita-cendana.com,elitkita.com,habardigital.com,integritasmedia.com,jabar-online.com,kapuasrayatoday.com,kejoranews.com,mataperistiwa.net,mediasuararakyatindonesia.id,orasirakyat.com,perspectivesnews.com,realitakini.com##.widget:has(.widget-content > div > img)
 lemaripojok.com##.widget:has(.widget-content > iframe)
 zetizens.id##.widget:has(> .stream-item-widget-content > a > img)
