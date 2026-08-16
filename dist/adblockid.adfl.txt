@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sun, 16 Aug 2026 11:48:13 GMT
+! Last modified: Sun, 16 Aug 2026 12:01:35 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -4684,6 +4684,8 @@ komiku.org##div:matches-css(text-align:center):has(> span:has-text(/iklan/i))
 hidoristream.online##div[id^="teaser"]
 komiknesia.asia##img[alt*="adv" i]
 ||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect-rule=noop.js,domain=anidraw.net
+||outbrain.com/outbrain.js$redirect-rule=noop.js,domain=hentai.web.id
+||quantserve.com/quant.js$redirect-rule=noop.js,domain=hentai.web.id
 @@-ads-banner.$script,domain=kusonime.com
 kopajasubs.info##+js(aopr, adAdbLoad)
 komiku.org,sektedoujin.cc##+js(nobab)
@@ -4713,7 +4715,7 @@ sokuja.uk##body > div:matches-css(position: fixed)
 sokuja.uk##div:matches-css(position: fixed):has(> div > #countdown)
 komikstation.org##+js(aeld, /^(?:load|click)$/, popMagic)
 komikdewasa.art##+js(aeld, click, tampilkanUrl)
-anibatch.moe,dramaencode.net,gudangmovies21.chat,kazefuri.cloud,kazefuri.id,newlk21id.com,otakupoi.org,rebahan21.com,sokuja.uk##+js(nowoif)
+anibatch.moe,dramaencode.net,gudangmovies21.chat,hentai.web.id,kazefuri.cloud,kazefuri.id,newlk21id.com,otakupoi.org,rebahan21.com,sokuja.uk##+js(nowoif)
 newlk21id.com##+js(ra, href, #clickfakeplayer, stay)
 kazefuri.id,komikpoi.com,otakupoi.org##html, body:style(overflow: auto!important; position: unset!important;)
 nontondrama.blog,sobatmov.xyz,sokuja.uk##+js(aopr, popup_custom_data)
