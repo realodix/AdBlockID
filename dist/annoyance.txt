@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID - Annoyances
 ! Description: Remove Pop-Ups, cookie warnings and other annoyances.
-! Last modified: Thu, 20 Aug 2026 15:42:52 GMT
+! Last modified: Thu, 20 Aug 2026 15:44:24 GMT
 ! Expires: 6 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -157,8 +157,8 @@ kompasiana.com##.kolom-newslt
 hellosehat.com##[data-type="subscription_box_A"]
 officialmykonos.com##.subscription-popup
 thebodytale.com##[id*="newslatter"]
-thebodytale.com##html, body:has([id*="newslatter"]):style(overflow: auto!important; position: unset!important;)
 officialmykonos.com##html:has(.subscription-popup),body:has(.subscription-popup):style(overflow: auto!important; position: unset!important;)
+thebodytale.com##html:has([id*="newslatter"]),body:has([id*="newslatter"]):style(overflow: auto!important; position: unset!important;)
 tribunnews.com###article #_popIn_recommend_word
 bolatimes.com,dewiku.com,himedik.com,hitekno.com,matamata.com###geniee-berita-terkait
 gridoto.com##.content_footer .artikel_terkait:has(script[src^="https://jsc.mgid.com"])
