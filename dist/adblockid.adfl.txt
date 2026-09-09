@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Tue, 08 Sep 2026 19:24:24 GMT
+! Last modified: Wed, 09 Sep 2026 03:48:31 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -1099,6 +1099,8 @@ _ads728x90-
 ##.center-ads2
 ##.center-ads3
 ##.center-block-ads
+##.cine-ad-cell
+##.cine-ad-wrap
 ##.close-iklan
 ##.close-keep-ads
 ##.cm-728x90-advertisemen-widget
@@ -4721,13 +4723,9 @@ kazefuri.id,komikpoi.com,otakupoi.org##html, body:style(overflow: auto!important
 nontondrama.blog,sobatmov.xyz,sokuja.uk##+js(aopr, popup_custom_data)
 gudangmovies21.chat,sattorrent.com,soulscans.my.id##+js(aopr, SGPB_POPUP_PARAMS)
 komikstation.org##+js(acis, JSON.parse, break;case $.)
-||blogger.googleusercontent.com/img/*.gif^$image,domain=idlixku.com
-idlixku.com##.asgdc
-idlixku.com##.module_home_ads
-idlixku.com##a[target*="blank"]:has(> img)
-idlixku.com##html, body:style(overflow: visible !important;)
-idlixku.com##+js(nowoif)
-idlixku.com##+js(nostif, getComputedStyle)
+167.71.137.254##.fixed.bottom-0
+167.71.137.254##.fixed.overflow-hidden
+167.71.137.254##html, body:style(overflow: visible !important;)
 ||donasi.lk21.de^
 ||lk21static.buzz/assets/$media,redirect=noopmp4-1s
 ||lk21static.buzz/assets/*.gif$image
@@ -6865,9 +6863,11 @@ _topbandar_$image
 ##img[title="birutoto" i]
 ##img[title="naga588" i]
 ##img[title="slot gacor" i]
+##[href*=".biz/register?ref="]:has(img)
 ~dominasidewa.*,~klikzeus10.*,~zeus.fun##[href*=".zeus.fun/"]
 ##[href*="//vn.adnetworks.top/go/"] > img
 ##[href*="/agen"][href*="safest.com/register/"]:has(img)
+##[href*="/id"][href*="safest.com/register/"]:has(img)
 ##[href*="/masuk"][href*="safest.com/register/"]:has(img)
 ~akseskaiko.cam##[href="https://akseskaiko.cam/login"]
 ~bergurukecina.fun##[href="https://bergurukecina.fun/cn7"]
