@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Sun, 13 Sep 2026 22:30:30 GMT
+! Last modified: Sun, 13 Sep 2026 22:50:48 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -1929,6 +1929,12 @@ yummy.co.id##div:matches-css(align-items: center):has-text(/adv/i)
 idntimes.com###floatingbanner:matches-css(position: fixed):remove()
 popmama.com###mainBannerPopup
 popmama.com##body:style(overflow: auto!important; position: unset!important;)
+jawapos.com###apbottom
+jawapos.com###aprb1
+jawapos.com###aprb2
+jawapos.com###apskyscraper
+jawapos.com##[data-jp-ad-slot-id]
+jawapos.com##[data-jp-ad-slot-wrapper]
 ||adsimg.kompas.com^
 ||kompasiana.com^*/banner-
 motorplus-online.com###ad-below-photo-container
@@ -3344,10 +3350,6 @@ dinaspajak.com###adsmabur
 idezia.com###adstop
 indonesiasatu.co###advert-top-desktop
 banjarhits.co,qsantri.eu.org###after-ad
-jawapos.com###apbottom
-jawapos.com###aprb1
-jawapos.com###aprb2
-jawapos.com###apskyscraper
 tirto.id###ats-insert_ads-1-wrapper
 bekesah.co,berita.news,beritamimika.com,citakaltara.com,fajar.co.id,mensobsession.com###banner
 hybrid.co.id###banner-floating
@@ -3833,8 +3835,6 @@ infobanknews.com##[data-ad-campaign]
 infobanknews.com##[data-ad-position]
 informasi.com##[data-ad-slot]
 goodnewsfromindonesia.id##[data-cptid*=".id_728x90"]
-jawapos.com##[data-jp-ad-slot-id]
-jawapos.com##[data-jp-ad-slot-wrapper]
 kumparan.com##[data-qa-id*="banner"]
 kumparan.com##[data-qa-id*="sticky-bottom-ads"]
 kumparan.com##[data-qa-id="left-skyscrapper-ads"]
@@ -4128,7 +4128,6 @@ orami.co.id##header > #footer_stickyexp:has(> #div-gpt-ad-stickyexp)
 bacasaja.id##img[src^="data:image/png;base64"]
 monitorindonesia.com##nav .flex:has(.text-center:has-text(/adv/i))
 beritahukum.com##table:has(> tbody > tr > td.styleisikanan:has-text(/ads/i))
-jawapos.com##.justify-center:has(> div:matches-css(width: 300px):matches-css(height: 250px))
 kbr.id,kbrprime.id##.max-w-\[970px\].h-\[50px\]
 narasi.tv##.min-w-\[160px\].min-h-\[600px\]
 investortrust.id##.w-36.h-\[400px\]
@@ -4150,22 +4149,17 @@ industry.co.id##div:matches-css(max-width: 970px)
 indoposco.id##div:matches-css(max-width: 970px):matches-css(min-height: 115px)
 otorider.com##div:matches-css(min-height: 250px)
 otorider.com##div:matches-css(min-height: 255px)
-jawapos.com##div:matches-css(width: 120px):matches-css(height: 600px)
 radarsurabaya.jawapos.com##div:matches-css(width: 160px):matches-css(min-height: 600px)
 bloombergtechnoz.com##div:matches-css(width: 300px):matches-css(height: 100px)
 hukumonline.com,inilah.com##div:matches-css(width: 300px):matches-css(height: 250px)
-beautyjournal.id,jawapos.com##div:matches-css(width: 300px):matches-css(height: 600px)
-jawapos.com##div:matches-css(width: 300px):matches-css(min-height: 600px)
+beautyjournal.id##div:matches-css(width: 300px):matches-css(height: 600px)
 hukumonline.com##div:matches-css(width: 320px):matches-css(height: 50px)
 timesindonesia.co.id##div:matches-css(width: 336px):matches-css(height: 280px)
 industry.co.id##div:matches-css(width: 400px):matches-css(height: 300px)
 industry.co.id##div:matches-css(width: 400px):matches-css(height: 350px)
 gamebrott.com,hukumonline.com##div:matches-css(width: 728px):matches-css(height: 90px)
-jawapos.com##div:matches-css(width: 728px):matches-css(height: auto)
-jawapos.com##div:matches-css(width: 728px):matches-css(min-height: 90px)
-jawapos.com,timesindonesia.co.id##div:matches-css(width: 970px):matches-css(height: 250px)
-balipost.com,gamebrott.com,jawapos.com##div:matches-css(width: 970px):matches-css(height: 90px)
-jawapos.com##div:matches-css(width: 970px):matches-css(min-height: 250px)
+timesindonesia.co.id##div:matches-css(width: 970px):matches-css(height: 250px)
+balipost.com,gamebrott.com##div:matches-css(width: 970px):matches-css(height: 90px)
 sambar.id##img[data-original-width="1000"][data-original-height="250"]
 jejakhukumindonesia.com##img[data-original-width="1280"][data-original-height="194"]
 realitasnews.com##img[data-original-width="2112"][data-original-height="278"]
