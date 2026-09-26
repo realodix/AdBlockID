@@ -81,7 +81,7 @@ Gunakan filter annoyances dari AdGuard atau Easylist sebagai dasarnya.
 > Pastikan Anda hanya menggunakan AdBlockID di AdGuard dan uBlock Origin ya guys. Alasannya cukup sepele, karena saat ini sebagian besar fitur ajaib yang ada di dalam AdBlockID, hanya dapat dijalankan oleh AdGuard dan uBlock Origin saja 😃
 
 #### Desktop
-1. Buka *browser* favorit Anda ([Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/firefox/), [Microsoft Edge](https://www.microsoft.com/edge), etc)
+1. Buka *browser* favorit Anda.
 2. *Install* salah satu ekstensi dari berikut ini: [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) atau [uBlock Origin](https://github.com/gorhill/uBlock#installation).
 3. Install AdBlockID
    - **AdGuard**: Cukup aktifkan AdBlockID di bagian *language-specific*. Lebih lanjut lihat [/docs/Adguard.md](/docs/Adguard.md).
