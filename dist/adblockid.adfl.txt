@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title: AdBlockID
 ! Description: Filter list that specifically removes adverts on Indonesian language websites.
-! Last modified: Mon, 12 Oct 2026 16:53:43 GMT
+! Last modified: Mon, 12 Oct 2026 16:57:04 GMT
 ! Expires: 1 days
 ! Homepage: https://github.com/realodix/AdBlockID
 ! License: https://github.com/realodix/AdBlockID/blob/main/LICENSE
@@ -679,6 +679,7 @@ _ads728x90-
 ##.ad-pos-bawah-detail-berita
 ##.ad-pos-tengah-detail-berita
 ##.ad-rail-box600
+##.ad-shell
 ##.ad-slot-wrap
 ##.ad-type2_
 ##.ad-wrapper-fixed
@@ -1769,6 +1770,7 @@ _ads728x90-
 ##[class^="AdsTop_ads"]
 ##[class^="utp_ads_"]
 ##[data-customize-partial-id*="iklan" i]
+##[data-pp-ad-slot]
 ##[href*="/iklan-ads/"]
 ##[href^="https://bit.ly/iklan"] > img
 ##[id^="adsic728x90"]
@@ -5058,7 +5060,8 @@ pemersatu.fun,pemersatu.org##:matches-path(/wp-content/themes) #myDiv
 216.219.94.112,pemersatu.store,pemersatu.top,pemersatufun.com##^script:has-text(checkAds)
 pemersatu.fun,pemersatu.org,pemersatu.top,pemersatudotfun.com,pemersatufun.site##+js(rc, kamucurang|kamucurang-fader, div, stay)
 pemersatufun.site##.age-gate
-pemersatufun.site##html, body:style(overflow: auto!important; position: unset!important;)
+pemersatu.top##.fixed.gate-backdrop
+pemersatu.top,pemersatufun.site##html, body:style(overflow: auto!important; position: unset!important;)
 sebokep.com##a[target*="blank"]:has(> img)
 sebokep.com##+js(aopr, SGPB_POPUP_PARAMS)
 /px.gif|$image,redirect-rule=1x1.gif,domain=66.29.129.111|66.29.129.114|66.29.129.121|66.29.129.126|66.29.129.161|avtub.cc|avtub.net|avtub.pet|avtubflix.com|bokepid.*|bokepsin.*|omekin.app|pasarbokep.cx|playbokep.*|rajabokep.*|sangelink.com.de|sangetube.*|simontokreal.com|vibokep.*
